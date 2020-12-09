@@ -1,0 +1,1577 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/terms/StakeOffTerms.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/terms</a> StakeOffTerms.tsx</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">93.33% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>14/15</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">66.67% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>2/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">93.33% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>14/15</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a>
+<a name='L204'></a><a href='#L204'>204</a>
+<a name='L205'></a><a href='#L205'>205</a>
+<a name='L206'></a><a href='#L206'>206</a>
+<a name='L207'></a><a href='#L207'>207</a>
+<a name='L208'></a><a href='#L208'>208</a>
+<a name='L209'></a><a href='#L209'>209</a>
+<a name='L210'></a><a href='#L210'>210</a>
+<a name='L211'></a><a href='#L211'>211</a>
+<a name='L212'></a><a href='#L212'>212</a>
+<a name='L213'></a><a href='#L213'>213</a>
+<a name='L214'></a><a href='#L214'>214</a>
+<a name='L215'></a><a href='#L215'>215</a>
+<a name='L216'></a><a href='#L216'>216</a>
+<a name='L217'></a><a href='#L217'>217</a>
+<a name='L218'></a><a href='#L218'>218</a>
+<a name='L219'></a><a href='#L219'>219</a>
+<a name='L220'></a><a href='#L220'>220</a>
+<a name='L221'></a><a href='#L221'>221</a>
+<a name='L222'></a><a href='#L222'>222</a>
+<a name='L223'></a><a href='#L223'>223</a>
+<a name='L224'></a><a href='#L224'>224</a>
+<a name='L225'></a><a href='#L225'>225</a>
+<a name='L226'></a><a href='#L226'>226</a>
+<a name='L227'></a><a href='#L227'>227</a>
+<a name='L228'></a><a href='#L228'>228</a>
+<a name='L229'></a><a href='#L229'>229</a>
+<a name='L230'></a><a href='#L230'>230</a>
+<a name='L231'></a><a href='#L231'>231</a>
+<a name='L232'></a><a href='#L232'>232</a>
+<a name='L233'></a><a href='#L233'>233</a>
+<a name='L234'></a><a href='#L234'>234</a>
+<a name='L235'></a><a href='#L235'>235</a>
+<a name='L236'></a><a href='#L236'>236</a>
+<a name='L237'></a><a href='#L237'>237</a>
+<a name='L238'></a><a href='#L238'>238</a>
+<a name='L239'></a><a href='#L239'>239</a>
+<a name='L240'></a><a href='#L240'>240</a>
+<a name='L241'></a><a href='#L241'>241</a>
+<a name='L242'></a><a href='#L242'>242</a>
+<a name='L243'></a><a href='#L243'>243</a>
+<a name='L244'></a><a href='#L244'>244</a>
+<a name='L245'></a><a href='#L245'>245</a>
+<a name='L246'></a><a href='#L246'>246</a>
+<a name='L247'></a><a href='#L247'>247</a>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a>
+<a name='L252'></a><a href='#L252'>252</a>
+<a name='L253'></a><a href='#L253'>253</a>
+<a name='L254'></a><a href='#L254'>254</a>
+<a name='L255'></a><a href='#L255'>255</a>
+<a name='L256'></a><a href='#L256'>256</a>
+<a name='L257'></a><a href='#L257'>257</a>
+<a name='L258'></a><a href='#L258'>258</a>
+<a name='L259'></a><a href='#L259'>259</a>
+<a name='L260'></a><a href='#L260'>260</a>
+<a name='L261'></a><a href='#L261'>261</a>
+<a name='L262'></a><a href='#L262'>262</a>
+<a name='L263'></a><a href='#L263'>263</a>
+<a name='L264'></a><a href='#L264'>264</a>
+<a name='L265'></a><a href='#L265'>265</a>
+<a name='L266'></a><a href='#L266'>266</a>
+<a name='L267'></a><a href='#L267'>267</a>
+<a name='L268'></a><a href='#L268'>268</a>
+<a name='L269'></a><a href='#L269'>269</a>
+<a name='L270'></a><a href='#L270'>270</a>
+<a name='L271'></a><a href='#L271'>271</a>
+<a name='L272'></a><a href='#L272'>272</a>
+<a name='L273'></a><a href='#L273'>273</a>
+<a name='L274'></a><a href='#L274'>274</a>
+<a name='L275'></a><a href='#L275'>275</a>
+<a name='L276'></a><a href='#L276'>276</a>
+<a name='L277'></a><a href='#L277'>277</a>
+<a name='L278'></a><a href='#L278'>278</a>
+<a name='L279'></a><a href='#L279'>279</a>
+<a name='L280'></a><a href='#L280'>280</a>
+<a name='L281'></a><a href='#L281'>281</a>
+<a name='L282'></a><a href='#L282'>282</a>
+<a name='L283'></a><a href='#L283'>283</a>
+<a name='L284'></a><a href='#L284'>284</a>
+<a name='L285'></a><a href='#L285'>285</a>
+<a name='L286'></a><a href='#L286'>286</a>
+<a name='L287'></a><a href='#L287'>287</a>
+<a name='L288'></a><a href='#L288'>288</a>
+<a name='L289'></a><a href='#L289'>289</a>
+<a name='L290'></a><a href='#L290'>290</a>
+<a name='L291'></a><a href='#L291'>291</a>
+<a name='L292'></a><a href='#L292'>292</a>
+<a name='L293'></a><a href='#L293'>293</a>
+<a name='L294'></a><a href='#L294'>294</a>
+<a name='L295'></a><a href='#L295'>295</a>
+<a name='L296'></a><a href='#L296'>296</a>
+<a name='L297'></a><a href='#L297'>297</a>
+<a name='L298'></a><a href='#L298'>298</a>
+<a name='L299'></a><a href='#L299'>299</a>
+<a name='L300'></a><a href='#L300'>300</a>
+<a name='L301'></a><a href='#L301'>301</a>
+<a name='L302'></a><a href='#L302'>302</a>
+<a name='L303'></a><a href='#L303'>303</a>
+<a name='L304'></a><a href='#L304'>304</a>
+<a name='L305'></a><a href='#L305'>305</a>
+<a name='L306'></a><a href='#L306'>306</a>
+<a name='L307'></a><a href='#L307'>307</a>
+<a name='L308'></a><a href='#L308'>308</a>
+<a name='L309'></a><a href='#L309'>309</a>
+<a name='L310'></a><a href='#L310'>310</a>
+<a name='L311'></a><a href='#L311'>311</a>
+<a name='L312'></a><a href='#L312'>312</a>
+<a name='L313'></a><a href='#L313'>313</a>
+<a name='L314'></a><a href='#L314'>314</a>
+<a name='L315'></a><a href='#L315'>315</a>
+<a name='L316'></a><a href='#L316'>316</a>
+<a name='L317'></a><a href='#L317'>317</a>
+<a name='L318'></a><a href='#L318'>318</a>
+<a name='L319'></a><a href='#L319'>319</a>
+<a name='L320'></a><a href='#L320'>320</a>
+<a name='L321'></a><a href='#L321'>321</a>
+<a name='L322'></a><a href='#L322'>322</a>
+<a name='L323'></a><a href='#L323'>323</a>
+<a name='L324'></a><a href='#L324'>324</a>
+<a name='L325'></a><a href='#L325'>325</a>
+<a name='L326'></a><a href='#L326'>326</a>
+<a name='L327'></a><a href='#L327'>327</a>
+<a name='L328'></a><a href='#L328'>328</a>
+<a name='L329'></a><a href='#L329'>329</a>
+<a name='L330'></a><a href='#L330'>330</a>
+<a name='L331'></a><a href='#L331'>331</a>
+<a name='L332'></a><a href='#L332'>332</a>
+<a name='L333'></a><a href='#L333'>333</a>
+<a name='L334'></a><a href='#L334'>334</a>
+<a name='L335'></a><a href='#L335'>335</a>
+<a name='L336'></a><a href='#L336'>336</a>
+<a name='L337'></a><a href='#L337'>337</a>
+<a name='L338'></a><a href='#L338'>338</a>
+<a name='L339'></a><a href='#L339'>339</a>
+<a name='L340'></a><a href='#L340'>340</a>
+<a name='L341'></a><a href='#L341'>341</a>
+<a name='L342'></a><a href='#L342'>342</a>
+<a name='L343'></a><a href='#L343'>343</a>
+<a name='L344'></a><a href='#L344'>344</a>
+<a name='L345'></a><a href='#L345'>345</a>
+<a name='L346'></a><a href='#L346'>346</a>
+<a name='L347'></a><a href='#L347'>347</a>
+<a name='L348'></a><a href='#L348'>348</a>
+<a name='L349'></a><a href='#L349'>349</a>
+<a name='L350'></a><a href='#L350'>350</a>
+<a name='L351'></a><a href='#L351'>351</a>
+<a name='L352'></a><a href='#L352'>352</a>
+<a name='L353'></a><a href='#L353'>353</a>
+<a name='L354'></a><a href='#L354'>354</a>
+<a name='L355'></a><a href='#L355'>355</a>
+<a name='L356'></a><a href='#L356'>356</a>
+<a name='L357'></a><a href='#L357'>357</a>
+<a name='L358'></a><a href='#L358'>358</a>
+<a name='L359'></a><a href='#L359'>359</a>
+<a name='L360'></a><a href='#L360'>360</a>
+<a name='L361'></a><a href='#L361'>361</a>
+<a name='L362'></a><a href='#L362'>362</a>
+<a name='L363'></a><a href='#L363'>363</a>
+<a name='L364'></a><a href='#L364'>364</a>
+<a name='L365'></a><a href='#L365'>365</a>
+<a name='L366'></a><a href='#L366'>366</a>
+<a name='L367'></a><a href='#L367'>367</a>
+<a name='L368'></a><a href='#L368'>368</a>
+<a name='L369'></a><a href='#L369'>369</a>
+<a name='L370'></a><a href='#L370'>370</a>
+<a name='L371'></a><a href='#L371'>371</a>
+<a name='L372'></a><a href='#L372'>372</a>
+<a name='L373'></a><a href='#L373'>373</a>
+<a name='L374'></a><a href='#L374'>374</a>
+<a name='L375'></a><a href='#L375'>375</a>
+<a name='L376'></a><a href='#L376'>376</a>
+<a name='L377'></a><a href='#L377'>377</a>
+<a name='L378'></a><a href='#L378'>378</a>
+<a name='L379'></a><a href='#L379'>379</a>
+<a name='L380'></a><a href='#L380'>380</a>
+<a name='L381'></a><a href='#L381'>381</a>
+<a name='L382'></a><a href='#L382'>382</a>
+<a name='L383'></a><a href='#L383'>383</a>
+<a name='L384'></a><a href='#L384'>384</a>
+<a name='L385'></a><a href='#L385'>385</a>
+<a name='L386'></a><a href='#L386'>386</a>
+<a name='L387'></a><a href='#L387'>387</a>
+<a name='L388'></a><a href='#L388'>388</a>
+<a name='L389'></a><a href='#L389'>389</a>
+<a name='L390'></a><a href='#L390'>390</a>
+<a name='L391'></a><a href='#L391'>391</a>
+<a name='L392'></a><a href='#L392'>392</a>
+<a name='L393'></a><a href='#L393'>393</a>
+<a name='L394'></a><a href='#L394'>394</a>
+<a name='L395'></a><a href='#L395'>395</a>
+<a name='L396'></a><a href='#L396'>396</a>
+<a name='L397'></a><a href='#L397'>397</a>
+<a name='L398'></a><a href='#L398'>398</a>
+<a name='L399'></a><a href='#L399'>399</a>
+<a name='L400'></a><a href='#L400'>400</a>
+<a name='L401'></a><a href='#L401'>401</a>
+<a name='L402'></a><a href='#L402'>402</a>
+<a name='L403'></a><a href='#L403'>403</a>
+<a name='L404'></a><a href='#L404'>404</a>
+<a name='L405'></a><a href='#L405'>405</a>
+<a name='L406'></a><a href='#L406'>406</a>
+<a name='L407'></a><a href='#L407'>407</a>
+<a name='L408'></a><a href='#L408'>408</a>
+<a name='L409'></a><a href='#L409'>409</a>
+<a name='L410'></a><a href='#L410'>410</a>
+<a name='L411'></a><a href='#L411'>411</a>
+<a name='L412'></a><a href='#L412'>412</a>
+<a name='L413'></a><a href='#L413'>413</a>
+<a name='L414'></a><a href='#L414'>414</a>
+<a name='L415'></a><a href='#L415'>415</a>
+<a name='L416'></a><a href='#L416'>416</a>
+<a name='L417'></a><a href='#L417'>417</a>
+<a name='L418'></a><a href='#L418'>418</a>
+<a name='L419'></a><a href='#L419'>419</a>
+<a name='L420'></a><a href='#L420'>420</a>
+<a name='L421'></a><a href='#L421'>421</a>
+<a name='L422'></a><a href='#L422'>422</a>
+<a name='L423'></a><a href='#L423'>423</a>
+<a name='L424'></a><a href='#L424'>424</a>
+<a name='L425'></a><a href='#L425'>425</a>
+<a name='L426'></a><a href='#L426'>426</a>
+<a name='L427'></a><a href='#L427'>427</a>
+<a name='L428'></a><a href='#L428'>428</a>
+<a name='L429'></a><a href='#L429'>429</a>
+<a name='L430'></a><a href='#L430'>430</a>
+<a name='L431'></a><a href='#L431'>431</a>
+<a name='L432'></a><a href='#L432'>432</a>
+<a name='L433'></a><a href='#L433'>433</a>
+<a name='L434'></a><a href='#L434'>434</a>
+<a name='L435'></a><a href='#L435'>435</a>
+<a name='L436'></a><a href='#L436'>436</a>
+<a name='L437'></a><a href='#L437'>437</a>
+<a name='L438'></a><a href='#L438'>438</a>
+<a name='L439'></a><a href='#L439'>439</a>
+<a name='L440'></a><a href='#L440'>440</a>
+<a name='L441'></a><a href='#L441'>441</a>
+<a name='L442'></a><a href='#L442'>442</a>
+<a name='L443'></a><a href='#L443'>443</a>
+<a name='L444'></a><a href='#L444'>444</a>
+<a name='L445'></a><a href='#L445'>445</a>
+<a name='L446'></a><a href='#L446'>446</a>
+<a name='L447'></a><a href='#L447'>447</a>
+<a name='L448'></a><a href='#L448'>448</a>
+<a name='L449'></a><a href='#L449'>449</a>
+<a name='L450'></a><a href='#L450'>450</a>
+<a name='L451'></a><a href='#L451'>451</a>
+<a name='L452'></a><a href='#L452'>452</a>
+<a name='L453'></a><a href='#L453'>453</a>
+<a name='L454'></a><a href='#L454'>454</a>
+<a name='L455'></a><a href='#L455'>455</a>
+<a name='L456'></a><a href='#L456'>456</a>
+<a name='L457'></a><a href='#L457'>457</a>
+<a name='L458'></a><a href='#L458'>458</a>
+<a name='L459'></a><a href='#L459'>459</a>
+<a name='L460'></a><a href='#L460'>460</a>
+<a name='L461'></a><a href='#L461'>461</a>
+<a name='L462'></a><a href='#L462'>462</a>
+<a name='L463'></a><a href='#L463'>463</a>
+<a name='L464'></a><a href='#L464'>464</a>
+<a name='L465'></a><a href='#L465'>465</a>
+<a name='L466'></a><a href='#L466'>466</a>
+<a name='L467'></a><a href='#L467'>467</a>
+<a name='L468'></a><a href='#L468'>468</a>
+<a name='L469'></a><a href='#L469'>469</a>
+<a name='L470'></a><a href='#L470'>470</a>
+<a name='L471'></a><a href='#L471'>471</a>
+<a name='L472'></a><a href='#L472'>472</a>
+<a name='L473'></a><a href='#L473'>473</a>
+<a name='L474'></a><a href='#L474'>474</a>
+<a name='L475'></a><a href='#L475'>475</a>
+<a name='L476'></a><a href='#L476'>476</a>
+<a name='L477'></a><a href='#L477'>477</a>
+<a name='L478'></a><a href='#L478'>478</a>
+<a name='L479'></a><a href='#L479'>479</a>
+<a name='L480'></a><a href='#L480'>480</a>
+<a name='L481'></a><a href='#L481'>481</a>
+<a name='L482'></a><a href='#L482'>482</a>
+<a name='L483'></a><a href='#L483'>483</a>
+<a name='L484'></a><a href='#L484'>484</a>
+<a name='L485'></a><a href='#L485'>485</a>
+<a name='L486'></a><a href='#L486'>486</a>
+<a name='L487'></a><a href='#L487'>487</a>
+<a name='L488'></a><a href='#L488'>488</a>
+<a name='L489'></a><a href='#L489'>489</a>
+<a name='L490'></a><a href='#L490'>490</a>
+<a name='L491'></a><a href='#L491'>491</a>
+<a name='L492'></a><a href='#L492'>492</a>
+<a name='L493'></a><a href='#L493'>493</a>
+<a name='L494'></a><a href='#L494'>494</a>
+<a name='L495'></a><a href='#L495'>495</a>
+<a name='L496'></a><a href='#L496'>496</a>
+<a name='L497'></a><a href='#L497'>497</a>
+<a name='L498'></a><a href='#L498'>498</a>
+<a name='L499'></a><a href='#L499'>499</a>
+<a name='L500'></a><a href='#L500'>500</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import { H1, H3, Li, ListType, Ul } from 'src/fonts/Fonts'
+import OpenGraph from 'src/header/OpenGraph'
+import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
+import { Cell, GridRow, Spans } from 'src/layout/GridRow'
+import Button, { BTN } from 'src/shared/Button.3'
+import { HEADER_HEIGHT } from 'src/shared/Styles'
+import { fonts, standardStyles, textStyles } from 'src/styles'
+&nbsp;
+class StakeoffTerms extends React.PureComponent&lt;I18nProps&gt; {
+<span class="fstat-no" title="function not covered" >  static </span>getInitialProps() {
+<span class="cstat-no" title="statement not covered" >    return { namespacesRequired: [NameSpaces.terms, NameSpaces.common] }</span>
+  }
+  render() {
+    const { t } = this.props
+    return (
+      &lt;&gt;
+        &lt;OpenGraph
+          title={t('gameOfStakesTermsTitle')}
+          path={NameSpaces.terms}
+          description={t('gameOfStakesTermsMetaDescription')}
+        /&gt;
+        &lt;View style={styles.container}&gt;
+          &lt;GridRow
+            allStyle={standardStyles.centered}
+            desktopStyle={standardStyles.blockMarginBottom}
+            tabletStyle={standardStyles.blockMarginBottomTablet}
+            mobileStyle={standardStyles.blockMarginBottomMobile}
+          &gt;
+            &lt;Cell span={Spans.fourth}&gt;{}&lt;/Cell&gt;
+            &lt;Cell span={Spans.three4th} style={standardStyles.centered}&gt;
+              &lt;H1 style={textStyles.center}&gt;{t('gameOfStakesTermsTitle')}&lt;/H1&gt;
+              &lt;H3 style={textStyles.center}&gt;{t('termsAndConditions')}&lt;/H3&gt;
+            &lt;/Cell&gt;
+          &lt;/GridRow&gt;
+          &lt;GridRow&gt;
+            &lt;Cell span={Spans.fourth}&gt;
+              &lt;Text style={fonts.h6}&gt;Last Updated October, 29 2019&lt;/Text&gt;
+            &lt;/Cell&gt;
+            &lt;Cell span={Spans.three4th}&gt;
+              &lt;Text
+                style={fonts.p}
+              &gt;{`Thank you for joining the Great Celo Stake Off (“TGCSO”), the incentivized testnet for the Celo Protocol. TGCSO allows eligible participants (“Participants”) to engage with the betanet version of the Celo Protocol (“Protocol”) and, related to that participation and subject to these Terms and Conditions, Participants will have the opportunity to receive Celo Gold at the Mainnet launch of the Celo Protocol.   TGCSO will commence on the date prescribed by cLabs (the “Company”) and continue until terminated by the Company in its sole discretion (“TGCSO Period”). Participation in TGCSO is subject to these Terms and Conditions (the “Terms”) and the Company’s Privacy Policy (“Privacy Policy”), and all other agreements or terms as set forth by the Company. These Terms constitute a binding obligation between you and the Company. As used herein, “Celo Gold” means the native unit of value on the Mainnet Celo Protocol. 
+              
+YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING IN TGCSO, YOU MUST STRICTLY ADHERE TO THE TERMS. IF, AS PART OF YOUR VOLUNTARY PARTICIPATION, YOU MEET THE CRITERIA LISTED BELOW, YOU MAY BE ELIGIBLE TO RECEIVE CERTAIN AMOUNTS OF CELO GOLD UNITS AND/OR CELO GOLD UPON THE MAINNET LAUNCH OF THE CELO PROTOCOL. YOU AGREE THAT ANY CELO GOLD UNITS OR CELO GOLD RECEIVED BY YOU WILL BE FOR YOUR SERVICES IN TESTING AND CONTRIBUTING TO THE CELO TECHNOLOGIES AS DEFINED BELOW AND AS PART OF THIS TGCSO.
+              `}&lt;/Text&gt;
+              &lt;Ul&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Agreement to Terms. By using the Celo technology during TGCSO Period, including
+                  the features, technologies and functionalities offered by the Company to you
+                  through a website, app, or through other means (the “Celo Technologies.”) and
+                  participating in TGCSO, you agree to be bound by these Terms. If you don’t agree
+                  to be bound by these Terms, do not participate. If you are accessing and
+                  participating in TGCSO on behalf of a company (such as your employer) or other
+                  legal entity, you represent and warrant that you have the authority to bind that
+                  company or other legal entity to these Terms. In that case, “you” and “your” will
+                  refer to that company or other legal entity.
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Privacy Policy. Please refer to our Privacy Policy (available at{' '}
+                  &lt;Link href="https://celo.org/privacy"&gt;celo.org/privacy&lt;/Link&gt;) for information on
+                  the Company may collect, use and disclose information. You acknowledge and agree
+                  that your participation in TGCSO is subject to this Privacy Policy.
+                &lt;/Li&gt;
+                &lt;Text style={[fonts.p, textStyles.heavy]}&gt;
+                  IMPORTANT NOTICE REGARDING ARBITRATION: WHEN YOU AGREE TO THESE TERMS YOU ARE
+                  AGREEING (WITH LIMITED EXCEPTION) TO RESOLVE ANY DISPUTE BETWEEN YOU AND THE
+                  COMPANY THROUGH BINDING, INDIVIDUAL ARBITRATION RATHER THAN IN COURT. PLEASE
+                  REVIEW CAREFULLY SECTION 15 “DISPUTE RESOLUTION” BELOW FOR DETAILS REGARDING
+                  ARBITRATION.
+                &lt;/Text&gt;
+                &lt;br /&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Changes to Terms. The Company may update the Terms at any time, in its sole
+                  discretion. If it does so, the Company will deliver a notice either by posting the
+                  updated Terms on &lt;Link href="https://forum.celo.org"&gt;forum.celo.org&lt;/Link&gt; (“TGCSO
+                  Forum”) or through other communications. It’s important that you review any and
+                  all updated Terms. If you continue to participate in TGCSO after the Company has
+                  posted updated Terms, you are agreeing to be bound by the updated Terms. If you
+                  don’t agree to be bound by the updated Terms, then you may not participate in
+                  TGCSO anymore. Because TGCSO will evolve over TGCSO Period, the Company may change
+                  or discontinue all or any part of TGCSO, at any time and without notice, at its
+                  sole discretion.
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Eligibility. You may participate in TGCSO only if: (a) you are 18 years or older
+                  and capable of forming a binding contract with the Company; (b) you are not a
+                  citizen or resident of any jurisdiction designated by the United Nations, European
+                  Union, any EU country, UK Treasury, or the U.S. Secretary of State as a country
+                  supporting international terrorism, or to which U.S. nationals cannot lawfully
+                  engage in transactions as designated by the Office of Foreign Assets Control,
+                  including without limitation Cuba, Democratic People’s Republic of Korea, the
+                  Crimea region of Ukraine, Iran, or Syria; and (c) you are not barred from
+                  participating under applicable law. To claim or receive any Celo Gold as part of
+                  TGCSO, you may not be an employee, consultant or affiliate of the Company and you
+                  will be required to provide certain identifying documentation and information.
+                  Failure to provide such identifying information and/or a failure to demonstrate
+                  compliance with the restrictions herein may result in termination of your
+                  participation, forfeiture of any accumulated Baklava Test Units (described below),
+                  forfeiture of Celo Gold, and prohibition from participating in future testnet
+                  challenges, and other actions.
+                  &lt;br /&gt;
+                  You agree to comply with all applicable national, international and local laws,
+                  ordinances and regulations in connection with your participation in TGCSO. Nothing
+                  herein shall constitute an employment, consultancy, joint venture, or partnership
+                  relationship between you and the Company.
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Description of TGCSO. The TGCSO, will operate in phases, with each phase focused
+                  on different parts of Protocol. Please note that the Protocol upon which these
+                  Terms are based is a partially audited release of what will be the Mainnet launch
+                  of the Celo Protocol and related infrastructure. The Celo Technologies are
+                  provided to you for a limited time as part of TGCSO. TGCSO is designed to build
+                  the validator operational experience, establish security best practices and
+                  improve the design of the Celo Technologies which will be incorporated into the
+                  Mainnet launch of the open source Celo Protocol. Because upon Mainnet launch, the
+                  Celo Protocol is decentralized, TGCSO is important to expose potential issues and
+                  to improve participant experiences with the Celo Technologies so that the Company
+                  may address potential issues before the Mainnet launch of the Celo Protocol.
+                  &lt;br /&gt;
+                  &lt;br /&gt;
+                  You further understand and agree that:
+                  &lt;Ul&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      {' '}
+                      Access to TGCSO may require the use of your personal computer and/or mobile
+                      devices, as well as communications with or use of data and storage on such
+                      devices. You are responsible for any Internet connection or mobile fees and
+                      charges that you may incur as part of your voluntary participation in TGCSO.
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      Certain information, including your wallet and on-chain transaction records,
+                      are all public information and can be accessed by anyone, including
+                      participants and non-participants of TGCSO.
+                    &lt;/Li&gt;
+                  &lt;/Ul&gt;
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Baklava Testnet Units (“BTUs”), Celo Gold Units, and Mainnet Celo Gold. BTUs will
+                  be awarded to Participants during the course of TGCSO for activities including
+                  running a validator or full node, passing Company operational security and
+                  infrastructure audits, among other activities that will be posted at TGCSO Forum.
+                  In addition, other aspects of TGCSO participation may be rewarded with Mainnet
+                  Celo Gold, as also specified in TGCSO and below.
+                  &lt;Ul&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      As part of TGCSO, the Company will deliver up to a total of 2,000,000 (two
+                      million) Celo Gold at Mainnet launch of the Celo Protocol. Top performing
+                      Participants, based on the total number of accumulated BTUs and as further
+                      described at TGCSO Forum, may receive up to 60,000 Celo Gold at Mainnet launch
+                      of the Celo Protocol. Other contributions to TGCSO may further be rewarded
+                      with Celo Gold at Mainnet launch, as specified in TGCSO Forum.
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      All Participants who wish to receive Celo Gold at Mainnet launch will be
+                      required to complete identification information,necessary attestations, and
+                      other information to adhere to applicable laws and regulations required to
+                      receive Celo Gold Units prior to the Mainnet launch or Celo Gold at or after
+                      Mainnet launch. Participants understand that certain lock up periods may apply
+                      to Celo Gold at Mainnet launch. Participants who do not provide the requested
+                      information, or Participants who cannot receive Celo Gold Units or Celo Gold
+                      for any reason will forfeit his/her right to Celo Gold Units and Celo Gold.{' '}
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      The Company reserves the right to block any and all access you may have to
+                      TGCSO, to remove or reallocate any BTUs earned, and withhold or not pay any or
+                      all Celo Gold Units and Mainnet Celo Gold if you have violated any of the
+                      terms and conditions of the Terms (as determined solely by the Company) or if
+                      you do not complete the necessary information or pass the review process to
+                      enable the delivery of Celo Gold Units and/or Celo Gold.
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You are responsible for the payment of all taxes associated with your receipt
+                      Celo Gold Units and/or Celo Gold. You agree to provide the Company with any
+                      additional information and complete any required tax or other forms relating
+                      to your receipt of Celo Gold Units and/or Celo Gold.
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      BTUs, and any corresponding Celo Gold Units and Celo Gold, earned as a result
+                      of fraudulent activities are null and void. The Company reserves the right to
+                      request information about, review and investigate all TGCSO activities, and to
+                      disqualify Participants if it believes a Participant has engaged in any
+                      activity that is abusive, fraudulent, in bad faith or otherwise fails to meet
+                      TGCSO standards and requirements. The Company may determine that BTUs earned
+                      through legitimate actions (e.g., not fraud) are not affected by suspension or
+                      termination.
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      If for any reason, as determined solely by the Company, the Participant is not
+                      eligible to receive Celo Gold Units and/or Celo Gold, the Company will
+                      endeavor, but will not be required, to provide some compensation to
+                      Participant, again within the sole discretion of the Company.
+                    &lt;/Li&gt;
+                  &lt;/Ul&gt;
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Wallet. If you use a wallet application, you are responsible for the management of
+                  the private keys for your wallet(s). The Company does not and will not manage,
+                  store, collect or otherwise access the private keys for your wallet(s). You’re
+                  responsible for all activities that occur using your wallet, whether or not you
+                  know about them.
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Feedback. The Company (and the larger Celo community) welcomes feedback, comments
+                  and suggestions for improvements to the Celo Technologies and the ultimate Mainnet
+                  launch of the Celo Protocol (“Feedback”). You can submit Feedback by emailing
+                  &lt;Link href="mailto:stakeoff@celo.org"&gt;stakeoff@celo.org&lt;/Link&gt;. You grant to the
+                  Company and the ultimate, open source Mainnet launch of the Celo Protocol, a
+                  non-exclusive, transferable, worldwide, perpetual, irrevocable, fully-paid,
+                  royalty-free license, with the right to sublicense, under any and all intellectual
+                  property rights that you own or control to use, copy, modify, create derivative
+                  works based upon and otherwise exploit the Feedback for any purpose, in any form,
+                  format, media or media channels now known or later developed or discovered.
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  General Prohibitions and Company’s Enforcement Rights. You agree to the following:
+                  &lt;Ul&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      To follow the Celo Community Code of Conduct as provided{' '}
+                      &lt;Link href="https://celo.org/code-of-conduct"&gt;here&lt;/Link&gt;
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You will not tamper with or hack TGCSO, the Celo Technology, the Company’s or
+                      other participants’ computer systems,or the technical delivery systems of
+                      Company’s providers including without limitation any attacks that may violate
+                      Amazon Web Services Acceptable Use Policy and Google Cloud Platform's
+                      Acceptable Use Policy;{' '}
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You will not Interfere with, or attempt to interfere with, the access of any
+                      user, host or network, including, without limitation, sending a virus,
+                      overloading, flooding, spamming, creating, encouraging or implementing Sibyl
+                      attacks or mail-bombing TGCSO, unless explicitly suggested by the Celo
+                      security bounty program with details specified on TGCSO Forum ;
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You will not impersonate or misrepresent your affiliation with any person or
+                      entity;{' '}
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You will not adversely affect the goodwill of the Company or the Protocol;
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You will not violate any applicable law or regulation; and
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You will not encourage or enable any other individual to do any of the
+                      foregoing or otherwise violate the Terms.
+                    &lt;/Li&gt;
+                  &lt;/Ul&gt;
+                  Although the Company is not obligated to monitor access to or participation in
+                  TGCSO, it has the right to do so for the purpose of operating TGCSO, to ensure
+                  compliance with the Terms and to comply with applicable law or other legal
+                  requirements. The Company reserves the right, but is not obligated, to suspend or
+                  terminate TGCSO at any time and without notice. The Company has the right to
+                  investigate violations of the Terms or conduct that affects TGCSO. The Company may
+                  further consult and cooperate with law enforcement authorities to prosecute those
+                  who violate the law.
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Cancellation, Suspension or Termination of TGCSO.
+                  &lt;Ul&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      The Company may, in its sole discretion, with or without prior notice and at
+                      any time, modify or terminate, temporarily or permanently, any portion of
+                      TGCSO.
+                    &lt;/Li&gt;
+                  &lt;/Ul&gt;
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Representations, Warranties and Disclaimers.
+                  &lt;Ul&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You must ensure that your wallet credentials are secure. If they are not,
+                      people may compromise and take action on your wallet. You should avoid copying
+                      scripts into your browser address bar, and avoid clicking on links, opening
+                      attachments or visiting Internet resources you do not trust. You are
+                      responsible for maintaining adequate security and control of any and all IDs,
+                      passwords, hints, personal identification numbers (PINs), or any other codes
+                      that you use to access your wallet or in relation to TGCSO. The Company
+                      assumes no responsibility for any losses resulting from any compromise of your
+                      wallet(s).
+                    &lt;/Li&gt;
+&nbsp;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      YOU ACCEPT AND ACKNOWLEDGE THAT THERE ARE RISKS ASSOCIATED WITH PARTICIPATING
+                      IN TGCSO INCLUDING, BUT NOT LIMITED TO, THE RISK OF FAILURE OF HARDWARE,
+                      SOFTWARE AND INTERNET CONNECTIONS, THE RISK OF MALICIOUS SOFTWARE
+                      INTRODUCTION, LOSS OF THE CELO GOLD AND/OR CELO GOLD UNITS HELD IN YOUR
+                      WALLET(S), AND THE RISK THAT THIRD PARTIES MAY OBTAIN UNAUTHORIZED ACCESS TO
+                      INFORMATION STORED WITHIN YOUR WALLET(S). YOU ACCEPT AND ACKNOWLEDGE THAT THE
+                      COMPANY WILL NOT BE RESPONSIBLE FOR ANY LOSSES, FAILURES, DISRUPTIONS, ERRORS,
+                      DISTORTIONS OR DELAYS YOU MAY EXPERIENCE WHEN PARTICIPATING IN TGCSO, HOWEVER
+                      CAUSED.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      YOU ACCEPT AND ACKNOWLEDGE THAT THERE ARE RISKS ASSOCIATED WITH USING ANY
+                      CRYPTOCURRENCY NETWORK, INCLUDING, BUT NOT LIMITED TO, THE RISK OF UNKNOWN
+                      VULNERABILITIES IN OR UNANTICIPATED CHANGES TO THE NETWORK PROTOCOL. YOU
+                      ACKNOWLEDGE AND ACCEPT THAT THE COMPANY HAS NO CONTROL OVER ANY CRYPTOCURRENCY
+                      NETWORK AND WILL NOT BE RESPONSIBLE FOR ANY HARM OCCURRING AS A RESULT OF SUCH
+                      RISKS. You have a sufficient understanding of the functionality, usage,
+                      storage, transmission mechanisms, and other material characteristics of
+                      cryptographic tokens, token storage mechanisms (such as token wallets),
+                      distributed ledger technology, and decentralized software systems to
+                      understand the terms of TGCSO and to appreciate the risks and implications
+                      relating to TGCSO, BTUs, Celo Gold Units and Celo Gold.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      THE COMPANY WILL NOT BE RESPONSIBLE OR LIABLE TO YOU FOR ANY LOSS AND TAKES NO
+                      RESPONSIBILITY FOR AND WILL NOT BE LIABLE TO YOU FOR YOUR PARTICIPATION IN
+                      TGCSO, INCLUDING BUT NOT LIMITED TO ANY LOSSES, DAMAGES OR CLAIMS ARISING
+                      FROM: (i) USER ERROR SUCH AS FORGOTTEN PASSWORDS, LOST OR MISSING PRIVATE
+                      KEYS, INCORRECTLY CONSTRUCTED TRANSACTIONS, OR MISTYPED ADDRESSES; (ii) SERVER
+                      FAILURE; (iii) CORRUPTED WALLET FILES; (iv) UNAUTHORIZED ACCESS TO
+                      APPLICATIONS; OR (v) ANY UNAUTHORIZED THIRD PARTY ACTIVITIES, INCLUDING
+                      WITHOUT LIMITATION THE USE OF VIRUSES, PHISHING, BRUTE FORCING OR OTHER MEANS
+                      OF ATTACK AGAINST TGCSO.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      THE COMPANY MAKES NO WARRANTY THAT TGCSO INCLUDING THE SERVER THAT MAKES TGCSO
+                      AVAILABLE, ARE FREE OF VIRUSES OR ERRORS, THAT IT WILL BE UNINTERRUPTED, OR
+                      THAT DEFECTS WILL BE CORRECTED. THE COMPANY WILL NOT BE RESPONSIBLE OR LIABLE
+                      TO YOU FOR ANY LOSS OF ANY KIND, FROM ACTION TAKEN, OR TAKEN IN RELIANCE ON
+                      MATERIAL, OR INFORMATION, CONTAINED OR MADE AVAILABLE THROUGH TGCSO.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      BTUs, CELO GOLD UNITS AND ANY CELO GOLD THAT YOU MAY ULTIMATELY RECEIVE AS
+                      PART OF TGCSO ARE PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND. WITHOUT
+                      LIMITING THE FOREGOING, THE COMPANY EXPLICITLY DISCLAIMS ANY IMPLIED
+                      WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, VALUE, QUIET
+                      ENJOYMENT AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF
+                      DEALING OR USAGE OF TRADE. The Company makes no warranty that TGCSO will meet
+                      your requirements or be available on an uninterrupted, secure, or error-free
+                      basis. The Company makes no warranty regarding the quality, accuracy,
+                      timeliness, truthfulness, completeness or reliability of any information or
+                      materials offered in connection with TGCSO or on TGCSO Forum. YOU ASSUME ALL
+                      RISK AND LIABILITY FOR THE RESULTS OBTAINED BY THE USE OF CELO TECHNOLOGIES
+                      AND ANY RECEIVED CELO GOLD UNITS AND CELO GOLD AND REGARDLESS OF ANY ORAL OR
+                      WRITTEN STATEMENTS MADE BY THE COMPANY, BY WAY OF TECHNICAL ADVICE OR
+                      OTHERWISE, RELATED TO CELO GOLD UNITS AND CELO GOLD. ANY CELO GOLD UNITS AND
+                      CELO GOLD THAT YOU ULTIMATELY MAY RECEIVE AS PART OF TGCSO MAY NOT HAVE A
+                      MARKET AND MAY HAVE NO VALUE.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You accept and assume all risks and liabilities that the Company and/or third
+                      parties participating in TGCSO may be subject to investigative and punitive
+                      actions from governmental authorities.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      You may suffer adverse tax consequences as a result of your participation in
+                      TGCSO. you hereby represent that (i) you have consulted with a tax adviser
+                      that you deem advisable in connection with your participation, or that you
+                      have had the opportunity to obtain tax advice but have chosen not to do so,
+                      (ii) the Company has not provided you with any tax advice with respect to your
+                      participation, and (iii) you are not relying on the Company for any tax
+                      advice. You agree to be fully responsible for any taxes resulting from your
+                      TGCSO participation.
+                    &lt;/Li&gt;
+                  &lt;/Ul&gt;
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Indemnity. You will indemnify and hold harmless The Company, its affiliates, and
+                  their respective officers, directors, employees and agents (together, the
+                  “Released Parties”), from and against any claims, disputes, demands, liabilities,
+                  damages, losses, and costs and expenses, including, without limitation, reasonable
+                  legal and accounting fees arising out of or in any way connected with (i) your
+                  access to or participation in TGCSO, (ii) your violation of the Terms, and (iii)
+                  acceptance or use of Celo Gold Units or Celo Gold deliver to you in connection
+                  with TGCSO.
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Limitation of Liability.
+                  &lt;Ul&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      NEITHER THE RELEASED PARTIES NOR ANY OTHER PARTY INVOLVED IN TGCSO WILL BE
+                      LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, OR
+                      DAMAGES FOR LOST PROFITS, LOST REVENUES, LOST SAVINGS, LOST BUSINESS
+                      OPPORTUNITY, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE
+                      OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE ACTIVITIES OF ANY KIND ARISING OUT
+                      OF OR IN CONNECTION WITH THESE TERMS OR YOUR PARTICIPATION IN, OR INABILITY TO
+                      PARTICIPATE IN, TGCSO, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING
+                      NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT
+                      COMPANY OR ANY OTHER PARTY HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH
+                      DAMAGE, EVEN IF A LIMITED REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF
+                      ITS ESSENTIAL PURPOSE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR
+                      LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE
+                      LIMITATION MAY NOT APPLY TO YOU.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      IN NO EVENT WILL THE RELEASED PARTIES’ TOTAL LIABILITY TO YOU ARISING OUT OF
+                      OR IN CONNECTION WITH THESE TERMS OR FROM THE PARTICIPATION IN, OR INABILITY
+                      TO PARTICIPATE IN, TGCSO EXCEED THE TOTAL NUMBER OF BTUs STAKED BY YOU IN
+                      TGCSO.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      THE EXCLUSIONS AND LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL
+                      ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN COMPANY AND YOU.
+                    &lt;/Li&gt;
+                  &lt;/Ul&gt;
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Governing Law and Forum Choice. These Terms and any action related thereto will be
+                  governed by the laws of the state of California in the United States of America
+                  without regard to its conflict of laws provisions. The exclusive jurisdiction for
+                  all Disputes (defined below) will be in San Francisco, California, and you and
+                  Company each waive any objection to such jurisdiction and venue.
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Dispute Resolution. You agree that, by participating in TGCSO, any dispute,
+                  controversy, difference or claim arising out of, relating to or in connection with
+                  this contract, or the breach, termination or invalidity thereof (together, the
+                  “Disputes”), shall be finally settled by arbitration referred to the American
+                  Arbitration Association in accordance with the Association’s arbitration rules.
+                  The place of arbitration shall be in San Francisco, California. The language of
+                  arbitration shall be English. The arbitral award shall be final and binding upon
+                  both parties. YOU AND COMPANY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER
+                  ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN
+                  ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. Further, unless both you and
+                  Company agree otherwise, the arbitrator may not consolidate more than one person's
+                  claims with your claims, and may not otherwise preside over any form of a
+                  representative or class proceeding. If this specific provision is found to be
+                  unenforceable, then the entirety of this Dispute Resolution section shall be null
+                  and void.
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  General Terms.
+                  &lt;Ul&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      &lt;Text style={textStyles.heavy}&gt;Entire Agreement.&lt;/Text&gt; These Terms constitute
+                      the entire and exclusive understanding and agreement between Company and you
+                      regarding TGCSO, and the Terms supersede and replace any and all prior oral or
+                      written understandings or agreements between Company and you regarding TGCSO.
+                      If any provision of the Terms is held invalid or unenforceable by an
+                      arbitrator or a court of competent jurisdiction, that provision will be
+                      enforced to the maximum extent permissible and the other provisions of the
+                      Terms will remain in full force and effect. You may not assign or transfer the
+                      Terms, by operation of law or otherwise, without Company’s prior written
+                      consent. Any attempt by you to assign or transfer the Terms, without such
+                      consent, will be null and void. Company may freely assign or transfer these
+                      Terms without restriction. Subject to the foregoing, these Terms will bind and
+                      inure to the benefit of the parties, their successors and permitted assigns.
+                      The Released Parties other than the Company are third party beneficiaries to
+                      these Terms.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      &lt;Text style={textStyles.heavy}&gt;Notices.&lt;/Text&gt; Any notices or other
+                      communications provided by Company under the Terms, including those regarding
+                      modifications to the Terms, will be given by posting to TGCSO Forum.
+                    &lt;/Li&gt;
+                    &lt;Li listStyle={ListType.alpha}&gt;
+                      &lt;Text style={textStyles.heavy}&gt;Waiver of Rights.&lt;/Text&gt; Company’s failure to
+                      enforce any right or provision of these Terms will not be considered a waiver
+                      of such right or provision. The waiver of any such right or provision will be
+                      effective only if in writing and signed by a duly authorized representative of
+                      Company. Except as expressly set forth in these Terms, the exercise by either
+                      party of any of its remedies under these Terms will be without prejudice to
+                      its other remedies under these Terms or otherwise.
+                    &lt;/Li&gt;
+                  &lt;/Ul&gt;
+                &lt;/Li&gt;
+                &lt;Li listStyle={ListType.numeric}&gt;
+                  Contact Information. If you have any questions about these Terms or TGCSO, please
+                  contact &lt;Link href="mailto:stakeoff@celo.org"&gt;stakeoff@celo.org&lt;/Link&gt;
+                &lt;/Li&gt;
+              &lt;/Ul&gt;
+            &lt;/Cell&gt;
+          &lt;/GridRow&gt;
+        &lt;/View&gt;
+      &lt;/&gt;
+    )
+  }
+}
+&nbsp;
+function Link({ children, href }) {
+  return &lt;Button text={children} href={href} kind={BTN.INLINE} /&gt;
+}
+&nbsp;
+export default withNamespaces(NameSpaces.terms)(StakeoffTerms)
+&nbsp;
+const styles = StyleSheet.create({
+  container: {
+    marginTop: HEADER_HEIGHT,
+    paddingTop: HEADER_HEIGHT,
+  },
+})
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
+                at Thu Jul 02 2020 13:08:48 GMT+0200 (GMT+02:00)
+            </div>
+        </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    

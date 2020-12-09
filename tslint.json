@@ -1,0 +1,9 @@
+{
+  "extends": ["@celo/typescript/tslint.json"],
+  "rules": {
+    "max-classes-per-file": [true, 2],
+    "no-global-arrow-functions": false,
+    "no-floating-promises": true,
+    "react-hooks-nesting": "error"
+  }
+}
