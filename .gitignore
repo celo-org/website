@@ -5,3 +5,4 @@ dist/
 # keys
 env-config.js
 server-env-config.js
+yarn-error.log

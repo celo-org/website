@@ -27,6 +27,7 @@
   "dependencies": {
     "@celo/utils": "0.1.9",
     "@contentful/rich-text-react-renderer": "^14.1.1",
+    "@emotion/core": "^10.0.28",
     "@next/bundle-analyzer": "^9.3.5",
     "@sentry/browser": "^5.20.1",
     "@sentry/node": "^5.20.1",
@@ -73,6 +74,7 @@
     "react-apollo": "^3.1.3",
     "react-async-hook": "^3.6.1",
     "react-autosuggest": "^10.0.2",
+    "react-awesome-reveal": "^3.3.1",
     "react-debounce-input": "^3.2.2",
     "react-dom": "16.11.0",
     "react-ga": "^3.1.2",
@@ -82,7 +84,6 @@
     "react-lazyload-fadein": "^1.1.0",
     "react-modal": "^3.11.1",
     "react-native-web": "^0.13.12",
-    "react-awesome-reveal": "^3.3.1",
     "react-youtube": "^7.9.0",
     "scroll-into-view": "^1.13.1",
     "sha1": "^1.1.1",
