@@ -1,8 +1,11 @@
-const defaultConfig = require('../../jest.config.js')
-const { jsdomFlakeTracking } = require('@celo/flake-tracker/src/jest/config.js')
-
 module.exports = {
-  ...defaultConfig,
+  collectCoverageFrom: ['**/src/**/*.ts?(x)', '!**/*.d.ts'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  testMatch: ['**/?(*.)(spec|test).ts?(x)'],
+  transform: {
+    '\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.jsx?$': 'babel-jest',
+  },
   globals: {
     'ts-jest': {
       isolatedModules: true,
@@ -18,7 +21,6 @@ module.exports = {
     'public/(.*)$': '<rootDir>/public/$1',
   },
   preset: 'react-native-web',
-  ...jsdomFlakeTracking,
   setupFiles: ['./jestSetup.js', 'jest-canvas-mock'],
-  setupFilesAfterEnv: ['./jestSetupAfter.ts', ...jsdomFlakeTracking.setupFilesAfterEnv],
+  setupFilesAfterEnv: ['./jestSetupAfter.ts'],
 }
