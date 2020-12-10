@@ -26,10 +26,5 @@
     "isolatedModules": true
   },
   "exclude": ["dist"],
-  "references": [
-    {
-      "path": "../sdk/utils"
-    }
-  ],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
