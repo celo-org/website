@@ -6,3 +6,5 @@ dist/
 env-config.js
 server-env-config.js
 yarn-error.log
+
+coverage/
