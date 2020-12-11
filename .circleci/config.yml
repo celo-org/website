@@ -1,0 +1,82 @@
+node-defaults: &NODE
+  working_directory: ~/app
+  docker:
+    - image: celohq/node10-gcloud:v3
+  environment:
+    # To avoid ENOMEM problem when running node
+    NODE_OPTIONS: '--max-old-space-size=4096'
+
+checkout-workspace-defaults:
+  - &CHECKOUT-WORKSPACE
+    attach_workspace:
+      at: ~/app
+
+version: 2
+
+workflows:
+  version: 2
+  CI:
+    jobs:
+      - install
+      - test:
+          requires:
+            - install
+      - build:
+          requires:
+            - install
+      - build-next:
+          requires:
+            - install
+
+jobs:
+
+  # Install
+  install:
+    <<: *NODE
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - website-dependencies-{{ checksum "package.json" }}
+          - website-dependencies-
+      - run: yarn
+      - save_cache:
+          paths:
+            - node_modules
+          key: website-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
+
+  # Tests
+  test:
+    <<: *NODE
+    steps:
+      - checkout
+      - *CHECKOUT-WORKSPACE
+      - run: yarn test
+      - persist_to_workspace:
+          root: .
+          paths:
+            - coverage
+
+  # Build
+  build:
+    <<: *NODE
+    steps:
+      - checkout
+      - *CHECKOUT-WORKSPACE
+      - run: yarn build
+
+  # Build Next
+  build-next:
+    <<: *NODE
+    steps:
+      - checkout
+      - *CHECKOUT-WORKSPACE
+      - run: yarn build:next
+      - persist_to_workspace:
+          root: .
+          paths:
+            - dist
