@@ -24,10 +24,7 @@ workflows:
       - build:
           requires:
             - install
-      - build-next:
-          requires:
-            - install
-
+            
 jobs:
 
   # Install
@@ -60,6 +57,8 @@ jobs:
           root: .
           paths:
             - coverage
+      - store_test_results:
+          path: test-results
 
   # Build
   build:
@@ -68,15 +67,3 @@ jobs:
       - checkout
       - *CHECKOUT-WORKSPACE
       - run: yarn build
-
-  # Build Next
-  build-next:
-    <<: *NODE
-    steps:
-      - checkout
-      - *CHECKOUT-WORKSPACE
-      - run: yarn build:next
-      - persist_to_workspace:
-          root: .
-          paths:
-            - dist
