@@ -21,6 +21,9 @@
     "lint": "tslint -c tslint.json --project tsconfig.json",
     "kill-dev": "kill -9 $(lsof -ti :3000)",
     "clean-next-cache": "rm -rf .next",
+    "postinstall": "yarn keys:decrypt",
+    "keys:decrypt": "bash scripts/key_placer.sh decrypt",
+    "keys:encrypt": "bash scripts/key_placer.sh encrypt",
     "test": "TZ=UTC jest --coverage --runInBand",
     "spec": "jest"
   },
