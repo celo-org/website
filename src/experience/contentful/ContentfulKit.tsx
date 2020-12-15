@@ -12,11 +12,11 @@ export interface Props {
   path: string
   ogImage: string
   sidebar: SideBarEntry[]
-  sections: Array<{
+  sections: {
     name: string
     contentField: Document
     slug: string
-  }>
+  }[]
 }
 
 const OPTIONS = {

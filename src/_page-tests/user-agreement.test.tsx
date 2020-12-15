@@ -5,10 +5,10 @@ import * as React from 'react'
 import * as renderer from 'react-test-renderer'
 import { TestProvider } from 'src/_page-tests/test-utils'
 
-const SECTIONS: Array<{
+const SECTIONS: {
   name: string
   contentField: Document
-}> = [
+}[] = [
   {
     name: 'Article 1',
     contentField: {

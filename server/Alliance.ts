@@ -61,7 +61,7 @@ export function normalize(asset: Fields): Ally {
 
 // creates entry in airtable and (if opted in) in active campaign
 export async function create(data: NewMember) {
-  const actions: Array<Promise<any>> = [
+  const actions: Promise<any>[] = [
     getAirtable<WebRequestFields>(WRITE_SHEET).create(convertWebToAirtable(data)),
   ]
 

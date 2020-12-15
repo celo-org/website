@@ -66,7 +66,7 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
 interface ContentFulPage {
   title: string
   slug: string
-  sections: Array<Entry<{ name: string; contentField: Document; slug: string }>>
+  sections: Entry<{ name: string; contentField: Document; slug: string }>[]
 }
 
 export async function getPageBySlug(slug: string, { locale }) {
@@ -110,7 +110,7 @@ interface FAQItem {
 
 interface FAQcollection {
   title: string
-  list: Array<Entry<FAQItem>>
+  list: Entry<FAQItem>[]
 }
 
 export async function getFAQ({ locale }) {

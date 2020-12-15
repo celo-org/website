@@ -19,10 +19,10 @@ interface Props {
   slug: string
   updatedAt: string
   description: string
-  sections: Array<{
+  sections: {
     name: string
     contentField: Document
-  }>
+  }[]
 }
 
 class Agreement extends React.PureComponent<I18nProps & Props> {

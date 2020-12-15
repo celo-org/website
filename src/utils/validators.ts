@@ -5,9 +5,9 @@ import { weiToDecimal } from 'src/utils/utils'
 export const localStoragePinnedKey = 'pinnedValidators'
 
 export interface Edges<T> {
-  edges: Array<{
+  edges: {
     node: T
-  }>
+  }[]
 }
 
 export type Address = string
@@ -71,7 +71,7 @@ export interface CeloGroup {
   rewardsStyle: any
   numMembers: number
   claims: string[]
-  validators: Array<{
+  validators: {
     name: string
     address: Address
     usd: number
@@ -82,7 +82,7 @@ export interface CeloGroup {
     uptime: number
     attestation: number
     claims: string[]
-  }>
+  }[]
 }
 
 export interface ValidatorsListData {
