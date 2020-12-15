@@ -21,10 +21,13 @@ workflows:
       - test:
           requires:
             - install
+      - lint:
+          requires:
+            - install
       - build:
           requires:
             - install
-            
+
 jobs:
 
   # Install
@@ -67,3 +70,11 @@ jobs:
       - checkout
       - *CHECKOUT-WORKSPACE
       - run: yarn build
+
+  # Linter
+  lint:
+    <<: *NODE
+    steps:
+      - checkout
+      - *CHECKOUT-WORKSPACE
+      - run: yarn lint
