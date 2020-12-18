@@ -27,6 +27,9 @@ workflows:
       - build:
           requires:
             - install
+      - next-build:
+          requires:
+            - install
 
 jobs:
 
@@ -48,6 +51,8 @@ jobs:
           root: .
           paths:
             - node_modules
+            - env-config.js
+            - server-env-config.js
 
   # Tests
   test:
@@ -70,6 +75,12 @@ jobs:
       - checkout
       - *CHECKOUT-WORKSPACE
       - run: yarn build
+  next-build:
+    <<: *NODE
+    steps:
+      - checkout
+      - *CHECKOUT-WORKSPACE
+      - run: yarn build:next
 
   # Linter
   lint:
