@@ -35,7 +35,7 @@ class Agreement extends React.PureComponent<I18nProps & Props> {
         const getPageBySlug = await import('src/utils/contentful').then((mod) => mod.getPageBySlug)
         pageData = await getPageBySlug(context.req.query.slug, { locale: 'en-US' })
       } else {
-        const res = await fetch(`/api/page/plumo-terms`)
+        const res = await fetch(`/api/page/${context.query.slug}`)
         pageData = await res.json()
       }
       return { ...pageData, ...props }
