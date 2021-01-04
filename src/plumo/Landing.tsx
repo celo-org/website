@@ -18,6 +18,7 @@ import Sky from 'src/plumo/plumo-sky.svg'
 import Button, { BTN } from 'src/shared/Button.3'
 import { colors, fonts, standardStyles, textStyles } from 'src/styles'
 import FeatherPoint from './FeatherPoint'
+import InlineAnchor from "src/shared/InlineAnchor"
 
 const PLUMO_FORM =
   'https://docs.google.com/forms/d/e/1FAIpQLScZswraVVC91RwToo_9qm-1QzGrxp7yjVeM2wzdTbL5T_lAgQ/viewform'
@@ -143,7 +144,11 @@ export default function PlumoLanding() {
                 { maxWidth: 400, marginTop: 12 },
               ]}
             >
-              {t('mainBody2')}
+              <Trans ns={"plumo"} i18nKey={"mainBody2"}>
+                <InlineAnchor href="terms/plumo-terms">
+                  Terms Apply
+                </InlineAnchor>
+              </Trans>
             </Text>
             <Ul style={standardStyles.centered}>
               <Li style={[textStyles.invert, textStyles.center]}>
