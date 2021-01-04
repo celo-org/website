@@ -3,7 +3,7 @@ import FadeIn from 'react-lazyload-fadein'
 import { Image, StyleSheet, Text, View } from 'react-native'
 import { H2, Li, Ul } from 'src/fonts/Fonts'
 import OpenGraph from 'src/header/OpenGraph'
-import { useTranslation } from 'src/i18n'
+import { Trans, useTranslation } from "src/i18n"
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import { useScreenSize } from 'src/layout/ScreenSize'
 import LogoDarkBg from 'src/logos/LogoDarkBg'
