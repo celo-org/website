@@ -33,9 +33,11 @@ class Agreement extends React.PureComponent<I18nProps & Props> {
       // when run on server import fetching code and run. on client send req to api
       if (context.req) {
         const getPageBySlug = await import('src/utils/contentful').then((mod) => mod.getPageBySlug)
-        pageData = await getPageBySlug(context.req.query.slug, { locale: 'en-US' })
+        pageData = await getPageBySlug(context.pathname.replace(/^\//, ""), {
+          locale: "en-US",
+        })
       } else {
-        const res = await fetch(`/api/page/${context.query.slug}`)
+        const res = await fetch(`/api/page${context.pathname}`)
         pageData = await res.json()
       }
       return { ...pageData, ...props }

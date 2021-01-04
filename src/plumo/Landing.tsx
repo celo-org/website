@@ -145,7 +145,7 @@ export default function PlumoLanding() {
               ]}
             >
               <Trans ns={"plumo"} i18nKey={"mainBody2"}>
-                <InlineAnchor href="terms/plumo">Terms Apply</InlineAnchor>
+                <InlineAnchor href="/plumo-terms">Terms Apply</InlineAnchor>
               </Trans>
             </Text>
             <Ul style={standardStyles.centered}>
