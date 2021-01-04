@@ -39,10 +39,10 @@ class MyApp extends App {
   // currently this is just the animation demo pages and experience kits and out art project
   skipHeader() {
     return (
-      this.props.router.asPath.startsWith('/animation') ||
+      this.props.router.asPath.startsWith("/animation") ||
       this.isBrand() ||
       this.props.router.asPath.startsWith(pagePaths.FLOWERS.link) ||
-      this.props.router.asPath.startsWith(pagePaths.PLUMO.link)
+      this.props.router.asPath === pagePaths.PLUMO.link
     )
   }
 
