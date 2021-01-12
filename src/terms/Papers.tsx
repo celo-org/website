@@ -36,6 +36,13 @@ class Papers extends React.PureComponent<I18nProps> {
               <HelpfulLink text={'阅读'} href={'/papers/whitepaper/chinese'} />
             </View>
           </SideTitledSection>
+          <SideTitledSection span={Spans.three4th} title={''}>
+            <Text style={fonts.p}>{t('plumoTitle')}</Text>
+            <View style={styles.links}>
+            <HelpfulLink text={t('download')} href={'/papers/plumo'} />
+            </View>
+
+          </SideTitledSection>
           <SideTitledSection span={Spans.three4th} title={t('economics')}>
             <Text style={fonts.p}>{t('stabilityTitle')}</Text>
             <HelpfulLink text={t('download')} href={'/papers/stability'} />

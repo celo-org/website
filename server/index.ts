@@ -109,6 +109,10 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     )
   })
 
+  server.get('papers/plumo', (_, res) =>{
+    res.redirect('papers/proposal-plumo_celolightclient.pdf')
+  })
+
   server.get('/papers/whitepaper/chinese', (_, res) => {
     res.redirect('/papers/celo-wp-simplified-chinese.pdf')
   })
