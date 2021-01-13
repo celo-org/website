@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CeloRewards renders 1`] = `
+<div
+  className="css-view-1dbjc4n"
+  style={
+    Object {
+      "marginTop": "20px",
+    }
+  }
+>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "msFlexNegative": 0,
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <h1
+        aria-level="1"
+        className="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        role="heading"
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "26px",
+            "fontWeight": "500",
+            "lineHeight": "32px",
+            "marginBottom": "16px",
+            "textRendering": "geometricPrecision",
+            "textTransform": "none",
+          }
+        }
+      >
+        CELO Rewards Distribution Program
+      </h1>
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        Hold a minimum balance of $20 cUSD and earn weekly rewards!
+
+Eligible accounts must have a verified phone number on Valora and hold an average minimum balance of $20.00 cUSD during the reward period. Rewards are credited to your Valora account’s CELO balance at the end of our earnings period (approximately weekly).
+      </div>
+    </div>
+  </div>
+  <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+    data-focusable={true}
+    data-testid="AddCusd"
+    dir="auto"
+    href="celo://wallet/cashIn"
+    onClick={[Function]}
+    role="link"
+    style={
+      Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
+        "WebkitBoxPack": "center",
+        "WebkitJustifyContent": "center",
+        "alignItems": "center",
+        "backgroundColor": "rgba(26,183,117,1.00)",
+        "borderBottomLeftRadius": "24px",
+        "borderBottomRightRadius": "24px",
+        "borderBottomWidth": "0px",
+        "borderLeftWidth": "0px",
+        "borderRightWidth": "0px",
+        "borderTopLeftRadius": "24px",
+        "borderTopRightRadius": "24px",
+        "borderTopWidth": "0px",
+        "color": "rgba(255,255,255,1.00)",
+        "cursor": "pointer",
+        "display": "flex",
+        "fontFamily": "Jost, futura-pt, futura, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "height": "48px",
+        "justifyContent": "center",
+        "lineHeight": "16px",
+        "marginBottom": "30px",
+        "marginLeft": "20px",
+        "marginRight": "20px",
+        "marginTop": "30px",
+        "msFlexAlign": "center",
+        "msFlexPack": "center",
+        "textAlign": "center",
+        "textRendering": "geometricPrecision",
+      }
+    }
+  >
+    Add cUSD
+  </a>
+  <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+    data-focusable={true}
+    data-testid="learnMore"
+    dir="auto"
+    href="/celo-rewards-education"
+    onClick={[Function]}
+    role="link"
+    style={
+      Object {
+        "WebkitBoxPack": "center",
+        "WebkitJustifyContent": "center",
+        "color": "rgba(26,183,117,1.00)",
+        "display": "flex",
+        "fontFamily": "Jost, futura-pt, futura, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": "500",
+        "justifyContent": "center",
+        "marginBottom": "20px",
+        "msFlexPack": "center",
+      }
+    }
+  >
+    Learn More
+  </a>
+</div>
+`;

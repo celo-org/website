@@ -25,7 +25,11 @@ function CeloRewards({}) {
         />
         <AddCusdButton />
         <Link href={pagePaths.CELO_REWARDS_EDUCATION.link} passHref={true}>
-          <Text accessibilityRole="link" style={styles.learnMore}>
+          <Text
+            accessibilityRole="link"
+            style={styles.learnMore}
+            testID="learnMore"
+          >
             {t("learnMore")}
           </Text>
         </Link>

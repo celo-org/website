@@ -11,7 +11,11 @@ function AddCusdButton() {
 
   return (
     <Link href={buyCusdLink} passHref={true}>
-      <Text accessibilityRole="link" style={[styles.buttonText, standardStyles.blockMarginMobile]}>
+      <Text
+        accessibilityRole="link"
+        style={[styles.buttonText, standardStyles.blockMarginMobile]}
+        testID="AddCusd"
+      >
         {t("buycUsd")}
       </Text>
     </Link>
