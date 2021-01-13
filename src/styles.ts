@@ -43,6 +43,8 @@ export enum colors {
 
   grayHeavy = '#ABADAF',
   black = '#000',
+
+  greenUI = '#1AB775',
 }
 
 export enum typeFaces {

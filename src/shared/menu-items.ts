@@ -62,6 +62,16 @@ export const pagePaths = {
     menuHidePoint: 420,
     menuHidePointMobile: 320,
   },
+  CELO_REWARDS: {
+    name: 'CELO Rewards',
+    link: '/celo-rewards',
+    isDark: false,
+  },
+  CELO_REWARDS_EDUCATION: {
+    name: 'CELO Rewards',
+    link: '/celo-rewards-education',
+    isDark: false,
+  },
   CODE_OF_CONDUCT: {
     name: 'Code of Conduct',
     link: '/code-of-conduct',
@@ -208,6 +218,8 @@ export enum CeloLinks {
   buildWalletDocs = 'https://docs.celo.org/celo-codebase/wallet/intro',
   stakeOffTerms = '/stake-off/terms',
   youtube = 'https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw',
+  aboutCeloGovernance = 'https://medium.com/celoorg/celo-gold-holders-make-your-voice-heard-through-on-chain-governance-96cb5a1e8b90',
+  fundWallet = 'https://valoraapp.com/support/fund-wallet',
 }
 
 export const languageOptions = {
