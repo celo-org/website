@@ -4,7 +4,8 @@ This directory exists to support OpenPGP Web Key Directory on `celo.org`, which 
 
 ### How to publish a key
 
-Refer to `developer_key_publishing.md` in the root of this repository for a guide to publishing OpenPGP keys.
+Refer to `developer_key_publishing.md` in the root of
+[the monorepo](https://github.com/celo-org/celo-monorepo/blob/master/developer_key_publishing.md) for a guide to publishing OpenPGP keys.
 
 ### How to review a publishing PR
 
