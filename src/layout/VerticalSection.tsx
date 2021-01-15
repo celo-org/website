@@ -15,12 +15,12 @@ interface VerticalProps {
 function VerticalSection({ title, children, span = Spans.full, style, headerStyle, nativeID }: VerticalProps) {
   return (
     <>
-      <GridRow nativeID={nativeID}>
+      <GridRow nativeID={nativeID && `firstRow/${nativeID}`}>
         <Cell style={style} span={span}>
           <H3 style={[style, headerStyle]}>{title}</H3>
         </Cell>
       </GridRow>
-      <GridRow nativeID={nativeID}>
+      <GridRow nativeID={nativeID && `secondRow/${nativeID}`}>
         <Cell span={span} style={style}>{children}</Cell>
       </GridRow>
     </>
