@@ -6,13 +6,14 @@ import InlineAnchor from "src/shared/InlineAnchor";
 import menuItems, { CeloLinks } from "src/shared/menu-items";
 import { colors } from "src/styles";
 import AddCusdButton from "./AddCusdButton";
-import TitleAndDescription, { P } from "./TitleAndDescription";
+import GoBackButton from "./GoBackButton";
+import TitleAndDescription from "./TitleAndDescription";
 
 export interface Props {
   title: string;
 }
 
-function CeloRewardsEducation({}) {
+function CeloRewardsEducation() {
   const { t } = useTranslation(NameSpaces.celoRewards);
 
   return (
@@ -23,6 +24,7 @@ function CeloRewardsEducation({}) {
         description={t("description")}
       />
       <View style={styles.container}>
+        <GoBackButton />
         <TitleAndDescription
           title={t("title")}
           description={t("description")}

@@ -6,3 +6,9 @@ export function withRouter(Component) {
     return <Component router={{ pathName: '/test/' }} {...props} />
   }
 }
+
+export function useRouter() {
+  return {
+    back: jest.fn()
+  }
+}
