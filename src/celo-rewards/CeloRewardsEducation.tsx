@@ -2,7 +2,6 @@ import * as React from "react";
 import { StyleSheet, View } from "react-native";
 import OpenGraph from "src/header/OpenGraph";
 import { NameSpaces, Trans, useTranslation } from "src/i18n";
-import VerticalSection from "src/layout/VerticalSection";
 import InlineAnchor from "src/shared/InlineAnchor";
 import menuItems, { CeloLinks } from "src/shared/menu-items";
 import { colors } from "src/styles";
@@ -28,11 +27,10 @@ function CeloRewardsEducation({}) {
           title={t("title")}
           description={t("description")}
         />
-        <VerticalSection
+        <TitleAndDescription
           title={t("howItWorks.title")}
-          headerStyle={styles.subtitle}
-        >
-          <P>
+          titleStyle={styles.subtitle}
+          description={
             <Trans t={t} i18nKey={"howItWorks.body"}>
               <InlineAnchor
                 target="_blank"
@@ -42,13 +40,12 @@ function CeloRewardsEducation({}) {
                 {" "}
               </InlineAnchor>
             </Trans>
-          </P>
-        </VerticalSection>
-        <VerticalSection
+          }
+        />
+        <TitleAndDescription
           title={t("cUsdVsCelo.title")}
-          headerStyle={styles.subtitle}
-        >
-          <P>
+          titleStyle={styles.subtitle}
+          description={
             <Trans t={t} i18nKey={"cUsdVsCelo.body"}>
               <InlineAnchor
                 target="_blank"
@@ -58,21 +55,21 @@ function CeloRewardsEducation({}) {
                 {" "}
               </InlineAnchor>
             </Trans>
-          </P>
-        </VerticalSection>
-        <VerticalSection
+          }
+        />
+
+        <TitleAndDescription
           title={t("structure.title")}
-          headerStyle={styles.subtitle}
-        >
-          <P>{t("structure.body")}</P>
-        </VerticalSection>
+          titleStyle={styles.subtitle}
+          description={t("structure.body")}
+        />
         <AddCusdButton />
-        <VerticalSection
+        <TitleAndDescription
           title={t("questions.title")}
-          headerStyle={[styles.subtitle, styles.questionHeader]}
           style={styles.questionsContainer}
-        >
-          <P style={styles.questionsBody}>
+          titleStyle={[styles.subtitle, styles.questionHeader]}
+          descriptionStyle={styles.questionsBody}
+          description={
             <Trans t={t} i18nKey={"questions.body"}>
               <InlineAnchor
                 href={"mailto:support@valoraapp.com"}
@@ -81,8 +78,8 @@ function CeloRewardsEducation({}) {
                 {" "}
               </InlineAnchor>
             </Trans>
-          </P>
-        </VerticalSection>
+          }
+        />
       </View>
     </>
   );
@@ -96,7 +93,7 @@ const styles = StyleSheet.create({
   },
   link: {
     color: colors.greenUI,
-    textDecorationLine: 'none',
+    textDecorationLine: "none",
   },
   subtitle: {
     fontSize: 22,
