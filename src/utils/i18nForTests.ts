@@ -11,6 +11,7 @@ NextI18NextInstance.i18n.use(initReactI18next).init({
       [NameSpaces.alliance]: require('public/static/locales/en/alliance.json'),
       [NameSpaces.audits]: require('public/static/locales/en/audits.json'),
       [NameSpaces.brand]: require('public/static/locales/en/brand.json'),
+      [NameSpaces.celoRewards]: require('public/static/locales/en/celoRewards.json'),
       [NameSpaces.community]: require('public/static/locales/en/community.json'),
       [NameSpaces.common]: require('public/static/locales/en/common.json'),
       [NameSpaces.dev]: require('public/static/locales/en/dev.json'),

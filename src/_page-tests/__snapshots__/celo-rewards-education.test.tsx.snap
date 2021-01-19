@@ -1,0 +1,592 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CeloRewardsEducation renders 1`] = `
+<div
+  className="css-view-1dbjc4n"
+  style={
+    Object {
+      "marginTop": "20px",
+    }
+  }
+>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "msFlexNegative": 0,
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <h1
+        aria-level="1"
+        className="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        role="heading"
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "26px",
+            "fontWeight": "500",
+            "lineHeight": "32px",
+            "marginBottom": "16px",
+            "textRendering": "geometricPrecision",
+            "textTransform": "none",
+          }
+        }
+      >
+        CELO Rewards Distribution Program
+      </h1>
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        Hold a minimum balance of $20 cUSD and earn weekly rewards!
+
+Eligible accounts must have a verified phone number on Valora and hold an average minimum balance of $20.00 cUSD during the reward period. Rewards are credited to your Valora account’s CELO balance at the end of our earnings period (approximately weekly).
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "msFlexNegative": 0,
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <h1
+        aria-level="1"
+        className="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        role="heading"
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "22px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "marginBottom": "16px",
+            "textRendering": "geometricPrecision",
+            "textTransform": "none",
+          }
+        }
+      >
+        Here’s how it works:
+      </h1>
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        1) Transfer cUSD to your Valora app by following the instructions 
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          style={
+            Object {
+              "display": "inline",
+            }
+          }
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
+            data-focusable={true}
+            href="https://valoraapp.com/support/fund-wallet"
+            onClick={[Function]}
+            rel=" noopener noreferrer"
+            role="link"
+            style={
+              Object {
+                "WebkitTextDecorationStyle": "solid",
+                "color": "rgba(26,183,117,1.00)",
+                "cursor": "pointer",
+                "display": "inline",
+                "opacity": 1,
+                "textDecoration": "none",
+                "textDecorationStyle": "solid",
+              }
+            }
+            target="_blank"
+          >
+            here
+          </a>
+        </div>
+        
+
+2) If you haven’t verified your account yet, confirm your phone number by following the steps in-app
+
+3) Rewards are calculated and distributed weekly depending on how much cUSD you have held in your Valora account:
+Tier 1: $20-100 cUSD → earn 1 CELO per week
+Tier 2: $101-500 cUSD → earn 5 CELO per week
+Tier 3: $501+ cUSD → earn 10 CELO per week
+
+4) Rewards will be credited to your Valora wallet’s CELO balance at the end of our earnings period (approximately weekly)
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "msFlexNegative": 0,
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <h1
+        aria-level="1"
+        className="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        role="heading"
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "22px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "marginBottom": "16px",
+            "textRendering": "geometricPrecision",
+            "textTransform": "none",
+          }
+        }
+      >
+        What is CELO vs cUSD?
+      </h1>
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        CELO and cUSD are the current assets supported by Valora on the Celo Network, which provides fast, secure, and stable digital payments. The two main differences between the two assets are function and price.
+
+Celo Dollars, or cUSD, is a stablecoin whose value tracks that of the US Dollar. Since it tracks the US Dollar, cUSD is said to be ‘stable’. It is also built for accessibility and ease of use, so you can easily pay, save and send with cUSD using Valora.
+
+CELO is the native asset and core utility, governance, reserve, and staking mechanism for the Celo Network. When you own CELO, you can have a say by voting on how the Celo Network evolves and grows over time. CELO has a fixed supply, and a variable value related to the total value of stablecoins in circulation in the Celo ecosystem. 
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          style={
+            Object {
+              "display": "inline",
+            }
+          }
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
+            data-focusable={true}
+            href="https://medium.com/celoorg/celo-gold-holders-make-your-voice-heard-through-on-chain-governance-96cb5a1e8b90"
+            onClick={[Function]}
+            rel=" noopener noreferrer"
+            role="link"
+            style={
+              Object {
+                "WebkitTextDecorationStyle": "solid",
+                "color": "rgba(26,183,117,1.00)",
+                "cursor": "pointer",
+                "display": "inline",
+                "opacity": 1,
+                "textDecoration": "none",
+                "textDecorationStyle": "solid",
+              }
+            }
+            target="_blank"
+          >
+            Learn more about governance on the Celo Network.
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "msFlexNegative": 0,
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <h1
+        aria-level="1"
+        className="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        role="heading"
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "22px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "marginBottom": "16px",
+            "textRendering": "geometricPrecision",
+            "textTransform": "none",
+          }
+        }
+      >
+        CELO Rewards Distribution Program Structure
+      </h1>
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        Hold an average minimum weekly balance of 5 cUSD in your Valora account for 1 week and earn 1 CELO, hold an average minimum weekly balance of 20 cUSD in your Valora account for 1 week and earn 5 CELO,  hold an average minimum weekly balance of 50 cUSD in your Valora account for 1 week and earn 15 CELO. This matching rate is subject to change at any time without notice before and after an account is opened.
+
+We use the block balance method to calculate the reward for your account. This method applies a periodic rate to the principal cUSD balance in the account at each block.
+
+Calculations are estimates of expected rewards earned. Actual results may vary, based on various factors such as leap years, timing of transfers, rounding, and variation in matching rates. The first recurring deposit is assumed to begin in the second period after any initial deposit of cUSD.
+      </div>
+    </div>
+  </div>
+  <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+    data-focusable={true}
+    data-testid="AddCusd"
+    dir="auto"
+    href="celo://wallet/cashIn"
+    onClick={[Function]}
+    role="link"
+    style={
+      Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
+        "WebkitBoxPack": "center",
+        "WebkitJustifyContent": "center",
+        "alignItems": "center",
+        "backgroundColor": "rgba(26,183,117,1.00)",
+        "borderBottomLeftRadius": "24px",
+        "borderBottomRightRadius": "24px",
+        "borderBottomWidth": "0px",
+        "borderLeftWidth": "0px",
+        "borderRightWidth": "0px",
+        "borderTopLeftRadius": "24px",
+        "borderTopRightRadius": "24px",
+        "borderTopWidth": "0px",
+        "color": "rgba(255,255,255,1.00)",
+        "cursor": "pointer",
+        "display": "flex",
+        "fontFamily": "Jost, futura-pt, futura, sans-serif",
+        "fontSize": "17px",
+        "fontWeight": "600",
+        "height": "48px",
+        "justifyContent": "center",
+        "lineHeight": "16px",
+        "marginBottom": "30px",
+        "marginLeft": "20px",
+        "marginRight": "20px",
+        "marginTop": "30px",
+        "msFlexAlign": "center",
+        "msFlexPack": "center",
+        "textAlign": "center",
+        "textRendering": "geometricPrecision",
+      }
+    }
+  >
+    Add cUSD
+  </a>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitAlignItems": "center",
+          "WebkitBoxAlign": "center",
+          "WebkitBoxFlex": 0,
+          "WebkitBoxPack": "center",
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "WebkitJustifyContent": "center",
+          "alignItems": "center",
+          "display": "flex",
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "justifyContent": "center",
+          "msFlexAlign": "center",
+          "msFlexNegative": 0,
+          "msFlexPack": "center",
+          "msFlexPositive": 0,
+          "paddingBottom": "0px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px",
+          "paddingTop": "0px",
+          "width": "100%",
+        }
+      }
+    >
+      <h1
+        aria-level="1"
+        className="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        role="heading"
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "22px",
+            "fontWeight": "500",
+            "lineHeight": "26px",
+            "marginBottom": "4px",
+            "textRendering": "geometricPrecision",
+            "textTransform": "none",
+          }
+        }
+      >
+        Questions?
+      </h1>
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "marginBottom": "40px",
+            "textAlign": "center",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        Send us a message at
+
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          style={
+            Object {
+              "display": "inline",
+            }
+          }
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
+            data-focusable={true}
+            href="mailto:support@valoraapp.com"
+            onClick={[Function]}
+            role="link"
+            style={
+              Object {
+                "WebkitTextDecorationStyle": "solid",
+                "color": "rgba(26,183,117,1.00)",
+                "cursor": "pointer",
+                "display": "inline",
+                "opacity": 1,
+                "textDecoration": "none",
+                "textDecorationStyle": "solid",
+              }
+            }
+          >
+            support@valoraapp.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
