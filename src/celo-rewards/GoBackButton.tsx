@@ -7,6 +7,9 @@ import { fonts, standardStyles, typeFaces } from "src/styles";
 function GoBackButton() {
   const { t } = useTranslation(NameSpaces.celoRewards);
   const router = useRouter();
+  if (typeof window !== "undefined" && window.history.length <= 1) {
+    return null
+  }
 
   return (
     <Text
