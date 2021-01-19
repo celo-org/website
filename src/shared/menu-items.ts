@@ -218,6 +218,7 @@ export enum CeloLinks {
   buildWalletDocs = 'https://docs.celo.org/celo-codebase/wallet/intro',
   stakeOffTerms = '/stake-off/terms',
   youtube = 'https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw',
+  defiPulse = 'https://defipulse.com/',
   aboutCeloGovernance = 'https://medium.com/celoorg/celo-gold-holders-make-your-voice-heard-through-on-chain-governance-96cb5a1e8b90',
   fundWallet = 'https://valoraapp.com/support/fund-wallet',
 }
