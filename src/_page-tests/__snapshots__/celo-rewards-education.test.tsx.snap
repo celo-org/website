@@ -9,35 +9,6 @@ exports[`CeloRewardsEducation renders 1`] = `
     }
   }
 >
-  <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-    data-focusable={true}
-    dir="auto"
-    onClick={[Function]}
-    role="link"
-    style={
-      Object {
-        "color": "rgba(46,51,56,1.00)",
-        "cursor": "pointer",
-        "fontFamily": "Jost, futura-pt, futura, sans-serif",
-        "fontSize": "14px",
-        "fontWeight": "400",
-        "lineHeight": "16px",
-        "marginBottom": "50px",
-        "marginLeft": "10px",
-        "marginRight": "10px",
-        "marginTop": "50px",
-        "paddingBottom": "10px",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "paddingTop": "10px",
-        "textAlign": "center",
-        "textRendering": "geometricPrecision",
-      }
-    }
-  >
-    Go Back
-  </a>
   <div
     className="css-view-1dbjc4n"
     style={
