@@ -8,6 +8,7 @@ import Discourse from 'src/icons/Discourse'
 import Instagram from 'src/icons/Instagram'
 import MediumLogo from 'src/icons/MediumLogo'
 import Octocat from 'src/icons/Octocat'
+import DefiPulse from 'src/icons/DefiPulse'
 import sendCoinIcon from 'src/icons/send-green-coin-lg-bg.png'
 import { TweetLogo } from 'src/icons/TwitterLogo'
 import YouTube from 'src/icons/YouTube'
@@ -74,6 +75,7 @@ const SOCIAL_MENU = [
     icon: <YouTube size={ICON_SIZE} color={colors.dark} />,
   },
   { name: 'Instagram', link: CeloLinks.instagram, icon: <Instagram size={ICON_SIZE} /> },
+  { name: 'Defi Pulse' , link: CeloLinks.defiPulse, icon: <DefiPulse size={ICON_SIZE} color={colors.dark}/>},
 ]
 
 interface Props {

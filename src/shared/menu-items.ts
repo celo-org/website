@@ -208,6 +208,7 @@ export enum CeloLinks {
   buildWalletDocs = 'https://docs.celo.org/celo-codebase/wallet/intro',
   stakeOffTerms = '/stake-off/terms',
   youtube = 'https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw',
+  defiPulse = 'https://defipulse.com/'
 }
 
 export const languageOptions = {
