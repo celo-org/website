@@ -12,6 +12,8 @@ describe('Logo for LinkendIn', () =>{
             </TestProvider>
         )
         expect(tree).toMatchSnapshot()
+        console.log("hello world")
+        
 
     })
 })
