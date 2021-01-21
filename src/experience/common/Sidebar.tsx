@@ -37,6 +37,7 @@ export default withScreenSize<Props>(
     return (
       <View style={container} nativeID="sidebar">
         {pages.map((page) => {
+    
           return (
             <React.Fragment key={page.href}>
               <Link
@@ -135,7 +136,6 @@ function isActive(path: string, currentPath: string) {
   }
   const hashIndex = currentPath.indexOf('#')
   const pathSansHash = hashIndex !== -1 ? currentPath.substring(0, hashIndex) : currentPath
-
   return path === pathSansHash
 }
 
