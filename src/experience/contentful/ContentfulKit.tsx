@@ -38,8 +38,6 @@ export default function ContentfulKit({
     }
   })
 
-  console.log(children + 'this is children')
-
 
   return (
     <Page
