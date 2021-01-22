@@ -17,6 +17,9 @@ interface Info {
 const info = frontMatter<Info>(content)
 
 export default function CodeOfConduct() {
+  console.log(info.body)
+  
+  debugger
   return (
     <>
       <OpenGraph
