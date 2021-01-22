@@ -67,7 +67,7 @@ exports[`CeloRewardsEducation renders 1`] = `
           }
         }
       >
-        CELO Rewards Distribution Program
+        CELO Rewards Program
       </h1>
       <div
         className="css-text-901oao"
@@ -84,9 +84,13 @@ exports[`CeloRewardsEducation renders 1`] = `
           }
         }
       >
-        Hold a minimum balance of $20 cUSD and earn weekly rewards!
+        Confirmed cUSD wallets can earn rewards by holding a minimum monthly average balance of:
 
-Eligible accounts must have a verified phone number on Valora and hold an average minimum balance of $20.00 cUSD during the reward period. Rewards are credited to your Valora account’s CELO balance at the end of our earnings period (approximately weekly).
+20 cUSD → Earn $1 worth of CELO per month
+100 cUSD → Earn $5 worth of CELO per month
+500 cUSD → Earn $10 worth of CELO per month
+
+Rewards are credited to your wallet’s CELO balance at the beginning of each month until the program ends.
       </div>
     </div>
   </div>
@@ -165,7 +169,7 @@ Eligible accounts must have a verified phone number on Valora and hold an averag
           }
         }
       >
-        1) Transfer cUSD to your Valora app by following the instructions 
+        1) Transfer cUSD to your wallet to participate! You can find the instructions for adding cUSD to a Valora wallet 
         <div
           className="css-view-1dbjc4n"
           onClick={[Function]}
@@ -202,16 +206,16 @@ Eligible accounts must have a verified phone number on Valora and hold an averag
             here
           </a>
         </div>
-        
+        .
 
-2) If you haven’t verified your account yet, confirm your phone number by following the steps in-app
+2) Confirm your wallet. An easy way to do this is to confirm your phone number with the Valora app by following the onboarding steps in the app!
 
-3) Rewards are calculated and distributed weekly depending on how much cUSD you have held in your Valora account:
-Tier 1: $20-100 cUSD → earn 1 CELO per week
-Tier 2: $101-500 cUSD → earn 5 CELO per week
-Tier 3: $501+ cUSD → earn 10 CELO per week
+3) Rewards are calculated and distributed monthly depending on how much cUSD you have held in your wallet:
+Tier 1: Minimum monthly average balance of 20 cUSD → earn $1 worth of CELO per month
+Tier 2: Minimum monthly average balance of 100 cUSD → earn $5 worth of CELO per month
+Tier 3: Minimum monthly average balance of 500 cUSD → earn $10 worth of CELO per month
 
-4) Rewards will be credited to your Valora wallet’s CELO balance at the end of our earnings period (approximately weekly)
+4) Rewards will be credited to your CELO balance at the end of the earnings period (expected monthly)
       </div>
     </div>
   </div>
@@ -290,7 +294,7 @@ Tier 3: $501+ cUSD → earn 10 CELO per week
           }
         }
       >
-        CELO and cUSD are the current assets supported by Valora on the Celo Network, which provides fast, secure, and stable digital payments. The two main differences between the two assets are function and price.
+        CELO and cUSD are the current assets supported by wallets like Valora on the Celo Network, which provides fast, secure, and stable digital payments. The two main differences between the two assets are function and price.
 
 Celo Dollars, or cUSD, is a stablecoin whose value tracks that of the US Dollar. Since it tracks the US Dollar, cUSD is said to be ‘stable’. It is also built for accessibility and ease of use, so you can easily pay, save and send with cUSD using Valora.
 
@@ -392,7 +396,7 @@ CELO is the native asset and core utility, governance, reserve, and staking mech
           }
         }
       >
-        CELO Rewards Distribution Program Structure
+        structure.title
       </h1>
       <div
         className="css-text-901oao"
@@ -409,11 +413,7 @@ CELO is the native asset and core utility, governance, reserve, and staking mech
           }
         }
       >
-        Hold an average minimum weekly balance of 5 cUSD in your Valora account for 1 week and earn 1 CELO, hold an average minimum weekly balance of 20 cUSD in your Valora account for 1 week and earn 5 CELO,  hold an average minimum weekly balance of 50 cUSD in your Valora account for 1 week and earn 15 CELO. This matching rate is subject to change at any time without notice before and after an account is opened.
-
-We use the block balance method to calculate the reward for your account. This method applies a periodic rate to the principal cUSD balance in the account at each block.
-
-Calculations are estimates of expected rewards earned. Actual results may vary, based on various factors such as leap years, timing of transfers, rounding, and variation in matching rates. The first recurring deposit is assumed to begin in the second period after any initial deposit of cUSD.
+        structure.body
       </div>
     </div>
   </div>
