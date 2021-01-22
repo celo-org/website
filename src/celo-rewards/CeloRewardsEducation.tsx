@@ -59,12 +59,6 @@ function CeloRewardsEducation() {
             </Trans>
           }
         />
-
-        <TitleAndDescription
-          title={t("structure.title")}
-          titleStyle={styles.subtitle}
-          description={t("structure.body")}
-        />
         <AddCusdButton />
         <TitleAndDescription
           title={t("questions.title")}
