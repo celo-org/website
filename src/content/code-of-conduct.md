@@ -80,7 +80,7 @@ If you are subject to or witness unacceptable behavior, or have any other concer
 If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify community@celo.org with a concise description of your grievance including any relevant supporting screenshots, photos, recordings, etc.
 
 ### 9. License and attribution
-This Code of Conduct is distributed under a [Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/3.0/). Portions of text derived from the [Citizen Code of Conduct](github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md), the [Django Code of Conduct](https://www.djangoproject.com/conduct/), the [Geek Feminism Anti-Harassment Policy](http://geekfeminism.wikia.com/wiki/Community_anti-harassment), the [Mozilla Foundation](https://www.mozilla.org/en-US/about/governance/policies/participation/#note-1), and the [Contributor Covenant](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html).
+This Code of Conduct is distributed under a [Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/3.0/). Portions of text derived from the [Citizen Code of Conduct](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md ), the [Django Code of Conduct](https://www.djangoproject.com/conduct/), the [Geek Feminism Anti-Harassment Policy](http://geekfeminism.wikia.com/wiki/Community_anti-harassment), the [Mozilla Foundation](https://www.mozilla.org/en-US/about/governance/policies/participation/#note-1), and the [Contributor Covenant](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html).
 
 ### 10. Modifications
 
