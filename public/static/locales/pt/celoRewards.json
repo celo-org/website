@@ -1,0 +1,20 @@
+{
+  "title": "Programa de Recompensas CELO",
+  "description": "Carteiras cUSD confirmadas podem ganhar recompensas mantendo um saldo mensal mínimo médio de:\n\n20 cUSD → ganhe US$ 1 em CELO por mês\n100 cUSD → ganhe US$ 5 em CELO por mês5 CELO por semana\n500 cUSD → ganhe US$ 10 em CELO por mês10 CELO por semana\n\nAs recompensas são creditadas ao saldo CELO de sua carteira no início de cada mês até o término do programa.",
+  "educationDescription": "Carteiras cUSD confirmadas podem ganhar recompensas mantendo um saldo mensal mínimo médio de:\n\n20 cUSD → ganhe US$ 1 em CELO por mês\n100 cUSD → ganhe US$ 5 em CELO por mês5 CELO por semana\n500 cUSD → ganhe US$ 10 em CELO por mês10 CELO por semana\n\nAs recompensas são creditadas ao saldo CELO de sua carteira no início de cada mês até o término do programa.\n\nParticipe com qualquer conta cUSD confirmada ou verificada mantendo um saldo mínimo médio mensal de cUSD 20,00 durante o período de ganhos. As recompensas são creditadas no saldo CELO de sua conta a cada mês.",
+  "buycUsd": "Adicionar cUSD",
+  "learnMore": "Saiba mais",
+  "howItWorks": {
+    "title": "Veja como funciona:",
+    "body": "1) Transfira cUSD para sua carteira para participar! Você pode encontrar as instruções para adicionar cUSD a uma carteira da Valora <0>aqui</0>.\n\n2) Confirme sua carteira. Uma maneira fácil de fazer isso é confirmar seu número de telefone com o aplicativo Valora seguindo os passos de verificação!\n\n3) As recompensas são calculadas e distribuídas semanalmente, dependendo de quantos cUSD você mantiver em sua carteira:\n\nNível 1: saldo mensal mínimo de 20 cUSD → ganhe US$ 1 em CELO por mês\nNível 2: saldo mensal mínimo de 100 cUSD → ganhe US$ 5 em CELO por mês\nNível 3: saldo mensal mínimo de 500 cUSD → ganhe US$ 10 em CELO por mês\n\n4) As recompensas serão creditadas ao seu saldo CELO no final do período de promoção  (aproximadamente mensalmentea)"
+  },
+  "cUsdVsCelo": {
+    "title": "Qual a diferença entre CELO e cUSD?",
+    "body": "CELO e cUSD são os ativos circulantes suportados por carteiras como a Valora na Rede Celo, que proporcionam pagamentos digitais rápidos, seguros e estáveis. As duas principais diferenças entre os dois ativos são suas funções e preços.\n\nCelo Dólares, ou cUSD, é uma moeda estável cujo valor acompanha o do dólar americano. Como ele acompanha o valor do dólar americano, o cUSD é considerado \"estável\". Ele também foi criado para oferecer acessibilidade e facilidade de uso, para que você possa pagar, guardar e enviar facilmente com cUSD usando a Valora.\n\nCELO é o ativo nativo e principal mecanismo de utilidade, governança, reserva e  staking da Rede Celo. Quando você possui CELO, você pode influenciara evolução e crescimento da Rede Celo ao longo do tempo, usando-o para votar. CELO tem uma oferta fixa e um valor variável relacionado ao valor total das moedas estáveis em circulação no ecossistema da Celo. <0>Saiba mais sobre governança na Rede Celo [em inglês].</0>"
+  },
+  "questions": {
+    "title": "Dúvidas?",
+    "body": "Envie-nos uma mensagem para\n<0>support@valoraapp.com</0>"
+  },
+  "goBack": "Retorna"
+}
