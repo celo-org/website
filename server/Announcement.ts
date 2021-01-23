@@ -15,8 +15,8 @@ interface Record {
   id: string
   fields: Fields
 }
-
-export default async function latestAnnouncements(ipAddress: string): Promise<Fields[]> {
+// countryCode is a ISO 3166-1 alpha-2
+export default async function latestAnnouncements(countryCode: string): Promise<Fields[]> {
   try {
     const announcements = await cache<Fields[]>('blue-announcements', fetchAnouncmentRecords)
 
@@ -25,9 +25,7 @@ export default async function latestAnnouncements(ipAddress: string): Promise<Fi
     )
 
     if (anyBlocked) {
-      const country = await getCountryFromIPCached(ipAddress)
-
-      return censor(announcements, country)
+      return censor(announcements, countryCode)
     }
     return announcements
   } catch (err) {

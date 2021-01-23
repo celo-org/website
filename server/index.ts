@@ -236,7 +236,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 
   server.get('/announcement', async (req, res) => {
     try {
-      const annoucements = await latestAnnouncements(req.ip)
+      const annoucements = await latestAnnouncements(req.header['X-Appengine-Country'])
       res.json(annoucements)
     } catch (e) {
       respondError(res, e)
