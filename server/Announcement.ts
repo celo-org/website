@@ -2,7 +2,6 @@ import getConfig from 'next/config'
 import airtableInit from '../server/airtable'
 import Sentry from '../server/sentry'
 import cache from './cache'
-import { getCountryFromIPCached } from './geoip'
 
 export interface Fields {
   live?: boolean
