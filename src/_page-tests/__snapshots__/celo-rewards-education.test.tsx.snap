@@ -85,12 +85,184 @@ exports[`CeloRewardsEducation renders 1`] = `
         }
       >
         Confirmed cUSD wallets can earn rewards by holding a minimum monthly average balance of:
+        
 
-20 cUSD → Earn $1 worth of CELO per month
-100 cUSD → Earn $5 worth of CELO per month
-500 cUSD → Earn $10 worth of CELO per month
+        <ul
+          className="css-reset-4rbku5 css-view-1dbjc4n"
+          role="list"
+          style={
+            Object {
+              "display": "inline-flex",
+              "listStyle": "disc",
+              "marginTop": "20px",
+              "paddingLeft": "20px",
+            }
+          }
+        >
+          <li
+            className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
+            onClick={[Function]}
+            role="listitem"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "display": "list-item",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "listStyle": "inherit",
+                "marginBottom": "20px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              <span
+                className="css-text-901oao css-textHasAncestor-16my406"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(46,51,56,1.00)",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "18px",
+                    "fontWeight": "bold",
+                    "lineHeight": "24px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                20 cUSD
+              </span>
+              
 
-Rewards are credited to your wallet’s CELO balance at the beginning of each month until the program ends.
+              Earn $1 worth of CELO per month
+            </span>
+          </li>
+          <li
+            className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
+            onClick={[Function]}
+            role="listitem"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "display": "list-item",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "listStyle": "inherit",
+                "marginBottom": "20px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              <span
+                className="css-text-901oao css-textHasAncestor-16my406"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(46,51,56,1.00)",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "18px",
+                    "fontWeight": "bold",
+                    "lineHeight": "24px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                100 cUSD
+              </span>
+              
+
+              Earn $5 worth of CELO per month
+            </span>
+          </li>
+          <li
+            className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
+            onClick={[Function]}
+            role="listitem"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "display": "list-item",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "listStyle": "inherit",
+                "marginBottom": "20px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              <span
+                className="css-text-901oao css-textHasAncestor-16my406"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(46,51,56,1.00)",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "18px",
+                    "fontWeight": "bold",
+                    "lineHeight": "24px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                500 cUSD
+              </span>
+              
+
+              Earn $10 worth of CELO per month
+            </span>
+          </li>
+        </ul>
+        
+
+        Rewards are credited to your wallet’s CELO balance at the beginning of each month until the program ends.
+        
+
+
+        Participate with any confirmed or verified cUSD account by holding a minimum average monthly balance of 20.00 cUSD during the earnings period.
       </div>
     </div>
   </div>
@@ -153,7 +325,12 @@ Rewards are credited to your wallet’s CELO balance at the beginning of each mo
           onClick={[Function]}
           style={
             Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "18px",
               "fontWeight": "bold",
+              "lineHeight": "24px",
+              "textRendering": "geometricPrecision",
             }
           }
         >
@@ -281,11 +458,180 @@ Rewards are credited to your wallet’s CELO balance at the beginning of each mo
 2) Confirm your wallet. An easy way to do this is to confirm your phone number with the Valora app by following the onboarding steps in the app!
 
 3) Rewards are calculated and distributed monthly depending on how much cUSD you have held in your wallet:
-Tier 1: Minimum monthly average balance of 20 cUSD → earn $1 worth of CELO per month
-Tier 2: Minimum monthly average balance of 100 cUSD → earn $5 worth of CELO per month
-Tier 3: Minimum monthly average balance of 500 cUSD → earn $10 worth of CELO per month
+        
 
-4) Rewards will be credited to your CELO balance at the end of the earnings period (expected monthly)
+        <ul
+          className="css-reset-4rbku5 css-view-1dbjc4n"
+          role="list"
+          style={
+            Object {
+              "display": "inline-flex",
+              "listStyle": "disc",
+              "marginTop": "20px",
+              "paddingLeft": "20px",
+            }
+          }
+        >
+          <li
+            className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
+            onClick={[Function]}
+            role="listitem"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "display": "list-item",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "listStyle": "inherit",
+                "marginBottom": "20px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              <span
+                className="css-text-901oao css-textHasAncestor-16my406"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(46,51,56,1.00)",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "18px",
+                    "fontWeight": "bold",
+                    "lineHeight": "24px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Tier 1
+              </span>
+              
+
+              Minimum monthly average balance of 20 cUSD → earn $1 worth of CELO per month
+            </span>
+          </li>
+          <li
+            className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
+            onClick={[Function]}
+            role="listitem"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "display": "list-item",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "listStyle": "inherit",
+                "marginBottom": "20px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              <span
+                className="css-text-901oao css-textHasAncestor-16my406"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(46,51,56,1.00)",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "18px",
+                    "fontWeight": "bold",
+                    "lineHeight": "24px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Tier 2
+              </span>
+              
+
+              Minimum monthly average balance of 100 cUSD → earn $5 worth of CELO per month
+            </span>
+          </li>
+          <li
+            className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
+            onClick={[Function]}
+            role="listitem"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "display": "list-item",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "listStyle": "inherit",
+                "marginBottom": "20px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              <span
+                className="css-text-901oao css-textHasAncestor-16my406"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(46,51,56,1.00)",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "18px",
+                    "fontWeight": "bold",
+                    "lineHeight": "24px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Tier 3
+              </span>
+              
+
+              Minimum monthly average balance of 500 cUSD → earn $10 worth of CELO per month
+            </span>
+          </li>
+        </ul>
+        
+
+        4) Rewards will be credited to your CELO balance at the end of the earnings period (expected monthly).
       </div>
     </div>
   </div>
@@ -488,11 +834,180 @@ CELO is the native asset and core utility, governance, reserve, and staking mech
 A confirmed address must have completed 3 text message attestations to be eligible for this program. You must have an eligible address to participate in the CELO Rewards program. This program may be terminated at any time and is void where prohibited.
 
 Rewards are calculated and distributed monthly (or weekly, during the introduction period) depending on how much cUSD you have held in your wallet:
-Tier 1: Minimum monthly (weekly, during the introduction period) average balance of 20 cUSD → earn $1 worth of CELO per month (per week during the introduction period)
-Tier 2: Minimum monthly (weekly, during the introduction period) average balance of 100 cUSD → earn $5 worth of CELO per month (per week during the introduction period)
-Tier 3: Minimum monthly (weekly, during the introduction period) average balance of 500 cUSD → earn $10 worth of CELO per month (per week during the introduction period)
+        
 
-The first reward is expected to be distributed on February 1st, 2021, and will continue to be distributed on a weekly basis during the introduction period, then monthly, for the duration of the program. 
+        <ul
+          className="css-reset-4rbku5 css-view-1dbjc4n"
+          role="list"
+          style={
+            Object {
+              "display": "inline-flex",
+              "listStyle": "disc",
+              "marginTop": "20px",
+              "paddingLeft": "20px",
+            }
+          }
+        >
+          <li
+            className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
+            onClick={[Function]}
+            role="listitem"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "display": "list-item",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "listStyle": "inherit",
+                "marginBottom": "20px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              <span
+                className="css-text-901oao css-textHasAncestor-16my406"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(46,51,56,1.00)",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "18px",
+                    "fontWeight": "bold",
+                    "lineHeight": "24px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Tier 1
+              </span>
+              
+
+              Minimum monthly (weekly, during the introduction period) average balance of 20 cUSD → earn $1 worth of CELO per month (per week during the introduction period)
+            </span>
+          </li>
+          <li
+            className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
+            onClick={[Function]}
+            role="listitem"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "display": "list-item",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "listStyle": "inherit",
+                "marginBottom": "20px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              <span
+                className="css-text-901oao css-textHasAncestor-16my406"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(46,51,56,1.00)",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "18px",
+                    "fontWeight": "bold",
+                    "lineHeight": "24px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Tier 2
+              </span>
+              
+
+              Minimum monthly (weekly, during the introduction period) average balance of 100 cUSD → earn $5 worth of CELO per month (per week during the introduction period)
+            </span>
+          </li>
+          <li
+            className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
+            onClick={[Function]}
+            role="listitem"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "display": "list-item",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "listStyle": "inherit",
+                "marginBottom": "20px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "18px",
+                  "fontWeight": "400",
+                  "lineHeight": "24px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              <span
+                className="css-text-901oao css-textHasAncestor-16my406"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "color": "rgba(46,51,56,1.00)",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "18px",
+                    "fontWeight": "bold",
+                    "lineHeight": "24px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Tier 3
+              </span>
+              
+
+              Minimum monthly (weekly, during the introduction period) average balance of 500 cUSD → earn $10 worth of CELO per month (per week during the introduction period)
+            </span>
+          </li>
+        </ul>
+        
+
+        The first earning period is expected to start on January 25th, 2021, at 20:00 UTC, and will continue to be distributed on a weekly basis during the introduction period, then monthly, for the duration of the program. 
 
 The balance calculation is determined by averaging the cUSD balance over all blocks in the blockchain during the earning period for each confirmed address. 
 

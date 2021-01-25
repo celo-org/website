@@ -5,6 +5,7 @@ import { NameSpaces, useTranslation } from "src/i18n";
 import menuItems from "src/shared/menu-items";
 import { HEADER_HEIGHT } from "src/shared/Styles";
 import { colors, typeFaces } from "src/styles";
+import TierList from "./TierList";
 import TitleAndDescription from "./TitleAndDescription";
 
 function CeloRewardsTerms({}) {
@@ -20,12 +21,24 @@ function CeloRewardsTerms({}) {
       <View style={styles.container}>
         <TitleAndDescription
           title={t("terms.title")}
-          description={t("terms.body")}
+          description={
+            <>
+              {t("terms.body.first")}
+              {"\n"}
+              <TierList baseTranslation="terms.body" totalTiers={3} />
+              {"\n"}
+              {t("terms.body.second")}
+            </>
+          }
         />
       </View>
     </>
   );
 }
+
+CeloRewardsTerms.getInitialProps = async () => ({
+  namespacesRequired: [NameSpaces.celoRewards],
+});
 
 export default CeloRewardsTerms;
 
