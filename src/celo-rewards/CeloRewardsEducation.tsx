@@ -7,6 +7,8 @@ import menuItems, { CeloLinks } from "src/shared/menu-items";
 import { colors } from "src/styles";
 import AddCusdButton from "./AddCusdButton";
 import GoBackButton from "./GoBackButton";
+import RewardsKickOff from "./RewardsKickOff";
+import TierList from "./TierList";
 import TitleAndDescription from "./TitleAndDescription";
 
 export interface Props {
@@ -27,21 +29,38 @@ function CeloRewardsEducation() {
         <GoBackButton />
         <TitleAndDescription
           title={t("title")}
-          description={t("description")}
+          description={
+            <>
+              {t("description.first")}
+              {"\n"}
+              <TierList baseTranslation="description" totalTiers={3} />
+              {"\n"}
+              {t("description.second")}
+              {"\n\n"}
+              {t("description.third")}
+            </>
+          }
         />
+        <RewardsKickOff />
         <TitleAndDescription
           title={t("howItWorks.title")}
           titleStyle={styles.subtitle}
           description={
-            <Trans t={t} i18nKey={"howItWorks.body"}>
-              <InlineAnchor
-                target="_blank"
-                href={CeloLinks.fundWallet}
-                style={styles.link}
-              >
-                {" "}
-              </InlineAnchor>
-            </Trans>
+            <>
+              <Trans t={t} i18nKey={"howItWorks.body.first"}>
+                <InlineAnchor
+                  target="_blank"
+                  href={CeloLinks.fundWallet}
+                  style={styles.link}
+                >
+                  {" "}
+                </InlineAnchor>
+              </Trans>
+              {"\n"}
+              <TierList baseTranslation="howItWorks.body" totalTiers={3} />
+              {"\n"}
+              {t("howItWorks.body.second")}
+            </>
           }
         />
         <TitleAndDescription
@@ -59,11 +78,17 @@ function CeloRewardsEducation() {
             </Trans>
           }
         />
-
         <TitleAndDescription
-          title={t("structure.title")}
-          titleStyle={styles.subtitle}
-          description={t("structure.body")}
+          title={t("terms.title")}
+          description={
+            <>
+              {t("terms.body.first")}
+              {"\n"}
+              <TierList baseTranslation="terms.body" totalTiers={3} />
+              {"\n"}
+              {t("terms.body.second")}
+            </>
+          }
         />
         <AddCusdButton />
         <TitleAndDescription
@@ -86,6 +111,10 @@ function CeloRewardsEducation() {
     </>
   );
 }
+
+CeloRewardsEducation.getInitialProps = async () => ({
+  namespacesRequired: [NameSpaces.celoRewards],
+});
 
 export default CeloRewardsEducation;
 

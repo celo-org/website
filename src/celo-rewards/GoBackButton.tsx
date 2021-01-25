@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import * as React from "react";
 import { StyleSheet, Text } from "react-native";
 import { NameSpaces, useTranslation } from "src/i18n";
-import { fonts, standardStyles, typeFaces } from "src/styles";
+import { colors, fonts, standardStyles, typeFaces } from "src/styles";
 
 function GoBackButton() {
   const { t } = useTranslation(NameSpaces.celoRewards);
@@ -17,7 +17,7 @@ function GoBackButton() {
       style={styles.buttonText}
       onClick={router.back}
     >
-      {t("Go Back")}
+      {t("goBack")}
     </Text>
   );
 }
@@ -28,9 +28,11 @@ const styles = StyleSheet.create({
   buttonText: {
     ...fonts.navigation,
     ...standardStyles.sectionMarginMobile,
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "400",
     fontFamily: typeFaces.futura,
+    color: colors.greenUI,
+    textDecorationLine: 'underline',
     padding: 10,
     marginHorizontal: 10,
   },

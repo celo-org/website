@@ -1,0 +1,54 @@
+{
+  "title": "Programa de Recompensas CELO",
+  "description": {
+    "first": "Las billeteras de cUSD confirmadas pueden ganar recompensas al mantener un saldo promedio mensual mínimo de:",
+    "second": "Las recompensas se acreditan al saldo CELO de tu cuenta al comienzo de cada mes hasta que finalice el programa.",
+    "third": "Participa con cualquier cuenta cUSD confirmada o verificada manteniendo un saldo mensual promedio mínimo de 20,00 cUSD durante el período de ganancias. Las recompensas se acreditarán al saldo CELO de tu cuenta cada mes.",
+    "tier1": {
+      "title": "20 cUSD",
+      "body": "Gana US$ 1 en CELO por mes"
+    },
+    "tier2": {
+      "title": "100 cUSD",
+      "body": "Gana US$ 5 en CELO por mes"
+    },
+    "tier3": {
+      "title": "500 cUSD",
+      "body": "Gana US$ 10 en CELO por mes"
+    }
+  },
+  "buycUsd": "Agregar cUSD",
+  "learnMore": "Conoce más",
+  "kickoff": {
+    "title": "Lanzamiento del programa de recompensas:",
+    "body": "¡gana 4 veces más recompensas en CELO hasta el 1° de marzo! Recibirás recompensas semanales."
+  },
+  "howItWorks": {
+    "title": "Así es como funciona:",
+    "body": {
+      "first": "1) ¡Transfiere cUSD a tu billetera para participar! Puedes encontrar las instrucciones para agregar cUSD a tu billetera de Valora <0>aquí.</0>\n\n2) Confirma tu billetera. Una manera fácil de hacerlo es confirmar tu número de teléfono en la app de Valora siguiendo los pasos al crear tu cuenta en la aplicación.\n\n3) Las recompensas se calculan y distribuyen semanalmente según la cantidad de cUSD que tengas en tu billetera:",
+      "second": "4) Las recompensas se acreditarán a tu saldo CELO al final del período de ganancias (aproximadamente de forma mensual)",
+      "tier1": {
+        "title": "Nivel 1",
+        "body": "Saldo mínimo mensual de $20 cUSD → gana US$ 1 en CELO por mes"
+      },
+      "tier2": {
+        "title": "Nivel 2",
+        "body": "Saldo mínimo mensual de $100 cUSD → gana US$ 5 en CELO por mes"
+      },
+      "tier3": {
+        "title": "Nivel 3",
+        "body": "Saldo mínimo mensual de $500 cUSD → gana US$ 10 en CELO por mes"
+      }
+    }
+  },
+  "cUsdVsCelo": {
+    "title": "¿Qué es CELO y qué es el cUSD?",
+    "body": "CELO y el cUSD son los activos actuales manejados por billeteras como Valora en la Red Celo, la cual proporciona pagos digitales rápidos, seguros y estables. Las dos principales diferencias entre los dos activos son la función y el precio.\n\nEl Celo Dólar o cUSD es una moneda estable cuyo valor sigue al del dólar estadounidense. Como sigue al dólar estadounidense, se dice que el cUSD es “estableˮ. También está diseñado para ser accesible y fácil de usar, por lo que puedes pagar, ahorrar y enviar cUSD fácilmente  utilizando Valora.\n\nCELO es el activo nativo y principal mecanismo de utilidad, gobernanza, reserva y  de la Red Celo. Cuando eres propietario de CELO, puedes votar y así influenciar cómo evoluciona y crece la Red Celo. CELO tiene un suministro fijo y un valor variable relacionado con el valor total de las monedas estables en circulación en el ecosistema Celo. <0>Obtén más información sobre la gobernanza en la Red Celo [en inglés].</0>"
+  },
+  "questions": {
+    "title": "¿Tienes preguntas?",
+    "body": "Envíanos un mensaje a\n<0>support@valoraapp.com</0>"
+  },
+  "goBack": "Volver"
+}

@@ -1,26 +1,73 @@
 {
-  "title": "CELO Rewards Distribution Program",
-  "description": "Hold a minimum balance of $20 cUSD and earn weekly rewards!\n\nEligible accounts must have a verified phone number on Valora and hold an average minimum balance of $20.00 cUSD during the reward period. Rewards are credited to your Valora account’s CELO balance at the end of our earnings period (approximately weekly).",
+  "title": "CELO Rewards Program",
+  "description": {
+    "first": "Confirmed cUSD wallets can earn rewards by holding a minimum monthly average balance of:",
+    "second": "Rewards are credited to your wallet’s CELO balance at the beginning of each month until the program ends.",
+    "third": "Participate with any confirmed or verified cUSD account by holding a minimum average monthly balance of 20.00 cUSD during the earnings period.",
+    "tier1": {
+      "title": "20 cUSD",
+      "body": "Earn $1 worth of CELO per month"
+    },
+    "tier2": {
+      "title": "100 cUSD",
+      "body": "Earn $5 worth of CELO per month"
+    },
+    "tier3": {
+      "title": "500 cUSD",
+      "body": "Earn $10 worth of CELO per month"
+    }
+  },
   "buycUsd": "Add cUSD",
   "learnMore": "Learn More",
+  "kickoff": {
+    "title": "Rewards Kickoff:",
+    "body": "CELO rewards are 4x until March 1st! Expect to receive weekly rewards."
+  },
   "howItWorks": {
     "title": "Here’s how it works:",
-    "body": "1) Transfer cUSD to your Valora app by following the instructions <0>here</0>\n\n2) If you haven’t verified your account yet, confirm your phone number by following the steps in-app\n\n3) Rewards are calculated and distributed weekly depending on how much cUSD you have held in your Valora account:\nTier 1: $20-100 cUSD → earn 1 CELO per week\nTier 2: $101-500 cUSD → earn 5 CELO per week\nTier 3: $501+ cUSD → earn 10 CELO per week\n\n4) Rewards will be credited to your Valora wallet’s CELO balance at the end of our earnings period (approximately weekly)"
+    "body": {
+      "first": "1) Transfer cUSD to your wallet to participate! You can find the instructions for adding cUSD to a Valora wallet <0>here</0>.\n\n2) Confirm your wallet. An easy way to do this is to confirm your phone number with the Valora app by following the onboarding steps in the app!\n\n3) Rewards are calculated and distributed monthly depending on how much cUSD you have held in your wallet:",
+      "second": "4) Rewards will be credited to your CELO balance at the end of the earnings period (expected monthly).",
+      "tier1": {
+        "title": "Tier 1",
+        "body": "Minimum monthly average balance of 20 cUSD → earn $1 worth of CELO per month"
+      },
+      "tier2": {
+        "title": "Tier 2",
+        "body": "Minimum monthly average balance of 100 cUSD → earn $5 worth of CELO per month"
+      },
+      "tier3": {
+        "title": "Tier 3",
+        "body": "Minimum monthly average balance of 500 cUSD → earn $10 worth of CELO per month"
+      }
+    }
   },
   "cUsdVsCelo": {
     "title": "What is CELO vs cUSD?",
-    "body": "CELO and cUSD are the current assets supported by Valora on the Celo Network, which provides fast, secure, and stable digital payments. The two main differences between the two assets are function and price.\n\nCelo Dollars, or cUSD, is a stablecoin whose value tracks that of the US Dollar. Since it tracks the US Dollar, cUSD is said to be ‘stable’. It is also built for accessibility and ease of use, so you can easily pay, save and send with cUSD using Valora.\n\nCELO is the native asset and core utility, governance, reserve, and staking mechanism for the Celo Network. When you own CELO, you can have a say by voting on how the Celo Network evolves and grows over time. CELO has a fixed supply, and a variable value related to the total value of stablecoins in circulation in the Celo ecosystem. <0>Learn more about governance on the Celo Network.</0>"
+    "body": "CELO and cUSD are the current assets supported by wallets like Valora on the Celo Network, which provides fast, secure, and stable digital payments. The two main differences between the two assets are function and price.\n\nCelo Dollars, or cUSD, is a stablecoin whose value tracks that of the US Dollar. Since it tracks the US Dollar, cUSD is said to be ‘stable’. It is also built for accessibility and ease of use, so you can easily pay, save and send with cUSD using Valora.\n\nCELO is the native asset and core utility, governance, reserve, and staking mechanism for the Celo Network. When you own CELO, you can have a say by voting on how the Celo Network evolves and grows over time. CELO has a fixed supply, and a variable value related to the total value of stablecoins in circulation in the Celo ecosystem. <0>Learn more about governance on the Celo Network.</0>"
   },
-  "termsAndConditions": {
+  "terms": {
     "title": "Terms and Conditions",
-    "body": "When you hold a qualifying cUSD balance in your Valora account between January 8th 2020 (01/8/2021) and January 22nd 2020 (01/22/2021), you may be eligible for a reward deposit of CELO paid directly to your Valora account.\n\nYou must have an eligible account to participate in the Valora Deposit Reward program. Eligibility is determined at the discretion of the governance proposal at the time of calculation.\n\nThis program may be terminated at any time. The variable matching rate is subject to change over time based on economic and competitive factors. Funds will be distributed on a first come, first serve basis."
-  },
-  "structure": {
-    "title": "CELO Rewards Distribution Program Structure",
-    "body": "Hold an average minimum weekly balance of 5 cUSD in your Valora account for 1 week and earn 1 CELO, hold an average minimum weekly balance of 20 cUSD in your Valora account for 1 week and earn 5 CELO,  hold an average minimum weekly balance of 50 cUSD in your Valora account for 1 week and earn 15 CELO. This matching rate is subject to change at any time without notice before and after an account is opened.\n\nWe use the block balance method to calculate the reward for your account. This method applies a periodic rate to the principal cUSD balance in the account at each block.\n\nCalculations are estimates of expected rewards earned. Actual results may vary, based on various factors such as leap years, timing of transfers, rounding, and variation in matching rates. The first recurring deposit is assumed to begin in the second period after any initial deposit of cUSD."
+    "body": {
+      "first": "When you hold a qualifying cUSD balance at your confirmed address, you may be eligible for a reward of CELO. Rewards will be distributed at the end of the earnings period, typically monthly, on a first come, first serve basis (by wallet phone number confirmation date) up to a total limit of 20,000 CELO per calendar month. During the introduction period, this total limit will be brought up to 20,000 CELO per week. The introduction period is 20:00 UTC January 25th, 2021 through 19:59 UTC March 1, 2021. Monthly earning periods will begin on the first of each month, at 20:00 UTC and end on the first of each month, at 19:59 UTC, until the program stops or reaches the total limit of 200,000 CELO. During the initial introduction phase, weekly earning periods will begin on the Mondays, at 20:00 UTC and end the following Monday, at 19:59 UTC, until the program stops reaches the total limit of 200,000 CELO. The first earning period is expected to start on February 1st, 2021, at 20:00 UTC.\n\nA confirmed address must have completed 3 text message attestations to be eligible for this program. You must have an eligible address to participate in the CELO Rewards program. This program may be terminated at any time and is void where prohibited.\n\nRewards are calculated and distributed monthly (or weekly, during the introduction period) depending on how much cUSD you have held in your wallet:",
+      "second": "The first earning period is expected to start on January 25th, 2021, at 20:00 UTC, and will continue to be distributed on a weekly basis during the introduction period, then monthly, for the duration of the program. \n\nThe balance calculation is determined by averaging the cUSD balance over all blocks in the blockchain during the earning period for each confirmed address. \n\nCELO price will be valued based on the average “Close” price for CELO as indicated on coinmarketcap.com for the earning period. For instance, for the first week of February, CELO price will be the sum of the 7 days Close price of CELO on coinmarketcap.com from February 1st, 2021 (included) to February 8th, 2021 (excluded), divided by 7. \n\nThe reward rate and terms are subject to change over time, and are void where prohibited. Rewards are not guaranteed, may be discontinued at any time, and will be allocated on a best efforts basis. Actual results may vary, based on various factors such as leap years, timing of transfers, rounding, fund exhaustion, and variation in reward rates.",
+      "tier1": {
+        "title": "Tier 1",
+        "body": "Minimum monthly (weekly, during the introduction period) average balance of 20 cUSD → earn $1 worth of CELO per month (per week during the introduction period)"
+      },
+      "tier2": {
+        "title": "Tier 2",
+        "body": "Minimum monthly (weekly, during the introduction period) average balance of 100 cUSD → earn $5 worth of CELO per month (per week during the introduction period)"
+      },
+      "tier3": {
+        "title": "Tier 3",
+        "body": "Minimum monthly (weekly, during the introduction period) average balance of 500 cUSD → earn $10 worth of CELO per month (per week during the introduction period)"
+      }
+    }
   },
   "questions": {
     "title": "Questions?",
     "body": "Send us a message at\n<0>support@valoraapp.com</0>"
-  }
+  },
+  "goBack": "Back"
 }

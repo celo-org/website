@@ -6,6 +6,8 @@ import Link from "src/shared/Link";
 import menuItems, { pagePaths } from "src/shared/menu-items";
 import { colors, typeFaces } from "src/styles";
 import AddCusdButton from "./AddCusdButton";
+import RewardsKickOff from "./RewardsKickOff";
+import TierList from "./TierList";
 import TitleAndDescription from "./TitleAndDescription";
 
 function CeloRewards({}) {
@@ -19,10 +21,19 @@ function CeloRewards({}) {
         description={t("description")}
       />
       <View style={styles.container}>
-        <TitleAndDescription
+      <TitleAndDescription
           title={t("title")}
-          description={t("description")}
+          description={
+            <>
+              {t("description.first")}
+              {'\n'}
+              <TierList baseTranslation="description" totalTiers={3} />
+              {'\n'}
+              {t("description.second")}
+            </>
+          }
         />
+        <RewardsKickOff />
         <AddCusdButton />
         <Link href={pagePaths.CELO_REWARDS_EDUCATION.link} passHref={true}>
           <Text
@@ -37,6 +48,10 @@ function CeloRewards({}) {
     </>
   );
 }
+
+CeloRewards.getInitialProps = async () => ({
+  namespacesRequired: [NameSpaces.celoRewards],
+})
 
 export default CeloRewards;
 
