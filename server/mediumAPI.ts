@@ -3,7 +3,7 @@ import { Articles } from 'fullstack/ArticleProps'
 import htmlToFormattedText from 'html-to-formatted-text'
 import cache from '../server/cache'
 import Sentry from '../server/sentry'
-import abortableFetch from '../src/utils/abortableFetch'
+import retryAbortableFetch from '../src/utils/retryAbortableFetch'
 interface JSONRSS {
   rss: {
     channel: {
@@ -87,7 +87,7 @@ const BASE_URL = 'https://medium.com/feed/celoOrg'
 
 async function fetchMediumArticles(tagged?: string): Promise<string> {
   const url = tagged ? `${BASE_URL}/tagged/${tagged}` : BASE_URL
-  const response = (await abortableFetch(url)) as Response
+  const response = (await retryAbortableFetch(url)) as Response
   return response.text()
 }
 

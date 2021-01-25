@@ -16,7 +16,9 @@ export default class EventData extends React.PureComponent {
 
   componentDidMount = async () => {
     const { upcomingEvents, topEvent } = await getEvents()
-    this.setState({ upcomingEvents, topEvent, loaded: true })
+    if (upcomingEvents && topEvent) {
+      this.setState({ upcomingEvents, topEvent, loaded: true })
+    }
   }
 
   render() {

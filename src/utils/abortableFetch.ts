@@ -1,4 +1,4 @@
-export default async function abortableFetch(url: string, options = {}) {
+export default async function abortableFetch(url: string, options: RequestInit = {}) {
   return Promise.race([fetch(url, { ...options }), abort(url)])
 }
 
