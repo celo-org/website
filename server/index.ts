@@ -16,7 +16,6 @@ import latestAnnouncements from './Announcement'
 import { faucetOrInviteController } from './controllers'
 import getFormattedEvents from './EventHelpers'
 import { submitFellowApp } from './FellowshipApp'
-import mailer from './mailer'
 import rateLimit from './rateLimit'
 import respondError from './respondError'
 
@@ -236,7 +235,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 
   server.get('/announcement', async (req, res) => {
     try {
-      const annoucements = await latestAnnouncements(req.ip)
+      const annoucements = await latestAnnouncements(req.header['X-Appengine-Country'])
       res.json(annoucements)
     } catch (e) {
       respondError(res, e)
@@ -247,23 +246,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     try {
       await create(req.body)
       res.sendStatus(CREATED)
-    } catch (e) {
-      respondError(res, e)
-    }
-  })
-
-  server.post('/partnerships-email', rateLimit, async (req, res) => {
-    const { email } = req.body
-    try {
-      await mailer({
-        toName: 'Team Celo',
-        toEmail: 'partnerships@celo.org',
-        fromEmail: 'partnerships@celo.org',
-        subject: `New Partnership Email: ${email}`,
-        text: email,
-      })
-
-      res.status(NO_CONTENT).send('ok')
     } catch (e) {
       respondError(res, e)
     }
