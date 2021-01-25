@@ -52,12 +52,13 @@ export function usePageTurner() {
 export default function Progress() {
   const { isPageTurning, hasError, route } = usePageTurner()
 
-  if (isPageTurning) {
+  if (typeof window !== 'undefined' && window?.navigator) {
     const speed = getEffectiveConnection(navigator)
     const animationSpeed = styles[speed]
+    const visibility = isPageTurning ? styles.visible : styles.hidden
     return (
       <View style={styles.container} key={route}>
-        <View style={[styles.bar, animationSpeed, hasError ? styles.bad : styles.good]} />
+        <View style={[styles.bar, animationSpeed, visibility, hasError ? styles.bad : styles.good]} />
       </View>
     )
   }
@@ -98,10 +99,11 @@ const styles = StyleSheet.create({
     backgroundColor: colors.red,
   },
   bar: {
-    transitionProperty: 'background-color',
-    transitionDuration: '1s',
+    transitionProperty: ['background-color', 'top'],
+    transitionDuration: ['1s', '0.4s'],
     height: '100%',
     width: '100%',
+    top: 0,
     transformOrigin: 'left',
     animationFillMode: 'both',
     animationTimingFunction: 'cubic-bezier(0,.58,.51,1.01)',
@@ -116,5 +118,10 @@ const styles = StyleSheet.create({
         },
       },
     ],
+  },
+  visible: {
+  },
+  hidden: {
+    top: -2,
   },
 })
