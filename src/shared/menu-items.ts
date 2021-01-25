@@ -72,6 +72,11 @@ export const pagePaths = {
     link: '/celo-rewards-education',
     isDark: false,
   },
+  CELO_REWARDS_TERMS: {
+    name: 'CELO Rewards',
+    link: '/celo-rewards-terms-and-conditions',
+    isDark: false,
+  },
   CODE_OF_CONDUCT: {
     name: 'Code of Conduct',
     link: '/code-of-conduct',
