@@ -6,6 +6,7 @@ import Link from "src/shared/Link";
 import menuItems, { pagePaths } from "src/shared/menu-items";
 import { colors, typeFaces } from "src/styles";
 import AddCusdButton from "./AddCusdButton";
+import RewardsKickOff from "./RewardsKickOff";
 import TitleAndDescription from "./TitleAndDescription";
 
 function CeloRewards({}) {
@@ -23,6 +24,7 @@ function CeloRewards({}) {
           title={t("title")}
           description={t("description")}
         />
+        <RewardsKickOff />
         <AddCusdButton />
         <Link href={pagePaths.CELO_REWARDS_EDUCATION.link} passHref={true}>
           <Text

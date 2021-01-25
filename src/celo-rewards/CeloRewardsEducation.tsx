@@ -7,6 +7,7 @@ import menuItems, { CeloLinks } from "src/shared/menu-items";
 import { colors } from "src/styles";
 import AddCusdButton from "./AddCusdButton";
 import GoBackButton from "./GoBackButton";
+import RewardsKickOff from "./RewardsKickOff";
 import TitleAndDescription from "./TitleAndDescription";
 
 export interface Props {
@@ -29,6 +30,7 @@ function CeloRewardsEducation() {
           title={t("title")}
           description={t("description")}
         />
+        <RewardsKickOff />
         <TitleAndDescription
           title={t("howItWorks.title")}
           titleStyle={styles.subtitle}
@@ -58,6 +60,10 @@ function CeloRewardsEducation() {
               </InlineAnchor>
             </Trans>
           }
+        />
+        <TitleAndDescription
+          title={t("terms.title")}
+          description={t("terms.body")}
         />
         <AddCusdButton />
         <TitleAndDescription

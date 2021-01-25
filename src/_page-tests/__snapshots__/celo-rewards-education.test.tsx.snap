@@ -133,6 +133,76 @@ Rewards are credited to your wallet’s CELO balance at the beginning of each mo
         }
       }
     >
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        <span
+          className="css-text-901oao css-textHasAncestor-16my406"
+          onClick={[Function]}
+          style={
+            Object {
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Rewards Kickoff:
+        </span>
+         
+        CELO rewards are 4x until March 1st! Expect to receive weekly rewards.
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "msFlexNegative": 0,
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
       <h1
         aria-level="1"
         className="css-reset-4rbku5 css-text-901oao"
@@ -335,6 +405,100 @@ CELO is the native asset and core utility, governance, reserve, and staking mech
             Learn more about governance on the Celo Network.
           </a>
         </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "msFlexNegative": 0,
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <h1
+        aria-level="1"
+        className="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        role="heading"
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "26px",
+            "fontWeight": "500",
+            "lineHeight": "32px",
+            "marginBottom": "16px",
+            "textRendering": "geometricPrecision",
+            "textTransform": "none",
+          }
+        }
+      >
+        Terms and Conditions
+      </h1>
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "24px",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        When you hold a qualifying cUSD balance at your confirmed address, you may be eligible for a reward of CELO. Rewards will be distributed at the end of the earnings period, typically monthly, on a first come, first serve basis (by wallet phone number confirmation date) up to a total limit of 20,000 CELO per calendar month. During the introduction period, this total limit will be brought up to 20,000 CELO per week. The introduction period is 20:00 UTC January 25th, 2021 through 19:59 UTC March 1, 2021. Monthly earning periods will begin on the first of each month, at 20:00 UTC and end on the first of each month, at 19:59 UTC, until the program stops or reaches the total limit of 200,000 CELO. During the initial introduction phase, weekly earning periods will begin on the Mondays, at 20:00 UTC and end the following Monday, at 19:59 UTC, until the program stops reaches the total limit of 200,000 CELO. The first earning period is expected to start on February 1st, 2021, at 20:00 UTC.
+
+A confirmed address must have completed 3 text message attestations to be eligible for this program. You must have an eligible address to participate in the CELO Rewards program. This program may be terminated at any time and is void where prohibited.
+
+Rewards are calculated and distributed monthly (or weekly, during the introduction period) depending on how much cUSD you have held in your wallet:
+Tier 1: Minimum monthly (weekly, during the introduction period) average balance of 20 cUSD → earn $1 worth of CELO per month (per week during the introduction period)
+Tier 2: Minimum monthly (weekly, during the introduction period) average balance of 100 cUSD → earn $5 worth of CELO per month (per week during the introduction period)
+Tier 3: Minimum monthly (weekly, during the introduction period) average balance of 500 cUSD → earn $10 worth of CELO per month (per week during the introduction period)
+
+The first reward is expected to be distributed on February 1st, 2021, and will continue to be distributed on a weekly basis during the introduction period, then monthly, for the duration of the program. 
+
+The balance calculation is determined by averaging the cUSD balance over all blocks in the blockchain during the earning period for each confirmed address. 
+
+CELO price will be valued based on the average “Close” price for CELO as indicated on coinmarketcap.com for the earning period. For instance, for the first week of February, CELO price will be the sum of the 7 days Close price of CELO on coinmarketcap.com from February 1st, 2021 (included) to February 8th, 2021 (excluded), divided by 7. 
+
+The reward rate and terms are subject to change over time, and are void where prohibited. Rewards are not guaranteed, may be discontinued at any time, and will be allocated on a best efforts basis. Actual results may vary, based on various factors such as leap years, timing of transfers, rounding, fund exhaustion, and variation in reward rates.
       </div>
     </div>
   </div>
