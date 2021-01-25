@@ -43,7 +43,7 @@ class MyApp extends App {
       this.isBrand() ||
       this.props.router.asPath.startsWith(pagePaths.FLOWERS.link) ||
       this.props.router.asPath === pagePaths.PLUMO.link ||
-      this.props.router.asPath.startsWith(pagePaths.CELO_REWARDS.link)
+      [pagePaths.CELO_REWARDS.link, pagePaths.CELO_REWARDS_EDUCATION.link].indexOf(this.props.router.pathname) >= 0
     )
   }
 
