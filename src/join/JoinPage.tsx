@@ -2,7 +2,7 @@ import * as React from 'react'
 import { StyleSheet, View } from "react-native"
 import { H1, H4 } from 'src/fonts/Fonts'
 import OpenGraph from 'src/header/OpenGraph'
-import { I18nProps, withNamespaces } from 'src/i18n
+import { I18nProps, withNamespaces } from "src/i18n"
 import previewImage from 'src/join/preview.png'
 import Rise from "src/join/Rise"
 import Fade from 'src/shared/AwesomeFade'
