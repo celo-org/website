@@ -13,9 +13,8 @@ import { colors, standardStyles, textStyles } from "src/styles"
 const DESCRIPTION =
   'Join us in building financial system that creates the conditions for prosperity for all. We are growing a team with all kinds of different perspectives, experiences and backgrounds to create products that are used and loved by people all around the world.'
 
-interface OwnProps {}
 
-type Props = I18nProps & OwnProps
+type Props = I18nProps
 class JoinPage extends React.PureComponent<Props> {
   render() {
     const { t } = this.props
