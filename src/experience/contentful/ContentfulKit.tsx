@@ -38,6 +38,7 @@ export default function ContentfulKit({
     }
   })
 
+
   return (
     <Page
       pages={sidebar}
