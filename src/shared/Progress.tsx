@@ -52,13 +52,20 @@ export function usePageTurner() {
 export default function Progress() {
   const { isPageTurning, hasError, route } = usePageTurner()
 
-  if (typeof window !== 'undefined' && window?.navigator) {
+  if (isPageTurning) {
     const speed = getEffectiveConnection(navigator)
     const animationSpeed = styles[speed]
     const visibility = isPageTurning ? styles.visible : styles.hidden
     return (
       <View style={styles.container} key={route}>
-        <View style={[styles.bar, animationSpeed, visibility, hasError ? styles.bad : styles.good]} />
+        <View
+          style={[
+            styles.bar,
+            animationSpeed,
+            visibility,
+            hasError ? styles.bad : styles.good,
+          ]}
+        />
       </View>
     )
   }
