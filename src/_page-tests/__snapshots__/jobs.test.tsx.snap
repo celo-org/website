@@ -180,6 +180,7 @@ exports[`JoinJobsPage with jobs renders 1`] = `
               dir="auto"
               href="http://clabs.co/careers"
               onClick={[Function]}
+              rel=" noopener noreferrer"
               role="link"
               style={
                 Object {
@@ -226,6 +227,7 @@ exports[`JoinJobsPage with jobs renders 1`] = `
                   "width": "fit-content",
                 }
               }
+              target="_blank"
             >
               Explore Roles
             </a>
@@ -4154,6 +4156,7 @@ exports[`JoinJobsPage without jobs renders 1`] = `
               dir="auto"
               href="http://clabs.co/careers"
               onClick={[Function]}
+              rel=" noopener noreferrer"
               role="link"
               style={
                 Object {
@@ -4200,6 +4203,7 @@ exports[`JoinJobsPage without jobs renders 1`] = `
                   "width": "fit-content",
                 }
               }
+              target="_blank"
             >
               Explore Roles
             </a>
