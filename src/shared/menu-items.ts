@@ -179,6 +179,7 @@ export const pagePaths = {
 
 export const MAIN_MENU = [
   pagePaths.ABOUT_US,
+  pagePaths.JOBS,
   pagePaths.BUILD,
   pagePaths.DEVELOPERS,
   pagePaths.ALLIANCE_COLLECTIVE,
