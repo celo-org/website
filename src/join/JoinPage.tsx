@@ -59,6 +59,7 @@ class JoinPage extends React.PureComponent<Props> {
                   <Button
                     kind={BTN.PRIMARY}
                     text={t("exploreRoles")}
+                    target="_blank"
                     href={"http://clabs.co/careers"}
                     size={SIZE.big}
                     align={"center"}
