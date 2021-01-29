@@ -108,8 +108,12 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     )
   })
 
-  server.get('papers/plumo', (_, res) =>{
-    res.redirect('papers/proposal-plumo_celolightclient.pdf')
+  server.get('/papers/plumo', (_, res) =>{
+    res.redirect('/papers/proposal-plumo_celolightclient.pdf')
+  })
+
+  server.get('/papers/humanitarian', (_, res) =>{
+    res.redirect('/papers/Future_Proof_Aid_Policy_Exec_Summary.pdf')
   })
 
   server.get('/papers/whitepaper/chinese', (_, res) => {
