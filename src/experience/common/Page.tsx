@@ -74,7 +74,6 @@ class Page extends React.Component<Props & ScreenProps, State> {
 
   sectionRefs = this.createSectionRefs()
 
-
   scrollHandeler = throttle((event) => {
     const scrollTop = event.target.scrollingElement.scrollTop
     const top = scrollTop + DISTANCE_TO_HIDE_AT
@@ -135,49 +134,39 @@ class Page extends React.Component<Props & ScreenProps, State> {
     if (!("IntersectionObserver" in window)) {
       return
     }
-    this.observer = this.observer || new IntersectionObserver(this.updateSectionHashWhenInView, {
-      threshold: [0, 0.1, 0.9, 1],
-    })
+    this.observer =
+      this.observer ||
+      new IntersectionObserver(this.updateSectionHashWhenInView, {
+        threshold: [0, 0.1, 0.9, 1],
+      })
 
-    this.props.sections.forEach(section => {
-      const element =  document.getElementById(section.id)
-      this.observer.observe(element)
+    this.props.sections.forEach((section) => {
+      const element = document.getElementById(section.id)
+      element && this.observer.observe(element)
     })
   }
 
   observeRef = (ref: React.RefObject<View>) => {
     // findNodeHandle is typed to return a number but returns an Element
     const element = (findNodeHandle(ref.current) as unknown) as Element
-    if ((element instanceof Element)) {
+    if (element instanceof Element) {
       this.observer.observe(element)
     }
   }
 
-  getSnapshotBeforeUpdate = (prevProps, prevState) => {
-    return null
-  }
-
-  componentDidUpdate = (prevProps, prevState, snapshot) => {
-    this.createSectionRefs()
-  }
-
   componentDidMount = () => {
-    this.props.router.beforePopState(({ url, as, options }) => {
-      console.info("pop", url, as, options)
-      // window.location.href = as
-      return true
-  })
+
     this.createSectionObservers()
     this.observeRef(this.footer)
 
     if (this.props.screen !== ScreenSizes.MOBILE) {
       this.setScrollListener()
     }
-    this.props.router.events.on("routeChangeStart", (url, ops) => {
-      this.unobserveSections()
-    })
-    this.props.router.events.on("routeChangeComplete", (url) => this.createSectionObservers())
-
+    // this.props.router.events.on("routeChangeStart", (url, ops) => {
+    // })
+    this.props.router.events.on("routeChangeComplete", () =>
+      this.createSectionObservers()
+    )
 
     window.addEventListener("hashchange", this.onChangeHash, false)
   }
@@ -190,12 +179,6 @@ class Page extends React.Component<Props & ScreenProps, State> {
     this.observer.disconnect()
     window.removeEventListener("hashchange", this.onChangeHash)
     window.removeEventListener("scroll", this.scrollHandeler)
-  }
-
-  unobserveSections  = () => {
-    this.props.sections.map(section => {
-      this.sectionRefs[`${this.props.path}-${section.id}`]?.current &&  this.observer.unobserve(this.sectionRefs[`${this.props.path}-${section.id}`].current)
-    })
   }
 
   render() {
@@ -262,7 +245,11 @@ class Page extends React.Component<Props & ScreenProps, State> {
               >
                 {sections.map(({ id, children }) => {
                   return (
-                    <View key={id} nativeID={id} ref={this.sectionRefs[`${this.props.path}-${id}`]}>
+                    <View
+                      key={id}
+                      nativeID={id}
+                      ref={this.sectionRefs[`${this.props.path}-${id}`]}
+                    >
                       {children}
                     </View>
                   )
