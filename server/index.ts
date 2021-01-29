@@ -113,7 +113,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   })
 
   server.get('/papers/humanitarian', (_, res) =>{
-    res.redirect('/papers/Future_Proof_Aid_Policy_Exec_Summary.pdf')
+    res.redirect('/papers/future-proof-aid.pdf')
   })
 
   server.get('/papers/whitepaper/chinese', (_, res) => {

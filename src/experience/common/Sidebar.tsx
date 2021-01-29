@@ -140,7 +140,6 @@ function isActive(path: string, currentPath: string) {
 }
 
 function isActiveSection(path: string, routeHash: string) {
-  // console.log(path, routeHash)
   return routeHash.length ? path.endsWith(routeHash) : path.endsWith('overview')
 }
 
