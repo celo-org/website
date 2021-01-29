@@ -54,7 +54,7 @@ interface State {
 
 class Page extends React.Component<Props & ScreenProps, State> {
   state: State = {
-    routeHash: '',
+    routeHash: "",
     isSidebarFrozen: true,
     isLineVisible: false,
   }
@@ -65,10 +65,15 @@ class Page extends React.Component<Props & ScreenProps, State> {
 
   footer = React.createRef<View>()
 
-  sectionRefs = this.props.sections.reduce((acc, section) => {
-    acc[section.id] = React.createRef<View>()
-    return acc
-  }, {})
+  createSectionRefs = () => {
+    return this.props.sections.reduce((acc, section) => {
+      acc[`${this.props.path}-${section.id}`] = React.createRef<View>()
+      return acc
+    }, this.sectionRefs || {})
+  }
+
+  sectionRefs = this.createSectionRefs()
+
 
   scrollHandeler = throttle((event) => {
     const scrollTop = event.target.scrollingElement.scrollTop
@@ -89,7 +94,9 @@ class Page extends React.Component<Props & ScreenProps, State> {
   }
 
   updateSectionHashWhenInView = (entries: IntersectionObserverEntry[]) => {
-    const filteredEntries = entries.filter(({ target }) => target.id !== FOOTER_ID)
+    const filteredEntries = entries.filter(
+      ({ target }) => target.id !== FOOTER_ID
+    )
     this.ratios = filteredEntries
       .map((entry) => ({
         id: entry.target.id,
@@ -125,49 +132,83 @@ class Page extends React.Component<Props & ScreenProps, State> {
   }
 
   createSectionObservers = () => {
-    if (!('IntersectionObserver' in window)) {
+    if (!("IntersectionObserver" in window)) {
       return
     }
-    this.observer = new IntersectionObserver(this.updateSectionHashWhenInView, {
+    this.observer = this.observer || new IntersectionObserver(this.updateSectionHashWhenInView, {
       threshold: [0, 0.1, 0.9, 1],
     })
 
-    Object.keys(this.sectionRefs).forEach((id) => {
-      const value = this.sectionRefs[id]
-      this.observeRef(value)
+    this.props.sections.forEach(section => {
+      const element =  document.getElementById(section.id)
+      this.observer.observe(element)
     })
-
-    this.observeRef(this.footer)
   }
 
   observeRef = (ref: React.RefObject<View>) => {
     // findNodeHandle is typed to return a number but returns an Element
     const element = (findNodeHandle(ref.current) as unknown) as Element
+    if ((element instanceof Element)) {
+      this.observer.observe(element)
+    }
+  }
 
-    this.observer.observe(element)
+  getSnapshotBeforeUpdate = (prevProps, prevState) => {
+    return null
+  }
+
+  componentDidUpdate = (prevProps, prevState, snapshot) => {
+    this.createSectionRefs()
   }
 
   componentDidMount = () => {
+    this.props.router.beforePopState(({ url, as, options }) => {
+      console.info("pop", url, as, options)
+      // window.location.href = as
+      return true
+  })
     this.createSectionObservers()
+    this.observeRef(this.footer)
+
     if (this.props.screen !== ScreenSizes.MOBILE) {
       this.setScrollListener()
     }
-    window.addEventListener('hashchange', this.onChangeHash, false)
+    this.props.router.events.on("routeChangeStart", (url, ops) => {
+      this.unobserveSections()
+    })
+    this.props.router.events.on("routeChangeComplete", (url) => this.createSectionObservers())
+
+
+    window.addEventListener("hashchange", this.onChangeHash, false)
   }
 
   setScrollListener = () => {
-    window.addEventListener('scroll', this.scrollHandeler)
+    window.addEventListener("scroll", this.scrollHandeler)
   }
 
   componentWillUnmount = () => {
     this.observer.disconnect()
-    window.removeEventListener('hashchange', this.onChangeHash)
-    window.removeEventListener('scroll', this.scrollHandeler)
+    window.removeEventListener("hashchange", this.onChangeHash)
+    window.removeEventListener("scroll", this.scrollHandeler)
+  }
+
+  unobserveSections  = () => {
+    this.props.sections.map(section => {
+      this.sectionRefs[`${this.props.path}-${section.id}`]?.current &&  this.observer.unobserve(this.sectionRefs[`${this.props.path}-${section.id}`].current)
+    })
   }
 
   render() {
-    const { screen, sections, router, path, metaDescription, title } = this.props
+    const {
+      screen,
+      sections,
+      router,
+      path,
+      metaDescription,
+      title,
+    } = this.props
     const isMobile = screen === ScreenSizes.MOBILE
+
     return (
       <>
         <OpenGraph
@@ -184,7 +225,10 @@ class Page extends React.Component<Props & ScreenProps, State> {
                 (this.state.isLineVisible || isMobile) && styles.grayLine,
               ]}
             >
-              <Topbar current={this.props.pages[0].href} kitName={this.props.kitName} />
+              <Topbar
+                current={this.props.pages[0].href}
+                kitName={this.props.kitName}
+              />
             </View>
             {isMobile && (
               <MobileKitMenu
@@ -195,7 +239,10 @@ class Page extends React.Component<Props & ScreenProps, State> {
             )}
           </View>
 
-          <GridRow mobileStyle={styles.mobileMain} desktopStyle={standardStyles.sectionMarginTop}>
+          <GridRow
+            mobileStyle={styles.mobileMain}
+            desktopStyle={standardStyles.sectionMarginTop}
+          >
             <Cell span={Spans.fourth} style={styles.sidebar}>
               {!isMobile && (
                 <Sidebar
@@ -215,7 +262,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
               >
                 {sections.map(({ id, children }) => {
                   return (
-                    <View key={id} nativeID={id} ref={this.sectionRefs[id]}>
+                    <View key={id} nativeID={id} ref={this.sectionRefs[`${this.props.path}-${id}`]}>
                       {children}
                     </View>
                   )

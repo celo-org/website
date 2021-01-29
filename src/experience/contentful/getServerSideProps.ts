@@ -5,16 +5,16 @@ import { getKit, getPageById } from 'src/utils/contentful'
 const getServerSideProps: GetServerSideProps<
   Props,
   { kit: string; kitPage: string }
-> = async function getServerSideProp({ params, query, resolvedUrl }) {
+> = async function getServerSideProp({ params, query, req, resolvedUrl }) {
   const locale = query.locale || 'en-US'
   const kit = await getKit(params.kit, params.kitPage, { locale })
   const page = await getPageById(kit.pageID, { locale })
   const questionMark = resolvedUrl.indexOf('?');
   const newUrl = resolvedUrl.substring(0, questionMark)
-  
+
 
   const sidebar = kit.sidebar.map((entry) => {
-    if (entry.href === newUrl) {
+    if (entry.href === newUrl || entry.href === req.url) {
 
       return {
         ...entry,
