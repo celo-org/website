@@ -59,13 +59,13 @@ class Papers extends React.PureComponent<I18nProps> {
           <SideTitledSection span={Spans.three4th} title={t('socialImpact')}>
             <Text style={fonts.p}>{t('humanitarianExec')}</Text>
             <View style={styles.links}>
-              <HelpfulLink text={t('download')} href={'/papers/humanitarianExec'} />
+              <HelpfulLink text={t('download')} href={'/papers/future-proof-exec'} />
             </View>
           </SideTitledSection>
           <SideTitledSection span={Spans.three4th} title={t('')}>
             <Text style={fonts.p}>{t('humanitarian')}</Text>
             <View style={styles.links}>
-              <HelpfulLink text={t('download')} href={'/papers/humanitarian'} />
+              <HelpfulLink text={t('download')} href={'/papers/future-proof-aid'} />
             </View>
           </SideTitledSection>
         </View>
