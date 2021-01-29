@@ -45,13 +45,27 @@ class Papers extends React.PureComponent<I18nProps> {
           </SideTitledSection>
           <SideTitledSection span={Spans.three4th} title={t('economics')}>
             <Text style={fonts.p}>{t('stabilityTitle')}</Text>
+            <View style={styles.links}>
             <HelpfulLink text={t('download')} href={'/papers/stability'} />
+            </View>
           </SideTitledSection>
           <SideTitledSection span={Spans.three4th} title={''}>
             <Text style={fonts.p}>{t('velocityTitle')}</Text>
             <View style={styles.links}>
               <HelpfulLink text={t('download')} href={'/papers/cbdc-velocity'} />
               <HelpfulLink text={'Lee el informe'} href={'/papers/cbdc-velocity/spanish'} />
+            </View>
+          </SideTitledSection>
+          <SideTitledSection span={Spans.three4th} title={t('socialImpact')}>
+            <Text style={fonts.p}>{t('humanitarianExec')}</Text>
+            <View style={styles.links}>
+              <HelpfulLink text={t('download')} href={'/papers/humanitarianExec'} />
+            </View>
+          </SideTitledSection>
+          <SideTitledSection span={Spans.three4th} title={t('')}>
+            <Text style={fonts.p}>{t('humanitarian')}</Text>
+            <View style={styles.links}>
+              <HelpfulLink text={t('download')} href={'/papers/humanitarian'} />
             </View>
           </SideTitledSection>
         </View>

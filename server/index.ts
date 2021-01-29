@@ -102,6 +102,15 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect('/papers/cLabs_CBDC_Velocity_Spanish.pdf')
   })
 
+  // server.get('/papers/humanitarian', (_, res) =>{
+  //   res.redirect('papers/Future_Proof_Aid_Policy.pdf')
+  // })
+
+  // server.get('/papers/humanitarianExec', (_, res) =>{
+  //   res.redirect('papers/Future_Proof_Aid_Policy_Aid_Policy_Exec_Summary.pdf')
+  // })
+
+
   server.get('/papers/whitepaper', (_, res) => {
     res.redirect(
       '/papers/Celo__A_Multi_Asset_Cryptographic_Protocol_for_Decentralized_Social_Payments.pdf'
