@@ -65,15 +65,6 @@ class Page extends React.Component<Props & ScreenProps, State> {
 
   footer = React.createRef<View>()
 
-  createSectionRefs = () => {
-    return this.props.sections.reduce((acc, section) => {
-      acc[`${this.props.path}-${section.id}`] = React.createRef<View>()
-      return acc
-    }, this.sectionRefs || {})
-  }
-
-  sectionRefs = this.createSectionRefs()
-
   scrollHandeler = throttle((event) => {
     const scrollTop = event.target.scrollingElement.scrollTop
     const top = scrollTop + DISTANCE_TO_HIDE_AT
@@ -155,15 +146,14 @@ class Page extends React.Component<Props & ScreenProps, State> {
   }
 
   componentDidMount = () => {
-
     this.createSectionObservers()
     this.observeRef(this.footer)
 
     if (this.props.screen !== ScreenSizes.MOBILE) {
       this.setScrollListener()
     }
-    // this.props.router.events.on("routeChangeStart", (url, ops) => {
-    // })
+
+    // once we are on a new page and have rendered add the new elements to the observation
     this.props.router.events.on("routeChangeComplete", () =>
       this.createSectionObservers()
     )
@@ -248,7 +238,6 @@ class Page extends React.Component<Props & ScreenProps, State> {
                     <View
                       key={id}
                       nativeID={id}
-                      ref={this.sectionRefs[`${this.props.path}-${id}`]}
                     >
                       {children}
                     </View>
