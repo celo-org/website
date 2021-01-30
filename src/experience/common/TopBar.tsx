@@ -29,12 +29,12 @@ export default function TopBar({ current, kitName }: Props) {
   }
 
   React.useEffect(() => {
-    router.events.on("routeChangeComplete", close)
+    router?.events?.on("routeChangeComplete", close)
 
     return () => {
-      router.events.off("routeChangeComplete", close)
+      router?.events?.off("routeChangeComplete", close)
     }
-  }, [])
+  }, [router])
 
   return (
     <View style={standardStyles.centered}>
