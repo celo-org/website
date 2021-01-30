@@ -28,5 +28,14 @@ handlers:
     static_files: public/papers/cLabs_CBDC_Velocity_v3.pdf
     upload: public/papers/cLabs_CBDC_Velocity_v3.pdf
 
+  - url: /papers/future-proof-exec
+    static_files: public/papers/Future_Proof_Aid_Policy_Exec_Summary.pdf
+    upload: public/papers/Future_Proof_Aid_Policy_Exec_Summary.pdf
+
+  - url: /papers/future-proof-aid
+    static_files: public/papers/Future_Proof_Aid_Policy.pdf
+    upload: public/papers/Future_Proof_Aid_Policy.pdf
+
+
   - url: /.*
     script: auto
