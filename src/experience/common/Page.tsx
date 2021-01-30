@@ -133,7 +133,9 @@ class Page extends React.Component<Props & ScreenProps, State> {
 
     this.props.sections.forEach((section) => {
       const element = document.getElementById(section.id)
-      element && this.observer.observe(element)
+      if (element) {
+        this.observer.observe(element)
+      }
     })
   }
 
@@ -154,8 +156,9 @@ class Page extends React.Component<Props & ScreenProps, State> {
     }
 
     // once we are on a new page and have rendered add the new elements to the observation
-    this.props.router.events.on("routeChangeComplete", () =>
-      this.createSectionObservers()
+    this.props.router?.events?.on(
+      "routeChangeComplete",
+      this.createSectionObservers
     )
 
     window.addEventListener("hashchange", this.onChangeHash, false)
