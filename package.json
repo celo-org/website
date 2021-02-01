@@ -1,6 +1,6 @@
 {
   "name": "@celo/web",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "author": "Celo Foundation",
   "license": "Apache-2.0",
   "private": true,
@@ -10,7 +10,7 @@
     "build:next": "next build && tsc --project tsconfig.server.json",
     "build:ts": "tsc --noEmit",
     "start": "NODE_ENV=production node dist/server/index.js",
-    "deploy": "yarn run kill-dev; yarn run clean-next-cache; yarn run build:next; gcloud app deploy $MANIFEST && yarn run view",
+    "deploy": "yarn keys:decrypt; yarn run kill-dev; yarn run clean-next-cache; yarn run build:next; gcloud app deploy $MANIFEST && yarn run view",
     "deploy:routes": "DIR=$(mktemp -d) && cp $DISPATCH $DIR/dispatch.yaml && gcloud app deploy $DIR/dispatch.yaml",
     "deploy:routes:prod": "gcloud config set project celo-testnet-production; DISPATCH=dispatch-celo-testnet-production.yaml yarn run deploy:routes",
     "deploy:routes:non-prod": "gcloud config set project celo-testnet; DISPATCH=dispatch-celo-testnet.yaml yarn run deploy:routes",
