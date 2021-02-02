@@ -10,6 +10,7 @@ interface Props {
 }
 
 export default function OpenGraph({ description, image, title, path }: Props) {
+  debugger
   const { publicRuntimeConfig } = getConfig()
   const BASE_URL = publicRuntimeConfig.BASE_URL
   const metaImage = typeof image === 'string' && image.startsWith('//') ? image : BASE_URL + image
@@ -30,6 +31,8 @@ export default function OpenGraph({ description, image, title, path }: Props) {
       <meta name="twitter:site" content={'@celoOrg'} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
     </Head>
   )
 }
