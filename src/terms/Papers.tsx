@@ -57,7 +57,7 @@ class Papers extends React.PureComponent<I18nProps> {
               <HelpfulLink text={'Lee el informe'} href={'/papers/cbdc-velocity/spanish'} />
             </View>
           </SideTitledSection>
-          <SideTitledSection span={Spans.three4th} title={t('socialImpact')}>
+          {/* <SideTitledSection span={Spans.three4th} title={t('socialImpact')}>
             <Text style={fonts.p}>{t('humanitarianExec')}</Text>
             <View style={styles.links}>
               <HelpfulLink text={t('download')} href={'/papers/future-proof-exec'} />
@@ -68,7 +68,7 @@ class Papers extends React.PureComponent<I18nProps> {
             <View style={styles.links}>
               <HelpfulLink text={t('download')} href={'/papers/future-proof-aid'} />
             </View>
-          </SideTitledSection>
+          </SideTitledSection> */}
         </View>
       </>
     )
