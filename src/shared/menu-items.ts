@@ -14,7 +14,7 @@ export const pagePaths = {
   HOME: {
     name: 'Home',
     link: '/',
-    isDark: false,
+    isDark: true,
   },
   ABOUT_US: {
     name: 'About',

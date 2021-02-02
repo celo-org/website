@@ -1,5 +1,5 @@
 import * as React from "react"
-import useBlockscoutWS from "../useBlockscoutWS"
+import useBlockscoutWS from "./useBlockscoutWS"
 
 export default function WalletAddresses() {
   const addresses = useBlockscoutWS()
