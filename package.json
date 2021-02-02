@@ -1,6 +1,6 @@
 {
   "name": "@celo/web",
-  "version": "4.0.1",
+  "version": "4.5.0",
   "author": "Celo Foundation",
   "license": "Apache-2.0",
   "private": true,
@@ -93,6 +93,7 @@
     "shuffle-seed": "^1.1.6",
     "stickyfilljs": "^2.1.0",
     "svgs": "^4.1.0",
+    "swr": "^0.4.1",
     "tls": "^0.0.1",
     "yiq": "^4.0.0"
   },
