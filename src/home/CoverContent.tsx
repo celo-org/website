@@ -15,10 +15,10 @@ export default function CoverContent() {
     <H1 style={[textStyles.center, textStyles.invert]}>
       {t('pageHeader')}
     </H1>
-    <Text style={[fonts.p, textStyles.center, textStyles.readingOnDark, standardStyles.elementalMargin]}>{t('pageSubheader')}</Text>
+    <Text aria-level="2" style={[fonts.p, textStyles.center, textStyles.readingOnDark, standardStyles.elementalMargin]}>{t('pageSubheader')}</Text>
     <div css={buttons}>
-      <Button text={"coverPrimeButton"} href={CeloLinks.docsOverview} kind={BTN.PRIMARY} target={"_blank"} />
-      <Button size={SIZE.normal} text={"coverPrimeButton"} href={CeloLinks.docsOverview} kind={BTN.NAKED} target={"_blank"} />
+      <Button text={t("coverPrimeButton")} href={CeloLinks.docsOverview} kind={BTN.PRIMARY} target={"_blank"} />
+      <Button size={SIZE.normal} text={t("coverSecondButton")} href={CeloLinks.docsOverview} kind={BTN.NAKED} target={"_blank"} />
     </div>
   </div>
 }

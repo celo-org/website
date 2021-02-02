@@ -11,9 +11,6 @@ import { NameSpaces, useTranslation } from "src/i18n"
 import Press from 'src/press/Press'
 import Cover from "./Cover"
 import FlowerArea from './FlowerArea'
-import Blocks from "./stats/Blocks"
-import WalletAddresses from "./stats/WalletAddresses"
-
 export default function Home() {
   const { t } = useTranslation(NameSpaces.home)
   return (
@@ -25,8 +22,6 @@ export default function Home() {
         image={celoHero}
       />
       <Cover />
-      <WalletAddresses />
-      <Blocks />
       <ImagePanes />
       <HomeBenefits />
       <FlowerArea />

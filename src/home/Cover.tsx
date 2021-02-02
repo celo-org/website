@@ -7,8 +7,11 @@ import { colors } from "src/styles"
 import { DESKTOP_BREAKPOINT, HEADER_HEIGHT } from 'src/shared/Styles'
 import celoAsStars from "src/home/celo-galaxy.svg"
 import examplePhones from "src/home/app-examples@2x.png"
+import Stats from "./stats/Stats"
+import { flex } from "src/estyles"
+import { useScreenSize } from "src/layout/ScreenSize"
 export default function Cover() {
-
+  const {isDesktop} = useScreenSize()
 
   return (
     <div css={rootCss}>
@@ -18,14 +21,10 @@ export default function Cover() {
           <img src={examplePhones} width={1016} height={524} />
         </picture>
       </div>
+      {isDesktop && <Stats /> }
   </div>
   )
 }
-
-const flex = css ({
-  display: "flex",
-  flexDirection: "column"
-})
 
 const rootCss = css(flex,{
   alignSelf: "center",
