@@ -1,21 +1,21 @@
 /** @jsx jsx */
 import {jsx, css} from "@emotion/core"
-import {Text} from "react-native"
-import { H1 } from 'src/fonts/Fonts'
+import { fonts, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import { CeloLinks } from 'src/shared/menu-items'
-import { textStyles, fonts, standardStyles } from 'src/styles'
+import { TABLET_BREAKPOINT } from "src/shared/Styles"
+import { colors } from 'src/styles'
 
 
 export default function CoverContent() {
   const { t } = useTranslation(NameSpaces.home)
 
   return <div css={rootCss}>
-    <H1 style={[textStyles.center, textStyles.invert]}>
+    <h1 css={heading}>
       {t('pageHeader')}
-    </H1>
-    <Text aria-level="2" style={[fonts.p, textStyles.center, textStyles.readingOnDark, standardStyles.elementalMargin]}>{t('pageSubheader')}</Text>
+    </h1>
+    <p css={subheading}>{t('pageSubheader')}</p>
     <div css={buttons}>
       <Button text={t("coverPrimeButton")} href={CeloLinks.docsOverview} kind={BTN.PRIMARY} target={"_blank"} />
       <Button size={SIZE.normal} text={t("coverSecondButton")} href={CeloLinks.docsOverview} kind={BTN.NAKED} target={"_blank"} />
@@ -29,10 +29,51 @@ const centered = css({
   alignItems: "center"
 })
 
-const rootCss = css(centered,{maxWidth: 660, marginBottom: 60})
+
+const rootCss = css(centered,
+  {
+    maxWidth: 660,
+    width: "90vw",
+    marginBottom: 60,
+    padding: 24,
+
+    [WHEN_TABLET]: {
+      maxWidth: 580,
+    },
+    [WHEN_MOBILE]: {
+      maxWidth: 310,
+    }
+})
+
+
+const heading = css(fonts.h1, {
+  color: colors.white,
+  textAlign: "center",
+  [WHEN_MOBILE]: css(fonts.h1Mobile,   {color: colors.white})
+})
+
+const subheading = css(fonts.body, {
+  color: colors.lightGray,
+  textAlign: "center",
+  marginTop: 24,
+  marginBottom: 24,
+  [WHEN_TABLET] : {
+    maxWidth: 500
+  }
+})
+
+
 
 const buttons = css(centered,{
   flexDirection: "row",
-  justifyContent: "center",
-  columnGap: 30
+  flexWrap: "wrap",
+  alignItems: "center",
+  justifyContent: "space-between",
+  columnGap: 24,
+  rowGap: 24,
+  width: 290,
+  maxWidth: "90vw",
+  ["@media (max-width: 312px)"]: {
+    justifyContent: "center",
+  }
 })

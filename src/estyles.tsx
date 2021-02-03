@@ -1,5 +1,6 @@
 import { css } from "@emotion/core"
-import { typeFaces } from "./styles"
+import { typeFaces, fontInfo } from "./styles"
+import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT} from "src/shared/Styles"
 
 export const flex = css({
   display: "flex",
@@ -23,3 +24,27 @@ export const sectionTitle = css(jost,{
   letterSpacing: 3,
   textTransform: 'uppercase'
 })
+
+const body = css(fontInfo.p as any, {lineHeight: `${fontInfo.p.lineHeight}px`})
+
+const headingReset = css({
+  fontWeight: 'normal',
+  margin: 0,
+  marginBlockStart: 0,
+  marginBlockEnd: 0,
+})
+
+export const fonts = {
+  body,
+  h1: css(fontInfo.h1 as any, headingReset, {lineHeight: `${fontInfo.h1.lineHeight}px`}),
+  h1Mobile: css(fontInfo.h1Mobile as any, headingReset, {lineHeight: `${fontInfo.h1Mobile.lineHeight}px`}),
+  h2: css(fontInfo.h2 as any, headingReset, {lineHeight: `${fontInfo.h2.lineHeight}px`}),
+  h3: css(fontInfo.h3 as any, headingReset, {lineHeight: `${fontInfo.h3.lineHeight}px`}),
+  h4: css(fontInfo.h4 as any, headingReset, {lineHeight: `${fontInfo.h4.lineHeight}px`}),
+}
+
+export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
+
+export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-width: ${DESKTOP_BREAKPOINT}px)`
+
+export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`

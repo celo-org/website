@@ -6,10 +6,10 @@ import { DESKTOP_BREAKPOINT, HEADER_HEIGHT } from 'src/shared/Styles'
 import celoAsStars from "src/home/celo-galaxy.svg"
 import examplePhones from "src/home/app-examples@2x.png"
 import Stats from "./stats/Stats"
-import { flex } from "src/estyles"
+import { flex, WHEN_DESKTOP } from "src/estyles"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { useState } from "react"
-import { NameSpaces } from "src/i18n"
+import { NameSpaces, useTranslation } from "src/i18n"
 
 function useImageLoaded(): [boolean, () => void] {
   const [backgroundLoaded, setBackgroundLoaded] = useState(false)
@@ -20,7 +20,7 @@ function useImageLoaded(): [boolean, () => void] {
 }
 
 export default function Cover() {
-  const {isDesktop} = useScreenSize()
+  const {isDesktop, isTablet} = useScreenSize()
   const {t} = useTranslation(NameSpaces.home)
   const [backgroundLoaded, setLoadingComplete] = useImageLoaded()
   return (
@@ -28,9 +28,10 @@ export default function Cover() {
       <img src={celoAsStars} alt="" loading="lazy"  onLoad={setLoadingComplete}  css={css(backgroundArea, backgroundLoaded && backgroundLoadedCss)}/>
       <div css={useableArea}>
         <CoverContent />
-        <picture>
+        {(isDesktop || isTablet) && <picture>
+          {/* add web p, 2x, tablet, and mobile sources*/}
           <img alt={t("coverPhonesImage")} src={examplePhones} width={1016} height={524} css={featureImageCss} />
-        </picture>
+        </picture>}
       </div>
 
       {isDesktop && <Stats /> }
@@ -43,14 +44,15 @@ const rootCss = css(flex,{
   alignItems: "center",
   backgroundColor: colors.dark,
   marginTop: HEADER_HEIGHT,
-  paddingTop:HEADER_HEIGHT,
-  width: "100%"
+  paddingTop: HEADER_HEIGHT,
+  width: "100%",
+  maxWidth: "100vw"
 })
 
 const backgroundArea = css({
   position: "absolute",
   display: "none",
-  transitionDuration: "1000ms",
+  transitionDuration: "30s",
   transitionProperty: "opacity, transform",
   transitionTimingFunction: "ease-in-out",
   opacity: 0,
@@ -58,7 +60,7 @@ const backgroundArea = css({
   ["@media (prefers-reduced-motion"]: {
     transform: "scale(1)",
   },
-  [`@media (min-width: ${DESKTOP_BREAKPOINT}px)`]: {
+  [WHEN_DESKTOP]: {
     display: "block",
     maxWidth: 1380,
     width: '100%',
@@ -77,8 +79,10 @@ const featureImageCss = css({
 
 const useableArea = css(flex,{
   alignItems: "center",
-  maxWidth: 1100,
-  minHeight:920,
-  paddingBottom: 60,
-  zIndex: 20,
+  [WHEN_DESKTOP]: {
+    maxWidth: 1100,
+    minHeight:920,
+    paddingBottom: 60,
+    zIndex: 20,
+  }
 })
