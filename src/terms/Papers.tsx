@@ -8,6 +8,7 @@ import SideTitledSection from 'src/layout/SideTitledSection'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { fonts, standardStyles, textStyles } from 'src/styles'
 import { HelpfulLink } from './HelpfulLink'
+import whitePaperImage from './celo-whitepapers.jpg'
 
 class Papers extends React.PureComponent<I18nProps> {
   static getInitialProps() {
@@ -17,7 +18,7 @@ class Papers extends React.PureComponent<I18nProps> {
     const { t } = this.props
     return (
       <>
-        <OpenGraph title={t('title')} path={NameSpaces.papers} description={t('metaDescription')} />
+        <OpenGraph title={t('title')} path={NameSpaces.papers} description={t('metaDescription')} image={whitePaperImage} />
         <View style={styles.container}>
           <GridRow
             allStyle={standardStyles.centered}
@@ -56,7 +57,7 @@ class Papers extends React.PureComponent<I18nProps> {
               <HelpfulLink text={'Lee el informe'} href={'/papers/cbdc-velocity/spanish'} />
             </View>
           </SideTitledSection>
-          <SideTitledSection span={Spans.three4th} title={t('socialImpact')}>
+          {/* <SideTitledSection span={Spans.three4th} title={t('socialImpact')}>
             <Text style={fonts.p}>{t('humanitarianExec')}</Text>
             <View style={styles.links}>
               <HelpfulLink text={t('download')} href={'/papers/future-proof-exec'} />
@@ -67,7 +68,7 @@ class Papers extends React.PureComponent<I18nProps> {
             <View style={styles.links}>
               <HelpfulLink text={t('download')} href={'/papers/future-proof-aid'} />
             </View>
-          </SideTitledSection>
+          </SideTitledSection> */}
         </View>
       </>
     )
