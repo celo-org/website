@@ -4,7 +4,7 @@ import airtableInit from '../server/airtable'
 import Sentry from '../server/sentry'
 import { abort } from '../src/utils/abortableFetch'
 import cache from './cache'
-const TABLE_NAME = 'Community Calendar'
+const TABLE_NAME = 'All Events'
 // Intermediate step Event With all String Values
 interface IncomingEvent {
   link: string // url
