@@ -47,8 +47,8 @@ const rootCss = css(flex,{
   backgroundColor: '#23272C',
   position: "absolute",
   borderRadius: 6,
-  right: 12,
-  top: 200,
+  right: 0,
+  top: 260,
   padding: 24,
   paddingBottom: 30
 })

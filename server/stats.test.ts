@@ -1,4 +1,4 @@
-import {calcAverageBlockTime, hugeNumberToHuman} from "./stats"
+import {calcAverageBlockTime} from "./stats"
 
 describe('calcAverageBlockTime', () => {
   it("returns average block time in seconds since genesis block", () => {
@@ -7,8 +7,8 @@ describe('calcAverageBlockTime', () => {
   })
 })
 
-describe('hugeNumberToHuman', () => {
-  it("given the large values returns number that is human scale", () => {
-    expect(hugeNumberToHuman("329958375833727435235695148")).toEqual(329_958_375)
-  })
-})
+// describe('hugeNumberToHuman', () => {
+//   it("given the large values returns number that is human scale", () => {
+//     expect(hugeNumberToHuman("329958375833727435235695148")).toEqual(329_958_375)
+//   })
+// })

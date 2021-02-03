@@ -15,8 +15,6 @@ export const garamond = css({
   fontFamily: typeFaces.garamond
 })
 
-
-
 export const sectionTitle = css(jost,{
   marginTop: 8,
   fontWeight: 500,
