@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import {jsx, css} from "@emotion/core"
+import {jsx, css, keyframes} from "@emotion/core"
 import CoverContent from "src/home/CoverContent"
 import { colors } from "src/styles"
 import { DESKTOP_BREAKPOINT, HEADER_HEIGHT } from 'src/shared/Styles'
@@ -22,10 +22,9 @@ function useImageLoaded(): [boolean, () => void] {
 export default function Cover() {
   const {isDesktop, isTablet} = useScreenSize()
   const {t} = useTranslation(NameSpaces.home)
-  const [backgroundLoaded, setLoadingComplete] = useImageLoaded()
   return (
     <div css={rootCss}>
-      <img src={celoAsStars} alt="" loading="lazy"  onLoad={setLoadingComplete}  css={css(backgroundArea, backgroundLoaded && backgroundLoadedCss)}/>
+      <img src={celoAsStars} alt=""   css={backgroundArea}/>
       <div css={useableArea}>
         <CoverContent />
         {(isDesktop || isTablet) && <picture>
@@ -49,28 +48,39 @@ const rootCss = css(flex,{
   maxWidth: "100vw"
 })
 
+const starKeyFrames =  keyframes`
+  from {
+    opacity: 0.1;
+    transform: scale(0.9);
+  }
+
+  25% {
+    opacity: 0.5
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+`
+
 const backgroundArea = css({
   position: "absolute",
   display: "none",
-  transitionDuration: "30s",
-  transitionProperty: "opacity, transform",
-  transitionTimingFunction: "ease-in-out",
-  opacity: 0,
-  transform: "scale(0.9)",
-  ["@media (prefers-reduced-motion"]: {
-    transform: "scale(1)",
-  },
+  animationIterationCount: 1,
+  animationFillMode: "both",
+  animationDelay: "1s",
+  animationDuration: "20s",
+  animationName: starKeyFrames,
+  animationTimingFunction: "ease-in-out",
+  opacity: 0.1,
   [WHEN_DESKTOP]: {
     display: "block",
     maxWidth: 1380,
     width: '100%',
     height: 920,
   }
-})
-
-const backgroundLoadedCss = css({
-  opacity: 1,
-  transform: "scale(1)",
 })
 
 const featureImageCss = css({

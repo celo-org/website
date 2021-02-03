@@ -4,7 +4,6 @@ import { fonts, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import { CeloLinks } from 'src/shared/menu-items'
-import { TABLET_BREAKPOINT } from "src/shared/Styles"
 import { colors } from 'src/styles'
 
 
@@ -34,9 +33,8 @@ const rootCss = css(centered,
   {
     maxWidth: 660,
     width: "90vw",
-    marginBottom: 60,
+    marginBottom: 24,
     padding: 24,
-
     [WHEN_TABLET]: {
       maxWidth: 580,
     },
