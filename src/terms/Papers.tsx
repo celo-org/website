@@ -8,7 +8,7 @@ import SideTitledSection from 'src/layout/SideTitledSection'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { fonts, standardStyles, textStyles } from 'src/styles'
 import { HelpfulLink } from './HelpfulLink'
-import whitePaperImage from 'src/community/connect/Celo-whitepapers.jpg'
+import whitePaperImage from 'src/community/connect/celo-whitepapers.jpg'
 
 class Papers extends React.PureComponent<I18nProps> {
   static getInitialProps() {
