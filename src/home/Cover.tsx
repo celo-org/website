@@ -25,7 +25,9 @@ export default function Cover() {
   const {isDesktop, isTablet, bannerHeight} = useScreenSize()
   const {t} = useTranslation(NameSpaces.home)
   return (
-    <div css={css(rootCss, {paddingTop: bannerHeight})}>
+    <div css={css(rootCss, {paddingTop: bannerHeight, [WHEN_MOBILE]: {
+      minHeight: `calc(100vh - ${bannerHeight}px)`,
+    }})}>
       <div  css={css(backgroundArea, {top: bannerHeight, height: `calc(100% - ${bannerHeight}px)`})} />
       <div css={useableArea}>
         <CoverContent />
@@ -49,7 +51,6 @@ const rootCss = css(flex,{
   maxWidth: "100vw",
   [WHEN_MOBILE]: {
     justifyContent: "center",
-    height: "100vh",
   },
   ["@media (max-height: 568px)"]: {
     justifyContent: "flex-end",
@@ -123,6 +124,9 @@ const useableArea = css(flex,{
     maxWidth: 1100,
     height: 1067,
     zIndex: 20,
+  },
+  [WHEN_TABLET]: {
+    paddingTop: 72,
   },
   [WHEN_MOBILE]: {
     paddingTop: 24
