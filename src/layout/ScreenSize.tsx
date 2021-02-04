@@ -2,6 +2,7 @@ import throttle from 'lodash.throttle'
 import MobileDetect from 'mobile-detect'
 import * as React from 'react'
 import { Dimensions } from 'react-native'
+import { BANNER_HEIGHT } from 'src/header/BlueBanner'
 import { DESKTOP_BREAKPOINT, TABLET_BREAKPOINT } from 'src/shared/Styles'
 
 export enum ScreenSizes {
@@ -12,11 +13,14 @@ export enum ScreenSizes {
 
 interface State {
   screen: ScreenSizes
+  bannerHeight: number
 }
 
-const defaultContext = { screen: null }
+type ContextProps = State & {setBannerHeight: (h: number) => void}
 
-export const ScreenSizeContext = React.createContext<State>(defaultContext)
+const defaultContext = { screen: null, bannerHeight: BANNER_HEIGHT, setBannerHeight: () => null }
+
+export const ScreenSizeContext = React.createContext<ContextProps>(defaultContext)
 
 export class ScreenSizeProvider extends React.PureComponent<{}, State> {
   state = defaultContext
@@ -27,6 +31,10 @@ export class ScreenSizeProvider extends React.PureComponent<{}, State> {
       this.setState({ screen: newScreen })
     }
   }, 50)
+
+  setBannerHeight = (height: number) => {
+    this.setState({bannerHeight: height})
+  }
 
   componentDidMount() {
     this.windowResize({ window: Dimensions.get('window') })
@@ -45,7 +53,7 @@ export class ScreenSizeProvider extends React.PureComponent<{}, State> {
 
   render() {
     return (
-      <ScreenSizeContext.Provider value={{ screen: this.screen() }}>
+      <ScreenSizeContext.Provider value={{ screen: this.screen(), bannerHeight: this.state.bannerHeight, setBannerHeight: this.setBannerHeight }}>
         {this.props.children}
       </ScreenSizeContext.Provider>
     )
@@ -64,6 +72,8 @@ function widthToScreenType(width: number) {
 
 export interface ScreenProps {
   screen: ScreenSizes
+  bannerHeight: number
+  setBannerHeight: (n: number) => void
 }
 
 export function withScreenSize<T>(
@@ -72,8 +82,8 @@ export function withScreenSize<T>(
   return function ScreenSizeContainer(props: T) {
     return (
       <ScreenSizeContext.Consumer>
-        {({ screen }) => {
-          return <Component screen={screen} {...props} />
+        {({ screen, bannerHeight, setBannerHeight }) => {
+          return <Component screen={screen} bannerHeight={bannerHeight} setBannerHeight={setBannerHeight} {...props} />
         }}
       </ScreenSizeContext.Consumer>
     )
@@ -81,8 +91,9 @@ export function withScreenSize<T>(
 }
 
 export function useScreenSize() {
-  const { screen } = React.useContext(ScreenSizeContext)
+  const { screen, bannerHeight } = React.useContext(ScreenSizeContext)
   return {
+    bannerHeight,
     screen,
     isMobile: screen === ScreenSizes.MOBILE,
     isDesktop: screen === ScreenSizes.DESKTOP,

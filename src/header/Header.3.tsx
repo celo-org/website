@@ -46,7 +46,6 @@ interface State {
   belowFoldUpScroll: boolean
   isBannerShowing: boolean
   isHovering: boolean
-  bannerHeight: number
 }
 
 function scrollOffset() {
@@ -63,7 +62,6 @@ export class Header extends React.PureComponent<Props, State> {
     belowFoldUpScroll: false,
     isBannerShowing: false,
     isHovering: false,
-    bannerHeight: 0,
   }
 
   handleScroll = throttle(() => {
@@ -155,7 +153,7 @@ export class Header extends React.PureComponent<Props, State> {
   }
 
   setBannerHeight = (height: number) => {
-    this.setState({ bannerHeight: height })
+    this.props.setBannerHeight(height)
   }
 
   allWhiteLogo = () => {
@@ -196,7 +194,7 @@ export class Header extends React.PureComponent<Props, State> {
         style={[
           styles.container,
           bannerStyle.slideDown,
-          { top: isHomePage && this.state.isBannerShowing ? this.state.bannerHeight : 0 },
+          { top: isHomePage && this.state.isBannerShowing ? this.props.bannerHeight : 0 },
           this.state.mobileMenuActive && styles.mobileMenuActive,
         ]}
       >
@@ -300,7 +298,7 @@ export class Header extends React.PureComponent<Props, State> {
               styles.hamburger,
               isHomePage &&
                 !this.state.mobileMenuActive && {
-                  transform: [{ translateY: this.state.bannerHeight }],
+                  transform: [{ translateY: this.props.bannerHeight }],
                 },
             ]}
           >

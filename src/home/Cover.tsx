@@ -2,7 +2,6 @@
 import {jsx, css, keyframes} from "@emotion/core"
 import CoverContent from "src/home/CoverContent"
 import { colors } from "src/styles"
-import { DESKTOP_BREAKPOINT, HEADER_HEIGHT, TABLET_BREAKPOINT } from 'src/shared/Styles'
 import celoAsStarsMobile from "src/home/celo-sky-mobile.svg"
 import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"
 import celoAsStarsDesktop from "src/home/celo-sky-desktop.svg"
@@ -23,17 +22,11 @@ function useImageLoaded(): [boolean, () => void] {
 }
 
 export default function Cover() {
-  const {isDesktop, isTablet} = useScreenSize()
+  const {isDesktop, isTablet, bannerHeight} = useScreenSize()
   const {t} = useTranslation(NameSpaces.home)
   return (
-    <div css={rootCss}>
-      <picture>
-        <source media={`(max-width: ${TABLET_BREAKPOINT}px)`} srcSet={celoAsStarsMobile}/>
-        <source media={`(max-width: ${DESKTOP_BREAKPOINT}px)`} srcSet={celoAsStarsTablet}/>
-        <img  src={celoAsStarsDesktop}
-          alt=""
-          css={backgroundArea}  />
-      </picture>
+    <div css={css(rootCss, {paddingTop: bannerHeight})}>
+      <div  css={css(backgroundArea, {top: bannerHeight, height: `calc(100% - ${bannerHeight}px)`})} />
       <div css={useableArea}>
         <CoverContent />
         {(isDesktop || isTablet) && <picture>
@@ -48,20 +41,25 @@ export default function Cover() {
 }
 
 const rootCss = css(flex,{
+  position: "relative",
   alignSelf: "center",
   alignItems: "center",
   backgroundColor: colors.dark,
-  paddingTop: HEADER_HEIGHT,
   width: "100%",
   maxWidth: "100vw",
   [WHEN_MOBILE]: {
     justifyContent: "center",
-    minHeight: "calc(100vh - 24px)",
+    height: "100vh",
+  },
+  ["@media (max-height: 568px)"]: {
+    justifyContent: "flex-end",
+    paddingBottom: 30,
   },
   [WHEN_TABLET]: {
+    paddingTop: 60,
     width: '100vw',
-    minHeight: "100vh",
-    // backgroundColor: colors.grayHeavy
+    height: "100vh",
+    marginBottom: 60,
   },
   [WHEN_DESKTOP]: {
     paddingTop: 140
@@ -87,6 +85,8 @@ const starKeyFrames =  keyframes`
 
 const backgroundArea = css({
   position: "absolute",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
   animationIterationCount: 1,
   animationFillMode: "both",
   animationDelay: "100ms",
@@ -95,24 +95,19 @@ const backgroundArea = css({
   animationTimingFunction: "ease-in-out",
   opacity: 0.1,
   width: '100%',
-  height: "100%",
-  left: 0,
-  right: 0,
+  backgroundColor: colors.dark,
   [WHEN_MOBILE]: {
-    height: "100vh",
-    right: 0,
-    top: 50,
+    backgroundImage: `url(${celoAsStarsMobile})`,
   },
   [WHEN_TABLET]: {
     width: '100vw',
     height: "100vh",
-    right: 0,
-    top: 50,
+    backgroundImage: `url(${celoAsStarsTablet})`,
   },
   [WHEN_DESKTOP]: {
     width: 1262,
     height: 1067,
-    top: 100
+    backgroundImage: `url(${celoAsStarsDesktop})`,
   }
 })
 
@@ -122,10 +117,14 @@ const featureImageCss = css({
 
 const useableArea = css(flex,{
   alignItems: "center",
+  zIndex: 10,
+  // backgroundColor: colors.goldDark,
   [WHEN_DESKTOP]: {
     maxWidth: 1100,
-    minHeight:920,
-    paddingBottom: 60,
+    height: 1067,
     zIndex: 20,
+  },
+  [WHEN_MOBILE]: {
+    paddingTop: 24
   }
 })
