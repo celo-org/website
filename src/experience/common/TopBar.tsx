@@ -9,6 +9,7 @@ import links from 'src/shared/menu-items'
 import MobileMenu from 'src/shared/MobileMenu'
 import Navigation, { NavigationTheme } from 'src/shared/Navigation'
 import { colors, fonts, standardStyles } from 'src/styles'
+import { useRouter } from "next/router"
 interface Props {
   current: string
   kitName?: string
@@ -18,7 +19,22 @@ const KITS = [links.BRAND, links.EVENTS_KIT, links.GRANT_KIT, links.MERCHANTS]
 
 export default function TopBar({ current, kitName }: Props) {
   const { isMobile } = useScreenSize()
+  const router = useRouter()
   const [showingKits, toggleKits] = useBooleanToggle()
+
+  function close() {
+    if (showingKits) {
+      toggleKits()
+    }
+  }
+
+  React.useEffect(() => {
+    router?.events?.on("routeChangeComplete", close)
+
+    return () => {
+      router?.events?.off("routeChangeComplete", close)
+    }
+  }, [router])
 
   return (
     <View style={standardStyles.centered}>
