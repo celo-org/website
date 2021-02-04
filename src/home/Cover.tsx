@@ -63,7 +63,7 @@ const rootCss = css(flex,{
 const starKeyFrames =  keyframes`
   from {
     opacity: 0.1;
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
 
   25% {
@@ -83,8 +83,8 @@ const backgroundArea = css({
   backgroundSize: "cover",
   animationIterationCount: 1,
   animationFillMode: "both",
-  animationDelay: "100ms",
-  animationDuration: "10s",
+  animationDelay: "50ms",
+  animationDuration: "6s",
   animationName: starKeyFrames,
   animationTimingFunction: "ease-in-out",
   opacity: 0.1,
