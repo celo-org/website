@@ -1,4 +1,4 @@
-import {useRef, useEffect, useState, useReducer} from "react"
+import {useRef, useEffect, useState} from "react"
 
 const SECOND = 1000
 const NEW_ADDRESSES = JSON.stringify(["2","2","addresses:new_address","phx_join",{}])
@@ -28,7 +28,7 @@ export default function useBlockscoutWS() {
   const rawTxData = useRef("")
   const [walletAddresses, setWalletAddresses] = useState("0")
   const [block, setBlock] = useState({count: 70000, average: "5"})
-  const [txCount, setTXCount] = useState(2_322_946)
+  const [txCount, setTXCount] = useState(2_000_000)
 
   function incrementTransactionCount() {
     setTXCount(txCount+1)
