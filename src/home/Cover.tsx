@@ -57,6 +57,14 @@ const rootCss = css(flex,{
   [WHEN_MOBILE]: {
     justifyContent: "center",
     minHeight: "calc(100vh - 24px)",
+  },
+  [WHEN_TABLET]: {
+    width: '100vw',
+    minHeight: "100vh",
+    // backgroundColor: colors.grayHeavy
+  },
+  [WHEN_DESKTOP]: {
+    paddingTop: 140
   }
 })
 
@@ -90,13 +98,21 @@ const backgroundArea = css({
   height: "100%",
   left: 0,
   right: 0,
-  top: 50,
   [WHEN_MOBILE]: {
     height: "100vh",
+    right: 0,
+    top: 50,
+  },
+  [WHEN_TABLET]: {
+    width: '100vw',
+    height: "100vh",
+    right: 0,
+    top: 50,
   },
   [WHEN_DESKTOP]: {
-    maxWidth: 1380,
-    height: 920,
+    width: 1262,
+    height: 1067,
+    top: 100
   }
 })
 
