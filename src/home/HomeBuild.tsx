@@ -2,6 +2,7 @@ import * as React from 'react'
 import { StyleSheet, View } from 'react-native'
 import { H1 } from 'src/fonts/Fonts'
 import { Adventure } from 'src/home/Adventure'
+import blankSquare from 'src/icons/Rectangle.png'
 import { NameSpaces, useTranslation } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
@@ -29,9 +30,9 @@ export default function HomeBuild() {
         allStyle={standardStyles.blockMarginTopMobile}
         mobileStyle={standardStyles.sectionMarginBottomMobile}
         >
-            {/* <Adventure /> */}
-            {/* <Adventure /> */}
-            {/* <Adventure /> */}
+            <Adventure source={blankSquare} title={t('build1Title')} text={t('build1Text')}/> 
+            <Adventure source={blankSquare} title={t('build2Title')} text={t('build2Text')}/>
+            <Adventure source={blankSquare} title={t('build3Title')} text={t('build3Text')}/>
 
         </GridRow>
         </>
