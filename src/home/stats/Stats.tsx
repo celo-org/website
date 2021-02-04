@@ -8,16 +8,16 @@ import { colors } from "src/styles"
 import useBlockscoutWS from "./useBlockscoutWS"
 
 export default function Stats() {
-  const {t} =useTranslation(NameSpaces.home)
-  const [addresses, blockCount, averageTime, txCount] = useBlockscoutWS()
-  const allLoaded = addresses && averageTime
+  const {t} = useTranslation(NameSpaces.home)
+  const {walletAddresses, blockCount, average, txCount} = useBlockscoutWS()
+  const allLoaded = walletAddresses && average && txCount && blockCount
   return <figure aria-hidden={!allLoaded} css={css(rootCss,allLoaded && appear )}>
         <RingsGlyph color={colors.white} height={20}/>
         <figcaption css={headingCss}>{t("statsHeading")}</figcaption>
         <Datum value={blockCount.toLocaleString()} title={t("statsBlockCount")} id="stat-blockcount"/>
-        <Datum value={addresses} title={t("statsAddresses")} id="stat-addressess"/>
+        <Datum value={walletAddresses} title={t("statsAddresses")} id="stat-addressess"/>
         <Datum value={txCount.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
-        <Datum value={`${averageTime}s`} title={t("statsAvgTime")} id="stat-time"/>
+        <Datum value={`${average}s`} title={t("statsAvgTime")} id="stat-time"/>
   </figure>
 }
 

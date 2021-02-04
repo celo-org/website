@@ -1,4 +1,4 @@
-import {useRef, useEffect, useState} from "react"
+import {useRef, useEffect, useState, useReducer} from "react"
 
 const SECOND = 1000
 const NEW_ADDRESSES = JSON.stringify(["2","2","addresses:new_address","phx_join",{}])
@@ -23,28 +23,42 @@ type BlockArray = [null,null,"blocks:new_block","new_block",
 ]
 type ReturnValues = TransactionArray | BlockArray |AddressArray
 
-export default function useBlockscoutWS() {
+interface State {
+  walletAddresses: number,
+  blockCount: number,
+  average: number,
+  txCount: number
+}
+
+const initialState: State = {
+  walletAddresses: 0,
+  blockCount: 0,
+  average: 5,
+  txCount: 0
+}
+
+export default function useBlockscoutWS(): State {
   const ws = useRef<WebSocket>(null);
   const rawTxData = useRef("")
-  const [walletAddresses, setWalletAddresses] = useState("0")
-  const [block, setBlock] = useState({count: 70000, average: "5"})
-  const [txCount, setTXCount] = useState(2_000_000)
 
-  function incrementTransactionCount() {
-    setTXCount(txCount+1)
-  }
+  const [state, dispatch] =  useReducer(reduce, initialState)
 
-  function reduce(dataArray: ReturnValues) {
+  function reduce(lastState: State, dataArray: ReturnValues) {
     switch (dataArray[TYPE_INDEX]) {
       case "addresses:new_address":
         const addressData = dataArray as AddressArray
-        return  setWalletAddresses(addressData[INFO_INDEX].count)
+        return {...lastState, walletAddresses: addressData[INFO_INDEX].count}
       case  "blocks:new_block":
         const blockData = dataArray as BlockArray
         const average = blockData[INFO_INDEX].average_block_time.split(" ")[0]
-        return  setBlock({count: blockData[INFO_INDEX].block_number, average})
+        return  {...lastState, blockCount: blockData[INFO_INDEX].block_number, average}
       case  "transactions:new_transaction":
-        return incrementTransactionCount()
+        const txData = dataArray as TransactionArray
+        console.info(txData[INFO_INDEX].transaction_hash)
+        return {...lastState, txCount: lastState.txCount +1 }
+      default:
+        console.info("doesnt fit", dataArray)
+        return lastState
     }
   }
 
@@ -63,7 +77,7 @@ export default function useBlockscoutWS() {
       }
       rawTxData.current = event.data
       const dataArray: ReturnValues = await JSON.parse(event.data)
-      reduce(dataArray)
+      dispatch(dataArray)
     }
 
     // send heartbeat every 30 seconds, increasing the integer by 1 each time
@@ -81,7 +95,7 @@ export default function useBlockscoutWS() {
     };
   }, [])
 
-  return [walletAddresses, block.count, block.average, txCount]
+  return state
 }
 
 
