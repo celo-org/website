@@ -11,16 +11,7 @@ import examplePhones from "src/home/app-examples@2x.png"
 import Stats from "./stats/Stats"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import { useScreenSize } from "src/layout/ScreenSize"
-import { useState } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
-
-function useImageLoaded(): [boolean, () => void] {
-  const [backgroundLoaded, setBackgroundLoaded] = useState(false)
-  function setLoadingComplete() {
-    setBackgroundLoaded(true)
-  }
-  return [backgroundLoaded, setLoadingComplete]
-}
 
 export default function Cover() {
   const {isDesktop, isTablet} = useScreenSize()
