@@ -16,12 +16,23 @@
   "readMore": "Read more about our technology",
   "readIntroGuide": "Read Intro Guide",
   "buildTitle": "Build applications for anyone with a mobile phone",
-  "build1Title": "Fast...",
-  "build1Text": "Block headers optimized for fast mobile phone synchronization, which makes Celo over 17,000x lighter than other blockchains",
-  "build2Title": "Stable...",
-  "build2Text": "Celo Dollar (cUSD), a native stablecoin that follows the value of the US Dollar, allows users to globally send, share and pay with applications (and wallets?) built on Celo",
-  "build3Title": "Easy to integrate",
-  "build3Text": "xx",
+  "build1":{
+    "title": "Fast...",
+    "text": "Block headers optimized for fast mobile phone synchronization, which makes Celo over 17,000x lighter than other blockchains",
+    "link": "See Application built on Celo"
+    },
+  "build2": {
+    "title": "Stable...",
+    "text": "Celo Dollar (cUSD), a native stablecoin that follows the value of the US Dollar, allows users to globally send, share and pay with applications (and wallets?) built on Celo",
+    "link": "Learn about the Celo Platform"
+
+  },
+  "build3": {
+    "title": "Easy to integrate",
+    "text": "xx",
+    "link": "Bring you Ethereum dApp to Celo"
+
+  },
   "benefitsTitle": "Benefits of Celo",
   "benefitsHeading": "Mobile-First Blockchain Platform",
   "benefit1Title": "Global Impact",

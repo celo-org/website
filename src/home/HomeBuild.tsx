@@ -30,9 +30,9 @@ export default function HomeBuild() {
         allStyle={standardStyles.blockMarginTopMobile}
         mobileStyle={standardStyles.sectionMarginBottomMobile}
         >
-            <Adventure source={blankSquare} title={t('build1Title')} text={t('build1Text')}/> 
-            <Adventure source={blankSquare} title={t('build2Title')} text={t('build2Text')}/>
-            <Adventure source={blankSquare} title={t('build3Title')} text={t('build3Text')}/>
+            <Adventure source={blankSquare} title={t('build1.title')} text={t('build1.text')} link={t('build1.link')}/> 
+            <Adventure source={blankSquare} title={t('build2.title')} text={t('build2.text')} link={t('build2.link')}/>
+            <Adventure source={blankSquare} title={t('build3.title')} text={t('build3.text')} link={t('build3.link')}/>
 
         </GridRow>
         </>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-evenly',
         flexWrap: 'wrap',
     },
-    link:{
+    link:{ 
         padding: 10,
     }
 })
