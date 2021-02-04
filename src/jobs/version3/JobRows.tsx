@@ -2,11 +2,11 @@ import * as React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { I18nProps, withNamespaces } from 'src/i18n'
 import { LeverJob } from 'src/jobs/lever'
-import { ScreenProps, ScreenSizes } from 'src/layout/ScreenSize'
+import { ScreenSizes } from 'src/layout/ScreenSize'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import { fonts, standardStyles } from 'src/styles'
 
-class JobRowBase extends React.PureComponent<LeverJob & ScreenProps & I18nProps> {
+class JobRowBase extends React.PureComponent<LeverJob & {screen: ScreenSizes} & I18nProps> {
   render() {
     const { text, categories, screen, t } = this.props
     const isTablet = screen === ScreenSizes.TABLET

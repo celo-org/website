@@ -3,7 +3,6 @@ import {jsx, css} from "@emotion/core"
 import { flex, garamond, sectionTitle, jost, } from "src/estyles"
 import {memo} from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
-
 import RingsGlyph from "src/logos/RingsGlyph"
 import { colors } from "src/styles"
 import useBlockscoutWS from "./useBlockscoutWS"
@@ -34,7 +33,11 @@ const rootCss = css(flex,{
   right: 0,
   top: 260,
   padding: 24,
-  paddingBottom: 30
+  paddingBottom: 30,
+  zIndex: 20,
+  ['@media (max-width: 1165px)'] : {
+    display: "none"
+  }
 })
 
 const appear = css({

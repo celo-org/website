@@ -2,24 +2,16 @@
 import {jsx, css, keyframes} from "@emotion/core"
 import CoverContent from "src/home/CoverContent"
 import { colors } from "src/styles"
-import celoAsStarsMobile from "src/home/celo-sky-mobile.svg"
+import celoAsStarsMobileLong from "src/home/celo-sky-mobile.svg"
+import celoAsStarsMobileShort from "src/home/celo-sky-mobile-short.svg"
 import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"
 import celoAsStarsDesktop from "src/home/celo-sky-desktop.svg"
 
 import examplePhones from "src/home/app-examples@2x.png"
 import Stats from "./stats/Stats"
-import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
 import { useScreenSize } from "src/layout/ScreenSize"
-import { useState } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
-
-function useImageLoaded(): [boolean, () => void] {
-  const [backgroundLoaded, setBackgroundLoaded] = useState(false)
-  function setLoadingComplete() {
-    setBackgroundLoaded(true)
-  }
-  return [backgroundLoaded, setLoadingComplete]
-}
 
 export default function Cover() {
   const {isDesktop, isTablet, bannerHeight} = useScreenSize()
@@ -98,8 +90,11 @@ const backgroundArea = css({
   opacity: 0.1,
   width: '100%',
   backgroundColor: colors.dark,
+  [WHEN_LONG_PHONE]: {
+    backgroundImage: `url(${celoAsStarsMobileLong})`,
+  },
   [WHEN_MOBILE]: {
-    backgroundImage: `url(${celoAsStarsMobile})`,
+    backgroundImage: `url(${celoAsStarsMobileShort})`,
   },
   [WHEN_TABLET]: {
     width: '100vw',
