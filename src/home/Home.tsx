@@ -22,9 +22,7 @@ export default function Home() {
         image={celoHero}
       />
       <Cover />
-      <ImagePanes />
-      <HomeBenefits />
-      <FlowerArea />
+
       <TwoAssets />
       <Press />
       <Involvement />

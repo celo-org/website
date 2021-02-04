@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import {jsx, css} from "@emotion/core"
-import { fonts, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import { fonts, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import { CeloLinks } from 'src/shared/menu-items'
@@ -40,6 +40,9 @@ const rootCss = css(centered,
     },
     [WHEN_MOBILE]: {
       maxWidth: 310,
+    },
+    [WHEN_DESKTOP]: {
+      paddingTop: 150
     }
 })
 

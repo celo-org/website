@@ -49,6 +49,7 @@ const rootCss = css(flex,{
   backgroundColor: colors.dark,
   width: "100%",
   maxWidth: "100vw",
+  marginBottom: 500,
   [WHEN_MOBILE]: {
     justifyContent: "center",
   },
@@ -63,7 +64,7 @@ const rootCss = css(flex,{
     marginBottom: 60,
   },
   [WHEN_DESKTOP]: {
-    paddingTop: 140
+    paddingTop: 0,
   }
 })
 
@@ -108,6 +109,7 @@ const backgroundArea = css({
   [WHEN_DESKTOP]: {
     width: 1262,
     height: 1067,
+    backgroundPositionY: 40,
     backgroundImage: `url(${celoAsStarsDesktop})`,
   }
 })
@@ -119,10 +121,9 @@ const featureImageCss = css({
 const useableArea = css(flex,{
   alignItems: "center",
   zIndex: 10,
-  // backgroundColor: colors.goldDark,
   [WHEN_DESKTOP]: {
-    maxWidth: 1100,
-    height: 1067,
+    width: 1262,
+    height: 1067 + 50,
     zIndex: 20,
   },
   [WHEN_TABLET]: {
