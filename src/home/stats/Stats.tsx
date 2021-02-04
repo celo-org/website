@@ -7,34 +7,18 @@ import { NameSpaces, useTranslation } from "src/i18n"
 import RingsGlyph from "src/logos/RingsGlyph"
 import { colors } from "src/styles"
 import useBlockscoutWS from "./useBlockscoutWS"
-import useSWR from "swr"
-
-async function fetcher() {
-  const response = await fetch("/api/stats")
-  return response.json()
-}
-
-const SWR_OPTIONS = {
-  refreshInterval: 5000,
-}
-
-interface Data {
-  avgBlockSeconds: number
-  blockCount: number
-}
 
 export default function Stats() {
   const {t} =useTranslation(NameSpaces.home)
-  const addresses = useBlockscoutWS()
-
-  const { data } = useSWR<Data>("/api/stats", fetcher, SWR_OPTIONS)
-  const allLoaded = addresses && data && data.blockCount
+  const [addresses, blockCount, averageTime, txCount] = useBlockscoutWS()
+  const allLoaded = addresses && averageTime
   return <figure aria-hidden={!allLoaded} css={css(rootCss,allLoaded && appear )}>
         <RingsGlyph color={colors.white} height={20}/>
         <figcaption css={headingCss}>{t("statsHeading")}</figcaption>
-        <Datum value={data?.blockCount?.toLocaleString()} title={t("statsBlockCount")} id="stat-blockcount"/>
+        <Datum value={blockCount.toLocaleString()} title={t("statsBlockCount")} id="stat-blockcount"/>
         <Datum value={addresses} title={t("statsAddresses")} id="stat-addressess"/>
-        <Datum value={`${data?.avgBlockSeconds || 0}s`} title={t("statsAvgTime")} id="stat-time"/>
+        <Datum value={txCount.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
+        <Datum value={`${averageTime}s`} title={t("statsAvgTime")} id="stat-time"/>
   </figure>
 }
 

@@ -9,6 +9,7 @@
   "statsHeading": "PLATFORM STATS",
   "statsBlockCount": "Total blocks",
   "statsAddresses": "Total wallet addresses",
+  "statsTransactions": "Total transactions",
   "statsAvgTime": "Average block time",
   "whitePaper": "Read Celo White Paper",
   "stabilityPaper": "Read Stability White Paper",
