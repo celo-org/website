@@ -1,5 +1,6 @@
 import {useRef, useEffect, useReducer} from "react"
 import { InitialResponse, StatKeys, StatsState, StatsTransport } from "../../../fullstack/statsTransport"
+
 const HOST = "ws://localhost:3000"
 
 type State = Partial<StatsState>
@@ -29,14 +30,20 @@ export default function useStatsRelay() {
   }, initialState)
 
   useEffect(() => {
-    ws.current = new WebSocket(`${HOST}/api/stats`)
+    function relayURI() {
+      const protocol = window.location.protocol === "https" ? "wss" : "ws"
+      const host = window.location.host
+      return `${protocol}://${host}/api/stats`
+    }
+
+    ws.current = new WebSocket(relayURI())
 
     ws.current.onopen = () => {
       ws.current.send("saluton")
     }
 
-    ws.current.onmessage = (event: MessageEvent<string>) => {
-      console.log(event)
+    ws.current.onmessage = (event) => {
+      console.info(event)
       const data: Action = JSON.parse(event.data)
       dispatch(data)
     }

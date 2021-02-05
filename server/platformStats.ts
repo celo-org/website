@@ -86,11 +86,10 @@ function process(action: EventTypes, data: NewTransaction | NewBlock | NewAddres
       updateStat(StatKeys.avgBlockTime, averageTime)
       return
     case EventTypes.NEW_TRANSACTION:
-      (data as NewTransaction).transaction_hash
       incrementStat(StatKeys.totalTx, 1)
       return
     default:
-      console.log("unknown", action, data)
+      console.warn("unknown", action, data)
   }
 }
 
@@ -109,7 +108,6 @@ function formatBlockTime(raw: string): string {
 function incrementStat(key: StatKeys.totalTx, by:number) {
     const last =  getValue<number>(key) || 0
     const current = last + by
-    console.info(key,last,current)
     return storeValue(key, current)
 }
 
@@ -119,7 +117,6 @@ function updateStat(key: StatKeys, recent: number | string) {
     if (previous === recent ) {
       return
     } else {
-      console.info("new info",key, previous, recent)
       return storeValue(key, recent)
     }
   } catch (e) {
@@ -139,6 +136,7 @@ function currentState(): StatsState {
 }
 
 export default function PlatformStats(wss: WebSocket) {
+  obtainStats()
 
   wss.on('message', (msg) => {
     if (msg === "saluton") {
@@ -153,21 +151,18 @@ export default function PlatformStats(wss: WebSocket) {
     });
 
     // when values changes send to browser
-  statsCache.on("set", function(key: StatKeys, value ){
+  statsCache.on("set", (key: StatKeys, value ) => {
     console.info(key, value)
     const transit: StatsTransport = {action: key, value}
     wss.send(JSON.stringify(transit))
   })
 
   wss.on("error", () => {
-    Sentry.captureMessage("platform stats stream ran into an issue")
+    Sentry.captureMessage("platform stats relay ran into an issue")
   })
 
   wss.onclose = () => {
     console.warn("websockets relay closed")
   }
-
 }
 
-
-obtainStats()
