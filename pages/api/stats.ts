@@ -1,14 +1,21 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import byMethod from '../../server/byMethod'
-import getStats from '../../server/stats'
+import WebSocket from "ws"
 
-async function get(_: NextApiRequest, res: NextApiResponse) {
-  try {
-    const stats = await getStats()
-    res.json(stats)
-  } catch {
-    res.status(500).json([])
+export default  async function get(_: NextApiRequest, res: NextApiResponse) {
+  const wss = new WebSocket.Server({noServer: true})
+  wss.on('connection', function connection(ws) {
+    ws.on('message', function incoming(message) {
+      console.log('received: %s', message);
+    });
+    ws.send('something');
+  });
+
+  // res.end()
+}
+
+export const config = {
+  api: {
+    bodyParser: false
   }
 }
 
-export default byMethod({ getHandler: get })

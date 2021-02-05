@@ -1,4 +1,4 @@
-import {useRef, useEffect, useState, useReducer} from "react"
+import {useRef, useEffect, useReducer} from "react"
 
 const SECOND = 1000
 const NEW_ADDRESSES = JSON.stringify(["2","2","addresses:new_address","phx_join",{}])

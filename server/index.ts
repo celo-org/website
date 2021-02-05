@@ -18,6 +18,8 @@ import getFormattedEvents from './EventHelpers'
 import { submitFellowApp } from './FellowshipApp'
 import rateLimit from './rateLimit'
 import respondError from './respondError'
+import expressWS  from 'express-ws'
+import platformStats from './platformStats'
 
 const CREATED = 201
 const NO_CONTENT = 204
@@ -41,7 +43,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 ;(async () => {
   await app.prepare()
   const server = express()
-
+  expressWS(server)
   server.use(helmet())
   server.use(wwwRedirect)
   server.enable('trust proxy')
@@ -51,6 +53,8 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   if (!dev) {
     server.use(expressEnforcesSsl())
   }
+  // @ts-ignore
+  server.ws('/api/live-stats', platformStats);
 
   // page redirects
   ;['/careers', '/join'].forEach((route) => {
@@ -263,6 +267,8 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   server.get('*', (req, res) => {
     return handle(req, res)
   })
+
+
 
   await initSentryServer()
   await server.listen(port)
