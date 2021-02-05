@@ -54,7 +54,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     server.use(expressEnforcesSsl())
   }
   // @ts-ignore
-  server.ws('/api/live-stats', platformStats);
+  server.ws('/api/stats', platformStats);
 
   // page redirects
   ;['/careers', '/join'].forEach((route) => {

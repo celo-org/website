@@ -1,7 +1,20 @@
 import WebSocket from "ws"
 import Sentry from "./sentry"
 import NodeCache from 'node-cache'
+import {StatKeys, StatsTransport, StatsState, InitialResponse} from "../fullstack/statsTransport"
 const statsCache = new NodeCache({ stdTTL: 0, checkperiod: 720 })
+
+
+function storeValue(key: StatKeys  ,value: number | string) {
+  return statsCache.set(key, value)
+}
+
+function getValue<t>(key: StatKeys) {
+  return statsCache.get<t>(key)
+}
+const SECOND = 1000
+const HEARTBEAT  = [null,"5","phoenix","heartbeat",{}]
+
 
 // GETTERS
 const INFO_INDEX = 4
@@ -45,54 +58,83 @@ function obtainStats() {
   wsc.on("message", async (event) => {
     const dataArray: ReturnValues = await JSON.parse(event as string)
     process(dataArray[TYPE_INDEX] as EventTypes, dataArray[INFO_INDEX])
-    // parse format and store in cache + emit
   })
 
   wsc.onclose =() => {
     console.warn("Connection to blockscout lost")
   }
+   // send heartbeat every 30 seconds, increasing the integer by 1 each time
+   setInterval(() => {
+    const beat =  Number(HEARTBEAT[1])
+    const upBeat = beat +1
+    HEARTBEAT[1] = upBeat.toString()
+    wsc.send(JSON.stringify(HEARTBEAT))
+  }, 30 * SECOND)
 }
 
-interface StatsState {
-  avgBlockTime: string
-  blockCount: number
-  totalTransactions: number
-  addressess: number
-}
 
 function process(action: EventTypes, data: NewTransaction | NewBlock | NewAddress ) {
   switch (action) {
     case EventTypes.NEW_ADDRESS:
       const address = data as NewAddress
-      address.count
+      updateStat(StatKeys.addressCount, address.count)
+      return
     case EventTypes.NEW_BLOCK:
-     const block =  (data as NewBlock)
-      block.block_number
-      block.average_block_time
+      const block =  (data as NewBlock)
+      const averageTime = formatBlockTime(block.average_block_time)
+      updateStat(StatKeys.blockCount, block.block_number)
+      updateStat(StatKeys.avgBlockTime, averageTime)
+      return
     case EventTypes.NEW_TRANSACTION:
       (data as NewTransaction).transaction_hash
+      incrementStat(StatKeys.totalTx, 1)
+      return
     default:
-      console.log(data)
+      console.log("unknown", action, data)
+  }
+}
+
+function formatBlockTime(raw: string): string {
+  if (raw) {
+    return raw.split(" ")[0]
+  } else {
+    return "5"
   }
 }
 
 
-
 // GIVERS
 
-enum StatKeys {
-  "avgBlockTime"= "avgBlockTime",
-  "blockCount" = "blockCount",
-  "totalTx"= "totalTx",
-  "addressCount" = "addressCount"
+
+function incrementStat(key: StatKeys.totalTx, by:number) {
+    const last =  getValue<number>(key) || 0
+    const current = last + by
+    console.info(key,last,current)
+    return storeValue(key, current)
 }
 
-const initialState = {test: "ok", number: 1}
+function updateStat(key: StatKeys, recent: number | string) {
+  try {
+    const previous = getValue(key)
+    if (previous === recent ) {
+      return
+    } else {
+      console.info("new info",key, previous, recent)
+      return storeValue(key, recent)
+    }
+  } catch (e) {
+    console.warn("Failed to update stat", e)
+  }
+}
+
 
 function currentState(): StatsState {
-  const {avgBlockTime} = statsCache.mget<any>(Object.values(StatKeys))
+  const {avgBlockTime, blockCount, totalTx, addressCount} = statsCache.mget<number|string>(Object.values(StatKeys))
   return {
-    avgBlockTime
+    avgBlockTime: avgBlockTime as string,
+    blockCount: blockCount as number,
+    totalTx: totalTx as number,
+    addressCount: addressCount as string
   }
 }
 
@@ -100,15 +142,31 @@ export default function PlatformStats(wss: WebSocket) {
 
   wss.on('message', (msg) => {
     if (msg === "saluton") {
-      wss.send(JSON.stringify(initialState))
+      const inital: InitialResponse = {
+        action: 'init',
+        value: currentState()
+      }
+      wss.send(JSON.stringify(inital))
+      return
     }
-    console.info(currentState())
-    wss.send(msg);
-  });
+      wss.send("say hello");
+    });
+
+    // when values changes send to browser
+  statsCache.on("set", function(key: StatKeys, value ){
+    console.info(key, value)
+    const transit: StatsTransport = {action: key, value}
+    wss.send(JSON.stringify(transit))
+  })
 
   wss.on("error", () => {
     Sentry.captureMessage("platform stats stream ran into an issue")
   })
+
+  wss.onclose = () => {
+    console.warn("websockets relay closed")
+  }
+
 }
 
 

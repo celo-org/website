@@ -5,19 +5,19 @@ import {memo} from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
 import RingsGlyph from "src/logos/RingsGlyph"
 import { colors } from "src/styles"
-import useBlockscoutWS from "./useBlockscoutWS"
+import useStatsRelay from "./useStatsRelay"
 
 export default function Stats() {
   const {t} = useTranslation(NameSpaces.home)
-  const {walletAddresses, blockCount, average, txCount} = useBlockscoutWS()
-  const allLoaded = walletAddresses && average && txCount && blockCount
+  const {addressCount, avgBlockTime,blockCount, totalTx} = useStatsRelay()
+  const allLoaded = addressCount && avgBlockTime  && blockCount && totalTx
   return <figure aria-hidden={!allLoaded} css={css(rootCss,allLoaded && appear )}>
         <RingsGlyph color={colors.white} height={20}/>
         <figcaption css={headingCss}>{t("statsHeading")}</figcaption>
-        <Datum value={blockCount.toLocaleString()} title={t("statsBlockCount")} id="stat-blockcount"/>
-        <Datum value={walletAddresses} title={t("statsAddresses")} id="stat-addressess"/>
-        <Datum value={txCount.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
-        <Datum value={`${average}s`} title={t("statsAvgTime")} id="stat-time"/>
+        <Datum value={blockCount?.toLocaleString()} title={t("statsBlockCount")} id="stat-blockcount"/>
+        <Datum value={addressCount} title={t("statsAddresses")} id="stat-addressess"/>
+        <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
+        <Datum value={`${avgBlockTime||0}s`} title={t("statsAvgTime")} id="stat-time"/>
   </figure>
 }
 
