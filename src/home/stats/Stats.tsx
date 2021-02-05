@@ -54,7 +54,7 @@ interface DatumProps {
   id: string
 }
 
-const Datum = memo<DatumProps>(function Datum({value, title, id}: DatumProps) {
+const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
   return <>
       <span css={valueCss} aria-labelledby={id} >{value}</span>
       <span css={labelCss} id={id}>{title}</span>

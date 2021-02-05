@@ -43,7 +43,6 @@ function obtainStats() {
     wsc.send(NEW_TRANSACTION)
   }
   wsc.on("message", async (event) => {
-    console.log(typeof event, event)
     const dataArray: ReturnValues = await JSON.parse(event as string)
     process(dataArray[TYPE_INDEX] as EventTypes, dataArray[INFO_INDEX])
     // parse format and store in cache + emit
@@ -103,7 +102,7 @@ export default function PlatformStats(wss: WebSocket) {
     if (msg === "saluton") {
       wss.send(JSON.stringify(initialState))
     }
-    console.log(currentState())
+    console.info(currentState())
     wss.send(msg);
   });
 
