@@ -154,7 +154,11 @@ export default function PlatformStats(wss: WebSocket) {
   statsCache.on("set", (key: StatKeys, value ) => {
     console.info(key, value)
     const transit: StatsTransport = {action: key, value}
-    wss.send(JSON.stringify(transit))
+    try {
+      wss.send(JSON.stringify(transit))
+    } catch (e) {
+      console.log("failed to emit", "STATUS", wss.readyState, e)
+    }
   })
 
   wss.on("error", () => {

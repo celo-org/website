@@ -1,8 +1,6 @@
 import {useRef, useEffect, useReducer} from "react"
 import { InitialResponse, StatKeys, StatsState, StatsTransport } from "../../../fullstack/statsTransport"
 
-const HOST = "ws://localhost:3000"
-
 type State = Partial<StatsState>
 
 type Action = InitialResponse | StatsTransport
@@ -30,8 +28,9 @@ export default function useStatsRelay() {
   }, initialState)
 
   useEffect(() => {
+    const queue = []
     function relayURI() {
-      const protocol = window.location.protocol === "https" ? "wss" : "ws"
+      const protocol = window.location.protocol === "https:" ? "wss" : "ws"
       const host = window.location.host
       return `${protocol}://${host}/api/stats`
     }
@@ -45,12 +44,25 @@ export default function useStatsRelay() {
     ws.current.onmessage = (event) => {
       console.info(event)
       const data: Action = JSON.parse(event.data)
-      dispatch(data)
+       if (data.action === "init") {
+         requestAnimationFrame(() => dispatch(data))
+       } else {
+         queue.push(data)
+       }
     }
+
+    // spread out the updates as they tend to come in chunks and then nothing at all.
+    const interval = setInterval(() => {
+      const update = queue.shift()
+      if (update) {
+        dispatch(update)
+      }
+    }, 200)
 
     ws.current.onclose = (data) => console.info("ws closed", data);
 
     return () => {
+      clearInterval(interval)
       ws.current.close();
     };
   }, [])
