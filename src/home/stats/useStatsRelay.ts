@@ -1,5 +1,30 @@
 import {useRef, useEffect, useReducer} from "react"
-import { InitialResponse, StatKeys, StatsState, StatsTransport } from "../../../fullstack/statsTransport"
+
+
+interface StatsState {
+  avgBlockTime: string
+  blockCount: number
+  totalTx: number
+  addressCount: string
+}
+
+
+enum StatKeys {
+  "avgBlockTime"= "avgBlockTime",
+  "blockCount" = "blockCount",
+  "totalTx"= "totalTx",
+  "addressCount" = "addressCount"
+}
+
+interface StatsTransport {
+  action: StatKeys
+  value: string | number
+}
+
+interface InitialResponse {
+  action: "init"
+  value: StatsState
+}
 
 type State = Partial<StatsState>
 
@@ -28,11 +53,16 @@ export default function useStatsRelay() {
   }, initialState)
 
   useEffect(() => {
-    const queue = []
+    const queues: Record<StatKeys, StatsTransport[]> = {
+      [StatKeys.addressCount]:[],
+      [StatKeys.avgBlockTime]:[],
+      [StatKeys.blockCount]:[],
+      [StatKeys.totalTx]:[]
+    }
+
     function relayURI() {
       const protocol = window.location.protocol === "https:" ? "wss" : "ws"
-      const host = window.location.host
-      return `${protocol}://${host}/api/stats`
+      return `${protocol}://web-stats-relay-dot-celo-testnet.wl.r.appspot.com/stats`
     }
 
     ws.current = new WebSocket(relayURI())
@@ -47,17 +77,21 @@ export default function useStatsRelay() {
        if (data.action === "init") {
          requestAnimationFrame(() => dispatch(data))
        } else {
-         queue.push(data)
+         queues[data.action].push(data)
        }
     }
 
     // spread out the updates as they tend to come in chunks and then nothing at all.
     const interval = setInterval(() => {
-      const update = queue.shift()
-      if (update) {
-        dispatch(update)
-      }
-    }, 200)
+        Object.keys(StatKeys).forEach((key: StatKeys) => {
+          const update = queues[key].shift()
+          if (update) {
+            dispatch(update)
+          }
+        })
+
+      }, 500)
+
 
     ws.current.onclose = (data) => console.info("ws closed", data);
 
