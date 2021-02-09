@@ -36,6 +36,7 @@ export default function Cover() {
 const backgroundDesktopSize = {height: 1066, width: 1379}
 
 const rootCss = css(flex,{
+  overflow: "hidden",
   position: "relative",
   alignSelf: "center",
   alignItems: "center",
