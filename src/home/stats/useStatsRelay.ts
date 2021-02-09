@@ -61,8 +61,10 @@ export default function useStatsRelay() {
     }
 
     function relayURI() {
+
+      const host = (window.location.hostname === "localhost") ?  "0.0.0.0:8001" : "web-stats-relay-dot-celo-testnet.wl.r.appspot.com"
       const protocol = window.location.protocol === "https:" ? "wss" : "ws"
-      return `${protocol}://web-stats-relay-dot-celo-testnet.wl.r.appspot.com/stats`
+      return `${protocol}://${host}/stats`
     }
 
     ws.current = new WebSocket(relayURI())
