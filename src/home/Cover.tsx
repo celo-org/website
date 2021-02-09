@@ -11,11 +11,11 @@ import examplePhones from "src/home/example-phones.svg"
 import Stats from "./stats/Stats"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
 import { useScreenSize } from "src/layout/ScreenSize"
-// import { NameSpaces, useTranslation } from "src/i18n"
+import { NameSpaces, useTranslation } from "src/i18n"
 
 export default function Cover() {
   const {isDesktop, isTablet, bannerHeight} = useScreenSize()
-  // const {t} = useTranslation(NameSpaces.home)
+  const {t} = useTranslation(NameSpaces.home)
   return (
     <div css={css(rootCss, {paddingTop: bannerHeight, [WHEN_MOBILE]: {
       minHeight: `calc(100vh - ${bannerHeight}px)`,
@@ -24,8 +24,7 @@ export default function Cover() {
       <div css={useableArea}>
         <CoverContent />
         {(isDesktop || isTablet) && <picture>
-
-          <object type="image/svg+xml" data={examplePhones} width={1016} height={524} css={featureImageCss} />
+          <object aria-label={t('coverPhonesImage')} type="image/svg+xml" data={examplePhones} width={1016} height={524} css={featureImageCss} />
         </picture>}
       </div>
 
@@ -41,7 +40,6 @@ const rootCss = css(flex,{
   backgroundColor: colors.dark,
   width: "100%",
   maxWidth: "100vw",
-  marginBottom: 500,
   [WHEN_MOBILE]: {
     justifyContent: "center",
   },
@@ -112,19 +110,17 @@ const backgroundArea = css({
 const phonesAnimation = keyframes`
 from {
   opacity: 0;
-  transform: translateY(25px)
 }
 to {
   opacity: 1;
-  transform: translateY(0px)
 }
 `
 
 const featureImageCss = css({
   opacity: 0,
-  animationDelay: "200ms",
+  animationDelay: "300ms",
   animationName: phonesAnimation,
-  animationDuration: "600ms",
+  animationDuration: "800ms",
   animationFillMode: "both"
 })
 
