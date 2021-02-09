@@ -12,6 +12,7 @@ import Stats from "./stats/Stats"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { NameSpaces, useTranslation } from "src/i18n"
+import { HEADER_HEIGHT } from "src/shared/Styles"
 
 export default function Cover() {
   const {isDesktop, isTablet, bannerHeight} = useScreenSize()
@@ -32,6 +33,7 @@ export default function Cover() {
   </div>
   )
 }
+const backgroundDesktopSize = {height: 1066, width: 1379}
 
 const rootCss = css(flex,{
   position: "relative",
@@ -56,6 +58,7 @@ const rootCss = css(flex,{
   },
   [WHEN_DESKTOP]: {
     paddingTop: 0,
+    minHeight: backgroundDesktopSize.height
   }
 })
 
@@ -74,8 +77,6 @@ const starKeyFrames =  keyframes`
     transform: scale(1);
   }
 `
-
-
 const backgroundArea = css({
   position: "absolute",
   backgroundRepeat: "no-repeat",
@@ -98,12 +99,10 @@ const backgroundArea = css({
   [WHEN_TABLET]: {
     width: '100vw',
     minHeight: "100vh",
-    height: 985,
     backgroundImage: `url(${celoAsStarsTablet})`,
   },
   [WHEN_DESKTOP]: {
-    width: 1379,
-    height: 1053,
+    width: backgroundDesktopSize.width,
     backgroundPositionY: 40,
     backgroundImage: `url(${celoAsStarsDesktop})`,
   }
@@ -130,8 +129,8 @@ const useableArea = css(flex,{
   alignItems: "center",
   zIndex: 10,
   [WHEN_DESKTOP]: {
-    width: 1262,
-    height: 1067 + 50,
+    width: backgroundDesktopSize.width,
+    height: backgroundDesktopSize.height + HEADER_HEIGHT,
     zIndex: 20,
   },
   [WHEN_TABLET]: {
