@@ -19,13 +19,13 @@ exports[`HomePage renders 1`] = `
   }
 >
   <div
-    className="css-e84l1c-Cover"
+    className="css-bk8ub1-Cover"
   >
     <div
-      className="css-kac27n-Cover"
+      className="css-4o9604-Cover"
     />
     <div
-      className="css-rxs5ct-Cover"
+      className="css-vkzrhd-Cover"
     >
       <div
         className="css-1xkr2ul-CoverContent"
@@ -41,7 +41,7 @@ exports[`HomePage renders 1`] = `
         <p
           className="css-z1jmn5-CoverContent"
         >
-          Thousands of organizations and individuals are developing,  growing, and governing Celo: An open-source platform that enables anyone to build borderless applications
+          Thousands of organizations and individuals are developing,  growing, and governing Celo, an open-source platform that enables anyone to build borderless applications
         </p>
         <div
           className="css-kqicn0-CoverContent"
@@ -368,7 +368,7 @@ exports[`HomePage renders 1`] = `
               }
             }
           >
-            See Application built on Celo
+            Make it mobile wih DappKit
             <div
               className="css-view-1dbjc4n"
               style={
@@ -560,7 +560,7 @@ exports[`HomePage renders 1`] = `
               }
             }
           >
-            Learn about the Celo Platform
+            Learn more about Celo Dollars
             <div
               className="css-view-1dbjc4n"
               style={
@@ -752,7 +752,7 @@ exports[`HomePage renders 1`] = `
               }
             }
           >
-            Bring you Ethereum dApp to Celo
+            See it in action with Valora
             <div
               className="css-view-1dbjc4n"
               style={
