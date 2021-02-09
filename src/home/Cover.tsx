@@ -7,15 +7,15 @@ import celoAsStarsMobileShort from "src/home/celo-sky-mobile-short.svg"
 import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"
 import celoAsStarsDesktop from "src/home/celo-sky-desktop.svg"
 
-import examplePhones from "src/home/app-examples@2x.png"
+import examplePhones from "src/home/example-phones.svg"
 import Stats from "./stats/Stats"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
 import { useScreenSize } from "src/layout/ScreenSize"
-import { NameSpaces, useTranslation } from "src/i18n"
+// import { NameSpaces, useTranslation } from "src/i18n"
 
 export default function Cover() {
   const {isDesktop, isTablet, bannerHeight} = useScreenSize()
-  const {t} = useTranslation(NameSpaces.home)
+  // const {t} = useTranslation(NameSpaces.home)
   return (
     <div css={css(rootCss, {paddingTop: bannerHeight, [WHEN_MOBILE]: {
       minHeight: `calc(100vh - ${bannerHeight}px)`,
@@ -24,8 +24,8 @@ export default function Cover() {
       <div css={useableArea}>
         <CoverContent />
         {(isDesktop || isTablet) && <picture>
-          {/* add web p, 2x, tablet, and mobile sources*/}
-          <img alt={t("coverPhonesImage")} src={examplePhones} width={1016} height={524} css={featureImageCss} />
+
+          <object type="image/svg+xml" data={examplePhones} width={1016} height={524} css={featureImageCss} />
         </picture>}
       </div>
 
@@ -109,8 +109,23 @@ const backgroundArea = css({
   }
 })
 
-const featureImageCss = css({
+const phonesAnimation = keyframes`
+from {
+  opacity: 0;
+  transform: translateY(25px)
+}
+to {
+  opacity: 1;
+  transform: translateY(0px)
+}
+`
 
+const featureImageCss = css({
+  opacity: 0,
+  animationDelay: "200ms",
+  animationName: phonesAnimation,
+  animationDuration: "600ms",
+  animationFillMode: "both"
 })
 
 const useableArea = css(flex,{
