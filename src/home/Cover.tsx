@@ -2,34 +2,30 @@
 import {jsx, css, keyframes} from "@emotion/core"
 import CoverContent from "src/home/CoverContent"
 import { colors } from "src/styles"
-import { DESKTOP_BREAKPOINT, HEADER_HEIGHT, TABLET_BREAKPOINT } from 'src/shared/Styles'
-import celoAsStarsMobile from "src/home/celo-sky-mobile.svg"
+import celoAsStarsMobileLong from "src/home/celo-sky-mobile.svg"
+import celoAsStarsMobileShort from "src/home/celo-sky-mobile-short.svg"
 import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"
 import celoAsStarsDesktop from "src/home/celo-sky-desktop.svg"
 
-import examplePhones from "src/home/app-examples@2x.png"
+import examplePhones from "src/home/example-phones.svg"
 import Stats from "./stats/Stats"
-import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
 import { useScreenSize } from "src/layout/ScreenSize"
-import { NameSpaces, useTranslation } from "src/i18n"
+// import { NameSpaces, useTranslation } from "src/i18n"
 
 export default function Cover() {
-  const {isDesktop, isTablet} = useScreenSize()
-  const {t} = useTranslation(NameSpaces.home)
+  const {isDesktop, isTablet, bannerHeight} = useScreenSize()
+  // const {t} = useTranslation(NameSpaces.home)
   return (
-    <div css={rootCss}>
-      <picture>
-        <source media={`(max-width: ${TABLET_BREAKPOINT}px)`} srcSet={celoAsStarsMobile}/>
-        <source media={`(max-width: ${DESKTOP_BREAKPOINT}px)`} srcSet={celoAsStarsTablet}/>
-        <img  src={celoAsStarsDesktop}
-          alt=""
-          css={backgroundArea}  />
-      </picture>
+    <div css={css(rootCss, {paddingTop: bannerHeight, [WHEN_MOBILE]: {
+      minHeight: `calc(100vh - ${bannerHeight}px)`,
+    }})}>
+      <div  css={css(backgroundArea, {top: bannerHeight, height: `calc(100% - ${bannerHeight}px)`})} />
       <div css={useableArea}>
         <CoverContent />
         {(isDesktop || isTablet) && <picture>
-          {/* add web p, 2x, tablet, and mobile sources*/}
-          <img alt={t("coverPhonesImage")} src={examplePhones} width={1016} height={524} css={featureImageCss} />
+
+          <object type="image/svg+xml" data={examplePhones} width={1016} height={524} css={featureImageCss} />
         </picture>}
       </div>
 
@@ -39,30 +35,35 @@ export default function Cover() {
 }
 
 const rootCss = css(flex,{
+  position: "relative",
   alignSelf: "center",
   alignItems: "center",
   backgroundColor: colors.dark,
-  paddingTop: HEADER_HEIGHT,
   width: "100%",
   maxWidth: "100vw",
+  marginBottom: 500,
   [WHEN_MOBILE]: {
     justifyContent: "center",
-    minHeight: "calc(100vh - 24px)",
+  },
+  ["@media (max-height: 568px)"]: {
+    justifyContent: "flex-end",
+    paddingBottom: 30,
   },
   [WHEN_TABLET]: {
+    paddingTop: 60,
     width: '100vw',
-    minHeight: "100vh",
-    // backgroundColor: colors.grayHeavy
+    height: "100vh",
+    marginBottom: 60,
   },
   [WHEN_DESKTOP]: {
-    paddingTop: 140
+    paddingTop: 0,
   }
 })
 
 const starKeyFrames =  keyframes`
   from {
     opacity: 0.1;
-    transform: scale(1.01);
+    transform: scale(1.02);
   }
 
   25% {
@@ -78,45 +79,67 @@ const starKeyFrames =  keyframes`
 
 const backgroundArea = css({
   position: "absolute",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
   animationIterationCount: 1,
   animationFillMode: "both",
-  animationDelay: "100ms",
-  animationDuration: "10s",
+  animationDelay: "50ms",
+  animationDuration: "6s",
   animationName: starKeyFrames,
   animationTimingFunction: "ease-in-out",
   opacity: 0.1,
   width: '100%',
-  height: "100%",
-  left: 0,
-  right: 0,
+  backgroundColor: colors.dark,
+  [WHEN_LONG_PHONE]: {
+    backgroundImage: `url(${celoAsStarsMobileLong})`,
+  },
   [WHEN_MOBILE]: {
-    height: "100vh",
-    right: 0,
-    top: 50,
+    backgroundImage: `url(${celoAsStarsMobileShort})`,
   },
   [WHEN_TABLET]: {
     width: '100vw',
     height: "100vh",
-    right: 0,
-    top: 50,
+    backgroundImage: `url(${celoAsStarsTablet})`,
   },
   [WHEN_DESKTOP]: {
     width: 1262,
     height: 1067,
-    top: 100
+    backgroundPositionY: 40,
+    backgroundImage: `url(${celoAsStarsDesktop})`,
   }
 })
 
-const featureImageCss = css({
+const phonesAnimation = keyframes`
+from {
+  opacity: 0;
+  transform: translateY(25px)
+}
+to {
+  opacity: 1;
+  transform: translateY(0px)
+}
+`
 
+const featureImageCss = css({
+  opacity: 0,
+  animationDelay: "200ms",
+  animationName: phonesAnimation,
+  animationDuration: "600ms",
+  animationFillMode: "both"
 })
 
 const useableArea = css(flex,{
   alignItems: "center",
+  zIndex: 10,
   [WHEN_DESKTOP]: {
-    maxWidth: 1100,
-    minHeight:920,
-    paddingBottom: 60,
+    width: 1262,
+    height: 1067 + 50,
     zIndex: 20,
+  },
+  [WHEN_TABLET]: {
+    paddingTop: 72,
+  },
+  [WHEN_MOBILE]: {
+    paddingTop: 24
   }
 })

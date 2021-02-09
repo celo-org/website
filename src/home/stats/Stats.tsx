@@ -3,38 +3,21 @@ import {jsx, css} from "@emotion/core"
 import { flex, garamond, sectionTitle, jost, } from "src/estyles"
 import {memo} from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
-
 import RingsGlyph from "src/logos/RingsGlyph"
 import { colors } from "src/styles"
-import useBlockscoutWS from "./useBlockscoutWS"
-import useSWR from "swr"
-
-async function fetcher() {
-  const response = await fetch("/api/stats")
-  return response.json()
-}
-
-const SWR_OPTIONS = {
-  refreshInterval: 5000,
-}
-
-interface Data {
-  avgBlockSeconds: number
-  blockCount: number
-}
+import useStatsRelay from "./useStatsRelay"
 
 export default function Stats() {
-  const {t} =useTranslation(NameSpaces.home)
-  const addresses = useBlockscoutWS()
-
-  const { data } = useSWR<Data>("/api/stats", fetcher, SWR_OPTIONS)
-  const allLoaded = addresses && data && data.blockCount
+  const {t} = useTranslation(NameSpaces.home)
+  const {addressCount, avgBlockTime,blockCount, totalTx} = useStatsRelay()
+  const allLoaded = addressCount && avgBlockTime  && blockCount && totalTx
   return <figure aria-hidden={!allLoaded} css={css(rootCss,allLoaded && appear )}>
         <RingsGlyph color={colors.white} height={20}/>
         <figcaption css={headingCss}>{t("statsHeading")}</figcaption>
-        <Datum value={data?.blockCount?.toLocaleString()} title={t("statsBlockCount")} id="stat-blockcount"/>
-        <Datum value={addresses} title={t("statsAddresses")} id="stat-addressess"/>
-        <Datum value={`${data?.avgBlockSeconds || 0}s`} title={t("statsAvgTime")} id="stat-time"/>
+        <Datum value={blockCount?.toLocaleString()} title={t("statsBlockCount")} id="stat-blockcount"/>
+        <Datum value={addressCount} title={t("statsAddresses")} id="stat-addressess"/>
+        <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
+        <Datum value={`${avgBlockTime||0}s`} title={t("statsAvgTime")} id="stat-time"/>
   </figure>
 }
 
@@ -50,7 +33,11 @@ const rootCss = css(flex,{
   right: 0,
   top: 260,
   padding: 24,
-  paddingBottom: 30
+  paddingBottom: 30,
+  zIndex: 20,
+  ['@media (max-width: 1165px)'] : {
+    display: "none"
+  }
 })
 
 const appear = css({
@@ -67,7 +54,7 @@ interface DatumProps {
   id: string
 }
 
-const Datum = memo<DatumProps>(function Datum({value, title, id}: DatumProps) {
+const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
   return <>
       <span css={valueCss} aria-labelledby={id} >{value}</span>
       <span css={labelCss} id={id}>{title}</span>
