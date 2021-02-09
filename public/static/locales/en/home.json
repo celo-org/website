@@ -16,21 +16,21 @@
   "stabilityAnalysis": "Stability Analysis",
   "readMore": "Read more about our technology",
   "readIntroGuide": "Read Intro Guide",
-  "buildTitle": "Build applications for anyone with a mobile phone",
+  "buildTitle": "The Builders Platform",
   "build1":{
-    "title": "Fast...",
-    "text": "Block headers optimized for fast mobile phone synchronization, which makes Celo over 17,000x lighter than other blockchains",
+    "title": "Mobile",
+    "text": "Hyper-efficient light client and full node incentives allowing for scalability to 6 billion smartphones. Full EVM compatibility making it easy to get started.",
     "link": "See Application built on Celo"
     },
   "build2": {
-    "title": "Stable...",
-    "text": "Celo Dollar (cUSD), a native stablecoin that follows the value of the US Dollar, allows users to globally send, share and pay with applications (and wallets?) built on Celo",
+    "title": "Stable",
+    "text": "Growing family of native stablecoins, like Celo Dollars, which follow the value of fiat currencies. Pay transaction fees with stablecoins or your own tokens.",
     "link": "Learn about the Celo Platform"
 
   },
   "build3": {
-    "title": "Easy to integrate",
-    "text": "Deploy your Ethereum dApp on Celo in less than 30 minutes",
+    "title": "Usable",
+    "text": "Users can easily send currency to any mobile number, enabled by Celo’s decentralized phone verification protocol, and get access to a growing ecosystem of global cash-in cash-out options.",
     "link": "Bring you Ethereum dApp to Celo"
 
   },
