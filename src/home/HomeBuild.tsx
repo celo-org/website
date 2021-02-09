@@ -19,7 +19,7 @@ export default function HomeBuild() {
         allStyle={standardStyles.centered}
         >
             <Cell tabletSpan={Spans.twoThird} span={Spans.half}>
-                <H1 style={[textStyles.center, standardStyles.elementalMarginBottom]}>
+                <H1 aria-level="2" style={[textStyles.center, standardStyles.elementalMarginBottom]}>
                         {t('buildTitle')}
                 </H1>
             </Cell>
