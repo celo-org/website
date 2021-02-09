@@ -885,6 +885,7 @@ exports[`HomePage renders 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
+<<<<<<< HEAD
         "WebkitAlignSelf": "center",
         "WebkitBoxDirection": "normal",
         "WebkitBoxOrient": "vertical",
@@ -2237,6 +2238,8 @@ exports[`HomePage renders 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
+=======
+>>>>>>> 7ad39cfb9e7de596e8011267e26423521b3568dd
         "backgroundColor": "rgba(46,51,56,1.00)",
       }
     }

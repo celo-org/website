@@ -2,7 +2,7 @@
 import {jsx, css} from "@emotion/core"
 import { fonts, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
+import Button, { BTN } from 'src/shared/Button.3'
 import { CeloLinks } from 'src/shared/menu-items'
 import { colors } from 'src/styles'
 
@@ -18,7 +18,7 @@ export default function CoverContent() {
     <p css={subheading}>{t('pageSubheader')}</p>
     <div css={buttons}>
       <Button text={t("coverPrimeButton")} href={CeloLinks.docsOverview} kind={BTN.PRIMARY} target={"_blank"} />
-      <Button size={SIZE.normal} text={t("coverSecondButton")} href={CeloLinks.docsOverview} kind={BTN.NAKED} target={"_blank"} />
+      {/* <Button size={SIZE.normal} text={t("coverSecondButton")} href={CeloLinks.docsOverview} kind={BTN.NAKED} target={"_blank"} /> */}
     </div>
   </div>
 }
@@ -31,13 +31,15 @@ const centered = css({
 
 
 const blurCss = css({
-  position: "absolute",
-  width: "100%",
-  height: "100%",
-  borderRadius: 33,
-  zIndex: -1,
-  backgroundColor: colors.dark,
-  filter: "blur(22px)"
+  [WHEN_MOBILE]: {
+    position: "absolute",
+    width: "100%",
+    height: "100%",
+    borderRadius: 33,
+    zIndex: -1,
+    backgroundColor: colors.dark,
+    filter: "blur(22px)"
+  }
 })
 
 const rootCss = css(centered,
@@ -81,7 +83,7 @@ const buttons = css(centered,{
   flexDirection: "row",
   flexWrap: "wrap",
   alignItems: "center",
-  justifyContent: "space-between",
+  justifyContent: "center",
   columnGap: 24,
   rowGap: 24,
   width: 290,
