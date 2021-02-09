@@ -19,6 +19,7 @@ exports[`HomePage renders 1`] = `
   }
 >
   <div
+<<<<<<< HEAD
     className="css-9oindr-Cover"
   >
     <picture>
@@ -2145,6 +2146,103 @@ exports[`HomePage renders 1`] = `
           </div>
           <div
             className="css-view-1dbjc4n"
+=======
+    className="css-nozhff-Cover"
+  >
+    <div
+      className="css-19zy45q-Cover"
+    />
+    <div
+      className="css-rxs5ct-Cover"
+    >
+      <div
+        className="css-1xkr2ul-CoverContent"
+      >
+        <div
+          className="css-nlnfou-CoverContent"
+        />
+        <h1
+          className="css-6eue6t-CoverContent"
+        >
+          Global payments infrastructure built for mobile
+        </h1>
+        <p
+          className="css-z1jmn5-CoverContent"
+        >
+          Thousands of organizations and individuals are developing,  growing, and governing Celo: An open-source platform that enables anyone to build borderless applications
+        </p>
+        <div
+          className="css-12gh1v7-CoverContent"
+        >
+          <div
+            className="css-view-1dbjc4n"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          >
+            <a
+              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              data-focusable={true}
+              dir="auto"
+              href="https://docs.celo.org/overview"
+              onClick={[Function]}
+              rel=" noopener noreferrer"
+              role="link"
+              style={
+                Object {
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(53,208,127,1.00)",
+                  "borderBottomColor": "rgba(53,208,127,1.00)",
+                  "borderBottomLeftRadius": "3px",
+                  "borderBottomRightRadius": "3px",
+                  "borderBottomWidth": "1px",
+                  "borderLeftColor": "rgba(53,208,127,1.00)",
+                  "borderLeftWidth": "1px",
+                  "borderRightColor": "rgba(53,208,127,1.00)",
+                  "borderRightWidth": "1px",
+                  "borderTopColor": "rgba(53,208,127,1.00)",
+                  "borderTopLeftRadius": "3px",
+                  "borderTopRightRadius": "3px",
+                  "borderTopWidth": "1px",
+                  "color": "rgba(255,255,255,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "flexGrow": 0,
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "justifyContent": "center",
+                  "lineHeight": "16px",
+                  "minWidth": "150px",
+                  "msFlexAlign": "center",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "paddingBottom": "10px",
+                  "paddingLeft": "20px",
+                  "paddingRight": "20px",
+                  "paddingTop": "10px",
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
+                  "width": "fit-content",
+                }
+              }
+              target="_blank"
+            >
+              Start Building
+            </a>
+          </div>
+          <div
+            className="css-view-1dbjc4n"
+>>>>>>> dc098043db651bb5946978ab0af23e7657481671
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -2183,7 +2281,7 @@ exports[`HomePage renders 1`] = `
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
                 data-focusable={true}
                 dir="auto"
-                href="https://app.livestorm.co/clabs/kuneco"
+                href="https://docs.celo.org/overview"
                 onClick={[Function]}
                 rel=" noopener noreferrer"
                 role="link"
@@ -2206,7 +2304,7 @@ exports[`HomePage renders 1`] = `
                 }
                 target="_blank"
               >
-                Kuneco
+                Get in touch
                 <div
                   className="css-view-1dbjc4n"
                   style={

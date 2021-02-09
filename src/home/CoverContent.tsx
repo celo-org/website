@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import {jsx, css} from "@emotion/core"
-import { fonts, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import { fonts, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import { CeloLinks } from 'src/shared/menu-items'
@@ -11,6 +11,7 @@ export default function CoverContent() {
   const { t } = useTranslation(NameSpaces.home)
 
   return <div css={rootCss}>
+    <div css={blurCss} />
     <h1 css={heading}>
       {t('pageHeader')}
     </h1>
@@ -29,17 +30,31 @@ const centered = css({
 })
 
 
+const blurCss = css({
+  position: "absolute",
+  width: "100%",
+  height: "100%",
+  borderRadius: 33,
+  zIndex: -1,
+  backgroundColor: colors.dark,
+  filter: "blur(22px)"
+})
+
 const rootCss = css(centered,
   {
     maxWidth: 660,
     width: "90vw",
     marginBottom: 24,
     padding: 24,
+    position: "relative",
     [WHEN_TABLET]: {
       maxWidth: 580,
     },
     [WHEN_MOBILE]: {
       maxWidth: 310,
+    },
+    [WHEN_DESKTOP]: {
+      paddingTop: 150
     }
 })
 

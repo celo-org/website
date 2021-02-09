@@ -28,8 +28,8 @@ export default function HomeBuild() {
         allStyle={standardStyles.blockMarginTopMobile}
         mobileStyle={standardStyles.sectionMarginBottomMobile}
         >
-            <Adventure source={blankSquare} title={t('build1.title')} text={t('build1.text')} link={{ href: 'https://valoraapp.com', text: t('build1.link')}}/> 
-            <Adventure source={blankSquare} title={t('build2.title')} text={t('build2.text')} link={{ href: 'https://valoraapp.com/3l5XLtC', text: t('build2.link')}}/>
+            <Adventure source={blankSquare} title={t('build1.title')} text={t('build1.text')} link={{ href: 'https://docs.celo.org/v/master/developer-guide/dappkit', text: t('build1.link')}}/> 
+            <Adventure source={blankSquare} title={t('build2.title')} text={t('build2.text')} link={{ href: 'https://docs.celo.org/overview#stable-cryptocurrencies', text: t('build2.link')}}/>
             <Adventure source={blankSquare} title={t('build3.title')} text={t('build3.text')} link={{ href: 'https://valoraapp.com', text: t('build3.link')}}/>
 
         </GridRow>

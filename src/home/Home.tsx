@@ -3,15 +3,12 @@ import { StyleSheet, View } from 'react-native'
 import OpenGraph from "src/header/OpenGraph"
 import celoHero from 'src/home/celo-hero.png'
 import HomeBackers from 'src/home/HomeBackers'
-import HomeBenefits from 'src/home/HomeBenefits'
-import ImagePanes from 'src/home/ImagePanes'
 import Involvement from 'src/home/Involvement'
 import HomeBuild from 'src/home/HomeBuild'
 import { TwoAssets } from "src/home/TwoAssets"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Press from 'src/press/Press'
 import Cover from "./Cover"
-import FlowerArea from './FlowerArea'
 export default function Home() {
   const { t } = useTranslation(NameSpaces.home)
   return (
@@ -24,9 +21,9 @@ export default function Home() {
       />
       <Cover />
       <HomeBuild />
-      <ImagePanes />
+      {/* <ImagePanes />
       <HomeBenefits />
-      <FlowerArea />
+      <FlowerArea /> */}
       <TwoAssets />
       <Press />
       <Involvement />

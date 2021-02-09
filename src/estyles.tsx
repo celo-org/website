@@ -48,3 +48,5 @@ export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
 export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-width: ${DESKTOP_BREAKPOINT}px)`
 
 export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
+
+export const WHEN_LONG_PHONE = `@media (max-width: 400px) and (min-height: 790px)`

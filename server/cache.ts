@@ -25,7 +25,7 @@ export async function cache<T>(
 
 function getTTL(options?: Options) {
   if (options?.minutes) {
-    options.minutes * MINUTE
+    return options.minutes * MINUTE
   } else if (options?.seconds) {
     return options.seconds
   } else {
