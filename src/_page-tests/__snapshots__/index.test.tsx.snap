@@ -19,30 +19,20 @@ exports[`HomePage renders 1`] = `
   }
 >
   <div
-<<<<<<< HEAD
-    className="css-9oindr-Cover"
+    className="css-nozhff-Cover"
   >
-    <picture>
-      <source
-        media="(max-width: 576px)"
-        srcSet="image.png"
-      />
-      <source
-        media="(max-width: 992px)"
-        srcSet="image.png"
-      />
-      <img
-        alt=""
-        className="css-105r2xc-Cover"
-        src="image.png"
-      />
-    </picture>
     <div
-      className="css-6gvq7s-Cover"
+      className="css-19zy45q-Cover"
+    />
+    <div
+      className="css-rxs5ct-Cover"
     >
       <div
-        className="css-16bdmun-CoverContent"
+        className="css-1xkr2ul-CoverContent"
       >
+        <div
+          className="css-nlnfou-CoverContent"
+        />
         <h1
           className="css-6eue6t-CoverContent"
         >
@@ -288,7 +278,7 @@ exports[`HomePage renders 1`] = `
           }
         }
       >
-        Build applications for anyone with a mobile phone
+        The Builders Platform
       </h1>
     </div>
   </div>
@@ -392,7 +382,7 @@ exports[`HomePage renders 1`] = `
             }
           }
         >
-          Fast...
+          Mobile
         </div>
         <div
           className="css-text-901oao"
@@ -408,7 +398,7 @@ exports[`HomePage renders 1`] = `
             }
           }
         >
-          Block headers optimized for fast mobile phone synchronization, which makes Celo over 17,000x lighter than other blockchains
+          Hyper-efficient light client and full node incentives allowing for scalability to 6 billion smartphones. Full EVM compatibility making it easy to get started.
         </div>
       </div>
       <div
@@ -451,7 +441,7 @@ exports[`HomePage renders 1`] = `
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
             data-focusable={true}
             dir="auto"
-            href="https://valoraapp.com"
+            href="https://docs.celo.org/v/master/developer-guide/dappkit"
             onClick={[Function]}
             role="link"
             style={
@@ -584,7 +574,7 @@ exports[`HomePage renders 1`] = `
             }
           }
         >
-          Stable...
+          Stable
         </div>
         <div
           className="css-text-901oao"
@@ -600,7 +590,7 @@ exports[`HomePage renders 1`] = `
             }
           }
         >
-          Celo Dollar (cUSD), a native stablecoin that follows the value of the US Dollar, allows users to globally send, share and pay with applications (and wallets?) built on Celo
+          Growing family of native stablecoins, like Celo Dollars, which follow the value of fiat currencies. Pay transaction fees with stablecoins or your own tokens.
         </div>
       </div>
       <div
@@ -643,7 +633,7 @@ exports[`HomePage renders 1`] = `
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
             data-focusable={true}
             dir="auto"
-            href="https://valoraapp.com/3l5XLtC"
+            href="https://docs.celo.org/overview#stable-cryptocurrencies"
             onClick={[Function]}
             role="link"
             style={
@@ -776,7 +766,7 @@ exports[`HomePage renders 1`] = `
             }
           }
         >
-          Easy to integrate
+          Usable
         </div>
         <div
           className="css-text-901oao"
@@ -792,7 +782,7 @@ exports[`HomePage renders 1`] = `
             }
           }
         >
-          Deploy your Ethereum dApp on Celo in less than 30 minutes
+          Users can easily send currency to any mobile number, enabled by Celo’s decentralized phone verification protocol, and get access to a growing ecosystem of global cash-in cash-out options.
         </div>
       </div>
       <div
@@ -2146,103 +2136,6 @@ exports[`HomePage renders 1`] = `
           </div>
           <div
             className="css-view-1dbjc4n"
-=======
-    className="css-nozhff-Cover"
-  >
-    <div
-      className="css-19zy45q-Cover"
-    />
-    <div
-      className="css-rxs5ct-Cover"
-    >
-      <div
-        className="css-1xkr2ul-CoverContent"
-      >
-        <div
-          className="css-nlnfou-CoverContent"
-        />
-        <h1
-          className="css-6eue6t-CoverContent"
-        >
-          Global payments infrastructure built for mobile
-        </h1>
-        <p
-          className="css-z1jmn5-CoverContent"
-        >
-          Thousands of organizations and individuals are developing,  growing, and governing Celo: An open-source platform that enables anyone to build borderless applications
-        </p>
-        <div
-          className="css-12gh1v7-CoverContent"
-        >
-          <div
-            className="css-view-1dbjc4n"
-            onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-          >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
-              dir="auto"
-              href="https://docs.celo.org/overview"
-              onClick={[Function]}
-              rel=" noopener noreferrer"
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "WebkitBoxFlex": 0,
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexGrow": 0,
-                  "WebkitJustifyContent": "center",
-                  "alignItems": "center",
-                  "backgroundColor": "rgba(53,208,127,1.00)",
-                  "borderBottomColor": "rgba(53,208,127,1.00)",
-                  "borderBottomLeftRadius": "3px",
-                  "borderBottomRightRadius": "3px",
-                  "borderBottomWidth": "1px",
-                  "borderLeftColor": "rgba(53,208,127,1.00)",
-                  "borderLeftWidth": "1px",
-                  "borderRightColor": "rgba(53,208,127,1.00)",
-                  "borderRightWidth": "1px",
-                  "borderTopColor": "rgba(53,208,127,1.00)",
-                  "borderTopLeftRadius": "3px",
-                  "borderTopRightRadius": "3px",
-                  "borderTopWidth": "1px",
-                  "color": "rgba(255,255,255,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "flexGrow": 0,
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "justifyContent": "center",
-                  "lineHeight": "16px",
-                  "minWidth": "150px",
-                  "msFlexAlign": "center",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 0,
-                  "opacity": 1,
-                  "paddingBottom": "10px",
-                  "paddingLeft": "20px",
-                  "paddingRight": "20px",
-                  "paddingTop": "10px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                  "width": "fit-content",
-                }
-              }
-              target="_blank"
-            >
-              Start Building
-            </a>
-          </div>
-          <div
-            className="css-view-1dbjc4n"
->>>>>>> dc098043db651bb5946978ab0af23e7657481671
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -2281,7 +2174,7 @@ exports[`HomePage renders 1`] = `
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
                 data-focusable={true}
                 dir="auto"
-                href="https://docs.celo.org/overview"
+                href="https://app.livestorm.co/clabs/kuneco"
                 onClick={[Function]}
                 rel=" noopener noreferrer"
                 role="link"
@@ -2304,7 +2197,7 @@ exports[`HomePage renders 1`] = `
                 }
                 target="_blank"
               >
-                Get in touch
+                Kuneco
                 <div
                   className="css-view-1dbjc4n"
                   style={
