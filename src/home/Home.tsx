@@ -5,6 +5,9 @@ import celoHero from 'src/home/celo-hero.png'
 import HomeBackers from 'src/home/HomeBackers'
 import Involvement from 'src/home/Involvement'
 import HomeBuild from 'src/home/HomeBuild'
+import ImagePanes from 'src/home/ImagePanes'
+import HomeBenefits from 'src/home/HomeBenefits'
+import FlowerArea from 'src/home/FlowerArea'
 import { TwoAssets } from "src/home/TwoAssets"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Press from 'src/press/Press'
@@ -21,9 +24,9 @@ export default function Home() {
       />
       <Cover />
       <HomeBuild />
-      {/* <ImagePanes />
+      <ImagePanes />
       <HomeBenefits />
-      <FlowerArea /> */}
+      <FlowerArea />
       <TwoAssets />
       <Press />
       <Involvement />

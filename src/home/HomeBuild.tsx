@@ -1,7 +1,9 @@
 import * as React from 'react'
 import { H1 } from 'src/fonts/Fonts'
 import { Adventure } from 'src/home/Adventure'
-import blankSquare from 'src/icons/Rectangle.png'
+import people from 'src/icons/05-Connect-People-(light-bg)-1.png'
+import stable from 'src/icons/Stable-cUSD-1.png'
+import currencies from 'src/icons/08-Save-Currencies-(light bg)-1.png'
 import { NameSpaces, useTranslation } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import { standardStyles, textStyles} from 'src/styles'
@@ -23,14 +25,14 @@ export default function HomeBuild() {
             </Cell>
         </GridRow>
         <GridRow
-        desktopStyle={standardStyles.blockMarginTop}
-        tabletStyle={standardStyles.blockMarginTopTablet}
         allStyle={standardStyles.blockMarginTopMobile}
+        desktopStyle={standardStyles.sectionMarginBottom}
+        tabletStyle={standardStyles.sectionMarginBottomTablet}
         mobileStyle={standardStyles.sectionMarginBottomMobile}
         >
-            <Adventure source={blankSquare} title={t('build1.title')} text={t('build1.text')} link={{ href: 'https://docs.celo.org/v/master/developer-guide/dappkit', text: t('build1.link')}}/> 
-            <Adventure source={blankSquare} title={t('build2.title')} text={t('build2.text')} link={{ href: 'https://docs.celo.org/overview#stable-cryptocurrencies', text: t('build2.link')}}/>
-            <Adventure source={blankSquare} title={t('build3.title')} text={t('build3.text')} link={{ href: 'https://valoraapp.com', text: t('build3.link')}}/>
+            <Adventure source={currencies} title={t('build1.title')} text={t('build1.text')} link={{ href: 'https://docs.celo.org/v/master/developer-guide/dappkit', text: t('build1.link')}}/> 
+            <Adventure source={stable} title={t('build2.title')} text={t('build2.text')} link={{ href: 'https://docs.celo.org/overview#stable-cryptocurrencies', text: t('build2.link')}}/>
+            <Adventure source={people} title={t('build3.title')} text={t('build3.text')} link={{ href: 'https://valoraapp.com', text: t('build3.link')}}/>
 
         </GridRow>
         </>
