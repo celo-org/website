@@ -20,18 +20,18 @@
   "build1":{
     "title": "Mobile",
     "text": "Hyper-efficient light client and full node incentives allowing for scalability to 6 billion smartphones. Full EVM compatibility making it easy to get started.",
-    "link": "See Application built on Celo"
+    "link": "Make it mobile wih DappKit"
     },
   "build2": {
     "title": "Stable",
     "text": "Growing family of native stablecoins, like Celo Dollars, which follow the value of fiat currencies. Pay transaction fees with stablecoins or your own tokens.",
-    "link": "Learn about the Celo Platform"
+    "link": "Learn more about Celo Dollars"
 
   },
   "build3": {
     "title": "Usable",
     "text": "Users can easily send currency to any mobile number, enabled by Celo’s decentralized phone verification protocol, and get access to a growing ecosystem of global cash-in cash-out options.",
-    "link": "Bring you Ethereum dApp to Celo"
+    "link": "See it in action with Valora"
 
   },
   "benefitsTitle": "Benefits of Celo",
