@@ -11,6 +11,13 @@ handlers:
     static_dir: .next/static
     expiration: 365d
 
+  - url: /immutable
+    static_dir: /public/immutable
+    expiration: 365d
+
+  - url: /fonts
+    static_dir: /public/fonts
+    expiration: 10d
 
   - url: /static
     static_dir: public/static
