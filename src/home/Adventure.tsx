@@ -1,9 +1,11 @@
 import * as React from 'react'
 import { Image, ImageSourcePropType, ImageStyle, StyleSheet, Text, View } from 'react-native'
+import { H3 } from 'src/fonts/Fonts'
 import { Cell, Spans } from 'src/layout/GridRow'
 import { useScreenSize } from 'src/layout/ScreenSize'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import { fonts, standardStyles } from 'src/styles'
+
 interface Props {
   source: ImageSourcePropType
   title: string
@@ -23,7 +25,7 @@ export function Adventure({ title, text, source, link, imageStyle }: Props) {
     >
       <View>
         <Image source={source} style={[styles.image, imageStyle]} resizeMode="contain" />
-        <Text style={[fonts.h6, standardStyles.elementalMargin]}>{title}</Text>
+        <H3 style={standardStyles.elementalMargin}>{title}</H3>
         <Text style={fonts.p}>{text}</Text>
       </View>
       {link && (

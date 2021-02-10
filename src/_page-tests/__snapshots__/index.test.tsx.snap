@@ -164,8 +164,8 @@ exports[`HomePage renders 1`] = `
         }
       }
     >
-      <h1
-        aria-level="1"
+      <h2
+        aria-level="2"
         className="css-reset-4rbku5 css-text-901oao"
         dir="auto"
         onClick={[Function]}
@@ -184,7 +184,7 @@ exports[`HomePage renders 1`] = `
         }
       >
         The Builders Platform
-      </h1>
+      </h2>
     </div>
   </div>
   <div
@@ -270,25 +270,27 @@ exports[`HomePage renders 1`] = `
             }
           />
         </div>
-        <div
-          className="css-text-901oao"
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao"
           dir="auto"
           onClick={[Function]}
+          role="heading"
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
+              "fontSize": "24px",
+              "lineHeight": "32px",
               "marginBottom": "20px",
               "marginTop": "20px",
               "textRendering": "geometricPrecision",
+              "textTransform": "none",
             }
           }
         >
           Mobile
-        </div>
+        </h3>
         <div
           className="css-text-901oao"
           dir="auto"
@@ -464,25 +466,27 @@ exports[`HomePage renders 1`] = `
             }
           />
         </div>
-        <div
-          className="css-text-901oao"
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao"
           dir="auto"
           onClick={[Function]}
+          role="heading"
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
+              "fontSize": "24px",
+              "lineHeight": "32px",
               "marginBottom": "20px",
               "marginTop": "20px",
               "textRendering": "geometricPrecision",
+              "textTransform": "none",
             }
           }
         >
           Stable
-        </div>
+        </h3>
         <div
           className="css-text-901oao"
           dir="auto"
@@ -658,25 +662,27 @@ exports[`HomePage renders 1`] = `
             }
           />
         </div>
-        <div
-          className="css-text-901oao"
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao"
           dir="auto"
           onClick={[Function]}
+          role="heading"
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
+              "fontSize": "24px",
+              "lineHeight": "32px",
               "marginBottom": "20px",
               "marginTop": "20px",
               "textRendering": "geometricPrecision",
+              "textTransform": "none",
             }
           }
         >
           Usable
-        </div>
+        </h3>
         <div
           className="css-text-901oao"
           dir="auto"
