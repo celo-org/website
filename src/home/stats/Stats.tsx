@@ -15,7 +15,7 @@ export default function Stats() {
         <RingsGlyph color={colors.white} height={20}/>
         <figcaption css={headingCss}>{t("statsHeading")}</figcaption>
         <Datum value={blockCount?.toLocaleString()} title={t("statsBlockCount")} id="stat-blockcount"/>
-        <Datum value={addressCount} title={t("statsAddresses")} id="stat-addressess"/>
+        <Datum value={addressCount.toLocaleString()} title={t("statsAddresses")} id="stat-addressess"/>
         <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
         <Datum value={`${avgBlockTime||0}s`} title={t("statsAvgTime")} id="stat-time"/>
   </figure>

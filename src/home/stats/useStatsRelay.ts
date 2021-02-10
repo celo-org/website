@@ -1,13 +1,11 @@
 import {useRef, useEffect, useReducer} from "react"
 
-
 interface StatsState {
   avgBlockTime: string
   blockCount: number
   totalTx: number
-  addressCount: string
+  addressCount: number
 }
-
 
 enum StatKeys {
   "avgBlockTime"= "avgBlockTime",
@@ -32,14 +30,19 @@ type Action = InitialResponse | StatsTransport
 
 export default function useStatsRelay() {
   const ws = useRef<WebSocket>(null);
-  const initialState:State = {}
+  const initialState:State = {
+    addressCount: 0
+  }
 
   const [stats, dispatch] = useReducer((state:State, action: Action) => {
     switch (action.action)  {
       case "init":
         return action.value
       case StatKeys.addressCount:
-        return {...state, addressCount: action.value}
+        const addressAsNumber =  Number((action.value as string).replace(/,/g, ""))
+        if (addressAsNumber > state.addressCount) {
+          return {...state, addressCount:addressAsNumber }
+        }
       case StatKeys.avgBlockTime:
         return {...state, avgBlockTime: action.value}
       case StatKeys.blockCount:
