@@ -19,355 +19,33 @@ exports[`HomePage renders 1`] = `
   }
 >
   <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginTop": "90px",
-        "maxWidth": "100vw",
-        "minHeight": "100vh",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "paddingTop": "75px",
-        "width": "100%",
-      }
-    }
+    className="css-bk8ub1-Cover"
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxDirection": "normal",
-          "WebkitBoxFlex": 0,
-          "WebkitBoxLines": "multiple",
-          "WebkitBoxOrient": "horizontal",
-          "WebkitFlexDirection": "row",
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "WebkitFlexWrap": "wrap",
-          "flexDirection": "row",
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "flexWrap": "wrap",
-          "msFlexDirection": "row",
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "msFlexWrap": "wrap",
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="css-4o9604-Cover"
+    />
+    <div
+      className="css-vkzrhd-Cover"
     >
       <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxFlex": 4,
-            "WebkitFlexBasis": "50%",
-            "WebkitFlexGrow": 4,
-            "WebkitFlexShrink": 1,
-            "WebkitTransform": "translateX(-60px)",
-            "flexBasis": "50%",
-            "flexGrow": 4,
-            "flexShrink": 1,
-            "minWidth": "350px",
-            "msFlexNegative": 1,
-            "msFlexPositive": 4,
-            "msFlexPreferredSize": "50%",
-            "paddingBottom": "15px",
-            "transform": "translateX(-60px)",
-            "zIndex": 10,
-          }
-        }
+        className="css-1xkr2ul-CoverContent"
       >
         <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "display": "block",
-              "overflowX": "hidden",
-              "overflowY": "hidden",
-            }
-          }
+          className="css-1c30hwu-CoverContent"
+        />
+        <h1
+          className="css-6eue6t-CoverContent"
         >
-          <div
-            style={
-              Object {
-                "display": "block",
-                "paddingBottom": "27.835051546391753%",
-                "width": "100%",
-              }
-            }
-          />
-          <div
-            style={
-              Object {
-                "bottom": "0px",
-                "height": "100%",
-                "left": "0px",
-                "position": "absolute",
-                "top": "0px",
-                "width": "100%",
-              }
-            }
-          >
-            <div
-              aria-label="changeStory-animation"
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxFlex": 1,
-            "WebkitFlexBasis": "370px",
-            "WebkitFlexGrow": 1,
-            "flexBasis": "370px",
-            "flexGrow": 1,
-            "marginBottom": "40px",
-            "marginTop": "40px",
-            "maxWidth": "90vw",
-            "msFlexPositive": 1,
-            "msFlexPreferredSize": "370px",
-          }
-        }
-      >
+          Global payments infrastructure built for mobile
+        </h1>
+        <p
+          className="css-z1jmn5-CoverContent"
+        >
+          Thousands of organizations and individuals are developing,  growing, and governing Celo, an open-source platform that enables anyone to build borderless applications
+        </p>
         <div
-          className="css-view-1dbjc4n"
+          className="css-kqicn0-CoverContent"
         >
-          <h2
-            aria-level="2"
-            className="css-reset-4rbku5 css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            role="heading"
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "52px",
-                "lineHeight": "58px",
-                "textRendering": "geometricPrecision",
-                "textTransform": "none",
-                "zIndex": 1,
-              }
-            }
-          >
-            A new story in
-          </h2>
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "display": "inline-flex",
-                "width": "fit-content",
-              }
-            }
-          >
-            <h2
-              aria-level="2"
-              className="css-reset-4rbku5 css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              role="heading"
-              style={
-                Object {
-                  "color": "rgba(46,51,56,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "52px",
-                  "fontWeight": "500",
-                  "lineHeight": "58px",
-                  "textRendering": "geometricPrecision",
-                  "textTransform": "none",
-                }
-              }
-            >
-              finance
-            </h2>
-          </div>
-        </div>
-        <h4
-          aria-level="4"
-          className="css-reset-4rbku5 css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "marginBottom": "30px",
-              "marginTop": "10px",
-              "maxWidth": "450px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
-        >
-          Celo is an open platform that makes financial tools accessible to anyone with a mobile phone
-        </h4>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
-              "paddingBottom": "2px",
-              "paddingLeft": "3px",
-              "paddingTop": "10px",
-              "textRendering": "geometricPrecision",
-            }
-          }
-        >
-          Stay connected
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "marginBottom": "5px",
-              "marginTop": "5px",
-              "paddingBottom": "15px",
-              "width": "100%",
-            }
-          }
-        >
-          <input
-            autoCapitalize="sentences"
-            autoComplete="on"
-            autoCorrect="on"
-            className="css-textinput-11aywtz r-placeholderTextColor-tf24u1"
-            data-focusable={true}
-            dir="auto"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onSelect={[Function]}
-            placeholder="saluton@celo.org"
-            readOnly={false}
-            spellCheck={true}
-            style={
-              Object {
-                "WebkitBoxFlex": 1,
-                "WebkitFlexBasis": "0%",
-                "WebkitFlexGrow": 1,
-                "WebkitFlexShrink": 1,
-                "borderBottomColor": "rgba(221,221,221,1.00)",
-                "borderBottomLeftRadius": "3px",
-                "borderBottomRightRadius": "3px",
-                "borderBottomWidth": "1px",
-                "borderLeftColor": "rgba(221,221,221,1.00)",
-                "borderLeftWidth": "1px",
-                "borderRightColor": "rgba(221,221,221,1.00)",
-                "borderRightWidth": "1px",
-                "borderTopColor": "rgba(221,221,221,1.00)",
-                "borderTopLeftRadius": "3px",
-                "borderTopRightRadius": "3px",
-                "borderTopWidth": "1px",
-                "color": "rgba(46,51,56,1.00)",
-                "flexBasis": "0%",
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "20px",
-                "lineHeight": "28px",
-                "marginBottom": "5px",
-                "marginTop": "5px",
-                "msFlexNegative": 1,
-                "msFlexPositive": 1,
-                "msFlexPreferredSize": "0%",
-                "outlineStyle": "none",
-                "paddingBottom": "15px",
-                "paddingLeft": "10px",
-                "paddingRight": "10px",
-                "paddingTop": "13px",
-                "textRendering": "geometricPrecision",
-              }
-            }
-            type="text"
-            value=""
-          />
-          <div
-            className="css-view-1dbjc4n"
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "MozTransitionProperty": "max-height",
-                  "WebkitTransitionDuration": "600ms",
-                  "WebkitTransitionProperty": "max-height",
-                  "height": "auto",
-                  "marginBottom": "5px",
-                  "marginTop": "5px",
-                  "maxHeight": "0px",
-                  "transitionDuration": "600ms",
-                  "transitionProperty": "max-height",
-                }
-              }
-            >
-              <div
-                className="css-text-901oao"
-                dir="auto"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "MozTransitionProperty": "opacity",
-                    "WebkitTransitionDuration": "700ms",
-                    "WebkitTransitionProperty": "opacity",
-                    "color": "rgba(255,127,109,1.00)",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "18px",
-                    "opacity": 0,
-                    "textRendering": "geometricPrecision",
-                    "transitionDuration": "700ms",
-                    "transitionProperty": "opacity",
-                  }
-                }
-              >
-                Please enter a valid email
-              </div>
-            </div>
-          </div>
           <div
             className="css-view-1dbjc4n"
             onClick={[Function]}
@@ -380,15 +58,17 @@ exports[`HomePage renders 1`] = `
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
               data-focusable={true}
               dir="auto"
+              href="https://docs.celo.org/overview"
               onClick={[Function]}
+              rel=" noopener noreferrer"
               role="link"
               style={
                 Object {
                   "WebkitAlignItems": "center",
                   "WebkitBoxAlign": "center",
-                  "WebkitBoxFlex": 1,
+                  "WebkitBoxFlex": 0,
                   "WebkitBoxPack": "center",
-                  "WebkitFlexGrow": 1,
+                  "WebkitFlexGrow": 0,
                   "WebkitJustifyContent": "center",
                   "alignItems": "center",
                   "backgroundColor": "rgba(53,208,127,1.00)",
@@ -407,463 +87,30 @@ exports[`HomePage renders 1`] = `
                   "color": "rgba(255,255,255,1.00)",
                   "cursor": "pointer",
                   "display": "inline-flex",
-                  "flexGrow": 1,
+                  "flexGrow": 0,
                   "fontFamily": "Jost, futura-pt, futura, sans-serif",
                   "fontSize": "16px",
                   "fontWeight": "500",
                   "justifyContent": "center",
                   "lineHeight": "16px",
+                  "minWidth": "150px",
                   "msFlexAlign": "center",
                   "msFlexPack": "center",
-                  "msFlexPositive": 1,
+                  "msFlexPositive": 0,
                   "opacity": 1,
-                  "paddingBottom": "15px",
+                  "paddingBottom": "10px",
                   "paddingLeft": "20px",
                   "paddingRight": "20px",
-                  "paddingTop": "15px",
+                  "paddingTop": "10px",
                   "textAlign": "center",
                   "textRendering": "geometricPrecision",
-                  "width": "100%",
+                  "width": "fit-content",
                 }
               }
+              target="_blank"
             >
-              Submit
+              Start Building
             </a>
-          </div>
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "position": "absolute",
-                "top": "65px",
-              }
-            }
-          />
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "marginTop": "10px",
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "MozTransitionProperty": "max-height",
-                "WebkitTransitionDuration": "600ms",
-                "WebkitTransitionProperty": "max-height",
-                "height": "auto",
-                "marginBottom": "5px",
-                "marginTop": "5px",
-                "maxHeight": "0px",
-                "transitionDuration": "600ms",
-                "transitionProperty": "max-height",
-              }
-            }
-          >
-            <div
-              className="css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              style={
-                Object {
-                  "MozTransitionProperty": "opacity",
-                  "WebkitTransitionDuration": "700ms",
-                  "WebkitTransitionProperty": "opacity",
-                  "color": "rgba(53,208,127,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "18px",
-                  "opacity": 0,
-                  "textRendering": "geometricPrecision",
-                  "transitionDuration": "700ms",
-                  "transitionProperty": "opacity",
-                }
-              }
-            >
-              <svg
-                fill="none"
-                height={16}
-                style={Object {}}
-                viewBox="0 0 11 9"
-                width={16}
-              >
-                <path
-                  clipRule="evenodd"
-                  d="M10.7932 1.85263L3.96211 8.64309L0.180176 4.88366L1.85967 3.19411L3.96211 5.28404L9.11373 0.163086L10.7932 1.85263Z"
-                  fill="#35D07F"
-                  fillRule="evenodd"
-                  style={Object {}}
-                />
-              </svg>
-              <span
-                className="css-text-901oao css-textHasAncestor-16my406"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "marginLeft": "10px",
-                  }
-                }
-              >
-                Submitted
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "0px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "0px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-q7lffx"
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "marginBottom": "20px",
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "display": "block",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "display": "block",
-                  "paddingBottom": "62.5%",
-                  "width": "100%",
-                }
-              }
-            />
-            <div
-              style={
-                Object {
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "top": "0px",
-                  "width": "100%",
-                }
-              }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "WebkitFlexBasis": "auto",
-                    "flexBasis": "auto",
-                    "height": "100%",
-                    "msFlexPreferredSize": "auto",
-                    "overflowX": "hidden",
-                    "overflowY": "hidden",
-                    "zIndex": 0,
-                  }
-                }
-              >
-                <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "backgroundColor": "rgba(0,0,0,0.00)",
-                      "backgroundPosition": "center",
-                      "backgroundRepeat": "no-repeat",
-                      "backgroundSize": "cover",
-                      "bottom": "0px",
-                      "height": "100%",
-                      "left": "0px",
-                      "position": "absolute",
-                      "right": "0px",
-                      "top": "0px",
-                      "width": "100%",
-                      "zIndex": -1,
-                    }
-                  }
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "16px",
-                "lineHeight": "20px",
-                "paddingTop": "5px",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Developing innovative ideas to help their communities prosper in Mexico
-          </div>
-        </div>
-      </div>
-      <div
-        className="css-q7lffx"
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "marginBottom": "20px",
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "display": "block",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "display": "block",
-                  "paddingBottom": "62.5%",
-                  "width": "100%",
-                }
-              }
-            />
-            <div
-              style={
-                Object {
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "top": "0px",
-                  "width": "100%",
-                }
-              }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "WebkitFlexBasis": "auto",
-                    "flexBasis": "auto",
-                    "height": "100%",
-                    "msFlexPreferredSize": "auto",
-                    "overflowX": "hidden",
-                    "overflowY": "hidden",
-                    "zIndex": 0,
-                  }
-                }
-              >
-                <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "backgroundColor": "rgba(0,0,0,0.00)",
-                      "backgroundPosition": "center",
-                      "backgroundRepeat": "no-repeat",
-                      "backgroundSize": "cover",
-                      "bottom": "0px",
-                      "height": "100%",
-                      "left": "0px",
-                      "position": "absolute",
-                      "right": "0px",
-                      "top": "0px",
-                      "width": "100%",
-                      "zIndex": -1,
-                    }
-                  }
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "16px",
-                "lineHeight": "20px",
-                "paddingTop": "5px",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Earning Celo Dollars via microwork in Kenya
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "0px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "0px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-q7lffx"
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "marginBottom": "20px",
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "display": "block",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "display": "block",
-                  "paddingBottom": "133.33333333333334%",
-                  "width": "100%",
-                }
-              }
-            />
-            <div
-              style={
-                Object {
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "top": "0px",
-                  "width": "100%",
-                }
-              }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "WebkitFlexBasis": "auto",
-                    "flexBasis": "auto",
-                    "height": "100%",
-                    "msFlexPreferredSize": "auto",
-                    "overflowX": "hidden",
-                    "overflowY": "hidden",
-                    "zIndex": 0,
-                  }
-                }
-              >
-                <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "backgroundColor": "rgba(0,0,0,0.00)",
-                      "backgroundPosition": "center",
-                      "backgroundRepeat": "no-repeat",
-                      "backgroundSize": "cover",
-                      "bottom": "0px",
-                      "height": "100%",
-                      "left": "0px",
-                      "position": "absolute",
-                      "right": "0px",
-                      "top": "0px",
-                      "width": "100%",
-                      "zIndex": -1,
-                    }
-                  }
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "16px",
-                "lineHeight": "20px",
-                "paddingTop": "5px",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Growing businesses with the Celo Platform in the Philippines
           </div>
         </div>
       </div>
@@ -917,29 +164,8 @@ exports[`HomePage renders 1`] = `
         }
       }
     >
-      <h4
-        aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "marginTop": "20px",
-            "textAlign": "center",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        Benefits of Celo
-      </h4>
-      <h1
-        aria-level="1"
+      <h2
+        aria-level="2"
         className="css-reset-4rbku5 css-text-901oao"
         dir="auto"
         onClick={[Function]}
@@ -957,223 +183,8 @@ exports[`HomePage renders 1`] = `
           }
         }
       >
-        Mobile-First Blockchain Platform
-      </h1>
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitBoxPack": "space-evenly",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "WebkitJustifyContent": "space-evenly",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "justifyContent": "space-evenly",
-            "msFlexDirection": "row",
-            "msFlexPack": "space-evenly",
-            "msFlexWrap": "wrap",
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
-          >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
-              dir="auto"
-              href="https://medium.com/celoorg/an-introductory-guide-to-celo-b185c62d3067"
-              onClick={[Function]}
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "msFlexAlign": "center",
-                  "paddingBottom": "10px",
-                  "paddingLeft": "10px",
-                  "paddingRight": "10px",
-                  "paddingTop": "10px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
-              Read Intro Guide
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
-                  }
-                }
-              >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  style={Object {}}
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                    style={Object {}}
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
-          >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
-              dir="auto"
-              href="/papers"
-              onClick={[Function]}
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "msFlexAlign": "center",
-                  "paddingBottom": "10px",
-                  "paddingLeft": "10px",
-                  "paddingRight": "10px",
-                  "paddingTop": "10px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
-              Read Celo White Paper
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
-                  }
-                }
-              >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  style={Object {}}
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                    style={Object {}}
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+        The Builders Platform
+      </h2>
     </div>
   </div>
   <div
@@ -1259,369 +270,8 @@ exports[`HomePage renders 1`] = `
             }
           />
         </div>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
-              "marginBottom": "20px",
-              "marginTop": "20px",
-              "textRendering": "geometricPrecision",
-            }
-          }
-        >
-          Global Impact
-        </div>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "20px",
-              "lineHeight": "28px",
-              "textRendering": "geometricPrecision",
-            }
-          }
-        >
-          A mobile-first approach that provides the opportunity to positively impact 5.6B smartphone owners globally
-        </div>
-      </div>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitBoxPack": "justify",
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "WebkitJustifyContent": "space-between",
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "justifyContent": "space-between",
-          "msFlexNegative": 0,
-          "msFlexPack": "justify",
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-view-1dbjc4n"
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitFlexBasis": "auto",
-              "flexBasis": "auto",
-              "height": "100px",
-              "msFlexPreferredSize": "auto",
-              "overflowX": "hidden",
-              "overflowY": "hidden",
-              "width": "100px",
-              "zIndex": 0,
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "backgroundPosition": "center",
-                "backgroundRepeat": "no-repeat",
-                "backgroundSize": "contain",
-                "bottom": "0px",
-                "height": "100%",
-                "left": "0px",
-                "position": "absolute",
-                "right": "0px",
-                "top": "0px",
-                "width": "100%",
-                "zIndex": -1,
-              }
-            }
-          />
-        </div>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
-              "marginBottom": "20px",
-              "marginTop": "20px",
-              "textRendering": "geometricPrecision",
-            }
-          }
-        >
-          Solving Community Needs
-        </div>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "20px",
-              "lineHeight": "28px",
-              "textRendering": "geometricPrecision",
-            }
-          }
-        >
-          Supported by a mission-aligned network of technologists, international NGOs, and organizations committed to building an inclusive financial system
-        </div>
-      </div>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitBoxPack": "justify",
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "WebkitJustifyContent": "space-between",
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "justifyContent": "space-between",
-          "msFlexNegative": 0,
-          "msFlexPack": "justify",
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-view-1dbjc4n"
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitFlexBasis": "auto",
-              "flexBasis": "auto",
-              "height": "100px",
-              "msFlexPreferredSize": "auto",
-              "overflowX": "hidden",
-              "overflowY": "hidden",
-              "width": "100px",
-              "zIndex": 0,
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "backgroundPosition": "center",
-                "backgroundRepeat": "no-repeat",
-                "backgroundSize": "contain",
-                "bottom": "0px",
-                "height": "100%",
-                "left": "0px",
-                "position": "absolute",
-                "right": "0px",
-                "top": "0px",
-                "width": "100%",
-                "zIndex": -1,
-              }
-            }
-          />
-        </div>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
-              "marginBottom": "20px",
-              "marginTop": "20px",
-              "textRendering": "geometricPrecision",
-            }
-          }
-        >
-          Usability-focused tech innovations
-        </div>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "20px",
-              "lineHeight": "28px",
-              "textRendering": "geometricPrecision",
-            }
-          }
-        >
-          Technology innovations allow Celo to truly work across devices, carriers, & countries
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "50px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "0px",
-        "paddingRight": "0px",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "0px",
-          "paddingRight": "0px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-q7lffx"
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "display": "block",
-              "overflowX": "hidden",
-              "overflowY": "hidden",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "display": "block",
-                "paddingBottom": "56.136606189967985%",
-                "width": "100%",
-              }
-            }
-          />
-          <div
-            style={
-              Object {
-                "bottom": "0px",
-                "height": "100%",
-                "left": "0px",
-                "position": "absolute",
-                "top": "0px",
-                "width": "100%",
-              }
-            }
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "WebkitFlexBasis": "auto",
-                  "flexBasis": "auto",
-                  "height": "100%",
-                  "msFlexPreferredSize": "auto",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "100%",
-                  "zIndex": 0,
-                }
-              }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "backgroundColor": "rgba(0,0,0,0.00)",
-                    "backgroundPosition": "center",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "cover",
-                    "bottom": "0px",
-                    "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                    "width": "100%",
-                    "zIndex": -1,
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "WebkitBoxPack": "center",
-            "WebkitJustifyContent": "center",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "msFlexAlign": "center",
-            "msFlexPack": "center",
-          }
-        }
-      >
-        <h2
-          aria-level="2"
+        <h3
+          aria-level="3"
           className="css-reset-4rbku5 css-text-901oao"
           dir="auto"
           onClick={[Function]}
@@ -1629,242 +279,521 @@ exports[`HomePage renders 1`] = `
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "28px",
-              "lineHeight": "32px",
-              "marginTop": "20px",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
-        >
-          A Gift of Heart: For Value Flowers
-        </h2>
-        <h4
-          aria-level="4"
-          className="css-reset-4rbku5 css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
               "marginBottom": "20px",
-              "textAlign": "center",
+              "marginTop": "20px",
               "textRendering": "geometricPrecision",
               "textTransform": "none",
             }
           }
         >
-          Art inspired by the spirit and mission of Celo
-        </h4>
+          Mobile
+        </h3>
+        <div
+          className="css-text-901oao"
+          dir="auto"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontSize": "20px",
+              "lineHeight": "28px",
+              "textRendering": "geometricPrecision",
+            }
+          }
+        >
+          Hyper-efficient light client and full node incentives allowing for scalability to 6 billion smartphones. Full EVM compatibility making it easy to get started.
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+      >
         <div
           className="css-view-1dbjc4n"
           style={
             Object {
               "WebkitBoxDirection": "normal",
+              "WebkitBoxFlex": 0,
               "WebkitBoxOrient": "horizontal",
+              "WebkitBoxPack": "center",
               "WebkitFlexDirection": "row",
+              "WebkitFlexGrow": 0,
+              "WebkitJustifyContent": "center",
+              "backgroundColor": "rgba(0,0,0,0.00)",
+              "borderBottomColor": "rgba(0,0,0,0.00)",
+              "borderLeftColor": "rgba(0,0,0,0.00)",
+              "borderRightColor": "rgba(0,0,0,0.00)",
+              "borderTopColor": "rgba(0,0,0,0.00)",
               "flexDirection": "row",
+              "flexGrow": 0,
+              "justifyContent": "center",
               "msFlexDirection": "row",
+              "msFlexPack": "center",
+              "msFlexPositive": 0,
+              "opacity": 1,
+              "outlineColor": "transparent",
+              "width": "fit-content",
+            }
+          }
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            data-focusable={true}
+            dir="auto"
+            href="https://docs.celo.org/v/master/developer-guide/dappkit"
+            onClick={[Function]}
+            rel=" noopener noreferrer"
+            role="link"
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "alignItems": "center",
+                "color": "rgba(53,208,127,1.00)",
+                "cursor": "pointer",
+                "display": "inline-flex",
+                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "lineHeight": "16px",
+                "marginTop": "20px",
+                "msFlexAlign": "center",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+              }
+            }
+            target="_blank"
+          >
+            Make it mobile wih DappKit
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "display": "inline-flex",
+                  "paddingLeft": "0.4em",
+                  "paddingTop": "0.185em",
+                }
+              }
+            >
+              <svg
+                fill="none"
+                height="0.75em"
+                style={Object {}}
+                transform="rotate(0)"
+                viewBox="0 0 8 12"
+                width="0.75em"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                  fill="#35D07F"
+                  fillRule="evenodd"
+                  opacity={1}
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitBoxPack": "justify",
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "WebkitJustifyContent": "space-between",
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "justifyContent": "space-between",
+          "msFlexNegative": 0,
+          "msFlexPack": "justify",
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+      >
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "WebkitFlexBasis": "auto",
+              "flexBasis": "auto",
+              "height": "100px",
+              "msFlexPreferredSize": "auto",
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "width": "100px",
+              "zIndex": 0,
             }
           }
         >
           <div
             className="css-view-1dbjc4n"
+            style={
+              Object {
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "contain",
+                "bottom": "0px",
+                "height": "100%",
+                "left": "0px",
+                "position": "absolute",
+                "right": "0px",
+                "top": "0px",
+                "width": "100%",
+                "zIndex": -1,
+              }
+            }
+          />
+        </div>
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "marginBottom": "20px",
+              "marginTop": "20px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          Stable
+        </h3>
+        <div
+          className="css-text-901oao"
+          dir="auto"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontSize": "20px",
+              "lineHeight": "28px",
+              "textRendering": "geometricPrecision",
+            }
+          }
+        >
+          Growing family of native stablecoins, like Celo Dollars, which follow the value of fiat currencies. Pay transaction fees with stablecoins or your own tokens.
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "WebkitBoxDirection": "normal",
+              "WebkitBoxFlex": 0,
+              "WebkitBoxOrient": "horizontal",
+              "WebkitBoxPack": "center",
+              "WebkitFlexDirection": "row",
+              "WebkitFlexGrow": 0,
+              "WebkitJustifyContent": "center",
+              "backgroundColor": "rgba(0,0,0,0.00)",
+              "borderBottomColor": "rgba(0,0,0,0.00)",
+              "borderLeftColor": "rgba(0,0,0,0.00)",
+              "borderRightColor": "rgba(0,0,0,0.00)",
+              "borderTopColor": "rgba(0,0,0,0.00)",
+              "flexDirection": "row",
+              "flexGrow": 0,
+              "justifyContent": "center",
+              "msFlexDirection": "row",
+              "msFlexPack": "center",
+              "msFlexPositive": 0,
+              "opacity": 1,
+              "outlineColor": "transparent",
+              "width": "fit-content",
+            }
+          }
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            data-focusable={true}
+            dir="auto"
+            href="https://docs.celo.org/overview#stable-cryptocurrencies"
             onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
+            rel=" noopener noreferrer"
+            role="link"
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "alignItems": "center",
+                "color": "rgba(53,208,127,1.00)",
+                "cursor": "pointer",
+                "display": "inline-flex",
+                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "lineHeight": "16px",
+                "marginTop": "20px",
+                "msFlexAlign": "center",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+              }
+            }
+            target="_blank"
           >
+            Learn more about Celo Dollars
             <div
               className="css-view-1dbjc4n"
               style={
                 Object {
-                  "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
-                  "WebkitBoxOrient": "horizontal",
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitJustifyContent": "center",
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "borderBottomColor": "rgba(0,0,0,0.00)",
-                  "borderLeftColor": "rgba(0,0,0,0.00)",
-                  "borderRightColor": "rgba(0,0,0,0.00)",
-                  "borderTopColor": "rgba(0,0,0,0.00)",
-                  "flexDirection": "row",
-                  "flexGrow": 0,
-                  "justifyContent": "center",
-                  "msFlexDirection": "row",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 0,
-                  "opacity": 1,
-                  "outlineColor": "transparent",
-                  "width": "fit-content",
+                  "display": "inline-flex",
+                  "paddingLeft": "0.4em",
+                  "paddingTop": "0.185em",
                 }
               }
             >
-              <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
-                dir="auto"
-                href="/flowers"
-                onClick={[Function]}
-                rel=" noopener noreferrer"
-                role="link"
-                style={
-                  Object {
-                    "WebkitAlignItems": "center",
-                    "WebkitBoxAlign": "center",
-                    "alignItems": "center",
-                    "color": "rgba(53,208,127,1.00)",
-                    "cursor": "pointer",
-                    "display": "inline-flex",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "16px",
-                    "marginRight": "30px",
-                    "msFlexAlign": "center",
-                    "textAlign": "center",
-                    "textRendering": "geometricPrecision",
-                  }
-                }
-                target="_blank"
+              <svg
+                fill="none"
+                height="0.75em"
+                style={Object {}}
+                transform="rotate(0)"
+                viewBox="0 0 8 12"
+                width="0.75em"
               >
-                For Value Flowers
-                <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "display": "inline-flex",
-                      "paddingLeft": "0.4em",
-                      "paddingTop": "0.185em",
-                    }
-                  }
-                >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    style={Object {}}
-                    transform="rotate(0)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                      style={Object {}}
-                    />
-                  </svg>
-                </div>
-              </a>
+                <path
+                  clipRule="evenodd"
+                  d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                  fill="#35D07F"
+                  fillRule="evenodd"
+                  opacity={1}
+                  style={Object {}}
+                />
+              </svg>
             </div>
-          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitBoxPack": "justify",
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "WebkitJustifyContent": "space-between",
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "justifyContent": "space-between",
+          "msFlexNegative": 0,
+          "msFlexPack": "justify",
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+      >
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "WebkitFlexBasis": "auto",
+              "flexBasis": "auto",
+              "height": "100px",
+              "msFlexPreferredSize": "auto",
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "width": "100px",
+              "zIndex": 0,
+            }
+          }
+        >
           <div
             className="css-view-1dbjc4n"
+            style={
+              Object {
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "backgroundPosition": "center",
+                "backgroundRepeat": "no-repeat",
+                "backgroundSize": "contain",
+                "bottom": "0px",
+                "height": "100%",
+                "left": "0px",
+                "position": "absolute",
+                "right": "0px",
+                "top": "0px",
+                "width": "100%",
+                "zIndex": -1,
+              }
+            }
+          />
+        </div>
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "marginBottom": "20px",
+              "marginTop": "20px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          Usable
+        </h3>
+        <div
+          className="css-text-901oao"
+          dir="auto"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontSize": "20px",
+              "lineHeight": "28px",
+              "textRendering": "geometricPrecision",
+            }
+          }
+        >
+          Users can easily send currency to any mobile number, enabled by Celo’s decentralized phone verification protocol, and get access to a growing ecosystem of global cash-in cash-out options.
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+      >
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "WebkitBoxDirection": "normal",
+              "WebkitBoxFlex": 0,
+              "WebkitBoxOrient": "horizontal",
+              "WebkitBoxPack": "center",
+              "WebkitFlexDirection": "row",
+              "WebkitFlexGrow": 0,
+              "WebkitJustifyContent": "center",
+              "backgroundColor": "rgba(0,0,0,0.00)",
+              "borderBottomColor": "rgba(0,0,0,0.00)",
+              "borderLeftColor": "rgba(0,0,0,0.00)",
+              "borderRightColor": "rgba(0,0,0,0.00)",
+              "borderTopColor": "rgba(0,0,0,0.00)",
+              "flexDirection": "row",
+              "flexGrow": 0,
+              "justifyContent": "center",
+              "msFlexDirection": "row",
+              "msFlexPack": "center",
+              "msFlexPositive": 0,
+              "opacity": 1,
+              "outlineColor": "transparent",
+              "width": "fit-content",
+            }
+          }
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            data-focusable={true}
+            dir="auto"
+            href="https://valoraapp.com"
             onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
+            rel=" noopener noreferrer"
+            role="link"
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "alignItems": "center",
+                "color": "rgba(53,208,127,1.00)",
+                "cursor": "pointer",
+                "display": "inline-flex",
+                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "lineHeight": "16px",
+                "marginTop": "20px",
+                "msFlexAlign": "center",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+              }
+            }
+            target="_blank"
           >
+            See it in action with Valora
             <div
               className="css-view-1dbjc4n"
               style={
                 Object {
-                  "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
-                  "WebkitBoxOrient": "horizontal",
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitJustifyContent": "center",
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "borderBottomColor": "rgba(0,0,0,0.00)",
-                  "borderLeftColor": "rgba(0,0,0,0.00)",
-                  "borderRightColor": "rgba(0,0,0,0.00)",
-                  "borderTopColor": "rgba(0,0,0,0.00)",
-                  "flexDirection": "row",
-                  "flexGrow": 0,
-                  "justifyContent": "center",
-                  "msFlexDirection": "row",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 0,
-                  "opacity": 1,
-                  "outlineColor": "transparent",
-                  "width": "fit-content",
+                  "display": "inline-flex",
+                  "paddingLeft": "0.4em",
+                  "paddingTop": "0.185em",
                 }
               }
             >
-              <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
-                dir="auto"
-                href="https://app.livestorm.co/clabs/kuneco"
-                onClick={[Function]}
-                rel=" noopener noreferrer"
-                role="link"
-                style={
-                  Object {
-                    "WebkitAlignItems": "center",
-                    "WebkitBoxAlign": "center",
-                    "alignItems": "center",
-                    "color": "rgba(53,208,127,1.00)",
-                    "cursor": "pointer",
-                    "display": "inline-flex",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "16px",
-                    "msFlexAlign": "center",
-                    "textAlign": "center",
-                    "textRendering": "geometricPrecision",
-                  }
-                }
-                target="_blank"
+              <svg
+                fill="none"
+                height="0.75em"
+                style={Object {}}
+                transform="rotate(0)"
+                viewBox="0 0 8 12"
+                width="0.75em"
               >
-                Kuneco
-                <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "display": "inline-flex",
-                      "paddingLeft": "0.4em",
-                      "paddingTop": "0.185em",
-                    }
-                  }
-                >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    style={Object {}}
-                    transform="rotate(0)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                      style={Object {}}
-                    />
-                  </svg>
-                </div>
-              </a>
+                <path
+                  clipRule="evenodd"
+                  d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                  fill="#35D07F"
+                  fillRule="evenodd"
+                  opacity={1}
+                  style={Object {}}
+                />
+              </svg>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

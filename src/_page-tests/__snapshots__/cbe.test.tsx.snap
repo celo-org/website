@@ -238,25 +238,27 @@ exports[`CBE renders 1`] = `
             }
           />
         </div>
-        <div
-          className="css-text-901oao"
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao"
           dir="auto"
           onClick={[Function]}
+          role="heading"
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
+              "fontSize": "24px",
+              "lineHeight": "32px",
               "marginBottom": "20px",
               "marginTop": "20px",
               "textRendering": "geometricPrecision",
+              "textTransform": "none",
             }
           }
         >
           adventure1.title
-        </div>
+        </h3>
         <div
           className="css-text-901oao"
           dir="auto"
@@ -316,6 +318,7 @@ exports[`CBE renders 1`] = `
             dir="auto"
             href="https://valoraapp.co/3j0mTjS"
             onClick={[Function]}
+            rel=" noopener noreferrer"
             role="link"
             style={
               Object {
@@ -335,6 +338,7 @@ exports[`CBE renders 1`] = `
                 "textRendering": "geometricPrecision",
               }
             }
+            target="_blank"
           >
             adventure1.link
             <div
@@ -430,25 +434,27 @@ exports[`CBE renders 1`] = `
             }
           />
         </div>
-        <div
-          className="css-text-901oao"
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao"
           dir="auto"
           onClick={[Function]}
+          role="heading"
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
+              "fontSize": "24px",
+              "lineHeight": "32px",
               "marginBottom": "20px",
               "marginTop": "20px",
               "textRendering": "geometricPrecision",
+              "textTransform": "none",
             }
           }
         >
           adventure2.title
-        </div>
+        </h3>
         <div
           className="css-text-901oao"
           dir="auto"
@@ -508,6 +514,7 @@ exports[`CBE renders 1`] = `
             dir="auto"
             href="https://valoraapp.co/3l5XLtC"
             onClick={[Function]}
+            rel=" noopener noreferrer"
             role="link"
             style={
               Object {
@@ -527,6 +534,7 @@ exports[`CBE renders 1`] = `
                 "textRendering": "geometricPrecision",
               }
             }
+            target="_blank"
           >
             adventure2.link
             <div
@@ -622,25 +630,27 @@ exports[`CBE renders 1`] = `
             }
           />
         </div>
-        <div
-          className="css-text-901oao"
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao"
           dir="auto"
           onClick={[Function]}
+          role="heading"
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "lineHeight": "18px",
+              "fontSize": "24px",
+              "lineHeight": "32px",
               "marginBottom": "20px",
               "marginTop": "20px",
               "textRendering": "geometricPrecision",
+              "textTransform": "none",
             }
           }
         >
           adventure3.title
-        </div>
+        </h3>
         <div
           className="css-text-901oao"
           dir="auto"
@@ -700,6 +710,7 @@ exports[`CBE renders 1`] = `
             dir="auto"
             href="https://valoraapp.com"
             onClick={[Function]}
+            rel=" noopener noreferrer"
             role="link"
             style={
               Object {
@@ -719,6 +730,7 @@ exports[`CBE renders 1`] = `
                 "textRendering": "geometricPrecision",
               }
             }
+            target="_blank"
           >
             adventure3.link
             <div
