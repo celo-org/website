@@ -94,7 +94,7 @@ export default function useStatsRelay() {
           }
         })
 
-      }, 500)
+      }, 350)
 
 
     ws.current.onclose = (data) => console.info("ws closed", data);
