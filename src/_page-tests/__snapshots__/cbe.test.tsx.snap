@@ -316,6 +316,7 @@ exports[`CBE renders 1`] = `
             dir="auto"
             href="https://valoraapp.co/3j0mTjS"
             onClick={[Function]}
+            rel=" noopener noreferrer"
             role="link"
             style={
               Object {
@@ -335,6 +336,7 @@ exports[`CBE renders 1`] = `
                 "textRendering": "geometricPrecision",
               }
             }
+            target="_blank"
           >
             adventure1.link
             <div
@@ -508,6 +510,7 @@ exports[`CBE renders 1`] = `
             dir="auto"
             href="https://valoraapp.co/3l5XLtC"
             onClick={[Function]}
+            rel=" noopener noreferrer"
             role="link"
             style={
               Object {
@@ -527,6 +530,7 @@ exports[`CBE renders 1`] = `
                 "textRendering": "geometricPrecision",
               }
             }
+            target="_blank"
           >
             adventure2.link
             <div
@@ -700,6 +704,7 @@ exports[`CBE renders 1`] = `
             dir="auto"
             href="https://valoraapp.com"
             onClick={[Function]}
+            rel=" noopener noreferrer"
             role="link"
             style={
               Object {
@@ -719,6 +724,7 @@ exports[`CBE renders 1`] = `
                 "textRendering": "geometricPrecision",
               }
             }
+            target="_blank"
           >
             adventure3.link
             <div

@@ -348,6 +348,7 @@ exports[`HomePage renders 1`] = `
             dir="auto"
             href="https://docs.celo.org/v/master/developer-guide/dappkit"
             onClick={[Function]}
+            rel=" noopener noreferrer"
             role="link"
             style={
               Object {
@@ -367,6 +368,7 @@ exports[`HomePage renders 1`] = `
                 "textRendering": "geometricPrecision",
               }
             }
+            target="_blank"
           >
             Make it mobile wih DappKit
             <div
@@ -540,6 +542,7 @@ exports[`HomePage renders 1`] = `
             dir="auto"
             href="https://docs.celo.org/overview#stable-cryptocurrencies"
             onClick={[Function]}
+            rel=" noopener noreferrer"
             role="link"
             style={
               Object {
@@ -559,6 +562,7 @@ exports[`HomePage renders 1`] = `
                 "textRendering": "geometricPrecision",
               }
             }
+            target="_blank"
           >
             Learn more about Celo Dollars
             <div
@@ -732,6 +736,7 @@ exports[`HomePage renders 1`] = `
             dir="auto"
             href="https://valoraapp.com"
             onClick={[Function]}
+            rel=" noopener noreferrer"
             role="link"
             style={
               Object {
@@ -751,6 +756,7 @@ exports[`HomePage renders 1`] = `
                 "textRendering": "geometricPrecision",
               }
             }
+            target="_blank"
           >
             See it in action with Valora
             <div
