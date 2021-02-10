@@ -77,7 +77,6 @@ export default function useStatsRelay() {
     }
 
     ws.current.onmessage = (event) => {
-      console.info(event)
       const data: Action = JSON.parse(event.data)
        if (data.action === "init") {
          requestAnimationFrame(() => dispatch(data))

@@ -31,6 +31,7 @@ export function Adventure({ title, text, source, link, imageStyle }: Props) {
           style={standardStyles.elementalMarginTop}
           href={link.href}
           text={link.text}
+          target="_blank"
           kind={BTN.NAKED}
           size={SIZE.normal}
         />
