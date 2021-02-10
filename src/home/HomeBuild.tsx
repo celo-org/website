@@ -19,7 +19,7 @@ export default function HomeBuild() {
         allStyle={standardStyles.centered}
         >
             <Cell tabletSpan={Spans.twoThird} span={Spans.half}>
-                <H1 aria-level="2" style={[textStyles.center, standardStyles.elementalMarginBottom]}>
+                <H1 ariaLevel="2" style={[textStyles.center, standardStyles.elementalMarginBottom]}>
                         {t('buildTitle')}
                 </H1>
             </Cell>
@@ -30,7 +30,7 @@ export default function HomeBuild() {
         tabletStyle={standardStyles.sectionMarginBottomTablet}
         mobileStyle={standardStyles.sectionMarginBottomMobile}
         >
-            <Adventure source={currencies} title={t('build1.title')} text={t('build1.text')} link={{ href: 'https://docs.celo.org/v/master/developer-guide/dappkit', text: t('build1.link')}}/> 
+            <Adventure source={currencies} title={t('build1.title')} text={t('build1.text')} link={{ href: 'https://docs.celo.org/v/master/developer-guide/dappkit', text: t('build1.link')}}/>
             <Adventure source={stable} title={t('build2.title')} text={t('build2.text')} link={{ href: 'https://docs.celo.org/overview#stable-cryptocurrencies', text: t('build2.link')}}/>
             <Adventure source={people} title={t('build3.title')} text={t('build3.text')} link={{ href: 'https://valoraapp.com', text: t('build3.link')}}/>
 
