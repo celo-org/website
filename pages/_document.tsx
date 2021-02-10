@@ -51,6 +51,7 @@ export default class MyDocument extends Document<Props> {
         <Head>
           <link key="favicon" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="stylesheet" href={'/immutable/normalize.css'} />
+          <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin={"true"}/>
 
           <link
             rel="stylesheet"
