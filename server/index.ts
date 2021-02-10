@@ -41,7 +41,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 ;(async () => {
   await app.prepare()
   const server = express()
-
   server.use(helmet())
   server.use(wwwRedirect)
   server.enable('trust proxy')
@@ -51,7 +50,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   if (!dev) {
     server.use(expressEnforcesSsl())
   }
-
   // page redirects
   ;['/careers', '/join'].forEach((route) => {
     server.get(route, (_, res) => {
@@ -272,6 +270,8 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   server.get('*', (req, res) => {
     return handle(req, res)
   })
+
+
 
   await initSentryServer()
   await server.listen(port)

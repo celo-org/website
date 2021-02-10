@@ -1,9 +1,13 @@
 import * as React from 'react'
 export const SingletonRouter = {}
 
+function on(action, func) {
+
+}
+
 export function withRouter(Component) {
   return function Wrapped(props) {
-    return <Component router={{ pathName: '/test/' }} {...props} />
+    return <Component router={{ pathName: '/test/', events: {on} }} {...props} />
   }
 }
 

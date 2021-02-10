@@ -6,19 +6,30 @@ const TTL = MINUTE * 5
 
 const myCache = new NodeCache({ stdTTL: TTL, checkperiod: 120 })
 
+interface Options  { minutes?: number; seconds?: number, args?: any }
+
 export async function cache<T>(
   key: string,
   func: (param?: any) => Promise<T>,
-  options?: { minutes?: number; args?: any }
+  options?:Options
 ): Promise<T> {
   const cachedResult = myCache.get<T>(key)
   if (cachedResult) {
     return cachedResult
   } else {
     const freshResult = options ? await func(options.args) : await func()
-    const ttl = options && options.minutes ? options.minutes * MINUTE : TTL
-    myCache.set(key, freshResult, ttl)
+    myCache.set(key, freshResult, getTTL(options))
     return freshResult as T
+  }
+}
+
+function getTTL(options?: Options) {
+  if (options?.minutes) {
+    return options.minutes * MINUTE
+  } else if (options?.seconds) {
+    return options.seconds
+  } else {
+    return TTL
   }
 }
 
