@@ -2,7 +2,7 @@ import * as React from 'react'
 export const SingletonRouter = {}
 
 function on(action, func) {
-
+  return `${action} ${func}`
 }
 
 export function withRouter(Component) {
