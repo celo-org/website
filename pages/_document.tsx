@@ -49,11 +49,12 @@ export default class MyDocument extends Document<Props> {
     return (
       <html lang={locale} style={{ height: '100%', width: '100%' }}>
         <Head>
-          <link rel="stylesheet" href={'/normalize.css'} />
+          <link key="favicon" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+          <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin={"true"}/>
 
           <link
             rel="stylesheet"
-            href="https://indestructibletype.com/fonts/Jost.css"
+            href="/fonts/JostFont.css"
             type="text/css"
           />
           <link
@@ -61,7 +62,6 @@ export default class MyDocument extends Document<Props> {
             rel="stylesheet"
           />
 
-          <link key="favicon" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
