@@ -13,7 +13,11 @@ export default function Stats() {
   const allLoaded = addressCount && avgBlockTime  && blockCount && totalTx
   return <figure aria-hidden={!allLoaded} css={css(rootCss,allLoaded && appear )}>
         <RingsGlyph color={colors.white} height={20}/>
-        <figcaption css={headingCss}>{t("statsHeading")}</figcaption>
+        <figcaption css={headingCss}>
+          <a css={linkCss} target="_blank" href={"https://explorer.celo.org"}>
+            {t("statsHeading")}
+          </a>
+        </figcaption>
         <Datum value={blockCount?.toLocaleString()} title={t("statsBlockCount")} id="stat-blockcount"/>
         <Datum value={addressCount.toLocaleString()} title={t("statsAddresses")} id="stat-addressess"/>
         <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
@@ -44,8 +48,11 @@ const appear = css({
   opacity: 1
 })
 
-const headingCss = css(sectionTitle,{
+const headingCss = css(sectionTitle)
+
+const linkCss = css({
   color: colors.white,
+  textDecoration: "none"
 })
 
 interface DatumProps {
