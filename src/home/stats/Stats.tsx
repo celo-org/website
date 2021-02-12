@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import {jsx, css} from "@emotion/core"
+import {jsx, css, keyframes} from "@emotion/core"
 import { flex, garamond, sectionTitle, jost, } from "src/estyles"
 import {memo} from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
@@ -28,7 +28,7 @@ export default function Stats() {
 const rootCss = css(flex,{
   opacity: 0,
   transitionProperty: "opacity",
-  transitionDuration: "250ms",
+  transitionDuration: "550ms",
   boxShadow: "0px 2px 54px 0px #1F2327",
   alignItems: "center",
   backgroundColor: '#23272C',
@@ -56,14 +56,15 @@ const linkCss = css({
 })
 
 interface DatumProps {
-  value: string |number
+  value: string | undefined
   title: string
   id: string
 }
 
 const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
+  const special = isSpecial(value)
   return <>
-      <span css={valueCss} aria-labelledby={id} >{value}</span>
+      <span key={`${id}-${special}`} css={css(valueCss, special && specialCss)} aria-labelledby={id} >{value}</span>
       <span css={labelCss} id={id}>{title}</span>
   </>
 })
@@ -82,3 +83,35 @@ const labelCss = css(jost, {
   lineHeight: "20px",
   textAlign: "center"
 })
+
+const celobration = keyframes`
+  from {
+    color: white;
+    transform: scale(1) translateY(0);
+  }
+
+  5% {
+    color: ${colors.gold};
+    transform: scale(1.001) translateY(-5px);
+  }
+
+  90% {
+    color: ${colors.gold};
+  }
+
+  to {
+    color: white;
+    transform: scale(1) translateY(0);
+  }
+
+`
+
+const specialCss = css({
+  animationName:   celobration,
+  animationDuration: "350ms",
+  animationIterationCount: 1
+})
+
+function isSpecial(value: string| undefined) {
+  return  value?.endsWith("000,000") || value?.endsWith("000.000")
+}

@@ -37,9 +37,10 @@ export default function useStatsRelay() {
   const [stats, dispatch] = useReducer((state:State, action: Action) => {
     switch (action.action)  {
       case "init":
-        return action.value
+        const addressCount = toNumber(action.value.addressCount)
+        return {...action.value, addressCount}
       case StatKeys.addressCount:
-        const addressAsNumber =  Number((action.value as string).replace(/,/g, ""))
+        const addressAsNumber =  toNumber(action.value)
         if (addressAsNumber > state.addressCount) {
           return {...state, addressCount:addressAsNumber }
         }
@@ -65,7 +66,7 @@ export default function useStatsRelay() {
 
     function relayURI() {
 
-      const host = (window.location.hostname === "localhost") ?  "0.0.0.0:8001" : "web-stats-relay-dot-celo-testnet.wl.r.appspot.com"
+      const host = "web-stats-relay-dot-celo-testnet.wl.r.appspot.com"
       const protocol = window.location.protocol === "https:" ? "wss" : "ws"
       return `${protocol}://${host}/stats`
     }
@@ -106,4 +107,14 @@ export default function useStatsRelay() {
   }, [])
 
   return stats
+}
+
+function toNumber(stringValue: string| undefined | number): number {
+  if (typeof stringValue === "number") {
+    return stringValue as number
+  }
+  if (!stringValue) {
+    return 0
+  }
+  return Number(stringValue.replace(/,/g, ""))
 }
