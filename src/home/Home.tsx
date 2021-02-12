@@ -9,6 +9,7 @@ import { TwoAssets } from "src/home/TwoAssets"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Press from 'src/press/Press'
 import Cover from "./Cover"
+import GOptimize from "src/shared/GOptimize"
 export default function Home() {
   const { t } = useTranslation(NameSpaces.home)
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         path={"/"}
         image={celoHero}
       />
+      <GOptimize/>
       <Cover />
       <HomeBuild />
       <TwoAssets />
