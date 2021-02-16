@@ -16,7 +16,7 @@ import LogoLightBg from 'src/logos/LogoLightBg'
 import Button, { BTN } from 'src/shared/Button.3'
 import Link from 'src/shared/Link'
 import menu, { CeloLinks, MAIN_MENU, MenuLink, pagePaths } from 'src/shared/menu-items'
-import MobileMenu from 'src/shared/MobileMenu'
+const MobileMenu = dynamic(import('src/shared/MobileMenu'))
 import OvalCoin from 'src/shared/OvalCoin'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { colors } from 'src/styles'
