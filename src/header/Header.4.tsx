@@ -163,15 +163,7 @@ export class Header extends React.PureComponent<Props, State> {
   }
 
   willShowHamburger = () => {
-    if (this.props.screen === ScreenSizes.DESKTOP) {
-      return false
-    }
-
-    if (this.state.menuFaded && !this.state.mobileMenuActive) {
-      return false
-    }
-
-    return true
+    return !this.state.menuFaded || this.state.mobileMenuActive
   }
 
   render() {
@@ -272,11 +264,11 @@ export class Header extends React.PureComponent<Props, State> {
             </div>
           </div>
         )}
-
-        {this.willShowHamburger() && (
           <div
             css={[
               styles.hamburger,
+              styles.fadeTransition,
+              this.willShowHamburger() && styles.hamburgerShowing,
               isHomePage &&
                 !this.state.mobileMenuActive && {
                   transform: `translateY(${this.props.bannerHeight}px)`,
@@ -289,7 +281,6 @@ export class Header extends React.PureComponent<Props, State> {
               color={this.getForegroundColor()}
             />
           </div>
-        )}
       </div>
     )
   }
@@ -403,11 +394,21 @@ const styles = {
   lastLink: flexCss({
     marginRight: 10,
   }),
-  hamburger: flexCss({
+  hamburger: css({
     position: 'fixed',
     top: 5,
     right: 5,
+    opacity: 0,
+    display: "none",
+    [WHEN_DESKTOP]: {
+      display: "none"
+    }
   }),
+  hamburgerShowing: {
+    opacity: 1,
+    display: "block",
+
+  },
   logoLeftContainer: flexCss({
     flexDirection: 'row',
   }),
