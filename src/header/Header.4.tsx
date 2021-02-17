@@ -55,7 +55,6 @@ export class Header extends React.PureComponent<Props, State> {
   lastScrollOffset: number
 
   state = {
-    showDesktopMenu: false,
     menuFaded: false,
     mobileMenuActive: false,
     belowFoldUpScroll: false,
@@ -167,8 +166,7 @@ export class Header extends React.PureComponent<Props, State> {
   }
 
   render() {
-    const { t, screen } = this.props
-    const isDesktop = screen === ScreenSizes.DESKTOP
+    const { t } = this.props
     const foreground = this.getForegroundColor()
     const isHomePage = this.props.router.pathname === menu.HOME.link
 
@@ -211,52 +209,49 @@ export class Header extends React.PureComponent<Props, State> {
               </div>
             </div>
           </Link>
-          {isDesktop && (
-            <div
-              css={[
-                styles.links,
-                styles.fadeTransition,
-                this.state.menuFaded ? styles.menuInvisible : styles.menuVisible,
-              ]}
-            >
-              {menuItems.map((item, index) => (
-                <div key={index} css={styles.linkWrapper}>
-                  <Button
-                    kind={this.isDarkMode() ? BTN.DARKNAV : BTN.NAV}
-                    href={item.link}
-                    text={t(item.name)}
-                  />
-                  {this.props.router.pathname === item.link && (
-                    <div css={styles.activeTab}>
-                      <OvalCoin color={colors.primary} size={10} />
-                    </div>
-                  )}
-                </div>
-              ))}
-              <div css={styles.linkWrapper}>
+          <div
+            css={[
+              styles.links,
+              styles.fadeTransition,
+              this.state.menuFaded ? styles.menuInvisible : styles.menuVisible,
+            ]}
+          >
+            {menuItems.map((item, index) => (
+              <div key={index} css={styles.linkWrapper}>
                 <Button
                   kind={this.isDarkMode() ? BTN.DARKNAV : BTN.NAV}
-                  href={'https://medium.com/CeloHQ'}
-                  text={t('blog')}
-                  target={'_blank'}
-                  iconRight={<MediumLogo height={20} color={foreground} wrapWithLink={false} />}
+                  href={item.link}
+                  text={t(item.name)}
                 />
+                {this.props.router.pathname === item.link && (
+                  <div css={styles.activeTab}>
+                    <OvalCoin color={colors.primary} size={10} />
+                  </div>
+                )}
               </div>
-              <div css={[styles.linkWrapper, styles.lastLink]}>
-                <Button
-                  kind={this.isDarkMode() ? BTN.DARKNAV : BTN.NAV}
-                  href={CeloLinks.gitHub}
-                  text={t('github')}
-                  target={'_blank'}
-                  iconRight={
-                    <Octocat size={22} color={this.isDarkMode() ? colors.white : colors.dark} />
-                  }
-                />
-              </div>
+            ))}
+            <div css={styles.linkWrapper}>
+              <Button
+                kind={this.isDarkMode() ? BTN.DARKNAV : BTN.NAV}
+                href={'https://medium.com/CeloHQ'}
+                text={t('blog')}
+                target={'_blank'}
+                iconRight={<MediumLogo height={20} color={foreground} wrapWithLink={false} />}
+              />
             </div>
-          )}
+            <div css={[styles.linkWrapper, styles.lastLink]}>
+              <Button
+                kind={this.isDarkMode() ? BTN.DARKNAV : BTN.NAV}
+                href={CeloLinks.gitHub}
+                text={t('github')}
+                target={'_blank'}
+                iconRight={
+                  <Octocat size={22} color={this.isDarkMode() ? colors.white : colors.dark} />
+                }
+              />
+            </div>
+          </div>
         </div>
-
         {this.state.mobileMenuActive && (
           <div css={styles.menuActive}>
             <div css={styles.mobileOpenContainer}>
@@ -264,23 +259,23 @@ export class Header extends React.PureComponent<Props, State> {
             </div>
           </div>
         )}
-          <div
-            css={[
-              styles.hamburger,
-              styles.fadeTransition,
-              this.willShowHamburger() && styles.hamburgerShowing,
-              isHomePage &&
-                !this.state.mobileMenuActive && {
-                  transform: `translateY(${this.props.bannerHeight}px)`,
-                },
-            ]}
-          >
-            <Hamburger
-              isOpen={this.state.mobileMenuActive}
-              onPress={this.clickHamburger}
-              color={this.getForegroundColor()}
-            />
-          </div>
+        <div
+          css={[
+            styles.hamburger,
+            styles.fadeTransition,
+            this.willShowHamburger() && styles.hamburgerShowing,
+            isHomePage &&
+              !this.state.mobileMenuActive && {
+                transform: `translateY(${this.props.bannerHeight}px)`,
+              },
+          ]}
+        >
+          <Hamburger
+            isOpen={this.state.mobileMenuActive}
+            onPress={this.clickHamburger}
+            color={this.getForegroundColor()}
+          />
+        </div>
       </div>
     )
   }
@@ -288,21 +283,20 @@ export class Header extends React.PureComponent<Props, State> {
 
 function flexCss(styles: CSSObject) {
   return css({
-    ...styles,
     display: "flex",
-  })
+  }, styles)
 }
 
 
 const styles = {
-  fadeTransition: flexCss({
+  fadeTransition: css({
     transitionProperty: 'opacity color',
     transitionDuration: '300ms',
   }),
-  menuVisible: flexCss({
+  menuVisible: css({
     opacity: 1,
   }),
-  menuInvisible: flexCss({
+  menuInvisible: css({
     opacity: 0,
     zIndex: -5,
     visibility: 'hidden',
@@ -334,10 +328,14 @@ const styles = {
     opacity: 1,
     height: HEADER_HEIGHT,
   }),
-  links: flexCss({
+  links: css({
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'center',
+    display: "none",
+    [WHEN_DESKTOP]: {
+      display: "flex"
+    }
   }),
   menuContainer: flexCss({
     flex: 1,
@@ -407,17 +405,16 @@ const styles = {
   hamburgerShowing: {
     opacity: 1,
     display: "block",
-
   },
   logoLeftContainer: flexCss({
     flexDirection: 'row',
   }),
-  hidden: flexCss({
+  hidden: {
     display: 'none',
-  }),
-  logoLeftVisible: flexCss({
+  },
+  logoLeftVisible: {
     display: 'flex',
-  }),
+  },
 }
 
 export default withNamespaces('common')(withScreenSize(withRouter<Props>(Header)))
