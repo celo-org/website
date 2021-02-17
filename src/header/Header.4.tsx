@@ -65,7 +65,6 @@ function useMenuHidePoint(): number | undefined {
     const [menuFaded, setMenuFaded] = React.useState(false)
     const [belowFoldUpScroll, setBelowFoldUpScroll] = React.useState(false)
     const menuHidePoint = useMenuHidePoint()
-
     React.useEffect(() => {
       lastScrollOffset.current = scrollOffset()
 
@@ -93,7 +92,7 @@ function useMenuHidePoint(): number | undefined {
       return () => {
         window.removeEventListener("scroll", handleScroll)
       }
-    }, [])
+    }, [menuHidePoint])
 
     return {menuFaded, belowFoldUpScroll}
   }
@@ -133,7 +132,6 @@ function useMobileMenu(): [boolean, () => void] {
 }
 
  export default function Header() {
-    const { t } = useTranslation(NameSpaces.common)
     const {bannerHeight} = useScreenSize()
     const {isBannerShowing, toggleBanner} = useBanner()
     const {pathname} = useRouter()
@@ -165,12 +163,12 @@ function useMobileMenu(): [boolean, () => void] {
 
     return (
       <div
-        css={[
+        css={css(
           styles.container,
           { top: isHomePage && isBannerShowing ? bannerHeight : 0 },
           menuFaded && { height: 0 },
           mobileMenuActive && styles.mobileMenuActive,
-        ]}
+        )}
       >
         {isHomePage && (
           <BlueBanner onVisibilityChange={toggleBanner} />
@@ -181,69 +179,8 @@ function useMobileMenu(): [boolean, () => void] {
           styles.fadeTransition,
           menuFaded ? styles.menuInvisible : styles.menuVisible,
           )}>
-          <Link href={'/'}>
-            <div css={styles.logoLeftContainer}>
-              <div css={styles.logoContainer}>
-                <>
-                  <div
-                    // @ts-ignore
-                    css={[
-                      styles.fadeTransition,
-                      menuFaded ? styles.menuInvisible : styles.menuVisible,
-                    ]}
-                  >
-                    {isDarkMode ? (
-                      <LogoDarkBg height={30} allWhite={allWhiteLogo} />
-                    ) : (
-                      <LogoLightBg height={30} />
-                    )}
-                  </div>
-                </>
-              </div>
-            </div>
-          </Link>
-          <div
-            css={[
-              styles.links,
-              styles.fadeTransition,
-              menuFaded ? styles.menuInvisible : styles.menuVisible,
-            ]}
-          >
-            {menuItems.map((item, index) => (
-              <div key={index} css={styles.linkWrapper}>
-                <Button
-                  kind={isDarkMode ? BTN.DARKNAV : BTN.NAV}
-                  href={item.link}
-                  text={t(item.name)}
-                />
-                {pathname === item.link && (
-                  <div css={styles.activeTab}>
-                    <OvalCoin color={colors.primary} size={10} />
-                  </div>
-                )}
-              </div>
-            ))}
-            <div css={styles.linkWrapper}>
-              <Button
-                kind={isDarkMode ? BTN.DARKNAV : BTN.NAV}
-                href={'https://medium.com/CeloHQ'}
-                text={t('blog')}
-                target={'_blank'}
-                iconRight={<MediumLogo height={20} color={foregroundColor} wrapWithLink={false} />}
-              />
-            </div>
-            <div css={[styles.linkWrapper, styles.lastLink]}>
-              <Button
-                kind={isDarkMode ? BTN.DARKNAV : BTN.NAV}
-                href={CeloLinks.gitHub}
-                text={t('github')}
-                target={'_blank'}
-                iconRight={
-                  <Octocat size={22} color={isDarkMode ? colors.white : colors.dark} />
-                }
-              />
-            </div>
-          </div>
+          <HomeLogo menuFaded={menuFaded} isDarkMode={isDarkMode} allWhiteLogo={allWhiteLogo}/>
+          <NavigationLinks menuFaded={menuFaded} isDarkMode={isDarkMode} />
         </div>
         {mobileMenuActive && (
           <div css={styles.menuActive}>
@@ -253,7 +190,7 @@ function useMobileMenu(): [boolean, () => void] {
           </div>
         )}
         <div
-          css={[
+          css={css(
             styles.hamburger,
             styles.fadeTransition,
             willShowHamburger && styles.hamburgerShowing,
@@ -261,7 +198,7 @@ function useMobileMenu(): [boolean, () => void] {
               !mobileMenuActive && {
                 transform: `translateY(${bannerHeight}px)`,
               },
-          ]}
+          )}
         >
           <Hamburger
             isOpen={mobileMenuActive}
@@ -272,6 +209,73 @@ function useMobileMenu(): [boolean, () => void] {
       </div>
     )
   }
+
+const HomeLogo = React.memo(function _HomeLogo({menuFaded, isDarkMode, allWhiteLogo}: {menuFaded: boolean, isDarkMode: boolean, allWhiteLogo: boolean}) {
+  return <Link href={'/'}>
+    <div css={styles.logoLeftContainer}>
+      <div css={styles.logoContainer}>
+        <>
+          <div
+            css={css(
+              styles.fadeTransition,
+              menuFaded ? styles.menuInvisible : styles.menuVisible,
+            )}
+          >
+            {isDarkMode ? (
+              <LogoDarkBg height={30} allWhite={allWhiteLogo} />
+            ) : (
+                <LogoLightBg height={30} />
+              )}
+          </div>
+        </>
+      </div>
+    </div>
+  </Link>
+})
+
+const NavigationLinks = React.memo(function _NavigationLinks(props: {menuFaded: boolean, isDarkMode: boolean}) {
+  const {t} = useTranslation(NameSpaces.common)
+  const foregroundColor = props.isDarkMode ? colors.white : colors.dark
+  const {pathname} = useRouter()
+
+  return <div
+    css={[
+      styles.links,
+      styles.fadeTransition,
+      props.menuFaded ? styles.menuInvisible : styles.menuVisible,
+    ]}
+  >
+    {menuItems.map((item, index) => (
+      <div key={index} css={styles.linkWrapper}>
+        <Button
+          kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
+          href={item.link}
+          text={t(item.name)} />
+        {pathname === item.link && (
+          <div css={styles.activeTab}>
+            <OvalCoin color={colors.primary} size={10} />
+          </div>
+        )}
+      </div>
+    ))}
+    <div css={styles.linkWrapper}>
+      <Button
+        kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
+        href={'https://medium.com/CeloHQ'}
+        text={t('blog')}
+        target={'_blank'}
+        iconRight={<MediumLogo height={20} color={foregroundColor} wrapWithLink={false} />} />
+    </div>
+    <div css={[styles.linkWrapper, styles.lastLink]}>
+      <Button
+        kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
+        href={CeloLinks.gitHub}
+        text={t('github')}
+        target={'_blank'}
+        iconRight={<Octocat size={22} color={props.isDarkMode ? colors.white : colors.dark} />} />
+    </div>
+  </div>
+})
 
 function flexCss(styles: CSSObject) {
   return css({
