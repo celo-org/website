@@ -56,9 +56,7 @@ const TitleAndSubTitle = React.memo(function _TitleAndSubtile({
       </H2>
 
       <H4 style={[textStyles.center, textStyles.invert, standardStyles.elementalMarginBottom]}>
-        <Fade delay={DELAY} duration={DURATION}>
-          {subtitle}
-        </Fade>
+        {subtitle}
       </H4>
     </Cell>
   )
