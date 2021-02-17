@@ -42,12 +42,12 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         const { t } = this.props
 
         if(!this.state.showConsent){
-            return nulll
+            return null
         }
 
         return (
             <div>
-                
+
             </div>
         )
     }
