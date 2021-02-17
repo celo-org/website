@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import {jsx, css, keyframes} from "@emotion/core"
 import * as React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
