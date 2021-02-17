@@ -46,9 +46,21 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         }
 
         return (
-            <div>
+            <View css={container}>
 
-            </div>
+            </View>
         )
     }
 }
+
+const container = css({
+    bottom: 0,
+    position: 'fixed',
+    backgroundColor: colors.deepBlue,
+    width: '100%',
+    minHeight: CONSENT_HEIGHT,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+})
