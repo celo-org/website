@@ -140,12 +140,10 @@ function useMobileMenu(): [boolean, () => void] {
     const [mobileMenuActive, clickHamburger] = useMobileMenu()
 
     const {menuFaded, belowFoldUpScroll} =  useScroll()
-
     const willShowHamburger =  !menuFaded || mobileMenuActive
 
     const isDarkMode = attributes.isDark || (attributes.translucent && !belowFoldUpScroll)
 
-    const foregroundColor = isDarkMode ? colors.white : colors.dark
 
     const backgroundColor = React.useMemo(() => {
       const translucentAndNotUp = attributes.translucent && !belowFoldUpScroll
@@ -189,23 +187,12 @@ function useMobileMenu(): [boolean, () => void] {
             </div>
           </div>
         )}
-        <div
-          css={css(
-            styles.hamburger,
-            styles.fadeTransition,
-            willShowHamburger && styles.hamburgerShowing,
-            isHomePage &&
-              !mobileMenuActive && {
-                transform: `translateY(${bannerHeight}px)`,
-              },
-          )}
-        >
-          <Hamburger
-            isOpen={mobileMenuActive}
-            onPress={clickHamburger}
-            color={foregroundColor}
-          />
-        </div>
+        <MobileMenuIcon isDarkMode={isDarkMode}
+          willShowHamburger={willShowHamburger}
+          isHomePage={isHomePage}
+          mobileMenuActive={mobileMenuActive}
+          bannerHeight={bannerHeight}
+          clickHamburger={clickHamburger}/>
       </div>
     )
   }
@@ -276,6 +263,29 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {menuFaded: 
     </div>
   </div>
 })
+
+function MobileMenuIcon(props: {isDarkMode: boolean, willShowHamburger: boolean, isHomePage: boolean, mobileMenuActive: boolean, bannerHeight: number, clickHamburger: () => void}) {
+  const foregroundColor = props.isDarkMode ? colors.white : colors.dark
+
+  const containerStyle = css(
+    styles.hamburger,
+    styles.fadeTransition,
+    props.willShowHamburger && styles.hamburgerShowing,
+    props.isHomePage &&
+    !props.mobileMenuActive && {
+      transform: `translateY(${props.bannerHeight}px)`,
+    }
+  )
+
+  return <div
+    css={containerStyle}
+  >
+    <Hamburger
+      isOpen={props.mobileMenuActive}
+      onPress={props.clickHamburger}
+      color={foregroundColor} />
+  </div>
+}
 
 function flexCss(styles: CSSObject) {
   return css({
