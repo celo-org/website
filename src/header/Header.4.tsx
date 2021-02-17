@@ -1,16 +1,15 @@
 /** @jsx jsx */
 import {jsx, css, CSSObject} from "@emotion/core"
-import debounce from 'debounce'
 import throttle from 'lodash.throttle'
 import dynamic from 'next/dynamic'
-import { SingletonRouter as Router, withRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import * as React from 'react'
 import { WHEN_DESKTOP } from "src/estyles"
 import Hamburger from 'src/header/Hamburger'
-import { I18nProps, withNamespaces } from 'src/i18n'
+import {  NameSpaces, useTranslation } from 'src/i18n'
 import MediumLogo from 'src/icons/MediumLogo'
 import Octocat from 'src/icons/Octocat'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
+import { useScreenSize } from 'src/layout/ScreenSize'
 import LogoDarkBg from 'src/logos/LogoDarkBg'
 import LogoLightBg from 'src/logos/LogoLightBg'
 import Button, { BTN } from 'src/shared/Button.3'
@@ -34,159 +33,153 @@ const PATH_TO_ATTRIBUTES: Record<string, MenuLink> = Object.keys(pagePaths).redu
   return last
 }, {})
 
-interface OwnProps {
-  router: Router
-}
-
-type Props = OwnProps & I18nProps & ScreenProps
-
-interface State {
-  mobileMenuActive: boolean
-  menuFaded: boolean
-  belowFoldUpScroll: boolean
-  isBannerShowing: boolean
-}
-
 function scrollOffset() {
   return window.scrollY || document.documentElement.scrollTop
 }
 
-export class Header extends React.PureComponent<Props, State> {
-  lastScrollOffset: number
 
-  state = {
-    menuFaded: false,
-    mobileMenuActive: false,
-    belowFoldUpScroll: false,
-    isBannerShowing: false,
-  }
-
-  handleScroll = throttle(() => {
-    const goingUp = this.lastScrollOffset > scrollOffset()
-    const belowFold = scrollOffset() > this.menuHidePoint()
-
-    if (goingUp && belowFold) {
-      this.setState({ belowFoldUpScroll: true })
-    } else {
-      this.setState({ belowFoldUpScroll: false })
+function useAttributes() {
+  const {pathname} = useRouter()
+  return (
+    PATH_TO_ATTRIBUTES[pathname] || {
+      isDark: false,
+      translucent: null,
+      menuHidePoint: null,
+      menuHidePointMobile: null,
     }
+  )
+}
 
-    if (goingUp) {
-      this.setState({ menuFaded: false })
-    } else if (belowFold) {
-      this.setState({ menuFaded: true })
-    }
-
-    this.lastScrollOffset = scrollOffset()
-  }, 100)
-
-  clickHamburger = debounce(() => {
-    if (!this.state.mobileMenuActive) {
-      this.setState({
-        mobileMenuActive: true,
-      })
-    } else {
-      this.closeMenu()
-    }
-  }, 200)
-
-  menuHidePoint() {
-    const attributes = this.getAttributes()
-    if (this.props.screen === ScreenSizes.MOBILE && attributes.menuHidePointMobile) {
-      return attributes.menuHidePointMobile
-    }
-    return attributes.menuHidePoint || window.innerHeight - HEADER_HEIGHT - 1
+function useMenuHidePoint(): number | undefined {
+  const {isMobile} = useScreenSize()
+  const attributes = useAttributes()
+  if (isMobile && attributes.menuHidePointMobile) {
+    return attributes.menuHidePointMobile
   }
+  return attributes.menuHidePoint
+}
 
-  componentDidMount() {
-    this.lastScrollOffset = scrollOffset()
-    window.addEventListener('scroll', this.handleScroll)
 
-    this.props.router.events.on('routeChangeComplete', this.closeMenu)
-  }
+  function useScroll() {
+    const lastScrollOffset = React.useRef(0)
+    const [menuFaded, setMenuFaded] = React.useState(false)
+    const [belowFoldUpScroll, setBelowFoldUpScroll] = React.useState(false)
+    const menuHidePoint = useMenuHidePoint()
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll)
-  }
+    React.useEffect(() => {
+      lastScrollOffset.current = scrollOffset()
 
-  closeMenu = () => {
-    this.setState({ mobileMenuActive: false })
-  }
+      const handleScroll = throttle(() => {
+        const goingUp = lastScrollOffset.current > scrollOffset()
+        const belowFold = scrollOffset() > (menuHidePoint || window.innerHeight - HEADER_HEIGHT - 1)
 
-  getAttributes = () => {
-    return (
-      PATH_TO_ATTRIBUTES[this.props.router.pathname] || {
-        isDark: false,
-        translucent: null,
-        menuHidePoint: null,
-        menuHidePointMobile: null,
-      }
-    )
-  }
-
-  isDarkMode = () => {
-    return this.getAttributes().isDark || (this.isTranslucent() && !this.state.belowFoldUpScroll)
-  }
-
-  isTranslucent = () => {
-    return this.getAttributes().translucent as boolean
-  }
-
-  getForegroundColor = () => {
-    return this.isDarkMode() ? colors.white : colors.dark
-  }
-
-  getBackgroundColor = () => {
-    const translucentAndNotUp =this.isTranslucent() && !this.state.belowFoldUpScroll
-    return css({
-      backgroundColor: translucentAndNotUp? "transparent" : this.isDarkMode() ? colors.dark : colors.white,
-      [WHEN_DESKTOP]: {
-        "&:hover": {
-          backgroundColor: translucentAndNotUp? this.getAttributes().translucent.backgroundHover: undefined
+        if (goingUp && belowFold) {
+          setBelowFoldUpScroll(true)
+        } else {
+          setBelowFoldUpScroll(false)
         }
-      },
-    })
 
+        if (goingUp) {
+          setMenuFaded(false)
+        } else if (belowFold) {
+          setMenuFaded(true)
+        }
+
+        lastScrollOffset.current = scrollOffset()
+      }, 100)
+
+      window.addEventListener('scroll', handleScroll)
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll)
+      }
+    }, [])
+
+    return {menuFaded, belowFoldUpScroll}
   }
 
-  toggleBanner = (isBannerShowing: boolean) => {
-    this.setState({ isBannerShowing })
+function useBanner() {
+
+    const [isBannerShowing, setBanner] = React.useState(false)
+
+    function toggleBanner() {
+      setBanner(!isBannerShowing)
+    }
+
+    return {isBannerShowing, toggleBanner}
+}
+
+function useMobileMenu(): [boolean, () => void] {
+    const {events} = useRouter()
+    const [mobileMenuActive, setMobileMenuActive] = React.useState(false)
+
+    function closeMenu() {
+      setMobileMenuActive(false)
+    }
+
+    React.useEffect(() => {
+      events.on('routeChangeComplete',closeMenu)
+    }, [])
+
+  function clickHamburger() {
+    if (!mobileMenuActive) {
+      setMobileMenuActive(true)
+    } else {
+      closeMenu()
+    }
   }
 
-  setBannerHeight = (height: number) => {
-    this.props.setBannerHeight(height)
-  }
+  return [mobileMenuActive, clickHamburger]
+}
 
-  allWhiteLogo = () => {
-    return this.props.router.pathname === menu.ABOUT_US.link && !this.state.belowFoldUpScroll
-  }
+ export default function Header() {
+    const { t } = useTranslation(NameSpaces.common)
+    const {bannerHeight} = useScreenSize()
+    const {isBannerShowing, toggleBanner} = useBanner()
+    const {pathname} = useRouter()
+    const attributes = useAttributes()
+    const isHomePage = pathname === menu.HOME.link
+    const [mobileMenuActive, clickHamburger] = useMobileMenu()
 
-  willShowHamburger = () => {
-    return !this.state.menuFaded || this.state.mobileMenuActive
-  }
+    const {menuFaded, belowFoldUpScroll} =  useScroll()
 
-  render() {
-    const { t } = this.props
-    const foreground = this.getForegroundColor()
-    const isHomePage = this.props.router.pathname === menu.HOME.link
+    const willShowHamburger =  !menuFaded || mobileMenuActive
+
+    const isDarkMode = attributes.isDark || (attributes.translucent && !belowFoldUpScroll)
+
+    const foregroundColor = isDarkMode ? colors.white : colors.dark
+
+    const backgroundColor = React.useMemo(() => {
+      const translucentAndNotUp = attributes.translucent && !belowFoldUpScroll
+      return css({
+        backgroundColor: translucentAndNotUp? "transparent" : isDarkMode ? colors.dark : colors.white,
+        [WHEN_DESKTOP]: {
+          "&:hover": {
+            backgroundColor: translucentAndNotUp? attributes.translucent.backgroundHover: undefined
+          }
+        },
+      })
+    }, [attributes.translucent, belowFoldUpScroll, isDarkMode])
+
+    const allWhiteLogo = pathname === menu.ABOUT_US.link && !belowFoldUpScroll
 
     return (
       <div
         css={[
           styles.container,
-          { top: isHomePage && this.state.isBannerShowing ? this.props.bannerHeight : 0 },
-          this.state.menuFaded && { height: 0 },
-          this.state.mobileMenuActive && styles.mobileMenuActive,
+          { top: isHomePage && isBannerShowing ? bannerHeight : 0 },
+          menuFaded && { height: 0 },
+          mobileMenuActive && styles.mobileMenuActive,
         ]}
       >
         {isHomePage && (
-          <BlueBanner onVisibilityChange={this.toggleBanner} getHeight={this.setBannerHeight} />
+          <BlueBanner onVisibilityChange={toggleBanner} />
         )}
         <CookieConsent />
         <div css={css(styles.menuContainer,styles.background,
-          this.getBackgroundColor(),
+          backgroundColor,
           styles.fadeTransition,
-          this.state.menuFaded ? styles.menuInvisible : styles.menuVisible,
+          menuFaded ? styles.menuInvisible : styles.menuVisible,
           )}>
           <Link href={'/'}>
             <div css={styles.logoLeftContainer}>
@@ -196,11 +189,11 @@ export class Header extends React.PureComponent<Props, State> {
                     // @ts-ignore
                     css={[
                       styles.fadeTransition,
-                      this.state.menuFaded ? styles.menuInvisible : styles.menuVisible,
+                      menuFaded ? styles.menuInvisible : styles.menuVisible,
                     ]}
                   >
-                    {this.isDarkMode() ? (
-                      <LogoDarkBg height={30} allWhite={this.allWhiteLogo()} />
+                    {isDarkMode ? (
+                      <LogoDarkBg height={30} allWhite={allWhiteLogo} />
                     ) : (
                       <LogoLightBg height={30} />
                     )}
@@ -213,17 +206,17 @@ export class Header extends React.PureComponent<Props, State> {
             css={[
               styles.links,
               styles.fadeTransition,
-              this.state.menuFaded ? styles.menuInvisible : styles.menuVisible,
+              menuFaded ? styles.menuInvisible : styles.menuVisible,
             ]}
           >
             {menuItems.map((item, index) => (
               <div key={index} css={styles.linkWrapper}>
                 <Button
-                  kind={this.isDarkMode() ? BTN.DARKNAV : BTN.NAV}
+                  kind={isDarkMode ? BTN.DARKNAV : BTN.NAV}
                   href={item.link}
                   text={t(item.name)}
                 />
-                {this.props.router.pathname === item.link && (
+                {pathname === item.link && (
                   <div css={styles.activeTab}>
                     <OvalCoin color={colors.primary} size={10} />
                   </div>
@@ -232,30 +225,30 @@ export class Header extends React.PureComponent<Props, State> {
             ))}
             <div css={styles.linkWrapper}>
               <Button
-                kind={this.isDarkMode() ? BTN.DARKNAV : BTN.NAV}
+                kind={isDarkMode ? BTN.DARKNAV : BTN.NAV}
                 href={'https://medium.com/CeloHQ'}
                 text={t('blog')}
                 target={'_blank'}
-                iconRight={<MediumLogo height={20} color={foreground} wrapWithLink={false} />}
+                iconRight={<MediumLogo height={20} color={foregroundColor} wrapWithLink={false} />}
               />
             </div>
             <div css={[styles.linkWrapper, styles.lastLink]}>
               <Button
-                kind={this.isDarkMode() ? BTN.DARKNAV : BTN.NAV}
+                kind={isDarkMode ? BTN.DARKNAV : BTN.NAV}
                 href={CeloLinks.gitHub}
                 text={t('github')}
                 target={'_blank'}
                 iconRight={
-                  <Octocat size={22} color={this.isDarkMode() ? colors.white : colors.dark} />
+                  <Octocat size={22} color={isDarkMode ? colors.white : colors.dark} />
                 }
               />
             </div>
           </div>
         </div>
-        {this.state.mobileMenuActive && (
+        {mobileMenuActive && (
           <div css={styles.menuActive}>
             <div css={styles.mobileOpenContainer}>
-              <MobileMenu currentPage={this.props.router.pathname} menu={mobileMenu} />
+              <MobileMenu currentPage={pathname} menu={mobileMenu} />
             </div>
           </div>
         )}
@@ -263,30 +256,28 @@ export class Header extends React.PureComponent<Props, State> {
           css={[
             styles.hamburger,
             styles.fadeTransition,
-            this.willShowHamburger() && styles.hamburgerShowing,
+            willShowHamburger && styles.hamburgerShowing,
             isHomePage &&
-              !this.state.mobileMenuActive && {
-                transform: `translateY(${this.props.bannerHeight}px)`,
+              !mobileMenuActive && {
+                transform: `translateY(${bannerHeight}px)`,
               },
           ]}
         >
           <Hamburger
-            isOpen={this.state.mobileMenuActive}
-            onPress={this.clickHamburger}
-            color={this.getForegroundColor()}
+            isOpen={mobileMenuActive}
+            onPress={clickHamburger}
+            color={foregroundColor}
           />
         </div>
       </div>
     )
   }
-}
 
 function flexCss(styles: CSSObject) {
   return css({
     display: "flex",
   }, styles)
 }
-
 
 const styles = {
   fadeTransition: css({
@@ -329,12 +320,12 @@ const styles = {
     height: HEADER_HEIGHT,
   }),
   links: css({
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
     display: "none",
     [WHEN_DESKTOP]: {
-      display: "flex"
+      display: "flex",
+      flexDirection: 'row',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
     }
   }),
   menuContainer: flexCss({
@@ -416,5 +407,3 @@ const styles = {
     display: 'flex',
   },
 }
-
-export default withNamespaces('common')(withScreenSize(withRouter<Props>(Header)))

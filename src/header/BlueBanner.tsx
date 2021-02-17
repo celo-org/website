@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import Chevron from 'src/icons/chevron'
+import { ScreenProps, withScreenSize } from 'src/layout/ScreenSize'
 import { colors, fonts, textStyles } from 'src/styles'
 import { getSentry } from 'src/utils/sentry'
 
@@ -72,7 +73,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 30,
+    paddingHorizontal: 15,
     paddingVertical: 5,
   },
   text: {
@@ -94,10 +95,9 @@ interface State {
 
 interface AnnouncementProps {
   onVisibilityChange: (visible: boolean) => void
-  getHeight: (n: number) => void
 }
 
-export default class Announcement extends React.Component<AnnouncementProps, State> {
+class Announcement extends React.Component<AnnouncementProps & ScreenProps, State> {
   state: State = {
     live: false,
     text: '',
@@ -125,10 +125,12 @@ export default class Announcement extends React.Component<AnnouncementProps, Sta
       <BlueBanner
         isVisible={this.state.live}
         link={this.state.link}
-        getRealHeight={this.props.getHeight}
+        getRealHeight={this.props.setBannerHeight}
       >
         {this.state.text}
       </BlueBanner>
     )
   }
 }
+
+export default withScreenSize(Announcement)
