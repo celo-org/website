@@ -7,7 +7,7 @@ import { I18nProps, withNamespaces } from 'src/i18n'
 import Link from 'src/shared/Link'
 import Responsive from 'src/shared/Responsive'
 import { CONSENT_HEIGHT } from 'src/shared/Styles'
-import { colors, fonts } from 'src/styles'
+import { colors, fonts } from 'src/header/CookieFolder/CookieStyle'
 import { initSentry } from 'src/utils/sentry'
 
 interface State {
@@ -46,9 +46,12 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         }
 
         return (
-            <View css={container}>
-
-            </View>
+            <div css={container}>
+                <Text style={[fonts.p]} css={infoMessageText}>
+                <Text style={[fonts.p]} css={infoMessageTextPrefix}>{t('weUseCookies')} </Text>
+          {t('weUseCookiesReasons')}
+                </Text>
+            </div>
         )
     }
 }
@@ -56,11 +59,26 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
 const container = css({
     bottom: 0,
     position: 'fixed',
-    backgroundColor: colors.deepBlue,
+    backgroundColor: colors.navyBlue,
     width: '100%',
     minHeight: CONSENT_HEIGHT,
     display: 'flex',
+    flexDirection: 'row-reverse',
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
 })
+
+const infoMessageText = css({
+    textAlign: 'center',
+    color: 'white',
+})
+
+const infoMessageTextPrefix = css({
+    textAlign: 'center',
+    fontWeight: 600,
+    fontFamily: 'Jost, futura-pt, futura, sans-serif'
+})
+
+
+export default withNamespaces('common')(CookieConsentWithEmotion)

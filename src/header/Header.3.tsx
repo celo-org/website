@@ -22,7 +22,7 @@ import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { colors } from 'src/styles'
 const BlueBanner = dynamic(import('src/header/BlueBanner'), { loading: () => null, ssr: false })
 const CookieConsent = dynamic(
-  (import('src/header/CookieConsent') as unknown) as Promise<React.ComponentType>
+  (import('src/header/CookieFolder/CookieConsentWithEmotion') as unknown) as Promise<React.ComponentType>
 )
 
 const menuItems = MAIN_MENU

@@ -47,7 +47,6 @@ export enum colors {
   greenUI = '#1AB775',
 
   // added by Henry
-
   navyBlue = '#0C74D4'
 }
 
