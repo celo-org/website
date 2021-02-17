@@ -14,7 +14,6 @@ export enum typeFaces {
 const fontDefaults = {
     textRendering: 'geometricPrecision',
     color: colors.white
-
 }
 
 

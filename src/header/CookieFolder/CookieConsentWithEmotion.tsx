@@ -48,8 +48,9 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         return (
             <div css={container}>
                 <Text style={[fonts.p]} css={infoMessageText}>
-                <Text style={[fonts.p]} css={infoMessageTextPrefix}>{t('weUseCookies')} </Text>
-          {t('weUseCookiesReasons')}
+                <Text css={infoMessageTextPrefix}>{t('cookies.allowTrack')} </Text>
+                <Link href="https://celo.org/"><Text css={link}>{t('cookies.celoLink')}</Text></Link>
+          {t('cookies.improveSite')}
                 </Text>
             </div>
         )
@@ -70,14 +71,20 @@ const container = css({
 })
 
 const infoMessageText = css({
-    textAlign: 'center',
+   textAlign: 'center',
     color: 'white',
 })
 
 const infoMessageTextPrefix = css({
-    textAlign: 'center',
+   textAlign: 'center',
     fontWeight: 600,
     fontFamily: 'Jost, futura-pt, futura, sans-serif'
+})
+
+const link = css({
+    color: colors.white,
+    cursor: 'pointer',
+    textDecorationLine: 'underline'
 })
 
 
