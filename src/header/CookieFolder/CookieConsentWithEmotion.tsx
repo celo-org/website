@@ -19,6 +19,7 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         showConsent: false
     }
 
+    
     async componentDidMount(){
         this.setState({
             showConsent: await showVisitorCookieConsent()
@@ -31,7 +32,7 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         })
         await initSentry()
     }
-
+    
     onDisagree = () =>{
         disagree()
         this.setState({
@@ -40,16 +41,17 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
     }
     render(){
         const { t } = this.props
-
+        
         if(!this.state.showConsent){
             return null
         }
-
+        
         return (
             <div css={container}>
                 <div>
                     <Trans ns={NameSpaces.common}>
-                    <p>{t('cookies.allowTrack')}</p>
+                    <p css={infoMessageTextPrefix}>{t('cookies.allowTrack', { link: 'celo.org' })}</p>
+                    <p css={infoMessageTextPrefix}>{t('cookies.understandMore')}</p>
                     </Trans>
                 </div>
                 <div>
@@ -74,6 +76,7 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         )
     }
 }
+const celoSite = "hello"
 
 const container = css({
     bottom: 0,
@@ -91,15 +94,12 @@ const link = css({
     textDecorationLine: 'underline',
     cursor: 'pointer'
 })
-const infoMessageText = css({
-   textAlign: 'center',
-    color: 'white',
-})
 
 const infoMessageTextPrefix = css({
-   textAlign: 'center',
+    textAlign: 'center',
     fontWeight: 600,
-    fontFamily: 'Jost, futura-pt, futura, sans-serif'
+    fontFamily: 'Jost, futura-pt, futura, sans-serif',
+    color: 'white',
 })
 
 
