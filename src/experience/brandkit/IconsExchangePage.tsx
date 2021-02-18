@@ -28,8 +28,8 @@ const icons = [
   {
     name: 'cUSD Exchange Icon',
     description: 'Full Color\n',
-    preview: '/images/marketplace-icons/icon-celo-dollar-color-f.svg',
-    uri: '/assets/marketplace-icons/icon-celo-dollar-full-color.zip',
+    preview: '/images/marketplace-icons/icon-celo-dollar-color.svg',
+    uri: '/assets/marketplace-icons/icon-cusd-color-v2.zip',
   },
   {
     name: 'cEUR Exchange Icon',
@@ -48,8 +48,8 @@ const icons = [
   {
     name: 'cUSD Exchange Icon',
     description: 'Monochrome\n',
-    preview: '/images/marketplace-icons/icon-celo-dollar-mono-f.svg',
-    uri: '/assets/marketplace-icons/icon-celo-dollar-monochrome.zip',
+    preview: '/images/marketplace-icons/icon-cUSD-mono.svg',
+    uri: '/assets/marketplace-icons/icon-cusd-mono-v2.zip',
     variant: 'circle-white',
   },
   {
@@ -70,8 +70,8 @@ const icons = [
   {
     name: 'cUSD Exchange Icon',
     description: 'Reverse Monochrome\n',
-    preview: '/images/marketplace-icons/icon-celo-dollar-reverse-f.svg',
-    uri: '/assets/marketplace-icons/icon-celo-dollar-reverse-monochrome.zip',
+    preview: '/images/marketplace-icons/icon-celo-dollar-reverse.svg',
+    uri: '/assets/marketplace-icons/icon-cusd-reverse-v2.zip',
     variant: 'circle-black',
   },
   {
