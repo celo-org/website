@@ -20,25 +20,24 @@ import { standardStyles } from 'src/styles'
 
 const icons = [
   {
+    name: 'CELO Exchange Icon',
+    description: 'Full Color\n',
+    preview: '/images/marketplace-icons/icon-celo-CELO-color-f.svg',
+    uri: '/assets/marketplace-icons/icon-CELO-color.zip',
+  },
+  {
     name: 'cUSD Exchange Icon',
     description: 'Full Color\n',
     preview: '/images/marketplace-icons/icon-celo-dollar-color-f.svg',
     uri: '/assets/marketplace-icons/icon-celo-dollar-full-color.zip',
   },
   {
-    name: 'CELO Exchange Icon',
+    name: 'cEUR Exchange Icon',
     description: 'Full Color\n',
-    preview: '/images/marketplace-icons/icon-celo-CELO-color-f.svg',
-    uri: '/assets/marketplace-icons/icon-CELO-color.zip',
+    preview: '/images/marketplace-icons/icon-cEUR-color.svg',
+    uri: '/assets/marketplace-icons/icon-cEUR-color.zip',
   },
   null,
-  {
-    name: 'cUSD Exchange Icon',
-    description: 'Monochrome\n',
-    preview: '/images/marketplace-icons/icon-celo-dollar-mono-f.svg',
-    uri: '/assets/marketplace-icons/icon-celo-dollar-monochrome.zip',
-    variant: 'circle-white',
-  },
   {
     name: 'CELO Exchange Icon',
     description: 'Monochrome\n',
@@ -48,11 +47,19 @@ const icons = [
   },
   {
     name: 'cUSD Exchange Icon',
-    description: 'Reverse Monochrome\n',
-    preview: '/images/marketplace-icons/icon-celo-dollar-reverse-f.svg',
-    uri: '/assets/marketplace-icons/icon-celo-dollar-reverse-monochrome.zip',
-    variant: 'circle-black',
+    description: 'Monochrome\n',
+    preview: '/images/marketplace-icons/icon-celo-dollar-mono-f.svg',
+    uri: '/assets/marketplace-icons/icon-celo-dollar-monochrome.zip',
+    variant: 'circle-white',
   },
+  {
+    name: 'cEUR Exchange Icon',
+    description: 'Monochrome\n',
+    preview: '/images/marketplace-icons/icon-celo-euro-mono.svg',
+    uri: '/assets/marketplace-icons/icons-celo-euro-monochrome.zip',
+    variant: 'circle-white',
+  },
+  null,
   {
     name: 'CELO Exchange Icon',
     description: 'Reverse Monochrome\n',
@@ -60,6 +67,21 @@ const icons = [
     uri: '/assets/marketplace-icons/icon-CELO-reverse-monochrome.zip',
     variant: 'circle-black',
   },
+  {
+    name: 'cUSD Exchange Icon',
+    description: 'Reverse Monochrome\n',
+    preview: '/images/marketplace-icons/icon-celo-dollar-reverse-f.svg',
+    uri: '/assets/marketplace-icons/icon-celo-dollar-reverse-monochrome.zip',
+    variant: 'circle-black',
+  },
+  {
+    name: 'cEUR Exchange Icon',
+    description: 'Reverse Monochrome\n',
+    preview: '/images/marketplace-icons/icon-celo-euro-reverse.svg',
+    uri: '/assets/marketplace-icons/icons-celo-euro-reverse.zip',
+    variant: 'circle-black',
+  },
+
 ]
 
 const info = frontMatter<Attributes>(data)
