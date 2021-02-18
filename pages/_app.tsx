@@ -5,7 +5,7 @@ import * as React from 'react'
 import { View } from 'react-native'
 import scrollIntoView from 'scroll-into-view'
 import analytics, { canTrack, initializeAnalytics } from 'src/analytics/analytics'
-import Header from 'src/header/Navigation'
+import Navigation from 'src/header/Navigation'
 import { ScreenSizeProvider } from 'src/layout/ScreenSize'
 import Footer from 'src/shared/Footer'
 import pagePaths from 'src/shared/menu-items'
@@ -37,7 +37,7 @@ class MyApp extends App {
 
   // there are a few pages we dont want the header on
   // currently this is just the animation demo pages and experience kits and out art project
-  skipHeader() {
+  skipNavigation() {
     return (
       this.props.router.asPath.startsWith("/animation") ||
       this.isBrand() ||
@@ -69,9 +69,9 @@ class MyApp extends App {
         </Head>
         <ScreenSizeProvider>
           <Progress />
-          {this.skipHeader() || <Header />}
+          {this.skipNavigation() || <Navigation />}
           <Component {...pageProps} />
-          {this.skipHeader() || (
+          {this.skipNavigation() || (
             <View>
               <Footer />
             </View>
