@@ -54,6 +54,7 @@ const rootCss = css(centered,
     },
     [WHEN_MOBILE]: {
       maxWidth: 310,
+      paddingBottom:12
     },
     [WHEN_DESKTOP]: {
       paddingTop: 150
