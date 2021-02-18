@@ -104,6 +104,10 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect('/papers/Future_Proof_Aid_Policy.pdf')
   })
 
+  server.get('/papers/future-of-digital-currencies', (_, res) =>{
+    res.redirect('/papers/shaping-future-of-digital-currencies.pdf')
+  })
+
   server.get('/papers/future-proof-exec', (_, res) =>{
     res.redirect('/papers/Future_Proof_Aid_Policy_Exec_Summary.pdf')
   })

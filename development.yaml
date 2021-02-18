@@ -42,6 +42,9 @@ handlers:
     static_files: public/papers/Future_Proof_Aid_Policy.pdf
     upload: public/papers/Future_Proof_Aid_Policy.pdf
 
+  - url: /papers/future-of-digital-currencies
+    static_files: public/papers/shaping-future-of-digital-currencies.pdf
+    upload: public/papers/shaping-future-of-digital-currencies.pdf
 
   - url: /.*
     script: auto
