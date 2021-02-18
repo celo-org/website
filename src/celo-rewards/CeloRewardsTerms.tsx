@@ -26,9 +26,9 @@ interface LinkComponent {
 }
 
 const bold = (): BoldComponent => ({ type: ComponentType.BOLD });
-const link = (link: string): LinkComponent => ({
+const link = (uri: string): LinkComponent => ({
   type: ComponentType.LINK,
-  link,
+  link: uri,
 });
 
 type TextComponent = BoldComponent | LinkComponent;

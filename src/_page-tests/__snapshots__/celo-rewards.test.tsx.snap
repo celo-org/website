@@ -144,7 +144,7 @@ exports[`CeloRewards renders 1`] = `
                   }
                 }
               >
-                20 cUSD
+                10 cUSD
               </span>
               
 
@@ -388,7 +388,7 @@ exports[`CeloRewards renders 1`] = `
     data-focusable={true}
     data-testid="learnMore"
     dir="auto"
-    href="/celo-rewards-education"
+    href="/celo-rewards-terms-and-conditions"
     onClick={[Function]}
     role="link"
     style={
