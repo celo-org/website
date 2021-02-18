@@ -503,335 +503,7 @@ exports[`BuildPage renders 1`] = `
             }
           }
         >
-          <div
-            className="css-vsf5x1"
-          >
-            <span
-              className="css-q7lffx"
-            >
-              P
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              a
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              r
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              t
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              i
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              c
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              i
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              p
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              a
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              t
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              e
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-               
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              i
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              n
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-               
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              C
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              e
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              l
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              o
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              '
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              s
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-               
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              p
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              r
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              o
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              o
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              f
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              -
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              o
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              f
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              -
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              s
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              t
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              a
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              k
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              e
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-               
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              c
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              o
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              n
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              s
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              e
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              n
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              s
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              u
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              s
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-               
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              a
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              n
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              d
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-               
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              p
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              r
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              o
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              d
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              u
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              c
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              e
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-               
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              b
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              l
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              o
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              c
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              k
-            </span>
-            <span
-              className="css-q7lffx"
-            >
-              s
-            </span>
-          </div>
+          Participate in Celo's proof-of-stake consensus and produce blocks
         </h4>
       </div>
     </div>
@@ -3720,37 +3392,49 @@ exports[`BuildPage renders 1`] = `
           }
         >
           <div
-            className="css-q7lffx"
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "display": "block",
+                "overflowX": "hidden",
+                "overflowY": "hidden",
+                "width": "60px",
+              }
+            }
           >
             <div
-              className="css-view-1dbjc4n"
               style={
                 Object {
                   "display": "block",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "60px",
+                  "paddingBottom": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              style={
+                Object {
+                  "bottom": "0px",
+                  "height": "100%",
+                  "left": "0px",
+                  "position": "absolute",
+                  "top": "0px",
+                  "width": "100%",
                 }
               }
             >
               <div
+                className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "display": "block",
-                    "paddingBottom": "100%",
-                    "width": "100%",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "bottom": "0px",
+                    "WebkitFlexBasis": "auto",
+                    "flexBasis": "auto",
                     "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "top": "0px",
+                    "msFlexPreferredSize": "auto",
+                    "overflowX": "hidden",
+                    "overflowY": "hidden",
                     "width": "100%",
+                    "zIndex": 0,
                   }
                 }
               >
@@ -3758,37 +3442,21 @@ exports[`BuildPage renders 1`] = `
                   className="css-view-1dbjc4n"
                   style={
                     Object {
-                      "WebkitFlexBasis": "auto",
-                      "flexBasis": "auto",
+                      "backgroundColor": "rgba(0,0,0,0.00)",
+                      "backgroundPosition": "center",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": "0px",
                       "height": "100%",
-                      "msFlexPreferredSize": "auto",
-                      "overflowX": "hidden",
-                      "overflowY": "hidden",
+                      "left": "0px",
+                      "position": "absolute",
+                      "right": "0px",
+                      "top": "0px",
                       "width": "100%",
-                      "zIndex": 0,
+                      "zIndex": -1,
                     }
                   }
-                >
-                  <div
-                    className="css-view-1dbjc4n"
-                    style={
-                      Object {
-                        "backgroundColor": "rgba(0,0,0,0.00)",
-                        "backgroundPosition": "center",
-                        "backgroundRepeat": "no-repeat",
-                        "backgroundSize": "cover",
-                        "bottom": "0px",
-                        "height": "100%",
-                        "left": "0px",
-                        "position": "absolute",
-                        "right": "0px",
-                        "top": "0px",
-                        "width": "100%",
-                        "zIndex": -1,
-                      }
-                    }
-                  />
-                </div>
+                />
               </div>
             </div>
           </div>
@@ -3971,37 +3639,49 @@ exports[`BuildPage renders 1`] = `
           }
         >
           <div
-            className="css-q7lffx"
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "display": "block",
+                "overflowX": "hidden",
+                "overflowY": "hidden",
+                "width": "60px",
+              }
+            }
           >
             <div
-              className="css-view-1dbjc4n"
               style={
                 Object {
                   "display": "block",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "60px",
+                  "paddingBottom": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              style={
+                Object {
+                  "bottom": "0px",
+                  "height": "100%",
+                  "left": "0px",
+                  "position": "absolute",
+                  "top": "0px",
+                  "width": "100%",
                 }
               }
             >
               <div
+                className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "display": "block",
-                    "paddingBottom": "100%",
-                    "width": "100%",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "bottom": "0px",
+                    "WebkitFlexBasis": "auto",
+                    "flexBasis": "auto",
                     "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "top": "0px",
+                    "msFlexPreferredSize": "auto",
+                    "overflowX": "hidden",
+                    "overflowY": "hidden",
                     "width": "100%",
+                    "zIndex": 0,
                   }
                 }
               >
@@ -4009,37 +3689,21 @@ exports[`BuildPage renders 1`] = `
                   className="css-view-1dbjc4n"
                   style={
                     Object {
-                      "WebkitFlexBasis": "auto",
-                      "flexBasis": "auto",
+                      "backgroundColor": "rgba(0,0,0,0.00)",
+                      "backgroundPosition": "center",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": "0px",
                       "height": "100%",
-                      "msFlexPreferredSize": "auto",
-                      "overflowX": "hidden",
-                      "overflowY": "hidden",
+                      "left": "0px",
+                      "position": "absolute",
+                      "right": "0px",
+                      "top": "0px",
                       "width": "100%",
-                      "zIndex": 0,
+                      "zIndex": -1,
                     }
                   }
-                >
-                  <div
-                    className="css-view-1dbjc4n"
-                    style={
-                      Object {
-                        "backgroundColor": "rgba(0,0,0,0.00)",
-                        "backgroundPosition": "center",
-                        "backgroundRepeat": "no-repeat",
-                        "backgroundSize": "cover",
-                        "bottom": "0px",
-                        "height": "100%",
-                        "left": "0px",
-                        "position": "absolute",
-                        "right": "0px",
-                        "top": "0px",
-                        "width": "100%",
-                        "zIndex": -1,
-                      }
-                    }
-                  />
-                </div>
+                />
               </div>
             </div>
           </div>
