@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import {jsx, css, keyframes} from "@emotion/core"
 import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+// import { StyleSheet, Text, View } from 'react-native'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import Link from 'src/shared/Link'
-import Responsive from 'src/shared/Responsive'
+import { I18nProps, withNamespaces, Trans } from 'src/i18n'
+// import Link from 'src/shared/Link'
+// import Responsive from 'src/shared/Responsive'
 import { CONSENT_HEIGHT } from 'src/shared/Styles'
 import { colors, fonts } from 'src/header/CookieFolder/CookieStyle'
 import { initSentry } from 'src/utils/sentry'
