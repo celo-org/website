@@ -47,16 +47,32 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
 
         return (
             <div css={container}>
-                <Text style={[fonts.p]} css={infoMessageText}>
-                <Text style={[fonts.p]} css={infoMessageTextPrefix}>{t('cookies.allowTrack')}{' '}</Text>
-                <Link href="https://celo.org/">
-                    <Text css={link} /*style={{textDecorationLine: 'underline', cursor: 'pointer'}}*/>{t('cookies.celoLink')}</Text>
-                </Link>{' '} 
-                {t('cookies.improveSite')}
-                </Text>
-                <Text>
-                    
-                </Text>
+                <div>
+                    <p>
+
+                    </p>
+                    <p>
+
+                    </p>
+                </div>
+                <div>
+                    <button>
+
+                    </button>
+                    <button>
+                        
+                    </button>
+                </div>
+                {/* <Text style={[fonts.p]} css={infoMessageText}> */}
+                {/* <Text style={[fonts.p]} css={infoMessageTextPrefix}>{t('cookies.allowTrack')}{' '}</Text> */}
+                {/* <Link href="https://celo.org/"> */}
+                    {/* <Text css={link} style={{textDecorationLine: 'underline', cursor: 'pointer'}}>{t('cookies.celoLink')}</Text> */}
+                {/* </Link>{' '}  */}
+                {/* {t('cookies.improveSite')} */}
+                {/* </Text> */}
+                {/* <Text> */}
+
+                {/* </Text> */}
             </div>
         )
     }
