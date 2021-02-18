@@ -89,11 +89,9 @@ const Aside = React.memo(function _Aside({
       ]}
     >
       <View style={styles.asideFrame}>
-        <Fade fraction={0.5} distance={'10px'}>
-          <AspectRatio style={styles.asideGraphic} ratio={1}>
-            <Image source={image} style={styles.graphic} />
-          </AspectRatio>
-        </Fade>
+        <AspectRatio style={styles.asideGraphic} ratio={1}>
+          <Image source={image} style={styles.graphic} />
+        </AspectRatio>
       </View>
       <View style={[styles.asideContent, isMobile && styles.asideContentMobile]}>
         <Text style={fonts.h6}>{title}</Text>
