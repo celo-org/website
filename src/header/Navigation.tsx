@@ -225,7 +225,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {menuFaded: 
   const foregroundColor = props.isDarkMode ? colors.white : colors.dark
   const {pathname} = useRouter()
 
-  return <div
+  return <nav
     css={[
       styles.links,
       styles.fadeTransition,
@@ -261,7 +261,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {menuFaded: 
         target={'_blank'}
         iconRight={<Octocat size={22} color={props.isDarkMode ? colors.white : colors.dark} />} />
     </div>
-  </div>
+  </nav>
 })
 
 function MobileMenuIcon(props: {isDarkMode: boolean, willShowHamburger: boolean, isHomePage: boolean, mobileMenuActive: boolean, bannerHeight: number, clickHamburger: () => void}) {

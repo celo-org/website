@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useAsync } from 'react-async-hook'
 import { StyleSheet, Text, View } from 'react-native'
 import Chevron from 'src/icons/chevron'
-import { ScreenProps, useScreenSize } from 'src/layout/ScreenSize'
+import { useScreenSize } from 'src/layout/ScreenSize'
 import { colors, fonts, textStyles } from 'src/styles'
 interface Props {
   link: string
@@ -96,7 +96,7 @@ interface AnnouncementProps {
   onVisibilityChange: (visible: boolean) => void
 }
 
-async function getAnnouncement(onVisibilityChange) {
+async function getAnnouncement(onVisibilityChange: (visible: boolean) => void) {
   let visible = false
   let announcement = {text: "", link: "", live: false}
   const response = await fetch('/announcement')
@@ -107,7 +107,7 @@ async function getAnnouncement(onVisibilityChange) {
   return {visible, text: announcement.text, link: announcement.text, live: announcement.live}
 }
 
-function Announcement(props: AnnouncementProps & ScreenProps) {
+export default function Announcement(props: AnnouncementProps) {
 
   const state = useAsync(() => getAnnouncement(props.onVisibilityChange), [])
   const {setBannerHeight} = useScreenSize()
@@ -125,5 +125,3 @@ function Announcement(props: AnnouncementProps & ScreenProps) {
   }
   return null
 }
-
-export default Announcement
