@@ -15,11 +15,8 @@
   "Privacy Policy": "Privacy Policy",
   "email": "Email",
   "cookies":{
-    "allowTrack": "Allow tracking of my activity on",
-    "celoLink" : "celo.org",
-    "improveSite": "to help improve this website.",
-    "understandMore": "Understand more in our",
-    "privatePolicy": "Private Piolicy"
+    "allowTrack": "Allow tracking of my activity on celo.org to help improve this website.",
+    "understandMore": "Understand more in our Private Piolicy"
   },
   "weUseCookies": "We use cookies on our website",
   "weUseCookiesReasons": "to better understand how visitors use our site so that we can improve the experience.",
