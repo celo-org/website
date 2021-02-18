@@ -287,10 +287,10 @@ function MobileMenuIcon(props: {isDarkMode: boolean, willShowHamburger: boolean,
   </div>
 }
 
-function flexCss(styles: CSSObject) {
+function flexCss(cssStyle: CSSObject) {
   return css({
     display: "flex",
-  }, styles)
+  }, cssStyle)
 }
 
 const styles = {
