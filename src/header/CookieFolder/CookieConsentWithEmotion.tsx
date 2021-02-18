@@ -3,7 +3,7 @@ import {jsx, css, keyframes} from "@emotion/core"
 import * as React from 'react'
 // import { StyleSheet, Text, View } from 'react-native'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
-import { I18nProps, withNamespaces, Trans } from 'src/i18n'
+import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
 // import Link from 'src/shared/Link'
 // import Responsive from 'src/shared/Responsive'
 import { CONSENT_HEIGHT } from 'src/shared/Styles'
@@ -48,12 +48,9 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         return (
             <div css={container}>
                 <div>
-                    <p>
-
-                    </p>
-                    <p>
-
-                    </p>
+                    <Trans ns={NameSpaces.common}>
+                    <p>{t('cookies.allowTrack')}</p>
+                    </Trans>
                 </div>
                 <div>
                     <button>
