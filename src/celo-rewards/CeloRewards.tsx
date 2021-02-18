@@ -21,21 +21,21 @@ function CeloRewards({}) {
         description={t("description")}
       />
       <View style={styles.container}>
-      <TitleAndDescription
+        <TitleAndDescription
           title={t("title")}
           description={
             <>
               {t("description.first")}
-              {'\n'}
+              {"\n"}
               <TierList baseTranslation="description" totalTiers={3} />
-              {'\n'}
+              {"\n"}
               {t("description.second")}
             </>
           }
         />
         <RewardsKickOff />
         <AddCusdButton />
-        <Link href={pagePaths.CELO_REWARDS_EDUCATION.link} passHref={true}>
+        <Link href={pagePaths.CELO_REWARDS_TERMS.link} passHref={true}>
           <Text
             accessibilityRole="link"
             style={styles.learnMore}
@@ -51,7 +51,7 @@ function CeloRewards({}) {
 
 CeloRewards.getInitialProps = async () => ({
   namespacesRequired: [NameSpaces.celoRewards],
-})
+});
 
 export default CeloRewards;
 
