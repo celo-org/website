@@ -1,13 +1,9 @@
 /** @jsx jsx */
 import {jsx, css, keyframes} from "@emotion/core"
 import * as React from 'react'
-// import { StyleSheet, Text, View } from 'react-native'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
 import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
-import Link from 'src/shared/Link'
-import InlineAnchor from 'src/shared/InlineAnchor'
-// import Link from 'src/shared/Link'
-// import Responsive from 'src/shared/Responsive'
+import {flex, WHEN_MOBILE} from 'src/estyles'
 import { CONSENT_HEIGHT, TextStyles } from 'src/shared/Styles'
 import { colors, fonts } from 'src/header/CookieFolder/CookieStyle'
 import { initSentry } from 'src/utils/sentry'
@@ -43,7 +39,7 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         })
     }
     render(){
-        const { t } = this.props
+        // const { t } = this.props
         
         if(!this.state.showConsent){
             return null
@@ -51,7 +47,7 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
 
         
         return (
-            <div css={container}>
+            <div css={cookieRoot}>
                 <div>
                     <p css={infoMessageTextPrefix}>
                     <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
@@ -84,16 +80,21 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
     }
 }
 
-const container = css({
+
+const cookieRoot = css(flex,{
     bottom: 0,
     position: 'fixed',
     backgroundColor: colors.navyBlue,
     width: '100%',
     minHeight: CONSENT_HEIGHT,
-    display: 'flex',
     justifyContent: 'center',
+    flexDirection: 'row',
     alignItems: 'center',
     padding: 20,
+    [WHEN_MOBILE]: {
+        flexDirection: 'column'
+    }
+
 })
 
 const link = css({
