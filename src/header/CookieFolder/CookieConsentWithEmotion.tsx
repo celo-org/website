@@ -4,11 +4,13 @@ import * as React from 'react'
 // import { StyleSheet, Text, View } from 'react-native'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
 import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
+import Link from 'src/shared/Link'
 // import Link from 'src/shared/Link'
 // import Responsive from 'src/shared/Responsive'
 import { CONSENT_HEIGHT } from 'src/shared/Styles'
 import { colors, fonts } from 'src/header/CookieFolder/CookieStyle'
 import { initSentry } from 'src/utils/sentry'
+import { interpolateAs } from "next/dist/next-server/lib/router/router"
 
 interface State {
     showConsent: boolean
@@ -45,14 +47,22 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         if(!this.state.showConsent){
             return null
         }
+
         
         return (
             <div css={container}>
                 <div>
-                    <Trans ns={NameSpaces.common}>
-                    <p css={infoMessageTextPrefix}>{t('cookies.allowTrack', { link: 'celo.org' })}</p>
+                    <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
+                    <p css={infoMessageTextPrefix}>{t('cookies.allowTrack')}
+                    {/* <a href="https//celo.org">Celo.org</a> */}
+                    <Link href={'https//celo.org'}>
+                        Celo.org
+                    </Link>
+                    </p>
                     <p css={infoMessageTextPrefix}>{t('cookies.understandMore')}</p>
                     </Trans>
+                    {/* <Interpolate i18next="ns:NameSpaces.common" ns={NameSpaces.common} component={celoLink}/> */}
+                    
                 </div>
                 <div>
                     <button>
