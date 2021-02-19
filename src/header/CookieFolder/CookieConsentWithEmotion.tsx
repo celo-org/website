@@ -55,17 +55,15 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
                 <div>
                     <p css={infoMessageTextPrefix}>
                     <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
-                    <InlineAnchor css={link} href={'https//celo.org'}>
-                        Celo.org
-                    </InlineAnchor>
+                    <a css={link} href={'https//celo.org'}>
+                    </a>
                     </Trans>
                     </p>
-
-                    <p>
-                        <Trans>
-                            {/* <InlineAnchor href={}>
-
-                            </InlineAnchor> */}
+                    <p css={infoMessageTextPrefix}>
+                        <Trans ns={NameSpaces.common} i18nKey={'cookies.understandMore'}>
+                        <a css={link} href={'https//celo.org'}>
+                        Celo.org
+                    </a>
                         </Trans>
                     </p>
 
@@ -109,11 +107,11 @@ const container = css({
 const link = css({
     textDecorationLine: 'underline',
     cursor: 'pointer',
-    color: 'green'
+    color: colors.white
 })
 
 const infoMessageTextPrefix = css({
-    textAlign: 'center',
+    textAlign: 'start',
     fontWeight: 600,
     fontFamily: 'Jost, futura-pt, futura, sans-serif',
     color: colors.white,
