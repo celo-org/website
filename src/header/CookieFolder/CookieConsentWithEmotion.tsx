@@ -8,7 +8,7 @@ import Link from 'src/shared/Link'
 import InlineAnchor from 'src/shared/InlineAnchor'
 // import Link from 'src/shared/Link'
 // import Responsive from 'src/shared/Responsive'
-import { CONSENT_HEIGHT } from 'src/shared/Styles'
+import { CONSENT_HEIGHT, TextStyles } from 'src/shared/Styles'
 import { colors, fonts } from 'src/header/CookieFolder/CookieStyle'
 import { initSentry } from 'src/utils/sentry'
 import { interpolateAs } from "next/dist/next-server/lib/router/router"
@@ -53,21 +53,22 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         return (
             <div css={container}>
                 <div>
-                    <Trans css={infoMessageTextPrefix} ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
-                    {/* <p css={infoMessageTextPrefix}>{t('cookies.allowTrack')}
-                    </p> */}
-                    {/* <a href="https//celo.org">Celo.org</a> */}
-                    <InlineAnchor css={{color: 'green'}}href={'https//celo.org'}>
+                    <p css={infoMessageTextPrefix}>
+                    <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
+                    <InlineAnchor css={link} href={'https//celo.org'}>
                         Celo.org
                     </InlineAnchor>
                     </Trans>
-                    <Trans>
-                    <p css={infoMessageTextPrefix}>{t('cookies.understandMore')}
-                    {/* <Link href={}>
-                    </Link> */}
                     </p>
-                    </Trans>
-                    {/* <Interpolate i18next="ns:NameSpaces.common" ns={NameSpaces.common} component={celoLink}/> */}
+
+                    <p>
+                        <Trans>
+                            {/* <InlineAnchor href={}>
+
+                            </InlineAnchor> */}
+                        </Trans>
+                    </p>
+
                     
                 </div>
                 <div>
@@ -92,7 +93,6 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         )
     }
 }
-const celoSite = "hello"
 
 const container = css({
     bottom: 0,
@@ -108,14 +108,15 @@ const container = css({
 
 const link = css({
     textDecorationLine: 'underline',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    color: 'green'
 })
 
 const infoMessageTextPrefix = css({
     textAlign: 'center',
     fontWeight: 600,
     fontFamily: 'Jost, futura-pt, futura, sans-serif',
-    color: 'white',
+    color: colors.white,
 })
 
 
