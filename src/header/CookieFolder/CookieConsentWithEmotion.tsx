@@ -5,6 +5,7 @@ import * as React from 'react'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
 import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
 import Link from 'src/shared/Link'
+import InlineAnchor from 'src/shared/InlineAnchor'
 // import Link from 'src/shared/Link'
 // import Responsive from 'src/shared/Responsive'
 import { CONSENT_HEIGHT } from 'src/shared/Styles'
@@ -52,14 +53,19 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         return (
             <div css={container}>
                 <div>
-                    <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
-                    <p css={infoMessageTextPrefix}>{t('cookies.allowTrack')}
+                    <Trans css={infoMessageTextPrefix} ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
+                    {/* <p css={infoMessageTextPrefix}>{t('cookies.allowTrack')}
+                    </p> */}
                     {/* <a href="https//celo.org">Celo.org</a> */}
-                    <Link href={'https//celo.org'}>
+                    <InlineAnchor css={{color: 'green'}}href={'https//celo.org'}>
                         Celo.org
-                    </Link>
+                    </InlineAnchor>
+                    </Trans>
+                    <Trans>
+                    <p css={infoMessageTextPrefix}>{t('cookies.understandMore')}
+                    {/* <Link href={}>
+                    </Link> */}
                     </p>
-                    <p css={infoMessageTextPrefix}>{t('cookies.understandMore')}</p>
                     </Trans>
                     {/* <Interpolate i18next="ns:NameSpaces.common" ns={NameSpaces.common} component={celoLink}/> */}
                     
