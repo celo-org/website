@@ -120,7 +120,7 @@ to {
 
 const featureImageCss = css({
   opacity: 0,
-  animationDelay: "300ms",
+  animationDelay: "400ms",
   animationName: phonesAnimation,
   animationDuration: "800ms",
   animationFillMode: "both"
@@ -138,6 +138,11 @@ const useableArea = css(flex,{
     paddingTop: 72,
   },
   [WHEN_MOBILE]: {
-    paddingTop: 24
+    paddingTop: 24,
+    paddingBottom: 16
+  },
+  [WHEN_LONG_PHONE] : {
+    paddingBottom: 0
   }
 })
+

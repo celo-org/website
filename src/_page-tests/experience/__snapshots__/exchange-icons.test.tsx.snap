@@ -1750,261 +1750,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               }
                             >
                               <div
-                                aria-label="Preview of cUSD Exchange Icon"
-                                className="css-view-1dbjc4n"
-                                style={
-                                  Object {
-                                    "WebkitFlexBasis": "auto",
-                                    "borderBottomLeftRadius": "60px",
-                                    "borderBottomRightRadius": "60px",
-                                    "borderTopLeftRadius": "60px",
-                                    "borderTopRightRadius": "60px",
-                                    "flexBasis": "auto",
-                                    "height": "100%",
-                                    "msFlexPreferredSize": "auto",
-                                    "overflowX": "hidden",
-                                    "overflowY": "hidden",
-                                    "width": "100%",
-                                    "zIndex": 0,
-                                  }
-                                }
-                              >
-                                <div
-                                  className="css-view-1dbjc4n"
-                                  style={
-                                    Object {
-                                      "backgroundColor": "rgba(0,0,0,0.00)",
-                                      "backgroundPosition": "center",
-                                      "backgroundRepeat": "no-repeat",
-                                      "backgroundSize": "contain",
-                                      "bottom": "0px",
-                                      "height": "100%",
-                                      "left": "0px",
-                                      "position": "absolute",
-                                      "right": "0px",
-                                      "top": "0px",
-                                      "width": "100%",
-                                      "zIndex": -1,
-                                    }
-                                  }
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="css-view-1dbjc4n"
-                          style={
-                            Object {
-                              "WebkitBoxFlex": 1,
-                              "WebkitFlexBasis": "0%",
-                              "WebkitFlexGrow": 1,
-                              "WebkitFlexShrink": 1,
-                              "flexBasis": "0%",
-                              "flexGrow": 1,
-                              "flexShrink": 1,
-                              "msFlexNegative": 1,
-                              "msFlexPositive": 1,
-                              "msFlexPreferredSize": "0%",
-                            }
-                          }
-                        >
-                          <div
-                            className="css-text-901oao"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "lineHeight": "18px",
-                                "marginBottom": "5px",
-                                "marginTop": "5px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            cUSD Exchange Icon
-                          </div>
-                          <div
-                            className="css-text-901oao"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                                "fontSize": "16px",
-                                "lineHeight": "20px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            Full Color
-
-                          </div>
-                        </div>
-                        <div
-                          className="css-view-1dbjc4n"
-                          onClick={[Function]}
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseUp={[Function]}
-                        >
-                          <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                            data-focusable={true}
-                            dir="auto"
-                            href="/assets/marketplace-icons/icon-celo-dollar-full-color.zip"
-                            onClick={[Function]}
-                            role="link"
-                            style={
-                              Object {
-                                "WebkitAlignItems": "center",
-                                "WebkitBoxAlign": "center",
-                                "WebkitBoxFlex": 0,
-                                "WebkitBoxPack": "start",
-                                "WebkitFlexGrow": 0,
-                                "WebkitJustifyContent": "flex-start",
-                                "alignItems": "center",
-                                "backgroundColor": "rgba(0,0,0,0.00)",
-                                "borderBottomColor": "rgba(0,0,0,0.00)",
-                                "borderLeftColor": "rgba(0,0,0,0.00)",
-                                "borderRightColor": "rgba(0,0,0,0.00)",
-                                "borderTopColor": "rgba(0,0,0,0.00)",
-                                "color": "rgba(53,208,127,1.00)",
-                                "cursor": "pointer",
-                                "display": "inline-flex",
-                                "flexGrow": 0,
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "justifyContent": "flex-start",
-                                "lineHeight": "16px",
-                                "minWidth": "150px",
-                                "msFlexAlign": "center",
-                                "msFlexPack": "start",
-                                "msFlexPositive": 0,
-                                "opacity": 1,
-                                "outlineColor": "transparent",
-                                "paddingBottom": "10px",
-                                "paddingLeft": "0px",
-                                "paddingRight": "20px",
-                                "paddingTop": "10px",
-                                "textAlign": "center",
-                                "textRendering": "geometricPrecision",
-                                "width": "fit-content",
-                              }
-                            }
-                          >
-                            Download
-                            <div
-                              className="css-view-1dbjc4n"
-                              style={
-                                Object {
-                                  "display": "inline-flex",
-                                  "paddingLeft": "8px",
-                                }
-                              }
-                            >
-                              <svg
-                                fill="none"
-                                height={12}
-                                style={Object {}}
-                                viewBox="0 0 10 13"
-                                width={12}
-                              >
-                                <path
-                                  d="M0 12H10"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                  style={Object {}}
-                                />
-                                <path
-                                  d="M5 0V9"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                  style={Object {}}
-                                />
-                                <path
-                                  d="M1 5L5 9L9 5"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                  style={Object {}}
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="css-view-1dbjc4n"
-                >
-                  <div
-                    className="css-view-1dbjc4n"
-                    style={
-                      Object {
-                        "marginLeft": "10px",
-                        "marginRight": "10px",
-                        "marginTop": "20px",
-                        "width": "160px",
-                      }
-                    }
-                  >
-                    <div
-                      className="css-q7lffx"
-                    >
-                      <div
-                        className="css-view-1dbjc4n"
-                      >
-                        <div
-                          className="css-view-1dbjc4n"
-                          style={
-                            Object {
-                              "marginBottom": "20px",
-                              "marginRight": "40px",
-                              "marginTop": "20px",
-                            }
-                          }
-                        >
-                          <div
-                            className="css-view-1dbjc4n"
-                            style={
-                              Object {
-                                "display": "block",
-                                "overflowX": "hidden",
-                                "overflowY": "hidden",
-                              }
-                            }
-                          >
-                            <div
-                              style={
-                                Object {
-                                  "display": "block",
-                                  "paddingBottom": "100%",
-                                  "width": "100%",
-                                }
-                              }
-                            />
-                            <div
-                              style={
-                                Object {
-                                  "bottom": "0px",
-                                  "height": "100%",
-                                  "left": "0px",
-                                  "position": "absolute",
-                                  "top": "0px",
-                                  "width": "100%",
-                                }
-                              }
-                            >
-                              <div
                                 aria-label="Preview of CELO Exchange Icon"
                                 className="css-view-1dbjc4n"
                                 style={
@@ -2200,15 +1945,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
                 <div
                   className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "display": "block",
-                      "width": "100%",
-                    }
-                  }
-                />
-                <div
-                  className="css-view-1dbjc4n"
                 >
                   <div
                     className="css-view-1dbjc4n"
@@ -2278,7 +2014,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                     "borderBottomRightRadius": "60px",
                                     "borderTopLeftRadius": "60px",
                                     "borderTopRightRadius": "60px",
-                                    "boxShadow": "inset 0 0 0 1px #D1D5D8",
                                     "flexBasis": "auto",
                                     "height": "100%",
                                     "msFlexPreferredSize": "auto",
@@ -2362,7 +2097,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               }
                             }
                           >
-                            Monochrome
+                            Full Color
 
                           </div>
                         </div>
@@ -2378,7 +2113,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
                             data-focusable={true}
                             dir="auto"
-                            href="/assets/marketplace-icons/icon-celo-dollar-monochrome.zip"
+                            href="/assets/marketplace-icons/icon-cusd-color-v2.zip"
                             onClick={[Function]}
                             role="link"
                             style={
@@ -2463,6 +2198,270 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     </div>
                   </div>
                 </div>
+                <div
+                  className="css-view-1dbjc4n"
+                >
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="css-q7lffx"
+                    >
+                      <div
+                        className="css-view-1dbjc4n"
+                      >
+                        <div
+                          className="css-view-1dbjc4n"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="css-view-1dbjc4n"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cEUR Exchange Icon"
+                                className="css-view-1dbjc4n"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="css-view-1dbjc4n"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="css-view-1dbjc4n"
+                          style={
+                            Object {
+                              "WebkitBoxFlex": 1,
+                              "WebkitFlexBasis": "0%",
+                              "WebkitFlexGrow": 1,
+                              "WebkitFlexShrink": 1,
+                              "flexBasis": "0%",
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "msFlexNegative": 1,
+                              "msFlexPositive": 1,
+                              "msFlexPreferredSize": "0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="css-text-901oao"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cEUR Exchange Icon
+                          </div>
+                          <div
+                            className="css-text-901oao"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Full Color
+
+                          </div>
+                        </div>
+                        <div
+                          className="css-view-1dbjc4n"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            data-focusable={true}
+                            dir="auto"
+                            href="/assets/marketplace-icons/icon-cEUR-color.zip"
+                            onClick={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="css-view-1dbjc4n"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                style={Object {}}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="css-view-1dbjc4n"
+                  style={
+                    Object {
+                      "display": "block",
+                      "width": "100%",
+                    }
+                  }
+                />
                 <div
                   className="css-view-1dbjc4n"
                 >
@@ -2786,11 +2785,11 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
-                                    "backgroundColor": "rgba(0,0,0,1.00)",
                                     "borderBottomLeftRadius": "60px",
                                     "borderBottomRightRadius": "60px",
                                     "borderTopLeftRadius": "60px",
                                     "borderTopRightRadius": "60px",
+                                    "boxShadow": "inset 0 0 0 1px #D1D5D8",
                                     "flexBasis": "auto",
                                     "height": "100%",
                                     "msFlexPreferredSize": "auto",
@@ -2874,7 +2873,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               }
                             }
                           >
-                            Reverse Monochrome
+                            Monochrome
 
                           </div>
                         </div>
@@ -2890,7 +2889,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
                             data-focusable={true}
                             dir="auto"
-                            href="/assets/marketplace-icons/icon-celo-dollar-reverse-monochrome.zip"
+                            href="/assets/marketplace-icons/icon-cusd-mono-v2.zip"
                             onClick={[Function]}
                             role="link"
                             style={
@@ -2975,6 +2974,271 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     </div>
                   </div>
                 </div>
+                <div
+                  className="css-view-1dbjc4n"
+                >
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="css-q7lffx"
+                    >
+                      <div
+                        className="css-view-1dbjc4n"
+                      >
+                        <div
+                          className="css-view-1dbjc4n"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="css-view-1dbjc4n"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cEUR Exchange Icon"
+                                className="css-view-1dbjc4n"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "boxShadow": "inset 0 0 0 1px #D1D5D8",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="css-view-1dbjc4n"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="css-view-1dbjc4n"
+                          style={
+                            Object {
+                              "WebkitBoxFlex": 1,
+                              "WebkitFlexBasis": "0%",
+                              "WebkitFlexGrow": 1,
+                              "WebkitFlexShrink": 1,
+                              "flexBasis": "0%",
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "msFlexNegative": 1,
+                              "msFlexPositive": 1,
+                              "msFlexPreferredSize": "0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="css-text-901oao"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cEUR Exchange Icon
+                          </div>
+                          <div
+                            className="css-text-901oao"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Monochrome
+
+                          </div>
+                        </div>
+                        <div
+                          className="css-view-1dbjc4n"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            data-focusable={true}
+                            dir="auto"
+                            href="/assets/marketplace-icons/icons-celo-euro-monochrome.zip"
+                            onClick={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="css-view-1dbjc4n"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                style={Object {}}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="css-view-1dbjc4n"
+                  style={
+                    Object {
+                      "display": "block",
+                      "width": "100%",
+                    }
+                  }
+                />
                 <div
                   className="css-view-1dbjc4n"
                 >
@@ -3147,6 +3411,518 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             data-focusable={true}
                             dir="auto"
                             href="/assets/marketplace-icons/icon-CELO-reverse-monochrome.zip"
+                            onClick={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="css-view-1dbjc4n"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                style={Object {}}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="css-view-1dbjc4n"
+                >
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="css-q7lffx"
+                    >
+                      <div
+                        className="css-view-1dbjc4n"
+                      >
+                        <div
+                          className="css-view-1dbjc4n"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="css-view-1dbjc4n"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cUSD Exchange Icon"
+                                className="css-view-1dbjc4n"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "backgroundColor": "rgba(0,0,0,1.00)",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="css-view-1dbjc4n"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="css-view-1dbjc4n"
+                          style={
+                            Object {
+                              "WebkitBoxFlex": 1,
+                              "WebkitFlexBasis": "0%",
+                              "WebkitFlexGrow": 1,
+                              "WebkitFlexShrink": 1,
+                              "flexBasis": "0%",
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "msFlexNegative": 1,
+                              "msFlexPositive": 1,
+                              "msFlexPreferredSize": "0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="css-text-901oao"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cUSD Exchange Icon
+                          </div>
+                          <div
+                            className="css-text-901oao"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Reverse Monochrome
+
+                          </div>
+                        </div>
+                        <div
+                          className="css-view-1dbjc4n"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            data-focusable={true}
+                            dir="auto"
+                            href="/assets/marketplace-icons/icon-cusd-reverse-v2.zip"
+                            onClick={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="css-view-1dbjc4n"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                style={Object {}}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                  style={Object {}}
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="css-view-1dbjc4n"
+                >
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="css-q7lffx"
+                    >
+                      <div
+                        className="css-view-1dbjc4n"
+                      >
+                        <div
+                          className="css-view-1dbjc4n"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="css-view-1dbjc4n"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cEUR Exchange Icon"
+                                className="css-view-1dbjc4n"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "backgroundColor": "rgba(0,0,0,1.00)",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="css-view-1dbjc4n"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="css-view-1dbjc4n"
+                          style={
+                            Object {
+                              "WebkitBoxFlex": 1,
+                              "WebkitFlexBasis": "0%",
+                              "WebkitFlexGrow": 1,
+                              "WebkitFlexShrink": 1,
+                              "flexBasis": "0%",
+                              "flexGrow": 1,
+                              "flexShrink": 1,
+                              "msFlexNegative": 1,
+                              "msFlexPositive": 1,
+                              "msFlexPreferredSize": "0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="css-text-901oao"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cEUR Exchange Icon
+                          </div>
+                          <div
+                            className="css-text-901oao"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Reverse Monochrome
+
+                          </div>
+                        </div>
+                        <div
+                          className="css-view-1dbjc4n"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            data-focusable={true}
+                            dir="auto"
+                            href="/assets/marketplace-icons/icons-celo-euro-reverse.zip"
                             onClick={[Function]}
                             role="link"
                             style={

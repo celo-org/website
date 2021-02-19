@@ -46,5 +46,9 @@ handlers:
     static_files: public/papers/cLabs_CBDC_Velocity_v3.pdf
     upload: public/papers/cLabs_CBDC_Velocity_v3.pdf
 
+  - url: /papers/future-of-digital-currencies
+    static_files: public/papers/shaping-future-of-digital-currencies.pdf
+    upload: public/papers/shaping-future-of-digital-currencies.pdf
+
   - url: /.*
     script: auto
