@@ -49,9 +49,8 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         
         return (
             <div css={cookieRoot}>
-
             <div css={container}>
-                <div>
+                <div css={textDiv}>
                     <p css={infoMessageTextPrefix}>
                     <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
                     <a css={link} href={'https//celo.org'}>
@@ -64,8 +63,6 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
                     </a>
                         </Trans>
                     </p>
-
-                    
                 </div>
                 <div css={cookieButtons}>
                     <button css={singleButton} onClick={this.onDisagree}>
@@ -124,7 +121,6 @@ const cookieButtons = css(flex, {
     }
 })
 
-
 const singleButton = css({
     color: colors.white,
     backgroundColor: colors.navyBlue,
@@ -150,6 +146,9 @@ const infoMessageTextPrefix = css({
     color: colors.white,
 })
 
+const textDiv = css(flex,{
+   
+})
 
 
 export default withNamespaces('common')(CookieConsentWithEmotion)
