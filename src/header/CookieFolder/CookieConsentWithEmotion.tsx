@@ -3,7 +3,7 @@ import {jsx, css, keyframes} from "@emotion/core"
 import * as React from 'react'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
 import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
-import {flex, WHEN_MOBILE} from 'src/estyles'
+import {flex, WHEN_MOBILE, WHEN_DESKTOP, WHEN_TABLET} from 'src/estyles'
 import { CONSENT_HEIGHT, TextStyles } from 'src/shared/Styles'
 import { colors, fonts } from 'src/header/CookieFolder/CookieStyle'
 import { initSentry } from 'src/utils/sentry'
@@ -65,7 +65,7 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
 
                     
                 </div>
-                <div>
+                <div css={cookieButtons}>
                     <button onClick={this.onDisagree}>
                     <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesDisagree'}>
                     </Trans>
@@ -95,6 +95,16 @@ const cookieRoot = css(flex,{
         flexDirection: 'column'
     }
 
+})
+
+const cookieButtons = css(flex, {
+    flexDirection: 'column-reverse',
+    [WHEN_DESKTOP]:{
+        flexDirection: 'row'
+    },
+    [WHEN_TABLET]:{
+        flexDirection: 'row'
+    }
 })
 
 const link = css({
