@@ -140,6 +140,10 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect('/user-agreement')
   })
 
+  server.get('/celo-rewards-education', (_, res) => {
+    res.redirect('/celo-rewards-terms-and-conditions');
+  })
+
   server.get('/stake-off', (_, res) => {
     res.redirect('https://forum.celo.org/t/the-great-celo-stake-off-the-details/136')
   })

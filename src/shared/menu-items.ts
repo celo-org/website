@@ -231,6 +231,9 @@ export enum CeloLinks {
   defiPulse = 'https://defipulse.com/',
   aboutCeloGovernance = 'https://medium.com/celoorg/celo-gold-holders-make-your-voice-heard-through-on-chain-governance-96cb5a1e8b90',
   fundWallet = 'https://valoraapp.com/support/fund-wallet',
+  confirmNumber = 'https://valoraapp.com/support/get-started-with-valora#phone-number-confirmation',
+  communityFund = 'https://docs.celo.org/celo-codebase/protocol/proof-of-stake/epoch-rewards/community-fund',
+  celoRewardsDiscussion = 'https://forum.celo.org/t/governance-proposal-to-reward-early-users/662/42',
 }
 
 export const languageOptions = {

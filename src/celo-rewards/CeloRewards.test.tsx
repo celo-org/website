@@ -15,7 +15,7 @@ describe(CeloRewards, () => {
       "celo://wallet/cashIn"
     );
   });
-  it("Learn More directs to education page", async () => {
+  it("Learn More directs to terms page", async () => {
     const { getByTestId } = render(
       <TestProvider>
         <CeloRewards />
@@ -23,7 +23,7 @@ describe(CeloRewards, () => {
     );
     expect(getByTestId("learnMore").closest("a")).toHaveAttribute(
       "href",
-      "/celo-rewards-education"
+      "/celo-rewards-terms-and-conditions"
     );
   });
 });
