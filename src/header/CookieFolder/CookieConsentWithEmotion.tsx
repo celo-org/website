@@ -1,9 +1,10 @@
 /** @jsx jsx */
-import {jsx, css, keyframes} from "@emotion/core"
+import {jsx, css, keyframes, ThemeContext} from "@emotion/core"
+import styled from '@emotion/styled'
 import * as React from 'react'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
 import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
-import {flex, WHEN_MOBILE, WHEN_DESKTOP, WHEN_TABLET} from 'src/estyles'
+import {flex, WHEN_MOBILE, WHEN_DESKTOP, WHEN_TABLET, jost} from 'src/estyles'
 import { CONSENT_HEIGHT, TextStyles } from 'src/shared/Styles'
 import { colors, fonts } from 'src/header/CookieFolder/CookieStyle'
 import { initSentry } from 'src/utils/sentry'
@@ -48,17 +49,18 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         
         return (
             <div css={cookieRoot}>
+
+            <div css={container}>
                 <div>
                     <p css={infoMessageTextPrefix}>
                     <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
                     <a css={link} href={'https//celo.org'}>
                     </a>
                     </Trans>
-                    </p>
-                    <p css={infoMessageTextPrefix}>
-                        <Trans ns={NameSpaces.common} i18nKey={'cookies.understandMore'}>
+                    {' '}
+                    <br css={breakMobile}/>
+                    <Trans ns={NameSpaces.common} i18nKey={'cookies.understandMore'}>
                         <a css={link} href={'https//celo.org'}>
-                        Celo.org
                     </a>
                         </Trans>
                     </p>
@@ -66,26 +68,32 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
                     
                 </div>
                 <div css={cookieButtons}>
-                    <button onClick={this.onDisagree}>
+                    <button css={singleButton} onClick={this.onDisagree}>
                     <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesDisagree'}>
                     </Trans>
                     </button>
-                    <button onClick={this.onAgree}>
+                    <button css={agreeButton} onClick={this.onAgree}>
                         <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesAgree'}>
                         </Trans>
                     </button>
                 </div>
             </div>
+</div>
         )
     }
 }
-
 
 const cookieRoot = css(flex,{
     bottom: 0,
     position: 'fixed',
     backgroundColor: colors.navyBlue,
     width: '100%',
+    justifyContent: 'center'
+})
+
+const container = css(flex,{
+    width: '100%',
+    maxWidth: 1080,
     minHeight: CONSENT_HEIGHT,
     justifyContent: 'center',
     flexDirection: 'row',
@@ -93,8 +101,17 @@ const cookieRoot = css(flex,{
     padding: 20,
     [WHEN_MOBILE]: {
         flexDirection: 'column'
+    },
+    [WHEN_DESKTOP]: {
+        justifyContent: 'space-between'
     }
 
+})
+
+const breakMobile = css({
+    [WHEN_MOBILE]:{
+        display: 'none'
+    }
 })
 
 const cookieButtons = css(flex, {
@@ -106,6 +123,19 @@ const cookieButtons = css(flex, {
         flexDirection: 'row'
     }
 })
+
+
+const singleButton = css({
+    color: colors.white,
+    backgroundColor: colors.navyBlue,
+    border: colors.navyBlue,
+    fontFamily: 'Jost, futura-pt, futura, sans-serif'
+})
+
+const agreeButton = css(singleButton,{
+    border: `2px solid ${colors.white}`
+})
+
 
 const link = css({
     textDecorationLine: 'underline',
