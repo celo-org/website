@@ -18,7 +18,7 @@ function CeloRewards({}) {
       <OpenGraph
         title={t("title")}
         path={menuItems.CELO_REWARDS.link}
-        description={t("description")}
+        description={t("description.first")}
       />
       <View style={styles.container}>
         <TitleAndDescription
