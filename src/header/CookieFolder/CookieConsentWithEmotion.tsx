@@ -70,11 +70,13 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
                     
                 </div>
                 <div>
-                    <button>
-
+                    <button onClick={this.onDisagree}>
+                    <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesDisagree'}>
+                    </Trans>
                     </button>
-                    <button>
-                        
+                    <button onClick={this.onAgree}>
+                        <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesAgree'}>
+                        </Trans>
                     </button>
                 </div>
             </div>
