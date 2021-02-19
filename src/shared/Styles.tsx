@@ -1,11 +1,5 @@
 import { StyleSheet } from 'react-native'
 
-// Deprecated
-export const Colors = {
-  DARK_GRAY: '#333638',
-  TAN: '#FFF5E7',
-}
-
 export const TABLET_BREAKPOINT = 576
 export const DESKTOP_BREAKPOINT = 992
 export const MENU_MAX_WIDTH = 1260

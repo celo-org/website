@@ -1,4 +1,4 @@
-import Document, { DocumentContext, Head, Main, NextScript } from 'next/document'
+import Document, { DocumentContext, Head, Main, Html, NextScript } from 'next/document'
 import * as React from 'react'
 import { AppRegistry, I18nManager } from 'react-native-web'
 import { setDimensionsForScreen } from 'src/layout/ScreenSize'
@@ -32,7 +32,6 @@ export default class MyDocument extends Document<Props> {
     const { getStyleElement } = AppRegistry.getApplication('Main')
     const page = context.renderPage()
     const styles = React.Children.toArray([
-      // <style key={'normalize-style'} dangerouslySetInnerHTML={{ __html: normalizeNextElements }} />,
       getStyleElement(),
     ])
 
@@ -47,7 +46,7 @@ export default class MyDocument extends Document<Props> {
   render() {
     const { locale } = this.props
     return (
-      <html lang={locale} style={{ height: '100%', width: '100%' }}>
+      <Html lang={locale} style={{ height: '100%', width: '100%' }}>
         <Head>
           <link key="favicon" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin={"true"}/>
@@ -67,7 +66,7 @@ export default class MyDocument extends Document<Props> {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }
