@@ -6,9 +6,10 @@ import { B, P } from "./stylingElements";
 interface Props {
   baseTranslation: string;
   totalTiers: number;
+  includeTitle?: boolean;
 }
 
-function TierList({ baseTranslation, totalTiers }: Props) {
+function TierList({ baseTranslation, totalTiers, includeTitle = true }: Props) {
   const { t } = useTranslation(NameSpaces.celoRewards);
 
   const listItems = [];
@@ -22,10 +23,14 @@ function TierList({ baseTranslation, totalTiers }: Props) {
   return (
     <Ul>
       {listItems.map((item) => (
-        <Li key={item.title}>
+        <Li key={includeTitle ? item.title : item.body}>
           <P>
-            <B>{item.title}</B>
-            {"\n"}
+            {includeTitle && (
+              <>
+                <B>{item.title}</B>
+                {"\n"}
+              </>
+            )}
             {item.body}
           </P>
         </Li>

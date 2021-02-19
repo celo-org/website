@@ -5,7 +5,7 @@
     "second": "As recompensas são creditadas ao saldo CELO de sua carteira no início de cada mês até o término do programa.",
     "third": "Participe com qualquer conta cUSD confirmada ou verificada mantendo um saldo mínimo médio mensal de cUSD 20,00 durante o período de ganhos. As recompensas são creditadas no saldo CELO de sua conta a cada mês.",
     "tier1": {
-      "title": "20 cUSD",
+      "title": "10 cUSD",
       "body": "Ganhe US$ 1 em CELO por mês"
     },
     "tier2": {
@@ -23,32 +23,68 @@
     "title": "Lançamento do programa de recompensas:",
     "body": "4 vezes mais recompensas em CELO até dia 1° de março! Receba as recompensas semanalmente."
   },
-  "howItWorks": {
-    "title": "Veja como funciona:",
-    "body": {
-      "first": "1) Transfira cUSD para sua carteira para participar! Você pode encontrar as instruções para adicionar cUSD a uma carteira da Valora <0>aqui</0>.\n\n2) Confirme sua carteira. Uma maneira fácil de fazer isso é confirmar seu número de telefone com o aplicativo Valora seguindo os passos de verificação!\n\n3) As recompensas são calculadas e distribuídas semanalmente, dependendo de quantos cUSD você mantiver em sua carteira:",
-      "second": "4) As recompensas serão creditadas ao seu saldo CELO no final do período de promoção  (aproximadamente mensalmentea)",
+  "terms": {
+    "title": "O Programa de Recompensas da CELO permite que você ganhe recompensas por poupar em cUSD todos os meses!",
+    "howItWorks": {
+      "title": "Veja como funciona:",
+      "1": "<0>Transfira cUSD para sua conta</0> para participar! Você pode seguir estas instruções para <1>adicionar cUSD a uma conta da Valora.</1>",
+      "2": "<0>Confirme seu número de telefone.</0> Uma maneira fácil de fazer isso é confirmar seu número de celular no app da Valora seguindo as etapas de integração.",
+      "3": "<0>As recompensas são calculadas no final de cada período de recompensas (primeiro semanalmente, depois mensalmente)</0> com base no saldo médio em cUSD que você manteve durante todo o período de recompensas (\"saldo\")*:",
+      "4": "<0>As recompensas serão creditadas no seu saldo CELO em até 3 dias</0> após o final de cada período de recompensas. Você pode verificar seu saldo CELO na Valora acessando a aba CELO no menu do app.",
+      "5": "<0>Até 1º de março (período de introdução), o período de recompensas será semanal, depois mensal,</0> até o término do programa ou dos fundos. Inscreva-se agora e ganhe recompensas maiores!"
+    },
+    "tiers": {
       "tier1": {
-        "title": "Nível 1",
-        "body": "Saldo mensal mínimo de 20 cUSD → ganhe US$ 1 em CELO por mês"
+        "body": "Nível 1: ganhe US$ 1 em CELO com um saldo médio mínimo de 20 cUSD durante o período de recompensas"
       },
       "tier2": {
-        "title": "Nível 2",
-        "body": "Saldo mensal mínimo de 100 cUSD → ganhe US$ 5 em CELO por mês"
+        "body": "Nível 2: ganhe US$ 5 em CELO com um saldo mínimo médio de 100 cUSD durante o período de recompensas"
       },
       "tier3": {
-        "title": "Nível 3",
-        "body": "Saldo mensal mínimo de 500 cUSD → ganhe US$ 10 em CELO por mês"
+        "body": "Nível 3: ganhe US$ 10 em CELO com um saldo mínimo médio de 500 cUSD durante o período de recompensas"
       }
+    },
+    "moreDetails": {
+      "title": "Mais informações:",
+      "1": "<0>Confirme seu número de celular e tenha um saldo adequado para receber as recompensas.</0> Você pode <1>confirmar seu número de celular no app da Valora</1> (este é o processo quando você recebe três mensagens de texto).",
+      "2": "Você não precisa fazer mais nada para reivindicar as recompensas, desde que atenda aos requisitos acima. A elegibilidade é baseada na confirmação do número de celular e no saldo médio em cUSD durante o período de recompensas.",
+      "3": "O programa se manterá em vigor pelo menos até 1º de junho de 2021 ou até que os fundos acabem, embora os valores das recompensas e a duração do programa possam mudar.\nHaverá 5 períodos de recompensa semanais, seguidos por 3 períodos de recompensa mensais:",
+      "3-1": "Os períodos semanais começarão na segunda-feira, 25 de janeiro de 2021, às 20:00 (UTC), e terminarão em 1º de março de 2021, às 19:59 (UTC)",
+      "3-2": "Os períodos mensais começarão em 1º de março de 2021, às 20:00 (UTC) e deverão durar até às 19:59  (UTC) de 1º de julho de 2021.",
+      "4": "<0>O saldo médio de cUSD de uma conta durante todo o período de recompensas é calculado de acordo com a média do saldo de cUSD do endereço em relação a todos os blocos validados durante o período de recompensas na blockchain da Celo. </0> Por exemplo, se:",
+      "4-1": "Um período de recompensa vai de 1º de fevereiro, 20:00 (EST) a 8 de fevereiro",
+      "4-2": "Você tem 0 cUSD de 1º de fevereiro, 20:00 (EST) a 4 de fevereiro, 8:00 (EST)",
+      "4-3": "Você adiciona 20 cUSD em 4 de fevereiro, às 8:00 (EST) (na metade do período de recompensas) e mantém esse saldo em sua conta até 8 de fevereiro, 20:00 (EST)",
+      "4-4": "Seu saldo qualificado para este período de recompensas seria de aproximadamente 10 cUSD (dependendo do arredondamento e do tempo médio do bloco).",
+      "5": "<0>As recompensas serão distribuídas por ordem de chegada</0> (pela data de confirmação do número de celular) até um limite total de 20.000 CELO por mês.",
+      "5-1": "Durante o período de introdução, este limite total será elevado para 20.000 CELO por semana.",
+      "6": "<0>O preço do CELO será avaliado com base no preço médio de \"fechamento\" do CELO indicado na página coinmarketcap.com para o período de ganhos. </0>",
+      "6-1": "Por exemplo, para a primeira semana de fevereiro, o preço da CELO será a soma do preço de fechamento de 7 dias do CELO na página coinmarketcap.com do dia 1º de fevereiro de 2021 (incluído) até 8 de fevereiro de 2021 (excluído), dividido por 7."
+    },
+    "celoAndCusd": {
+      "title": "O que é CELO e cUSD?",
+      "1": "O Celo Dólar, ou cUSD, é um ativo projetado para a vida cotidiana: as pessoas podem facilmente pagar, economizar e enviar cUSD para qualquer pessoa com um número de celular em qualquer lugar do mundo. O cUSD tem um valor estável que acompanha o dólar americano.",
+      "2": "O CELO é o principal ativo utilizado para governança, reserva e participação na Rede Celo. Ele tem uma oferta fixa e um valor variável relacionado parcialmente ao valor total dos ativos estáveis em circulação no ecossistema da Celo."
+    },
+    "rewardsTroubleShoot": {
+      "title": "Por que minha recompensa não apareceu?",
+      "description": "Existem alguns motivos possíveis:",
+      "1": "<0>EO endereço com o saldo qualificado pode não ter verificado o número de celular.</0> Uma maneira fácil de fazer isso é confirmar seu número de celular no app da Valora seguindo as etapas de integração.",
+      "2": "<0>Mesmo que seu saldo de cUSD seja alto o suficiente para se qualificar para um nível de recompensa, seu saldo médio de cUSD no período de ganhos anterior pode ter sido inferior</0> se você tiver adicionado fundos após o início do período de ganhos. Por exemplo, se:",
+      "2-1": "Um período de recompensa vai de 1º de fevereiro, 20:00 (EST) a 8 de fevereiro",
+      "2-2": "Você tem 0 cUSD de 1º de fevereiro, 20:00 (EST) a 4 de fevereiro, 8:00 (EST)",
+      "2-3": "Você adiciona 20 cUSD em 4 de fevereiro, às 8:00 (EST) (na metade do período de recompensas)",
+      "2-4": "Você mantém esse saldo em sua conta até as 20:00 (EST) de 8 de fevereiro",
+      "2-5": "Seu saldo qualificado para este período de recompensas seria de aproximadamente 10 cUSD (dependendo do arredondamento e do tempo médio do bloco).",
+      "3": "<0>Pode levar algum tempo para as recompensas serem processadas e enviadas.</0> As recompensas geralmente são processadas em até 3 dias após o final do período de ganhos."
+    },
+    "notices": {
+      "title": "Avisos importantes:",
+      "body": "A taxa de recompensa e os termos estão sujeitos a alterações ao longo do tempo e não são válidos onde forem proibidos. As recompensas não são garantidas, podem ser interrompidas a qualquer momento ou serão alocadas com base nas exigências. Os resultados reais podem variar com base em vários fatores, como anos bissextos, período de transferências, arredondamentos, esgotamento de fundos e variação nas taxas de recompensa.\n\nEste Programa de Recompensas CELO representa o esforço da comunidade Celo com as recompensas CELO provenientes do Fundo Comunitário Celo descentralizado através de uma conta multisig operada por voluntários da comunidade (os \"Voluntários da Comunidade Celo\"). Confira mais informações sobre o fundo <0>aqui</0> e, se quiser participar da conversa, junte-se ao fórum de <1>discussão</1>. O Programa de Recompensas Celo é descentralizado e não é administrado nem operado pela Fundação Celo ou qualquer um de seus membros da Aliança pela Prosperidade."
+    },
+    "liability": {
+      "title": "LIMITAÇÃO DE RESPONSABILIDADE DOS VOLUNTÁRIOS DA COMUNIDADE CELO",
+      "body": "A PARTICIPAÇÃO É POR SUA PRÓPRIA CONTA E RISCO. O PROGRAMA DE RECOMPENSAS CELO É FORNECIDO \"COMO ESTÁ\" E \"SEGUNDO DISPONIBILIDADE\", SEM NENHUMA GARANTIA DE QUALQUER TIPO, SEJA EXPRESSA OU IMPLÍCITA. NEM OS VOLUNTÁRIOS DA COMUNIDADE CELO NEM QUALQUER PESSOA OU ENTIDADE ASSOCIADA À FUNDAÇÃO CELO OU À ALIANÇA PELA PROSPERIDADE OFERECE NENHUMA GARANTIA OU REPRESENTAÇÃO EM RELAÇÃO À INTEGRIDADE, SEGURANÇA, CONFIABILIDADE, QUALIDADE, EXATIDÃO OU DISPONIBILIDADE DO PROGRAMA DE RECOMPENSAS CELO.\n\nPELO PRESENTE INSTRUMENTO, OS VOLUNTÁRIOS DA COMUNIDADE CELO SE ISENTAM DE TODAS AS GARANTIAS DE QUALQUER TIPO, SEJAM EXPRESSAS OU IMPLÍCITAS, ESTATUTÁRIAS OU QUALQUER OUTRA, INCLUINDO, MAS NÃO SE LIMITANDO A, QUAISQUER GARANTIAS DE COMERCIALIZAÇÃO, NÃO VIOLAÇÃO E ADEQUAÇÃO PARA UM DETERMINADO PROPÓSITO.\n\nEM NENHUM CASO OS VOLUNTÁRIOS DA COMUNIDADE CELO, A FUNDAÇÃO CELO, SEUS MEMBROS, SUAS AFILIADAS OU SEUS LICENCIADORES, PRESTADORES DE SERVIÇOS, FUNCIONÁRIOS, AGENTES OU DIRETORES SERÃO RESPONSÁVEIS POR DANOS DE QUALQUER TIPO, SOB QUALQUER TIPO DE TEORIA JURÍDICA, EM RELAÇÃO AO SEU USO, OU INCAPACIDADE DE USAR, O PROGRAMA DE RECOMPENSAS CELO E QUALQUER SITE LIGADO A ELE, INCLUINDO QUAISQUER DANOS DIRETOS, INDIRETOS, ESPECIAIS, INCIDENTAIS, CONSEQUENTES OU PUNITIVOS, INCLUINDO, MAS NÃO SE LIMITANDO A LESÕES PESSOAIS, DORES OU SOFRIMENTOS, AFLIÇÃO EMOCIONAL, PERDA DE RECEITAS, PERDA DE LUCROS, PERDA DE NEGÓCIOS OU ECONOMIAS ANTECIPADAS, PERDA DE USO, PERDA DE FUNDO DE COMÉRCIO E/OU PERDA DE DADOS, SEJA CAUSADO POR DELITO (INCLUINDO NEGLIGÊNCIA), VIOLAÇÃO DE CONTRATO OU DE OUTRA FORMA, MESMO QUE SEJA PREVISÍVEL."
     }
-  },
-  "cUsdVsCelo": {
-    "title": "Qual a diferença entre CELO e cUSD?",
-    "body": "CELO e cUSD são os ativos circulantes suportados por carteiras como a Valora na Rede Celo, que proporcionam pagamentos digitais rápidos, seguros e estáveis. As duas principais diferenças entre os dois ativos são suas funções e preços.\n\nCelo Dólares, ou cUSD, é uma moeda estável cujo valor acompanha o do dólar americano. Como ele acompanha o valor do dólar americano, o cUSD é considerado \"estável\". Ele também foi criado para oferecer acessibilidade e facilidade de uso, para que você possa pagar, guardar e enviar facilmente com cUSD usando a Valora.\n\nCELO é o ativo nativo e principal mecanismo de utilidade, governança, reserva e  staking da Rede Celo. Quando você possui CELO, você pode influenciara evolução e crescimento da Rede Celo ao longo do tempo, usando-o para votar. CELO tem uma oferta fixa e um valor variável relacionado ao valor total das moedas estáveis em circulação no ecossistema da Celo. <0>Saiba mais sobre governança na Rede Celo [em inglês].</0>"
-  },
-  "questions": {
-    "title": "Dúvidas?",
-    "body": "Envie-nos uma mensagem para\n<0>support@valoraapp.com</0>"
-  },
-  "goBack": "Retorna"
+  }
 }
