@@ -7,6 +7,11 @@ export const flex = css({
   flexDirection: "column"
 })
 
+export enum colors {
+  white = '#FFFFFF',
+  navyBlue = '#0C74D4'
+}
+
 
 export const jost = css({
   fontFamily: typeFaces.futura

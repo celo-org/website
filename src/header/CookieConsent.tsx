@@ -1,4 +1,3 @@
-
 import * as React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'

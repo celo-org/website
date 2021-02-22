@@ -3,7 +3,8 @@ import {jsx, css} from "@emotion/core"
 import * as React from 'react'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
 import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
-import {flex, WHEN_MOBILE, WHEN_DESKTOP, WHEN_TABLET} from 'src/estyles'
+import {flex, WHEN_MOBILE, WHEN_DESKTOP, WHEN_TABLET, jost} from 'src/estyles'
+import {colors} from 'src/styles'
 import { initSentry } from 'src/utils/sentry'
 
 interface State {
@@ -73,10 +74,6 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
     }
 }
 
-enum colors {
-    white = '#FFFFFF',
-    navyBlue = '#0C74D4'
-}
 
 const cookieRoot = css(flex,{
     bottom: 0,
@@ -153,7 +150,7 @@ const link = css({
     color: colors.white
 })
 
-const infoMessageTextPrefix = css({
+const infoMessageTextPrefix = css(jost,{
     textAlign: 'center',
     fontStyle: 'normal',
     fontWeight: 500,
@@ -161,7 +158,6 @@ const infoMessageTextPrefix = css({
     height: 47,
     left: 12,
     top: 675,
-    fontFamily: 'Jost, futura-pt, futura, sans-serif',
     color: colors.white,
     [WHEN_DESKTOP]: {
         textAlign: 'start'
