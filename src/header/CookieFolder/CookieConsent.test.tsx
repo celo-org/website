@@ -14,15 +14,15 @@ jest.mock('src/analytics/analytics', () => {
 })
 
 describe('CookieConsent', () => {
-  describe('when press agree', () => {
+  describe('when agree', () => {
     it('initializes Sentry', async () => {
       const { getByText, queryByText } = render(
         <TestProvider>
           <CookieConsentWithEmotion />
         </TestProvider>
       )
-      await waitFor(() => queryByText('Agree'))
-      fireEvent.click(getByText('Agree'))
+      await waitFor(() => queryByText('Yes'))
+      fireEvent.click(getByText('Yes'))
 
       expect(agree).toHaveBeenCalled()
       await waitFor(() => true)
@@ -30,14 +30,14 @@ describe('CookieConsent', () => {
     })
   })
   describe('when disagree', () => {
-    it('does calls disagree', async () => {
+    it('calls disagree', async () => {
       const { getByText, queryByText } = render(
         <TestProvider>
           <CookieConsentWithEmotion />
         </TestProvider>
       )
-      await waitFor(() => queryByText('Disagree'))
-      fireEvent.click(getByText('Disagree'))
+      await waitFor(() => queryByText('No'))
+      fireEvent.click(getByText('No'))
       expect(disagree).toHaveBeenCalled()
     })
   })
