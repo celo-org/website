@@ -1,14 +1,10 @@
 /** @jsx jsx */
-import {jsx, css, keyframes, ThemeContext} from "@emotion/core"
-import styled from '@emotion/styled'
+import {jsx, css} from "@emotion/core"
 import * as React from 'react'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
 import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
-import {flex, WHEN_MOBILE, WHEN_DESKTOP, WHEN_TABLET, jost} from 'src/estyles'
-import { CONSENT_HEIGHT, TextStyles } from 'src/shared/Styles'
-import { colors, fonts } from 'src/header/CookieFolder/CookieStyle'
+import {flex, WHEN_MOBILE, WHEN_DESKTOP, WHEN_TABLET} from 'src/estyles'
 import { initSentry } from 'src/utils/sentry'
-import { interpolateAs } from "next/dist/next-server/lib/router/router"
 
 interface State {
     showConsent: boolean
@@ -18,7 +14,6 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
     state = {
         showConsent: false
     }
-
     
     async componentDidMount(){
         this.setState({
@@ -40,8 +35,6 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
         })
     }
     render(){
-        // const { t } = this.props
-        
         if(!this.state.showConsent){
             return null
         }
@@ -78,6 +71,11 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
 </div>
         )
     }
+}
+
+enum colors {
+    white = '#FFFFFF',
+    navyBlue = '#0C74D4'
 }
 
 const cookieRoot = css(flex,{
@@ -128,7 +126,6 @@ const cookieButtons = css(flex, {
 
 const singleButton = css(flex,
     {
-    margin: 5,
     color: colors.white,
     backgroundColor: colors.navyBlue,
     border: colors.navyBlue,
@@ -157,7 +154,12 @@ const link = css({
 
 const infoMessageTextPrefix = css({
     textAlign: 'center',
-    fontWeight: 600,
+    fontStyle: 'normal',
+    fontWeight: 500,
+    fontSize: 13,
+    height: 47,
+    left: 12,
+    top: 675,
     fontFamily: 'Jost, futura-pt, futura, sans-serif',
     color: colors.white,
     [WHEN_DESKTOP]: {
@@ -168,7 +170,11 @@ const infoMessageTextPrefix = css({
     }
 })
 
-const textDiv = css(flex)
+const textDiv = css(flex, {
+    paddingLeft: 14,
+    paddingRight: 14,
+    fontSize: 13,
+})
 
 
 export default withNamespaces('common')(CookieConsentWithEmotion)
