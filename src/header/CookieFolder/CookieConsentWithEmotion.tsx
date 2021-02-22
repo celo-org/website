@@ -85,7 +85,8 @@ const cookieRoot = css(flex,{
     position: 'fixed',
     backgroundColor: colors.navyBlue,
     width: '100%',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignItems: 'center'
 })
 
 const container = css(flex,{
@@ -116,7 +117,9 @@ const cookieButtons = css(flex, {
     alignItems: 'center',
     padding: 5,
     [WHEN_DESKTOP]:{
-        flexDirection: 'row'
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     [WHEN_TABLET]:{
         flexDirection: 'row'
@@ -134,15 +137,15 @@ const singleButton = css(flex,
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-})
-
-const agreeButton = css(singleButton,{
-    border: `2px solid ${colors.white}`,
     height: 33,
     width: 147,
     position: 'static',
     fontWeight: 500,
     borderRadius: 5
+})
+
+const agreeButton = css(singleButton,{
+    border: `2px solid ${colors.white}`,
 })
 
 
@@ -158,23 +161,14 @@ const infoMessageTextPrefix = css({
     fontFamily: 'Jost, futura-pt, futura, sans-serif',
     color: colors.white,
     [WHEN_DESKTOP]: {
-        textAlign: 'start',
-        marginLeft: 115
+        textAlign: 'start'
     },
     [WHEN_TABLET]: {
-        textAlign: 'start',
-        marginLeft: 115
+        textAlign: 'start'
     }
 })
 
-const textDiv = css(flex,{
-    paddingRight: 14,
-    pddingLeft: 14,
-    [WHEN_DESKTOP]: {
-        padding: 5,
-        margin: 5
-    }
-})
+const textDiv = css(flex)
 
 
 export default withNamespaces('common')(CookieConsentWithEmotion)
