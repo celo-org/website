@@ -45,6 +45,8 @@ export const fonts = {
 
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
 
+export const WHEN_TABLET_AND_UP = `@media (min-width: ${TABLET_BREAKPOINT}px)`
+
 export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-width: ${DESKTOP_BREAKPOINT}px)`
 
 export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
