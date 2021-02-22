@@ -91,7 +91,7 @@ const cookieRoot = css(flex,{
 const container = css(flex,{
     width: '100%',
     maxWidth: 1080,
-    minHeight: CONSENT_HEIGHT,
+    minHeight: 81,
     justifyContent: 'center',
     flexDirection: 'row',
     alignItems: 'center',
@@ -114,7 +114,7 @@ const cookieButtons = css(flex, {
     flexDirection: 'column-reverse',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 10,
+    padding: 5,
     [WHEN_DESKTOP]:{
         flexDirection: 'row'
     },
@@ -123,15 +123,26 @@ const cookieButtons = css(flex, {
     }
 })
 
-const singleButton = css({
+const singleButton = css(flex,
+    {
+    margin: 5,
     color: colors.white,
     backgroundColor: colors.navyBlue,
     border: colors.navyBlue,
-    fontFamily: 'Jost, futura-pt, futura, sans-serif'
+    fontFamily: 'Jost, futura-pt, futura, sans-serif',
+    fontStyle: 'normal',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
 })
 
 const agreeButton = css(singleButton,{
-    border: `2px solid ${colors.white}`
+    border: `2px solid ${colors.white}`,
+    height: 33,
+    width: 147,
+    position: 'static',
+    fontWeight: 500,
+    borderRadius: 5
 })
 
 
