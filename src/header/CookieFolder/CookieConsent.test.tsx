@@ -2,7 +2,7 @@ import { fireEvent, render, waitFor } from '@testing-library/react'
 import * as React from 'react'
 import { TestProvider } from 'src/_page-tests/test-utils'
 import { agree, disagree } from 'src/analytics/analytics'
-import CookieConsent from 'src/header/CookieConsent'
+import CookieConsentWithEmotion from 'src/header/CookieFolder/CookieConsentWithEmotion'
 import { initSentry } from 'src/utils/sentry'
 
 jest.mock('src/utils/sentry', () => {
@@ -18,7 +18,7 @@ describe('CookieConsent', () => {
     it('initializes Sentry', async () => {
       const { getByText, queryByText } = render(
         <TestProvider>
-          <CookieConsent />
+          <CookieConsentWithEmotion />
         </TestProvider>
       )
       await waitFor(() => queryByText('Agree'))
@@ -33,7 +33,7 @@ describe('CookieConsent', () => {
     it('does calls disagree', async () => {
       const { getByText, queryByText } = render(
         <TestProvider>
-          <CookieConsent />
+          <CookieConsentWithEmotion />
         </TestProvider>
       )
       await waitFor(() => queryByText('Disagree'))
