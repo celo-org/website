@@ -1,6 +1,6 @@
 import { css } from "@emotion/core"
 import { typeFaces, fontInfo } from "./styles"
-import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT, LARGE_TABLET_BREAKPOINT} from "src/shared/Styles"
+import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT} from "src/shared/Styles"
 
 export const flex = css({
   display: "flex",

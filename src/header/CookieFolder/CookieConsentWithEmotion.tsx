@@ -3,7 +3,7 @@ import {jsx, css} from "@emotion/core"
 import * as React from 'react'
 import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
 import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
-import {flex, WHEN_MOBILE, WHEN_DESKTOP, WHEN_TABLET, jost} from 'src/estyles'
+import {flex, WHEN_MOBILE, WHEN_DESKTOP, jost} from 'src/estyles'
 import {colors} from 'src/styles'
 import { initSentry } from 'src/utils/sentry'
 
