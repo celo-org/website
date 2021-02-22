@@ -14,7 +14,7 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
     state = {
         showConsent: false
     }
-    
+
     async componentDidMount(){
         this.setState({
             showConsent: await showVisitorCookieConsent()
@@ -46,13 +46,13 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
                 <div css={textDiv}>
                     <p css={infoMessageTextPrefix}>
                     <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
-                    <a css={link} href={'https//celo.org'}>
+                    <a css={link} href={'/'}>
                     </a>
                     </Trans>
                     {' '}
                     <br css={breakMobile}/>
                     <Trans ns={NameSpaces.common} i18nKey={'cookies.understandMore'}>
-                        <a css={link} href={'https//celo.org'}>
+                        <a css={link} href={'/terms'}>
                     </a>
                         </Trans>
                     </p>
