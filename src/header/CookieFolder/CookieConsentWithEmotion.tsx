@@ -85,15 +85,13 @@ const container = css(flex,{
     width: '100%',
     maxWidth: 1080,
     padding: 12,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'center',
     [WHEN_MOBILE]: {
         flexDirection: 'column'
-    },
-    [WHEN_DESKTOP]: {
-        justifyContent: 'space-between'
     }
+    
 })
 
 const breakMobile = css({
