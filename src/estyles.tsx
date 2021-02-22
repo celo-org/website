@@ -1,6 +1,6 @@
 import { css } from "@emotion/core"
 import { typeFaces, fontInfo } from "./styles"
-import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT} from "src/shared/Styles"
+import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT, LARGE_TABLET_BREAKPOINT} from "src/shared/Styles"
 
 export const flex = css({
   display: "flex",
@@ -51,6 +51,7 @@ export const fonts = {
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
 
 export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-width: ${DESKTOP_BREAKPOINT}px)`
+
 
 export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
 

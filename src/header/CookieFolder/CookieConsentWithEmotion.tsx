@@ -46,26 +46,22 @@ export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, Sta
             <div css={container}>
                 <div css={textDiv}>
                     <p css={infoMessageTextPrefix}>
-                    <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
-                    <a css={link} href={'/'}>
-                    </a>
-                    </Trans>
-                    {' '}
-                    <br css={breakMobile}/>
-                    <Trans ns={NameSpaces.common} i18nKey={'cookies.understandMore'}>
-                        <a css={link} href={'/terms'}>
-                    </a>
+                        <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
+                            <a css={link} href={'/'}/>
+                        </Trans>
+                            {' '}
+                        <br css={breakMobile}/>
+                        <Trans ns={NameSpaces.common} i18nKey={'cookies.understandMore'}>
+                            <a css={link} href={'/terms'}/>
                         </Trans>
                     </p>
                 </div>
                 <div css={cookieButtons}>
                     <button css={singleButton} onClick={this.onDisagree}>
-                    <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesDisagree'}>
-                    </Trans>
+                        <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesDisagree'}/>
                     </button>
                     <button css={agreeButton} onClick={this.onAgree}>
-                        <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesAgree'}>
-                        </Trans>
+                        <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesAgree'}/>
                     </button>
                 </div>
             </div>
@@ -82,13 +78,13 @@ const cookieRoot = css(flex,{
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 20
+    zIndex: 20,
 })
 
 const container = css(flex,{
     width: '100%',
     maxWidth: 1080,
-    minHeight: 81,
+    padding: 12,
     justifyContent: 'center',
     flexDirection: 'row',
     alignItems: 'center',
@@ -98,7 +94,6 @@ const container = css(flex,{
     [WHEN_DESKTOP]: {
         justifyContent: 'space-between'
     }
-
 })
 
 const breakMobile = css({
@@ -108,17 +103,13 @@ const breakMobile = css({
 })
 
 const cookieButtons = css(flex, {
-    flexDirection: 'column-reverse',
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 5,
-    [WHEN_DESKTOP]:{
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    [WHEN_TABLET]:{
-        flexDirection: 'row'
+    paddingLeft: 16,
+    paddingRight: 16,
+    [WHEN_MOBILE]: {
+        flexDirection: 'column-reverse'
     }
 })
 
@@ -131,11 +122,11 @@ const singleButton = css(flex, jost,
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-    height: 33,
-    width: 147,
+    height: 34,
+    width: 148,
     position: 'static',
     fontWeight: 500,
-    borderRadius: 5,
+    borderRadius: 6,
     cursor: 'pointer'
 })
 
@@ -150,27 +141,23 @@ const link = css({
     color: colors.white
 })
 
+
+
 const infoMessageTextPrefix = css(jost,{
-    textAlign: 'center',
+    textAlign: 'start',
     fontStyle: 'normal',
     fontWeight: 500,
-    fontSize: 13,
-    height: 47,
-    left: 12,
-    top: 675,
+    fontSize: 14,
     color: colors.white,
-    [WHEN_DESKTOP]: {
-        textAlign: 'start'
-    },
-    [WHEN_TABLET]: {
-        textAlign: 'start'
+    marginLeft: 16,
+    [WHEN_MOBILE]:{
+        textAlign: 'center',
+        marginLeft: 0
     }
 })
 
 const textDiv = css(flex, {
-    paddingLeft: 14,
-    paddingRight: 14,
-    fontSize: 13,
+    fontSize: 14,
     [WHEN_MOBILE]:{
         maxWidth: 350
     }
