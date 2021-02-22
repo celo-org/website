@@ -21,9 +21,6 @@ import OvalCoin from 'src/shared/OvalCoin'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { colors } from 'src/styles'
 const BlueBanner = dynamic(import('src/header/BlueBanner'), { loading: () => null, ssr: false })
-const CookieConsent = dynamic(
-  (import('src/header/CookieFolder/CookieConsentWithEmotion') as unknown) as Promise<React.ComponentType>
-)
 
 const menuItems = MAIN_MENU
 const mobileMenu = [menu.HOME, ...MAIN_MENU]
@@ -213,7 +210,6 @@ export class Header extends React.PureComponent<Props, State> {
           ]}
         />
 
-        {/* <CookieConsent /> */}
         <Hoverable onHoverIn={this.setHovering} onHoverOut={this.unsetHovering}>
           <View style={[styles.menuContainer, isDesktop && styles.largeMenuContainer]}>
             <Link href={'/'}>
