@@ -95,7 +95,6 @@ const container = css(flex,{
     justifyContent: 'center',
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 20,
     [WHEN_MOBILE]: {
         flexDirection: 'column'
     },
@@ -113,6 +112,9 @@ const breakMobile = css({
 
 const cookieButtons = css(flex, {
     flexDirection: 'column-reverse',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 10,
     [WHEN_DESKTOP]:{
         flexDirection: 'row'
     },
@@ -140,14 +142,27 @@ const link = css({
 })
 
 const infoMessageTextPrefix = css({
-    textAlign: 'start',
+    textAlign: 'center',
     fontWeight: 600,
     fontFamily: 'Jost, futura-pt, futura, sans-serif',
     color: colors.white,
+    [WHEN_DESKTOP]: {
+        textAlign: 'start',
+        marginLeft: 115
+    },
+    [WHEN_TABLET]: {
+        textAlign: 'start',
+        marginLeft: 115
+    }
 })
 
 const textDiv = css(flex,{
-   
+    paddingRight: 14,
+    pddingLeft: 14,
+    [WHEN_DESKTOP]: {
+        padding: 5,
+        margin: 5
+    }
 })
 
 
