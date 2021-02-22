@@ -213,7 +213,7 @@ export class Header extends React.PureComponent<Props, State> {
           ]}
         />
 
-        <CookieConsent />
+        {/* <CookieConsent /> */}
         <Hoverable onHoverIn={this.setHovering} onHoverOut={this.unsetHovering}>
           <View style={[styles.menuContainer, isDesktop && styles.largeMenuContainer]}>
             <Link href={'/'}>

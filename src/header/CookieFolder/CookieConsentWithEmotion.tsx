@@ -84,7 +84,8 @@ const cookieRoot = css(flex,{
     backgroundColor: colors.navyBlue,
     width: '100%',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    zIndex: 20
 })
 
 const container = css(flex,{
@@ -174,6 +175,9 @@ const textDiv = css(flex, {
     paddingLeft: 14,
     paddingRight: 14,
     fontSize: 13,
+    [WHEN_MOBILE]:{
+        maxWidth: 350
+    }
 })
 
 
