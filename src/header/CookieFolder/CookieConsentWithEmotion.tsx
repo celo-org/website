@@ -122,12 +122,11 @@ const cookieButtons = css(flex, {
     }
 })
 
-const singleButton = css(flex,
+const singleButton = css(flex, jost,
     {
     color: colors.white,
     backgroundColor: colors.navyBlue,
     border: colors.navyBlue,
-    fontFamily: 'Jost, futura-pt, futura, sans-serif',
     fontStyle: 'normal',
     alignItems: 'center',
     justifyContent: 'center',
@@ -136,7 +135,8 @@ const singleButton = css(flex,
     width: 147,
     position: 'static',
     fontWeight: 500,
-    borderRadius: 5
+    borderRadius: 5,
+    cursor: 'pointer'
 })
 
 const agreeButton = css(singleButton,{
