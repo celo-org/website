@@ -24,3 +24,7 @@ README.md
 RELEASE.md
 LICENSES.md
 nodemon.json
+
+/src/_page-tests/
+/src/**/*.test.tsx
+/server/**/*.test.ts
