@@ -111,9 +111,20 @@ interface TextChildren {
   listStyle?: ListType
 }
 
-export function Ul(props: ViewProps & ViewChildren) {
+export function Ul(props: TextProps & ViewChildren) {
   return (
     <View style={[styles.ul, StyleSheet.flatten(props.style)]} accessibilityRole={'list'}>
+      {props.children}
+    </View>
+  )
+}
+
+export function Ol(props: ViewProps & ViewChildren) {
+  return (
+    <View
+      style={[styles.ol, StyleSheet.flatten(props.style)]}
+      accessibilityRole={'list'}
+    >
       {props.children}
     </View>
   )
@@ -172,5 +183,10 @@ const styles = StyleSheet.create({
     marginTop: 20,
     paddingLeft: 20,
     listStyle: 'disc',
+  },
+  ol: {
+    marginTop: 20,
+    paddingLeft: 20,
+    listStyle: 'decimal',
   },
 })

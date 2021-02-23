@@ -156,7 +156,7 @@ const data: ValidatorsListData = {
   latestBlock: 10000,
 }
 
-describe('ValidatorsList', () => {
+describe.skip('ValidatorsList', () => {
   beforeEach(() => {
     jest.spyOn(global.Math, 'random').mockReturnValue(0.123456789);
   });

@@ -7,6 +7,11 @@ export const flex = css({
   flexDirection: "column"
 })
 
+export enum colors {
+  white = '#FFFFFF',
+  navyBlue = '#0C74D4'
+}
+
 
 export const jost = css({
   fontFamily: typeFaces.futura
@@ -46,6 +51,7 @@ export const fonts = {
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
 
 export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-width: ${DESKTOP_BREAKPOINT}px)`
+
 
 export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
 
