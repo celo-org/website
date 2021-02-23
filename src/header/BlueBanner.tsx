@@ -104,7 +104,7 @@ async function getAnnouncement(onVisibilityChange: (visible: boolean) => void) {
   visible = announcements.length > 0
   announcement =  announcements[0]
   onVisibilityChange(visible)
-  return {visible, text: announcement.text, link: announcement.text, live: announcement.live}
+  return {visible, text: announcement.text, link: announcement.link, live: announcement.live}
 }
 
 export default function Announcement(props: AnnouncementProps) {
