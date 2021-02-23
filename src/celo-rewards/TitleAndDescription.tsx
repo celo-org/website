@@ -7,7 +7,7 @@ import { P } from "./stylingElements";
 
 interface Props {
   title: string;
-  description: string | React.ReactNode;
+  description?: string | React.ReactNode;
   style?: ViewStyle;
   titleStyle?: any;
   descriptionStyle?: any;
@@ -22,12 +22,12 @@ function TitleAndDescription({
 }: Props) {
   return (
     <GridRow
-      desktopStyle={standardStyles.blockMarginBottom}
-      tabletStyle={standardStyles.blockMarginBottomTablet}
+      desktopStyle={standardStyles.elementalMarginBottom}
+      tabletStyle={standardStyles.elementalMarginBottom}
     >
       <Cell span={Spans.full} style={style}>
         <H1 style={[styles.titleStyle, titleStyle]}>{title}</H1>
-        <P style={descriptionStyle}>{description}</P>
+        {description && <P style={descriptionStyle}>{description}</P>}
       </Cell>
     </GridRow>
   );

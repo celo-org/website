@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic'
 import * as React from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { StyleSheet, Text, View } from 'react-native'
@@ -18,8 +17,6 @@ import Apple from 'src/icons/Apple'
 import { colors, fonts, standardStyles, textStyles } from 'src/styles'
 import { Radio } from 'src/table/table'
 import subscribeRequest from '../../server/FirebaseClient'
-// @ts-ignore
-const PhoneInput = dynamic(() => import('src/fauceting/PhoneInput'))
 
 interface State {
   beneficiary: string
@@ -140,7 +137,6 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
     const isInvalid = requestState === RequestState.Invalid
     return (
       <View style={standardStyles.elementalMargin}>
-        {this.isFaucet() ? (
           <TextInput
             type={'text'}
             focusStyle={standardStyles.inputFocused}
@@ -153,9 +149,6 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
             onChange={this.setAddress}
             value={this.state.beneficiary}
           />
-        ) : (
-          <PhoneInput onChangeNumber={this.setNumber} />
-        )}
         <ContextualInfo
           requestState={this.state.requestState}
           t={this.props.t}
