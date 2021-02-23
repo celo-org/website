@@ -74,15 +74,15 @@ const cellStyle = {
 
 export function Cell(props: CellProps) {
   const cellCss = React.useMemo(() => css(cellStyle.base, cellStyle.mobile, cellStyle[props.mobileSpan],
-    {
-      [WHEN_TABLET]: {
-          ...cellStyle[props.span],
-          ...cellStyle[props.tabletSpan]
-      },
-      [WHEN_DESKTOP]: {
-        ...cellStyle[props.span]
+      {
+        [WHEN_TABLET]: css(
+            cellStyle[props.span],
+            cellStyle[props.tabletSpan]
+        ),
+        [WHEN_DESKTOP]: css(
+          cellStyle[props.span]
+        )
       }
-    }
   ), [props.mobileSpan, props.span, props.tabletSpan])
 
   return (
