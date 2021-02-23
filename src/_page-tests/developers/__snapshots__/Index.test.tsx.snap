@@ -3809,37 +3809,49 @@ Build dApps for the Celo platform.
           }
         >
           <div
-            className="css-q7lffx"
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "display": "block",
+                "overflowX": "hidden",
+                "overflowY": "hidden",
+                "width": "60px",
+              }
+            }
           >
             <div
-              className="css-view-1dbjc4n"
               style={
                 Object {
                   "display": "block",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "60px",
+                  "paddingBottom": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              style={
+                Object {
+                  "bottom": "0px",
+                  "height": "100%",
+                  "left": "0px",
+                  "position": "absolute",
+                  "top": "0px",
+                  "width": "100%",
                 }
               }
             >
               <div
+                className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "display": "block",
-                    "paddingBottom": "100%",
-                    "width": "100%",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "bottom": "0px",
+                    "WebkitFlexBasis": "auto",
+                    "flexBasis": "auto",
                     "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "top": "0px",
+                    "msFlexPreferredSize": "auto",
+                    "overflowX": "hidden",
+                    "overflowY": "hidden",
                     "width": "100%",
+                    "zIndex": 0,
                   }
                 }
               >
@@ -3847,37 +3859,21 @@ Build dApps for the Celo platform.
                   className="css-view-1dbjc4n"
                   style={
                     Object {
-                      "WebkitFlexBasis": "auto",
-                      "flexBasis": "auto",
+                      "backgroundColor": "rgba(0,0,0,0.00)",
+                      "backgroundPosition": "center",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": "0px",
                       "height": "100%",
-                      "msFlexPreferredSize": "auto",
-                      "overflowX": "hidden",
-                      "overflowY": "hidden",
+                      "left": "0px",
+                      "position": "absolute",
+                      "right": "0px",
+                      "top": "0px",
                       "width": "100%",
-                      "zIndex": 0,
+                      "zIndex": -1,
                     }
                   }
-                >
-                  <div
-                    className="css-view-1dbjc4n"
-                    style={
-                      Object {
-                        "backgroundColor": "rgba(0,0,0,0.00)",
-                        "backgroundPosition": "center",
-                        "backgroundRepeat": "no-repeat",
-                        "backgroundSize": "cover",
-                        "bottom": "0px",
-                        "height": "100%",
-                        "left": "0px",
-                        "position": "absolute",
-                        "right": "0px",
-                        "top": "0px",
-                        "width": "100%",
-                        "zIndex": -1,
-                      }
-                    }
-                  />
-                </div>
+                />
               </div>
             </div>
           </div>
@@ -4060,37 +4056,49 @@ Build dApps for the Celo platform.
           }
         >
           <div
-            className="css-q7lffx"
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "display": "block",
+                "overflowX": "hidden",
+                "overflowY": "hidden",
+                "width": "60px",
+              }
+            }
           >
             <div
-              className="css-view-1dbjc4n"
               style={
                 Object {
                   "display": "block",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "60px",
+                  "paddingBottom": "100%",
+                  "width": "100%",
+                }
+              }
+            />
+            <div
+              style={
+                Object {
+                  "bottom": "0px",
+                  "height": "100%",
+                  "left": "0px",
+                  "position": "absolute",
+                  "top": "0px",
+                  "width": "100%",
                 }
               }
             >
               <div
+                className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "display": "block",
-                    "paddingBottom": "100%",
-                    "width": "100%",
-                  }
-                }
-              />
-              <div
-                style={
-                  Object {
-                    "bottom": "0px",
+                    "WebkitFlexBasis": "auto",
+                    "flexBasis": "auto",
                     "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "top": "0px",
+                    "msFlexPreferredSize": "auto",
+                    "overflowX": "hidden",
+                    "overflowY": "hidden",
                     "width": "100%",
+                    "zIndex": 0,
                   }
                 }
               >
@@ -4098,37 +4106,21 @@ Build dApps for the Celo platform.
                   className="css-view-1dbjc4n"
                   style={
                     Object {
-                      "WebkitFlexBasis": "auto",
-                      "flexBasis": "auto",
+                      "backgroundColor": "rgba(0,0,0,0.00)",
+                      "backgroundPosition": "center",
+                      "backgroundRepeat": "no-repeat",
+                      "backgroundSize": "cover",
+                      "bottom": "0px",
                       "height": "100%",
-                      "msFlexPreferredSize": "auto",
-                      "overflowX": "hidden",
-                      "overflowY": "hidden",
+                      "left": "0px",
+                      "position": "absolute",
+                      "right": "0px",
+                      "top": "0px",
                       "width": "100%",
-                      "zIndex": 0,
+                      "zIndex": -1,
                     }
                   }
-                >
-                  <div
-                    className="css-view-1dbjc4n"
-                    style={
-                      Object {
-                        "backgroundColor": "rgba(0,0,0,0.00)",
-                        "backgroundPosition": "center",
-                        "backgroundRepeat": "no-repeat",
-                        "backgroundSize": "cover",
-                        "bottom": "0px",
-                        "height": "100%",
-                        "left": "0px",
-                        "position": "absolute",
-                        "right": "0px",
-                        "top": "0px",
-                        "width": "100%",
-                        "zIndex": -1,
-                      }
-                    }
-                  />
-                </div>
+                />
               </div>
             </div>
           </div>

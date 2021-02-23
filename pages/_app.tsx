@@ -1,5 +1,6 @@
 import App from 'next/app'
 import getConfig from 'next/config'
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import * as React from 'react'
 import { View } from 'react-native'
@@ -14,6 +15,7 @@ import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { getSentry, initSentry } from 'src/utils/sentry'
 import { appWithTranslation } from '../src/i18n'
 
+const CookieConsent = dynamic((import('src/header/CookieFolder/CookieConsentWithEmotion')))
 class MyApp extends App {
   async componentDidMount() {
     if (window.location.hash) {
@@ -76,6 +78,7 @@ class MyApp extends App {
               <Footer />
             </View>
           )}
+          <CookieConsent />
         </ScreenSizeProvider>
       </>
     )
