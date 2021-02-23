@@ -20,9 +20,6 @@ import OvalCoin from 'src/shared/OvalCoin'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { colors } from 'src/styles'
 const BlueBanner = dynamic(import('src/header/BlueBanner'), { loading: () => null, ssr: false })
-const CookieConsent = dynamic(
-  (import('src/header/CookieConsent') as unknown) as Promise<React.ComponentType>
-)
 
 const menuItems = MAIN_MENU
 const mobileMenu = [menu.HOME, ...MAIN_MENU]
@@ -171,7 +168,6 @@ function useMobileMenu(): [boolean, () => void] {
         {isHomePage && (
           <BlueBanner onVisibilityChange={toggleBanner} />
         )}
-        <CookieConsent />
         <div css={css(styles.menuContainer,styles.background,
           backgroundColor,
           styles.fadeTransition,

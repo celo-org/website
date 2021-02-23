@@ -11,30 +11,57 @@ import { ScreenSizeProvider } from 'src/layout/ScreenSize'
 import Footer from 'src/shared/Footer'
 import pagePaths from 'src/shared/menu-items'
 import Progress from 'src/shared/Progress'
+import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { getSentry, initSentry } from 'src/utils/sentry'
 import { appWithTranslation } from '../src/i18n'
-
+const SECOND = 1000
 const CookieConsent = dynamic((import('src/header/CookieFolder/CookieConsentWithEmotion')))
+
 class MyApp extends App {
+  state = {
+    showConsent: false
+}
+
+  onAgree = async () =>{
+      await agree()
+      this.setState({
+          showConsent: false
+      })
+      await initSentry()
+  }
+
+  onDisagree = () => {
+      disagree()
+      this.setState({
+          showConsent: false
+      })
+  }
   async componentDidMount() {
     if (window.location.hash) {
       hashScroller(window.location.hash)
     }
-
     window.addEventListener('hashchange', () => hashScroller(window.location.hash))
 
-    if (getConfig().publicRuntimeConfig.FLAGS.ENV === 'development') {
-      checkH1Count()
-    }
+    setTimeout(async () => {
+      this.setState({
+        showConsent: await showVisitorCookieConsent()
+      })
+    }, SECOND * 5)
+
     await initializeAnalytics()
     await analytics.page()
     if (await canTrack()) {
       await initSentry()
     }
+
     this.props.router.events.on('routeChangeComplete', async () => {
       await analytics.page()
     })
+
+    if (getConfig().publicRuntimeConfig.FLAGS.ENV === 'development') {
+      checkH1Count()
+    }
   }
 
   // there are a few pages we dont want the header on
@@ -78,7 +105,7 @@ class MyApp extends App {
               <Footer />
             </View>
           )}
-          <CookieConsent />
+          {this.state.showConsent && <CookieConsent onAgree={this.onAgree} onDisagree={this.onDisagree} />}
         </ScreenSizeProvider>
       </>
     )
