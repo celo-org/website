@@ -91,10 +91,11 @@ export function withScreenSize<T>(
 }
 
 export function useScreenSize() {
-  const { screen, bannerHeight } = React.useContext(ScreenSizeContext)
+  const { screen, bannerHeight, setBannerHeight } = React.useContext(ScreenSizeContext)
   return {
     bannerHeight,
     screen,
+    setBannerHeight,
     isMobile: screen === ScreenSizes.MOBILE,
     isDesktop: screen === ScreenSizes.DESKTOP,
     isTablet: screen === ScreenSizes.TABLET,
