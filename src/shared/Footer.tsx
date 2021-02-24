@@ -13,6 +13,7 @@ import sendCoinIcon from 'src/icons/send-green-coin-lg-bg.png'
 import LinkedIn from 'src/icons/LinkedIn'
 import Twitch from 'src/icons/Twitch'
 import Reddit from 'src/icons/Reddit'
+import Telegram from 'src/icons/Telegram'
 import { TweetLogo } from 'src/icons/TwitterLogo'
 import YouTube from 'src/icons/YouTube'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
@@ -101,6 +102,11 @@ const SOCIAL_MENU = [
     name: 'Reddit',
     link: CeloLinks.reddit,
     icon: <Reddit size={ICON_SIZE} color={colors.dark}/>
+  },
+  {
+    name: 'Telegram',
+    link: CeloLinks.telegram,
+    icon: <Telegram size={ICON_SIZE} color={colors.dark}/>
   }
 ]
 
