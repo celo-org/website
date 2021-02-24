@@ -10,6 +10,7 @@ import MediumLogo from 'src/icons/MediumLogo'
 import Octocat from 'src/icons/Octocat'
 import DefiPulse from 'src/icons/DefiPulse'
 import sendCoinIcon from 'src/icons/send-green-coin-lg-bg.png'
+import LinkedIn from 'src/icons/LinkedIn'
 import { TweetLogo } from 'src/icons/TwitterLogo'
 import YouTube from 'src/icons/YouTube'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
@@ -74,8 +75,20 @@ const SOCIAL_MENU = [
     link: CeloLinks.youtube,
     icon: <YouTube size={ICON_SIZE} color={colors.dark} />,
   },
-  { name: 'Instagram', link: CeloLinks.instagram, icon: <Instagram size={ICON_SIZE} /> },
-  { name: 'Defi Pulse' , link: CeloLinks.defiPulse, icon: <DefiPulse size={ICON_SIZE} color={colors.dark}/>},
+  { 
+    name: 'Instagram', 
+    link: CeloLinks.instagram, 
+    icon: <Instagram size={ICON_SIZE} />
+  },
+  { 
+    name: 'Defi Pulse',
+    link: CeloLinks.defiPulse,
+    icon: <DefiPulse size={ICON_SIZE} color={colors.dark}/>
+  },
+  { name: 'LinkedIn',
+    link: CeloLinks.linkedIn,
+    icon: <LinkedIn size={ICON_SIZE} color={colors.dark}/>
+  }
 ]
 
 interface Props {
