@@ -20,8 +20,7 @@
     }
   },
   "availableOnAndroid": "Available today for Android",
-  "haveAccount": "Already have an Alfajores testnet account?",
-  "useSeed": "Use your seed phrase to import your account into the Celo Developer Wallet.",
+  "needRealWallet": "Not a Developer?\nCheck out these wallets for everyday use.",
   "learnMore": "Learn More",
   "downloadDirect": "Get the Celo Developer Wallet"
 }

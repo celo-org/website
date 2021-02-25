@@ -118,12 +118,12 @@ export default function Footer({ hideForm }: Props) {
   const { t } = useTranslation(NameSpaces.common)
   const { isMobile, isTablet } = useScreenSize()
   const year = new Date().getFullYear()
-  const footerMenu = MENU.map((item) => {
+const footerMenu = React.useMemo(() => MENU.map((item) => {
     return {
       name: t(`footer.${item.name}`),
       link: item.link 
     }
-  })
+  }),[t] )
   return (
     <>
       {!hideForm && (
