@@ -14,7 +14,6 @@ import { RequestType } from '../src/fauceting/FaucetInterfaces'
 import { create } from './Alliance'
 import latestAnnouncements from './Announcement'
 import { faucetOrInviteController } from './controllers'
-import getFormattedEvents from './EventHelpers'
 import { submitFellowApp } from './FellowshipApp'
 import rateLimit from './rateLimit'
 import respondError from './respondError'
@@ -261,15 +260,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     try {
       await create(req.body)
       res.sendStatus(CREATED)
-    } catch (e) {
-      respondError(res, e)
-    }
-  })
-
-  server.get('/proxy/events/', async (_, res) => {
-    try {
-      const events = await getFormattedEvents()
-      res.json(events)
     } catch (e) {
       respondError(res, e)
     }

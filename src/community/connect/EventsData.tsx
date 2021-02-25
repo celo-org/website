@@ -1,8 +1,8 @@
 import * as React from 'react'
 import Events from 'src/community/connect/Events'
 
-export async function getEvents() {
-  const res = await fetch('/proxy/events', {
+export async function getEvents(query: string) {
+  const res = await fetch(`/api/events?${query}`, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -15,7 +15,7 @@ export default class EventData extends React.PureComponent {
   state = { upcomingEvents: [], topEvent: null, loaded: false }
 
   componentDidMount = async () => {
-    const { upcomingEvents, topEvent } = await getEvents()
+    const { upcomingEvents, topEvent } = await getEvents("upcoming=true")
     if (upcomingEvents && topEvent) {
       this.setState({ upcomingEvents, topEvent, loaded: true })
     }
