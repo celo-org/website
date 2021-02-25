@@ -166,7 +166,7 @@ export default function Footer({ hideForm }: Props) {
         </Cell>
         <Cell span={Spans.twoThird} tabletSpan={Spans.full}>
           {isMobile ? (
-            <MobileLinks />
+            <MobileLinks footerMenu={footerMenu} />
           ) : (
             <View style={isTablet ? styles.linksAreaTablet : styles.linksArea}>
               <FooterColumn style={styles.linkColumnStart} heading={'Celo'} links={footerMenu} />
@@ -199,12 +199,13 @@ export default function Footer({ hideForm }: Props) {
   )
 }
 
-function MobileLinks() {
+function MobileLinks({footerMenu}) {
   const { t } = useTranslation(NameSpaces.common)
+ 
   return (
     <>
       <View style={standardStyles.row}>
-        <FooterColumn heading={'Celo'} links={MENU} />
+        <FooterColumn heading={'Celo'} links={footerMenu} />
         <FooterColumn
           heading={t('footer.social')}
           links={SOCIAL_MENU}
