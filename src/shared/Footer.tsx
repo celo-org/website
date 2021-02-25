@@ -118,6 +118,12 @@ export default function Footer({ hideForm }: Props) {
   const { t } = useTranslation(NameSpaces.common)
   const { isMobile, isTablet } = useScreenSize()
   const year = new Date().getFullYear()
+const footerMenu = React.useMemo(() => MENU.map((item) => {
+    return {
+      name: t(`footer.${item.name}`),
+      link: item.link 
+    }
+  }),[t] )
   return (
     <>
       {!hideForm && (
@@ -160,10 +166,10 @@ export default function Footer({ hideForm }: Props) {
         </Cell>
         <Cell span={Spans.twoThird} tabletSpan={Spans.full}>
           {isMobile ? (
-            <MobileLinks />
+            <MobileLinks footerMenu={footerMenu} />
           ) : (
             <View style={isTablet ? styles.linksAreaTablet : styles.linksArea}>
-              <FooterColumn style={styles.linkColumnStart} heading={'Celo'} links={MENU} />
+              <FooterColumn style={styles.linkColumnStart} heading={'Celo'} links={footerMenu} />
               <FooterColumn heading={t('footer.technology')} links={TECH_MENU} />
               <FooterColumn heading={t('footer.resources')} links={RESOURCE_MENU} />
               <FooterColumn
@@ -193,12 +199,13 @@ export default function Footer({ hideForm }: Props) {
   )
 }
 
-function MobileLinks() {
+function MobileLinks({footerMenu}) {
   const { t } = useTranslation(NameSpaces.common)
+ 
   return (
     <>
       <View style={standardStyles.row}>
-        <FooterColumn heading={'Celo'} links={MENU} />
+        <FooterColumn heading={'Celo'} links={footerMenu} />
         <FooterColumn
           heading={t('footer.social')}
           links={SOCIAL_MENU}
