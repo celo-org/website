@@ -2,7 +2,6 @@ import getConfig from 'next/config'
 import { EventProps } from '../fullstack/EventProps'
 import airtableInit from '../server/airtable'
 import Sentry from '../server/sentry'
-import { abort } from '../src/utils/abortableFetch'
 import cache from './cache'
 const TABLE_NAME = 'All Events'
 // Intermediate step Event With all String Values
@@ -57,26 +56,35 @@ export interface RawAirTableEvent {
   'Description of Event': string
 }
 
-export default async function getFormattedEvents() {
-  const eventData = await Promise.race([
-    cache('events-list-at', fetchEventsFromAirtable),
-    abort('Events from Airtable', 2000),
-  ])
+export default async function getFormattedEvents(isFuture: boolean) {
+  const eventData = await cache(`events-list-${isFuture? "future": "past"}`, () => fetchEventsFromAirtable(isFuture))
   return splitEvents(normalizeEvents(eventData as RawAirTableEvent[]))
 }
 
-async function fetchEventsFromAirtable() {
+const PROCESS_FILTER =`OR(Process="Complete", Process="Scheduled", Process="Conference, Speaking", Process="This Week")`
+
+function filterFormula(isFuture: boolean) {
+  const dateFilter = isFuture? "IS_AFTER" : "IS_BEFORE"
+  const days = isFuture? "-2" : "1"
+  const START_DATE_FILTER = `${dateFilter}({Start Date}, DATEADD(TODAY(), ${days}, "days"))`
+  const END_DATE_FILTER = `OR(BLANK({Start Date}),${dateFilter}({End Date}, DATEADD(TODAY(), ${days}, "days")))`
+  const DATE_FILTER = `OR(${START_DATE_FILTER}, ${END_DATE_FILTER})`
+  return `AND(${DATE_FILTER},${PROCESS_FILTER})`
+}
+
+async function fetchEventsFromAirtable(isFuture: boolean) {
   try {
     const records = await getAirtable()
       .select({
-        filterByFormula:
-          'OR(Process="Complete", Process="Scheduled", Process="Conference, Speaking", Process="This Week")',
+        filterByFormula:filterFormula(isFuture),
         sort: [{ field: 'Start Date', direction: 'desc' }],
       })
       .firstPage()
     return records.map((record) => record.fields)
   } catch (error) {
+    console.error(error)
     Sentry.captureEvent(error)
+    return []
   }
 }
 
@@ -108,8 +116,7 @@ export function splitEvents(normalizedEvents: EventProps[]): State {
   const pastEvents = []
 
   normalizedEvents.forEach((event: EventProps) => {
-    const willHappen = parseDate(event.startDate).valueOf() > today
-
+    const willHappen = parseDate(event.startDate).valueOf() > today || event.endDate &&  parseDate(event.endDate).valueOf() > today
     if (willHappen) {
       upcomingEvents.unshift(event)
     } else {

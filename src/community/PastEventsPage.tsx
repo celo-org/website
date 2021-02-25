@@ -12,6 +12,7 @@ const preview = require('src/community/connect/preview.jpg')
 interface State {
   pastEvents: EventProps[]
   loading: boolean
+  error: boolean
 }
 
 export default class PastEventsPage extends React.PureComponent<{}, State> {
@@ -19,14 +20,27 @@ export default class PastEventsPage extends React.PureComponent<{}, State> {
     return { namespacesRequired: [NameSpaces.common, NameSpaces.community] }
   }
 
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
   state = {
+    error: false,
     loading: true,
     pastEvents: [],
   }
 
   async componentDidMount() {
-    const { pastEvents } = await getEvents()
-    this.setState({ pastEvents, loading: false })
+    const { pastEvents } = await getEvents("upcoming=false")
+    if (pastEvents?.length ) {
+      this.setState({ pastEvents, loading: false })
+    } else {
+      this.setState({loading: false , error: true})
+    }
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.warn(error, errorInfo)
   }
 
   render() {
@@ -38,7 +52,7 @@ export default class PastEventsPage extends React.PureComponent<{}, State> {
           description="List of past Celo community events around the world. Join the conversation and our community. Diverse perspectives and inclusive conversations welcomed."
           image={preview}
         />
-        <Events pastEvents={this.state.pastEvents} loading={this.state.loading} />
+        <Events pastEvents={this.state.error? []: this.state.pastEvents} loading={this.state.loading} />
       </View>
     )
   }
