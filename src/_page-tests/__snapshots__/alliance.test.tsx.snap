@@ -6647,14 +6647,9 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -6706,14 +6701,9 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -6765,14 +6755,9 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>

@@ -2166,14 +2166,9 @@ We believe that many of these features have great potential for positive impact,
                 }
               }
             >
-              <span
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              />
+              <span>
+                ...
+              </span>
             </div>
           </div>
         </div>
@@ -2450,14 +2445,9 @@ We believe that many of these features have great potential for positive impact,
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -2509,14 +2499,9 @@ We believe that many of these features have great potential for positive impact,
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -2568,14 +2553,9 @@ We believe that many of these features have great potential for positive impact,
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>

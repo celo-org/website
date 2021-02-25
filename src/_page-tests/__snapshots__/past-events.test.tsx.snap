@@ -454,14 +454,9 @@ exports[`PastEventsPage renders 1`] = `
                 }
               }
             >
-              <span
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              />
+              <span>
+                ...
+              </span>
             </div>
           </div>
         </div>
