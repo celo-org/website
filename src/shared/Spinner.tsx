@@ -1,6 +1,7 @@
+import dynamic from 'next/dynamic'
 import * as React from 'react'
 import { StyleSheet, View } from 'react-native'
-import LottieBase from 'src/animate/LottieBase'
+const  LottieBase  = dynamic(import('src/animate/LottieBase'), {loading: () => <span>...</span>, ssr: false })
 import { colors } from 'src/styles'
 interface Props {
   color: colors.white | colors.dark | colors.primary

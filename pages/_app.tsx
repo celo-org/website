@@ -4,17 +4,16 @@ import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import * as React from 'react'
 import { View } from 'react-native'
-import scrollIntoView from 'scroll-into-view'
-import analytics, { canTrack, agree, disagree, initializeAnalytics, showVisitorCookieConsent } from 'src/analytics/analytics'
 import Navigation from 'src/header/Navigation'
 import { ScreenSizeProvider } from 'src/layout/ScreenSize'
 import Footer from 'src/shared/Footer'
 import pagePaths from 'src/shared/menu-items'
-import Progress from 'src/shared/Progress'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { getSentry, initSentry } from 'src/utils/sentry'
 import { appWithTranslation } from '../src/i18n'
 const SECOND = 1000
+const Progress = dynamic((import('src/shared/Progress')))
+
 const CookieConsent = dynamic((import('src/header/CookieFolder/CookieConsentWithEmotion')))
 
 class MyApp extends App {
@@ -22,21 +21,20 @@ class MyApp extends App {
     showConsent: false
 }
 
-  onAgree = async () =>{
-      await agree()
-      this.setState({
-          showConsent: false
-      })
-      await initSentry()
+  onAgree = async () => {
+    this.setState({showConsent: false})
+    const agree = await import('src/analytics/analytics').then(mod => mod.agree)
+    await agree()
+    await initSentry()
   }
 
-  onDisagree = () => {
+  onDisagree = async() => {
+      this.setState({showConsent: false})
+      const disagree = await import('src/analytics/analytics').then(mod => mod.disagree)
       disagree()
-      this.setState({
-          showConsent: false
-      })
   }
   async componentDidMount() {
+    const analyticsModule = await import('src/analytics/analytics')
     if (window.location.hash) {
       hashScroller(window.location.hash)
     }
@@ -44,21 +42,22 @@ class MyApp extends App {
 
     setTimeout(async () => {
       this.setState({
-        showConsent: await showVisitorCookieConsent()
+        showConsent: await analyticsModule.showVisitorCookieConsent()
       })
     }, SECOND * 5)
 
-    await initializeAnalytics()
-    await analytics.page()
-    if (await canTrack()) {
+    await analyticsModule.initializeAnalytics()
+    await analyticsModule.default.page()
+    if (await analyticsModule.canTrack()) {
       await initSentry()
     }
 
     this.props.router.events.on('routeChangeComplete', async () => {
-      await analytics.page()
+      await analyticsModule.default.page()
     })
 
     if (getConfig().publicRuntimeConfig.FLAGS.ENV === 'development') {
+      const { checkH1Count } = await import('src/shared/checkH1Count')
       checkH1Count()
     }
   }
@@ -113,19 +112,8 @@ class MyApp extends App {
 
 export default appWithTranslation(MyApp)
 
-function checkH1Count() {
-  setTimeout(() => {
-    if (document.getElementsByTagName('h1').length > 1) {
-      console.warn(
-        'To many h1 tags on page. This decreases search rank, please limit to 1 per page',
-        Array.from(document.getElementsByTagName('h1')).map((el) => el.innerText)
-      )
-    }
-  }, 500)
-}
-
-function hashScroller(id: string) {
+async function hashScroller(id: string) {
   const element = document.getElementById(id.replace('#', ''))
-
+  const scrollIntoView = await  import('scroll-into-view').then(mod => mod.default)
   scrollIntoView(element, { time: 100, align: { top: 0, topOffset: HEADER_HEIGHT + 100 } })
 }
