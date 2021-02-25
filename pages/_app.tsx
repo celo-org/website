@@ -43,7 +43,7 @@ class MyApp extends App {
   async componentDidMount() {
     const analyticsModule = await import('src/analytics/analytics')
     if (window.location.hash) {
-      hashScroller(window.location.hash)
+      await hashScroller(window.location.hash)
     }
     window.addEventListener('hashchange', () => hashScroller(window.location.hash))
 
