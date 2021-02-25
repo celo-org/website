@@ -237,6 +237,9 @@ export enum CeloLinks {
   confirmNumber = 'https://valoraapp.com/support/get-started-with-valora#phone-number-confirmation',
   communityFund = 'https://docs.celo.org/celo-codebase/protocol/proof-of-stake/epoch-rewards/community-fund',
   celoRewardsDiscussion = 'https://forum.celo.org/t/governance-proposal-to-reward-early-users/662/42',
+  twitch = 'https://www.twitch.tv/celoorg',
+  reddit = 'https://www.reddit.com/r/celo/',
+  telegram = 'https://t.me/celoplatform'
 }
 
 export const languageOptions = {
