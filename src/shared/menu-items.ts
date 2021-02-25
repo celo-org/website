@@ -122,7 +122,7 @@ export const pagePaths = {
     isDark: false,
   },
   JOBS: {
-    name: 'Careers',
+    name: 'Join',
     link: '/jobs',
     isDark: false,
   },

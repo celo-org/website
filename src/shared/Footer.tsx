@@ -118,6 +118,12 @@ export default function Footer({ hideForm }: Props) {
   const { t } = useTranslation(NameSpaces.common)
   const { isMobile, isTablet } = useScreenSize()
   const year = new Date().getFullYear()
+  const footerMenu = MENU.map((item) => {
+    return {
+      name: t(`footer.${item.name}`),
+      link: item.link 
+    }
+  })
   return (
     <>
       {!hideForm && (
@@ -163,7 +169,7 @@ export default function Footer({ hideForm }: Props) {
             <MobileLinks />
           ) : (
             <View style={isTablet ? styles.linksAreaTablet : styles.linksArea}>
-              <FooterColumn style={styles.linkColumnStart} heading={'Celo'} links={MENU} />
+              <FooterColumn style={styles.linkColumnStart} heading={'Celo'} links={footerMenu} />
               <FooterColumn heading={t('footer.technology')} links={TECH_MENU} />
               <FooterColumn heading={t('footer.resources')} links={RESOURCE_MENU} />
               <FooterColumn

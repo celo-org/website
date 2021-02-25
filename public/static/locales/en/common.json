@@ -25,7 +25,14 @@
     "technology": "Technology",
     "resources": "Resources",
     "social": "Social",
-    "copyright": "The Celo Foundation, © Celo {{year}}"
+    "copyright": "The Celo Foundation, © Celo {{year}}", 
+    "Home": "Home",
+    "About": "About",
+    "Join": "Careers",
+    "Validators": "Validators",
+    "Developers": "Developers",
+    "Alliance": "Alliance",
+    "Community": "Community"
   },
   "channels": {
     "brand": {
