@@ -8297,6 +8297,318 @@ Please use the full-color logo whenever possible.
                 </a>
               </div>
             </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "marginBottom": "8px",
+                  "marginTop": "8px",
+                }
+              }
+            >
+              <div
+                className="css-view-1dbjc4n"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                style={
+                  Object {
+                    "display": "inline",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  data-focusable={true}
+                  dir="auto"
+                  href="https://www.linkedin.com/company/celoOrg"
+                  onClick={[Function]}
+                  rel=" noopener noreferrer"
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "WebkitTextDecorationStyle": "solid",
+                      "alignItems": "center",
+                      "color": "rgba(46,51,56,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontSize": "16px",
+                      "lineHeight": "20px",
+                      "msFlexAlign": "center",
+                      "opacity": 1,
+                      "textDecoration": "none",
+                      "textDecorationStyle": "solid",
+                      "textRendering": "geometricPrecision",
+                    }
+                  }
+                  target="_blank"
+                >
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "paddingRight": "8px",
+                      }
+                    }
+                  >
+                    <svg
+                      fill="none"
+                      height={13}
+                      style={Object {}}
+                      viewBox="0 0 40 46"
+                      width={13}
+                    >
+                      <path
+                        d="M37.4471 40C25.8157 40 14.1843 40 2.55293 40C2.52179 39.9813 2.49066 39.9533 2.45953 39.944C0.837484 39.5708 0 38.5257 0 36.8678C0 25.5863 0 14.3017 0 3.02022C0 1.26905 1.25778 0.00622084 3.00436 0C4.0878 0 5.17123 0 6.25467 0C16.5037 0 26.7497 0 36.9988 0C38.6986 0 40 1.25661 40 2.90824C40.0031 14.3017 40.0031 25.6983 40 37.0918C40 38.1742 39.505 39.0078 38.5834 39.5552C38.2379 39.7605 37.8269 39.8569 37.4471 40ZM15.6196 15.0264C15.6196 21.3686 15.6196 27.689 15.6196 34.0124C17.5934 34.0124 19.5423 34.0124 21.5193 34.0124C21.5193 33.8383 21.5193 33.689 21.5193 33.5428C21.5193 30.4946 21.5162 27.4463 21.5224 24.3981C21.5224 23.9036 21.5535 23.4028 21.6127 22.9114C21.8587 20.8367 22.9234 19.832 24.9626 19.7232C26.4695 19.6423 27.5218 20.3608 27.8798 21.832C28.0635 22.5848 28.1507 23.3779 28.1569 24.1555C28.188 27.3033 28.1694 30.451 28.1694 33.5988C28.1694 33.7418 28.1694 33.8849 28.1694 34.0187C30.1681 34.0187 32.1046 34.0187 34.0567 34.0187C34.0629 33.9191 34.0691 33.8476 34.0691 33.776C34.0753 30.367 34.0878 26.958 34.0785 23.549C34.0753 22.0062 33.9851 20.4697 33.5616 18.9705C32.9795 16.9238 31.7746 15.4463 29.6638 14.8927C28.8076 14.6687 27.8985 14.5785 27.0112 14.5505C24.6171 14.4728 22.7615 15.4806 21.4477 17.4837C21.4166 17.5334 21.4103 17.5988 21.3917 17.6579C21.345 17.6299 21.2983 17.605 21.2516 17.577C21.2516 16.7309 21.2516 15.8818 21.2516 15.0295C19.3462 15.0264 17.4969 15.0264 15.6196 15.0264ZM5.95268 15.0295C5.95268 21.3686 5.95268 27.6921 5.95268 34.0156C7.92653 34.0156 9.87547 34.0156 11.8306 34.0156C11.8306 27.6765 11.8306 21.3655 11.8306 15.0295C9.86613 15.0295 7.91719 15.0295 5.95268 15.0295ZM5.467 8.96112C5.47011 10.8274 7.02055 12.3795 8.88854 12.3826C10.7814 12.3857 12.3288 10.8398 12.3288 8.94557C12.3288 7.05754 10.7752 5.521 8.87298 5.52722C7.00809 5.53033 5.46389 7.08554 5.467 8.96112Z"
+                        fill="#2E3338"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </div>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "marginBottom": "8px",
+                  "marginTop": "8px",
+                }
+              }
+            >
+              <div
+                className="css-view-1dbjc4n"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                style={
+                  Object {
+                    "display": "inline",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  data-focusable={true}
+                  dir="auto"
+                  href="https://www.twitch.tv/celoorg"
+                  onClick={[Function]}
+                  rel=" noopener noreferrer"
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "WebkitTextDecorationStyle": "solid",
+                      "alignItems": "center",
+                      "color": "rgba(46,51,56,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontSize": "16px",
+                      "lineHeight": "20px",
+                      "msFlexAlign": "center",
+                      "opacity": 1,
+                      "textDecoration": "none",
+                      "textDecorationStyle": "solid",
+                      "textRendering": "geometricPrecision",
+                    }
+                  }
+                  target="_blank"
+                >
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "paddingRight": "8px",
+                      }
+                    }
+                  >
+                    <svg
+                      fill="none"
+                      height={13}
+                      style={Object {}}
+                      viewBox="0 0 15 16"
+                      width={13}
+                    >
+                      <path
+                        d="M1.17999 0.521484L0.20459 3.12262V13.5259H3.77938V15.4777H5.73107L7.68081 13.5259H10.6062L14.5076 9.62594V0.521484H1.17999ZM2.47948 1.82123H13.2076V8.97435L10.9314 11.2506H7.35611L5.40692 13.1997V11.2506H2.47948V1.82123ZM6.05571 8.32493H7.3561V4.42375H6.05571V8.32493ZM9.63129 8.32493H10.9314V4.42375H9.63129V8.32493Z"
+                        fill="#2E3338"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </div>
+                  Twitch
+                </a>
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "marginBottom": "8px",
+                  "marginTop": "8px",
+                }
+              }
+            >
+              <div
+                className="css-view-1dbjc4n"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                style={
+                  Object {
+                    "display": "inline",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  data-focusable={true}
+                  dir="auto"
+                  href="https://www.reddit.com/r/celo"
+                  onClick={[Function]}
+                  rel=" noopener noreferrer"
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "WebkitTextDecorationStyle": "solid",
+                      "alignItems": "center",
+                      "color": "rgba(46,51,56,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontSize": "16px",
+                      "lineHeight": "20px",
+                      "msFlexAlign": "center",
+                      "opacity": 1,
+                      "textDecoration": "none",
+                      "textDecorationStyle": "solid",
+                      "textRendering": "geometricPrecision",
+                    }
+                  }
+                  target="_blank"
+                >
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "paddingRight": "8px",
+                      }
+                    }
+                  >
+                    <svg
+                      fill="none"
+                      height={13}
+                      style={Object {}}
+                      viewBox="0 0 16 15"
+                      width={13}
+                    >
+                      <path
+                        d="M9.75471 9.5925C9.80783 9.645 9.80783 9.73063 9.75471 9.78375C9.46408 10.0725 9.00846 10.2131 8.36033 10.2131L8.35533 10.2119L8.35033 10.2131C7.70283 10.2131 7.24658 10.0725 6.95596 9.78312C6.90283 9.73062 6.90283 9.645 6.95596 9.5925C7.00846 9.54 7.09471 9.54 7.14783 9.5925C7.38471 9.82812 7.77783 9.94313 8.35033 9.94313L8.35533 9.94438L8.36033 9.94313C8.93221 9.94313 9.32533 9.82812 9.56283 9.5925C9.61596 9.54 9.70221 9.54 9.75471 9.5925ZM7.60471 8.08125C7.60471 7.76438 7.34596 7.50687 7.02846 7.50687C6.71033 7.50687 6.45158 7.76438 6.45158 8.08125C6.45158 8.3975 6.71033 8.655 7.02846 8.655C7.34596 8.65562 7.60471 8.39813 7.60471 8.08125ZM15.856 7.5C15.856 11.6419 12.4978 15 8.35596 15C4.21408 15 0.855957 11.6419 0.855957 7.5C0.855957 3.35813 4.21408 0 8.35596 0C12.4978 0 15.856 3.35813 15.856 7.5ZM12.731 7.41938C12.731 6.8875 12.2966 6.455 11.7622 6.455C11.5016 6.455 11.2653 6.55937 11.091 6.72687C10.431 6.2925 9.53783 6.01625 8.54971 5.98063L9.09033 4.27812L10.5547 4.62125L10.5528 4.6425C10.5528 5.0775 10.9085 5.43125 11.3453 5.43125C11.7822 5.43125 12.1372 5.0775 12.1372 4.6425C12.1372 4.2075 11.7822 3.85375 11.3453 3.85375C11.0097 3.85375 10.7241 4.06312 10.6085 4.35625L9.03033 3.98625C8.96158 3.96937 8.89096 4.00937 8.86971 4.07687L8.26658 5.97562C7.23158 5.98812 6.29471 6.26687 5.60533 6.71375C5.43221 6.55437 5.20283 6.45437 4.94908 6.45437C4.41533 6.455 3.98096 6.8875 3.98096 7.41938C3.98096 7.77313 4.17533 8.07938 4.46096 8.2475C4.44221 8.35 4.42971 8.45438 4.42971 8.56C4.42971 9.98562 6.18283 11.1456 8.33783 11.1456C10.4928 11.1456 12.246 9.98562 12.246 8.56C12.246 8.46 12.2353 8.36187 12.2185 8.265C12.5222 8.10187 12.731 7.78625 12.731 7.41938V7.41938ZM9.68596 7.5075C9.36783 7.5075 9.10971 7.765 9.10971 8.08187C9.10971 8.39812 9.36846 8.65562 9.68596 8.65562C10.0035 8.65562 10.2622 8.39812 10.2622 8.08187C10.2622 7.765 10.0041 7.5075 9.68596 7.5075Z"
+                        fill="#2E3338"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </div>
+                  Reddit
+                </a>
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "marginBottom": "8px",
+                  "marginTop": "8px",
+                }
+              }
+            >
+              <div
+                className="css-view-1dbjc4n"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                style={
+                  Object {
+                    "display": "inline",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  data-focusable={true}
+                  dir="auto"
+                  href="https://t.me/celoplatform"
+                  onClick={[Function]}
+                  rel=" noopener noreferrer"
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "WebkitTextDecorationStyle": "solid",
+                      "alignItems": "center",
+                      "color": "rgba(46,51,56,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontSize": "16px",
+                      "lineHeight": "20px",
+                      "msFlexAlign": "center",
+                      "opacity": 1,
+                      "textDecoration": "none",
+                      "textDecorationStyle": "solid",
+                      "textRendering": "geometricPrecision",
+                    }
+                  }
+                  target="_blank"
+                >
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "paddingRight": "8px",
+                      }
+                    }
+                  >
+                    <svg
+                      fill="none"
+                      height={13}
+                      style={Object {}}
+                      viewBox="0 0 16 16"
+                      width={13}
+                    >
+                      <path
+                        d="M8.40392 0.370483C4.31007 0.370483 0.993164 3.68739 0.993164 7.78124C0.993164 11.8751 4.31007 15.192 8.40392 15.192C12.4978 15.192 15.8147 11.8751 15.8147 7.78124C15.8147 3.68739 12.4978 0.370483 8.40392 0.370483ZM12.0436 5.44745L10.8274 11.1788C10.7377 11.5852 10.4957 11.6838 10.158 11.4926L8.30531 10.127L7.41183 10.9876C7.31322 11.0862 7.22955 11.1699 7.03831 11.1699L7.16979 9.28431L10.6032 6.18255C10.7527 6.05107 10.5704 5.97636 10.3731 6.10784L6.12989 8.7793L4.30111 8.20855C3.90368 8.08305 3.89471 7.81112 4.38478 7.61988L11.5296 4.86475C11.8613 4.74522 12.1511 4.94543 12.0436 5.44745V5.44745Z"
+                        fill="#2E3338"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </div>
+                  Telegram
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
