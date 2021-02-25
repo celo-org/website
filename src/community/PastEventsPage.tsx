@@ -20,7 +20,7 @@ export default class PastEventsPage extends React.PureComponent<{}, State> {
     return { namespacesRequired: [NameSpaces.common, NameSpaces.community] }
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError() {
     return { hasError: true };
   }
 
