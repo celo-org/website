@@ -1,27 +1,17 @@
 import * as React from 'react'
-import FadeIn from 'react-lazyload-fadein'
-import { Image, StyleSheet, TouchableOpacity, View } from 'react-native'
-import Title from 'src/dev/Title'
-import { H1, H4 } from 'src/fonts/Fonts'
+import {  View } from 'react-native'
+import { H1, } from 'src/fonts/Fonts'
+import { Adventure } from 'src/home/Adventure'
 import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import Fade from 'src/shared/AwesomeFade'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import { CeloLinks } from 'src/shared/menu-items'
 import { standardStyles, textStyles } from 'src/styles'
 
-const playLogo = require('src/download/play-store.png')
-const appStoreLogo = require('src/download/app-store.png')
 
 export default withNamespaces(NameSpaces.download)(
   React.memo(function AppStores({ t }: I18nProps) {
     return (
       <View>
-        <Title ariaLevel="2" title={t('downloadDirect')} />
-        <GridRow desktopStyle={standardStyles.centered}>
-          <Logos />
-        </GridRow>
         <GridRow
           desktopStyle={standardStyles.sectionMargin}
           tabletStyle={standardStyles.sectionMarginTablet}
@@ -29,73 +19,16 @@ export default withNamespaces(NameSpaces.download)(
           allStyle={standardStyles.centered}
         >
           <Cell span={Spans.half}>
-            <Fade distance={'20px'}>
-              <View style={styles.account}>
-                <H1 style={[textStyles.center, standardStyles.elementalMargin]} ariaLevel={'2'}>
-                  {t('haveAccount')}
-                </H1>
-                <H4 style={[textStyles.center, standardStyles.elementalMargin]}>{t('useSeed')}</H4>
-                <Button
-                  size={SIZE.normal}
-                  kind={BTN.NAKED}
-                  align={'center'}
-                  text={t('learnMore')}
-                  href={CeloLinks.gettingStarted}
-                />
-              </View>
-            </Fade>
+              <H1 style={[textStyles.center, standardStyles.elementalMargin]} ariaLevel={'2'}>
+                {t('needRealWallet')}
+              </H1>
           </Cell>
         </GridRow>
+        <GridRow allStyle={standardStyles.centered}>
+          <Adventure source={require("src/icons/valora-icon.png")} title="Valora" text="For iOS and Android" link={{text: "Get Valora", href: CeloLinks.valora }} />
+          <Adventure source={require("src/icons/06-Celo-Coins-light.png")} title="Celo Web Wallet" text="For web browsers" link={{text: "Go to Celo Web Wallet", href: CeloLinks.celoWebWallet }} />
+      </GridRow>
       </View>
     )
   })
 )
-
-function FadingImage({ source }) {
-  return (
-    <FadeIn>
-      {(load) => (
-        <Image resizeMode="contain" style={styles.appStoreLogo} onLoad={load} source={source} />
-      )}
-    </FadeIn>
-  )
-}
-
-const Logos = withScreenSize(({ screen }: ScreenProps) => {
-  const isMobile = screen === ScreenSizes.MOBILE
-  return (
-    <Cell span={Spans.full} style={[!isMobile && standardStyles.row, styles.stores]}>
-      <TouchableOpacity>
-        <a href={CeloLinks.playStoreDevWallet}>
-          <FadingImage source={playLogo} />
-        </a>
-      </TouchableOpacity>
-      {isMobile || <View style={[standardStyles.verticalLine, styles.verticalLine]} />}
-      <TouchableOpacity>
-        <a href={CeloLinks.appStoreDevWallet}>
-          <FadingImage source={appStoreLogo} />
-        </a>
-      </TouchableOpacity>
-    </Cell>
-  )
-})
-
-const styles = StyleSheet.create({
-  account: {
-    justifyContent: 'center',
-    alignContent: 'center',
-    alignItems: 'center',
-  },
-  stores: {
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
-    alignContent: 'center',
-  },
-  verticalLine: {
-    height: 200,
-  },
-  appStoreLogo: {
-    width: 212,
-    height: 103,
-  },
-})

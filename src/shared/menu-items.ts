@@ -193,6 +193,7 @@ export const MAIN_MENU = [
 
 // TODO: Temporary link to the master branch documentation for 'sdkDocs' and 'sdkTutorial'
 export enum CeloLinks {
+  alfajoresWebWallet = "https://alfajores.celowallet.app",
   audits = '/audits',
   agreement = '/user-agreement',
   faucet = '/developers/faucet',
@@ -221,12 +222,14 @@ export enum CeloLinks {
   linkedIn = 'https://www.linkedin.com/company/celoOrg/',
   monorepo = 'https://github.com/celo-org/celo-monorepo',
   blockChainRepo = 'https://github.com/celo-org/celo-blockchain',
-  playStoreDevWallet = 'https://play.google.com/apps/testing/org.celo.mobile.alfajores',
+  playStoreDevWallet = 'https://play.google.com/store/apps/details?id=org.celo.mobile.production&hl=en_US&gl=US',
   appStoreDevWallet = 'https://testflight.apple.com/join/s212x3Rp',
   privacyDocs = 'https://docs.celo.org/celo-codebase/protocol/identity/phone-number-privacy',
   tutorial = 'https://docs.celo.org/getting-started/faucet#creating-an-empty-account-with-the-celo-client',
   buildWalletDocs = 'https://docs.celo.org/celo-codebase/wallet/intro',
   stakeOffTerms = '/stake-off/terms',
+  valora = "https://valoraapp.com",
+  celoWebWallet = "https://celowallet.app",
   youtube = 'https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw',
   defiPulse = 'https://defipulse.com/',
   aboutCeloGovernance = 'https://medium.com/celoorg/celo-gold-holders-make-your-voice-heard-through-on-chain-governance-96cb5a1e8b90',
@@ -234,6 +237,9 @@ export enum CeloLinks {
   confirmNumber = 'https://valoraapp.com/support/get-started-with-valora#phone-number-confirmation',
   communityFund = 'https://docs.celo.org/celo-codebase/protocol/proof-of-stake/epoch-rewards/community-fund',
   celoRewardsDiscussion = 'https://forum.celo.org/t/governance-proposal-to-reward-early-users/662/42',
+  twitch = 'https://www.twitch.tv/celoorg',
+  reddit = 'https://www.reddit.com/r/celo/',
+  telegram = 'https://t.me/celoplatform'
 }
 
 export const languageOptions = {

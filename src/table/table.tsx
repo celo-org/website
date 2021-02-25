@@ -57,14 +57,12 @@ interface NotFoundProps {
 }
 export function NoneFound({ onPress, actionText, longText }: NotFoundProps) {
   return (
-    <Fade distance="20px">
       <View style={[standardStyles.centered, styles.noJobs]}>
         <Text style={[fonts.p, standardStyles.elementalMarginBottom, textStyles.center]}>
           {longText}
         </Text>
         <Button kind={BTN.SECONDARY} text={actionText} onPress={onPress} />
       </View>
-    </Fade>
   )
 }
 

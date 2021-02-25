@@ -4,11 +4,14 @@ import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import * as React from 'react'
 import { View } from 'react-native'
+import { H1 } from 'src/fonts/Fonts'
 import Navigation from 'src/header/Navigation'
 import { ScreenSizeProvider } from 'src/layout/ScreenSize'
+import Button, { BTN } from 'src/shared/Button.3'
 import Footer from 'src/shared/Footer'
 import pagePaths from 'src/shared/menu-items'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
+import { standardStyles, textStyles } from 'src/styles'
 import { getSentry, initSentry } from 'src/utils/sentry'
 import { appWithTranslation } from '../src/i18n'
 const SECOND = 1000
@@ -18,8 +21,12 @@ const CookieConsent = dynamic((import('src/header/CookieFolder/CookieConsentWith
 
 class MyApp extends App {
   state = {
-    showConsent: false
-}
+    showConsent: false,
+    hasError: false
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
 
   onAgree = async () => {
     this.setState({showConsent: false})
@@ -97,7 +104,7 @@ class MyApp extends App {
         <ScreenSizeProvider>
           <Progress />
           {this.skipNavigation() || <Navigation />}
-          <Component {...pageProps} />
+          {this.state.hasError ? <FiveHundred /> : <Component {...pageProps} />}
           {this.skipNavigation() || (
             <View>
               <Footer />
@@ -108,6 +115,13 @@ class MyApp extends App {
       </>
     )
   }
+}
+
+function FiveHundred() {
+  return <View style={[standardStyles.centered, {height: "50vh"}]}>
+      <H1 style={[textStyles.center, standardStyles.blockMarginBottomTablet]}>Oops something went wrong</H1>
+      <Button text="Return Home" href="/" kind={BTN.SECONDARY}/>
+    </View>
 }
 
 export default appWithTranslation(MyApp)
