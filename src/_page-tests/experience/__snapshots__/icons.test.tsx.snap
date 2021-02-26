@@ -345,7 +345,6 @@ exports[`Experience/Icons renders 1`] = `
                   <svg
                     fill="none"
                     height={10}
-                    style={Object {}}
                     viewBox="0 0 83 98"
                     width={10}
                   >
