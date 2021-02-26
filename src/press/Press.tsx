@@ -1,10 +1,12 @@
+/** @jsx jsx */
+import {jsx, css} from "@emotion/core"
 import * as React from 'react'
-import { Image, ImageRequireSource, StyleSheet, View } from 'react-native'
+import { View } from 'react-native'
+import { WHEN_TABLET_AND_UP } from "src/estyles"
 import { I18nProps, withNamespaces } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import MENU from 'src/shared/menu-items'
-import Responsive from 'src/shared/Responsive'
 import { standardStyles } from 'src/styles'
 const forbes = require('./forbes-logo-white.png')
 const fortune = require('./fortune-white.png')
@@ -23,89 +25,94 @@ class Press extends React.PureComponent<I18nProps> {
           desktopStyle={standardStyles.sectionMarginBottom}
         >
           <Cell span={Spans.full} style={standardStyles.centered}>
-            <View style={styles.logoContainer}>
+            <div css={logoContainerCss}>
               {logos.map((logo) => (
-                <a key={logo.url} href={logo.url} target={'_blank'} rel="noopener">
-                  <Responsive medium={[styles.logo, styles.largeLogo, logo.size]}>
-                    <Image
-                      resizeMode={'contain'}
-                      source={logo.source}
-                      style={[styles.logo, logo.size]}
+                <a  key={logo.url} href={logo.url} target={'_blank'} rel="noopener">
+                  <img
+                    alt={logo.alt}
+                    loading={"lazy"}
+                    css={css(logoCss, logo.size)}
+                    width={logo.size?.width ||130}
+                    height={logo.size?.height || 25}
+                    src={logo.source}
                     />
-                  </Responsive>
                 </a>
               ))}
-            </View>
-            <View style={[styles.linkContainer, standardStyles.elementalMarginTop]}>
-              <Button
-                text={t('recentNews')}
-                kind={BTN.NAKED}
-                size={SIZE.normal}
-                href={MENU.PRESS.link}
-              />
-            </View>
+            </div>
+            <Button
+              style={standardStyles.elementalMarginTop}
+              text={t('recentNews')}
+              kind={BTN.NAKED}
+              size={SIZE.normal}
+              href={MENU.PRESS.link}
+            />
           </Cell>
         </GridRow>
       </View>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  logo: {
-    height: 25,
-    width: 130,
-    marginVertical: 20,
-    marginHorizontal: '5vw',
-    cursor: 'pointer',
-  },
-  largeLogo: {
-    marginHorizontal: 20,
-  },
-  logoContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    alignContent: 'center',
-    justifyContent: 'center',
-    opacity: 0.7,
-  },
-  linkContainer: {
-    alignItems: 'center',
-  },
+const logoCss = css({
+  objectFit: "contain",
+  height: 25,
+  width: 130,
+  marginTop: 20,
+  marginBottom: 20,
+  marginLeft: '5vw',
+  marginRight: '5vw',
+  cursor: 'pointer',
+  [WHEN_TABLET_AND_UP]: {
+    marginLeft: 20,
+    marginRight: 20
+  }
 })
 
+const logoContainerCss = css({
+  display: "flex",
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  alignItems: 'center',
+  alignContent: 'center',
+  justifyContent: 'center',
+  opacity: 0.7,
+})
 interface Logo {
-  source: ImageRequireSource
+  source: string
   size: { height?: number; width?: number }
   url: string
+  alt: string
 }
 
 const logos: Logo[] = [
   {
     source: forbes,
     size: {},
+    alt: "Forbes",
     url:
       'https://www.forbes.com/sites/stevenehrlich/2019/07/17/as-facebook-struggles-for-blockchain-support-a-truly-decentralized-challenger-emerges/#72fb490119eb',
   },
   {
+    alt: "Wall Street Journal",
     source: wsj,
     size: { height: 50, width: 180 },
     url:
       'https://www.wsj.com/articles/startup-celo-aims-to-make-crypto-accessible-to-mainstream-mobile-users-11554204600',
   },
   {
+    alt: "Fortune",
     source: fortune,
     size: {},
     url:
-      'https://fortune.com/2018/06/22/phone-android-blockchain-godaddy-celo-twitter-linkedin-venmo/',
+      'https://fortune.com/2021/02/10/one-day-well-all-yawn-about-blockchain/',
   },
   {
+    alt: "Coindesk",
     source: coindesk,
     size: {},
     url: 'https://www.coindesk.com/libra-minus-facebook-why-celo-is-2020s-buzzy-token-project',
   },
   {
+    alt: "TechCrunch",
     source: techcrunch,
     size: {},
     url:

@@ -1011,12 +1011,12 @@ exports[`HomePage renders 1`] = `
                   style={Object {}}
                 />
                 <path
-                  d="M479 770c104 0 196-69 226-170h-81c-25 57-82 94-145 94-88 0-159-71-159-159 0-63 37-120 94-145v-81c-101 30-170 122-170 226 0 129 106 235 235 235zm82-206h72v-23l-3-16c56-10 90-44 90-91 0-113-180-79-180-117 0-12 18-21 50-21s67 9 102 27v-75c-22-7-44-12-66-13l2-16v-23h-72v23l3 16c-58 9-93 40-93 84 0 119 180 76 180 119 0 13-19 23-49 23-36 0-74-11-128-38v76c29 15 60 23 94 26l-2 16v23z"
+                  d="M479 772c104 0 196-69 226-170h-81c-25 57-82 94-145 94-88 0-159-71-159-159 0-63 37-120 94-145v-81c-101 30-170 122-170 226 0 129 106 235 235 235zm139-297v-57c22 7 30 15 30 27 0 14-11 25-30 30zm-58 98h60v-32c59-10 97-47 97-96 0-68-52-86-99-95v-66c24 4 49 13 71 26v-74c-23-9-46-14-69-16v-31h-60v31c-59 10-96 45-96 93 0 68 51 88 98 97v65c-27-6-58-18-96-40v76c32 17 64 27 94 30v32zm2-232c-21-6-29-14-29-28s10-24 29-28v56z"
                   fill="#35C071"
                   style={Object {}}
                 />
                 <path
-                  d="M479 760c98 0 181-63 212-150h-61c-27 56-85 94-151 94-93 0-169-76-169-169 0-66 38-124 94-151v-61c-87 31-150 114-150 212 0 124 101 225 225 225zm92-206h52v-12l-4-26c56-6 91-37 91-82 0-106-180-63-180-117 0-19 22-31 60-31 30 0 62 8 92 21v-52c-21-6-44-10-68-11l4-26v-12h-52v12l4 26c-59 6-94 34-94 75 0 110 180 60 180 119 0 20-24 33-59 33-36 0-73-11-118-32v54c30 14 62 21 96 23l-4 26v12z"
+                  d="M479 762c98 0 181-63 212-150h-61c-27 56-85 94-151 94-93 0-169-76-169-169 0-66 38-124 94-151v-61c-87 31-150 114-150 212 0 124 101 225 225 225zm129-275v-82c28 7 50 16 50 40 0 22-19 38-50 42zm-38 76h40v-31c59-7 97-41 97-87 0-64-51-78-99-87v-85c23 2 48 9 71 20v-50c-22-8-46-13-69-14v-30h-40v30c-61 7-96 41-96 84 0 65 50 80 98 89v85c-29-4-60-16-96-35v53c31 15 63 25 94 27v31zm2-209c-28-6-49-16-49-41 0-23 18-37 49-40v81z"
                   fill="#FFF"
                   style={Object {}}
                 />
@@ -1253,7 +1253,7 @@ exports[`HomePage renders 1`] = `
                   d="M79.4,44c0-13-10.5-23.5-23.5-23.5c-9.6,0-17.9,5.8-21.5,14.1C26.2,38.3,20.5,46.5,20.5,56
         C20.5,69,31,79.5,44,79.5c9.6,0,17.9-5.8,21.5-14.1C73.8,61.8,79.4,53.6,79.4,44z M59.7,59.5c-1.2,0.3-2.4,0.4-3.6,0.4
         c-8.8,0-15.9-7.2-15.9-15.9c0-1.2,0.1-2.3,0.4-3.4c1.2-0.3,2.4-0.4,3.6-0.4c8.8,0,15.9,7.1,15.9,15.9C60,57.3,59.9,58.4,59.7,59.5z
-        M28.2,56.1c0-4.3,1.7-8.1,4.4-11C33.2,57.3,43,67,55.2,67.5c-2.9,2.8-6.8,4.6-11.1,4.6C35.3,72,28.2,64.9,28.2,56.1z M67.6,55
+         M28.2,56.1c0-4.3,1.7-8.1,4.4-11C33.2,57.3,43,67,55.2,67.5c-2.9,2.8-6.8,4.6-11.1,4.6C35.3,72,28.2,64.9,28.2,56.1z M67.6,55
         C67,42.8,57.2,33.1,45,32.6c2.9-2.8,6.8-4.6,11.1-4.6C64.9,28,72,35.1,72,43.9C71.9,48.3,70.2,52.2,67.6,55z"
                   fill="#F9B73E"
                   style={Object {}}
@@ -1568,368 +1568,191 @@ exports[`HomePage renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignContent": "center",
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxLines": "multiple",
-              "WebkitBoxOrient": "horizontal",
-              "WebkitBoxPack": "center",
-              "WebkitFlexDirection": "row",
-              "WebkitFlexWrap": "wrap",
-              "WebkitJustifyContent": "center",
-              "alignContent": "center",
-              "alignItems": "center",
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-              "justifyContent": "center",
-              "msFlexAlign": "center",
-              "msFlexDirection": "row",
-              "msFlexLinePack": "center",
-              "msFlexPack": "center",
-              "msFlexWrap": "wrap",
-              "opacity": 0.7,
-            }
-          }
+          className="css-1lzhsi5"
         >
           <a
             href="https://www.forbes.com/sites/stevenehrlich/2019/07/17/as-facebook-struggles-for-blockchain-support-a-truly-decentralized-challenger-emerges/#72fb490119eb"
             rel="noopener"
             target="_blank"
           >
-            <div
-              className="css-view-1dbjc4n"
-              style={
+            <img
+              alt="Forbes"
+              className="css-gdz2v5"
+              height={25}
+              loading="lazy"
+              src={
                 Object {
-                  "WebkitFlexBasis": "auto",
-                  "cursor": "pointer",
-                  "flexBasis": "auto",
-                  "height": "25px",
-                  "marginBottom": "20px",
-                  "marginLeft": "5vw",
-                  "marginRight": "5vw",
-                  "marginTop": "20px",
-                  "msFlexPreferredSize": "auto",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "130px",
-                  "zIndex": 0,
+                  "default": "image.png",
                 }
               }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "backgroundColor": "rgba(0,0,0,0.00)",
-                    "backgroundPosition": "center",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "contain",
-                    "bottom": "0px",
-                    "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                    "width": "100%",
-                    "zIndex": -1,
-                  }
-                }
-              />
-            </div>
+              width={130}
+            />
           </a>
           <a
             href="https://www.wsj.com/articles/startup-celo-aims-to-make-crypto-accessible-to-mainstream-mobile-users-11554204600"
             rel="noopener"
             target="_blank"
           >
-            <div
-              className="css-view-1dbjc4n"
-              style={
+            <img
+              alt="Wall Street Journal"
+              className="css-1ib55ei"
+              height={50}
+              loading="lazy"
+              src={
                 Object {
-                  "WebkitFlexBasis": "auto",
-                  "cursor": "pointer",
-                  "flexBasis": "auto",
-                  "height": "50px",
-                  "marginBottom": "20px",
-                  "marginLeft": "5vw",
-                  "marginRight": "5vw",
-                  "marginTop": "20px",
-                  "msFlexPreferredSize": "auto",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "180px",
-                  "zIndex": 0,
+                  "default": "image.png",
                 }
               }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "backgroundColor": "rgba(0,0,0,0.00)",
-                    "backgroundPosition": "center",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "contain",
-                    "bottom": "0px",
-                    "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                    "width": "100%",
-                    "zIndex": -1,
-                  }
-                }
-              />
-            </div>
+              width={180}
+            />
           </a>
           <a
-            href="https://fortune.com/2018/06/22/phone-android-blockchain-godaddy-celo-twitter-linkedin-venmo/"
+            href="https://fortune.com/2021/02/10/one-day-well-all-yawn-about-blockchain/"
             rel="noopener"
             target="_blank"
           >
-            <div
-              className="css-view-1dbjc4n"
-              style={
+            <img
+              alt="Fortune"
+              className="css-gdz2v5"
+              height={25}
+              loading="lazy"
+              src={
                 Object {
-                  "WebkitFlexBasis": "auto",
-                  "cursor": "pointer",
-                  "flexBasis": "auto",
-                  "height": "25px",
-                  "marginBottom": "20px",
-                  "marginLeft": "5vw",
-                  "marginRight": "5vw",
-                  "marginTop": "20px",
-                  "msFlexPreferredSize": "auto",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "130px",
-                  "zIndex": 0,
+                  "default": "image.png",
                 }
               }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "backgroundColor": "rgba(0,0,0,0.00)",
-                    "backgroundPosition": "center",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "contain",
-                    "bottom": "0px",
-                    "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                    "width": "100%",
-                    "zIndex": -1,
-                  }
-                }
-              />
-            </div>
+              width={130}
+            />
           </a>
           <a
             href="https://www.coindesk.com/libra-minus-facebook-why-celo-is-2020s-buzzy-token-project"
             rel="noopener"
             target="_blank"
           >
-            <div
-              className="css-view-1dbjc4n"
-              style={
+            <img
+              alt="Coindesk"
+              className="css-gdz2v5"
+              height={25}
+              loading="lazy"
+              src={
                 Object {
-                  "WebkitFlexBasis": "auto",
-                  "cursor": "pointer",
-                  "flexBasis": "auto",
-                  "height": "25px",
-                  "marginBottom": "20px",
-                  "marginLeft": "5vw",
-                  "marginRight": "5vw",
-                  "marginTop": "20px",
-                  "msFlexPreferredSize": "auto",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "130px",
-                  "zIndex": 0,
+                  "default": "image.png",
                 }
               }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "backgroundColor": "rgba(0,0,0,0.00)",
-                    "backgroundPosition": "center",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "contain",
-                    "bottom": "0px",
-                    "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                    "width": "100%",
-                    "zIndex": -1,
-                  }
-                }
-              />
-            </div>
+              width={130}
+            />
           </a>
           <a
             href="https://techcrunch.com/2018/09/05/googles-launchpad-studio-accelerator-welcomes-a-cohort-of-blockchain-and-finance-startups/"
             rel="noopener"
             target="_blank"
           >
-            <div
-              className="css-view-1dbjc4n"
-              style={
+            <img
+              alt="TechCrunch"
+              className="css-gdz2v5"
+              height={25}
+              loading="lazy"
+              src={
                 Object {
-                  "WebkitFlexBasis": "auto",
-                  "cursor": "pointer",
-                  "flexBasis": "auto",
-                  "height": "25px",
-                  "marginBottom": "20px",
-                  "marginLeft": "5vw",
-                  "marginRight": "5vw",
-                  "marginTop": "20px",
-                  "msFlexPreferredSize": "auto",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "130px",
-                  "zIndex": 0,
+                  "default": "image.png",
                 }
               }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "backgroundColor": "rgba(0,0,0,0.00)",
-                    "backgroundPosition": "center",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "contain",
-                    "bottom": "0px",
-                    "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                    "width": "100%",
-                    "zIndex": -1,
-                  }
-                }
-              />
-            </div>
+              width={130}
+            />
           </a>
         </div>
         <div
           className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "alignItems": "center",
-              "marginTop": "20px",
-              "msFlexAlign": "center",
-            }
-          }
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
         >
           <div
             className="css-view-1dbjc4n"
-            onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
+            style={
+              Object {
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxFlex": 0,
+                "WebkitBoxOrient": "horizontal",
+                "WebkitBoxPack": "center",
+                "WebkitFlexDirection": "row",
+                "WebkitFlexGrow": 0,
+                "WebkitJustifyContent": "center",
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "borderBottomColor": "rgba(0,0,0,0.00)",
+                "borderLeftColor": "rgba(0,0,0,0.00)",
+                "borderRightColor": "rgba(0,0,0,0.00)",
+                "borderTopColor": "rgba(0,0,0,0.00)",
+                "flexDirection": "row",
+                "flexGrow": 0,
+                "justifyContent": "center",
+                "msFlexDirection": "row",
+                "msFlexPack": "center",
+                "msFlexPositive": 0,
+                "opacity": 1,
+                "outlineColor": "transparent",
+                "width": "fit-content",
+              }
+            }
           >
-            <div
-              className="css-view-1dbjc4n"
+            <a
+              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              data-focusable={true}
+              dir="auto"
+              href="/press"
+              onClick={[Function]}
+              role="link"
               style={
                 Object {
-                  "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
-                  "WebkitBoxOrient": "horizontal",
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitJustifyContent": "center",
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "borderBottomColor": "rgba(0,0,0,0.00)",
-                  "borderLeftColor": "rgba(0,0,0,0.00)",
-                  "borderRightColor": "rgba(0,0,0,0.00)",
-                  "borderTopColor": "rgba(0,0,0,0.00)",
-                  "flexDirection": "row",
-                  "flexGrow": 0,
-                  "justifyContent": "center",
-                  "msFlexDirection": "row",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 0,
-                  "opacity": 1,
-                  "outlineColor": "transparent",
-                  "width": "fit-content",
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "alignItems": "center",
+                  "color": "rgba(53,208,127,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "lineHeight": "16px",
+                  "marginTop": "20px",
+                  "msFlexAlign": "center",
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
                 }
               }
             >
-              <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
-                dir="auto"
-                href="/press"
-                onClick={[Function]}
-                role="link"
+              Recent News
+              <div
+                className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitAlignItems": "center",
-                    "WebkitBoxAlign": "center",
-                    "alignItems": "center",
-                    "color": "rgba(53,208,127,1.00)",
-                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "16px",
-                    "msFlexAlign": "center",
-                    "textAlign": "center",
-                    "textRendering": "geometricPrecision",
+                    "paddingLeft": "0.4em",
+                    "paddingTop": "0.185em",
                   }
                 }
               >
-                Recent News
-                <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "display": "inline-flex",
-                      "paddingLeft": "0.4em",
-                      "paddingTop": "0.185em",
-                    }
-                  }
+                <svg
+                  fill="none"
+                  height="0.75em"
+                  style={Object {}}
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
                     style={Object {}}
-                    transform="rotate(0)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                      style={Object {}}
-                    />
-                  </svg>
-                </div>
-              </a>
-            </div>
+                  />
+                </svg>
+              </div>
+            </a>
           </div>
         </div>
       </div>

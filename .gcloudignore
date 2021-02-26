@@ -13,5 +13,18 @@
 .git
 .gitignore
 
+
 # Node.js dependencies:
 node_modules/
+
+.circleci
+__mocks__
+yarn-error.log
+README.md
+RELEASE.md
+LICENSES.md
+nodemon.json
+
+/src/_page-tests/
+/src/**/*.test.tsx
+/server/**/*.test.ts

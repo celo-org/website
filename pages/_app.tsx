@@ -5,41 +5,74 @@ import Head from 'next/head'
 import * as React from 'react'
 import { View } from 'react-native'
 import scrollIntoView from 'scroll-into-view'
-import analytics, { canTrack, initializeAnalytics } from 'src/analytics/analytics'
-import Header from 'src/header/Header.3'
+import analytics, { canTrack, agree, disagree, initializeAnalytics, showVisitorCookieConsent } from 'src/analytics/analytics'
+import { H1 } from 'src/fonts/Fonts'
+import Navigation from 'src/header/Navigation'
 import { ScreenSizeProvider } from 'src/layout/ScreenSize'
+import Button, { BTN } from 'src/shared/Button.3'
 import Footer from 'src/shared/Footer'
 import pagePaths from 'src/shared/menu-items'
 import Progress from 'src/shared/Progress'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
+import { standardStyles, textStyles } from 'src/styles'
 import { getSentry, initSentry } from 'src/utils/sentry'
 import { appWithTranslation } from '../src/i18n'
-
+const SECOND = 1000
 const CookieConsent = dynamic((import('src/header/CookieFolder/CookieConsentWithEmotion')))
+
 class MyApp extends App {
+  state = {
+    showConsent: false,
+    hasError: false
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  onAgree = async () =>{
+      await agree()
+      this.setState({
+          showConsent: false
+      })
+      await initSentry()
+  }
+
+  onDisagree = () => {
+      disagree()
+      this.setState({
+          showConsent: false
+      })
+  }
   async componentDidMount() {
     if (window.location.hash) {
       hashScroller(window.location.hash)
     }
-
     window.addEventListener('hashchange', () => hashScroller(window.location.hash))
 
-    if (getConfig().publicRuntimeConfig.FLAGS.ENV === 'development') {
-      checkH1Count()
-    }
+    setTimeout(async () => {
+      this.setState({
+        showConsent: await showVisitorCookieConsent()
+      })
+    }, SECOND * 5)
+
     await initializeAnalytics()
     await analytics.page()
     if (await canTrack()) {
       await initSentry()
     }
+
     this.props.router.events.on('routeChangeComplete', async () => {
       await analytics.page()
     })
+
+    if (getConfig().publicRuntimeConfig.FLAGS.ENV === 'development') {
+      checkH1Count()
+    }
   }
 
   // there are a few pages we dont want the header on
   // currently this is just the animation demo pages and experience kits and out art project
-  skipHeader() {
+  skipNavigation() {
     return (
       this.props.router.asPath.startsWith("/animation") ||
       this.isBrand() ||
@@ -71,18 +104,25 @@ class MyApp extends App {
         </Head>
         <ScreenSizeProvider>
           <Progress />
-          {this.skipHeader() || <Header />}
-          <Component {...pageProps} />
-          {this.skipHeader() || (
+          {this.skipNavigation() || <Navigation />}
+          {this.state.hasError ? <FiveHundred /> : <Component {...pageProps} />}
+          {this.skipNavigation() || (
             <View>
               <Footer />
             </View>
           )}
-          <CookieConsent />
+          {this.state.showConsent && <CookieConsent onAgree={this.onAgree} onDisagree={this.onDisagree} />}
         </ScreenSizeProvider>
       </>
     )
   }
+}
+
+function FiveHundred() {
+  return <View style={[standardStyles.centered, {height: "50vh"}]}>
+      <H1 style={[textStyles.center, standardStyles.blockMarginBottomTablet]}>Oops something went wrong</H1>
+      <Button text="Return Home" href="/" kind={BTN.SECONDARY}/>
+    </View>
 }
 
 export default appWithTranslation(MyApp)

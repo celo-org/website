@@ -1,9 +1,9 @@
 import * as React from 'react'
+import { useAsync } from 'react-async-hook'
 import { StyleSheet, Text, View } from 'react-native'
 import Chevron from 'src/icons/chevron'
+import { useScreenSize } from 'src/layout/ScreenSize'
 import { colors, fonts, textStyles } from 'src/styles'
-import { getSentry } from 'src/utils/sentry'
-
 interface Props {
   link: string
   children: React.ReactNode
@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
   container: {
     position: 'fixed',
     top: 0,
-    backgroundColor: colors.deepBlue,
+    backgroundColor: colors.navyBlue,
     width: '100%',
     maxWidth: '100vw',
     height: 0,
@@ -72,7 +72,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 30,
+    paddingHorizontal: 15,
     paddingVertical: 5,
   },
   text: {
@@ -94,41 +94,34 @@ interface State {
 
 interface AnnouncementProps {
   onVisibilityChange: (visible: boolean) => void
-  getHeight: (n: number) => void
 }
 
-export default class Announcement extends React.Component<AnnouncementProps, State> {
-  state: State = {
-    live: false,
-    text: '',
-    link: '',
-  }
-  componentDidMount = async () => {
-    try {
-      const response = await fetch('/announcement')
-      const announcements = await response.json()
-      const visible = announcements.length > 0
+async function getAnnouncement(onVisibilityChange: (visible: boolean) => void) {
+  let visible = false
+  let announcement = {text: "", link: "", live: false}
+  const response = await fetch('/announcement')
+  const announcements = await response.json() as State[]
+  visible = announcements.length > 0
+  announcement =  announcements[0]
+  onVisibilityChange(visible)
+  return {visible, text: announcement.text, link: announcement.link, live: announcement.live}
+}
 
-      if (visible) {
-        this.setState(announcements[0])
-      }
+export default function Announcement(props: AnnouncementProps) {
 
-      this.props.onVisibilityChange(visible)
-    } catch (e) {
-      const Sentry = await getSentry()
-      Sentry.captureException(e)
-    }
-  }
+  const state = useAsync(() => getAnnouncement(props.onVisibilityChange), [])
+  const {setBannerHeight} = useScreenSize()
 
-  render() {
+  if (state.status === "success") {
     return (
       <BlueBanner
-        isVisible={this.state.live}
-        link={this.state.link}
-        getRealHeight={this.props.getHeight}
+        isVisible={state.result.live}
+        link={state.result.link}
+        getRealHeight={setBannerHeight}
       >
-        {this.state.text}
+        {state.result.text}
       </BlueBanner>
     )
   }
+  return null
 }
