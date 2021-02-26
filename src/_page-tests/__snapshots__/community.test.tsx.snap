@@ -1865,7 +1865,6 @@ We believe that many of these features have great potential for positive impact,
               <svg
                 fill="none"
                 height={14}
-                style={Object {}}
                 viewBox="0 0 83 98"
                 width={14}
               >
@@ -1977,7 +1976,6 @@ We believe that many of these features have great potential for positive impact,
               <svg
                 fill="none"
                 height={14}
-                style={Object {}}
                 viewBox="0 0 83 98"
                 width={14}
               >
@@ -2166,14 +2164,9 @@ We believe that many of these features have great potential for positive impact,
                 }
               }
             >
-              <span
-                style={
-                  Object {
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              />
+              <span>
+                ...
+              </span>
             </div>
           </div>
         </div>
@@ -2450,14 +2443,9 @@ We believe that many of these features have great potential for positive impact,
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -2509,14 +2497,9 @@ We believe that many of these features have great potential for positive impact,
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -2568,14 +2551,9 @@ We believe that many of these features have great potential for positive impact,
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -3479,7 +3457,6 @@ We believe that many of these features have great potential for positive impact,
             <svg
               fill="none"
               height={10}
-              style={Object {}}
               viewBox="0 0 83 98"
               width={10}
             >
