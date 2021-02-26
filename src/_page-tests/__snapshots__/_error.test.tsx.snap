@@ -42,7 +42,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -54,18 +53,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "NaNms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "NaNms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -98,7 +112,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -110,18 +123,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "16.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "16.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -154,7 +182,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -166,18 +193,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "33ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "33ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -210,7 +252,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -222,18 +263,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "60.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "60.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -266,7 +322,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -278,18 +333,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "88ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "88ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -322,7 +392,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -334,18 +403,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "115.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "115.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -378,7 +462,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -390,18 +473,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "143ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "143ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -434,7 +532,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -446,18 +543,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "170.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "170.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -490,7 +602,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -502,18 +613,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "209ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "209ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -546,7 +672,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -558,18 +683,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "247.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "247.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -602,7 +742,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -614,18 +753,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "275ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "275ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -658,7 +812,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -670,18 +823,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "313.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "313.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -714,7 +882,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -726,18 +893,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "352ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "352ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -770,7 +952,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -782,18 +963,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "390.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "390.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -826,7 +1022,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -838,18 +1033,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "429ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "429ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -882,7 +1092,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -894,18 +1103,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "467.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "467.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -938,7 +1162,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -950,18 +1173,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "506ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "506ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -994,7 +1232,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1006,18 +1243,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "544.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "544.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1050,7 +1302,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1062,18 +1313,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "583ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "583ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1106,7 +1372,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1118,18 +1383,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "621.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "621.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1162,7 +1442,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1174,18 +1453,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "660ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "660ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1218,7 +1512,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1230,18 +1523,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "709.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "709.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1274,7 +1582,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1286,18 +1593,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "748ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "748ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1330,7 +1652,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1342,18 +1663,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "786.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "786.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1386,7 +1722,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1398,18 +1733,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "836ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "836ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1442,7 +1792,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1454,18 +1803,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "874.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "874.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1498,7 +1862,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1510,18 +1873,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "924ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "924ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1554,7 +1932,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1566,18 +1943,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "962.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "962.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1610,7 +2002,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1622,18 +2013,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1001ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1001ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1666,7 +2072,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1678,18 +2083,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1050.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1050.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1722,7 +2142,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1734,18 +2153,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1100ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1100ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1778,7 +2212,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1790,18 +2223,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1138.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1138.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1834,7 +2282,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1846,18 +2293,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1188ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1188ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1890,7 +2352,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1902,18 +2363,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1226.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1226.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -1946,7 +2422,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -1958,18 +2433,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1276ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1276ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2002,7 +2492,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2014,18 +2503,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1325.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1325.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2058,7 +2562,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2070,18 +2573,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1364ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1364ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2114,7 +2632,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2126,18 +2643,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1413.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1413.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2170,7 +2702,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2182,18 +2713,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1463ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1463ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2226,7 +2772,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2238,18 +2783,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1501.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1501.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2282,7 +2842,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2294,18 +2853,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1551ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1551ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2338,7 +2912,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2350,18 +2923,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1600.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1600.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2394,7 +2982,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2406,18 +2993,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1650ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1650ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2450,7 +3052,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2462,18 +3063,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1699.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1699.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2506,7 +3122,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2518,18 +3133,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1738ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1738ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2562,7 +3192,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2574,18 +3203,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1787.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1787.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2618,7 +3262,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2630,18 +3273,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1837ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1837ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2674,7 +3332,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2686,18 +3343,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1886.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1886.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2730,7 +3402,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2742,18 +3413,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1936ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1936ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2786,7 +3472,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2798,18 +3483,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "1985.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "1985.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2842,7 +3542,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2854,18 +3553,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2035ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2035ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2898,7 +3612,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2910,18 +3623,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2084.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2084.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -2954,7 +3682,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -2966,18 +3693,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2134ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2134ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3010,7 +3752,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3022,18 +3763,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2183.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2183.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3066,7 +3822,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3078,18 +3833,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2233ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2233ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3122,7 +3892,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3134,18 +3903,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2282.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2282.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3178,7 +3962,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3190,18 +3973,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2332ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2332ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3234,7 +4032,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3246,18 +4043,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2381.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2381.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3290,7 +4102,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3302,18 +4113,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2431ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2431ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3346,7 +4172,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3358,18 +4183,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2480.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2480.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3402,7 +4242,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3414,18 +4253,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2530ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2530ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3458,7 +4312,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3470,18 +4323,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2579.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2579.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3514,7 +4382,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3526,18 +4393,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2629ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2629ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3570,7 +4452,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3582,18 +4463,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2678.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2678.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3626,7 +4522,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3638,18 +4533,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2728ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2728ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3682,7 +4592,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3694,18 +4603,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2777.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2777.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3738,7 +4662,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3750,18 +4673,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2827ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2827ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3794,7 +4732,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3806,18 +4743,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2887.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2887.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3850,7 +4802,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3862,18 +4813,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2937ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2937ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3906,7 +4872,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3918,18 +4883,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "2986.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "2986.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -3962,7 +4942,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -3974,18 +4953,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3036ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3036ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4018,7 +5012,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4030,18 +5023,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3085.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3085.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4074,7 +5082,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4086,18 +5093,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3135ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3135ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4130,7 +5152,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4142,18 +5163,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3195.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3195.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4186,7 +5222,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4198,18 +5233,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3245ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3245ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4242,7 +5292,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4254,18 +5303,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3294.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3294.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4298,7 +5362,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4310,18 +5373,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3344ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3344ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4354,7 +5432,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4366,18 +5443,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3404.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3404.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4410,7 +5502,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4422,18 +5513,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3454ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3454ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4466,7 +5572,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4478,18 +5583,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3503.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3503.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4522,7 +5642,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4534,18 +5653,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3553ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3553ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4578,7 +5712,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4590,18 +5723,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3613.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3613.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4634,7 +5782,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4646,18 +5793,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3663ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3663ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4690,7 +5852,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4702,18 +5863,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3712.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3712.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4746,7 +5922,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4758,18 +5933,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3773ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3773ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4802,7 +5992,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4814,18 +6003,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3822.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3822.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4858,7 +6062,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4870,18 +6073,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3872ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3872ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4914,7 +6132,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4926,18 +6143,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3932.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3932.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -4970,7 +6202,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -4982,18 +6213,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "3982ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "3982ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -5026,7 +6272,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -5038,18 +6283,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "4031.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "4031.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -5082,7 +6342,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -5094,18 +6353,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "4092ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "4092ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -5138,7 +6412,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -5150,18 +6423,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "4141.5ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "4141.5ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
@@ -5194,7 +6482,6 @@ exports[`Error renders 1`] = `
       <svg
         fill="none"
         height={24}
-        style={Object {}}
         viewBox="-10 -10 90 115"
         width={24}
       >
@@ -5206,18 +6493,33 @@ exports[`Error renders 1`] = `
           }
         >
           <path
-            className="r-animationKeyframes-19rwmob"
             d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
             fill="#BF97FF"
             style={
               Object {
-                "WebkitAnimationDelay": "4202ms",
-                "WebkitAnimationDuration": "10s",
-                "WebkitAnimationFillMode": "both",
-                "WebkitAnimationTimingFunction": "ease-out",
                 "animationDelay": "4202ms",
                 "animationDuration": "10s",
                 "animationFillMode": "both",
+                "animationKeyframes": Array [
+                  Object {
+                    "0%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "100%": Object {
+                      "fill": "transparent",
+                      "stroke": "#DDDDDD",
+                    },
+                    "90%": Object {
+                      "fill": "#BF97FF",
+                      "stroke": "#BF97FF",
+                    },
+                    "91%": Object {
+                      "fill": "transparent",
+                      "stroke": "#BF97FF",
+                    },
+                  },
+                ],
                 "animationTimingFunction": "ease-out",
                 "opacity": 1,
                 "strokeLinecap": "round",
