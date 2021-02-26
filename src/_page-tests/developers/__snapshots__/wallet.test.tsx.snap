@@ -225,7 +225,7 @@ Do not send real funds.
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
                   data-focusable={true}
                   dir="auto"
-                  href="https://play.google.com/store/apps/details?id=org.celo.mobile.production&hl=en_US&gl=US"
+                  href="https://play.google.com/apps/testing/org.celo.mobile.alfajores"
                   onClick={[Function]}
                   rel=" noopener noreferrer"
                   role="link"
