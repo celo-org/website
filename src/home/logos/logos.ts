@@ -1,4 +1,4 @@
-export const ah = require('./ah.png')
+export const ah = require('../../about/backers/a16z_new_logo.svg')
 export const coinbase = require('./coinbase.png')
 export const coindesk = require('./coindesk.png')
 export const fortune = require('./fortune.png')
