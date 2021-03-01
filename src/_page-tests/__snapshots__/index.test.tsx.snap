@@ -2863,7 +2863,7 @@ exports[`HomePage renders 1`] = `
             Object {
               "WebkitFlexBasis": "auto",
               "flexBasis": "auto",
-              "height": "30px",
+              "height": "36px",
               "marginBottom": "20px",
               "marginLeft": "20px",
               "marginRight": "20px",
