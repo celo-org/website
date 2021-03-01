@@ -9,7 +9,7 @@ import Responsive from 'src/shared/Responsive'
 import { standardStyles } from 'src/styles'
 
 const homeBackers = [
-  { image: ah, height: 36, id: 'ah' },
+  { image: ah, height: 30, id: 'ah' },
   { image: polychain, height: 26, id: 'pc' },
   { image: gc, height: 33, id: 'gc' },
   { image: coinbase, height: 37, id: 'cb' },
