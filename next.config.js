@@ -8,6 +8,7 @@ module.exports = withImages({
   },
   publicRuntimeConfig: envConfig,
   serverRuntimeConfig: serverEnvConfig,
+  reactStrictMode: true,
 
   // options: {buildId, dev, isServer, defaultLoaders, webpack}   https://nextjs.org/docs#customizing-webpack-config
   webpack: (config, { isServer }) => {
