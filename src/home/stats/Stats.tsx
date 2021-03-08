@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import {jsx, css, keyframes} from "@emotion/core"
+import {css, keyframes} from "@emotion/react"
 import { flex, garamond, sectionTitle, jost, } from "src/estyles"
 import {memo} from "react"
 import { NameSpaces, useTranslation } from "src/i18n"

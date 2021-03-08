@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import {jsx, css} from "@emotion/core"
+import * as React from "react"
+import {css} from "@emotion/react"
 import { fonts, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Button, { BTN } from 'src/shared/Button.3'

@@ -2,20 +2,61 @@
 
 exports[`Navigation renders 1`] = `
 <div
-  className="css-ofz9xf-Header"
+  css={
+    Object {
+      "map": undefined,
+      "name": "1umrgq3",
+      "next": undefined,
+      "styles": "display:flex;position:fixed;left:0;right:0;display:flex;flex-direction:row;height:75px;justify-content:center;align-items:center;z-index:10;max-width:100vw;transition-property:top;transition-duration:300ms;;top:0;",
+      "toString": [Function],
+    }
+  }
 >
   <div
-    className="css-eqd5rd-Header"
+    css={
+      Object {
+        "map": undefined,
+        "name": "x3o9zl",
+        "next": undefined,
+        "styles": "display:flex;flex:1;flex-direction:row;justify-content:space-between;align-items:stretch;align-self:stretch;padding-left:20px;margin-right:0;@media (min-width: 992px){margin-right:0;margin-left:0;padding-right:30px;padding-left:30px;position:relative;};display:flex;position:absolute;top:0;left:0;right:0;opacity:1;height:75px;;background-color:#FFFFFF;@media (min-width: 992px){&:hover{}};transition-property:opacity color;transition-duration:300ms;;opacity:1;;",
+        "toString": [Function],
+      }
+    }
   >
     <div
-      className="css-1xhj18k"
+      css={
+        Object {
+          "map": undefined,
+          "name": "1xhj18k",
+          "next": undefined,
+          "styles": "display:flex;flex-direction:row;",
+          "toString": [Function],
+        }
+      }
       onClick={[Function]}
+      onMouseEnter={[Function]}
     >
       <div
-        className="css-1igz59d"
+        css={
+          Object {
+            "map": undefined,
+            "name": "1igz59d",
+            "next": undefined,
+            "styles": "display:flex;padding-left:6px;padding-top:20px;cursor:pointer;",
+            "toString": [Function],
+          }
+        }
       >
         <div
-          className="css-12toss4"
+          css={
+            Object {
+              "map": undefined,
+              "name": "12toss4",
+              "next": undefined,
+              "styles": "transition-property:opacity color;transition-duration:300ms;;opacity:1;;",
+              "toString": [Function],
+            }
+          }
         >
           <svg
             fill="none"
@@ -49,10 +90,42 @@ exports[`Navigation renders 1`] = `
       </div>
     </div>
     <nav
-      className="css-1v2hg4s"
+      css={
+        Array [
+          Object {
+            "map": undefined,
+            "name": "ykwvjb",
+            "next": undefined,
+            "styles": "display:none;@media (min-width: 992px){display:flex;flex-direction:row;justify-content:flex-end;align-items:center;}",
+            "toString": [Function],
+          },
+          Object {
+            "map": undefined,
+            "name": "l7w4p0",
+            "next": undefined,
+            "styles": "transition-property:opacity color;transition-duration:300ms;",
+            "toString": [Function],
+          },
+          Object {
+            "map": undefined,
+            "name": "whh5e5",
+            "next": undefined,
+            "styles": "opacity:1;",
+            "toString": [Function],
+          },
+        ]
+      }
     >
       <div
-        className="css-ft8sjx"
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
       >
         <div
           className="css-view-1dbjc4n"
@@ -64,10 +137,10 @@ exports[`Navigation renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/about"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -108,7 +181,15 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        className="css-ft8sjx"
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
       >
         <div
           className="css-view-1dbjc4n"
@@ -120,10 +201,10 @@ exports[`Navigation renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/jobs"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -164,7 +245,15 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        className="css-ft8sjx"
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
       >
         <div
           className="css-view-1dbjc4n"
@@ -176,10 +265,10 @@ exports[`Navigation renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/validators"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -220,7 +309,15 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        className="css-ft8sjx"
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
       >
         <div
           className="css-view-1dbjc4n"
@@ -232,10 +329,10 @@ exports[`Navigation renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/developers"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -276,7 +373,15 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        className="css-ft8sjx"
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
       >
         <div
           className="css-view-1dbjc4n"
@@ -288,10 +393,10 @@ exports[`Navigation renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/alliance"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -332,7 +437,15 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        className="css-ft8sjx"
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
       >
         <div
           className="css-view-1dbjc4n"
@@ -344,10 +457,10 @@ exports[`Navigation renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/community"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -388,7 +501,15 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        className="css-ft8sjx"
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
       >
         <div
           className="css-view-1dbjc4n"
@@ -400,11 +521,11 @@ exports[`Navigation renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="https://medium.com/CeloHQ"
             onClick={[Function]}
-            rel=" noopener noreferrer"
+            onMouseEnter={[Function]}
+            rel="noopener"
             role="link"
             style={
               Object {
@@ -472,7 +593,24 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        className="css-fp367f"
+        css={
+          Array [
+            Object {
+              "map": undefined,
+              "name": "ft8sjx",
+              "next": undefined,
+              "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+              "toString": [Function],
+            },
+            Object {
+              "map": undefined,
+              "name": "4axql0",
+              "next": undefined,
+              "styles": "display:flex;margin-right:10px;",
+              "toString": [Function],
+            },
+          ]
+        }
       >
         <div
           className="css-view-1dbjc4n"
@@ -484,11 +622,11 @@ exports[`Navigation renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="https://github.com/celo-org"
             onClick={[Function]}
-            rel=" noopener noreferrer"
+            onMouseEnter={[Function]}
+            rel="noopener"
             role="link"
             style={
               Object {
@@ -560,11 +698,18 @@ exports[`Navigation renders 1`] = `
     </nav>
   </div>
   <div
-    className="css-ui51wj-MobileMenuIcon"
+    css={
+      Object {
+        "map": undefined,
+        "name": "em44jm",
+        "next": undefined,
+        "styles": "position:fixed;top:5px;right:5px;opacity:0;display:none;@media (min-width: 992px){display:none;};transition-property:opacity color;transition-duration:300ms;;opacity:1;display:block;",
+        "toString": [Function],
+      }
+    }
   >
     <div
       className="css-view-1dbjc4n"
-      data-focusable={true}
       onClick={[Function]}
       onContextMenu={[Function]}
       onKeyDown={[Function]}

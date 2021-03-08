@@ -660,27 +660,23 @@ exports[`BuildPage renders 1`] = `
             Object {
               "MozTransitionProperty": "opacity",
               "WebkitBoxDirection": "normal",
-              "WebkitBoxFlex": 1,
               "WebkitBoxOrient": "horizontal",
               "WebkitBoxPack": "justify",
+              "WebkitFlex": 1,
               "WebkitFlexBasis": "auto",
               "WebkitFlexDirection": "row",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
               "WebkitJustifyContent": "space-between",
               "WebkitTransitionDuration": "500ms",
               "WebkitTransitionProperty": "opacity",
+              "flex": 1,
               "flexBasis": "auto",
               "flexDirection": "row",
-              "flexGrow": 1,
-              "flexShrink": 1,
               "justifyContent": "space-between",
               "marginBottom": "20px",
               "marginTop": "20px",
+              "msFlex": "1 1 0%",
               "msFlexDirection": "row",
-              "msFlexNegative": 1,
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
               "msFlexPreferredSize": "auto",
               "opacity": 1,
               "transitionDuration": "500ms",
@@ -693,17 +689,10 @@ exports[`BuildPage renders 1`] = `
             className="css-view-1dbjc4n"
             style={
               Object {
-                "WebkitBoxFlex": 1,
-                "WebkitFlexBasis": "0%",
-                "WebkitFlexGrow": 1,
-                "WebkitFlexShrink": 1,
-                "flexBasis": "0%",
-                "flexGrow": 1,
-                "flexShrink": 1,
+                "WebkitFlex": 1,
+                "flex": 1,
                 "maxWidth": "400px",
-                "msFlexNegative": 1,
-                "msFlexPositive": 1,
-                "msFlexPreferredSize": "0%",
+                "msFlex": "1 1 0%",
               }
             }
           >
@@ -876,10 +865,10 @@ exports[`BuildPage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="/developers/wallet"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -926,7 +915,7 @@ exports[`BuildPage renders 1`] = `
                     "width": "fit-content",
                   }
                 }
-                target="blank"
+                target="_blank"
               >
                 Get Test Wallet
               </a>
@@ -978,10 +967,10 @@ exports[`BuildPage renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://github.com/celo-org/celo-monorepo"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
                   role="link"
                   style={
                     Object {
@@ -1015,7 +1004,7 @@ exports[`BuildPage renders 1`] = `
                       "width": "fit-content",
                     }
                   }
-                  target="blank"
+                  target="_blank"
                 >
                   See Code
                 </a>
@@ -1030,27 +1019,23 @@ exports[`BuildPage renders 1`] = `
             Object {
               "MozTransitionProperty": "opacity",
               "WebkitBoxDirection": "normal",
-              "WebkitBoxFlex": 1,
               "WebkitBoxOrient": "horizontal",
               "WebkitBoxPack": "justify",
+              "WebkitFlex": 1,
               "WebkitFlexBasis": "auto",
               "WebkitFlexDirection": "row",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
               "WebkitJustifyContent": "space-between",
               "WebkitTransitionDuration": "500ms",
               "WebkitTransitionProperty": "opacity",
+              "flex": 1,
               "flexBasis": "auto",
               "flexDirection": "row",
-              "flexGrow": 1,
-              "flexShrink": 1,
               "justifyContent": "space-between",
               "marginBottom": "20px",
               "marginTop": "20px",
+              "msFlex": "1 1 0%",
               "msFlexDirection": "row",
-              "msFlexNegative": 1,
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
               "msFlexPreferredSize": "auto",
               "opacity": 1,
               "transitionDuration": "500ms",
@@ -1063,17 +1048,10 @@ exports[`BuildPage renders 1`] = `
             className="css-view-1dbjc4n"
             style={
               Object {
-                "WebkitBoxFlex": 1,
-                "WebkitFlexBasis": "0%",
-                "WebkitFlexGrow": 1,
-                "WebkitFlexShrink": 1,
-                "flexBasis": "0%",
-                "flexGrow": 1,
-                "flexShrink": 1,
+                "WebkitFlex": 1,
+                "flex": 1,
                 "maxWidth": "400px",
-                "msFlexNegative": 1,
-                "msFlexPositive": 1,
-                "msFlexPreferredSize": "0%",
+                "msFlex": "1 1 0%",
               }
             }
           >
@@ -1206,10 +1184,10 @@ exports[`BuildPage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="https://docs.celo.org/overview"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -1256,7 +1234,7 @@ exports[`BuildPage renders 1`] = `
                     "width": "fit-content",
                   }
                 }
-                target="blank"
+                target="_blank"
               >
                 Read More
               </a>
@@ -1308,10 +1286,10 @@ exports[`BuildPage renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://github.com/celo-org/celo-monorepo"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
                   role="link"
                   style={
                     Object {
@@ -1345,7 +1323,7 @@ exports[`BuildPage renders 1`] = `
                       "width": "fit-content",
                     }
                   }
-                  target="blank"
+                  target="_blank"
                 >
                   See Code
                 </a>
@@ -1360,27 +1338,23 @@ exports[`BuildPage renders 1`] = `
             Object {
               "MozTransitionProperty": "opacity",
               "WebkitBoxDirection": "normal",
-              "WebkitBoxFlex": 1,
               "WebkitBoxOrient": "horizontal",
               "WebkitBoxPack": "justify",
+              "WebkitFlex": 1,
               "WebkitFlexBasis": "auto",
               "WebkitFlexDirection": "row",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
               "WebkitJustifyContent": "space-between",
               "WebkitTransitionDuration": "500ms",
               "WebkitTransitionProperty": "opacity",
+              "flex": 1,
               "flexBasis": "auto",
               "flexDirection": "row",
-              "flexGrow": 1,
-              "flexShrink": 1,
               "justifyContent": "space-between",
               "marginBottom": "20px",
               "marginTop": "20px",
+              "msFlex": "1 1 0%",
               "msFlexDirection": "row",
-              "msFlexNegative": 1,
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
               "msFlexPreferredSize": "auto",
               "opacity": 1,
               "transitionDuration": "500ms",
@@ -1393,17 +1367,10 @@ exports[`BuildPage renders 1`] = `
             className="css-view-1dbjc4n"
             style={
               Object {
-                "WebkitBoxFlex": 1,
-                "WebkitFlexBasis": "0%",
-                "WebkitFlexGrow": 1,
-                "WebkitFlexShrink": 1,
-                "flexBasis": "0%",
-                "flexGrow": 1,
-                "flexShrink": 1,
+                "WebkitFlex": 1,
+                "flex": 1,
                 "maxWidth": "400px",
-                "msFlexNegative": 1,
-                "msFlexPositive": 1,
-                "msFlexPreferredSize": "0%",
+                "msFlex": "1 1 0%",
               }
             }
           >
@@ -1536,10 +1503,10 @@ exports[`BuildPage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="https://docs.celo.org/overview"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -1586,7 +1553,7 @@ exports[`BuildPage renders 1`] = `
                     "width": "fit-content",
                   }
                 }
-                target="blank"
+                target="_blank"
               >
                 Read More
               </a>
@@ -1638,10 +1605,10 @@ exports[`BuildPage renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://github.com/celo-org/celo-blockchain"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
                   role="link"
                   style={
                     Object {
@@ -1675,7 +1642,7 @@ exports[`BuildPage renders 1`] = `
                       "width": "fit-content",
                     }
                   }
-                  target="blank"
+                  target="_blank"
                 >
                   See Code
                 </a>
@@ -1753,11 +1720,11 @@ exports[`BuildPage renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="https://github.com/celo-org"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -1969,23 +1936,16 @@ exports[`BuildPage renders 1`] = `
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
                   "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexBasis": "0%",
+                  "WebkitFlex": 0,
                   "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitFlexShrink": 0,
-                  "flexBasis": "0%",
+                  "flex": 0,
                   "flexDirection": "row",
-                  "flexGrow": 0,
-                  "flexShrink": 0,
                   "marginBottom": "20px",
                   "marginRight": "20px",
                   "marginTop": "20px",
+                  "msFlex": "0 1 0%",
                   "msFlexDirection": "row",
-                  "msFlexNegative": 0,
-                  "msFlexPositive": 0,
-                  "msFlexPreferredSize": "0%",
                 }
               }
             >
@@ -2022,22 +1982,16 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
               <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "WebkitFlex": 1,
+                    "flex": 1,
+                    "msFlex": "1 1 0%",
                     "width": "100%",
                   }
                 }
@@ -2107,23 +2061,16 @@ exports[`BuildPage renders 1`] = `
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
                   "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexBasis": "0%",
+                  "WebkitFlex": 0,
                   "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitFlexShrink": 0,
-                  "flexBasis": "0%",
+                  "flex": 0,
                   "flexDirection": "row",
-                  "flexGrow": 0,
-                  "flexShrink": 0,
                   "marginBottom": "20px",
                   "marginRight": "20px",
                   "marginTop": "20px",
+                  "msFlex": "0 1 0%",
                   "msFlexDirection": "row",
-                  "msFlexNegative": 0,
-                  "msFlexPositive": 0,
-                  "msFlexPreferredSize": "0%",
                 }
               }
             >
@@ -2160,22 +2107,16 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
               <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "WebkitFlex": 1,
+                    "flex": 1,
+                    "msFlex": "1 1 0%",
                     "width": "100%",
                   }
                 }
@@ -2245,23 +2186,16 @@ exports[`BuildPage renders 1`] = `
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
                   "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexBasis": "0%",
+                  "WebkitFlex": 0,
                   "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitFlexShrink": 0,
-                  "flexBasis": "0%",
+                  "flex": 0,
                   "flexDirection": "row",
-                  "flexGrow": 0,
-                  "flexShrink": 0,
                   "marginBottom": "20px",
                   "marginRight": "20px",
                   "marginTop": "20px",
+                  "msFlex": "0 1 0%",
                   "msFlexDirection": "row",
-                  "msFlexNegative": 0,
-                  "msFlexPositive": 0,
-                  "msFlexPreferredSize": "0%",
                 }
               }
             >
@@ -2298,22 +2232,16 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
               <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "WebkitFlex": 1,
+                    "flex": 1,
+                    "msFlex": "1 1 0%",
                     "width": "100%",
                   }
                 }
@@ -2383,23 +2311,16 @@ exports[`BuildPage renders 1`] = `
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
                   "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexBasis": "0%",
+                  "WebkitFlex": 0,
                   "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitFlexShrink": 0,
-                  "flexBasis": "0%",
+                  "flex": 0,
                   "flexDirection": "row",
-                  "flexGrow": 0,
-                  "flexShrink": 0,
                   "marginBottom": "20px",
                   "marginRight": "20px",
                   "marginTop": "20px",
+                  "msFlex": "0 1 0%",
                   "msFlexDirection": "row",
-                  "msFlexNegative": 0,
-                  "msFlexPositive": 0,
-                  "msFlexPreferredSize": "0%",
                 }
               }
             >
@@ -2436,22 +2357,16 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
               <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "WebkitFlex": 1,
+                    "flex": 1,
+                    "msFlex": "1 1 0%",
                     "width": "100%",
                   }
                 }
@@ -2521,23 +2436,16 @@ exports[`BuildPage renders 1`] = `
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
                   "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexBasis": "0%",
+                  "WebkitFlex": 0,
                   "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitFlexShrink": 0,
-                  "flexBasis": "0%",
+                  "flex": 0,
                   "flexDirection": "row",
-                  "flexGrow": 0,
-                  "flexShrink": 0,
                   "marginBottom": "20px",
                   "marginRight": "20px",
                   "marginTop": "20px",
+                  "msFlex": "0 1 0%",
                   "msFlexDirection": "row",
-                  "msFlexNegative": 0,
-                  "msFlexPositive": 0,
-                  "msFlexPreferredSize": "0%",
                 }
               }
             >
@@ -2574,22 +2482,16 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
               <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "WebkitFlex": 1,
+                    "flex": 1,
+                    "msFlex": "1 1 0%",
                     "width": "100%",
                   }
                 }
@@ -2659,23 +2561,16 @@ exports[`BuildPage renders 1`] = `
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
                   "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexBasis": "0%",
+                  "WebkitFlex": 0,
                   "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitFlexShrink": 0,
-                  "flexBasis": "0%",
+                  "flex": 0,
                   "flexDirection": "row",
-                  "flexGrow": 0,
-                  "flexShrink": 0,
                   "marginBottom": "20px",
                   "marginRight": "20px",
                   "marginTop": "20px",
+                  "msFlex": "0 1 0%",
                   "msFlexDirection": "row",
-                  "msFlexNegative": 0,
-                  "msFlexPositive": 0,
-                  "msFlexPreferredSize": "0%",
                 }
               }
             >
@@ -2712,22 +2607,16 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
               <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "WebkitFlex": 1,
+                    "flex": 1,
+                    "msFlex": "1 1 0%",
                     "width": "100%",
                   }
                 }
@@ -2797,23 +2686,16 @@ exports[`BuildPage renders 1`] = `
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
                   "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexBasis": "0%",
+                  "WebkitFlex": 0,
                   "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitFlexShrink": 0,
-                  "flexBasis": "0%",
+                  "flex": 0,
                   "flexDirection": "row",
-                  "flexGrow": 0,
-                  "flexShrink": 0,
                   "marginBottom": "20px",
                   "marginRight": "20px",
                   "marginTop": "20px",
+                  "msFlex": "0 1 0%",
                   "msFlexDirection": "row",
-                  "msFlexNegative": 0,
-                  "msFlexPositive": 0,
-                  "msFlexPreferredSize": "0%",
                 }
               }
             >
@@ -2850,22 +2732,16 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
               <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "WebkitFlex": 1,
+                    "flex": 1,
+                    "msFlex": "1 1 0%",
                     "width": "100%",
                   }
                 }
@@ -2935,23 +2811,16 @@ exports[`BuildPage renders 1`] = `
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
                   "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexBasis": "0%",
+                  "WebkitFlex": 0,
                   "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitFlexShrink": 0,
-                  "flexBasis": "0%",
+                  "flex": 0,
                   "flexDirection": "row",
-                  "flexGrow": 0,
-                  "flexShrink": 0,
                   "marginBottom": "20px",
                   "marginRight": "20px",
                   "marginTop": "20px",
+                  "msFlex": "0 1 0%",
                   "msFlexDirection": "row",
-                  "msFlexNegative": 0,
-                  "msFlexPositive": 0,
-                  "msFlexPreferredSize": "0%",
                 }
               }
             >
@@ -2988,22 +2857,16 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
               <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "WebkitFlex": 1,
+                    "flex": 1,
+                    "msFlex": "1 1 0%",
                     "width": "100%",
                   }
                 }
@@ -3228,6 +3091,7 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
             </div>
@@ -3285,10 +3149,10 @@ exports[`BuildPage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="https://docs.celo.org/getting-started/choosing-a-network"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -3456,6 +3320,7 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
             </div>
@@ -3465,21 +3330,14 @@ exports[`BuildPage renders 1`] = `
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxLines": "multiple",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitFlexWrap": "wrap",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "flexWrap": "wrap",
               "marginLeft": "10px",
               "marginRight": "10px",
-              "msFlexNegative": 1,
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
+              "msFlex": "1 1 0%",
               "msFlexWrap": "wrap",
             }
           }
@@ -3556,10 +3414,10 @@ exports[`BuildPage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="https://docs.celo.org/getting-started/running-a-validator-in-mainnet"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -3703,6 +3561,7 @@ exports[`BuildPage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
             </div>
@@ -3712,21 +3571,14 @@ exports[`BuildPage renders 1`] = `
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxLines": "multiple",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitFlexWrap": "wrap",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "flexWrap": "wrap",
               "marginLeft": "10px",
               "marginRight": "10px",
-              "msFlexNegative": 1,
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
+              "msFlex": "1 1 0%",
               "msFlexWrap": "wrap",
             }
           }
@@ -3803,10 +3655,10 @@ exports[`BuildPage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="https://medium.com/celoOrg/consensus-and-proof-of-stake-in-the-celo-protocol-3ff8eee331f6"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -3958,10 +3810,10 @@ exports[`BuildPage renders 1`] = `
       >
         <a
           className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-          data-focusable={true}
           dir="auto"
           href="https://discord.gg/jYRrHDQ"
           onClick={[Function]}
+          onMouseEnter={[Function]}
           role="link"
           style={
             Object {
@@ -4107,6 +3959,7 @@ exports[`BuildPage renders 1`] = `
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>

@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
   },
   grid: {
     display: 'grid',
-    gridRowGap: 40,
-    gridColumnGap: 80,
+    gridRowGap: "40px",
+    gridColumnGap: "80px",
     gridTemplateColumns: `repeat(auto-fit, minmax(150px, 1fr))`,
     marginTop: 20,
   },

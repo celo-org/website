@@ -339,11 +339,11 @@ exports[`CeloRewards renders 1`] = `
   </div>
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-    data-focusable={true}
     data-testid="AddCusd"
     dir="auto"
     href="celo://wallet/cashIn"
     onClick={[Function]}
+    onMouseEnter={[Function]}
     role="link"
     style={
       Object {
@@ -385,11 +385,11 @@ exports[`CeloRewards renders 1`] = `
   </a>
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-    data-focusable={true}
     data-testid="learnMore"
     dir="auto"
     href="/celo-rewards-terms-and-conditions"
     onClick={[Function]}
+    onMouseEnter={[Function]}
     role="link"
     style={
       Object {

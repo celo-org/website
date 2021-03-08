@@ -142,10 +142,11 @@ const styles = StyleSheet.create({
     gridTemplateColumns: `repeat(2, 1fr)`,
   },
   photo: {
+    flexBasis: 0,
     height: '100%',
     width: '100%',
   },
-  realImageContainer: { position: 'absolute', height: '100%', width: '100%' },
+  realImageContainer: { position: 'absolute', height: '100%', width: '100%', flexBasis: "0%"},
   imagePreview: {
     opacity: 0.5,
     filter: `blur(20px)`,
@@ -154,12 +155,13 @@ const styles = StyleSheet.create({
   },
   photoList: {
     display: 'grid',
-    gridRowGap: 55,
-    gridColumnGap: 40,
+    gridRowGap: "55px",
+    gridColumnGap: "40px",
     gridTemplateColumns: `repeat(3, 1fr)`,
     minHeight: '50vh',
   },
   person: {
+    flexBasis: "0%",
     flexDirection: 'column',
     margin: 5,
     marginBottom: 50,

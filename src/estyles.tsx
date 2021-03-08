@@ -1,4 +1,4 @@
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import { typeFaces, fontInfo } from "./styles"
 import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT} from "src/shared/Styles"
 

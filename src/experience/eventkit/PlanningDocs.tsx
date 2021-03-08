@@ -76,8 +76,8 @@ export default function PlanningDocs() {
 const styles = StyleSheet.create({
   grid: {
     display: 'grid',
-    gridColumnGap: 20,
-    gridRowGap: 10,
+    gridColumnGap: "20px",
+    gridRowGap: "10px",
     gridTemplateColumns: `repeat(auto-fill, minmax(160px, 1fr))`,
     justifyContent: 'space-between',
   },
