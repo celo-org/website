@@ -1499,13 +1499,17 @@ We believe that many of these features have great potential for positive impact,
           }
         >
           <div
-            className="lazyload-placeholder"
-            style={
-              Object {
-                "height": undefined,
+            className="lazyload-wrapper "
+          >
+            <div
+              className="lazyload-placeholder"
+              style={
+                Object {
+                  "height": undefined,
+                }
               }
-            }
-          />
+            />
+          </div>
         </div>
       </div>
       <div
@@ -2921,13 +2925,17 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="lazyload-placeholder"
-          style={
-            Object {
-              "height": undefined,
+          className="lazyload-wrapper "
+        >
+          <div
+            className="lazyload-placeholder"
+            style={
+              Object {
+                "height": undefined,
+              }
             }
-          }
-        />
+          />
+        </div>
       </div>
     </div>
   </div>

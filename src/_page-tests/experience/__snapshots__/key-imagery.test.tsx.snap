@@ -4634,13 +4634,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
         }
       >
         <div
-          className="lazyload-placeholder"
-          style={
-            Object {
-              "height": undefined,
+          className="lazyload-wrapper "
+        >
+          <div
+            className="lazyload-placeholder"
+            style={
+              Object {
+                "height": undefined,
+              }
             }
-          }
-        />
+          />
+        </div>
         <div
           className="css-text-901oao"
           dir="auto"

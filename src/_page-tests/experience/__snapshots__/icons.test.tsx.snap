@@ -4639,13 +4639,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
         }
       >
         <div
-          className="lazyload-placeholder"
-          style={
-            Object {
-              "height": undefined,
+          className="lazyload-wrapper "
+        >
+          <div
+            className="lazyload-placeholder"
+            style={
+              Object {
+                "height": undefined,
+              }
             }
-          }
-        />
+          />
+        </div>
         <div
           className="css-text-901oao"
           dir="auto"

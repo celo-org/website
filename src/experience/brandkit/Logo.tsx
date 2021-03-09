@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { useTranslation } from 'src/i18n'
 import { Image, StyleSheet, Text, View } from 'react-native'
 import Palette from 'src/experience/brandkit/color/Palette'
 import Page, { LOGO_PATH } from 'src/experience/brandkit/common/Page'
@@ -14,8 +13,8 @@ import { BACKGROUND_PALETTE } from 'src/experience/common/data'
 import SectionTitle from 'src/experience/common/SectionTitle'
 import TripplePairing from 'src/experience/common/TripplePairing'
 import { H1, H4 } from 'src/fonts/Fonts'
-import { I18nProps, NameSpaces, Trans, withNamespaces } from 'src/i18n'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
+import { NameSpaces, Trans, useTranslation } from 'src/i18n'
+import { ScreenSizes, useScreenSize } from 'src/layout/ScreenSize'
 import LogoLightBg from 'src/logos/LogoLightBg'
 import RingsGlyph from 'src/logos/RingsGlyph'
 import AspectRatio from 'src/shared/AspectRatio'
@@ -24,8 +23,8 @@ import InlineAnchor from 'src/shared/InlineAnchor'
 import menuItems, { hashNav } from 'src/shared/menu-items'
 import { colors, fonts, standardStyles } from 'src/styles'
 
-export default React.memo(
-  withNamespaces(NameSpaces.brand)(function Logo({ t }: I18nProps) {
+export default React.memo(function Logo() {
+  const { t } = useTranslation(NameSpaces.brand)
     return (
       <Page
         title={t('logo.title')}
@@ -39,10 +38,10 @@ export default React.memo(
       />
     )
   })
-)
 
-const Overview = withNamespaces(NameSpaces.brand)(
-  withScreenSize(function _Overview({ t, screen }: I18nProps & ScreenProps) {
+const Overview = React.memo(function _Overview() {
+    const { t } = useTranslation(NameSpaces.brand)
+    const {screen} = useScreenSize()
     const glyphAreaStyle = screen === ScreenSizes.DESKTOP ? styles.pilar : styles.square
 
     const onPressDownload = React.useCallback(async () => {
@@ -145,10 +144,9 @@ const Overview = withNamespaces(NameSpaces.brand)(
         </View>
       </View>
     )
-  })
-)
+})
 
-function Clearspace() {
+const Clearspace = React.memo(function ClearSpace() {
   const {t} = useTranslation(NameSpaces.brand)
   return (
     <>
@@ -207,7 +205,7 @@ function Clearspace() {
       </View>
     </>
   )
-}
+})
 
 function Backgrounds() {
   const {t} = useTranslation(NameSpaces.brand)

@@ -4146,13 +4146,17 @@ exports[`Experience/Brandkit renders 1`] = `
         }
       >
         <div
-          className="lazyload-placeholder"
-          style={
-            Object {
-              "height": undefined,
+          className="lazyload-wrapper "
+        >
+          <div
+            className="lazyload-placeholder"
+            style={
+              Object {
+                "height": undefined,
+              }
             }
-          }
-        />
+          />
+        </div>
         <div
           className="css-text-901oao"
           dir="auto"
