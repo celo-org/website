@@ -79,7 +79,6 @@ exports[`PastEventsPage renders 1`] = `
         </div>
         <div
           className="css-view-1dbjc4n"
-          data-focusable={true}
           onClick={[Function]}
           onContextMenu={[Function]}
           onKeyDown={[Function]}
@@ -190,7 +189,6 @@ exports[`PastEventsPage renders 1`] = `
         </div>
         <div
           className="css-view-1dbjc4n"
-          data-focusable={true}
           onClick={[Function]}
           onContextMenu={[Function]}
           onKeyDown={[Function]}
@@ -349,9 +347,9 @@ exports[`PastEventsPage renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-            data-focusable={true}
             href="mailto:community@celo.org"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -393,7 +391,9 @@ exports[`PastEventsPage renders 1`] = `
       <div
         className="css-view-1dbjc4n"
         onScroll={[Function]}
+        onTouchEnd={[Function]}
         onTouchMove={[Function]}
+        onTouchStart={[Function]}
         onWheel={[Function]}
         style={
           Object {

@@ -19,32 +19,114 @@ exports[`HomePage renders 1`] = `
   }
 >
   <div
-    className="css-bk8ub1-Cover"
+    css={
+      Object {
+        "map": undefined,
+        "name": "1pzeogy",
+        "next": undefined,
+        "styles": "display:flex;flex-direction:column;;overflow:hidden;position:relative;align-self:center;align-items:center;background-color:#2E3338;width:100%;max-width:100vw;@media (max-width: 576px){justify-content:center;}@media (max-height: 568px){justify-content:flex-end;padding-bottom:30px;}@media (min-width: 576px) and (max-width: 992px){padding-top:60px;width:100vw;height:100vh;min-height:1068px;margin-bottom:60px;}@media (min-width: 992px){padding-top:0;min-height:1066px;};padding-top:50px;@media (max-width: 576px){min-height:calc(100vh - 50px);}",
+        "toString": [Function],
+      }
+    }
   >
     <div
-      className="css-4o9604-Cover"
+      css={
+        Object {
+          "map": undefined,
+          "name": "c9xiaq",
+          "next": Object {
+            "name": "animation-q4bcp7",
+            "next": undefined,
+            "styles": "@keyframes animation-q4bcp7{
+  from {
+    opacity: 0.1;
+    transform: scale(1.02);
+  }
+
+  25% {
+    opacity: 0.5
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}",
+          },
+          "styles": "position:absolute;background-repeat:no-repeat;background-size:cover;animation-iteration-count:1;animation-fill-mode:both;animation-delay:50ms;animation-duration:6s;animation-name:animation-q4bcp7;animation-timing-function:ease-in-out;opacity:0.1;width:100%;background-color:#2E3338;@media (max-width: 400px) and (min-height: 790px){background-image:url(image.png);}@media (max-width: 576px){background-image:url(image.png);}@media (min-width: 576px) and (max-width: 992px){width:100vw;min-height:100vh;background-image:url(image.png);}@media (min-width: 992px){width:1379px;background-position-y:40px;background-image:url(image.png);};top:50px;height:calc(100% - 50px);",
+          "toString": [Function],
+        }
+      }
     />
     <div
-      className="css-1vtvu2z-Cover"
+      css={
+        Object {
+          "map": undefined,
+          "name": "1sh7b9p",
+          "next": undefined,
+          "styles": "display:flex;flex-direction:column;;align-items:center;z-index:10;@media (min-width: 992px){width:1379px;height:1141px;z-index:20;}@media (min-width: 576px) and (max-width: 992px){padding-top:72px;}@media (max-width: 576px){padding-top:24px;padding-bottom:16px;}@media (max-width: 400px) and (min-height: 790px){padding-bottom:0;}",
+          "toString": [Function],
+        }
+      }
     >
       <div
-        className="css-3l3noi-CoverContent"
+        css={
+          Object {
+            "map": undefined,
+            "name": "8mtf5i",
+            "next": undefined,
+            "styles": "display:flex;flex-direction:column;align-items:center;;max-width:660px;width:90vw;margin-bottom:24px;padding:24px;position:relative;@media (min-width: 576px) and (max-width: 992px){max-width:580px;}@media (max-width: 576px){max-width:310px;padding-bottom:12px;}@media (min-width: 992px){padding-top:150px;}",
+            "toString": [Function],
+          }
+        }
       >
         <div
-          className="css-1c30hwu-CoverContent"
+          css={
+            Object {
+              "map": undefined,
+              "name": "3ud9p5",
+              "next": undefined,
+              "styles": "@media (max-width: 576px){position:absolute;width:100%;height:100%;border-radius:33px;z-index:-1;background-color:#2E3338;filter:blur(22px);}",
+              "toString": [Function],
+            }
+          }
         />
         <h1
-          className="css-6eue6t-CoverContent"
+          css={
+            Object {
+              "map": undefined,
+              "name": "1ebiqd1",
+              "next": undefined,
+              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;color:#FFFFFF;text-align:center;@media (max-width: 576px){font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:36px;line-height:40;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:40px;;color:#FFFFFF;;}",
+              "toString": [Function],
+            }
+          }
         >
           Global payments infrastructure built for mobile
         </h1>
         <p
-          className="css-z1jmn5-CoverContent"
+          css={
+            Object {
+              "map": undefined,
+              "name": "1vh2w24",
+              "next": undefined,
+              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;color:#EDEEEF;text-align:center;margin-top:24px;margin-bottom:24px;@media (min-width: 576px) and (max-width: 992px){max-width:500px;}",
+              "toString": [Function],
+            }
+          }
         >
           Thousands of organizations and individuals are developing,  growing, and governing Celo, an open-source platform that enables anyone to build borderless applications
         </p>
         <div
-          className="css-kqicn0-CoverContent"
+          css={
+            Object {
+              "map": undefined,
+              "name": "bit6uz",
+              "next": undefined,
+              "styles": "display:flex;flex-direction:column;align-items:center;;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;column-gap:24px;row-gap:24px;width:290px;max-width:90vw;@media (max-width: 312px){justify-content:center;}",
+              "toString": [Function],
+            }
+          }
         >
           <div
             className="css-view-1dbjc4n"
@@ -56,11 +138,11 @@ exports[`HomePage renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="https://docs.celo.org/overview"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -268,6 +350,7 @@ exports[`HomePage renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <h3
@@ -346,11 +429,11 @@ exports[`HomePage renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="https://docs.celo.org/v/master/developer-guide/dappkit"
             onClick={[Function]}
-            rel=" noopener noreferrer"
+            onMouseEnter={[Function]}
+            rel="noopener"
             role="link"
             style={
               Object {
@@ -464,6 +547,7 @@ exports[`HomePage renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <h3
@@ -542,11 +626,11 @@ exports[`HomePage renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="https://docs.celo.org/overview#stable-cryptocurrencies"
             onClick={[Function]}
-            rel=" noopener noreferrer"
+            onMouseEnter={[Function]}
+            rel="noopener"
             role="link"
             style={
               Object {
@@ -660,6 +744,7 @@ exports[`HomePage renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <h3
@@ -738,11 +823,11 @@ exports[`HomePage renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="https://valoraapp.com"
             onClick={[Function]}
-            rel=" noopener noreferrer"
+            onMouseEnter={[Function]}
+            rel="noopener"
             role="link"
             style={
               Object {
@@ -959,21 +1044,14 @@ exports[`HomePage renders 1`] = `
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxPack": "justify",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitJustifyContent": "space-between",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "justifyContent": "space-between",
               "maxWidth": "330px",
-              "msFlexNegative": 1,
+              "msFlex": "1 1 0%",
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
             }
           }
         >
@@ -1110,10 +1188,10 @@ exports[`HomePage renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/papers"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
                   role="link"
                   style={
                     Object {
@@ -1196,21 +1274,14 @@ exports[`HomePage renders 1`] = `
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxPack": "justify",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitJustifyContent": "space-between",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "justifyContent": "space-between",
               "maxWidth": "330px",
-              "msFlexNegative": 1,
+              "msFlex": "1 1 0%",
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
             }
           }
         >
@@ -1358,10 +1429,10 @@ exports[`HomePage renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://celoreserve.org"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
                   role="link"
                   style={
                     Object {
@@ -1451,10 +1522,10 @@ exports[`HomePage renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://medium.com/celoorg/celo-gold-holders-make-your-voice-heard-through-on-chain-governance-96cb5a1e8b90"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
                   role="link"
                   style={
                     Object {
@@ -1568,7 +1639,15 @@ exports[`HomePage renders 1`] = `
         }
       >
         <div
-          className="css-1lzhsi5"
+          css={
+            Object {
+              "map": undefined,
+              "name": "1lzhsi5",
+              "next": undefined,
+              "styles": "display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;align-content:center;justify-content:center;opacity:0.7;",
+              "toString": [Function],
+            }
+          }
         >
           <a
             href="https://www.forbes.com/sites/stevenehrlich/2019/07/17/as-facebook-struggles-for-blockchain-support-a-truly-decentralized-challenger-emerges/#72fb490119eb"
@@ -1577,7 +1656,15 @@ exports[`HomePage renders 1`] = `
           >
             <img
               alt="Forbes"
-              className="css-gdz2v5"
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "gdz2v5",
+                  "next": undefined,
+                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:20px;margin-bottom:20px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;};",
+                  "toString": [Function],
+                }
+              }
               height={25}
               loading="lazy"
               src={
@@ -1595,7 +1682,15 @@ exports[`HomePage renders 1`] = `
           >
             <img
               alt="Wall Street Journal"
-              className="css-1ib55ei"
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "1ib55ei",
+                  "next": undefined,
+                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:20px;margin-bottom:20px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;};height:50px;width:180px;",
+                  "toString": [Function],
+                }
+              }
               height={50}
               loading="lazy"
               src={
@@ -1613,7 +1708,15 @@ exports[`HomePage renders 1`] = `
           >
             <img
               alt="Fortune"
-              className="css-gdz2v5"
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "gdz2v5",
+                  "next": undefined,
+                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:20px;margin-bottom:20px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;};",
+                  "toString": [Function],
+                }
+              }
               height={25}
               loading="lazy"
               src={
@@ -1631,7 +1734,15 @@ exports[`HomePage renders 1`] = `
           >
             <img
               alt="Coindesk"
-              className="css-gdz2v5"
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "gdz2v5",
+                  "next": undefined,
+                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:20px;margin-bottom:20px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;};",
+                  "toString": [Function],
+                }
+              }
               height={25}
               loading="lazy"
               src={
@@ -1649,7 +1760,15 @@ exports[`HomePage renders 1`] = `
           >
             <img
               alt="TechCrunch"
-              className="css-gdz2v5"
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "gdz2v5",
+                  "next": undefined,
+                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:20px;margin-bottom:20px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;};",
+                  "toString": [Function],
+                }
+              }
               height={25}
               loading="lazy"
               src={
@@ -1699,10 +1818,10 @@ exports[`HomePage renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/press"
               onClick={[Function]}
+              onMouseEnter={[Function]}
               role="link"
               style={
                 Object {
@@ -1864,7 +1983,6 @@ exports[`HomePage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -1971,7 +2089,6 @@ exports[`HomePage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -2047,7 +2164,6 @@ exports[`HomePage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -2123,7 +2239,6 @@ exports[`HomePage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -2199,7 +2314,6 @@ exports[`HomePage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -2275,7 +2389,6 @@ exports[`HomePage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -2444,10 +2557,10 @@ exports[`HomePage renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="https://docs.celo.org/v/master/developer-guide/overview/introduction"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -2537,10 +2650,10 @@ exports[`HomePage renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://www.crowdcast.io/e/celo-tech-talks-part-2"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
                   role="link"
                   style={
                     Object {
@@ -2688,6 +2801,7 @@ exports[`HomePage renders 1`] = `
                       "zIndex": -1,
                     }
                   }
+                  suppressHydrationWarning={true}
                 />
               </div>
             </div>
@@ -2766,6 +2880,7 @@ exports[`HomePage renders 1`] = `
                         "zIndex": -1,
                       }
                     }
+                    suppressHydrationWarning={true}
                   />
                 </div>
               </div>
@@ -2830,29 +2945,22 @@ exports[`HomePage renders 1`] = `
             "WebkitAlignItems": "center",
             "WebkitBoxAlign": "center",
             "WebkitBoxDirection": "normal",
-            "WebkitBoxFlex": 1,
             "WebkitBoxLines": "multiple",
             "WebkitBoxOrient": "horizontal",
             "WebkitBoxPack": "center",
-            "WebkitFlexBasis": "0%",
+            "WebkitFlex": 1,
             "WebkitFlexDirection": "row",
-            "WebkitFlexGrow": 1,
-            "WebkitFlexShrink": 1,
             "WebkitFlexWrap": "wrap",
             "WebkitJustifyContent": "center",
             "alignItems": "center",
-            "flexBasis": "0%",
+            "flex": 1,
             "flexDirection": "row",
-            "flexGrow": 1,
-            "flexShrink": 1,
             "flexWrap": "wrap",
             "justifyContent": "center",
+            "msFlex": "1 1 0%",
             "msFlexAlign": "center",
             "msFlexDirection": "row",
-            "msFlexNegative": 1,
             "msFlexPack": "center",
-            "msFlexPositive": 1,
-            "msFlexPreferredSize": "0%",
             "msFlexWrap": "wrap",
           }
         }
@@ -2894,6 +3002,7 @@ exports[`HomePage renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <div
@@ -2933,6 +3042,7 @@ exports[`HomePage renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <div
@@ -2972,6 +3082,7 @@ exports[`HomePage renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <div
@@ -3011,6 +3122,7 @@ exports[`HomePage renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <div
@@ -3050,6 +3162,7 @@ exports[`HomePage renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <div
@@ -3089,6 +3202,7 @@ exports[`HomePage renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
       </div>
@@ -3146,10 +3260,10 @@ exports[`HomePage renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/about#backers"
               onClick={[Function]}
+              onMouseEnter={[Function]}
               role="link"
               style={
                 Object {

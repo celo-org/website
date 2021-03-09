@@ -1,12 +1,11 @@
-/** @jsx jsx */
-import {jsx, css, keyframes} from "@emotion/core"
+import {css, keyframes} from "@emotion/react"
 import CoverContent from "src/home/CoverContent"
 import { colors } from "src/styles"
 import celoAsStarsMobileLong from "src/home/celo-sky-mobile.svg"
 import celoAsStarsMobileShort from "src/home/celo-sky-mobile-short.svg"
 import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"
 import celoAsStarsDesktop from "src/home/celo-sky-desktop.svg"
-
+import * as React from 'react'
 import examplePhones from "src/home/example-phones.svg"
 import Stats from "./stats/Stats"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"

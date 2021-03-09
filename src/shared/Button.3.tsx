@@ -166,7 +166,7 @@ function ButtonPrimary(props: Props) {
     <Link href={href} passHref={true}>
       <Text
         href={href}
-        target={target}
+        hrefAttrs={getHrefAttrs(target)}
         accessibilityRole="link"
         style={[
           baseStyles.base,
@@ -196,8 +196,8 @@ function ButtonSecondary(props: Props) {
       <Link href={href} passHref={true}>
         <Text
           href={href}
-          target={target}
-          accessibilityRole="link"
+           hrefAttrs={getHrefAttrs(target)}
+             accessibilityRole="link"
           style={[
             baseStyles.base,
             sizeStyle(size),
@@ -223,8 +223,8 @@ function ButtonTertiary(props: Props) {
     <Link href={href} passHref={true}>
       <Text
         href={href}
-        target={target}
-        accessibilityRole="link"
+         hrefAttrs={getHrefAttrs(target)}
+         accessibilityRole="link"
         style={[
           baseStyles.base,
           baseStyles.verticallyAlign,
@@ -274,8 +274,8 @@ function ButtonNaked(props: Props) {
         <Text
           accessibilityRole="link"
           href={href}
-          target={target}
-          style={[
+           hrefAttrs={getHrefAttrs(target)}
+             style={[
             fonts.navigation,
             baseStyles.verticallyAlign,
             textStyle,
@@ -307,6 +307,17 @@ const nakedStyles = StyleSheet.create({
   },
 })
 
+function getHrefAttrs(target: string) {
+  if (target === "_blank") {
+    return {
+      rel: "noopener",
+      target: "blank", // for some reason  targets starting with `_` are ignored https://github.com/necolas/react-native-web/blob/master/packages/react-native-web/src/exports/Text/index.js#L134
+    }
+  } else {
+    return {target}
+  }
+}
+
 function ButtonNav(props: Props) {
   const { children, status, kind, style, href, target } = props
   const color = kind === BTN.DARKNAV ? colors.white : colors.dark
@@ -314,7 +325,7 @@ function ButtonNav(props: Props) {
     <Link href={href} passHref={true}>
       <Text
         href={href}
-        target={target}
+        hrefAttrs={getHrefAttrs(target)}
         accessibilityRole="link"
         style={[
           baseStyles.base,
@@ -338,8 +349,8 @@ function ButtonInline(props: Props) {
     <Link href={href} passHref={true}>
       <Text
         href={href}
-        target={target}
-        accessibilityRole="link"
+         hrefAttrs={getHrefAttrs(target)}
+         accessibilityRole="link"
         style={[inlineStyle.text, inlineStyle.container, opacityStyle[status], style]}
       >
         {children}

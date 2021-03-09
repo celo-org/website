@@ -52,7 +52,7 @@ declare module 'react-native' {
     accessibilityRole?: 'button' | 'heading' | 'label' | 'link' | 'listitem'
     tabIndex?: number
     href?: string
-    target?: string
+    hrefAttrs?: {target?: string, rel?: string, download?: string}
     id?: string
     onClick?: () => void
     style?: StyleProp<TextStyle>

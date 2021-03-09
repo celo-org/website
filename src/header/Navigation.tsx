@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import {jsx, css, CSSObject} from "@emotion/core"
+import { css, CSSObject} from "@emotion/react"
 import throttle from 'lodash.throttle'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'

@@ -73,7 +73,7 @@ function BrandVoice() {
               'https://docs.google.com/document/d/1Y1mfpBGad_8ZxSuIqwX52MWGEMfoWGt5HXc7sZp9h70/edit?usp=sharing'
             }
           >
-            {}
+            ""
           </InlineAnchor>
         </Trans>
       </Text>

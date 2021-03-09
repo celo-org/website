@@ -76,6 +76,7 @@ exports[`About renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
           <img
             alt=""
@@ -656,7 +657,6 @@ exports[`About renders 1`] = `
          
         <div
           className="css-view-1dbjc4n"
-          data-focusable={true}
           onClick={[Function]}
           onContextMenu={[Function]}
           onKeyDown={[Function]}
@@ -785,6 +785,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
           "zIndex": -1,
         }
       }
+      suppressHydrationWarning={true}
     />
     <img
       alt=""
@@ -1732,6 +1733,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
             "zIndex": -1,
           }
         }
+        suppressHydrationWarning={true}
       />
       <img
         alt=""
@@ -1891,9 +1893,9 @@ Change the story.
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-            data-focusable={true}
-            href="http://sacred-economics.com/film"
+            href="http://sacred-economics.com/film/"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -1921,10 +1923,10 @@ Change the story.
       >
         <a
           className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-          data-focusable={true}
           dir="auto"
-          href="http://sacred-economics.com/film"
+          href="http://sacred-economics.com/film/"
           onClick={[Function]}
+          onMouseEnter={[Function]}
           role="link"
           style={
             Object {
@@ -2083,10 +2085,10 @@ Change the story.
       >
         <a
           className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-          data-focusable={true}
           dir="auto"
           href="https://medium.com/celoOrg/celos-theory-of-change-b916de44945d"
           onClick={[Function]}
+          onMouseEnter={[Function]}
           role="link"
           style={
             Object {
@@ -2308,7 +2310,9 @@ Change the story.
               Object {
                 "WebkitBoxDirection": "normal",
                 "WebkitBoxOrient": "vertical",
+                "WebkitFlexBasis": "0%",
                 "WebkitFlexDirection": "column",
+                "flexBasis": "0%",
                 "flexDirection": "column",
                 "marginBottom": "50px",
                 "marginLeft": "5px",
@@ -2317,6 +2321,7 @@ Change the story.
                 "maxWidth": "300px",
                 "minWidth": "250px",
                 "msFlexDirection": "column",
+                "msFlexPreferredSize": "0%",
                 "width": "90vw",
               }
             }
@@ -2391,6 +2396,7 @@ Change the story.
                         "zIndex": -1,
                       }
                     }
+                    suppressHydrationWarning={true}
                   />
                   <img
                     alt=""
@@ -2405,7 +2411,10 @@ Change the story.
               className="css-view-1dbjc4n"
               style={
                 Object {
+                  "WebkitFlexBasis": "0%",
+                  "flexBasis": "0%",
                   "height": "100%",
+                  "msFlexPreferredSize": "0%",
                   "position": "absolute",
                   "width": "100%",
                 }
@@ -2447,10 +2456,10 @@ Change the story.
                     className="css-view-1dbjc4n"
                     style={
                       Object {
-                        "WebkitFlexBasis": "auto",
-                        "flexBasis": "auto",
+                        "WebkitFlexBasis": "0px",
+                        "flexBasis": "0px",
                         "height": "100%",
-                        "msFlexPreferredSize": "auto",
+                        "msFlexPreferredSize": "0px",
                         "overflowX": "hidden",
                         "overflowY": "hidden",
                         "width": "100%",
@@ -2477,6 +2486,7 @@ Change the story.
                           "zIndex": -1,
                         }
                       }
+                      suppressHydrationWarning={true}
                     />
                     <img
                       alt="Photo of Jon"
@@ -2808,6 +2818,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -2861,6 +2872,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -2914,6 +2926,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3002,6 +3015,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3055,6 +3069,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3108,6 +3123,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3161,6 +3177,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3214,6 +3231,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3477,6 +3495,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3530,6 +3549,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3583,6 +3603,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3636,6 +3657,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3689,6 +3711,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3742,6 +3765,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -3865,6 +3889,7 @@ Change the story.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
         </div>
@@ -4227,9 +4252,9 @@ Change the story.
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-            data-focusable={true}
             href="mailto:press@celo.org"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
