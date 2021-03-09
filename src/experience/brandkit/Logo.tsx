@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useTranslation } from 'src/i18n'
 import { Image, StyleSheet, Text, View } from 'react-native'
 import Palette from 'src/experience/brandkit/color/Palette'
 import Page, { LOGO_PATH } from 'src/experience/brandkit/common/Page'
@@ -147,7 +148,8 @@ const Overview = withNamespaces(NameSpaces.brand)(
   })
 )
 
-const Clearspace = withNamespaces(NameSpaces.brand)(function _ClearSpace({ t }) {
+function Clearspace() {
+  const {t} = useTranslation(NameSpaces.brand)
   return (
     <>
       <View style={styles.gap}>
@@ -205,9 +207,11 @@ const Clearspace = withNamespaces(NameSpaces.brand)(function _ClearSpace({ t }) 
       </View>
     </>
   )
-})
+}
 
-const Backgrounds = withNamespaces(NameSpaces.brand)(function _Backgrounds({ t }: I18nProps) {
+function Backgrounds() {
+  const {t} = useTranslation(NameSpaces.brand)
+
   return (
     <View>
       <View style={styles.gap}>
@@ -314,7 +318,7 @@ const Backgrounds = withNamespaces(NameSpaces.brand)(function _Backgrounds({ t }
       />
     </View>
   )
-})
+}
 
 const styles = StyleSheet.create({
   container: {

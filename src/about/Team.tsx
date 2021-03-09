@@ -2,10 +2,10 @@ import * as React from 'react'
 import LazyLoadFadin from 'react-lazyload-fadein'
 import { Image, ImageURISource, StyleSheet, Text, View } from 'react-native'
 import { Contributor } from 'src/about/Contributor'
-import { I18nProps, withNamespaces } from 'src/i18n'
+import { NameSpaces, useTranslation } from 'src/i18n'
 import BookLayout from 'src/layout/BookLayout'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
+import { useScreenSize } from 'src/layout/ScreenSize'
 import AspectRatio from 'src/shared/AspectRatio'
 import Outbound from 'src/shared/Outbound'
 import Responsive from 'src/shared/Responsive'
@@ -14,44 +14,41 @@ interface Props {
   contributors: Contributor[]
 }
 
-export class Team extends React.Component<Props & I18nProps & ScreenProps> {
-  render() {
-    const { t, screen, contributors } = this.props
-    const isTablet = screen === ScreenSizes.TABLET
-    const isMobile = screen === ScreenSizes.MOBILE
+export default function Team(props: Props) {
+  const {t} = useTranslation(NameSpaces.about)
+  const { isMobile, isTablet} = useScreenSize()
 
-    return (
-      <View nativeID="contributors">
-        <BookLayout label={t('teamTitle')} startBlock={true}>
-          <Text style={[fonts.p, standardStyles.sectionMarginBottomMobile]}>{t('teamCopy')} </Text>
-        </BookLayout>
-        <GridRow>
-          <Cell span={Spans.full} tabletSpan={Spans.full} style={standardStyles.centered}>
-            <View
-              style={[
-                styles.photoList,
-                isMobile ? styles.photoListAuxMobile : isTablet && styles.photoListAuxTablet,
-              ]}
-            >
-              {contributors.map((person: Contributor) => (
-                <React.Fragment key={person.name}>
-                  <Portrait
-                    name={person.name}
-                    url={person.url}
-                    team={person.team}
-                    company={person.company}
-                    purpose={person.purpose}
-                    preview={{ uri: person.preview }}
-                    source={{ uri: person.photo }}
-                  />
-                </React.Fragment>
-              ))}
-            </View>
-          </Cell>
-        </GridRow>
-      </View>
-    )
-  }
+  return (
+    <View nativeID="contributors">
+      <BookLayout label={t('teamTitle')} startBlock={true}>
+        <Text style={[fonts.p, standardStyles.sectionMarginBottomMobile]}>{t('teamCopy')} </Text>
+      </BookLayout>
+      <GridRow>
+        <Cell span={Spans.full} tabletSpan={Spans.full} style={standardStyles.centered}>
+          <View
+            style={[
+              styles.photoList,
+              isMobile ? styles.photoListAuxMobile : isTablet && styles.photoListAuxTablet,
+            ]}
+          >
+            {props.contributors.map((person: Contributor) => (
+              <React.Fragment key={person.name}>
+                <Portrait
+                  name={person.name}
+                  url={person.url}
+                  team={person.team}
+                  company={person.company}
+                  purpose={person.purpose}
+                  preview={{ uri: person.preview }}
+                  source={{ uri: person.photo }}
+                />
+              </React.Fragment>
+            ))}
+          </View>
+        </Cell>
+      </GridRow>
+    </View>
+  )
 }
 
 interface PortraitProps {
@@ -179,4 +176,3 @@ const styles = StyleSheet.create({
   },
 })
 
-export default withScreenSize(withNamespaces('about')(Team))
