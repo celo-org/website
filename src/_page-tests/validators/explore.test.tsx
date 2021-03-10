@@ -168,7 +168,7 @@ describe.skip('ValidatorsList', () => {
     const tree = renderer
       .create(
         <TestProvider>
-          <ValidatorsList data={cleanData(data)} />
+          <ValidatorsList data={cleanData(data)} isLoading={false} />
         </TestProvider>
       )
       .toJSON()

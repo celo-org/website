@@ -82,23 +82,16 @@ Array [
             className="css-view-1dbjc4n"
             style={
               Object {
-                "WebkitBoxFlex": 1,
                 "WebkitBoxPack": "center",
-                "WebkitFlexBasis": "0%",
-                "WebkitFlexGrow": 1,
-                "WebkitFlexShrink": 1,
+                "WebkitFlex": 1,
                 "WebkitJustifyContent": "center",
-                "flexBasis": "0%",
-                "flexGrow": 1,
-                "flexShrink": 1,
+                "flex": 1,
                 "justifyContent": "center",
                 "marginLeft": "20px",
                 "marginRight": "20px",
                 "maxWidth": "350px",
-                "msFlexNegative": 1,
+                "msFlex": "1 1 0%",
                 "msFlexPack": "center",
-                "msFlexPositive": 1,
-                "msFlexPreferredSize": "0%",
               }
             }
           >
@@ -223,11 +216,11 @@ Do not send real funds.
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://play.google.com/apps/testing/org.celo.mobile.alfajores"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -374,11 +367,11 @@ Do not send real funds.
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://testflight.apple.com/join/s212x3Rp"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -498,11 +491,11 @@ Do not send real funds.
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://alfajores.celowallet.app"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -608,24 +601,17 @@ Do not send real funds.
               Object {
                 "WebkitAlignItems": "center",
                 "WebkitBoxAlign": "center",
-                "WebkitBoxFlex": 1,
                 "WebkitBoxPack": "center",
-                "WebkitFlexBasis": "0%",
-                "WebkitFlexGrow": 1,
-                "WebkitFlexShrink": 1,
+                "WebkitFlex": 1,
                 "WebkitJustifyContent": "center",
                 "alignItems": "center",
-                "flexBasis": "0%",
-                "flexGrow": 1,
-                "flexShrink": 1,
+                "flex": 1,
                 "height": "50vh",
                 "justifyContent": "center",
                 "maxWidth": "275px",
+                "msFlex": "1 1 0%",
                 "msFlexAlign": "center",
-                "msFlexNegative": 1,
                 "msFlexPack": "center",
-                "msFlexPositive": 1,
-                "msFlexPreferredSize": "0%",
               }
             }
           >
@@ -852,25 +838,18 @@ Do not send real funds.
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxPack": "start",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitJustifyContent": "flex-start",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "justifyContent": "flex-start",
               "marginLeft": "20px",
               "marginRight": "20px",
               "marginTop": "30px",
               "maxWidth": "270px",
               "minWidth": "160px",
-              "msFlexNegative": 1,
+              "msFlex": "1 1 0%",
               "msFlexPack": "start",
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
             }
           }
         >
@@ -910,6 +889,7 @@ Do not send real funds.
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
             <h3
@@ -989,10 +969,10 @@ Do not send real funds.
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="/developers/faucet"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -1049,25 +1029,18 @@ Do not send real funds.
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxPack": "justify",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitJustifyContent": "space-between",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "justifyContent": "space-between",
               "marginLeft": "20px",
               "marginRight": "20px",
               "marginTop": "30px",
               "maxWidth": "270px",
               "minWidth": "160px",
-              "msFlexNegative": 1,
+              "msFlex": "1 1 0%",
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
             }
           }
         >
@@ -1107,6 +1080,7 @@ Do not send real funds.
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
             <h3
@@ -1153,25 +1127,18 @@ Do not send real funds.
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxPack": "justify",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitJustifyContent": "space-between",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "justifyContent": "space-between",
               "marginLeft": "20px",
               "marginRight": "20px",
               "marginTop": "30px",
               "maxWidth": "270px",
               "minWidth": "160px",
-              "msFlexNegative": 1,
+              "msFlex": "1 1 0%",
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
             }
           }
         >
@@ -1211,6 +1178,7 @@ Do not send real funds.
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
             <h3
@@ -1420,6 +1388,7 @@ Check out these wallets for everyday use.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
           <h3
@@ -1498,11 +1467,11 @@ Check out these wallets for everyday use.
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="https://valoraapp.com"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -1616,6 +1585,7 @@ Check out these wallets for everyday use.
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
           <h3
@@ -1694,11 +1664,11 @@ Check out these wallets for everyday use.
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="https://celowallet.app"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {

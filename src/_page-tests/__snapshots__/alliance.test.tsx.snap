@@ -2343,18 +2343,11 @@ exports[`Alliance renders 1`] = `
                   className="css-view-1dbjc4n"
                   style={
                     Object {
-                      "WebkitBoxFlex": 1,
-                      "WebkitFlexBasis": "0%",
-                      "WebkitFlexGrow": 1,
-                      "WebkitFlexShrink": 1,
-                      "flexBasis": "0%",
-                      "flexGrow": 1,
-                      "flexShrink": 1,
+                      "WebkitFlex": 1,
+                      "flex": 1,
                       "marginLeft": "5px",
                       "marginRight": "5px",
-                      "msFlexNegative": 1,
-                      "msFlexPositive": 1,
-                      "msFlexPreferredSize": "0%",
+                      "msFlex": "1 1 0%",
                     }
                   }
                 >
@@ -2398,7 +2391,6 @@ exports[`Alliance renders 1`] = `
                       autoComplete="on"
                       autoCorrect="on"
                       className="css-textinput-11aywtz"
-                      data-focusable={true}
                       dir="auto"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -2491,18 +2483,11 @@ exports[`Alliance renders 1`] = `
                   className="css-view-1dbjc4n"
                   style={
                     Object {
-                      "WebkitBoxFlex": 1,
-                      "WebkitFlexBasis": "0%",
-                      "WebkitFlexGrow": 1,
-                      "WebkitFlexShrink": 1,
-                      "flexBasis": "0%",
-                      "flexGrow": 1,
-                      "flexShrink": 1,
+                      "WebkitFlex": 1,
+                      "flex": 1,
                       "marginLeft": "5px",
                       "marginRight": "5px",
-                      "msFlexNegative": 1,
-                      "msFlexPositive": 1,
-                      "msFlexPreferredSize": "0%",
+                      "msFlex": "1 1 0%",
                     }
                   }
                 >
@@ -2546,7 +2531,6 @@ exports[`Alliance renders 1`] = `
                       autoComplete="on"
                       autoCorrect="on"
                       className="css-textinput-11aywtz"
-                      data-focusable={true}
                       dir="auto"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -2640,18 +2624,11 @@ exports[`Alliance renders 1`] = `
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
+                    "WebkitFlex": 1,
+                    "flex": 1,
                     "marginLeft": "5px",
                     "marginRight": "5px",
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "msFlex": "1 1 0%",
                   }
                 }
               >
@@ -2695,7 +2672,6 @@ exports[`Alliance renders 1`] = `
                     autoComplete="on"
                     autoCorrect="on"
                     className="css-textinput-11aywtz"
-                    data-focusable={true}
                     dir="auto"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -2748,18 +2724,11 @@ exports[`Alliance renders 1`] = `
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
+                    "WebkitFlex": 1,
+                    "flex": 1,
                     "marginLeft": "5px",
                     "marginRight": "5px",
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "msFlex": "1 1 0%",
                   }
                 }
               >
@@ -2819,7 +2788,6 @@ exports[`Alliance renders 1`] = `
                     </div>
                     <input
                       checked={false}
-                      data-focusable={true}
                       name="subscribe"
                       onChange={[Function]}
                       onClick={[Function]}
@@ -2892,7 +2860,6 @@ exports[`Alliance renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   onClick={[Function]}
                   role="link"
@@ -3284,6 +3251,7 @@ exports[`Alliance renders 1`] = `
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
           </div>
@@ -3405,6 +3373,7 @@ exports[`Alliance renders 1`] = `
                         "zIndex": -1,
                       }
                     }
+                    suppressHydrationWarning={true}
                   />
                 </div>
               </div>
@@ -3483,6 +3452,7 @@ exports[`Alliance renders 1`] = `
                           "zIndex": -1,
                         }
                       }
+                      suppressHydrationWarning={true}
                     />
                   </div>
                 </div>
@@ -3615,6 +3585,7 @@ exports[`Alliance renders 1`] = `
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
           </div>
@@ -3672,10 +3643,10 @@ exports[`Alliance renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="https://medium.com/celoorg/how-to-design-for-all-stories-from-tanzania-refugees-8b34594d64ae"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -3830,6 +3801,7 @@ exports[`Alliance renders 1`] = `
                         "zIndex": -1,
                       }
                     }
+                    suppressHydrationWarning={true}
                   />
                 </div>
               </div>
@@ -3908,6 +3880,7 @@ exports[`Alliance renders 1`] = `
                           "zIndex": -1,
                         }
                       }
+                      suppressHydrationWarning={true}
                     />
                   </div>
                 </div>
@@ -4039,6 +4012,7 @@ exports[`Alliance renders 1`] = `
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
           </div>
@@ -4096,10 +4070,10 @@ exports[`Alliance renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="https://medium.com/celoorg/a-cryptocurrency-for-every-juan-144144e62d5"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -4254,6 +4228,7 @@ exports[`Alliance renders 1`] = `
                         "zIndex": -1,
                       }
                     }
+                    suppressHydrationWarning={true}
                   />
                 </div>
               </div>
@@ -4332,6 +4307,7 @@ exports[`Alliance renders 1`] = `
                           "zIndex": -1,
                         }
                       }
+                      suppressHydrationWarning={true}
                     />
                   </div>
                 </div>
@@ -4400,6 +4376,7 @@ exports[`Alliance renders 1`] = `
             "zIndex": -1,
           }
         }
+        suppressHydrationWarning={true}
       />
     </div>
     <div
@@ -4631,7 +4608,6 @@ exports[`Alliance renders 1`] = `
             >
               <div
                 className="css-view-1dbjc4n"
-                data-focusable={true}
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -4660,13 +4636,10 @@ exports[`Alliance renders 1`] = `
                       "WebkitAlignItems": "center",
                       "WebkitBoxAlign": "center",
                       "WebkitBoxDirection": "normal",
-                      "WebkitBoxFlex": 1,
                       "WebkitBoxOrient": "horizontal",
                       "WebkitBoxPack": "justify",
-                      "WebkitFlexBasis": "0%",
+                      "WebkitFlex": 1,
                       "WebkitFlexDirection": "row",
-                      "WebkitFlexGrow": 1,
-                      "WebkitFlexShrink": 1,
                       "WebkitJustifyContent": "space-between",
                       "alignItems": "center",
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -4682,19 +4655,15 @@ exports[`Alliance renders 1`] = `
                       "borderTopLeftRadius": "3px",
                       "borderTopRightRadius": "3px",
                       "borderTopWidth": "1px",
-                      "flexBasis": "0%",
+                      "flex": 1,
                       "flexDirection": "row",
-                      "flexGrow": 1,
-                      "flexShrink": 1,
                       "justifyContent": "space-between",
                       "marginBottom": "5px",
                       "marginTop": "5px",
+                      "msFlex": "1 1 0%",
                       "msFlexAlign": "center",
                       "msFlexDirection": "row",
-                      "msFlexNegative": 1,
                       "msFlexPack": "justify",
-                      "msFlexPositive": 1,
-                      "msFlexPreferredSize": "0%",
                       "paddingBottom": "10px",
                       "paddingLeft": "10px",
                       "paddingRight": "10px",
@@ -4752,10 +4721,7 @@ exports[`Alliance renders 1`] = `
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
+                    "WebkitFlex": 1,
                     "backgroundColor": "rgba(255,255,255,1.00)",
                     "borderBottomColor": "rgba(221,221,221,1.00)",
                     "borderBottomLeftRadius": "3px",
@@ -4770,14 +4736,10 @@ exports[`Alliance renders 1`] = `
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
                     "display": "none",
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
+                    "flex": 1,
                     "marginBottom": "5px",
                     "marginTop": "5px",
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "msFlex": "1 1 0%",
                   }
                 }
               >
@@ -6437,6 +6399,7 @@ exports[`Alliance renders 1`] = `
             "zIndex": -1,
           }
         }
+        suppressHydrationWarning={true}
       />
     </div>
     <div
@@ -6647,14 +6610,9 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -6706,14 +6664,9 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -6765,14 +6718,9 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            />
+            <span>
+              ...
+            </span>
           </div>
         </div>
       </div>
@@ -6864,10 +6812,10 @@ exports[`Alliance renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="https://medium.com/celoOrg"
               onClick={[Function]}
+              onMouseEnter={[Function]}
               role="link"
               style={
                 Object {
@@ -6887,7 +6835,6 @@ exports[`Alliance renders 1`] = `
                   "textRendering": "geometricPrecision",
                 }
               }
-              target="_blog"
             >
               Read more on our blog
               <div
@@ -7101,6 +7048,7 @@ exports[`Alliance renders 1`] = `
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
           <div
@@ -7174,6 +7122,7 @@ exports[`Alliance renders 1`] = `
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
           <div
@@ -7247,6 +7196,7 @@ exports[`Alliance renders 1`] = `
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
           <div
@@ -7320,6 +7270,7 @@ exports[`Alliance renders 1`] = `
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
           <div
@@ -7393,6 +7344,7 @@ exports[`Alliance renders 1`] = `
                   "zIndex": -1,
                 }
               }
+              suppressHydrationWarning={true}
             />
           </div>
           <div
@@ -7596,18 +7548,11 @@ exports[`Alliance renders 1`] = `
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
+                    "WebkitFlex": 1,
+                    "flex": 1,
                     "marginLeft": "5px",
                     "marginRight": "5px",
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "msFlex": "1 1 0%",
                   }
                 }
               >
@@ -7651,7 +7596,6 @@ exports[`Alliance renders 1`] = `
                     autoComplete="on"
                     autoCorrect="on"
                     className="css-textinput-11aywtz"
-                    data-focusable={true}
                     dir="auto"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -7744,18 +7688,11 @@ exports[`Alliance renders 1`] = `
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxFlex": 1,
-                    "WebkitFlexBasis": "0%",
-                    "WebkitFlexGrow": 1,
-                    "WebkitFlexShrink": 1,
-                    "flexBasis": "0%",
-                    "flexGrow": 1,
-                    "flexShrink": 1,
+                    "WebkitFlex": 1,
+                    "flex": 1,
                     "marginLeft": "5px",
                     "marginRight": "5px",
-                    "msFlexNegative": 1,
-                    "msFlexPositive": 1,
-                    "msFlexPreferredSize": "0%",
+                    "msFlex": "1 1 0%",
                   }
                 }
               >
@@ -7799,7 +7736,6 @@ exports[`Alliance renders 1`] = `
                     autoComplete="on"
                     autoCorrect="on"
                     className="css-textinput-11aywtz"
-                    data-focusable={true}
                     dir="auto"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -7893,18 +7829,11 @@ exports[`Alliance renders 1`] = `
               className="css-view-1dbjc4n"
               style={
                 Object {
-                  "WebkitBoxFlex": 1,
-                  "WebkitFlexBasis": "0%",
-                  "WebkitFlexGrow": 1,
-                  "WebkitFlexShrink": 1,
-                  "flexBasis": "0%",
-                  "flexGrow": 1,
-                  "flexShrink": 1,
+                  "WebkitFlex": 1,
+                  "flex": 1,
                   "marginLeft": "5px",
                   "marginRight": "5px",
-                  "msFlexNegative": 1,
-                  "msFlexPositive": 1,
-                  "msFlexPreferredSize": "0%",
+                  "msFlex": "1 1 0%",
                 }
               }
             >
@@ -7948,7 +7877,6 @@ exports[`Alliance renders 1`] = `
                   autoComplete="on"
                   autoCorrect="on"
                   className="css-textinput-11aywtz"
-                  data-focusable={true}
                   dir="auto"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -8001,18 +7929,11 @@ exports[`Alliance renders 1`] = `
               className="css-view-1dbjc4n"
               style={
                 Object {
-                  "WebkitBoxFlex": 1,
-                  "WebkitFlexBasis": "0%",
-                  "WebkitFlexGrow": 1,
-                  "WebkitFlexShrink": 1,
-                  "flexBasis": "0%",
-                  "flexGrow": 1,
-                  "flexShrink": 1,
+                  "WebkitFlex": 1,
+                  "flex": 1,
                   "marginLeft": "5px",
                   "marginRight": "5px",
-                  "msFlexNegative": 1,
-                  "msFlexPositive": 1,
-                  "msFlexPreferredSize": "0%",
+                  "msFlex": "1 1 0%",
                 }
               }
             >
@@ -8072,7 +7993,6 @@ exports[`Alliance renders 1`] = `
                   </div>
                   <input
                     checked={false}
-                    data-focusable={true}
                     name="subscribe"
                     onChange={[Function]}
                     onClick={[Function]}
@@ -8145,7 +8065,6 @@ exports[`Alliance renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 onClick={[Function]}
                 role="link"

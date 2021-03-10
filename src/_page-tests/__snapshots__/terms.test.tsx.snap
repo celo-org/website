@@ -232,11 +232,11 @@ exports[`Terms renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/user-agreement"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -329,11 +329,11 @@ exports[`Terms renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/faq"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -426,11 +426,11 @@ exports[`Terms renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/privacy"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -523,11 +523,11 @@ exports[`Terms renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="https://docs.celo.org/important-information/mainnet-network-disclaimer"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -734,11 +734,11 @@ exports[`Terms renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="https://docs.celo.org/celo-codebase/protocol/identity/phone-number-privacy"
             onClick={[Function]}
-            rel=" noopener noreferrer"
+            onMouseEnter={[Function]}
+            rel="noopener"
             role="link"
             style={
               Object {

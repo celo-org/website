@@ -100,7 +100,7 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
                   ellipsizeMode="tail"
                   accessibilityRole="link"
                   href={`https://explorer.celo.org/address/${group.address}/celo`}
-                  target="_blank"
+                  hrefAttrs={hrefAttrs}
                 >
                   {group.name || unknownGroupName}
                 </Text>
@@ -118,7 +118,7 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
                             {i + 1}.
                             <Text
                               accessibilityRole="link"
-                              target="_blank"
+                              hrefAttrs={hrefAttrs}
                               href={`https://${domain}`}
                               style={[styles.defaultText, styles.tooltipText]}
                             >
@@ -255,7 +255,7 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
                       ]}
                       accessibilityRole="link"
                       href={`https://explorer.celo.org/address/${validator.address}/celo`}
-                      target="_blank"
+                      hrefAttrs={hrefAttrs}
                     >
                       {validator.name || unknownValidatorName}
                     </Text>
@@ -334,5 +334,8 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
     )
   }
 }
+
+const hrefAttrs = {target:"blank", "rel": "noopenner"}
+
 
 export default withNamespaces('dev')(ValidatorsListRow)

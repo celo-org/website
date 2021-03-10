@@ -252,11 +252,11 @@ exports[`Papers renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/papers/whitepaper"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -349,11 +349,11 @@ exports[`Papers renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/papers/whitepaper/chinese"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -575,11 +575,11 @@ exports[`Papers renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/papers/plumo"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -801,11 +801,11 @@ exports[`Papers renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/papers/stability"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -1027,11 +1027,11 @@ exports[`Papers renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/papers/cbdc-velocity"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -1124,11 +1124,11 @@ exports[`Papers renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/papers/cbdc-velocity/spanish"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -1350,11 +1350,11 @@ exports[`Papers renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="/papers/future-of-digital-currencies"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
