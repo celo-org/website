@@ -1,75 +1,55 @@
-/** @jsx jsx */
-import {jsx, css} from "@emotion/core"
-import * as React from 'react'
-import { agree, disagree, showVisitorCookieConsent } from 'src/analytics/analytics'
-import { I18nProps, withNamespaces, Trans, NameSpaces } from 'src/i18n'
+import { css, keyframes} from "@emotion/react"
+import {  Trans, NameSpaces } from 'src/i18n'
 import {flex, WHEN_MOBILE, jost} from 'src/estyles'
 import {colors} from 'src/styles'
-import { initSentry } from 'src/utils/sentry'
+import * as React from 'react'
 
-interface State {
-    showConsent: boolean
+interface Props {
+    onAgree: () => void
+    onDisagree: () => void
 }
 
-export class CookieConsentWithEmotion extends React.PureComponent<I18nProps, State> {
-    state = {
-        showConsent: false
-    }
+export function CookieConsentWithEmotion({onAgree, onDisagree}: Props) {
 
-    async componentDidMount(){
-        this.setState({
-            showConsent: await showVisitorCookieConsent()
-        })
-    }
-    onAgree = async () =>{
-        await agree()
-        this.setState({
-            showConsent: false
-        })
-        await initSentry()
-    }
-    
-    onDisagree = () =>{
-        disagree()
-        this.setState({
-            showConsent: false
-        })
-    }
-    render(){
-        if(!this.state.showConsent){
-            return null
-        }
-
-        
-        return (
-            <div css={cookieRoot}>
-            <div css={container}>
-                <div css={textDiv}>
-                    <p css={infoMessageTextPrefix}>
-                        <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
-                            <a css={link} href={'/'}/>
-                        </Trans>
-                            {' '}
-                        <br css={breakMobile}/>
-                        <Trans ns={NameSpaces.common} i18nKey={'cookies.understandMore'}>
-                            <a css={link} href={'/terms'}/>
-                        </Trans>
-                    </p>
-                </div>
-                <div css={cookieButtons}>
-                    <button css={singleButton} onClick={this.onDisagree}>
-                        <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesDisagree'}/>
-                    </button>
-                    <button css={agreeButton} onClick={this.onAgree}>
-                        <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesAgree'}/>
-                    </button>
-                </div>
+    return (
+        <div css={cookieRoot}>
+        <div css={container}>
+            <div css={textDiv}>
+                <p css={infoMessageTextPrefix}>
+                    <Trans ns={NameSpaces.common} i18nKey={'cookies.allowTrack'}>
+                        <a css={link} href={'/'}/>
+                    </Trans>
+                        {' '}
+                    <br css={breakMobile}/>
+                    <Trans ns={NameSpaces.common} i18nKey={'cookies.understandMore'}>
+                        <a css={link} href={'/terms'}/>
+                    </Trans>
+                </p>
             </div>
-</div>
-        )
-    }
+            <div css={cookieButtons}>
+                <button css={singleButton} onClick={onDisagree}>
+                    <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesDisagree'}/>
+                </button>
+                <button css={agreeButton} onClick={onAgree}>
+                    <Trans ns={NameSpaces.common} i18nKey={'cookies.cookiesAgree'}/>
+                </button>
+            </div>
+        </div>
+    </div>
+    )
 }
 
+const slideUp = keyframes`
+    from {
+        transform: translateY(100%);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+`
 
 const cookieRoot = css(flex,{
     bottom: 0,
@@ -79,6 +59,9 @@ const cookieRoot = css(flex,{
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 20,
+    transitionProperty: "transform, opacity",
+    animationDuration: "800ms",
+    animationName: slideUp
 })
 
 const container = css(flex,{
@@ -91,7 +74,6 @@ const container = css(flex,{
     [WHEN_MOBILE]: {
         flexDirection: 'column'
     }
-    
 })
 
 const breakMobile = css({
@@ -162,4 +144,4 @@ const textDiv = css(flex, {
 })
 
 
-export default withNamespaces('common')(CookieConsentWithEmotion)
+export default CookieConsentWithEmotion

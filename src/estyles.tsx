@@ -1,4 +1,4 @@
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import { typeFaces, fontInfo } from "./styles"
 import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT} from "src/shared/Styles"
 
@@ -6,12 +6,6 @@ export const flex = css({
   display: "flex",
   flexDirection: "column"
 })
-
-export enum colors {
-  white = '#FFFFFF',
-  navyBlue = '#0C74D4'
-}
-
 
 export const jost = css({
   fontFamily: typeFaces.futura
@@ -49,6 +43,8 @@ export const fonts = {
 }
 
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
+
+export const WHEN_TABLET_AND_UP = `@media (min-width: ${TABLET_BREAKPOINT}px)`
 
 export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-width: ${DESKTOP_BREAKPOINT}px)`
 

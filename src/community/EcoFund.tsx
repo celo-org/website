@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, ImageStyle, StyleSheet, Text, TextStyle, View } from 'react-native'
 import ah from 'src/community/ah-logo.png'
 import polychain from 'src/community/polychain-logo.png'
 import { H2 } from 'src/fonts/Fonts'
@@ -58,29 +58,29 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
           <Text style={[fonts.p, standardStyles.elementalMargin]}>{t('ecoFund.description')}</Text>
           <View style={[standardStyles.row, standardStyles.elementalMargin, standardStyles.wrap]}>
             <View style={styles.partners}>
-              <Text style={[fonts.h6, styles.partnerText]}>{t('ecoFund.generalPartner')}</Text>
+              <Text style={[fonts.h6, styles.partnerText as TextStyle]}>{t('ecoFund.generalPartner')}</Text>
               <Image
                 resizeMode="contain"
                 accessibilityLabel="Polychain"
                 source={{ uri: polychain }}
-                style={styles.polyChain}
+                style={styles.polyChain as ImageStyle}
               />
             </View>
             <View style={styles.partners}>
-              <Text style={[fonts.h6, styles.partnerText]}>{t('ecoFund.limitedPartners')}</Text>
+              <Text style={[fonts.h6, styles.partnerText  as TextStyle]}>{t('ecoFund.limitedPartners')}</Text>
               <View style={[standardStyles.row, styles.limitedPartners]}>
                 <Rings color={colors.dark} height={40} />
                 <Image
                   resizeMode="contain"
                   accessibilityLabel="a16z"
                   source={ah}
-                  style={styles.a16z}
+                  style={styles.a16z as ImageStyle}
                 />
               </View>
             </View>
           </View>
           <Button
-            style={styles.button}
+            style={styles.button as TextStyle}
             text={t('ecoFund.link')}
             kind={BTN.NAKED}
             size={SIZE.normal}

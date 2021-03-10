@@ -82,23 +82,16 @@ Array [
             className="css-view-1dbjc4n"
             style={
               Object {
-                "WebkitBoxFlex": 1,
                 "WebkitBoxPack": "center",
-                "WebkitFlexBasis": "0%",
-                "WebkitFlexGrow": 1,
-                "WebkitFlexShrink": 1,
+                "WebkitFlex": 1,
                 "WebkitJustifyContent": "center",
-                "flexBasis": "0%",
-                "flexGrow": 1,
-                "flexShrink": 1,
+                "flex": 1,
                 "justifyContent": "center",
                 "marginLeft": "20px",
                 "marginRight": "20px",
                 "maxWidth": "350px",
-                "msFlexNegative": 1,
+                "msFlex": "1 1 0%",
                 "msFlexPack": "center",
-                "msFlexPositive": 1,
-                "msFlexPreferredSize": "0%",
               }
             }
           >
@@ -223,10 +216,11 @@ Do not send real funds.
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://play.google.com/apps/testing/org.celo.mobile.alfajores"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -246,6 +240,7 @@ Do not send real funds.
                       "textRendering": "geometricPrecision",
                     }
                   }
+                  target="_blank"
                 >
                   <div
                     className="css-view-1dbjc4n"
@@ -372,10 +367,11 @@ Do not send real funds.
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://testflight.apple.com/join/s212x3Rp"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -395,6 +391,7 @@ Do not send real funds.
                       "textRendering": "geometricPrecision",
                     }
                   }
+                  target="_blank"
                 >
                   <div
                     className="css-view-1dbjc4n"
@@ -456,6 +453,147 @@ Do not send real funds.
                 </a>
               </div>
             </div>
+            <div
+              className="css-view-1dbjc4n"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "WebkitBoxDirection": "normal",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxOrient": "horizontal",
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexDirection": "row",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "flexDirection": "row",
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                    "msFlexDirection": "row",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="https://alfajores.celowallet.app"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  rel="noopener"
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "alignItems": "center",
+                      "color": "rgba(53,208,127,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                      "fontSize": "20px",
+                      "fontWeight": "500",
+                      "lineHeight": "16px",
+                      "marginTop": "30px",
+                      "msFlexAlign": "center",
+                      "textAlign": "center",
+                      "textRendering": "geometricPrecision",
+                    }
+                  }
+                  target="_blank"
+                >
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "paddingRight": "8px",
+                      }
+                    }
+                  >
+                    <svg
+                      fill="none"
+                      height={18}
+                      style={Object {}}
+                      viewBox="0 0 490 490"
+                      width={18}
+                      x="0px"
+                      y="0px"
+                    >
+                      <path
+                        d="M245,0C109.69,0,0,109.69,0,245s109.69,245,245,245s245-109.69,245-245S380.31,0,245,0z M31.401,260.313h52.542
+	c1.169,25.423,5.011,48.683,10.978,69.572H48.232C38.883,308.299,33.148,284.858,31.401,260.313z M320.58,229.688
+	c-1.152-24.613-4.07-47.927-8.02-69.572h50.192c6.681,20.544,11.267,43.71,12.65,69.572H320.58z M206.38,329.885
+	c-4.322-23.863-6.443-47.156-6.836-69.572h90.913c-0.392,22.416-2.514,45.709-6.837,69.572H206.38z M276.948,360.51
+	c-7.18,27.563-17.573,55.66-31.951,83.818c-14.376-28.158-24.767-56.255-31.946-83.818H276.948z M199.961,229.688
+	c1.213-24.754,4.343-48.08,8.499-69.572h73.08c4.157,21.492,7.286,44.818,8.5,69.572H199.961z M215.342,129.492
+	c9.57-37.359,21.394-66.835,29.656-84.983c8.263,18.148,20.088,47.624,29.66,84.983H215.342z M306.07,129.492
+	c-9.77-40.487-22.315-73.01-31.627-94.03c11.573,8.235,50.022,38.673,76.25,94.03H306.07z M215.553,35.46
+	c-9.312,21.02-21.855,53.544-31.624,94.032h-44.628C165.532,74.13,203.984,43.692,215.553,35.46z M177.44,160.117
+	c-3.95,21.645-6.867,44.959-8.019,69.572h-54.828c1.383-25.861,5.968-49.028,12.65-69.572H177.44z M83.976,229.688H31.401
+	c1.747-24.545,7.481-47.984,16.83-69.572h46.902C89.122,181.002,85.204,204.246,83.976,229.688z M114.577,260.313h54.424
+	c0.348,22.454,2.237,45.716,6.241,69.572h-47.983C120.521,309.288,115.92,286.115,114.577,260.313z M181.584,360.51
+	c7.512,31.183,18.67,63.054,34.744,95.053c-10.847-7.766-50.278-38.782-77.013-95.053H181.584z M273.635,455.632
+	c16.094-32.022,27.262-63.916,34.781-95.122h42.575C324.336,417.068,284.736,447.827,273.635,455.632z M314.759,329.885
+	c4.005-23.856,5.894-47.118,6.241-69.572h54.434c-1.317,25.849-5.844,49.016-12.483,69.572H314.759z M406.051,260.313h52.548
+	c-1.748,24.545-7.482,47.985-16.831,69.572h-46.694C401.041,308.996,404.882,285.736,406.051,260.313z M406.019,229.688
+	c-1.228-25.443-5.146-48.686-11.157-69.572h46.908c9.35,21.587,15.083,45.026,16.83,69.572H406.019z M425.309,129.492h-41.242
+	c-13.689-32.974-31.535-59.058-48.329-78.436C372.475,68.316,403.518,95.596,425.309,129.492z M154.252,51.06
+	c-16.792,19.378-34.636,45.461-48.324,78.432H64.691C86.48,95.598,117.52,68.321,154.252,51.06z M64.692,360.51h40.987
+	c13.482,32.637,31.076,58.634,47.752,78.034C117.059,421.262,86.318,394.148,64.692,360.51z M336.576,438.54
+	c16.672-19.398,34.263-45.395,47.742-78.03h40.99C403.684,394.146,372.945,421.258,336.576,438.54z"
+                        fill="#35D07F"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </div>
+                  Web
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "paddingLeft": "0.4em",
+                        "paddingTop": "0.185em",
+                      }
+                    }
+                  >
+                    <svg
+                      fill="none"
+                      height="0.75em"
+                      style={Object {}}
+                      transform="rotate(0)"
+                      viewBox="0 0 8 12"
+                      width="0.75em"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                        fill="#35D07F"
+                        fillRule="evenodd"
+                        opacity={1}
+                        style={Object {}}
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
           <div
             className="css-view-1dbjc4n"
@@ -463,24 +601,17 @@ Do not send real funds.
               Object {
                 "WebkitAlignItems": "center",
                 "WebkitBoxAlign": "center",
-                "WebkitBoxFlex": 1,
                 "WebkitBoxPack": "center",
-                "WebkitFlexBasis": "0%",
-                "WebkitFlexGrow": 1,
-                "WebkitFlexShrink": 1,
+                "WebkitFlex": 1,
                 "WebkitJustifyContent": "center",
                 "alignItems": "center",
-                "flexBasis": "0%",
-                "flexGrow": 1,
-                "flexShrink": 1,
+                "flex": 1,
                 "height": "50vh",
                 "justifyContent": "center",
                 "maxWidth": "275px",
+                "msFlex": "1 1 0%",
                 "msFlexAlign": "center",
-                "msFlexNegative": 1,
                 "msFlexPack": "center",
-                "msFlexPositive": 1,
-                "msFlexPreferredSize": "0%",
               }
             }
           >
@@ -707,25 +838,18 @@ Do not send real funds.
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxPack": "start",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitJustifyContent": "flex-start",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "justifyContent": "flex-start",
               "marginLeft": "20px",
               "marginRight": "20px",
               "marginTop": "30px",
               "maxWidth": "270px",
               "minWidth": "160px",
-              "msFlexNegative": 1,
+              "msFlex": "1 1 0%",
               "msFlexPack": "start",
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
             }
           }
         >
@@ -765,6 +889,7 @@ Do not send real funds.
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
             <h3
@@ -844,10 +969,10 @@ Do not send real funds.
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                data-focusable={true}
                 dir="auto"
                 href="/developers/faucet"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -904,25 +1029,18 @@ Do not send real funds.
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxPack": "justify",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitJustifyContent": "space-between",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "justifyContent": "space-between",
               "marginLeft": "20px",
               "marginRight": "20px",
               "marginTop": "30px",
               "maxWidth": "270px",
               "minWidth": "160px",
-              "msFlexNegative": 1,
+              "msFlex": "1 1 0%",
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
             }
           }
         >
@@ -962,6 +1080,7 @@ Do not send real funds.
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
             <h3
@@ -1008,25 +1127,18 @@ Do not send real funds.
           className="css-view-1dbjc4n"
           style={
             Object {
-              "WebkitBoxFlex": 1,
               "WebkitBoxPack": "justify",
-              "WebkitFlexBasis": "0%",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
+              "WebkitFlex": 1,
               "WebkitJustifyContent": "space-between",
-              "flexBasis": "0%",
-              "flexGrow": 1,
-              "flexShrink": 1,
+              "flex": 1,
               "justifyContent": "space-between",
               "marginLeft": "20px",
               "marginRight": "20px",
               "marginTop": "30px",
               "maxWidth": "270px",
               "minWidth": "160px",
-              "msFlexNegative": 1,
+              "msFlex": "1 1 0%",
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
             }
           }
         >
@@ -1066,6 +1178,7 @@ Do not send real funds.
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
             <h3
@@ -1118,272 +1231,6 @@ Do not send real funds.
       className="css-view-1dbjc4n"
       style={
         Object {
-          "WebkitAlignSelf": "center",
-          "WebkitBoxDirection": "normal",
-          "WebkitBoxOrient": "vertical",
-          "WebkitFlexDirection": "column",
-          "alignSelf": "center",
-          "flexDirection": "column",
-          "marginBottom": "30px",
-          "marginTop": "50px",
-          "maxWidth": "100vw",
-          "msFlexDirection": "column",
-          "msFlexItemAlign": "center",
-          "msGridRowAlign": "center",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxFlex": 0,
-            "WebkitFlexGrow": 0,
-            "WebkitFlexShrink": 0,
-            "flexGrow": 0,
-            "flexShrink": 0,
-            "msFlexNegative": 0,
-            "msFlexPositive": 0,
-            "paddingBottom": "10px",
-            "paddingLeft": "10px",
-            "paddingRight": "10px",
-            "paddingTop": "10px",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          className="css-q7lffx"
-        >
-          <div
-            className="css-view-1dbjc4n"
-          >
-            <h2
-              aria-level="2"
-              className="css-reset-4rbku5 css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              role="heading"
-              style={
-                Object {
-                  "color": "rgba(46,51,56,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "36px",
-                  "lineHeight": "40px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                  "textTransform": "none",
-                }
-              }
-            >
-              Get the Celo Developer Wallet
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitAlignSelf": "center",
-          "WebkitBoxDirection": "normal",
-          "WebkitBoxOrient": "vertical",
-          "WebkitFlexDirection": "column",
-          "alignSelf": "center",
-          "flexDirection": "column",
-          "maxWidth": "100vw",
-          "msFlexDirection": "column",
-          "msFlexItemAlign": "center",
-          "msGridRowAlign": "center",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitAlignContent": "center",
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxFlex": 0,
-            "WebkitBoxOrient": "horizontal",
-            "WebkitBoxPack": "space-evenly",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexGrow": 0,
-            "WebkitFlexShrink": 0,
-            "WebkitJustifyContent": "space-evenly",
-            "alignContent": "center",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "flexGrow": 0,
-            "flexShrink": 0,
-            "justifyContent": "space-evenly",
-            "msFlexAlign": "center",
-            "msFlexDirection": "row",
-            "msFlexLinePack": "center",
-            "msFlexNegative": 0,
-            "msFlexPack": "space-evenly",
-            "msFlexPositive": 0,
-            "paddingBottom": "10px",
-            "paddingLeft": "10px",
-            "paddingRight": "10px",
-            "paddingTop": "10px",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          data-focusable={true}
-          onClick={[Function]}
-          onContextMenu={[Function]}
-          onKeyDown={[Function]}
-          style={
-            Object {
-              "MozTransitionProperty": "opacity",
-              "MozUserSelect": "none",
-              "WebkitTransitionDuration": "0s",
-              "WebkitTransitionProperty": "opacity",
-              "WebkitUserSelect": "none",
-              "cursor": "pointer",
-              "msTouchAction": "manipulation",
-              "msUserSelect": "none",
-              "touchAction": "manipulation",
-              "transitionDuration": "0s",
-              "transitionProperty": "opacity",
-              "userSelect": "none",
-            }
-          }
-          tabIndex="0"
-        >
-          <a
-            href="https://play.google.com/apps/testing/org.celo.mobile.alfajores"
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "WebkitFlexBasis": "auto",
-                  "flexBasis": "auto",
-                  "height": "103px",
-                  "msFlexPreferredSize": "auto",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "212px",
-                  "zIndex": 0,
-                }
-              }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "backgroundColor": "rgba(0,0,0,0.00)",
-                    "backgroundPosition": "center",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "contain",
-                    "bottom": "0px",
-                    "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                    "width": "100%",
-                    "zIndex": -1,
-                  }
-                }
-              />
-            </div>
-          </a>
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "backgroundColor": "rgba(221,221,221,1.00)",
-              "height": "200px",
-              "width": "2px",
-            }
-          }
-        />
-        <div
-          className="css-view-1dbjc4n"
-          data-focusable={true}
-          onClick={[Function]}
-          onContextMenu={[Function]}
-          onKeyDown={[Function]}
-          style={
-            Object {
-              "MozTransitionProperty": "opacity",
-              "MozUserSelect": "none",
-              "WebkitTransitionDuration": "0s",
-              "WebkitTransitionProperty": "opacity",
-              "WebkitUserSelect": "none",
-              "cursor": "pointer",
-              "msTouchAction": "manipulation",
-              "msUserSelect": "none",
-              "touchAction": "manipulation",
-              "transitionDuration": "0s",
-              "transitionProperty": "opacity",
-              "userSelect": "none",
-            }
-          }
-          tabIndex="0"
-        >
-          <a
-            href="https://testflight.apple.com/join/s212x3Rp"
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "WebkitFlexBasis": "auto",
-                  "flexBasis": "auto",
-                  "height": "103px",
-                  "msFlexPreferredSize": "auto",
-                  "overflowX": "hidden",
-                  "overflowY": "hidden",
-                  "width": "212px",
-                  "zIndex": 0,
-                }
-              }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "backgroundColor": "rgba(0,0,0,0.00)",
-                    "backgroundPosition": "center",
-                    "backgroundRepeat": "no-repeat",
-                    "backgroundSize": "contain",
-                    "bottom": "0px",
-                    "height": "100%",
-                    "left": "0px",
-                    "position": "absolute",
-                    "right": "0px",
-                    "top": "0px",
-                    "width": "100%",
-                    "zIndex": -1,
-                  }
-                }
-              />
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
           "WebkitAlignItems": "center",
           "WebkitAlignSelf": "center",
           "WebkitBoxAlign": "center",
@@ -1429,172 +1276,450 @@ Do not send real funds.
           }
         }
       >
+        <h2
+          aria-level="2"
+          className="css-reset-4rbku5 css-text-901oao"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontSize": "36px",
+              "lineHeight": "40px",
+              "marginBottom": "20px",
+              "marginTop": "20px",
+              "textAlign": "center",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          Not a Developer?
+Check out these wallets for everyday use.
+        </h2>
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitAlignItems": "center",
+          "WebkitAlignSelf": "center",
+          "WebkitBoxAlign": "center",
+          "WebkitBoxDirection": "normal",
+          "WebkitBoxOrient": "vertical",
+          "WebkitBoxPack": "center",
+          "WebkitFlexDirection": "column",
+          "WebkitJustifyContent": "center",
+          "alignItems": "center",
+          "alignSelf": "center",
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "maxWidth": "100vw",
+          "msFlexAlign": "center",
+          "msFlexDirection": "column",
+          "msFlexItemAlign": "center",
+          "msFlexPack": "center",
+          "msGridRowAlign": "center",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitBoxFlex": 0,
+            "WebkitBoxPack": "justify",
+            "WebkitFlexGrow": 0,
+            "WebkitFlexShrink": 0,
+            "WebkitJustifyContent": "space-between",
+            "flexGrow": 0,
+            "flexShrink": 0,
+            "justifyContent": "space-between",
+            "msFlexNegative": 0,
+            "msFlexPack": "justify",
+            "msFlexPositive": 0,
+            "paddingBottom": "10px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "paddingTop": "10px",
+            "width": "100%",
+          }
+        }
+      >
         <div
-          className="css-q7lffx"
+          className="css-view-1dbjc4n"
         >
           <div
             className="css-view-1dbjc4n"
             style={
               Object {
-                "WebkitAlignContent": "center",
-                "WebkitAlignItems": "center",
-                "WebkitBoxAlign": "center",
-                "WebkitBoxPack": "center",
-                "WebkitJustifyContent": "center",
-                "alignContent": "center",
-                "alignItems": "center",
-                "justifyContent": "center",
-                "msFlexAlign": "center",
-                "msFlexLinePack": "center",
-                "msFlexPack": "center",
+                "WebkitFlexBasis": "auto",
+                "flexBasis": "auto",
+                "height": "100px",
+                "msFlexPreferredSize": "auto",
+                "overflowX": "hidden",
+                "overflowY": "hidden",
+                "width": "100px",
+                "zIndex": 0,
               }
             }
           >
-            <h2
-              aria-level="2"
-              className="css-reset-4rbku5 css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              role="heading"
-              style={
-                Object {
-                  "color": "rgba(46,51,56,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "36px",
-                  "lineHeight": "40px",
-                  "marginBottom": "20px",
-                  "marginTop": "20px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                  "textTransform": "none",
-                }
-              }
-            >
-              Already have an Alfajores testnet account?
-            </h2>
-            <h4
-              aria-level="4"
-              className="css-reset-4rbku5 css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              role="heading"
-              style={
-                Object {
-                  "color": "rgba(46,51,56,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "24px",
-                  "lineHeight": "32px",
-                  "marginBottom": "20px",
-                  "marginTop": "20px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                  "textTransform": "none",
-                }
-              }
-            >
-              Use your seed phrase to import your account into the Celo Developer Wallet.
-            </h4>
             <div
               className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundPosition": "center",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "contain",
+                  "bottom": "0px",
+                  "height": "100%",
+                  "left": "0px",
+                  "position": "absolute",
+                  "right": "0px",
+                  "top": "0px",
+                  "width": "100%",
+                  "zIndex": -1,
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+          </div>
+          <h3
+            aria-level="3"
+            className="css-reset-4rbku5 css-text-901oao"
+            dir="auto"
+            onClick={[Function]}
+            role="heading"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontSize": "24px",
+                "lineHeight": "32px",
+                "marginBottom": "20px",
+                "marginTop": "20px",
+                "textRendering": "geometricPrecision",
+                "textTransform": "none",
+              }
+            }
+          >
+            Valora
+          </h3>
+          <div
+            className="css-text-901oao"
+            dir="auto"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            For iOS and Android
+          </div>
+        </div>
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxFlex": 0,
+                "WebkitBoxOrient": "horizontal",
+                "WebkitBoxPack": "center",
+                "WebkitFlexDirection": "row",
+                "WebkitFlexGrow": 0,
+                "WebkitJustifyContent": "center",
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "borderBottomColor": "rgba(0,0,0,0.00)",
+                "borderLeftColor": "rgba(0,0,0,0.00)",
+                "borderRightColor": "rgba(0,0,0,0.00)",
+                "borderTopColor": "rgba(0,0,0,0.00)",
+                "flexDirection": "row",
+                "flexGrow": 0,
+                "justifyContent": "center",
+                "msFlexDirection": "row",
+                "msFlexPack": "center",
+                "msFlexPositive": 0,
+                "opacity": 1,
+                "outlineColor": "transparent",
+                "width": "fit-content",
+              }
+            }
+          >
+            <a
+              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              dir="auto"
+              href="https://valoraapp.com"
               onClick={[Function]}
-              onMouseDown={[Function]}
               onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
+              rel="noopener"
+              role="link"
               style={
                 Object {
                   "WebkitAlignItems": "center",
                   "WebkitBoxAlign": "center",
                   "alignItems": "center",
+                  "color": "rgba(53,208,127,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "lineHeight": "16px",
+                  "marginTop": "20px",
                   "msFlexAlign": "center",
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
                 }
               }
+              target="_blank"
             >
+              Get Valora
               <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitBoxDirection": "normal",
-                    "WebkitBoxFlex": 0,
-                    "WebkitBoxOrient": "horizontal",
-                    "WebkitBoxPack": "center",
-                    "WebkitFlexDirection": "row",
-                    "WebkitFlexGrow": 0,
-                    "WebkitJustifyContent": "center",
-                    "backgroundColor": "rgba(0,0,0,0.00)",
-                    "borderBottomColor": "rgba(0,0,0,0.00)",
-                    "borderLeftColor": "rgba(0,0,0,0.00)",
-                    "borderRightColor": "rgba(0,0,0,0.00)",
-                    "borderTopColor": "rgba(0,0,0,0.00)",
-                    "flexDirection": "row",
-                    "flexGrow": 0,
-                    "justifyContent": "center",
-                    "msFlexDirection": "row",
-                    "msFlexPack": "center",
-                    "msFlexPositive": 0,
-                    "opacity": 1,
-                    "outlineColor": "transparent",
-                    "width": "fit-content",
+                    "display": "inline-flex",
+                    "paddingLeft": "0.4em",
+                    "paddingTop": "0.185em",
                   }
                 }
               >
-                <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
-                  dir="auto"
-                  href="https://docs.celo.org/getting-started/alfajores-testnet"
-                  onClick={[Function]}
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "alignItems": "center",
-                      "color": "rgba(53,208,127,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                      "fontSize": "16px",
-                      "fontWeight": "500",
-                      "lineHeight": "16px",
-                      "msFlexAlign": "center",
-                      "textAlign": "center",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
+                <svg
+                  fill="none"
+                  height="0.75em"
+                  style={Object {}}
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  Learn More
-                  <div
-                    className="css-view-1dbjc4n"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingLeft": "0.4em",
-                        "paddingTop": "0.185em",
-                      }
-                    }
-                  >
-                    <svg
-                      fill="none"
-                      height="0.75em"
-                      style={Object {}}
-                      transform="rotate(0)"
-                      viewBox="0 0 8 12"
-                      width="0.75em"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                        fill="#35D07F"
-                        fillRule="evenodd"
-                        opacity={1}
-                        style={Object {}}
-                      />
-                    </svg>
-                  </div>
-                </a>
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
+                    style={Object {}}
+                  />
+                </svg>
               </div>
-            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitBoxFlex": 0,
+            "WebkitBoxPack": "justify",
+            "WebkitFlexGrow": 0,
+            "WebkitFlexShrink": 0,
+            "WebkitJustifyContent": "space-between",
+            "flexGrow": 0,
+            "flexShrink": 0,
+            "justifyContent": "space-between",
+            "msFlexNegative": 0,
+            "msFlexPack": "justify",
+            "msFlexPositive": 0,
+            "paddingBottom": "10px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "paddingTop": "10px",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitFlexBasis": "auto",
+                "flexBasis": "auto",
+                "height": "100px",
+                "msFlexPreferredSize": "auto",
+                "overflowX": "hidden",
+                "overflowY": "hidden",
+                "width": "100px",
+                "zIndex": 0,
+              }
+            }
+          >
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundPosition": "center",
+                  "backgroundRepeat": "no-repeat",
+                  "backgroundSize": "contain",
+                  "bottom": "0px",
+                  "height": "100%",
+                  "left": "0px",
+                  "position": "absolute",
+                  "right": "0px",
+                  "top": "0px",
+                  "width": "100%",
+                  "zIndex": -1,
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+          </div>
+          <h3
+            aria-level="3"
+            className="css-reset-4rbku5 css-text-901oao"
+            dir="auto"
+            onClick={[Function]}
+            role="heading"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontSize": "24px",
+                "lineHeight": "32px",
+                "marginBottom": "20px",
+                "marginTop": "20px",
+                "textRendering": "geometricPrecision",
+                "textTransform": "none",
+              }
+            }
+          >
+            Celo Web Wallet
+          </h3>
+          <div
+            className="css-text-901oao"
+            dir="auto"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "20px",
+                "lineHeight": "28px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            For web browsers
+          </div>
+        </div>
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxFlex": 0,
+                "WebkitBoxOrient": "horizontal",
+                "WebkitBoxPack": "center",
+                "WebkitFlexDirection": "row",
+                "WebkitFlexGrow": 0,
+                "WebkitJustifyContent": "center",
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "borderBottomColor": "rgba(0,0,0,0.00)",
+                "borderLeftColor": "rgba(0,0,0,0.00)",
+                "borderRightColor": "rgba(0,0,0,0.00)",
+                "borderTopColor": "rgba(0,0,0,0.00)",
+                "flexDirection": "row",
+                "flexGrow": 0,
+                "justifyContent": "center",
+                "msFlexDirection": "row",
+                "msFlexPack": "center",
+                "msFlexPositive": 0,
+                "opacity": 1,
+                "outlineColor": "transparent",
+                "width": "fit-content",
+              }
+            }
+          >
+            <a
+              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              dir="auto"
+              href="https://celowallet.app"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              rel="noopener"
+              role="link"
+              style={
+                Object {
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "alignItems": "center",
+                  "color": "rgba(53,208,127,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "lineHeight": "16px",
+                  "marginTop": "20px",
+                  "msFlexAlign": "center",
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+              target="_blank"
+            >
+              Go to Celo Web Wallet
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "display": "inline-flex",
+                    "paddingLeft": "0.4em",
+                    "paddingTop": "0.185em",
+                  }
+                }
+              >
+                <svg
+                  fill="none"
+                  height="0.75em"
+                  style={Object {}}
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
+                >
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
+                    style={Object {}}
+                  />
+                </svg>
+              </div>
+            </a>
           </div>
         </div>
       </div>

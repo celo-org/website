@@ -1,4 +1,4 @@
-runtime: nodejs10
+runtime: nodejs14
 env: standard
 service: website-production
 instance_class: F4

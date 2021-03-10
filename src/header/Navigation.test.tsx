@@ -1,14 +1,14 @@
 import * as React from 'react'
 import * as renderer from 'react-test-renderer'
 import { TestProvider } from 'src/_page-tests/test-utils'
-import Header from './Header.3'
+import Navigation from './Navigation'
 
-describe("routeChangeComplete", () =>{
+describe("Navigation", () =>{
     it("renders", () =>{
         const tree = renderer
         .create(
             <TestProvider>
-                <Header />
+                <Navigation />
             </TestProvider>
         )
         .toJSON()

@@ -72,6 +72,7 @@ exports[`PlumoLanding renders 1`] = `
               "zIndex": -1,
             }
           }
+          suppressHydrationWarning={true}
         />
       </div>
     </div>
@@ -166,6 +167,7 @@ exports[`PlumoLanding renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <div
@@ -225,11 +227,11 @@ exports[`PlumoLanding renders 1`] = `
           >
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              data-focusable={true}
               dir="auto"
               href="https://medium.com/celoorg/the-plumo-ceremony-ac7649e9c8d8"
               onClick={[Function]}
-              rel=" noopener noreferrer"
+              onMouseEnter={[Function]}
+              rel="noopener"
               role="link"
               style={
                 Object {
@@ -385,6 +387,7 @@ exports[`PlumoLanding renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <div
@@ -497,6 +500,7 @@ exports[`PlumoLanding renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <div
@@ -609,6 +613,7 @@ exports[`PlumoLanding renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <div
@@ -865,9 +870,9 @@ exports[`PlumoLanding renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-            data-focusable={true}
             href="/plumo-terms"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -1136,6 +1141,7 @@ exports[`PlumoLanding renders 1`] = `
               "zIndex": -1,
             }
           }
+          suppressHydrationWarning={true}
         />
       </div>
       <h2
@@ -1170,11 +1176,11 @@ exports[`PlumoLanding renders 1`] = `
       >
         <a
           className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-          data-focusable={true}
           dir="auto"
           href="https://medium.com/celoorg/the-plumo-ceremony-ac7649e9c8d8"
           onClick={[Function]}
-          rel=" noopener noreferrer"
+          onMouseEnter={[Function]}
+          rel="noopener"
           role="link"
           style={
             Object {
@@ -1302,11 +1308,11 @@ exports[`PlumoLanding renders 1`] = `
     >
       <a
         className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-        data-focusable={true}
         dir="auto"
         href="https://docs.google.com/forms/d/e/1FAIpQLScZswraVVC91RwToo_9qm-1QzGrxp7yjVeM2wzdTbL5T_lAgQ/viewform"
         onClick={[Function]}
-        rel=" noopener noreferrer"
+        onMouseEnter={[Function]}
+        rel="noopener"
         role="link"
         style={
           Object {

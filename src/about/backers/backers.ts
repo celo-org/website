@@ -6,7 +6,7 @@ interface Backer {
 const people: Backer[] = [
   {
     name: 'a16z',
-    photo: require('./a16z.jpg'),
+    photo: require('./a16z_new_logo.svg'),
   },
   {
     name: 'Polychain Capital',

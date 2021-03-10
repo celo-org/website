@@ -147,8 +147,8 @@ const styles = StyleSheet.create({
   gridExamplesContainer: {
     display: 'grid',
     gridColumns: 12,
-    gridColumnGap: 15,
-    gridRowGap: 15,
+    gridColumnGap: "15px",
+    gridRowGap: "15px",
   },
   gridExample: {
     backgroundColor: colors.faintPurple,
@@ -170,8 +170,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     display: 'grid',
-    gridRowGap: 15,
-    gridColumnGap: 20,
+    gridRowGap: "15px",
+    gridColumnGap: "20px",
     gridTemplateColumns: `repeat(auto-fit, minmax(280px, 1fr))`,
   },
   alignmentExample: {
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     gridTemplateColumns: `repeat(3, 1fr)`,
     gridTemplateRows: 'repeat(2, 1fr)',
     gridTemplateAreas: `". image image" "subtitle text text"`,
-    gridColumnGap: 10,
+    gridColumnGap: "10px",
   },
   subtitle: {
     marginBottom: 5,

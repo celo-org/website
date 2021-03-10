@@ -116,7 +116,7 @@ function ContentPreview({ title, time, href, src }: ContentPreviewProps) {
           <Image style={standardStyles.image} source={src} />
         </AspectRatio>
       </a>
-      <Text target={'_blank'} accessibilityRole="link" href={href} style={fonts.h6}>
+      <Text hrefAttrs={{target:"blank", "rel": "noopenner"}} accessibilityRole="link" href={href} style={fonts.h6}>
         {title}
       </Text>
       <Text style={[fonts.h6, styles.minutes]}>{time}</Text>

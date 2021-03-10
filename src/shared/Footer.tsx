@@ -10,6 +10,10 @@ import MediumLogo from 'src/icons/MediumLogo'
 import Octocat from 'src/icons/Octocat'
 import DefiPulse from 'src/icons/DefiPulse'
 import sendCoinIcon from 'src/icons/send-green-coin-lg-bg.png'
+import LinkedIn from 'src/icons/LinkedIn'
+import Twitch from 'src/icons/Twitch'
+import Reddit from 'src/icons/Reddit'
+import Telegram from 'src/icons/Telegram'
 import { TweetLogo } from 'src/icons/TwitterLogo'
 import YouTube from 'src/icons/YouTube'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
@@ -74,8 +78,36 @@ const SOCIAL_MENU = [
     link: CeloLinks.youtube,
     icon: <YouTube size={ICON_SIZE} color={colors.dark} />,
   },
-  { name: 'Instagram', link: CeloLinks.instagram, icon: <Instagram size={ICON_SIZE} /> },
-  { name: 'Defi Pulse' , link: CeloLinks.defiPulse, icon: <DefiPulse size={ICON_SIZE} color={colors.dark}/>},
+  { 
+    name: 'Instagram', 
+    link: CeloLinks.instagram, 
+    icon: <Instagram size={ICON_SIZE} />
+  },
+  { 
+    name: 'Defi Pulse',
+    link: CeloLinks.defiPulse,
+    icon: <DefiPulse size={ICON_SIZE} color={colors.dark}/>
+  },
+  { 
+    name: 'LinkedIn',
+    link: CeloLinks.linkedIn,
+    icon: <LinkedIn size={ICON_SIZE} color={colors.dark}/>
+  },
+  {
+    name: 'Twitch',
+    link: CeloLinks.twitch,
+    icon: <Twitch size={ICON_SIZE} color={colors.dark}/>
+  },
+  {
+    name: 'Reddit',
+    link: CeloLinks.reddit,
+    icon: <Reddit size={ICON_SIZE} color={colors.dark}/>
+  },
+  {
+    name: 'Telegram',
+    link: CeloLinks.telegram,
+    icon: <Telegram size={ICON_SIZE} color={colors.dark}/>
+  }
 ]
 
 interface Props {
@@ -86,6 +118,12 @@ export default function Footer({ hideForm }: Props) {
   const { t } = useTranslation(NameSpaces.common)
   const { isMobile, isTablet } = useScreenSize()
   const year = new Date().getFullYear()
+const footerMenu = React.useMemo(() => MENU.map((item) => {
+    return {
+      name: t(`footer.${item.name}`),
+      link: item.link 
+    }
+  }),[t] )
   return (
     <>
       {!hideForm && (
@@ -128,10 +166,10 @@ export default function Footer({ hideForm }: Props) {
         </Cell>
         <Cell span={Spans.twoThird} tabletSpan={Spans.full}>
           {isMobile ? (
-            <MobileLinks />
+            <MobileLinks footerMenu={footerMenu} />
           ) : (
             <View style={isTablet ? styles.linksAreaTablet : styles.linksArea}>
-              <FooterColumn style={styles.linkColumnStart} heading={'Celo'} links={MENU} />
+              <FooterColumn style={styles.linkColumnStart} heading={'Celo'} links={footerMenu} />
               <FooterColumn heading={t('footer.technology')} links={TECH_MENU} />
               <FooterColumn heading={t('footer.resources')} links={RESOURCE_MENU} />
               <FooterColumn
@@ -161,12 +199,13 @@ export default function Footer({ hideForm }: Props) {
   )
 }
 
-function MobileLinks() {
+function MobileLinks({footerMenu}) {
   const { t } = useTranslation(NameSpaces.common)
+ 
   return (
     <>
       <View style={standardStyles.row}>
-        <FooterColumn heading={'Celo'} links={MENU} />
+        <FooterColumn heading={'Celo'} links={footerMenu} />
         <FooterColumn
           heading={t('footer.social')}
           links={SOCIAL_MENU}

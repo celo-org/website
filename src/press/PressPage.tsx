@@ -103,7 +103,7 @@ class PressPage extends React.PureComponent<I18nProps & Props> {
   }
 }
 
-const DATE_FORMAT = { year: 'numeric', month: 'long' }
+const DATE_FORMAT = { year: 'numeric' as 'numeric', month: 'long' as 'long' }
 
 export default withNamespaces(NameSpaces.press)(PressPage)
 

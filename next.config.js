@@ -4,10 +4,11 @@ const serverEnvConfig = require('./server-env-config')
 
 module.exports = withImages({
   experimental: {
-    modern: true,
+    modern: false,
   },
   publicRuntimeConfig: envConfig,
   serverRuntimeConfig: serverEnvConfig,
+  reactStrictMode: true,
 
   // options: {buildId, dev, isServer, defaultLoaders, webpack}   https://nextjs.org/docs#customizing-webpack-config
   webpack: (config, { isServer }) => {

@@ -2,24 +2,20 @@ import * as React from 'react'
 import { StyleSheet, View } from 'react-native'
 import AppLogo from 'src/download/AppLogo'
 import PhoneIllo from 'src/download/PhoneIllo'
-// import { RequestType } from 'src/fauceting/FaucetInterfaces'
-// import RequestFunds from 'src/fauceting/RequestFunds'
 import { H1, H4 } from 'src/fonts/Fonts'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
+import { NameSpaces, useTranslation } from 'src/i18n'
 import Android from 'src/icons/Android'
 import Apple from 'src/icons/Apple'
+import Web from 'src/icons/Web'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
+import { ScreenSizes, useScreenSize } from 'src/layout/ScreenSize'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import { CeloLinks } from 'src/shared/menu-items'
 import { colors, standardStyles, textStyles } from 'src/styles'
 
-export default withScreenSize(
-  withNamespaces(NameSpaces.download)(function DownloadCover({
-    t,
-    screen,
-  }: I18nProps & ScreenProps) {
-    const isMobile = screen === ScreenSizes.MOBILE
+export default function DownloadCover() {
+    const {isMobile, isTablet, screen} = useScreenSize()
+    const {t} = useTranslation(NameSpaces.download)
     return (
       <View style={styles.zIndex}>
         <GridRow
@@ -33,7 +29,7 @@ export default withScreenSize(
             tabletSpan={Spans.full}
             style={[
               styles.container,
-              screen === ScreenSizes.TABLET && { justifyContent: 'center' },
+              isTablet && { justifyContent: 'center' },
               !isMobile ? standardStyles.row : styles.mobileContainer,
             ]}
           >
@@ -46,20 +42,34 @@ export default withScreenSize(
                 {t('coverSubTitle')}
               </H4>
               <Button
+                onPress={confirm}
                 style={styles.button}
                 iconLeft={<Android size={18} color={colors.primary} />}
                 kind={BTN.NAKED}
                 size={SIZE.big}
                 text={'Android'}
+                target="_blank"
                 href={CeloLinks.playStoreDevWallet}
               />
               <Button
+                onPress={confirm}
                 style={styles.button}
                 iconLeft={<Apple size={18} color={colors.primary} />}
                 kind={BTN.NAKED}
                 size={SIZE.big}
                 text={'iOS'}
+                target="_blank"
                 href={CeloLinks.appStoreDevWallet}
+              />
+              <Button
+                onPress={confirm}
+                style={styles.button}
+                iconLeft={<Web color={colors.primary} size={18} />}
+                kind={BTN.NAKED}
+                size={SIZE.big}
+                target="_blank"
+                text={'Web'}
+                href={CeloLinks.alfajoresWebWallet}
               />
             </View>
             <View style={[standardStyles.centered, styles.flex1, phoneStyle(screen)]}>
@@ -69,8 +79,11 @@ export default withScreenSize(
         </GridRow>
       </View>
     )
-  })
-)
+}
+
+function confirm() {
+  alert("I understand this is a testing wallet for developers")
+}
 
 function phoneStyle(screen: ScreenSizes) {
   switch (screen) {
