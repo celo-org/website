@@ -7,7 +7,7 @@ import Involvement from 'src/home/Involvement'
 import HomeBuild from 'src/home/HomeBuild'
 import { TwoAssets } from "src/home/TwoAssets"
 import { NameSpaces, useTranslation } from "src/i18n"
-// import Press from 'src/press/Press'
+import Press from 'src/press/Press'
 import Cover from "./Cover"
 export default function Home() {
   const { t } = useTranslation(NameSpaces.home)
@@ -22,7 +22,7 @@ export default function Home() {
       <Cover />
       <HomeBuild />
       <TwoAssets />
-      {/* <Press /> */}
+      <Press />
       <Involvement />
       <HomeBackers />
     </View>
