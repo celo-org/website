@@ -2,6 +2,7 @@ import { Document } from '@contentful/rich-text-types'
 import { Asset, createClient, Entry, EntryCollection } from 'contentful'
 import getConfig from 'next/config'
 import { Page as SideBarEntry } from 'src/experience/common/Sidebar'
+import { Spans } from 'src/layout/Grid2'
 
 function intialize() {
   const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -63,11 +64,30 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
   }
 }
 
+
+interface SectionType { name: string; contentField: Document; slug: string }
+
+interface CellContentType {
+  span: Spans
+  tabletSpan?: Spans
+  cssStyle?: any
+}
+interface GridRowContentType {
+  id: string
+  cells: CellContentType[]
+  cssStyle?: any
+  body?: any
+  textBody: Document
+}
+
+
 interface ContentFulPage {
   title: string
   slug: string
-  sections: Entry<{ name: string; contentField: Document; slug: string }>[]
+  sections: Entry<SectionType| GridRowContentType>[]
 }
+
+
 
 export async function getPageBySlug(slug: string, { locale }) {
   const pages = await intialize().getEntries<ContentFulPage>({

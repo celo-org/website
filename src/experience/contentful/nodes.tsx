@@ -1,21 +1,20 @@
 import { RenderNode } from '@contentful/rich-text-react-renderer'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types'
-import { Asset, Sys } from 'contentful'
+import dynamic from "next/dynamic"
+import { Asset } from 'contentful'
 import * as React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import YouTube from 'react-youtube'
-import { AssetTypes } from 'src/experience/brandkit/tracking'
-import { brandStyles } from 'src/experience/common/constants'
-import Showcase from 'src/experience/common/Showcase'
+import { Text } from 'react-native'
+const YouTube = dynamic<{videoId:string}>(import('react-youtube'))
 import { contentfulToProps } from 'src/experience/grants/contentfulToProps'
-import DirectorySection from 'src/experience/grants/DirectorySection'
-import IdeaReadiness from 'src/experience/grants/IdeaReadiness'
-import JourneySteps from 'src/experience/grants/JourneySteps'
+const DirectorySection = dynamic(import('src/experience/grants/DirectorySection'))
+const IdeaReadiness = dynamic(import( 'src/experience/grants/IdeaReadiness'))
+const JourneySteps  = dynamic(import('src/experience/grants/JourneySteps'))
 import { H1, H2, H3, H4 } from 'src/fonts/Fonts'
-import { ScreenSizes, useScreenSize } from 'src/layout/ScreenSize'
 import Button from 'src/shared/Button.3'
 import InlineAnchor from 'src/shared/InlineAnchor'
 import { fonts, standardStyles } from 'src/styles'
+import { Content, Tile } from 'src/experience/common/Tile'
+import { css } from '@emotion/react'
 
 export const renderNode: RenderNode = {
   [BLOCKS.HEADING_1]: (_, children: string) => {
@@ -40,8 +39,8 @@ export const renderNode: RenderNode = {
     return <InlineAnchor href={node.data.uri}>{children}</InlineAnchor>
   },
   [BLOCKS.EMBEDDED_ASSET]: (node) => {
-    const file = node.data.target.fields.file
-    return <Image source={file.url} style={file.details.image} />
+    const file = (node.data.target as Asset).fields.file
+    return <img src={file.url} style={file.details.image} width={file.details.image?.width} height={file.details.image?.width} />
   },
   [BLOCKS.EMBEDDED_ENTRY]: embedded,
   [INLINES.EMBEDDED_ENTRY]: embedded,
@@ -62,7 +61,7 @@ function embedded(node) {
       const numberAcross = node.data.target.fields.by
       const ratio = node.data.target.fields.tileRatio
       return (
-        <View style={[brandStyles.tiling, styles.grid]}>
+        <div css={gridCss}>
           {node.data.target.fields.content.map((content: Content) => (
             <Tile
               key={content.sys.id}
@@ -71,7 +70,7 @@ function embedded(node) {
               ratio={ratio}
             />
           ))}
-        </View>
+        </div>
       )
     case 'iFrameEmbed':
       const url = node.data.target.fields.url
@@ -96,69 +95,8 @@ function embedded(node) {
   }
 }
 
-interface Content {
-  sys: Sys
-  fields: {
-    description: string
-    title: string
-    image: Asset
-    download: Asset
-  }
-}
-// Contentful sends these values as strings
-type NumberAcross = '2' | '3' | '4'
-
-interface TileProps {
-  content: Content
-  numberAcross: NumberAcross
-  ratio: number
-}
-
-function Tile({ content, numberAcross, ratio }: TileProps) {
-  const size = useTileSize(numberAcross)
-  const { width, height } = content?.fields?.image?.fields?.file?.details?.image || {}
-  const realRatio = width && height ? width / height : ratio || 1
-  return (
-    <Showcase
-      key={content.sys.id}
-      ratio={realRatio || 1}
-      assetType={AssetTypes.illustration}
-      description={content.fields.description}
-      name={content.fields.title}
-      preview={content?.fields?.image?.fields?.file?.url}
-      uri={content?.fields?.download?.fields?.file?.url}
-      loading={false}
-      size={size}
-    />
-  )
-}
-
-function useTileSize(numberAcross: NumberAcross) {
-  const { screen } = useScreenSize()
-
-  if (numberAcross === '2') {
-    switch (screen) {
-      case ScreenSizes.DESKTOP:
-        return 350
-      case ScreenSizes.MOBILE:
-        return 345
-      case ScreenSizes.TABLET:
-        return 222
-    }
-  } else if (numberAcross === '3') {
-    switch (screen) {
-      case ScreenSizes.DESKTOP:
-        return 226
-      case ScreenSizes.MOBILE:
-        return '100%'
-      case ScreenSizes.TABLET:
-        return 180
-    }
-  } else if (numberAcross === '4') {
-    return 165
-  }
-}
-
-const styles = StyleSheet.create({
-  grid: { marginHorizontal: -10 },
+const gridCss = css({
+  flexWrap: 'wrap',
+  flexDirection: 'row',
+  marginHorizontal: -10
 })
