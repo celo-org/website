@@ -22,11 +22,15 @@ export async function showVisitorCookieConsent() {
 }
 
 export async function initializeAnalytics() {
-  if (!ReactGA && (await canTrack())) {
+  const consented = await canTrack()
+  if (!ReactGA && (consented)) {
     ReactGA = await import('react-ga').then((mod) => mod.default)
 
     ReactGA.initialize(publicRuntimeConfig.GA_KEY)
   }
+  // vgo is set in bottom of _document.tsx
+  // @ts-expect-error
+  consented && window.vgo && window.vgo('process', 'allowTracking')
 }
 
 export async function agree() {
