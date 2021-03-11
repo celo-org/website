@@ -24,7 +24,7 @@ export default function Cover() {
       <div css={useableArea}>
         <CoverContent />
         {(isDesktop || isTablet) && <picture>
-          <object title={t('coverPhonesImage')} aria-label={t('coverPhonesImage')} type="image/svg+xml" data={examplePhones} width={1016} height={524} css={featureImageCss} />
+        <object title={t('coverPhonesImage')} aria-label={t('coverPhonesImage')} type="image/svg+xml" data={examplePhones} width={1016} height={524} />
         </picture>}
       </div>
 
@@ -106,23 +106,6 @@ const backgroundArea = css({
     backgroundPositionY: 40,
     backgroundImage: `url(${celoAsStarsDesktop})`,
   }
-})
-
-const phonesAnimation = keyframes`
-from {
-  opacity: 0;
-}
-to {
-  opacity: 1;
-}
-`
-
-const featureImageCss = css({
-  opacity: 0,
-  animationDelay: "400ms",
-  animationName: phonesAnimation,
-  animationDuration: "800ms",
-  animationFillMode: "both"
 })
 
 const useableArea = css(flex,{
