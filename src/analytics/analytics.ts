@@ -30,7 +30,7 @@ export async function initializeAnalytics() {
   }
   // vgo is set in bottom of _document.tsx
   // @ts-expect-error
-  consented && window.vgo && window.vgo('process', 'allowTracking')
+  if (consented && window.vgo) {window.vgo('process', 'allowTracking')}
 }
 
 export async function agree() {
