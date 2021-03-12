@@ -35,6 +35,7 @@ const rootCss = css(flex,{
     paddingRight: gap / 2,
     width: '100%',
     maxWidth: '100vw',
+    flexWrap: "wrap",
     [WHEN_TABLET] : {
       alignSelf: 'center',
       flexDirection: 'row',
@@ -72,7 +73,7 @@ const cellStyle = {
 
 
 export function Cell(props: CellProps) {
-  const cellCss = React.useMemo(() => css(cellStyle.base, cellStyle.mobile, cellStyle[props.mobileSpan],
+  const cellCss = React.useMemo(() => css(flex, cellStyle.base, cellStyle.mobile, cellStyle[props.mobileSpan],
       {
         [WHEN_TABLET]: css(
             cellStyle[props.span],
