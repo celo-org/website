@@ -9,6 +9,7 @@ import { flex } from 'src/estyles'
 import { GridRow, Cell } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
 import nodeOptions from "src/utils/contentfulNodes"
+import ValueProp, {Props as ValueProps} from "./ValueProp"
 
 type Props = ContentfulPage
 
@@ -40,7 +41,16 @@ const rootCss = css(flex, {
 
 function cellSwitch(textBody: Document | undefined, body: Entry<any>) {
   if (body) {
-    console.info(body.sys.contentType.sys.id)
+    switch (body.sys.contentType.sys.id) {
+      case  "proposition":
+        const valueProp = body.fields as ValueProps
+        return <ValueProp title={valueProp.title}
+                        titleType={valueProp.titleType}
+                        description={valueProp.description}
+                        link={valueProp.link}
+                        icon={valueProp.icon}
+                        />
+    }
   }
 
   if (textBody) {

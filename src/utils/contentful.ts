@@ -3,6 +3,7 @@ import { Asset, createClient, Entry, EntryCollection } from 'contentful'
 import getConfig from 'next/config'
 import { Page as SideBarEntry } from 'src/experience/common/Sidebar'
 import { Spans } from 'src/layout/Grid2'
+import { BTN } from 'src/shared/Button.3'
 
 function intialize() {
   const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -74,6 +75,14 @@ interface CellContentType {
   body?: any
   textBody?: Document
 }
+
+export interface ContentfulButton {
+  name: string
+  href: string
+  assetLink?: Asset
+  words: string
+  kind: BTN
+}
 export interface GridRowContentType {
   id: string
   cells: Entry<CellContentType>[]
@@ -91,7 +100,7 @@ export async function getPageBySlug(slug: string, { locale }, showSysData?: bool
   const pages = await intialize().getEntries<ContentfulPage>({
     content_type: 'page',
     'fields.slug': slug,
-    include: 3,
+    include: 5,
     locale,
   })
   return processPages(pages, showSysData)
@@ -101,7 +110,7 @@ export async function getPageById(id: string, { locale }) {
   const pages = await intialize().getEntries<ContentfulPage>({
     content_type: 'page',
     'sys.id': id,
-    include: 3,
+    include: 5,
     locale,
   })
   return processPages(pages)
