@@ -65,42 +65,40 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
 }
 
 
-interface SectionType { name: string; contentField: Document; slug: string }
+export interface SectionType { name: string; contentField: Document; slug: string }
 
 interface CellContentType {
   span: Spans
   tabletSpan?: Spans
   cssStyle?: any
-}
-interface GridRowContentType {
-  id: string
-  cells: CellContentType[]
-  cssStyle?: any
   body?: any
-  textBody: Document
+  textBody?: Document
+}
+export interface GridRowContentType {
+  id: string
+  cells: Entry<CellContentType>[]
+  cssStyle?: any
 }
 
-
-interface ContentFulPage {
+export interface ContentfulPage {
   title: string
   slug: string
+  description: string
   sections: Entry<SectionType| GridRowContentType>[]
 }
 
-
-
-export async function getPageBySlug(slug: string, { locale }) {
-  const pages = await intialize().getEntries<ContentFulPage>({
+export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {
+  const pages = await intialize().getEntries<ContentfulPage>({
     content_type: 'page',
     'fields.slug': slug,
     include: 3,
     locale,
   })
-  return processPages(pages)
+  return processPages(pages, showSysData)
 }
 
 export async function getPageById(id: string, { locale }) {
-  const pages = await intialize().getEntries<ContentFulPage>({
+  const pages = await intialize().getEntries<ContentfulPage>({
     content_type: 'page',
     'sys.id': id,
     include: 3,
@@ -109,9 +107,9 @@ export async function getPageById(id: string, { locale }) {
   return processPages(pages)
 }
 
-function processPages(pages: EntryCollection<ContentFulPage>) {
+function processPages(pages: EntryCollection<ContentfulPage>, showSysData?: boolean) {
   const data = pages.items[0].fields
-  const sections = (data.sections || []).map((section) => section.fields)
+  const sections = showSysData ? data.sections : (data.sections || []).map((section) => section.fields)
   return { ...data, sections, updatedAt: pages.items[0].sys.updatedAt }
 }
 

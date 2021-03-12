@@ -7,6 +7,11 @@ export const flex = css({
   flexDirection: "column"
 })
 
+export const flexRow = css({
+  display: "flex",
+  flexDirection: "row"
+})
+
 export const jost = css({
   fontFamily: typeFaces.futura
 })
