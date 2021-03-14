@@ -1,8 +1,9 @@
 import { Document } from '@contentful/rich-text-types'
+import { CSSObject } from '@emotion/react'
 import { Asset, createClient, Entry, EntryCollection } from 'contentful'
 import getConfig from 'next/config'
 import { Page as SideBarEntry } from 'src/experience/common/Sidebar'
-import { Spans } from 'src/layout/Grid2'
+import  {Props as ValueProps} from "src/public-sector/ValueProp"
 import { BTN } from 'src/shared/Button.3'
 
 function intialize() {
@@ -68,13 +69,6 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
 
 export interface SectionType { name: string; contentField: Document; slug: string }
 
-interface CellContentType {
-  span: Spans
-  tabletSpan?: Spans
-  cssStyle?: any
-  body?: any
-  textBody?: Document
-}
 
 export interface ContentfulButton {
   name: string
@@ -83,11 +77,23 @@ export interface ContentfulButton {
   words: string
   kind: BTN
 }
+
+export interface FreeContentType {
+  align: "flex-start" | "center"
+  maxWidth: number
+  body: Document
+}
+
+export type CellContentType = ValueProps | FreeContentType
+
 export interface GridRowContentType {
   id: string
   cells: Entry<CellContentType>[]
-  cssStyle?: any
+  cssStyle?: CSSObject
+  columns: 1 | 2 | 3 | 4
 }
+
+
 
 export interface ContentfulPage {
   title: string

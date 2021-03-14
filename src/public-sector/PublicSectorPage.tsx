@@ -2,14 +2,15 @@
 
 import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { Document } from '@contentful/rich-text-types'
+// import { Document } from '@contentful/rich-text-types'
 import { Entry } from 'contentful'
-import { getPageBySlug, ContentfulPage, GridRowContentType } from 'src/utils/contentful'
+import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType, FreeContentType } from 'src/utils/contentful'
 import { flex } from 'src/estyles'
-import { GridRow, Cell } from 'src/layout/Grid2'
+import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
-import nodeOptions from "src/utils/contentfulNodes"
 import ValueProp, {Props as ValueProps} from "./ValueProp"
+import {renderNode} from "src/experience/contentful/nodes"
+import { FreeContent } from "./FreeContent"
 
 type Props = ContentfulPage
 
@@ -21,14 +22,16 @@ export default function PublicSectorPage(props: Props) {
             if (section.sys.contentType.sys.id === 'grid-row') {
               const fields = section.fields as GridRowContentType
               return (
-                <GridRow key={section.sys.id} id={fields.id} css={css(fields.cssStyle)}>
-                  {fields.cells.map(cell => (
-                    <Cell key={cell.sys.id} span={cell.fields.span} tabletSpan={cell.fields.tabletSpan} css={css(cell.fields.cssStyle)} >
-                      {cellSwitch(cell.fields.textBody, cell.fields.body)}
-                    </Cell>
-                  ))}
+                <GridRow key={section.sys.id} id={fields.id} columns={fields.columns} css={css(fields.cssStyle)}>
+                  {fields.cells.map((cell) => cellSwitch(cell, fields.columns))}
                 </GridRow>
               )
+            } else  {
+              const fields = section.fields as SectionType
+
+              return <GridRow key={section.sys.id} id={fields.slug} columns={1}>
+                  {documentToReactComponents(fields.contentField, {renderNode})}
+              </GridRow>
             }
           })}
       </div>
@@ -39,27 +42,31 @@ const rootCss = css(flex, {
   marginTop: 100
 })
 
-function cellSwitch(textBody: Document | undefined, body: Entry<any>) {
-  if (body) {
-    switch (body.sys.contentType.sys.id) {
+function cellSwitch(entry: Entry<CellContentType>, columns: number) {
+  if (entry) {
+    switch (entry.sys.contentType.sys.id) {
+      case "freeContent":
+        const freeContent = entry.fields as FreeContentType
+        return <FreeContent
+                colSpan={columns}
+                body={freeContent.body}
+                maxWidth={freeContent.maxWidth}
+                align={freeContent.align}
+                />
       case  "proposition":
-        const valueProp = body.fields as ValueProps
-        return <ValueProp title={valueProp.title}
-                        titleType={valueProp.titleType}
-                        description={valueProp.description}
-                        link={valueProp.link}
-                        icon={valueProp.icon}
-                        />
+        const valueProp = entry.fields as ValueProps
+        return <ValueProp
+                  key={entry.sys.id}
+                  title={valueProp.title}
+                  titleType={valueProp.titleType}
+                  description={valueProp.description}
+                  link={valueProp.link}
+                  icon={valueProp.icon}
+                />
     }
   }
-
-  if (textBody) {
-    return documentToReactComponents(textBody, nodeOptions)
-  }
-
   return null
 }
-
 
 export async function getServerSideProps() {
   // TODO make any language

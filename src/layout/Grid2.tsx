@@ -3,6 +3,7 @@ import * as React from 'react'
 import { flex, WHEN_DESKTOP, WHEN_TABLET } from "src/estyles"
 
 interface GridProps {
+  columns: 1 | 2 | 3 | 4
   id?: string
   className?: string
   children: React.ReactNode
@@ -20,8 +21,13 @@ export enum Spans {
 }
 
 export function GridRow(props: GridProps) {
+  const gridTemplateColumns = "1fr ".repeat(props.columns)
+  const mainCss = css(rootCss, {
+    [WHEN_DESKTOP]: {gridTemplateColumns},
+    [WHEN_TABLET]: {gridTemplateColumns}
+  })
   return (
-      <div id={props.id} css={rootCss} className={props.className}>
+      <div id={props.id} css={mainCss} className={props.className}>
         {props.children}
       </div>
   )
@@ -37,6 +43,9 @@ const rootCss = css(flex,{
     maxWidth: '100vw',
     flexWrap: "wrap",
     [WHEN_TABLET] : {
+      display: "grid",
+      columnGap: `${gap}px`,
+      gridAutoRows: "auto",
       alignSelf: 'center',
       flexDirection: 'row',
       paddingRight: gap,
@@ -45,50 +54,11 @@ const rootCss = css(flex,{
       maxWidth: 958 + gap
     },
     [WHEN_DESKTOP] : {
+      display: "grid",
+      columnGap: `${gap}px`,
+      gridAutoRows: "auto",
       alignSelf: 'center',
-      flexDirection: 'row',
       width: '100%',
       maxWidth: 1080 + gap,
     }
 })
-
-interface CellProps {
-  children: React.ReactNode
-  span: Spans
-  tabletSpan?: Spans
-  mobileSpan?: Spans
-  className?: string
-}
-
-const cellStyle = {
-  base: { padding: gap / 2, flexGrow: 0, flexShrink: 0 },
-  fourth: { width: '25%' },
-  third: { width: '33.333%' },
-  twoThird: { width: '66.666%' },
-  half: { width: '50%' },
-  three4th: { width: '75%' },
-  full: { flexBasis: '100%', width: '100%' },
-  mobile: { width: '100%' },
-}
-
-
-export function Cell(props: CellProps) {
-  const cellCss = React.useMemo(() => css(flex, cellStyle.base, cellStyle.mobile, cellStyle[props.mobileSpan],
-      {
-        [WHEN_TABLET]: css(
-            cellStyle[props.span],
-            cellStyle[props.tabletSpan]
-        ),
-        [WHEN_DESKTOP]: css(
-          cellStyle[props.span]
-        )
-      }
-  ), [props.mobileSpan, props.span, props.tabletSpan])
-
-  return (
-      <div css={cellCss} className={props.className}>
-        {props.children}
-      </div>
-  )
-}
-

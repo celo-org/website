@@ -15,6 +15,7 @@ import InlineAnchor from 'src/shared/InlineAnchor'
 import { fonts, standardStyles } from 'src/styles'
 import { Content, Tile } from 'src/experience/common/Tile'
 import { css } from '@emotion/react'
+import LogoGallary from "src/public-sector/LogoGallary"
 
 export const renderNode: RenderNode = {
   [BLOCKS.HEADING_1]: (_, children: string) => {
@@ -89,7 +90,15 @@ function embedded(node) {
       return <IdeaReadiness title={fields.title} caption={fields.caption} stages={fields.stages} />
     case 'steps':
       return <JourneySteps steps={fields.steps} term={fields.stepTerm} />
-    default:
+    case "logoGallery":
+      return (
+        <LogoGallary
+          key={node.data?.target?.sys?.id}
+          list={(fields.list)}
+        />
+      )
+
+      default:
       console.info(node.data?.target?.sys?.contentType?.sys?.id)
       return null
   }
