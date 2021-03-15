@@ -6,13 +6,10 @@ const OPTIONS = {
   renderNode,
 }
 // TODO cssStyle instead of individual properties?
-// TODO document to react components needs to render properly styled h* components
-export function FreeContent({ colSpan, body, maxWidth, align }) {
-  return <div css={css(rootCss,{ gridColumn: `span ${colSpan}` })}>
-    <div css={css(flex,{maxWidth, alignSelf: align, textAlign: align})}>{documentToReactComponents(body, OPTIONS)}</div>
+export function FreeContent({ colSpan, body, cssStyle, backgroundColor }) {
+  return <div css={css(rootCss,{ gridColumn: `span ${colSpan}`, backgroundColor })}>
+    <div css={css(flex,cssStyle)}>{documentToReactComponents(body, OPTIONS)}</div>
   </div>
 }
 
-const rootCss = css(flex,{
-
-})
+const rootCss = css(flex,{})

@@ -79,8 +79,8 @@ export interface ContentfulButton {
 }
 
 export interface FreeContentType {
-  align: "flex-start" | "center"
-  maxWidth: number
+  backgroundColor: string
+  cssStyle: CSSObject
   body: Document
 }
 

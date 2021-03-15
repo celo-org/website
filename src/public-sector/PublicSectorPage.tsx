@@ -2,7 +2,6 @@
 
 import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-// import { Document } from '@contentful/rich-text-types'
 import { Entry } from 'contentful'
 import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType, FreeContentType } from 'src/utils/contentful'
 import { flex } from 'src/estyles'
@@ -50,8 +49,8 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number) {
         return <FreeContent
                 colSpan={columns}
                 body={freeContent.body}
-                maxWidth={freeContent.maxWidth}
-                align={freeContent.align}
+                cssStyle={freeContent.cssStyle}
+                backgroundColor={freeContent.backgroundColor}
                 />
       case  "proposition":
         const valueProp = entry.fields as ValueProps
@@ -69,7 +68,6 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number) {
 }
 
 export async function getServerSideProps() {
-  // TODO make any language
   const page = await getPageBySlug("public-sector", {locale: 'en-US'}, true)
   return {props: page }
 }

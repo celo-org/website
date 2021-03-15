@@ -36,7 +36,6 @@ export default function ValueProp(props: Props) {
 const rootCss = css (flex,{
   flex: 1,
   justifyContent: "space-between",
-  backgroundColor: "pink",
   marginBottom: 36
 })
 
