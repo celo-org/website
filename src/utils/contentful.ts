@@ -3,7 +3,7 @@ import { CSSObject } from '@emotion/react'
 import { Asset, createClient, Entry, EntryCollection } from 'contentful'
 import getConfig from 'next/config'
 import { Page as SideBarEntry } from 'src/experience/common/Sidebar'
-import  {Props as ValueProps} from "src/public-sector/ValueProp"
+import  {Props as BlurbProps} from "src/public-sector/Blurb"
 import { BTN } from 'src/shared/Button.3'
 
 function intialize() {
@@ -84,7 +84,7 @@ export interface FreeContentType {
   body: Document
 }
 
-export type CellContentType = ValueProps | FreeContentType
+export type CellContentType = BlurbProps | FreeContentType
 
 export interface GridRowContentType {
   id: string

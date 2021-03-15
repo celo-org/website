@@ -7,7 +7,7 @@ import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellCon
 import { flex } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
-import ValueProp, {Props as ValueProps} from "./ValueProp"
+import Blurb, {Props as BlurbProps} from "./Blurb"
 import {renderNode} from "src/experience/contentful/nodes"
 import { FreeContent } from "./FreeContent"
 
@@ -53,14 +53,14 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number) {
                 backgroundColor={freeContent.backgroundColor}
                 />
       case  "proposition":
-        const valueProp = entry.fields as ValueProps
-        return <ValueProp
+        const blurbProp = entry.fields as BlurbProps
+        return <Blurb
                   key={entry.sys.id}
-                  title={valueProp.title}
-                  titleType={valueProp.titleType}
-                  description={valueProp.description}
-                  link={valueProp.link}
-                  icon={valueProp.icon}
+                  title={blurbProp.title}
+                  titleType={blurbProp.titleType}
+                  description={blurbProp.description}
+                  link={blurbProp.link}
+                  icon={blurbProp.icon}
                 />
     }
   }

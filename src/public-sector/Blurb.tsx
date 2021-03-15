@@ -20,7 +20,7 @@ export interface Props {
   link?: Entry<ContentfulButton>
 }
 
-export default function ValueProp(props: Props) {
+export default function Blurb(props: Props) {
   return <div css={rootCss}>
     <div css={containerCss}>
       <img src={props.icon?.fields?.file?.url} css={imageCss} width={100} height={100} />
@@ -50,7 +50,7 @@ const imageCss =css({
 
 const headingCss = css({
   marginTop: 16,
-  marginBottom  : 12  ,
+  marginBottom: 12,
 })
 
 function headingStyle(type: Headings) {
@@ -58,7 +58,7 @@ function headingStyle(type: Headings) {
     case "large":
       return css(fonts.h4, headingCss)
     case "small":
-        return css(fonts.h5, headingCss)
+      return css(fonts.h5, headingCss)
     default:
       return css(fonts.h3, headingCss)
   }
