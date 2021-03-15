@@ -119,7 +119,6 @@ function CeloRewardsTerms() {
                 <br />
                 <Ul style={styles.nestedList}>
                   <Li style={styles.listItem}>{t("terms.moreDetails.3-1")}</Li>
-                  <Li style={styles.listItem}>{t("terms.moreDetails.3-2")}</Li>
                 </Ul>
               </Li>
               <Li style={styles.listItem}>
