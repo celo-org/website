@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import Hamburger from 'src/header/Hamburger'
+import { css } from '@emotion/react'
 import { useBooleanToggle } from 'src/hooks/useBooleanToggle'
 import { useScreenSize } from 'src/layout/ScreenSize'
 import LogoLightBg from 'src/logos/LogoLightBg'
@@ -45,7 +46,7 @@ export default function TopBar({ current, kitName }: Props) {
               {isMobile ? <RingsGlyph height={30} /> : <LogoLightBg height={30} />}
             </TouchableOpacity>
           </a>
-          <a href={current}>
+          <a href={current} css={kitBrand}>
             <TouchableOpacity style={styles.rowVerticalCenter}>
               <Text
                 // @ts-ignore -- added initial to the aug but it still isnt liking it
@@ -146,4 +147,8 @@ const styles = StyleSheet.create({
     marginBottom: 0,
     marginHorizontal: 15,
   },
+})
+
+const kitBrand = css({
+  textDecoration: 'none'
 })
