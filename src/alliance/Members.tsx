@@ -177,13 +177,15 @@ function FallBack({ text, url }) {
   return (
     <View style={styles.member}>
       <View style={[standardStyles.centered, styles.logo]}>
-        <Text href={url} target="_blank" style={[fonts.micro, textStyles.center]}>
+        <Text href={url} hrefAttrs={hrefAttrs} style={[fonts.micro, textStyles.center]}>
           {text}
         </Text>
       </View>
     </View>
   )
 }
+
+const hrefAttrs = {target:"blank", "rel": "noopenner"}
 
 const ROW_HEIGHT = 50
 const COLUMN_WIDTH = 180

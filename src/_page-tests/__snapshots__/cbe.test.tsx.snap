@@ -61,6 +61,7 @@ exports[`CBE renders 1`] = `
             "zIndex": -1,
           }
         }
+        suppressHydrationWarning={true}
       />
     </div>
   </div>
@@ -236,6 +237,7 @@ exports[`CBE renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <h3
@@ -314,11 +316,11 @@ exports[`CBE renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="https://valoraapp.co/3j0mTjS"
             onClick={[Function]}
-            rel=" noopener noreferrer"
+            onMouseEnter={[Function]}
+            rel="noopener"
             role="link"
             style={
               Object {
@@ -432,6 +434,7 @@ exports[`CBE renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <h3
@@ -510,11 +513,11 @@ exports[`CBE renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="https://valoraapp.co/3l5XLtC"
             onClick={[Function]}
-            rel=" noopener noreferrer"
+            onMouseEnter={[Function]}
+            rel="noopener"
             role="link"
             style={
               Object {
@@ -628,6 +631,7 @@ exports[`CBE renders 1`] = `
                 "zIndex": -1,
               }
             }
+            suppressHydrationWarning={true}
           />
         </div>
         <h3
@@ -706,11 +710,11 @@ exports[`CBE renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="https://valoraapp.com"
             onClick={[Function]}
-            rel=" noopener noreferrer"
+            onMouseEnter={[Function]}
+            rel="noopener"
             role="link"
             style={
               Object {
@@ -847,6 +851,7 @@ exports[`CBE renders 1`] = `
               "zIndex": -1,
             }
           }
+          suppressHydrationWarning={true}
         />
       </div>
       <h4
@@ -978,6 +983,7 @@ exports[`CBE renders 1`] = `
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
           </div>
@@ -985,11 +991,10 @@ exports[`CBE renders 1`] = `
       </a>
       <a
         className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-        data-focusable={true}
         dir="auto"
         href="https://coinbase.com/earn/celo/lesson/1"
         onClick={[Function]}
-        rel=" noopener noreferrer"
+        rel="noopenner"
         role="link"
         style={
           Object {
@@ -1112,6 +1117,7 @@ exports[`CBE renders 1`] = `
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
           </div>
@@ -1119,11 +1125,10 @@ exports[`CBE renders 1`] = `
       </a>
       <a
         className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-        data-focusable={true}
         dir="auto"
         href="https://coinbase.com/earn/celo/lesson/2"
         onClick={[Function]}
-        rel=" noopener noreferrer"
+        rel="noopenner"
         role="link"
         style={
           Object {
@@ -1246,6 +1251,7 @@ exports[`CBE renders 1`] = `
                     "zIndex": -1,
                   }
                 }
+                suppressHydrationWarning={true}
               />
             </div>
           </div>
@@ -1253,11 +1259,10 @@ exports[`CBE renders 1`] = `
       </a>
       <a
         className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-        data-focusable={true}
         dir="auto"
         href="https://coinbase.com/earn/celo/lesson/3"
         onClick={[Function]}
-        rel=" noopener noreferrer"
+        rel="noopenner"
         role="link"
         style={
           Object {

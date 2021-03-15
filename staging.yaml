@@ -1,7 +1,8 @@
-runtime: nodejs10
+runtime: nodejs14
 env: standard
 service: website-staging
 instance_class: F2
+default_expiration: 30d
 env_variables:
   NODE_ENV: 'production'
   DEPLOY_ENV: 'staging'
@@ -21,6 +22,10 @@ handlers:
 
   - url: /public
     static_dir: public
+
+  - url: /home-phones/*
+    expiration: 30d
+    static_dir: public/home-phones
 
   - url: /papers/whitepaper
     static_files: public/papers/Celo__A_Multi_Asset_Cryptographic_Protocol_for_Decentralized_Social_Payments.pdf

@@ -28,7 +28,7 @@ export class BlueBanner extends React.PureComponent<Props> {
         <View style={styles.insideContainer}>
           <Text
             accessibilityRole="link"
-            target="_blank"
+            hrefAttrs={hrefAttrs}
             href={this.props.link}
             style={[fonts.navigation, textStyles.medium, styles.text]}
           >
@@ -42,6 +42,7 @@ export class BlueBanner extends React.PureComponent<Props> {
     )
   }
 }
+const hrefAttrs = {target:"blank", "rel": "noopenner"}
 
 export const BANNER_HEIGHT = 50
 

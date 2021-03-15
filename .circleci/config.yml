@@ -1,7 +1,7 @@
 node-defaults: &NODE
   working_directory: ~/app
   docker:
-    - image: celohq/node10-gcloud:v3
+    - image: circleci/node:fermium
   environment:
     # To avoid ENOMEM problem when running node
     NODE_OPTIONS: '--max-old-space-size=4096'

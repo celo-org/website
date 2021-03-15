@@ -1,12 +1,11 @@
-/** @jsx jsx */
-import {jsx, css, keyframes} from "@emotion/core"
+import {css, keyframes} from "@emotion/react"
 import CoverContent from "src/home/CoverContent"
 import { colors } from "src/styles"
 import celoAsStarsMobileLong from "src/home/celo-sky-mobile.svg"
 import celoAsStarsMobileShort from "src/home/celo-sky-mobile-short.svg"
 import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"
 import celoAsStarsDesktop from "src/home/celo-sky-desktop.svg"
-
+import * as React from 'react'
 import examplePhones from "src/home/example-phones.svg"
 import Stats from "./stats/Stats"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
@@ -25,7 +24,7 @@ export default function Cover() {
       <div css={useableArea}>
         <CoverContent />
         {(isDesktop || isTablet) && <picture>
-          <object title={t('coverPhonesImage')} aria-label={t('coverPhonesImage')} type="image/svg+xml" data={examplePhones} width={1016} height={524} css={featureImageCss} />
+        <object title={t('coverPhonesImage')} aria-label={t('coverPhonesImage')} type="image/svg+xml" data={examplePhones} width={1016} height={524} />
         </picture>}
       </div>
 
@@ -107,23 +106,6 @@ const backgroundArea = css({
     backgroundPositionY: 40,
     backgroundImage: `url(${celoAsStarsDesktop})`,
   }
-})
-
-const phonesAnimation = keyframes`
-from {
-  opacity: 0;
-}
-to {
-  opacity: 1;
-}
-`
-
-const featureImageCss = css({
-  opacity: 0,
-  animationDelay: "400ms",
-  animationName: phonesAnimation,
-  animationDuration: "800ms",
-  animationFillMode: "both"
 })
 
 const useableArea = css(flex,{

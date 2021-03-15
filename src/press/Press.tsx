@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import {jsx, css} from "@emotion/core"
+import {css} from "@emotion/react"
 import * as React from 'react'
 import { View } from 'react-native'
 import { WHEN_TABLET_AND_UP } from "src/estyles"

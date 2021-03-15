@@ -56,28 +56,21 @@ exports[`Experience/Brandkit renders 1`] = `
               "WebkitAlignItems": "center",
               "WebkitBoxAlign": "center",
               "WebkitBoxDirection": "normal",
-              "WebkitBoxFlex": 1,
               "WebkitBoxOrient": "horizontal",
               "WebkitBoxPack": "justify",
-              "WebkitFlexBasis": "0%",
+              "WebkitFlex": 1,
               "WebkitFlexDirection": "row",
-              "WebkitFlexGrow": 1,
-              "WebkitFlexShrink": 1,
               "WebkitJustifyContent": "space-between",
               "alignItems": "center",
               "backgroundColor": "rgba(255,255,255,1.00)",
-              "flexBasis": "0%",
+              "flex": 1,
               "flexDirection": "row",
-              "flexGrow": 1,
-              "flexShrink": 1,
               "justifyContent": "space-between",
               "maxWidth": "1600px",
+              "msFlex": "1 1 0%",
               "msFlexAlign": "center",
               "msFlexDirection": "row",
-              "msFlexNegative": 1,
               "msFlexPack": "justify",
-              "msFlexPositive": 1,
-              "msFlexPreferredSize": "0%",
               "paddingBottom": "20px",
               "paddingLeft": "20px",
               "paddingRight": "20px",
@@ -106,7 +99,6 @@ exports[`Experience/Brandkit renders 1`] = `
             >
               <div
                 className="css-view-1dbjc4n"
-                data-focusable={true}
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -167,11 +159,19 @@ exports[`Experience/Brandkit renders 1`] = `
               </div>
             </a>
             <a
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "ytumd6",
+                  "next": undefined,
+                  "styles": "text-decoration:none;",
+                  "toString": [Function],
+                }
+              }
               href="/experience/brand"
             >
               <div
                 className="css-view-1dbjc4n"
-                data-focusable={true}
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -289,10 +289,10 @@ exports[`Experience/Brandkit renders 1`] = `
                 >
                   <a
                     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                    data-focusable={true}
                     dir="auto"
                     href="/experience/brand"
                     onClick={[Function]}
+                    onMouseEnter={[Function]}
                     role="link"
                     style={
                       Object {
@@ -397,10 +397,10 @@ exports[`Experience/Brandkit renders 1`] = `
                 >
                   <a
                     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                    data-focusable={true}
                     dir="auto"
                     href="/experience/events"
                     onClick={[Function]}
+                    onMouseEnter={[Function]}
                     role="link"
                     style={
                       Object {
@@ -474,10 +474,10 @@ exports[`Experience/Brandkit renders 1`] = `
                 >
                   <a
                     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                    data-focusable={true}
                     dir="auto"
                     href="/experience/grants"
                     onClick={[Function]}
+                    onMouseEnter={[Function]}
                     role="link"
                     style={
                       Object {
@@ -551,10 +551,10 @@ exports[`Experience/Brandkit renders 1`] = `
                 >
                   <a
                     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                    data-focusable={true}
                     dir="auto"
                     href="/experience/merchant"
                     onClick={[Function]}
+                    onMouseEnter={[Function]}
                     role="link"
                     style={
                       Object {
@@ -662,10 +662,10 @@ exports[`Experience/Brandkit renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/experience/brand"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -758,10 +758,10 @@ exports[`Experience/Brandkit renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/experience/brand/logo"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -854,10 +854,10 @@ exports[`Experience/Brandkit renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/experience/brand/color"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -950,10 +950,10 @@ exports[`Experience/Brandkit renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/experience/brand/typography"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -1046,10 +1046,10 @@ exports[`Experience/Brandkit renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/experience/brand/composition"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -1142,10 +1142,10 @@ exports[`Experience/Brandkit renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/experience/brand/exchange-icons"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -1221,10 +1221,10 @@ exports[`Experience/Brandkit renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/experience/brand/icons"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -1300,10 +1300,10 @@ exports[`Experience/Brandkit renders 1`] = `
         >
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            data-focusable={true}
             dir="auto"
             href="/experience/brand/key-imagery"
             onClick={[Function]}
+            onMouseEnter={[Function]}
             role="link"
             style={
               Object {
@@ -1393,12 +1393,15 @@ exports[`Experience/Brandkit renders 1`] = `
       style={
         Object {
           "WebkitBoxFlex": 0,
+          "WebkitFlex": 1,
           "WebkitFlexBasis": "calc(75% - 50px)",
           "WebkitFlexGrow": 0,
           "WebkitFlexShrink": 0,
+          "flex": 1,
           "flexBasis": "calc(75% - 50px)",
           "flexGrow": 0,
           "flexShrink": 0,
+          "msFlex": "1 1 0%",
           "msFlexNegative": 0,
           "msFlexPositive": 0,
           "msFlexPreferredSize": "calc(75% - 50px)",
@@ -1520,9 +1523,9 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-                  data-focusable={true}
                   href="/code-of-conduct"
                   onClick={[Function]}
+                  onMouseEnter={[Function]}
                   role="link"
                   style={
                     Object {
@@ -1700,10 +1703,10 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-                  data-focusable={true}
                   href="https://docs.google.com/document/d/1Y1mfpBGad_8ZxSuIqwX52MWGEMfoWGt5HXc7sZp9h70/edit?usp=sharing"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -1871,9 +1874,9 @@ exports[`Experience/Brandkit renders 1`] = `
             >
               <a
                 className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-                data-focusable={true}
                 href="/terms"
                 onClick={[Function]}
+                onMouseEnter={[Function]}
                 role="link"
                 style={
                   Object {
@@ -1978,11 +1981,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2033,11 +2036,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/about"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2088,11 +2091,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/jobs"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2143,11 +2146,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/validators"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2198,11 +2201,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/developers"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2253,11 +2256,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/alliance"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2308,11 +2311,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/community"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2391,11 +2394,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://docs.celo.org/"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2446,11 +2449,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/audits"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2501,11 +2504,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
-                  href="https://www.celoreserve.org/"
+                  href="https://www.celoreserve.org"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2556,11 +2559,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/papers"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2639,11 +2642,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/code-of-conduct"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2694,11 +2697,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/brand-policy"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2749,11 +2752,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/press"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2804,11 +2807,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/community#events"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2859,11 +2862,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/experience/events"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2914,11 +2917,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/experience/brand"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -2969,11 +2972,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/experience/merchant"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3024,11 +3027,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/experience/grants"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3079,11 +3082,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="/community#fund"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3162,11 +3165,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://medium.com/celoOrg"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3243,11 +3246,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://github.com/celo-org"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3326,11 +3329,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://twitter.com/CeloOrg"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3407,11 +3410,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://forum.celo.org/"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3488,11 +3491,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://discord.gg/6yWMkgM"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3571,11 +3574,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3652,11 +3655,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
-                  href="https://www.instagram.com/celoorg"
+                  href="https://www.instagram.com/celoorg/"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3731,11 +3734,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://defipulse.com/"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3809,11 +3812,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
-                  href="https://www.linkedin.com/company/celoOrg"
+                  href="https://www.linkedin.com/company/celoOrg/"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3887,11 +3890,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://www.twitch.tv/celoorg"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -3965,11 +3968,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
-                  href="https://www.reddit.com/r/celo"
+                  href="https://www.reddit.com/r/celo/"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -4043,11 +4046,11 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  data-focusable={true}
                   dir="auto"
                   href="https://t.me/celoplatform"
                   onClick={[Function]}
-                  rel=" noopener noreferrer"
+                  onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -4152,13 +4155,17 @@ exports[`Experience/Brandkit renders 1`] = `
         }
       >
         <div
-          className="lazyload-placeholder"
-          style={
-            Object {
-              "height": undefined,
+          className="lazyload-wrapper "
+        >
+          <div
+            className="lazyload-placeholder"
+            style={
+              Object {
+                "height": undefined,
+              }
             }
-          }
-        />
+          />
+        </div>
         <div
           className="css-text-901oao"
           dir="auto"
