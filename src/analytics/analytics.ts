@@ -29,7 +29,7 @@ export async function initializeAnalytics() {
     ReactGA.initialize(publicRuntimeConfig.GA_KEY)
   }
   // vgo is set in bottom of _document.tsx
-  // @ts-expect-error
+  // @ts-ignore
   if (consented && window.vgo) {window.vgo('process', 'allowTracking')}
 }
 
