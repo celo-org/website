@@ -5,7 +5,7 @@ import { renderNode } from 'src/experience/contentful/nodes'
 const OPTIONS = {
   renderNode,
 }
-// TODO cssStyle instead of individual properties?
+
 export function FreeContent({ colSpan, body, cssStyle, backgroundColor }) {
   return <div css={css(rootCss,{ gridColumn: `span ${colSpan}`, backgroundColor })}>
     <div css={css(flex,cssStyle)}>{documentToReactComponents(body, OPTIONS)}</div>
