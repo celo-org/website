@@ -95,34 +95,34 @@ export interface GridRowContentType {
 
 
 
-export interface ContentfulPage {
+export interface ContentfulPage<T> {
   title: string
   slug: string
   description: string
-  sections: Entry<SectionType| GridRowContentType>[]
+  sections: Entry<T>[]
 }
 
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {
-  const pages = await intialize().getEntries<ContentfulPage>({
+  const pages = await intialize().getEntries<ContentfulPage<SectionType| GridRowContentType>>({
     content_type: 'page',
     'fields.slug': slug,
     include: 5,
     locale,
   })
-  return processPages(pages, showSysData)
+  return processPages<SectionType| GridRowContentType>(pages, showSysData)
 }
 
-export async function getPageById(id: string, { locale }) {
-  const pages = await intialize().getEntries<ContentfulPage>({
+export async function getPageById<T>(id: string, { locale }) {
+  const pages = await intialize().getEntries<ContentfulPage<T>>({
     content_type: 'page',
     'sys.id': id,
     include: 5,
     locale,
   })
-  return processPages(pages)
+  return processPages<T>(pages)
 }
 
-function processPages(pages: EntryCollection<ContentfulPage>, showSysData?: boolean) {
+function processPages<T>(pages: EntryCollection<ContentfulPage<T>>, showSysData?: boolean) {
   const data = pages.items[0].fields
   const sections = showSysData ? data.sections : (data.sections || []).map((section) => section.fields)
   return { ...data, sections, updatedAt: pages.items[0].sys.updatedAt }

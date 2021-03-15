@@ -11,7 +11,7 @@ import ValueProp, {Props as ValueProps} from "./ValueProp"
 import {renderNode} from "src/experience/contentful/nodes"
 import { FreeContent } from "./FreeContent"
 
-type Props = ContentfulPage
+type Props = ContentfulPage<GridRowContentType | SectionType>
 
 export default function PublicSectorPage(props: Props) {
   return <>
