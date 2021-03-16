@@ -1,0 +1,89 @@
+{
+  "title": "CELO Rewards Program",
+  "description": {
+    "first": "",
+    "second": "",
+    "third": "",
+    "tier1": {
+      "title": "10 cUSD",
+      "body": "Earn $1 worth of CELO per month"
+    },
+    "tier2": {
+      "title": "100 cUSD",
+      "body": "Earn $5 worth of CELO per month"
+    },
+    "tier3": {
+      "title": "500 cUSD",
+      "body": "Earn $10 worth of CELO per month"
+    }
+  },
+  "buycUsd": "Add cUSD",
+  "learnMore": "Learn More",
+  "kickoff": {
+    "title": "Rewards Kickoff:",
+    "body": "CELO rewards are 4x until March 1st! Expect to receive weekly rewards."
+  },
+  "terms": {
+    "title": "Sa CELO Rewards Program, may pagkakataon kang makatanggap ng mga reward sa CELO para sa pagpapanatili ng cUSD balance kada buwan!",
+    "howItWorks": {
+      "title": "Ganito iyon gumagana:",
+      "1": "Magsimula sa pamamagitan ng <0>pagta-transfer ng cUSD sa iyong wallet</0> para makilahok! Puwede mong sundin ang mga instructions para sa <1>pagdaragdag ng cUSD sa isang Valora wallet.</1>",
+      "2": "<0>Kumpirmahin ang numero ng iyong telepono.</0> Isang madaling paraan nito ang pagkumpirma ng numero ng iyong telepono gamit ang Valora app sa pamamagitan ng pagsunod sa mga hakbang sa onboarding sa app.",
+      "3": "<0>Kinakalkula ang mga reward sa katapusan ng bawat rewards period (lingguhan)</0> batay sa average na napanatili mong cUSD balance sa buong rewards period (“balanse”)*:",
+      "4": "<0>Ike-credit ang mga reward sa iyong CELO balance sa loob ng 3 araw</0> pagkatapos ng bawat rewards period. Puwede mong tingnan ang iyong CELO balance sa Valora sa pamamagitan ng pagpunta sa tab na CELO sa Menu ng app.",
+      "5": "<0>Hanggang Marso 1 (panimulang rewards period), ang magiging rewards ay 4x.</0>. Sumali nang maaga para makatanggap ng mas malalaking reward!"
+    },
+    "tiers": {
+      "tier1": {
+        "body": "Tier 1: Makakatanggap ka ng $0.25 USD sa CELO kung nakapagpanatili ka ng minimum na average na balanseng 20cUSD sa rewards period"
+      },
+      "tier2": {
+        "body": "Tier 2: Makakatanggap ka ng $1.25 USD sa CELO kung nakapagpanatili ka ng minimum na average na balanseng 100cUSD sa rewards period"
+      },
+      "tier3": {
+        "body": "Tier 3: Makakatanggap ka ng $2.5 USD sa CELO kung nakapagpanatili ka ng minimum na average na balanseng 500cUSD sa rewards period"
+      }
+    },
+    "moreDetails": {
+      "title": "Karagdagang  detalye:",
+      "1": "<0>Tiyaking kukumpirmahin mo ang numero ng iyong telepono at mayroon kang angkop na balanse para matanggap ang mga reward.</0> Puwede mong <1>kumpirmahin ang numero ng iyong telepono sa Valora app</1> (ito ang proseso kapag nakatanggap ka ng 3 text message).",
+      "2": "Wala ka nang ibang kailangang gawin para i-claim ang mga reward, hangga't nasusunod mo ang mga pagtatakda sa itaas. Nakabatay ang pagiging kwalipikado sa pagkumpirma ng numero ng telepono at sa halaga ng average na balanseng cUSD sa rewards period.",
+      "3": "Inaasahang magtatagal ang program hanggang Hunyo 1, 2021 o hanggang maubos ang pondo, pero posibleng magbago ang mga halaga ng reward at tagal ng program.",
+      "3-1": "Magsisimula ang mga lingguhang period  sa Lunes, Enero 25, 2021 nang 20:00 UTC, at magtatapos ito sa Marso 1, 2021 nang 19:59 UTC",
+      "4": "<0>Kinakalkula ang average na balanseng cUSD ng isang account sa buong rewards period  sa pamamagitan ng pagkuha ng average ng balanseng cUSD ng address sa lahat ng block na na-validate sa parehong rewards period  sa Celo blockchain.</0> Halimbawa, kung:",
+      "4-1": "Mula Pebrero 1, 20:00 UTC hanggang Pebrero 8 ang isang rewards period ",
+      "4-2": "Nagpanatili ka ng 0 cUSD mula Pebrero 1, 20:00 UTC hanggang Pebrero 4, 08:00 UTC",
+      "4-3": "Nagdagdag ka ng 20 cUSD noong Pebrero 4, 08:00 UTC (sa kalagitnaan ng rewards period) at napanatili mo ang balanseng ito sa iyong wallet hanggang Pebrero 8, 20:00 UTC",
+      "4-4": "Humigit-kumulang 10 cUSD ang iyong magiging kwalipikadong balanse sa rewards period  na ito (depende sa pag-round off at average na block time).",
+      "5": "<0>Magpapamahagi ng mga reward sa first come, first serve basis</0> (ayon sa petsa ng pagkumpirma ng numero ng telepono) hanggang sa kabuuang limit na 20,000 CELO kada buwan. ",
+      "5-1": "Sa panimulang panahon, gagawing 20,000 CELO kada linggo ang kabuuang limit na ito.",
+      "6": "<0>Kakalkulahin ang presyo ng CELO batay sa average na “Closing” na presyo para sa CELO ayon sa nakasaad sa coinmarketcap.com para sa period  ng pagkuha ng reward.</0>",
+      "6-1": "Halimbawa, para sa unang linggo ng Pebrero, ang presyo ng CELO ay ang pinagsama-samang halaga ng 7 araw na Closing  na presyo ng CELO sa coinmarketcap.com mula Pebrero 1, 2021 (kasama) hanggang Pebrero 8, 2021 (hindi kasama), na hinati sa 7."
+    },
+    "celoAndCusd": {
+      "title": "Ano ang CELO at cUSD?",
+      "1": "Ang mga Celo Dollar, o cUSD ay asset na idinisenyo para sa pang-araw-araw na buhay: madaling magagawa ng mga tao na magbayad, mag-ipon, at magpadala gamit ang cUSD sa sinumang may numero ng telepono saanman sa mundo. May stable na halaga ang cUSD na sumusunod sa US Dollar.",
+      "2": "CELO ang pangunahing asset na ginagamit para sa pangangasiwa, reserba, at staking sa Celo Network. Mayroon itong fixed na supply at nagbabagong halagang na nauugnay sa kabuuang halaga ng mga stablecoin sa sirkulasyon sa Celo ecosystem."
+    },
+    "rewardsTroubleShoot": {
+      "title": "Bakit hindi lumabas ang aking reward?",
+      "description": "May ilang posibleng dahilan:",
+      "1": "<0>Posibleng hindi na-verify ang numero ng telepono ng address na may kwalipikadong balanse.</0> Isang madaling paraan nito ang pagkumpirma ng numero ng iyong telepono gamit ang Valora app sa pamamagitan ng pagsunod sa mga hakbang sa onboarding sa app!",
+      "2": "<0>Kahit na kasalukuyang sapat ang laki ng iyong balanseng cUSD para maging kwalipikado sa isang tier ng reward, posibleng hindi naging sapat ang iyong average na balanseng cUSD sa mga nakalipas na rewards period</0>, kung nagdagdag ka ng pondo matapos magsimula ang yugto ng pagkuha ng reward. Halimbawa, kung:",
+      "2-1": "Mula Pebrero 1, 20:00 UTC hanggang Pebrero 8 ang isang rewards period",
+      "2-2": "Nagpanatili ka ng 0 cUSD mula Pebrero 1, 20:00 UTC hanggang Pebrero 4, 08:00 UTC",
+      "2-3": "Nagdagdag ka ng 20 cUSD noong Pebrero 4, 08:00 UTC (sa kalagitnaan ng rewards period)",
+      "2-4": "Napanatili mo ang balanseng ito sa iyong wallet hanggang Pebrero 8, 20:00 UTC",
+      "2-5": "Humigit-kumulang 10 cUSD ang iyong magiging kwalipikadong balanse sa rewards period na ito (depende sa pag-round off at average na block time).",
+      "3": "<0>Posibleng magtagal ang pagpoproseso at pagpapadala ng mga reward.</0> Kadalasang napoproseso ang mga reward sa loob ng 3 araw pagkatapos ng rewards period yugto ng pagkuha ng reward."
+    },
+    "notices": {
+      "title": "Mahahalagang paunawa:",
+      "body": "Maaaring magbago ang rate ng reward at mga tuntunin sa paglipas ng panahon, at walang bisa ang mga ito sa mga lugar kung saan ito ipinagbabawal. Ang mga reward ay hindi garantisado, maaaring ihinto anumang oras, at ilalaan ayon sa best efforts basis. Maaaring mag-iba ang mga aktwal na resulta, batay sa iba't ibang salik gaya ng mga leap year, panahon ng paglilipat, pag-round off, pagkaubos ng pondo, at pagbabago sa mga rate ng reward.\n\nAng CELO Rewards Program ay mula sa pagsisikap ng komunidad ng Celo, at nagmumula ang mgaCELO reward sa naka-decentralize na Celo Community Fund sa pamamagitan ng multisig na wallet na pinapatakbo ng mga boluntaryo ng komunidad (ang “Celo Community Volunteers''). Magbasa pa tungkol sa pondo <0>rito</0>, at kung gusto mong sumali sa usapan, sumali sa <1>talayakan</1> sa forum. Naka-decentralize ang Celo Rewards Program at hindi ito pinapangasiwaan o pinapatakbo ng Celo Foundation o anuman sa mga miyembro ng Alliance for Prosperity."
+    },
+    "liability": {
+      "title": "LIMITASYON NG PANANAGUTAN NG CELO COMMUNITY VOLUNTEERS",
+      "body": "IKAW ANG TANGING MAY PANANAGUTAN SA IYONG PAKIKILAHOK. IBINIBIGAY ANG CELO REWARDS PROGRAM NANG \"WALANG PAGBABAGO\" AT \"HABANG AVAILABLE,\" NANG WALANG ANUMANG URI NG WARRANTY, IPINAHAYAG MAN O IPINAHIWATIG. WALANG IBINIBIGAY NA WARRANTY O PAHAYAG ANG MGA CELO COMMUNITY VOLUNTEERS O ANG SINUMANG TAO O ENTITY NA NAUUGNAY SA CELO FOUNDATION O SA ALLIANCE FOR PROSPERITY KAUGNAY NG PAGIGING KUMPLETO, SEGURIDAD, PAGIGING MAAASAHAN, KALIDAD, KATUMPAKAN, O PAGIGING AVAILABLE NG CELO REWARDS PROGRAM.\n\nITINATATWA NG MGA CELO COMMUNITY VOLUNTEERS ANG LAHAT NG URI NG WARRANTY, IPINAHAYAG MAN O IPINAHIWATIG, NASA BATAS MAN O WALA, KABILANG ANG, NGUNIT HINDI LIMITADO SA ANUMANG WARRANTY SA KAKAYAHANG MAIBENTA, HINDI PAGLABAG, AT KAANGKUPAN PARA SA PARTIKULAR NA LAYUNIN.\n\nHINDI KAILANMAN MANANAGOT ANG MGA CELO COMMUNITY VOLUNTEERS, ANG CELO FOUNDATION, ANG MGA MIYEMBRO, AFFILIATE, TAGABIGAY NG LISENSYA, PROVIDER NG SERBISYO, EMPLEYADO, AHENTE, OPISYAL, O DIREKTOR NITO PARA SA ANUMANG URI NG PINSALA, SA ILALIM NG ANUMANG BATAS, NA MAGIGING RESULTA NG O MAY KONEKSYON SA IYONG PAGGAMIT O KAWALAN NG KAKAYAHANG GUMAMIT NG CELO REWARDS PROGRAM AT ANUMANG WEBSITE NA NAUUGNAY RITO, KABILANG ANG ANUMANG PINSALANG DIREKTA, HINDI DIREKTA, ESPESYAL, HINDI SADYA, RESULTA, O PAMPARUSA, KABILANG ANG, NGUNIT HINDI LIMITADO SA, PERSONAL NA PINSALA, PANANAKIT AT PAGHIHIRAP, EMOSYONAL NA KAGIPITAN, PAGKAWALA NG KITA, PAGKAWALA NG NEGOSYO O INAASAHANG IPON, PAGKAWALA NG PAGGAMIT, PAGKAWALA NG GOODWILL, PAGKAWALA NG DATOS, AT KUNG IDINULOT MAN ITO NG SIBIL NA PAGKAKASALA (KABILANG ANG KAPABAYAAN), PAGLABAG SA KONTRATA, O IBA PA, KAHIT NA MAAASAHAN."
+    }
+  }
+}

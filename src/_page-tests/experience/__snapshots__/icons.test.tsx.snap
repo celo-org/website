@@ -159,6 +159,15 @@ exports[`Experience/Icons renders 1`] = `
               </div>
             </a>
             <a
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "ytumd6",
+                  "next": undefined,
+                  "styles": "text-decoration:none;",
+                  "toString": [Function],
+                }
+              }
               href="/experience/brand"
             >
               <div
