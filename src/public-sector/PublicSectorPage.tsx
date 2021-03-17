@@ -1,15 +1,14 @@
-
-
 import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Entry } from 'contentful'
-import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType, FreeContentType } from 'src/utils/contentful'
+import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType, FreeContentType, RoledexContentType } from 'src/utils/contentful'
 import { flex } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
 import Blurb, {Props as BlurbProps} from "./Blurb"
 import {renderNode} from "src/experience/contentful/nodes"
 import { FreeContent } from "./FreeContent"
+import Roledex from "./Roledex"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
@@ -44,9 +43,16 @@ const rootCss = css(flex, {
 function cellSwitch(entry: Entry<CellContentType>, columns: number) {
   if (entry) {
     switch (entry.sys.contentType.sys.id) {
+      case "roledex":
+        const roledex = entry.fields as RoledexContentType
+          return <Roledex key={entry.sys.id}
+                  title={roledex.title}
+                  sheets={roledex.sheets}
+          />
       case "freeContent":
         const freeContent = entry.fields as FreeContentType
         return <FreeContent
+                key={entry.sys.id}
                 colSpan={columns}
                 body={freeContent.body}
                 cssStyle={freeContent.cssStyle}

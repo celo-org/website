@@ -78,13 +78,25 @@ export interface ContentfulButton {
   kind: BTN
 }
 
+export interface InfoSheetContentType {
+  title: string
+  heading: string
+  body: Document
+  buttons: Entry<ContentfulButton>[]
+}
+
+export interface RoledexContentType {
+  title: string
+  sheets: Entry<InfoSheetContentType>[]
+}
+
 export interface FreeContentType {
   backgroundColor: string
   cssStyle: CSSObject
   body: Document
 }
 
-export type CellContentType = BlurbProps | FreeContentType
+export type CellContentType = BlurbProps | FreeContentType | RoledexContentType
 
 export interface GridRowContentType {
   id: string
