@@ -49,7 +49,7 @@ declare module 'react-native' {
   }
 
   interface TextProps {
-    accessibilityRole?: 'button' | 'heading' | 'label' | 'link' | 'listitem'
+    accessibilityRole?: 'button' | 'heading' | 'label' | 'link' | 'listitem' | "option"
     tabIndex?: number
     href?: string
     hrefAttrs?: {target?: string, rel?: string, download?: string}
@@ -60,7 +60,7 @@ declare module 'react-native' {
 
   interface ViewProps {
     onClick?: () => void
-    accessibilityRole?: 'list' | 'link' | 'button'
+    accessibilityRole?: 'list' | 'link' | 'button' | "listbox"
     style?: StyleProp<ViewStyle>
   }
 
