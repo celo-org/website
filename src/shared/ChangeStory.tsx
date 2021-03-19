@@ -12,7 +12,7 @@ const CHANGE_STORY = [
   '새로운 이야기를 쓰다', // ko
 ]
 
-export default function ChangeStory() {
+export default function ChangeStory({darkMode}) {
   const [count, setCount] = React.useState(0)
 
   const next = () => {
@@ -34,28 +34,29 @@ export default function ChangeStory() {
         source={globe}
         style={[styles.globe, styles.symbols, isMobile && styles.globeMobile]}
       />
-      {!isMobile && <Text style={[styles.separator, styles.symbols]}>|</Text>}
-      <Wipe text={CHANGE_STORY[count]} />
+      {!isMobile && <Text style={[styles.separator, styles.symbols, darkMode && textStyles.invert]}>|</Text>}
+      <Wipe text={CHANGE_STORY[count]} darkMode={darkMode} />
     </View>
   )
 }
 
 interface WipeProps {
   text: string
+  darkMode?:boolean
 }
 
-const Wipe = React.memo(function _Wipe({ text }: WipeProps) {
+const Wipe = React.memo(function _Wipe({ text, darkMode }: WipeProps) {
   const { isMobile } = useScreenSize()
   return (
     <View>
-      <View key={`hide-${text}`} style={[styles.mask, styles.hide]} />
+      <View key={`hide-${text}`} style={[styles.mask, darkMode && standardStyles.darkBackground, styles.hide]} />
       <Text
         key={text}
-        style={[fonts.legal, isMobile && textStyles.center, textStyles.italic, styles.textFadeIn]}
+        style={[fonts.legal, darkMode && textStyles.invert, isMobile && textStyles.center, textStyles.italic, styles.textFadeIn]}
       >
         "{text}"
       </Text>
-      <View key={`reveal-${text}`} style={[styles.mask, styles.reveal]} />
+      <View key={`reveal-${text}`} style={[styles.mask,darkMode && standardStyles.darkBackground, styles.reveal]} />
     </View>
   )
 })

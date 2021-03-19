@@ -7,6 +7,7 @@ interface GridProps {
   id?: string
   className?: string
   children: React.ReactNode
+  darkMode?: boolean
 }
 
 const gap = 24.0
@@ -42,9 +43,9 @@ const rootCss = css(flex,{
     width: '100%',
     maxWidth: '100vw',
     flexWrap: "wrap",
+    columnGap: `${gap}px`,
     [WHEN_TABLET] : {
       display: "grid",
-      columnGap: `${gap}px`,
       gridAutoRows: "auto",
       alignSelf: 'center',
       flexDirection: 'row',
@@ -55,7 +56,6 @@ const rootCss = css(flex,{
     },
     [WHEN_DESKTOP] : {
       display: "grid",
-      columnGap: `${gap}px`,
       gridAutoRows: "auto",
       alignSelf: 'center',
       width: '100%',

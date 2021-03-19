@@ -349,8 +349,8 @@ function ButtonInline(props: Props) {
     <Link href={href} passHref={true}>
       <Text
         href={href}
-         hrefAttrs={getHrefAttrs(target)}
-         accessibilityRole="link"
+        hrefAttrs={getHrefAttrs(target)}
+        accessibilityRole="link"
         style={[inlineStyle.text, inlineStyle.container, opacityStyle[status], style]}
       >
         {children}

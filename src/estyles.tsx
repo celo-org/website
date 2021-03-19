@@ -1,5 +1,5 @@
 import { css } from "@emotion/react"
-import { typeFaces, fontInfo } from "./styles"
+import { typeFaces, fontInfo, colors } from "./styles"
 import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT} from "src/shared/Styles"
 
 export const flex = css({
@@ -61,3 +61,7 @@ export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-
 export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
 
 export const WHEN_LONG_PHONE = `@media (max-width: 400px) and (min-height: 790px)`
+
+export const whiteText = css({
+  color: colors.white
+})

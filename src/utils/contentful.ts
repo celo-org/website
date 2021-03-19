@@ -80,6 +80,7 @@ export interface ContentfulButton {
 
 export interface FreeContentType {
   backgroundColor: string
+  colSpan?: 1 | 2 | 3 |4
   cssStyle: CSSObject
   body: Document
 }
@@ -91,6 +92,7 @@ export interface GridRowContentType {
   cells: Entry<CellContentType>[]
   cssStyle?: CSSObject
   columns: 1 | 2 | 3 | 4
+  darkMode?: boolean
 }
 
 

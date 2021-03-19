@@ -47,88 +47,92 @@ const RESOURCE_MENU = [
 ]
 
 const ICON_SIZE = 13
-const SOCIAL_MENU = [
+function socialMenu(darkMode:boolean) {
+  const iconColor = darkMode  ? colors.white : colors.dark
+  return [
   {
     name: 'Blog',
     link: CeloLinks.mediumPublication,
-    icon: <MediumLogo height={ICON_SIZE} color={colors.dark} wrapWithLink={false} />,
+    icon: <MediumLogo height={ICON_SIZE} color={iconColor} wrapWithLink={false} />,
   },
   {
     name: 'GitHub',
     link: CeloLinks.gitHub,
-    icon: <Octocat size={ICON_SIZE} color={colors.dark} />,
+    icon: <Octocat size={ICON_SIZE} color={iconColor} />,
   },
   {
     name: 'Twitter',
     link: CeloLinks.twitter,
-    icon: <TweetLogo height={ICON_SIZE} color={colors.dark} />,
+    icon: <TweetLogo height={ICON_SIZE} color={iconColor} />,
   },
   {
     name: 'Forum',
     link: CeloLinks.discourse,
-    icon: <Discourse size={ICON_SIZE} color={colors.dark} />,
+    icon: <Discourse size={ICON_SIZE} color={iconColor} />,
   },
   {
     name: 'Chat',
     link: CeloLinks.discord,
-    icon: <Discord size={ICON_SIZE} color={colors.dark} />,
+    icon: <Discord size={ICON_SIZE} color={iconColor} />,
   },
   {
     name: 'YouTube',
     link: CeloLinks.youtube,
-    icon: <YouTube size={ICON_SIZE} color={colors.dark} />,
+    icon: <YouTube size={ICON_SIZE} color={iconColor} />,
   },
-  { 
-    name: 'Instagram', 
-    link: CeloLinks.instagram, 
-    icon: <Instagram size={ICON_SIZE} />
+  {
+    name: 'Instagram',
+    link: CeloLinks.instagram,
+    icon: <Instagram size={ICON_SIZE} color={iconColor} />
   },
-  { 
+  {
     name: 'Defi Pulse',
     link: CeloLinks.defiPulse,
-    icon: <DefiPulse size={ICON_SIZE} color={colors.dark}/>
+    icon: <DefiPulse size={ICON_SIZE} color={iconColor}/>
   },
-  { 
+  {
     name: 'LinkedIn',
     link: CeloLinks.linkedIn,
-    icon: <LinkedIn size={ICON_SIZE} color={colors.dark}/>
+    icon: <LinkedIn size={ICON_SIZE} color={iconColor}/>
   },
   {
     name: 'Twitch',
     link: CeloLinks.twitch,
-    icon: <Twitch size={ICON_SIZE} color={colors.dark}/>
+    icon: <Twitch size={ICON_SIZE} color={iconColor}/>
   },
   {
     name: 'Reddit',
     link: CeloLinks.reddit,
-    icon: <Reddit size={ICON_SIZE} color={colors.dark}/>
+    icon: <Reddit size={ICON_SIZE} color={iconColor}/>
   },
   {
     name: 'Telegram',
     link: CeloLinks.telegram,
-    icon: <Telegram size={ICON_SIZE} color={colors.dark}/>
+    icon: <Telegram size={ICON_SIZE} color={iconColor}/>
   }
 ]
+}
 
 interface Props {
   hideForm?: boolean
+  darkMode?: boolean
 }
 
-export default function Footer({ hideForm }: Props) {
+export default function Footer({ hideForm, darkMode }: Props) {
   const { t } = useTranslation(NameSpaces.common)
   const { isMobile, isTablet } = useScreenSize()
   const year = new Date().getFullYear()
 const footerMenu = React.useMemo(() => MENU.map((item) => {
     return {
       name: t(`footer.${item.name}`),
-      link: item.link 
+      link: item.link
     }
   }),[t] )
   return (
     <>
       {!hideForm && (
         <GridRow
-          allStyle={standardStyles.centered}
+          allStyle={[standardStyles.centered, darkMode && standardStyles.darkBackground]}
           desktopStyle={standardStyles.blockMarginTop}
           tabletStyle={standardStyles.blockMarginTopTablet}
           mobileStyle={standardStyles.blockMarginTopMobile}
@@ -157,25 +161,27 @@ const footerMenu = React.useMemo(() => MENU.map((item) => {
         desktopStyle={standardStyles.blockMarginTop}
         tabletStyle={[standardStyles.blockMarginTopTablet, styles.column]}
         mobileStyle={standardStyles.blockMarginTopMobile}
+        allStyle={darkMode && standardStyles.darkBackground}
       >
         <Cell span={Spans.third} tabletSpan={Spans.twoThird}>
           <View style={isMobile ? [standardStyles.centered, styles.ringsMobile] : styles.rings}>
-            <RingsGlyph />
+            <RingsGlyph  darkMode={darkMode}/>
           </View>
-          <Details />
+          <Details darkMode={darkMode} />
         </Cell>
         <Cell span={Spans.twoThird} tabletSpan={Spans.full}>
           {isMobile ? (
-            <MobileLinks footerMenu={footerMenu} />
+            <MobileLinks footerMenu={footerMenu} darkMode={darkMode}/>
           ) : (
             <View style={isTablet ? styles.linksAreaTablet : styles.linksArea}>
-              <FooterColumn style={styles.linkColumnStart} heading={'Celo'} links={footerMenu} />
-              <FooterColumn heading={t('footer.technology')} links={TECH_MENU} />
-              <FooterColumn heading={t('footer.resources')} links={RESOURCE_MENU} />
+              <FooterColumn style={styles.linkColumnStart} heading={'Celo'} links={footerMenu} darkMode={darkMode} />
+              <FooterColumn heading={t('footer.technology')} links={TECH_MENU} darkMode={darkMode} />
+              <FooterColumn heading={t('footer.resources')} links={RESOURCE_MENU}  darkMode={darkMode} />
               <FooterColumn
+                darkMode={darkMode}
                 style={styles.linkColumnEnd}
                 heading={t('footer.social')}
-                links={SOCIAL_MENU}
+                links={socialMenu(darkMode)}
               />
             </View>
           )}
@@ -185,12 +191,13 @@ const footerMenu = React.useMemo(() => MENU.map((item) => {
         desktopStyle={standardStyles.blockMargin}
         tabletStyle={standardStyles.blockMarginTablet}
         mobileStyle={standardStyles.blockMarginMobile}
+        allStyle={darkMode && standardStyles.darkBackground}
       >
         <Cell span={Spans.full} style={isMobile ? standardStyles.centered : styles.toes}>
           <Lazy unmountIfInvisible={true}>
-            <ChangeStory />
+            <ChangeStory darkMode={darkMode} />
           </Lazy>
-          <Text style={[fonts.legal, styles.copyright, isMobile && textStyles.center]}>
+          <Text style={[fonts.legal, styles.copyright, darkMode && textStyles.invert, darkMode && standardStyles.darkBackground]}>
             {t('footer.copyright', { year })}
           </Text>
         </Cell>
@@ -199,22 +206,22 @@ const footerMenu = React.useMemo(() => MENU.map((item) => {
   )
 }
 
-function MobileLinks({footerMenu}) {
+function MobileLinks({footerMenu, darkMode}) {
   const { t } = useTranslation(NameSpaces.common)
- 
+
   return (
     <>
       <View style={standardStyles.row}>
-        <FooterColumn heading={'Celo'} links={footerMenu} />
-        <FooterColumn
+        <FooterColumn darkMode={darkMode} heading={'Celo'} links={footerMenu} />
+        <FooterColumn darkMode={darkMode}
           heading={t('footer.social')}
-          links={SOCIAL_MENU}
+          links={socialMenu(darkMode)}
           style={styles.endMobileColumn}
         />
       </View>
       <View style={standardStyles.row}>
-        <FooterColumn heading={t('footer.resources')} links={RESOURCE_MENU} />
-        <FooterColumn
+        <FooterColumn darkMode={darkMode} heading={t('footer.resources')} links={RESOURCE_MENU} />
+        <FooterColumn darkMode={darkMode}
           heading={t('footer.technology')}
           links={TECH_MENU}
           style={styles.endMobileColumn}
@@ -224,12 +231,17 @@ function MobileLinks({footerMenu}) {
   )
 }
 
-const Details = React.memo(function _Details() {
+interface DetailProps {
+  darkMode?: boolean
+}
+
+const Details = React.memo(function _Details({darkMode}: DetailProps) {
   const { t } = useTranslation(NameSpaces.common)
   const { isMobile } = useScreenSize()
   const fontStyling = [
     fonts.legal,
     styles.detailsText,
+    darkMode && textStyles.readingOnDark,
     !isMobile ? textStyles.left : textStyles.center,
   ]
   return (
