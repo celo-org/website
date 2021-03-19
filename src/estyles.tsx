@@ -60,4 +60,6 @@ export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-
 
 export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
 
+export const WHEN_SMALL_MOBILE = `@media (max-width: 330px)`
+
 export const WHEN_LONG_PHONE = `@media (max-width: 400px) and (min-height: 790px)`
