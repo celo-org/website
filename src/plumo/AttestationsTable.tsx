@@ -7,6 +7,7 @@ import { colors } from "src/styles"
 import Octocat from "src/icons/Octocat"
 import {TweetLogo} from "src/icons/TwitterLogo"
 import { Progress } from "./Progress"
+import { useScreenSize } from "src/layout/ScreenSize"
 
 interface Row {
   name: string
@@ -22,6 +23,7 @@ interface Props {
 
 
 export default function AttestationsTable(props: Props) {
+  const {isMobile} = useScreenSize()
   const {t} = useTranslation(NameSpaces.plumo)
   return <table css={rootCss}>
     <thead>
@@ -39,16 +41,17 @@ export default function AttestationsTable(props: Props) {
     </thead>
     <tbody css={borderStyle}>
       {props.rows.map(row => {
-        return <TRow key={row.address}  name={row.name} address={row.address} count={row.count} twitter={row.twitter} github={row.github}  />
+        return <TRow isMobile={isMobile} key={row.address}  name={row.name} address={row.address} count={row.count} twitter={row.twitter} github={row.github}  />
       })}
     </tbody>
   </table>
 }
 
-const TRow = React.memo((props: Row) => {
+const TRow = React.memo((props: Row & {isMobile: boolean}) => {
+
   return <tr>
     <td>
-      <span css={addressStyle}>{props.address.substr(0, props.address.length / 2)}<wbr/>{props.address.substr(props.address.length / 2, props.address.length)}</span>
+      <span css={addressStyle}>{props.isMobile ? firstAndLast4(props.address): props.address}</span>
       <Progress count={props.count} />
     </td>
     <td>
@@ -60,6 +63,10 @@ const TRow = React.memo((props: Row) => {
     </td>
   </tr>
 })
+
+function firstAndLast4(address: string) {
+  return `${address.substr(0, 4)}...${address.substr(address.length - 4, 4)}`
+}
 
 const twitterCss = css({
   marginRight: 8
