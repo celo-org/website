@@ -29,19 +29,19 @@
       "title": "Here’s how it works:",
       "1": "Start by <0>transferring cUSD to your wallet</0> to participate! You can follow these instructions for <1>adding cUSD to a Valora wallet.</1>",
       "2": "<0>Confirm your phone number.</0> An easy way to do this is to confirm your phone number with the Valora app by following the onboarding steps in the app!",
-      "3": "<0>Rewards are calculated at the end of each rewards period (weekly at first, then monthly)</0> based on the average cUSD balance you held during the entire rewards period (“balance”)*:",
+      "3": "<0>Rewards are calculated at the end of each rewards period (weekly)</0> based on the average cUSD balance you held during the entire rewards period (“balance”)*:",
       "4": "<0>Rewards are credited to your CELO balance within 3 days</0> after the end of each rewards period. You can check your CELO balance in Valora by going to the CELO tab in the app Menu.",
-      "5": "<0>Until March 1st (introduction period), the rewards period will be weekly, after which they will be monthly</0>, until the program ends or runs out of funds. Join in early to benefit from higher rewards!"
+      "5": "<0>Until March 1st (introduction period), the rewards will be 4x</0>. Join in early to benefit from higher rewards!"
     },
     "tiers": {
       "tier1": {
-        "body": "Tier 1: Get $1 USD in CELO with a minimum average balance of 10 cUSD during the rewards period"
+        "body": "Tier 1: Get $0.25 USD in CELO with a minimum average balance of 10 cUSD during the rewards period"
       },
       "tier2": {
-        "body": "Tier 2: Get $5 USD in CELO with a minimum average balance of 100 cUSD during the rewards period"
+        "body": "Tier 2: Get $1.25 USD in CELO with a minimum average balance of 100 cUSD during the rewards period"
       },
       "tier3": {
-        "body": "Tier 3: Get $10 USD in CELO with a minimum average balance of 500 cUSD during the rewards period"
+        "body": "Tier 3: Get $2.5 USD in CELO with a minimum average balance of 500 cUSD during the rewards period"
       }
     },
     "moreDetails": {
@@ -49,8 +49,7 @@
       "1": "<0>Make sure to confirm your phone number and have an appropriate balance to receive the rewards.</0> You can <1>confirm your phone number in the Valora app</1> (this is the process when you receive 3 text messages).",
       "2": "You do not need to take further action to claim the rewards, as long as you meet the requirements above. Eligibility is based on phone number confirmation and average cUSD balance amount during the rewards period.",
       "3": "The program is expected to run at least until June 1st, 2021 or until funds run out, although reward amounts and program duration may change.\nThere will be 5 weekly reward periods, followed by 3 monthly reward periods:",
-      "3-1": "Weekly periods will start on Monday, Jan 25th, 2021 at 20:00 UTC, and end on March 1st, 2021 at 19:59 UTC",
-      "3-2": "Monthly periods will start on March 1st, 2021 at 20:00 UTC and are expected to last until July 1st, 2021, 19:59 UTC",
+      "3-1": "The introductory  period will start on Monday, Jan 25th, 2021 at 20:00 UTC, and end on March 1st, 2021 at 19:59 UTC",
       "4": "<0>An account's average cUSD balance during the entire rewards period is calculated by averaging the address' cUSD balance over all blocks validated during the rewards period in the Celo blockchain.</0> For instance, if:",
       "4-1": "A rewards period goes from February 1st, 20:00 UTC to February 8th",
       "4-2": "You hold 0 cUSD from February 1st, 20:00 UTC to February 4th, 08:00 UTC",

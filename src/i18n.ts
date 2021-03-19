@@ -3,7 +3,7 @@ import path from 'path'
 
 const options = {
   defaultLanguage: 'en',
-  otherLanguages: ['en', 'es', 'pt'],
+  otherLanguages: ['en', 'es', 'pt', 'tl'],
   fallbackLng: 'en',
   saveMissing: false,
   localePath: path.resolve('./public/static/locales'),

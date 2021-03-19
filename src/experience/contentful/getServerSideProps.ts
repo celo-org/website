@@ -1,6 +1,6 @@
 import { GetServerSideProps } from 'next'
 import { Props } from 'src/experience/contentful/ContentfulKit'
-import { getKit, getPageById } from 'src/utils/contentful'
+import { getKit, getPageById, SectionType } from 'src/utils/contentful'
 
 const getServerSideProps: GetServerSideProps<
   Props,
@@ -8,7 +8,7 @@ const getServerSideProps: GetServerSideProps<
 > = async function getServerSideProp({ params, query, req, resolvedUrl }) {
   const locale = query.locale || 'en-US'
   const kit = await getKit(params.kit, params.kitPage, { locale })
-  const page = await getPageById(kit.pageID, { locale })
+  const page = await getPageById<SectionType>(kit.pageID, { locale })
   const questionMark = resolvedUrl.indexOf('?');
   const newUrl = resolvedUrl.substring(0, questionMark)
 
@@ -30,6 +30,7 @@ const getServerSideProps: GetServerSideProps<
     props: {
       ...kit,
       ...page,
+      sections: page.sections as SectionType[],
       ogImage: kit.ogImage.fields.file.url,
       sidebar,
       path: `${params.kit}${params.kitPage ? '/' + params.kitPage : ''}`,

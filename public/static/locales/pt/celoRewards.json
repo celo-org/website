@@ -29,19 +29,19 @@
       "title": "Veja como funciona:",
       "1": "<0>Transfira cUSD para sua conta</0> para participar! Você pode seguir estas instruções para <1>adicionar cUSD a uma conta da Valora.</1>",
       "2": "<0>Confirme seu número de telefone.</0> Uma maneira fácil de fazer isso é confirmar seu número de celular no app da Valora seguindo as etapas de integração.",
-      "3": "<0>As recompensas são calculadas no final de cada período de recompensas (primeiro semanalmente, depois mensalmente)</0> com base no saldo médio em cUSD que você manteve durante todo o período de recompensas (\"saldo\")*:",
+      "3": "<0>As recompensas são calculadas no final de cada período de recompensas (semanalmente)</0> com base no saldo médio em cUSD que você manteve durante todo o período de recompensas (\"saldo\")*:",
       "4": "<0>As recompensas serão creditadas no seu saldo CELO em até 3 dias</0> após o final de cada período de recompensas. Você pode verificar seu saldo CELO na Valora acessando a aba CELO no menu do app.",
-      "5": "<0>Até 1º de março (período de introdução), o período de recompensas será semanal, depois mensal,</0> até o término do programa ou dos fundos. Inscreva-se agora e ganhe recompensas maiores!"
+      "5": "<0>Até 1º de março (período de introdução),</0> as recompensas serão 4 vezes maiores. Inscreva-se agora e ganhe recompensas maiores!"
     },
     "tiers": {
       "tier1": {
-        "body": "Nível 1: ganhe US$ 1 em CELO com um saldo médio mínimo de 20 cUSD durante o período de recompensas"
+        "body": "Nível 1: ganhe US$ 0.25 em CELO com um saldo médio mínimo de 20 cUSD durante o período de recompensas"
       },
       "tier2": {
-        "body": "Nível 2: ganhe US$ 5 em CELO com um saldo mínimo médio de 100 cUSD durante o período de recompensas"
+        "body": "Nível 2: ganhe US$ 1.25 em CELO com um saldo mínimo médio de 100 cUSD durante o período de recompensas"
       },
       "tier3": {
-        "body": "Nível 3: ganhe US$ 10 em CELO com um saldo mínimo médio de 500 cUSD durante o período de recompensas"
+        "body": "Nível 3: ganhe US$ 2.5 em CELO com um saldo mínimo médio de 500 cUSD durante o período de recompensas"
       }
     },
     "moreDetails": {
@@ -49,8 +49,7 @@
       "1": "<0>Confirme seu número de celular e tenha um saldo adequado para receber as recompensas.</0> Você pode <1>confirmar seu número de celular no app da Valora</1> (este é o processo quando você recebe três mensagens de texto).",
       "2": "Você não precisa fazer mais nada para reivindicar as recompensas, desde que atenda aos requisitos acima. A elegibilidade é baseada na confirmação do número de celular e no saldo médio em cUSD durante o período de recompensas.",
       "3": "O programa se manterá em vigor pelo menos até 1º de junho de 2021 ou até que os fundos acabem, embora os valores das recompensas e a duração do programa possam mudar.\nHaverá 5 períodos de recompensa semanais, seguidos por 3 períodos de recompensa mensais:",
-      "3-1": "Os períodos semanais começarão na segunda-feira, 25 de janeiro de 2021, às 20:00 (UTC), e terminarão em 1º de março de 2021, às 19:59 (UTC)",
-      "3-2": "Os períodos mensais começarão em 1º de março de 2021, às 20:00 (UTC) e deverão durar até às 19:59  (UTC) de 1º de julho de 2021.",
+      "3-1": "O período introdutório começará na segunda-feira, 25 de janeiro de 2021 às 20:00 UTC e terminará em 1º de março de 2021 às 19:59 UTC.",
       "4": "<0>O saldo médio de cUSD de uma conta durante todo o período de recompensas é calculado de acordo com a média do saldo de cUSD do endereço em relação a todos os blocos validados durante o período de recompensas na blockchain da Celo. </0> Por exemplo, se:",
       "4-1": "Um período de recompensa vai de 1º de fevereiro, 20:00 (UTC) a 8 de fevereiro",
       "4-2": "Você tem 0 cUSD de 1º de fevereiro, 20:00 (UTC) a 4 de fevereiro, 8:00 (UTC)",
