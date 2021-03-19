@@ -9,6 +9,7 @@ export function cellSwitch(entry: Entry<CellContentType>, columns: number, darkM
       case "freeContent":
         const freeContent = entry.fields as FreeContentType
         return <FreeContent
+          key={entry.sys.id}
           colSpan={freeContent.colSpan || columns}
           body={freeContent.body}
           cssStyle={freeContent.cssStyle}

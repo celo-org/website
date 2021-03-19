@@ -49,6 +49,7 @@ export const fonts = {
   h4: css(headingReset, fontInfo.h4 as any,  {lineHeight: `${fontInfo.h4.lineHeight}px`}),
   h5: css(headingReset, fontInfo.h5 as any,  {lineHeight: `${fontInfo.h5.lineHeight}px`}),
   h6: css(headingReset, fontInfo.h6 as any,  {lineHeight: `${fontInfo.h6.lineHeight}px`}),
+  legal: css(headingReset, fontInfo.legal as any,  {lineHeight: `${fontInfo.legal.lineHeight}px`}),
 }
 
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`

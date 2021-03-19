@@ -48,8 +48,8 @@ export default function PlumoLanding(props: Props) {
               <h1 css={titleCss}>{props.title}</h1>
             </header>
             <div css={subtitleCTACss}>
-              <span></span>
-              <Button href="#" kind={BTN.PRIMARY} text={t("")} />
+              <span css={whiteText}>{t("coverSubtitle")}</span>
+              <Button href="#" kind={BTN.PRIMARY} text={t("ctaHeader")} />
             </div>
           </GridRow>
           {props.sections?.map(section => {
@@ -80,7 +80,6 @@ const rootCss = css(flex, {
   minHeight: "100vh"
 })
 
-
 const coverCss = css({
   paddingTop: 48,
   textAlign: "center",
@@ -99,8 +98,14 @@ const logoCss = css(flexRow,{
   }
 })
 
-const subtitleCTACss = css(logoCss, {
+const subtitleCTACss = css(logoCss, fonts.legal, {
+  marginTop: 16,
   columnGap: "16px",
+  rowGap: "16px",
+  span: {
+    display: "inline-flex",
+    alignItems: 'center'
+  }
 })
 
 const titleCss = css(fonts.h1, whiteText)

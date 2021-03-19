@@ -14,4 +14,4 @@ export function FreeContent({ colSpan, body, cssStyle, backgroundColor, darkMode
 
 const rootCss = css(flex,{})
 
-const darkModeText = css({"h2, h3, h4, h5, h6, p, div, span": {color:"white"}})
+const darkModeText = css({"h2, h3, h4, h5, h6, p, div, ul, span": {color:"white"}})
