@@ -6,5 +6,10 @@
   "coverSubtitle": "Plumo Ceremony is open for contributors",
   "ctaHeader": "Join the ceremony",
   "ctaBtn": "Read more",
-  "learnMore": "Learn more"
+  "learnMore": "Learn more",
+  "table": {
+    "publicKey": "Public Key",
+    "name": "Name",
+    "attestations": "Attestations"
+  }
 }

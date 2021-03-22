@@ -14,7 +14,7 @@ This is the Celo Foundation website, which is deployed to https://celo.org/
 
    * Install the [gcloud SDK](https://cloud.google.com/sdk/gcloud/).
 
-      `brew cask install google-cloud-sdk`
+      `brew install google-cloud-sdk`
 
    * Log in (You may need to be granted additional permissions).
 

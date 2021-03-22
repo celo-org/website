@@ -52,6 +52,13 @@ export const fonts = {
   legal: css(headingReset, fontInfo.legal as any,  {lineHeight: `${fontInfo.legal.lineHeight}px`}),
 }
 
+
+export const whiteText = css({
+  color: colors.white
+})
+
+
+
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
 
 export const WHEN_TABLET_AND_UP = `@media (min-width: ${TABLET_BREAKPOINT}px)`
@@ -63,6 +70,5 @@ export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
 
 export const WHEN_LONG_PHONE = `@media (max-width: 400px) and (min-height: 790px)`
 
-export const whiteText = css({
-  color: colors.white
-})
+export const WHEN_SMALL_MOBILE = `@media (max-width: 330px)`
+
