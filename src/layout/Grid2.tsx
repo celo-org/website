@@ -23,19 +23,32 @@ export enum Spans {
 
 export function GridRow(props: GridProps) {
   const gridTemplateColumns = "1fr ".repeat(props.columns)
-  const mainCss = css(rootCss, {
+  const mainCss = css(containerCss, {
     [WHEN_DESKTOP]: {gridTemplateColumns},
     [WHEN_TABLET]: {gridTemplateColumns}
   })
   return (
-      <div id={props.id} css={mainCss} className={props.className}>
+    <div css={rootCss}>
+      <section id={props.id} css={mainCss} className={props.className}>
         {props.children}
-      </div>
+      </section>
+    </div>
   )
 }
 
+const rootCss= css(flex,{
+  alignItems: "center",
+  alignSelf: 'center',
+  width: '100%',
+  [WHEN_TABLET] : {
+    maxWidth: 958 + gap
+  },
+  [WHEN_DESKTOP] : {
+    maxWidth: 1080 + gap,
+  }
+})
 
-const rootCss = css(flex,{
+const containerCss = css(flex,{
     alignSelf: 'center',
     flexDirection: 'column',
     paddingLeft: gap / 2,
@@ -52,13 +65,11 @@ const rootCss = css(flex,{
       paddingRight: gap,
       paddingLeft: gap,
       width: '100%',
-      maxWidth: 958 + gap
     },
     [WHEN_DESKTOP] : {
       display: "grid",
       gridAutoRows: "auto",
       alignSelf: 'center',
       width: '100%',
-      maxWidth: 1080 + gap,
     }
 })
