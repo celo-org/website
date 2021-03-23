@@ -13,11 +13,14 @@ interface Row {
   name: string
   address: string
   count: number
+  max: number
   twitter: string
   github: string
 }
 
 interface Props {
+  max: number
+  loading: boolean
   rows: Row[]
 }
 
@@ -40,19 +43,20 @@ export default function AttestationsTable(props: Props) {
       </tr>
     </thead>
     <tbody css={borderStyle}>
-      {props.rows.map(row => {
-        return <TRow isMobile={isMobile} key={row.address}  name={row.name} address={row.address} count={row.count} twitter={row.twitter} github={row.github}  />
+
+      {props.rows?.map(row => {
+        return <TRow loading={true} isMobile={isMobile} key={row.address} max={props.max}  name={row.name} address={row.address} count={row.count} twitter={row.twitter} github={row.github}  />
       })}
     </tbody>
   </table>
 }
 
-const TRow = React.memo((props: Row & {isMobile: boolean}) => {
+const TRow = React.memo((props: Row & {isMobile: boolean, loading: boolean}) => {
 
   return <tr>
     <td>
       <span css={addressStyle}>{props.isMobile ? firstAndLast4(props.address): props.address}</span>
-      <Progress count={props.count} />
+      <Progress count={props.count} max={props.max} loading={props.loading} />
     </td>
     <td>
       {props.name}

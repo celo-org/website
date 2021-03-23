@@ -14,6 +14,8 @@ import gradientFeathers from 'src/plumo/color-feathers.svg'
 import Button, {BTN, SIZE} from 'src/shared/Button.3'
 import LogoDarkBg from 'src/logos/LogoDarkBg'
 import Footer from 'src/shared/Footer'
+import Link2 from 'src/shared/Link'
+import Rounds from './Rounds'
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 const PLUMO_FORM =
@@ -33,9 +35,9 @@ export default function PlumoLanding(props: Props) {
         path="/plumo"
       />
       <nav css={navBar}>
-        <a href="/">
+        <Link2 href="/">
           <LogoDarkBg height={30} />
-        </a>
+        </Link2>
         <div css={innerNav}>
           <Button href={"#what-is-plumo"} text={t('learnMore')} kind={BTN.DARKNAV} />
           <Button size={SIZE.small} href={PLUMO_FORM} text={t('navSignup')} kind={BTN.PRIMARY} target="_blank" />
@@ -52,6 +54,7 @@ export default function PlumoLanding(props: Props) {
               <Button href="#" kind={BTN.PRIMARY} text={t("ctaHeader")} />
             </div>
           </GridRow>
+          <Rounds />
           {props.sections?.map(section => {
             if (section.sys.contentType.sys.id === 'grid-row') {
               const fields = section.fields as GridRowContentType

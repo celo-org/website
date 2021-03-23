@@ -85,14 +85,14 @@ export default class DropDown extends React.Component<Props, State> {
         </TouchableOpacity>
         <Responsive medium={listStyles}>
           <View style={listStylesMobile} accessibilityRole="listbox">
-            <Text
-              accessibilityRole="option"
-              key={'all'}
-              style={[fonts.p, styles.item, this.props.darkMode ? nonSelected ? styles.selectedDark : styles.itemDark : nonSelected && styles.selected]}
-              onPress={this.onSelectAll}
-            >
-              {name}
-            </Text>
+            <DropDownElement
+                    key={"none"}
+                    id={"none"}
+                    darkMode={this.props.darkMode}
+                    label={name}
+                      selected={nonSelected}
+                    onSelect={this.onSelectAll}
+                  />
             {list
               .sort((a, b) => (a.id > b.id ? 1 : -1))
               .map(({ id, label, selected }) => {
