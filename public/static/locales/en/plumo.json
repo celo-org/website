@@ -8,9 +8,16 @@
   "ctaBtn": "Read more",
   "learnMore": "Learn more",
   "ceremonyResults": "Ceremony Results",
+  "phase1": "Powers of Tau",
+  "phase2": "Plumo Circuit",
+  "phaseLabel": "Phase",
+  "roundLabel": "Round",
   "table": {
     "publicKey": "Public Key",
     "name": "Name",
     "attestations": "Attestations"
-  }
+  },
+  "round": [
+    "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"
+  ]
 }

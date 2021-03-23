@@ -5,6 +5,7 @@ import { jost, WHEN_MOBILE, WHEN_SMALL_MOBILE } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { colors } from "src/styles"
 import Octocat from "src/icons/Octocat"
+import Keybase from "src/icons/Keybase"
 import {TweetLogo} from "src/icons/TwitterLogo"
 import { Progress } from "./Progress"
 import { useScreenSize } from "src/layout/ScreenSize"
@@ -14,13 +15,15 @@ interface Row {
   address: string
   count: number
   max: number
-  twitter: string
-  github: string
+  twitter?: string
+  github?: string
+  keybase?: string
 }
 
 interface Props {
   max: number
   loading: boolean
+  showProgress: boolean
   rows: Row[]
 }
 
@@ -28,7 +31,8 @@ interface Props {
 export default function AttestationsTable(props: Props) {
   const {isMobile} = useScreenSize()
   const {t} = useTranslation(NameSpaces.plumo)
-  return <table css={rootCss}>
+  return <div css={container}>
+    <table css={rootCss}>
     <thead>
       <tr css={borderStyle}>
         <th css={tableHeadingCss}>
@@ -45,25 +49,38 @@ export default function AttestationsTable(props: Props) {
     <tbody css={borderStyle}>
 
       {props.rows?.map(row => {
-        return <TRow loading={true} isMobile={isMobile} key={row.address} max={props.max}  name={row.name} address={row.address} count={row.count} twitter={row.twitter} github={row.github}  />
+        return <TRow loading={props.loading}
+          showProgress={props.showProgress}
+          isMobile={isMobile}
+          key={row.address}
+          max={props.max}
+          name={row.name}
+          address={row.address}
+          count={row.count}
+          twitter={row.twitter}
+          github={row.github}
+          keybase={row.keybase}
+          />
       })}
     </tbody>
   </table>
+  </div>
 }
 
-const TRow = React.memo((props: Row & {isMobile: boolean, loading: boolean}) => {
+const TRow = React.memo((props: Row & {isMobile: boolean, loading: boolean, showProgress: boolean}) => {
 
   return <tr>
     <td>
       <span css={addressStyle}>{props.isMobile ? firstAndLast4(props.address): props.address}</span>
-      <Progress count={props.count} max={props.max} loading={props.loading} />
+      {props.showProgress && <Progress count={props.count} max={props.max} loading={props.loading} />}
     </td>
     <td>
       {props.name}
     </td>
     <td>
       {props.twitter  && <a css={twitterCss} target="_blank" rel="noopener" href={props.twitter}><TweetLogo color={colors.white} height={20}  /></a>}
-      {props.github && <a target="_blank" rel="noopener" href={props.github}><Octocat color={colors.white} size={20} /></a>}
+      {props.github && <a css={twitterCss} target="_blank" rel="noopener" href={props.github}><Octocat color={colors.white} size={20} /></a>}
+      {props.keybase && <a css={twitterCss} target="_blank" rel="noopener" href={props.keybase}><Keybase color={colors.white} size={20} /></a>}
     </td>
   </tr>
 })
@@ -73,7 +90,7 @@ function firstAndLast4(address: string) {
 }
 
 const twitterCss = css({
-  marginRight: 8
+  margin: 4
 })
 
 const addressStyle = css({
@@ -86,6 +103,10 @@ const addressStyle = css({
 
 const borderStyle = css({
   border: `1px solid ${colors.secondary}`
+})
+
+const container = css({
+  minHeight: 360,
 })
 
 const rootCss = css(jost,borderStyle,{

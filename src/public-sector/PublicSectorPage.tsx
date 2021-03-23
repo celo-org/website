@@ -18,7 +18,7 @@ export default function PublicSectorPage(props: Props) {
               const fields = section.fields as GridRowContentType
               return (
                 <GridRow key={section.sys.id} id={fields.id} columns={fields.columns} css={css(fields.cssStyle)}>
-                  {fields.cells.map((cell) => cellSwitch(cell, fields.columns))}
+                  {fields.cells.map((cell) => cellSwitch(cell, fields.columns, fields.darkMode))}
                 </GridRow>
               )
             } else  {
