@@ -88,7 +88,9 @@ export default function Rounds() {
         <label css={roundLabelCss}>
           {t("roundLabel")}
         </label>
-        <DropDownGroup direction={"horizontal"} data={dropDownData} darkMode={true} />
+        <div css={roundSelectorCss}>
+          <DropDownGroup direction={"horizontal"} data={dropDownData} darkMode={true} />
+        </div>
       </div>
       <AttestationsTable rows={rows} max={data.chunkCount} showProgress={phase === 2} loading={false} />
     </GridRow>
@@ -96,8 +98,8 @@ export default function Rounds() {
 }
 
 const rootCss = css({
-  maxWidth: 686,
-  marginTop: 40,
+  maxWidth: 720,
+  marginTop: 36,
 })
 
 const dropdownsCss = css({
@@ -112,10 +114,9 @@ const dropdownsCss = css({
   [WHEN_MOBILE]: {
     gridTemplateAreas:`
     "phase-label phase-label"
-    "phase-selector-1"
-    "phase-selector-2"
-    "round-label"
-    "round-selector"
+    "phase-selector-1 phase-selector-2"
+    "round-label round-label"
+    "round-selector round-selector"
     `,
   }
 })
@@ -132,7 +133,10 @@ const radioCss = css({
   label: {
     // fontFamily: typeFaces.futura,
     // fontSize: 16,
-    lineHeight: 1
+    lineHeight: 1,
+    [WHEN_MOBILE] : {
+      fontSize: 18
+    }
   },
   "svg + div": {
     paddingLeft: 8,
@@ -145,7 +149,27 @@ const radioTwo = css(radioCss, { gridArea: "phase-selector-2" })
 
 const phaseLabelCss = css(labelCss, {gridArea: "phase-label"})
 
-const roundLabelCss = css(labelCss, {gridArea: "round-label", marginBottom: 12})
+const roundLabelCss = css(labelCss, {
+  gridArea: "round-label",
+  marginBottom: 12,
+  [WHEN_MOBILE] : {
+    marginTop: 12,
+    marginBottom: 6,
+
+  }
+})
+
+const roundSelectorCss = css({
+  gridArea: "round-selector",
+  "& > div > div": {
+    width: 180
+  },
+  [WHEN_MOBILE] : {
+    "& > div > div": {
+      width: "100%"
+    }
+  }
+})
 
 const titleCss= css(whiteText, {
   fontFamily: typeFaces.futura,

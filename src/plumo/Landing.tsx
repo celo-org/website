@@ -1,7 +1,6 @@
 import * as React from 'react'
 import OpenGraph from 'src/header/OpenGraph'
 import {  useTranslation } from "src/i18n"
-import OpenGraphic from 'src/plumo/plumo-open-graph.jpg'
 import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { ContentfulPage, GridRowContentType, SectionType } from 'src/utils/contentful'
@@ -29,7 +28,7 @@ export default function PlumoLanding(props: Props) {
   return (
     <>
       <OpenGraph
-        image={OpenGraphic}
+        image={props.openGraph?.fields?.file?.url}
         title={props.title}
         description={props.description}
         path="/plumo"
@@ -50,8 +49,8 @@ export default function PlumoLanding(props: Props) {
               <h1 css={titleCss}>{props.title}</h1>
             </header>
             <div css={subtitleCTACss}>
-              <span css={whiteText}>{t("coverSubtitle")}</span>
-              <Button href="#" kind={BTN.PRIMARY} text={t("ctaHeader")} />
+              <span css={css(fonts.body,whiteText)}>{t("coverSubtitle")}</span>
+              <Button href={PLUMO_FORM} kind={BTN.PRIMARY} text={t("ctaHeader")} />
             </div>
           </GridRow>
           <Rounds />
@@ -127,6 +126,10 @@ const navBar = css(flexRow,{
   backgroundColor: 'rgba(46, 51, 56, 0.95)',
   backdropFilter: 'blur(5px)',
   zIndex: 100,
+  [WHEN_MOBILE]: {
+    paddingLeft: 16,
+    paddingRight: 16,
+  }
 })
 
 const innerNav = css({
@@ -135,4 +138,7 @@ const innerNav = css({
   gridAutoColumns: "100px",
   gridTemplateColumns: "repeat(2, max-content)",
   alignItems: "center",
+  [WHEN_MOBILE]: {
+    paddingLeft: 12
+  }
 })

@@ -101,6 +101,7 @@ export interface ContentfulPage<T> {
   title: string
   slug: string
   description: string
+  openGraph?: Asset
   sections: Entry<T>[]
 }
 

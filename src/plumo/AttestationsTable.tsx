@@ -1,7 +1,7 @@
 
 import {css} from "@emotion/react"
 import * as React from 'react'
-import { jost, WHEN_MOBILE, WHEN_SMALL_MOBILE } from "src/estyles"
+import { jost, WHEN_MOBILE, WHEN_SMALL_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { colors } from "src/styles"
 import Octocat from "src/icons/Octocat"
@@ -106,23 +106,26 @@ const borderStyle = css({
 })
 
 const container = css({
-  minHeight: 360,
+  [WHEN_TABLET_AND_UP]: {
+    minHeight: 360,
+  }
 })
 
 const rootCss = css(jost,borderStyle,{
+  width: "100%",
   color: colors.white,
   backgroundColor: colors.dark,
   borderCollapse: "collapse",
   "td, th": {
-    paddingLeft: 12,
-    paddingRight: 12,
-    paddingTop: 8,
-    paddingBottom: 8,
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 20,
+    paddingBottom: 14,
     "&:first-of-type": {
-      paddingLeft: 20
+      paddingLeft: 40
     },
     "&:last-of-type": {
-      paddingRight: 20
+      paddingRight: 40
     }
   },
   [WHEN_MOBILE]: {
