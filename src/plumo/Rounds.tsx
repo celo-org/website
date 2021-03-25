@@ -13,78 +13,44 @@ import DATA from 'src/plumo/data.json'
 
 function useDropDown(): [string, () => void, (key: string) => void] {
   const [value, setValue] = React.useState("0")
-
   function clear () {
     setValue("0")
   }
-
   return [value, clear, setValue]
 }
 
-function useRound(): [Array<any>, number,  () => void, (key: string) => void] {
+function useRound(phase): [Array<any>, number,  () => void, (key: string) => void, number] {
   const [round, onClearRound, onSelectRound] = useDropDown()
+  const data = useCurrentRound()
 
-  const rows = React.useMemo(() => (
-    Object.keys(DATA.phase1[round]).map(key => ({...DATA.phase1[round][key], address: key}))
+  const phaseData = phase === 1 ? DATA.phase1 : DATA.phase2
+
+  const rows: Row[] = React.useMemo(() => (
+    Object.keys(phaseData[round]).map(key => ({...phaseData[round][key], address: key, count: data.progressCompleted[key]}))
   ),
   [round])
 
-  return [rows, Number(round), onClearRound, onSelectRound]
+
+  return [rows, Number(round), onClearRound, onSelectRound, data.chunkCount]
 }
 
 
-export default function Rounds() {
+export default function Rounds(): JSX.Element {
   const { t } = useTranslation('plumo')
 
   const [phase, setPhase] = React.useState(1)
 
-  const data = useCurrentRound()
 
-  const [rows, round, onClearRound, onSelectRound] = useRound()
+  const [rows, round, onClearRound, onSelectRound, chunkCount] = useRound(phase)
 
-  // const rows = PARTICIPANTS_ARRAY
 
-  // const rows = data.participantIds.map((id) => {
-  //   return {
-  //     name: PARTICIPANTS[id]?.name,
-  //     address: id,
-  //     count: (data.progress[id]),
-  //     max: data.chunkCount,
-  //     twitter:  PARTICIPANTS[id]?.twitter,
-  //     github:  PARTICIPANTS[id]?.twitter
-  //   }
-  // })
-
-  const dropDownData = [{
-    name: "",
-    onSelect: onSelectRound,
-    onClear: onClearRound,
-    list: DATA.phase1.map((_, index) => {
-      return {
-        id: index.toString(),
-        selected: round === index,
-        label: t(`round.${index}`)
-      }
-    })}]
+  const dropDownData = useDropDownOptions(phase, round, onSelectRound, onClearRound)
 
   return (
     <GridRow columns={1} css={rootCss}>
       <h2 css={titleCss}>{t("ceremonyResults")}</h2>
       <div css={dropdownsCss}>
-        <label css={phaseLabelCss}>
-          {t("phaseLabel")}
-        </label>
-        <span css={radioOne}>
-          <Radio selected={phase === 1}
-          labelColor={colors.white}
-          colorWhenSelected={colors.primary}
-          onValueSelected={setPhase} label={t("phase1")} value={1} />
-        </span>
-        <span css={radioTwo}>
-          <Radio selected={phase === 2} labelColor={colors.white}
-          colorWhenSelected={colors.primary}  onValueSelected={setPhase}
-          label={t("phase2")} value={2} />
-        </span>
+        <Phases phase={phase} setPhase={setPhase} />
         <label css={roundLabelCss}>
           {t("roundLabel")}
         </label>
@@ -92,10 +58,36 @@ export default function Rounds() {
           <DropDownGroup direction={"horizontal"} data={dropDownData} darkMode={true} />
         </div>
       </div>
-      <AttestationsTable rows={rows} max={data.chunkCount} showProgress={phase === 2} loading={false} />
+      <AttestationsTable rows={rows} max={chunkCount} showProgress={phase === 2} loading={false} />
     </GridRow>
   )
 }
+
+interface PhaseProps {
+  phase: number
+  setPhase: (p: number) =>void
+}
+
+
+const Phases = React.memo(function Phases({phase, setPhase}: PhaseProps) {
+  const { t } = useTranslation('plumo')
+  return <>
+  <label css={phaseLabelCss}>
+    {t("phaseLabel")}
+  </label>
+  <span css={radioOne}>
+    <Radio selected={phase === 1}
+    labelColor={colors.white}
+    colorWhenSelected={colors.primary}
+    onValueSelected={setPhase} label={t("phase1")} value={1} />
+  </span>
+  <span css={radioTwo}>
+    <Radio selected={phase === 2} labelColor={colors.white}
+    colorWhenSelected={colors.primary}  onValueSelected={setPhase}
+    label={t("phase2")} value={2} />
+  </span>
+  </>
+})
 
 const rootCss = css({
   maxWidth: 720,
@@ -179,3 +171,23 @@ const titleCss= css(whiteText, {
     fontSize: 22
   }
 })
+
+function useDropDownOptions(phase: number, round: number, onSelectRound: (key: string) => void, onClearRound: () => void) {
+  const { t } = useTranslation('plumo')
+
+  const dropDownListOptions = React.useMemo(() => DATA[phase === 1 ? "phase1" : "phase2"]?.map((_, index) => {
+    return {
+      id: index.toString(),
+      selected: round === index,
+      label: t(`round.${index}`)
+    }
+  }), [round, phase])
+
+  const dropDownData = [{
+    name: "",
+    onSelect: onSelectRound,
+    onClear: onClearRound,
+    list: dropDownListOptions
+  }]
+  return dropDownData
+}
