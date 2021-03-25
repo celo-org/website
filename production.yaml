@@ -35,7 +35,7 @@ handlers:
     static_files: public/papers/proposal-plumo_celolightclient.pdf
     upload: public/papers/proposal-plumo_celolightclient.pdf
 
-  - url: papers/covid-aid
+  - url: /papers/covid-aid
     static_files: public/papers/humanitarian-COVID-aid-on-celo.pdf
     upload: public/papers/humanitarian-COVID-aid-on-celo.pdf
 
