@@ -1,7 +1,7 @@
 
 import {css} from "@emotion/react"
 import * as React from 'react'
-import { jost, WHEN_MOBILE, WHEN_SMALL_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
+import { jost, WHEN_MOBILE, WHEN_SMALL_MOBILE, WHEN_TABLET, WHEN_TABLET_AND_UP } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { colors } from "src/styles"
 import Octocat from "src/icons/Octocat"
@@ -10,7 +10,7 @@ import {TweetLogo} from "src/icons/TwitterLogo"
 import { Progress } from "./Progress"
 import { useScreenSize } from "src/layout/ScreenSize"
 
-interface Row {
+export interface Row {
   name: string
   address: string
   count: number
@@ -94,10 +94,13 @@ const twitterCss = css({
 })
 
 const addressStyle = css({
-  fontSize: 12,
+  fontSize: 14,
   lineHeight: "16px",
   [WHEN_SMALL_MOBILE]: {
-    lineBreak: "anywhere"
+    fontSize: 12,
+  },
+  [WHEN_TABLET]: {
+    lineBreak: "anywhere",
   }
 })
 
@@ -116,17 +119,45 @@ const rootCss = css(jost,borderStyle,{
   color: colors.white,
   backgroundColor: colors.dark,
   borderCollapse: "collapse",
-  "td, th": {
-    paddingLeft: 20,
-    paddingRight: 20,
+  th: {
     paddingTop: 20,
-    paddingBottom: 14,
+    paddingBottom: 20,
+  },
+  td: {
+    paddingTop: 16,
+    paddingBottom: 16
+  },
+  "tr:first-of-type": {
+    td: {
+      paddingTop: 40
+    }
+  },
+  "tr:last-of-type": {
+    td: {
+      paddingBottom: 40
+    }
+  },
+  "td, th": {
+    paddingLeft: 18,
+    paddingRight: 18,
     "&:first-of-type": {
       paddingLeft: 40
     },
     "&:last-of-type": {
       paddingRight: 40
     }
+  },
+  [WHEN_TABLET]: {
+    paddingLeft: 16,
+    paddingRight: 16,
+    "td, th": {
+      "&:first-of-type": {
+        paddingLeft: 32
+      },
+      "&:last-of-type": {
+        paddingRight: 24
+      }
+    },
   },
   [WHEN_MOBILE]: {
     "td, th": {
@@ -141,9 +172,18 @@ const rootCss = css(jost,borderStyle,{
         paddingRight: 8
       }
     },
+    "tr:first-of-type": {
+      td: {
+        paddingTop: 12
+      }
+    },
+    "tr:last-of-type": {
+      td: {
+        paddingBottom: 12
+      }
+    },
   }
 })
-
 
 const tableHeadingCss = css(jost,{
   textAlign: "left",

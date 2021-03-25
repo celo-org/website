@@ -2,7 +2,7 @@
 import * as React from 'react'
 import {  useTranslation } from "src/i18n"
 import {css} from "@emotion/react"
-import AttestationsTable from './AttestationsTable'
+import AttestationsTable, {Row} from './AttestationsTable'
 import DropDownGroup from 'src/shared/DropDownGroup'
 import { GridRow } from 'src/layout/Grid2'
 import {  WHEN_MOBILE, whiteText } from 'src/estyles'
@@ -104,14 +104,15 @@ const rootCss = css({
 
 const dropdownsCss = css({
   display: "grid",
-  gridAutoColumns: "max-content",
+  gridTemplateColumns: "max-content",
   gridTemplateAreas:`
-    "phase-label phase-label round-label"
-    "phase-selector-1 phase-selector-2 round-selector"
+    "phase-label phase-label round-label .."
+    "phase-selector-1 phase-selector-2 round-selector .."
     `,
-  columnGap: 24,
+  columnGap: 16,
   marginBottom: 24,
   [WHEN_MOBILE]: {
+    gridAutoColumns: "max-content",
     gridTemplateAreas:`
     "phase-label phase-label"
     "phase-selector-1 phase-selector-2"
@@ -131,8 +132,6 @@ const radioCss = css({
   display: "inline-flex",
   alignItems: "center",
   label: {
-    // fontFamily: typeFaces.futura,
-    // fontSize: 16,
     lineHeight: 1,
     [WHEN_MOBILE] : {
       fontSize: 18
