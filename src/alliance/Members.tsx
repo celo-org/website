@@ -6,11 +6,12 @@ import { Category as CategoryEnum } from 'src/alliance/CategoryEnum'
 import gatherAllies from 'src/alliance/gatherAllies'
 import { H2, H4 } from 'src/fonts/Fonts'
 import { NameSpaces, Trans, useTranslation } from 'src/i18n'
+import External from 'src/icons/External'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import { useScreenSize } from 'src/layout/ScreenSize'
 import { ListItem } from 'src/shared/DropDown'
 import DropDownGroup from 'src/shared/DropDownGroup'
-import Outbound, { externalizeURL } from 'src/shared/Outbound'
+import { externalizeURL } from 'src/shared/Outbound'
 import { colors, fonts, standardStyles, textStyles } from 'src/styles'
 
 function initialState() {
@@ -164,7 +165,7 @@ const Member = React.memo(function _Member({ logo, name, url }: Ally) {
               </Text>
             </View>
           </a>
-          {href && <Outbound url={href} />}
+          {href && <External size={12} color={colors.dark}/>}
         </View>
       )}
     </LazyFade>

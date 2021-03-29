@@ -33,5 +33,10 @@
     }
   ],
   "ctaHeader": "Join the ceremony",
-  "ctaBtn": "Read more"
+  "ctaBtn": "Read more",
+  "table": {
+    "publicKey": "Public Key",
+    "name": "Name",
+    "attestations": "Attestations"
+  }
 }

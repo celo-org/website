@@ -8,3 +8,4 @@ server-env-config.js
 yarn-error.log
 
 coverage/
+sandbox.tsx
