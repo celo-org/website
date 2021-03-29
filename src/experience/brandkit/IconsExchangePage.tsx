@@ -23,7 +23,7 @@ const icons = [
     name: 'CELO Exchange Icon',
     description: 'Full Color\n',
     preview: '/images/marketplace-icons/icon-celo-CELO-color-f.svg',
-    uri: '/assets/marketplace-icons/icon-CELO-color.zip',
+    uri: '/assets/marketplace-icons/CELO-Full-Color.zip',
   },
   {
     name: 'cUSD Exchange Icon',
