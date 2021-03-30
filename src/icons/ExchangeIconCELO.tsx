@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Svg, { Path } from 'svgs'
+import { Path } from 'svgs'
 
 interface Props {
   size: number
@@ -7,7 +7,7 @@ interface Props {
 
 export default React.memo(function ExchangeIconCELO({ size }: Props) {
   return (
-    <Svg width={`${size}px`} height={`${size}px`} x="0px" y="0px" viewBox="0 0  100 100">
+    <svg width={`${size}px`} height={`${size}px`} x="0px" y="0px" viewBox="0 0  100 100">
       <desc>Symbol for the Celo native asset (CELO)</desc>
       <Path fill="#FBCC5C" d="M0,0h100v100H0V0z" />
       <Path
@@ -27,6 +27,6 @@ export default React.memo(function ExchangeIconCELO({ size }: Props) {
         C61,57.6,60.8,59,60.5,60.3z M66.6,57.2c0-0.4,0-0.8,0-1.1c0-12.4-10.1-22.5-22.5-22.5c-0.5,0-0.9,0-1.4,0c3.1-4,7.9-6.5,13.3-6.5
         c9.3,0,16.9,7.6,16.9,16.9C72.9,49.4,70.4,54.1,66.6,57.2z"
       />
-    </Svg>
+    </svg>
   )
 })

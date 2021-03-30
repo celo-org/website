@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
-import Svg, { Path } from 'svgs'
+import { Path } from 'svgs'
 
 interface Props {
   size: number
@@ -9,7 +9,7 @@ interface Props {
 
 export default React.memo(function Web({ size, color }: Props) {
   return (
-    <Svg width={size} height={size}    viewBox="0 0 490 490" x="0px" y="0px"fill="none">
+    <svg width={size} height={size}    viewBox="0 0 490 490" x="0px" y="0px"fill="none">
 <Path fill={color} d="M245,0C109.69,0,0,109.69,0,245s109.69,245,245,245s245-109.69,245-245S380.31,0,245,0z M31.401,260.313h52.542
 	c1.169,25.423,5.011,48.683,10.978,69.572H48.232C38.883,308.299,33.148,284.858,31.401,260.313z M320.58,229.688
 	c-1.152-24.613-4.07-47.927-8.02-69.572h50.192c6.681,20.544,11.267,43.71,12.65,69.572H320.58z M206.38,329.885
@@ -31,7 +31,7 @@ export default React.memo(function Web({ size, color }: Props) {
 	c-16.792,19.378-34.636,45.461-48.324,78.432H64.691C86.48,95.598,117.52,68.321,154.252,51.06z M64.692,360.51h40.987
 	c13.482,32.637,31.076,58.634,47.752,78.034C117.059,421.262,86.318,394.148,64.692,360.51z M336.576,438.54
 	c16.672-19.398,34.263-45.395,47.742-78.03h40.99C403.684,394.146,372.945,421.258,336.576,438.54z"/>
-    </Svg>
+    </svg>
   )
 })
 
