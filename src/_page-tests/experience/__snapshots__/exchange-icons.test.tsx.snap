@@ -131,7 +131,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 <svg
                   fill="none"
                   height={30}
-                  style={Object {}}
                   viewBox="0 0 85 25"
                   width={102}
                 >
@@ -1909,7 +1908,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               <svg
                                 fill="none"
                                 height={12}
-                                style={Object {}}
                                 viewBox="0 0 10 13"
                                 width={12}
                               >
@@ -2158,7 +2156,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               <svg
                                 fill="none"
                                 height={12}
-                                style={Object {}}
                                 viewBox="0 0 10 13"
                                 width={12}
                               >
@@ -2407,7 +2404,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               <svg
                                 fill="none"
                                 height={12}
-                                style={Object {}}
                                 viewBox="0 0 10 13"
                                 width={12}
                               >
@@ -2666,7 +2662,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               <svg
                                 fill="none"
                                 height={12}
-                                style={Object {}}
                                 viewBox="0 0 10 13"
                                 width={12}
                               >
@@ -2916,7 +2911,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               <svg
                                 fill="none"
                                 height={12}
-                                style={Object {}}
                                 viewBox="0 0 10 13"
                                 width={12}
                               >
@@ -3166,7 +3160,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               <svg
                                 fill="none"
                                 height={12}
-                                style={Object {}}
                                 viewBox="0 0 10 13"
                                 width={12}
                               >
@@ -3425,7 +3418,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               <svg
                                 fill="none"
                                 height={12}
-                                style={Object {}}
                                 viewBox="0 0 10 13"
                                 width={12}
                               >
@@ -3675,7 +3667,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               <svg
                                 fill="none"
                                 height={12}
-                                style={Object {}}
                                 viewBox="0 0 10 13"
                                 width={12}
                               >
@@ -3925,7 +3916,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               <svg
                                 fill="none"
                                 height={12}
-                                style={Object {}}
                                 viewBox="0 0 10 13"
                                 width={12}
                               >
@@ -5437,7 +5427,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 24 24"
                       width={13}
                     >
@@ -5518,7 +5507,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 25 24"
                       width={13}
                     >
@@ -5601,7 +5589,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 28 24"
                       width={13}
                     >
@@ -5682,7 +5669,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 41 40"
                       width={13}
                     >
@@ -5763,7 +5749,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 40 46"
                       width={13}
                     >
@@ -5846,7 +5831,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 33 23"
                       width={13}
                     >
@@ -5926,7 +5910,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   >
                     <svg
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 24 24"
                       width={13}
                     >
@@ -6006,7 +5989,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 13 15"
                       width={13}
                     >
@@ -6084,7 +6066,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 40 46"
                       width={13}
                     >
@@ -6162,7 +6143,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 15 16"
                       width={13}
                     >
@@ -6240,7 +6220,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 16 15"
                       width={13}
                     >
@@ -6318,7 +6297,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     <svg
                       fill="none"
                       height={13}
-                      style={Object {}}
                       viewBox="0 0 16 16"
                       width={13}
                     >

@@ -1272,7 +1272,6 @@ exports[`PlumoLanding renders 1`] = `
       <svg
         fill="none"
         height={30}
-        style={Object {}}
         viewBox="0 0 85 25"
         width={102}
       >

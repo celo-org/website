@@ -207,7 +207,6 @@ exports[`About renders 1`] = `
           <svg
             fill="none"
             height={40}
-            style={Object {}}
             viewBox="0 0 40 40"
             width={40}
           >
@@ -288,7 +287,6 @@ exports[`About renders 1`] = `
       <svg
         fill="none"
         height={47}
-        style={Object {}}
         viewBox="0 0 85 25"
         width={159.79999999999998}
       >
@@ -682,7 +680,6 @@ exports[`About renders 1`] = `
           <svg
             fill="none"
             height="32"
-            style={Object {}}
             viewBox="0 0 31 32"
             width="31"
           >
@@ -971,7 +968,6 @@ More importantly, we are driven by purpose – to solve real-world problems such
         <svg
           fill="none"
           height="100%"
-          style={Object {}}
           viewBox="0 0 421 301"
           width="100%"
         >
@@ -1162,7 +1158,6 @@ More importantly, we are driven by purpose – to solve real-world problems such
         <svg
           fill="none"
           height="100%"
-          style={Object {}}
           viewBox="0 0 717 750"
           width="100%"
         >
@@ -2548,7 +2543,6 @@ Change the story.
                   <svg
                     fill="none"
                     height={12}
-                    style={Object {}}
                     viewBox="0 0 14 14"
                     width={12}
                   >

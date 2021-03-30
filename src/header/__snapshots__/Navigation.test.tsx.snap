@@ -61,7 +61,6 @@ exports[`Navigation renders 1`] = `
           <svg
             fill="none"
             height={30}
-            style={Object {}}
             viewBox="0 0 85 25"
             width={102}
           >
@@ -575,7 +574,6 @@ exports[`Navigation renders 1`] = `
               <svg
                 fill="none"
                 height={20}
-                style={Object {}}
                 viewBox="0 0 24 24"
                 width={20}
               >
@@ -676,7 +674,6 @@ exports[`Navigation renders 1`] = `
               <svg
                 fill="none"
                 height={22}
-                style={Object {}}
                 viewBox="0 0 25 24"
                 width={22}
               >

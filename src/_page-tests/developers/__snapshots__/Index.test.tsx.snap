@@ -499,7 +499,6 @@ exports[`DevelopersPage renders 1`] = `
                       <svg
                         fill="none"
                         height="0.75em"
-                        style={Object {}}
                         transform="rotate(0)"
                         viewBox="0 0 8 12"
                         width="0.75em"
@@ -690,7 +689,6 @@ exports[`DevelopersPage renders 1`] = `
                       <svg
                         fill="none"
                         height="0.75em"
-                        style={Object {}}
                         transform="rotate(0)"
                         viewBox="0 0 8 12"
                         width="0.75em"
@@ -881,7 +879,6 @@ exports[`DevelopersPage renders 1`] = `
                       <svg
                         fill="none"
                         height="0.75em"
-                        style={Object {}}
                         transform="rotate(0)"
                         viewBox="0 0 8 12"
                         width="0.75em"
@@ -2183,7 +2180,6 @@ exports[`DevelopersPage renders 1`] = `
                 <svg
                   fill="none"
                   height={20}
-                  style={Object {}}
                   viewBox="0 0 25 24"
                   width={20}
                 >
@@ -3849,7 +3845,6 @@ Build dApps for the Celo platform.
                   <svg
                     fill="none"
                     height="0.75em"
-                    style={Object {}}
                     transform="rotate(0)"
                     viewBox="0 0 8 12"
                     width="0.75em"
@@ -4090,7 +4085,6 @@ Build dApps for the Celo platform.
                   <svg
                     fill="none"
                     height="0.75em"
-                    style={Object {}}
                     transform="rotate(0)"
                     viewBox="0 0 8 12"
                     width="0.75em"

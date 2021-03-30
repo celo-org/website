@@ -124,7 +124,6 @@ exports[`PastEventsPage renders 1`] = `
             <svg
               fill="none"
               height="24"
-              style={Object {}}
               viewBox="0 0 24 24"
               width="24"
             >
@@ -234,7 +233,6 @@ exports[`PastEventsPage renders 1`] = `
             <svg
               fill="none"
               height="24"
-              style={Object {}}
               viewBox="0 0 24 24"
               width="24"
             >

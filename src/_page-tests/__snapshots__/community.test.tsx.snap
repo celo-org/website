@@ -478,7 +478,6 @@ exports[`Community renders 1`] = `
               <svg
                 fill="none"
                 height={16}
-                style={Object {}}
                 viewBox="0 0 11 9"
                 width={16}
               >
@@ -1834,7 +1833,6 @@ We believe that many of these features have great potential for positive impact,
             <svg
               fill="none"
               height="24"
-              style={Object {}}
               viewBox="0 0 24 24"
               width="24"
             >
@@ -1944,7 +1942,6 @@ We believe that many of these features have great potential for positive impact,
             <svg
               fill="none"
               height="24"
-              style={Object {}}
               viewBox="0 0 24 24"
               width="24"
             >
@@ -2261,7 +2258,6 @@ We believe that many of these features have great potential for positive impact,
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -2679,7 +2675,6 @@ We believe that many of these features have great potential for positive impact,
                 <svg
                   fill="none"
                   height={16}
-                  style={Object {}}
                   viewBox="0 0 24 24"
                   width={16}
                 >
@@ -2706,7 +2701,6 @@ We believe that many of these features have great potential for positive impact,
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -2885,7 +2879,6 @@ We believe that many of these features have great potential for positive impact,
                   <svg
                     fill="none"
                     height="0.75em"
-                    style={Object {}}
                     transform="rotate(0)"
                     viewBox="0 0 8 12"
                     width="0.75em"
@@ -3310,7 +3303,6 @@ We believe that many of these features have great potential for positive impact,
               <svg
                 fill="none"
                 height="0.75em"
-                style={Object {}}
                 transform="rotate(0)"
                 viewBox="0 0 8 12"
                 width="0.75em"
@@ -4568,7 +4560,6 @@ We believe that many of these features have great potential for positive impact,
                 <svg
                   fill="none"
                   height={16}
-                  style={Object {}}
                   viewBox="0 0 11 9"
                   width={16}
                 >
@@ -5390,7 +5381,6 @@ We believe that many of these features have great potential for positive impact,
                 <svg
                   fill="none"
                   height={16}
-                  style={Object {}}
                   viewBox="0 0 11 9"
                   width={16}
                 >
@@ -7348,7 +7338,6 @@ We believe that many of these features have great potential for positive impact,
                 <svg
                   fill="none"
                   height={16}
-                  style={Object {}}
                   viewBox="0 0 11 9"
                   width={16}
                 >

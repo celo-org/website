@@ -469,7 +469,6 @@ exports[`HomePage renders 1`] = `
               <svg
                 fill="none"
                 height="0.75em"
-                style={Object {}}
                 transform="rotate(0)"
                 viewBox="0 0 8 12"
                 width="0.75em"
@@ -666,7 +665,6 @@ exports[`HomePage renders 1`] = `
               <svg
                 fill="none"
                 height="0.75em"
-                style={Object {}}
                 transform="rotate(0)"
                 viewBox="0 0 8 12"
                 width="0.75em"
@@ -863,7 +861,6 @@ exports[`HomePage renders 1`] = `
               <svg
                 fill="none"
                 height="0.75em"
-                style={Object {}}
                 transform="rotate(0)"
                 viewBox="0 0 8 12"
                 width="0.75em"
@@ -1076,7 +1073,6 @@ exports[`HomePage renders 1`] = `
             >
               <svg
                 height="60px"
-                style={Object {}}
                 viewBox="0 0 1000 1000"
                 width="60px"
               >
@@ -1225,7 +1221,6 @@ exports[`HomePage renders 1`] = `
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -1306,7 +1301,6 @@ exports[`HomePage renders 1`] = `
             >
               <svg
                 height="60px"
-                style={Object {}}
                 viewBox="0 0  100 100"
                 width="60px"
                 x="0px"
@@ -1466,7 +1460,6 @@ exports[`HomePage renders 1`] = `
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -1559,7 +1552,6 @@ exports[`HomePage renders 1`] = `
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -1856,7 +1848,6 @@ exports[`HomePage renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -2689,7 +2680,6 @@ exports[`HomePage renders 1`] = `
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -3297,7 +3287,6 @@ exports[`HomePage renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"

@@ -4,7 +4,6 @@ exports[`Logo for LinkendIn renders 1`] = `
 <svg
   fill="none"
   height={0}
-  style={Object {}}
   viewBox="0 0 40 46"
   width={0}
 >

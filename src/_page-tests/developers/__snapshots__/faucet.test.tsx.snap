@@ -790,7 +790,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1017,7 +1016,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1148,7 +1146,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1279,7 +1276,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"

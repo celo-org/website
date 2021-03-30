@@ -293,7 +293,6 @@ exports[`Papers renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -390,7 +389,6 @@ exports[`Papers renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -616,7 +614,6 @@ exports[`Papers renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -842,7 +839,6 @@ exports[`Papers renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1068,7 +1064,6 @@ exports[`Papers renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1165,7 +1160,6 @@ exports[`Papers renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1391,7 +1385,6 @@ exports[`Papers renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"

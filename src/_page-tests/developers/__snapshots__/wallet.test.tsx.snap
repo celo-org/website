@@ -254,7 +254,6 @@ Do not send real funds.
                     <svg
                       fill="none"
                       height={18}
-                      style={Object {}}
                       viewBox="0 0 19 22"
                       width={18}
                     >
@@ -311,7 +310,6 @@ Do not send real funds.
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -405,7 +403,6 @@ Do not send real funds.
                     <svg
                       fill="none"
                       height={18}
-                      style={Object {}}
                       viewBox="0 0 17 20"
                       width={18}
                     >
@@ -435,7 +432,6 @@ Do not send real funds.
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -529,7 +525,6 @@ Do not send real funds.
                     <svg
                       fill="none"
                       height={18}
-                      style={Object {}}
                       viewBox="0 0 490 490"
                       width={18}
                       x="0px"
@@ -576,7 +571,6 @@ Do not send real funds.
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -1006,7 +1000,6 @@ Do not send real funds.
                   <svg
                     fill="none"
                     height="0.75em"
-                    style={Object {}}
                     transform="rotate(0)"
                     viewBox="0 0 8 12"
                     width="0.75em"
@@ -1507,7 +1500,6 @@ Check out these wallets for everyday use.
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1704,7 +1696,6 @@ Check out these wallets for everyday use.
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
