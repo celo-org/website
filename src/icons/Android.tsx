@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
-import Svg, { ClipPath, Defs, G, Path, Rect } from 'svgs'
+import  { ClipPath, Defs, G, Path, Rect } from 'svgs'
 
 interface Props {
   size: number
@@ -10,7 +10,7 @@ interface Props {
 export default React.memo(function Android({ size, color }: Props) {
   const fill = color || 'white'
   return (
-    <Svg width={size} height={size} viewBox="0 0 19 22" fill="none">
+    <svg width={size} height={size} viewBox="0 0 19 22" fill="none">
       <G clipPath="url(#clip0)">
         <Path
           d="M1.75602 7.33545C1.03284 7.33545 0.457397 7.91089 0.457397 8.63406V14.0433C0.457397 14.7665 1.03284 15.3419 1.75602 15.3419C2.47919 15.3419 3.05463 14.7665 3.05463 14.0433V8.63406C3.05463 7.91089 2.47919 7.33545 1.75602 7.33545ZM16.9019 7.33545C16.1787 7.33545 15.6033 7.91089 15.6033 8.63406V14.0433C15.6033 14.7665 16.1787 15.3419 16.9019 15.3419C17.6251 15.3419 18.2005 14.7665 18.2005 14.0433V8.63406C18.2005 7.91089 17.6251 7.33545 16.9019 7.33545Z"
@@ -32,6 +32,6 @@ export default React.memo(function Android({ size, color }: Props) {
           <Rect width="18.711" height="22" fill="white" />
         </ClipPath>
       </Defs>
-    </Svg>
+    </svg>
   )
 })

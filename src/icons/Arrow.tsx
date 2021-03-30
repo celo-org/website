@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
-import Svg, { Rect } from 'svgs'
+import { Rect } from 'svgs'
 interface Props {
   color: colors
   size: number
@@ -8,7 +8,7 @@ interface Props {
 
 export default function Arrow(props: Props) {
   return (
-    <Svg width={props.size} height={props.size} viewBox="0 0 42 42" fill="none">
+    <svg width={props.size} height={props.size} viewBox="0 0 42 42" fill="none">
       <Rect
         width="4"
         height="25"
@@ -22,6 +22,6 @@ export default function Arrow(props: Props) {
         fill={props.color}
       />
       <Rect x="19" y="2.0033" width="4" height="37" fill={props.color} />
-    </Svg>
+    </svg>
   )
 }
