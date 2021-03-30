@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
-import Svg, { Path, Rect } from 'svgs'
+import { Path, Rect } from 'svgs'
 
 export default React.memo(function AudioIcon() {
   return (
-    <Svg width="31" height="32" viewBox="0 0 31 32" fill="none">
+    <svg width="31" height="32" viewBox="0 0 31 32" fill="none">
       <Rect y="10" width="9" height="12" fill={colors.primary} />
       <Path d="M6.66667 10.1666L16.6667 1.83325V30.1666L6.66667 21.8333V10.1666Z" fill="#35D07F" />
       <Path
@@ -17,6 +17,6 @@ export default React.memo(function AudioIcon() {
         stroke={colors.primary}
         strokeWidth="2"
       />
-    </Svg>
+    </svg>
   )
 })

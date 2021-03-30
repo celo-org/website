@@ -21,6 +21,7 @@ export default function Stats() {
         <Datum value={addressCount.toLocaleString()} title={t("statsAddresses")} id="stat-addressess"/>
         <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
         <Datum value={`${avgBlockTime||0}s`} title={t("statsAvgTime")} id="stat-time"/>
+        <Datum value={`2219.5 tons`} title={t('statsCo2Offset')} id="stat-carbon" />
   </figure>
 }
 
