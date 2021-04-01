@@ -40,9 +40,9 @@ const decorateText = (
 ) => {
   return (
     <Trans i18nKey={NameSpaces.celoRewards} defaults={t(key)}>
-      {components.map((component) => {
+      {components.map((component, i) => {
         if (component.type === ComponentType.BOLD) {
-          return <Text style={styles.bold} />;
+          return <Text key={i} style={styles.bold} />;
         }
         if (component.type === ComponentType.LINK) {
           return (
@@ -50,6 +50,7 @@ const decorateText = (
               target="_blank"
               href={component.link}
               style={styles.link}
+              key={i}
             >
               {" "}
             </InlineAnchor>

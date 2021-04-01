@@ -4597,7 +4597,7 @@ exports[`Alliance renders 1`] = `
               style={
                 Object {
                   "position": "static",
-                  "zIndex": -1,
+                  "zIndex": 0,
                 }
               }
             >
@@ -4690,11 +4690,8 @@ exports[`Alliance renders 1`] = `
                     Show All
                   </label>
                   <svg
-                    aria-label="[title]"
                     fill="none"
                     height="14"
-                    role="img"
-                    style={Object {}}
                     transform="rotate(0)"
                     viewBox="0 0 14 8"
                     width="14"
@@ -4705,15 +4702,15 @@ exports[`Alliance renders 1`] = `
                     <path
                       clipRule="evenodd"
                       d="M7 8L0 0H14L7 8Z"
-                      fill="#3D3D3D"
+                      fill="#2E3338"
                       fillRule="evenodd"
-                      style={Object {}}
                     />
                   </svg>
                 </div>
               </div>
               <div
                 className="css-view-1dbjc4n"
+                role="listbox"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -4742,6 +4739,7 @@ exports[`Alliance renders 1`] = `
                   className="css-text-901oao"
                   dir="auto"
                   onClick={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(251,204,92,0.40)",
@@ -4772,6 +4770,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -4802,6 +4801,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -4832,6 +4832,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -4862,6 +4863,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -4892,6 +4894,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -4922,6 +4925,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -4952,6 +4956,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -4982,6 +4987,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -5012,6 +5018,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -5042,6 +5049,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -5072,6 +5080,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -5102,6 +5111,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -5132,6 +5142,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -5162,6 +5173,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
@@ -5192,6 +5204,7 @@ exports[`Alliance renders 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   onMouseUp={[Function]}
+                  role="option"
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
