@@ -8272,7 +8272,6 @@ exports[`Alliance renders 1`] = `
         <svg
           fill="none"
           height="100%"
-          style={Object {}}
           viewBox="0 0 717 750"
           width="100%"
         >
