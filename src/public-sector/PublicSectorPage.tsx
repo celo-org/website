@@ -1,7 +1,8 @@
 import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Entry } from 'contentful'
-import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType, FreeContentType, RoledexContentType } from 'src/utils/contentful'
+import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType,
+  FreeContentType, RoledexContentType, PlaylistContentType } from 'src/utils/contentful'
 import { flex } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
@@ -9,6 +10,7 @@ import Blurb, {Props as BlurbProps} from "./Blurb"
 import {renderNode} from "src/experience/contentful/nodes"
 import { FreeContent } from "./FreeContent"
 import Roledex from "./Roledex"
+import PlayList from "./Playlist"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
@@ -64,10 +66,13 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number) {
                   key={entry.sys.id}
                   title={blurbProp.title}
                   titleType={blurbProp.titleType}
-                  description={blurbProp.description}
+                  body={blurbProp.body}
                   link={blurbProp.link}
                   icon={blurbProp.icon}
                 />
+      case "youTubePlayist":
+      const  playlist = entry.fields as PlaylistContentType
+      return <PlayList title={playlist.title } description={playlist.description} listId={playlist.listId} />
     }
   }
   return null

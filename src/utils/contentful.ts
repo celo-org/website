@@ -96,7 +96,13 @@ export interface FreeContentType {
   body: Document
 }
 
-export type CellContentType = BlurbProps | FreeContentType | RoledexContentType
+export interface PlaylistContentType {
+  title: string
+  description: Document
+  listId: string
+}
+
+export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType
 
 export interface GridRowContentType {
   id: string
