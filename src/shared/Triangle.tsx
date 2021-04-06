@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Svg from 'svgs'
 
 export enum Direction {
   down = 0,
