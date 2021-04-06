@@ -18,7 +18,7 @@ export default function HomeBuild() {
         mobileStyle={standardStyles.blockMarginTopMobile}
         allStyle={standardStyles.centered}
         >
-            <Cell tabletSpan={Spans.twoThird} span={Spans.half}>
+            <Cell tabletSpan={Spans.full} span={Spans.twoThird}>
                 <H1 ariaLevel="2" style={[textStyles.center, standardStyles.elementalMarginBottom]}>
                         {t('buildTitle')}
                 </H1>
