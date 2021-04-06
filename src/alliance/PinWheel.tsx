@@ -2,7 +2,7 @@ import * as React from 'react'
 import { StyleSheet, View, ViewStyle } from 'react-native-web'
 import VECTORS from 'src/community/connect/RingOfCoinVectors'
 import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import { Path } from 'src/shared/svg'
+import { G, Path } from 'src/shared/svg'
 import { baseCoinStyle, colors, standardStyles } from 'src/styles'
 
 // note this is the animation duration of a single coin,
@@ -26,7 +26,7 @@ class PinWheel extends React.Component<Props> {
       <View style={isMobile ? this.props.mobileContainerStyle : styles.sweepContainer}>
         <svg width="100%" height="100%" viewBox="0 0 717 750" fill="none">
           {!this.props.static && (
-            <g style={styles.lighting}>
+            <G style={styles.lighting}>
               {VECTORS.map((path, index) => {
                 const style = {
                   animationDelay: `${index * frame}ms`,
@@ -40,7 +40,7 @@ class PinWheel extends React.Component<Props> {
                   />
                 )
               })}
-            </g>
+            </G>
           )}
           <Quadrants animate={!this.props.static} />
         </svg>
