@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
-import { Line } from 'svgs'
 
 interface Props {
   color: colors
@@ -14,7 +13,7 @@ export default class EX extends React.PureComponent<Props> {
     const { color, strokeWidth } = this.props
     return (
       <svg width={this.props.size} height={this.props.size} viewBox="0 0 40 40" fill="none">
-        <Line
+        <line
           x1="1.35355"
           y1="0.646447"
           x2="41.3536"
@@ -22,7 +21,7 @@ export default class EX extends React.PureComponent<Props> {
           stroke={color}
           strokeWidth={strokeWidth}
         />
-        <Line
+        <line
           x1="0.646447"
           y1="40.6464"
           x2="40.6464"
