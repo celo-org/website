@@ -283,7 +283,6 @@ exports[`Terms renders 1`] = `
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -379,7 +378,6 @@ exports[`Terms renders 1`] = `
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -475,7 +473,6 @@ exports[`Terms renders 1`] = `
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -571,7 +568,6 @@ exports[`Terms renders 1`] = `
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -781,7 +777,6 @@ exports[`Terms renders 1`] = `
                   fill="#35D07F"
                   fillRule="evenodd"
                   opacity={1}
-                  style={Object {}}
                 />
               </svg>
             </div>

@@ -486,7 +486,6 @@ exports[`Community renders 1`] = `
                   d="M10.7932 1.85263L3.96211 8.64309L0.180176 4.88366L1.85967 3.19411L3.96211 5.28404L9.11373 0.163086L10.7932 1.85263Z"
                   fill="#35D07F"
                   fillRule="evenodd"
-                  style={Object {}}
                 />
               </svg>
               <span
@@ -1841,7 +1840,6 @@ We believe that many of these features have great potential for positive impact,
                 cy="12"
                 r="11.5"
                 stroke="#DDDDDD"
-                style={Object {}}
               />
             </svg>
             <div
@@ -1950,7 +1948,6 @@ We believe that many of these features have great potential for positive impact,
                 cy="12"
                 r="11.5"
                 stroke="#DDDDDD"
-                style={Object {}}
               />
             </svg>
             <div
@@ -2268,7 +2265,6 @@ We believe that many of these features have great potential for positive impact,
                     fill="#2E3338"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -2684,7 +2680,6 @@ We believe that many of these features have great potential for positive impact,
                   <path
                     d="M0 0V24H24V0H0ZM19.9385 5.68615L18.6511 6.92062C18.5403 7.00554 18.4849 7.14462 18.5083 7.28246V16.3495C18.4849 16.4874 18.5403 16.6265 18.6511 16.7114L19.9089 17.9446V18.2154H13.5852V17.9446L14.8874 16.6806C15.0154 16.5526 15.0154 16.5157 15.0154 16.32V8.99077L11.3957 18.1858H10.9058L6.69046 8.99077V15.1532C6.656 15.4117 6.74215 15.6726 6.92431 15.8609L8.61785 17.9151V18.1858H3.81538V17.9151L5.50892 15.8609C5.68985 15.6726 5.77108 15.4105 5.72677 15.1532V8.02708C5.74769 7.82892 5.67138 7.63323 5.52369 7.50031L4.01846 5.68615V5.41538H8.69292L12.3065 13.3391L15.4818 5.41538H19.9385V5.68615Z"
                     fill="#2E3338"
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -2711,7 +2706,6 @@ We believe that many of these features have great potential for positive impact,
                     fill="#2E3338"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -2889,7 +2883,6 @@ We believe that many of these features have great potential for positive impact,
                       fill="#35D07F"
                       fillRule="evenodd"
                       opacity={1}
-                      style={Object {}}
                     />
                   </svg>
                 </div>
@@ -3164,24 +3157,20 @@ We believe that many of these features have great potential for positive impact,
             <svg
               fill="none"
               height={40}
-              style={Object {}}
               viewBox="0 0 25 25"
               width={40}
             >
               <path
                 d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
                 fill="#2E3338"
-                style={Object {}}
               />
               <path
                 d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
                 fill="#2E3338"
-                style={Object {}}
               />
               <path
                 d="M15.4577 19.7369C16.1419 18.9077 16.6324 17.9361 16.8932 16.8932C17.9361 16.6324 18.9077 16.1421 19.7369 15.4579C19.699 16.6658 19.439 17.8563 18.9695 18.9698C17.8561 19.439 16.6656 19.6992 15.4577 19.7369ZM8.10687 8.10687C7.06397 8.36766 6.09239 8.85792 5.26318 9.54213C5.30108 8.33424 5.56108 7.14371 6.03055 6.03029C7.14397 5.56108 8.3345 5.30082 9.54239 5.26318C8.85818 6.09239 8.36766 7.06397 8.10687 8.10687Z"
                 fill="#2E3338"
-                style={Object {}}
               />
             </svg>
             <div
@@ -3313,7 +3302,6 @@ We believe that many of these features have great potential for positive impact,
                   fill="#35D07F"
                   fillRule="evenodd"
                   opacity={1}
-                  style={Object {}}
                 />
               </svg>
             </div>
@@ -4568,7 +4556,6 @@ We believe that many of these features have great potential for positive impact,
                     d="M10.7932 1.85263L3.96211 8.64309L0.180176 4.88366L1.85967 3.19411L3.96211 5.28404L9.11373 0.163086L10.7932 1.85263Z"
                     fill="#35D07F"
                     fillRule="evenodd"
-                    style={Object {}}
                   />
                 </svg>
                 <span
@@ -5389,7 +5376,6 @@ We believe that many of these features have great potential for positive impact,
                     d="M10.7932 1.85263L3.96211 8.64309L0.180176 4.88366L1.85967 3.19411L3.96211 5.28404L9.11373 0.163086L10.7932 1.85263Z"
                     fill="#35D07F"
                     fillRule="evenodd"
-                    style={Object {}}
                   />
                 </svg>
                 <span
@@ -7346,7 +7332,6 @@ We believe that many of these features have great potential for positive impact,
                     d="M10.7932 1.85263L3.96211 8.64309L0.180176 4.88366L1.85967 3.19411L3.96211 5.28404L9.11373 0.163086L10.7932 1.85263Z"
                     fill="#35D07F"
                     fillRule="evenodd"
-                    style={Object {}}
                   />
                 </svg>
                 <span

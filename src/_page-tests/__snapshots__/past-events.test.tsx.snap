@@ -132,7 +132,6 @@ exports[`PastEventsPage renders 1`] = `
                 cy="12"
                 r="11.5"
                 stroke="#DDDDDD"
-                style={Object {}}
               />
             </svg>
             <div
@@ -241,7 +240,6 @@ exports[`PastEventsPage renders 1`] = `
                 cy="12"
                 r="11.5"
                 stroke="#DDDDDD"
-                style={Object {}}
               />
             </svg>
             <div
