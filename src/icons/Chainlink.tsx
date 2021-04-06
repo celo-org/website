@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
-import { Path } from 'svgs'
+
 
 interface Props {
   color: colors
@@ -10,7 +10,7 @@ interface Props {
 export default React.memo(function Chainlink({ color, size }: Props) {
   return (
     <svg width={size} height={size} viewBox="0 0 15 15" fill="none">
-      <Path
+      <path
         fill={color}
         fillRule="evenodd"
         clipRule="evenodd"

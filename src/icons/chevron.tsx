@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
-import { Path } from 'svgs'
 
 export enum Direction {
   right = 0,
@@ -31,7 +30,7 @@ export default class Chevron extends React.PureComponent<Props> {
         fill="none"
         transform={`rotate(${this.props.direction})`}
       >
-        <Path
+        <path
           opacity={this.props.opacity || 1}
           fillRule="evenodd"
           clipRule="evenodd"
