@@ -9,3 +9,7 @@ yarn-error.log
 
 coverage/
 sandbox.tsx
+
+# Cypress results
+Cypress/videos
+Cypress/screenshots
