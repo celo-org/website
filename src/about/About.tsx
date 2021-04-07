@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import shuffleSeed from 'shuffle-seed'
 import AudioIcon from 'src/about/AudioIcon'
 import Backers from 'src/about/Backers'
 import { Contributor } from 'src/about/Contributor'
@@ -41,6 +40,7 @@ export class About extends React.Component<Props & I18nProps> {
     } else {
       contributors = await fetch(`/api/contributors`).then((result) => result.json())
     }
+    const shuffleSeed = await import('shuffle-seed').then(mod => mod.default)
 
     const shuffledTeam = shuffleSeed.shuffle(contributors, Math.random())
     return { contributors: shuffledTeam }
