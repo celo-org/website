@@ -8,9 +8,9 @@ import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
 import Blurb, {Props as BlurbProps} from "./Blurb"
 import {renderNode} from "src/experience/contentful/nodes"
-import { FreeContent } from "./FreeContent"
-import Roledex from "./Roledex"
-import PlayList from "./Playlist"
+import { FreeContent } from "src/contentful/FreeContent"
+import Roledex from "src/public-sector/Roledex"
+import PlayList from "src/contentful/Playlist"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
@@ -72,7 +72,7 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number) {
                 />
       case "youTubePlayist":
       const  playlist = entry.fields as PlaylistContentType
-      return <PlayList title={playlist.title } description={playlist.description} listId={playlist.listId} />
+      return <PlayList key={entry.sys.id} title={playlist.title } description={playlist.description} listId={playlist.listId} />
     }
   }
   return null

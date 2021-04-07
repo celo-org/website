@@ -12,9 +12,9 @@ interface Props {
 
 export default function Thumbnail({image, link, title}: Props) {
   return <a css={rootCss} href={link} >
-          <Image css={imageCss} src={image}  height={166} width={296} layout={"responsive"}/>
-          <div css={flexRow}>
-            <caption css={titleCss}>{title}</caption>
+          <Image css={imageCss} src={image}  height={166} width={296} layout={"intrinsic"}/>
+          <div css={captionArea}>
+            <span css={titleCss}>{title}</span>
           </div>
   </a>
 }
@@ -31,4 +31,8 @@ const imageCss = css({
 
 const titleCss = css(fonts.body,{
   fontWeight: 'bold'
+})
+
+const captionArea = css(flexRow, {
+  marginTop: 8
 })

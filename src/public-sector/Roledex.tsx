@@ -38,7 +38,7 @@ export default function Roledex(props: RoledexContentType) {
     <div css={css(contentAreaCss, isInTransition && transitionCss)}>
       <h3 css={headingCss}>{sheet.fields.heading}</h3>
       {documentToReactComponents(sheet.fields.body, {renderNode})}
-      <div css={linksAreaCss} aria-role={"listbox"}>
+      <div css={linksAreaCss} role={"listbox"}>
         {sheet.fields.buttons?.map(({fields, sys}) =>{
           return <Button key={sys.id} size={SIZE.normal} kind={fields.kind} text={fields.words} href={fields.assetLink?.fields?.file?.url || fields.href} />
         })}

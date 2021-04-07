@@ -7,8 +7,7 @@ import Button, { SIZE } from 'src/shared/Button.3'
 import { standardStyles } from 'src/styles'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Document } from '@contentful/rich-text-types'
-import { BLOCKS } from '@contentful/rich-text-types'
-
+import renderNode from "src/contentful/nodes/paragraph"
 enum Headings {
   "large" = 'large',
   "medium" = 'medium',
@@ -43,7 +42,13 @@ const rootCss = css (flex,{
 })
 
 const containerCss = css(flex, {
-  flex: 1
+  flex: 1,
+  "p:first-of-type": {
+    marginTop: 0
+  },
+  "p:last-of-type": {
+    marginBottom: 0
+  }
 })
 
 const imageCss =css({
@@ -68,16 +73,3 @@ function headingStyle(type: Headings) {
 }
 
 
-const renderNode = {
-  [BLOCKS.PARAGRAPH]: (_, children: string) => {
-    return <p css={bodyCss}>{children}</p>
-  },
-}
-const bodyCss = css(fonts.body, {
-  "&:first-of-type": {
-    marginTop: 0
-  },
-  "&:last-of-type": {
-    marginBottom: 0
-  }
-})
