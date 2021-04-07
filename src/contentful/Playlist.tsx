@@ -20,6 +20,7 @@ interface Props {
 
 
 export default function PlayList(props: Props) {
+
   const {t} = useTranslation(NameSpaces.common)
   return <>
     <div css={headCss}>
@@ -59,51 +60,55 @@ const buttonCss = css(fonts.navigation, {
 
 const headCss = css({
   gridColumn: "span 3",
-  maxWidth: 480
+  maxWidth: 480,
+  width: "calc(100vw - 24px)"
 })
 
 const expanderContractorCss = css(flexRow,{
   maxWidth: "100vw",
   gridColumn: "span 3",
   justifyContent: "center",
-  marginTop: 40
+  marginTop: 40,
+  [WHEN_MOBILE]: {
+    display: "none"
+  }
 })
 
+const BOUNDARY = 15
 
 function useSideways(childCount: number) {
 
-  const position = React.useRef(0)
-  const lastState = React.useRef("")
+  const lastPause = React.useRef(0)
+  const previousPosition = React.useRef(0)
   const childWidth = React.useRef(1)
   const elementRef = React.useRef<HTMLDivElement>(null);
-
   // this wont work quiet right if window size changes. but how often will that happen on a mobile device?
   React.useLayoutEffect(() => {
     childWidth.current = elementRef.current.firstElementChild.offsetWidth as number
   }, [])
+  const maxDistance = (childWidth.current * (childCount -1) + BOUNDARY)
 
-  const {x, state} = useSwipe(elementRef, {});
+  const {x: delta, state} = useSwipe(elementRef, {});
 
-  const maxDistance = (childWidth.current * (childCount -1))
-
-  let horizontalPosition = lastState.current === 'done' && state === "move" ?  x : x
+  let currentPosition = delta + lastPause.current
 
   // dont allow dragging when we are already past the start
-  if (horizontalPosition > 15) {
-    horizontalPosition = 15
-  } else if (horizontalPosition < -maxDistance) {
-    horizontalPosition = -maxDistance
+  if (currentPosition > BOUNDARY) {
+    currentPosition = BOUNDARY
+  } else if (currentPosition < -maxDistance) {
+    currentPosition = -maxDistance
   }
+
   if (state === 'done') {
-    position.current = Math.max(Math.round(position.current / childWidth.current) * Math.abs(childWidth.current), -maxDistance)
-  } else {
-    position.current = horizontalPosition
+    lastPause.current = Math.max(Math.round(previousPosition.current / childWidth.current) * Math.abs(childWidth.current), -maxDistance)
+    currentPosition = lastPause.current
   }
+
   // when moving base off dela from last fixed postion
   // when stop moving set new last fixed postion
 
-  lastState.current = state
-  return {position, swipeRef: elementRef, state}
+  previousPosition.current = currentPosition
+  return {position: currentPosition, swipeRef: elementRef, state}
 }
 
 function Slider({children}) {
@@ -111,17 +116,22 @@ function Slider({children}) {
 
   return <div
     ref={swipeRef}
-    css={css(rootCss, {
+    css={css(sliderCSS, {
       [WHEN_MOBILE]: {
-        display: "flex",
-        flexDirection: "row",
-        width: "300vw",
-        overflow: "hidden",
-        transitionProperty: "transform",
         transitionDuration: state === 'done' ? "300ms" : "1ms",
-        transform: `translateX(${position.current}px)`
-      }
-    })}>
+        transform: `translateX(${position}px)`
+      }})}>
       {children}
   </div>
 }
+
+
+const sliderCSS = css(rootCss, {
+  [WHEN_MOBILE]: {
+    display: "flex",
+    flexDirection: "row",
+    width: "300vw",
+    overflow: "hidden",
+    transitionProperty: "transform",
+  }
+})

@@ -15,6 +15,7 @@ export function FreeContent({ colSpan, body, cssStyle, backgroundColor }) {
 }
 
 const rootCss = css(flex,{
+  maxWidth: "calc(100vw - 16px)",
   "a": {
     marginTop: 16
   }
