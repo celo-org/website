@@ -1,6 +1,6 @@
 import Thumbnail from "./Thumbnail"
 import { Document } from '@contentful/rich-text-types'
-import { flexRow, fonts, WHEN_MOBILE } from "src/estyles"
+import { flexRow, fonts, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { css } from "@emotion/react"
 import { NameSpaces, useTranslation } from "src/i18n"
@@ -11,38 +11,33 @@ import * as React from "react"
 import useSwipe from '@odnh/use-swipe';
 import { PlaylistContentType } from 'src/utils/contentful'
 import { useYoutube } from "./useYoutubePlaylist"
+import { useBooleanToggle } from "src/hooks/useBooleanToggle"
+import { useScreenSize } from "src/layout/ScreenSize"
+
+const MIN_SHOWING = 3
 
 export default function PlayList(props: PlaylistContentType) {
-  const items = useYoutube(props.listId)
-  const {t} = useTranslation(NameSpaces.common)
+  const [expanded, toggleExpansion] = useBooleanToggle()
+  const {isMobile} =  useScreenSize()
+  const items = useYoutube(props.listId) ||[]
+  const youtubeVideos = (!expanded && !isMobile ? items?.slice(0,MIN_SHOWING) : items)
+  const media =  (!expanded && !isMobile ? props.media?.slice(0,MIN_SHOWING) : props.media) ||[]
+  const showButton = props.media && props.media.length > MIN_SHOWING || items.length > MIN_SHOWING
+  const Component = isMobile ? Slider : Expander
   return <>
     <Head title={props.title} description={props.description} />
-    <Slider>
-      {props.media?.map(({fields}) => {
-        return <Thumbnail title={fields.title} link={fields.link} image={`https:${fields.image.fields.file.url}`} />
+    <Component isExpanded={expanded}>
+      {media.map(({fields}) => {
+        return <Thumbnail key={fields.title} title={fields.title} link={fields.link} image={`https:${fields.image.fields.file.url}`} />
       })}
-      {items?.map(item => {
-        return <Thumbnail title={item.title} link={item.link} image={item.image} />
+      {youtubeVideos.map(item => {
+        return <Thumbnail  key={item.title} title={item.title} link={item.link} image={item.image} />
       })}
-    </Slider>
-    <div css={expanderContractorCss}>
-      <button css={buttonCss}>
-        {t('showAll')}
-        <Chevron color={colors.dark} direction={Direction.down} />
-      </button>
-    </div>
+    </Component>
+    <ToggleButtonArea showButton={showButton} toggleExpansion={toggleExpansion} expanded={expanded} />
   </>
 }
 
-const gap = 24
-
-const rootCss = css({
-  display: "grid",
-  gridColumn: "span 3",
-  columnGap: gap,
-  rowGap: 36,
-  gridTemplateColumns: "1fr 1fr 1fr",
-})
 
 const buttonCss = css(fonts.navigation, {
   background: "none",
@@ -79,9 +74,22 @@ const Head = React.memo(function _Head({title, description}: {title: string, des
   </div>
 })
 
-function useSideways(childCount: number) {
+const ToggleButtonArea = React.memo(function _ToggleButtonArea(props: {showButton: boolean, toggleExpansion: () => void, expanded: boolean}) {
+  const {t} = useTranslation(NameSpaces.common)
+  return props.showButton && <div css={expanderContractorCss}>
+    <button css={buttonCss} onClick={props.toggleExpansion}>
+      {props.expanded ? t('collapse') : t('showAll')}
+      <Chevron color={colors.dark} direction={props.expanded ? Direction.up : Direction.down} />
+    </button>
+  </div>
+})
 
+function useSideways(childCount: number) {
+  const {screen, isMobile} = useScreenSize()
+  // last pause tells us where we are the last time we stopped dragging
   const lastPause = React.useRef(0)
+  // previousPosition is currentPositon 1 tick ago. we need this as when we stop dragging delta immediatly goes to zero
+  // and therefore the content would snap back to start instead of stopping where we are.
   const previousPosition = React.useRef(0)
   const childWidth = React.useRef(1)
   const elementRef = React.useRef<HTMLDivElement>(null);
@@ -90,40 +98,76 @@ function useSideways(childCount: number) {
   React.useLayoutEffect(() => {
     // || 0 so that when no children are rendered it doesnt get upset
     childWidth.current =  (elementRef.current.firstElementChild?.offsetWidth || 0) + gap as number
-  }, [childCount])
-  const maxDistance = (childWidth.current * (childCount -1.5))
+  }, [childCount, screen])
 
+  // delta gives is the amount moved this swipe/drag
   const {x: delta, state} = useSwipe(elementRef, {});
 
+  // Swipper is mobile only! also no hooks can be called below this statement
+  if (!isMobile) {
+    return {position: 0, swipeRef: elementRef, state: "done"}
+  }
+  // since delta gives us current drag, but we dont always start at zero. so add to the last time drag stopped to get real postion
   let currentPosition = delta + lastPause.current
 
-  // dont allow dragging when we are already past the start
-  if (currentPosition > BOUNDARY) {
+  // 0.5 so we can drag past half of the final slide and then have it satisfactorially slide back
+  const maxDistance = (childWidth.current * (childCount - 0.5))
+
+  // when done dragging we slide to a postion where the content is nicely showing and not cut off. math is fun yall
+  if (state === 'done') {
+    lastPause.current = Math.max(Math.round(previousPosition.current / childWidth.current) * Math.abs(childWidth.current), -maxDistance)
+    currentPosition = lastPause.current
+  } else  if (currentPosition > BOUNDARY) {
+    // dont allow dragging when we are already past the start or end
+
     currentPosition = BOUNDARY
   } else if (currentPosition < -maxDistance) {
     currentPosition = -maxDistance
   }
-  console.log(currentPosition, -maxDistance)
 
-  if (state === 'done') {
-    lastPause.current = Math.max(Math.round(previousPosition.current / childWidth.current) * Math.abs(childWidth.current), -maxDistance)
-    currentPosition = lastPause.current
-  }
-
-  // when moving base off dela from last fixed postion
-  // when stop moving set new last fixed postion
-
+  // dont let nan polute the data.
   previousPosition.current = isNaN(currentPosition) ? 0 : currentPosition
   return {position: previousPosition.current, swipeRef: elementRef, state}
 }
 
-function Slider({children}) {
+
+
+const gap = 24
+
+const sliderCSS = css({
+  display: "grid",
+  gridColumn: "span 3",
+  columnGap: gap,
+  rowGap: 36,
+  gridTemplateColumns: "1fr 1fr 1fr",
+  [WHEN_TABLET_AND_UP]: {
+    transitionProperty: "max-height",
+    transitionDuration: "100ms",
+    maxHeight: "220px"
+  },
+  [WHEN_MOBILE]: {
+    marginBottom: 16,
+    display: "flex",
+    flexDirection: "row",
+    overflow: "hidden",
+    transitionProperty: "transform",
+  }
+})
+
+const expandedCss = css({
+  [WHEN_TABLET_AND_UP]: {
+    maxHeight:"4000px",
+    transitionDuration: "400ms",
+  },
+})
+
+function Slider({children, isExpanded}) {
   const childCount = React.Children.count(children)
   const {swipeRef, position, state} = useSideways(childCount)
 
   return <div
     ref={swipeRef}
-    css={css(sliderCSS, {
+    css={css(sliderCSS, isExpanded && expandedCss, {
       [WHEN_MOBILE]: {
         width: `${childCount}00vw`,
         transitionDuration: state === 'done' ? "300ms" : "1ms",
@@ -133,13 +177,9 @@ function Slider({children}) {
   </div>
 }
 
-
-const sliderCSS = css(rootCss, {
-  [WHEN_MOBILE]: {
-    marginBottom: 16,
-    display: "flex",
-    flexDirection: "row",
-    overflow: "hidden",
-    transitionProperty: "transform",
-  }
-})
+function Expander({children, isExpanded}) {
+  return <div
+    css={css(sliderCSS, isExpanded && expandedCss)}>
+      {children}
+  </div>
+}

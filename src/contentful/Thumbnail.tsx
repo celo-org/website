@@ -11,10 +11,10 @@ export interface Props {
 }
 
 export default function Thumbnail({image, link, title}: Props) {
-  return <div css={rootCss} >
+  return <div role="figure" css={rootCss} >
           <Image css={imageCss} src={image}  height={166} width={296} layout={"intrinsic"}/>
           <a css={captionArea}  href={link} target="_blank" rel="noopener">
-            <span css={titleCss}>{title}</span>
+            <figcaption css={titleCss}>{title}</figcaption>
           </a>
   </div>
 }
