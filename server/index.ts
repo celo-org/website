@@ -100,17 +100,21 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   })
 
   server.get('/papers/future-proof-aid', (_, res) =>{
-    res.redirect('/papers/Future_Proof_Aid_Policy.pdf')
+    res.redirect('https://drive.google.com/file/d/1Sf_jqhE8buy0qtIQiUI9IcfB4IiHGuBG/view')
+  })
+
+  server.get('/papers/future-proof-exec', (_, res) => {
+
+    res.redirect('https://drive.google.com/file/d/1ecbzd2BdE7zleAYXEfzSt_iRSrhAysCa/view')
   })
 
   server.get('/papers/future-of-digital-currencies', (_, res) =>{
     res.redirect('/papers/shaping-future-of-digital-currencies.pdf')
   })
 
-  server.get('/papers/future-proof-exec', (_, res) =>{
-    res.redirect('/papers/Future_Proof_Aid_Policy_Exec_Summary.pdf')
+  server.get('/papers/covid-aid', (_, res) =>{
+    res.download("public/papers/humanitarian-COVID-aid-on-celo.pdf")
   })
-
 
   server.get('/papers/whitepaper', (_, res) => {
     res.redirect(
