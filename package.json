@@ -32,7 +32,6 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "@emotion/react": "^11.1.5",
-    "@next/bundle-analyzer": "^9.3.5",
     "@sentry/browser": "^5.20.1",
     "@sentry/node": "^5.20.1",
     "airtable": "^0.8.1",

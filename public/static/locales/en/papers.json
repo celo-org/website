@@ -2,14 +2,15 @@
   "title": "Celo Whitepapers",
   "protocol": "Protocol",
   "economics": "Economics",
-  "metaDescription": "Papers on Celo Protocol & Economics",
+  "metaDescription": "Papers on Celo Protocol, Economics, & Use Cases",
   "stabilityTitle" : "An Analysis of the Stability Characteristics of Celo",
   "velocityTitle": "Influencing the Velocity of Central Bank Digital Currencies",
   "whitepaperTitle": "Celo Whitepaper: A Multi-Asset Cryptographic Protocol for Decentralized Social Payments",
   "download": "Read paper",
   "plumoTitle": "Plumo: Towards Scalable Interoperable Blockchains Using Ultra Light Validation Systems",
   "socialImpact": "Social Impact",
-  "humanitarianExec": "Future-Proof Aid Policy: Exec Summary",
-  "humanitarian": "Future-Proof Aid Policy",
+  "exec": "Exec Summary",
+  "futureProof": "Future-Proof Aid Policy",
+  "grameenCovid": "Delivering Humanitarian COVID Aid using the Celo Platform",
   "futureCurrency": "Shaping the Future of Digital Currencies"
 }
