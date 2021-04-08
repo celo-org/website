@@ -130,28 +130,36 @@ function useSideways(childCount: number) {
   return {position: previousPosition.current, swipeRef: elementRef, state}
 }
 
-
-
 const gap = 24
 
-const sliderCSS = css({
+const rootCss = css({
   display: "grid",
   gridColumn: "span 3",
   columnGap: gap,
   rowGap: 36,
   gridTemplateColumns: "1fr 1fr 1fr",
-  [WHEN_TABLET_AND_UP]: {
-    transitionProperty: "max-height",
-    transitionDuration: "100ms",
-    maxHeight: "220px"
-  },
+})
+
+const sliderCSS = css(rootCss,{
   [WHEN_MOBILE]: {
+    cursor: "grab",
+    "&:active": {
+      cursor:"grabbing"
+    },
     marginBottom: 16,
     display: "flex",
     flexDirection: "row",
     overflow: "hidden",
     transitionProperty: "transform",
   }
+})
+
+const expanderCss = css(rootCss, {
+  [WHEN_TABLET_AND_UP]: {
+    transitionProperty: "max-height",
+    transitionDuration: "100ms",
+    maxHeight: "220px"
+  },
 })
 
 const expandedCss = css({
@@ -166,6 +174,7 @@ function Slider({children, isExpanded}) {
   const {swipeRef, position, state} = useSideways(childCount)
 
   return <div
+    draggable="true"
     ref={swipeRef}
     css={css(sliderCSS, isExpanded && expandedCss, {
       [WHEN_MOBILE]: {
@@ -178,8 +187,7 @@ function Slider({children, isExpanded}) {
 }
 
 function Expander({children, isExpanded}) {
-  return <div
-    css={css(sliderCSS, isExpanded && expandedCss)}>
+  return <div css={css(expanderCss, isExpanded && expandedCss)}>
       {children}
   </div>
 }
