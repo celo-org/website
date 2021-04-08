@@ -93,7 +93,7 @@ const SectionNav = React.memo(function SectionNav_({
   )
 })
 
-enum Kind {
+export enum Kind {
   page,
   section,
 }

@@ -3,12 +3,14 @@ import { StyleSheet, View } from 'react-native'
 import Button, { BTN } from 'src/shared/Button.3'
 import OvalCoin from 'src/shared/OvalCoin'
 import { colors } from 'src/styles'
+import { Kind } from './Sidebar'
 
 interface LinkProps {
-  color: colors
+  color?: colors
   active: boolean
   title: string
   href?: string
+  kind?: Kind
   accessibilityRole?: "button" | "link" |"option"
   onPress?: () => void
 }
