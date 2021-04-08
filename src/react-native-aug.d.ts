@@ -60,7 +60,7 @@ declare module 'react-native' {
 
   interface ViewProps {
     onClick?: () => void
-    accessibilityRole?: 'list' | 'link' | 'button'
+    accessibilityRole?: 'list' | 'link' | 'button' | "listbox"
     style?: StyleProp<ViewStyle>
   }
 
