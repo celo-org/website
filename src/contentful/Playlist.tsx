@@ -28,10 +28,10 @@ export default function PlayList(props: PlaylistContentType) {
     <Head title={props.title} description={props.description} />
     <Component isExpanded={expanded}>
       {media.map(({fields}) => {
-        return <Thumbnail key={fields.title} title={fields.title} link={fields.link} image={`https:${fields.image.fields.file.url}`} />
+        return <Thumbnail key={fields.title} title={fields.title} link={fields.link} altText={fields.image.fields.description} image={`https:${fields.image.fields.file.url}`} />
       })}
       {youtubeVideos.map(item => {
-        return <Thumbnail  key={item.title} title={item.title} link={item.link} image={item.image} />
+        return <Thumbnail  key={item.title} title={item.title} link={item.link} altText={item.altText} image={item.image} />
       })}
     </Component>
     <ToggleButtonArea showButton={showButton} toggleExpansion={toggleExpansion} expanded={expanded} />
