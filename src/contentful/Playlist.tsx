@@ -96,7 +96,8 @@ function useSideways(childCount: number) {
 
   // this wont work quiet right if window size change cause childen size to change. but how often will that happen on a mobile device?
   React.useLayoutEffect(() => {
-    // @ts-ignore || 0 so that when no children are rendered it doesnt get upset
+    // || 0 so that when no children are rendered it doesnt get upset
+    // @ts-ignore firstElementChild doesnt think offsetWidth exists but https://caniuse.com/?search=offsetWidth shows full support
     childWidth.current =  (elementRef.current.firstElementChild?.offsetWidth || 0) + gap as number
   }, [childCount, screen])
 
