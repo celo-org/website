@@ -9,28 +9,21 @@ import Chevron, { Direction } from 'src/icons/chevron'
 import { colors } from "src/styles"
 import * as React from "react"
 import useSwipe from '@odnh/use-swipe';
+import { PlaylistContentType } from 'src/utils/contentful'
+import { useYoutube } from "./useYoutubePlaylist"
 
-
-interface Props {
-  title: string
-  description: Document
-  listId: string
-}
-
-
-
-export default function PlayList(props: Props) {
-
+export default function PlayList(props: PlaylistContentType) {
+  const items = useYoutube(props.listId)
   const {t} = useTranslation(NameSpaces.common)
   return <>
-    <div css={headCss}>
-      <h3 css={fonts.h3}>{props.title}</h3>
-      {documentToReactComponents(props.description, {renderNode})}
-    </div>
+    <Head title={props.title} description={props.description} />
     <Slider>
-      <Thumbnail title={"Systems"} link="/" image={"/images/marketplace-icons/icon-celo-CELO-color-f.svg"} />
-      <Thumbnail title={"Instiutions"} link="/" image={"/images/marketplace-icons/icon-celo-CELO-color-f.svg"} />
-      <Thumbnail title={"Goverance"} link="/" image={"/images/marketplace-icons/icon-celo-CELO-color-f.svg"} />
+      {props.media?.map(({fields}) => {
+        return <Thumbnail title={fields.title} link={fields.link} image={`https:${fields.image.fields.file.url}`} />
+      })}
+      {items?.map(item => {
+        return <Thumbnail title={item.title} link={item.link} image={item.image} />
+      })}
     </Slider>
     <div css={expanderContractorCss}>
       <button css={buttonCss}>
@@ -41,10 +34,13 @@ export default function PlayList(props: Props) {
   </>
 }
 
+const gap = 24
+
 const rootCss = css({
   display: "grid",
   gridColumn: "span 3",
-  columnGap: 24,
+  columnGap: gap,
+  rowGap: 36,
   gridTemplateColumns: "1fr 1fr 1fr",
 })
 
@@ -76,17 +72,26 @@ const expanderContractorCss = css(flexRow,{
 
 const BOUNDARY = 15
 
+const Head = React.memo(function _Head({title, description}: {title: string, description: Document}) {
+  return <div css={headCss}>
+    <h3 css={fonts.h3}>{title}</h3>
+    {documentToReactComponents(description, { renderNode })}
+  </div>
+})
+
 function useSideways(childCount: number) {
 
   const lastPause = React.useRef(0)
   const previousPosition = React.useRef(0)
   const childWidth = React.useRef(1)
   const elementRef = React.useRef<HTMLDivElement>(null);
-  // this wont work quiet right if window size changes. but how often will that happen on a mobile device?
+
+  // this wont work quiet right if window size change cause childen size to change. but how often will that happen on a mobile device?
   React.useLayoutEffect(() => {
-    childWidth.current = elementRef.current.firstElementChild.offsetWidth as number
-  }, [])
-  const maxDistance = (childWidth.current * (childCount -1) + BOUNDARY)
+    // || 0 so that when no children are rendered it doesnt get upset
+    childWidth.current =  (elementRef.current.firstElementChild?.offsetWidth || 0) + gap as number
+  }, [childCount])
+  const maxDistance = (childWidth.current * (childCount -1.5))
 
   const {x: delta, state} = useSwipe(elementRef, {});
 
@@ -98,6 +103,7 @@ function useSideways(childCount: number) {
   } else if (currentPosition < -maxDistance) {
     currentPosition = -maxDistance
   }
+  console.log(currentPosition, -maxDistance)
 
   if (state === 'done') {
     lastPause.current = Math.max(Math.round(previousPosition.current / childWidth.current) * Math.abs(childWidth.current), -maxDistance)
@@ -107,17 +113,19 @@ function useSideways(childCount: number) {
   // when moving base off dela from last fixed postion
   // when stop moving set new last fixed postion
 
-  previousPosition.current = currentPosition
-  return {position: currentPosition, swipeRef: elementRef, state}
+  previousPosition.current = isNaN(currentPosition) ? 0 : currentPosition
+  return {position: previousPosition.current, swipeRef: elementRef, state}
 }
 
 function Slider({children}) {
-  const {swipeRef, position, state} = useSideways(React.Children.count(children))
+  const childCount = React.Children.count(children)
+  const {swipeRef, position, state} = useSideways(childCount)
 
   return <div
     ref={swipeRef}
     css={css(sliderCSS, {
       [WHEN_MOBILE]: {
+        width: `${childCount}00vw`,
         transitionDuration: state === 'done' ? "300ms" : "1ms",
         transform: `translateX(${position}px)`
       }})}>
@@ -128,9 +136,9 @@ function Slider({children}) {
 
 const sliderCSS = css(rootCss, {
   [WHEN_MOBILE]: {
+    marginBottom: 16,
     display: "flex",
     flexDirection: "row",
-    width: "300vw",
     overflow: "hidden",
     transitionProperty: "transform",
   }

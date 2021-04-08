@@ -4,24 +4,24 @@ import { flexRow, fonts } from "src/estyles"
 import { colors } from "src/styles"
 import Image from "next/image"
 
-interface Props {
+export interface Props {
   image: string
   link: string
   title: string
 }
 
 export default function Thumbnail({image, link, title}: Props) {
-  return <a css={rootCss} href={link} >
+  return <div css={rootCss} >
           <Image css={imageCss} src={image}  height={166} width={296} layout={"intrinsic"}/>
-          <div css={captionArea}>
+          <a css={captionArea}  href={link} target="_blank" rel="noopener">
             <span css={titleCss}>{title}</span>
-          </div>
-  </a>
+          </a>
+  </div>
 }
 
 const rootCss  = css({
   display: "block",
-  textDecoration: "none"
+  maxWidth: 296
 })
 
 const imageCss = css({
@@ -34,5 +34,6 @@ const titleCss = css(fonts.body,{
 })
 
 const captionArea = css(flexRow, {
-  marginTop: 8
+  marginTop: 8,
+  textDecoration: "none",
 })

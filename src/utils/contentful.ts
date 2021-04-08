@@ -90,6 +90,11 @@ export interface RoledexContentType {
   sheets: Entry<InfoSheetContentType>[]
 }
 
+interface ThumbnailType {
+  title: string
+  link: string
+  image: Asset
+}
 export interface FreeContentType {
   backgroundColor: string
   cssStyle: CSSObject
@@ -99,7 +104,8 @@ export interface FreeContentType {
 export interface PlaylistContentType {
   title: string
   description: Document
-  listId: string
+  listId?: string
+  media?: Array<Entry<ThumbnailType>>
 }
 
 export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType

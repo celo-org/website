@@ -72,7 +72,7 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number) {
                 />
       case "youTubePlayist":
       const  playlist = entry.fields as PlaylistContentType
-      return <PlayList key={entry.sys.id} title={playlist.title } description={playlist.description} listId={playlist.listId} />
+      return <PlayList key={entry.sys.id} media={playlist.media} title={playlist.title } description={playlist.description} listId={playlist.listId} />
     }
   }
   return null
