@@ -64,6 +64,7 @@ const expanderContractorCss = css(flexRow,{
   gridColumn: "span 3",
   justifyContent: "center",
   marginTop: 40,
+  marginBottom: 40,
   [WHEN_MOBILE]: {
     display: "none"
   }
