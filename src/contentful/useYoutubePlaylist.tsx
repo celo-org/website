@@ -58,5 +58,5 @@ function itemToThumbnailProps(item: YouTubeItem): Props {
   const image = item.snippet.thumbnails.medium.url
   const link = `https://www.youtube.com/watch?v=${item.contentDetails.videoId}`
   const altText = item.snippet.description
-  return {image, title, link, altText}
+  return {image, title, link, altText, id: item.id}
 }

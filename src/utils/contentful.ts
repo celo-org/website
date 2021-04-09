@@ -90,7 +90,7 @@ export interface RoledexContentType {
   sheets: Entry<InfoSheetContentType>[]
 }
 
-interface ThumbnailType {
+export interface ThumbnailType {
   title: string
   link: string
   image: Asset

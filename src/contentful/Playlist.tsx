@@ -19,19 +19,23 @@ const MIN_SHOWING = 3
 export default function PlayList(props: PlaylistContentType) {
   const [expanded, toggleExpansion] = useBooleanToggle()
   const {isMobile} =  useScreenSize()
-  const items = useYoutube(props.listId)
-  const youtubeVideos = (!expanded && !isMobile ? items?.slice(0,MIN_SHOWING) : items) ||[]
-  const media =  (!expanded && !isMobile ? props.media?.slice(0,MIN_SHOWING) : props.media) ||[]
-  const showButton = props.media && props.media.length > MIN_SHOWING || items.length > MIN_SHOWING
+  const youTubePlayist = useYoutube(props.listId)
+
+  const allItems = React.useMemo(() => {
+    const media = props.media?.map(({fields, sys}) => ({...fields, id: sys.id,  altText: fields.image.fields.description, image: `https:${fields.image.fields.file.url}`})) || []
+    return [...media, ...(youTubePlayist || []) ]
+  }, [youTubePlayist, props.media])
+
+  const displayedItems =  (!expanded && !isMobile ? allItems.slice(0,MIN_SHOWING) : allItems)
+
+  const showButton = allItems.length > MIN_SHOWING
   const Component = isMobile ? Slider : Expander
+
   return <>
     <Head title={props.title} description={props.description} />
     <Component isExpanded={expanded}>
-      {media.map(({fields}) => {
-        return <Thumbnail key={fields.title} title={fields.title} link={fields.link} altText={fields.image.fields.description} image={`https:${fields.image.fields.file.url}`} />
-      })}
-      {youtubeVideos.map(item => {
-        return <Thumbnail  key={item.title} title={item.title} link={item.link} altText={item.altText} image={item.image} />
+      {displayedItems.map(item => {
+        return <Thumbnail  key={item.id} id={item.id} title={item.title} link={item.link} altText={item.altText} image={item.image} />
       })}
     </Component>
     <ToggleButtonArea showButton={showButton} toggleExpansion={toggleExpansion} expanded={expanded} />

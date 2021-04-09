@@ -9,6 +9,7 @@ export interface Props {
   link: string
   title: string
   altText: string
+  id: string
 }
 
 export default function Thumbnail({image, link, title, altText}: Props) {
