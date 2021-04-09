@@ -15,7 +15,7 @@ import InlineAnchor from 'src/shared/InlineAnchor'
 import { fonts, standardStyles } from 'src/styles'
 import { Content, Tile } from 'src/experience/common/Tile'
 import { css } from '@emotion/react'
-import LogoGallary from "src/public-sector/LogoGallary"
+import LogoGallary from "src/contentful/LogoGallary"
 
 export const renderNode: RenderNode = {
   [BLOCKS.HEADING_1]: (_, children: string) => {

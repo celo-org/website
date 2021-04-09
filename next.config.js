@@ -3,6 +3,9 @@ const envConfig = require('./env-config')
 const serverEnvConfig = require('./server-env-config')
 
 module.exports = withImages({
+  images: {
+    domains: ['images.ctfassets.net', "i.ytimg.com", "*.ytimg.com"],
+  },
   experimental: {
     modern: false,
   },
