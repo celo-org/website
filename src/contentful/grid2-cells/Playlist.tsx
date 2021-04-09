@@ -1,4 +1,4 @@
-import Thumbnail from "./Thumbnail"
+import Thumbnail from "../../shared/Thumbnail"
 import { Document } from '@contentful/rich-text-types'
 import { flexRow, fonts, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
@@ -10,7 +10,7 @@ import { colors } from "src/styles"
 import * as React from "react"
 import useSwipe from '@odnh/use-swipe';
 import { PlaylistContentType } from 'src/utils/contentful'
-import { useYoutube } from "./useYoutubePlaylist"
+import { useYoutube } from "src/hooks/useYoutubePlaylist"
 import { useBooleanToggle } from "src/hooks/useBooleanToggle"
 import { useScreenSize } from "src/layout/ScreenSize"
 

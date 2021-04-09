@@ -6,11 +6,11 @@ import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellCon
 import { flex } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
-import Blurb, {Props as BlurbProps} from "./Blurb"
-import {renderNode} from "src/experience/contentful/nodes"
-import { FreeContent } from "src/contentful/FreeContent"
-import Roledex from "src/public-sector/Roledex"
-import PlayList from "src/contentful/Playlist"
+import Blurb, {Props as BlurbProps} from "src/contentful/grid2-cells/Blurb"
+import {renderNode} from "src/contentful/nodes/nodes"
+import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
+import Roledex from "src/contentful/grid2-cells/Roledex"
+import PlayList from "src/contentful/grid2-cells/Playlist"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 

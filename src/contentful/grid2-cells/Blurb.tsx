@@ -7,7 +7,7 @@ import Button, { SIZE } from 'src/shared/Button.3'
 import { standardStyles } from 'src/styles'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Document } from '@contentful/rich-text-types'
-import renderNode from "src/contentful/nodes/paragraph"
+import renderNode from 'src/contentful/nodes/paragraph'
 enum Headings {
   "large" = 'large',
   "medium" = 'medium',

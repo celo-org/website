@@ -6,7 +6,7 @@ import { fonts } from 'src/estyles'
 import {RoledexContentType} from "src/utils/contentful"
 import { SubNavLink } from 'src/experience/common/SubNavLink'
 import { colors } from 'src/styles'
-import {renderNode} from "src/experience/contentful/nodes"
+import { renderNode } from 'src/contentful/nodes/nodes'
 
 const DURATION = 200
 
