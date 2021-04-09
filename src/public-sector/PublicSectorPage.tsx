@@ -14,6 +14,39 @@ import PlayList from "src/contentful/grid2-cells/Playlist"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
+import {BUTTON} from "src/contentful/nodes/embeds/BUTTON"
+import {GALLARY} from "src/contentful/nodes/embeds/GALLARY"
+import {TABLE} from "src/contentful/nodes/embeds/TABLE"
+import { BLOCKS, INLINES, Block} from '@contentful/rich-text-types'
+
+
+const EMBEDDABLE =  {
+  ...BUTTON,
+  ...GALLARY,
+  ...TABLE
+}
+
+function embedded(node:Block) {
+  const contentType = node.data?.target?.sys?.contentType?.sys?.id
+  const renderer = EMBEDDABLE[contentType]
+
+  if (renderer) {
+    return renderer(node.data.target)
+  } else {
+    console.info(contentType)
+    return null
+  }
+}
+
+
+const OPTIONS = {
+  renderNode: {
+    ...renderNode,
+    [BLOCKS.EMBEDDED_ENTRY]: embedded,
+    [INLINES.EMBEDDED_ENTRY]: embedded,
+  }
+}
+
 export default function PublicSectorPage(props: Props) {
   return <>
       <OpenGraph title={props.title} description={props.description}  path={props.slug}/>
@@ -30,7 +63,7 @@ export default function PublicSectorPage(props: Props) {
               const fields = section.fields as SectionType
 
               return <GridRow key={section.sys.id} id={fields.slug} columns={1}>
-                  {documentToReactComponents(fields.contentField, {renderNode})}
+                  {documentToReactComponents(fields.contentField, OPTIONS)}
               </GridRow>
             }
           })}
