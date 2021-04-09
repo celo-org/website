@@ -5,7 +5,7 @@ import { colors } from 'src/styles'
 
 interface Props {
   fields: {
-    table: {tableData: Array<[]>}
+    table: {tableData: string[][]}
     cssStyle: CSSObject
     caption?: string
   }
@@ -16,15 +16,15 @@ export const TABLE = {
     return (
       <div css={rootCss}>
         <table css={css(tableCss,fields.cssStyle)}>
-          <caption css={captionCss}>{fields.caption}</caption>
-          {fields.table.tableData.map((row, index) => {
+          {fields.caption && <caption css={captionCss}>{fields.caption}</caption>}
+          {fields?.table?.tableData?.map((row, index) => {
             if (index === 0) {
-              return <tr>
-              {row.map(cell => <th>{cell}</th>)}
+              return <tr key={0}>
+              {row.map(cell => <th key={cell}>{cell}</th>)}
             </tr>
             }
-            return <tr>
-              {row.map(cell => <td>{cell}</td>)}
+            return <tr key={index}>
+              {row.map(cell => <td key={cell}>{cell}</td>)}
             </tr>
           })}
         </table>
@@ -64,5 +64,4 @@ const captionCss = css({
   padding: 8,
   captionSide: "bottom",
   fontStyle: "italic"
-
 })
