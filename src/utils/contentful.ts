@@ -105,7 +105,7 @@ export interface PlaylistContentType {
   title: string
   description: Document
   listId?: string
-  media?: Array<Entry<ThumbnailType>>
+  media?: Entry<ThumbnailType>[]
 }
 
 export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType

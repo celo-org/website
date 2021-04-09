@@ -19,8 +19,8 @@ const MIN_SHOWING = 3
 export default function PlayList(props: PlaylistContentType) {
   const [expanded, toggleExpansion] = useBooleanToggle()
   const {isMobile} =  useScreenSize()
-  const items = useYoutube(props.listId) ||[]
-  const youtubeVideos = (!expanded && !isMobile ? items?.slice(0,MIN_SHOWING) : items)
+  const items = useYoutube(props.listId)
+  const youtubeVideos = (!expanded && !isMobile ? items?.slice(0,MIN_SHOWING) : items) ||[]
   const media =  (!expanded && !isMobile ? props.media?.slice(0,MIN_SHOWING) : props.media) ||[]
   const showButton = props.media && props.media.length > MIN_SHOWING || items.length > MIN_SHOWING
   const Component = isMobile ? Slider : Expander

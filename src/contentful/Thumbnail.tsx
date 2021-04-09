@@ -14,7 +14,7 @@ export interface Props {
 export default function Thumbnail({image, link, title, altText}: Props) {
   const {isMobile} = useScreenSize()
   const goTo = () => {
-    isMobile || window.open(link, '_blank');
+    if (!isMobile) {window.open(link, '_blank')}
   }
   return <div role="figure" css={rootCss} >
           <Image onClick={goTo} css={imageCss} alt={altText} src={image}  height={166} width={296} layout={"intrinsic"}/>
