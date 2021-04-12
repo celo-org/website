@@ -1,4 +1,4 @@
-import Thumbnail from "../../shared/Thumbnail"
+import Thumbnail from "src/shared/Thumbnail"
 import { Document } from '@contentful/rich-text-types'
 import { flexRow, fonts, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
