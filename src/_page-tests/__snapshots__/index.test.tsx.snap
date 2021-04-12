@@ -469,7 +469,6 @@ exports[`HomePage renders 1`] = `
               <svg
                 fill="none"
                 height="0.75em"
-                style={Object {}}
                 transform="rotate(0)"
                 viewBox="0 0 8 12"
                 width="0.75em"
@@ -480,7 +479,6 @@ exports[`HomePage renders 1`] = `
                   fill="#35D07F"
                   fillRule="evenodd"
                   opacity={1}
-                  style={Object {}}
                 />
               </svg>
             </div>
@@ -666,7 +664,6 @@ exports[`HomePage renders 1`] = `
               <svg
                 fill="none"
                 height="0.75em"
-                style={Object {}}
                 transform="rotate(0)"
                 viewBox="0 0 8 12"
                 width="0.75em"
@@ -677,7 +674,6 @@ exports[`HomePage renders 1`] = `
                   fill="#35D07F"
                   fillRule="evenodd"
                   opacity={1}
-                  style={Object {}}
                 />
               </svg>
             </div>
@@ -863,7 +859,6 @@ exports[`HomePage renders 1`] = `
               <svg
                 fill="none"
                 height="0.75em"
-                style={Object {}}
                 transform="rotate(0)"
                 viewBox="0 0 8 12"
                 width="0.75em"
@@ -874,7 +869,6 @@ exports[`HomePage renders 1`] = `
                   fill="#35D07F"
                   fillRule="evenodd"
                   opacity={1}
-                  style={Object {}}
                 />
               </svg>
             </div>
@@ -950,24 +944,20 @@ exports[`HomePage renders 1`] = `
         <svg
           fill="none"
           height={40}
-          style={Object {}}
           viewBox="0 0 25 25"
           width={40}
         >
           <path
             d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
             fill="#FBCC5C"
-            style={Object {}}
           />
           <path
             d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
             fill="#35D07F"
-            style={Object {}}
           />
           <path
             d="M15.4577 19.7369C16.1419 18.9077 16.6324 17.9361 16.8932 16.8932C17.9361 16.6324 18.9077 16.1421 19.7369 15.4579C19.699 16.6658 19.439 17.8563 18.9695 18.9698C17.8561 19.439 16.6656 19.6992 15.4577 19.7369ZM8.10687 8.10687C7.06397 8.36766 6.09239 8.85792 5.26318 9.54213C5.30108 8.33424 5.56108 7.14371 6.03055 6.03029C7.14397 5.56108 8.3345 5.30082 9.54239 5.26318C8.85818 6.09239 8.36766 7.06397 8.10687 8.10687Z"
             fill="#ECFF8F"
-            style={Object {}}
           />
         </svg>
         <h2
@@ -1076,7 +1066,6 @@ exports[`HomePage renders 1`] = `
             >
               <svg
                 height="60px"
-                style={Object {}}
                 viewBox="0 0 1000 1000"
                 width="60px"
               >
@@ -1086,17 +1075,14 @@ exports[`HomePage renders 1`] = `
                 <path
                   d="M0 0h1000v1000H0z"
                   fill="#45CD85"
-                  style={Object {}}
                 />
                 <path
                   d="M479 772c104 0 196-69 226-170h-81c-25 57-82 94-145 94-88 0-159-71-159-159 0-63 37-120 94-145v-81c-101 30-170 122-170 226 0 129 106 235 235 235zm139-297v-57c22 7 30 15 30 27 0 14-11 25-30 30zm-58 98h60v-32c59-10 97-47 97-96 0-68-52-86-99-95v-66c24 4 49 13 71 26v-74c-23-9-46-14-69-16v-31h-60v31c-59 10-96 45-96 93 0 68 51 88 98 97v65c-27-6-58-18-96-40v76c32 17 64 27 94 30v32zm2-232c-21-6-29-14-29-28s10-24 29-28v56z"
                   fill="#35C071"
-                  style={Object {}}
                 />
                 <path
                   d="M479 762c98 0 181-63 212-150h-61c-27 56-85 94-151 94-93 0-169-76-169-169 0-66 38-124 94-151v-61c-87 31-150 114-150 212 0 124 101 225 225 225zm129-275v-82c28 7 50 16 50 40 0 22-19 38-50 42zm-38 76h40v-31c59-7 97-41 97-87 0-64-51-78-99-87v-85c23 2 48 9 71 20v-50c-22-8-46-13-69-14v-30h-40v30c-61 7-96 41-96 84 0 65 50 80 98 89v85c-29-4-60-16-96-35v53c31 15 63 25 94 27v31zm2-209c-28-6-49-16-49-41 0-23 18-37 49-40v81z"
                   fill="#FFF"
-                  style={Object {}}
                 />
               </svg>
             </div>
@@ -1225,7 +1211,6 @@ exports[`HomePage renders 1`] = `
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -1236,7 +1221,6 @@ exports[`HomePage renders 1`] = `
                         fill="#35D07F"
                         fillRule="evenodd"
                         opacity={1}
-                        style={Object {}}
                       />
                     </svg>
                   </div>
@@ -1306,7 +1290,6 @@ exports[`HomePage renders 1`] = `
             >
               <svg
                 height="60px"
-                style={Object {}}
                 viewBox="0 0  100 100"
                 width="60px"
                 x="0px"
@@ -1318,7 +1301,6 @@ exports[`HomePage renders 1`] = `
                 <path
                   d="M0,0h100v100H0V0z"
                   fill="#FBCC5C"
-                  style={Object {}}
                 />
                 <path
                   d="M79.4,44c0-13-10.5-23.5-23.5-23.5c-9.6,0-17.9,5.8-21.5,14.1C26.2,38.3,20.5,46.5,20.5,56
@@ -1327,7 +1309,6 @@ exports[`HomePage renders 1`] = `
          M28.2,56.1c0-4.3,1.7-8.1,4.4-11C33.2,57.3,43,67,55.2,67.5c-2.9,2.8-6.8,4.6-11.1,4.6C35.3,72,28.2,64.9,28.2,56.1z M67.6,55
         C67,42.8,57.2,33.1,45,32.6c2.9-2.8,6.8-4.6,11.1-4.6C64.9,28,72,35.1,72,43.9C71.9,48.3,70.2,52.2,67.6,55z"
                   fill="#F9B73E"
-                  style={Object {}}
                 />
                 <path
                   d="M78.6,44c0-12.4-10.1-22.5-22.5-22.5c-9.4,0-17.4,5.7-20.8,13.9c-8,3.4-13.7,11.4-13.7,20.7
@@ -1337,7 +1318,6 @@ exports[`HomePage renders 1`] = `
         C61,57.6,60.8,59,60.5,60.3z M66.6,57.2c0-0.4,0-0.8,0-1.1c0-12.4-10.1-22.5-22.5-22.5c-0.5,0-0.9,0-1.4,0c3.1-4,7.9-6.5,13.3-6.5
         c9.3,0,16.9,7.6,16.9,16.9C72.9,49.4,70.4,54.1,66.6,57.2z"
                   fill="#FFFFFF"
-                  style={Object {}}
                 />
               </svg>
             </div>
@@ -1466,7 +1446,6 @@ exports[`HomePage renders 1`] = `
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -1477,7 +1456,6 @@ exports[`HomePage renders 1`] = `
                         fill="#35D07F"
                         fillRule="evenodd"
                         opacity={1}
-                        style={Object {}}
                       />
                     </svg>
                   </div>
@@ -1559,7 +1537,6 @@ exports[`HomePage renders 1`] = `
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -1570,7 +1547,6 @@ exports[`HomePage renders 1`] = `
                         fill="#35D07F"
                         fillRule="evenodd"
                         opacity={1}
-                        style={Object {}}
                       />
                     </svg>
                   </div>
@@ -1856,7 +1832,6 @@ exports[`HomePage renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1867,7 +1842,6 @@ exports[`HomePage renders 1`] = `
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -2689,7 +2663,6 @@ exports[`HomePage renders 1`] = `
                     <svg
                       fill="none"
                       height="0.75em"
-                      style={Object {}}
                       transform="rotate(0)"
                       viewBox="0 0 8 12"
                       width="0.75em"
@@ -2700,7 +2673,6 @@ exports[`HomePage renders 1`] = `
                         fill="#35D07F"
                         fillRule="evenodd"
                         opacity={1}
-                        style={Object {}}
                       />
                     </svg>
                   </div>
@@ -3297,7 +3269,6 @@ exports[`HomePage renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -3308,7 +3279,6 @@ exports[`HomePage renders 1`] = `
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
