@@ -8,8 +8,15 @@ const OPTIONS = {
 
 export function FreeContent({ colSpan, body, cssStyle, backgroundColor }) {
   return <div css={css(rootCss,{ gridColumn: `span ${colSpan}`, backgroundColor })}>
-    <div css={css(flex,cssStyle)}>{documentToReactComponents(body, OPTIONS)}</div>
+    <div css={css(flex,cssStyle)}>
+      {documentToReactComponents(body, OPTIONS)}
+    </div>
   </div>
 }
 
-const rootCss = css(flex,{})
+const rootCss = css(flex,{
+  maxWidth: "calc(100vw - 16px)",
+  "a": {
+    marginTop: 16
+  }
+})
