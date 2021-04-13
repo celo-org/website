@@ -11,6 +11,7 @@ import { useScreenSize } from "src/layout/ScreenSize"
 
 export default function Cover(props: CoverContentType) {
   const {isMobile} = useScreenSize()
+  const size = isMobile ? props.imageMobile?.fields?.file?.details.image : props.imageDesktop?.fields?.file?.details.image
   return <GridRow columns={2} darkMode={props.darkMode} css={props.illoFirst? imageFirstRootCss : rootCss}>
     <div css={contentCss}>
       <h1 css={css(titleCss, props.darkMode && whiteText)}>
@@ -24,7 +25,7 @@ export default function Cover(props: CoverContentType) {
     <div css={illoCss}>
       <picture>
         <source media={`(max-width: ${TABLET_BREAKPOINT}px)`} srcSet={props.imageMobile?.fields.file.url}/>
-        <img css={props.illoFirst? imageFirstCss: imageCss} src={props.imageDesktop?.fields.file.url} alt={props.imageDesktop.fields.description} />
+        <img width={size?.width} height={size?.height} css={props.illoFirst? imageFirstCss: imageCss} src={props.imageDesktop?.fields.file.url} alt={props.imageDesktop.fields.description} />
       </picture>
     </div>
   </GridRow>
