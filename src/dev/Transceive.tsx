@@ -1,15 +1,15 @@
 import * as React from 'react'
 import { StyleSheet } from 'react-native'
-import { G, Path } from 'src/shared/svg'
+import { Path } from 'src/shared/svg'
 import { colors } from 'src/styles'
-import Svg from 'svgs'
+
 
 export default React.memo(function Transceive() {
   const phase1 = VALIDATOR_PATHS.length
   return (
-    <Svg width="100%" height="100%" viewBox="0 0 550 360" fill="none">
-      <G style={{ mixBlendMode: 'screen' }} opacity="0.8">
-        <Path
+    <svg width="100%" height="100%" viewBox="0 0 550 360" fill="none">
+      <g style={{ mixBlendMode: 'screen' }} opacity="0.8">
+        <path
           d={
             'M17.2856 166.012C11.003 166.012 4.23449 171.89 1.57066 179.71C0.0293159 184.231 0.263867 188.551 2.2408 191.582C3.59785 193.692 5.72557 194.965 8.22187 195.199C8.48993 195.233 8.75799 195.233 9.02605 195.233C11.9747 195.233 15.1411 193.776 17.939 191.331C20.7369 188.903 23.1494 185.47 24.6405 181.535C26.3829 176.913 26.1818 172.509 24.0876 169.462C22.5295 167.235 20.117 166.012 17.2856 166.012Z'
           }
@@ -61,8 +61,8 @@ export default React.memo(function Transceive() {
             },
           ]}
         />
-      </G>
-    </Svg>
+      </g>
+    </svg>
   )
 })
 
