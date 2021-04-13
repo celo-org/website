@@ -157,8 +157,8 @@ export const pagePaths = {
     translucent: {
       backgroundHover: colors.darkTransparent,
     },
-    menuHidePoint: 420,
-    menuHidePointMobile: 300,
+    menuHidePoint: 250,
+    menuHidePointMobile: 150,
   },
   TECH: {
     name: 'Technology',
