@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { G, Path } from 'src/shared/svg'
 import { colors } from 'src/styles'
-import Svg from 'svgs'
 
 interface Props {
   color: colors
@@ -16,7 +15,7 @@ export default class HollowCoin extends React.PureComponent<Props> {
     const isSmall = size < 20
 
     return (
-      <Svg
+      <svg
         width={size * 0.88}
         height={size}
         viewBox={isSmall ? '0 0 12 15' : '0 0 88 100'}
@@ -37,7 +36,7 @@ export default class HollowCoin extends React.PureComponent<Props> {
             />
           )}
         </G>
-      </Svg>
+      </svg>
     )
   }
 }

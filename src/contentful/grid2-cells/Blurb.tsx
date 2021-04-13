@@ -1,11 +1,13 @@
 import {css} from '@emotion/react'
-import { Asset, Entry } from 'contentful'
+import { Asset, Entry, } from 'contentful'
 import * as React from 'react'
 import {ContentfulButton} from "src/utils/contentful"
-import {flex, fonts} from "src/estyles"
+import {flex, fonts, WHEN_MOBILE} from "src/estyles"
 import Button, { SIZE } from 'src/shared/Button.3'
 import { standardStyles } from 'src/styles'
-
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { Document } from '@contentful/rich-text-types'
+import renderNode from 'src/contentful/nodes/paragraph'
 enum Headings {
   "large" = 'large',
   "medium" = 'medium',
@@ -16,7 +18,7 @@ export interface Props {
   icon?: Asset
   title:string
   titleType?: Headings
-  description: string
+  body: Document
   link?: Entry<ContentfulButton>
 }
 
@@ -25,7 +27,7 @@ export default function Blurb(props: Props) {
     <div css={containerCss}>
       <img src={props.icon?.fields?.file?.url} css={imageCss} width={100} height={100} />
       <h4 css={headingStyle(props.titleType)}>{props.title}</h4>
-      <span css={fonts.body}>{props.description}</span>
+      {documentToReactComponents(props.body, {renderNode})}
     </div>
     {props.link && (
         <Button style={standardStyles.elementalMarginTop} href={props.link.fields.href} text={props.link.fields.words}  kind={props.link.fields.kind}  size={SIZE.normal}/>
@@ -33,14 +35,31 @@ export default function Blurb(props: Props) {
   </div>
 }
 
+
 const rootCss = css (flex,{
   flex: 1,
   justifyContent: "space-between",
-  marginBottom: 36
+  marginBottom: 36,
+  [WHEN_MOBILE]: {
+    alignItems: "center",
+    alignContent: "center"
+  }
 })
 
 const containerCss = css(flex, {
-  flex: 1
+  flex: 1,
+  "p:first-of-type": {
+    marginTop: 0
+  },
+  "p:last-of-type": {
+    marginBottom: 0
+  },
+  [WHEN_MOBILE]: {
+    alignItems: "center",
+    alignContent: "center",
+    textAlign: "center",
+    maxWidth: 288
+  }
 })
 
 const imageCss =css({
@@ -63,3 +82,5 @@ function headingStyle(type: Headings) {
       return css(fonts.h3, headingCss)
   }
 }
+
+

@@ -41,6 +41,7 @@ const rootCss = css(flex,{
     paddingRight: gap / 2,
     width: '100%',
     maxWidth: '100vw',
+    overflow: "hidden",
     flexWrap: "wrap",
     [WHEN_TABLET] : {
       display: "grid",
