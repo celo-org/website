@@ -2,7 +2,7 @@ import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Entry } from 'contentful'
 import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType,
-  FreeContentType, RoledexContentType, PlaylistContentType } from 'src/utils/contentful'
+  FreeContentType, RoledexContentType, PlaylistContentType, CoverContentType } from 'src/utils/contentful'
 import { flex } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
@@ -18,7 +18,7 @@ import {BUTTON} from "src/contentful/nodes/embeds/BUTTON"
 import {GALLARY} from "src/contentful/nodes/embeds/GALLARY"
 import {TABLE} from "src/contentful/nodes/embeds/TABLE"
 import { BLOCKS, INLINES, Block} from '@contentful/rich-text-types'
-
+import Cover from "src/contentful/Cover"
 
 const EMBEDDABLE =  {
   ...BUTTON,
@@ -38,7 +38,6 @@ function embedded(node:Block) {
   }
 }
 
-
 const OPTIONS = {
   renderNode: {
     ...renderNode,
@@ -51,29 +50,36 @@ export default function PublicSectorPage(props: Props) {
   return <>
       <OpenGraph title={props.title} description={props.description}  path={props.slug}/>
       <div css={rootCss}>
-          {props.sections.map(section => {
-            if (section.sys.contentType.sys.id === 'grid-row') {
-              const fields = section.fields as GridRowContentType
-              return (
-                <GridRow key={section.sys.id} id={fields.id} columns={fields.columns} css={css(fields.cssStyle)}>
-                  {fields.cells.map((cell) => cellSwitch(cell, fields.columns))}
-                </GridRow>
-              )
-            } else  {
-              const fields = section.fields as SectionType
-
-              return <GridRow key={section.sys.id} id={fields.slug} columns={1}>
-                  {documentToReactComponents(fields.contentField, OPTIONS)}
-              </GridRow>
-            }
-          })}
+          {props.sections.map(pageSwitch)}
       </div>
   </>
 }
 
 const rootCss = css(flex, {
-  marginTop: 100
 })
+
+function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverContentType>) {
+  switch (section.sys.contentType.sys.id) {
+    case 'cover':
+      const coverFields = section.fields as CoverContentType
+      return <Cover key={section.sys.id} darkMode={coverFields.darkMode} illoFirst={coverFields.illoFirst}
+                    title={coverFields.title} subTitle={coverFields.subTitle} links={coverFields.links}
+                    imageDesktop={coverFields.imageDesktop} imageMobile={coverFields.imageMobile}
+      />
+    case 'grid-row':
+      const gridFields = section.fields as GridRowContentType
+      return (
+        <GridRow key={section.sys.id} id={gridFields.id} columns={gridFields.columns} css={css(gridFields.cssStyle)}>
+          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.columns))}
+        </GridRow>
+      )
+    default:
+      const sectionfields = section.fields as SectionType
+      return <GridRow key={section.sys.id} id={sectionfields.slug} columns={1}>
+          {documentToReactComponents(sectionfields.contentField, OPTIONS)}
+      </GridRow>
+    }
+}
 
 function cellSwitch(entry: Entry<CellContentType>, columns: number) {
   if (entry) {
