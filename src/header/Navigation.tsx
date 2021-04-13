@@ -228,7 +228,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {menuFaded: 
     ]}
   >
     {menuItems.map((item, index) => (
-      <div key={index} css={styles.linkWrapper}>
+      <div key={index} css={styles.linkWrapper} data-cy={item.name}>
         <Button
           kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
           href={item.link}
@@ -240,7 +240,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {menuFaded: 
         )}
       </div>
     ))}
-    <div css={styles.linkWrapper}>
+    <div data-cy="Medium" css={styles.linkWrapper}>
       <Button
         kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
         href={'https://medium.com/CeloHQ'}
@@ -248,7 +248,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {menuFaded: 
         target={'_blank'}
         iconRight={<MediumLogo height={20} color={foregroundColor} wrapWithLink={false} />} />
     </div>
-    <div css={[styles.linkWrapper, styles.lastLink]}>
+    <div data-cy="GitHub" css={[styles.linkWrapper, styles.lastLink]}>
       <Button
         kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
         href={CeloLinks.gitHub}
