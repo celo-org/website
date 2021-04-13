@@ -5,7 +5,7 @@ import ringPaths from 'src/community/connect/QuarterRingOfVectors'
 import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
 import { Path } from 'src/shared/svg'
 import { baseCoinStyle, colors } from 'src/styles'
-import Svg, { G, Mask } from 'svgs'
+
 
 type Props = ScreenProps
 class QuarterCircle extends React.PureComponent<Props> {
@@ -22,11 +22,11 @@ class QuarterCircle extends React.PureComponent<Props> {
     const width = 1.3 * height
     return (
       <LazyLoad unmountIfInvisible={true} height={height}>
-        <Svg height={height} width={width} viewBox="0 0 950 750" fill="none">
-          <Mask id="mask0" y="0" width={width * 2} height={height}>
+        <svg height={height} width={width} viewBox="0 0 950 750" fill="none">
+          <mask id="mask0" y="0" width={width * 2} height={height}>
             <rect width={width * 2} height={height} fill={'#000'} />
-          </Mask>
-          <G>
+          </mask>
+          <g>
             {ringPaths.map((d, index) => {
               const style: ViewStyle[] = [styles.base, baseCoinStyle as ViewStyle]
               if (ANIMATED[index]) {
@@ -36,8 +36,8 @@ class QuarterCircle extends React.PureComponent<Props> {
 
               return <Path key={d} d={d} style={style} />
             })}
-          </G>
-        </Svg>
+          </g>
+        </svg>
       </LazyLoad>
     )
   }

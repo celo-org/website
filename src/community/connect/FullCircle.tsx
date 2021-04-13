@@ -6,7 +6,6 @@ import VECTORS from 'src/community/connect/RingOfCoinVectors'
 import { Path } from 'src/shared/svg'
 import { baseCoinStyle, baseCoinStyleLight, colors } from 'src/styles'
 import { randomIntegerInRange } from 'src/utils/utils'
-import Svg from 'svgs'
 
 const COLORS = [colors.greenScreen, colors.blueScreen, colors.redScreen, colors.purpleScreen]
 const STILL_COLORS = [colors.lightBlue, colors.redScreen, colors.purple, colors.greenScreen]
@@ -93,7 +92,7 @@ export default class FullCircle extends React.PureComponent<Props, State> {
       ? STILL_COLORS
       : shuffleSeed.shuffle(COLORS, this.state.lastPlayingIndex)
     return (
-      <Svg width="100%" height="100%" viewBox="0 0 717 750" fill="none">
+      <svg width="100%" height="100%" viewBox="0 0 717 750" fill="none">
         {VECTORS.map((path, index) => {
           const playing = this.state.playingIndexes.has(index)
           if (playing) {
@@ -108,7 +107,7 @@ export default class FullCircle extends React.PureComponent<Props, State> {
           })
           return <Path key={path} d={path} style={style} />
         })}
-      </Svg>
+      </svg>
     )
   }
 }
