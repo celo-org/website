@@ -1,5 +1,5 @@
 import { useAsync } from "react-async-hook"
-import {Props} from 'src/contentful/Thumbnail'
+import {Props} from 'src/shared/Thumbnail'
 import getConfig from 'next/config'
 const { publicRuntimeConfig } = getConfig()
 

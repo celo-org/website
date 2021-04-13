@@ -2,12 +2,12 @@ import {css} from '@emotion/react'
 import { Asset, Entry, } from 'contentful'
 import * as React from 'react'
 import {ContentfulButton} from "src/utils/contentful"
-import {flex, fonts} from "src/estyles"
+import {flex, fonts, WHEN_MOBILE} from "src/estyles"
 import Button, { SIZE } from 'src/shared/Button.3'
 import { standardStyles } from 'src/styles'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Document } from '@contentful/rich-text-types'
-import renderNode from "src/contentful/nodes/paragraph"
+import renderNode from 'src/contentful/nodes/paragraph'
 enum Headings {
   "large" = 'large',
   "medium" = 'medium',
@@ -35,10 +35,15 @@ export default function Blurb(props: Props) {
   </div>
 }
 
+
 const rootCss = css (flex,{
   flex: 1,
   justifyContent: "space-between",
-  marginBottom: 36
+  marginBottom: 36,
+  [WHEN_MOBILE]: {
+    alignItems: "center",
+    alignContent: "center"
+  }
 })
 
 const containerCss = css(flex, {
@@ -48,6 +53,12 @@ const containerCss = css(flex, {
   },
   "p:last-of-type": {
     marginBottom: 0
+  },
+  [WHEN_MOBILE]: {
+    alignItems: "center",
+    alignContent: "center",
+    textAlign: "center",
+    maxWidth: 288
   }
 })
 

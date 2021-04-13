@@ -9,7 +9,7 @@ import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { fonts, standardStyles, textStyles } from 'src/styles'
 
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { renderNode } from 'src/experience/contentful/nodes'
+import { renderNode } from 'src/contentful/nodes/nodes'
 const OPTIONS = {
   renderNode,
 }

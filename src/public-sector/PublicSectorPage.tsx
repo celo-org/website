@@ -6,13 +6,46 @@ import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellCon
 import { flex } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
-import Blurb, {Props as BlurbProps} from "./Blurb"
-import {renderNode} from "src/experience/contentful/nodes"
-import { FreeContent } from "src/contentful/FreeContent"
-import Roledex from "src/public-sector/Roledex"
-import PlayList from "src/contentful/Playlist"
+import Blurb, {Props as BlurbProps} from "src/contentful/grid2-cells/Blurb"
+import {renderNode} from "src/contentful/nodes/nodes"
+import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
+import Roledex from "src/contentful/grid2-cells/Roledex"
+import PlayList from "src/contentful/grid2-cells/Playlist"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
+
+import {BUTTON} from "src/contentful/nodes/embeds/BUTTON"
+import {GALLARY} from "src/contentful/nodes/embeds/GALLARY"
+import {TABLE} from "src/contentful/nodes/embeds/TABLE"
+import { BLOCKS, INLINES, Block} from '@contentful/rich-text-types'
+
+
+const EMBEDDABLE =  {
+  ...BUTTON,
+  ...GALLARY,
+  ...TABLE
+}
+
+function embedded(node:Block) {
+  const contentType = node.data?.target?.sys?.contentType?.sys?.id
+  const renderer = EMBEDDABLE[contentType]
+
+  if (renderer) {
+    return renderer(node.data.target)
+  } else {
+    console.info(contentType)
+    return null
+  }
+}
+
+
+const OPTIONS = {
+  renderNode: {
+    ...renderNode,
+    [BLOCKS.EMBEDDED_ENTRY]: embedded,
+    [INLINES.EMBEDDED_ENTRY]: embedded,
+  }
+}
 
 export default function PublicSectorPage(props: Props) {
   return <>
@@ -30,7 +63,7 @@ export default function PublicSectorPage(props: Props) {
               const fields = section.fields as SectionType
 
               return <GridRow key={section.sys.id} id={fields.slug} columns={1}>
-                  {documentToReactComponents(fields.contentField, {renderNode})}
+                  {documentToReactComponents(fields.contentField, OPTIONS)}
               </GridRow>
             }
           })}
