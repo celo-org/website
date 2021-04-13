@@ -114,6 +114,7 @@ export interface GridRowContentType {
   id: string
   cells: Entry<CellContentType>[]
   cssStyle?: CSSObject
+  darkMode?: boolean
   columns: 1 | 2 | 3 | 4
 }
 

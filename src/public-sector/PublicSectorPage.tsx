@@ -69,8 +69,8 @@ function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverConte
     case 'grid-row':
       const gridFields = section.fields as GridRowContentType
       return (
-        <GridRow key={section.sys.id} id={gridFields.id} columns={gridFields.columns} css={css(gridFields.cssStyle)}>
-          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.columns))}
+        <GridRow key={section.sys.id} darkMode={gridFields.darkMode} id={gridFields.id} columns={gridFields.columns} css={css(gridFields.cssStyle)}>
+          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.columns, gridFields.darkMode))}
         </GridRow>
       )
     default:
@@ -81,7 +81,7 @@ function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverConte
     }
 }
 
-function cellSwitch(entry: Entry<CellContentType>, columns: number) {
+function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: boolean) {
   if (entry) {
     switch (entry.sys.contentType.sys.id) {
       case "roledex":
@@ -106,6 +106,7 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number) {
                   title={blurbProp.title}
                   titleType={blurbProp.titleType}
                   body={blurbProp.body}
+                  darkMode={darkMode}
                   link={blurbProp.link}
                   icon={blurbProp.icon}
                 />

@@ -12,12 +12,12 @@ import { useScreenSize } from "src/layout/ScreenSize"
 export default function Cover(props: CoverContentType) {
   const {isMobile} = useScreenSize()
   const size = isMobile ? props.imageMobile?.fields?.file?.details.image : props.imageDesktop?.fields?.file?.details.image
-  return <GridRow columns={2} darkMode={props.darkMode} css={props.illoFirst? imageFirstRootCss : rootCss}>
+  return <GridRow columns={2} darkMode={props.darkMode} wrapperCss={wrapperCss} css={props.illoFirst? imageFirstRootCss : rootCss}>
     <div css={contentCss}>
       <h1 css={css(titleCss, props.darkMode && whiteText)}>
         {props.title}
       </h1>
-      <span css={props.darkMode && subtitleDarkMode}>{documentToReactComponents(props.subTitle, {renderNode})}</span>
+      <span css={props.darkMode? subtitleDarkMode: subtitleCss}>{documentToReactComponents(props.subTitle, {renderNode})}</span>
       <div css={linkAreaCss}>
         {props.links?.map(link => <Button align={'center'} key={link.sys.id} size={isMobile? SIZE.fullWidth : SIZE.normal} kind={link.fields.kind} text={link.fields.words} href={link.fields.href} />)}
       </div>
@@ -31,13 +31,12 @@ export default function Cover(props: CoverContentType) {
   </GridRow>
 }
 
-const rootCss = css({
-  gridTemplateAreas: `"content illo"`,
-  overflow: 'visible',
+const wrapperCss = css(flex,{
+  alignItems: 'center',
+  justifyContent: 'center',
   [WHEN_MOBILE]: {
     alignContent: 'center',
     minHeight: '100vh',
-    flexDirection: 'column-reverse'
   },
   [WHEN_TABLET]: {
     minHeight: '100vh',
@@ -48,6 +47,15 @@ const rootCss = css({
     minHeight: 'fit-content',
     maxHeight: "80vw"
   }
+})
+
+const rootCss = css({
+  gridTemplateAreas: `"content illo"`,
+  overflow: 'visible',
+  [WHEN_MOBILE]: {
+    alignContent: 'center',
+    flexDirection: 'column-reverse'
+  },
 })
 
 const imageFirstRootCss = css(rootCss,{
@@ -67,7 +75,13 @@ const titleCss = css(fonts.h1, {
   }
 })
 
-const subtitleDarkMode = css (whiteText, {
+const subtitleCss = css({
+  [WHEN_MOBILE]: {
+    textAlign: 'center'
+  }
+})
+
+const subtitleDarkMode = css (whiteText,subtitleCss, {
     p: whiteText
 })
 
@@ -79,9 +93,12 @@ const contentCss = css(flex,{
   [WHEN_TABLET_AND_UP]: {
     paddingTop: 56,
     paddingBottom: 48,
+    minWidth: 320,
   },
   [WHEN_MOBILE]: {
-    padding: 16
+    padding: 16,
+    maxWidth: 450,
+    alignSelf: 'center'
   }
 })
 
@@ -119,7 +136,7 @@ const imageCss = css({
     overflow: 'inherit'
   },
   [WHEN_TABLET_AND_UP]: {
-    bottom: "22%",
+    bottom: 0
   }
 })
 

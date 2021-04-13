@@ -7,6 +7,7 @@ interface GridProps {
   columns: 1 | 2 | 3 | 4
   id?: string
   className?: string
+  wrapperCss?: any
   children: React.ReactNode
   darkMode?: boolean
 }
@@ -29,7 +30,7 @@ export function GridRow(props: GridProps) {
     [WHEN_TABLET]: {gridTemplateColumns}
   })
   return (
-      <section css={props.darkMode ? darkBackground : wrapperCss}>
+      <section css={css(props.wrapperCss, props.darkMode ? darkBackground : wrapperStyle)}>
         <div id={props.id} css={mainCss} className={props.className}>
         {props.children}
         </div>
@@ -37,11 +38,11 @@ export function GridRow(props: GridProps) {
   )
 }
 
-const wrapperCss = css(flex,{
+const wrapperStyle = css(flex,{
   overflow: 'hidden'
 })
 
-const darkBackground = css(wrapperCss,{
+const darkBackground = css(wrapperStyle,{
   backgroundColor: colors.dark
 })
 
