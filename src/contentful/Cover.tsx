@@ -118,8 +118,7 @@ const imageCss = css({
     overflow: 'inherit'
   },
   [WHEN_TABLET_AND_UP]: {
-    bottom: "25%",
-    transform: 'translateY(0px)'
+    bottom: "22%",
   }
 })
 
