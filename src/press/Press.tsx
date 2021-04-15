@@ -6,11 +6,11 @@ import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import MENU from 'src/shared/menu-items'
 import { colors, standardStyles } from 'src/styles'
-const forbes = require('./forbes-logo-white.png')
-const fortune = require('./fortune-white.png')
-const coindesk = require('./coindesk-logo-white.png')
-const techcrunch = require('./techcrunch-logo-white.png')
-const wsj = require('./wsj-logo-white.png')
+import forbes from './forbes-logo-white.png'
+import fortune from './fortune-white.png'
+import coindesk from './coindesk-logo-white.png'
+import techcrunch from './techcrunch-logo-white.png'
+import wsj from './wsj-logo-white.png'
 
 class Press extends React.PureComponent<I18nProps> {
   render() {
