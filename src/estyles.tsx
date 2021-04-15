@@ -50,6 +50,7 @@ export const fonts = {
   h5: css(headingReset, fontInfo.h5 as any,  {lineHeight: `${fontInfo.h5.lineHeight}px`}),
   h6: css(headingReset, fontInfo.h6 as any,  {lineHeight: `${fontInfo.h6.lineHeight}px`}),
   legal: css(headingReset, fontInfo.legal as any,  {lineHeight: `${fontInfo.legal.lineHeight}px`}),
+  navigation: css(fontInfo.navigation as any,  {lineHeight: `${fontInfo.navigation.lineHeight}px`}),
 }
 
 

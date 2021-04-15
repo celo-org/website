@@ -1,11 +1,13 @@
 import { css} from "@emotion/react"
 import * as React from 'react'
 import { flex, WHEN_DESKTOP, WHEN_TABLET } from "src/estyles"
+import { colors } from "src/styles"
 
 interface GridProps {
   columns: 1 | 2 | 3 | 4
   id?: string
   className?: string
+  wrapperCss?: any
   children: React.ReactNode
   darkMode?: boolean
 }
@@ -28,25 +30,25 @@ export function GridRow(props: GridProps) {
     [WHEN_TABLET]: {gridTemplateColumns}
   })
   return (
-    <div css={rootCss}>
-      <section id={props.id} css={mainCss} className={props.className}>
+      <section css={css(props.wrapperCss, props.darkMode ? darkBackground : wrapperStyle)}>
+        <div id={props.id} css={mainCss} className={props.className}>
         {props.children}
+        </div>
       </section>
-    </div>
   )
 }
 
-const rootCss= css(flex,{
+const wrapperStyle = css(flex,{
+  overflow: 'hidden',
   alignItems: "center",
   alignSelf: 'center',
   width: '100%',
-  [WHEN_TABLET] : {
-    maxWidth: 958 + gap
-  },
-  [WHEN_DESKTOP] : {
-    maxWidth: 1080 + gap,
-  }
 })
+
+const darkBackground = css(wrapperStyle,{
+  backgroundColor: colors.dark
+})
+
 
 const containerCss = css(flex,{
     alignSelf: 'center',
@@ -55,6 +57,7 @@ const containerCss = css(flex,{
     paddingRight: gap / 2,
     width: '100%',
     maxWidth: '100vw',
+    overflow: "hidden",
     flexWrap: "wrap",
     columnGap: `${gap}px`,
     [WHEN_TABLET] : {
@@ -65,11 +68,13 @@ const containerCss = css(flex,{
       paddingRight: gap,
       paddingLeft: gap,
       width: '100%',
+      maxWidth: 958 + gap
     },
     [WHEN_DESKTOP] : {
       display: "grid",
       gridAutoRows: "auto",
       alignSelf: 'center',
       width: '100%',
+      maxWidth: 1080 + gap,
     }
 })

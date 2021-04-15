@@ -63,18 +63,19 @@ class Papers extends React.PureComponent<I18nProps> {
               <HelpfulLink text={t('download')} href={'/papers/future-of-digital-currencies'} />
             </View>
           </SideTitledSection>
-          {/* <SideTitledSection span={Spans.three4th} title={t('socialImpact')}>
-            <Text style={fonts.p}>{t('humanitarianExec')}</Text>
-            <View style={styles.links}>
-              <HelpfulLink text={t('download')} href={'/papers/future-proof-exec'} />
-            </View>
-          </SideTitledSection>
-          <SideTitledSection span={Spans.three4th} title={t('')}>
-            <Text style={fonts.p}>{t('humanitarian')}</Text>
+          <SideTitledSection span={Spans.three4th} title={t('socialImpact')}>
+            <Text style={fonts.p}>{t('futureProof')}</Text>
             <View style={styles.links}>
               <HelpfulLink text={t('download')} href={'/papers/future-proof-aid'} />
+              {/* <HelpfulLink text={t('exec')} href={'/papers/future-proof-exec'} /> */}
             </View>
-          </SideTitledSection> */}
+          </SideTitledSection>
+          <SideTitledSection span={Spans.three4th} title={""}>
+            <Text style={fonts.p}>{t('grameenCovid')}</Text>
+            <View style={styles.links}>
+              <HelpfulLink text={t('download')} href={'/papers/covid-aid'} />
+            </View>
+          </SideTitledSection>
         </View>
       </>
     )

@@ -150,6 +150,16 @@ export const pagePaths = {
     link: '/plumo',
     isDark: true,
   },
+  PUBLIC_SECTOR: {
+    name: 'Public Sector',
+    link: '/sandbox',
+    isDark: true,
+    translucent: {
+      backgroundHover: colors.darkTransparent,
+    },
+    menuHidePoint: 250,
+    menuHidePointMobile: 150,
+  },
   TECH: {
     name: 'Technology',
     link: '/technology',

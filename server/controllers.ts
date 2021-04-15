@@ -14,6 +14,7 @@ export async function faucetOrInviteController(req: Request, res: Response, type
       res.status(404).json({ status: RequestStatus.Failed, message: 'Error while fauceting' })
     }
   } else {
-    res.status(401).json({ status: RequestStatus.Failed })
+    console.error("Faucet Failed due to Recaptcha", captchaResponse['error-codes'])
+    res.status(401).json({ status: RequestStatus.Failed, errors: captchaResponse['error-codes'] })
   }
 }

@@ -25,7 +25,7 @@
     "technology": "Technology",
     "resources": "Resources",
     "social": "Social",
-    "copyright": "The Celo Foundation, © Celo {{year}}", 
+    "copyright": "The Celo Foundation, © Celo {{year}}",
     "Home": "Home",
     "About": "About",
     "Join": "Careers",
@@ -77,5 +77,7 @@
     "pleaseWait": "Please wait"
   },
   "shortSuccess": "Submitted",
-  "applicationSubmitted": "Application Submitted"
+  "applicationSubmitted": "Application Submitted",
+  "showAll": "Show All",
+  "collapse": "Collapse"
 }

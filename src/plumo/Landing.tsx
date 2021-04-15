@@ -6,7 +6,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { ContentfulPage, GridRowContentType, SectionType } from 'src/utils/contentful'
 import { flex, flexRow, WHEN_MOBILE, whiteText, fonts } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
-import {renderNode} from "src/experience/contentful/nodes"
+import {renderWhiteParagraph} from 'src/contentful/nodes/paragraph'
 import { cellSwitch } from "src/public-sector/cellSwitch"
 import { colors } from 'src/styles'
 import gradientFeathers from 'src/plumo/color-feathers.svg'
@@ -66,7 +66,7 @@ export default function PlumoLanding(props: Props) {
               const fields = section.fields as SectionType
 
               return <GridRow key={section.sys.id} id={fields.slug} columns={1}>
-                {documentToReactComponents(fields.contentField, {renderNode})}
+                {documentToReactComponents(fields.contentField, {renderNode: renderWhiteParagraph})}
               </GridRow>
             }
           })}
