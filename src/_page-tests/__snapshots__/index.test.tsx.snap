@@ -261,9 +261,9 @@ exports[`HomePage renders 1`] = `
           css={
             Object {
               "map": undefined,
-              "name": "1lzhsi5",
+              "name": "1xnt9ts",
               "next": undefined,
-              "styles": "display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;align-content:center;justify-content:center;opacity:0.7;",
+              "styles": "display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;align-content:center;justify-content:center;opacity:0.7;@media (max-width: 576px){display:none;}",
               "toString": [Function],
             }
           }
@@ -562,7 +562,7 @@ exports[`HomePage renders 1`] = `
                   }
                 }
               >
-                Press Contact
+                Contact
                 <div
                   className="css-view-1dbjc4n"
                   style={
