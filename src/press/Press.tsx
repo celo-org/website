@@ -104,6 +104,9 @@ const logoContainerCss = css({
   alignContent: 'center',
   justifyContent: 'center',
   opacity: 0.7,
+  [WHEN_MOBILE]: {
+    display: 'none'
+  }
 })
 interface Logo {
   source: string
