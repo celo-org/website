@@ -63,6 +63,25 @@ export const fonts = {
   navigation: css(fontInfo.navigation as any,  {lineHeight: `${fontInfo.navigation.lineHeight}px`}),
 }
 
+export const textStyles = {
+  center: css({
+    textAlign: 'center',
+  }),
+  left: css({
+    textAlign: 'left',
+  }),
+  lean: css({ fontWeight: 300 }),
+  medium: css({
+    fontWeight: 500,
+  }),
+  heavy: css({
+    fontWeight: 'bold',
+  }),
+  italic: css({
+    fontStyle: 'italic',
+  }),
+}
+
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
 
 export const WHEN_TABLET_AND_UP = `@media (min-width: ${TABLET_BREAKPOINT}px)`

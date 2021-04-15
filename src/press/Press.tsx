@@ -1,12 +1,11 @@
 import {css} from "@emotion/react"
 import * as React from 'react'
-import { View } from 'react-native'
-import { gridRow, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
+import { flex, gridRow, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { I18nProps, withNamespaces } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import MENU from 'src/shared/menu-items'
-import { standardStyles } from 'src/styles'
+import { colors, standardStyles } from 'src/styles'
 const forbes = require('./forbes-logo-white.png')
 const fortune = require('./fortune-white.png')
 const coindesk = require('./coindesk-logo-white.png')
@@ -17,7 +16,7 @@ class Press extends React.PureComponent<I18nProps> {
   render() {
     const { t } = this.props
     return (
-      <View style={standardStyles.darkBackground}>
+      <div css={backgroundCss}>
         <GridRow
           mobileStyle={standardStyles.blockMarginBottomMobile}
           tabletStyle={standardStyles.blockMarginBottomTablet}
@@ -54,10 +53,21 @@ class Press extends React.PureComponent<I18nProps> {
             </div>
           </Cell>
         </GridRow>
-      </View>
+      </div>
     )
   }
 }
+
+const backgroundCss = css(flex,{
+  backgroundColor: colors.dark,
+  [WHEN_MOBILE]: {
+    opacity: 0.9,
+    paddingTop: 24,
+    backgroundColor: colors.darkTransparent,
+    zIndex: 10,
+    boxShadow: `-1px 5px 22px 7px ${colors.darkTransparent}`
+  }
+})
 
 const links = css(gridRow, {
   marginTop: 24

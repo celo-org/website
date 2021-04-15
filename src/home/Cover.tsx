@@ -12,9 +12,10 @@ import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "s
 import { useScreenSize } from "src/layout/ScreenSize"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { HEADER_HEIGHT } from "src/shared/Styles"
+import Press from 'src/press/Press'
 
 export default function Cover() {
-  const {isDesktop, isTablet, bannerHeight} = useScreenSize()
+  const {isMobile, isDesktop, isTablet, bannerHeight} = useScreenSize()
   const {t} = useTranslation(NameSpaces.home)
   return (
     <div css={css(rootCss, {paddingTop: bannerHeight, [WHEN_MOBILE]: {
@@ -27,6 +28,7 @@ export default function Cover() {
         <object title={t('coverPhonesImage')} aria-label={t('coverPhonesImage')} type="image/svg+xml" data={examplePhones} width={1016} height={524} />
         </picture>}
       </div>
+      {isMobile && <Press />}
 
       {isDesktop && <Stats /> }
   </div>
