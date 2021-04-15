@@ -64,7 +64,7 @@ const fellows = [
 class FellowViewer extends React.PureComponent<ScreenProps> {
   componentDidMount() {
     // ensure the Carousel sizes correctly
-    setImmediate(() => window.dispatchEvent(new Event('resize')))
+    setTimeout(() => window.dispatchEvent(new Event('resize')),1)
   }
 
   render() {
