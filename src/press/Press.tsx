@@ -1,7 +1,7 @@
 import {css} from "@emotion/react"
 import * as React from 'react'
 import { View } from 'react-native'
-import { WHEN_TABLET_AND_UP } from "src/estyles"
+import { gridRow, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { I18nProps, withNamespaces } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
@@ -19,9 +19,9 @@ class Press extends React.PureComponent<I18nProps> {
     return (
       <View style={standardStyles.darkBackground}>
         <GridRow
-          mobileStyle={standardStyles.sectionMarginBottomMobile}
-          tabletStyle={standardStyles.sectionMarginBottomTablet}
-          desktopStyle={standardStyles.sectionMarginBottom}
+          mobileStyle={standardStyles.blockMarginBottomMobile}
+          tabletStyle={standardStyles.blockMarginBottomTablet}
+          desktopStyle={standardStyles.blockMarginBottom}
         >
           <Cell span={Spans.full} style={standardStyles.centered}>
             <div css={logoContainerCss}>
@@ -38,31 +38,51 @@ class Press extends React.PureComponent<I18nProps> {
                 </a>
               ))}
             </div>
-            <Button
-              style={standardStyles.elementalMarginTop}
-              text={t('recentNews')}
-              kind={BTN.NAKED}
-              size={SIZE.normal}
-              href={MENU.PRESS.link}
-            />
+            <div css={links}>
+              <Button
+                text={t('recentNews')}
+                kind={BTN.NAKED}
+                size={SIZE.normal}
+                href={MENU.PRESS.link}
+              />
+              <Button
+                text={t('contactPress')}
+                kind={BTN.NAKED}
+                size={SIZE.normal}
+                href={"mailto:press@celo.org"}
+              />
+            </div>
           </Cell>
         </GridRow>
       </View>
     )
   }
 }
+
+const links = css(gridRow, {
+  marginTop: 24
+})
+
 const logoCss = css({
   objectFit: "contain",
   height: 25,
   width: 130,
-  marginTop: 20,
-  marginBottom: 20,
+  marginTop: 12,
+  marginBottom: 12,
   marginLeft: '5vw',
   marginRight: '5vw',
   cursor: 'pointer',
   [WHEN_TABLET_AND_UP]: {
     marginLeft: 20,
     marginRight: 20
+  },
+  [WHEN_MOBILE]: {
+    height: 20,
+    width: 104,
+    marginLeft: 12,
+    marginRight: 12,
+    marginTop: 12,
+    marginBottom: 12,
   }
 })
 

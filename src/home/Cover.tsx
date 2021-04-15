@@ -54,7 +54,6 @@ const rootCss = css(flex,{
     width: '100vw',
     height: "100vh",
     minHeight: 1068,
-    marginBottom: 60,
   },
   [WHEN_DESKTOP]: {
     paddingTop: 0,
@@ -100,10 +99,11 @@ const backgroundArea = css({
     width: '100vw',
     minHeight: "100vh",
     backgroundImage: `url(${celoAsStarsTablet})`,
+    backgroundPosition: 'bottom'
+
   },
   [WHEN_DESKTOP]: {
     width: backgroundDesktopSize.width,
-    backgroundPositionY: 40,
     backgroundImage: `url(${celoAsStarsDesktop})`,
   }
 })

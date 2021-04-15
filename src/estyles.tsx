@@ -8,6 +8,13 @@ export const flex = css({
   flexDirection: "column"
 })
 
+export const gridRow = css({
+  display: 'grid',
+  gridTemplateColumns: "1fr 1fr",
+  columnGap: 24,
+  rowGap: 24,
+})
+
 export const flexRow = css({
   boxSizing: "border-box",
   display: "flex",

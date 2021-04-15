@@ -31,14 +31,15 @@ const centered = css({
 
 
 const blurCss = css({
-  [WHEN_MOBILE]: {
-    position: "absolute",
-    width: "100%",
-    height: "100%",
-    borderRadius: 33,
-    zIndex: -1,
-    backgroundColor: colors.dark,
-    filter: "blur(22px)"
+  position: "absolute",
+  width: "100%",
+  height: "100%",
+  borderRadius: 33,
+  zIndex: -1,
+  backgroundColor: colors.dark,
+  filter: "blur(48px)",
+  [WHEN_DESKTOP]: {
+    display: "none"
   }
 })
 

@@ -7,8 +7,8 @@ import Involvement from 'src/home/Involvement'
 import HomeBuild from 'src/home/HomeBuild'
 import { TwoAssets } from "src/home/TwoAssets"
 import { NameSpaces, useTranslation } from "src/i18n"
-import Press from 'src/press/Press'
 import Cover from "./Cover"
+import Press from 'src/press/Press'
 export default function Home() {
   const { t } = useTranslation(NameSpaces.home)
   return (
@@ -20,9 +20,9 @@ export default function Home() {
         image={celoHero}
       />
       <Cover />
+      <Press />
       <HomeBuild />
       <TwoAssets />
-      <Press />
       <Involvement />
       <HomeBackers />
     </View>
