@@ -2,11 +2,13 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import {css} from '@emotion/react'
 import * as React from 'react'
 import Button, { SIZE } from 'src/shared/Button.3'
-import { fonts } from 'src/estyles'
+import { fonts, WHEN_MOBILE } from 'src/estyles'
 import {RoledexContentType} from "src/utils/contentful"
 import { SubNavLink } from 'src/experience/common/SubNavLink'
 import { colors } from 'src/styles'
 import { renderNode } from 'src/contentful/nodes/nodes'
+import { useScreenSize } from 'src/layout/ScreenSize'
+import DropDownGroup from 'src/shared/DropDownGroup'
 
 const DURATION = 200
 
@@ -28,13 +30,26 @@ function useSheet(): [number, (i: number) => void, boolean] {
 export default function Roledex(props: RoledexContentType) {
   const [index, setCurrent, isInTransition] = useSheet()
   const sheet = props.sheets[index]
+  const {isMobile} = useScreenSize()
+
   return <>
     <span css={sectionTitle}>{props.title}</span>
-    <div css={navCss} >
-      {props.sheets.map(({sys, fields}, i) => (
-        <SelectOption onPress={setCurrent} id={i} key={sys.id} title={fields.title} active={!isInTransition && index === i}/>
-      ))}
-    </div>
+    { isMobile ?
+      <DropDownGroup data={[
+                {
+                  name: "Choose",
+                  list: props.sheets.map(({fields}, id) => ({id: id.toString(), selected: id === index, label: fields.title})),
+                  onSelect: (i) => setCurrent(Number(i)),
+                  onClear: () => null,
+                },
+              ]} />
+    :
+      <div css={navCss} role="combobox">
+        {props.sheets.map(({sys, fields}, i) => (
+          <SelectOption onPress={setCurrent} id={i} key={sys.id} title={fields.title} active={!isInTransition && index === i}/>
+        ))}
+      </div>
+    }
     <div css={css(contentAreaCss, isInTransition && transitionCss)}>
       <h3 css={headingCss}>{sheet.fields.heading}</h3>
       {documentToReactComponents(sheet.fields.body, {renderNode})}
@@ -48,9 +63,10 @@ export default function Roledex(props: RoledexContentType) {
 }
 
 function SelectOption({onPress, id, title, active}) {
-  function setCurrent() {
+  const setCurrent = React.useCallback(() => {
     onPress(id)
-  }
+  },[id])
+
   return <SubNavLink onPress={setCurrent}  title={title} color={colors.primary} active={active}  accessibilityRole="option"/>
 }
 
@@ -76,7 +92,10 @@ const contentAreaCss = css(sharedCSS,{
   maxWidth: 550,
   minHeight: 300,
   transitionDuration: `${DURATION}ms`,
-  transitionProperty: "opacity"
+  transitionProperty: "opacity",
+  [WHEN_MOBILE]: {
+    marginTop: 32
+  }
 })
 
 const transitionCss = css({
@@ -87,5 +106,8 @@ const transitionCss = css({
 const linksAreaCss = css({
   marginTop: 32,
   display: "grid",
-  rowGap: 16
+  rowGap: 16,
+  a: {
+    textAlign: 'left',
+  }
 })
