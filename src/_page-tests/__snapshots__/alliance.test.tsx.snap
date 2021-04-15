@@ -4588,7 +4588,15 @@ exports[`Alliance renders 1`] = `
             Refine By
           </div>
           <div
-            className="css-view-1dbjc4n"
+            css={
+              Object {
+                "map": undefined,
+                "name": "9skeys",
+                "next": undefined,
+                "styles": "box-sizing:border-box;display:flex;flex-direction:column;",
+                "toString": [Function],
+              }
+            }
           >
             <div
               className="css-view-1dbjc4n"
@@ -4737,6 +4745,10 @@ exports[`Alliance renders 1`] = `
                   className="css-text-901oao"
                   dir="auto"
                   onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
                   role="option"
                   style={
                     Object {
