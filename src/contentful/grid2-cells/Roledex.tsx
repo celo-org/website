@@ -38,8 +38,8 @@ export default function Roledex(props: RoledexContentType) {
       <DropDownGroup data={[
                 {
                   name: "Choose",
-                  list: props.sheets.map((sheet, id) => ({id: id.toString(), selected: id == index, label: sheet.fields.title})),
-                  onSelect: (index) => setCurrent(Number(index)),
+                  list: props.sheets.map(({fields}, id) => ({id: id.toString(), selected: id === index, label: fields.title})),
+                  onSelect: (i) => setCurrent(Number(i)),
                   onClear: () => null,
                 },
               ]} />
