@@ -3,7 +3,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Entry } from 'contentful'
 import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType,
   FreeContentType, RoledexContentType, PlaylistContentType, CoverContentType, FormContentType } from 'src/utils/contentful'
-import { flex } from 'src/estyles'
+import { flex, WHEN_MOBILE } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
 import Blurb, {Props as BlurbProps} from "src/contentful/grid2-cells/Blurb"
@@ -68,7 +68,7 @@ function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverConte
     case 'grid-row':
       const gridFields = section.fields as GridRowContentType
       return (
-        <GridRow key={section.sys.id} darkMode={gridFields.darkMode} id={gridFields.id} columns={gridFields.columns} css={css(gridFields.cssStyle)}>
+        <GridRow key={section.sys.id} darkMode={gridFields.darkMode} id={gridFields.id} columns={gridFields.columns} css={css(sectionsCss,gridFields.cssStyle)}>
           {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.columns, gridFields.darkMode))}
         </GridRow>
       )
@@ -119,6 +119,15 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: bo
   }
   return null
 }
+
+const sectionsCss = css({
+  paddingTop: 80,
+  paddingBottom: 80,
+  [WHEN_MOBILE]: {
+    paddingTop: 24,
+    paddingBottom: 24
+  }
+})
 
 export async function getServerSideProps() {
   const page = await getPageBySlug("public-sector", {locale: 'en-US'}, true)

@@ -94,6 +94,7 @@ interface FieldContentType {
   name: string
   placeholder?: string
   label?: string
+  required?: boolean
 }
 
 export interface FormContentType {
