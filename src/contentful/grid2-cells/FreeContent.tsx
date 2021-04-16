@@ -31,9 +31,9 @@ const OPTIONS = {
   }
 }
 
-export function FreeContent({ colSpan, body, cssStyle, backgroundColor }) {
+export function FreeContent({ colSpan, body, cssStyle, backgroundColor, darkMode }) {
   return <div css={css(rootCss,{ gridColumn: `span ${colSpan}`, backgroundColor })}>
-    <div css={css(flex,cssStyle)}>
+    <div css={css(flex,darkMode && darkModeText, cssStyle)}>
       {documentToReactComponents(body, OPTIONS)}
     </div>
   </div>
@@ -45,3 +45,5 @@ const rootCss = css(flex,{
     marginTop: 16
   }
 })
+
+const darkModeText = css({"h2, h3, h4, h5, h6, p, div, ul, span": {color:"white"}})
