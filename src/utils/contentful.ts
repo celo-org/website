@@ -114,7 +114,18 @@ export interface GridRowContentType {
   id: string
   cells: Entry<CellContentType>[]
   cssStyle?: CSSObject
+  darkMode?: boolean
   columns: 1 | 2 | 3 | 4
+}
+
+export interface CoverContentType {
+  title: string
+  subTitle: Document
+  links?: Entry<ContentfulButton>[]
+  imageDesktop: Asset
+  imageMobile: Asset
+  darkMode?: boolean
+  illoFirst?: boolean
 }
 
 

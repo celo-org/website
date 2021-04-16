@@ -2,12 +2,12 @@ import {css} from '@emotion/react'
 import { Asset, Entry, } from 'contentful'
 import * as React from 'react'
 import {ContentfulButton} from "src/utils/contentful"
-import {flex, fonts, WHEN_MOBILE} from "src/estyles"
+import {flex, fonts, WHEN_MOBILE, whiteText} from "src/estyles"
 import Button, { SIZE } from 'src/shared/Button.3'
 import { standardStyles } from 'src/styles'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Document } from '@contentful/rich-text-types'
-import renderNode from 'src/contentful/nodes/paragraph'
+import renderNode, {renderWhiteParagraph} from 'src/contentful/nodes/paragraph'
 enum Headings {
   "large" = 'large',
   "medium" = 'medium',
@@ -20,14 +20,15 @@ export interface Props {
   titleType?: Headings
   body: Document
   link?: Entry<ContentfulButton>
+  darkMode?: boolean
 }
 
 export default function Blurb(props: Props) {
   return <div css={rootCss}>
     <div css={containerCss}>
       <img src={props.icon?.fields?.file?.url} css={imageCss} width={100} height={100} />
-      <h4 css={headingStyle(props.titleType)}>{props.title}</h4>
-      {documentToReactComponents(props.body, {renderNode})}
+      <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>
+      {documentToReactComponents(props.body, {renderNode: props.darkMode? renderWhiteParagraph : renderNode})}
     </div>
     {props.link && (
         <Button style={standardStyles.elementalMarginTop} href={props.link.fields.href} text={props.link.fields.words}  kind={props.link.fields.kind}  size={SIZE.normal}/>
@@ -46,7 +47,7 @@ const rootCss = css (flex,{
   }
 })
 
-const containerCss = css(flex, {
+const containerCss = css(flex,{
   flex: 1,
   "p:first-of-type": {
     marginTop: 0
@@ -72,14 +73,14 @@ const headingCss = css({
   marginBottom: 12,
 })
 
-function headingStyle(type: Headings) {
+function headingStyle(type: Headings, darkMode: boolean) {
   switch (type)  {
     case "large":
-      return css(fonts.h4, headingCss)
+      return css(fonts.h4, headingCss, darkMode && whiteText)
     case "small":
-      return css(fonts.h5, headingCss)
+      return css(fonts.h5, headingCss, darkMode && whiteText)
     default:
-      return css(fonts.h3, headingCss)
+      return css(fonts.h3, headingCss, darkMode && whiteText)
   }
 }
 

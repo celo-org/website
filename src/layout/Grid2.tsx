@@ -1,12 +1,15 @@
 import { css} from "@emotion/react"
 import * as React from 'react'
 import { flex, WHEN_DESKTOP, WHEN_TABLET } from "src/estyles"
+import { colors } from "src/styles"
 
 interface GridProps {
   columns: 1 | 2 | 3 | 4
   id?: string
   className?: string
+  wrapperCss?: any
   children: React.ReactNode
+  darkMode?: boolean
 }
 
 const gap = 24.0
@@ -27,11 +30,21 @@ export function GridRow(props: GridProps) {
     [WHEN_TABLET]: {gridTemplateColumns}
   })
   return (
-      <div id={props.id} css={mainCss} className={props.className}>
+      <section css={css(props.wrapperCss, props.darkMode ? darkBackground : wrapperStyle)}>
+        <div id={props.id} css={mainCss} className={props.className}>
         {props.children}
-      </div>
+        </div>
+      </section>
   )
 }
+
+const wrapperStyle = css(flex,{
+  overflow: 'hidden'
+})
+
+const darkBackground = css(wrapperStyle,{
+  backgroundColor: colors.dark
+})
 
 
 const rootCss = css(flex,{

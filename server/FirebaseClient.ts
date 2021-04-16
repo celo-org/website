@@ -1,4 +1,4 @@
-import * as firebase from 'firebase/app'
+import  firebase from 'firebase/app'
 import 'firebase/database'
 import getConfig from 'next/config'
 import { NETWORK, RequestRecord, RequestStatus } from '../src/fauceting/FaucetInterfaces'

@@ -40,7 +40,7 @@ const IMAGE_MAP = {
 class Tenets extends React.PureComponent<Props> {
   componentDidMount() {
     // ensure the Carousel sizes correctly
-    setImmediate(() => window.dispatchEvent(new Event('resize')))
+    setTimeout(() => window.dispatchEvent(new Event('resize')),1)
   }
   render() {
     const { t } = this.props
