@@ -2,7 +2,7 @@ import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Entry } from 'contentful'
 import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType,
-  FreeContentType, RoledexContentType, PlaylistContentType, CoverContentType } from 'src/utils/contentful'
+  FreeContentType, RoledexContentType, PlaylistContentType, CoverContentType, FormContentType } from 'src/utils/contentful'
 import { flex } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
@@ -11,7 +11,7 @@ import {renderNode} from "src/contentful/nodes/nodes"
 import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
 import Roledex from "src/contentful/grid2-cells/Roledex"
 import PlayList from "src/contentful/grid2-cells/Playlist"
-
+import Form from "src/contentful/grid2-cells/Form"
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
 import {BUTTON} from "src/contentful/nodes/embeds/BUTTON"
@@ -55,10 +55,9 @@ export default function PublicSectorPage(props: Props) {
   </>
 }
 
-const rootCss = css(flex, {
-})
+const rootCss = css(flex, {})
 
-function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverContentType>) {
+function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverContentType |FormContentType>) {
   switch (section.sys.contentType.sys.id) {
     case 'cover':
       const coverFields = section.fields as CoverContentType
@@ -99,6 +98,9 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: bo
                 cssStyle={freeContent.cssStyle}
                 backgroundColor={freeContent.backgroundColor}
                 />
+      case 'form':
+        const formFields = entry.fields as FormContentType
+        return <Form fields={formFields.fields} />
       case  "proposition":
         const blurbProp = entry.fields as BlurbProps
         return <Blurb

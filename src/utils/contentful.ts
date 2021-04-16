@@ -90,6 +90,16 @@ export interface RoledexContentType {
   sheets: Entry<InfoSheetContentType>[]
 }
 
+interface FieldContentType {
+  name: string
+  placeholder?: string
+  label?: string
+}
+
+export interface FormContentType {
+  fields: Entry<FieldContentType>[]
+}
+
 export interface ThumbnailType {
   title: string
   link: string
@@ -108,7 +118,7 @@ export interface PlaylistContentType {
   media?: Entry<ThumbnailType>[]
 }
 
-export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType
+export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType | FormContentType
 
 export interface GridRowContentType {
   id: string
