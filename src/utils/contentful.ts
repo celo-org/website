@@ -1,7 +1,10 @@
 import { Document } from '@contentful/rich-text-types'
+import { CSSObject } from '@emotion/react'
 import { Asset, createClient, Entry, EntryCollection } from 'contentful'
 import getConfig from 'next/config'
 import { Page as SideBarEntry } from 'src/experience/common/Sidebar'
+import  {Props as BlurbProps} from "src/public-sector/Blurb"
+import { BTN } from 'src/shared/Button.3'
 
 function intialize() {
   const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -63,35 +66,65 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
   }
 }
 
-interface ContentFulPage {
+
+export interface SectionType { name: string; contentField: Document; slug: string }
+
+
+export interface ContentfulButton {
+  name: string
+  href: string
+  assetLink?: Asset
+  words: string
+  kind: BTN
+}
+
+export interface FreeContentType {
+  backgroundColor: string
+  cssStyle: CSSObject
+  body: Document
+}
+
+export type CellContentType = BlurbProps | FreeContentType
+
+export interface GridRowContentType {
+  id: string
+  cells: Entry<CellContentType>[]
+  cssStyle?: CSSObject
+  columns: 1 | 2 | 3 | 4
+}
+
+
+
+export interface ContentfulPage<T> {
   title: string
   slug: string
-  sections: Entry<{ name: string; contentField: Document; slug: string }>[]
+  description: string
+  sections: Entry<T>[]
 }
 
-export async function getPageBySlug(slug: string, { locale }) {
-  const pages = await intialize().getEntries<ContentFulPage>({
+export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {
+  const pages = await intialize().getEntries<ContentfulPage<SectionType| GridRowContentType>>({
     content_type: 'page',
     'fields.slug': slug,
-    include: 3,
+    include: 5,
     locale,
   })
-  return processPages(pages)
+  return processPages<SectionType| GridRowContentType>(pages, showSysData)
 }
 
-export async function getPageById(id: string, { locale }) {
-  const pages = await intialize().getEntries<ContentFulPage>({
+export async function getPageById<T>(id: string, { locale }) {
+  const pages = await intialize().getEntries<ContentfulPage<T>>({
     content_type: 'page',
     'sys.id': id,
-    include: 3,
+    include: 5,
     locale,
   })
-  return processPages(pages)
+  return processPages<T>(pages)
 }
 
-function processPages(pages: EntryCollection<ContentFulPage>) {
+function processPages<T>(pages: EntryCollection<ContentfulPage<T>>, showSysData?: boolean) {
   const data = pages.items[0].fields
-  const sections = (data.sections || []).map((section) => section.fields)
+  const sections = showSysData ? data.sections : (data.sections || []).map((section) => section.fields)
   return { ...data, sections, updatedAt: pages.items[0].sys.updatedAt }
 }
 

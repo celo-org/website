@@ -3,8 +3,15 @@ import { typeFaces, fontInfo } from "./styles"
 import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT} from "src/shared/Styles"
 
 export const flex = css({
+  boxSizing: "border-box",
   display: "flex",
   flexDirection: "column"
+})
+
+export const flexRow = css({
+  boxSizing: "border-box",
+  display: "flex",
+  flexDirection: "row"
 })
 
 export const jost = css({
@@ -37,9 +44,11 @@ export const fonts = {
   body,
   h1: css(fontInfo.h1 as any, headingReset, {lineHeight: `${fontInfo.h1.lineHeight}px`}),
   h1Mobile: css(fontInfo.h1Mobile as any, headingReset, {lineHeight: `${fontInfo.h1Mobile.lineHeight}px`}),
-  h2: css(fontInfo.h2 as any, headingReset, {lineHeight: `${fontInfo.h2.lineHeight}px`}),
-  h3: css(fontInfo.h3 as any, headingReset, {lineHeight: `${fontInfo.h3.lineHeight}px`}),
-  h4: css(fontInfo.h4 as any, headingReset, {lineHeight: `${fontInfo.h4.lineHeight}px`}),
+  h2: css(headingReset, fontInfo.h2 as any,  {lineHeight: `${fontInfo.h2.lineHeight}px`}),
+  h3: css(headingReset, fontInfo.h3 as any,  {lineHeight: `${fontInfo.h3.lineHeight}px`}),
+  h4: css(headingReset, fontInfo.h4 as any,  {lineHeight: `${fontInfo.h4.lineHeight}px`}),
+  h5: css(headingReset, fontInfo.h5 as any,  {lineHeight: `${fontInfo.h5.lineHeight}px`}),
+  h6: css(headingReset, fontInfo.h6 as any,  {lineHeight: `${fontInfo.h6.lineHeight}px`}),
 }
 
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
@@ -50,5 +59,7 @@ export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-
 
 
 export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
+
+export const WHEN_SMALL_MOBILE = `@media (max-width: 330px)`
 
 export const WHEN_LONG_PHONE = `@media (max-width: 400px) and (min-height: 790px)`
