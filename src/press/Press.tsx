@@ -6,7 +6,7 @@ import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import MENU from 'src/shared/menu-items'
 import { colors, standardStyles } from 'src/styles'
-import forbes from './forbes-logo-white.png'
+import theblock from './the-block.svg'
 import fortune from './fortune-white.png'
 import coindesk from './coindesk-logo-white.png'
 import techcrunch from './techcrunch-logo-white.png'
@@ -117,11 +117,11 @@ interface Logo {
 
 const logos: Logo[] = [
   {
-    source: forbes,
+    source: theblock,
     size: {},
-    alt: "Forbes",
+    alt: "The Block",
     url:
-      'https://www.forbes.com/sites/stevenehrlich/2019/07/17/as-facebook-struggles-for-blockchain-support-a-truly-decentralized-challenger-emerges/#72fb490119eb',
+      'https://www.theblockcrypto.com/post/94012/celo-stablecoin-morgan-beller-advisor',
   },
   {
     alt: "Wall Street Journal",
@@ -138,10 +138,10 @@ const logos: Logo[] = [
       'https://fortune.com/2021/02/10/one-day-well-all-yawn-about-blockchain/',
   },
   {
-    alt: "Coindesk",
+    alt: "Decrypt",
     source: coindesk,
     size: {},
-    url: 'https://www.coindesk.com/libra-minus-facebook-why-celo-is-2020s-buzzy-token-project',
+    url: 'https://decrypt.co/57246/celo-raises-20-million-as-it-debuts-decentralized-venmo-competitor',
   },
   {
     alt: "TechCrunch",
