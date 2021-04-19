@@ -121,6 +121,11 @@ export const pagePaths = {
     link: '/experience/grants',
     isDark: false,
   },
+  PILOT_KIT: {
+    name: 'PilotKit',
+    link: '/experience/pilots',
+    isDark: false,
+  },
   JOBS: {
     name: 'Join',
     link: '/jobs',
