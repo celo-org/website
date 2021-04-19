@@ -93,14 +93,19 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: bo
         const freeContent = entry.fields as FreeContentType
         return <FreeContent
                 key={entry.sys.id}
-                colSpan={columns}
+                colSpan={freeContent.colSpan}
                 body={freeContent.body}
+                darkMode={darkMode}
                 cssStyle={freeContent.cssStyle}
                 backgroundColor={freeContent.backgroundColor}
                 />
       case 'form':
         const formFields = entry.fields as FormContentType
-        return <Form fields={formFields.fields} />
+        return <Form  key={entry.sys.id}
+                      fields={formFields.fields}
+                      colSpan={formFields.colSpan}
+                      submitText={formFields.submitText}
+                />
       case  "proposition":
         const blurbProp = entry.fields as BlurbProps
         return <Blurb

@@ -95,10 +95,13 @@ interface FieldContentType {
   placeholder?: string
   label?: string
   required?: boolean
+  type?: "tel" | "email" | "tel" | "multiline" | "url"
 }
 
 export interface FormContentType {
   fields: Entry<FieldContentType>[]
+  colSpan: number
+  submitText: string
 }
 
 export interface ThumbnailType {
@@ -110,6 +113,7 @@ export interface FreeContentType {
   backgroundColor: string
   cssStyle: CSSObject
   body: Document
+  colSpan: number
 }
 
 export interface PlaylistContentType {
