@@ -11,6 +11,7 @@ import fortune from './fortune-white.png'
 import coindesk from './coindesk-logo-white.png'
 import techcrunch from './techcrunch-logo-white.png'
 import wsj from './wsj-logo-white.png'
+import decrypt from './decrypt.png'
 
 class Press extends React.PureComponent<I18nProps> {
   render() {
@@ -139,7 +140,7 @@ const logos: Logo[] = [
   },
   {
     alt: "Decrypt",
-    source: coindesk,
+    source: decrypt,
     size: {},
     url: 'https://decrypt.co/57246/celo-raises-20-million-as-it-debuts-decentralized-venmo-competitor',
   },
