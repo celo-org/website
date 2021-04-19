@@ -269,12 +269,12 @@ exports[`HomePage renders 1`] = `
           }
         >
           <a
-            href="https://www.forbes.com/sites/stevenehrlich/2019/07/17/as-facebook-struggles-for-blockchain-support-a-truly-decentralized-challenger-emerges/#72fb490119eb"
+            href="https://www.theblockcrypto.com/post/94012/celo-stablecoin-morgan-beller-advisor"
             rel="noopener"
             target="_blank"
           >
             <img
-              alt="Forbes"
+              alt="The Block"
               css={
                 Object {
                   "map": undefined,
@@ -286,11 +286,7 @@ exports[`HomePage renders 1`] = `
               }
               height={25}
               loading="lazy"
-              src={
-                Object {
-                  "default": "image.png",
-                }
-              }
+              src="image.png"
               width={130}
             />
           </a>
@@ -312,11 +308,7 @@ exports[`HomePage renders 1`] = `
               }
               height={50}
               loading="lazy"
-              src={
-                Object {
-                  "default": "image.png",
-                }
-              }
+              src="image.png"
               width={180}
             />
           </a>
@@ -338,21 +330,17 @@ exports[`HomePage renders 1`] = `
               }
               height={25}
               loading="lazy"
-              src={
-                Object {
-                  "default": "image.png",
-                }
-              }
+              src="image.png"
               width={130}
             />
           </a>
           <a
-            href="https://www.coindesk.com/libra-minus-facebook-why-celo-is-2020s-buzzy-token-project"
+            href="https://decrypt.co/57246/celo-raises-20-million-as-it-debuts-decentralized-venmo-competitor"
             rel="noopener"
             target="_blank"
           >
             <img
-              alt="Coindesk"
+              alt="Decrypt"
               css={
                 Object {
                   "map": undefined,
@@ -364,11 +352,7 @@ exports[`HomePage renders 1`] = `
               }
               height={25}
               loading="lazy"
-              src={
-                Object {
-                  "default": "image.png",
-                }
-              }
+              src="image.png"
               width={130}
             />
           </a>
@@ -390,11 +374,7 @@ exports[`HomePage renders 1`] = `
               }
               height={25}
               loading="lazy"
-              src={
-                Object {
-                  "default": "image.png",
-                }
-              }
+              src="image.png"
               width={130}
             />
           </a>
