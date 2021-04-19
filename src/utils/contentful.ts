@@ -101,6 +101,7 @@ interface FieldContentType {
 export interface FormContentType {
   fields: Entry<FieldContentType>[]
   colSpan: number
+  layout?: {grid: string[][]}
   submitText: string
 }
 

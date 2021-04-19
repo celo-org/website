@@ -102,6 +102,7 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: bo
       case 'form':
         const formFields = entry.fields as FormContentType
         return <Form  key={entry.sys.id}
+                      layout={formFields.layout}
                       fields={formFields.fields}
                       colSpan={formFields.colSpan}
                       submitText={formFields.submitText}

@@ -2,17 +2,28 @@ import { useForm } from "react-hook-form";
 import {FormContentType} from "src/utils/contentful"
 import { inputDarkStyle, labelStyle, WHEN_TABLET_AND_UP } from "src/estyles"
 import { css } from "@emotion/react"
+import Button, { BTN } from "src/shared/Button.3"
+import * as React from "react"
 
 export default function Form(props: FormContentType){
 
   const { register, handleSubmit, formState} = useForm();
   const onSubmit = data => console.log(data, formState);
 
-  return <form css={css(rootStyle, {gridColumn: `span ${props.colSpan}`})} onSubmit={handleSubmit(onSubmit)}>
-      {props.fields.map(input => {
-        const attributes = register(input.fields.name, {required: input.fields.required})
+  const styles = React.useMemo(() => {
+    return css(rootStyle, {
+      gridColumn: `span ${props.colSpan}`,
+      [WHEN_TABLET_AND_UP]: {
+        gridTemplateAreas: props.layout?.grid?.map(row => row.join(" ")).map(e => `"${e}"`).join("\n")
+      }
+    }
+  )},[props.colSpan, props.layout?.grid])
 
-        return <label key={input.sys.id} css={css(labelStyle, {gridArea: input.fields.type === "multiline" ? 2: 1 })} >
+  return <form css={styles} onSubmit={handleSubmit(onSubmit)}>
+      {props.fields.map(input => {
+        const attributes = register(input.fields.name, {required:  input.fields.required})
+
+        return <label key={input.sys.id} css={css(labelStyle, {gridArea:  props.layout ? input.fields.name : null})} >
 
           {input.fields.label}{input.fields.required && "*"}
 
@@ -27,12 +38,12 @@ export default function Form(props: FormContentType){
         </label>
       }
       )}
-      <button css={buttonCss} type="submit"> "TEST" {props.submitText} </button>
+      <span css={buttonCss}><Button  kind={BTN.PRIMARY} onPress={handleSubmit(onSubmit)} css={buttonCss} accessibilityRole="button" text={props.submitText}/></span>
   </form>
 }
 
 const buttonCss = css({
-  gridArea: "submitButton"
+  gridArea: "button"
 })
 
 const rootStyle = css({
@@ -40,12 +51,5 @@ const rootStyle = css({
     display: 'grid',
     marginTop: 24,
     columnGap: 24,
-    gridTemplateColumns: "1 2",
-    // gridTemplateAreas: `
-    // "name  reason"
-    // "email reason"
-    // "orgName ."
-    // "submitButton ."
-    // `
   }
 })
