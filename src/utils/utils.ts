@@ -47,7 +47,8 @@ async function isFast(speed: number | EffectiveTypes) {
   return false
 }
 
-export function getEffectiveConnection(navigator): EffectiveTypes {
+
+export function getEffectiveConnection(navigator: Navigator): EffectiveTypes {
   const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection
   return (connection && connection.effectiveType) || 'unknown'
 }

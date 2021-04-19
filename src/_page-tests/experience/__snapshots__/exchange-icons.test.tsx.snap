@@ -4530,6 +4530,61 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </a>
               </div>
             </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "marginBottom": "8px",
+                  "marginTop": "8px",
+                }
+              }
+            >
+              <div
+                className="css-view-1dbjc4n"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                style={
+                  Object {
+                    "display": "inline",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="https://drive.google.com/file/d/1V00HirrpwSaUsapZoWVglRexBvrFuud7/view"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  rel="noopener"
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "WebkitTextDecorationStyle": "solid",
+                      "alignItems": "center",
+                      "color": "rgba(46,51,56,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontSize": "16px",
+                      "lineHeight": "20px",
+                      "msFlexAlign": "center",
+                      "opacity": 1,
+                      "textDecoration": "none",
+                      "textDecorationStyle": "solid",
+                      "textRendering": "geometricPrecision",
+                    }
+                  }
+                  target="_blank"
+                >
+                  Annual Report
+                </a>
+              </div>
+            </div>
           </div>
           <div
             className="css-view-1dbjc4n"
@@ -5243,6 +5298,61 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   target="_blank"
                 >
                   GrantKit
+                </a>
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "marginBottom": "8px",
+                  "marginTop": "8px",
+                }
+              }
+            >
+              <div
+                className="css-view-1dbjc4n"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                style={
+                  Object {
+                    "display": "inline",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="/experience/pilots"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  rel="noopener"
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "WebkitTextDecorationStyle": "solid",
+                      "alignItems": "center",
+                      "color": "rgba(46,51,56,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontSize": "16px",
+                      "lineHeight": "20px",
+                      "msFlexAlign": "center",
+                      "opacity": 1,
+                      "textDecoration": "none",
+                      "textDecorationStyle": "solid",
+                      "textRendering": "geometricPrecision",
+                    }
+                  }
+                  target="_blank"
+                >
+                  PilotKit
                 </a>
               </div>
             </div>

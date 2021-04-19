@@ -5296,7 +5296,7 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            Enable your communities to easily pay for mobile top ups, utilities, and shopping online with cUSD
+            Enable your communities to easily pay for mobile top ups, utilities, and shopping online with stablecoins
           </div>
           <div
             className="css-view-1dbjc4n"
@@ -5369,7 +5369,7 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            Make it easy to acquire cUSD in digital wallets
+            Make it easy to acquire stablecoins in digital wallets
           </div>
           <div
             className="css-view-1dbjc4n"
@@ -5734,7 +5734,7 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            Increase transparency, reduce fraud, and increase mobility by giving cUSD
+            Increase transparency, reduce fraud, and increase mobility by giving stablecoins
           </div>
           <div
             className="css-view-1dbjc4n"
@@ -5880,7 +5880,7 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            Accelerate speed of delivery and reduce costs by lending cUSD
+            Accelerate speed of delivery and reduce costs by lending stablecoins
           </div>
           <div
             className="css-view-1dbjc4n"
@@ -5953,7 +5953,7 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            Enable merchants to accept digital payments with lower fees by accepting cUSD.
+            Enable merchants to accept digital payments with lower fees by accepting stablecoins.
           </div>
           <div
             className="css-view-1dbjc4n"
@@ -6172,7 +6172,7 @@ exports[`Alliance renders 1`] = `
               }
             }
           >
-            Help your communities overcome inflation and build for their future by saving in cUSD
+            Help your communities overcome inflation and build for their future by saving in stablecoins
           </div>
           <div
             className="css-view-1dbjc4n"
