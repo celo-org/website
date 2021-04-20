@@ -1,12 +1,32 @@
+import dynamic from "next/dynamic"
 import * as React from 'react'
-import ReactModal from 'react-modal'
 import { Dimensions, Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
-import YouTube from 'react-youtube'
 import AspectRatio from 'src/shared/AspectRatio'
 import EX from 'src/shared/EX'
 import PlayCircle from 'src/shared/PlayCircle'
 import { getSentry } from 'src/utils/sentry'
+interface YT {
+  videoId: string,
+  opts: { height: number, width: number,
+    playerVars: { autoplay: number, controls: number, playsinline: number, modestbranding: number,
+    },
+  },
+  onEnd: () => void
+  onReady: ({ target } : { target: any }) => void
+}
 
+interface ModalInterface {
+  isOpen: boolean
+  onRequestClose: () => void
+  style: any
+  aria: {
+    labelledby: string
+    describedby: string
+  }
+}
+
+const ReactModal = dynamic<ModalInterface>(import('react-modal'))
+const YouTube = dynamic<YT>(import('react-youtube'),  { ssr: false })
 interface Props {
   videoID: string
   previewImage?: string
@@ -27,7 +47,6 @@ export default class VideoModal extends React.Component<Props, State> {
   state = { playing: false, isClient: false, width: 0, height: 0 }
 
   componentDidMount() {
-    ReactModal.setAppElement('#__next')
     this.setState({ isClient: true })
     this.changeSize({ window: Dimensions.get('window') })
     Dimensions.addEventListener('change', this.changeSize)
@@ -90,7 +109,7 @@ export default class VideoModal extends React.Component<Props, State> {
             .ReactModal__Overlay {
               transition: transform 1000ms ease-in-out;
             }
-            
+
             .ReactModal__Overlay--after-open{
               transform: translateY(0);
             }

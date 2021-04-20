@@ -3,6 +3,7 @@ const envConfig = require('./env-config')
 const serverEnvConfig = require('./server-env-config')
 
 module.exports = withImages({
+  inlineImageLimit: 1024,
   future: {
     webpack5: true
   },
