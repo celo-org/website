@@ -61,7 +61,7 @@ export interface DatumProps {
   id: string
 }
 
-const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
+export const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
   const special = isSpecial(value)
   return <>
       <span key={`${id}-${special}`} css={css(valueCss, special && specialCss)} aria-labelledby={id} >{value}</span>

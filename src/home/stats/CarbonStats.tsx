@@ -1,9 +1,6 @@
 import { useAsync } from 'react-async-hook'
-import {memo} from 'react'
-// import { DatumProps } from './Stats'
-import isSpecial from './Stats'
-import {css, keyframes} from "@emotion/react"
-import {valueCss, specialCss, labelCss} from './Stats'
+import { Datum } from './Stats'
+
 
 
 
@@ -27,28 +24,25 @@ export default function CarbonDocs(){
 
     if(treesSaved.result){
         return (
-            <div>
-
-            </div>
+            <Datum value={`2219.5 tons`} title={`2219.5 tons`} id="2219.5 tons" />
         )
-
     }
 
 }
 
-interface DatumProps {
-    value: string | undefined
-    title: string
-    id: string
-}
+// interface DatumProps {
+//     value: string | undefined
+//     title: string
+//     id: string
+// }
 
-const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
-    const special: any = isSpecial(value)
+// const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
+//     const special: any = isSpecial(value)
 
-    return (
-        <>
-        <span key={`${id}-${special}`} css={css(valueCss, special && specialCss)} aria-labelledby={id} >{value}</span>
-      <span css={labelCss} id={id}>{title}</span>
-        </>
-    )
-}
+//     return (
+//         <>
+//         <span key={`${id}-${special}`} css={css(valueCss, special && specialCss)} aria-labelledby={id} >{value}</span>
+//       <span css={labelCss} id={id}>{title}</span>
+//         </>
+//     )
+// }
