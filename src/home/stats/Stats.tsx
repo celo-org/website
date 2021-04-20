@@ -57,7 +57,7 @@ const linkCss = css({
   textDecoration: "none"
 })
 
-export interface DatumProps {
+interface DatumProps {
   value: string | undefined
   title: string
   id: string
@@ -71,7 +71,7 @@ export const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumP
   </>
 })
 
-export const valueCss = css(garamond,{
+const valueCss = css(garamond,{
   color: colors.white,
   fontSize: 24,
   lineHeight:1.2,
@@ -79,7 +79,7 @@ export const valueCss = css(garamond,{
   marginTop: 24
 })
 
-export const labelCss = css(jost, {
+const labelCss = css(jost, {
   color: colors.lightGray,
   fontSize: 12,
   lineHeight: "20px",
@@ -108,12 +108,12 @@ const celobration = keyframes`
 
 `
 
-export const specialCss = css({
+const specialCss = css({
   animationName:   celobration,
   animationDuration: "350ms",
   animationIterationCount: 1
 })
 
-export function isSpecial(value: string| undefined) {
+function isSpecial(value: string| undefined) {
   return  value?.endsWith("000,000") || value?.endsWith("000.000")
 }

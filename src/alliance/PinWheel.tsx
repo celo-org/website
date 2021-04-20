@@ -4,7 +4,6 @@ import VECTORS from 'src/community/connect/RingOfCoinVectors'
 import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
 import { G, Path } from 'src/shared/svg'
 import { baseCoinStyle, colors, standardStyles } from 'src/styles'
-// import Svg from 'svgs'
 
 // note this is the animation duration of a single coin,
 // since the coins animate in a delayed way the entire "animation" is longer than this
