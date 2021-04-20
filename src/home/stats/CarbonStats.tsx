@@ -11,7 +11,7 @@ async function fetchCarbs() {
     return res.json()
 }
 
-export default function CarbonDocs(){
+export function CarbonDocs(){
     // const treesSaved = useAsync(fetchCarbs, [])
 
     // if(!treesSaved.result){
