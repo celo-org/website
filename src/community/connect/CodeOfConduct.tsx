@@ -11,7 +11,6 @@ import { hashNav } from 'src/shared/menu-items'
 import { G, Path } from 'src/shared/svg'
 import { colors, standardStyles, textStyles } from 'src/styles'
 
-
 type Props = I18nProps & ScreenProps
 
 const CodeofConduct: React.FunctionComponent<Props> = function CodeOfConduct({ t, screen }) {

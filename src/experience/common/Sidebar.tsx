@@ -1,12 +1,11 @@
 import * as React from 'react'
 import { StyleSheet, View } from 'react-native'
 import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import Button, { BTN } from 'src/shared/Button.3'
-import OvalCoin from 'src/shared/OvalCoin'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { colors } from 'src/styles'
+import { SubNavLink } from './SubNavLink'
 
-interface Section {
+export interface Section {
   title: string
   href: string
 }
@@ -37,10 +36,10 @@ export default withScreenSize<Props>(
     return (
       <View style={container} nativeID="sidebar">
         {pages.map((page) => {
-    
+
           return (
             <React.Fragment key={page.href}>
-              <Link
+              <SubNavLink
                 onPress={onChangeRoute}
                 key={page.title}
                 kind={Kind.page}
@@ -80,10 +79,10 @@ const SectionNav = React.memo(function SectionNav_({
       {active &&
         sections.map((section) => {
           return (
-            <Link
+            <SubNavLink
               onPress={onChangeRoute}
               key={section.title}
-              kind={Kind.section}
+              color={color(Kind.section)}
               href={section.href}
               title={section.title}
               active={isActiveSection(section.href, routeHash)}
@@ -94,37 +93,10 @@ const SectionNav = React.memo(function SectionNav_({
   )
 })
 
-enum Kind {
+export enum Kind {
   page,
   section,
 }
-
-interface LinkProps {
-  kind: Kind
-  active: boolean
-  onPress?: () => void
-}
-
-const COIN_SIZE = 12
-
-const Link = React.memo(function _Link(props: LinkProps & Section) {
-  return (
-    <Button
-      iconLeft={
-        props.active ? (
-          <OvalCoin color={color(props.kind)} size={COIN_SIZE} />
-        ) : (
-          <View style={styles.iconPlaceholder} />
-        )
-      }
-      kind={BTN.NAV}
-      href={props.href}
-      onPress={props.onPress}
-      text={props.title}
-      style={[styles.item, !props.active && styles.inactiveText]}
-    />
-  )
-})
 
 function color(kind: Kind) {
   return kind === Kind.page ? colors.primary : colors.gold
@@ -143,6 +115,7 @@ function isActiveSection(path: string, routeHash: string) {
   return routeHash.length ? path.endsWith(routeHash) : path.endsWith('overview')
 }
 
+
 const styles = StyleSheet.create({
   mobileContainer: {
     width: '100%',
@@ -152,11 +125,7 @@ const styles = StyleSheet.create({
     position: 'sticky',
     top: HEADER_HEIGHT + 100,
   },
-  iconPlaceholder: { width: COIN_SIZE },
-  item: {
-    padding: 5,
-    margin: 5,
-  },
+
   section: {
     transformOrigin: 'top',
     transform: [{ scaleY: 0 }],
@@ -167,5 +136,5 @@ const styles = StyleSheet.create({
   activeSection: {
     transform: [{ scaleY: 1 }],
   },
-  inactiveText: { fontWeight: 'normal' },
+
 })

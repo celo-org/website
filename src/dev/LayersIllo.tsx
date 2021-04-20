@@ -2,7 +2,6 @@ import * as React from 'react'
 import { StyleSheet } from 'react-native'
 import { Path } from 'src/shared/svg'
 import { colors } from 'src/styles'
-import Svg from 'svgs'
 
 const VECTORS = [
   'M15.489 18.5002C10.5885 18.5002 8.13484 12.5749 11.6006 9.11039L15.6851 5.02734C18.4043 2.3092 22.0916 0.78225 25.9363 0.78225L341.756 0.782236C345.727 0.782236 349.524 2.41039 352.261 5.28674L355.993 9.20877C359.325 12.711 356.843 18.5002 352.008 18.5002L15.489 18.5002Z',
@@ -17,7 +16,7 @@ export interface Props {
 
 export default React.memo<Props>(function LayersIllo({ activeLayer, onSelectLayer }: Props) {
   return (
-    <Svg width="100%" height="290px" viewBox="0 0 367 147" fill="none">
+    <svg width="100%" height="290px" viewBox="0 0 367 147" fill="none">
       {VECTORS.map((vector, index) => {
         const onPress = () => onSelectLayer(index)
         return (
@@ -34,7 +33,7 @@ export default React.memo<Props>(function LayersIllo({ activeLayer, onSelectLaye
           />
         )
       })}
-    </Svg>
+    </svg>
   )
 })
 

@@ -3,7 +3,7 @@ import { CSSObject } from '@emotion/react'
 import { Asset, createClient, Entry, EntryCollection } from 'contentful'
 import getConfig from 'next/config'
 import { Page as SideBarEntry } from 'src/experience/common/Sidebar'
-import  {Props as BlurbProps} from "src/public-sector/Blurb"
+import  {Props as BlurbProps} from "src/contentful/grid2-cells/Blurb"
 import { BTN } from 'src/shared/Button.3'
 
 function intialize() {
@@ -78,19 +78,54 @@ export interface ContentfulButton {
   kind: BTN
 }
 
+export interface InfoSheetContentType {
+  title: string
+  heading: string
+  body: Document
+  buttons: Entry<ContentfulButton>[]
+}
+
+export interface RoledexContentType {
+  title: string
+  sheets: Entry<InfoSheetContentType>[]
+}
+
+export interface ThumbnailType {
+  title: string
+  link: string
+  image: Asset
+}
 export interface FreeContentType {
   backgroundColor: string
   cssStyle: CSSObject
   body: Document
 }
 
-export type CellContentType = BlurbProps | FreeContentType
+export interface PlaylistContentType {
+  title: string
+  description: Document
+  listId?: string
+  media?: Entry<ThumbnailType>[]
+}
+
+export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType
 
 export interface GridRowContentType {
   id: string
   cells: Entry<CellContentType>[]
   cssStyle?: CSSObject
+  darkMode?: boolean
   columns: 1 | 2 | 3 | 4
+}
+
+export interface CoverContentType {
+  title: string
+  subTitle: Document
+  links?: Entry<ContentfulButton>[]
+  imageDesktop: Asset
+  imageMobile: Asset
+  darkMode?: boolean
+  illoFirst?: boolean
 }
 
 

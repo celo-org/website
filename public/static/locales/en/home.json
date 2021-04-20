@@ -8,7 +8,7 @@
   "coverPhonesImage": "Phones showing various deFi apps built on the Celo Platform",
   "statsHeading": "PLATFORM STATS",
   "statsBlockCount": "Total blocks",
-  "statsAddresses": "Total wallet addresses",
+  "statsAddresses": "Total addresses",
   "statsTransactions": "Total transactions",
   "statsAvgTime": "Average block time",
   "statsCo2Offset": "Carbon Offset",
@@ -35,10 +35,12 @@
     "link": "See it in action with Valora"
 
   },
-  "twoMoneyTitle": "Digital money powered by a two asset system",
-  "cUSDinfo": "cUSD (Celo Dollars) are a stable asset that follows the US Dollar. With cUSD, you can share money faster, cheaper, and more easily on your mobile phone.",
+  "twoMoneyTitle": "Global digital assets powered by Celo",
+  "stableCoins": "Named for the currencies they follow, Celo Dollars (cUSD) and Celo Euro (cEUR) are stablecoins that allow you to share value faster, cheaper and more easily on your mobile phone.",
   "CELOinfo": "CELO is a utility and governance asset for the Celo community, which has a fixed supply and variable value. With CELO, you can help shape the direction of the Celo Platform.",
   "learnGovernance": "Learn About Governance",
+  "celoDollars": "Celo Dollars",
+  "celoEuros": "Celo Euros",
   "viewReserve": "View Reserve",
   "stayConnected": "Stay Connected",
   "backers": "Early Backers",
@@ -97,5 +99,6 @@
         "text": "Explore opportunities at cLabs, the team that initially shaped Celo and a member of the Alliance for Prosperity. cLabs has offices in Berlin, Buenos Aires, and San Francisco, with contributors around the world."
       }
     ]
-  }
+  },
+  "contactPress": "Contact"
 }

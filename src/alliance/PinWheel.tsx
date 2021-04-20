@@ -62,7 +62,7 @@ interface QuadrantProps {
 class Quadrants extends React.PureComponent<QuadrantProps> {
   render() {
     return (
-      <G>
+      <g>
         {VECTORS.map((path, index) => {
           return (
             <Path
@@ -72,7 +72,7 @@ class Quadrants extends React.PureComponent<QuadrantProps> {
             />
           )
         })}
-      </G>
+      </g>
     )
   }
 }
