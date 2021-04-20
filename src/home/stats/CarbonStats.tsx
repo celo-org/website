@@ -1,6 +1,9 @@
 import { useAsync } from 'react-async-hook'
 import {memo} from 'react'
 // import { DatumProps } from './Stats'
+import isSpecial from './Stats'
+import {css, keyframes} from "@emotion/react"
+import {valueCss, specialCss, labelCss} from './Stats'
 
 
 
@@ -39,6 +42,13 @@ interface DatumProps {
     id: string
 }
 
-const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps)) {
+const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
+    const special: any = isSpecial(value)
 
+    return (
+        <>
+        <span key={`${id}-${special}`} css={css(valueCss, special && specialCss)} aria-labelledby={id} >{value}</span>
+      <span css={labelCss} id={id}>{title}</span>
+        </>
+    )
 }

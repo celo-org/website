@@ -69,7 +69,7 @@ const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
   </>
 })
 
-const valueCss = css(garamond,{
+export const valueCss = css(garamond,{
   color: colors.white,
   fontSize: 24,
   lineHeight:1.2,
@@ -77,7 +77,7 @@ const valueCss = css(garamond,{
   marginTop: 24
 })
 
-const labelCss = css(jost, {
+export const labelCss = css(jost, {
   color: colors.lightGray,
   fontSize: 12,
   lineHeight: "20px",
@@ -106,12 +106,12 @@ const celobration = keyframes`
 
 `
 
-const specialCss = css({
+export const specialCss = css({
   animationName:   celobration,
   animationDuration: "350ms",
   animationIterationCount: 1
 })
 
-function isSpecial(value: string| undefined) {
+export function isSpecial(value: string| undefined) {
   return  value?.endsWith("000,000") || value?.endsWith("000.000")
 }
