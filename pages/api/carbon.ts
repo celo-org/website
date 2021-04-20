@@ -7,7 +7,8 @@ export default async function(req: NextApiRequest, res: NextApiResponse){
     try{
         if(req.method === 'GET'){
             const results = await wrenApi()
-            res.json(results.stats)
+            res.json(results.stats.totalTons)
+            
         }else{
             res.status(405)
         }
