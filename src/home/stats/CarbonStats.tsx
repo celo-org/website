@@ -14,5 +14,5 @@ export default function CarbonStats(){
         return null
     }
 
-       return <Datum value={`${carbonOffset?.result} tons`} title={t("carbonTonsOffset")} id="carbon" link={'https://www.wren.co/profile/celo'} />
+       return <Datum value={`${carbonOffset?.result}`} title={t("carbonTonsOffset")} id="carbon" link={'https://www.wren.co/profile/celo'} />
 }
