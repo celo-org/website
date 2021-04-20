@@ -4,11 +4,12 @@ import { inputDarkStyle, labelStyle, WHEN_TABLET_AND_UP } from "src/estyles"
 import { css } from "@emotion/react"
 import Button, { BTN } from "src/shared/Button.3"
 import * as React from "react"
+import { postForm } from "src/forms/postForm"
 
 export default function Form(props: FormContentType){
 
   const { register, handleSubmit, formState} = useForm();
-  const onSubmit = data => console.log(data, formState);
+  const onSubmit = data => postForm(props.route, data);
 
   const styles = React.useMemo(() => {
     return css(rootStyle, {

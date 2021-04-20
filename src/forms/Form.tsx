@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { ErrorKeys } from 'src/forms/ErrorDisplay'
+import { postForm } from 'src/forms/postForm'
 interface State {
   isComplete: boolean
   isLoading: boolean
@@ -10,7 +11,7 @@ interface State {
 
 type FormField = string
 
-type FormState = Record<FormField, any>
+export type FormState = Record<FormField, any>
 
 interface NativeEvent {
   target: { name: string; value: string | boolean }
@@ -29,16 +30,6 @@ interface Props {
   blankForm: FormState
   validateWith?: (form: FormState) => string[]
   children: (methods: ChildArguments) => React.ReactNode
-}
-
-export function postForm(route: string, formData: FormState) {
-  return fetch(route, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
 }
 
 export function emailIsValid(email: string) {

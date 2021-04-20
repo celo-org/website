@@ -103,6 +103,7 @@ export interface FormContentType {
   colSpan: number
   layout?: {grid: string[][]}
   submitText: string
+  route: string
 }
 
 export interface ThumbnailType {
