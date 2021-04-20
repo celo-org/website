@@ -1,5 +1,9 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7b3c0dc74d89d68aeaaa6af33a77c7ab0fcd2877
 
 export default function Tetris() {
   return (

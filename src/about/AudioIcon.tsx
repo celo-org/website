@@ -1,11 +1,9 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
 
-
 export default React.memo(function AudioIcon() {
   return (
     <svg width="31" height="32" viewBox="0 0 31 32" fill="none">
-
       <rect y="10" width="9" height="12" fill={colors.primary} />
       <path d="M6.66667 10.1666L16.6667 1.83325V30.1666L6.66667 21.8333V10.1666Z" fill="#35D07F" />
       <path
