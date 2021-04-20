@@ -12,22 +12,21 @@ async function fetchCarbs() {
 }
 
 export default function CarbonDocs(){
-    const treesSaved = useAsync(fetchCarbs, [])
+    // const treesSaved = useAsync(fetchCarbs, [])
 
-    if(!treesSaved.result){
+    // if(!treesSaved.result){
+    //     return (
+    //         <div>
+
+    //         </div>
+    //     )
+    // }
+
+   /** if(treesSaved.result){
         return (
-            <div>
-
-            </div>
-        )
-    }
-
-    if(treesSaved.result){
-        return (
-            <Datum value={`2219.5 tons`} title={`2219.5 tons`} id="2219.5 tons" />
-        )
-    }
-
+            )
+        }*/
+       return <Datum value={`2219.5 tons`} title={`2219.5 tons`} id="2219.5 tons" />
 }
 
 // interface DatumProps {

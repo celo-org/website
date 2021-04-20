@@ -5,6 +5,7 @@ import { NameSpaces, useTranslation } from "src/i18n"
 import RingsGlyph from "src/logos/RingsGlyph"
 import { colors } from "src/styles"
 import useStatsRelay from "./useStatsRelay"
+import {CarbonDocs} from './CarbonStats'
 
 export default function Stats() {
   const {t} = useTranslation(NameSpaces.home)
@@ -22,6 +23,7 @@ export default function Stats() {
         <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
         <Datum value={`${avgBlockTime||0}s`} title={t("statsAvgTime")} id="stat-time"/>
         <Datum value={`2219.5 tons`} title={t("statsCo2Offset")} id="stat-carbon" />
+        {CarbonDocs()}
   </figure>
 }
 
