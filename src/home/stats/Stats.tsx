@@ -67,10 +67,8 @@ export const Datum = memo<DatumProps>(function _Datum({value, title, id, link}: 
   const special = isSpecial(value)
   return <>
       <span key={`${id}-${special}`} css={css(valueCss, special && specialCss)} aria-labelledby={id} >{value}</span>
-      <a href={link}>
-      <span css={labelCss} id={id}>{title}</span>
-      </a>
-  </>
+      {link ? <a href={link} target="_blank" rel="noopener" css={labelCss} id={id}>{title}</a> : <span css={labelCss} id={id}>{title}</span>}
+        </>
 })
 
 const valueCss = css(garamond,{
