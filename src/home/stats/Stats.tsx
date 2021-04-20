@@ -36,7 +36,7 @@ const rootCss = css(flex,{
   position: "absolute",
   borderRadius: 6,
   right: 0,
-  top: 260,
+  top: 210,
   padding: 24,
   paddingBottom: 30,
   zIndex: 20,
@@ -67,7 +67,7 @@ export const Datum = memo<DatumProps>(function _Datum({value, title, id, link}: 
   const special = isSpecial(value)
   return <>
       <span key={`${id}-${special}`} css={css(valueCss, special && specialCss)} aria-labelledby={id} >{value}</span>
-      {link ? <a href={link} target="_blank" rel="noopener" css={labelCss} id={id}>{title}</a> : <span css={labelCss} id={id}>{title}</span>}
+      {link ? <a href={link} target="_blank" rel="noopener" css={hoverLabelCss} id={id}>{title}</a> : <span css={labelCss} id={id}>{title}</span>}
         </>
 })
 
@@ -83,8 +83,17 @@ const labelCss = css(jost, {
   color: colors.lightGray,
   fontSize: 12,
   lineHeight: "20px",
-  textAlign: "center"
+  textAlign: "center",
+  textDecorationLine: "none"
+
 })
+
+const hoverLabelCss = css(labelCss, {
+  ":hover":{
+    textDecorationLine: 'underline'
+  }
+})
+
 
 const celobration = keyframes`
   from {
