@@ -50,6 +50,7 @@ export function TwoAssets() {
             size={SIZE.normal}
           />
           <Button
+            target={"_blank"}
             kind={BTN.NAKED}
             style={{marginVertical: 16}}
             text={t('celoDollars')}
@@ -57,14 +58,16 @@ export function TwoAssets() {
             size={SIZE.normal}
           />
           <Button
+            target={"_blank"}
             kind={BTN.NAKED}
             text={t('celoEuros')}
-            href={"https://medium.com/celoorg"}
+            href={"https://medium.com/celoorg/deutsche-telekom-joins-celo-ecosystem-as-the-first-mobile-carrier-amid-launch-of-ceur-stablecoin-2b79aae38540"}
             size={SIZE.normal}
           />
         </AssetToken>
         <AssetToken ticker="CELO" info={t('CELOinfo')} icon={<View style={styles.image}><ExchangeCELO size={ICON_SIZE} /></View>}>
           <Button
+            target={"_blank"}
             kind={BTN.NAKED}
             text={t('viewReserve')}
             href={'https://celoreserve.org'}
