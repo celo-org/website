@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 import { Asset, Entry } from "contentful"
-import { flexRow } from "src/estyles"
+import { flex, flexRow, WHEN_MOBILE } from "src/estyles"
 
 interface Logo {
   url: string
@@ -56,16 +56,23 @@ export default function LogoGallary({ list }: Props) {
 
 const rootStyle = css(flexRow, {
   flexWrap: "wrap",
-  justifyContent: "center",
+  justifyContent: "space-around",
   alignItems: "center",
-  maxWidth: 800,
+  maxWidth: 840,
   marginTop: 32,
 })
 
-const itemStyle = css({
-  marginLeft: 40,
-  marginRight: 40,
+const itemStyle = css(flex,{
+  alignItems: "center",
+  minWidth: 140,
+  marginLeft: 32,
+  marginRight: 32,
   marginTop: 24,
-  minWidth: 152,
   marginBottom: 24,
+  [WHEN_MOBILE]: {
+    minWidth: 100,
+    maxWidth: 140,
+    marginLeft: 16,
+    marginRight: 16,
+  }
 })

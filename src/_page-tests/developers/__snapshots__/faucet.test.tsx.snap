@@ -125,7 +125,7 @@ exports[`Faucet renders 1`] = `
           }
         }
       >
-        Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 10 cUSD and 5 CELO.
+        Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 5 CELO and 10 of each core stable token (e.g. cUSD, cEUR).
 
 In the Celo Wallet, you can find your address by pressing the menu icon at the top left and scrolling down to bottom. Press the address to copy it to your device’s clipboard.
       </div>
@@ -790,7 +790,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -801,7 +800,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -1017,7 +1015,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1028,7 +1025,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -1148,7 +1144,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1159,7 +1154,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>
@@ -1279,7 +1273,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                 <svg
                   fill="none"
                   height="0.75em"
-                  style={Object {}}
                   transform="rotate(0)"
                   viewBox="0 0 8 12"
                   width="0.75em"
@@ -1290,7 +1283,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                     fill="#35D07F"
                     fillRule="evenodd"
                     opacity={1}
-                    style={Object {}}
                   />
                 </svg>
               </div>

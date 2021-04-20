@@ -3,6 +3,12 @@ const envConfig = require('./env-config')
 const serverEnvConfig = require('./server-env-config')
 
 module.exports = withImages({
+  future: {
+    webpack5: true
+  },
+  images: {
+    domains: ['images.ctfassets.net', "i.ytimg.com", "*.ytimg.com"],
+  },
   experimental: {
     modern: false,
   },
@@ -12,12 +18,15 @@ module.exports = withImages({
 
   // options: {buildId, dev, isServer, defaultLoaders, webpack}   https://nextjs.org/docs#customizing-webpack-config
   webpack: (config, { isServer }) => {
-    config.node = {
-      fs: 'empty',
-    }
+
     config.resolve.alias = {
       ...config.resolve.alias,
       'react-native$': 'react-native-web',
+    }
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      "http": false, // webpack5 no longer polyfills node packages
+      "https": false // network-speed requires this but only on node, in browser it does not so no poly
     }
 
     if (!isServer) {

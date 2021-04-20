@@ -25,14 +25,15 @@
     "technology": "Technology",
     "resources": "Resources",
     "social": "Social",
-    "copyright": "The Celo Foundation, © Celo {{year}}", 
+    "copyright": "The Celo Foundation, © Celo {{year}}",
     "Home": "Home",
     "About": "About",
     "Join": "Careers",
     "Validators": "Validators",
     "Developers": "Developers",
     "Alliance": "Alliance",
-    "Community": "Community"
+    "Community": "Community",
+    "annualReport": "Annual Report"
   },
   "channels": {
     "brand": {
@@ -77,5 +78,7 @@
     "pleaseWait": "Please wait"
   },
   "shortSuccess": "Submitted",
-  "applicationSubmitted": "Application Submitted"
+  "applicationSubmitted": "Application Submitted",
+  "showAll": "Show All",
+  "collapse": "Collapse"
 }

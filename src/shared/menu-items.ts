@@ -121,6 +121,11 @@ export const pagePaths = {
     link: '/experience/grants',
     isDark: false,
   },
+  PILOT_KIT: {
+    name: 'PilotKit',
+    link: '/experience/pilots',
+    isDark: false,
+  },
   JOBS: {
     name: 'Join',
     link: '/jobs',
@@ -149,6 +154,16 @@ export const pagePaths = {
     name: 'Plumo',
     link: '/plumo',
     isDark: true,
+  },
+  PUBLIC_SECTOR: {
+    name: 'Public Sector',
+    link: '/sandbox',
+    isDark: true,
+    translucent: {
+      backgroundHover: colors.darkTransparent,
+    },
+    menuHidePoint: 250,
+    menuHidePointMobile: 150,
   },
   TECH: {
     name: 'Technology',

@@ -27,6 +27,7 @@ interface AllButtonProps {
   href?: string
   target?: string // only relevent if href used
   disabled?: boolean
+  accessibilityRole?: "button" | "link" | "option"
   onPress?: () => void
   iconRight?: React.ReactNode
   iconLeft?: React.ReactNode
@@ -158,6 +159,7 @@ interface Props {
   href?: string
   target?: string
   onDarkBackground?: boolean
+  accessibilityRole?: "button" | "link" | "option"
 }
 
 function ButtonPrimary(props: Props) {
@@ -167,7 +169,7 @@ function ButtonPrimary(props: Props) {
       <Text
         href={href}
         hrefAttrs={getHrefAttrs(target)}
-        accessibilityRole="link"
+        accessibilityRole={props.accessibilityRole ||"link"}
         style={[
           baseStyles.base,
           baseStyles.verticallyAlign,
@@ -196,8 +198,8 @@ function ButtonSecondary(props: Props) {
       <Link href={href} passHref={true}>
         <Text
           href={href}
-           hrefAttrs={getHrefAttrs(target)}
-             accessibilityRole="link"
+          hrefAttrs={getHrefAttrs(target)}
+          accessibilityRole={props.accessibilityRole ||"link"}
           style={[
             baseStyles.base,
             sizeStyle(size),
@@ -223,8 +225,8 @@ function ButtonTertiary(props: Props) {
     <Link href={href} passHref={true}>
       <Text
         href={href}
-         hrefAttrs={getHrefAttrs(target)}
-         accessibilityRole="link"
+        hrefAttrs={getHrefAttrs(target)}
+        accessibilityRole={props.accessibilityRole ||"link"}
         style={[
           baseStyles.base,
           baseStyles.verticallyAlign,
@@ -272,10 +274,10 @@ function ButtonNaked(props: Props) {
     <View style={[baseStyles.base, baseStyles.floating, nakedStyles.container]}>
       <Link href={href}>
         <Text
-          accessibilityRole="link"
+          accessibilityRole={props.accessibilityRole ||"link"}
           href={href}
-           hrefAttrs={getHrefAttrs(target)}
-             style={[
+            hrefAttrs={getHrefAttrs(target)}
+            style={[
             fonts.navigation,
             baseStyles.verticallyAlign,
             textStyle,
@@ -326,7 +328,7 @@ function ButtonNav(props: Props) {
       <Text
         href={href}
         hrefAttrs={getHrefAttrs(target)}
-        accessibilityRole="link"
+        accessibilityRole={props.accessibilityRole ||"link"}
         style={[
           baseStyles.base,
           baseStyles.verticallyAlign,
@@ -349,8 +351,8 @@ function ButtonInline(props: Props) {
     <Link href={href} passHref={true}>
       <Text
         href={href}
-         hrefAttrs={getHrefAttrs(target)}
-         accessibilityRole="link"
+        hrefAttrs={getHrefAttrs(target)}
+        accessibilityRole={props.accessibilityRole ||"link"}
         style={[inlineStyle.text, inlineStyle.container, opacityStyle[status], style]}
       >
         {children}

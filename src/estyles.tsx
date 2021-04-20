@@ -8,6 +8,13 @@ export const flex = css({
   flexDirection: "column"
 })
 
+export const gridRow = css({
+  display: 'grid',
+  gridTemplateColumns: "1fr 1fr",
+  columnGap: 24,
+  rowGap: 24,
+})
+
 export const flexRow = css({
   boxSizing: "border-box",
   display: "flex",
@@ -20,6 +27,10 @@ export const jost = css({
 
 export const garamond = css({
   fontFamily: typeFaces.garamond
+})
+
+export const whiteText = css({
+  color: 'white'
 })
 
 export const sectionTitle = css(jost,{
@@ -49,6 +60,26 @@ export const fonts = {
   h4: css(headingReset, fontInfo.h4 as any,  {lineHeight: `${fontInfo.h4.lineHeight}px`}),
   h5: css(headingReset, fontInfo.h5 as any,  {lineHeight: `${fontInfo.h5.lineHeight}px`}),
   h6: css(headingReset, fontInfo.h6 as any,  {lineHeight: `${fontInfo.h6.lineHeight}px`}),
+  navigation: css(fontInfo.navigation as any,  {lineHeight: `${fontInfo.navigation.lineHeight}px`}),
+}
+
+export const textStyles = {
+  center: css({
+    textAlign: 'center',
+  }),
+  left: css({
+    textAlign: 'left',
+  }),
+  lean: css({ fontWeight: 300 }),
+  medium: css({
+    fontWeight: 500,
+  }),
+  heavy: css({
+    fontWeight: 'bold',
+  }),
+  italic: css({
+    fontStyle: 'italic',
+  }),
 }
 
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`

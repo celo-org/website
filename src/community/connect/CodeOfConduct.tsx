@@ -10,7 +10,6 @@ import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import { hashNav } from 'src/shared/menu-items'
 import { G, Path } from 'src/shared/svg'
 import { colors, standardStyles, textStyles } from 'src/styles'
-// import Svg from 'svgs'
 
 type Props = I18nProps & ScreenProps
 

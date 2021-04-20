@@ -1,27 +1,26 @@
 import {css} from "@emotion/react"
 import * as React from 'react'
-import { View } from 'react-native'
-import { WHEN_TABLET_AND_UP } from "src/estyles"
+import { flex, gridRow, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { I18nProps, withNamespaces } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import Button, { BTN, SIZE } from 'src/shared/Button.3'
 import MENU from 'src/shared/menu-items'
-import { standardStyles } from 'src/styles'
-const forbes = require('./forbes-logo-white.png')
-const fortune = require('./fortune-white.png')
-const coindesk = require('./coindesk-logo-white.png')
-const techcrunch = require('./techcrunch-logo-white.png')
-const wsj = require('./wsj-logo-white.png')
+import { colors, standardStyles } from 'src/styles'
+import theblock from './the-block.svg'
+import fortune from './fortune-white.png'
+import techcrunch from './techcrunch-logo-white.png'
+import wsj from './wsj-logo-white.png'
+import decrypt from './decrypt.png'
 
 class Press extends React.PureComponent<I18nProps> {
   render() {
     const { t } = this.props
     return (
-      <View style={standardStyles.darkBackground}>
+      <div css={backgroundCss}>
         <GridRow
-          mobileStyle={standardStyles.sectionMarginBottomMobile}
-          tabletStyle={standardStyles.sectionMarginBottomTablet}
-          desktopStyle={standardStyles.sectionMarginBottom}
+          mobileStyle={standardStyles.blockMarginBottomMobile}
+          tabletStyle={standardStyles.blockMarginBottomTablet}
+          desktopStyle={standardStyles.blockMarginBottom}
         >
           <Cell span={Spans.full} style={standardStyles.centered}>
             <div css={logoContainerCss}>
@@ -38,31 +37,62 @@ class Press extends React.PureComponent<I18nProps> {
                 </a>
               ))}
             </div>
-            <Button
-              style={standardStyles.elementalMarginTop}
-              text={t('recentNews')}
-              kind={BTN.NAKED}
-              size={SIZE.normal}
-              href={MENU.PRESS.link}
-            />
+            <div css={links}>
+              <Button
+                text={t('recentNews')}
+                kind={BTN.NAKED}
+                size={SIZE.normal}
+                href={MENU.PRESS.link}
+              />
+              <Button
+                text={t('contactPress')}
+                kind={BTN.NAKED}
+                size={SIZE.normal}
+                href={"mailto:press@celo.org"}
+              />
+            </div>
           </Cell>
         </GridRow>
-      </View>
+      </div>
     )
   }
 }
+
+const backgroundCss = css(flex,{
+  backgroundColor: colors.dark,
+  [WHEN_MOBILE]: {
+    opacity: 0.9,
+    paddingTop: 24,
+    backgroundColor: colors.darkTransparent,
+    zIndex: 10,
+    boxShadow: `-1px 5px 22px 7px ${colors.darkTransparent}`
+  }
+})
+
+const links = css(gridRow, {
+  marginTop: 24
+})
+
 const logoCss = css({
   objectFit: "contain",
   height: 25,
   width: 130,
-  marginTop: 20,
-  marginBottom: 20,
+  marginTop: 12,
+  marginBottom: 12,
   marginLeft: '5vw',
   marginRight: '5vw',
   cursor: 'pointer',
   [WHEN_TABLET_AND_UP]: {
     marginLeft: 20,
     marginRight: 20
+  },
+  [WHEN_MOBILE]: {
+    height: 20,
+    width: 104,
+    marginLeft: 12,
+    marginRight: 12,
+    marginTop: 12,
+    marginBottom: 12,
   }
 })
 
@@ -74,6 +104,9 @@ const logoContainerCss = css({
   alignContent: 'center',
   justifyContent: 'center',
   opacity: 0.7,
+  [WHEN_MOBILE]: {
+    display: 'none'
+  }
 })
 interface Logo {
   source: string
@@ -84,11 +117,11 @@ interface Logo {
 
 const logos: Logo[] = [
   {
-    source: forbes,
+    source: theblock,
     size: {},
-    alt: "Forbes",
+    alt: "The Block",
     url:
-      'https://www.forbes.com/sites/stevenehrlich/2019/07/17/as-facebook-struggles-for-blockchain-support-a-truly-decentralized-challenger-emerges/#72fb490119eb',
+      'https://www.theblockcrypto.com/post/94012/celo-stablecoin-morgan-beller-advisor',
   },
   {
     alt: "Wall Street Journal",
@@ -105,10 +138,10 @@ const logos: Logo[] = [
       'https://fortune.com/2021/02/10/one-day-well-all-yawn-about-blockchain/',
   },
   {
-    alt: "Coindesk",
-    source: coindesk,
+    alt: "Decrypt",
+    source: decrypt,
     size: {},
-    url: 'https://www.coindesk.com/libra-minus-facebook-why-celo-is-2020s-buzzy-token-project',
+    url: 'https://decrypt.co/57246/celo-raises-20-million-as-it-debuts-decentralized-venmo-competitor',
   },
   {
     alt: "TechCrunch",

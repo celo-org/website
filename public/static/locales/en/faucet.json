@@ -4,7 +4,7 @@
   "title": "Fund your Testnet Account",
   "addFunds": "Add Funds",
   "addFundsText":
-    "Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 10 cUSD and 5 CELO.\n\nIn the Celo Wallet, you can find your address by pressing the menu icon at the top left and scrolling down to bottom. Press the address to copy it to your device’s clipboard.",
+    "Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 5 CELO and 10 of each core stable token (e.g. cUSD, cEUR).\n\nIn the Celo Wallet, you can find your address by pressing the menu icon at the top left and scrolling down to bottom. Press the address to copy it to your device’s clipboard.",
   "getDollars": "Add Funds",
   "whatsNext": "What's Next",
   "getTestnetText":
