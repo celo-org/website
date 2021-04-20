@@ -1619,6 +1619,7 @@ exports[`HomePage renders 1`] = `
                   href="https://medium.com/celoorg/celo-dollars-powerful-new-digital-money-in-circulation-b4147eda2d10"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -1639,6 +1640,7 @@ exports[`HomePage renders 1`] = `
                       "textRendering": "geometricPrecision",
                     }
                   }
+                  target="_blank"
                 >
                   Celo Dollars
                   <div
@@ -1709,9 +1711,10 @@ exports[`HomePage renders 1`] = `
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
                   dir="auto"
-                  href="https://medium.com/celoorg"
+                  href="https://medium.com/celoorg/deutsche-telekom-joins-celo-ecosystem-as-the-first-mobile-carrier-amid-launch-of-ceur-stablecoin-2b79aae38540"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -1730,6 +1733,7 @@ exports[`HomePage renders 1`] = `
                       "textRendering": "geometricPrecision",
                     }
                   }
+                  target="_blank"
                 >
                   Celo Euros
                   <div
@@ -1947,6 +1951,7 @@ exports[`HomePage renders 1`] = `
                   href="https://celoreserve.org"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -1965,6 +1970,7 @@ exports[`HomePage renders 1`] = `
                       "textRendering": "geometricPrecision",
                     }
                   }
+                  target="_blank"
                 >
                   View Reserve
                   <div
