@@ -13,6 +13,5 @@ async function fetchCarbs() {
 
 export function CarbonDocs(){
     const treesSaved = useAsync(fetchCarbs, [])
-
-       return <Datum value={`2219.5 tons`} title={`2219.5 tons`} id="2219.5 tons" />
+       return <Datum value={`2219.5 tons`} title={`Carbon Offset`} id="2219.5 tons" />
 }
