@@ -1,4 +1,8 @@
 import { useAsync } from 'react-async-hook'
+import {memo} from 'react'
+
+
+
 
 
 
@@ -27,4 +31,14 @@ export default function CarbonDocs(){
 
     }
 
+}
+
+interface DatumProps {
+    value: string | undefined
+    title: string
+    id: string
+}
+
+const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps)) {
+    
 }

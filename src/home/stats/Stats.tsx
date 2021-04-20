@@ -55,7 +55,7 @@ const linkCss = css({
   textDecoration: "none"
 })
 
-interface DatumProps {
+export interface DatumProps {
   value: string | undefined
   title: string
   id: string
