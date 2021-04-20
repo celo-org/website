@@ -1,6 +1,6 @@
 import { useAsync } from 'react-async-hook'
 import {memo} from 'react'
-
+// import { DatumProps } from './Stats'
 
 
 
@@ -40,5 +40,5 @@ interface DatumProps {
 }
 
 const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps)) {
-    
+
 }
