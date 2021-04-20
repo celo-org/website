@@ -7,12 +7,12 @@ async function fetchCarbs() {
     return res.json()
 }
 
-export default function CarbonDocs(){
+export default function CarbonStats(){
     const {t} = useTranslation(NameSpaces.home)
     const carbonOffset = useAsync(fetchCarbs, [])
     if(!carbonOffset?.result){
         return null
     }
 
-       return <Datum value={`${carbonOffset?.result} tons`} title={t("statsCo2Offset")} id="carbon" />
+       return <Datum value={`${carbonOffset?.result} tons`} title={t("statsCo2Offset")} id="carbon" link={'https://www.wren.co/profile/celo'} />
 }

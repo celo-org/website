@@ -5,7 +5,7 @@ import { NameSpaces, useTranslation } from "src/i18n"
 import RingsGlyph from "src/logos/RingsGlyph"
 import { colors } from "src/styles"
 import useStatsRelay from "./useStatsRelay"
-import CarbonDocs from './CarbonStats'
+import CarbonStats from './CarbonStats'
 
 export default function Stats() {
   const {t} = useTranslation(NameSpaces.home)
@@ -22,7 +22,7 @@ export default function Stats() {
         <Datum value={addressCount.toLocaleString()} title={t("statsAddresses")} id="stat-addressess"/>
         <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx"/>
         <Datum value={`${avgBlockTime||0}s`} title={t("statsAvgTime")} id="stat-time"/>
-        <CarbonDocs />
+        <CarbonStats />
   </figure>
 }
 
@@ -60,13 +60,16 @@ interface DatumProps {
   value: string | undefined
   title: string
   id: string
+  link?: string
 }
 
-export const Datum = memo<DatumProps>(function _Datum({value, title, id}: DatumProps) {
+export const Datum = memo<DatumProps>(function _Datum({value, title, id, link}: DatumProps) {
   const special = isSpecial(value)
   return <>
       <span key={`${id}-${special}`} css={css(valueCss, special && specialCss)} aria-labelledby={id} >{value}</span>
+      <a href={link}>
       <span css={labelCss} id={id}>{title}</span>
+      </a>
   </>
 })
 
