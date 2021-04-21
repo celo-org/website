@@ -48,7 +48,11 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
   const actualPageSlug = !pageSlug ? homePageSlug : pageSlug
 
   // get first page if we cant find so that at least we render a page in the kit
-  const pageID = data.pages_.find((p) => p.fields.slug === actualPageSlug)?.sys?.id || data.pages_[0].sys.id
+  let pageID = data.pages_.find((p) => p.fields.slug === actualPageSlug)?.sys?.id
+
+  if (!pageID && !pageSlug) {
+    pageID = data.pages_[0].sys.id
+  }
 
   return {
     kitName: data.name,
