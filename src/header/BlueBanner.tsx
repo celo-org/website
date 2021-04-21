@@ -18,7 +18,6 @@ export function BlueBanner(props: Props) {
 
     React.useLayoutEffect(() => {
       ref.current.measure((_x, _y, _w, height) => {
-        console.log('blue banner h', height)
         props.getRealHeight(height)
       })
     }, [router.pathname, router.locale])
