@@ -2239,7 +2239,6 @@ exports[`Alliance renders 1`] = `
             <svg
               fill="none"
               height="48"
-              style={Object {}}
               viewBox="0 0 47 48"
               width="47"
             >
@@ -7451,7 +7450,6 @@ exports[`Alliance renders 1`] = `
           <svg
             fill="none"
             height="48"
-            style={Object {}}
             viewBox="0 0 47 48"
             width="47"
           >
