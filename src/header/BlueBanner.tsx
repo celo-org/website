@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import * as React from 'react'
 import { useAsync } from 'react-async-hook'
 import { StyleSheet, Text, View } from 'react-native'
@@ -11,28 +12,31 @@ interface Props {
   getRealHeight: (n: number) => void
 }
 
-export class BlueBanner extends React.PureComponent<Props> {
-  ref = React.createRef<View>()
-  componentDidUpdate = () => {
-    this.ref.current.measure((_x, _y, _w, height) => {
-      this.props.getRealHeight(height)
-    })
-  }
-  render() {
+export function BlueBanner(props: Props) {
+    const ref = React.useRef<View>()
+    const router = useRouter()
+
+    React.useLayoutEffect(() => {
+      ref.current.measure((_x, _y, _w, height) => {
+        console.log('blue banner h', height)
+        props.getRealHeight(height)
+      })
+    }, [router.pathname, router.locale])
+
     return (
       <View
         testID={'banner'}
-        ref={this.ref}
-        style={[styles.container, this.props.isVisible && styles.isVisible]}
+        ref={ref}
+        style={[styles.container, props.isVisible && styles.isVisible]}
       >
         <View style={styles.insideContainer}>
           <Text
             accessibilityRole="link"
             hrefAttrs={hrefAttrs}
-            href={this.props.link}
+            href={props.link}
             style={[fonts.navigation, textStyles.medium, styles.text]}
           >
-            {this.props.children}
+            {props.children}
             <Text style={styles.icon}>
               <Chevron color={colors.white} opacity={1} />
             </Text>
@@ -40,7 +44,6 @@ export class BlueBanner extends React.PureComponent<Props> {
         </View>
       </View>
     )
-  }
 }
 const hrefAttrs = {target:"blank", "rel": "noopenner"}
 
