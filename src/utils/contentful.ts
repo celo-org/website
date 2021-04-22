@@ -90,12 +90,14 @@ export interface RoledexContentType {
   sheets: Entry<InfoSheetContentType>[]
 }
 
+export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
+
 interface FieldContentType {
   name: string
   placeholder?: string
   label?: string
   required?: boolean
-  type?: "tel" | "email" | "tel" | "multiline" | "url"
+  type?: InputTypes
 }
 
 export interface FormContentType {

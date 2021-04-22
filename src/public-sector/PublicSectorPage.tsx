@@ -69,7 +69,7 @@ function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverConte
       const gridFields = section.fields as GridRowContentType
       return (
         <GridRow key={section.sys.id} darkMode={gridFields.darkMode} id={gridFields.id} columns={gridFields.columns} css={css(sectionsCss,gridFields.cssStyle)}>
-          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.columns, gridFields.darkMode))}
+          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.darkMode))}
         </GridRow>
       )
     default:
@@ -80,7 +80,7 @@ function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverConte
     }
 }
 
-function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: boolean) {
+function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
   if (entry) {
     switch (entry.sys.contentType.sys.id) {
       case "roledex":
@@ -102,6 +102,7 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: bo
       case 'form':
         const formFields = entry.fields as FormContentType
         return <Form  key={entry.sys.id}
+                      route={formFields.route}
                       layout={formFields.layout}
                       fields={formFields.fields}
                       colSpan={formFields.colSpan}

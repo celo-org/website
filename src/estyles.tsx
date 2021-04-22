@@ -90,6 +90,7 @@ export const inputStyle = css(flex, fonts.body,{
   borderColor: 'rgba(61, 61, 61, 0.2)',
   width: '100%',
   margin: 4,
+  marginBottom: 8,
   outlineWidth: 0,
   "&:focus": {
     borderColor: colors.primary,
@@ -103,4 +104,8 @@ export const inputDarkStyle = css(inputStyle,{
   "&:focus": {
     borderColor: colors.white,
   }
+})
+
+export const errorStyle = css({
+  color: colors.error
 })
