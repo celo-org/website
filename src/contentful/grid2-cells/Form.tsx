@@ -7,7 +7,7 @@ import * as React from "react"
 import { postForm } from "src/forms/postForm"
 import MessageDisplay from 'src/forms/eMessageDisplay'
 import { NameSpaces, useTranslation } from "src/i18n"
-import { emailIsValid, urlIsValid } from "src/forms/Form"
+import { emailIsValid, urlIsValid } from "src/forms/emailIsValid"
 
 export default function Form(props: FormContentType){
   const {t} = useTranslation(NameSpaces.common)
@@ -31,7 +31,7 @@ export default function Form(props: FormContentType){
     }
   )},[props.colSpan, props.layout?.grid])
 
-  return <form css={styles} onSubmit={handleSubmit(onSubmit)}>
+  return <form action={props.route} method="post" css={styles} onSubmit={handleSubmit(onSubmit)}>
       {props.fields.map(input => {
         const attributes = register(input.fields.name, {required:  input.fields.required, validate: valitators(input.fields.type)})
 

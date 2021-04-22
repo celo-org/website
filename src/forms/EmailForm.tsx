@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { StyleSheet, View } from 'react-native'
 import { ErrorDisplay, ErrorKeys } from 'src/forms/ErrorDisplay'
-import Form, { emailIsValid } from 'src/forms/Form'
+import Form from 'src/forms/Form'
+import { emailIsValid } from "src/forms/emailIsValid"
 import SubmitButton from 'src/forms/SubmitButton'
 import SuccessDisplay from 'src/forms/SuccessDisplay'
 import { TextInput } from 'src/forms/TextInput'

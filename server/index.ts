@@ -269,10 +269,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     }
   })
 
-  server.get('*', (req, res) => {
-    return handle(req, res)
-  })
-
+  server.use((req, res) => handle(req, res))
 
 
   await initSentryServer()
