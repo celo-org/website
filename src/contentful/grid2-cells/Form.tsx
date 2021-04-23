@@ -25,7 +25,8 @@ export default function Form(props: FormContentType){
       setTimeout(() => clearErrors('server'), CLEAR_TIME)
     }
   }
-  const onError  = (a) => console.info('error',a)
+
+  const onFocus = () => clearErrors('server')
 
   const styles = React.useMemo(() => {
 
@@ -39,12 +40,12 @@ export default function Form(props: FormContentType){
       {props.fields.map(input => {
         const attributes = register(input.fields.name, {required:  input.fields.required, validate: valitators(input.fields.type)})
         const ariaInvalid = formState.errors[input.fields.name] ? 'true' : "false"
-        return <label aria-invalid={ariaInvalid} key={input.sys.id} css={css(labelStyle, props.layout?.grid && {gridArea: input.fields.name })}>
+        return <label onFocus={onFocus} aria-invalid={ariaInvalid} key={input.sys.id} css={css(labelStyle, props.layout?.grid && {gridArea: input.fields.name })}>
 
           {input.fields.label}{input.fields.required && "*"}
 
           {input.fields.type === "multiline" ?
-            <textarea aria-invalid={ariaInvalid} name={input.fields.name} css={inputDarkStyle} rows={5}
+            <textarea onFocus={onFocus} aria-invalid={ariaInvalid} name={input.fields.name} css={inputDarkStyle} rows={5}
               {...attributes} />
             :
             <input name={input.fields.name} type={input.fields.type} css={inputDarkStyle}
@@ -57,7 +58,7 @@ export default function Form(props: FormContentType){
         </label>
       })}
       <span css={props.layout?.grid && buttonCss}>
-        <Button disabled={formState.isSubmitting} kind={BTN.PRIMARY} onPress={handleSubmit(onSubmit, onError)} accessibilityRole="button" text={formState.isSubmitting ? t('validationErrors.pleaseWait') : props.submitText}/>
+        <Button disabled={formState.isSubmitting} kind={BTN.PRIMARY} onPress={handleSubmit(onSubmit)} accessibilityRole="button" text={formState.isSubmitting ? t('validationErrors.pleaseWait') : props.submitText}/>
         <MessageDisplay css={postSubmitCss} isShowing={formState.isSubmitSuccessful}>{t('shortSuccess')}</MessageDisplay>
         <MessageDisplay css={postSubmitErrorCss} isShowing={!!formState.errors.server}>{formState.errors.server?.message}</MessageDisplay>
       </span>
