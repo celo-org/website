@@ -13,6 +13,7 @@ export default React.memo(({ children, isShowing, className }: Props) => {
     <div css={isShowing ? containerCss: containerCollapsed}>
       <span
         aria-hidden={!isShowing}
+        role="alert"
         className={className}
         css={isShowing ? showingText : hidingText}
       >

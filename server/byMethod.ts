@@ -19,6 +19,7 @@ export default function byMethod({ getHandler, postHandler }: Methods) {
         res.status(405)
       }
     } catch (e) {
+      console.error('api caught', e)
       respondError(res, e)
     }
   }

@@ -9,38 +9,42 @@ import MessageDisplay from 'src/forms/eMessageDisplay'
 import { NameSpaces, useTranslation } from "src/i18n"
 import { emailIsValid, urlIsValid } from "src/forms/emailIsValid"
 
+const CLEAR_TIME = 1000 * 30
+
 export default function Form(props: FormContentType){
   const {t} = useTranslation(NameSpaces.common)
 
-  const { register, handleSubmit, formState, setError, reset} = useForm();
+  const { register, handleSubmit, formState, setError, reset, clearErrors, } = useForm();
   const onSubmit = async (data) => {
     const submission = await postForm(props.route, data);
-    console.log(submission)
-    if (submission.ok)
+    if (submission.ok) {
       reset()
-    else {
+      setTimeout(() => reset({keepIsSubmited: false}), CLEAR_TIME)
+    } else {
       setError('server', {message: submission.statusText})
+      setTimeout(() => clearErrors('server'), CLEAR_TIME)
     }
   }
+  const onError  = (a) => console.info('error',a)
 
   const styles = React.useMemo(() => {
 
     return css(rootStyle, {
       gridColumn: `span ${props.colSpan}`,
-      gridTemplateAreas:  `${props.layout?.grid?.map(row => row.join(" ")).map(e => `"${e}"`).join("\n")}`
+      gridTemplateAreas:  `${props.layout?.grid?.map(row => row.join(" ")).map(e => `"${e}"`).join("\n")} "button ."`
     }
   )},[props.colSpan, props.layout?.grid])
 
   return <form action={props.route} method="post" css={styles} onSubmit={handleSubmit(onSubmit)}>
       {props.fields.map(input => {
         const attributes = register(input.fields.name, {required:  input.fields.required, validate: valitators(input.fields.type)})
-
-        return <label key={input.sys.id} css={css(labelStyle, {gridArea: props.layout?.grid ? input.fields.name : null})}>
+        const ariaInvalid = formState.errors[input.fields.name] ? 'true' : "false"
+        return <label aria-invalid={ariaInvalid} key={input.sys.id} css={css(labelStyle, props.layout?.grid && {gridArea: input.fields.name })}>
 
           {input.fields.label}{input.fields.required && "*"}
 
           {input.fields.type === "multiline" ?
-            <textarea  name={input.fields.name} css={inputDarkStyle} rows={5}
+            <textarea aria-invalid={ariaInvalid} name={input.fields.name} css={inputDarkStyle} rows={5}
               {...attributes} />
             :
             <input name={input.fields.name} type={input.fields.type} css={inputDarkStyle}
@@ -52,12 +56,11 @@ export default function Form(props: FormContentType){
           <MessageDisplay css={errorStyle} isShowing={formState.errors[input.fields.name]?.type === 'url'}>{t('validationErrors.url')}</MessageDisplay>
         </label>
       })}
-      <span css={buttonCss}>
-        <Button disabled={formState.isSubmitting} kind={BTN.PRIMARY} onPress={handleSubmit(onSubmit)} accessibilityRole="button" text={formState.isSubmitting ? '...' : props.submitText}/>
+      <span css={props.layout?.grid && buttonCss}>
+        <Button disabled={formState.isSubmitting} kind={BTN.PRIMARY} onPress={handleSubmit(onSubmit, onError)} accessibilityRole="button" text={formState.isSubmitting ? t('validationErrors.pleaseWait') : props.submitText}/>
         <MessageDisplay css={postSubmitCss} isShowing={formState.isSubmitSuccessful}>{t('shortSuccess')}</MessageDisplay>
         <MessageDisplay css={postSubmitErrorCss} isShowing={!!formState.errors.server}>{formState.errors.server?.message}</MessageDisplay>
       </span>
-
   </form>
 }
 
