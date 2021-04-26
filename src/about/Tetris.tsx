@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { colors } from 'src/styles'
 
-
 export default function Tetris() {
   return (
     <svg width="100%" height="100%" viewBox="0 0 421 301" fill="none">

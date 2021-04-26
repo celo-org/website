@@ -95,13 +95,9 @@ function useMenuHidePoint(): number | undefined {
 
 function useBanner() {
 
-    const [isBannerShowing, setBanner] = React.useState(false)
+    const [isBannerShowing, setBannerVisible] = React.useState(false)
 
-    function toggleBanner() {
-      setBanner(!isBannerShowing)
-    }
-
-    return {isBannerShowing, toggleBanner}
+    return {isBannerShowing, setBannerVisible}
 }
 
 function useMobileMenu(): [boolean, () => void] {
@@ -129,7 +125,7 @@ function useMobileMenu(): [boolean, () => void] {
 
  export default function Header() {
     const {bannerHeight} = useScreenSize()
-    const {isBannerShowing, toggleBanner} = useBanner()
+    const {setBannerVisible, isBannerShowing} = useBanner()
     const {pathname} = useRouter()
     const attributes = useAttributes()
     const isHomePage = pathname === menu.HOME.link
@@ -165,7 +161,7 @@ function useMobileMenu(): [boolean, () => void] {
         )}
       >
         {isHomePage && (
-          <BlueBanner onVisibilityChange={toggleBanner} />
+          <BlueBanner onVisibilityChange={setBannerVisible} />
         )}
         <div css={css(styles.menuContainer,styles.background,
           backgroundColor,
@@ -291,7 +287,7 @@ function flexCss(cssStyle: CSSObject) {
 const styles = {
   fadeTransition: css({
     transitionProperty: 'opacity color',
-    transitionDuration: '300ms',
+    transitionDuration: '200ms',
   }),
   menuVisible: css({
     opacity: 1,
@@ -313,7 +309,7 @@ const styles = {
     zIndex: 10,
     maxWidth: '100vw',
     transitionProperty: 'top',
-    transitionDuration: '300ms',
+    transitionDuration: '200ms',
   }),
   mobileOpenContainer: flexCss({
     flex: 1,

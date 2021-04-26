@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { H2, H4 } from 'src/fonts/Fonts'
 import { NameSpaces, useTranslation } from 'src/i18n'
 import ExchangeCELO from 'src/icons/ExchangeIconCELO'
-import ExchangeCUSD from 'src/icons/ExchangeIconCUSD'
+import BigStables from 'src/home/stables.svg'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import { ScreenSizes, useScreenSize } from 'src/layout/ScreenSize'
 import RingsGlyph from 'src/logos/RingsGlyph'
@@ -42,16 +42,32 @@ export function TwoAssets() {
         tabletStyle={standardStyles.blockMarginBottomTablet}
         mobileStyle={standardStyles.blockMarginBottomMobile}
       >
-        <AssetToken ticker="cUSD" info={t('cUSDinfo')} icon={<ExchangeCUSD size={ICON_SIZE} />}>
+        <AssetToken ticker="cUSD & cEUR" info={t('stableCoins')} icon={<img src={BigStables} width={132} height={ICON_SIZE} style={{marginBottom: 20}} />}>
           <Button
             kind={BTN.NAKED}
             text={t('stabilityPaper')}
             href={menuItems.PAPERS.link}
             size={SIZE.normal}
           />
-        </AssetToken>
-        <AssetToken ticker="CELO" info={t('CELOinfo')} icon={<ExchangeCELO size={ICON_SIZE} />}>
           <Button
+            target={"_blank"}
+            kind={BTN.NAKED}
+            style={{marginVertical: 16}}
+            text={t('celoDollars')}
+            href={"https://medium.com/celoorg/celo-dollars-powerful-new-digital-money-in-circulation-b4147eda2d10"}
+            size={SIZE.normal}
+          />
+          <Button
+            target={"_blank"}
+            kind={BTN.NAKED}
+            text={t('celoEuros')}
+            href={"https://medium.com/celoorg/deutsche-telekom-joins-celo-ecosystem-as-the-first-mobile-carrier-amid-launch-of-ceur-stablecoin-2b79aae38540"}
+            size={SIZE.normal}
+          />
+        </AssetToken>
+        <AssetToken ticker="CELO" info={t('CELOinfo')} icon={<View style={styles.image}><ExchangeCELO size={ICON_SIZE} /></View>}>
+          <Button
+            target={"_blank"}
             kind={BTN.NAKED}
             text={t('viewReserve')}
             href={'https://celoreserve.org'}
@@ -96,7 +112,7 @@ function AssetToken({ ticker, info, icon, children }: Props) {
     <Cell span={Spans.half} style={containerStyle}>
       <View style={styles.root}>
         <View>
-          <View style={styles.image}>{icon}</View>
+          {icon}
           <H4 style={textStyles.readingOnDark}>{ticker}</H4>
           <Text
             style={[

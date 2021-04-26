@@ -105,7 +105,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 
   server.get('/papers/future-proof-exec', (_, res) => {
 
-    res.redirect('https://drive.google.com/file/d/1ecbzd2BdE7zleAYXEfzSt_iRSrhAysCa/view')
+    res.redirect('https://drive.google.com/file/d/195h3oyR2LRwKOSIg_H2uwIHE1YVn9W0Z/view')
   })
 
   server.get('/papers/future-of-digital-currencies', (_, res) =>{

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Content, Tile } from 'src/experience/common/Tile'
 import { css } from '@emotion/react'
+import { flexRow } from 'src/estyles'
 
 export const GRID = {
   "grid": ({ fields }) => {
@@ -20,8 +21,8 @@ export const GRID = {
   }
 }
 
- const gridCss = css({
+ const gridCss = css(flexRow,{
   flexWrap: 'wrap',
-  flexDirection: 'row',
-  marginHorizontal: -10
+  marginLeft: -10,
+  marginRight: -10
 })

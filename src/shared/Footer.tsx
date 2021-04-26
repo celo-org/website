@@ -25,7 +25,9 @@ import InlineAnchor from 'src/shared/InlineAnchor'
 import menu, { CeloLinks, hashNav, MAIN_MENU } from 'src/shared/menu-items'
 import { colors, fonts, standardStyles, textStyles } from 'src/styles'
 
-const MENU = [menu.HOME, ...MAIN_MENU]
+const MENU = [menu.HOME, ...MAIN_MENU, {
+  name: "annualReport", link: "https://drive.google.com/file/d/1V00HirrpwSaUsapZoWVglRexBvrFuud7/view"
+}]
 const TECH_MENU = [
   { name: 'Docs', link: CeloLinks.docs },
   { name: 'Security Audits', link: CeloLinks.audits },
@@ -43,6 +45,7 @@ const RESOURCE_MENU = [
   menu.BRAND,
   menu.MERCHANTS,
   menu.GRANT_KIT,
+  menu.PILOT_KIT,
   { name: 'Ecosystem Fund', link: ecoFundLink },
 ]
 
@@ -78,17 +81,17 @@ const SOCIAL_MENU = [
     link: CeloLinks.youtube,
     icon: <YouTube size={ICON_SIZE} color={colors.dark} />,
   },
-  { 
-    name: 'Instagram', 
-    link: CeloLinks.instagram, 
+  {
+    name: 'Instagram',
+    link: CeloLinks.instagram,
     icon: <Instagram size={ICON_SIZE} />
   },
-  { 
+  {
     name: 'Defi Pulse',
     link: CeloLinks.defiPulse,
     icon: <DefiPulse size={ICON_SIZE} color={colors.dark}/>
   },
-  { 
+  {
     name: 'LinkedIn',
     link: CeloLinks.linkedIn,
     icon: <LinkedIn size={ICON_SIZE} color={colors.dark}/>
@@ -121,7 +124,7 @@ export default function Footer({ hideForm }: Props) {
 const footerMenu = React.useMemo(() => MENU.map((item) => {
     return {
       name: t(`footer.${item.name}`),
-      link: item.link 
+      link: item.link
     }
   }),[t] )
   return (
@@ -201,7 +204,7 @@ const footerMenu = React.useMemo(() => MENU.map((item) => {
 
 function MobileLinks({footerMenu}) {
   const { t } = useTranslation(NameSpaces.common)
- 
+
   return (
     <>
       <View style={standardStyles.row}>

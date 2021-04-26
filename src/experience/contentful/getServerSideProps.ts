@@ -3,12 +3,22 @@ import { Props } from 'src/experience/contentful/ContentfulKit'
 import { getKit, getPageById, SectionType } from 'src/utils/contentful'
 
 const getServerSideProps: GetServerSideProps<
-  Props,
+  Props | {},
   { kit: string; kitPage: string }
 > = async function getServerSideProp({ params, query, req, resolvedUrl }) {
   try {
   const locale = query.locale || 'en-US'
   const kit = await getKit(params.kit, params.kitPage, { locale })
+
+  if (!kit.pageID) {
+    return {
+      props: {},
+      redirect: {
+        destination: `/experience/${params.kit}`,
+      }
+    }
+  }
+
   const page = await getPageById<SectionType>(kit.pageID, { locale })
   const questionMark = resolvedUrl.indexOf('?');
   const newUrl = resolvedUrl.substring(0, questionMark)

@@ -1,12 +1,13 @@
 import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H1 } from 'src/fonts/Fonts'
+import {css} from '@emotion/react'
 import OpenGraph from 'src/header/OpenGraph'
 import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import SideTitledSection from 'src/layout/SideTitledSection'
+import Button, {SIZE, BTN} from 'src/shared/Button.3'
 import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import { standardStyles,  } from 'src/styles'
+import { flex, flexRow, fonts as eFonts, textStyles} from 'src/estyles'
 import { HelpfulLink } from 'src/terms/HelpfulLink'
 import { Languages } from 'src/utils/languages'
 
@@ -64,7 +65,7 @@ class PressPage extends React.PureComponent<I18nProps & Props> {
           path={NameSpaces.audits}
           description={t('metaDescription')}
         />
-        <View style={styles.container}>
+        <div css={containerCss}>
           <GridRow
             allStyle={standardStyles.centered}
             desktopStyle={standardStyles.blockMarginBottom}
@@ -72,7 +73,13 @@ class PressPage extends React.PureComponent<I18nProps & Props> {
             mobileStyle={standardStyles.blockMarginBottomMobile}
           >
             <Cell span={Spans.three4th} style={standardStyles.centered}>
-              <H1 style={textStyles.center}>{t('title')}</H1>
+              <h1 css={titleCss}>{t('title')}</h1>
+              <Button
+                text={t('contact')}
+                kind={BTN.NAKED}
+                size={SIZE.big}
+                href={"mailto:press@celo.org"}
+              />
             </Cell>
           </GridRow>
           {Object.keys(formated).map((date) => {
@@ -83,40 +90,56 @@ class PressPage extends React.PureComponent<I18nProps & Props> {
                 title={new Date(date).toLocaleDateString(this.props.i18n.language, DATE_FORMAT)}
               >
                 {formated[date].map((item) => (
-                  <View style={styles.reference} key={item.title}>
-                    <Text style={[fonts.p, textStyles.heavy]}>{item.title}</Text>
-                    <Text style={fonts.p}>
-                      <Text style={textStyles.italic}>
-                        {t('by')} {item.publication}
-                        {'  '}
-                      </Text>
+                  <div css={referenceCss} key={item.title}>
+                    <p css={articleCss}>{item.title}</p>
+                    <p css={publisherLinkCss}>
+                      <span css={publisherCss}>
+                        {t('by', {publisher: item.publication})}
+                      </span>
                       {item.link && <HelpfulLink text={t('read')} href={item.link} />}
-                    </Text>
-                  </View>
+                    </p>
+                  </div>
                 ))}
               </SideTitledSection>
             )
           })}
-        </View>
+        </div>
       </>
     )
   }
 }
 
+const titleCss = css(eFonts.h1, {
+  textAlign: 'center',
+  marginBottom: 16
+})
+
+const articleCss = css(eFonts.body, textStyles.heavy,{
+  marginTop: 0,
+  marginBottom: 0
+})
+
+const publisherLinkCss = css(eFonts.body, flexRow, {
+  marginTop: 8
+})
+
+const publisherCss = css(textStyles.italic,{
+  marginRight: 24
+})
+
 const DATE_FORMAT = { year: 'numeric' as 'numeric', month: 'long' as 'long' }
 
 export default withNamespaces(NameSpaces.press)(PressPage)
 
-const styles = StyleSheet.create({
-  container: {
-    marginTop: HEADER_HEIGHT,
-    paddingTop: HEADER_HEIGHT,
-    minHeight: 450,
-  },
-  reference: {
-    marginBottom: 40,
-    maxWidth: 700,
-  },
+const containerCss = css(flex, {
+  marginTop: HEADER_HEIGHT,
+  paddingTop: HEADER_HEIGHT,
+  minHeight: 450
+})
+
+const referenceCss = css(flex,{
+  marginBottom: 40,
+  maxWidth: 700,
 })
 
 // groups by month by changing all dates to the 15th of month they are in
