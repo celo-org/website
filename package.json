@@ -79,6 +79,7 @@
     "react-dom": "^17.0.1",
     "react-ga": "^3.1.2",
     "react-google-recaptcha": "^2.0.1",
+    "react-hook-form": "^7.1.1",
     "react-is": "^17.0.1",
     "react-lazyload": "^3.2.0",
     "react-lazyload-fadein": "^1.1.0",

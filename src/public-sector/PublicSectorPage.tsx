@@ -2,8 +2,8 @@ import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { Entry } from 'contentful'
 import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CellContentType,
-  FreeContentType, RoledexContentType, PlaylistContentType, CoverContentType } from 'src/utils/contentful'
-import { flex } from 'src/estyles'
+  FreeContentType, RoledexContentType, PlaylistContentType, CoverContentType, FormContentType } from 'src/utils/contentful'
+import { flex, WHEN_MOBILE } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
 import Blurb, {Props as BlurbProps} from "src/contentful/grid2-cells/Blurb"
@@ -11,7 +11,7 @@ import {renderNode} from "src/contentful/nodes/nodes"
 import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
 import Roledex from "src/contentful/grid2-cells/Roledex"
 import PlayList from "src/contentful/grid2-cells/Playlist"
-
+import Form from "src/contentful/grid2-cells/Form"
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
 import {BUTTON} from "src/contentful/nodes/embeds/BUTTON"
@@ -55,10 +55,9 @@ export default function PublicSectorPage(props: Props) {
   </>
 }
 
-const rootCss = css(flex, {
-})
+const rootCss = css(flex, {})
 
-function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverContentType>) {
+function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverContentType |FormContentType>) {
   switch (section.sys.contentType.sys.id) {
     case 'cover':
       const coverFields = section.fields as CoverContentType
@@ -69,8 +68,8 @@ function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverConte
     case 'grid-row':
       const gridFields = section.fields as GridRowContentType
       return (
-        <GridRow key={section.sys.id} darkMode={gridFields.darkMode} id={gridFields.id} columns={gridFields.columns} css={css(gridFields.cssStyle)}>
-          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.columns, gridFields.darkMode))}
+        <GridRow key={section.sys.id} darkMode={gridFields.darkMode} id={gridFields.id} columns={gridFields.columns} css={css(sectionsCss,gridFields.cssStyle)}>
+          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.darkMode))}
         </GridRow>
       )
     default:
@@ -81,7 +80,7 @@ function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverConte
     }
 }
 
-function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: boolean) {
+function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
   if (entry) {
     switch (entry.sys.contentType.sys.id) {
       case "roledex":
@@ -94,10 +93,20 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: bo
         const freeContent = entry.fields as FreeContentType
         return <FreeContent
                 key={entry.sys.id}
-                colSpan={columns}
+                colSpan={freeContent.colSpan}
                 body={freeContent.body}
+                darkMode={darkMode}
                 cssStyle={freeContent.cssStyle}
                 backgroundColor={freeContent.backgroundColor}
+                />
+      case 'form':
+        const formFields = entry.fields as FormContentType
+        return <Form  key={entry.sys.id}
+                      route={formFields.route}
+                      layout={formFields.layout}
+                      fields={formFields.fields}
+                      colSpan={formFields.colSpan}
+                      submitText={formFields.submitText}
                 />
       case  "proposition":
         const blurbProp = entry.fields as BlurbProps
@@ -117,6 +126,15 @@ function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: bo
   }
   return null
 }
+
+const sectionsCss = css({
+  paddingTop: 80,
+  paddingBottom: 80,
+  [WHEN_MOBILE]: {
+    paddingTop: 24,
+    paddingBottom: 24
+  }
+})
 
 export async function getServerSideProps() {
   const page = await getPageBySlug("public-sector", {locale: 'en-US'}, true)

@@ -95,6 +95,24 @@ export interface RoledexContentType {
   sheets: Entry<InfoSheetContentType>[]
 }
 
+export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
+
+interface FieldContentType {
+  name: string
+  placeholder?: string
+  label?: string
+  required?: boolean
+  type?: InputTypes
+}
+
+export interface FormContentType {
+  fields: Entry<FieldContentType>[]
+  colSpan: number
+  layout?: {grid: string[][]}
+  submitText: string
+  route: string
+}
+
 export interface ThumbnailType {
   title: string
   link: string
@@ -104,6 +122,7 @@ export interface FreeContentType {
   backgroundColor: string
   cssStyle: CSSObject
   body: Document
+  colSpan: number
 }
 
 export interface PlaylistContentType {
@@ -113,7 +132,7 @@ export interface PlaylistContentType {
   media?: Entry<ThumbnailType>[]
 }
 
-export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType
+export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType | FormContentType
 
 export interface GridRowContentType {
   id: string

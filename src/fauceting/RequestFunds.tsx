@@ -9,7 +9,7 @@ import {
   requestStatusToState,
   validateBeneficary,
 } from 'src/fauceting/utils'
-import { postForm } from 'src/forms/Form'
+import { postForm } from "src/forms/postForm"
 import { TextInput } from 'src/forms/TextInput'
 import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
 import Android from 'src/icons/Android'

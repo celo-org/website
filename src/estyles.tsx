@@ -1,5 +1,5 @@
 import { css } from "@emotion/react"
-import { typeFaces, fontInfo } from "./styles"
+import { typeFaces, fontInfo, colors } from "./styles"
 import {DESKTOP_BREAKPOINT, TABLET_BREAKPOINT} from "src/shared/Styles"
 
 export const flex = css({
@@ -94,3 +94,44 @@ export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
 export const WHEN_SMALL_MOBILE = `@media (max-width: 330px)`
 
 export const WHEN_LONG_PHONE = `@media (max-width: 400px) and (min-height: 790px)`
+
+export const labelStyle = css(jost, flex,{
+  color: colors.secondary,
+  fontWeight: 500,
+  fontSize: 16,
+  lineHeight: "18px",
+  marginTop: 8,
+  marginBottom: 16,
+})
+
+export const inputStyle = css(flex, fonts.body,{
+  alignSelf: 'center',
+  paddingLeft: 12,
+  paddingRight: 12,
+  paddingTop: 12,
+  paddingBottom: 16,
+  borderRadius: 3,
+  borderWidth: 1,
+  borderStyle: "solid",
+  borderColor: 'rgba(61, 61, 61, 0.2)',
+  width: '100%',
+  margin: 4,
+  marginBottom: 8,
+  outlineWidth: 0,
+  "&:focus": {
+    borderColor: colors.primary,
+  }
+})
+
+export const inputDarkStyle = css(inputStyle,{
+  backgroundColor: colors.dark,
+  borderColor: colors.secondary,
+  color: colors.white,
+  "&:focus": {
+    borderColor: colors.white,
+  }
+})
+
+export const errorStyle = css({
+  color: colors.error
+})
