@@ -16,7 +16,6 @@ function getAirtable<T extends FieldSet>(sheet: string) {
 }
 
 export async function create(data) {
-  console.info('create', data)
   return getAirtable<Fields>('Web').create(convert(data))
 }
 
