@@ -33,6 +33,7 @@ const TECH_MENU = [
   { name: 'Security Audits', link: CeloLinks.audits },
   { name: 'Reserve', link: CeloLinks.reserve },
   menu.PAPERS,
+  menu.PUBLIC_SECTOR
 ]
 const eventsLink = `${menu.COMMUNITY.link}#${hashNav.connect.events}`
 const ecoFundLink = `${menu.COMMUNITY.link}#${hashNav.connect.fund}`
