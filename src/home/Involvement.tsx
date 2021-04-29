@@ -158,7 +158,6 @@ const LINKS = {
 }
 
 function Content({ path }) {
-  debugger
   const { t } = useTranslation(NameSpaces.home)
   const { isMobile } = useScreenSize()
   return (
