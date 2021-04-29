@@ -9,7 +9,6 @@ import FellowSection from 'src/community/connect/FellowSection'
 import preview from 'src/community/connect/preview.jpg'
 import Tenets from 'src/community/connect/Tenets'
 import EcoFund from 'src/community/EcoFund'
-import { H2 } from 'src/fonts/Fonts'
 import OpenGraph from 'src/header/OpenGraph'
 import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
@@ -54,7 +53,6 @@ export class CommunityPage extends React.Component<Props> {
           >
             <Cell span={Spans.full} style={standardStyles.centered}>
               <Fade distance={'20px'}>
-                <H2>{t('events.title')}</H2>
               </Fade>
             </Cell>
           </GridRow>

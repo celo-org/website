@@ -148,7 +148,7 @@ const LINKS = {
   },
   [Paths.connect]: {
     primary: 'https://airtable.com/shrfUJWk1eKfFcZKb',
-    secondary: `${menuItems.COMMUNITY.link}#${hashNav.connect.events}`,
+    secondary: 'https://chat.celo.org',
     img: require(`src/home/involvement/connect.jpg`),
   },
   [Paths.work]: {
