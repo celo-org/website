@@ -12,7 +12,6 @@ import EcoFund from 'src/community/EcoFund'
 import OpenGraph from 'src/header/OpenGraph'
 import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
 import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Fade from 'src/shared/AwesomeFade'
 import { hashNav } from 'src/shared/menu-items'
 import { standardStyles } from 'src/styles'
 
@@ -44,18 +43,7 @@ export class CommunityPage extends React.Component<Props> {
         <View>
           <CoverArea />
           <Tenets />
-
           <CodeOfConduct />
-          <GridRow
-            nativeID={hashNav.connect.events}
-            desktopStyle={standardStyles.sectionMarginTop}
-            mobileStyle={standardStyles.sectionMarginTopMobile}
-          >
-            <Cell span={Spans.full} style={standardStyles.centered}>
-              {/* <Fade distance={'20px'}>
-              </Fade> */}
-            </Cell>
-          </GridRow>
           <EventData />
           <ArticleData title={t('articles.title')} />
           <Contribute />
