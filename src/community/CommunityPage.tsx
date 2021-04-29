@@ -47,7 +47,7 @@ export class CommunityPage extends React.Component<Props> {
           <Tenets />
 
           <CodeOfConduct />
-          {/* <GridRow
+          <GridRow
             nativeID={hashNav.connect.events}
             desktopStyle={standardStyles.sectionMarginTop}
             mobileStyle={standardStyles.sectionMarginTopMobile}
@@ -58,7 +58,7 @@ export class CommunityPage extends React.Component<Props> {
               </Fade>
             </Cell>
           </GridRow>
-          <EventData /> */}
+          <EventData />
           <ArticleData title={t('articles.title')} />
           <Contribute />
           <EcoFund />
