@@ -11,9 +11,8 @@ import Tenets from 'src/community/connect/Tenets'
 import EcoFund from 'src/community/EcoFund'
 import OpenGraph from 'src/header/OpenGraph'
 import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
 import { hashNav } from 'src/shared/menu-items'
-import { standardStyles } from 'src/styles'
+
 
 type Props = I18nProps
 
