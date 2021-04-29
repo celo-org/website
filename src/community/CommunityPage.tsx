@@ -52,8 +52,8 @@ export class CommunityPage extends React.Component<Props> {
             mobileStyle={standardStyles.sectionMarginTopMobile}
           >
             <Cell span={Spans.full} style={standardStyles.centered}>
-              <Fade distance={'20px'}>
-              </Fade>
+              {/* <Fade distance={'20px'}>
+              </Fade> */}
             </Cell>
           </GridRow>
           <EventData />
