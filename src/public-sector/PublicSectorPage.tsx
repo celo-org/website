@@ -48,7 +48,7 @@ const OPTIONS = {
 
 export default function PublicSectorPage(props: Props) {
   return <>
-      <OpenGraph title={props.title} description={props.description}  path={props.slug}/>
+      <OpenGraph image={props.openGraph?.fields?.file?.url} title={props.title} description={props.description}  path={props.slug}/>
       <div css={rootCss}>
           {props.sections.map(pageSwitch)}
       </div>

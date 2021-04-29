@@ -44,6 +44,7 @@ export default function useStatsRelay() {
         if (addressAsNumber > state.addressCount) {
           return {...state, addressCount:addressAsNumber }
         }
+        return state
       case StatKeys.avgBlockTime:
         return {...state, avgBlockTime: action.value}
       case StatKeys.blockCount:

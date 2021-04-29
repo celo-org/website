@@ -159,6 +159,7 @@ export interface ContentfulPage<T> {
   slug: string
   description: string
   sections: Entry<T>[]
+  openGraph?: Asset
 }
 
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {

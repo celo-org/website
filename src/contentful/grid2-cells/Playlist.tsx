@@ -22,7 +22,7 @@ export default function PlayList(props: PlaylistContentType) {
   const youTubePlayist = useYoutube(props.listId)
 
   const allItems = React.useMemo(() => {
-    const media = props.media?.map(({fields, sys}) => ({...fields, id: sys.id,  altText: fields.image.fields.description, image: `https:${fields.image.fields.file.url}`})) || []
+    const media = props.media?.filter(({fields}) =>  fields.image?.fields?.file).map(({fields, sys}) => ({...fields, id: sys.id,  altText: fields?.image?.fields?.description, image:`https:${fields.image.fields.file.url}`})) || []
     return [...media, ...(youTubePlayist || []) ]
   }, [youTubePlayist, props.media])
 

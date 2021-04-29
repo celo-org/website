@@ -157,7 +157,7 @@ export const pagePaths = {
   },
   PUBLIC_SECTOR: {
     name: 'Public Sector',
-    link: '/sandbox',
+    link: '/public-sector',
     isDark: true,
     translucent: {
       backgroundHover: colors.darkTransparent,
