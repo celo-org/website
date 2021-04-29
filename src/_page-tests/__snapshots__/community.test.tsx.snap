@@ -1646,6 +1646,636 @@ We believe that many of these features have great potential for positive impact,
   </div>
   <div
     className="css-view-1dbjc4n"
+    id="events"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "marginTop": "50px",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitAlignItems": "center",
+          "WebkitBoxAlign": "center",
+          "WebkitBoxFlex": 0,
+          "WebkitBoxPack": "center",
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "WebkitJustifyContent": "center",
+          "alignItems": "center",
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "justifyContent": "center",
+          "msFlexAlign": "center",
+          "msFlexNegative": 0,
+          "msFlexPack": "center",
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-q7lffx"
+      >
+        <h2
+          aria-level="2"
+          className="css-reset-4rbku5 css-text-901oao"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontSize": "28px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          Connect in person
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignSelf": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "vertical",
+        "WebkitFlexDirection": "column",
+        "alignSelf": "center",
+        "flexDirection": "column",
+        "marginBottom": "30px",
+        "marginTop": "30px",
+        "maxWidth": "100vw",
+        "msFlexDirection": "column",
+        "msFlexItemAlign": "center",
+        "msGridRowAlign": "center",
+        "paddingLeft": "10px",
+        "paddingRight": "10px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "msFlexNegative": 0,
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "marginBottom": "30px",
+            "marginTop": "30px",
+          }
+        }
+      >
+        <div
+          className="css-text-901oao"
+          dir="auto"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "500",
+              "lineHeight": "18px",
+              "textRendering": "geometricPrecision",
+            }
+          }
+        >
+          Refine By
+        </div>
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "MozTransitionProperty": "opacity",
+              "MozUserSelect": "none",
+              "WebkitTransitionDuration": "0s",
+              "WebkitTransitionProperty": "opacity",
+              "WebkitUserSelect": "none",
+              "cursor": "pointer",
+              "msTouchAction": "manipulation",
+              "msUserSelect": "none",
+              "touchAction": "manipulation",
+              "transitionDuration": "0s",
+              "transitionProperty": "opacity",
+              "userSelect": "none",
+            }
+          }
+          tabIndex="0"
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitAlignContent": "center",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "alignContent": "center",
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginBottom": "10px",
+                "marginTop": "10px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msFlexLinePack": "center",
+              }
+            }
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="11.5"
+                stroke="#DDDDDD"
+              />
+            </svg>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxPack": "center",
+                  "WebkitJustifyContent": "center",
+                  "justifyContent": "center",
+                  "msFlexPack": "center",
+                  "paddingLeft": "10px",
+                  "paddingRight": "10px",
+                }
+              }
+            >
+              <svg
+                fill="none"
+                height={14}
+                viewBox="0 0 83 98"
+                width={14}
+              >
+                <g
+                  style={
+                    Object {
+                      "mixBlendMode": "normal",
+                    }
+                  }
+                >
+                  <path
+                    d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
+                    fill="#35D07F"
+                  />
+                </g>
+              </svg>
+            </div>
+            <label
+              className="css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontSize": "20px",
+                  "lineHeight": "28px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Hosting
+            </label>
+          </div>
+        </div>
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "MozTransitionProperty": "opacity",
+              "MozUserSelect": "none",
+              "WebkitTransitionDuration": "0s",
+              "WebkitTransitionProperty": "opacity",
+              "WebkitUserSelect": "none",
+              "cursor": "pointer",
+              "msTouchAction": "manipulation",
+              "msUserSelect": "none",
+              "touchAction": "manipulation",
+              "transitionDuration": "0s",
+              "transitionProperty": "opacity",
+              "userSelect": "none",
+            }
+          }
+          tabIndex="0"
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitAlignContent": "center",
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "alignContent": "center",
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginBottom": "10px",
+                "marginTop": "10px",
+                "msFlexAlign": "center",
+                "msFlexDirection": "row",
+                "msFlexLinePack": "center",
+              }
+            }
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="11.5"
+                stroke="#DDDDDD"
+              />
+            </svg>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "WebkitBoxPack": "center",
+                  "WebkitJustifyContent": "center",
+                  "justifyContent": "center",
+                  "msFlexPack": "center",
+                  "paddingLeft": "10px",
+                  "paddingRight": "10px",
+                }
+              }
+            >
+              <svg
+                fill="none"
+                height={14}
+                viewBox="0 0 83 98"
+                width={14}
+              >
+                <g
+                  style={
+                    Object {
+                      "mixBlendMode": "normal",
+                    }
+                  }
+                >
+                  <path
+                    d="M54.5568 0.387939C34.0744 0.387939 12.1108 19.8688 3.46956 45.6981C-1.53621 60.694 -0.736234 75.0526 5.66354 85.0874C10.0911 92.0973 17.0453 96.3807 25.243 97.147C26.0351 97.2277 26.8667 97.268 27.8806 97.268C37.2426 97.268 47.5393 92.6781 56.8776 84.3534C66.2396 76.0367 73.97 64.5498 78.6431 51.9982C84.33 36.6474 83.6568 22.0387 76.7976 11.9232C71.7602 4.48578 63.8634 0.387939 54.5568 0.387939Z"
+                    fill="#BF97FF"
+                  />
+                </g>
+              </svg>
+            </div>
+            <label
+              className="css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(46,51,56,1.00)",
+                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontSize": "20px",
+                  "lineHeight": "28px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Speaking
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "500",
+            "lineHeight": "18px",
+            "marginBottom": "20px",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        Want to host a Celo Meet-up?
+      </div>
+      <div
+        className="css-text-901oao"
+        dir="auto"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "rgba(46,51,56,1.00)",
+            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontSize": "20px",
+            "lineHeight": "28px",
+            "textRendering": "geometricPrecision",
+          }
+        }
+      >
+        Send a note to
+         
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          style={
+            Object {
+              "display": "inline",
+            }
+          }
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
+            href="mailto:community@celo.org"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="link"
+            style={
+              Object {
+                "WebkitTextDecorationStyle": "solid",
+                "cursor": "pointer",
+                "display": "inline",
+                "opacity": 1,
+                "textDecoration": "underline",
+                "textDecorationStyle": "solid",
+              }
+            }
+          >
+            community@celo.org
+          </a>
+        </div>
+         
+        before the event to learn more
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 0,
+          "WebkitFlexGrow": 0,
+          "WebkitFlexShrink": 0,
+          "flexGrow": 0,
+          "flexShrink": 0,
+          "msFlexNegative": 0,
+          "msFlexPositive": 0,
+          "paddingBottom": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        onScroll={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        onWheel={[Function]}
+        style={
+          Object {
+            "WebkitBoxDirection": "normal",
+            "WebkitBoxFlex": 1,
+            "WebkitBoxOrient": "vertical",
+            "WebkitFlexDirection": "column",
+            "WebkitFlexGrow": 1,
+            "WebkitFlexShrink": 1,
+            "WebkitOverflowScrolling": "touch",
+            "WebkitTransform": "translateZ(0px)",
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "msFlexDirection": "column",
+            "msFlexNegative": 1,
+            "msFlexPositive": 1,
+            "overflowX": "hidden",
+            "overflowY": "auto",
+            "transform": "translateZ(0px)",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+            }
+          }
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxPack": "center",
+                "WebkitJustifyContent": "center",
+                "alignItems": "center",
+                "height": "90vh",
+                "justifyContent": "center",
+                "msFlexAlign": "center",
+                "msFlexPack": "center",
+              }
+            }
+          >
+            <div
+              aria-label="loading"
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "height": "50px",
+                  "width": "50px",
+                }
+              }
+            >
+              <span>
+                ...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitAlignItems": "center",
+            "WebkitBoxAlign": "center",
+            "WebkitBoxPack": "center",
+            "WebkitJustifyContent": "center",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "marginTop": "60px",
+            "msFlexAlign": "center",
+            "msFlexPack": "center",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxFlex": 0,
+                "WebkitBoxOrient": "horizontal",
+                "WebkitBoxPack": "center",
+                "WebkitFlexDirection": "row",
+                "WebkitFlexGrow": 0,
+                "WebkitJustifyContent": "center",
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "borderBottomColor": "rgba(0,0,0,0.00)",
+                "borderLeftColor": "rgba(0,0,0,0.00)",
+                "borderRightColor": "rgba(0,0,0,0.00)",
+                "borderTopColor": "rgba(0,0,0,0.00)",
+                "flexDirection": "row",
+                "flexGrow": 0,
+                "justifyContent": "center",
+                "msFlexDirection": "row",
+                "msFlexPack": "center",
+                "msFlexPositive": 0,
+                "opacity": 1,
+                "outlineColor": "transparent",
+                "width": "fit-content",
+              }
+            }
+          >
+            <a
+              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              dir="auto"
+              href="/past-events"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="link"
+              style={
+                Object {
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "alignItems": "center",
+                  "color": "rgba(46,51,56,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "lineHeight": "16px",
+                  "msFlexAlign": "center",
+                  "opacity": 1,
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Past Events
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "display": "inline-flex",
+                    "paddingLeft": "0.4em",
+                    "paddingTop": "0.185em",
+                  }
+                }
+              >
+                <svg
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
+                >
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#2E3338"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
     id="blog"
   >
     <div
