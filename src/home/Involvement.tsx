@@ -153,12 +153,12 @@ const LINKS = {
   },
   [Paths.work]: {
     primary: menuItems.JOBS.link,
-    secondary: `${menuItems.COMMUNITY.link}#${hashNav.connect.fellowship}`,
     img: require(`src/home/involvement/work.jpg`),
   },
 }
 
 function Content({ path }) {
+  debugger
   const { t } = useTranslation(NameSpaces.home)
   const { isMobile } = useScreenSize()
   return (
@@ -178,13 +178,13 @@ function Content({ path }) {
               style={styles.primary}
               href={LINKS[path].primary}
             />
-            <Button
+            {path === 5 ? null : <Button
               kind={BTN.NAKED}
               text={t(`involve.paths.${path}.secondary`)}
               size={SIZE.normal}
               style={styles.secondary}
               href={LINKS[path].secondary}
-            />
+            />}
           </View>
         </View>
       </Cell>
