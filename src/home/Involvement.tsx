@@ -148,12 +148,11 @@ const LINKS = {
   },
   [Paths.connect]: {
     primary: 'https://airtable.com/shrfUJWk1eKfFcZKb',
-    secondary: `${menuItems.COMMUNITY.link}#${hashNav.connect.events}`,
+    secondary: 'https://chat.celo.org',
     img: require(`src/home/involvement/connect.jpg`),
   },
   [Paths.work]: {
     primary: menuItems.JOBS.link,
-    secondary: `${menuItems.COMMUNITY.link}#${hashNav.connect.fellowship}`,
     img: require(`src/home/involvement/work.jpg`),
   },
 }
@@ -178,13 +177,13 @@ function Content({ path }) {
               style={styles.primary}
               href={LINKS[path].primary}
             />
-            <Button
+            {!LINKS[path].secondary ? null : <Button
               kind={BTN.NAKED}
               text={t(`involve.paths.${path}.secondary`)}
               size={SIZE.normal}
               style={styles.secondary}
               href={LINKS[path].secondary}
-            />
+            />}
           </View>
         </View>
       </Cell>
