@@ -177,7 +177,7 @@ function Content({ path }) {
               style={styles.primary}
               href={LINKS[path].primary}
             />
-            {path === 5 ? null : <Button
+            {!LINKS[path].secondary ? null : <Button
               kind={BTN.NAKED}
               text={t(`involve.paths.${path}.secondary`)}
               size={SIZE.normal}
