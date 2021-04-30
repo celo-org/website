@@ -16,7 +16,37 @@ module.exports = withImages({
   publicRuntimeConfig: envConfig,
   serverRuntimeConfig: serverEnvConfig,
   reactStrictMode: true,
-
+  async headers() {
+    return [
+      {
+        source: '/',
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public; max-age=60, stale-while-revalidate=600",
+          },
+        ],
+      },
+      {
+        source: '/api/bytes',
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "private; max-age=0",
+          },
+        ],
+      },
+      {
+        source: '/api/:any*',
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public; max-age=60, stale-while-revalidate=600",
+          },
+        ],
+      },
+    ]
+  },
   // options: {buildId, dev, isServer, defaultLoaders, webpack}   https://nextjs.org/docs#customizing-webpack-config
   webpack: (config, { isServer }) => {
 

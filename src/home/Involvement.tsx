@@ -132,7 +132,7 @@ const LINKS = {
     img: require(`src/home/involvement/build.jpg`),
   },
   [Paths.grow]: {
-    primary: 'https://c-labs.typeform.com/to/gj9aUp',
+    primary: '/experiences/grants',
     secondary: `${menuItems.COMMUNITY.link}#${hashNav.connect.fund}`,
     img: require(`src/home/involvement/grow.jpg`),
   },
