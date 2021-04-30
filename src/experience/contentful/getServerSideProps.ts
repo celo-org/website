@@ -8,6 +8,13 @@ const getServerSideProps: GetServerSideProps<
 > = async function getServerSideProp({ params, query, req, resolvedUrl }) {
   try {
   const locale = query.locale || 'en-US'
+
+  if (!params?.kit) {
+    return {
+      notFound: true
+    }
+  }
+
   const kit = await getKit(params.kit, params.kitPage, { locale })
 
   if (!kit.pageID) {
@@ -49,6 +56,9 @@ const getServerSideProps: GetServerSideProps<
 
   } catch (error) {
     console.error("error", error, "kit and page:",params.kit, params.kitPage)
+    return {
+      notFound: true
+    }
   }
 }
 
