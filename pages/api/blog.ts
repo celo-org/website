@@ -9,7 +9,7 @@ export default async function(req: NextApiRequest, res: NextApiResponse) {
       const articlesdata = await getFormattedMediumArticles(req.query.tagged as string)
       res.json(articlesdata)
     } else {
-      res.status(405)
+      res.status(405).json({error: `${req.method} does not exist here` })
     }
   } catch (e) {
     respondError(res, e)
