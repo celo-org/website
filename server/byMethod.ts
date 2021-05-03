@@ -16,10 +16,10 @@ export default function byMethod({ getHandler, postHandler }: Methods) {
       } else if (req.method === 'POST' && postHandler) {
         await postHandler(req, res)
       } else {
-        res.status(405)
+        res.status(405).json({error: `${req.method} does not exist here` })
       }
     } catch (e) {
-      console.error('api caught', e)
+      console.error('api:caught', e)
       respondError(res, e)
     }
   }
