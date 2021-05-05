@@ -542,7 +542,7 @@ exports[`HomePage renders 1`] = `
                   }
                 }
               >
-                Contact
+                Contact Press
                 <div
                   className="css-view-1dbjc4n"
                   style={

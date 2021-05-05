@@ -233,7 +233,7 @@ export enum CeloLinks {
   medium = 'https://medium.com/celoOrg',
   mediumUser = 'https://medium.com/@celoorg',
   mediumPublication = 'https://medium.com/celoOrg',
-  fundingRequest = 'https://c-labs.typeform.com/to/gj9aUp',
+  fundingRequest = 'mailto:partner@celo.org',
   linkedIn = 'https://www.linkedin.com/company/celoOrg/',
   monorepo = 'https://github.com/celo-org/celo-monorepo',
   blockChainRepo = 'https://github.com/celo-org/celo-blockchain',
