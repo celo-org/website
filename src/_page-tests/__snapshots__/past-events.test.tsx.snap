@@ -75,7 +75,7 @@ exports[`PastEventsPage renders 1`] = `
             }
           }
         >
-          Refine By
+          events.refineBy
         </div>
         <div
           className="css-view-1dbjc4n"
@@ -310,7 +310,7 @@ exports[`PastEventsPage renders 1`] = `
           }
         }
       >
-        Want to host a Celo Meet-up?
+        events.reppingCelo
       </div>
       <div
         className="css-text-901oao"
