@@ -10,10 +10,7 @@ import Tenets from 'src/community/connect/Tenets'
 import EcoFund from 'src/community/EcoFund'
 import OpenGraph from 'src/header/OpenGraph'
 import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Fade from 'src/shared/AwesomeFade'
 import { hashNav } from 'src/shared/menu-items'
-import { standardStyles } from 'src/styles'
 
 type Props = I18nProps
 
@@ -45,17 +42,7 @@ export class CommunityPage extends React.Component<Props> {
           <Tenets />
 
           <CodeOfConduct />
-          <GridRow
-            nativeID={hashNav.connect.events}
-            desktopStyle={standardStyles.sectionMarginTop}
-            mobileStyle={standardStyles.sectionMarginTopMobile}
-          >
-            <Cell span={Spans.full} style={standardStyles.centered}>
-              <Fade distance={'20px'}>
-                {/*Deleted the h2 section Connect in person but kept the cell*/}
-              </Fade>
-            </Cell>
-          </GridRow>
+         
           <ArticleData title={t('articles.title')} />
           <Contribute />
           <EcoFund />
