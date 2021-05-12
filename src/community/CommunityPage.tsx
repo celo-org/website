@@ -54,11 +54,10 @@ export class CommunityPage extends React.Component<Props> {
           >
             <Cell span={Spans.full} style={standardStyles.centered}>
               <Fade distance={'20px'}>
-                <H2>{t('events.title')}</H2>
+                {/*Deleted the h2 section Connect in person but kept the cell*/}
               </Fade>
             </Cell>
           </GridRow>
-          <EventData />
           <ArticleData title={t('articles.title')} />
           <Contribute />
           <EcoFund />
