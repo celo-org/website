@@ -68,20 +68,6 @@ jobs:
       - store_test_results:
           path: test-results
 
-  # Build
-  build:
-    <<: *NODE
-    steps:
-      - checkout
-      - *CHECKOUT-WORKSPACE
-      - run: yarn build
-  next-build:
-    <<: *NODE
-    steps:
-      - checkout
-      - *CHECKOUT-WORKSPACE
-      - run: yarn build:next
-
   # Linter
   lint:
     <<: *NODE
@@ -89,3 +75,12 @@ jobs:
       - checkout
       - *CHECKOUT-WORKSPACE
       - run: yarn lint
+
+  # Build
+  build:
+    <<: *NODE
+    steps:
+      - checkout
+      - *CHECKOUT-WORKSPACE
+      - run: yarn build
+
