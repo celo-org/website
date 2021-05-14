@@ -2,19 +2,18 @@ import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { cellSwitch } from "./cellSwitch"
 import { Entry } from 'contentful'
-import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CoverContentType } from 'src/utils/contentful'
-import { flex } from 'src/estyles'
+import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CoverContentType, FormContentType } from 'src/utils/contentful'
+import { flex, WHEN_MOBILE } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
 import {renderNode} from "src/contentful/nodes/nodes"
-
-type Props = ContentfulPage<GridRowContentType | SectionType>
-
 import {BUTTON} from "src/contentful/nodes/embeds/BUTTON"
 import {GALLARY} from "src/contentful/nodes/embeds/GALLARY"
 import {TABLE} from "src/contentful/nodes/embeds/TABLE"
 import { BLOCKS, INLINES, Block} from '@contentful/rich-text-types'
 import Cover from "src/contentful/Cover"
+
+type Props = ContentfulPage<GridRowContentType | SectionType>
 
 const EMBEDDABLE =  {
   ...BUTTON,
@@ -44,17 +43,16 @@ const OPTIONS = {
 
 export default function PublicSectorPage(props: Props) {
   return <>
-      <OpenGraph title={props.title} description={props.description}  path={props.slug}/>
+      <OpenGraph image={props.openGraph?.fields?.file?.url} title={props.title} description={props.description}  path={props.slug}/>
       <div css={rootCss}>
           {props.sections.map(pageSwitch)}
       </div>
   </>
 }
 
-const rootCss = css(flex, {
-})
+const rootCss = css(flex, {})
 
-function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverContentType>) {
+function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverContentType |FormContentType>) {
   switch (section.sys.contentType.sys.id) {
     case 'cover':
       const coverFields = section.fields as CoverContentType
@@ -65,8 +63,8 @@ function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverConte
     case 'grid-row':
       const gridFields = section.fields as GridRowContentType
       return (
-        <GridRow key={section.sys.id} darkMode={gridFields.darkMode} id={gridFields.id} columns={gridFields.columns} css={css(gridFields.cssStyle)}>
-          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.columns, gridFields.darkMode))}
+        <GridRow key={section.sys.id} darkMode={gridFields.darkMode} id={gridFields.id} columns={gridFields.columns} css={css(sectionsCss,gridFields.cssStyle)}>
+          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.darkMode))}
         </GridRow>
       )
     default:
@@ -77,6 +75,15 @@ function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverConte
     }
 }
 
+
+const sectionsCss = css({
+  paddingTop: 80,
+  paddingBottom: 80,
+  [WHEN_MOBILE]: {
+    paddingTop: 24,
+    paddingBottom: 24
+  }
+})
 
 export async function getServerSideProps() {
   const page = await getPageBySlug("public-sector", {locale: 'en-US'}, true)

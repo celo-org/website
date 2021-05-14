@@ -25,12 +25,15 @@ import InlineAnchor from 'src/shared/InlineAnchor'
 import menu, { CeloLinks, hashNav, MAIN_MENU } from 'src/shared/menu-items'
 import { colors, fonts, standardStyles, textStyles } from 'src/styles'
 
-const MENU = [menu.HOME, ...MAIN_MENU]
+const MENU = [menu.HOME, ...MAIN_MENU, {
+  name: "annualReport", link: "https://drive.google.com/file/d/1V00HirrpwSaUsapZoWVglRexBvrFuud7/view"
+}]
 const TECH_MENU = [
   { name: 'Docs', link: CeloLinks.docs },
   { name: 'Security Audits', link: CeloLinks.audits },
   { name: 'Reserve', link: CeloLinks.reserve },
   menu.PAPERS,
+  menu.PUBLIC_SECTOR
 ]
 const eventsLink = `${menu.COMMUNITY.link}#${hashNav.connect.events}`
 const ecoFundLink = `${menu.COMMUNITY.link}#${hashNav.connect.fund}`
@@ -43,6 +46,7 @@ const RESOURCE_MENU = [
   menu.BRAND,
   menu.MERCHANTS,
   menu.GRANT_KIT,
+  menu.PILOT_KIT,
   { name: 'Ecosystem Fund', link: ecoFundLink },
 ]
 

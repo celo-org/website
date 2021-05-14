@@ -8,6 +8,13 @@ export const flex = css({
   flexDirection: "column"
 })
 
+export const gridRow = css({
+  display: 'grid',
+  gridTemplateColumns: "1fr 1fr",
+  columnGap: 24,
+  rowGap: 24,
+})
+
 export const flexRow = css({
   boxSizing: "border-box",
   display: "flex",
@@ -59,6 +66,24 @@ export const whiteText = css({
 })
 
 
+export const textStyles = {
+  center: css({
+    textAlign: 'center',
+  }),
+  left: css({
+    textAlign: 'left',
+  }),
+  lean: css({ fontWeight: 300 }),
+  medium: css({
+    fontWeight: 500,
+  }),
+  heavy: css({
+    fontWeight: 'bold',
+  }),
+  italic: css({
+    fontStyle: 'italic',
+  }),
+}
 
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
 
@@ -73,3 +98,44 @@ export const WHEN_LONG_PHONE = `@media (max-width: 400px) and (min-height: 790px
 
 export const WHEN_SMALL_MOBILE = `@media (max-width: 330px)`
 
+
+export const labelStyle = css(jost, flex,{
+  color: colors.secondary,
+  fontWeight: 500,
+  fontSize: 16,
+  lineHeight: "18px",
+  marginTop: 8,
+  marginBottom: 16,
+})
+
+export const inputStyle = css(flex, fonts.body,{
+  alignSelf: 'center',
+  paddingLeft: 12,
+  paddingRight: 12,
+  paddingTop: 12,
+  paddingBottom: 16,
+  borderRadius: 3,
+  borderWidth: 1,
+  borderStyle: "solid",
+  borderColor: 'rgba(61, 61, 61, 0.2)',
+  width: '100%',
+  margin: 4,
+  marginBottom: 8,
+  outlineWidth: 0,
+  "&:focus": {
+    borderColor: colors.primary,
+  }
+})
+
+export const inputDarkStyle = css(inputStyle,{
+  backgroundColor: colors.dark,
+  borderColor: colors.secondary,
+  color: colors.white,
+  "&:focus": {
+    borderColor: colors.white,
+  }
+})
+
+export const errorStyle = css({
+  color: colors.error
+})

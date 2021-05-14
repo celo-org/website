@@ -79,7 +79,6 @@ const sectionTitle = css(fonts.h4, sharedCSS,{
 })
 
 
-
 const navCss = css(sharedCSS,{
 })
 
@@ -90,7 +89,7 @@ const headingCss = css(fonts.h3, {
 const contentAreaCss = css(sharedCSS,{
   gridColumn: "span 2",
   maxWidth: 550,
-  minHeight: 300,
+  minHeight: 250,
   transitionDuration: `${DURATION}ms`,
   transitionProperty: "opacity",
   [WHEN_MOBILE]: {

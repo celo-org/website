@@ -47,7 +47,12 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
 
   const actualPageSlug = !pageSlug ? homePageSlug : pageSlug
 
-  const pageID = data.pages_.find((p) => p.fields.slug === actualPageSlug)?.sys?.id
+  // get first page if we cant find so that at least we render a page in the kit
+  let pageID = data.pages_.find((p) => p.fields.slug === actualPageSlug)?.sys?.id
+
+  if (!pageID && !pageSlug) {
+    pageID = data.pages_[0].sys.id
+  }
 
   return {
     kitName: data.name,
@@ -90,6 +95,24 @@ export interface RoledexContentType {
   sheets: Entry<InfoSheetContentType>[]
 }
 
+export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
+
+interface FieldContentType {
+  name: string
+  placeholder?: string
+  label?: string
+  required?: boolean
+  type?: InputTypes
+}
+
+export interface FormContentType {
+  fields: Entry<FieldContentType>[]
+  colSpan: number
+  layout?: {grid: string[][]}
+  submitText: string
+  route: string
+}
+
 export interface ThumbnailType {
   title: string
   link: string
@@ -100,6 +123,7 @@ export interface FreeContentType {
   colSpan?: 1 | 2 | 3 |4
   cssStyle: CSSObject
   body: Document
+  colSpan: number
 }
 
 export interface PlaylistContentType {
@@ -109,7 +133,7 @@ export interface PlaylistContentType {
   media?: Entry<ThumbnailType>[]
 }
 
-export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType
+export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType | FormContentType
 
 export interface GridRowContentType {
   id: string
@@ -138,6 +162,7 @@ export interface ContentfulPage<T> {
   description: string
   openGraph?: Asset
   sections: Entry<T>[]
+  openGraph?: Asset
 }
 
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {

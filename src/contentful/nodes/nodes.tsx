@@ -36,7 +36,11 @@ export const renderNode: RenderNode = {
     return <InlineAnchor href={node.data.uri}>{children}</InlineAnchor>
   },
   [BLOCKS.EMBEDDED_ASSET]: (node) => {
-    const file = (node.data.target as Asset).fields.file
-    return <Image layout={"intrinsic"} src={`https:${file.url}`} width={file.details.image?.width} height={file.details.image?.height} />
+    const asset = node.data.target as Asset
+    const file = asset.fields.file
+    return <div style={{width: "100%", maxWidth:file.details.image?.width, maxHeight: file.details.image?.height }}>
+      <Image layout={"responsive"} src={`https:${file.url}`}  alt={asset.fields.description} width={file.details.image?.width} height={file.details.image?.height} />
+      </div>
   },
 }
+
