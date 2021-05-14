@@ -24,10 +24,10 @@ workflows:
       - lint:
           requires:
             - install
-      - build:
+      - tsc:
           requires:
             - install
-      - next-build:
+      - build:
           requires:
             - install
 
@@ -83,4 +83,12 @@ jobs:
       - checkout
       - *CHECKOUT-WORKSPACE
       - run: yarn build
+
+  #typescript check
+  tsc:
+      <<: *NODE
+      steps:
+        - checkout
+        - *CHECKOUT-WORKSPACE
+        - run: yarn build:ts
 
