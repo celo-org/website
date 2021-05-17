@@ -7,6 +7,7 @@ import OpenGraph from 'src/header/OpenGraph'
 
 
 
+
 interface Props {
     title: string
     slug: string
@@ -20,6 +21,7 @@ export default function SavingsTerms(props: Props){
     return(
         <div>
             <OpenGraph title={props.title} description={props.description} path={props.slug} />
+
         </div>
     )
 
