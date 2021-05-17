@@ -11,12 +11,15 @@ import { Document } from '@contentful/rich-text-types'
 interface Props {
     title: string
     slug: string
-    description: string
     body: Document
     section: SectionType
+    description: string
+    updateAT: string
 }
 
 export default function SavingsTerms(props: Props){
+    console.log(props)
+    debugger
     return(
         <div>
             {/* <OpenGraph /> */}
