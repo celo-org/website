@@ -3,8 +3,7 @@
 import { getPageBySlug, SectionType } from 'src/utils/contentful'
 import { Document } from '@contentful/rich-text-types'
 // import { Entry } from 'contentful'
-// import { renderNode } from '../src/contentful/nodes/nodes'
-// import OpenGraph from 'src/header/OpenGraph'
+import OpenGraph from 'src/header/OpenGraph'
 
 
 
@@ -18,11 +17,9 @@ interface Props {
 }
 
 export default function SavingsTerms(props: Props){
-    console.log(props)
-    debugger
     return(
         <div>
-            {/* <OpenGraph /> */}
+            <OpenGraph title={props.title} description={props.description} path={props.slug} />
         </div>
     )
 
@@ -33,6 +30,5 @@ export default function SavingsTerms(props: Props){
 
 export async function getServerSideProps(){
     const page = await getPageBySlug("save-terms-and-conditions", {locale: 'en-US'}, false)
-    console.log(page)
     return {props: page}
 }
