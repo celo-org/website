@@ -1,9 +1,10 @@
-// import { css } from '@emotion/react'
-// import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { css } from '@emotion/react'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { getPageBySlug, SectionType } from 'src/utils/contentful'
-import { Document } from '@contentful/rich-text-types'
-// import { Entry } from 'contentful'
 import OpenGraph from 'src/header/OpenGraph'
+import { OPTIONS } from 'src/contentful/grid2-cells/FreeContent'
+import { GridRow } from 'src/layout/Grid2'
+
 
 
 
@@ -11,18 +12,26 @@ import OpenGraph from 'src/header/OpenGraph'
 interface Props {
     title: string
     slug: string
-    body: Document
-    section: SectionType
+    sections: SectionType[]
     description: string
-    updateAT: string
 }
 
 export default function SavingsTerms(props: Props){
+    
     return(
-        <div>
+        <>
             <OpenGraph title={props.title} description={props.description} path={props.slug} />
+            <GridRow columns={1} css={rootCss}>
+                {
+                props.sections.map((section) => {
+                    return(
+                        documentToReactComponents(section.contentField, OPTIONS)
+                        )
+                    })
+                }
+            </GridRow>
 
-        </div>
+        </>
     )
 
 }
@@ -30,7 +39,15 @@ export default function SavingsTerms(props: Props){
 
 
 
-export async function getServerSideProps(){
+export async function getServerSideProps() : Promise<{ props: Props }> {
     const page = await getPageBySlug("save-terms-and-conditions", {locale: 'en-US'}, false)
-    return {props: page}
+    const sections = page.sections as SectionType[]
+    return {props: {
+        ...page,
+        sections: sections,
+    }}
 }
+
+const rootCss = css({
+    marginTop: 70
+})
