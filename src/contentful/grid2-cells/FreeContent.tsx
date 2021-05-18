@@ -23,7 +23,7 @@ function embedded(node:Block) {
   }
 }
 
-export const OPTIONS = {
+const OPTIONS = {
   renderNode: {
     ...renderNode,
     [BLOCKS.EMBEDDED_ENTRY]: embedded,

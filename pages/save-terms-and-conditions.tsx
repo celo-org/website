@@ -2,12 +2,8 @@ import { css } from '@emotion/react'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { getPageBySlug, SectionType } from 'src/utils/contentful'
 import OpenGraph from 'src/header/OpenGraph'
-import { OPTIONS } from 'src/contentful/grid2-cells/FreeContent'
+import { renderNode } from 'src/contentful/nodes/nodes'
 import { GridRow } from 'src/layout/Grid2'
-
-
-
-
 
 interface Props {
     title: string
@@ -15,6 +11,8 @@ interface Props {
     sections: SectionType[]
     description: string
 }
+
+const OPTIONS = {renderNode}
 
 export default function SavingsTerms(props: Props){
     
