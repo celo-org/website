@@ -22,6 +22,7 @@ export default function SavingsTerms(props: Props){
         <>
             <OpenGraph title={props.title} description={props.description} path={props.slug} />
             <GridRow columns={1} css={rootCss}>
+                <div css={sectionsCss}>
                 {
                 props.sections.map((section) => {
                     return(
@@ -29,6 +30,7 @@ export default function SavingsTerms(props: Props){
                         )
                     })
                 }
+                </div>
             </GridRow>
 
         </>
@@ -49,5 +51,13 @@ export async function getServerSideProps() : Promise<{ props: Props }> {
 }
 
 const rootCss = css({
-    marginTop: 70
+    marginTop: 70,
+    alignContent: 'center'
+})
+
+const sectionsCss = css({
+    maxWidth: '50em',
+    display: 'flex',
+    flexDirection: 'column',
+    alignSelf: 'center'
 })
