@@ -9,3 +9,6 @@ yarn-error.log
 
 coverage/
 sandbox.tsx
+
+/public/sitemap.xml
+/public/robots.txt
