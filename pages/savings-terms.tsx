@@ -32,10 +32,8 @@ export default function SavingsTerms(props: Props){
                 }
                 </div>
             </GridRow>
-
         </>
     )
-
 }
 
 
