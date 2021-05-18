@@ -44,7 +44,7 @@ export async function getServerSideProps() : Promise<{ props: Props }> {
     const sections = page.sections as SectionType[]
     return {props: {
         ...page,
-        sections: sections,
+        sections
     }}
 }
 
