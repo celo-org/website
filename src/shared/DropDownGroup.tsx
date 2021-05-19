@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native'
 import { flex, flexRow } from 'src/estyles'
 import DropDown, { ListItem } from 'src/shared/DropDown'
 
-interface DropDownProps {
+export interface DropDownProps {
   name: string
   list: ListItem[]
   onSelect: (key: string) => void

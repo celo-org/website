@@ -32,9 +32,9 @@ interface Contribution {
 }
 
 interface Chunk {
- chunkId: string
- lockHolder: null
- contributions: Contribution[]
+  chunkId: string
+  lockHolder: null
+  contributions: Contribution[]
 }
 
 interface Attestation {

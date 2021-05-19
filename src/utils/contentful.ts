@@ -123,7 +123,6 @@ export interface FreeContentType {
   colSpan?: 1 | 2 | 3 |4
   cssStyle: CSSObject
   body: Document
-  colSpan: number
 }
 
 export interface PlaylistContentType {
@@ -139,7 +138,6 @@ export interface GridRowContentType {
   id: string
   cells: Entry<CellContentType>[]
   cssStyle?: CSSObject
-  darkMode?: boolean
   columns: 1 | 2 | 3 | 4
   darkMode?: boolean
 }
@@ -160,7 +158,6 @@ export interface ContentfulPage<T> {
   title: string
   slug: string
   description: string
-  openGraph?: Asset
   sections: Entry<T>[]
   openGraph?: Asset
 }

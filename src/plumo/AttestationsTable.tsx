@@ -21,7 +21,6 @@ export interface Row {
 }
 
 interface Props {
-  max: number
   loading: boolean
   showProgress: boolean
   rows: Row[]
@@ -49,18 +48,21 @@ export default function AttestationsTable(props: Props) {
     <tbody css={borderStyle}>
 
       {props.rows?.map(row => {
-        return <TRow loading={props.loading}
-          showProgress={props.showProgress}
-          isMobile={isMobile}
-          key={row.address}
-          max={props.max}
-          name={row.name}
-          address={row.address}
-          count={row.count}
-          twitter={row.twitter}
-          github={row.github}
-          keybase={row.keybase}
+        return (
+          <TRow
+            loading={props.loading}
+            showProgress={props.showProgress}
+            isMobile={isMobile}
+            key={row.address}
+            max={row.max}
+            name={row.name}
+            address={row.address}
+            count={row.count}
+            twitter={row.twitter}
+            github={row.github}
+            keybase={row.keybase}
           />
+        )
       })}
     </tbody>
   </table>

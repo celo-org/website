@@ -1,7 +1,8 @@
 import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { flex } from "src/estyles"
-import { renderNode } from 'src/experience/contentful/nodes'
+import { renderNode } from "src/contentful/nodes/nodes"
+
 const OPTIONS = {
   renderNode,
 }

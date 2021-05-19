@@ -13,6 +13,7 @@ interface RadioProps {
   onValueSelected: (x: any) => void
   value: any
   colorWhenSelected?: colors
+  disabled?: boolean
 }
 
 export function Radio({
@@ -22,15 +23,19 @@ export function Radio({
   icon,
   onValueSelected,
   value,
+  disabled,
   colorWhenSelected,
 }: RadioProps) {
   const onSelect = () => onValueSelected(value)
   return (
-    <TouchableOpacity onPress={onSelect}>
+    <TouchableOpacity onPress={onSelect} disabled={disabled}>
       <View style={styles.radioRow}>
         <RadioIcon selected={selected} colorWhenSelected={colorWhenSelected} />
         <View style={styles.radioSpacer}>{icon || null}</View>
-        <Text style={[fonts.p, labelColor && { color: labelColor }]} accessibilityRole="label">
+        <Text
+          style={[fonts.p, labelColor && { color: labelColor }]}
+          accessibilityRole="label"
+        >
           {label}
         </Text>
       </View>

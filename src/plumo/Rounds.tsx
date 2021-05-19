@@ -3,62 +3,147 @@ import * as React from 'react'
 import {  useTranslation } from "src/i18n"
 import {css} from "@emotion/react"
 import AttestationsTable, {Row} from './AttestationsTable'
-import DropDownGroup from 'src/shared/DropDownGroup'
+import DropDownGroup, {DropDownProps} from 'src/shared/DropDownGroup'
 import { GridRow } from 'src/layout/Grid2'
 import {  WHEN_MOBILE, whiteText } from 'src/estyles'
 import { colors, typeFaces } from 'src/styles'
 import { Radio } from 'src/table/table'
-import useCurrentRound from './useCurrentRound'
-import DATA from 'src/plumo/data.json'
+import useCurrentRound from "./useCurrentRound"
+import usePhase from './usePhase'
+import Safety from "./Safety"
 
-function useDropDown(): [string, () => void, (key: string) => void] {
-  const [value, setValue] = React.useState("0")
-  function clear () {
-    setValue("0")
+function useDropDown(): [number, () => void, (key: number) => void] {
+  const [value, _setValue] = React.useState(0)
+  function clear() {
+    _setValue(0)
+  }
+  function setValue(val: string | number) {
+    _setValue(Number(val))
   }
   return [value, clear, setValue]
 }
 
-function useRound(phase): [Array<any>, number,  () => void, (key: string) => void, number] {
-  const [round, onClearRound, onSelectRound] = useDropDown()
-  const data = useCurrentRound()
-
-  const phaseData = phase === 1 ? DATA.phase1 : DATA.phase2
-
-  const rows: Row[] = React.useMemo(() => (
-    Object.keys(phaseData[round]).map(key => ({...phaseData[round][key], address: key, count: data.progressCompleted[key]}))
-  ),
-  [round])
-
-
-  return [rows, Number(round), onClearRound, onSelectRound, data.chunkCount]
+interface Rounds {
+  phase: number
+  rows: Row[]
+  dropDownData: DropDownProps[]
+  setPhase: (phase: number) => void
+  isPhaseLoading: boolean
+  isActiveRoundLoading: boolean
+  phase2Available: boolean
 }
 
 
-export default function Rounds(): JSX.Element {
-  const { t } = useTranslation('plumo')
+function useDropDownOptions(
+  roundsInPhase: any[],
+  phase: number,
+  round: number,
+  onSelectRound: (key:  number | string) => void,
+  onClearRound: () => void
+) {
+  const { t } = useTranslation("plumo")
+  const dropDownListOptions = React.useMemo(
+    () => roundsInPhase.map((_, index) => {
+            return {
+              id: index.toString(),
+              selected: round === index,
+              label: t(`round.${index}`),
+            }
+          }),
+      [round, phase, roundsInPhase]
+  )
 
+  const dropDownData = [
+    {
+      name: "",
+      onSelect: onSelectRound,
+      onClear: onClearRound,
+      list: dropDownListOptions,
+    },
+  ]
+  return dropDownData
+}
+
+
+function useRound(): Rounds {
+  const [round, onClearRound, onSelectRound] = useDropDown()
+  const currentRound = useCurrentRound()
+  const {isValidating, phases} = usePhase()
+
+  // TODO once I have the phase data default to phase 2
   const [phase, setPhase] = React.useState(1)
 
+  const phaseRounds = (phase === 1 ? phases?.phase1 : phases?.phase2) ||[]
 
-  const [rows, round, onClearRound, onSelectRound, chunkCount] = useRound(phase)
+  const roundIsCurrent = false
+  // if phase 2 is available select it
 
+  const rows: Row[] = React.useMemo(
+    () => {
+      if (!isValidating) {
+        return Object.keys(phaseRounds[round]).map((key) => {
+          // each round is an object with one key (address) and a value
+          return {
+            address: key ,
+            ...phaseRounds[round][key],
+            count: roundIsCurrent ? currentRound.progressCompleted[key] : 100,
+            max: roundIsCurrent ? currentRound.chunkCount : 100
+          }
+        })
+      }
+      else {
+        return []
+      }
+    },
+    [round, isValidating, phaseRounds, currentRound.loading]
+  )
 
-  const dropDownData = useDropDownOptions(phase, round, onSelectRound, onClearRound)
+  const dropDownData = useDropDownOptions(phaseRounds,
+    phase,
+    round,
+    onSelectRound,
+    onClearRound
+  )
+
+  return {
+    rows,
+    setPhase,
+    phase,
+    dropDownData,
+    isPhaseLoading: isValidating,
+    isActiveRoundLoading: currentRound.loading,
+    phase2Available: !!phases?.phase2
+  }
+}
+
+export default function Rounds(): JSX.Element {
+  const { t } = useTranslation("plumo")
+
+  const {rows, phase2Available, setPhase, phase, dropDownData,  isActiveRoundLoading} = useRound()
 
   return (
     <GridRow columns={1} css={rootCss}>
       <h2 css={titleCss}>{t("ceremonyResults")}</h2>
       <div css={dropdownsCss}>
-        <Phases phase={phase} setPhase={setPhase} />
-        <label css={roundLabelCss}>
-          {t("roundLabel")}
-        </label>
+        <Phases phase={phase} setPhase={setPhase} phase2Started={phase2Available}/>
+        <label css={roundLabelCss}>{t("roundLabel")}</label>
         <div css={roundSelectorCss}>
-          <DropDownGroup direction={"horizontal"} data={dropDownData} darkMode={true} />
+        <Safety>
+          <DropDownGroup
+            direction={"horizontal"}
+            data={dropDownData}
+            darkMode={true}
+          />
+          </Safety>
         </div>
       </div>
-      <AttestationsTable rows={rows} max={chunkCount} showProgress={phase === 2} loading={false} />
+      <Safety>
+      <AttestationsTable
+        rows={rows}
+        showProgress={true}
+        loading={isActiveRoundLoading}
+      />
+      </Safety>
     </GridRow>
   )
 }
@@ -66,10 +151,11 @@ export default function Rounds(): JSX.Element {
 interface PhaseProps {
   phase: number
   setPhase: (p: number) =>void
+  phase2Started: boolean
 }
 
 
-const Phases = React.memo(function Phases({phase, setPhase}: PhaseProps) {
+const Phases = React.memo(function Phases({phase, setPhase, phase2Started}: PhaseProps) {
   const { t } = useTranslation('plumo')
   return <>
   <label css={phaseLabelCss}>
@@ -83,6 +169,7 @@ const Phases = React.memo(function Phases({phase, setPhase}: PhaseProps) {
   </span>
   <span css={radioTwo}>
     <Radio selected={phase === 2} labelColor={colors.white}
+    disabled={!phase2Started}
     colorWhenSelected={colors.primary}  onValueSelected={setPhase}
     label={t("phase2")} value={2} />
   </span>
@@ -91,7 +178,7 @@ const Phases = React.memo(function Phases({phase, setPhase}: PhaseProps) {
 
 const rootCss = css({
   maxWidth: 720,
-  marginTop: 36,
+  marginTop: 16,
 })
 
 const dropdownsCss = css({
@@ -172,22 +259,4 @@ const titleCss= css(whiteText, {
   }
 })
 
-function useDropDownOptions(phase: number, round: number, onSelectRound: (key: string) => void, onClearRound: () => void) {
-  const { t } = useTranslation('plumo')
 
-  const dropDownListOptions = React.useMemo(() => DATA[phase === 1 ? "phase1" : "phase2"]?.map((_, index) => {
-    return {
-      id: index.toString(),
-      selected: round === index,
-      label: t(`round.${index}`)
-    }
-  }), [round, phase])
-
-  const dropDownData = [{
-    name: "",
-    onSelect: onSelectRound,
-    onClear: onClearRound,
-    list: dropDownListOptions
-  }]
-  return dropDownData
-}

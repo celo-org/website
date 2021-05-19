@@ -13,7 +13,7 @@ import {
 import Form from "src/contentful/grid2-cells/Form"
 
 
-export function cellSwitch(entry: Entry<CellContentType>, columns: number, darkMode: boolean) {
+export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
   if (entry) {
     switch (entry.sys.contentType.sys.id) {
       case "roledex":
@@ -30,7 +30,7 @@ export function cellSwitch(entry: Entry<CellContentType>, columns: number, darkM
         return (
           <FreeContent
             key={entry.sys.id}
-            colSpan={freeContent.colSpan || columns}
+            colSpan={freeContent.colSpan}
             body={freeContent.body}
             darkMode={darkMode}
             cssStyle={freeContent.cssStyle}
