@@ -135,7 +135,7 @@ class ValidatorsListApp extends React.PureComponent<Props> {
             </H2>
 
           <View>
-            <View style={styles.links}>
+            <View style={styles.links}>I 
               {networkMenuList.map(([name, link, navigate]: any) => (
                 <View key={name} style={[styles.linkWrapper]}>
                   <Navigation
@@ -203,15 +203,6 @@ const compStyles = StyleSheet.create({
     backgroundColor: colors.dark,
   })
   
-//   const viewContainer = css({
-//   marginTop: 0,
-//   backgroundColor: colors.dark,
-//   minWidth: '100vw',
-//   overflow: 'scroll',
-//   width: '100%',
-//   position: 'static',
-//   zIndex: 'initial',
-// })
 
 
 
