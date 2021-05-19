@@ -113,8 +113,7 @@ class ValidatorsListApp extends React.PureComponent<Props> {
       () => this.props.router.push(link),
     ])
     return (
-          <div css={headerCss}>
-    
+      <div css={rootCss}>
         <OpenGraph
           title="Celo Validators"
           path={menuItems.VALIDATORS_LIST.link}
@@ -183,9 +182,7 @@ class ValidatorsListApp extends React.PureComponent<Props> {
             </Query>
           </ApolloProvider>
         </View>
-      
-
-          </div>
+      </div>
     )
   }
 }
@@ -198,7 +195,7 @@ const compStyles = StyleSheet.create({
   },
 })
 
-const headerCss = css({
+const rootCss = css({
   backgroundColor: colors.dark,
   width: '100vh'
 })
