@@ -122,7 +122,7 @@ class ValidatorsListApp extends React.PureComponent<Props> {
   
         
 
-        <View style={[styles.cover, styles.pStaticOverflow, compStyles.fullHeight]} >
+        <View css={viewContainer} style={[styles.cover, styles.pStaticOverflow, compStyles.fullHeight]} >
             <H2
               style={[
                 textStyles.center,
@@ -190,17 +190,28 @@ class ValidatorsListApp extends React.PureComponent<Props> {
 const compStyles = StyleSheet.create({
   fullHeight: { 
     minHeight: 'calc(100vh - 75px)',
-    width: 'fit-content'
+    width: 'fit-content',
+    backgroundColor: colors.dark
    },
-  useSpace: {
-    flex: 1,
-    paddingBottom: '20vh',
-  },
-})
-
-const rootCss = css({
-  backgroundColor: colors.dark,
-})
+   useSpace: {
+     flex: 1,
+     paddingBottom: '20vh',
+    },
+  })
+  
+  const rootCss = css({
+    backgroundColor: colors.dark,
+  })
+  
+//   const viewContainer = css({
+//   marginTop: 0,
+//   backgroundColor: colors.dark,
+//   minWidth: '100vw',
+//   overflow: 'scroll',
+//   width: '100%',
+//   position: 'static',
+//   zIndex: 'initial',
+// })
 
 
 

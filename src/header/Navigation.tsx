@@ -153,38 +153,40 @@ function useMobileMenu(): [boolean, () => void] {
 
     return (
       <div
-        css={css(
-          styles.container,
-          { top: isHomePage && isBannerShowing ? bannerHeight : 0 },
-          menuFaded && { height: 0 },
-          mobileMenuActive && styles.mobileMenuActive,
-        )}
-      >
-        {isHomePage && (
-          <BlueBanner onVisibilityChange={setBannerVisible} />
-        )}
-        <div css={css(styles.menuContainer,styles.background,
-          backgroundColor,
-          styles.fadeTransition,
-          menuFaded ? styles.menuInvisible : styles.menuVisible,
-          )}>
-          <HomeLogo menuFaded={menuFaded} isDarkMode={isDarkMode} allWhiteLogo={allWhiteLogo}/>
-          <NavigationLinks menuFaded={menuFaded} isDarkMode={isDarkMode} />
-        </div>
-        {mobileMenuActive && (
-          <div css={styles.menuActive}>
-            <div css={styles.mobileOpenContainer}>
-              <MobileMenu currentPage={pathname} menu={mobileMenu} />
-            </div>
+          css={css(
+            styles.container,
+            { top: isHomePage && isBannerShowing ? bannerHeight : 0 },
+            menuFaded && { height: 0 },
+            mobileMenuActive && styles.mobileMenuActive,
+            )}
+          >
+          {isHomePage && (
+            <BlueBanner onVisibilityChange={setBannerVisible} />
+            )}
+          
+          <div css={css(styles.menuContainer,styles.background,
+            backgroundColor,
+            styles.fadeTransition,
+            menuFaded ? styles.menuInvisible : styles.menuVisible,
+            )}>
+            <HomeLogo menuFaded={menuFaded} isDarkMode={isDarkMode} allWhiteLogo={allWhiteLogo}/>
+            <NavigationLinks menuFaded={menuFaded} isDarkMode={isDarkMode} />
           </div>
-        )}
-        <MobileMenuIcon isDarkMode={isDarkMode}
-          willShowHamburger={willShowHamburger}
-          isHomePage={isHomePage}
-          mobileMenuActive={mobileMenuActive}
-          bannerHeight={bannerHeight}
-          clickHamburger={clickHamburger}/>
-      </div>
+          
+          {mobileMenuActive && (
+            <div css={styles.menuActive}>
+              <div css={styles.mobileOpenContainer}>
+                <MobileMenu currentPage={pathname} menu={mobileMenu} />
+              </div>
+            </div>
+          )}
+            <MobileMenuIcon isDarkMode={isDarkMode}
+              willShowHamburger={willShowHamburger}
+              isHomePage={isHomePage}
+              mobileMenuActive={mobileMenuActive}
+              bannerHeight={bannerHeight}
+              clickHamburger={clickHamburger}/>
+        </div>
     )
   }
 
@@ -413,7 +415,9 @@ const styles = {
   },
 }
 
-const rootCss = css({
-  width: '100%',
-  backgroundColor: colors.dark
+const navRoot = css({
+  // width: '100%',
+  backgroundColor: colors.dark,
+  border: '10px solid green',
+  width: 'fit-content'
 })
