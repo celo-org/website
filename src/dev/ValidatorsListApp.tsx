@@ -122,11 +122,11 @@ class ValidatorsListApp extends React.PureComponent<Props> {
   
         
 
-        <View css={viewContainer} style={[styles.cover, styles.pStaticOverflow, compStyles.fullHeight]} >
+        <View style={[styles.cover, styles.pStaticOverflow, compStyles.fullHeight]} >
             <H2
               style={[
                 textStyles.center,
-                standardStyles.blockMarginTopTablet,
+                standardStyles.blockMarginTopTabletValidator,
                 standardStyles.elementalMarginBottom,
                 textStyles.invert,
               ]}

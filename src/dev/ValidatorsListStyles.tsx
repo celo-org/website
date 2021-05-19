@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   cover: {
-    marginTop: HEADER_HEIGHT,
+    // marginTop: HEADER_HEIGHT,
     backgroundColor: colors.dark,
     minWidth: '100vw',
     overflow: 'scroll',

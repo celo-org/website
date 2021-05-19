@@ -351,6 +351,10 @@ export const standardStyles = StyleSheet.create({
   fadeIn: {
     opacity: 1,
   },
+  blockMarginTopTabletValidator: {
+    marginTop: tabletMargins.medium + 75
+  }
+
 })
 
 // These dont seem to be applied when set thru stylesheet
