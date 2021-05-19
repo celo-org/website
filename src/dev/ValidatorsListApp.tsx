@@ -188,7 +188,10 @@ class ValidatorsListApp extends React.PureComponent<Props> {
 }
 
 const compStyles = StyleSheet.create({
-  fullHeight: { minHeight: 'calc(100vh - 75px)' },
+  fullHeight: { 
+    minHeight: 'calc(100vh - 75px)',
+    width: 'fit-content'
+   },
   useSpace: {
     flex: 1,
     paddingBottom: '20vh',
@@ -197,8 +200,9 @@ const compStyles = StyleSheet.create({
 
 const rootCss = css({
   backgroundColor: colors.dark,
-  width: '100vh'
 })
+
+
 
 export default withNamespaces('dev')(withRouter<Props>(ValidatorsListApp))
 

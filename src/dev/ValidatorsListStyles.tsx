@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'stretch',
-    width: '100%',
+    width: '99%',
   },
   tableRowCont: {
     paddingTop: 10,

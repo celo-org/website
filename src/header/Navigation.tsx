@@ -412,3 +412,8 @@ const styles = {
     display: 'flex',
   },
 }
+
+const rootCss = css({
+  width: '100%',
+  backgroundColor: colors.dark
+})
