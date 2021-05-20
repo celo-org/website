@@ -126,7 +126,7 @@ class ValidatorsListApp extends React.PureComponent<Props> {
             <H2
               style={[
                 textStyles.center,
-                standardStyles.blockMarginTopTabletValidator,
+                compStyles.blockMarginTopTabletValidator,
                 standardStyles.elementalMarginBottom,
                 textStyles.invert,
               ]}
@@ -135,7 +135,7 @@ class ValidatorsListApp extends React.PureComponent<Props> {
             </H2>
 
           <View>
-            <View style={styles.links}>I 
+            <View style={styles.links}> 
               {networkMenuList.map(([name, link, navigate]: any) => (
                 <View key={name} style={[styles.linkWrapper]}>
                   <Navigation
@@ -197,6 +197,9 @@ const compStyles = StyleSheet.create({
      flex: 1,
      paddingBottom: '20vh',
     },
+    blockMarginTopTabletValidator: {
+      marginTop: 116
+    }
   })
   
   const rootCss = css({

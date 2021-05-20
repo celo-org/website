@@ -415,9 +415,3 @@ const styles = {
   },
 }
 
-const navRoot = css({
-  // width: '100%',
-  backgroundColor: colors.dark,
-  border: '10px solid green',
-  width: 'fit-content'
-})
