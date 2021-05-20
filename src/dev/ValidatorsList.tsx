@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { css } from '@emotion/react'
 import { Text, View } from 'react-native'
 import ValidatorsListRow from 'src/dev/ValidatorsListRow'
 import { styles } from 'src/dev/ValidatorsListStyles'
