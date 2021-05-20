@@ -12,6 +12,7 @@ import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
 import Roledex from "src/contentful/grid2-cells/Roledex"
 import PlayList from "src/contentful/grid2-cells/Playlist"
 import Form from "src/contentful/grid2-cells/Form"
+
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
 import {BUTTON} from "src/contentful/nodes/embeds/BUTTON"
