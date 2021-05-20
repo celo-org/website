@@ -70,24 +70,28 @@ function useRound(): Rounds {
   const currentRound = useCurrentRound()
   const {isValidating, phases} = usePhase()
 
-  // TODO once I have the phase data default to phase 2
   const [phase, setPhase] = React.useState(1)
 
   const phaseRounds = (phase === 1 ? phases?.phase1 : phases?.phase2) ||[]
 
-  const roundIsCurrent = false
+  const roundIsCurrent = currentRound.round === round
+
   // if phase 2 is available select it
+  React.useEffect(() => {
+    if (phases?.phase2) {
+      setPhase(2)
+    }
+  }, [phases?.phase2])
 
   const rows: Row[] = React.useMemo(
     () => {
       if (!isValidating) {
         return Object.keys(phaseRounds[round]).map((key) => {
-          // each round is an object with one key (address) and a value
           return {
-            address: key ,
+            address: key,
             ...phaseRounds[round][key],
             count: roundIsCurrent ? currentRound.progressCompleted[key] : 100,
-            max: roundIsCurrent ? currentRound.chunkCount : 100
+            max: roundIsCurrent ? currentRound.chunkCount : 100,
           }
         })
       }

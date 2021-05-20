@@ -17,7 +17,6 @@ import Link2 from 'src/shared/Link'
 import Rounds from './Rounds'
 import Safety from "./Safety"
 
-
 type Props = ContentfulPage<GridRowContentType | SectionType>
 const PLUMO_FORM =
   'https://docs.google.com/forms/d/e/1FAIpQLScZswraVVC91RwToo_9qm-1QzGrxp7yjVeM2wzdTbL5T_lAgQ/viewform'
@@ -40,11 +39,6 @@ export default function PlumoLanding(props: Props) {
           <LogoDarkBg height={30} />
         </Link2>
         <div css={innerNav}>
-          {/* <Button
-            href={"#what-is-plumo"}
-            text={t("learnMore")}
-            kind={BTN.DARKNAV}
-          /> */}
           <Button
             size={SIZE.small}
             href={PLUMO_FORM}
