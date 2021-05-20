@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
 import { colors, typeFaces } from 'src/styles'
 
 export const styles = StyleSheet.create({
@@ -16,7 +15,6 @@ export const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   cover: {
-    marginTop: HEADER_HEIGHT,
     backgroundColor: colors.dark,
     minWidth: '100vw',
     overflow: 'scroll',
@@ -71,7 +69,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'stretch',
-    width: '100%',
+    width: '99%',
   },
   tableRowCont: {
     paddingTop: 10,

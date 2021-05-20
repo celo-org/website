@@ -1,3 +1,4 @@
+import { css } from '@emotion/react'
 import { ApolloProvider, Query } from '@apollo/react-components'
 import ApolloClient from 'apollo-boost'
 import { InMemoryCache } from 'apollo-cache-inmemory'
@@ -112,25 +113,29 @@ class ValidatorsListApp extends React.PureComponent<Props> {
       () => this.props.router.push(link),
     ])
     return (
-      <>
+      <div css={rootCss}>
         <OpenGraph
           title="Celo Validators"
           path={menuItems.VALIDATORS_LIST.link}
           description="View status of Validators on the Celo Network"
         />
-        <View style={[styles.cover, styles.pStaticOverflow, compStyles.fullHeight]}>
-          <H2
-            style={[
-              textStyles.center,
-              standardStyles.blockMarginTopTablet,
-              standardStyles.elementalMarginBottom,
-              textStyles.invert,
-            ]}
-          >
-            Validators
-          </H2>
+  
+        
+
+        <View style={[styles.cover, styles.pStaticOverflow, compStyles.fullHeight]} >
+            <H2
+              style={[
+                textStyles.center,
+                compStyles.blockMarginTopTabletValidator,
+                standardStyles.elementalMarginBottom,
+                textStyles.invert,
+              ]}
+              >
+              Validators
+            </H2>
+
           <View>
-            <View style={styles.links}>
+            <View style={styles.links}> 
               {networkMenuList.map(([name, link, navigate]: any) => (
                 <View key={name} style={[styles.linkWrapper]}>
                   <Navigation
@@ -138,7 +143,7 @@ class ValidatorsListApp extends React.PureComponent<Props> {
                     text={name}
                     theme={NavigationTheme.DARKGOLD}
                     selected={this.props.router.pathname === link}
-                  />
+                    />
                 </View>
               ))}
             </View>
@@ -149,11 +154,11 @@ class ValidatorsListApp extends React.PureComponent<Props> {
                 if (error) {
                   return (
                     <View
-                      style={[
-                        standardStyles.darkBackground,
-                        standardStyles.centered,
-                        compStyles.useSpace,
-                      ]}
+                    style={[
+                      standardStyles.darkBackground,
+                      standardStyles.centered,
+                      compStyles.useSpace,
+                    ]}
                     >
                       <ShowApolloError error={error} />
                     </View>
@@ -162,11 +167,11 @@ class ValidatorsListApp extends React.PureComponent<Props> {
                 if (!data) {
                   return (
                     <View
-                      style={[
-                        standardStyles.darkBackground,
-                        standardStyles.centered,
-                        compStyles.useSpace,
-                      ]}
+                    style={[
+                      standardStyles.darkBackground,
+                      standardStyles.centered,
+                      compStyles.useSpace,
+                    ]}
                     >
                       <Spinner size="medium" color={colors.white} />
                     </View>
@@ -177,18 +182,32 @@ class ValidatorsListApp extends React.PureComponent<Props> {
             </Query>
           </ApolloProvider>
         </View>
-      </>
+      </div>
     )
   }
 }
 
 const compStyles = StyleSheet.create({
-  fullHeight: { minHeight: 'calc(100vh - 75px)' },
-  useSpace: {
-    flex: 1,
-    paddingBottom: '20vh',
-  },
-})
+  fullHeight: { 
+    minHeight: 'calc(100vh - 75px)',
+    width: 'fit-content',
+    backgroundColor: colors.dark
+   },
+   useSpace: {
+     flex: 1,
+     paddingBottom: '20vh',
+    },
+    blockMarginTopTabletValidator: {
+      marginTop: 116
+    }
+  })
+  
+  const rootCss = css({
+    backgroundColor: colors.dark,
+  })
+  
+
+
 
 export default withNamespaces('dev')(withRouter<Props>(ValidatorsListApp))
 
