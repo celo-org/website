@@ -1,12 +1,12 @@
-import getConfig from 'next/config'
-import sentryConfig from '../../fullstack/sentry'
+import getConfig from "next/config"
+import sentryConfig from "../../fullstack/sentry"
 let hasInitialized = false
 
 let Sentry
 
 export async function initSentry() {
   const { publicRuntimeConfig } = getConfig()
-  if (publicRuntimeConfig.ENV === 'development') {
+  if (publicRuntimeConfig.ENV === "development") {
     return
   }
 
@@ -18,6 +18,6 @@ export async function initSentry() {
 }
 
 export async function getSentry() {
-  Sentry = Sentry || (await import('@sentry/browser'))
+  Sentry = Sentry || (await import("@sentry/browser"))
   return Sentry
 }

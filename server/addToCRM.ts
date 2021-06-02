@@ -1,5 +1,5 @@
-import getConfig from 'next/config'
-import Sentry from '../server/sentry'
+import getConfig from "next/config"
+import Sentry from "../server/sentry"
 interface ActiveCampaignNewContact {
   email: string
   firstName: string
@@ -64,7 +64,7 @@ function apiKey() {
   return serverRuntimeConfig.__ACTIVE_CAMPAIGN_API_KEY__
 }
 
-const BASE_URL = 'https://celo.api-us1.com/api/3'
+const BASE_URL = "https://celo.api-us1.com/api/3"
 
 async function upsertContact(
   contact: ActiveCampaignNewContact
@@ -93,21 +93,21 @@ async function processResponse(response: Response) {
   throw { status: response.statusText, error: error.errors }
 }
 
-function buildRequest(body: object) {
+function buildRequest(body: Record<string, unknown>) {
   return {
     headers: {
-      'Api-Token': apiKey(),
-      'Content-Type': 'application/json',
+      "Api-Token": apiKey(),
+      "Content-Type": "application/json",
     },
-    method: 'POST',
+    method: "POST",
     body: JSON.stringify(body),
   }
 }
 // end fetch helpers
 
 function convert(formContact: CRMInterface): ActiveCampaignNewContact {
-  const [firstName, ...restNames] = formContact.fullName.split(' ')
-  const lastName = restNames.join(' ')
+  const [firstName, ...restNames] = formContact.fullName.split(" ")
+  const lastName = restNames.join(" ")
   return {
     email: formContact.email,
     firstName,
@@ -156,13 +156,13 @@ export default async function addToCRM({
 
     await Promise.all([
       addToList({ contact: contactID, list, status: ListStatus.subscribe }),
-      setCustomFields(contactID, { interest, company, role, source: 'website' }),
+      setCustomFields(contactID, { interest, company, role, source: "website" }),
     ])
 
     return contact
   } catch (e) {
     Sentry.withScope((scope) => {
-      scope.setTag('Service', 'ActiveCampaign')
+      scope.setTag("Service", "ActiveCampaign")
       Sentry.captureEvent({ message: e.toString(), extra: { status: e.status } })
     })
     return { error: e }

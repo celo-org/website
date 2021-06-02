@@ -1,10 +1,10 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native-web'
-import CollectiveMission from 'src/alliance/CollectiveMission'
-import PinWheel from 'src/alliance/PinWheel'
-import SignupForm from 'src/alliance/SignupForm'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, View } from "react-native-web"
+import CollectiveMission from "src/alliance/CollectiveMission"
+import PinWheel from "src/alliance/PinWheel"
+import SignupForm from "src/alliance/SignupForm"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { standardStyles } from "src/styles"
 
 export default function RisingPinWheelForm() {
   return (
@@ -29,16 +29,16 @@ export default function RisingPinWheelForm() {
 
 const styles = StyleSheet.create({
   pinWheelContainer: {
-    width: '100%',
-    height: '50vw',
-    maxHeight: '50vh',
-    overflow: 'hidden',
-    alignItems: 'center',
+    width: "100%",
+    height: "50vw",
+    maxHeight: "50vh",
+    overflow: "hidden",
+    alignItems: "center",
   },
   innerPinWheelContainer: {
-    width: '100%',
-    height: '80vh',
-    maxHeight: '100vw',
-    maxWidth: '90vw',
+    width: "100%",
+    height: "80vh",
+    maxHeight: "100vw",
+    maxWidth: "90vw",
   },
 })

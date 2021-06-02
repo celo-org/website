@@ -1,9 +1,9 @@
-import * as React from 'react'
-import { Image, ImageSourcePropType, StyleSheet, Text, View } from 'react-native'
-import { H4 } from 'src/fonts/Fonts'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import AspectRatio from 'src/shared/AspectRatio'
-import { colors, fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { Image, ImageSourcePropType, StyleSheet, Text, View } from "react-native"
+import { H4 } from "src/fonts/Fonts"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import AspectRatio from "src/shared/AspectRatio"
+import { colors, fonts, standardStyles } from "src/styles"
 
 interface FellowProps {
   image: ImageSourcePropType
@@ -52,10 +52,10 @@ const styles = StyleSheet.create({
     marginBottom: 50,
   },
   image: {
-    height: '100%',
-    width: '100%',
+    height: "100%",
+    width: "100%",
   },
   imageContainer: {
-    width: '100%',
+    width: "100%",
   },
 })

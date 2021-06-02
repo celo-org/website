@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { colors, fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { Image, StyleSheet, Text, View } from "react-native"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { colors, fonts, standardStyles } from "src/styles"
 
 interface Props {
   title: string
@@ -47,16 +47,16 @@ const styles = StyleSheet.create({
     width: 35,
   },
   root: {
-    width: 'fit-content',
-    alignItems: 'center',
+    width: "fit-content",
+    alignItems: "center",
     marginVertical: 30,
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   content: {
     width: 205,
   },
   title: {
-    fontWeight: '700',
+    fontWeight: "700",
     color: colors.white,
   },
   text: {
@@ -66,9 +66,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
   },
   float: {
-    position: 'absolute',
-    alignItems: 'center',
+    position: "absolute",
+    alignItems: "center",
   },
-  leftward: { flexDirection: 'row' },
-  leftwardInner: { flexDirection: 'row-reverse', transform: [{ translateX: -470 }] },
+  leftward: { flexDirection: "row" },
+  leftwardInner: { flexDirection: "row-reverse", transform: [{ translateX: -470 }] },
 })

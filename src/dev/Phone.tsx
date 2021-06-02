@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import OvalCoin from 'src/shared/OvalCoin'
-import { Line, Path } from 'src/shared/svg'
-import { colors, standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import OvalCoin from "src/shared/OvalCoin"
+import { Line, Path } from "src/shared/svg"
+import { colors, standardStyles } from "src/styles"
 
 function Phone() {
   return (
@@ -50,31 +50,31 @@ const svgStyle = {
 
 const styles = StyleSheet.create({
   absoluteCenter: {
-    position: 'absolute',
+    position: "absolute",
     left: 0,
     right: 0,
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
   },
   container: {
     maxHeight: 350,
-    height: '100%',
+    height: "100%",
   },
   animations: {
-    animationDuration: '1s',
+    animationDuration: "1s",
     animationIterationCount: 1,
-    animationTimingFunction: 'linear',
-    animationFillMode: 'both',
+    animationTimingFunction: "linear",
+    animationFillMode: "both",
   },
   arrowhead: {
     animationKeyframes: [
       {
-        '0%': {
+        "0%": {
           opacity: 0.5,
           transform: [{ translateX: -LINE_DISTANCE }],
         },
-        '100%': {
+        "100%": {
           opacity: 1,
           transform: [{ translateX: -5 }],
         },
@@ -82,14 +82,14 @@ const styles = StyleSheet.create({
     ],
   },
   arrow: {
-    transformOrigin: 'left',
+    transformOrigin: "left",
     animationKeyframes: [
       {
-        '0%': {
+        "0%": {
           opacity: 0.6,
           transform: [{ scaleX: 0 }],
         },
-        '100%': {
+        "100%": {
           opacity: 1,
           transform: [{ scaleX: 1 }],
         },

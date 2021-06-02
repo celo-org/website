@@ -1,4 +1,4 @@
-import analytics from 'src/analytics/analytics'
+import analytics from "src/analytics/analytics"
 export enum Types {
   PlanningDoc,
   Action,

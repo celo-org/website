@@ -1,11 +1,11 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import QuarterCircle from 'src/community/connect/QuarterCircle'
-import { H2 } from 'src/fonts/Fonts'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import { colors, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import QuarterCircle from "src/community/connect/QuarterCircle"
+import { H2 } from "src/fonts/Fonts"
+import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import { colors, standardStyles, textStyles } from "src/styles"
 
 function Contribute({ t }: I18nProps) {
   return (
@@ -19,10 +19,10 @@ function Contribute({ t }: I18nProps) {
             <Button
               kind={BTN.NAKED}
               size={SIZE.normal}
-              text={t('contribute.button')}
-              target={'_cfp'}
+              text={t("contribute.button")}
+              target={"_cfp"}
               href={
-                'https://medium.com/celoOrg/call-for-proposals-the-celo-fellowship-3c43b06b10f9'
+                "https://medium.com/celoOrg/call-for-proposals-the-celo-fellowship-3c43b06b10f9"
               }
             />
           </View>
@@ -46,10 +46,10 @@ const styles = StyleSheet.create({
     paddingLeft: 100,
   },
   keepOnScreen: {
-    overflow: 'hidden',
-    maxWidth: '100vw',
+    overflow: "hidden",
+    maxWidth: "100vw",
   },
-  proposalArea: { flexDirection: 'column-reverse' },
-  proposalText: { paddingLeft: '4%' },
-  verticalCenter: { justifyContent: 'center' },
+  proposalArea: { flexDirection: "column-reverse" },
+  proposalText: { paddingLeft: "4%" },
+  verticalCenter: { justifyContent: "center" },
 })

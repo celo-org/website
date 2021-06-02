@@ -1,8 +1,8 @@
-import * as React from 'react'
-import LazyLoadFadin from 'react-lazyload-fadein'
-import { Image, ImageSourcePropType, StyleSheet, View } from 'react-native'
-import AspectRatio from 'src/shared/AspectRatio'
-import { standardStyles } from 'src/styles'
+import * as React from "react"
+import LazyLoadFadin from "react-lazyload-fadein"
+import { Image, ImageSourcePropType, StyleSheet, View } from "react-native"
+import AspectRatio from "src/shared/AspectRatio"
+import { standardStyles } from "src/styles"
 
 interface Props {
   ratio: number
@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
   imagePreview: {
     opacity: 0.5,
     filter: `blur(20px)`,
-    height: '100%',
-    width: '100%',
+    height: "100%",
+    width: "100%",
   },
-  realImageContainer: { position: 'absolute', height: '100%', width: '100%' },
+  realImageContainer: { position: "absolute", height: "100%", width: "100%" },
 })

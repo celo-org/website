@@ -1,15 +1,15 @@
-import { Document } from '@contentful/rich-text-types'
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H1 } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import { Document } from "@contentful/rich-text-types"
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H1 } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { HEADER_HEIGHT } from "src/shared/Styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { renderNode } from 'src/contentful/nodes/nodes'
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderNode } from "src/contentful/nodes/nodes"
 const OPTIONS = {
   renderNode,
 }
@@ -28,7 +28,7 @@ class FAQ extends React.Component<I18nProps & Props> {
     const { t, list } = this.props
     return (
       <>
-        <OpenGraph title={t('title')} path={'/faq'} description={t('description')} />
+        <OpenGraph title={t("title")} path={"/faq"} description={t("description")} />
         <View style={styles.container}>
           <GridRow
             allStyle={standardStyles.centered}
@@ -37,7 +37,7 @@ class FAQ extends React.Component<I18nProps & Props> {
             mobileStyle={standardStyles.blockMarginBottomMobile}
           >
             <Cell span={Spans.three4th} style={standardStyles.centered}>
-              <H1 style={textStyles.center}>{t('title')}</H1>
+              <H1 style={textStyles.center}>{t("title")}</H1>
             </Cell>
           </GridRow>
           {list.map((faq) => (
@@ -51,7 +51,12 @@ class FAQ extends React.Component<I18nProps & Props> {
   }
 }
 
-function Section({ title, children }) {
+interface SectionProps {
+  title: string
+  children: React.ReactNode
+}
+
+function Section({ title, children }: SectionProps) {
   return (
     <GridRow
       desktopStyle={standardStyles.blockMargin}
@@ -67,7 +72,7 @@ function Section({ title, children }) {
     </GridRow>
   )
 }
-export default withNamespaces('faq')(FAQ)
+export default withNamespaces("faq")(FAQ)
 
 const styles = StyleSheet.create({
   container: {

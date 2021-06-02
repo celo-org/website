@@ -1,9 +1,9 @@
-import { Asset } from 'contentful'
-import * as React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import Octocat from 'src/icons/Octocat'
-import Outbound from 'src/shared/Outbound'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import { Asset } from "contentful"
+import * as React from "react"
+import { Image, StyleSheet, Text, View } from "react-native"
+import Octocat from "src/icons/Octocat"
+import Outbound from "src/shared/Outbound"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 export interface Props {
   name: string
@@ -51,7 +51,7 @@ export default React.memo(function DirectoryItem(props: Props) {
       <Text style={[fonts.legal, standardStyles.elementalMarginBottom]}>{props.description}</Text>
       {props.repo && (
         <a href={props.repo} target="_blank" rel="noopener">
-          {' '}
+          {" "}
           <Octocat color={colors.dark} size={20} />
         </a>
       )}
@@ -59,7 +59,13 @@ export default React.memo(function DirectoryItem(props: Props) {
   )
 })
 
-function ContentfulImage({ image, maxHeight, maxWidth }) {
+interface ImageProps {
+  image: string
+  maxWidth: number
+  maxHeight: number
+}
+
+function ContentfulImage({ image, maxHeight, maxWidth }: ImageProps) {
   const [potentialWidth, onLayout] = useWidth()
   const ratio = maxWidth / maxHeight
   const realHeight = Math.round(Math.min(potentialWidth / ratio, 100))
@@ -67,10 +73,10 @@ function ContentfulImage({ image, maxHeight, maxWidth }) {
   return (
     <View
       style={{
-        width: potentialWidth ? realWidth : '100%',
+        width: potentialWidth ? realWidth : "100%",
         maxWidth,
         height: 100,
-        justifyContent: 'center',
+        justifyContent: "center",
       }}
       onLayout={onLayout}
     >
@@ -90,8 +96,8 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   logoAndLink: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
   },
   link: { marginHorizontal: 12 },
 })

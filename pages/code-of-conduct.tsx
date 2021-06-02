@@ -1,3 +1,3 @@
-import CodeOfConduct from 'src/community/CodeOfConduct'
+import CodeOfConduct from "src/community/CodeOfConduct"
 
 export default CodeOfConduct

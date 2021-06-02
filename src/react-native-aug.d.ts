@@ -1,14 +1,14 @@
-import 'react-native'
+import "react-native"
 
-declare module 'react-native' {
+declare module "react-native" {
   interface TextStyle {
     textRendering?: string
-    listStyle?: 'disc' | 'circle' | 'square' | 'decimal' | 'none' | 'lower-alpha'
-    display?: 'list-item' | 'inline' | 'none' | 'inline-flex' | 'flex' | 'block'
+    listStyle?: "disc" | "circle" | "square" | "decimal" | "none" | "lower-alpha"
+    display?: "list-item" | "inline" | "none" | "inline-flex" | "flex" | "block"
     transitionProperty?: string
     transitionDuration?: string
     gridArea?: string
-    lineHeight?: 'initial' | number
+    lineHeight?: "initial" | number
   }
 
   interface KeyFrame {
@@ -19,22 +19,22 @@ declare module 'react-native' {
     appearance?: string
     animationDelay?: string
     animationDuration?: string
-    animationFillMode?: 'both' | 'backwards' | 'forwards' | 'none'
-    animationIterationCount?: 'infinite' | number
+    animationFillMode?: "both" | "backwards" | "forwards" | "none"
+    animationIterationCount?: "infinite" | number
     animationKeyframes?: KeyFrame[]
     animationTimingFunction?: string
     boxShadow?: string
     cursor?: string
-    display?: 'none' | 'flex' | 'inline' | 'inline-flex' | 'list-item' | 'block' | 'grid'
+    display?: "none" | "flex" | "inline" | "inline-flex" | "list-item" | "block" | "grid"
     fill?: string
     filter?: string
     gridArea?: string
     gridRowGap?: string | number
     gridColumnGap?: string | number
     gridTemplateColumns?: string
-    isolation?: 'isolate'
-    mixBlendMode?: 'multiply' | 'screen'
-    position?: 'absolute' | 'relative' | 'fixed' | 'static' | 'sticky'
+    isolation?: "isolate"
+    mixBlendMode?: "multiply" | "screen"
+    position?: "absolute" | "relative" | "fixed" | "static" | "sticky"
     scrollPadding?: number
     transformOrigin?: string | number
     transitionProperty?: string
@@ -49,10 +49,10 @@ declare module 'react-native' {
   }
 
   interface TextProps {
-    accessibilityRole?: 'button' | 'heading' | 'label' | 'link' | 'listitem' | "option"
+    accessibilityRole?: "button" | "heading" | "label" | "link" | "listitem" | "option"
     tabIndex?: number
     href?: string
-    hrefAttrs?: {target?: string, rel?: string, download?: string}
+    hrefAttrs?: { target?: string; rel?: string; download?: string }
     id?: string
     onClick?: () => void
     style?: StyleProp<TextStyle>
@@ -60,7 +60,7 @@ declare module 'react-native' {
 
   interface ViewProps {
     onClick?: () => void
-    accessibilityRole?: 'list' | 'link' | 'button' | "listbox"
+    accessibilityRole?: "list" | "link" | "button" | "listbox"
     style?: StyleProp<ViewStyle>
   }
 

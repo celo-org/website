@@ -1,14 +1,14 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { EXAMPLE_ADDRESS, RequestState } from 'src/fauceting/utils'
-import { I18nProps } from 'src/i18n'
-import Checkmark from 'src/icons/Checkmark'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import Spinner from 'src/shared/Spinner'
-import { colors, fonts, standardStyles as std, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { EXAMPLE_ADDRESS, RequestState } from "src/fauceting/utils"
+import { I18nProps } from "src/i18n"
+import Checkmark from "src/icons/Checkmark"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import Spinner from "src/shared/Spinner"
+import { colors, fonts, standardStyles as std, textStyles } from "src/styles"
 interface InfoProps {
   requestState: RequestState
-  t: I18nProps['t']
+  t: I18nProps["t"]
   isFaucet: boolean
 }
 
@@ -32,7 +32,7 @@ interface HashProps {
   goldTxHash: string | null
   escrowTxHash: string | null
   done: boolean
-  t: I18nProps['t']
+  t: I18nProps["t"]
 }
 
 export function HashingStatus({
@@ -48,9 +48,9 @@ export function HashingStatus({
       style={isFaucet ? [std.row, styles.statusesContainerTicker] : styles.statusesContainerLog}
     >
       {[
-        goldTxHash && isFaucet && t('cGLDsent'),
-        dollarTxHash && t('cUSDsent'),
-        escrowTxHash && t('walletBuilt'),
+        goldTxHash && isFaucet && t("cGLDsent"),
+        dollarTxHash && t("cUSDsent"),
+        escrowTxHash && t("walletBuilt"),
       ]
         .filter((x) => !!x)
         .map((message) => (
@@ -70,7 +70,7 @@ export function HashingStatus({
 interface ButtonProps {
   requestState: RequestState
   isFaucet: boolean
-  t: I18nProps['t']
+  t: I18nProps["t"]
   onSubmit: () => void
   captchaOK: boolean
   disabled?: boolean
@@ -99,7 +99,7 @@ export function ButtonWithFeedback({
       onPress={onSubmit}
       onDarkBackground={!isFaucet}
       iconLeft={icon}
-      align={'flex-start'}
+      align={"flex-start"}
       style={!isFaucet && isEnded && [textStyles.invert, styles.message]}
       size={isFaucet ? SIZE.normal : SIZE.big}
     />
@@ -107,7 +107,7 @@ export function ButtonWithFeedback({
 }
 
 interface TextFuncArgs {
-  t: I18nProps['t']
+  t: I18nProps["t"]
   requestState: RequestState
   isFaucet?: boolean
 }
@@ -115,25 +115,25 @@ interface TextFuncArgs {
 function buttonText({ requestState, t, isFaucet }: TextFuncArgs) {
   switch (requestState) {
     case RequestState.Working:
-      return ''
+      return ""
     case RequestState.Completed:
-      return isFaucet ? t('faucetDone') : t('inviteDone')
+      return isFaucet ? t("faucetDone") : t("inviteDone")
     default:
-      return t('getStarted')
+      return t("getStarted")
   }
 }
 
 function faucetText({ requestState, t }: TextFuncArgs) {
   return (
     {
-      [RequestState.Failed]: t('faucetError'),
-      [RequestState.Invalid]: t('invalidAddress'),
+      [RequestState.Failed]: t("faucetError"),
+      [RequestState.Invalid]: t("invalidAddress"),
     }[requestState] || `eg. ${EXAMPLE_ADDRESS}`
   )
 }
 
 function inviteText({ requestState, t }: TextFuncArgs) {
-  return RequestState.Failed === requestState ? t('inviteError') : ''
+  return RequestState.Failed === requestState ? t("inviteError") : ""
 }
 
 const styles = StyleSheet.create({
@@ -143,17 +143,17 @@ const styles = StyleSheet.create({
   },
   ticker: {
     marginLeft: 20,
-    justifyContent: 'center',
-    height: '100%',
+    justifyContent: "center",
+    height: "100%",
   },
   statusesContainerLog: {
-    position: 'absolute',
-    width: '100%',
+    position: "absolute",
+    width: "100%",
     marginTop: 10,
   },
   statusesContainerTicker: {
-    alignContent: 'center',
-    height: '100%',
+    alignContent: "center",
+    height: "100%",
   },
   message: {
     lineHeight: 20,

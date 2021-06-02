@@ -1,21 +1,21 @@
-import throttle from 'lodash.throttle'
-import dynamic from 'next/dynamic'
-import * as React from 'react'
-import { findNodeHandle, StyleSheet, Text, View } from 'react-native'
-import { Props as LayerIlloProps } from 'src/dev/LayersIllo'
-import StackSection from 'src/dev/StackSection'
-import { H2, H3, H4, Li } from 'src/fonts/Fonts'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import Octocat from 'src/icons/Octocat'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import Button, { BTN } from 'src/shared/Button.3'
-import { CeloLinks, hashNav } from 'src/shared/menu-items'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
-import { scrollTo } from 'src/utils/utils'
+import throttle from "lodash.throttle"
+import dynamic from "next/dynamic"
+import * as React from "react"
+import { findNodeHandle, StyleSheet, Text, View } from "react-native"
+import { Props as LayerIlloProps } from "src/dev/LayersIllo"
+import StackSection from "src/dev/StackSection"
+import { H2, H3, H4, Li } from "src/fonts/Fonts"
+import { I18nProps, withNamespaces } from "src/i18n"
+import Octocat from "src/icons/Octocat"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import Button, { BTN } from "src/shared/Button.3"
+import { CeloLinks, hashNav } from "src/shared/menu-items"
+import { HEADER_HEIGHT } from "src/shared/Styles"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { scrollTo } from "src/utils/utils"
 const LayersIllo = dynamic(
-  (import('src/dev/LayersIllo') as unknown) as Promise<React.ComponentType<LayerIlloProps>>
+  import("src/dev/LayersIllo") as unknown as Promise<React.ComponentType<LayerIlloProps>>
 )
 
 enum Levels {
@@ -26,9 +26,9 @@ enum Levels {
 }
 
 enum StickyMode {
-  'normal',
-  'attachToBottom',
-  'fixed',
+  "normal",
+  "attachToBottom",
+  "fixed",
 }
 
 interface State {
@@ -126,11 +126,11 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener("scroll", this.handleScroll)
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener("scroll", this.handleScroll)
   }
 
   modeStyle = () => {
@@ -149,7 +149,7 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
     const isDesktop = screen === ScreenSizes.DESKTOP
     const isBrowseCodeFaded = isDesktop && !(this.state.selection === Levels.code)
 
-    const activeLayer = this.state.selection === Levels.code ? 'all' : this.state.selection
+    const activeLayer = this.state.selection === Levels.code ? "all" : this.state.selection
 
     return (
       <View style={standardStyles.darkBackground} ref={this.ref}>
@@ -162,12 +162,12 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
           <Cell span={Spans.half} tabletSpan={Spans.full}>
             <View style={this.modeStyle()} ref={this.illoRef}>
               <View style={styles.illoContainer}>
-                <H2 style={textStyles.invert}>{t('stackSubtitle')}</H2>
+                <H2 style={textStyles.invert}>{t("stackSubtitle")}</H2>
                 <H3 style={[textStyles.invert, standardStyles.elementalMargin]}>
-                  {t('stackTitle')}
+                  {t("stackTitle")}
                 </H3>
                 <Text style={[fonts.p, textStyles.invert, standardStyles.elementalMarginBottom]}>
-                  {t('stackDescription')}
+                  {t("stackDescription")}
                 </Text>
                 {isDesktop && (
                   <LayersIllo activeLayer={activeLayer} onSelectLayer={this.setLevel} />
@@ -184,42 +184,42 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
               onPress={this.setL1}
               id={hashNav.build.applications}
               isSelected={this.state.selection === Levels.apps || !isDesktop}
-              title={t('mobile.title')}
-              text={t('mobile.text')}
-              buttonOne={{ title: t('installWallet'), href: CeloLinks.walletApp }}
-              buttonTwo={{ title: t('seeCode'), href: CeloLinks.monorepo }}
+              title={t("mobile.title")}
+              text={t("mobile.text")}
+              buttonOne={{ title: t("installWallet"), href: CeloLinks.walletApp }}
+              buttonTwo={{ title: t("seeCode"), href: CeloLinks.monorepo }}
             >
-              <Li style={textStyles.invert}>{t('mobile.nonCustodial')}</Li>
-              <Li style={textStyles.invert}>{t('mobile.mobileUltra')}</Li>
-              <Li style={textStyles.invert}>{t('mobile.exchange')}</Li>
-              <Li style={textStyles.invert}>{t('mobile.qr')}</Li>
-              <Li style={textStyles.invert}>{t('mobile.sdk')}</Li>
+              <Li style={textStyles.invert}>{t("mobile.nonCustodial")}</Li>
+              <Li style={textStyles.invert}>{t("mobile.mobileUltra")}</Li>
+              <Li style={textStyles.invert}>{t("mobile.exchange")}</Li>
+              <Li style={textStyles.invert}>{t("mobile.qr")}</Li>
+              <Li style={textStyles.invert}>{t("mobile.sdk")}</Li>
             </StackSection>
             <StackSection
               onPress={this.setL2}
               id={hashNav.build.contracts}
               isSelected={this.state.selection === Levels.contracts || !isDesktop}
-              title={t('protocol.title')}
-              text={t('protocol.text')}
-              buttonOne={{ title: t('readMore'), href: CeloLinks.docsOverview }}
-              buttonTwo={{ title: t('seeCode'), href: CeloLinks.monorepo }}
+              title={t("protocol.title")}
+              text={t("protocol.text")}
+              buttonOne={{ title: t("readMore"), href: CeloLinks.docsOverview }}
+              buttonTwo={{ title: t("seeCode"), href: CeloLinks.monorepo }}
             >
-              <Li style={textStyles.invert}>{t('protocol.algoReserve')}</Li>
-              <Li style={textStyles.invert}>{t('protocol.cryptoCollat')}</Li>
-              <Li style={textStyles.invert}>{t('protocol.native')}</Li>
+              <Li style={textStyles.invert}>{t("protocol.algoReserve")}</Li>
+              <Li style={textStyles.invert}>{t("protocol.cryptoCollat")}</Li>
+              <Li style={textStyles.invert}>{t("protocol.native")}</Li>
             </StackSection>
             <StackSection
               onPress={this.setL3}
               id={hashNav.build.blockchain}
               isSelected={this.state.selection === Levels.blockchains || !isDesktop}
-              title={t('proof.title')}
-              text={t('proof.text')}
-              buttonOne={{ title: t('readMore'), href: CeloLinks.docsOverview }}
-              buttonTwo={{ title: t('seeCode'), href: CeloLinks.blockChainRepo }}
+              title={t("proof.title")}
+              text={t("proof.text")}
+              buttonOne={{ title: t("readMore"), href: CeloLinks.docsOverview }}
+              buttonTwo={{ title: t("seeCode"), href: CeloLinks.blockChainRepo }}
             >
-              <Li style={textStyles.invert}>{t('proof.permissionless')}</Li>
-              <Li style={textStyles.invert}>{t('proof.rewardsWeighted')}</Li>
-              <Li style={textStyles.invert}>{t('proof.onChain')}</Li>
+              <Li style={textStyles.invert}>{t("proof.permissionless")}</Li>
+              <Li style={textStyles.invert}>{t("proof.rewardsWeighted")}</Li>
+              <Li style={textStyles.invert}>{t("proof.onChain")}</Li>
             </StackSection>
             <View
               style={[
@@ -229,7 +229,7 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
                 isBrowseCodeFaded && styles.faded,
               ]}
             >
-              <H4 style={[textStyles.invert, textStyles.center]}>{t('stackBrowseTitle')}</H4>
+              <H4 style={[textStyles.invert, textStyles.center]}>{t("stackBrowseTitle")}</H4>
               <Text
                 style={[
                   standardStyles.elementalMarginBottom,
@@ -238,12 +238,12 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
                   textStyles.center,
                 ]}
               >
-                {t('stackBrowseCopy')}{' '}
+                {t("stackBrowseCopy")}{" "}
               </Text>
               <Button
                 disabled={isBrowseCodeFaded}
                 kind={BTN.PRIMARY}
-                text={t('stackBrowseButton')}
+                text={t("stackBrowseButton")}
                 target="_blank"
                 href={CeloLinks.gitHub}
                 iconRight={<Octocat color={colors.white} size={20} />}
@@ -256,29 +256,29 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
   }
 }
 
-export default withScreenSize(withNamespaces('dev')(FullStack))
+export default withScreenSize(withNamespaces("dev")(FullStack))
 
 const styles = StyleSheet.create({
-  container: { overflow: 'hidden', flexWrap: 'wrap' },
-  tabletContainer: { justifyContent: 'flex-end' },
+  container: { overflow: "hidden", flexWrap: "wrap" },
+  tabletContainer: { justifyContent: "flex-end" },
   sticky: {
-    position: 'fixed',
+    position: "fixed",
     top: HEADER_HEIGHT,
     zIndex: 10,
   },
   attachToBottom: {
     bottom: 0,
     paddingTop: HEADER_HEIGHT,
-    position: 'absolute',
+    position: "absolute",
   },
-  illoContainer: { width: '100%', maxWidth: 400 },
+  illoContainer: { width: "100%", maxWidth: 400 },
   stackContainer: { paddingTop: GLASS_CEILING },
   faded: {
     opacity: 0.6,
   },
   browseCodeArea: {
-    transitionProperty: 'opacity' as 'opacity',
-    transitionDuration: '100ms',
+    transitionProperty: "opacity" as const,
+    transitionDuration: "100ms",
     zIndex: 1,
   },
 })

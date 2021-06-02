@@ -1,21 +1,21 @@
-import { useRouter } from 'next/router'
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { colors } from 'src/styles'
-import { EffectiveTypes, getEffectiveConnection } from 'src/utils/utils'
+import { useRouter } from "next/router"
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import { colors } from "src/styles"
+import { EffectiveTypes, getEffectiveConnection } from "src/utils/utils"
 
 // https://nextjs.org/docs/api-reference/next/router#router-api
 enum RouterEvents {
-  routeChangeStart = 'routeChangeStart',
-  routeChangeComplete = 'routeChangeComplete',
-  routeChangeError = 'routeChangeError',
+  routeChangeStart = "routeChangeStart",
+  routeChangeComplete = "routeChangeComplete",
+  routeChangeError = "routeChangeError",
 }
 
 export function usePageTurner() {
   const router = useRouter()
   const [isPageTurning, setPageTurning] = React.useState(false)
   const [hasError, setError] = React.useState(false)
-  const [route, setRoute] = React.useState('')
+  const [route, setRoute] = React.useState("")
   React.useEffect(() => {
     const eventHandlers = {
       [RouterEvents.routeChangeStart]: (url) => {
@@ -44,7 +44,7 @@ export function usePageTurner() {
         router.events.off(eventType, eventHandlers[eventType])
       })
     }
-  }, [])
+  }, [router.events])
 
   return { isPageTurning, hasError, route }
 }
@@ -59,12 +59,7 @@ export default function Progress() {
     return (
       <View style={styles.container} key={route}>
         <View
-          style={[
-            styles.bar,
-            animationSpeed,
-            visibility,
-            hasError ? styles.bad : styles.good,
-          ]}
+          style={[styles.bar, animationSpeed, visibility, hasError ? styles.bad : styles.good]}
         />
       </View>
     )
@@ -74,29 +69,29 @@ export default function Progress() {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     zIndex: 1000,
     height: 2,
-    width: '100%',
-    position: 'absolute',
+    width: "100%",
+    position: "absolute",
     top: 0,
     left: 0,
     right: 0,
   },
-  [EffectiveTypes['slow-2g']]: {
+  [EffectiveTypes["slow-2g"]]: {
     animationDuration: `30s`,
   },
-  [EffectiveTypes['2g']]: {
+  [EffectiveTypes["2g"]]: {
     animationDuration: `20s`,
   },
   [EffectiveTypes.unknown]: {
     animationDuration: `12s`,
   },
-  [EffectiveTypes['3g']]: {
+  [EffectiveTypes["3g"]]: {
     animationDuration: `15s`,
   },
-  [EffectiveTypes['4g']]: {
+  [EffectiveTypes["4g"]]: {
     animationDuration: `5s`,
   },
   good: {
@@ -106,28 +101,27 @@ const styles = StyleSheet.create({
     backgroundColor: colors.red,
   },
   bar: {
-    transitionProperty: ['background-color', 'top'],
-    transitionDuration: ['1s', '0.4s'],
-    height: '100%',
-    width: '100%',
+    transitionProperty: ["background-color", "top"],
+    transitionDuration: ["1s", "0.4s"],
+    height: "100%",
+    width: "100%",
     top: 0,
-    transformOrigin: 'left',
-    animationFillMode: 'both',
-    animationTimingFunction: 'cubic-bezier(0,.58,.51,1.01)',
+    transformOrigin: "left",
+    animationFillMode: "both",
+    animationTimingFunction: "cubic-bezier(0,.58,.51,1.01)",
     animationKeyframes: [
       {
-        '0%': {
+        "0%": {
           transform: [{ scaleX: 0 }],
         },
 
-        '100%': {
+        "100%": {
           transform: [{ scaleX: 1 }],
         },
       },
     ],
   },
-  visible: {
-  },
+  visible: {},
   hidden: {
     top: -2,
   },

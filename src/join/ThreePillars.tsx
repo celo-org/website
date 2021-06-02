@@ -1,13 +1,13 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H2, H3 } from 'src/fonts/Fonts'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import Fade from 'src/shared/AwesomeFade'
-import HollowOval from 'src/shared/HollowOval'
-import OvalCoin from 'src/shared/OvalCoin'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H2, H3 } from "src/fonts/Fonts"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import Fade from "src/shared/AwesomeFade"
+import HollowOval from "src/shared/HollowOval"
+import OvalCoin from "src/shared/OvalCoin"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 class ThreePillars extends React.PureComponent<I18nProps & ScreenProps> {
   render() {
     const { t, screen } = this.props
@@ -22,7 +22,7 @@ class ThreePillars extends React.PureComponent<I18nProps & ScreenProps> {
           allStyle={standardStyles.centered}
         >
           <Cell span={Spans.half} style={!isMobile && styles.textArea}>
-            <H3 style={isMobile && textStyles.center}>{t('threePillars')}</H3>
+            <H3 style={isMobile && textStyles.center}>{t("threePillars")}</H3>
             <H2
               style={[
                 standardStyles.elementalMargin,
@@ -30,9 +30,9 @@ class ThreePillars extends React.PureComponent<I18nProps & ScreenProps> {
                 isMobile && textStyles.center,
               ]}
             >
-              {t('selfMgmtWholeness')}
+              {t("selfMgmtWholeness")}
             </H2>
-            <Text style={[fonts.p, isMobile && textStyles.center]}>{t('guidedBy')}</Text>
+            <Text style={[fonts.p, isMobile && textStyles.center]}>{t("guidedBy")}</Text>
           </Cell>
           <Cell span={Spans.half}>
             <AnimationContainer />
@@ -54,18 +54,18 @@ const styles = StyleSheet.create({
     color: colors.deepBlue,
   },
   illustration: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   illustrationMobile: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+    flexDirection: "row",
+    justifyContent: "space-around",
   },
   movingCoin: {
-    position: 'absolute',
+    position: "absolute",
     opacity: 1,
     // keeps it so that the mix-blend-mode svg blends after animation, otherwise it disapears on Chrome for Android on Pixel 3
-    willChange: 'opacity',
+    willChange: "opacity",
   },
   coinArea: {
     marginVertical: 80,
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   },
 })
 
-export default withNamespaces('jobs')(withScreenSize(ThreePillars))
+export default withNamespaces("jobs")(withScreenSize(ThreePillars))
 
 class Animation extends React.PureComponent<ScreenProps> {
   getCoinsSize = () => {
@@ -108,7 +108,7 @@ class Animation extends React.PureComponent<ScreenProps> {
           <View
             style={[
               styles.movingCoin,
-              { mixBlendMode: 'multiply', top: coinsSize / 3, left: (-coinsSize * ratio) / 6 },
+              { mixBlendMode: "multiply", top: coinsSize / 3, left: (-coinsSize * ratio) / 6 },
             ]}
           >
             <Fade distance={`${coinsSize / 3}px`} delay={baseDelay}>
@@ -123,7 +123,7 @@ class Animation extends React.PureComponent<ScreenProps> {
             style={[
               styles.movingCoin,
               // mixBlendMode get stripped out when used in stylesheet
-              { mixBlendMode: 'multiply', top: 0 },
+              { mixBlendMode: "multiply", top: 0 },
             ]}
           >
             <Fade distance={`${coinsSize / 4}px`} delay={baseDelay * 2}>
@@ -136,7 +136,7 @@ class Animation extends React.PureComponent<ScreenProps> {
           <View
             style={[
               styles.movingCoin,
-              { mixBlendMode: 'multiply', top: -coinsSize / 2, left: (coinsSize * ratio) / 3 },
+              { mixBlendMode: "multiply", top: -coinsSize / 2, left: (coinsSize * ratio) / 3 },
             ]}
           >
             <Fade distance={`${coinsSize / 5}px`} delay={baseDelay * 3}>

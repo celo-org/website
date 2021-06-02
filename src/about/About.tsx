@@ -1,46 +1,46 @@
-import * as React from 'react'
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import AudioIcon from 'src/about/AudioIcon'
-import Backers from 'src/about/Backers'
-import { Contributor } from 'src/about/Contributor'
-import { sacredEconBack, team } from 'src/about/images'
-import PressMedia from 'src/about/PressMedia'
-import Team from 'src/about/Team'
-import CeloValues from 'src/about/Values'
-import VideoCover from 'src/about/VideoCover'
-import analytics from 'src/analytics/analytics'
-import { H1, H2 } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
-import { I18nProps, NameSpaces, Trans, withNamespaces } from 'src/i18n'
-import BookLayout from 'src/layout/BookLayout'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import LogoLightBg from 'src/logos/LogoLightBg'
-import BeautifulQuote from 'src/shared/BeautifulQuote'
-import Button, { BTN } from 'src/shared/Button.3'
-import InlineAnchor from 'src/shared/InlineAnchor'
-import menuItems from 'src/shared/menu-items'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import AudioIcon from "src/about/AudioIcon"
+import Backers from "src/about/Backers"
+import { Contributor } from "src/about/Contributor"
+import { sacredEconBack, team } from "src/about/images"
+import PressMedia from "src/about/PressMedia"
+import Team from "src/about/Team"
+import CeloValues from "src/about/Values"
+import VideoCover from "src/about/VideoCover"
+import analytics from "src/analytics/analytics"
+import { H1, H2 } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
+import { I18nProps, NameSpaces, Trans, withNamespaces } from "src/i18n"
+import BookLayout from "src/layout/BookLayout"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import LogoLightBg from "src/logos/LogoLightBg"
+import BeautifulQuote from "src/shared/BeautifulQuote"
+import Button, { BTN } from "src/shared/Button.3"
+import InlineAnchor from "src/shared/InlineAnchor"
+import menuItems from "src/shared/menu-items"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 interface Props {
   contributors: Contributor[]
 }
 
 async function pronunceCelo() {
-  const audio = document.getElementById('pronunce') as HTMLAudioElement
+  const audio = document.getElementById("pronunce") as HTMLAudioElement
   await audio.play()
-  await analytics.track('pronounced celo')
+  await analytics.track("pronounced celo")
 }
 
 export class About extends React.Component<Props & I18nProps> {
   static async getInitialProps({ req }) {
     let contributors
     if (req) {
-      const getContributors = await import('src/../server/getContributors')
+      const getContributors = await import("src/../server/getContributors")
       contributors = await getContributors.default()
     } else {
       contributors = await fetch(`/api/contributors`).then((result) => result.json())
     }
-    const shuffleSeed = await import('shuffle-seed').then(mod => mod.default)
+    const shuffleSeed = await import("shuffle-seed").then((mod) => mod.default)
 
     const shuffledTeam = shuffleSeed.shuffle(contributors, Math.random())
     return { contributors: shuffledTeam }
@@ -53,8 +53,8 @@ export class About extends React.Component<Props & I18nProps> {
       <>
         <OpenGraph
           path={menuItems.ABOUT_US.link}
-          title={t('pageTitle')}
-          description={t('description')}
+          title={t("pageTitle")}
+          description={t("description")}
         />
         <View>
           <VideoCover />
@@ -68,20 +68,20 @@ export class About extends React.Component<Props & I18nProps> {
               <LogoLightBg height={47} />
             </Cell>
           </GridRow>
-          <BookLayout label={t('MissionTitle')}>
-            <H1>{t('MissionText')}</H1>
+          <BookLayout label={t("MissionTitle")}>
+            <H1>{t("MissionText")}</H1>
           </BookLayout>
-          <BookLayout label={<Text style={styles.foundation}>{t('celoFoundation')}</Text>}>
-            <H2 style={standardStyles.elementalMarginBottom}>{t('celoFoundationBelieves')}</H2>
-            <Text style={[fonts.p, standardStyles.elementalMargin]}>{t('celoFoundationText')}</Text>
+          <BookLayout label={<Text style={styles.foundation}>{t("celoFoundation")}</Text>}>
+            <H2 style={standardStyles.elementalMarginBottom}>{t("celoFoundationBelieves")}</H2>
+            <Text style={[fonts.p, standardStyles.elementalMargin]}>{t("celoFoundationText")}</Text>
           </BookLayout>
-          <BookLayout label={t('MeaningTile')} endBlock={true}>
+          <BookLayout label={t("MeaningTile")} endBlock={true}>
             <H1 ariaLevel="2" style={standardStyles.elementalMarginBottom}>
               <Trans
                 ns={NameSpaces.about}
                 t={t}
-                i18nKey={'MeaningText'}
-                values={{ phonetic: '/ˈtselo/' }}
+                i18nKey={"MeaningText"}
+                values={{ phonetic: "/ˈtselo/" }}
                 children={[
                   <Text key={1} style={textStyles.italic}>
                     "/ˈtselo/"
@@ -96,26 +96,26 @@ export class About extends React.Component<Props & I18nProps> {
                 ]}
               />
             </H1>
-            <Text style={[fonts.p, standardStyles.elementalMargin]}>{t('MeaningCopy')}</Text>
+            <Text style={[fonts.p, standardStyles.elementalMargin]}>{t("MeaningCopy")}</Text>
           </BookLayout>
-          <Image source={team} style={styles.teamImage} resizeMode={'cover'} />
-          <BookLayout label={t('ValuesTitle')}>
+          <Image source={team} style={styles.teamImage} resizeMode={"cover"} />
+          <BookLayout label={t("ValuesTitle")}>
             <Text style={[fonts.p, standardStyles.elementalMarginBottom]}>
               <Trans
                 ns={NameSpaces.about}
-                i18nKey={'ValuesCopy'}
-                values={{ celoCLabs: 'Celo\u00a0– C\u00a0Labs' }}
+                i18nKey={"ValuesCopy"}
+                values={{ celoCLabs: "Celo\u00a0– C\u00a0Labs" }}
                 children={<Strong key="0">M</Strong>}
               />
             </Text>
           </BookLayout>
           <CeloValues />
           <BeautifulQuote
-            quote={t('beautifulLifeQuote')}
+            quote={t("beautifulLifeQuote")}
             imgSource={sacredEconBack}
-            citation={`– ${t('beautifulLifeSource')}`}
+            citation={`– ${t("beautifulLifeSource")}`}
           />
-          <BookLayout label={t('SacredEconTitle')} startBlock={true}>
+          <BookLayout label={t("SacredEconTitle")} startBlock={true}>
             <Text style={[fonts.p, standardStyles.blockMarginBottomTablet]}>
               <Trans
                 ns={NameSpaces.about}
@@ -130,17 +130,17 @@ export class About extends React.Component<Props & I18nProps> {
             <Button
               kind={BTN.PRIMARY}
               href="http://sacred-economics.com/film/"
-              text={t('learnMore')}
+              text={t("learnMore")}
             />
           </BookLayout>
-          <BookLayout label={t('theoryOfChangeTitle')} startBlock={true}>
+          <BookLayout label={t("theoryOfChangeTitle")} startBlock={true}>
             <Text style={[fonts.p, standardStyles.blockMarginBottomTablet]}>
-              {t('theoryOfChangeText')}
+              {t("theoryOfChangeText")}
             </Text>
             <Button
               kind={BTN.PRIMARY}
               href="https://medium.com/celoOrg/celos-theory-of-change-b916de44945d"
-              text={t('learnMore')}
+              text={t("learnMore")}
             />
           </BookLayout>
           <Team contributors={contributors} />
@@ -152,16 +152,16 @@ export class About extends React.Component<Props & I18nProps> {
   }
 }
 
-function Strong({ children }) {
+function Strong({ children }: { children: React.ReactNode }) {
   return <Text style={textStyles.heavy}>{children}</Text>
 }
 
 const styles = StyleSheet.create({
-  teamImage: { width: '100%', height: 650 },
-  logoArea: { justifyContent: 'flex-end' },
+  teamImage: { width: "100%", height: 650 },
+  logoArea: { justifyContent: "flex-end" },
   foundation: {
     lineHeight: 42,
   },
 })
 
-export default withNamespaces('about')(About)
+export default withNamespaces("about")(About)

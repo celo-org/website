@@ -1,13 +1,13 @@
-import * as React from 'react'
-import Button, { BTN, PrimaryProps as ButtonProps } from 'src/shared/Button.3'
-import Spinner from 'src/shared/Spinner'
-import { colors } from 'src/styles'
+import * as React from "react"
+import Button, { BTN, PrimaryProps as ButtonProps } from "src/shared/Button.3"
+import Spinner from "src/shared/Spinner"
+import { colors } from "src/styles"
 
 interface OwnProps {
   isLoading: boolean
 }
 
-type Props = Pick<ButtonProps, 'text' | 'onPress' | 'size' | 'align' | 'style' | 'onDarkBackground'>
+type Props = Pick<ButtonProps, "text" | "onPress" | "size" | "align" | "style" | "onDarkBackground">
 
 export default React.memo(function SubmitButton({
   isLoading,
@@ -21,7 +21,7 @@ export default React.memo(function SubmitButton({
   return (
     <Button
       onDarkBackground={onDarkBackground}
-      iconLeft={isLoading && <Spinner size={'small'} color={colors.white} />}
+      iconLeft={isLoading && <Spinner size={"small"} color={colors.white} />}
       text={!isLoading && text}
       kind={BTN.PRIMARY}
       onPress={onPress}

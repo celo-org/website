@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { StyleSheet, Text, unstable_createElement as createElement, View } from 'react-native-web'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
-import { Label } from './FormComponents'
+import * as React from "react"
+import { StyleSheet, Text, unstable_createElement as createElement, View } from "react-native-web"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { Label } from "./FormComponents"
 
 interface CheckboxProps {
   checked: boolean
@@ -41,8 +41,8 @@ function Checkbox({ checked, onPress, name }: CheckboxProps) {
       >
         ✓
       </Text>
-      {createElement('input', {
-        type: 'checkbox',
+      {createElement("input", {
+        type: "checkbox",
         name,
         checked,
         onChange: () => true,
@@ -62,10 +62,10 @@ const checkBoxStyles = StyleSheet.create({
   },
   checkMark: {
     color: colors.gray,
-    position: 'absolute',
+    position: "absolute",
     transform: [{ translateY: -2 }, { translateX: 1 }],
-    transitionProperty: 'opacity',
-    transitionDuration: '100ms',
+    transitionProperty: "opacity",
+    transitionDuration: "100ms",
   },
   checkMarkChecked: {
     opacity: 1,

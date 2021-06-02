@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from "react"
 import {
   NativeSyntheticEvent,
   StyleSheet,
@@ -6,7 +6,7 @@ import {
   TextInputFocusEventData,
   TextInputProps,
   TextStyle,
-} from 'react-native'
+} from "react-native"
 
 interface TextInputState {
   focused: boolean

@@ -1,61 +1,61 @@
-import { StyleSheet, TextStyle } from 'react-native'
+import { StyleSheet, TextStyle } from "react-native"
 
 export enum colors {
-  white = '#FFFFFF',
-  light = '#E5E5E5',
-  gray = '#DDDDDD',
-  screenGray = '#545C64',
-  placeholderGray = '#D1D5D8',
-  placeholderDarkMode = '#838486',
-  secondary = '#81868B',
-  dark = '#2E3338',
-  darkTransparent = 'rgba(46, 51, 56, 0.5)',
-  gold = '#FBCC5C',
-  goldDark = '#D8A11F',
-  goldSelect = 'rgba(251, 204, 92, 0.4)',
-  goldSubtle = 'rgba(251, 204, 92, 0.2)',
-  primary = '#35D07F',
-  primaryPress = '#0FB972',
-  primaryHover = '#4CDD91',
-  inactive = 'rgba(69, 214, 138, 0.7)',
+  white = "#FFFFFF",
+  light = "#E5E5E5",
+  gray = "#DDDDDD",
+  screenGray = "#545C64",
+  placeholderGray = "#D1D5D8",
+  placeholderDarkMode = "#838486",
+  secondary = "#81868B",
+  dark = "#2E3338",
+  darkTransparent = "rgba(46, 51, 56, 0.5)",
+  gold = "#FBCC5C",
+  goldDark = "#D8A11F",
+  goldSelect = "rgba(251, 204, 92, 0.4)",
+  goldSubtle = "rgba(251, 204, 92, 0.2)",
+  primary = "#35D07F",
+  primaryPress = "#0FB972",
+  primaryHover = "#4CDD91",
+  inactive = "rgba(69, 214, 138, 0.7)",
 
-  orange = '#FFB765',
-  error = '#FF7F6D',
-  red = '#FB7C6D',
-  purple = '#BF97FF',
-  deepBlue = '#3488EC',
-  lightBlue = '#73DDFF',
-  cyan = '#3DBFFF',
-  turquoise = '#29EDFF',
+  orange = "#FFB765",
+  error = "#FF7F6D",
+  red = "#FB7C6D",
+  purple = "#BF97FF",
+  deepBlue = "#3488EC",
+  lightBlue = "#73DDFF",
+  cyan = "#3DBFFF",
+  turquoise = "#29EDFF",
 
-  greenScreen = '#0CDA6E',
-  purpleScreen = '#924EFF',
-  redScreen = '#FF6553',
-  blueScreen = '#52B6FF',
+  greenScreen = "#0CDA6E",
+  purpleScreen = "#924EFF",
+  redScreen = "#FF6553",
+  blueScreen = "#52B6FF",
 
   // added
-  faintGray = '#F8F9F9',
-  faintPurple = '#EFE5FF',
-  faintGold = '#FEF2D6',
-  faintRed = '#FEDEDA',
-  faintCyan = '#DCF6FF',
-  lightGray = '#EDEEEF',
+  faintGray = "#F8F9F9",
+  faintPurple = "#EFE5FF",
+  faintGold = "#FEF2D6",
+  faintRed = "#FEDEDA",
+  faintCyan = "#DCF6FF",
+  lightGray = "#EDEEEF",
 
-  grayHeavy = '#ABADAF',
-  black = '#000',
+  grayHeavy = "#ABADAF",
+  black = "#000",
 
-  greenUI = '#1AB775',
+  greenUI = "#1AB775",
 
-  navyBlue = '#0C74D4'
+  navyBlue = "#0C74D4",
 }
 
 export enum typeFaces {
-  futura = 'Jost, futura-pt, futura, sans-serif',
-  garamond = 'EB Garamond, eb-garamond, Garamond, serif',
+  futura = "Jost, futura-pt, futura, sans-serif",
+  garamond = "EB Garamond, eb-garamond, Garamond, serif",
 }
 
 const fontDefaults = {
-  textRendering: 'geometricPrecision',
+  textRendering: "geometricPrecision",
   color: colors.dark,
 }
 
@@ -88,7 +88,7 @@ export const fontInfo: Record<string, TextStyle> = {
     fontFamily: typeFaces.futura,
     fontSize: 24,
     lineHeight: 28,
-    fontWeight: '400',
+    fontWeight: "400",
     ...fontDefaults,
   },
   h3Mobile: {
@@ -113,24 +113,24 @@ export const fontInfo: Record<string, TextStyle> = {
     fontFamily: typeFaces.futura,
     fontSize: 20,
     lineHeight: 24,
-    fontWeight: '500',
+    fontWeight: "500",
     ...fontDefaults,
   },
   h6: {
     fontFamily: typeFaces.futura,
     fontSize: 16,
     lineHeight: 18,
-    fontWeight: '500',
+    fontWeight: "500",
     ...fontDefaults,
   },
   navigation: {
     fontFamily: typeFaces.futura,
     fontSize: 16,
     lineHeight: 16,
-    textAlign: 'center',
+    textAlign: "center",
     ...fontDefaults,
-    cursor: 'pointer',
-    fontWeight: '500',
+    cursor: "pointer",
+    fontWeight: "500",
   },
   p: {
     fontFamily: typeFaces.garamond,
@@ -170,7 +170,7 @@ export const fontInfo: Record<string, TextStyle> = {
     fontSize: 72,
     lineHeight: 72,
     fontFamily: typeFaces.futura,
-    textRendering: 'geometricPrecision',
+    textRendering: "geometricPrecision",
   },
 }
 
@@ -178,27 +178,27 @@ export const fonts = StyleSheet.create(fontInfo)
 
 export const textStyles = StyleSheet.create({
   center: {
-    textAlign: 'center',
+    textAlign: "center",
   },
   left: {
-    textAlign: 'left',
+    textAlign: "left",
   },
-  lean: { fontWeight: '300' },
+  lean: { fontWeight: "300" },
   medium: {
-    fontWeight: '500',
+    fontWeight: "500",
   },
   heavy: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   italic: {
-    fontStyle: 'italic',
+    fontStyle: "italic",
   },
   heading: {
     marginBottom: 20,
   },
   error: {
     color: colors.error,
-    fontWeight: '500',
+    fontWeight: "500",
   },
   invert: {
     color: colors.white,
@@ -231,8 +231,8 @@ const mobileMargins = {
 
 export const standardStyles = StyleSheet.create({
   centered: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   verticalLine: {
     height: 100,
@@ -240,10 +240,10 @@ export const standardStyles = StyleSheet.create({
     backgroundColor: colors.gray,
   },
   row: {
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   wrap: {
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
   sectionMargin: {
     marginVertical: margins.large,
@@ -312,14 +312,14 @@ export const standardStyles = StyleSheet.create({
     marginBottom: margins.small,
   },
   input: {
-    alignSelf: 'center',
+    alignSelf: "center",
     paddingHorizontal: 10,
     paddingTop: 13,
     paddingBottom: 15,
     borderRadius: 3,
     borderWidth: 1,
-    borderColor: 'rgba(61, 61, 61, 0.2)',
-    width: '100%',
+    borderColor: "rgba(61, 61, 61, 0.2)",
+    width: "100%",
     marginVertical: 5,
     marginHorizontal: 0,
     fontSize: 16,
@@ -337,15 +337,15 @@ export const standardStyles = StyleSheet.create({
     borderColor: colors.primary,
   },
   image: {
-    height: '100%',
-    width: '100%',
+    height: "100%",
+    width: "100%",
   },
   darkBackground: {
     backgroundColor: colors.dark,
   },
   fadeInitial: {
-    transitionDuration: '1s',
-    transitionProperty: 'opacity',
+    transitionDuration: "1s",
+    transitionProperty: "opacity",
     opacity: 0,
   },
   fadeIn: {
@@ -356,10 +356,10 @@ export const standardStyles = StyleSheet.create({
 // These dont seem to be applied when set thru stylesheet
 export const baseCoinStyle = {
   stroke: colors.screenGray,
-  mixBlendMode: 'screen',
+  mixBlendMode: "screen",
 }
 
 export const baseCoinStyleLight = {
   stroke: colors.gray,
-  mixBlendMode: 'multiply',
+  mixBlendMode: "multiply",
 }

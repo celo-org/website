@@ -1,9 +1,9 @@
-import * as React from 'react'
-import FadeIn from 'react-lazyload-fadein'
-import { Image, ImageSourcePropType, StyleSheet, Text, View, ViewStyle } from 'react-native'
-import { H3 } from 'src/fonts/Fonts'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import FadeIn from "react-lazyload-fadein"
+import { Image, ImageSourcePropType, StyleSheet, Text, View, ViewStyle } from "react-native"
+import { H3 } from "src/fonts/Fonts"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 interface Props {
   title: string
@@ -57,12 +57,12 @@ const styles = StyleSheet.create({
     minWidth: 160,
     marginTop: 30,
     marginHorizontal: 20,
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
   containerMobile: {
     marginBottom: 50,
     marginHorizontal: 20,
-    alignItems: 'center',
+    alignItems: "center",
     flex: 1,
   },
 })

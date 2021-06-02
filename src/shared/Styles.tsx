@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from "react-native"
 
 export const TABLET_BREAKPOINT = 576
 export const DESKTOP_BREAKPOINT = 992
@@ -13,28 +13,28 @@ export const TextStyles = StyleSheet.create({
     marginTop: 4,
     marginBottom: 4,
     borderWidth: 2,
-    borderColor: '#eee',
+    borderColor: "#eee",
   },
   tr: {
-    flexDirection: 'row',
+    flexDirection: "row",
     flex: 1,
-    justifyContent: 'space-around',
-    flexBasis: 'auto',
+    justifyContent: "space-around",
+    flexBasis: "auto",
     borderBottomWidth: 1,
-    borderBottomColor: '#eee',
+    borderBottomColor: "#eee",
   },
   th: {
-    fontWeight: '600',
+    fontWeight: "600",
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     padding: 4,
-    backgroundColor: '#eee',
+    backgroundColor: "#eee",
   },
   td: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     padding: 10,
   },
 })

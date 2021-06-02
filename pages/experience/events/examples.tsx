@@ -1,3 +1,3 @@
-import page from 'src/experience/eventkit/ExamplesPage'
+import page from "src/experience/eventkit/ExamplesPage"
 
 export default page

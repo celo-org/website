@@ -1,3 +1,3 @@
-import TermsPortal from 'src/terms/TermsPortal'
+import TermsPortal from "src/terms/TermsPortal"
 
 export default TermsPortal

@@ -1,2 +1,2 @@
-import Download from 'src/download/MobileApp'
+import Download from "src/download/MobileApp"
 export default Download

@@ -1,17 +1,17 @@
-import * as React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import OpenGraph from "src/header/OpenGraph";
-import { NameSpaces, useTranslation } from "src/i18n";
-import Link from "src/shared/Link";
-import menuItems, { pagePaths } from "src/shared/menu-items";
-import { colors, typeFaces } from "src/styles";
-import AddCusdButton from "./AddCusdButton";
-import RewardsKickOff from "./RewardsKickOff";
-import TierList from "./TierList";
-import TitleAndDescription from "./TitleAndDescription";
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import OpenGraph from "src/header/OpenGraph"
+import { NameSpaces, useTranslation } from "src/i18n"
+import Link from "src/shared/Link"
+import menuItems, { pagePaths } from "src/shared/menu-items"
+import { colors, typeFaces } from "src/styles"
+import AddCusdButton from "./AddCusdButton"
+import RewardsKickOff from "./RewardsKickOff"
+import TierList from "./TierList"
+import TitleAndDescription from "./TitleAndDescription"
 
 function CeloRewards({}) {
-  const { t } = useTranslation(NameSpaces.celoRewards);
+  const { t } = useTranslation(NameSpaces.celoRewards)
 
   return (
     <>
@@ -36,24 +36,20 @@ function CeloRewards({}) {
         <RewardsKickOff />
         <AddCusdButton />
         <Link href={pagePaths.CELO_REWARDS_TERMS.link} passHref={true}>
-          <Text
-            accessibilityRole="link"
-            style={styles.learnMore}
-            testID="learnMore"
-          >
+          <Text accessibilityRole="link" style={styles.learnMore} testID="learnMore">
             {t("learnMore")}
           </Text>
         </Link>
       </View>
     </>
-  );
+  )
 }
 
 CeloRewards.getInitialProps = async () => ({
   namespacesRequired: [NameSpaces.celoRewards],
-});
+})
 
-export default CeloRewards;
+export default CeloRewards
 
 const styles = StyleSheet.create({
   container: {
@@ -68,4 +64,4 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     color: colors.greenUI,
   },
-});
+})

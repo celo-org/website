@@ -1,27 +1,27 @@
-import * as React from 'react'
-import LazyLoadFadin from 'react-lazyload-fadein'
-import { Image, ImageURISource, StyleSheet, Text, View } from 'react-native'
-import { Contributor } from 'src/about/Contributor'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import BookLayout from 'src/layout/BookLayout'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import AspectRatio from 'src/shared/AspectRatio'
-import Outbound from 'src/shared/Outbound'
-import Responsive from 'src/shared/Responsive'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import LazyLoadFadin from "react-lazyload-fadein"
+import { Image, ImageURISource, StyleSheet, Text, View } from "react-native"
+import { Contributor } from "src/about/Contributor"
+import { NameSpaces, useTranslation } from "src/i18n"
+import BookLayout from "src/layout/BookLayout"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { useScreenSize } from "src/layout/ScreenSize"
+import AspectRatio from "src/shared/AspectRatio"
+import Outbound from "src/shared/Outbound"
+import Responsive from "src/shared/Responsive"
+import { fonts, standardStyles, textStyles } from "src/styles"
 interface Props {
   contributors: Contributor[]
 }
 
 export default function Team(props: Props) {
-  const {t} = useTranslation(NameSpaces.about)
-  const { isMobile, isTablet} = useScreenSize()
+  const { t } = useTranslation(NameSpaces.about)
+  const { isMobile, isTablet } = useScreenSize()
 
   return (
     <View nativeID="contributors">
-      <BookLayout label={t('teamTitle')} startBlock={true}>
-        <Text style={[fonts.p, standardStyles.sectionMarginBottomMobile]}>{t('teamCopy')} </Text>
+      <BookLayout label={t("teamTitle")} startBlock={true}>
+        <Text style={[fonts.p, standardStyles.sectionMarginBottomMobile]}>{t("teamCopy")} </Text>
       </BookLayout>
       <GridRow>
         <Cell span={Spans.full} tabletSpan={Spans.full} style={standardStyles.centered}>
@@ -110,7 +110,11 @@ const Portrait = React.memo(function _Portrait({
   )
 })
 
-function ContributorPlaceHolder({ uri }) {
+interface PlaceholderProps {
+  uri: string
+}
+
+function ContributorPlaceHolder({ uri }: PlaceholderProps) {
   return (
     <AspectRatio ratio={1}>
       <Image source={{ uri }} style={styles.imagePreview} />
@@ -126,53 +130,52 @@ const styles = StyleSheet.create({
   },
   outLink: {
     paddingBottom: 1,
-    justifyContent: 'flex-end',
+    justifyContent: "flex-end",
   },
   purposeText: { fontSize: 26, lineHeight: 28, marginTop: 8 },
   photoListAuxMobile: {
-    display: 'flex',
-    justifyContent: 'center',
-    minHeight: '80vh',
+    display: "flex",
+    justifyContent: "center",
+    minHeight: "80vh",
   },
   photoListAuxTablet: {
-    display: 'grid',
+    display: "grid",
     gridTemplateColumns: `repeat(2, 1fr)`,
   },
   photo: {
     flexBasis: 0,
-    height: '100%',
-    width: '100%',
+    height: "100%",
+    width: "100%",
   },
-  realImageContainer: { position: 'absolute', height: '100%', width: '100%', flexBasis: "0%"},
+  realImageContainer: { position: "absolute", height: "100%", width: "100%", flexBasis: "0%" },
   imagePreview: {
     opacity: 0.5,
     filter: `blur(20px)`,
-    height: '100%',
-    width: '100%',
+    height: "100%",
+    width: "100%",
   },
   photoList: {
-    display: 'grid',
+    display: "grid",
     gridRowGap: "55px",
     gridColumnGap: "40px",
     gridTemplateColumns: `repeat(3, 1fr)`,
-    minHeight: '50vh',
+    minHeight: "50vh",
   },
   person: {
     flexBasis: "0%",
-    flexDirection: 'column',
+    flexDirection: "column",
     margin: 5,
     marginBottom: 50,
-    width: '90vw',
+    width: "90vw",
     minWidth: 250,
     maxWidth: 300,
   },
   mediumPerson: {
-    flexDirection: 'column',
+    flexDirection: "column",
     minWidth: 250,
     maxWidth: 300,
   },
   largePerson: {
-    flexDirection: 'column',
+    flexDirection: "column",
   },
 })
-

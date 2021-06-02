@@ -1,3 +1,3 @@
-import BrandPolicy from 'src/terms/BrandPolicy'
+import BrandPolicy from "src/terms/BrandPolicy"
 
 export default BrandPolicy

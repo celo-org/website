@@ -1,18 +1,18 @@
-import * as React from 'react'
-import { Text, View } from 'react-native'
-import CopyToClipboard from 'src/dev/CopyToClipboard'
-import ProgressCutBar from 'src/dev/ProgressCutBar'
-import ValidatorsListBadges from 'src/dev/ValidatorsListBadges'
-import { styles } from 'src/dev/ValidatorsListStyles'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import Checkmark from 'src/icons/Checkmark'
-import Chevron, { Direction } from 'src/icons/chevron'
-import { colors } from 'src/styles'
-import { cutAddress, formatNumber } from 'src/utils/utils'
-import { CeloGroup, isPinned, togglePin } from 'src/utils/validators'
+import * as React from "react"
+import { Text, View } from "react-native"
+import CopyToClipboard from "src/dev/CopyToClipboard"
+import ProgressCutBar from "src/dev/ProgressCutBar"
+import ValidatorsListBadges from "src/dev/ValidatorsListBadges"
+import { styles } from "src/dev/ValidatorsListStyles"
+import { I18nProps, withNamespaces } from "src/i18n"
+import Checkmark from "src/icons/Checkmark"
+import Chevron, { Direction } from "src/icons/chevron"
+import { colors } from "src/styles"
+import { cutAddress, formatNumber } from "src/utils/utils"
+import { CeloGroup, isPinned, togglePin } from "src/utils/validators"
 
-const unknownGroupName = 'Unnamed Group'
-const unknownValidatorName = 'Unnamed Validator'
+const unknownGroupName = "Unnamed Group"
+const unknownValidatorName = "Unnamed Validator"
 
 interface Props {
   group: CeloGroup
@@ -42,10 +42,10 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
       }
     }
 
-    document.addEventListener('click', onDocumentClick, false)
+    document.addEventListener("click", onDocumentClick, false)
 
     this.removeDocumentListener = () =>
-      document.removeEventListener('click', onDocumentClick, false)
+      document.removeEventListener("click", onDocumentClick, false)
   }
 
   componentWillUnmount() {
@@ -170,7 +170,7 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
             ellipsizeMode="tail"
           >
             {formatNumber(+group.votesRaw, 0)}
-            {'\n'}({formatNumber((group.celo / group.votesRaw) * 100, 1) || 0}%)
+            {"\n"}({formatNumber((group.celo / group.votesRaw) * 100, 1) || 0}%)
           </Text>
           <Text
             style={[styles.defaultText, styles.tableCell, styles.tableCellCenter, styles.sizeM]}
@@ -178,7 +178,7 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
             ellipsizeMode="tail"
           >
             {formatNumber(+group.receivableRaw, 0)}
-            {'\n'}({formatNumber((group.celo / +group.receivableRaw) * 100, 1) || 0}%)
+            {"\n"}({formatNumber((group.celo / +group.receivableRaw) * 100, 1) || 0}%)
           </Text>
           <Text
             style={[styles.defaultText, styles.tableCell, styles.tableCellCenter, styles.sizeM]}
@@ -200,7 +200,7 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
             ellipsizeMode="tail"
           >
             <Text style={styles.defaultText}>
-              {group.rewards === null ? 'n/a' : formatNumber(group.rewards, 1) + '%'}
+              {group.rewards === null ? "n/a" : formatNumber(group.rewards, 1) + "%"}
             </Text>
             <Text style={[styles.defaultText, styles.barContainer]}>
               <Text
@@ -279,7 +279,7 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
                   ellipsizeMode="tail"
                 >
                   <View
-                    style={[styles.circle, styles[validator.elected ? 'circleOk' : 'circleError']]}
+                    style={[styles.circle, styles[validator.elected ? "circleOk" : "circleError"]]}
                   />
                 </Text>
                 <Text style={[styles.defaultText, styles.tableCell, styles.sizeXL]} />
@@ -324,7 +324,7 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
                   numberOfLines={1}
                   ellipsizeMode="tail"
                 >
-                  {validator.neverElected ? 'n/a' : `${formatNumber(validator.attestation, 1)}%`}
+                  {validator.neverElected ? "n/a" : `${formatNumber(validator.attestation, 1)}%`}
                 </Text>
               </View>
             ))}
@@ -335,7 +335,6 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
   }
 }
 
-const hrefAttrs = {target:"blank", "rel": "noopenner"}
+const hrefAttrs = { target: "blank", rel: "noopenner" }
 
-
-export default withNamespaces('dev')(ValidatorsListRow)
+export default withNamespaces("dev")(ValidatorsListRow)

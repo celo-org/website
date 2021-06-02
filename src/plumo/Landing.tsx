@@ -1,39 +1,39 @@
-import * as React from 'react'
-import FadeIn from 'react-lazyload-fadein'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import { H2, Li, Ul } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
+import * as React from "react"
+import FadeIn from "react-lazyload-fadein"
+import { Image, StyleSheet, Text, View } from "react-native"
+import { H2, Li, Ul } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
 import { Trans, useTranslation } from "src/i18n"
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import LogoDarkBg from 'src/logos/LogoDarkBg'
-import FeatureTriangle from 'src/plumo/feather-triangle.svg'
-import Feather1 from 'src/plumo/feather1.svg'
-import Feather2 from 'src/plumo/feather2.svg'
-import Feather3 from 'src/plumo/feather3.svg'
-import Outline from 'src/plumo/phone-outline.svg'
-import OpenGraphic from 'src/plumo/plumo-open-graph.jpg'
-import SkyMobile from 'src/plumo/plumo-sky-mobile.svg'
-import Sky from 'src/plumo/plumo-sky.svg'
-import Button, { BTN } from 'src/shared/Button.3'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
-import FeatherPoint from './FeatherPoint'
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { useScreenSize } from "src/layout/ScreenSize"
+import LogoDarkBg from "src/logos/LogoDarkBg"
+import FeatureTriangle from "src/plumo/feather-triangle.svg"
+import Feather1 from "src/plumo/feather1.svg"
+import Feather2 from "src/plumo/feather2.svg"
+import Feather3 from "src/plumo/feather3.svg"
+import Outline from "src/plumo/phone-outline.svg"
+import OpenGraphic from "src/plumo/plumo-open-graph.jpg"
+import SkyMobile from "src/plumo/plumo-sky-mobile.svg"
+import Sky from "src/plumo/plumo-sky.svg"
+import Button, { BTN } from "src/shared/Button.3"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import FeatherPoint from "./FeatherPoint"
 import InlineAnchor from "src/shared/InlineAnchor"
 
 const PLUMO_FORM =
-  'https://docs.google.com/forms/d/e/1FAIpQLScZswraVVC91RwToo_9qm-1QzGrxp7yjVeM2wzdTbL5T_lAgQ/viewform'
+  "https://docs.google.com/forms/d/e/1FAIpQLScZswraVVC91RwToo_9qm-1QzGrxp7yjVeM2wzdTbL5T_lAgQ/viewform"
 
-const MEDIUM_POST = 'https://medium.com/celoorg/the-plumo-ceremony-ac7649e9c8d8'
+const MEDIUM_POST = "https://medium.com/celoorg/the-plumo-ceremony-ac7649e9c8d8"
 
 export default function PlumoLanding() {
-  const { t } = useTranslation('plumo')
+  const { t } = useTranslation("plumo")
   const { isDesktop, isTablet, isMobile } = useScreenSize()
   return (
     <>
       <OpenGraph
         image={OpenGraphic}
-        title={t('pageTitle')}
-        description={t('pageDescription')}
+        title={t("pageTitle")}
+        description={t("pageDescription")}
         path="/plumo"
       />
       <View style={styles.root}>
@@ -79,7 +79,7 @@ export default function PlumoLanding() {
                 }
               >
                 <Text style={[fonts.h2, textStyles.invert, isMobile && textStyles.center]}>
-                  {t('coverTitle')}
+                  {t("coverTitle")}
                 </Text>
                 <Text
                   style={[
@@ -89,12 +89,12 @@ export default function PlumoLanding() {
                     isMobile && textStyles.center,
                   ]}
                 >
-                  {t('coverSubtitle')}
+                  {t("coverSubtitle")}
                 </Text>
                 <Button
                   kind={BTN.PRIMARY}
                   href={MEDIUM_POST}
-                  text={t('coverBtn')}
+                  text={t("coverBtn")}
                   target="_blank"
                 />
               </View>
@@ -108,31 +108,31 @@ export default function PlumoLanding() {
           <Cell span={Spans.full} style={standardStyles.centered}>
             {isDesktop && <Image source={Outline} style={styles.phoneOutline} />}
             <FeatherPoint
-              title={t('figureHeading1')}
-              text={t('figureSubheading1')}
+              title={t("figureHeading1")}
+              text={t("figureSubheading1")}
               src={Feather1}
             />
             <FeatherPoint
-              title={t('figureHeading2')}
-              text={t('figureSubheading2')}
+              title={t("figureHeading2")}
+              text={t("figureSubheading2")}
               leftWard={true}
               src={Feather2}
             />
             <FeatherPoint
-              title={t('figureHeading3')}
-              text={t('figureSubheading3')}
+              title={t("figureHeading3")}
+              text={t("figureSubheading3")}
               src={Feather3}
             />
           </Cell>
         </GridRow>
         <GridRow allStyle={standardStyles.centered}>
           <Cell span={Spans.half}>
-            <H2 style={[textStyles.invert, textStyles.center]}>{t('mainHeader')}</H2>
+            <H2 style={[textStyles.invert, textStyles.center]}>{t("mainHeader")}</H2>
           </Cell>
         </GridRow>
-        <GridRow desktopStyle={{ flexDirection: 'column' }} allStyle={standardStyles.centered}>
+        <GridRow desktopStyle={{ flexDirection: "column" }} allStyle={standardStyles.centered}>
           <Cell span={Spans.half}>
-            <Text style={[fonts.p, textStyles.invert, textStyles.center]}>{t('mainBody1')}</Text>
+            <Text style={[fonts.p, textStyles.invert, textStyles.center]}>{t("mainBody1")}</Text>
           </Cell>
           <Cell span={Spans.half} style={standardStyles.centered}>
             <Text
@@ -150,20 +150,20 @@ export default function PlumoLanding() {
             </Text>
             <Ul style={standardStyles.centered}>
               <Li style={[textStyles.invert, textStyles.center]}>
-                {t('prizes.0.title')}{' '}
-                <Text style={textStyles.italic}> {t('prizes.0.amount')} </Text>
+                {t("prizes.0.title")}{" "}
+                <Text style={textStyles.italic}> {t("prizes.0.amount")} </Text>
               </Li>
               <Li style={[textStyles.invert, textStyles.center]}>
-                {t('prizes.1.title')}{' '}
-                <Text style={textStyles.italic}> {t('prizes.1.amount')} </Text>
+                {t("prizes.1.title")}{" "}
+                <Text style={textStyles.italic}> {t("prizes.1.amount")} </Text>
               </Li>
               <Li style={[textStyles.invert, textStyles.center]}>
-                {t('prizes.2.title')}{' '}
-                <Text style={textStyles.italic}> {t('prizes.2.amount')} </Text>
+                {t("prizes.2.title")}{" "}
+                <Text style={textStyles.italic}> {t("prizes.2.amount")} </Text>
               </Li>
               <Li style={[textStyles.invert, textStyles.center]}>
-                {t('prizes.3.title')}{' '}
-                <Text style={textStyles.italic}> {t('prizes.3.amount')} </Text>
+                {t("prizes.3.title")}{" "}
+                <Text style={textStyles.italic}> {t("prizes.3.amount")} </Text>
               </Li>
             </Ul>
           </Cell>
@@ -176,16 +176,16 @@ export default function PlumoLanding() {
           <Cell span={Spans.half} style={standardStyles.centered}>
             <Image source={FeatureTriangle} style={styles.ctaImage} />
             <H2 style={[textStyles.invert, textStyles.center, styles.ctaHeader]}>
-              {t('ctaHeader')}
+              {t("ctaHeader")}
             </H2>
-            <Button kind={BTN.PRIMARY} href={MEDIUM_POST} text={t('ctaBtn')} target="_blank" />
+            <Button kind={BTN.PRIMARY} href={MEDIUM_POST} text={t("ctaBtn")} target="_blank" />
           </Cell>
         </GridRow>
         <View style={styles.navbar}>
           <a href="/">
             <LogoDarkBg height={30} />
           </a>
-          <Button href={PLUMO_FORM} text={t('navSignup')} kind={BTN.DARKNAV} target="_blank" />
+          <Button href={PLUMO_FORM} text={t("navSignup")} kind={BTN.DARKNAV} target="_blank" />
         </View>
       </View>
     </>
@@ -203,94 +203,94 @@ const gradientMobile = {
 const styles = StyleSheet.create({
   root: {
     backgroundColor: colors.dark,
-    minHeight: '100vh',
+    minHeight: "100vh",
   },
   navbar: {
     top: 0,
     left: 0,
     right: 0,
-    position: 'fixed',
-    width: '100%',
+    position: "fixed",
+    width: "100%",
     height: 70,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     paddingLeft: 24,
     paddingRight: 40,
-    backgroundColor: 'rgba(46, 51, 56, 0.95)',
-    backdropFilter: 'blur(5px)',
+    backgroundColor: "rgba(46, 51, 56, 0.95)",
+    backdropFilter: "blur(5px)",
     zIndex: 100,
   },
   backgroundFramer: {
-    position: 'absolute',
+    position: "absolute",
     height: 590,
-    width: '100%',
+    width: "100%",
     zIndex: -1,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   backgroundFramerMobile: {
-    position: 'absolute',
+    position: "absolute",
     height: 620,
-    width: '100%',
+    width: "100%",
     zIndex: -1,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   coverBackgroundImage: {
-    width: '100%',
+    width: "100%",
     height: 610,
     zIndex: -1,
   },
   coverBackgroundImageMobile: {
-    width: '100%',
+    width: "100%",
     height: 640,
     zIndex: -1,
   },
   coverContainer: {
-    justifyContent: 'center',
-    backgroundColor: 'black',
-    width: '100vw',
+    justifyContent: "center",
+    backgroundColor: "black",
+    width: "100vw",
     height: 590,
     zIndex: -1,
   },
   coverContainerMobile: {
     minHeight: 640,
-    justifyContent: 'flex-end',
+    justifyContent: "flex-end",
     zIndex: -1,
   },
   cover: {
     marginRight: 15,
-    justifyContent: 'center',
-    flexDirection: 'row',
-    alignitems: 'center',
+    justifyContent: "center",
+    flexDirection: "row",
+    alignitems: "center",
   },
   coverMobile: {
-    width: 'fit-content',
-    flexDirection: 'column',
-    alignContent: 'center',
-    justifyContent: 'center',
-    alignitems: 'center',
+    width: "fit-content",
+    flexDirection: "column",
+    alignContent: "center",
+    justifyContent: "center",
+    alignitems: "center",
   },
   coverImage: { width: 300, height: 300 },
-  coverImageMobile: { width: 200, height: 200, alignSelf: 'center', marginBottom: 30 },
+  coverImageMobile: { width: 200, height: 200, alignSelf: "center", marginBottom: 30 },
   coverImageTablet: {
     width: 250,
     height: 250,
-    alignSelf: 'center',
+    alignSelf: "center",
     marginBottom: 30,
   },
   coverContent: {
     maxWidth: 340,
-    justifyContent: 'center',
+    justifyContent: "center",
     marginLeft: 38,
   },
   coverContentTablet: {
-    justifyContent: 'center',
+    justifyContent: "center",
     maxWidth: 320,
     paddingLeft: 30,
   },
   coverContentMobile: {
     paddingBottom: 30,
-    alignItems: 'center',
+    alignItems: "center",
     maxWidth: 340,
   },
   coverText: {
@@ -300,7 +300,7 @@ const styles = StyleSheet.create({
   phoneOutline: {
     height: 600,
     width: 300,
-    position: 'absolute',
+    position: "absolute",
   },
   ctaImage: {
     width: 110,

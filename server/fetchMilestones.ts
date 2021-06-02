@@ -1,21 +1,21 @@
-import getConfig from 'next/config'
-import { Status } from 'src/home/roadmap/milestones'
-import airtableInit from './airtable'
-import cache from './cache'
+import getConfig from "next/config"
+import { Status } from "src/home/roadmap/milestones"
+import airtableInit from "./airtable"
+import cache from "./cache"
 
 async function fetchMilestones() {
   const records = (await getAirtable()
-    .select({ sort: [{ field: 'Order', direction: 'desc' }] })
+    .select({ sort: [{ field: "Order", direction: "desc" }] })
     .firstPage()) as Record[]
   return records.map((record) => convert(record.fields))
 }
 
 export default async function getMilestones() {
-  return cache('celo-milestones', fetchMilestones)
+  return cache("celo-milestones", fetchMilestones)
 }
 
 function getAirtable() {
-  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ANNOUNCEMENT_ID)('Timeline')
+  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ANNOUNCEMENT_ID)("Timeline")
 }
 
 interface Fields {
@@ -41,11 +41,11 @@ function convert(fields: Fields) {
 
 function convertStatus(string: string): Status {
   switch (string) {
-    case 'Complete':
+    case "Complete":
       return Status.complete
-    case 'Pending':
+    case "Pending":
       return Status.unstarted
-    case 'InProgress':
+    case "InProgress":
       return Status.inprogress
   }
 }

@@ -1,9 +1,9 @@
-import { parse, validate } from 'fast-xml-parser'
-import { Articles } from 'fullstack/ArticleProps'
-import htmlToFormattedText from 'html-to-formatted-text'
-import cache from '../server/cache'
-import Sentry from '../server/sentry'
-import retryAbortableFetch from '../src/utils/retryAbortableFetch'
+import { parse, validate } from "fast-xml-parser"
+import { Articles } from "fullstack/ArticleProps"
+import htmlToFormattedText from "html-to-formatted-text"
+import cache from "../server/cache"
+import Sentry from "../server/sentry"
+import retryAbortableFetch from "../src/utils/retryAbortableFetch"
 interface JSONRSS {
   rss: {
     channel: {
@@ -16,9 +16,9 @@ interface JSONRSS {
 }
 
 interface JSONRSSItem {
-  'atom:updated': string
+  "atom:updated": string
   category: string[]
-  'content:encoded': string
+  "content:encoded": string
   guid: string
   link: string
   pubDate: string
@@ -27,10 +27,7 @@ interface JSONRSSItem {
 
 function getFirstImgURL(htmlstring: string) {
   try {
-    return htmlstring
-      .split('<img')[1]
-      .split('src=')[1]
-      .split('"')[1]
+    return htmlstring.split("<img")[1].split("src=")[1].split('"')[1]
   } catch (e) {
     console.error(e)
   }
@@ -46,15 +43,15 @@ function getGramaticallyCorrectExcerpt(htmlstring: string) {
     const charsInClosingTag = 4
     const approximateMaxChars = 320
     const firstParagraph = htmlstring.substring(
-      htmlstring.indexOf('<p'),
-      htmlstring.indexOf('</p>') + charsInClosingTag
+      htmlstring.indexOf("<p"),
+      htmlstring.indexOf("</p>") + charsInClosingTag
     )
     // remove any links or emphasis tags etc
-    const plainText = htmlToFormattedText(firstParagraph).replace('&amp;', '&')
+    const plainText = htmlToFormattedText(firstParagraph).replace("&amp;", "&")
 
     // ensure it is a reasonable length
     return plainText.length > approximateMaxChars
-      ? plainText.substring(0, plainText.indexOf('. ') + 1)
+      ? plainText.substring(0, plainText.indexOf(". ") + 1)
       : plainText
   } catch (e) {
     console.error(e)
@@ -66,8 +63,8 @@ function transform(items: JSONRSSItem[]) {
     return {
       title: item.title,
       href: item.link,
-      imgSource: getFirstImgURL(item['content:encoded']),
-      text: getGramaticallyCorrectExcerpt(item['content:encoded']),
+      imgSource: getFirstImgURL(item["content:encoded"]),
+      text: getGramaticallyCorrectExcerpt(item["content:encoded"]),
     }
   })
 }
@@ -83,7 +80,7 @@ function parseXML(xmlData: string): JSONRSSItem[] {
   }
 }
 
-const BASE_URL = 'https://medium.com/feed/celoOrg'
+const BASE_URL = "https://medium.com/feed/celoOrg"
 
 async function fetchMediumArticles(tagged?: string): Promise<string> {
   const url = tagged ? `${BASE_URL}/tagged/${tagged}` : BASE_URL
@@ -102,7 +99,7 @@ export async function getFormattedMediumArticles(tagged?: string): Promise<Artic
     return { articles }
   } catch (e) {
     Sentry.withScope((scope) => {
-      scope.setTag('Service', 'Medium')
+      scope.setTag("Service", "Medium")
       Sentry.captureException(e)
     })
     return { articles: [] }

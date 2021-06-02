@@ -1,23 +1,23 @@
-export const NETWORK = 'alfajores'
+export const NETWORK = "alfajores"
 
 export type Address = string
 export type E164Number = string
 
 export enum RequestStatus {
-  Pending = 'Pending',
-  Working = 'Working',
-  Done = 'Done',
-  Failed = 'Failed',
+  Pending = "Pending",
+  Working = "Working",
+  Done = "Done",
+  Failed = "Failed",
 }
 
 export enum RequestType {
-  Faucet = 'Faucet',
-  Invite = 'Invite',
+  Faucet = "Faucet",
+  Invite = "Invite",
 }
 
 export enum MobileOS {
-  android = 'android',
-  ios = 'ios',
+  android = "android",
+  ios = "ios",
 }
 
 export interface RequestRecord {

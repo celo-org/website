@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H4 } from 'src/fonts/Fonts'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H4 } from "src/fonts/Fonts"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 export default function Poem() {
   const { isDesktop, isTablet } = useScreenSize()
@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
     zIndex: -5,
   },
   tabletRoot: {
-    marginTop: '15vh',
+    marginTop: "15vh",
   },
   desktopRoot: {
-    marginTop: '20vh',
+    marginTop: "20vh",
   },
 })
 

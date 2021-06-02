@@ -1,13 +1,13 @@
-import { EventProps } from 'fullstack/EventProps'
-import * as React from 'react'
-import { View } from 'react-native'
-import Events from 'src/community/connect/Events'
-import { getEvents } from 'src/community/connect/EventsData'
-import OpenGraph from 'src/header/OpenGraph'
-import { NameSpaces } from 'src/i18n'
-import { standardStyles } from 'src/styles'
+import { EventProps } from "fullstack/EventProps"
+import * as React from "react"
+import { View } from "react-native"
+import Events from "src/community/connect/Events"
+import { getEvents } from "src/community/connect/EventsData"
+import OpenGraph from "src/header/OpenGraph"
+import { NameSpaces } from "src/i18n"
+import { standardStyles } from "src/styles"
 
-const preview = require('src/community/connect/preview.jpg')
+const preview = require("src/community/connect/preview.jpg")
 
 interface State {
   pastEvents: EventProps[]
@@ -15,13 +15,13 @@ interface State {
   error: boolean
 }
 
-export default class PastEventsPage extends React.PureComponent<{}, State> {
+export default class PastEventsPage extends React.PureComponent<Record<string, never>, State> {
   static getInitialProps() {
     return { namespacesRequired: [NameSpaces.common, NameSpaces.community] }
   }
 
   static getDerivedStateFromError() {
-    return { hasError: true };
+    return { hasError: true }
   }
 
   state = {
@@ -32,10 +32,10 @@ export default class PastEventsPage extends React.PureComponent<{}, State> {
 
   async componentDidMount() {
     const { pastEvents } = await getEvents("upcoming=false")
-    if (pastEvents?.length ) {
+    if (pastEvents?.length) {
       this.setState({ pastEvents, loading: false })
     } else {
-      this.setState({loading: false , error: true})
+      this.setState({ loading: false, error: true })
     }
   }
 
@@ -48,11 +48,14 @@ export default class PastEventsPage extends React.PureComponent<{}, State> {
       <View style={standardStyles.sectionMargin}>
         <OpenGraph
           path="/past-events"
-          title={'Past Celo Events'}
+          title={"Past Celo Events"}
           description="List of past Celo community events around the world. Join the conversation and our community. Diverse perspectives and inclusive conversations welcomed."
           image={preview}
         />
-        <Events pastEvents={this.state.error? []: this.state.pastEvents} loading={this.state.loading} />
+        <Events
+          pastEvents={this.state.error ? [] : this.state.pastEvents}
+          loading={this.state.loading}
+        />
       </View>
     )
   }

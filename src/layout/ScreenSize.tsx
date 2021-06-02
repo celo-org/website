@@ -1,14 +1,14 @@
-import throttle from 'lodash.throttle'
-import MobileDetect from 'mobile-detect'
-import * as React from 'react'
-import { Dimensions } from 'react-native'
-import { BANNER_HEIGHT } from 'src/header/BlueBanner'
-import { DESKTOP_BREAKPOINT, TABLET_BREAKPOINT } from 'src/shared/Styles'
+import throttle from "lodash.throttle"
+import MobileDetect from "mobile-detect"
+import * as React from "react"
+import { Dimensions } from "react-native"
+import { BANNER_HEIGHT } from "src/header/BlueBanner"
+import { DESKTOP_BREAKPOINT, TABLET_BREAKPOINT } from "src/shared/Styles"
 
 export enum ScreenSizes {
-  MOBILE = 'MOBILE',
-  TABLET = 'TABLET',
-  DESKTOP = 'DESKTOP',
+  MOBILE = "MOBILE",
+  TABLET = "TABLET",
+  DESKTOP = "DESKTOP",
 }
 
 interface State {
@@ -16,13 +16,13 @@ interface State {
   bannerHeight: number
 }
 
-type ContextProps = State & {setBannerHeight: (h: number) => void}
+type ContextProps = State & { setBannerHeight: (h: number) => void }
 
 const defaultContext = { screen: null, bannerHeight: BANNER_HEIGHT, setBannerHeight: () => null }
 
 export const ScreenSizeContext = React.createContext<ContextProps>(defaultContext)
 
-export class ScreenSizeProvider extends React.PureComponent<{}, State> {
+export class ScreenSizeProvider extends React.PureComponent<{ children: React.ReactNode }, State> {
   state = defaultContext
 
   windowResize = throttle(({ window: { width } }) => {
@@ -33,27 +33,33 @@ export class ScreenSizeProvider extends React.PureComponent<{}, State> {
   }, 50)
 
   setBannerHeight = (height: number) => {
-    this.setState({bannerHeight: height})
+    this.setState({ bannerHeight: height })
   }
 
   componentDidMount() {
-    this.windowResize({ window: Dimensions.get('window') })
-    Dimensions.addEventListener('change', this.windowResize)
+    this.windowResize({ window: Dimensions.get("window") })
+    Dimensions.addEventListener("change", this.windowResize)
   }
 
   componentWillUnmount() {
-    Dimensions.removeEventListener('change', this.windowResize)
+    Dimensions.removeEventListener("change", this.windowResize)
     this.windowResize.cancel()
   }
 
   // when rendered on the server the Dimensions are set by guessing device size.
   screen = () => {
-    return this.state.screen || widthToScreenType(Dimensions.get('screen').width)
+    return this.state.screen || widthToScreenType(Dimensions.get("screen").width)
   }
 
   render() {
     return (
-      <ScreenSizeContext.Provider value={{ screen: this.screen(), bannerHeight: this.state.bannerHeight, setBannerHeight: this.setBannerHeight }}>
+      <ScreenSizeContext.Provider
+        value={{
+          screen: this.screen(),
+          bannerHeight: this.state.bannerHeight,
+          setBannerHeight: this.setBannerHeight,
+        }}
+      >
         {this.props.children}
       </ScreenSizeContext.Provider>
     )
@@ -83,7 +89,14 @@ export function withScreenSize<T>(
     return (
       <ScreenSizeContext.Consumer>
         {({ screen, bannerHeight, setBannerHeight }) => {
-          return <Component screen={screen} bannerHeight={bannerHeight} setBannerHeight={setBannerHeight} {...props} />
+          return (
+            <Component
+              screen={screen}
+              bannerHeight={bannerHeight}
+              setBannerHeight={setBannerHeight}
+              {...props}
+            />
+          )
         }}
       </ScreenSizeContext.Consumer>
     )

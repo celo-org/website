@@ -1,13 +1,13 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import CoverActions from 'src/dev/CoverActions'
-import Phone from 'src/dev/Phone'
-import { H1, H4 } from 'src/fonts/Fonts'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Fade from 'src/shared/AwesomeFade'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { colors, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import CoverActions from "src/dev/CoverActions"
+import Phone from "src/dev/Phone"
+import { H1, H4 } from "src/fonts/Fonts"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Fade from "src/shared/AwesomeFade"
+import { HEADER_HEIGHT } from "src/shared/Styles"
+import { colors, standardStyles, textStyles } from "src/styles"
 
 const DELAY = 400
 const DELAY_2 = DELAY * 1.3
@@ -33,12 +33,12 @@ const CoverComponent = React.memo(function Cover({ t }: I18nProps) {
               standardStyles.elementalMarginBottom,
             ]}
           >
-            {t('developerSDKTitle')}
+            {t("developerSDKTitle")}
           </H1>
-          <H4 style={[textStyles.center, textStyles.invert]}>{t('developerSDKsubtitle')}</H4>
+          <H4 style={[textStyles.center, textStyles.invert]}>{t("developerSDKsubtitle")}</H4>
         </Cell>
       </GridRow>
-      <Fade delay={DELAY_2} duration={DURATION} distance={'40px'}>
+      <Fade delay={DELAY_2} duration={DURATION} distance={"40px"}>
         <View>
           <CoverActions />
         </View>
@@ -50,21 +50,21 @@ const CoverComponent = React.memo(function Cover({ t }: I18nProps) {
 const styles = StyleSheet.create({
   buttons: {
     flex: 1,
-    maxWidth: '100vw',
-    width: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    maxWidth: "100vw",
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    flexWrap: "wrap",
   },
   cover: {
     marginTop: HEADER_HEIGHT,
     backgroundColor: colors.dark,
-    maxWidth: '100vw',
-    overflow: 'hidden',
+    maxWidth: "100vw",
+    overflow: "hidden",
   },
   phone: {
-    height: '27vh',
+    height: "27vh",
     minHeight: 250,
     marginTop: HEADER_HEIGHT,
   },
@@ -76,4 +76,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default withNamespaces('dev')(CoverComponent)
+export default withNamespaces("dev")(CoverComponent)
