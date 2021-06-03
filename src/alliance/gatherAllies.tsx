@@ -4,7 +4,7 @@ export default async function gatherAllies(
     aborted: boolean
   }
 ) {
-  const response = await fetch('api/alliance')
+  const response = await fetch("api/alliance")
   const alliesByCategory = await response.json()
   if (!signal.aborted) {
     persistFunc(alliesByCategory)

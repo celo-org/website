@@ -1,10 +1,10 @@
-import * as React from 'react'
-import { Image, ImageSourcePropType, ImageStyle, StyleSheet, Text, View } from 'react-native'
-import { H3 } from 'src/fonts/Fonts'
-import { Cell, Spans } from 'src/layout/GridRow'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import { fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { Image, ImageSourcePropType, ImageStyle, StyleSheet, Text, View } from "react-native"
+import { H3 } from "src/fonts/Fonts"
+import { Cell, Spans } from "src/layout/GridRow"
+import { useScreenSize } from "src/layout/ScreenSize"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import { fonts, standardStyles } from "src/styles"
 
 interface Props {
   source: ImageSourcePropType
@@ -43,12 +43,12 @@ export function Adventure({ title, text, source, link, imageStyle }: Props) {
 }
 const styles = StyleSheet.create({
   root: {
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
   links: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    flexWrap: "wrap",
   },
   link: {
     padding: 10,

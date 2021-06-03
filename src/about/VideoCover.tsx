@@ -1,19 +1,19 @@
-import * as React from 'react'
+import * as React from "react"
 import {
   Image,
   StyleSheet,
   unstable_createElement as createElement,
   View,
   ViewStyle,
-} from 'react-native-web'
-import { H1, H3 } from 'src/fonts/Fonts'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import Hoverable from 'src/shared/Hoverable'
-import { PlayCircle2 } from 'src/shared/PlayCircle'
-import VideoModal from 'src/shared/VideoModal'
-import { standardStyles, textStyles } from 'src/styles'
-import { hasGoodConnection } from 'src/utils/utils'
+} from "react-native-web"
+import { H1, H3 } from "src/fonts/Fonts"
+import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import Hoverable from "src/shared/Hoverable"
+import { PlayCircle2 } from "src/shared/PlayCircle"
+import VideoModal from "src/shared/VideoModal"
+import { standardStyles, textStyles } from "src/styles"
+import { hasGoodConnection } from "src/utils/utils"
 
 interface State {
   isHovering: boolean
@@ -30,7 +30,7 @@ interface VideoProps {
 }
 
 function Video(props: VideoProps) {
-  return createElement('video', props)
+  return createElement("video", props)
 }
 
 class VideoCover extends React.PureComponent<I18nProps & ScreenProps, State> {
@@ -72,7 +72,7 @@ class VideoCover extends React.PureComponent<I18nProps & ScreenProps, State> {
             )}
             <Image
               resizeMode="cover"
-              source={{ uri: '/images/AboutPreview.jpg' }}
+              source={{ uri: "/images/AboutPreview.jpg" }}
               style={standardStyles.image}
             />
           </Video>
@@ -93,7 +93,7 @@ class VideoCover extends React.PureComponent<I18nProps & ScreenProps, State> {
                   ]}
                 >
                   <H1
-                    ariaLevel={'2'}
+                    ariaLevel={"2"}
                     style={[
                       textStyles.invert,
                       styles.title,
@@ -102,8 +102,8 @@ class VideoCover extends React.PureComponent<I18nProps & ScreenProps, State> {
                     ]}
                   >
                     {screen === ScreenSizes.MOBILE
-                      ? t('prosperityForAllMobile')
-                      : t('prosperityForAll')}
+                      ? t("prosperityForAllMobile")
+                      : t("prosperityForAll")}
                   </H1>
                   <View
                     style={[
@@ -114,7 +114,7 @@ class VideoCover extends React.PureComponent<I18nProps & ScreenProps, State> {
                   >
                     <PlayCircle2 height={40} />
                     <H3 style={[textStyles.invert, textStyles.center, styles.subtitle]}>
-                      {t('whatIfMoney')}
+                      {t("whatIfMoney")}
                     </H3>
                   </View>
                 </View>
@@ -138,35 +138,35 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   interactive: {
-    cursor: 'pointer',
-    transitionProperty: 'transform',
-    transitionDuration: '500ms',
+    cursor: "pointer",
+    transitionProperty: "transform",
+    transitionDuration: "500ms",
     padding: 15,
   },
   hover: {
     transform: [{ scale: 1.015 }],
   },
   background: {
-    position: 'absolute',
-    width: '100vw',
-    height: '100vh',
+    position: "absolute",
+    width: "100vw",
+    height: "100vh",
   },
   overlay: {
-    height: '100%',
-    width: '100%',
+    height: "100%",
+    width: "100%",
   },
   cover: {
-    width: '100vw',
-    height: '100vh',
+    width: "100vw",
+    height: "100vh",
   },
   video: {
-    objectFit: 'cover',
-    height: '100%',
-    filter: 'saturate(0.6) brightness(0.70)',
-    transitionProperty: 'filter',
-    transitionDuration: '400ms',
+    objectFit: "cover",
+    height: "100%",
+    filter: "saturate(0.6) brightness(0.70)",
+    transitionProperty: "filter",
+    transitionDuration: "400ms",
   },
   videoHover: {
-    filter: 'saturate(1) brightness(0.9)',
+    filter: "saturate(1) brightness(0.9)",
   },
 })

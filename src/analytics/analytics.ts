@@ -1,20 +1,20 @@
-import Cookies from 'js-cookie'
-import getConfig from 'next/config'
-import { isBrowser } from 'src/utils/utils'
+import Cookies from "js-cookie"
+import getConfig from "next/config"
+import { isBrowser } from "src/utils/utils"
 
 const { publicRuntimeConfig } = getConfig()
 
 let ReactGA
 
-export const ALLOW_ANALYTICS_COOKIE_NAME = '__allow__analytics__cookie__'
-export const RESPONDED_TO_CONSENT = '__responded_to_consent__'
+export const ALLOW_ANALYTICS_COOKIE_NAME = "__allow__analytics__cookie__"
+export const RESPONDED_TO_CONSENT = "__responded_to_consent__"
 
 const OPTIN_EXPIRE_DAYS = 365
 const OPTOUT_EXPIRE_DAYS = 1
 
 export async function canTrack() {
   const allowTrack = await Cookies.get(ALLOW_ANALYTICS_COOKIE_NAME)
-  return isBrowser() && !!allowTrack && publicRuntimeConfig.ENV !== 'development'
+  return isBrowser() && !!allowTrack && publicRuntimeConfig.ENV !== "development"
 }
 
 export async function showVisitorCookieConsent() {
@@ -23,14 +23,17 @@ export async function showVisitorCookieConsent() {
 
 export async function initializeAnalytics() {
   const consented = await canTrack()
-  if (!ReactGA && (consented)) {
-    ReactGA = await import('react-ga').then((mod) => mod.default)
+  if (!ReactGA && consented) {
+    ReactGA = await import("react-ga").then((mod) => mod.default)
 
     ReactGA.initialize(publicRuntimeConfig.GA_KEY)
   }
   // vgo is set in bottom of _document.tsx
   // @ts-ignore
-  if (consented && window.vgo) {window.vgo('process', 'allowTracking')}
+  if (consented && window.vgo) {
+    // @ts-ignore
+    window.vgo("process", "allowTracking")
+  }
 }
 
 export async function agree() {
@@ -44,7 +47,7 @@ export const disagree = () => {
 }
 
 function noTrack() {
-  return publicRuntimeConfig.ENV === 'development' ? console.info(arguments) : null
+  return null
 }
 
 export default {
@@ -55,7 +58,7 @@ export default {
 
     await initializeAnalytics()
     ReactGA.event({
-      category: 'User',
+      category: "User",
       action: key,
       label,
     })

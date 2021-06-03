@@ -1,39 +1,39 @@
-declare module '*.json' {
+declare module "*.json" {
   const value: any
   export default value
 }
 
-declare module '*.md' {
+declare module "*.md" {
   const value: string
   export default value
 }
 
-declare module '*.png' {
+declare module "*.png" {
   const value: any
   export default value
 }
 
-declare module '*.svg' {
+declare module "*.svg" {
   const value: any
   export default value
 }
 
-declare module '*.jpg' {
+declare module "*.jpg" {
   const value: any
   export default value
 }
 
-declare module '*.gif' {
+declare module "*.gif" {
   const value: any
   export default value
 }
 
-declare module '*.webp' {
+declare module "*.webp" {
   const value: any
   export default value
 }
 
-declare module '*.scss' {
+declare module "*.scss" {
   const value: any
   export default value
 }
@@ -44,5 +44,5 @@ declare namespace NodeJS {
   }
 }
 
-declare module 'react-reveal/Fade'
-declare module 'hex-to-rgba'
+declare module "react-reveal/Fade"
+declare module "hex-to-rgba"

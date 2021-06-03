@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import DropDown, { ListItem } from 'src/shared/DropDown'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import DropDown, { ListItem } from "src/shared/DropDown"
 
 interface DropDownProps {
   name: string
@@ -55,12 +55,12 @@ export default class DropDownGroup extends React.Component<Props, State> {
 
 const styles = StyleSheet.create({
   overlay: {
-    position: 'fixed',
+    position: "fixed",
     top: 0,
     left: 0,
-    width: '100vw',
-    height: '100vh',
-    backgroundColor: 'transparent',
+    width: "100vw",
+    height: "100vh",
+    backgroundColor: "transparent",
     opacity: 0,
     zIndex: -3,
   },

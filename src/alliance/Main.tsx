@@ -1,23 +1,23 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Affirmations from 'src/alliance/Affirmations'
-import Benefits from 'src/alliance/Benefits'
-import CollectiveMission from 'src/alliance/CollectiveMission'
-import { aguaComunidad, allianceOG, fences } from 'src/alliance/images'
-import Members from 'src/alliance/Members'
-import PinWheel from 'src/alliance/PinWheel'
-import WheelWithForm from 'src/alliance/RisingPinWheelForm'
-import SignupForm from 'src/alliance/SignupForm'
-import ArticleData from 'src/community/connect/ArticleData'
-import { H4 } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import Fade from 'src/shared/AwesomeFade'
-import BeautifulQuote from 'src/shared/BeautifulQuote'
-import menuItems from 'src/shared/menu-items'
-import { colors, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import Affirmations from "src/alliance/Affirmations"
+import Benefits from "src/alliance/Benefits"
+import CollectiveMission from "src/alliance/CollectiveMission"
+import { aguaComunidad, allianceOG, fences } from "src/alliance/images"
+import Members from "src/alliance/Members"
+import PinWheel from "src/alliance/PinWheel"
+import WheelWithForm from "src/alliance/RisingPinWheelForm"
+import SignupForm from "src/alliance/SignupForm"
+import ArticleData from "src/community/connect/ArticleData"
+import { H4 } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { useScreenSize } from "src/layout/ScreenSize"
+import Fade from "src/shared/AwesomeFade"
+import BeautifulQuote from "src/shared/BeautifulQuote"
+import menuItems from "src/shared/menu-items"
+import { colors, standardStyles, textStyles } from "src/styles"
 
 export default function Main() {
   const { t } = useTranslation(NameSpaces.alliance)
@@ -47,7 +47,7 @@ export default function Main() {
                   isMobile && styles.thematicTitleMobile,
                 ]}
               >
-                {t('thematicStatement')}
+                {t("thematicStatement")}
               </H4>
             </View>
           </PinWheel>
@@ -71,7 +71,7 @@ export default function Main() {
         color={colors.white}
         imgSource={aguaComunidad}
         quote={
-          'The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications'
+          "The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications"
         }
         citation={<Text style={styles.citation}>Gigi Gatti, Grameen Foundation</Text>}
       />
@@ -80,11 +80,11 @@ export default function Main() {
         color={colors.dark}
         imgSource={fences}
         quote={
-          'Our hope is that this Alliance will start unlocking the potential of internet money'
+          "Our hope is that this Alliance will start unlocking the potential of internet money"
         }
         citation={<Text style={styles.citation}>Katie Haun, Andreessen Horowitz</Text>}
       />
-      <ArticleData title={t('mediumArticlesTitle')} tagged={'alliance'} />
+      <ArticleData title={t("mediumArticlesTitle")} tagged={"alliance"} />
       <Benefits />
       <WheelWithForm />
     </View>
@@ -93,48 +93,48 @@ export default function Main() {
 
 const keyframes = [
   {
-    '0%': {
+    "0%": {
       opacity: 0,
     },
-    '1%': {
+    "1%": {
       opacity: 0.1,
       background: `linear-gradient(90deg, rgba(12,218,110,1) 21%, rgba(255,101,83,1) 40%, rgba(159,105,255,1) 60%, rgba(82,182,255,1) 80%)`,
     },
-    '15%': {
+    "15%": {
       background: `linear-gradient(90deg, rgba(82,182,255,1) 18%, rgba(12,218,110,1) 39%, rgba(255,101,83,1) 63%, rgba(159,105,255,1) 80%)`,
     },
-    '30%': {
+    "30%": {
       background: `linear-gradient(90deg, rgba(159,105,255,1) 22%, rgba(82,182,255,1) 38%, rgba(12,218,110,1) 62%, rgba(255,101,83,1) 81%)`,
     },
-    '45%': {
+    "45%": {
       background: `linear-gradient(90deg, rgba(255,101,83,1) 20%, rgba(159,105,255,1) 40%, rgba(82,182,255,1) 62%, rgba(12,218,110,1) 84%)`,
     },
-    '60%': {
+    "60%": {
       background: `linear-gradient(90deg, rgba(12,218,110,1) 21%, rgba(255,101,83,1) 40%, rgba(159,105,255,1) 60%, rgba(82,182,255,1) 80%)`,
     },
-    '75%': {
+    "75%": {
       background: `linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(12,218,110,1) 23%, rgba(255,101,83,1) 44%, rgba(159,105,255,1) 68%, rgba(82,182,255,1) 90%)`,
     },
-    '80%': {
+    "80%": {
       background: `linear-gradient(90deg, rgba(255,255,255,1) 22%, rgba(12,218,110,1) 43%, rgba(255,101,83,1) 66%, rgba(159,105,255,1) 88%, rgba(82,182,255,1) 100%)`,
     },
-    '85%': {
+    "85%": {
       background: `linear-gradient(90deg, rgba(255,255,255,1) 42%, rgba(12,218,110,1) 65%, rgba(255,101,83,1) 87%, rgba(159,105,255,1) 100%, rgba(82,182,255,1) 100%)`,
     },
-    '90%': {
+    "90%": {
       background: `linear-gradient(90deg, rgba(255,255,255,1) 64%, rgba(12,218,110,1) 81%, rgba(255,101,83,1) 98%, rgba(159,105,255,1) 100%, rgba(82,182,255,1) 100%)`,
     },
-    '95%': {
+    "95%": {
       background: `linear-gradient(90deg, rgba(255,255,255,1) 86%, rgba(12,218,110,1) 97%, rgba(255,101,83,1) 98%, rgba(159,105,255,1) 100%, rgba(82,182,255,1) 100%)`,
     },
-    '100%': {
+    "100%": {
       opacity: 0.9,
       backgroundColor: colors.white,
     },
   },
 ]
 
-const blendStyle = { mixBlendMode: 'darken' }
+const blendStyle = { mixBlendMode: "darken" }
 
 const styles = StyleSheet.create({
   thematicTitle: {
@@ -150,21 +150,21 @@ const styles = StyleSheet.create({
     ],
   },
   sweepContainerMobile: {
-    height: '100vh',
+    height: "100vh",
   },
   mobileSweepInner: {
     paddingBottom: 40,
-    height: '80vh',
-    width: '90vw',
-    justifyContent: 'center',
+    height: "80vh",
+    width: "90vw",
+    justifyContent: "center",
   },
   citation: { fontSize: 36 },
   rainbow: {
-    animationDelay: '1000ms',
-    animationDuration: '2800ms',
+    animationDelay: "1000ms",
+    animationDuration: "2800ms",
     animationIterationCount: 1,
-    animationFillMode: 'both',
-    animationTimingFunction: 'cubic-bezier(.29,.02,.97,.62)',
+    animationFillMode: "both",
+    animationTimingFunction: "cubic-bezier(.29,.02,.97,.62)",
     animationKeyframes: keyframes,
   },
 })

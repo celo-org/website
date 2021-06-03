@@ -1,2 +1,2 @@
-import PastEventsPage from 'src/community/PastEventsPage'
+import PastEventsPage from "src/community/PastEventsPage"
 export default PastEventsPage

@@ -1,9 +1,9 @@
-import * as React from 'react'
-import { StyleSheet, View, ViewStyle } from 'react-native-web'
-import VECTORS from 'src/community/connect/RingOfCoinVectors'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import { G, Path } from 'src/shared/svg'
-import { baseCoinStyle, colors, standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, View, ViewStyle } from "react-native-web"
+import VECTORS from "src/community/connect/RingOfCoinVectors"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import { G, Path } from "src/shared/svg"
+import { baseCoinStyle, colors, standardStyles } from "src/styles"
 
 // note this is the animation duration of a single coin,
 // since the coins animate in a delayed way the entire "animation" is longer than this
@@ -82,10 +82,10 @@ const QUARTERIZER = 200
 
 function animated(index: number) {
   return {
-    mixBlendMode: 'screen',
+    mixBlendMode: "screen",
     animationIterationCount: 1,
     animationDelay: `${INTERVAL_MS + index * DELAYMENT}ms`,
-    animationFillMode: 'both',
+    animationFillMode: "both",
     animationDuration: `${DURATION / 3}ms`,
     animationKeyframes: solidFadeInFrames(
       quartColor(index),
@@ -96,7 +96,7 @@ function animated(index: number) {
 
 function still(index: number) {
   return {
-    mixBlendMode: 'screen',
+    mixBlendMode: "screen",
     ...colorFrame(quartColor(index)),
   }
 }
@@ -115,89 +115,89 @@ function quartColor(index: number) {
 }
 
 const standardStrokeFill = {
-  fill: 'transparent',
+  fill: "transparent",
 }
 
 const KEY_FRAMES = [
   {
-    '0%': standardStrokeFill,
-    '24%': standardStrokeFill,
+    "0%": standardStrokeFill,
+    "24%": standardStrokeFill,
 
-    '25%': colorFrame(colors.greenScreen),
-    '35%': colorFrame(colors.greenScreen),
+    "25%": colorFrame(colors.greenScreen),
+    "35%": colorFrame(colors.greenScreen),
 
-    '40%': colorFrame(colors.redScreen),
-    '54%': colorFrame(colors.redScreen),
+    "40%": colorFrame(colors.redScreen),
+    "54%": colorFrame(colors.redScreen),
 
-    '55%': colorFrame(colors.blueScreen),
-    '69%': colorFrame(colors.blueScreen),
+    "55%": colorFrame(colors.blueScreen),
+    "69%": colorFrame(colors.blueScreen),
 
-    '70%': colorFrame(colors.purpleScreen),
-    '80%': colorFrame(colors.purpleScreen),
+    "70%": colorFrame(colors.purpleScreen),
+    "80%": colorFrame(colors.purpleScreen),
 
-    '85%': standardStrokeFill,
-    '100%': standardStrokeFill,
+    "85%": standardStrokeFill,
+    "100%": standardStrokeFill,
   },
 ]
 
 const styles = StyleSheet.create({
   justCoin: {
     opacity: 0.3,
-    fill: 'transparent',
+    fill: "transparent",
   },
   base: {
     opacity: 0.2,
     animationIterationCount: 3,
     animationDuration: `${DURATION}ms`,
-    animationFillMode: 'both',
-    animationDirection: 'normal',
+    animationFillMode: "both",
+    animationDirection: "normal",
   },
   cycle: {
     animationKeyframes: KEY_FRAMES,
   },
   sweepContainer: {
-    width: '100%',
-    height: '100vh',
-    maxHeight: '100vw',
-    maxWidth: '90vw',
+    width: "100%",
+    height: "100vh",
+    maxHeight: "100vw",
+    maxWidth: "90vw",
   },
   lightingOff: {
     opacity: 0,
   },
   lighting: {
-    height: '100%',
-    width: '100%',
+    height: "100%",
+    width: "100%",
     animationIterationCount: 1,
     animationDuration: `${DURATION * 2}ms`,
     animationDelay: `${DURATION}ms`,
-    animationFillMode: 'both',
+    animationFillMode: "both",
     animationKeyframes: [
       {
-        '0%': {
+        "0%": {
           opacity: 0,
         },
-        '60%': {
+        "60%": {
           opacity: 0.9,
         },
-        '100%': {
+        "100%": {
           opacity: 0,
         },
       },
     ],
   },
   absoluteCenter: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
     right: 0,
     left: 0,
     bottom: 0,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
 })
 
 function solidFadeInFrames(color: colors, donePercent: number) {
-  return [{ '0%': standardStrokeFill, [donePercent]: colorFrame(color), '100%': colorFrame(color) }]
+  return [{ "0%": standardStrokeFill, [donePercent]: colorFrame(color), "100%": colorFrame(color) }]
 }
 
 function colorFrame(color: colors) {

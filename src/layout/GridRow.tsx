@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { StyleSheet, View, ViewStyle } from 'react-native'
-import Responsive from 'src/shared/Responsive'
+import * as React from "react"
+import { StyleSheet, View, ViewStyle } from "react-native"
+import Responsive from "src/shared/Responsive"
 
 interface GridProps {
   nativeID?: string
@@ -14,12 +14,12 @@ interface GridProps {
 const gap = 20.0
 
 export enum Spans {
-  fourth = 'fourth',
-  third = 'third',
-  twoThird = 'twoThird',
-  half = 'half',
-  three4th = 'three4th',
-  full = 'full',
+  fourth = "fourth",
+  third = "third",
+  twoThird = "twoThird",
+  half = "half",
+  three4th = "three4th",
+  full = "full",
 }
 
 export function GridRow(props: GridProps) {
@@ -37,23 +37,23 @@ export function GridRow(props: GridProps) {
 
 const styles = StyleSheet.create({
   mobile: {
-    alignSelf: 'center',
-    flexDirection: 'column',
+    alignSelf: "center",
+    flexDirection: "column",
     paddingHorizontal: gap / 2,
-    width: '100%',
-    maxWidth: '100vw',
+    width: "100%",
+    maxWidth: "100vw",
   },
   tablet: {
-    alignSelf: 'center',
-    flexDirection: 'row',
+    alignSelf: "center",
+    flexDirection: "row",
     paddingHorizontal: gap,
-    width: '100%',
+    width: "100%",
     maxWidth: 958 + gap,
   },
   desktop: {
-    alignSelf: 'center',
-    flexDirection: 'row',
-    width: '100%',
+    alignSelf: "center",
+    flexDirection: "row",
+    width: "100%",
     maxWidth: 1080 + gap,
   },
 })
@@ -81,11 +81,11 @@ export function Cell(props: CellProps) {
 
 export const cellStyle = StyleSheet.create({
   base: { padding: gap / 2, flexGrow: 0, flexShrink: 0 },
-  fourth: { width: '25%' },
-  third: { width: '33.333%' },
-  twoThird: { width: '66.666%' },
-  half: { width: '50%' },
-  three4th: { width: '75%' },
-  full: { flexBasis: '100%', width: '100%' },
-  mobile: { width: '100%' },
+  fourth: { width: "25%" },
+  third: { width: "33.333%" },
+  twoThird: { width: "66.666%" },
+  half: { width: "50%" },
+  three4th: { width: "75%" },
+  full: { flexBasis: "100%", width: "100%" },
+  mobile: { width: "100%" },
 })

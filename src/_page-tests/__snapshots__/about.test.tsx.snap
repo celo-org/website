@@ -2513,6 +2513,7 @@ Change the story.
               >
                 <a
                   href="//www.example.com"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <svg

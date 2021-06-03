@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { colors } from 'src/styles'
+import * as React from "react"
+import { colors } from "src/styles"
 interface Props {
   color: colors
   size: number

@@ -1,5 +1,5 @@
-import getConfig from 'next/config'
-import { RequestStatus, RequestType } from 'src/fauceting/FaucetInterfaces'
+import getConfig from "next/config"
+import { RequestStatus, RequestType } from "src/fauceting/FaucetInterfaces"
 
 export function getCaptchaKey() {
   return getConfig().publicRuntimeConfig.RECAPTCHA
@@ -19,7 +19,7 @@ function validateNumber(number: string) {
   return E164RegEx.test(number)
 }
 
-export const EXAMPLE_ADDRESS = 'a0000aaa00a0000...a00a0a0000a00a00aa'
+export const EXAMPLE_ADDRESS = "a0000aaa00a0000...a00a0a0000a00a00aa"
 
 // This is only a basic validation
 function validateAddress(address: string) {

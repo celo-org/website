@@ -1,19 +1,19 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { ErrorDisplay, ErrorKeys } from 'src/forms/ErrorDisplay'
-import Form from 'src/forms/Form'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import { ErrorDisplay, ErrorKeys } from "src/forms/ErrorDisplay"
+import Form from "src/forms/Form"
 import { emailIsValid } from "src/forms/emailIsValid"
-import SubmitButton from 'src/forms/SubmitButton'
-import SuccessDisplay from 'src/forms/SuccessDisplay'
-import { TextInput } from 'src/forms/TextInput'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { SIZE } from 'src/shared/Button.3'
-import Responsive from 'src/shared/Responsive'
-import { colors, fonts, standardStyles } from 'src/styles'
+import SubmitButton from "src/forms/SubmitButton"
+import SuccessDisplay from "src/forms/SuccessDisplay"
+import { TextInput } from "src/forms/TextInput"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { SIZE } from "src/shared/Button.3"
+import Responsive from "src/shared/Responsive"
+import { colors, fonts, standardStyles } from "src/styles"
 
-const NEWSLETTER_LIST = '1'
-export const DEVELOPER_LIST = '10'
+const NEWSLETTER_LIST = "1"
+export const DEVELOPER_LIST = "10"
 
 interface OwnProps {
   submitText: string
@@ -23,7 +23,7 @@ interface OwnProps {
   isDarkMode?: boolean
 }
 
-const blankForm = { email: '', fullName: '', list: '' }
+const blankForm = { email: "", fullName: "", list: "" }
 
 type Props = OwnProps
 
@@ -33,12 +33,12 @@ const validateFields = ({ email }: { email: string }) => {
   if (emailIsValid(email)) {
     return []
   } else {
-    return ['email']
+    return ["email"]
   }
 }
 
 const emailErrorStyle = (errors: string[]) => {
-  if (errors.includes('email')) {
+  if (errors.includes("email")) {
     return { borderColor: colors.error }
   }
   return {}
@@ -49,7 +49,7 @@ export default React.memo(function EmailForm({
   submitText,
   placeholder,
   listID = NEWSLETTER_LIST,
-  route = '/contacts',
+  route = "/contacts",
 }: Props) {
   const inputTheme = isDarkMode ? styles.inputDarkMode : styles.inputLightMode
   const { isDesktop } = useScreenSize()
@@ -62,7 +62,7 @@ export default React.memo(function EmailForm({
         const hasError = !!formState.apiError || !!formState.errors.length
         const errorKey = formState.apiError || ErrorKeys.email
         const onChange = (newValue: string) => {
-          onInput({ name: 'email', newValue })
+          onInput({ name: "email", newValue })
         }
 
         return (
@@ -77,7 +77,7 @@ export default React.memo(function EmailForm({
                     isDarkMode ? standardStyles.inputDarkFocused : standardStyles.inputFocused
                   }
                   onChangeText={onChange}
-                  placeholder={placeholder || t('common:email') + '*'}
+                  placeholder={placeholder || t("common:email") + "*"}
                   placeholderTextColor={
                     isDarkMode ? colors.placeholderDarkMode : colors.placeholderGray
                   }
@@ -105,7 +105,7 @@ export default React.memo(function EmailForm({
               </View>
             </View>
             <View style={styles.success}>
-              <SuccessDisplay isShowing={formState.isComplete} message={t('common:shortSuccess')} />
+              <SuccessDisplay isShowing={formState.isComplete} message={t("common:shortSuccess")} />
             </View>
           </Responsive>
         )
@@ -119,11 +119,11 @@ const borderRadius = 3
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    width: '100%',
+    flexDirection: "row",
+    width: "100%",
   },
   mobileContainer: {
-    width: '100%',
+    width: "100%",
     marginVertical: 5,
     paddingBottom: 15,
   },
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     borderRadius,
     borderWidth,
     marginVertical: 5,
-    outlineStyle: 'none',
+    outlineStyle: "none",
   },
   inputDesktop: {
     borderTopRightRadius: 0,
@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
     color: colors.white,
   },
   feedback: {
-    position: 'absolute',
+    position: "absolute",
     top: 65,
   },
   feedbackMobile: {

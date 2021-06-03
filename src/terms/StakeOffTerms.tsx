@@ -1,12 +1,12 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H1, H3, Li, ListType, Ul } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Button, { BTN } from 'src/shared/Button.3'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H1, H3, Li, ListType, Ul } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
+import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Button, { BTN } from "src/shared/Button.3"
+import { HEADER_HEIGHT } from "src/shared/Styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 class StakeoffTerms extends React.PureComponent<I18nProps> {
   static getInitialProps() {
@@ -17,9 +17,9 @@ class StakeoffTerms extends React.PureComponent<I18nProps> {
     return (
       <>
         <OpenGraph
-          title={t('gameOfStakesTermsTitle')}
+          title={t("gameOfStakesTermsTitle")}
           path={NameSpaces.terms}
-          description={t('gameOfStakesTermsMetaDescription')}
+          description={t("gameOfStakesTermsMetaDescription")}
         />
         <View style={styles.container}>
           <GridRow
@@ -30,8 +30,8 @@ class StakeoffTerms extends React.PureComponent<I18nProps> {
           >
             <Cell span={Spans.fourth}>{}</Cell>
             <Cell span={Spans.three4th} style={standardStyles.centered}>
-              <H1 style={textStyles.center}>{t('gameOfStakesTermsTitle')}</H1>
-              <H3 style={textStyles.center}>{t('termsAndConditions')}</H3>
+              <H1 style={textStyles.center}>{t("gameOfStakesTermsTitle")}</H1>
+              <H3 style={textStyles.center}>{t("termsAndConditions")}</H3>
             </Cell>
           </GridRow>
           <GridRow>
@@ -41,8 +41,8 @@ class StakeoffTerms extends React.PureComponent<I18nProps> {
             <Cell span={Spans.three4th}>
               <Text
                 style={fonts.p}
-              >{`Thank you for joining the Great Celo Stake Off (“TGCSO”), the incentivized testnet for the Celo Protocol. TGCSO allows eligible participants (“Participants”) to engage with the betanet version of the Celo Protocol (“Protocol”) and, related to that participation and subject to these Terms and Conditions, Participants will have the opportunity to receive Celo Gold at the Mainnet launch of the Celo Protocol.   TGCSO will commence on the date prescribed by cLabs (the “Company”) and continue until terminated by the Company in its sole discretion (“TGCSO Period”). Participation in TGCSO is subject to these Terms and Conditions (the “Terms”) and the Company’s Privacy Policy (“Privacy Policy”), and all other agreements or terms as set forth by the Company. These Terms constitute a binding obligation between you and the Company. As used herein, “Celo Gold” means the native unit of value on the Mainnet Celo Protocol. 
-              
+              >{`Thank you for joining the Great Celo Stake Off (“TGCSO”), the incentivized testnet for the Celo Protocol. TGCSO allows eligible participants (“Participants”) to engage with the betanet version of the Celo Protocol (“Protocol”) and, related to that participation and subject to these Terms and Conditions, Participants will have the opportunity to receive Celo Gold at the Mainnet launch of the Celo Protocol.   TGCSO will commence on the date prescribed by cLabs (the “Company”) and continue until terminated by the Company in its sole discretion (“TGCSO Period”). Participation in TGCSO is subject to these Terms and Conditions (the “Terms”) and the Company’s Privacy Policy (“Privacy Policy”), and all other agreements or terms as set forth by the Company. These Terms constitute a binding obligation between you and the Company. As used herein, “Celo Gold” means the native unit of value on the Mainnet Celo Protocol.
+
 YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING IN TGCSO, YOU MUST STRICTLY ADHERE TO THE TERMS. IF, AS PART OF YOUR VOLUNTARY PARTICIPATION, YOU MEET THE CRITERIA LISTED BELOW, YOU MAY BE ELIGIBLE TO RECEIVE CERTAIN AMOUNTS OF CELO GOLD UNITS AND/OR CELO GOLD UPON THE MAINNET LAUNCH OF THE CELO PROTOCOL. YOU AGREE THAT ANY CELO GOLD UNITS OR CELO GOLD RECEIVED BY YOU WILL BE FOR YOUR SERVICES IN TESTING AND CONTRIBUTING TO THE CELO TECHNOLOGIES AS DEFINED BELOW AND AS PART OF THIS TGCSO.
               `}</Text>
               <Ul>
@@ -58,7 +58,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                   refer to that company or other legal entity.
                 </Li>
                 <Li listStyle={ListType.numeric}>
-                  Privacy Policy. Please refer to our Privacy Policy (available at{' '}
+                  Privacy Policy. Please refer to our Privacy Policy (available at{" "}
                   <Link href="https://celo.org/privacy">celo.org/privacy</Link>) for information on
                   the Company may collect, use and disclose information. You acknowledge and agree
                   that your participation in TGCSO is subject to this Privacy Policy.
@@ -123,7 +123,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                   You further understand and agree that:
                   <Ul>
                     <Li listStyle={ListType.alpha}>
-                      {' '}
+                      {" "}
                       Access to TGCSO may require the use of your personal computer and/or mobile
                       devices, as well as communications with or use of data and storage on such
                       devices. You are responsible for any Internet connection or mobile fees and
@@ -162,7 +162,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                       Mainnet launch. Participants understand that certain lock up periods may apply
                       to Celo Gold at Mainnet launch. Participants who do not provide the requested
                       information, or Participants who cannot receive Celo Gold Units or Celo Gold
-                      for any reason will forfeit his/her right to Celo Gold Units and Celo Gold.{' '}
+                      for any reason will forfeit his/her right to Celo Gold Units and Celo Gold.{" "}
                     </Li>
 
                     <Li listStyle={ListType.alpha}>
@@ -223,7 +223,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                   General Prohibitions and Company’s Enforcement Rights. You agree to the following:
                   <Ul>
                     <Li listStyle={ListType.alpha}>
-                      To follow the Celo Community Code of Conduct as provided{' '}
+                      To follow the Celo Community Code of Conduct as provided{" "}
                       <Link href="https://celo.org/code-of-conduct">here</Link>
                     </Li>
 
@@ -232,7 +232,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                       other participants’ computer systems,or the technical delivery systems of
                       Company’s providers including without limitation any attacks that may violate
                       Amazon Web Services Acceptable Use Policy and Google Cloud Platform's
-                      Acceptable Use Policy;{' '}
+                      Acceptable Use Policy;{" "}
                     </Li>
 
                     <Li listStyle={ListType.alpha}>
@@ -245,7 +245,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
 
                     <Li listStyle={ListType.alpha}>
                       You will not impersonate or misrepresent your affiliation with any person or
-                      entity;{' '}
+                      entity;{" "}
                     </Li>
 
                     <Li listStyle={ListType.alpha}>
@@ -430,9 +430,9 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                   both parties. YOU AND COMPANY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER
                   ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN
                   ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. Further, unless both you and
-                  Company agree otherwise, the arbitrator may not consolidate more than one person's
-                  claims with your claims, and may not otherwise preside over any form of a
-                  representative or class proceeding. If this specific provision is found to be
+                  Company agree otherwise, the arbitrator may not consolidate more than one
+                  person's claims with your claims, and may not otherwise preside over any form
+                  of a representative or class proceeding. If this specific provision is found to be
                   unenforceable, then the entirety of this Dispute Resolution section shall be null
                   and void.
                 </Li>
@@ -485,7 +485,12 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
   }
 }
 
-function Link({ children, href }) {
+interface LinkFace {
+  href: string
+  children: string
+}
+
+function Link({ children, href }: LinkFace) {
   return <Button text={children} href={href} kind={BTN.INLINE} />
 }
 

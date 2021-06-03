@@ -1,14 +1,14 @@
-import { Attachment, FieldSet, Table } from 'airtable'
-import getConfig from 'next/config'
-import Ally, { NewMember } from '../src/alliance/AllianceMember'
-import { Category } from '../src/alliance/CategoryEnum'
-import addToCRM from './addToCRM'
-import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from './airtable'
-import { cache } from './cache'
+import { Attachment, FieldSet, Table } from "airtable"
+import getConfig from "next/config"
+import Ally, { NewMember } from "../src/alliance/AllianceMember"
+import { Category } from "../src/alliance/CategoryEnum"
+import addToCRM from "./addToCRM"
+import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
+import { cache } from "./cache"
 
-export const CATEGORY_FIELD = 'Web Category*'
-export const LOGO_FIELD = 'Logo Upload'
-export const URL_FIELD = 'Company URL*'
+export const CATEGORY_FIELD = "Web Category*"
+export const LOGO_FIELD = "Logo Upload"
+export const URL_FIELD = "Company URL*"
 
 interface Fields extends FieldSet {
   Name: string
@@ -18,8 +18,8 @@ interface Fields extends FieldSet {
   [LOGO_FIELD]: Attachment[]
 }
 
-const READ_SHEET = 'MOU Tracking'
-const WRITE_SHEET = 'Web Requests'
+const READ_SHEET = "MOU Tracking"
+const WRITE_SHEET = "Web Requests"
 
 export default async function getAllies() {
   return Promise.all(
@@ -33,8 +33,8 @@ async function fetchAllies(category: Category) {
   return getAirtable<Fields>(READ_SHEET)
     .select({
       filterByFormula: `AND(${IS_APROVED},SEARCH("${category}", {${CATEGORY_FIELD}}))`,
-      fields: ['Name', 'Approved', CATEGORY_FIELD, LOGO_FIELD, URL_FIELD],
-      view: 'Alliance Web',
+      fields: ["Name", "Approved", CATEGORY_FIELD, LOGO_FIELD, URL_FIELD],
+      view: "Alliance Web",
     })
     .all()
     .then((records) => {
@@ -46,14 +46,14 @@ function getAirtable<T extends FieldSet>(sheet: string) {
   return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ALLIANCE_ID)(sheet) as Table<T>
 }
 
-const IS_APROVED = 'Approved=1'
+const IS_APROVED = "Approved=1"
 
 export function normalize(asset: Fields): Ally {
   return {
     name: asset.Name,
     logo: {
-      uri: getImageURI(asset['Logo Upload'], ImageSizes.large),
-      ...getWidthAndHeight(asset['Logo Upload']),
+      uri: getImageURI(asset["Logo Upload"], ImageSizes.large),
+      ...getWidthAndHeight(asset["Logo Upload"]),
     },
     url: asset[URL_FIELD],
   }
@@ -66,7 +66,7 @@ export async function create(data: NewMember) {
   ]
 
   if (data.subscribe) {
-    actions.push(addToCRM({ email: data.email, fullName: data.name, interest: 'Alliance' }))
+    actions.push(addToCRM({ email: data.email, fullName: data.name, interest: "Alliance" }))
   }
 
   return Promise.all(actions)

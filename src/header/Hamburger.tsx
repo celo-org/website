@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { StyleProp, StyleSheet, TouchableOpacity, View, ViewStyle } from 'react-native'
-import { colors } from 'src/styles'
+import * as React from "react"
+import { StyleProp, StyleSheet, TouchableOpacity, View, ViewStyle } from "react-native"
+import { colors } from "src/styles"
 
 interface Props {
   onPress: () => void
@@ -44,19 +44,19 @@ const styles = StyleSheet.create({
     marginVertical: 20,
   },
   bar: {
-    transitionProperty: 'transform color',
-    transitionDuration: '120ms',
-    position: 'absolute',
+    transitionProperty: "transform color",
+    transitionDuration: "120ms",
+    position: "absolute",
     marginVertical: 2,
     height: 2,
     width: 18,
     backgroundColor: colors.dark,
   },
   slopeUp: {
-    transform: [{ rotate: '45deg' }],
+    transform: [{ rotate: "45deg" }],
   },
   slopeDown: {
-    transform: [{ rotate: '-45deg' }],
+    transform: [{ rotate: "-45deg" }],
   },
   invisible: {
     opacity: 0,

@@ -1,18 +1,18 @@
-import * as React from "react";
-import { StyleSheet, Text } from "react-native";
-import { fonts, typeFaces } from "src/styles";
+import * as React from "react"
+import { StyleSheet, Text } from "react-native"
+import { fonts, typeFaces } from "src/styles"
 
-export function P({
-  children,
-  style,
-}: {
-  children: React.ReactNode;
-  style?: any;
-}) {
-  return <Text style={[fonts.p, styles.paragraph, style]}>{children}</Text>;
+interface Props {
+  children: React.ReactNode
 }
 
-export const B = (props) => <Text style={[fonts.p, styles.paragraph, styles.bold]}>{props.children}</Text>;
+export function P({ children, style }: { children: React.ReactNode; style?: any }) {
+  return <Text style={[fonts.p, styles.paragraph, style]}>{children}</Text>
+}
+
+export const B = (props: Props) => (
+  <Text style={[fonts.p, styles.paragraph, styles.bold]}>{props.children}</Text>
+)
 
 const styles = StyleSheet.create({
   bold: {
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     fontFamily: typeFaces.futura,
   },
-});
+})

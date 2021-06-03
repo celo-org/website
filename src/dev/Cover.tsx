@@ -1,12 +1,12 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import Transceive from 'src/dev/Transceive'
-import { H2, H4 } from 'src/fonts/Fonts'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Fade from 'src/shared/AwesomeFade'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { colors, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import Transceive from "src/dev/Transceive"
+import { H2, H4 } from "src/fonts/Fonts"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Fade from "src/shared/AwesomeFade"
+import { HEADER_HEIGHT } from "src/shared/Styles"
+import { colors, standardStyles, textStyles } from "src/styles"
 
 const DELAY = 100
 const DURATION = 400
@@ -22,7 +22,7 @@ const CoverComponent = React.memo(function Cover({ t }: I18nProps) {
         desktopStyle={standardStyles.sectionMarginBottom}
         tabletStyle={standardStyles.sectionMarginBottomTablet}
       >
-        <TitleAndSubTitle title={t('makeWithCelo')} subtitle={t('makeWithCeloSubtitle')} />
+        <TitleAndSubTitle title={t("makeWithCelo")} subtitle={t("makeWithCeloSubtitle")} />
       </GridRow>
     </View>
   )
@@ -65,22 +65,22 @@ const TitleAndSubTitle = React.memo(function _TitleAndSubtile({
 const styles = StyleSheet.create({
   buttons: {
     flex: 1,
-    maxWidth: '100vw',
-    width: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    maxWidth: "100vw",
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    flexWrap: "wrap",
   },
   cover: {
     marginTop: HEADER_HEIGHT,
     backgroundColor: colors.dark,
-    maxWidth: '100vw',
-    overflow: 'hidden',
+    maxWidth: "100vw",
+    overflow: "hidden",
   },
   phone: {
     paddingHorizontal: 20,
-    height: '33vh',
+    height: "33vh",
     minHeight: 250,
     maxHeight: 400,
     marginTop: HEADER_HEIGHT,
@@ -97,4 +97,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default withNamespaces('dev')(CoverComponent)
+export default withNamespaces("dev")(CoverComponent)

@@ -1,8 +1,8 @@
-import scrollIntoView from 'scroll-into-view'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
+import scrollIntoView from "scroll-into-view"
+import { HEADER_HEIGHT } from "src/shared/Styles"
 
 export default function scrollToHash(extraDistance: number) {
-  const element = document.getElementById(window.location.hash.replace('#', ''))
+  const element = document.getElementById(window.location.hash.replace("#", ""))
   if (element) {
     scrollIntoView(element, {
       time: 200,

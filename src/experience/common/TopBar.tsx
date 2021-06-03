@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import Hamburger from 'src/header/Hamburger'
-import { css } from '@emotion/react'
-import { useBooleanToggle } from 'src/hooks/useBooleanToggle'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import LogoLightBg from 'src/logos/LogoLightBg'
-import RingsGlyph from 'src/logos/RingsGlyph'
-import links from 'src/shared/menu-items'
-import MobileMenu from 'src/shared/MobileMenu'
-import Navigation, { NavigationTheme } from 'src/shared/Navigation'
-import { colors, fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import Hamburger from "src/header/Hamburger"
+import { css } from "@emotion/react"
+import { useBooleanToggle } from "src/hooks/useBooleanToggle"
+import { useScreenSize } from "src/layout/ScreenSize"
+import LogoLightBg from "src/logos/LogoLightBg"
+import RingsGlyph from "src/logos/RingsGlyph"
+import links from "src/shared/menu-items"
+import MobileMenu from "src/shared/MobileMenu"
+import Navigation, { NavigationTheme } from "src/shared/Navigation"
+import { colors, fonts, standardStyles } from "src/styles"
 import { useRouter } from "next/router"
 interface Props {
   current: string
@@ -23,19 +23,18 @@ export default function TopBar({ current, kitName }: Props) {
   const router = useRouter()
   const [showingKits, toggleKits] = useBooleanToggle()
 
-  function close() {
-    if (showingKits) {
-      toggleKits()
-    }
-  }
-
   React.useEffect(() => {
+    function close() {
+      if (showingKits) {
+        toggleKits()
+      }
+    }
     router?.events?.on("routeChangeComplete", close)
 
     return () => {
       router?.events?.off("routeChangeComplete", close)
     }
-  }, [router])
+  }, [router, showingKits, toggleKits])
 
   return (
     <View style={standardStyles.centered}>
@@ -105,15 +104,15 @@ const Kits = React.memo(({ current }: { current: string }) => {
 const styles = StyleSheet.create({
   title: {
     marginLeft: 15,
-    lineHeight: 'initial', // fixes the vertical alignment
+    lineHeight: "initial", // fixes the vertical alignment
   },
   container: {
     maxWidth: 1600,
     backgroundColor: colors.white,
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
     padding: 20,
-    alignItems: 'center',
-    width: '100%',
+    alignItems: "center",
+    width: "100%",
     flex: 1,
   },
   containerMobile: {
@@ -122,26 +121,26 @@ const styles = StyleSheet.create({
   },
   hamburger: { marginVertical: 0, marginHorizontal: 0, zIndex: 100 },
   rowVerticalCenter: {
-    alignContent: 'center',
-    flexDirection: 'row',
+    alignContent: "center",
+    flexDirection: "row",
   },
   kits: {
-    alignItems: 'center',
-    flexDirection: 'row',
+    alignItems: "center",
+    flexDirection: "row",
     marginHorizontal: 30,
   },
   kitsMobileShown: {
     zIndex: 10,
-    position: 'fixed',
+    position: "fixed",
     left: 0,
     right: 0,
     top: 0,
     bottom: 0,
     paddingVertical: 20,
     borderWifth: 1,
-    width: '100%',
+    width: "100%",
     backgroundColor: colors.white,
-    justifyContent: 'space-around',
+    justifyContent: "space-around",
   },
   navLink: {
     marginBottom: 0,
@@ -150,5 +149,5 @@ const styles = StyleSheet.create({
 })
 
 const kitBrand = css({
-  textDecoration: 'none'
+  textDecoration: "none",
 })

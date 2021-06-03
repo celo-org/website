@@ -1,4 +1,4 @@
-import NodeCache from 'node-cache'
+import NodeCache from "node-cache"
 
 const MINUTE = 60
 
@@ -6,12 +6,16 @@ const TTL = MINUTE * 5
 
 const myCache = new NodeCache({ stdTTL: TTL, checkperiod: 120 })
 
-interface Options  { minutes?: number; seconds?: number, args?: any }
+interface Options {
+  minutes?: number
+  seconds?: number
+  args?: any
+}
 
 export async function cache<T>(
   key: string,
   func: (param?: any) => Promise<T>,
-  options?:Options
+  options?: Options
 ): Promise<T> {
   const cachedResult = myCache.get<T>(key)
   if (cachedResult) {

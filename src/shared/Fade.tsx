@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { View, ViewStyle } from 'react-native'
-import useFade, { Options } from 'src/hooks/useFade'
+import * as React from "react"
+import { View, ViewStyle } from "react-native"
+import useFade, { Options } from "src/hooks/useFade"
 
 type Props = Options & {
   children: React.ReactNode

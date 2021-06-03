@@ -1,7 +1,7 @@
-import  firebase from 'firebase/app'
-import 'firebase/database'
-import getConfig from 'next/config'
-import { NETWORK, RequestRecord, RequestStatus } from '../src/fauceting/FaucetInterfaces'
+import firebase from "firebase/app"
+import "firebase/database"
+import getConfig from "next/config"
+import { NETWORK, RequestRecord, RequestStatus } from "../src/fauceting/FaucetInterfaces"
 // Code in this file is sent to the browser.
 // Code in FirebaseServerSide.ts is not sent to the browser.
 
@@ -27,7 +27,7 @@ export default async function subscribeRequest(
 ) {
   const ref: firebase.database.Reference = (await getDB()).ref(`${NETWORK}/requests/${key}`)
 
-  const listener = ref.on('value', (snap) => {
+  const listener = ref.on("value", (snap) => {
     const record = snap.val() as RequestRecord
 
     if (record) {
@@ -35,7 +35,7 @@ export default async function subscribeRequest(
     }
 
     if (record.status === RequestStatus.Done || record.status === RequestStatus.Failed) {
-      ref.off('value', listener)
+      ref.off("value", listener)
     }
   })
 }

@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H2, H4 } from 'src/fonts/Fonts'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import ExchangeCELO from 'src/icons/ExchangeIconCELO'
-import BigStables from 'src/home/stables.svg'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { ScreenSizes, useScreenSize } from 'src/layout/ScreenSize'
-import RingsGlyph from 'src/logos/RingsGlyph'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import menuItems from 'src/shared/menu-items'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H2, H4 } from "src/fonts/Fonts"
+import { NameSpaces, useTranslation } from "src/i18n"
+import ExchangeCELO from "src/icons/ExchangeIconCELO"
+import BigStables from "src/home/stables.svg"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { ScreenSizes, useScreenSize } from "src/layout/ScreenSize"
+import RingsGlyph from "src/logos/RingsGlyph"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import menuItems from "src/shared/menu-items"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 const ICON_SIZE = 60
 
@@ -33,7 +33,7 @@ export function TwoAssets() {
               styles.title,
             ]}
           >
-            {t('twoMoneyTitle')}
+            {t("twoMoneyTitle")}
           </H2>
         </Cell>
       </GridRow>
@@ -42,42 +42,60 @@ export function TwoAssets() {
         tabletStyle={standardStyles.blockMarginBottomTablet}
         mobileStyle={standardStyles.blockMarginBottomMobile}
       >
-        <AssetToken ticker="cUSD & cEUR" info={t('stableCoins')} icon={<img src={BigStables} width={132} height={ICON_SIZE} style={{marginBottom: 20}} />}>
+        <AssetToken
+          ticker="cUSD & cEUR"
+          info={t("stableCoins")}
+          icon={
+            <img src={BigStables} width={132} height={ICON_SIZE} style={{ marginBottom: 20 }} />
+          }
+        >
           <Button
             kind={BTN.NAKED}
-            text={t('stabilityPaper')}
+            text={t("stabilityPaper")}
             href={menuItems.PAPERS.link}
             size={SIZE.normal}
           />
           <Button
             target={"_blank"}
             kind={BTN.NAKED}
-            style={{marginVertical: 16}}
-            text={t('celoDollars')}
-            href={"https://medium.com/celoorg/celo-dollars-powerful-new-digital-money-in-circulation-b4147eda2d10"}
+            style={{ marginVertical: 16 }}
+            text={t("celoDollars")}
+            href={
+              "https://medium.com/celoorg/celo-dollars-powerful-new-digital-money-in-circulation-b4147eda2d10"
+            }
             size={SIZE.normal}
           />
           <Button
             target={"_blank"}
             kind={BTN.NAKED}
-            text={t('celoEuros')}
-            href={"https://medium.com/celoorg/deutsche-telekom-joins-celo-ecosystem-as-the-first-mobile-carrier-amid-launch-of-ceur-stablecoin-2b79aae38540"}
+            text={t("celoEuros")}
+            href={
+              "https://medium.com/celoorg/deutsche-telekom-joins-celo-ecosystem-as-the-first-mobile-carrier-amid-launch-of-ceur-stablecoin-2b79aae38540"
+            }
             size={SIZE.normal}
           />
         </AssetToken>
-        <AssetToken ticker="CELO" info={t('CELOinfo')} icon={<View style={styles.image}><ExchangeCELO size={ICON_SIZE} /></View>}>
+        <AssetToken
+          ticker="CELO"
+          info={t("CELOinfo")}
+          icon={
+            <View style={styles.image}>
+              <ExchangeCELO size={ICON_SIZE} />
+            </View>
+          }
+        >
           <Button
             target={"_blank"}
             kind={BTN.NAKED}
-            text={t('viewReserve')}
-            href={'https://celoreserve.org'}
+            text={t("viewReserve")}
+            href={"https://celoreserve.org"}
             size={SIZE.normal}
           />
           <Button
             kind={BTN.NAKED}
-            text={t('learnGovernance')}
+            text={t("learnGovernance")}
             href={
-              'https://medium.com/celoorg/celo-gold-holders-make-your-voice-heard-through-on-chain-governance-96cb5a1e8b90'
+              "https://medium.com/celoorg/celo-gold-holders-make-your-voice-heard-through-on-chain-governance-96cb5a1e8b90"
             }
             size={SIZE.normal}
           />
@@ -133,22 +151,22 @@ function AssetToken({ ticker, info, icon, children }: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   governanceLinks: {
     minHeight: 50,
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
   root: {
     maxWidth: 330,
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
   title: {
     maxWidth: 380,
   },
   image: {
-    overflow: 'hidden',
+    overflow: "hidden",
     width: ICON_SIZE,
     height: ICON_SIZE,
     marginBottom: 20,

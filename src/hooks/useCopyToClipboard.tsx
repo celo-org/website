@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { copyToClipboad } from 'src/utils/utils'
+import * as React from "react"
+import { copyToClipboad } from "src/utils/utils"
 
 const MS_TO_RESET = 5000
 

@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { ErrorKeys } from 'src/forms/ErrorDisplay'
-import { postForm } from 'src/forms/postForm'
+import * as React from "react"
+import { ErrorKeys } from "src/forms/ErrorDisplay"
+import { postForm } from "src/forms/postForm"
 interface State {
   isComplete: boolean
   isLoading: boolean

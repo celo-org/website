@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { View } from 'react-native'
-import { H1 } from 'src/fonts/Fonts'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Fade from 'src/shared/AwesomeFade'
-import { standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { View } from "react-native"
+import { H1 } from "src/fonts/Fonts"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Fade from "src/shared/AwesomeFade"
+import { standardStyles, textStyles } from "src/styles"
 
 interface Props {
   title: string
   invert?: boolean
   nativeID?: string
-  ariaLevel?: '2' | '3'
+  ariaLevel?: "2" | "3"
 }
 
 const TitleComponent = React.memo(function Title({ title, invert, nativeID, ariaLevel }: Props) {
