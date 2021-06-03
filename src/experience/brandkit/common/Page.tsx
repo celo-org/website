@@ -1,6 +1,6 @@
-import * as React from 'react'
-import Page from 'src/experience/common/Page'
-import menu, { hashNav } from 'src/shared/menu-items'
+import * as React from "react"
+import Page from "src/experience/common/Page"
+import menu, { hashNav } from "src/shared/menu-items"
 
 export const ROOT = menu.BRAND.link
 
@@ -17,68 +17,68 @@ export const COMPOSITION_PATH = `${ROOT}/composition`
 
 const PAGES = [
   {
-    title: 'Introduction',
+    title: "Introduction",
     href: ROOT,
     sections: [
-      { title: 'Overview', href: `${ROOT}#${hashNav.brandIntro.overview}` },
-      { title: 'Brand Voice', href: `${ROOT}#${hashNav.brandIntro.brandVoice}` },
+      { title: "Overview", href: `${ROOT}#${hashNav.brandIntro.overview}` },
+      { title: "Brand Voice", href: `${ROOT}#${hashNav.brandIntro.brandVoice}` },
     ],
   },
   {
-    title: 'Logo',
+    title: "Logo",
     href: LOGO_PATH,
 
     sections: [
-      { title: 'Overview', href: `${LOGO_PATH}#${hashNav.brandLogo.overview}` },
-      { title: 'Space and Sizing', href: `${LOGO_PATH}#${hashNav.brandLogo.space}` },
-      { title: 'Backgrounds', href: `${LOGO_PATH}#${hashNav.brandLogo.backgrounds}` },
+      { title: "Overview", href: `${LOGO_PATH}#${hashNav.brandLogo.overview}` },
+      { title: "Space and Sizing", href: `${LOGO_PATH}#${hashNav.brandLogo.space}` },
+      { title: "Backgrounds", href: `${LOGO_PATH}#${hashNav.brandLogo.backgrounds}` },
     ],
   },
   {
-    title: 'Color',
+    title: "Color",
     href: COLOR_PATH,
 
     sections: [
-      { title: 'Overview', href: `${COLOR_PATH}#${hashNav.brandColor.overview}` },
-      { title: 'Background Colors', href: `${COLOR_PATH}#${hashNav.brandColor.backgrounds}` },
+      { title: "Overview", href: `${COLOR_PATH}#${hashNav.brandColor.overview}` },
+      { title: "Background Colors", href: `${COLOR_PATH}#${hashNav.brandColor.backgrounds}` },
     ],
   },
   {
-    title: 'Typography',
+    title: "Typography",
     href: TYPE_PATH,
 
     sections: [
-      { title: 'Overview', href: `${TYPE_PATH}#${hashNav.brandTypography.overview}` },
-      { title: 'Type Scale', href: `${TYPE_PATH}#${hashNav.brandTypography.scale}` },
+      { title: "Overview", href: `${TYPE_PATH}#${hashNav.brandTypography.overview}` },
+      { title: "Type Scale", href: `${TYPE_PATH}#${hashNav.brandTypography.scale}` },
     ],
   },
   {
-    title: 'Composition',
+    title: "Composition",
     href: COMPOSITION_PATH,
 
     sections: [
-      { title: 'Overview', href: `${COMPOSITION_PATH}#${hashNav.brandComposition.overview}` },
-      { title: 'The Grid', href: `${COMPOSITION_PATH}#${hashNav.brandComposition.grid}` },
+      { title: "Overview", href: `${COMPOSITION_PATH}#${hashNav.brandComposition.overview}` },
+      { title: "The Grid", href: `${COMPOSITION_PATH}#${hashNav.brandComposition.grid}` },
     ],
   },
   {
-    title: 'Exchange Icons',
+    title: "Exchange Icons",
     href: EXCHANGE_ICONS_PATH,
     sections: [],
   },
   {
-    title: 'Icons',
+    title: "Icons",
     href: ICONS_PATH,
     sections: [],
   },
   {
-    title: 'Key Imagery',
+    title: "Key Imagery",
     href: IMAGERY_PATH,
 
     sections: [
-      { title: 'Overview', href: `${IMAGERY_PATH}#${hashNav.brandImagery.overview}` },
-      { title: 'Illustrations', href: `${IMAGERY_PATH}#${hashNav.brandImagery.illustrations}` },
-      { title: 'Abstract Graphics', href: `${IMAGERY_PATH}#${hashNav.brandImagery.graphics}` },
+      { title: "Overview", href: `${IMAGERY_PATH}#${hashNav.brandImagery.overview}` },
+      { title: "Illustrations", href: `${IMAGERY_PATH}#${hashNav.brandImagery.illustrations}` },
+      { title: "Abstract Graphics", href: `${IMAGERY_PATH}#${hashNav.brandImagery.graphics}` },
     ],
   },
 ]
@@ -109,7 +109,7 @@ export default function BrandKitPage({ sections, title, path, metaDescription }:
       path={path}
       kitName="BrandKit"
       metaDescription={metaDescription}
-      ogImage={require('src/experience/brandkit/images/ogimage-brandkit.png')}
+      ogImage={require("src/experience/brandkit/images/ogimage-brandkit.png")}
     />
   )
 }

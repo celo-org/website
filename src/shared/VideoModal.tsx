@@ -1,18 +1,19 @@
 import dynamic from "next/dynamic"
-import * as React from 'react'
-import { Dimensions, Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
-import AspectRatio from 'src/shared/AspectRatio'
-import EX from 'src/shared/EX'
-import PlayCircle from 'src/shared/PlayCircle'
-import { getSentry } from 'src/utils/sentry'
+import * as React from "react"
+import { Dimensions, Image, StyleSheet, Text, TouchableHighlight, View } from "react-native"
+import AspectRatio from "src/shared/AspectRatio"
+import EX from "src/shared/EX"
+import PlayCircle from "src/shared/PlayCircle"
+import { getSentry } from "src/utils/sentry"
 interface YT {
-  videoId: string,
-  opts: { height: number, width: number,
-    playerVars: { autoplay: number, controls: number, playsinline: number, modestbranding: number,
-    },
-  },
+  videoId: string
+  opts: {
+    height: number
+    width: number
+    playerVars: { autoplay: number; controls: number; playsinline: number; modestbranding: number }
+  }
   onEnd: () => void
-  onReady: ({ target } : { target: any }) => void
+  onReady: ({ target }: { target: any }) => void
 }
 
 interface ModalInterface {
@@ -25,8 +26,8 @@ interface ModalInterface {
   }
 }
 
-const ReactModal = dynamic<ModalInterface>(import('react-modal'))
-const YouTube = dynamic<YT>(import('react-youtube'),  { ssr: false })
+const ReactModal = dynamic<ModalInterface>(import("react-modal"))
+const YouTube = dynamic<YT>(import("react-youtube"), { ssr: false })
 interface Props {
   videoID: string
   previewImage?: string
@@ -48,12 +49,12 @@ export default class VideoModal extends React.Component<Props, State> {
 
   componentDidMount() {
     this.setState({ isClient: true })
-    this.changeSize({ window: Dimensions.get('window') })
-    Dimensions.addEventListener('change', this.changeSize)
+    this.changeSize({ window: Dimensions.get("window") })
+    Dimensions.addEventListener("change", this.changeSize)
   }
 
   componentWillUnmount() {
-    Dimensions.removeEventListener('change', this.changeSize)
+    Dimensions.removeEventListener("change", this.changeSize)
     this.setState({ isClient: false })
   }
 
@@ -143,7 +144,7 @@ export default class VideoModal extends React.Component<Props, State> {
             onRequestClose={this.close}
             style={{ overlay: htmlStyles.cinema, content: htmlStyles.modalContent }}
             aria={{
-              labelledby: 'Video',
+              labelledby: "Video",
               describedby: this.props.ariaDescription,
             }}
           >
@@ -167,7 +168,7 @@ async function onReady({ target }) {
   const Sentry = await getSentry()
   try {
     Sentry.addBreadcrumb({
-      message: 'Playing About Page Video',
+      message: "Playing About Page Video",
     })
     target.playVideo()
   } catch (e) {
@@ -177,16 +178,16 @@ async function onReady({ target }) {
 
 const styles = StyleSheet.create({
   container: { height: HEIGHT },
-  image: { width: '100%', height: '100%' },
+  image: { width: "100%", height: "100%" },
   playButton: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
+    position: "absolute",
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
   },
   closeButton: {
-    position: 'absolute',
+    position: "absolute",
     top: 30,
     right: 30,
     height: 30,
@@ -196,27 +197,27 @@ const styles = StyleSheet.create({
 
 const htmlStyles = {
   cinema: {
-    position: 'fixed',
+    position: "fixed",
     top: 0,
     bottom: 0,
     left: 0,
     right: 0,
-    width: '100vw',
-    height: '100vh',
-    backgroundColor: 'black',
+    width: "100vw",
+    height: "100vh",
+    backgroundColor: "black",
     zIndex: 9999999,
-    justifyContent: 'center',
-    alignItems: 'center',
-    display: 'flex',
-    cursor: 'pointer',
+    justifyContent: "center",
+    alignItems: "center",
+    display: "flex",
+    cursor: "pointer",
   },
   modalContent: {
-    backgroundColor: 'black',
-    display: 'flex',
+    backgroundColor: "black",
+    display: "flex",
     flex: 1,
     border: 0,
-    position: 'absolute',
-    overflow: 'hidden',
+    position: "absolute",
+    overflow: "hidden",
     top: 0,
     bottom: 0,
     left: 0,

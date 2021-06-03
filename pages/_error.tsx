@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Rise from 'src/join/Rise'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import Rise from "src/join/Rise"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 interface Props {
   statusCode: number
@@ -10,7 +10,7 @@ interface Props {
 
 export default class Error extends React.PureComponent<Props> {
   static getInitialProps({ res, err }) {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : '404'
+    const statusCode = res ? res.statusCode : err ? err.statusCode : "404"
     return { statusCode, namespacesRequired: [] }
   }
 
@@ -26,7 +26,7 @@ export default class Error extends React.PureComponent<Props> {
             <Text style={[fonts.h4, textStyles.center, standardStyles.blockMarginBottomTablet]}>
               We can't find the page you are looking for
             </Text>
-            <Button text={'Go Home'} kind={BTN.PRIMARY} href="/" align={'center'} size={SIZE.big} />
+            <Button text={"Go Home"} kind={BTN.PRIMARY} href="/" align={"center"} size={SIZE.big} />
           </View>
         </View>
       </View>
@@ -36,13 +36,13 @@ export default class Error extends React.PureComponent<Props> {
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
-    height: '100%',
-    maxWidth: '100vw',
-    maxHeight: '100vh',
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
+    width: "100%",
+    height: "100%",
+    maxWidth: "100vw",
+    maxHeight: "100vh",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
   },
   background: {
     backgroundColor: colors.white,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     lineHeight: 120,
   },
   error: {
-    alignSelf: 'center',
-    justifyContent: 'center',
+    alignSelf: "center",
+    justifyContent: "center",
   },
 })

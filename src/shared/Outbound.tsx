@@ -1,10 +1,10 @@
-import * as React from 'react'
-import External from 'src/icons/External'
-import { colors } from 'src/styles'
+import * as React from "react"
+import External from "src/icons/External"
+import { colors } from "src/styles"
 
 export default function Outbound({ url }: { url: string }) {
   return (
-    <a href={externalizeURL(url)} target="_blank">
+    <a href={externalizeURL(url)} target="_blank" rel="noreferrer">
       <External size={12} color={colors.dark} />
     </a>
   )

@@ -18,10 +18,10 @@ type Props = ContentfulPage<GridRowContentType | SectionType>
 const EMBEDDABLE =  {
   ...BUTTON,
   ...GALLARY,
-  ...TABLE
+  ...TABLE,
 }
 
-function embedded(node:Block) {
+function embedded(node: Block) {
   const contentType = node.data?.target?.sys?.contentType?.sys?.id
   const renderer = EMBEDDABLE[contentType]
 
@@ -38,41 +38,64 @@ const OPTIONS = {
     ...renderNode,
     [BLOCKS.EMBEDDED_ENTRY]: embedded,
     [INLINES.EMBEDDED_ENTRY]: embedded,
-  }
+  },
 }
 
 export default function PublicSectorPage(props: Props) {
-  return <>
-      <OpenGraph image={props.openGraph?.fields?.file?.url} title={props.title} description={props.description}  path={props.slug}/>
-      <div css={rootCss}>
-          {props.sections.map(pageSwitch)}
-      </div>
-  </>
+  return (
+    <>
+      <OpenGraph
+        image={props.openGraph?.fields?.file?.url}
+        title={props.title}
+        description={props.description}
+        path={props.slug}
+      />
+      <div css={rootCss}>{props.sections.map(pageSwitch)}</div>
+    </>
+  )
 }
 
 const rootCss = css(flex, {})
 
-function pageSwitch(section: Entry<GridRowContentType | SectionType | CoverContentType |FormContentType>) {
+function pageSwitch(
+  section: Entry<GridRowContentType | SectionType | CoverContentType | FormContentType>
+) {
   switch (section.sys.contentType.sys.id) {
-    case 'cover':
+    case "cover":
       const coverFields = section.fields as CoverContentType
-      return <Cover key={section.sys.id} darkMode={coverFields.darkMode} illoFirst={coverFields.illoFirst}
-                    title={coverFields.title} subTitle={coverFields.subTitle} links={coverFields.links}
-                    imageDesktop={coverFields.imageDesktop} imageMobile={coverFields.imageMobile}
-      />
-    case 'grid-row':
+      return (
+        <Cover
+          key={section.sys.id}
+          darkMode={coverFields.darkMode}
+          illoFirst={coverFields.illoFirst}
+          title={coverFields.title}
+          subTitle={coverFields.subTitle}
+          links={coverFields.links}
+          imageDesktop={coverFields.imageDesktop}
+          imageMobile={coverFields.imageMobile}
+        />
+      )
+    case "grid-row":
       const gridFields = section.fields as GridRowContentType
       return (
-        <GridRow key={section.sys.id} darkMode={gridFields.darkMode} id={gridFields.id} columns={gridFields.columns} css={css(sectionsCss,gridFields.cssStyle)}>
+        <GridRow
+          key={section.sys.id}
+          darkMode={gridFields.darkMode}
+          id={gridFields.id}
+          columns={gridFields.columns}
+          css={css(sectionsCss, gridFields.cssStyle)}
+        >
           {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.darkMode))}
         </GridRow>
       )
     default:
       const sectionfields = section.fields as SectionType
-      return <GridRow key={section.sys.id} id={sectionfields.slug} columns={1}>
+      return (
+        <GridRow key={section.sys.id} id={sectionfields.slug} columns={1}>
           {documentToReactComponents(sectionfields.contentField, OPTIONS)}
-      </GridRow>
-    }
+        </GridRow>
+      )
+  }
 }
 
 
@@ -81,11 +104,11 @@ const sectionsCss = css({
   paddingBottom: 80,
   [WHEN_MOBILE]: {
     paddingTop: 24,
-    paddingBottom: 24
-  }
+    paddingBottom: 24,
+  },
 })
 
 export async function getServerSideProps() {
-  const page = await getPageBySlug("public-sector", {locale: 'en-US'}, true)
-  return {props: page }
+  const page = await getPageBySlug("public-sector", { locale: "en-US" }, true)
+  return { props: page }
 }

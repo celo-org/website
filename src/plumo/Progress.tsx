@@ -17,15 +17,15 @@ const commonCss = css({
   borderRadius: 8,
 })
 
-const rootCss = css(commonCss,{
+const rootCss = css(commonCss, {
   overflow: "hidden",
   marginTop: 4,
   marginBottom: 4,
   width: "98%",
   backgroundColor: colors.secondary,
   [WHEN_MOBILE]: {
-    display: "none"
-  }
+    display: "none",
+  },
 })
 
 const loadingFrames = keyframes`
@@ -62,10 +62,10 @@ const progressCSS = css({
   transitionProperty: "transform",
   transitionDuration: "2s",
   transform: "translateX(-100%)",
-  transformOrigin: "left"
+  transformOrigin: "left",
 })
 
-const insideCss = css(commonCss,{
+const insideCss = css(commonCss, {
   borderRadius: "12px",
   backgroundColor: colors.primary,
   width: "100%",

@@ -1,22 +1,19 @@
-import * as React from 'react'
-import ReCAPTCHA from 'react-google-recaptcha'
-import { StyleSheet, Text, View } from 'react-native'
-import { MobileOS, RequestRecord, RequestType } from 'src/fauceting/FaucetInterfaces'
-import { ButtonWithFeedback, ContextualInfo, HashingStatus } from 'src/fauceting/MicroComponents'
+import * as React from "react"
+import ReCAPTCHA from "react-google-recaptcha"
+import { StyleSheet, View } from "react-native"
+import { MobileOS, RequestRecord, RequestType } from "src/fauceting/FaucetInterfaces"
+import { ButtonWithFeedback, ContextualInfo, HashingStatus } from "src/fauceting/MicroComponents"
 import {
   getCaptchaKey,
   RequestState,
   requestStatusToState,
   validateBeneficary,
-} from 'src/fauceting/utils'
+} from "src/fauceting/utils"
 import { postForm } from "src/forms/postForm"
-import { TextInput } from 'src/forms/TextInput'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import Android from 'src/icons/Android'
-import Apple from 'src/icons/Apple'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
-import { Radio } from 'src/table/table'
-import subscribeRequest from '../../server/FirebaseClient'
+import { TextInput } from "src/forms/TextInput"
+import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { colors, standardStyles } from "src/styles"
+import subscribeRequest from "../../server/FirebaseClient"
 
 interface State {
   beneficiary: string
@@ -34,7 +31,7 @@ interface Props {
 
 class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
   state: State = {
-    beneficiary: '',
+    beneficiary: "",
     requestState: RequestState.Initial,
     captchaOK: false,
     mobileOS: null,
@@ -137,30 +134,23 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
     const isInvalid = requestState === RequestState.Invalid
     return (
       <View style={standardStyles.elementalMargin}>
-          <TextInput
-            type={'text'}
-            focusStyle={standardStyles.inputFocused}
-            name="beneficiary"
-            style={[standardStyles.input, isInvalid && styles.error]}
-            placeholder={this.props.t('testnetAddress')}
-            // TODO: is it normal that setBeneficiary is using React.SyntheticEvent<HTMLInputElement>
-            // and not NativeSyntheticEvent<TextInputChangeEventData> ?
-            // @ts-ignore
-            onChange={this.setAddress}
-            value={this.state.beneficiary}
-          />
+        <TextInput
+          type={"text"}
+          focusStyle={standardStyles.inputFocused}
+          name="beneficiary"
+          style={[standardStyles.input, isInvalid && styles.error]}
+          placeholder={this.props.t("testnetAddress")}
+          // TODO: is it normal that setBeneficiary is using React.SyntheticEvent<HTMLInputElement>
+          // and not NativeSyntheticEvent<TextInputChangeEventData> ?
+          // @ts-ignore
+          onChange={this.setAddress}
+          value={this.state.beneficiary}
+        />
         <ContextualInfo
           requestState={this.state.requestState}
           t={this.props.t}
           isFaucet={this.isFaucet()}
         />
-        {!this.isFaucet() && (
-          <MobileSelect
-            t={this.props.t}
-            onSelect={this.selectOS}
-            selectedOS={this.state.mobileOS}
-          />
-        )}
         <View style={[styles.recaptcha, standardStyles.elementalMargin]}>
           <ReCAPTCHA sitekey={getCaptchaKey()} onChange={this.onCaptcha} ref={this.recaptchaRef} />
         </View>
@@ -189,44 +179,8 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
   }
 }
 
-function MobileSelect({ selectedOS, onSelect, t }) {
-  const isandroid = selectedOS === MobileOS.android
-  const isIOS = selectedOS === MobileOS.ios
-  const iOSColor = isIOS ? colors.white : colors.placeholderDarkMode
-  const androidColor = isandroid ? colors.white : colors.placeholderDarkMode
-  return (
-    <>
-      <Text style={[fonts.h6, textStyles.invert, standardStyles.elementalMarginTop]}>
-        {t('chooseMobileOS')}
-      </Text>
-      <View style={standardStyles.row}>
-        <Radio
-          colorWhenSelected={colors.primary}
-          label="Android"
-          labelColor={androidColor}
-          icon={<Android size={18} color={androidColor} />}
-          selected={isandroid}
-          onValueSelected={onSelect}
-          value={MobileOS.android}
-        />
-        <View style={styles.radios}>
-          <Radio
-            colorWhenSelected={colors.primary}
-            label="iOS"
-            labelColor={iOSColor}
-            icon={<Apple size={18} color={iOSColor} />}
-            selected={isIOS}
-            onValueSelected={onSelect}
-            value={MobileOS.ios}
-          />
-        </View>
-      </View>
-    </>
-  )
-}
-
 function send(beneficiary: string, kind: RequestType, captchaToken: string, os?: MobileOS) {
-  const route = kind === RequestType.Invite ? '/invite' : '/faucet'
+  const route = kind === RequestType.Invite ? "/invite" : "/faucet"
   return postForm(route, { captchaToken, beneficiary, mobileOS: os })
 }
 

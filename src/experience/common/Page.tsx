@@ -1,20 +1,20 @@
-import throttle from 'lodash.throttle'
-import { SingletonRouter, withRouter } from 'next/router'
-import * as React from 'react'
-import { findNodeHandle, ImageRequireSource, StyleSheet, View } from 'react-native'
-import MobileKitMenu from 'src/experience/common/MobileKitMenu'
-import scrollToHash from 'src/experience/common/scrollToHash'
-import Sidebar, { Page as Pages } from 'src/experience/common/Sidebar'
-import Topbar from 'src/experience/common/TopBar'
-import OpenGraph from 'src/header/OpenGraph'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import Footer from 'src/shared/Footer'
-import menu from 'src/shared/menu-items'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { colors, standardStyles } from 'src/styles'
+import throttle from "lodash.throttle"
+import { SingletonRouter, withRouter } from "next/router"
+import * as React from "react"
+import { findNodeHandle, ImageRequireSource, StyleSheet, View } from "react-native"
+import MobileKitMenu from "src/experience/common/MobileKitMenu"
+import scrollToHash from "src/experience/common/scrollToHash"
+import Sidebar, { Page as Pages } from "src/experience/common/Sidebar"
+import Topbar from "src/experience/common/TopBar"
+import OpenGraph from "src/header/OpenGraph"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import Footer from "src/shared/Footer"
+import menu from "src/shared/menu-items"
+import { HEADER_HEIGHT } from "src/shared/Styles"
+import { colors, standardStyles } from "src/styles"
 
-const FOOTER_ID = 'experience-footer'
+const FOOTER_ID = "experience-footer"
 const DISTANCE_TO_HIDE_AT = 25
 const THROTTLE_SCROLL_MS = 150
 export const ROOT = menu.BRAND.link
@@ -84,9 +84,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
   }
 
   updateSectionHashWhenInView = (entries: IntersectionObserverEntry[]) => {
-    const filteredEntries = entries.filter(
-      ({ target }) => target.id !== FOOTER_ID
-    )
+    const filteredEntries = entries.filter(({ target }) => target.id !== FOOTER_ID)
     this.ratios = filteredEntries
       .map((entry) => ({
         id: entry.target.id,
@@ -141,7 +139,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
 
   observeRef = (ref: React.RefObject<View>) => {
     // findNodeHandle is typed to return a number but returns an Element
-    const element = (findNodeHandle(ref.current) as unknown) as Element
+    const element = findNodeHandle(ref.current) as unknown as Element
     if (element instanceof Element) {
       this.observer.observe(element)
     }
@@ -156,10 +154,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
     }
 
     // once we are on a new page and have rendered add the new elements to the observation
-    this.props.router?.events?.on(
-      "routeChangeComplete",
-      this.createSectionObservers
-    )
+    this.props.router?.events?.on("routeChangeComplete", this.createSectionObservers)
 
     window.addEventListener("hashchange", this.onChangeHash, false)
   }
@@ -175,14 +170,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
   }
 
   render() {
-    const {
-      screen,
-      sections,
-      router,
-      path,
-      metaDescription,
-      title,
-    } = this.props
+    const { screen, sections, router, path, metaDescription, title } = this.props
     const isMobile = screen === ScreenSizes.MOBILE
 
     return (
@@ -201,10 +189,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
                 (this.state.isLineVisible || isMobile) && styles.grayLine,
               ]}
             >
-              <Topbar
-                current={this.props.pages[0].href}
-                kitName={this.props.kitName}
-              />
+              <Topbar current={this.props.pages[0].href} kitName={this.props.kitName} />
             </View>
             {isMobile && (
               <MobileKitMenu
@@ -215,10 +200,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
             )}
           </View>
 
-          <GridRow
-            mobileStyle={styles.mobileMain}
-            desktopStyle={standardStyles.sectionMarginTop}
-          >
+          <GridRow mobileStyle={styles.mobileMain} desktopStyle={standardStyles.sectionMarginTop}>
             <Cell span={Spans.fourth} style={styles.sidebar}>
               {!isMobile && (
                 <Sidebar
@@ -238,10 +220,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
               >
                 {sections.map(({ id, children }) => {
                   return (
-                    <View
-                      key={id}
-                      nativeID={id}
-                    >
+                    <View key={id} nativeID={id}>
                       {children}
                     </View>
                   )
@@ -259,13 +238,13 @@ class Page extends React.Component<Props & ScreenProps, State> {
 }
 
 const styles = StyleSheet.create({
-  conatiner: { isolation: 'isolate' },
+  conatiner: { isolation: "isolate" },
   mobileMain: { zIndex: -5, marginTop: 116 },
-  desktopMain: { flex: 1, flexBasis: 'calc(75% - 50px)' },
+  desktopMain: { flex: 1, flexBasis: "calc(75% - 50px)" },
   sidebar: { minWidth: 190, paddingLeft: 0 },
   grayLineOff: {
-    transitionProperty: 'box-shadow',
-    transitionDuration: '400ms',
+    transitionProperty: "box-shadow",
+    transitionDuration: "400ms",
     marginBottom: 1,
     boxShadow: `0px 0px 0px 0px rgba(0,0,0,0)`,
   },
@@ -274,8 +253,8 @@ const styles = StyleSheet.create({
   },
   topbar: {
     zIndex: 10,
-    position: 'fixed',
-    width: '100%',
+    position: "fixed",
+    width: "100%",
     backgroundColor: colors.white,
   },
   footer: { zIndex: -10, backgroundColor: colors.white, marginTop: 50 },

@@ -41,16 +41,16 @@ export default React.memo(function FooterColumn({ heading, links, style ,darkMod
 const styles = StyleSheet.create({
   rootMobile: {
     marginTop: 35,
-    width: '50%',
+    width: "50%",
     paddingHorizontal: 10,
   },
   root: {
     paddingHorizontal: 25,
   },
   link: {
-    textDecorationLine: 'none',
-    display: 'inline-flex',
-    alignItems: 'center',
+    textDecorationLine: "none",
+    display: "inline-flex",
+    alignItems: "center",
   },
   linkContainer: {
     marginVertical: 8,

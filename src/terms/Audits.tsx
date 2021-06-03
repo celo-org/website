@@ -1,39 +1,39 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H1 } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import SideTitledSection from 'src/layout/SideTitledSection'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { fonts, standardStyles, textStyles } from 'src/styles'
-import { HelpfulLink } from './HelpfulLink'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H1 } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
+import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import SideTitledSection from "src/layout/SideTitledSection"
+import { HEADER_HEIGHT } from "src/shared/Styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { HelpfulLink } from "./HelpfulLink"
 
 interface Audit {
   auditor: string
   title: string
-  type: 'economics' | 'contracts' | 'security'
+  type: "economics" | "contracts" | "security"
   link?: string
 }
 
 const DATA: Audit[] = [
   {
-    auditor: 'OpenZeppelin',
-    title: 'Smart Contract Audit',
-    link: 'https://blog.openzeppelin.com/celo-contracts-audit',
-    type: 'contracts',
+    auditor: "OpenZeppelin",
+    title: "Smart Contract Audit",
+    link: "https://blog.openzeppelin.com/celo-contracts-audit",
+    type: "contracts",
   },
-  { auditor: 'Teserakt', title: 'Crypto Library Audit', type: 'security' },
-  { auditor: 'Trailofbits', title: 'Security Audit', type: 'security' },
+  { auditor: "Teserakt", title: "Crypto Library Audit", type: "security" },
+  { auditor: "Trailofbits", title: "Security Audit", type: "security" },
   {
-    auditor: 'Certora',
-    title: 'Formal Verification of Celo Governance Protocols',
-    type: 'contracts',
-    link: 'https://www.certora.com/pubs/CeloMay2020.pdf',
+    auditor: "Certora",
+    title: "Formal Verification of Celo Governance Protocols",
+    type: "contracts",
+    link: "https://www.certora.com/pubs/CeloMay2020.pdf",
   },
-  { auditor: 'Gauntlet', title: 'Stability Protocol Analysis', type: 'economics' },
-  { auditor: 'Prysm Group', title: 'Economic Analysis', type: 'economics' },
-  { auditor: 'NCC', title: 'Reserve Audit', type: 'economics' },
+  { auditor: "Gauntlet", title: "Stability Protocol Analysis", type: "economics" },
+  { auditor: "Prysm Group", title: "Economic Analysis", type: "economics" },
+  { auditor: "NCC", title: "Reserve Audit", type: "economics" },
 ]
 
 const AUDITS = DATA.reduce((agg, current) => {
@@ -52,9 +52,9 @@ class Audits extends React.PureComponent<I18nProps> {
     return (
       <>
         <OpenGraph
-          title={'Celo | Audits & Analyses'}
+          title={"Celo | Audits & Analyses"}
           path={NameSpaces.audits}
-          description={t('metaDescription')}
+          description={t("metaDescription")}
         />
         <View style={styles.container}>
           <GridRow
@@ -64,7 +64,7 @@ class Audits extends React.PureComponent<I18nProps> {
             mobileStyle={standardStyles.blockMarginBottomMobile}
           >
             <Cell span={Spans.three4th} style={standardStyles.centered}>
-              <H1 style={textStyles.center}>{t('title')}</H1>
+              <H1 style={textStyles.center}>{t("title")}</H1>
             </Cell>
           </GridRow>
           {Object.keys(AUDITS).map((type) => {
@@ -75,7 +75,7 @@ class Audits extends React.PureComponent<I18nProps> {
                     <Text style={fonts.p}>
                       {audit.title} by <Text style={textStyles.italic}>{audit.auditor}</Text>
                     </Text>
-                    {audit.link && <HelpfulLink text={t('download')} href={audit.link} />}
+                    {audit.link && <HelpfulLink text={t("download")} href={audit.link} />}
                   </View>
                 ))}
               </SideTitledSection>

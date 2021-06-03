@@ -1,4 +1,3 @@
-
 import {css} from "@emotion/react"
 import * as React from 'react'
 import { jost, WHEN_MOBILE, WHEN_SMALL_MOBILE, WHEN_TABLET, WHEN_TABLET_AND_UP } from "src/estyles"
@@ -25,7 +24,6 @@ interface Props {
   showProgress: boolean
   rows: Row[]
 }
-
 
 export default function AttestationsTable(props: Props) {
   const {isMobile} = useScreenSize()
@@ -107,7 +105,7 @@ const addressStyle = css({
 })
 
 const borderStyle = css({
-  border: `1px solid ${colors.secondary}`
+  border: `1px solid ${colors.secondary}`,
 })
 
 const container = css({
@@ -168,11 +166,11 @@ const rootCss = css(jost,borderStyle,{
       paddingTop: 8,
       paddingBottom: 8,
       "&:first-of-type": {
-        paddingLeft: 8
+        paddingLeft: 8,
       },
       "&:last-of-type": {
-        paddingRight: 8
-      }
+        paddingRight: 8,
+      },
     },
     "tr:first-of-type": {
       td: {
@@ -192,5 +190,5 @@ const tableHeadingCss = css(jost,{
   color: colors.white,
   fontSize: 16,
   lineHeight: "16px",
-  fontWeight: 500
+  fontWeight: 500,
 })

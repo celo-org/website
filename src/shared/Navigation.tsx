@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
-import Button, { BTN } from 'src/shared/Button.3'
-import OvalCoin from 'src/shared/OvalCoin'
-import { colors, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleProp, StyleSheet, View, ViewStyle } from "react-native"
+import Button, { BTN } from "src/shared/Button.3"
+import OvalCoin from "src/shared/OvalCoin"
+import { colors, textStyles } from "src/styles"
 
 export enum NavigationTheme {
   LIGHT,
@@ -42,15 +42,15 @@ export default function Navigation({ link, text, selected, onPress, theme, style
 
 const styles = StyleSheet.create({
   linkWrapper: {
-    position: 'relative',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
+    position: "relative",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
     marginHorizontal: 15,
     marginBottom: 25,
   },
   activeTab: {
-    position: 'absolute',
+    position: "absolute",
     height: 8,
     width: 7,
     bottom: -16,

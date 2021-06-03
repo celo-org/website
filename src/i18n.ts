@@ -1,12 +1,12 @@
-import NextI18Next, { I18n, TFunction } from 'next-i18next'
-import path from 'path'
+import NextI18Next, { I18n, TFunction } from "next-i18next"
+import path from "path"
 
 const options = {
-  defaultLanguage: 'en',
-  otherLanguages: ['en', 'es', 'pt', 'tl'],
-  fallbackLng: 'en',
+  defaultLanguage: "en",
+  otherLanguages: ["en", "es", "pt", "tl"],
+  fallbackLng: "en",
   saveMissing: false,
-  localePath: path.resolve('./public/static/locales'),
+  localePath: path.resolve("./public/static/locales"),
 }
 const NextI18NextInstance = new NextI18Next(options)
 export const Trans = NextI18NextInstance.Trans
@@ -23,21 +23,21 @@ export const withNamespaces = withTranslation
 export const useTranslation = NextI18NextInstance.useTranslation
 
 export enum NameSpaces {
-  common = 'common',
-  about = 'about',
-  audits = 'audits',
-  brand = 'brand',
-  cbe = 'cbe',
-  celoRewards = 'celoRewards',
-  community = 'community',
-  alliance = 'alliance',
-  download = 'download',
-  dev = 'dev',
-  faucet = 'faucet',
-  home = 'home',
-  jobs = 'jobs',
-  papers = 'papers',
-  press = 'press',
-  plumo = 'plumo',
-  terms = 'terms',
+  common = "common",
+  about = "about",
+  audits = "audits",
+  brand = "brand",
+  cbe = "cbe",
+  celoRewards = "celoRewards",
+  community = "community",
+  alliance = "alliance",
+  download = "download",
+  dev = "dev",
+  faucet = "faucet",
+  home = "home",
+  jobs = "jobs",
+  papers = "papers",
+  press = "press",
+  plumo = "plumo",
+  terms = "terms",
 }

@@ -1,14 +1,14 @@
-import { debounce } from 'debounce'
-import FuzzySearch from 'fuzzy-search'
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Search, { useSearch } from 'src/experience/brandkit/Search'
-import { AssetTypes } from 'src/experience/brandkit/tracking'
-import { brandStyles } from 'src/experience/common/constants'
-import IconShowcase from 'src/experience/common/Showcase'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import { colors, fonts } from 'src/styles'
-import { IconData, Props } from './IconsPage'
+import { debounce } from "debounce"
+import FuzzySearch from "fuzzy-search"
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import Search, { useSearch } from "src/experience/brandkit/Search"
+import { AssetTypes } from "src/experience/brandkit/tracking"
+import { brandStyles } from "src/experience/common/constants"
+import IconShowcase from "src/experience/common/Showcase"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { colors, fonts } from "src/styles"
+import { IconData, Props } from "./IconsPage"
 
 export function Explorer({ icons }: Props) {
   const { t } = useTranslation(NameSpaces.brand)
@@ -19,8 +19,8 @@ export function Explorer({ icons }: Props) {
       <Search value={query} onChange={onQueryChange} />
       <Text style={[fonts.h6, brandStyles.gap, styles.matches, query && styles.visible]}>
         {visibleIcons.size === 0
-          ? t('icons.matching_0')
-          : t('icons.matching', { count: visibleIcons.size })}
+          ? t("icons.matching_0")
+          : t("icons.matching", { count: visibleIcons.size })}
       </Text>
       <View style={brandStyles.tiling}>
         {icons.map((icon) => (
@@ -50,15 +50,15 @@ export function Explorer({ icons }: Props) {
 export default Explorer
 
 const styles = StyleSheet.create({
-  root: { minHeight: '100vh' },
+  root: { minHeight: "100vh" },
   offScreen: {
-    display: 'none',
+    display: "none",
   },
   matches: {
     color: colors.primaryPress,
     opacity: 0,
-    transitionDuration: '200ms',
-    transitionProperty: 'opacity',
+    transitionDuration: "200ms",
+    transitionProperty: "opacity",
   },
   visible: {
     opacity: 1,
@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
 function useVisibleIconIDs(query: string, initial: IconData[]): Set<string> {
   const [results, setResult] = React.useState(null)
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   React.useEffect(
     debounce(() => {
       setResult(toIDSet(search(query, initial)))
@@ -78,7 +79,7 @@ function useVisibleIconIDs(query: string, initial: IconData[]): Set<string> {
   return results || toIDSet(initial)
 }
 
-const FIELDS = ['name', 'description', 'tags']
+const FIELDS = ["name", "description", "tags"]
 
 function search(query: string, icons: IconData[]) {
   const searcher = new FuzzySearch(icons, FIELDS)

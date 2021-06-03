@@ -1,13 +1,13 @@
-import { EventProps } from 'fullstack/EventProps'
-import * as React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import Chevron from 'src/icons/chevron'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import OvalCoin from 'src/shared/OvalCoin'
-import { parseDate, printDuration } from 'src/shared/PlaceDate'
-import { colors, fonts, standardStyles } from 'src/styles'
+import { EventProps } from "fullstack/EventProps"
+import * as React from "react"
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import { I18nProps, withNamespaces } from "src/i18n"
+import Chevron from "src/icons/chevron"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import OvalCoin from "src/shared/OvalCoin"
+import { parseDate, printDuration } from "src/shared/PlaceDate"
+import { colors, fonts, standardStyles } from "src/styles"
 
 interface Section {
   section: string
@@ -43,8 +43,8 @@ class EventRow extends React.PureComponent<Props> {
     } = this.props
 
     const isMobile = screen === ScreenSizes.MOBILE
-    const isHighlightEvent = section === 'Highlight Event'
-    const isPastEvent = section === 'Past Events'
+    const isHighlightEvent = section === "Highlight Event"
+    const isPastEvent = section === "Past Events"
     const filteredCoins = this.visibleCoins()
     return (
       <View style={styles.container}>
@@ -59,7 +59,7 @@ class EventRow extends React.PureComponent<Props> {
                 return (
                   <React.Fragment key={color}>
                     <View style={{ transform }}>
-                      <OvalCoin size={COIN_SIZE} color={color} mixBlendMode={'multiply'} />
+                      <OvalCoin size={COIN_SIZE} color={color} mixBlendMode={"multiply"} />
                     </View>
 
                     {isMobile && index === filteredCoins.length - 1 && (
@@ -110,7 +110,7 @@ class EventLink extends React.PureComponent<EventLinkProps> {
       return (
         <Button
           size={SIZE.normal}
-          text={t('events.eventPage')}
+          text={t("events.eventPage")}
           kind={BTN.NAKED}
           href={link}
           target="_external"
@@ -121,7 +121,7 @@ class EventLink extends React.PureComponent<EventLinkProps> {
       return (
         <Button
           size={SIZE.normal}
-          text={t('events.recap')}
+          text={t("events.recap")}
           kind={BTN.NAKED}
           href={recap}
           target="_external"
@@ -132,7 +132,7 @@ class EventLink extends React.PureComponent<EventLinkProps> {
   }
 }
 
-export default withNamespaces('community')(withScreenSize(EventRow))
+export default withNamespaces("community")(withScreenSize(EventRow))
 
 const COIN_SIZE = 12
 const styles = StyleSheet.create({
@@ -140,14 +140,14 @@ const styles = StyleSheet.create({
     marginVertical: 25,
   },
   row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexWrap: "wrap",
   },
   title: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
   },
   name: {
     marginRight: 3,

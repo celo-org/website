@@ -19,7 +19,7 @@ import Safety from "./Safety"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 const PLUMO_FORM =
-  'https://docs.google.com/forms/d/e/1FAIpQLScZswraVVC91RwToo_9qm-1QzGrxp7yjVeM2wzdTbL5T_lAgQ/viewform'
+  "https://docs.google.com/forms/d/e/1FAIpQLScZswraVVC91RwToo_9qm-1QzGrxp7yjVeM2wzdTbL5T_lAgQ/viewform"
 
 // const MEDIUM_POST = 'https://medium.com/celoorg/the-plumo-ceremony-ac7649e9c8d8'
 

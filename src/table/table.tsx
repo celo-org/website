@@ -1,9 +1,9 @@
-import * as React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import RadioIcon from 'src/icons/RadioIcon'
-import Fade from 'src/shared/AwesomeFade'
-import Button, { BTN } from 'src/shared/Button.3'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import RadioIcon from "src/icons/RadioIcon"
+import Fade from "src/shared/AwesomeFade"
+import Button, { BTN } from "src/shared/Button.3"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 interface RadioProps {
   selected: boolean
@@ -43,7 +43,11 @@ export function Radio({
   )
 }
 
-export function SectionHeader({ section }) {
+interface SectionHeaderProps {
+  section: any
+}
+
+export function SectionHeader({ section }: SectionHeaderProps) {
   const title = section.title
   return (
     <View style={[standardStyles.blockMarginTopMobile, standardStyles.elementalMarginBottom]}>
@@ -62,18 +66,18 @@ interface NotFoundProps {
 }
 export function NoneFound({ onPress, actionText, longText }: NotFoundProps) {
   return (
-      <View style={[standardStyles.centered, styles.noJobs]}>
-        <Text style={[fonts.p, standardStyles.elementalMarginBottom, textStyles.center]}>
-          {longText}
-        </Text>
-        <Button kind={BTN.SECONDARY} text={actionText} onPress={onPress} />
-      </View>
+    <View style={[standardStyles.centered, styles.noJobs]}>
+      <Text style={[fonts.p, standardStyles.elementalMarginBottom, textStyles.center]}>
+        {longText}
+      </Text>
+      <Button kind={BTN.SECONDARY} text={actionText} onPress={onPress} />
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
   line: {
-    width: '100%',
+    width: "100%",
     height: 1,
     maxHeight: 1,
     borderTopWidth: 1,
@@ -85,13 +89,13 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   radioRow: {
-    flexDirection: 'row',
+    flexDirection: "row",
     marginVertical: 10,
-    alignContent: 'center',
-    alignItems: 'center',
+    alignContent: "center",
+    alignItems: "center",
   },
   radioSpacer: {
     paddingHorizontal: 10,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
 })

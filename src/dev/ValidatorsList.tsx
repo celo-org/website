@@ -1,12 +1,12 @@
-import * as React from 'react'
-import { Text, View } from 'react-native'
-import ValidatorsListRow from 'src/dev/ValidatorsListRow'
-import { styles } from 'src/dev/ValidatorsListStyles'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import Chevron, { Direction } from 'src/icons/chevron'
-import Hoverable from 'src/shared/Hoverable'
-import { colors } from 'src/styles'
-import { Address, CeloGroup, orderAccessors, sortData } from 'src/utils/validators'
+import * as React from "react"
+import { Text, View } from "react-native"
+import ValidatorsListRow from "src/dev/ValidatorsListRow"
+import { styles } from "src/dev/ValidatorsListStyles"
+import { I18nProps, withNamespaces } from "src/i18n"
+import Chevron, { Direction } from "src/icons/chevron"
+import Hoverable from "src/shared/Hoverable"
+import { colors } from "src/styles"
+import { Address, CeloGroup, orderAccessors, sortData } from "src/utils/validators"
 
 interface HeaderCellProps {
   style: any[]
@@ -62,17 +62,17 @@ export interface ValidatorsListProps {
 type Props = ValidatorsListProps & I18nProps
 
 type orderByTypes =
-  | 'order'
-  | 'name'
-  | 'total'
-  | 'votes'
-  | 'rawVotes'
-  | 'votesAvailables'
-  | 'celo'
-  | 'commission'
-  | 'rewards'
-  | 'uptime'
-  | 'attestation'
+  | "order"
+  | "name"
+  | "total"
+  | "votes"
+  | "rawVotes"
+  | "votesAvailables"
+  | "celo"
+  | "commission"
+  | "rewards"
+  | "uptime"
+  | "attestation"
 
 export interface State {
   expanded: Address | undefined
@@ -84,7 +84,7 @@ export interface State {
 class ValidatorsList extends React.PureComponent<Props, State> {
   state = {
     expanded: undefined,
-    orderKey: 'order' as orderByTypes,
+    orderKey: "order" as orderByTypes,
     orderAsc: true,
     sortedData: [],
   }
@@ -136,7 +136,7 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               orderFn={this.orderByFn.name}
               style={[styles.tableHeaderCellPadding]}
               name="Name"
-              ordered={orderKey === 'name'}
+              ordered={orderKey === "name"}
               asc={orderAsc}
               tooltip="Name of validator group and validators in it"
             />
@@ -144,7 +144,7 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               orderFn={this.orderByFn.total}
               style={[styles.sizeM]}
               name="Elected/ Total"
-              ordered={orderKey === 'total'}
+              ordered={orderKey === "total"}
               asc={orderAsc}
               tooltip="Number of validators in the group"
             />
@@ -152,7 +152,7 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               orderFn={this.orderByFn.votes}
               style={[styles.sizeXL]}
               name="Votes Available"
-              ordered={orderKey === 'votes'}
+              ordered={orderKey === "votes"}
               asc={orderAsc}
               tooltip="% of total locked CELO votes received"
             />
@@ -160,7 +160,7 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               orderFn={this.orderByFn.rawVotes}
               style={[styles.sizeM]}
               name="Votes"
-              ordered={orderKey === 'rawVotes'}
+              ordered={orderKey === "rawVotes"}
               asc={orderAsc}
               tooltip="Votes received as a percentage of capacity"
             />
@@ -168,7 +168,7 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               orderFn={this.orderByFn.votesAvailables}
               style={[styles.sizeM]}
               name="Votes Available"
-              ordered={orderKey === 'votesAvailables'}
+              ordered={orderKey === "votesAvailables"}
               asc={orderAsc}
               tooltip="Vote capacity as a percentage of total locked CELO"
             />
@@ -176,14 +176,14 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               orderFn={this.orderByFn.celo}
               style={[styles.sizeM]}
               name="Locked CELO"
-              ordered={orderKey === 'celo'}
+              ordered={orderKey === "celo"}
               asc={orderAsc}
             />
             <HeaderCell
               orderFn={this.orderByFn.commission}
               style={[styles.sizeM]}
               name="Group Share"
-              ordered={orderKey === 'commission'}
+              ordered={orderKey === "commission"}
               asc={orderAsc}
               tooltip="Amount of CELO locked by group/validator"
             />
@@ -191,7 +191,7 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               orderFn={this.orderByFn.rewards}
               style={[styles.sizeM]}
               name="Voter Rewards"
-              ordered={orderKey === 'rewards'}
+              ordered={orderKey === "rewards"}
               asc={orderAsc}
               tooltip="% of max possible rewards received"
             />
@@ -207,7 +207,7 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               orderFn={this.orderByFn.attestation}
               style={[styles.sizeS]}
               name="Attestation"
-              ordered={orderKey === 'attestation'}
+              ordered={orderKey === "attestation"}
               asc={orderAsc}
             />
           </View>
@@ -226,4 +226,4 @@ class ValidatorsList extends React.PureComponent<Props, State> {
   }
 }
 
-export default withNamespaces('dev')(ValidatorsList)
+export default withNamespaces("dev")(ValidatorsList)

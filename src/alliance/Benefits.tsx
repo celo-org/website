@@ -1,17 +1,17 @@
-import * as React from 'react'
-import { Image, ImageSourcePropType, StyleSheet, Text, View } from 'react-native'
-import { H2 } from 'src/fonts/Fonts'
-import { NameSpaces, useTranslation } from 'src/i18n'
+import * as React from "react"
+import { Image, ImageSourcePropType, StyleSheet, Text, View } from "react-native"
+import { H2 } from "src/fonts/Fonts"
+import { NameSpaces, useTranslation } from "src/i18n"
 import {
   buildWithCeloOnLight,
   coinTalkOnLight,
   connectPeopleOnLight,
   educateOnLight,
   expandReachOnLight,
-} from 'src/icons'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+} from "src/icons"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 const OFFERINGS = [
   connectPeopleOnLight,
@@ -32,10 +32,10 @@ export default React.memo(function Benefits() {
     >
       <Cell span={Spans.full}>
         <Text style={[fonts.h3Mobile, isMobile && textStyles.center]}>
-          {t('benefits.headline')}
+          {t("benefits.headline")}
         </Text>
         <H2 style={[standardStyles.elementalMargin, isMobile && textStyles.center]}>
-          {t('benefits.title')}
+          {t("benefits.title")}
         </H2>
         <View
           style={[
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     height: 100,
   },
   offeringsArea: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
   },
 })

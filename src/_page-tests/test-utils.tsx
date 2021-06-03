@@ -1,12 +1,16 @@
-import { render } from '@testing-library/react'
-import * as React from 'react'
-import NextI18NextInstance from 'src/utils/i18nForTests'
+import { render } from "@testing-library/react"
+import * as React from "react"
+import NextI18NextInstance from "src/utils/i18nForTests"
 
-const TranslationProvider = NextI18NextInstance.appWithTranslation(({ children }) => {
+interface Props {
+  children: React.ReactNode
+}
+
+const TranslationProvider = NextI18NextInstance.appWithTranslation(({ children }: Props) => {
   return <>{children}</>
 })
 
-export function TestProvider({ children }) {
+export function TestProvider({ children }: Props) {
   return <TranslationProvider>{children}</TranslationProvider>
 }
 
@@ -20,7 +24,7 @@ export const renderIgnoringUnstableFlushDiscreteUpdates = (component: React.Reac
   const result = render(component)
   expect(error).toHaveBeenCalledTimes(1)
   expect(error).toHaveBeenCalledWith(
-    'Warning: unstable_flushDiscreteUpdates: Cannot flush updates when React is already rendering.%s',
+    "Warning: unstable_flushDiscreteUpdates: Cannot flush updates when React is already rendering.%s",
     expect.any(String)
   )
   console.error = originalError

@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { StyleSheet } from 'react-native'
-import useOnScreen from 'src/hooks/useOnScreen'
+import * as React from "react"
+import { StyleSheet } from "react-native"
+import useOnScreen from "src/hooks/useOnScreen"
 
 export interface Options {
   duration?: number
@@ -22,12 +22,12 @@ export default function useFade({ rootMargin, duration, fraction, delay }: Optio
         base: {
           transitionDelay,
           transitionDuration: `${duration}ms`,
-          transitionProperty: 'opacity, transform',
+          transitionProperty: "opacity, transform",
           opacity: isOnScreen ? 1 : 0,
           transform: [{ translateY: isOnScreen ? 0 : 5 }],
         },
       }),
-    [isOnScreen]
+    [isOnScreen, duration, transitionDelay]
   )
 
   return { style: style.base, ref }

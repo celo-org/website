@@ -1,62 +1,62 @@
-import { waitFor } from '@testing-library/dom'
-import { act, fireEvent, render } from '@testing-library/react'
-import * as React from 'react'
-import { TestProvider } from 'src/_page-tests/test-utils'
-import Explorer from './Explorer'
+import { waitFor } from "@testing-library/dom"
+import { act, fireEvent, render } from "@testing-library/react"
+import * as React from "react"
+import { TestProvider } from "src/_page-tests/test-utils"
+import Explorer from "./Explorer"
 
 const ICONS = [
   {
-    name: 'star',
-    description: 'Stellar Clouds',
-    preview: 'star.jpg',
-    uri: 'star.jpg',
-    tags: ['sun', 'space'],
-    id: '1',
+    name: "star",
+    description: "Stellar Clouds",
+    preview: "star.jpg",
+    uri: "star.jpg",
+    tags: ["sun", "space"],
+    id: "1",
   },
   {
-    name: 'Stellar Nebula',
-    description: 'Vast ethereal clouds',
-    preview: 'nebular.jpg',
-    uri: 'nebular.jpg',
-    tags: ['sun', 'space'],
-    id: '1asd',
+    name: "Stellar Nebula",
+    description: "Vast ethereal clouds",
+    preview: "nebular.jpg",
+    uri: "nebular.jpg",
+    tags: ["sun", "space"],
+    id: "1asd",
   },
   {
-    name: 'Orion',
-    description: 'constellations',
-    preview: 'constellations.jpg',
-    uri: 'constellations.jpg',
-    tags: ['Stellar', 'space'],
-    id: '100',
+    name: "Orion",
+    description: "constellations",
+    preview: "constellations.jpg",
+    uri: "constellations.jpg",
+    tags: ["Stellar", "space"],
+    id: "100",
   },
   {
-    name: 'Tree',
-    description: 'large Plant',
-    preview: 'tree.jpg',
-    uri: 'tree.jpg',
-    tags: ['forest', 'green', 'life'],
-    id: '2',
+    name: "Tree",
+    description: "large Plant",
+    preview: "tree.jpg",
+    uri: "tree.jpg",
+    tags: ["forest", "green", "life"],
+    id: "2",
   },
   {
-    name: 'human',
-    description: 'homo sapien',
-    preview: 'human.jpg',
-    uri: 'human.jpg',
-    tags: ['person', 'life'],
-    id: '3',
+    name: "human",
+    description: "homo sapien",
+    preview: "human.jpg",
+    uri: "human.jpg",
+    tags: ["person", "life"],
+    id: "3",
   },
   {
-    name: 'flower',
-    description: 'petals',
-    preview: 'flower.jpg',
-    uri: 'flower.jpg',
-    tags: ['plant', 'life'],
-    id: '4',
+    name: "flower",
+    description: "petals",
+    preview: "flower.jpg",
+    uri: "flower.jpg",
+    tags: ["plant", "life"],
+    id: "4",
   },
 ]
 
-describe(Explorer, () => {
-  describe('when typing in search box', () => {
+describe("Explorer", () => {
+  describe("when typing in search box", () => {
     async function search() {
       const options = render(
         <TestProvider>
@@ -65,29 +65,29 @@ describe(Explorer, () => {
       )
       const { getByText, getByLabelText } = options
       // Add a waitfor because there is useEffect
-      await waitFor(() => getByText('6 Matching Icons'))
+      await waitFor(() => getByText("6 Matching Icons"))
       act(() => {
-        fireEvent.change(getByLabelText('search'), { target: { value: 'Stellar' } })
+        fireEvent.change(getByLabelText("search"), { target: { value: "Stellar" } })
       })
       return options
     }
-    it('shows number of icons found', async () => {
+    it("shows number of icons found", async () => {
       const { container, getByText } = await search()
       await waitFor(
         () => {
-          expect(getByText('3 Matching Icons')).toBeVisible()
+          expect(getByText("3 Matching Icons")).toBeVisible()
         },
         { container }
       )
     })
 
-    it('hides non matching icons', async () => {
+    it("hides non matching icons", async () => {
       const { container, getByText } = await search()
       await waitFor(
         () => {
-          expect(getByText('human')).not.toBeVisible()
-          expect(getByText('petals')).not.toBeVisible()
-          expect(getByText('Tree')).not.toBeVisible()
+          expect(getByText("human")).not.toBeVisible()
+          expect(getByText("petals")).not.toBeVisible()
+          expect(getByText("Tree")).not.toBeVisible()
         },
         { container }
       )
@@ -96,31 +96,31 @@ describe(Explorer, () => {
     // There are issues with react reveal + toBeVisible
     // If you comment out the <Fade> element, these tests pass
 
-    it.skip('finds by description', async () => {
+    it.skip("finds by description", async () => {
       const { container, getByText } = await search()
       await waitFor(
         () => {
-          expect(getByText('star')).toBeVisible()
+          expect(getByText("star")).toBeVisible()
         },
         { container, timeout: 2000 }
       )
     })
 
-    it.skip('finds by name', async () => {
+    it.skip("finds by name", async () => {
       const { container, getByText } = await search()
       await waitFor(
         () => {
-          expect(getByText('Stellar Nebula')).toBeVisible()
+          expect(getByText("Stellar Nebula")).toBeVisible()
         },
         { container }
       )
     })
 
-    it.skip('finds by tag', async () => {
+    it.skip("finds by tag", async () => {
       const { container, getByText } = await search()
       await waitFor(
         () => {
-          expect(getByText('Orion')).toBeVisible()
+          expect(getByText("Orion")).toBeVisible()
         },
         { container }
       )

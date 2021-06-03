@@ -1,6 +1,6 @@
-import { keyframes } from '@emotion/react'
-import * as React from 'react'
-import Reveal from 'react-awesome-reveal'
+import { keyframes } from "@emotion/react"
+import * as React from "react"
+import Reveal from "react-awesome-reveal"
 
 export enum Direction {
   X,
@@ -28,10 +28,10 @@ export default React.memo(function AwesomeFade({
 }: Props) {
   return (
     <Reveal
-      keyframes={React.useMemo(() => getKeyFrames(distance, direction, reverse), [
-        direction,
-        distance,
-      ])}
+      keyframes={React.useMemo(
+        () => getKeyFrames(distance, direction, reverse),
+        [direction, distance, reverse]
+      )}
       triggerOnce={false}
       delay={delay}
       duration={duration}

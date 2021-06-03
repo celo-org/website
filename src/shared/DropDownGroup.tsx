@@ -59,12 +59,12 @@ export default class DropDownGroup extends React.Component<Props, State> {
 
 const styles = StyleSheet.create({
   overlay: {
-    position: 'fixed',
+    position: "fixed",
     top: 0,
     left: 0,
-    width: '100vw',
-    height: '100vh',
-    backgroundColor: 'transparent',
+    width: "100vw",
+    height: "100vh",
+    backgroundColor: "transparent",
     opacity: 0,
     zIndex: -3,
   },

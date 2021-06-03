@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { Image, ImageSourcePropType, StyleSheet, Text, View, ViewStyle } from 'react-native'
+import * as React from "react"
+import { Image, ImageSourcePropType, StyleSheet, Text, View, ViewStyle } from "react-native"
 import {
   clabs,
   clabsMobile,
@@ -10,17 +10,17 @@ import {
   wfp,
   wfpMobile,
   wfpPreview,
-} from 'src/alliance/images/index'
-import { H2, H3, H4 } from 'src/fonts/Fonts'
-import { NameSpaces, Trans, useTranslation } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import cLabsLogo from 'src/logos/cLabs-logo.png'
-import laboratoriaLogo from 'src/logos/laboratoria-dark.png'
-import wfpLogo from 'src/logos/wfp-logo.png'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import Photo from 'src/shared/Photo'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+} from "src/alliance/images/index"
+import { H2, H3, H4 } from "src/fonts/Fonts"
+import { NameSpaces, Trans, useTranslation } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { useScreenSize } from "src/layout/ScreenSize"
+import cLabsLogo from "src/logos/cLabs-logo.png"
+import laboratoriaLogo from "src/logos/laboratoria-dark.png"
+import wfpLogo from "src/logos/wfp-logo.png"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import Photo from "src/shared/Photo"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 export default function Affirmations() {
   const { t } = useTranslation(NameSpaces.alliance)
@@ -43,16 +43,16 @@ export default function Affirmations() {
       >
         <Cell span={Spans.full} style={isMobile && standardStyles.centered}>
           <H3 style={isMobile && [textStyles.center, styles.mobileHeader]}>
-            {t('affirmations.smallTitle')}
+            {t("affirmations.smallTitle")}
           </H3>
           <H2 style={[standardStyles.halfElement, isMobile && textStyles.center]}>
-            {t('affirmations.title')}
+            {t("affirmations.title")}
           </H2>
         </Cell>
       </GridRow>
       <Exemplar
         belief={<TransItalic i18nKey="affirmations.laboratoriaBelief" />}
-        copy={t('affirmations.laboratoriaCopy')}
+        copy={t("affirmations.laboratoriaCopy")}
         image={laboratoria}
         imageMobile={laboratoriaMobile}
         preview={laboratoriaPreview}
@@ -61,27 +61,26 @@ export default function Affirmations() {
       />
       <Exemplar
         belief={<TransItalic i18nKey="affirmations.wfpBelief" />}
-        copy={t('affirmations.wfpCopy')}
+        copy={t("affirmations.wfpCopy")}
         image={wfp}
         imageMobile={wfpMobile}
         preview={wfpPreview}
         logo={<Image resizeMode="contain" source={wfpLogo} style={orgStyle.wfpLogo} />}
         button={{
-          text: t('affirmations.wfpButton'),
-          href:
-            'https://medium.com/celoorg/how-to-design-for-all-stories-from-tanzania-refugees-8b34594d64ae',
+          text: t("affirmations.wfpButton"),
+          href: "https://medium.com/celoorg/how-to-design-for-all-stories-from-tanzania-refugees-8b34594d64ae",
         }}
         contentStyle={!isMobile && styles.cLabStyle}
       />
       <Exemplar
         belief={<TransItalic i18nKey="affirmations.cLabsBelief" />}
-        copy={t('affirmations.cLabsCopy')}
+        copy={t("affirmations.cLabsCopy")}
         image={clabs}
         imageMobile={clabsMobile}
         preview={clabsPreview}
         button={{
-          text: t('affirmations.cLabsButton'),
-          href: 'https://medium.com/celoorg/a-cryptocurrency-for-every-juan-144144e62d5',
+          text: t("affirmations.cLabsButton"),
+          href: "https://medium.com/celoorg/a-cryptocurrency-for-every-juan-144144e62d5",
         }}
         logo={<Image resizeMode="contain" source={cLabsLogo} style={orgStyle.cLabsLogo} />}
         contentStyle={!isMobile && styles.wfpStyle}

@@ -1,31 +1,31 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { NewMember } from 'src/alliance/AllianceMember'
-import { CheckboxWithLabel } from 'src/forms/CheckboxWithLabel'
-import { ErrorDisplay } from 'src/forms/ErrorDisplay'
-import FormContainer from 'src/forms/Form'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import { NewMember } from "src/alliance/AllianceMember"
+import { CheckboxWithLabel } from "src/forms/CheckboxWithLabel"
+import { ErrorDisplay } from "src/forms/ErrorDisplay"
+import FormContainer from "src/forms/Form"
 import { emailIsValid, hasField } from "src/forms/emailIsValid"
-import { Form } from 'src/forms/FormComponents'
-import { LabeledInput } from 'src/forms/LabeledInput'
-import SubmitButton from 'src/forms/SubmitButton'
-import SuccessDisplay from 'src/forms/SuccessDisplay'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { SIZE } from 'src/shared/Button.3'
-import { standardStyles } from 'src/styles'
+import { Form } from "src/forms/FormComponents"
+import { LabeledInput } from "src/forms/LabeledInput"
+import SubmitButton from "src/forms/SubmitButton"
+import SuccessDisplay from "src/forms/SuccessDisplay"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { SIZE } from "src/shared/Button.3"
+import { standardStyles } from "src/styles"
 
 const BLANK_FORM: NewMember = {
-  name: '',
-  email: '',
-  contribution: '',
+  name: "",
+  email: "",
+  contribution: "",
   subscribe: false,
 }
 
 function validateWith(fields: NewMember) {
   return Object.keys(fields).filter((key) => {
-    if (key === 'email') {
+    if (key === "email") {
       return !emailIsValid(fields[key])
-    } else if (key === 'subscribe' || key === 'contribution') {
+    } else if (key === "subscribe" || key === "contribution") {
       return false
     } else {
       return !hasField(fields[key])
@@ -45,7 +45,7 @@ export default function SignupForm() {
               <View style={styles.inputContainer}>
                 <LabeledInput
                   isDarkMode={true}
-                  label={t('form.name')}
+                  label={t("form.name")}
                   onInput={onInput}
                   allErrors={formState.errors}
                   name="name"
@@ -55,7 +55,7 @@ export default function SignupForm() {
               <View style={styles.inputContainer}>
                 <LabeledInput
                   isDarkMode={true}
-                  label={t('form.email')}
+                  label={t("form.email")}
                   onInput={onInput}
                   allErrors={formState.errors}
                   name="email"
@@ -66,7 +66,7 @@ export default function SignupForm() {
             <View style={styles.inputContainer}>
               <LabeledInput
                 isDarkMode={true}
-                label={t('form.contribution')}
+                label={t("form.contribution")}
                 onInput={onInput}
                 name="contribution"
                 value={formState.form.contribution}
@@ -74,10 +74,10 @@ export default function SignupForm() {
             </View>
             <View style={styles.inputContainer}>
               <CheckboxWithLabel
-                name={'subscribe'}
+                name={"subscribe"}
                 checked={!!formState.form.subscribe}
                 onPress={onCheck}
-                label={t('form.subscribe')}
+                label={t("form.subscribe")}
               />
             </View>
           </View>
@@ -86,7 +86,7 @@ export default function SignupForm() {
           >
             <SubmitButton
               isLoading={formState.isLoading}
-              text={t('form.btn')}
+              text={t("form.btn")}
               onDarkBackground={true}
               onPress={onSubmit}
               style={styles.buttonText}
@@ -96,7 +96,7 @@ export default function SignupForm() {
           <SuccessDisplay
             style={styles.success}
             isShowing={formState.isComplete}
-            message={t('common:applicationSubmitted')}
+            message={t("common:applicationSubmitted")}
           />
           <View style={standardStyles.centered}>
             <ErrorDisplay isShowing={!!formState.apiError} field={formState.apiError} />
@@ -117,13 +117,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   stretch: {
-    alignItems: 'stretch',
+    alignItems: "stretch",
   },
   buttonText: {
     fontSize: 20,
   },
   success: {
-    textAlign: 'center',
+    textAlign: "center",
     marginTop: 15,
   },
   container: { margin: 20 },

@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { TextStyle } from 'react-native'
-import Button, { BTN } from 'src/shared/Button.3'
+import * as React from "react"
+import { TextStyle } from "react-native"
+import Button, { BTN } from "src/shared/Button.3"
 
 interface Props {
   children: string
@@ -11,5 +11,14 @@ interface Props {
 }
 
 export default function InlineAnchor({ children, href, target, onPress, style }: Props) {
-  return <Button text={children} onPress={onPress} target={target} href={href} kind={BTN.INLINE} style={style} />
+  return (
+    <Button
+      text={children}
+      onPress={onPress}
+      target={target}
+      href={href}
+      kind={BTN.INLINE}
+      style={style}
+    />
+  )
 }

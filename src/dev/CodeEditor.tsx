@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { G, Path } from 'src/shared/svg'
+import * as React from "react"
+import { G, Path } from "src/shared/svg"
 
-const mixBlendMode = 'screen'
+const mixBlendMode = "screen"
 
 export default React.memo(function CodeEditor() {
   return (
@@ -129,7 +129,7 @@ export default React.memo(function CodeEditor() {
         <rect x="47" y="251" width="43" height="7" rx="3.5" stroke="#73DDFF" strokeWidth="2" />
         <rect x="47" y="330" width="106" height="7" rx="3.5" stroke="#333333" strokeWidth="2" />
       </G>
-      <G style={{ mixBlendMode: 'darken' }} opacity="0.7" filter="url(#filter0_f)">
+      <G style={{ mixBlendMode: "darken" }} opacity="0.7" filter="url(#filter0_f)">
         <ellipse cx="358" cy="201.5" rx="155" ry="60.5" fill="#2E3338" />
       </G>
       <defs>

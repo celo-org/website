@@ -1,10 +1,10 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { Ul } from 'src/fonts/Fonts'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import OvalCoin from 'src/shared/OvalCoin'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { Ul } from "src/fonts/Fonts"
+import { useScreenSize } from "src/layout/ScreenSize"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import OvalCoin from "src/shared/OvalCoin"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 interface BTNProps {
   title: string
@@ -58,7 +58,7 @@ export default React.memo(function StackSection(props: Props) {
           kind={BTN.PRIMARY}
           size={isDesktop ? SIZE.small : SIZE.normal}
           href={buttonOne.href}
-          target={'blank'}
+          target={"blank"}
         />
         <View style={isMobile ? styles.separatorHorizontal : styles.separator} />
         <Button
@@ -66,7 +66,7 @@ export default React.memo(function StackSection(props: Props) {
           kind={BTN.SECONDARY}
           size={isDesktop ? SIZE.small : SIZE.normal}
           href={buttonTwo.href}
-          target={'blank'}
+          target={"blank"}
           align="flex-start"
         />
       </View>
@@ -76,19 +76,19 @@ export default React.memo(function StackSection(props: Props) {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
+    flexDirection: "row",
     flex: 1,
-    flexBasis: 'auto',
-    width: '100%',
-    justifyContent: 'space-between',
+    flexBasis: "auto",
+    width: "100%",
+    justifyContent: "space-between",
     marginVertical: 20,
   },
   mobileContainer: {
     marginBottom: 60,
   },
   fade: {
-    transitionDuration: '500ms',
-    transitionProperty: 'opacity',
+    transitionDuration: "500ms",
+    transitionProperty: "opacity",
   },
   content: {
     flex: 1,
@@ -105,20 +105,20 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
   },
   mobile: {
-    flexDirection: 'column',
+    flexDirection: "column",
   },
   list: {
     marginLeft: 10,
   },
   mobileButtonArea: {
-    flexDirection: 'row',
+    flexDirection: "row",
     marginBottom: 10,
   },
   coin: {
-    transitionProperty: 'opacity',
+    transitionProperty: "opacity",
     transitionDuration: `${TRANS_DURATION}ms`,
     transform: [{ translateX: -30 }],
-    position: 'absolute',
+    position: "absolute",
   },
   bright: { opacity: 1 },
   dim: { opacity: 0.6 },

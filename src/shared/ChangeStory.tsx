@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import globe from 'src/shared/world-spin.gif'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { Image, StyleSheet, Text, View } from "react-native"
+import { useScreenSize } from "src/layout/ScreenSize"
+import globe from "src/shared/world-spin.gif"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 const CHANGE_STORY = [
-  'Change the Story', // en
-  'Cambia la historia', // es
-  '改变故事', // cn
-  'Muda a história', // pt
-  '새로운 이야기를 쓰다', // ko
+  "Change the Story", // en
+  "Cambia la historia", // es
+  "改变故事", // cn
+  "Muda a história", // pt
+  "새로운 이야기를 쓰다", // ko
 ]
 
 export default function ChangeStory({darkMode}) {
@@ -77,9 +77,9 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   textFadeIn: {
-    animationFillMode: 'both',
+    animationFillMode: "both",
     animationIterationCount: 1,
-    animationDuration: '750ms',
+    animationDuration: "750ms",
     animationKeyframes: [
       {
         from: {
@@ -91,38 +91,38 @@ const styles = StyleSheet.create({
   },
   mask: {
     backgroundColor: colors.white,
-    position: 'absolute',
-    height: '100%',
-    width: '101%',
+    position: "absolute",
+    height: "100%",
+    width: "101%",
     animationDuration: `${TRANSITION_TIME}ms`,
     animationIterationCount: 1,
-    animationTimingFunction: 'linear',
-    animationFillMode: 'both',
+    animationTimingFunction: "linear",
+    animationFillMode: "both",
   },
 
   hide: {
     animationDelay: `${DURATION - TRANSITION_TIME * 2}ms`,
     animationKeyframes: [
       {
-        '0%': {
-          transform: [{ translateX: '-100%' }],
+        "0%": {
+          transform: [{ translateX: "-100%" }],
         },
-        '100%': { transform: [{ translateX: 0 }] },
+        "100%": { transform: [{ translateX: 0 }] },
       },
     ],
   },
   reveal: {
     animationKeyframes: [
       {
-        '0%': {
+        "0%": {
           transform: [{ translateX: 0 }],
         },
-        '100%': { transform: [{ translateX: '100%' }] },
+        "100%": { transform: [{ translateX: "100%" }] },
       },
     ],
   },
   container: {
     marginBottom: 20,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
 })

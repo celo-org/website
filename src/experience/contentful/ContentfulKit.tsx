@@ -1,12 +1,11 @@
-import * as React from 'react'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { BLOCKS, INLINES, Document } from '@contentful/rich-text-types'
-import Page from 'src/experience/common/Page'
-import { embedded } from 'src/contentful/nodes/embedded'
+import * as React from "react"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { BLOCKS, INLINES, Document } from "@contentful/rich-text-types"
+import Page from "src/experience/common/Page"
+import { embedded } from "src/contentful/nodes/embedded"
 
-import { Page as SideBarEntry } from 'src/experience/common/Sidebar'
-import { renderNode } from 'src/contentful/nodes/nodes'
-
+import { Page as SideBarEntry } from "src/experience/common/Sidebar"
+import { renderNode } from "src/contentful/nodes/nodes"
 
 export interface Props {
   kitName: string
@@ -26,7 +25,7 @@ const OPTIONS = {
     ...renderNode,
     [BLOCKS.EMBEDDED_ENTRY]: embedded,
     [INLINES.EMBEDDED_ENTRY]: embedded,
-  }
+  },
 }
 
 export default function ContentfulKit({
@@ -43,7 +42,6 @@ export default function ContentfulKit({
       children: documentToReactComponents(section.contentField, OPTIONS),
     }
   })
-
 
   return (
     <Page

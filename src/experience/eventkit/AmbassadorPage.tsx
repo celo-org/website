@@ -1,7 +1,7 @@
-import * as React from 'react'
-import Page, { CIRCLES_PATH, ROUTE_TO_TITLE } from 'src/experience/eventkit/Page'
-import Section from 'src/experience/eventkit/Section'
-import { hashNav } from 'src/shared/menu-items'
+import * as React from "react"
+import Page, { CIRCLES_PATH, ROUTE_TO_TITLE } from "src/experience/eventkit/Page"
+import Section from "src/experience/eventkit/Section"
+import { hashNav } from "src/shared/menu-items"
 
 const sections = [hashNav.eventCircles.overview].map((id) => {
   return {

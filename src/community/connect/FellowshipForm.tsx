@@ -1,17 +1,17 @@
-import { FellowAppShape } from 'fullstack/Fellowship'
-import * as React from 'react'
-import { StyleSheet } from 'react-native'
-import { ErrorDisplay } from 'src/forms/ErrorDisplay'
-import FormContainer from 'src/forms/Form'
+import { FellowAppShape } from "fullstack/Fellowship"
+import * as React from "react"
+import { StyleSheet } from "react-native"
+import { ErrorDisplay } from "src/forms/ErrorDisplay"
+import FormContainer from "src/forms/Form"
 import { emailIsValid, hasField } from "src/forms/emailIsValid"
-import { Form } from 'src/forms/FormComponents'
-import { LabeledInput } from 'src/forms/LabeledInput'
-import SubmitButton from 'src/forms/SubmitButton'
-import SuccessDisplay from 'src/forms/SuccessDisplay'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { SIZE } from 'src/shared/Button.3'
-import { standardStyles } from 'src/styles'
+import { Form } from "src/forms/FormComponents"
+import { LabeledInput } from "src/forms/LabeledInput"
+import SubmitButton from "src/forms/SubmitButton"
+import SuccessDisplay from "src/forms/SuccessDisplay"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { SIZE } from "src/shared/Button.3"
+import { standardStyles } from "src/styles"
 
 export class FellowshipForm extends React.Component<I18nProps> {
   render() {
@@ -29,7 +29,7 @@ export class FellowshipForm extends React.Component<I18nProps> {
               <Cell span={Spans.fourth} style={styles.paddingVertical} tabletSpan={Spans.full}>
                 <LabeledInput
                   name="name"
-                  label={t('form.name')}
+                  label={t("form.name")}
                   value={formState.form.name}
                   onInput={onInput}
                   allErrors={formState.errors}
@@ -37,7 +37,7 @@ export class FellowshipForm extends React.Component<I18nProps> {
               </Cell>
               <Cell span={Spans.fourth} style={styles.paddingVertical} tabletSpan={Spans.full}>
                 <LabeledInput
-                  label={t('form.email')}
+                  label={t("form.email")}
                   name="email"
                   value={formState.form.email}
                   onInput={onInput}
@@ -50,14 +50,14 @@ export class FellowshipForm extends React.Component<I18nProps> {
                 <LabeledInput
                   multiline={true}
                   name="ideas"
-                  label={t('form.ideas')}
+                  label={t("form.ideas")}
                   onInput={onInput}
                   allErrors={formState.errors}
                   value={formState.form.ideas}
                 />
                 <LabeledInput
                   multiline={true}
-                  label={t('form.bio')}
+                  label={t("form.bio")}
                   name="bio"
                   onInput={onInput}
                   allErrors={formState.errors}
@@ -65,7 +65,7 @@ export class FellowshipForm extends React.Component<I18nProps> {
                 />
                 <LabeledInput
                   multiline={true}
-                  label={t('form.deliverables')}
+                  label={t("form.deliverables")}
                   name="deliverables"
                   onInput={onInput}
                   allErrors={formState.errors}
@@ -73,7 +73,7 @@ export class FellowshipForm extends React.Component<I18nProps> {
                 />
                 <LabeledInput
                   name="resume"
-                  label={t('form.resume')}
+                  label={t("form.resume")}
                   onInput={onInput}
                   allErrors={formState.errors}
                   value={formState.form.resume}
@@ -89,15 +89,15 @@ export class FellowshipForm extends React.Component<I18nProps> {
               <Cell span={Spans.half} style={standardStyles.centered}>
                 <SubmitButton
                   isLoading={formState.isLoading}
-                  text={t('submit')}
+                  text={t("submit")}
                   onPress={onSubmit}
                   size={SIZE.big}
-                  align={'center'}
+                  align={"center"}
                   style={standardStyles.elementalMarginBottom}
                 />
                 <SuccessDisplay
                   isShowing={formState.isComplete}
-                  message={t('common:applicationSubmitted')}
+                  message={t("common:applicationSubmitted")}
                 />
                 <ErrorDisplay isShowing={!!formState.apiError} field={formState.apiError} />
               </Cell>
@@ -110,29 +110,29 @@ export class FellowshipForm extends React.Component<I18nProps> {
 }
 
 function blankForm() {
-  return { name: '', email: '', ideas: '', bio: '', resume: '', deliverables: '' }
+  return { name: "", email: "", ideas: "", bio: "", resume: "", deliverables: "" }
 }
 
 function validateFields(fields: FellowAppShape) {
   return Object.keys(fields).filter((key) => {
-    return key === 'email' ? !emailIsValid(fields[key]) : !hasField(fields[key])
+    return key === "email" ? !emailIsValid(fields[key]) : !hasField(fields[key])
   })
 }
 
 const styles = StyleSheet.create({
   form: {
     flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
+    display: "flex",
+    flexDirection: "column",
     margin: 0,
   },
   rowMobile: {
-    flexDirection: 'column-reverse',
+    flexDirection: "column-reverse",
   },
   emailNameArea: {
-    flexDirection: 'column',
+    flexDirection: "column",
   },
-  desktopEmailNameArea: { alignItems: 'flex-start' },
+  desktopEmailNameArea: { alignItems: "flex-start" },
   paddingVertical: {
     paddingVertical: 0,
   },
@@ -140,4 +140,4 @@ const styles = StyleSheet.create({
 
 const gridStyle = [standardStyles.centered, styles.paddingVertical]
 
-export default withNamespaces('community')(FellowshipForm)
+export default withNamespaces("community")(FellowshipForm)

@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import HollowCoin from 'src/shared/HollowOval'
-import OvalCoin from 'src/shared/OvalCoin'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import HollowCoin from "src/shared/HollowOval"
+import OvalCoin from "src/shared/OvalCoin"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 interface Props {
   term: string
@@ -42,36 +42,36 @@ export default function JourneySteps({ term, steps }: Props) {
 
 const styles = StyleSheet.create({
   root: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
     flex: 1,
-    maxWidth: '100%',
+    maxWidth: "100%",
   },
   line: {
     top: 5,
-    position: 'absolute',
-    width: '100%',
+    position: "absolute",
+    width: "100%",
     backgroundColor: colors.primary,
     height: 1,
     transform: [{ translateX: -5 }],
   },
   steps: {
-    flexDirection: 'row',
+    flexDirection: "row",
     flex: 1,
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
   step: {
-    flexBasis: 'fit-content',
+    flexBasis: "fit-content",
     minWidth: 80,
     maxWidth: 100,
     marginHorizontal: 10,
     flex: 1,
-    alignItems: 'center',
+    alignItems: "center",
     marginVertical: 15,
   },
   coinLine: {
-    overflow: 'visible',
-    alignItems: 'flex-end',
+    overflow: "visible",
+    alignItems: "flex-end",
     flexBasis: 55,
     marginTop: 15,
   },

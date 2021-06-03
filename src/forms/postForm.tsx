@@ -1,11 +1,10 @@
-import { FormState } from './Form'
-
+import { FormState } from "./Form"
 
 export function postForm(route: string, formData: FormState) {
   return fetch(route, {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(formData),
   })

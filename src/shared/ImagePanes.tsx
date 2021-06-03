@@ -1,9 +1,9 @@
-import * as React from 'react'
-import { Image, ImageSourcePropType, StyleSheet, Text, View } from 'react-native'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import AspectRatio from 'src/shared/AspectRatio'
-import Fade from 'src/shared/AwesomeFade'
-import { fonts, textStyles } from 'src/styles'
+import * as React from "react"
+import { Image, ImageSourcePropType, StyleSheet, Text, View } from "react-native"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import AspectRatio from "src/shared/AspectRatio"
+import Fade from "src/shared/AwesomeFade"
+import { fonts, textStyles } from "src/styles"
 
 interface Pane {
   source: ImageSourcePropType
@@ -54,10 +54,10 @@ export function ImagePanes({ half, quarter, secondQuarter, reverse }: Props) {
 
 const styles = StyleSheet.create({
   reverse: {
-    flexDirection: 'row-reverse',
+    flexDirection: "row-reverse",
   },
   image: {
-    height: '100%',
+    height: "100%",
   },
   caption: {
     paddingTop: 5,

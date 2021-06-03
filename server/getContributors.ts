@@ -1,20 +1,20 @@
-import { Attachment, FieldSet, Table } from 'airtable'
-import getConfig from 'next/config'
-import { Contributor } from '../src/about/Contributor'
-import airtableInit from './airtable'
-import { cache } from './cache'
+import { Attachment, FieldSet, Table } from "airtable"
+import getConfig from "next/config"
+import { Contributor } from "../src/about/Contributor"
+import airtableInit from "./airtable"
+import { cache } from "./cache"
 
 interface Fields extends FieldSet {
-  'Full Name': string
+  "Full Name": string
   Photo: Attachment[]
-  'Unique Purpose': string
-  'Social Media Link': string
+  "Unique Purpose": string
+  "Social Media Link": string
   Company: string
   Team: string
   Approved: boolean
 }
 
-const SHEET = 'About Profiles'
+const SHEET = "About Profiles"
 
 export default async function getContributors() {
   return cache(`air-${SHEET}`, fetchContributors)
@@ -32,28 +32,28 @@ async function fetchContributors() {
 }
 
 function getAirtable(sheet: string) {
-  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ANNOUNCEMENT_ID)(sheet) as Table<
-    Fields
-  >
+  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ANNOUNCEMENT_ID)(
+    sheet
+  ) as Table<Fields>
 }
 
-const IS_APROVED = 'Approved=1'
+const IS_APROVED = "Approved=1"
 
 function normalize(asset: Fields): Contributor {
   return {
-    name: asset['Full Name'],
-    purpose: asset['Unique Purpose'],
+    name: asset["Full Name"],
+    purpose: asset["Unique Purpose"],
     team: asset.Team,
     company: asset.Company,
     photo: getImageURI(asset, Sizes.large),
     preview: getImageURI(asset, Sizes.small),
-    url: asset['Social Media Link'],
+    url: asset["Social Media Link"],
   }
 }
 
 enum Sizes {
-  large = 'large',
-  small = 'small',
+  large = "large",
+  small = "small",
 }
 
 function getImageURI(asset: Fields, size: Sizes) {
@@ -64,6 +64,6 @@ function getImageURI(asset: Fields, size: Sizes) {
       previewField[0] &&
       previewField[0].thumbnails &&
       previewField[0].thumbnails[size].url) ||
-    ''
+    ""
   )
 }

@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { CeloLinks } from 'src/shared/menu-items'
-import { colors } from 'src/styles'
+import * as React from "react"
+import { CeloLinks } from "src/shared/menu-items"
+import { colors } from "src/styles"
 
 interface Props {
   height?: number
@@ -29,7 +29,7 @@ export default class TwitterLogo extends React.PureComponent<Props> {
   }
 }
 
-export function TweetLogo({ height, color }) {
+export function TweetLogo({ height, color }: Props) {
   return (
     <svg width={height} height={height} viewBox="0 0 28 24" fill="none">
       <title>Twitter</title>

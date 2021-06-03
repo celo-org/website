@@ -1,10 +1,10 @@
-import { useRouter } from 'next/router'
-import * as React from 'react'
-import { useAsync } from 'react-async-hook'
-import { StyleSheet, Text, View } from 'react-native'
-import Chevron from 'src/icons/chevron'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { colors, fonts, textStyles } from 'src/styles'
+import { useRouter } from "next/router"
+import * as React from "react"
+import { useAsync } from "react-async-hook"
+import { StyleSheet, Text, View } from "react-native"
+import Chevron from "src/icons/chevron"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { colors, fonts, textStyles } from "src/styles"
 interface Props {
   link: string
   children: React.ReactNode
@@ -13,68 +13,70 @@ interface Props {
 }
 
 export function BlueBanner(props: Props) {
-    const ref = React.useRef<View>()
-    const router = useRouter()
+  const ref = React.useRef<View>()
+  const router = useRouter()
 
-    React.useLayoutEffect(() => {
-      ref.current.measure((_x, _y, _w, height) => {
-        props.getRealHeight(height)
-      })
-    }, [router.pathname, router.locale])
+  const { getRealHeight } = props
 
-    return (
-      <View
-        testID={'banner'}
-        ref={ref}
-        style={[styles.container, props.isVisible && styles.isVisible]}
-      >
-        <View style={styles.insideContainer}>
-          <Text
-            accessibilityRole="link"
-            hrefAttrs={hrefAttrs}
-            href={props.link}
-            style={[fonts.navigation, textStyles.medium, styles.text]}
-          >
-            {props.children}
-            <Text style={styles.icon}>
-              <Chevron color={colors.white} opacity={1} />
-            </Text>
+  React.useLayoutEffect(() => {
+    ref.current.measure((_x, _y, _w, height) => {
+      getRealHeight(height)
+    })
+  }, [router.pathname, router.locale, getRealHeight, ref])
+
+  return (
+    <View
+      testID={"banner"}
+      ref={ref}
+      style={[styles.container, props.isVisible && styles.isVisible]}
+    >
+      <View style={styles.insideContainer}>
+        <Text
+          accessibilityRole="link"
+          hrefAttrs={hrefAttrs}
+          href={props.link}
+          style={[fonts.navigation, textStyles.medium, styles.text]}
+        >
+          {props.children}
+          <Text style={styles.icon}>
+            <Chevron color={colors.white} opacity={1} />
           </Text>
-        </View>
+        </Text>
       </View>
-    )
+    </View>
+  )
 }
-const hrefAttrs = {target:"blank", "rel": "noopenner"}
+const hrefAttrs = { target: "blank", rel: "noopenner" }
 
 export const BANNER_HEIGHT = 50
 
 export const styles = StyleSheet.create({
   container: {
-    position: 'fixed',
+    position: "fixed",
     top: 0,
     backgroundColor: colors.navyBlue,
-    width: '100%',
-    maxWidth: '100vw',
+    width: "100%",
+    maxWidth: "100vw",
     height: 0,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     flex: 1,
   },
   slideDown: {
-    transitionProperty: 'top',
-    transitionDuration: '300ms',
+    transitionProperty: "top",
+    transitionDuration: "300ms",
   },
   isVisible: {
     minHeight: BANNER_HEIGHT,
-    height: 'contents',
+    height: "contents",
   },
   insideContainer: {
-    width: '100%',
-    height: '100%',
+    width: "100%",
+    height: "100%",
     flex: 1,
-    justifyContent: 'center',
-    flexDirection: 'row',
-    alignItems: 'center',
+    justifyContent: "center",
+    flexDirection: "row",
+    alignItems: "center",
     paddingHorizontal: 15,
     paddingVertical: 5,
   },
@@ -84,7 +86,7 @@ export const styles = StyleSheet.create({
   },
   icon: {
     paddingLeft: 5,
-    position: 'relative',
+    position: "relative",
     top: 3,
   },
 })
@@ -101,19 +103,21 @@ interface AnnouncementProps {
 
 async function getAnnouncement(onVisibilityChange: (visible: boolean) => void) {
   let visible = false
-  let announcement = {text: "", link: "", live: false}
-  const response = await fetch('/announcement')
-  const announcements = await response.json() as State[]
+  let announcement = { text: "", link: "", live: false }
+  const response = await fetch("/announcement")
+  const announcements = (await response.json()) as State[]
   visible = announcements.length > 0
-  announcement =  announcements[0]
+  announcement = announcements[0]
   onVisibilityChange(visible)
-  return {visible, text: announcement.text, link: announcement.link, live: announcement.live}
+  return { visible, text: announcement.text, link: announcement.link, live: announcement.live }
 }
 
 export default function Announcement(props: AnnouncementProps) {
-
-  const state = useAsync(() => getAnnouncement(props.onVisibilityChange), [])
-  const {setBannerHeight} = useScreenSize()
+  const state = useAsync(
+    () => getAnnouncement(props.onVisibilityChange),
+    [props.onVisibilityChange]
+  )
+  const { setBannerHeight } = useScreenSize()
 
   if (state.status === "success") {
     return (

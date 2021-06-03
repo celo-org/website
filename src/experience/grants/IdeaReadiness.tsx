@@ -1,8 +1,8 @@
-import { Asset } from 'contentful'
-import * as React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { fonts, standardStyles } from 'src/styles'
+import { Asset } from "contentful"
+import * as React from "react"
+import { Image, StyleSheet, Text, View } from "react-native"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { fonts, standardStyles } from "src/styles"
 
 interface Props {
   title: string
@@ -34,15 +34,15 @@ export default function IdeaReadiness({ title, caption, stages }: Props) {
 
 const styles = StyleSheet.create({
   root: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
     flex: 1,
-    maxWidth: '100%',
+    maxWidth: "100%",
   },
   steps: {
-    flexDirection: 'row',
+    flexDirection: "row",
     flex: 1,
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
   caption: {
     flexBasis: 180,

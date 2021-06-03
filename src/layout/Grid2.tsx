@@ -1,5 +1,5 @@
-import { css} from "@emotion/react"
-import * as React from 'react'
+import { css } from "@emotion/react"
+import * as React from "react"
 import { flex, WHEN_DESKTOP, WHEN_TABLET } from "src/estyles"
 import { colors } from "src/styles"
 
@@ -15,12 +15,12 @@ interface GridProps {
 const gap = 24.0
 
 export enum Spans {
-  fourth = 'fourth',
-  third = 'third',
-  twoThird = 'twoThird',
-  half = 'half',
-  three4th = 'three4th',
-  full = 'full',
+  fourth = "fourth",
+  third = "third",
+  twoThird = "twoThird",
+  half = "half",
+  three4th = "three4th",
+  full = "full",
 }
 
 export function GridRow(props: GridProps) {
@@ -30,11 +30,11 @@ export function GridRow(props: GridProps) {
     [WHEN_TABLET]: {gridTemplateColumns}
   })
   return (
-      <section css={css(props.wrapperCss, props.darkMode ? darkBackground : wrapperStyle)}>
-        <div id={props.id} css={mainCss} className={props.className}>
+    <section css={css(props.wrapperCss, props.darkMode ? darkBackground : wrapperStyle)}>
+      <div id={props.id} css={mainCss} className={props.className}>
         {props.children}
-        </div>
-      </section>
+      </div>
+    </section>
   )
 }
 
@@ -45,8 +45,8 @@ const wrapperStyle = css(flex,{
   width: '100%',
 })
 
-const darkBackground = css(wrapperStyle,{
-  backgroundColor: colors.dark
+const darkBackground = css(wrapperStyle, {
+  backgroundColor: colors.dark,
 })
 
 

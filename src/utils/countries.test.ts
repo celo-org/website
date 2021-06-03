@@ -1,19 +1,19 @@
-import { isJurisdictionRestricted } from './countries'
+import { isJurisdictionRestricted } from "./countries"
 
-describe('isJurisdictionRestricted', () => {
+describe("isJurisdictionRestricted", () => {
   describe('when given "us"', () => {
-    it('returns true', () => {
-      expect(isJurisdictionRestricted('us')).toEqual(true)
+    it("returns true", () => {
+      expect(isJurisdictionRestricted("us")).toEqual(true)
     })
   })
   describe('when given "uk"', () => {
-    it('returns false', () => {
-      expect(isJurisdictionRestricted('uk')).toEqual(false)
+    it("returns false", () => {
+      expect(isJurisdictionRestricted("uk")).toEqual(false)
     })
   })
-  describe('when given empty string', () => {
-    it('returns true', () => {
-      expect(isJurisdictionRestricted('')).toEqual(true)
+  describe("when given empty string", () => {
+    it("returns true", () => {
+      expect(isJurisdictionRestricted("")).toEqual(true)
     })
   })
 })

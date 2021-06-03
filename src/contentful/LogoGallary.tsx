@@ -15,39 +15,35 @@ export default function LogoGallary({ list }: Props) {
   return (
     <div css={rootStyle}>
       {list.map(({ sys, fields }) => {
-          const width = fields.image.fields.file.details.image.width / 2
-          const height = fields.image.fields.file.details.image.height / 2
+        const width = fields.image.fields.file.details.image.width / 2
+        const height = fields.image.fields.file.details.image.height / 2
 
         return (
           <a
-                title={fields.image.fields.description}
-                css={itemStyle}
-                key={sys.id}
-                href={fields.url}
-                target={"_blank"}
-                rel="nofollow noopener"
-              >
-                <picture>
+            title={fields.image.fields.description}
+            css={itemStyle}
+            key={sys.id}
+            href={fields.url}
+            target={"_blank"}
+            rel="nofollow noopener"
+          >
+            <picture>
+              <source srcSet={`${fields.image.fields.file.url}?fm=webp 2x`} type="image/webp" />
+              <source srcSet={`${fields.image.fields.file.url} 2x`} />
 
-                  <source
-                    srcSet={`${fields.image.fields.file.url}?fm=webp 2x`}
-                    type="image/webp"
-                  />
-                  <source srcSet={`${fields.image.fields.file.url} 2x`} />
-
-                  <source
-                    srcSet={`${fields.image.fields.file.url}?fm=webp&w=${width}`}
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    width={width}
-                    height={height}
-                    alt={fields.image.fields.description}
-                    src={`${fields.image.fields.file.url}?w=${width}`}
-                  />
-                </picture>
-              </a>
+              <source
+                srcSet={`${fields.image.fields.file.url}?fm=webp&w=${width}`}
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                width={width}
+                height={height}
+                alt={fields.image.fields.description}
+                src={`${fields.image.fields.file.url}?w=${width}`}
+              />
+            </picture>
+          </a>
         )
       })}
     </div>
@@ -62,7 +58,7 @@ const rootStyle = css(flexRow, {
   marginTop: 32,
 })
 
-const itemStyle = css(flex,{
+const itemStyle = css(flex, {
   alignItems: "center",
   minWidth: 140,
   marginLeft: 32,
@@ -74,5 +70,5 @@ const itemStyle = css(flex,{
     maxWidth: 140,
     marginLeft: 16,
     marginRight: 16,
-  }
+  },
 })

@@ -1,13 +1,13 @@
-import * as React from 'react'
-import { Slide } from 'react-awesome-reveal'
-import { StyleSheet, View } from 'react-native'
-import analytics from 'src/analytics/analytics'
-import { H2, H4 } from 'src/fonts/Fonts'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import OvalCoin from 'src/shared/OvalCoin'
-import { colors, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { Slide } from "react-awesome-reveal"
+import { StyleSheet, View } from "react-native"
+import analytics from "src/analytics/analytics"
+import { H2, H4 } from "src/fonts/Fonts"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import OvalCoin from "src/shared/OvalCoin"
+import { colors, standardStyles, textStyles } from "src/styles"
 
 async function downloadBenefits() {
   await analytics.track(`benefits.pdf download`)
@@ -33,19 +33,19 @@ class Benefits extends React.PureComponent<Props> {
         >
           <Cell span={Spans.half} style={[standardStyles.centered, styles.box]}>
             <H2 style={[standardStyles.elementalMargin, textStyles.center]}>
-              {t('weGotYouCovered')}
+              {t("weGotYouCovered")}
             </H2>
             <H4 style={[standardStyles.elementalMarginBottom, textStyles.center]}>
-              {t('comprehensiveBenefits')}
+              {t("comprehensiveBenefits")}
             </H4>
             <Button
               size={SIZE.big}
               kind={BTN.PRIMARY}
-              text={t('viewBenefits')}
-              href={'https://storage.googleapis.com/celo_whitepapers/celo-perks-benefits.pdf'}
-              target={'_blank'}
+              text={t("viewBenefits")}
+              href={"https://storage.googleapis.com/celo_whitepapers/celo-perks-benefits.pdf"}
+              target={"_blank"}
               onPress={downloadBenefits}
-              align={'center'}
+              align={"center"}
             />
           </Cell>
         </GridRow>
@@ -63,12 +63,12 @@ const styles = StyleSheet.create({
   },
   icon: {
     flex: 1,
-    flexDirection: 'row-reverse',
-    justifyContent: 'center',
+    flexDirection: "row-reverse",
+    justifyContent: "center",
   },
 })
 
-export default withNamespaces('jobs')(Benefits)
+export default withNamespaces("jobs")(Benefits)
 
 const sizeOfSlidingOval = 30
 const coins = [colors.purple, colors.red, colors.lightBlue, colors.gold, colors.primary]
@@ -87,13 +87,14 @@ function CoinLine() {
                 style={[
                   rainBowStyles.slideingCoin,
                   {
-                    mixBlendMode: 'multiply',
+                    mixBlendMode: "multiply",
                     animationKeyframes: [
                       {
                         from: {
                           opacity: 0,
-                          transform: `translateX(calc(-${sizeOfSlidingOval *
-                            coins.length}px - ${overlap}px))`,
+                          transform: `translateX(calc(-${
+                            sizeOfSlidingOval * coins.length
+                          }px - ${overlap}px))`,
                         },
                       },
                     ],
@@ -103,7 +104,7 @@ function CoinLine() {
                 <div
                   style={{
                     left: startingPosition + overlap,
-                    position: 'absolute',
+                    position: "absolute",
                   }}
                 >
                   <OvalCoin color={color} size={sizeOfSlidingOval} />
@@ -121,32 +122,32 @@ function CoinLine() {
 const rainBowStyles = StyleSheet.create({
   coinLineContainer: {
     backgroundColor: colors.gray,
-    maxWidth: '100vw',
-    overflow: 'hidden',
+    maxWidth: "100vw",
+    overflow: "hidden",
   },
   coinLineGroup: {
-    flexDirection: 'row',
-    alignSelf: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignSelf: "center",
+    justifyContent: "center",
   },
   greenLine: {
     margin: 0,
-    display: 'flex',
+    display: "flex",
     height: 3,
-    width: '70vw',
+    width: "70vw",
     zIndex: -10,
     backgroundColor: colors.primary,
     // @ts-ignore
     transform: [{ translateX: `calc(-70vw + 10px)` }, { translateY: -sizeOfSlidingOval * 0.7 }],
   },
   centerItems: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   slideingCoin: {
     opacity: 0.9,
     // @ts-ignore // keeps it so that the mix-blend-mode svg blends after animation, otherwise it disapears on Chrome for Android on Pixel 3
-    willChange: 'opacity',
-    animationDuration: '2s',
-    animationTimingFunction: 'cubic-bezier(.53,.01,.53,.98)',
+    willChange: "opacity",
+    animationDuration: "2s",
+    animationTimingFunction: "cubic-bezier(.53,.01,.53,.98)",
   },
 })
