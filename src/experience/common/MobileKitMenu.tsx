@@ -1,9 +1,9 @@
-import * as React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import scrollToHash from 'src/experience/common/scrollToHash'
-import Sidebar, { Page } from 'src/experience/common/Sidebar'
-import Triangle, { Direction } from 'src/shared/Triangle'
-import { colors, fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import scrollToHash from "src/experience/common/scrollToHash"
+import Sidebar, { Page } from "src/experience/common/Sidebar"
+import Triangle, { Direction } from "src/shared/Triangle"
+import { colors, fonts, standardStyles } from "src/styles"
 interface Props {
   pages: Page[]
   pathname: string
@@ -18,7 +18,7 @@ export default class MobileMenu extends React.PureComponent<Props, State> {
   state = { isOpen: false }
 
   componentDidMount = () => {
-    window.addEventListener('hashchange', this.closeMenu, false)
+    window.addEventListener("hashchange", this.closeMenu, false)
   }
 
   closeMenu = () => {
@@ -26,7 +26,7 @@ export default class MobileMenu extends React.PureComponent<Props, State> {
   }
 
   componentWillUnmount = () => {
-    window.removeEventListener('hashchange', this.closeMenu)
+    window.removeEventListener("hashchange", this.closeMenu)
   }
 
   toggleMenu = () => {
@@ -63,45 +63,45 @@ export default class MobileMenu extends React.PureComponent<Props, State> {
   }
 }
 
-function Title({ pages, pathname }: Omit<Props, 'routeHash'>) {
+function Title({ pages, pathname }: Omit<Props, "routeHash">) {
   const pageTitle = React.useMemo(() => {
-    const index = pathname.indexOf('#')
+    const index = pathname.indexOf("#")
     const pathnameSansHash = index === -1 ? pathname : pathname.slice(0, index)
     const page = pages.find((p) => pathnameSansHash === p.href)
     return page && page.title
-  }, [pathname])
+  }, [pathname, pages])
 
   return <Text style={fonts.h6}>{pageTitle}</Text>
 }
 
 const styles = StyleSheet.create({
   sideBar: {
-    position: 'absolute',
+    position: "absolute",
     backgroundColor: colors.light,
-    height: '100vh',
-    overflow: 'scroll',
-    width: '100%',
+    height: "100vh",
+    overflow: "scroll",
+    width: "100%",
     padding: 15,
   },
   container: {
-    width: '100%',
+    width: "100%",
     backgroundColor: colors.white,
     zIndex: -1,
   },
   bar: {
     paddingHorizontal: 20,
     paddingVertical: 15,
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    justifyContent: "space-between",
+    alignItems: "center",
     borderBottomColor: colors.gray,
     borderBottomWidth: 1,
   },
   menu: {
-    height: '100%',
+    height: "100%",
     transform: [{ scaleY: 0 }],
-    transitionDuration: '250ms',
-    transitionProperty: 'transform',
-    transformOrigin: 'top',
+    transitionDuration: "250ms",
+    transitionProperty: "transform",
+    transformOrigin: "top",
   },
   open: {
     transform: [{ scaleY: 1 }],

@@ -1,3 +1,3 @@
-import IconsExchangePage from 'src/experience/brandkit/IconsExchangePage'
+import IconsExchangePage from "src/experience/brandkit/IconsExchangePage"
 
 export default IconsExchangePage

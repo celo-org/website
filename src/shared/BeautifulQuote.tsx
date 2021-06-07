@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { ImageBackground, ImageSourcePropType, StyleSheet, Text } from 'react-native'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { ImageBackground, ImageSourcePropType, StyleSheet, Text } from "react-native"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 interface Props {
   imgSource: ImageSourcePropType
@@ -16,7 +16,7 @@ export default React.memo(function BeautifulQuote(props: Props) {
     <ImageBackground
       source={props.imgSource}
       style={[styles.image, standardStyles.centered]}
-      resizeMode={'cover'}
+      resizeMode={"cover"}
     >
       <Text
         style={[
@@ -45,16 +45,16 @@ export default React.memo(function BeautifulQuote(props: Props) {
 })
 
 const styles = StyleSheet.create({
-  image: { width: '100%', minHeight: 510, paddingVertical: 15, paddingHorizontal: 30 },
+  image: { width: "100%", minHeight: 510, paddingVertical: 15, paddingHorizontal: 30 },
   quote: {
     fontSize: 65,
     lineHeight: 72,
-    fontStyle: 'italic',
+    fontStyle: "italic",
     maxWidth: 1200,
   },
   quoteMobile: {
     fontSize: 42,
     lineHeight: 50,
-    fontStyle: 'italic',
+    fontStyle: "italic",
   },
 })

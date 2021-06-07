@@ -1,12 +1,12 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { Status } from 'src/home/roadmap/milestones'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import Fade from 'src/shared/AwesomeFade'
-import CoinHalfFull from 'src/shared/CoinHalfFull'
-import HollowCoin from 'src/shared/HollowOval'
-import OvalCoin from 'src/shared/OvalCoin'
-import { colors, fonts, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { Status } from "src/home/roadmap/milestones"
+import { useScreenSize } from "src/layout/ScreenSize"
+import Fade from "src/shared/AwesomeFade"
+import CoinHalfFull from "src/shared/CoinHalfFull"
+import HollowCoin from "src/shared/HollowOval"
+import OvalCoin from "src/shared/OvalCoin"
+import { colors, fonts, textStyles } from "src/styles"
 
 interface Props {
   status: Status
@@ -77,11 +77,11 @@ const styles = StyleSheet.create({
   container: {
     maxWidth: 450,
     marginHorizontal: 15,
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   fillSpace: { flex: 1 },
   containerMobile: {
-    height: 'inherit',
+    height: "inherit",
     marginHorizontal: 10,
     paddingRight: 10,
   },
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
   noline: {
     width: 2,
-    visibility: 'hidden',
+    visibility: "hidden",
   },
   box: {
     marginVertical: 0,
@@ -101,14 +101,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   futureCoin: {
-    position: 'absolute',
+    position: "absolute",
     transform: [
       { translateX: -HORIZONTAL_SPACE - DISTANCE_COIN_TO_BE_CENTER_ONLINE + 1 },
       { translateY: 1 },
     ],
   },
   coin: {
-    position: 'absolute',
+    position: "absolute",
     transform: [
       { translateX: -HORIZONTAL_SPACE - DISTANCE_COIN_TO_BE_CENTER_ONLINE },
       { translateY: 1 },

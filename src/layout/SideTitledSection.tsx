@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { Text } from 'react-native'
-import { H3 } from 'src/fonts/Fonts'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { Text } from "react-native"
+import { H3 } from "src/fonts/Fonts"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { fonts, standardStyles } from "src/styles"
 
 interface SectionProps {
   title: string

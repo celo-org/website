@@ -1,6 +1,6 @@
-import getConfig from 'next/config'
-import { Application, Recommendation, Tables } from '../fullstack/EcoFundFields'
-import airtableInit from '../server/airtable'
+import getConfig from "next/config"
+import { Application, Recommendation, Tables } from "../fullstack/EcoFundFields"
+import airtableInit from "../server/airtable"
 
 export default function submit(fields: Recommendation | Application, table: Tables) {
   switch (table) {

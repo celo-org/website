@@ -1,11 +1,11 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import DownloadButton from 'src/experience/brandkit/DownloadButton'
-import { AssetTypes } from 'src/experience/brandkit/tracking'
-import { brandStyles, GAP } from 'src/experience/common/constants'
-import LogoDarkBg from 'src/logos/LogoDarkBg'
-import LogoLightBg from 'src/logos/LogoLightBg'
-import { colors, fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import DownloadButton from "src/experience/brandkit/DownloadButton"
+import { AssetTypes } from "src/experience/brandkit/tracking"
+import { brandStyles, GAP } from "src/experience/common/constants"
+import LogoDarkBg from "src/logos/LogoDarkBg"
+import LogoLightBg from "src/logos/LogoLightBg"
+import { colors, fonts, standardStyles } from "src/styles"
 
 export enum Logos {
   dark,
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   },
   displayArea: {
     height: 172,
-    width: '100%',
+    width: "100%",
     marginVertical: 15,
   },
   button: {

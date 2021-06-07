@@ -1,9 +1,9 @@
-import getConfig from 'next/config'
-import { EventProps } from '../fullstack/EventProps'
-import airtableInit from '../server/airtable'
-import Sentry from '../server/sentry'
-import cache from './cache'
-const TABLE_NAME = 'All Events'
+import getConfig from "next/config"
+import { EventProps } from "../fullstack/EventProps"
+import airtableInit from "../server/airtable"
+import Sentry from "../server/sentry"
+import cache from "./cache"
+const TABLE_NAME = "All Events"
 // Intermediate step Event With all String Values
 interface IncomingEvent {
   link: string // url
@@ -16,7 +16,7 @@ interface IncomingEvent {
   endDate?: string // (MM-DD-YY)
 }
 
-const REQUIRED_KEYS = ['name', 'location', 'startDate']
+const REQUIRED_KEYS = ["name", "location", "startDate"]
 
 interface State {
   pastEvents: EventProps[]
@@ -26,46 +26,48 @@ interface State {
 
 // From the airtable sheet column names
 const KEY_CONVERSION = Object.freeze({
-  name: 'Event Title',
-  description: 'Description of Event',
-  link: 'Event Link',
-  location: 'Location (Format: City, Country)',
-  celoHosted: 'Celo Hosted?',
-  celoSpeaking: 'Celo Team Member Speaking?',
-  startDate: 'Start Date',
-  endDate: 'End Date',
+  name: "Event Title",
+  description: "Description of Event",
+  link: "Event Link",
+  location: "Location (Format: City, Country)",
+  celoHosted: "Celo Hosted?",
+  celoSpeaking: "Celo Team Member Speaking?",
+  startDate: "Start Date",
+  endDate: "End Date",
 })
 
 export interface RawAirTableEvent {
-  'Event Title': string
-  'Notes / Run Of Show': string
-  Photos: object
-  Process: 'Complete' | 'Scheduled' | 'In conversation' | 'To organize'
-  Organizer: object[]
-  'Event Link': string
-  'Start Date': string
-  'Recap Individual': {
+  "Event Title": string
+  "Notes / Run Of Show": string
+  Photos: Record<string, any>
+  Process: "Complete" | "Scheduled" | "In conversation" | "To organize"
+  Organizer: Record<string, any>[]
+  "Event Link": string
+  "Start Date": string
+  "Recap Individual": {
     id: string
     email: string
     name: string
   }
-  'Social Media': object[]
-  'Social Media Links': string
-  'Location (Format: City, Country)': string
-  'Celo Team Member Speaking?': boolean
-  'Description of Event': string
+  "Social Media": Record<string, any>[]
+  "Social Media Links": string
+  "Location (Format: City, Country)": string
+  "Celo Team Member Speaking?": boolean
+  "Description of Event": string
 }
 
 export default async function getFormattedEvents(isFuture: boolean) {
-  const eventData = await cache(`events-list-${isFuture? "future": "past"}`, () => fetchEventsFromAirtable(isFuture))
+  const eventData = await cache(`events-list-${isFuture ? "future" : "past"}`, () =>
+    fetchEventsFromAirtable(isFuture)
+  )
   return splitEvents(normalizeEvents(eventData as RawAirTableEvent[]))
 }
 
-const PROCESS_FILTER =`OR(Process="Complete", Process="Scheduled", Process="Conference, Speaking", Process="This Week")`
+const PROCESS_FILTER = `OR(Process="Complete", Process="Scheduled", Process="Conference, Speaking", Process="This Week")`
 
 function filterFormula(isFuture: boolean) {
-  const dateFilter = isFuture? "IS_AFTER" : "IS_BEFORE"
-  const days = isFuture? "-2" : "1"
+  const dateFilter = isFuture ? "IS_AFTER" : "IS_BEFORE"
+  const days = isFuture ? "-2" : "1"
   const START_DATE_FILTER = `${dateFilter}({Start Date}, DATEADD(TODAY(), ${days}, "days"))`
   const END_DATE_FILTER = `OR(BLANK({Start Date}),${dateFilter}({End Date}, DATEADD(TODAY(), ${days}, "days")))`
   const DATE_FILTER = `OR(${START_DATE_FILTER}, ${END_DATE_FILTER})`
@@ -76,8 +78,8 @@ async function fetchEventsFromAirtable(isFuture: boolean) {
   try {
     const records = await getAirtable()
       .select({
-        filterByFormula:filterFormula(isFuture),
-        sort: [{ field: 'Start Date', direction: 'desc' }],
+        filterByFormula: filterFormula(isFuture),
+        sort: [{ field: "Start Date", direction: "desc" }],
       })
       .firstPage()
     return records.map((record) => record.fields)
@@ -116,7 +118,9 @@ export function splitEvents(normalizedEvents: EventProps[]): State {
   const pastEvents = []
 
   normalizedEvents.forEach((event: EventProps) => {
-    const willHappen = parseDate(event.startDate).valueOf() > today || event.endDate &&  parseDate(event.endDate).valueOf() > today
+    const willHappen =
+      parseDate(event.startDate).valueOf() > today ||
+      (event.endDate && parseDate(event.endDate).valueOf() > today)
     if (willHappen) {
       upcomingEvents.unshift(event)
     } else {
@@ -171,9 +175,5 @@ export function celoFirst(eventA: EventProps, eventB: EventProps) {
 }
 
 export function normalizeEvents(data: RawAirTableEvent[]): EventProps[] {
-  return data
-    .map(convertKeys)
-    .filter(removeEmpty)
-    .map(convertValues)
-    .sort(orderByDate)
+  return data.map(convertKeys).filter(removeEmpty).map(convertValues).sort(orderByDate)
 }

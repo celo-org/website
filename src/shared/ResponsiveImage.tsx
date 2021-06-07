@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { Image, ImageProps, ImageURISource, StyleSheet } from 'react-native'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import AspectRatio from 'src/shared/AspectRatio'
+import * as React from "react"
+import { Image, ImageProps, ImageURISource, StyleSheet } from "react-native"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import AspectRatio from "src/shared/AspectRatio"
 
 interface Props {
   ratio: number
@@ -10,7 +10,7 @@ interface Props {
 }
 
 class ResponsiveImage extends React.PureComponent<
-  Props & Omit<ImageProps, 'source'> & ScreenProps
+  Props & Omit<ImageProps, "source"> & ScreenProps
 > {
   getSource = () => {
     switch (this.props.screen) {
@@ -44,7 +44,7 @@ export default withScreenSize(ResponsiveImage)
 
 const styles = StyleSheet.create({
   image: {
-    height: '100%',
-    width: '100%',
+    height: "100%",
+    width: "100%",
   },
 })

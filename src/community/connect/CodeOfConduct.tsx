@@ -1,19 +1,19 @@
-import * as React from 'react'
-import LazyLoad from 'react-lazyload'
-import { StyleSheet, View } from 'react-native'
-import { H3, H4 } from 'src/fonts/Fonts'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import Fade from 'src/shared/AwesomeFade'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import { hashNav } from 'src/shared/menu-items'
-import { G, Path } from 'src/shared/svg'
-import { colors, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import LazyLoad from "react-lazyload"
+import { StyleSheet, View } from "react-native"
+import { H3, H4 } from "src/fonts/Fonts"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { ScreenSizes, useScreenSize } from "src/layout/ScreenSize"
+import Fade from "src/shared/AwesomeFade"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import { hashNav } from "src/shared/menu-items"
+import { G, Path } from "src/shared/svg"
+import { colors, standardStyles, textStyles } from "src/styles"
 
-type Props = I18nProps & ScreenProps
-
-const CodeofConduct: React.FunctionComponent<Props> = function CodeOfConduct({ t, screen }) {
+export default function CodeOfConduct() {
+  const { t } = useTranslation(NameSpaces.community)
+  const { screen } = useScreenSize()
   return (
     <View nativeID={hashNav.connect.code} style={styles.darkBackground}>
       <GridRow
@@ -34,18 +34,18 @@ const CodeofConduct: React.FunctionComponent<Props> = function CodeOfConduct({ t
           </View>
         </Cell>
         <Cell span={Spans.half}>
-          <Fade distance={'20px'} delay={400} duration={3300}>
+          <Fade distance={"20px"} delay={400} duration={3300}>
             <View>
-              <H3 style={textStyles.invert}>{t('codeOfConduct.title')}</H3>
+              <H3 style={textStyles.invert}>{t("codeOfConduct.title")}</H3>
               <H4 style={[textStyles.invert, standardStyles.blockMarginTablet]}>
-                {t('codeOfConduct.text')}
+                {t("codeOfConduct.text")}
               </H4>
               <Button
-                text={t('codeOfConduct.button')}
+                text={t("codeOfConduct.button")}
                 kind={BTN.PRIMARY}
-                href={'/code-of-conduct'}
+                href={"/code-of-conduct"}
                 size={SIZE.big}
-                target={'_tab'}
+                target={"_tab"}
               />
             </View>
           </Fade>
@@ -56,7 +56,7 @@ const CodeofConduct: React.FunctionComponent<Props> = function CodeOfConduct({ t
 }
 
 export function IntegratingAnimation({ darkMode }: { darkMode: boolean }) {
-  const blendStyle = { mixBlendMode: darkMode ? 'screen' : 'multiply' }
+  const blendStyle = { mixBlendMode: darkMode ? "screen" : "multiply" }
   const opacity = 0.95
   return (
     <svg
@@ -64,7 +64,7 @@ export function IntegratingAnimation({ darkMode }: { darkMode: boolean }) {
       height="100%"
       viewBox="0 0 353 132"
       fill="none"
-      style={{ overflow: 'visible' }}
+      style={{ overflow: "visible" }}
     >
       <G style={[styles.animationBase, styles.coinOne, blendStyle]}>
         <Path
@@ -114,19 +114,19 @@ const styles = StyleSheet.create({
   },
   animationArea: {
     height: 500,
-    width: '85%',
-    justifyContent: 'center',
+    width: "85%",
+    justifyContent: "center",
   },
   animationAreaMobile: {
     height: 230,
-    width: '90%',
-    justifyContent: 'center',
-    alignSelf: 'center',
+    width: "90%",
+    justifyContent: "center",
+    alignSelf: "center",
   },
   animationBase: {
     animationIterationCount: 1,
-    animationTimingFunction: 'ease-in-out',
-    animationFillMode: 'both',
+    animationTimingFunction: "ease-in-out",
+    animationFillMode: "both",
   },
   coinOne: buildCoinStyles({ offset: STAGGER * 0.9, x: -X_LARGE, y: -Y_LARGE }),
   coinTwo: buildCoinStyles({ offset: 0, x: X_SMALL, y: Y_SMALL }),
@@ -161,5 +161,3 @@ function keyFrames(from: Coord) {
     },
   ]
 }
-
-export default withNamespaces('community')(withScreenSize(CodeofConduct))

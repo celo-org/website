@@ -1,15 +1,15 @@
-import { EventProps } from 'fullstack/EventProps'
-import * as React from 'react'
-import { SectionList, SectionListRenderItemInfo, StyleSheet, Text, View } from 'react-native'
-import EventRow from 'src/community/connect/EventRow'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Fade from 'src/shared/AwesomeFade'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import OvalCoin from 'src/shared/OvalCoin'
-import Spinner from 'src/shared/Spinner'
-import { colors, fonts, standardStyles } from 'src/styles'
-import { NoneFound, Radio, SectionHeader } from 'src/table/table'
+import { EventProps } from "fullstack/EventProps"
+import * as React from "react"
+import { SectionList, SectionListRenderItemInfo, StyleSheet, Text, View } from "react-native"
+import EventRow from "src/community/connect/EventRow"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Fade from "src/shared/AwesomeFade"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import OvalCoin from "src/shared/OvalCoin"
+import Spinner from "src/shared/Spinner"
+import { colors, fonts, standardStyles } from "src/styles"
+import { NoneFound, Radio, SectionHeader } from "src/table/table"
 
 interface OwnProps {
   upcomingEvents?: EventProps[]
@@ -21,8 +21,8 @@ interface OwnProps {
 type Props = I18nProps & OwnProps
 
 enum Filter {
-  'speaking',
-  'hosting',
+  "speaking",
+  "hosting",
 }
 
 interface State {
@@ -55,9 +55,9 @@ class Events extends React.PureComponent<Props, State> {
   getSections = () => {
     const { t, topEvent, upcomingEvents, pastEvents } = this.props
     return [
-      this.getSection([topEvent], t('events.highlightEvent')),
-      this.getSection(upcomingEvents, t('events.upcomingEvents')),
-      this.getSection(pastEvents, t('events.pastEvents')),
+      this.getSection([topEvent], t("events.highlightEvent")),
+      this.getSection(upcomingEvents, t("events.upcomingEvents")),
+      this.getSection(pastEvents, t("events.pastEvents")),
     ].filter((section) => section)
   }
 
@@ -69,8 +69,8 @@ class Events extends React.PureComponent<Props, State> {
     return (
       <NoneFound
         onPress={this.filterNone}
-        actionText={'See All'}
-        longText={'There are no events based on your search filtering'}
+        actionText={"See All"}
+        longText={"There are no events based on your search filtering"}
       />
     )
   }
@@ -93,32 +93,32 @@ class Events extends React.PureComponent<Props, State> {
       >
         <Cell span={Spans.fourth}>
           <View style={standardStyles.blockMarginMobile}>
-            <Text style={fonts.h6}>{t('events.refineBy')}</Text>
+            <Text style={fonts.h6}>{t("events.refineBy")}</Text>
             <Radio
               icon={<OvalCoin size={14} color={colors.primary} />}
               selected={this.state.filter === Filter.hosting}
-              label={'Hosting'}
+              label={"Hosting"}
               value={Filter.hosting}
               onValueSelected={this.filterBy}
             />
             <Radio
               icon={<OvalCoin size={14} color={colors.purple} />}
               selected={this.state.filter === Filter.speaking}
-              label={'Speaking'}
+              label={"Speaking"}
               value={Filter.speaking}
               onValueSelected={this.filterBy}
             />
           </View>
           <Text style={[fonts.h6, standardStyles.elementalMarginBottom]}>
-            {t('events.reppingCelo')}
+            {t("events.reppingCelo")}
           </Text>
           <Text style={fonts.p}>
-            Send a note to{' '}
+            Send a note to{" "}
             <Button
               kind={BTN.INLINE}
-              text={'community@celo.org'}
-              href={'mailto:community@celo.org'}
-            />{' '}
+              text={"community@celo.org"}
+              href={"mailto:community@celo.org"}
+            />{" "}
             before the event to learn more
           </Text>
         </Cell>
@@ -136,9 +136,9 @@ class Events extends React.PureComponent<Props, State> {
               <Button
                 kind={BTN.DARKNAKED}
                 size={SIZE.normal}
-                text={t('events.pastEvents')}
-                href={'/past-events'}
-                target={'_new'}
+                text={t("events.pastEvents")}
+                href={"/past-events"}
+                target={"_new"}
               />
             </View>
           )}
@@ -172,14 +172,14 @@ function filterEvents(events: EventProps[], currentFilter: Filter | null) {
   return events
 }
 
-export default withNamespaces('community')(Events)
+export default withNamespaces("community")(Events)
 
 const styles = StyleSheet.create({
   container: {
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   placeholder: {
-    height: '90vh',
+    height: "90vh",
   },
 })
 

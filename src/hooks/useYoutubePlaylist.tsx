@@ -1,6 +1,6 @@
 import { useAsync } from "react-async-hook"
-import {Props} from 'src/shared/Thumbnail'
-import getConfig from 'next/config'
+import { Props } from "src/shared/Thumbnail"
+import getConfig from "next/config"
 const { publicRuntimeConfig } = getConfig()
 
 const KEY = publicRuntimeConfig.YT_KEY
@@ -20,35 +20,35 @@ export function useYoutube(id: string): undefined | Props[] {
 }
 
 interface YTThumbnail {
-  url: string,
-  width: number,
-  height: number,
+  url: string
+  width: number
+  height: number
 }
 
 interface YouTubeItem {
-  kind: "youtube#playlistItem",
-  etag: string,
-  id: string,
+  kind: "youtube#playlistItem"
+  etag: string
+  id: string
   snippet: {
-    publishedAt: string,
-    channelId: string,
-    title: string,
+    publishedAt: string
+    channelId: string
+    title: string
     description: string
     thumbnails: {
-      default: YTThumbnail,
-      medium: YTThumbnail,
-      high: YTThumbnail,
-      standard: YTThumbnail,
-    },
-    channelTitle: "Celo Org",
-    playlistId: string,
-    position: number,
-    resourceId: { kind: "youtube#video", videoId: string },
-    videoOwnerChannelTitle: "Celo Org",
-    videoOwnerChannelId: "UCCZgos_YAJSXm5QX5D5Wkcw",
-  },
+      default: YTThumbnail
+      medium: YTThumbnail
+      high: YTThumbnail
+      standard: YTThumbnail
+    }
+    channelTitle: "Celo Org"
+    playlistId: string
+    position: number
+    resourceId: { kind: "youtube#video"; videoId: string }
+    videoOwnerChannelTitle: "Celo Org"
+    videoOwnerChannelId: "UCCZgos_YAJSXm5QX5D5Wkcw"
+  }
   contentDetails: {
-    videoId: string,
+    videoId: string
     videoPublishedAt: string // "2020-06-23T10:26:02Z"
   }
 }
@@ -58,5 +58,5 @@ function itemToThumbnailProps(item: YouTubeItem): Props {
   const image = item.snippet.thumbnails.medium.url
   const link = `https://www.youtube.com/watch?v=${item.contentDetails.videoId}`
   const altText = item.snippet.description
-  return {image, title, link, altText, id: item.id}
+  return { image, title, link, altText, id: item.id }
 }

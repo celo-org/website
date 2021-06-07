@@ -1,25 +1,19 @@
-import * as React from "react";
-import { StyleSheet, ViewStyle } from "react-native";
-import { H1 } from "src/fonts/Fonts";
-import { Cell, GridRow, Spans } from "src/layout/GridRow";
-import { standardStyles, typeFaces } from "src/styles";
-import { P } from "./stylingElements";
+import * as React from "react"
+import { StyleSheet, ViewStyle } from "react-native"
+import { H1 } from "src/fonts/Fonts"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { standardStyles, typeFaces } from "src/styles"
+import { P } from "./stylingElements"
 
 interface Props {
-  title: string;
-  description?: string | React.ReactNode;
-  style?: ViewStyle;
-  titleStyle?: any;
-  descriptionStyle?: any;
+  title: string
+  description?: string | React.ReactNode
+  style?: ViewStyle
+  titleStyle?: any
+  descriptionStyle?: any
 }
 
-function TitleAndDescription({
-  title,
-  description,
-  style,
-  titleStyle,
-  descriptionStyle,
-}: Props) {
+function TitleAndDescription({ title, description, style, titleStyle, descriptionStyle }: Props) {
   return (
     <GridRow
       desktopStyle={standardStyles.elementalMarginBottom}
@@ -30,10 +24,10 @@ function TitleAndDescription({
         {description && <P style={descriptionStyle}>{description}</P>}
       </Cell>
     </GridRow>
-  );
+  )
 }
 
-export default TitleAndDescription;
+export default TitleAndDescription
 
 const styles = StyleSheet.create({
   titleStyle: {
@@ -43,4 +37,4 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     marginBottom: 16,
   },
-});
+})

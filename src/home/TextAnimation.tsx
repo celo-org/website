@@ -1,17 +1,17 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { H1 } from 'src/fonts/Fonts'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { colors, fonts, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import { H1 } from "src/fonts/Fonts"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { colors, fonts, textStyles } from "src/styles"
 
 export const WORDS = [
-  'finance',
-  'saving',
-  'education',
-  'sending',
-  'giving',
-  'lending',
-  'regeneration',
+  "finance",
+  "saving",
+  "education",
+  "sending",
+  "giving",
+  "lending",
+  "regeneration",
 ]
 
 const DURATION = 8510
@@ -33,8 +33,8 @@ export default React.memo(function TextAnimation({ currentWord, isAnimating }: P
   return (
     <View>
       <H1
-        ariaLevel={'2'}
-        accessibilityRole={'heading'}
+        ariaLevel={"2"}
+        accessibilityRole={"heading"}
         style={[fonts.h1, !isMobile && styles.title, styles.letsMake]}
       >
         A new story in
@@ -47,8 +47,8 @@ export default React.memo(function TextAnimation({ currentWord, isAnimating }: P
           </>
         )}
         <H1
-          ariaLevel={'2'}
-          accessibilityRole={'heading'}
+          ariaLevel={"2"}
+          accessibilityRole={"heading"}
           style={[fonts.h1, !isMobile && styles.title, textStyles.medium]}
         >
           {WORDS[currentWord]}
@@ -64,8 +64,8 @@ const styles = StyleSheet.create({
     lineHeight: 58,
   },
   textContainer: {
-    display: 'inline-flex',
-    width: 'fit-content',
+    display: "inline-flex",
+    width: "fit-content",
   },
   letsMake: {
     zIndex: 1,
@@ -77,8 +77,8 @@ const styles = StyleSheet.create({
     left: 0,
     right: -30,
     top: 8,
-    position: 'absolute',
-    animationFillMode: 'both',
+    position: "absolute",
+    animationFillMode: "both",
     animationIterationCount: 1,
     backgroundColor: colors.white,
   },
@@ -89,14 +89,14 @@ const styles = StyleSheet.create({
     left: -20,
     right: 0,
     top: 8,
-    position: 'absolute',
+    position: "absolute",
     backgroundColor: colors.white,
     animationIterationCount: 1,
   },
   fadeOut: {
     animationKeyframes: [
       {
-        '0%': {
+        "0%": {
           opacity: 0,
         },
         [`${FADE_OUT_START * 100}%`]: {
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
         [`${FADE_OUT_STOP * 100}%`]: {
           opacity: 1,
         },
-        '100%': {
+        "100%": {
           opacity: 1,
         },
       },
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
   slideIn: {
     animationKeyframes: [
       {
-        '0%': {
+        "0%": {
           transform: [
             {
               translateX: 0,
@@ -131,14 +131,14 @@ const styles = StyleSheet.create({
         [`${SLIDE_IN_END * 100}%`]: {
           transform: [
             {
-              translateX: '100%',
+              translateX: "100%",
             },
           ],
         },
-        '100%': {
+        "100%": {
           transform: [
             {
-              translateX: '100%',
+              translateX: "100%",
             },
           ],
         },

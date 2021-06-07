@@ -1,10 +1,10 @@
-import CeloRewards from 'pages/celo-rewards'
-import * as React from 'react'
-import * as renderer from 'react-test-renderer'
-import { TestProvider } from 'src/_page-tests/test-utils'
+import CeloRewards from "pages/celo-rewards"
+import * as React from "react"
+import * as renderer from "react-test-renderer"
+import { TestProvider } from "src/_page-tests/test-utils"
 
-describe('CeloRewards', () => {
-  it('renders', () => {
+describe("CeloRewards", () => {
+  it("renders", () => {
     const tree = renderer
       .create(
         <TestProvider>

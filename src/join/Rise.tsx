@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { Dimensions, StyleSheet, View } from 'react-native'
-import OvalCoin from 'src/shared/OvalCoin'
-import { colors } from 'src/styles'
-import { randomIntegerInRange } from 'src/utils/utils'
+import * as React from "react"
+import { Dimensions, StyleSheet, View } from "react-native"
+import OvalCoin from "src/shared/OvalCoin"
+import { colors } from "src/styles"
+import { randomIntegerInRange } from "src/utils/utils"
 
 // colors are duplicated to increase chance they will be picked
 const COLORS = [
@@ -105,12 +105,12 @@ export default class Rise extends React.PureComponent<Props, State> {
       this.setState({ willAnimate: true })
     }
 
-    this.windowResize({ window: Dimensions.get('window') })
-    Dimensions.addEventListener('change', this.windowResize)
+    this.windowResize({ window: Dimensions.get("window") })
+    Dimensions.addEventListener("change", this.windowResize)
   }
 
   componentWillUnmount() {
-    Dimensions.removeEventListener('change', this.windowResize)
+    Dimensions.removeEventListener("change", this.windowResize)
   }
 
   windowResize = ({ window: { width, height } }) => {
@@ -195,7 +195,7 @@ class RisingCoin extends React.PureComponent<RisingCoinProps, StateVectors> {
     if (!this.props.willAnimate) {
       return {
         opacity: 0.7,
-        animationPlaystate: 'paused',
+        animationPlaystate: "paused",
         transform: this.getTransformStart({ x: this.state.x, y: this.state.y }),
       }
     }
@@ -225,7 +225,7 @@ class RisingCoin extends React.PureComponent<RisingCoinProps, StateVectors> {
     return {
       animationDelay: `${this.props.delay}ms`,
       animationDuration: `${this.props.duration}s`,
-      animationFillMode: 'both' as 'both',
+      animationFillMode: "both" as const,
       animationKeyframes: [
         {
           ...this.keyframes(firstCoord, secondCoord, thirdCoord),
@@ -242,91 +242,91 @@ class RisingCoin extends React.PureComponent<RisingCoinProps, StateVectors> {
 
   riseFrames = (firstCoord: Coord, secondCoord: Coord, thirdCoord: Coord) => {
     return {
-      '0%': { opacity: LOW_POINT_OPACITY, transform: this.getTransformStart(firstCoord) },
-      '5%': { opacity: MID_POINT_OPACITY },
-      '16%': { opacity: PEAK_OPACITY },
-      '28%': { opacity: MID_POINT_OPACITY },
-      '33%': { opacity: LOW_POINT_OPACITY, transform: this.getTransformEnd(firstCoord) },
-      '33.001%': {
+      "0%": { opacity: LOW_POINT_OPACITY, transform: this.getTransformStart(firstCoord) },
+      "5%": { opacity: MID_POINT_OPACITY },
+      "16%": { opacity: PEAK_OPACITY },
+      "28%": { opacity: MID_POINT_OPACITY },
+      "33%": { opacity: LOW_POINT_OPACITY, transform: this.getTransformEnd(firstCoord) },
+      "33.001%": {
         opacity: LOW_POINT_OPACITY,
         transform: this.getTransformStart(secondCoord),
       },
-      '40%': { opacity: MID_POINT_OPACITY },
-      '49%': { opacity: PEAK_OPACITY },
-      '60%': { opacity: MID_POINT_OPACITY },
-      '66%': {
+      "40%": { opacity: MID_POINT_OPACITY },
+      "49%": { opacity: PEAK_OPACITY },
+      "60%": { opacity: MID_POINT_OPACITY },
+      "66%": {
         opacity: LOW_POINT_OPACITY,
         transform: this.getTransformEnd(secondCoord),
       },
-      '66.001%': {
+      "66.001%": {
         opacity: LOW_POINT_OPACITY,
         transform: this.getTransformStart(thirdCoord),
       },
-      '70%': { opacity: MID_POINT_OPACITY },
-      '82%': { opacity: PEAK_OPACITY },
-      '97%': { opacity: MID_POINT_OPACITY },
-      '99%': {
+      "70%": { opacity: MID_POINT_OPACITY },
+      "82%": { opacity: PEAK_OPACITY },
+      "97%": { opacity: MID_POINT_OPACITY },
+      "99%": {
         opacity: LOW_POINT_OPACITY,
         transform: this.getTransformEnd(thirdCoord),
       },
-      '100%': { transform: this.getTransformStart(firstCoord), opacity: LOW_POINT_OPACITY },
+      "100%": { transform: this.getTransformStart(firstCoord), opacity: LOW_POINT_OPACITY },
     }
   }
   fallFrames = ({ x, y: originalY }: Coord) => {
     const y = originalY + this.props.windowHeight * 0.2
     return {
-      '0%': {
+      "0%": {
         opacity: LOW_POINT_OPACITY,
         transform: this.getTransformStart({ x, y }),
       },
-      '10%': { opacity: MID_POINT_OPACITY },
+      "10%": { opacity: MID_POINT_OPACITY },
 
-      '49%': { transform: this.getTransformMidpoint(jitter({ x, y }), 0.98) },
-      '49.25%': { transform: this.getTransformMidpoint(jitter({ x, y }), 0.982) },
-      '49.5%': {
+      "49%": { transform: this.getTransformMidpoint(jitter({ x, y }), 0.98) },
+      "49.25%": { transform: this.getTransformMidpoint(jitter({ x, y }), 0.982) },
+      "49.5%": {
         opacity: MID_POINT_OPACITY,
         transform: this.getTransformMidpoint(jitter({ x, y }), 0.98),
       },
       // fall starts
-      '50%': {
-        animationPlaystate: 'paused',
+      "50%": {
+        animationPlaystate: "paused",
         transform: this.getTransformEnd({ x, y }),
-        animationTimingFunction: 'cubic-bezier(1,.03,1,1.45)',
+        animationTimingFunction: "cubic-bezier(1,.03,1,1.45)",
       },
-      '99.9%': {
+      "99.9%": {
         opacity: MID_POINT_OPACITY,
         transform: this.getTransformEnd(this.fall({ x })),
       },
-      '100%': { opacity: 0, transform: this.getTransformEnd(this.fall({ x })) },
+      "100%": { opacity: 0, transform: this.getTransformEnd(this.fall({ x })) },
     }
   }
 
   getHollowCoinStyle(color: colors) {
     return {
       opacity: 1,
-      strokeWidth: '8px',
-      strokeLinecap: 'round',
-      animationTimingFunction: 'ease-out',
+      strokeWidth: "8px",
+      strokeLinecap: "round",
+      animationTimingFunction: "ease-out",
       animationDelay: `${this.props.delay}ms`,
       animationDuration: `${this.props.duration}s`,
-      animationFillMode: 'both',
+      animationFillMode: "both",
       animationKeyframes: [
         {
-          '0%': {
+          "0%": {
             stroke: color,
             fill: color,
           },
-          '90%': {
+          "90%": {
             stroke: color,
             fill: color,
           },
-          '91%': {
+          "91%": {
             stroke: color,
-            fill: 'transparent',
+            fill: "transparent",
           },
-          '100%': {
+          "100%": {
             stroke: colors.gray,
-            fill: 'transparent',
+            fill: "transparent",
           },
         },
       ],
@@ -347,7 +347,7 @@ class RisingCoin extends React.PureComponent<RisingCoinProps, StateVectors> {
           color={this.props.color}
           size={this.state.radius}
           viewBox="-10 -10 90 115"
-          mixBlendMode={'screen'}
+          mixBlendMode={"screen"}
         />
       </View>
     )
@@ -356,23 +356,23 @@ class RisingCoin extends React.PureComponent<RisingCoinProps, StateVectors> {
 
 const styles = StyleSheet.create({
   container: {
-    width: '100vw',
-    height: '100vh',
-    position: 'relative',
+    width: "100vw",
+    height: "100vh",
+    position: "relative",
     zIndex: -1,
     backgroundColor: colors.white,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   coin: {
-    position: 'absolute',
+    position: "absolute",
     opacity: 0,
   },
   coinRise: {
-    animationIterationCount: 'infinite',
-    animationTimingFunction: 'ease-in',
+    animationIterationCount: "infinite",
+    animationTimingFunction: "ease-in",
   },
   coinFall: {
     animationIterationCount: 1,
-    animationTimingFunction: 'ease-out',
+    animationTimingFunction: "ease-out",
   },
 })

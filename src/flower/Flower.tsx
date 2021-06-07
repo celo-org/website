@@ -1,18 +1,18 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import FlowerTablet from 'src/flower/color-flower-mid.jpg'
-import FlowerMobile from 'src/flower/color-flower-small.jpg'
-import FlowerDesktop from 'src/flower/color-flower.jpg'
-import OutlineMobile from 'src/flower/outline-flower-mobile.png'
-import OutlineTablet from 'src/flower/outline-flower-tablet.png'
-import Outline from 'src/flower/outline-flower.png'
-import { ScreenSizes, useScreenSize } from 'src/layout/ScreenSize'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import FlowerTablet from "src/flower/color-flower-mid.jpg"
+import FlowerMobile from "src/flower/color-flower-small.jpg"
+import FlowerDesktop from "src/flower/color-flower.jpg"
+import OutlineMobile from "src/flower/outline-flower-mobile.png"
+import OutlineTablet from "src/flower/outline-flower-tablet.png"
+import Outline from "src/flower/outline-flower.png"
+import { ScreenSizes, useScreenSize } from "src/layout/ScreenSize"
 
 export default function Flower() {
   const canvasRef = React.useRef(null)
   const { screen, isMobile } = useScreenSize()
   React.useEffect(() => {
-    const viewCtx = canvasRef.current.getContext('2d')
+    const viewCtx = canvasRef.current.getContext("2d")
     const canvasHeight = Math.floor(viewCtx.canvas.height)
     const canvasWidth = Math.floor(viewCtx.canvas.width)
     const colorFlower = setImage(viewCtx, canvasWidth, canvasHeight, COLOR_FLOWER_SRC[screen], 1)
@@ -50,13 +50,13 @@ export default function Flower() {
       })
     }
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [canvasRef, isMobile])
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [canvasRef, isMobile, screen])
 
   return (
     <View style={[styles.breathe, isMobile && styles.breatheMobile]}>
-      <canvas ref={canvasRef} width="1270" height="1270" style={{ maxWidth: '100%' }} />
+      <canvas ref={canvasRef} width="1270" height="1270" style={{ maxWidth: "100%" }} />
     </View>
   )
 }
@@ -125,26 +125,26 @@ const OUTLINE_FLOWER_SRC = {
 const styles = StyleSheet.create({
   breatheMobile: {
     marginTop: 40,
-    height: 'calc(100vh - 200px)',
-    justifyContent: 'flex-start',
+    height: "calc(100vh - 200px)",
+    justifyContent: "flex-start",
   },
   breathe: {
     padding: 20,
     marginTop: 60,
     maxWidth: 1270,
-    justifyContent: 'center',
-    width: '100%',
-    willChange: 'transform, opacity',
-    animationIterationCount: 'infinite',
-    animationDirection: 'alternate',
-    animationDuration: '3s',
-    animationFillMode: 'both',
+    justifyContent: "center",
+    width: "100%",
+    willChange: "transform, opacity",
+    animationIterationCount: "infinite",
+    animationDirection: "alternate",
+    animationDuration: "3s",
+    animationFillMode: "both",
     animationKeyframes: [
       {
-        from: { opacity: 0.85, filter: 'brightness(1.1)' },
-        '10%': { opacity: 0.85 },
-        '90%': { opacity: 1 },
-        to: { opacity: 1, filter: 'brightness(1) hue-rotate(-5deg)' },
+        from: { opacity: 0.85, filter: "brightness(1.1)" },
+        "10%": { opacity: 0.85 },
+        "90%": { opacity: 1 },
+        to: { opacity: 1, filter: "brightness(1) hue-rotate(-5deg)" },
       },
     ],
   },

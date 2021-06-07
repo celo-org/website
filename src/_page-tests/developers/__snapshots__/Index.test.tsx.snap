@@ -1120,7 +1120,7 @@ exports[`DevelopersPage renders 1`] = `
                 }
               }
             >
-              Send or Request cUSD easily with anyone in your address book, powered by decentralized phone number verification
+              Send or Request stable assets easily with anyone in your address book, powered by decentralized phone number verification
             </div>
             <ul
               className="css-reset-4rbku5 css-view-1dbjc4n"
@@ -1192,7 +1192,7 @@ exports[`DevelopersPage renders 1`] = `
                   }
                 }
               >
-                Exchange between cUSD and CELO
+                Exchange between stable assets and CELO
               </li>
               <li
                 className="css-reset-4rbku5 css-text-901oao"
@@ -4197,7 +4197,7 @@ Build dApps for the Celo platform.
         <a
           className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
           dir="auto"
-          href="https://c-labs.typeform.com/to/gj9aUp"
+          href="mailto:partner@celo.org"
           onClick={[Function]}
           onMouseEnter={[Function]}
           role="link"

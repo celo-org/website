@@ -1,6 +1,5 @@
-import * as React from 'react'
-import { colors } from 'src/styles'
-
+import * as React from "react"
+import { colors } from "src/styles"
 
 interface Props {
   size: number
@@ -8,7 +7,7 @@ interface Props {
 }
 
 export default React.memo(function Android({ size, color }: Props) {
-  const fill = color || 'white'
+  const fill = color || "white"
   return (
     <svg width={size} height={size} viewBox="0 0 19 22" fill="none">
       <g clipPath="url(#clip0)">

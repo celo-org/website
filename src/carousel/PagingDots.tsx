@@ -1,7 +1,7 @@
-import { CarouselSlideRenderControlProps } from 'nuka-carousel'
-import * as React from 'react'
-import { StyleSheet, TouchableOpacity, View } from 'react-native'
-import { colors } from 'src/styles'
+import { CarouselSlideRenderControlProps } from "nuka-carousel"
+import * as React from "react"
+import { StyleSheet, TouchableOpacity, View } from "react-native"
+import { colors } from "src/styles"
 
 export default function PagingDots(props: CarouselSlideRenderControlProps) {
   return (
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 15,
   },
   dotContainer: {
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   dot: {
     margin: DOT_SIZE / 2,
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     borderColor: colors.primary,
   },
   inactive: {
-    backgroundColor: 'transparent',
+    backgroundColor: "transparent",
   },
   active: { backgroundColor: colors.primary },
 })

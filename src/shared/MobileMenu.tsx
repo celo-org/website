@@ -1,10 +1,10 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import RingsGlyph from 'src/logos/RingsGlyph'
-import Button, { BTN } from 'src/shared/Button.3'
-import { MenuLink } from 'src/shared/menu-items'
-import { standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import { NameSpaces, useTranslation } from "src/i18n"
+import RingsGlyph from "src/logos/RingsGlyph"
+import Button, { BTN } from "src/shared/Button.3"
+import { MenuLink } from "src/shared/menu-items"
+import { standardStyles } from "src/styles"
 interface Props {
   currentPage: string
   menu: MenuLink[]
@@ -28,7 +28,7 @@ export default function MobileMenu({ currentPage, menu }: Props) {
                 text={t(item.name)}
                 kind={btnKind}
                 key={item.name}
-                align={'center'}
+                align={"center"}
                 style={styles.buttonText}
               />
             </View>
@@ -44,19 +44,19 @@ export default function MobileMenu({ currentPage, menu }: Props) {
 
 const styles = StyleSheet.create({
   root: {
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-start",
     flex: 1,
     paddingVertical: 30,
     paddingHorizontal: 20,
   },
   rings: { paddingVertical: 30 },
   menu: {
-    alignItems: 'center',
+    alignItems: "center",
     paddingHorizontal: 20,
-    flexDirection: 'column',
-    justifyContent: 'space-around',
+    flexDirection: "column",
+    justifyContent: "space-around",
   },
   menuItem: {
     marginHorizontal: 10,
@@ -64,6 +64,6 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 20,
-    alignItems: 'center',
+    alignItems: "center",
   },
 })

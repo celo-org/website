@@ -1,7 +1,7 @@
-import * as React from 'react'
-import FadeIn from 'react-lazyload-fadein'
-import { Image, ImageSourcePropType, StyleSheet, Text, View } from 'react-native'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import FadeIn from "react-lazyload-fadein"
+import { Image, ImageSourcePropType, StyleSheet, Text, View } from "react-native"
+import { fonts, standardStyles, textStyles } from "src/styles"
 interface Props {
   title: string
   text?: string
@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
   },
   container: {
     marginRight: 20,
-    flexDirection: 'row',
+    flexDirection: "row",
     flex: 0,
   },
-  textArea: { width: '100%', flex: 1 },
+  textArea: { width: "100%", flex: 1 },
 })

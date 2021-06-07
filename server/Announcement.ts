@@ -1,7 +1,7 @@
-import getConfig from 'next/config'
-import airtableInit from '../server/airtable'
-import Sentry from '../server/sentry'
-import cache from './cache'
+import getConfig from "next/config"
+import airtableInit from "../server/airtable"
+import Sentry from "../server/sentry"
+import cache from "./cache"
 
 export interface Fields {
   live?: boolean
@@ -17,7 +17,7 @@ interface Record {
 // countryCode is a ISO 3166-1 alpha-2
 export default async function latestAnnouncements(countryCode: string): Promise<Fields[]> {
   try {
-    const announcements = await cache<Fields[]>('blue-announcements', fetchAnouncmentRecords)
+    const announcements = await cache<Fields[]>("blue-announcements", fetchAnouncmentRecords)
 
     const anyBlocked = announcements.some(
       (announcement) => announcement.block && announcement.block.length > 0
@@ -37,14 +37,14 @@ async function fetchAnouncmentRecords() {
     .select({
       maxRecords: 10,
       filterByFormula: IS_LIVE,
-      sort: [{ field: 'order', direction: 'desc' }],
+      sort: [{ field: "order", direction: "desc" }],
     })
     .firstPage()) as Record[]
   return records.map((record) => record.fields)
 }
 
 function getAirtable() {
-  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ANNOUNCEMENT_ID)('Bluebanner')
+  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ANNOUNCEMENT_ID)("Bluebanner")
 }
 
 // just export for testing!
@@ -61,4 +61,4 @@ export function censor(announcements: Fields[], country?: string) {
   )
 }
 
-const IS_LIVE = 'live=1'
+const IS_LIVE = "live=1"

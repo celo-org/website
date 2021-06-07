@@ -32,7 +32,8 @@
     "Validators": "Validators",
     "Developers": "Developers",
     "Alliance": "Alliance",
-    "Community": "Community"
+    "Community": "Community",
+    "annualReport": "Annual Report"
   },
   "channels": {
     "brand": {
@@ -72,6 +73,8 @@
   "socialLabel": "Engage",
   "validationErrors": {
     "email": "Please enter a valid email",
+    "fieldIsRequired": "{{field}} is required",
+    "url": "Url should start with 'https://' and be valid",
     "generic": "Oops I’m blank!",
     "unknownError": "Something went wrong",
     "pleaseWait": "Please wait"

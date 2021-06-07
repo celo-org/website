@@ -1,3 +1,3 @@
-import { ValidatorsListAppWithNetwork } from 'src/dev/ValidatorsListApp'
+import { ValidatorsListAppWithNetwork } from "src/dev/ValidatorsListApp"
 
-export default ValidatorsListAppWithNetwork('baklava')
+export default ValidatorsListAppWithNetwork("baklava")

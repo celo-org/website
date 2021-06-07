@@ -1,25 +1,25 @@
-import * as React from 'react'
-import { StyleSheet, Text, TextStyle, View } from 'react-native'
-import Chevron from 'src/icons/chevron'
-import Hoverable from 'src/shared/Hoverable'
-import Link from 'src/shared/Link'
-import { colors, fonts, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, TextStyle, View } from "react-native"
+import Chevron from "src/icons/chevron"
+import Hoverable from "src/shared/Hoverable"
+import Link from "src/shared/Link"
+import { colors, fonts, textStyles } from "src/styles"
 
 export enum BTN {
-  PRIMARY = 'PRIMARY',
-  SECONDARY = 'SECONDARY',
-  TERTIARY = 'TERTIARY',
-  NAKED = 'NAKED',
-  DARKNAKED = 'DARKNAKED',
-  NAV = 'NAV',
-  DARKNAV = 'DARKNAV',
-  INLINE = 'INLINE',
+  PRIMARY = "PRIMARY",
+  SECONDARY = "SECONDARY",
+  TERTIARY = "TERTIARY",
+  NAKED = "NAKED",
+  DARKNAKED = "DARKNAKED",
+  NAV = "NAV",
+  DARKNAV = "DARKNAV",
+  INLINE = "INLINE",
 }
 export enum SIZE {
-  small = 'small',
-  normal = 'normal',
-  big = 'big',
-  fullWidth = 'fullWidth',
+  small = "small",
+  normal = "normal",
+  big = "big",
+  fullWidth = "fullWidth",
 }
 
 interface AllButtonProps {
@@ -31,7 +31,7 @@ interface AllButtonProps {
   onPress?: () => void
   iconRight?: React.ReactNode
   iconLeft?: React.ReactNode
-  align?: 'center' | 'flex-start' | 'flex-end'
+  align?: "center" | "flex-start" | "flex-end"
   style?: TextStyle | TextStyle[]
 }
 
@@ -144,10 +144,10 @@ export default class Button extends React.PureComponent<ButtonsProps, State> {
 }
 
 enum BTNStates {
-  normal = 'normal',
-  hover = 'hover',
-  press = 'press',
-  disabled = 'disabled',
+  normal = "normal",
+  hover = "hover",
+  press = "press",
+  disabled = "disabled",
 }
 
 interface Props {
@@ -169,7 +169,7 @@ function ButtonPrimary(props: Props) {
       <Text
         href={href}
         hrefAttrs={getHrefAttrs(target)}
-        accessibilityRole={props.accessibilityRole ||"link"}
+        accessibilityRole={props.accessibilityRole || "link"}
         style={[
           baseStyles.base,
           baseStyles.verticallyAlign,
@@ -199,7 +199,7 @@ function ButtonSecondary(props: Props) {
         <Text
           href={href}
           hrefAttrs={getHrefAttrs(target)}
-          accessibilityRole={props.accessibilityRole ||"link"}
+          accessibilityRole={props.accessibilityRole || "link"}
           style={[
             baseStyles.base,
             sizeStyle(size),
@@ -226,7 +226,7 @@ function ButtonTertiary(props: Props) {
       <Text
         href={href}
         hrefAttrs={getHrefAttrs(target)}
-        accessibilityRole={props.accessibilityRole ||"link"}
+        accessibilityRole={props.accessibilityRole || "link"}
         style={[
           baseStyles.base,
           baseStyles.verticallyAlign,
@@ -274,10 +274,10 @@ function ButtonNaked(props: Props) {
     <View style={[baseStyles.base, baseStyles.floating, nakedStyles.container]}>
       <Link href={href}>
         <Text
-          accessibilityRole={props.accessibilityRole ||"link"}
+          accessibilityRole={props.accessibilityRole || "link"}
           href={href}
-            hrefAttrs={getHrefAttrs(target)}
-            style={[
+          hrefAttrs={getHrefAttrs(target)}
+          style={[
             fonts.navigation,
             baseStyles.verticallyAlign,
             textStyle,
@@ -289,23 +289,23 @@ function ButtonNaked(props: Props) {
           {children}
 
           <View style={nakedStyles.chevron}>
-            <Chevron color={color} opacity={opacity} size={'0.75em'} />
+            <Chevron color={color} opacity={opacity} size={"0.75em"} />
           </View>
         </Text>
       </Link>
     </View>
   )
 }
-ButtonNaked.displayName = 'ButtonNaked'
+ButtonNaked.displayName = "ButtonNaked"
 
 const nakedStyles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    justifyContent: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
   },
   chevron: {
-    paddingTop: '0.185em',
-    paddingLeft: '0.4em',
+    paddingTop: "0.185em",
+    paddingLeft: "0.4em",
   },
 })
 
@@ -316,7 +316,7 @@ function getHrefAttrs(target: string) {
       target: "blank", // for some reason  targets starting with `_` are ignored https://github.com/necolas/react-native-web/blob/master/packages/react-native-web/src/exports/Text/index.js#L134
     }
   } else {
-    return {target}
+    return { target }
   }
 }
 
@@ -328,7 +328,7 @@ function ButtonNav(props: Props) {
       <Text
         href={href}
         hrefAttrs={getHrefAttrs(target)}
-        accessibilityRole={props.accessibilityRole ||"link"}
+        accessibilityRole={props.accessibilityRole || "link"}
         style={[
           baseStyles.base,
           baseStyles.verticallyAlign,
@@ -352,7 +352,7 @@ function ButtonInline(props: Props) {
       <Text
         href={href}
         hrefAttrs={getHrefAttrs(target)}
-        accessibilityRole={props.accessibilityRole ||"link"}
+        accessibilityRole={props.accessibilityRole || "link"}
         style={[inlineStyle.text, inlineStyle.container, opacityStyle[status], style]}
       >
         {children}
@@ -363,12 +363,12 @@ function ButtonInline(props: Props) {
 
 const inlineStyle = StyleSheet.create({
   text: {
-    cursor: 'pointer',
-    textDecorationStyle: 'solid',
-    textDecorationLine: 'underline',
+    cursor: "pointer",
+    textDecorationStyle: "solid",
+    textDecorationLine: "underline",
   },
   container: {
-    display: 'inline',
+    display: "inline",
   },
 })
 
@@ -427,28 +427,28 @@ const primaryStyles = StyleSheet.create({
 
 const secondaryStyles = StyleSheet.create({
   normal: {
-    backgroundColor: 'transparent',
+    backgroundColor: "transparent",
     borderColor: colors.gray,
     borderRadius,
     borderWidth,
   },
   hover: {
-    backgroundColor: 'transparent',
+    backgroundColor: "transparent",
     borderColor: colors.primaryHover,
     borderRadius,
     borderWidth,
   },
   press: {
-    backgroundColor: 'transparent',
+    backgroundColor: "transparent",
     borderColor: colors.primaryPress,
     outlineColor: colors.primaryPress,
     borderRadius,
     borderWidth,
   },
   disabled: {
-    backgroundColor: 'transparent',
+    backgroundColor: "transparent",
     borderColor: colors.gray,
-    cursor: 'not-allowed',
+    cursor: "not-allowed",
     borderRadius,
     borderWidth,
   },
@@ -466,7 +466,7 @@ const commonTextStyles = StyleSheet.create({
   },
   disabled: {
     color: colors.inactive,
-    cursor: 'not-allowed',
+    cursor: "not-allowed",
   },
 })
 const opacityState = {
@@ -481,7 +481,7 @@ const opacityState = {
   },
   disabled: {
     opacity: 0.4,
-    cursor: 'not-allowed',
+    cursor: "not-allowed",
   },
 }
 const opacityStyle = StyleSheet.create(opacityState)
@@ -495,14 +495,14 @@ enum VERTICAL_PAD {
 
 const baseStyles = StyleSheet.create({
   base: {
-    justifyContent: 'center',
+    justifyContent: "center",
     flexGrow: 0,
-    width: 'fit-content',
+    width: "fit-content",
     opacity: 1,
   },
   verticallyAlign: {
-    display: 'inline-flex',
-    alignItems: 'center',
+    display: "inline-flex",
+    alignItems: "center",
   },
   big: {
     minWidth: 200,
@@ -522,18 +522,18 @@ const baseStyles = StyleSheet.create({
   },
   fullWidth: {
     flexGrow: 1,
-    width: '100%',
+    width: "100%",
     paddingVertical: VERTICAL_PAD.fullWidth,
     paddingHorizontal: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   floating: {
-    backgroundColor: 'transparent',
-    borderColor: 'transparent',
-    outlineColor: 'transparent',
+    backgroundColor: "transparent",
+    borderColor: "transparent",
+    outlineColor: "transparent",
   },
-  notAllowed: { cursor: 'not-allowed' },
+  notAllowed: { cursor: "not-allowed" },
   iconLeft: {
     paddingRight: 8,
   },

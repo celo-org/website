@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { brandStyles } from 'src/experience/common/constants'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import { standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import { brandStyles } from "src/experience/common/constants"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import { standardStyles } from "src/styles"
 
 interface TripplePairingProps {
   first: React.ReactNode

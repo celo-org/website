@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { StyleSheet, Text, TextProps, View, ViewProps } from 'react-native'
-import Responsive from 'src/shared/Responsive'
-import { TextStyles } from 'src/shared/Styles'
-import { fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, TextProps, View, ViewProps } from "react-native"
+import Responsive from "src/shared/Responsive"
+import { TextStyles } from "src/shared/Styles"
+import { fonts, standardStyles } from "src/styles"
 interface Props {
   style?: any
   children?: any
   tabIndex?: number
   id?: string
-  ariaLevel?: '1' | '2' | '3' | '4' | '5'
-  accessibilityRole?: 'button' | 'label' | 'link' | 'heading' | 'listitem'
+  ariaLevel?: "1" | "2" | "3" | "4" | "5"
+  accessibilityRole?: "button" | "label" | "link" | "heading" | "listitem"
 }
 
 interface TableProps {
@@ -37,10 +37,10 @@ export const H1 = ({ style, children, tabIndex, accessibilityRole, id, ariaLevel
   return (
     <Responsive large={[styles.reset, fonts.h1, style]}>
       <Text
-        aria-level={ariaLevel || '1'}
+        aria-level={ariaLevel || "1"}
         id={id}
         tabIndex={tabIndex}
-        accessibilityRole={accessibilityRole || 'heading'}
+        accessibilityRole={accessibilityRole || "heading"}
         style={[styles.reset, fonts.h1Mobile, style]}
       >
         {children}
@@ -54,7 +54,7 @@ export const H2 = ({ style, children, tabIndex, accessibilityRole, id }: Props) 
     <Responsive large={[styles.reset, fonts.h2, style]}>
       <Text
         id={id}
-        accessibilityRole={accessibilityRole || 'heading'}
+        accessibilityRole={accessibilityRole || "heading"}
         tabIndex={tabIndex}
         aria-level="2"
         style={[styles.reset, fonts.h2Mobile, style]}
@@ -71,7 +71,7 @@ export const H3 = ({ style, children, tabIndex, accessibilityRole, id }: Props) 
       <Text
         id={id}
         tabIndex={tabIndex}
-        accessibilityRole={accessibilityRole || 'heading'}
+        accessibilityRole={accessibilityRole || "heading"}
         aria-level="3"
         style={[styles.reset, fonts.h3Mobile, style]}
       >
@@ -87,7 +87,7 @@ export const H4 = ({ style, children, tabIndex, accessibilityRole, id }: Props) 
       <Text
         id={id}
         tabIndex={tabIndex}
-        accessibilityRole={accessibilityRole || 'heading'}
+        accessibilityRole={accessibilityRole || "heading"}
         aria-level="4"
         style={[styles.reset, fonts.h4Mobile, style]}
       >
@@ -113,7 +113,7 @@ interface TextChildren {
 
 export function Ul(props: TextProps & ViewChildren) {
   return (
-    <View style={[styles.ul, StyleSheet.flatten(props.style)]} accessibilityRole={'list'}>
+    <View style={[styles.ul, StyleSheet.flatten(props.style)]} accessibilityRole={"list"}>
       {props.children}
     </View>
   )
@@ -121,10 +121,7 @@ export function Ul(props: TextProps & ViewChildren) {
 
 export function Ol(props: ViewProps & ViewChildren) {
   return (
-    <View
-      style={[styles.ol, StyleSheet.flatten(props.style)]}
-      accessibilityRole={'list'}
-    >
+    <View style={[styles.ol, StyleSheet.flatten(props.style)]} accessibilityRole={"list"}>
       {props.children}
     </View>
   )
@@ -152,7 +149,7 @@ export function Li(props: TextProps & TextChildren) {
     <Text
       // @ts-ignore
       style={style}
-      accessibilityRole={'listitem'}
+      accessibilityRole={"listitem"}
     >
       {props.children}
     </Text>
@@ -161,32 +158,32 @@ export function Li(props: TextProps & TextChildren) {
 
 const styles = StyleSheet.create({
   reset: {
-    textTransform: 'none',
+    textTransform: "none",
   },
   alpha: {
-    listStyle: 'lower-alpha',
-    display: 'list-item',
+    listStyle: "lower-alpha",
+    display: "list-item",
   },
   numeric: {
-    listStyle: 'decimal',
-    display: 'list-item',
+    listStyle: "decimal",
+    display: "list-item",
   },
   bullet: {
-    listStyle: 'disc',
-    display: 'list-item',
+    listStyle: "disc",
+    display: "list-item",
   },
   initial: {
-    listStyle: 'inherit',
-    display: 'list-item',
+    listStyle: "inherit",
+    display: "list-item",
   },
   ul: {
     marginTop: 20,
     paddingLeft: 20,
-    listStyle: 'disc',
+    listStyle: "disc",
   },
   ol: {
     marginTop: 20,
     paddingLeft: 20,
-    listStyle: 'decimal',
+    listStyle: "decimal",
   },
 })

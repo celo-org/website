@@ -1,52 +1,52 @@
-import { fireEvent, render, waitFor } from '@testing-library/react'
-import * as React from 'react'
-import { ApplicationFields, RecommendationFields } from 'src/../fullstack/EcoFundFields'
-import { TestProvider } from 'src/_page-tests/test-utils'
-import EcoFund from 'src/community/EcoFund'
+import { fireEvent, render, waitFor } from "@testing-library/react"
+import * as React from "react"
+import { ApplicationFields, RecommendationFields } from "src/../fullstack/EcoFundFields"
+import { TestProvider } from "src/_page-tests/test-utils"
+import EcoFund from "src/community/EcoFund"
 
-describe('EcoFund', () => {
-  describe('on first render', () => {
-    it('is all clear', async () => {
+describe("EcoFund", () => {
+  describe("on first render", () => {
+    it("is all clear", async () => {
       const { queryAllByText } = render(
         <TestProvider>
           <EcoFund />
         </TestProvider>
       )
 
-      queryAllByText('common:validationErrors:email').forEach((element) =>
+      queryAllByText("common:validationErrors:email").forEach((element) =>
         expect(element).not.toBeVisible()
       )
 
-      queryAllByText('common:validationErrors:generic').forEach((element) =>
+      queryAllByText("common:validationErrors:generic").forEach((element) =>
         expect(element).not.toBeVisible()
       )
     })
   })
 
-  describe('when visitor tries submiting without filling out form', () => {
-    it('shows validation errors', async () => {
+  describe("when visitor tries submiting without filling out form", () => {
+    it("shows validation errors", async () => {
       const { getByText, queryAllByText, queryByText } = render(
         <TestProvider>
           <EcoFund />
         </TestProvider>
       )
 
-      const submitButton = getByText('Apply')
+      const submitButton = getByText("Apply")
 
       fireEvent.click(submitButton)
 
-      queryAllByText('common:validationErrors:email').forEach((element) =>
+      queryAllByText("common:validationErrors:email").forEach((element) =>
         expect(element).toBeVisible()
       )
 
-      queryAllByText('common:validationErrors:generic').forEach((element) =>
+      queryAllByText("common:validationErrors:generic").forEach((element) =>
         expect(element).toBeVisible()
       )
-      expect(queryByText('Application Submitted')).not.toBeVisible()
+      expect(queryByText("Application Submitted")).not.toBeVisible()
     })
   })
 
-  describe('when visitor presses submit after filling out the form', () => {
+  describe("when visitor presses submit after filling out the form", () => {
     function submitSuccess() {
       const options = render(
         <TestProvider>
@@ -55,40 +55,40 @@ describe('EcoFund', () => {
       )
       const { getByText, getByLabelText } = options
 
-      fireEvent.change(getByLabelText(ApplicationFields.about), { target: { value: 'UBI' } })
+      fireEvent.change(getByLabelText(ApplicationFields.about), { target: { value: "UBI" } })
 
-      fireEvent.change(getByLabelText(ApplicationFields.product), { target: { value: 'UBI' } })
+      fireEvent.change(getByLabelText(ApplicationFields.product), { target: { value: "UBI" } })
 
       fireEvent.change(getByLabelText(ApplicationFields.founderEmail), {
-        target: { value: 'connect@example.com' },
+        target: { value: "connect@example.com" },
       })
 
-      fireEvent.change(getByLabelText(ApplicationFields.org), { target: { value: 'Celo' } })
-      fireEvent.change(getByLabelText(ApplicationFields.url), { target: { value: 'example.com' } })
+      fireEvent.change(getByLabelText(ApplicationFields.org), { target: { value: "Celo" } })
+      fireEvent.change(getByLabelText(ApplicationFields.url), { target: { value: "example.com" } })
 
-      fireEvent.change(getByLabelText(ApplicationFields.video), { target: { value: 'video.mov' } })
+      fireEvent.change(getByLabelText(ApplicationFields.video), { target: { value: "video.mov" } })
 
-      const submitButton = getByText('Apply')
+      const submitButton = getByText("Apply")
       fireEvent.click(submitButton)
       expect(submitButton).toBeVisible()
       return options
     }
-    it('does not show errors', async () => {
+    it("does not show errors", async () => {
       const { queryAllByText } = submitSuccess()
-      queryAllByText('common:validationErrors:generic').forEach((element) =>
+      queryAllByText("common:validationErrors:generic").forEach((element) =>
         expect(element).not.toBeVisible()
       )
-      queryAllByText('common:validationErrors:generic').forEach((element) =>
+      queryAllByText("common:validationErrors:generic").forEach((element) =>
         expect(element).not.toBeVisible()
       )
     })
-    it('Shows a Success Message', async () => {
+    it("Shows a Success Message", async () => {
       const { queryByText } = submitSuccess()
       await waitFor(() => true)
-      expect(queryByText('Application Submitted')).toBeVisible()
+      expect(queryByText("Application Submitted")).toBeVisible()
     })
   })
-  describe('when the Recomendations Button is Pressed', () => {
+  describe("when the Recomendations Button is Pressed", () => {
     function renderAndPressRecomendation() {
       const all = render(
         <TestProvider>
@@ -96,12 +96,12 @@ describe('EcoFund', () => {
         </TestProvider>
       )
 
-      fireEvent.click(all.getByText('Recommend a Project'))
+      fireEvent.click(all.getByText("Recommend a Project"))
 
       return all
     }
 
-    it('hides the Application Form', () => {
+    it("hides the Application Form", () => {
       const { getByLabelText } = renderAndPressRecomendation()
 
       expect(getByLabelText(ApplicationFields.about)).not.toBeVisible()
@@ -115,7 +115,7 @@ describe('EcoFund', () => {
       expect(getByLabelText(ApplicationFields.video)).not.toBeVisible()
     })
 
-    it('shows the Recommendation Form', () => {
+    it("shows the Recommendation Form", () => {
       const { getByLabelText } = renderAndPressRecomendation()
 
       expect(getByLabelText(RecommendationFields.why)).toBeVisible()

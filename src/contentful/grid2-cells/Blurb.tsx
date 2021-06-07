@@ -1,22 +1,22 @@
-import {css} from '@emotion/react'
-import { Asset, Entry, } from 'contentful'
-import * as React from 'react'
-import {ContentfulButton} from "src/utils/contentful"
-import {flex, fonts, WHEN_MOBILE, whiteText} from "src/estyles"
-import Button, { SIZE } from 'src/shared/Button.3'
-import { standardStyles } from 'src/styles'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { Document } from '@contentful/rich-text-types'
-import renderNode, {renderWhiteParagraph} from 'src/contentful/nodes/paragraph'
+import { css } from "@emotion/react"
+import { Asset, Entry } from "contentful"
+import * as React from "react"
+import { ContentfulButton } from "src/utils/contentful"
+import { flex, fonts, WHEN_MOBILE, whiteText } from "src/estyles"
+import Button, { SIZE } from "src/shared/Button.3"
+import { standardStyles } from "src/styles"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { Document } from "@contentful/rich-text-types"
+import renderNode, { renderWhiteParagraph } from "src/contentful/nodes/paragraph"
 enum Headings {
-  "large" = 'large',
-  "medium" = 'medium',
-  "small" = 'small',
+  "large" = "large",
+  "medium" = "medium",
+  "small" = "small",
 }
 
 export interface Props {
   icon?: Asset
-  title:string
+  title: string
   titleType?: Headings
   body: Document
   link?: Entry<ContentfulButton>
@@ -24,48 +24,57 @@ export interface Props {
 }
 
 export default function Blurb(props: Props) {
-  return <div css={rootCss}>
-    <div css={containerCss}>
-      <img src={props.icon?.fields?.file?.url} css={imageCss} width={100} height={100} />
-      <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>
-      {documentToReactComponents(props.body, {renderNode: props.darkMode? renderWhiteParagraph : renderNode})}
-    </div>
-    {props.link && (
-        <Button style={standardStyles.elementalMarginTop} href={props.link.fields.href} text={props.link.fields.words}  kind={props.link.fields.kind}  size={SIZE.normal}/>
+  return (
+    <div css={rootCss}>
+      <div css={containerCss}>
+        <img src={props.icon?.fields?.file?.url} css={imageCss} width={100} height={100} />
+        <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>
+        {documentToReactComponents(props.body, {
+          renderNode: props.darkMode ? renderWhiteParagraph : renderNode,
+        })}
+      </div>
+      {props.link && (
+        <Button
+          style={standardStyles.elementalMarginTop}
+          href={props.link.fields.href}
+          text={props.link.fields.words}
+          kind={props.link.fields.kind}
+          size={SIZE.normal}
+        />
       )}
-  </div>
+    </div>
+  )
 }
 
-
-const rootCss = css (flex,{
+const rootCss = css(flex, {
   flex: 1,
   justifyContent: "space-between",
   marginBottom: 36,
   [WHEN_MOBILE]: {
     alignItems: "center",
-    alignContent: "center"
-  }
+    alignContent: "center",
+  },
 })
 
-const containerCss = css(flex,{
+const containerCss = css(flex, {
   flex: 1,
   "p:first-of-type": {
-    marginTop: 0
+    marginTop: 0,
   },
   "p:last-of-type": {
-    marginBottom: 0
+    marginBottom: 0,
   },
   [WHEN_MOBILE]: {
     alignItems: "center",
     alignContent: "center",
     textAlign: "center",
-    maxWidth: 288
-  }
+    maxWidth: 288,
+  },
 })
 
-const imageCss =css({
+const imageCss = css({
   width: 100,
-  height: 100
+  height: 100,
 })
 
 const headingCss = css({
@@ -74,7 +83,7 @@ const headingCss = css({
 })
 
 function headingStyle(type: Headings, darkMode: boolean) {
-  switch (type)  {
+  switch (type) {
     case "large":
       return css(fonts.h4, headingCss, darkMode && whiteText)
     case "small":
@@ -83,5 +92,3 @@ function headingStyle(type: Headings, darkMode: boolean) {
       return css(fonts.h3, headingCss, darkMode && whiteText)
   }
 }
-
-

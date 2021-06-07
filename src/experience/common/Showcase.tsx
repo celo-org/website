@@ -1,12 +1,12 @@
-import * as React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import DownloadButton from 'src/experience/brandkit/DownloadButton'
-import { AssetTypes } from 'src/experience/brandkit/tracking'
-import { brandStyles } from 'src/experience/common/constants'
-import AspectRatio from 'src/shared/AspectRatio'
-import Fade from 'src/shared/AwesomeFade'
-import Spinner from 'src/shared/Spinner'
-import { colors, fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { Image, StyleSheet, Text, View } from "react-native"
+import DownloadButton from "src/experience/brandkit/DownloadButton"
+import { AssetTypes } from "src/experience/brandkit/tracking"
+import { brandStyles } from "src/experience/common/constants"
+import AspectRatio from "src/shared/AspectRatio"
+import Fade from "src/shared/AwesomeFade"
+import Spinner from "src/shared/Spinner"
+import { colors, fonts, standardStyles } from "src/styles"
 
 interface Props {
   name: string
@@ -15,9 +15,9 @@ interface Props {
   uri: string
   ratio: number
   loading: boolean
-  size: number | '100%'
+  size: number | "100%"
   assetType: AssetTypes
-  variant?: 'circle' | 'circle-white' | 'circle-black'
+  variant?: "circle" | "circle-white" | "circle-black"
 }
 
 export default React.memo(function Showcase({
@@ -31,10 +31,10 @@ export default React.memo(function Showcase({
   ratio,
   variant,
 }: Props) {
-  const trackingData = React.useMemo(() => ({ name: `${name} ${assetType}`, type: assetType }), [
-    name,
-    assetType,
-  ])
+  const trackingData = React.useMemo(
+    () => ({ name: `${name} ${assetType}`, type: assetType }),
+    [name, assetType]
+  )
   const titleStyle = [fonts.h6, styles.title]
   return (
     <View style={[brandStyles.gap, standardStyles.elementalMarginTop, { width: size }]}>
@@ -75,15 +75,15 @@ const styles = StyleSheet.create({
   },
   text: { flex: 1 },
   pullStart: { paddingLeft: 0 },
-  'variant-circle': {
+  "variant-circle": {
     borderRadius: 60,
   },
-  'variant-circle-white': {
+  "variant-circle-white": {
     borderRadius: 60,
     boxShadow: `inset 0 0 0 1px ${colors.placeholderGray}`,
   },
-  'variant-circle-black': {
+  "variant-circle-black": {
     borderRadius: 60,
-    backgroundColor: '#000000',
+    backgroundColor: "#000000",
   },
 })

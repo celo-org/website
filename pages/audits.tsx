@@ -1,3 +1,3 @@
-import Audits from 'src/terms/Audits'
+import Audits from "src/terms/Audits"
 
 export default Audits

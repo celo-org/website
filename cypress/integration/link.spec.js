@@ -27,7 +27,7 @@ describe('Links', () => {
         cy.request(`jobs`).its('status').should('eq', 200);
       });
   
-      it('should have correct link for \'Validators\'', () => {
+      it.skip('should have correct link for \'Validators\'', () => {
         cy.get('[data-cy=Validators] a').should('have.attr', 'href', '/validators');
         cy.request(`validators`).its('status').should('eq', 200);
       });

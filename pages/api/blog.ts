@@ -1,15 +1,15 @@
-import { NextApiRequest, NextApiResponse } from 'next'
-import { getFormattedMediumArticles } from 'server/mediumAPI'
+import { NextApiRequest, NextApiResponse } from "next"
+import { getFormattedMediumArticles } from "server/mediumAPI"
 
-import respondError from 'server/respondError'
+import respondError from "server/respondError"
 
-export default async function(req: NextApiRequest, res: NextApiResponse) {
+export default async function (req: NextApiRequest, res: NextApiResponse) {
   try {
-    if (req.method === 'GET') {
+    if (req.method === "GET") {
       const articlesdata = await getFormattedMediumArticles(req.query.tagged as string)
       res.json(articlesdata)
     } else {
-      res.status(405)
+      res.status(405).json({ error: `${req.method} does not exist here` })
     }
   } catch (e) {
     respondError(res, e)

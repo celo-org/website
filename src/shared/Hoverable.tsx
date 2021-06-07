@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from "react"
 
 interface State {
   isHovered: boolean
@@ -17,7 +17,7 @@ interface Props {
 }
 
 export default class Hoverable extends React.Component<Props, State> {
-  isHoverEnabled: boolean = true
+  isHoverEnabled = true
 
   constructor(props) {
     super(props)
@@ -50,9 +50,9 @@ export default class Hoverable extends React.Component<Props, State> {
       }
     }
 
-    window.document.addEventListener('touchstart', disableHover, true)
-    window.document.addEventListener('touchmove', disableHover, true)
-    window.document.addEventListener('mousemove', enableHover, true)
+    window.document.addEventListener("touchstart", disableHover, true)
+    window.document.addEventListener("touchmove", disableHover, true)
+    window.document.addEventListener("mousemove", enableHover, true)
   }
 
   onMouseEnter = () => {
@@ -121,7 +121,7 @@ export default class Hoverable extends React.Component<Props, State> {
 }
 
 function isFunction(thing: unknown): boolean {
-  return typeof thing === 'function'
+  return typeof thing === "function"
 }
 
 function getChild(children: KidsOrKidsAsFunc, isHovering: boolean) {

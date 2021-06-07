@@ -121,7 +121,7 @@ exports[`About renders 1`] = `
             .ReactModal__Overlay {
               transition: transform 1000ms ease-in-out;
             }
-            
+
             .ReactModal__Overlay--after-open{
               transform: translateY(0);
             }
@@ -240,7 +240,6 @@ exports[`About renders 1`] = `
           </h3>
         </div>
       </div>
-      <div />
     </div>
   </div>
   <div
@@ -2514,6 +2513,7 @@ Change the story.
               >
                 <a
                   href="//www.example.com"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <svg

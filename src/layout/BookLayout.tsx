@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { H3 } from 'src/fonts/Fonts'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { standardStyles } from 'src/styles'
+import * as React from "react"
+import { H3 } from "src/fonts/Fonts"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { standardStyles } from "src/styles"
 
 interface Props {
   label: React.ReactNode
