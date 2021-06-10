@@ -10,6 +10,8 @@ import { NameSpaces, useTranslation } from "src/i18n"
 import Cover from "./Cover"
 import Press from "src/press/Press"
 import { useScreenSize } from "src/layout/ScreenSize"
+
+
 export default function Home() {
   const { t } = useTranslation(NameSpaces.home)
   const { isMobile } = useScreenSize()
@@ -31,9 +33,6 @@ export default function Home() {
   )
 }
 
-Home.getInitialProps = () => {
-  return { namespaces: [NameSpaces.home, NameSpaces.common] }
-}
 
 const styles = StyleSheet.create({
   container: {

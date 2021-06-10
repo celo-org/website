@@ -1,8 +1,7 @@
-import { initReactI18next } from "react-i18next"
-import NextI18NextInstance, { NameSpaces } from "src/i18n"
+import { NameSpaces } from "src/i18n"
+import i18next from "i18next"
 
-// tslint:disable-next-line: no-floating-promises
-NextI18NextInstance.i18n.use(initReactI18next).init({
+i18next.init({
   load: "all",
   fallbackLng: "en",
   resources: {
@@ -29,6 +28,6 @@ NextI18NextInstance.i18n.use(initReactI18next).init({
   debug: false,
 })
 
-NextI18NextInstance.i18n.languages = ["en"]
+i18next.languages = ["en"]
 
-export default NextI18NextInstance
+export default i18next

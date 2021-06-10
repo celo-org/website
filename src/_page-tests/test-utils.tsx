@@ -1,17 +1,16 @@
 import { render } from "@testing-library/react"
 import * as React from "react"
-import NextI18NextInstance from "src/utils/i18nForTests"
-
+import i18nForTests from "src/utils/i18nForTests"
+// import i18nConfig from "src/../next-i18next.config.js"
 interface Props {
-  children: React.ReactNode
+  children?: React.ReactNode
 }
+import { I18nextProvider } from "react-i18next"
 
-const TranslationProvider = NextI18NextInstance.appWithTranslation(({ children }: Props) => {
-  return <>{children}</>
-})
+
 
 export function TestProvider({ children }: Props) {
-  return <TranslationProvider>{children}</TranslationProvider>
+  return <I18nextProvider i18n={i18nForTests}>{children}</I18nextProvider>
 }
 
 // https://github.com/testing-library/react-testing-library/issues/470
