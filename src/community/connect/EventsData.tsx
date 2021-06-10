@@ -1,12 +1,12 @@
-import * as React from 'react'
-import Events from 'src/community/connect/Events'
+import * as React from "react"
+import Events from "src/community/connect/Events"
 
 export async function getEvents(query: string) {
   const res = await fetch(`/api/events?${query}`, {
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
-    method: 'GET',
+    method: "GET",
   })
   return res.json()
 }

@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H3 } from 'src/fonts/Fonts'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { colors } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H3 } from "src/fonts/Fonts"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { colors } from "src/styles"
 
 interface Props {
   error: any
@@ -13,7 +13,7 @@ class ShowApolloError extends React.PureComponent<Props & I18nProps> {
     const { t, error } = this.props
     return (
       <View style={styles.leaderBoardError}>
-        <H3 style={styles.leaderBoardErrorTitle}>{t('leaderboardError')}</H3>
+        <H3 style={styles.leaderBoardErrorTitle}>{t("leaderboardError")}</H3>
         <Text style={styles.leaderBoardErrorMessage}>{JSON.stringify(error.message, null, 2)}</Text>
       </View>
     )
@@ -23,16 +23,16 @@ class ShowApolloError extends React.PureComponent<Props & I18nProps> {
 const styles = StyleSheet.create({
   leaderBoardError: {
     backgroundColor: colors.dark,
-    alignItems: 'center',
+    alignItems: "center",
   },
   leaderBoardErrorTitle: {
     color: colors.red,
-    marginBottom: '2em',
+    marginBottom: "2em",
   },
   leaderBoardErrorMessage: {
-    fontFamily: 'monospace',
+    fontFamily: "monospace",
     color: colors.red,
   },
 })
 
-export default withNamespaces('dev')(ShowApolloError)
+export default withNamespaces("dev")(ShowApolloError)

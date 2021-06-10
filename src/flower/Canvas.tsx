@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Body from 'src/flower/Body'
-import preview from 'src/flower/open-graph.jpg'
-import SideBar from 'src/flower/SideBar'
-import OpenGraph from 'src/header/OpenGraph'
-import { useBooleanToggle } from 'src/hooks/useBooleanToggle'
-import menuItems from 'src/shared/menu-items'
-import { fonts, textStyles } from 'src/styles'
+import Head from "next/head"
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import Body from "src/flower/Body"
+import preview from "src/flower/open-graph.jpg"
+import SideBar from "src/flower/SideBar"
+import OpenGraph from "src/header/OpenGraph"
+import { useBooleanToggle } from "src/hooks/useBooleanToggle"
+import menuItems from "src/shared/menu-items"
+import { fonts, textStyles } from "src/styles"
 const DURATION = 600
 
 export default function Canvas() {
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   },
   nav: {
     zIndex: 10,
-    flexDirection: 'row-reverse',
+    flexDirection: "row-reverse",
     paddingHorizontal: 40,
     paddingVertical: 10,
   },
@@ -64,13 +64,13 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   container: {
-    overflow: 'hidden',
-    flexDirection: 'row',
+    overflow: "hidden",
+    flexDirection: "row",
   },
-  about: { position: 'absolute' },
+  about: { position: "absolute" },
   transition: {
     transitionDuration: `${DURATION}ms`,
-    transitionProperty: 'opacity',
+    transitionProperty: "opacity",
   },
   transitionOut: {
     opacity: 0,

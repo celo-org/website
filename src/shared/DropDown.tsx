@@ -1,10 +1,10 @@
-import throttle from 'lodash.throttle'
-import * as React from 'react'
-import { LayoutChangeEvent, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import Hoverable from 'src/shared/Hoverable'
-import Responsive from 'src/shared/Responsive'
-import Triangle, { Direction } from 'src/shared/Triangle'
-import { colors, fonts, textStyles } from 'src/styles'
+import throttle from "lodash.throttle"
+import * as React from "react"
+import { LayoutChangeEvent, StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import Hoverable from "src/shared/Hoverable"
+import Responsive from "src/shared/Responsive"
+import Triangle, { Direction } from "src/shared/Triangle"
+import { colors, fonts, textStyles } from "src/styles"
 export interface ListItem {
   id: string
   selected: boolean
@@ -76,19 +76,36 @@ export default class DropDown extends React.Component<Props, State> {
     return (
       <View style={this.props.isOpen ? styles.containerOpen : styles.containerClosed}>
         <TouchableOpacity onPress={this.toggleOpen}>
-          <View style={[styles.pill, styles.label,  this.props.darkMode && styles.pillDarkMode]} onLayout={this.onLayout}>
-            <Text accessibilityRole="label" style={[fonts.p, styles.text, this.props.darkMode && textStyles.invert]}>
+          <View
+            style={[styles.pill, styles.label, this.props.darkMode && styles.pillDarkMode]}
+            onLayout={this.onLayout}
+          >
+            <Text
+              accessibilityRole="label"
+              style={[fonts.p, styles.text, this.props.darkMode && textStyles.invert]}
+            >
               {this.getTitle()}
             </Text>
-            <Triangle direction={this.props.isOpen ? Direction.up : Direction.down} color={this.props.darkMode ? colors.white : colors.dark}  />
+            <Triangle
+              direction={this.props.isOpen ? Direction.up : Direction.down}
+              color={this.props.darkMode ? colors.white : colors.dark}
+            />
           </View>
         </TouchableOpacity>
         <Responsive medium={listStyles}>
           <View style={listStylesMobile} accessibilityRole="listbox">
             <Text
               accessibilityRole="option"
-              key={'all'}
-              style={[fonts.p, styles.item, this.props.darkMode ? nonSelected ? styles.selectedDark : styles.itemDark : nonSelected && styles.selected]}
+              key={"all"}
+              style={[
+                fonts.p,
+                styles.item,
+                this.props.darkMode
+                  ? nonSelected
+                    ? styles.selectedDark
+                    : styles.itemDark
+                  : nonSelected && styles.selected,
+              ]}
               onPress={this.onSelectAll}
             >
               {name}
@@ -116,17 +133,17 @@ export default class DropDown extends React.Component<Props, State> {
 
 const styles = StyleSheet.create({
   containerOpen: {
-    position: 'relative',
+    position: "relative",
     zIndex: 2,
   },
   containerClosed: {
-    position: 'static',
+    position: "static",
     zIndex: 0,
   },
   label: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     flex: 1,
     padding: 10,
   },
@@ -147,14 +164,14 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     backgroundColor: colors.white,
     // @ts-ignore
-    textOverflow: 'ellipsis',
-    overflow: 'hidden',
-    whiteSpace: 'nowrap',
-    cursor: 'pointer',
+    textOverflow: "ellipsis",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
+    cursor: "pointer",
   },
   itemDark: {
     backgroundColor: colors.dark,
-    color: colors.white
+    color: colors.white,
   },
   pill: {
     borderColor: colors.gray,
@@ -168,28 +185,27 @@ const styles = StyleSheet.create({
     backgroundColor: colors.dark,
   },
   text: {
-    textTransform: 'none',
+    textTransform: "none",
     paddingRight: 15,
     // @ts-ignore
-    wordBreak: 'break-word',
-    textOverflow: 'ellipsis',
-    overflow: 'hidden',
-    whiteSpace: 'nowrap',
+    wordBreak: "break-word",
+    textOverflow: "ellipsis",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
   },
   list: {
     flex: 1,
   },
   listOpen: {
-    position: 'absolute',
+    position: "absolute",
     zIndex: 10,
   },
   listOpenMobile: {
-    position: 'relative',
+    position: "relative",
   },
   listClosed: {
-    display: 'none',
+    display: "none",
   },
-
 })
 
 interface DropDownElementProps {
@@ -226,13 +242,13 @@ class DropDownElement extends React.PureComponent<DDEProps, DropDownElementState
       <Hoverable key={id} onHoverIn={this.onHover} onHoverOut={this.onExit} onPress={this.onSelect}>
         <Text
           accessibilityRole="option"
-          tabIndex={selected ? 0 :-1}
+          tabIndex={selected ? 0 : -1}
           style={[
             fonts.p,
             styles.item,
             darkMode && styles.itemDark,
-            selected && (darkMode ? styles.selectedDark :styles.selected),
-            this.state.isHovering &&  (darkMode? styles.hoveringDark :styles.hovering),
+            selected && (darkMode ? styles.selectedDark : styles.selected),
+            this.state.isHovering && (darkMode ? styles.hoveringDark : styles.hovering),
           ]}
         >
           {label}

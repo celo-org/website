@@ -1,11 +1,11 @@
-import * as React from 'react'
-import { ViewStyle } from 'react-native'
-import { StyleSheet } from 'react-native-web'
-import shuffleSeed from 'shuffle-seed'
-import VECTORS from 'src/community/connect/RingOfCoinVectors'
-import { Path } from 'src/shared/svg'
-import { baseCoinStyle, baseCoinStyleLight, colors } from 'src/styles'
-import { randomIntegerInRange } from 'src/utils/utils'
+import * as React from "react"
+import { ViewStyle } from "react-native"
+import { StyleSheet } from "react-native-web"
+import shuffleSeed from "shuffle-seed"
+import VECTORS from "src/community/connect/RingOfCoinVectors"
+import { Path } from "src/shared/svg"
+import { baseCoinStyle, baseCoinStyleLight, colors } from "src/styles"
+import { randomIntegerInRange } from "src/utils/utils"
 
 const COLORS = [colors.greenScreen, colors.blueScreen, colors.redScreen, colors.purpleScreen]
 const STILL_COLORS = [colors.lightBlue, colors.redScreen, colors.purple, colors.greenScreen]
@@ -99,7 +99,7 @@ export default class FullCircle extends React.PureComponent<Props, State> {
             colorIndex++
           }
           const style = ringStyle({
-            color: playing ? this.getColor(colorArray, colorIndex) : 'transparent',
+            color: playing ? this.getColor(colorArray, colorIndex) : "transparent",
             duration: this.state.duration,
             lightBackground: this.props.lightBackground,
             playing,
@@ -139,7 +139,7 @@ function pickRandom(array: any[]) {
   return array[randomIntegerInRange(0, array.length - 1)] || pickRandom(array)
 }
 
-function getKeyframes({ color }: { color: colors | 'transparent' }) {
+function getKeyframes({ color }: { color: colors | "transparent" }) {
   const fullOn = {
     opacity: 0.95,
     fill: color,
@@ -152,15 +152,15 @@ function getKeyframes({ color }: { color: colors | 'transparent' }) {
 
   const normal = {
     stroke: colors.screenGray,
-    fill: 'transparent',
+    fill: "transparent",
   }
 
   return [
     {
-      '0%': normal,
+      "0%": normal,
       [`${PRELIMINARY}%`]: strokeFull,
       [`${PEAK}%`]: fullOn,
-      '100%': normal,
+      "100%": normal,
     },
   ]
 }
@@ -218,7 +218,7 @@ function isTogetherBeat(beat: number) {
 }
 
 interface RingStyle {
-  color: colors | 'transparent'
+  color: colors | "transparent"
   playing: boolean
   duration: number
   lightBackground: boolean
@@ -229,7 +229,7 @@ function ringStyle({ color, playing, duration, lightBackground, stillMode }: Rin
   const styleArray: ViewStyle[] = [
     styles.normal,
     stillMode
-      ? { stroke: '#CFCFCF', mixBlendMode: 'multiply' }
+      ? { stroke: "#CFCFCF", mixBlendMode: "multiply" }
       : lightBackground
       ? baseCoinStyleLight
       : baseCoinStyle,
@@ -241,7 +241,7 @@ function ringStyle({ color, playing, duration, lightBackground, stillMode }: Rin
       fill: color,
       // @ts-ignore
       stroke: color,
-      mixBlendMode: 'multiply',
+      mixBlendMode: "multiply",
     })
   } else if (playing) {
     styleArray.push(styles.animatedBase, {
@@ -255,7 +255,7 @@ function ringStyle({ color, playing, duration, lightBackground, stillMode }: Rin
 const styles = StyleSheet.create({
   animatedBase: {
     animationIterationCount: 1,
-    animationTimingFunction: 'ease-in',
-    willChange: 'fill',
+    animationTimingFunction: "ease-in",
+    willChange: "fill",
   },
 })

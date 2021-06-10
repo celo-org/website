@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { Path } from 'svgs'
+import * as React from "react"
+import { Path } from "svgs"
 export default React.memo(function AllianceLogo() {
   return (
     <svg width="47" height="48" viewBox="0 0 47 48" fill="none">

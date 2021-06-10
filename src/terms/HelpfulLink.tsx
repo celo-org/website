@@ -1,8 +1,13 @@
-import * as React from 'react'
-import { StyleSheet } from 'react-native'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
+import * as React from "react"
+import { StyleSheet } from "react-native"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
 
-export function HelpfulLink({ text, href }) {
+interface Props {
+  text: string
+  href: string
+}
+
+export function HelpfulLink({ text, href }: Props) {
   return (
     <Button
       kind={BTN.NAKED}

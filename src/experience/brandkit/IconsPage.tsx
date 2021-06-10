@@ -1,13 +1,13 @@
-import { NextPage } from 'next'
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import Page, { ICONS_PATH } from 'src/experience/brandkit/common/Page'
-import CCLicense from 'src/experience/common/CCLicense'
-import { GAP } from 'src/experience/common/constants'
-import PageHeadline from 'src/experience/common/PageHeadline'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import { hashNav } from 'src/shared/menu-items'
-import { Explorer } from './Explorer'
+import { NextPage } from "next"
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import Page, { ICONS_PATH } from "src/experience/brandkit/common/Page"
+import CCLicense from "src/experience/common/CCLicense"
+import { GAP } from "src/experience/common/constants"
+import PageHeadline from "src/experience/common/PageHeadline"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { hashNav } from "src/shared/menu-items"
+import { Explorer } from "./Explorer"
 
 export interface Props {
   icons: IconData[]
@@ -17,8 +17,8 @@ const IconPage: NextPage<Props> = React.memo(function IconsPage({ icons }: Props
   const { t } = useTranslation(NameSpaces.brand)
   return (
     <Page
-      title={t('icons.title')}
-      metaDescription={t('icons.headline')}
+      title={t("icons.title")}
+      metaDescription={t("icons.headline")}
       path={ICONS_PATH}
       sections={[{ id: hashNav.brandIcons.overview, children: <Overview icons={icons} /> }]}
     />
@@ -29,10 +29,10 @@ IconPage.getInitialProps = async ({ req }) => {
   let icons = []
   // req exists if and only if this is being run on serverside
   if (req) {
-    const AssetBase = await import('src/../server/AssetBase')
+    const AssetBase = await import("src/../server/AssetBase")
     icons = await AssetBase.default(AssetBase.AssetSheet.Icons)
   } else {
-    icons = await fetch('/api/experience/assets/icons').then((result) => result.json())
+    icons = await fetch("/api/experience/assets/icons").then((result) => result.json())
   }
 
   return { icons }
@@ -49,11 +49,15 @@ export interface IconData {
   id: string
 }
 
-function Overview({ icons }) {
+interface OverviewProps {
+  icons: IconData[]
+}
+
+function Overview({ icons }: OverviewProps) {
   const { t } = useTranslation(NameSpaces.brand)
   return (
     <View style={styles.container}>
-      <PageHeadline title={t('icons.title')} headline={t('icons.headline')} />
+      <PageHeadline title={t("icons.title")} headline={t("icons.headline")} />
       <CCLicense textI18nKey="icons.license" />
       <Explorer icons={icons} />
     </View>

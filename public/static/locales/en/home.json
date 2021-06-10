@@ -88,17 +88,16 @@
         "name": "Connect",
         "title": "Join the Celo movement",
         "primary": "Become an Ambassador",
-        "secondary": "Join an Event",
+        "secondary": "Chat with the Community",
         "text": "A place to belong with fellow developers, designers, dreamers, and doers. Connect with the Celo community to share your gifts of prosperity."
       },
       {
         "name": "Work",
         "title": "Work with value",
         "primary": "View Open Roles",
-        "secondary": "Apply for Fellowship",
         "text": "Explore opportunities at cLabs, the team that initially shaped Celo and a member of the Alliance for Prosperity. cLabs has offices in Berlin, Buenos Aires, and San Francisco, with contributors around the world."
       }
     ]
   },
-  "contactPress": "Contact"
+  "contactPress": "Contact Press"
 }

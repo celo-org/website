@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { CeloLinks } from 'src/shared/menu-items'
-import { colors } from 'src/styles'
+import * as React from "react"
+import { CeloLinks } from "src/shared/menu-items"
+import { colors } from "src/styles"
 
 interface Props {
   height?: number
@@ -34,7 +34,7 @@ export default class MediumLogo extends React.PureComponent<Props> {
   }
 }
 
-function MediumIcon({ height, color }) {
+function MediumIcon({ height, color }: Props) {
   return (
     <svg width={height} height={height} viewBox="0 0 24 24" fill="none">
       <title>Medium</title>

@@ -1,9 +1,9 @@
-import { GetServerSideProps } from 'next'
-import { Props } from 'src/faq/FAQ'
-import { getFAQ } from 'src/utils/contentful'
+import { GetServerSideProps } from "next"
+import { Props } from "src/faq/FAQ"
+import { getFAQ } from "src/utils/contentful"
 
 const getServerSideProps: GetServerSideProps<Props> = async function getServerSideProp({ query }) {
-  const locale = query.locale || 'en-US'
+  const locale = query.locale || "en-US"
   const faqs = await getFAQ({ locale })
   return {
     props: {

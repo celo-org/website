@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
 
-import OvalCoin from 'src/shared/OvalCoin'
-import { colors, fonts, standardStyles } from 'src/styles'
+import OvalCoin from "src/shared/OvalCoin"
+import { colors, fonts, standardStyles } from "src/styles"
 
 interface RacerProps {
   relativePoints: number
@@ -51,7 +51,7 @@ export default React.memo(function Racer({
 })
 
 const styles = StyleSheet.create({
-  containment: { overflow: 'hidden' },
+  containment: { overflow: "hidden" },
   line: {
     height: 2,
     minWidth: COIN_OFFSET,
@@ -61,13 +61,13 @@ const styles = StyleSheet.create({
   },
   lineGroup: {
     marginTop: 5,
-    alignItems: 'center',
-    transformOrigin: 'left',
+    alignItems: "center",
+    transformOrigin: "left",
   },
   animatable: {
-    animationDuration: '2s',
-    animationDelay: '100ms',
+    animationDuration: "2s",
+    animationDelay: "100ms",
     animationIterationCount: 1,
-    animationFillMode: 'both',
+    animationFillMode: "both",
   },
 })

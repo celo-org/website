@@ -1,30 +1,34 @@
-import MarkdownJSX from 'markdown-to-jsx'
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import PlanningDocs from 'src/experience/eventkit/PlanningDocs'
+import MarkdownJSX from "markdown-to-jsx"
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import PlanningDocs from "src/experience/eventkit/PlanningDocs"
 import {
   DesignForAll,
   EmbodyHumility,
   InnovatingOnMoney,
   StrivingForBeauty,
-} from 'src/experience/eventkit/Tenents'
-import { H1, H2, H3, H4, Li, Ul } from 'src/fonts/Fonts'
-import Button, { BTN } from 'src/shared/Button.3'
-import InlineAnchor from 'src/shared/InlineAnchor'
-import { fonts, standardStyles } from 'src/styles'
-import { isExternalLink } from 'src/utils/utils'
-import { trackOpen, Types } from './eventkit/tracking'
+} from "src/experience/eventkit/Tenents"
+import { H1, H2, H3, H4, Li, Ul } from "src/fonts/Fonts"
+import Button, { BTN } from "src/shared/Button.3"
+import InlineAnchor from "src/shared/InlineAnchor"
+import { fonts, standardStyles } from "src/styles"
+import { isExternalLink } from "src/utils/utils"
+import { trackOpen, Types } from "./eventkit/tracking"
 export interface Attributes {
   title: string
   description: string
 }
 
-function P({ children }) {
+interface ParaProps {
+  children: React.ReactNode
+}
+
+function P({ children }: ParaProps) {
   return <Text style={[fonts.p, standardStyles.halfElement, styles.block]}>{children}</Text>
 }
 
-function SmartAnchor({ children, href }) {
-  const target = isExternalLink(href) ? '_blank' : undefined
+function SmartAnchor({ children, href }: { href: string; children: string }) {
+  const target = isExternalLink(href) ? "_blank" : undefined
 
   return (
     <InlineAnchor target={target} href={href}>
@@ -42,9 +46,10 @@ function PrimeButton({
   href: string
   external?: boolean
 }) {
-  const track = React.useCallback(() => trackOpen({ name: children, type: Types.Action }), [
-    children,
-  ])
+  const track = React.useCallback(
+    () => trackOpen({ name: children, type: Types.Action }),
+    [children]
+  )
 
   return (
     <Button
@@ -53,13 +58,13 @@ function PrimeButton({
       text={children}
       href={href}
       onPress={track}
-      target={external ? '_blank' : ''}
+      target={external ? "_blank" : ""}
     />
   )
 }
 
 const styles = StyleSheet.create({
-  block: { display: 'block' },
+  block: { display: "block" },
   list: { marginLeft: 20 },
 })
 
@@ -77,7 +82,7 @@ const OPTIONS = {
         style: [styles.block, standardStyles.blockMarginTopTablet],
       },
     },
-    h3: ({ children }) => (
+    h3: ({ children }: ParaProps) => (
       <View style={standardStyles.blockMarginTopTablet}>
         <H3>{children}</H3>
       </View>
@@ -104,6 +109,11 @@ const OPTIONS = {
     button: PrimeButton,
   },
 }
-export default function Markdown({ source }) {
-  return <MarkdownJSX children={source} options={OPTIONS} />
+
+interface MarkProps {
+  source: string
+}
+
+export default function Markdown({ source }: MarkProps) {
+  return <MarkdownJSX options={OPTIONS}>{source}</MarkdownJSX>
 }

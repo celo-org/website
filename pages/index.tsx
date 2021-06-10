@@ -1,2 +1,2 @@
-import Home from 'src/home/Home'
+import Home from "src/home/Home"
 export default Home

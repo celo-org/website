@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import DirectoryItem, { Props as DirectoryItemProps } from 'src/experience/grants/DirectoryItem'
-import { H4 } from 'src/fonts/Fonts'
-import { colors, fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import DirectoryItem, { Props as DirectoryItemProps } from "src/experience/grants/DirectoryItem"
+import { H4 } from "src/fonts/Fonts"
+import { colors, fonts, standardStyles } from "src/styles"
 
 interface Props {
   name: string
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     paddingTop: 30,
   },
   grid: {
-    display: 'grid',
+    display: "grid",
     gridRowGap: "40px",
     gridColumnGap: "80px",
     gridTemplateColumns: `repeat(auto-fit, minmax(150px, 1fr))`,

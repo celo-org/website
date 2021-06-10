@@ -1,26 +1,24 @@
-import { StyleSheet } from 'react-native'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { colors, typeFaces } from 'src/styles'
+import { StyleSheet } from "react-native"
+import { colors, typeFaces } from "src/styles"
 
 export const styles = StyleSheet.create({
   pStatic: {
-    position: 'static',
-    zIndex: 'initial',
+    position: "static",
+    zIndex: "initial",
   } as any,
   pStaticOverflow: {
-    position: 'static',
-    zIndex: 'initial',
-    overflow: 'initial',
+    position: "static",
+    zIndex: "initial",
+    overflow: "initial",
   } as any,
   content: {
     paddingBottom: 10,
   },
   cover: {
-    marginTop: HEADER_HEIGHT,
     backgroundColor: colors.dark,
-    minWidth: '100vw',
-    overflow: 'scroll',
-    width: '100%',
+    minWidth: "100vw",
+    overflow: "scroll",
+    width: "100%",
   },
   defaultText: {
     fontFamily: typeFaces.futura,
@@ -35,17 +33,17 @@ export const styles = StyleSheet.create({
   },
 
   links: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
   },
   linkWrapper: {
-    display: 'inline-flex',
-    margin: 'auto',
-    position: 'relative',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
+    display: "inline-flex",
+    margin: "auto",
+    position: "relative",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
     marginHorizontal: 0,
     marginBottom: 40,
   },
@@ -53,7 +51,7 @@ export const styles = StyleSheet.create({
     opacity: 0.6,
   },
   activeTab: {
-    position: 'absolute',
+    position: "absolute",
     height: 8,
     width: 7,
     bottom: -16,
@@ -62,29 +60,29 @@ export const styles = StyleSheet.create({
   // Table
   table: {
     width: 1292,
-    margin: 'auto',
+    margin: "auto",
     marginBottom: 100,
     backgroundColor: colors.dark,
   },
   tableRow: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    alignItems: 'stretch',
-    width: '100%',
+    display: "flex",
+    justifyContent: "space-between",
+    flexDirection: "row",
+    alignItems: "stretch",
+    width: "99%",
   },
   tableRowCont: {
     paddingTop: 10,
   },
   tableHeaderRow: {
     borderBottomWidth: 1,
-    borderStyle: 'solid',
-    borderColor: 'rgba(255, 255, 255, 0.2)',
+    borderStyle: "solid",
+    borderColor: "rgba(255, 255, 255, 0.2)",
     zIndex: 2,
     top: 0,
     backgroundColor: colors.dark,
     ...({
-      position: 'sticky',
+      position: "sticky",
       boxShadow: `960px 0 ${colors.dark}, -960px 0 ${colors.dark}`,
     } as any),
   },
@@ -93,19 +91,19 @@ export const styles = StyleSheet.create({
     lineHeight: 20,
     paddingHorizontal: 10,
     paddingVertical: 24,
-    textAlign: 'center',
+    textAlign: "center",
     flexGrow: 0,
-    cursor: 'pointer',
-    flexDirection: 'row',
-    alignItems: 'center',
+    cursor: "pointer",
+    flexDirection: "row",
+    alignItems: "center",
   },
   tableHeaderCellPadding: {
-    textAlign: 'left',
+    textAlign: "left",
     paddingLeft: 20 + 24,
     flexGrow: 1,
   },
   tableHeaderCellLeft: {
-    textAlign: 'left',
+    textAlign: "left",
   },
   tableHeaderCellArrow: {
     opacity: 0,
@@ -113,11 +111,11 @@ export const styles = StyleSheet.create({
   },
   tableHeaderCellArrowVisible: {
     opacity: 0.6,
-    transitionProperty: 'transform',
-    transitionDuration: '0.4s',
+    transitionProperty: "transform",
+    transitionDuration: "0.4s",
   },
   tableHeaderCellArrowDesc: {
-    transform: [{ rotateZ: '180deg' }, { translateX: -5 }, { translateY: -2 }],
+    transform: [{ rotateZ: "180deg" }, { translateX: -5 }, { translateY: -2 }],
   },
   tableCell: {
     paddingVertical: 12,
@@ -126,36 +124,36 @@ export const styles = StyleSheet.create({
     flexGrow: 0,
   },
   tableCellTitle: {
-    cursor: 'pointer',
-    display: 'flex',
-    flexDirection: 'row',
+    cursor: "pointer",
+    display: "flex",
+    flexDirection: "row",
     flexGrow: 1,
     width: 226,
   },
   tableCellTitleRows: {
-    display: 'flex',
-    flexDirection: 'column',
+    display: "flex",
+    flexDirection: "column",
   },
   tableCellTitleFirstRowWrapper: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
+    display: "flex",
+    justifyContent: "flex-start",
+    alignItems: "center",
   },
   tableCellTitleFirstRow: {
-    textDecorationLine: 'underline',
-    fontWeight: '500',
-    overflow: 'hidden',
-    whiteSpace: 'nowrap',
-    textOverflow: 'ellipsis',
+    textDecorationLine: "underline",
+    fontWeight: "500",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
+    textOverflow: "ellipsis",
     maxWidth: 140,
   },
   tableCellTitleSecRow: {
-    display: 'flex',
-    flexDirection: 'row',
+    display: "flex",
+    flexDirection: "row",
     color: colors.grayHeavy,
     fontSize: 14,
     paddingTop: 10,
-    fontWeight: 'normal',
+    fontWeight: "normal",
   },
   tableCellTitleSecondarySecRow: {
     paddingTop: 2,
@@ -164,19 +162,19 @@ export const styles = StyleSheet.create({
     marginLeft: 15,
     marginRight: 20,
     width: 20,
-    textAlign: 'center',
-    transitionProperty: 'transform',
-    transitionDuration: '0.2s',
+    textAlign: "center",
+    transitionProperty: "transform",
+    transitionDuration: "0.2s",
   },
   tableCellTitleArrowExpanded: {
-    transform: [{ rotateZ: '90deg' }, { translateX: -5 }, { translateY: -2 }],
+    transform: [{ rotateZ: "90deg" }, { translateX: -5 }, { translateY: -2 }],
   },
   tableCellTitleNumber: {
     marginLeft: 20 + 20,
     marginRight: 24,
     width: 10,
     fontSize: 14,
-    textAlign: 'center',
+    textAlign: "center",
   },
   tableCellHighlight: {
     color: colors.primary,
@@ -185,26 +183,26 @@ export const styles = StyleSheet.create({
     color: colors.error,
   },
   tableCellCenter: {
-    textAlign: 'center',
+    textAlign: "center",
   },
   tableSecondaryCell: {
     fontSize: 14,
   },
   tableCellBars: {
-    display: 'flex',
-    flexDirection: 'row',
+    display: "flex",
+    flexDirection: "row",
   },
   tableCellBarsValue: {
     paddingRight: 8,
-    fontWeight: '500',
+    fontWeight: "500",
     fontSize: 14,
   },
   tableCellBarsRows: {},
   tableCellBarsRowValues: {
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: "500",
     paddingBottom: 2,
-    display: 'flex',
+    display: "flex",
     color: colors.grayHeavy,
   },
 
@@ -218,23 +216,23 @@ export const styles = StyleSheet.create({
 
   // Circle
   circle: {
-    display: 'block',
+    display: "block",
     width: 8,
     height: 8,
     borderRadius: 4,
-    margin: 'auto',
+    margin: "auto",
   },
   circleOk: {
     backgroundColor: colors.gold,
   },
   circleError: {
-    backgroundColor: 'transprent',
+    backgroundColor: "transprent",
   },
 
   // Number block
   numberBlockContainer: {
-    display: 'flex',
-    flexDirection: 'row',
+    display: "flex",
+    flexDirection: "row",
   },
   numberBlock: {
     borderTopWidth: 0,
@@ -252,14 +250,14 @@ export const styles = StyleSheet.create({
   barContainer: {
     width: 35,
     height: 20,
-    display: 'inline-flex',
+    display: "inline-flex",
     marginLeft: 8,
-    position: 'relative',
+    position: "relative",
     top: 4,
   },
   bar: {
     height: 20,
-    display: 'inline-flex',
+    display: "inline-flex",
     borderRadius: 2,
   },
   barOk: {
@@ -274,66 +272,66 @@ export const styles = StyleSheet.create({
 
   // Checkmark
   checkmark: {
-    display: 'inline-block',
+    display: "inline-block",
     width: 14,
     height: 14,
     lineHeight: 14,
     backgroundColor: colors.white,
-    borderRadius: '50%',
-    textAlign: 'center',
+    borderRadius: "50%",
+    textAlign: "center",
     marginLeft: 6,
-    position: 'relative',
+    position: "relative",
   } as any,
 
   // Tooltip
   tooltip: {
-    fontWeight: '300',
+    fontWeight: "300",
     fontSize: 14,
-    backgroundColor: '#585c60',
+    backgroundColor: "#585c60",
     paddingVertical: 4,
     paddingHorizontal: 14,
-    position: 'absolute',
-    top: '100%',
+    position: "absolute",
+    top: "100%",
     marginTop: 10,
-    left: '50%',
-    transform: [{ translateX: '-50%' as any }],
-    textAlign: 'left',
-    whiteSpace: 'nowrap',
+    left: "50%",
+    transform: [{ translateX: "-50%" as any }],
+    textAlign: "left",
+    whiteSpace: "nowrap",
     borderRadius: 3,
     zIndex: 5,
   },
   tooltipRow: {
     lineHeight: 34,
-    display: 'flex' as any,
-    alignItems: 'center',
+    display: "flex" as any,
+    alignItems: "center",
   },
   tooltipText: {
-    textDecorationStyle: 'solid',
-    textDecorationLine: 'underline',
+    textDecorationStyle: "solid",
+    textDecorationLine: "underline",
     marginRight: 6,
     marginLeft: 4,
   },
   tooltipHeader: {
     maxWidth: 180,
-    whiteSpace: 'initial',
-    width: 'max-content',
-    top: 'calc(100% - 20px)',
+    whiteSpace: "initial",
+    width: "max-content",
+    top: "calc(100% - 20px)",
   },
 
   // Pinned
   pinContainer: {
-    alignSelf: 'flex-start',
+    alignSelf: "flex-start",
     paddingTop: 16,
-    cursor: 'pointer',
+    cursor: "pointer",
   },
   pin: {
     height: 10,
     width: 10,
-    margin: 'auto',
+    margin: "auto",
     borderRadius: 5,
     borderColor: colors.grayHeavy,
     borderWidth: 2,
-    borderStyle: 'solid',
+    borderStyle: "solid",
   },
   pinned: {
     backgroundColor: colors.white,

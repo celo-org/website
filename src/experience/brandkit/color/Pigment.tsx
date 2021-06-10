@@ -1,17 +1,15 @@
-import { ColorTranslator } from 'colortranslator'
-import hexRgba from 'hex-rgba'
-import * as React from 'react'
-import { StyleSheet, Text, View, ViewStyle } from 'react-native'
-import { brandStyles } from 'src/experience/common/constants'
-import CopyIcon from 'src/icons/CopyIcon'
-import Hoverable from 'src/shared/Hoverable'
-import { colors, fonts, standardStyles } from 'src/styles'
-import { yiq } from 'yiq'
+import { ColorTranslator } from "colortranslator"
+import hexRgba from "hex-rgba"
+import * as React from "react"
+import { StyleSheet, Text, View, ViewStyle } from "react-native"
+import { brandStyles } from "src/experience/common/constants"
+import CopyIcon from "src/icons/CopyIcon"
+import Hoverable from "src/shared/Hoverable"
+import { colors, fonts, standardStyles } from "src/styles"
+import { yiq } from "yiq"
 
 function hexToHumanRGB(hex: string) {
-  return hexRgba(hex, 1)
-    .toUpperCase()
-    .replace('A(', 'A (')
+  return hexRgba(hex, 1).toUpperCase().replace("A(", "A (")
 }
 
 function getContrastingColor(hex: string) {
@@ -62,9 +60,7 @@ interface Props {
 function Pigment({ hex, name, onCopyHex, justCopied }: Props & ColorData) {
   const inline: ViewStyle = { backgroundColor: hex }
 
-  const cmyk = new ColorTranslator(hex).CMYK.toUpperCase()
-    .replace(/%/g, '')
-    .replace('K(', 'K (')
+  const cmyk = new ColorTranslator(hex).CMYK.toUpperCase().replace(/%/g, "").replace("K(", "K (")
 
   if (hex === colors.white) {
     inline.borderColor = colors.gray
@@ -127,13 +123,13 @@ function Pigment({ hex, name, onCopyHex, justCopied }: Props & ColorData) {
 const styles = StyleSheet.create({
   container: { flex: 1, minWidth: 120 },
   transitions: {
-    transitionDuration: '500ms',
+    transitionDuration: "500ms",
   },
   title: {
     marginBottom: 5,
   },
   box: {
-    cursor: 'copy',
+    cursor: "copy",
     paddingTop: 30,
     paddingBottom: 10,
     paddingRight: 40,
@@ -142,8 +138,8 @@ const styles = StyleSheet.create({
     height: 100,
     flexBasis: 100,
     width: 100,
-    transitionProperty: 'transform',
-    transformOrigin: 'left',
+    transitionProperty: "transform",
+    transformOrigin: "left",
   },
   pigmentHover: {
     transform: [{ scaleX: 1.01 }],
@@ -153,11 +149,11 @@ const styles = StyleSheet.create({
   },
   copy: {
     opacity: 0,
-    transitionProperty: 'opacity, transform',
+    transitionProperty: "opacity, transform",
   },
   copyHover: {
     opacity: 1,
     transform: [{ scaleX: 0.95 }, { scaleY: 0.95 }],
   },
-  afterEffect: { position: 'absolute' },
+  afterEffect: { position: "absolute" },
 })

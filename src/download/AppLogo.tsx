@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { G } from 'src/shared/svg'
+import * as React from "react"
+import { G } from "src/shared/svg"
 
 export default function AppLogo() {
   return (
@@ -25,4 +25,4 @@ export default function AppLogo() {
   )
 }
 
-const mixBlendMode = { mixBlendMode: 'screen' }
+const mixBlendMode = { mixBlendMode: "screen" }

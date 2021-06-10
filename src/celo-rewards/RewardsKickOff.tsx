@@ -1,11 +1,11 @@
-import * as React from "react";
-import { NameSpaces, useTranslation } from "src/i18n";
-import { Cell, GridRow, Spans } from "src/layout/GridRow";
-import {  standardStyles } from "src/styles";
-import { B, P } from "./stylingElements";
+import * as React from "react"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { standardStyles } from "src/styles"
+import { B, P } from "./stylingElements"
 
 function RewardsKickOff() {
-  const { t } = useTranslation(NameSpaces.celoRewards);
+  const { t } = useTranslation(NameSpaces.celoRewards)
 
   return (
     <GridRow
@@ -18,7 +18,7 @@ function RewardsKickOff() {
         </P>
       </Cell>
     </GridRow>
-  );
+  )
 }
 
-export default RewardsKickOff;
+export default RewardsKickOff

@@ -1,14 +1,14 @@
-import * as React from 'react'
-import { ImageBackground, ImageRequireSource, StyleSheet, View } from 'react-native'
-import LogoDarkBg from 'src/logos/LogoDarkBg'
-import LogoLightBg from 'src/logos/LogoLightBg'
-import AspectRatio from 'src/shared/AspectRatio'
-import { colors, standardStyles } from 'src/styles'
+import * as React from "react"
+import { ImageBackground, ImageRequireSource, StyleSheet, View } from "react-native"
+import LogoDarkBg from "src/logos/LogoDarkBg"
+import LogoLightBg from "src/logos/LogoLightBg"
+import AspectRatio from "src/shared/AspectRatio"
+import { colors, standardStyles } from "src/styles"
 
 interface Props {
   image?: ImageRequireSource
   backgroundColor?: string
-  type: 'light' | 'dark' | 'black' | 'white'
+  type: "light" | "dark" | "black" | "white"
   hasBorder?: boolean
 }
 
@@ -20,12 +20,12 @@ export default React.memo(function LogoWithBackground({
 }: Props) {
   let logo
 
-  if (type === 'light') {
+  if (type === "light") {
     logo = <LogoLightBg height={35} />
-  } else if (type === 'black') {
+  } else if (type === "black") {
     logo = <LogoLightBg height={35} allBlack={true} />
   } else {
-    logo = <LogoDarkBg height={35} allWhite={type === 'white'} />
+    logo = <LogoDarkBg height={35} allWhite={type === "white"} />
   }
 
   if (image) {
@@ -59,8 +59,8 @@ export default React.memo(function LogoWithBackground({
 
 const styles = StyleSheet.create({
   box: {
-    height: '100%',
-    width: '100%',
+    height: "100%",
+    width: "100%",
   },
   border: {
     borderWidth: 1,

@@ -1,11 +1,11 @@
-import { Attachment, FieldSet, Table } from 'airtable'
-import getConfig from 'next/config'
-import AssetProps from 'src/../fullstack/AssetProps'
-import cache from '../server/cache'
-import airtableInit from './airtable'
+import { Attachment, FieldSet, Table } from "airtable"
+import getConfig from "next/config"
+import AssetProps from "src/../fullstack/AssetProps"
+import cache from "../server/cache"
+import airtableInit from "./airtable"
 
-const ASSSET_FIELD_LIGHT = 'Assets (on light bg)'
-const ASSSET_FIELD_DARK = 'Assets (on dark bg)'
+const ASSSET_FIELD_LIGHT = "Assets (on light bg)"
+const ASSSET_FIELD_DARK = "Assets (on dark bg)"
 
 interface Fields extends FieldSet {
   Name: string
@@ -20,10 +20,10 @@ interface Fields extends FieldSet {
 }
 
 export enum AssetSheet {
-  Tags = 'Tags',
-  Icons = 'Icons',
-  Illustrations = 'Illustrations',
-  AbstractGraphics = 'Abstract Graphics',
+  Tags = "Tags",
+  Icons = "Icons",
+  Illustrations = "Illustrations",
+  AbstractGraphics = "Abstract Graphics",
 }
 
 export default async function combineTagsWithAssets(sheet: AssetSheet) {
@@ -60,7 +60,7 @@ async function fetchAssets(sheet: AssetSheet) {
     .select({
       pageSize: 100,
       filterByFormula: `AND(${IS_APROVED}, ${TERMS_SIGNED})`,
-      sort: [{ field: 'Order', direction: 'asc' }],
+      sort: [{ field: "Order", direction: "asc" }],
     })
     .eachPage((records, fetchNextPage) => {
       records.forEach((r) => assets.push(r))
@@ -73,8 +73,8 @@ function getAirtable(sheet: AssetSheet): Table<Fields> {
   return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_BRANDKIT_ID)(sheet) as Table<Fields>
 }
 
-const IS_APROVED = 'Approved=1'
-const TERMS_SIGNED = 'Terms=1'
+const IS_APROVED = "Approved=1"
+const TERMS_SIGNED = "Terms=1"
 
 interface Tag {
   Name: string
@@ -100,10 +100,10 @@ function getPreview(asset: Fields) {
       previewField[0] &&
       previewField[0].thumbnails &&
       previewField[0].thumbnails.large.url) ||
-    ''
+    ""
   )
 }
 
 function getURI(asset: Fields) {
-  return (asset.Zip && asset.Zip[0] && asset.Zip[0].url) || ''
+  return (asset.Zip && asset.Zip[0] && asset.Zip[0].url) || ""
 }

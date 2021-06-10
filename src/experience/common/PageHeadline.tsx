@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { View, ViewStyle } from 'react-native'
-import { brandStyles } from 'src/experience/common/constants'
-import { H1, H4 } from 'src/fonts/Fonts'
-import { standardStyles } from 'src/styles'
+import * as React from "react"
+import { View, ViewStyle } from "react-native"
+import { brandStyles } from "src/experience/common/constants"
+import { H1, H4 } from "src/fonts/Fonts"
+import { standardStyles } from "src/styles"
 
 interface Props {
   headline?: string

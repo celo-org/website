@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
 
-import { colors } from 'src/styles'
+import { colors } from "src/styles"
 
 interface Props {
   bars: number
@@ -37,16 +37,16 @@ export default ProgressCutBar
 const styles = StyleSheet.create({
   barContainer: {
     height: 16,
-    display: 'flex',
-    flexDirection: 'row',
+    display: "flex",
+    flexDirection: "row",
   },
   bar: {
     height: 16,
     width: 8,
     marginRight: 4,
     borderRadius: 2,
-    overflow: 'hidden',
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    overflow: "hidden",
+    backgroundColor: "rgba(255, 255, 255, 0.2)",
   },
   barProgress: {
     height: 16,

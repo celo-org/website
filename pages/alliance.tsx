@@ -1,2 +1,2 @@
-import Alliance from 'src/alliance/Main'
+import Alliance from "src/alliance/Main"
 export default Alliance

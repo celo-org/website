@@ -910,6 +910,7 @@ exports[`CBE renders 1`] = `
     >
       <a
         href="https://coinbase.com/earn/celo/lesson/1"
+        rel="noreferrer"
         target="_blank"
       >
         <div
@@ -1044,6 +1045,7 @@ exports[`CBE renders 1`] = `
     >
       <a
         href="https://coinbase.com/earn/celo/lesson/2"
+        rel="noreferrer"
         target="_blank"
       >
         <div
@@ -1178,6 +1180,7 @@ exports[`CBE renders 1`] = `
     >
       <a
         href="https://coinbase.com/earn/celo/lesson/3"
+        rel="noreferrer"
         target="_blank"
       >
         <div

@@ -1,8 +1,8 @@
-import lottie, { AnimationItem } from 'lottie-web'
-import * as React from 'react'
+import lottie, { AnimationItem } from "lottie-web"
+import * as React from "react"
 interface Props {
   path?: string
-  data?: object
+  data?: Record<string, unknown>
   loop: boolean
   autoPlay: boolean
   onReady?: () => void
@@ -17,7 +17,7 @@ export default class LottieBase extends React.Component<Props> {
   componentDidMount = () => {
     this.animation = lottie.loadAnimation({
       container: this.elementRef.current,
-      renderer: 'svg',
+      renderer: "svg",
       loop: this.props.loop,
       autoplay: this.props.autoPlay,
       animationData: this.props.data,
@@ -27,10 +27,10 @@ export default class LottieBase extends React.Component<Props> {
       },
     })
     if (this.props.onReady && this.animation.addEventListener) {
-      this.animation.addEventListener('DOMLoaded', this.props.onReady)
+      this.animation.addEventListener("DOMLoaded", this.props.onReady)
     }
     if (this.props.onLooped && this.animation.addEventListener) {
-      this.animation.addEventListener('loopComplete', this.onLoop)
+      this.animation.addEventListener("loopComplete", this.onLoop)
     }
   }
   onLoop = (data) => {
@@ -46,4 +46,4 @@ export default class LottieBase extends React.Component<Props> {
   }
 }
 
-const expand = { width: '100%', height: '100%' }
+const expand = { width: "100%", height: "100%" }

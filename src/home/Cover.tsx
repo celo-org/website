@@ -1,42 +1,58 @@
-import {css, keyframes} from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
 import CoverContent from "src/home/CoverContent"
 import { colors } from "src/styles"
 import celoAsStarsMobileLong from "src/home/celo-sky-mobile.svg"
 import celoAsStarsMobileShort from "src/home/celo-sky-mobile-short.svg"
 import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"
 import celoAsStarsDesktop from "src/home/celo-sky-desktop.svg"
-import * as React from 'react'
+import * as React from "react"
 import examplePhones from "src/home/example-phones.svg"
 import Stats from "./stats/Stats"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import Press from 'src/press/Press'
+import Press from "src/press/Press"
 
 export default function Cover() {
-  const {isMobile, isDesktop, isTablet, bannerHeight} = useScreenSize()
-  const {t} = useTranslation(NameSpaces.home)
+  const { isMobile, isDesktop, isTablet, bannerHeight } = useScreenSize()
+  const { t } = useTranslation(NameSpaces.home)
   return (
-    <div css={css(rootCss, {paddingTop: bannerHeight, [WHEN_MOBILE]: {
-      minHeight: `calc(100vh - ${bannerHeight}px)`,
-    }})}>
-      <div  css={css(backgroundArea, {top: bannerHeight, height: `calc(100% - ${bannerHeight}px)`})} />
+    <div
+      css={css(rootCss, {
+        paddingTop: bannerHeight,
+        [WHEN_MOBILE]: {
+          minHeight: `calc(100vh - ${bannerHeight}px)`,
+        },
+      })}
+    >
+      <div
+        css={css(backgroundArea, { top: bannerHeight, height: `calc(100% - ${bannerHeight}px)` })}
+      />
       <div css={useableArea}>
         <CoverContent />
-        {(isDesktop || isTablet) && <picture>
-        <object title={t('coverPhonesImage')} aria-label={t('coverPhonesImage')} type="image/svg+xml" data={examplePhones} width={1016} height={524} />
-        </picture>}
+        {(isDesktop || isTablet) && (
+          <picture>
+            <object
+              title={t("coverPhonesImage")}
+              aria-label={t("coverPhonesImage")}
+              type="image/svg+xml"
+              data={examplePhones}
+              width={1016}
+              height={524}
+            />
+          </picture>
+        )}
       </div>
       {isMobile && <Press />}
 
-      {isDesktop && <Stats /> }
-  </div>
+      {isDesktop && <Stats />}
+    </div>
   )
 }
-const backgroundDesktopSize = {height: 1066, width: 1379}
+const backgroundDesktopSize = { height: 1066, width: 1379 }
 
-const rootCss = css(flex,{
+const rootCss = css(flex, {
   overflow: "hidden",
   position: "relative",
   alignSelf: "center",
@@ -53,17 +69,17 @@ const rootCss = css(flex,{
   },
   [WHEN_TABLET]: {
     paddingTop: 60,
-    width: '100vw',
+    width: "100vw",
     height: "100vh",
     minHeight: 1068,
   },
   [WHEN_DESKTOP]: {
     paddingTop: 0,
-    minHeight: backgroundDesktopSize.height
-  }
+    minHeight: backgroundDesktopSize.height,
+  },
 })
 
-const starKeyFrames =  keyframes`
+const starKeyFrames = keyframes`
   from {
     opacity: 0.1;
     transform: scale(1.02);
@@ -89,7 +105,7 @@ const backgroundArea = css({
   animationName: starKeyFrames,
   animationTimingFunction: "ease-in-out",
   opacity: 0.1,
-  width: '100%',
+  width: "100%",
   backgroundColor: colors.dark,
   [WHEN_LONG_PHONE]: {
     backgroundImage: `url(${celoAsStarsMobileLong})`,
@@ -98,19 +114,18 @@ const backgroundArea = css({
     backgroundImage: `url(${celoAsStarsMobileShort})`,
   },
   [WHEN_TABLET]: {
-    width: '100vw',
+    width: "100vw",
     minHeight: "100vh",
     backgroundImage: `url(${celoAsStarsTablet})`,
-    backgroundPosition: 'bottom'
-
+    backgroundPosition: "bottom",
   },
   [WHEN_DESKTOP]: {
     width: backgroundDesktopSize.width,
     backgroundImage: `url(${celoAsStarsDesktop})`,
-  }
+  },
 })
 
-const useableArea = css(flex,{
+const useableArea = css(flex, {
   alignItems: "center",
   zIndex: 10,
   [WHEN_DESKTOP]: {
@@ -123,10 +138,9 @@ const useableArea = css(flex,{
   },
   [WHEN_MOBILE]: {
     paddingTop: 24,
-    paddingBottom: 16
+    paddingBottom: 16,
   },
-  [WHEN_LONG_PHONE] : {
-    paddingBottom: 0
-  }
+  [WHEN_LONG_PHONE]: {
+    paddingBottom: 0,
+  },
 })
-

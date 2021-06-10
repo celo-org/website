@@ -1,29 +1,29 @@
-import * as React from 'react'
-import { ImageBackground, ImageRequireSource, StyleSheet, Text, View } from 'react-native'
-import Palette from 'src/experience/brandkit/color/Palette'
-import Page, { COLOR_PATH } from 'src/experience/brandkit/common/Page'
-import Judgement, { Value } from 'src/experience/brandkit/logo/Judgement'
-import { brandStyles } from 'src/experience/common/constants'
+import * as React from "react"
+import { ImageBackground, ImageRequireSource, StyleSheet, Text, View } from "react-native"
+import Palette from "src/experience/brandkit/color/Palette"
+import Page, { COLOR_PATH } from "src/experience/brandkit/common/Page"
+import Judgement, { Value } from "src/experience/brandkit/logo/Judgement"
+import { brandStyles } from "src/experience/common/constants"
 import {
   ACCENT_PALETTE,
   BACKGROUND_PALETTE,
   GRAY_PALETTE,
   PRIMARY_PALETTE,
-} from 'src/experience/common/data'
-import PageHeadline from 'src/experience/common/PageHeadline'
-import SectionTitle from 'src/experience/common/SectionTitle'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import { hashNav } from 'src/shared/menu-items'
-import { colors, fonts, standardStyles } from 'src/styles'
+} from "src/experience/common/data"
+import PageHeadline from "src/experience/common/PageHeadline"
+import SectionTitle from "src/experience/common/SectionTitle"
+import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import { hashNav } from "src/shared/menu-items"
+import { colors, fonts, standardStyles } from "src/styles"
 const { brandColor } = hashNav
 
 export default React.memo(
   withNamespaces(NameSpaces.brand)(function Color({ t }: I18nProps) {
     return (
       <Page
-        title={t('color.title')}
-        metaDescription={t('colo.headline')}
+        title={t("color.title")}
+        metaDescription={t("colo.headline")}
         path={COLOR_PATH}
         sections={[
           { id: brandColor.overview, children: <Overview /> },
@@ -37,14 +37,14 @@ export default React.memo(
 const Overview = withNamespaces(NameSpaces.brand)(function _Overview({ t }: I18nProps) {
   return (
     <View>
-      <PageHeadline title={t('color.title')} style={standardStyles.blockMarginBottom} />
+      <PageHeadline title={t("color.title")} style={standardStyles.blockMarginBottom} />
       <Palette
-        title={t('color.primaries')}
-        text={t('color.primariesText')}
+        title={t("color.primaries")}
+        text={t("color.primariesText")}
         colors={PRIMARY_PALETTE}
       />
-      <Palette title={t('color.accents')} text={t('color.accentsText')} colors={ACCENT_PALETTE} />
-      <Palette title={t('color.grays')} text={t('color.graysText')} colors={GRAY_PALETTE} />
+      <Palette title={t("color.accents")} text={t("color.accentsText")} colors={ACCENT_PALETTE} />
+      <Palette title={t("color.grays")} text={t("color.graysText")} colors={GRAY_PALETTE} />
     </View>
   )
 })
@@ -55,12 +55,12 @@ const Backgrounds = withNamespaces(NameSpaces.brand)(
 
     return (
       <View>
-        <SectionTitle containerStyle={brandStyles.gap}>{t('color.backgroundTitle')}</SectionTitle>
-        <Palette text={t('color.backgroundText')} colors={BACKGROUND_PALETTE} />
+        <SectionTitle containerStyle={brandStyles.gap}>{t("color.backgroundTitle")}</SectionTitle>
+        <Palette text={t("color.backgroundText")} colors={BACKGROUND_PALETTE} />
         <Text style={[brandStyles.gap, fonts.h5, standardStyles.elementalMarginBottom]}>
-          {t('color.contrast')}
+          {t("color.contrast")}
         </Text>
-        <Text style={[brandStyles.gap, fonts.p]}>{t('color.contrastText')}</Text>
+        <Text style={[brandStyles.gap, fonts.p]}>{t("color.contrastText")}</Text>
         <View style={[standardStyles.elementalMargin, standardStyles.row]}>
           <Lorem
             color={colors.dark}
@@ -70,8 +70,8 @@ const Backgrounds = withNamespaces(NameSpaces.brand)(
           />
           <Lorem color={colors.white} backgroundColor={colors.dark} withGap={true} />
         </View>
-        <Text style={[brandStyles.gap, fonts.p]}>{t('color.contrastText2')}</Text>
-        <View style={screen === ScreenSizes.DESKTOP ? brandStyles.tiling : { width: '100%' }}>
+        <Text style={[brandStyles.gap, fonts.p]}>{t("color.contrastText2")}</Text>
+        <View style={screen === ScreenSizes.DESKTOP ? brandStyles.tiling : { width: "100%" }}>
           <View style={stylesForJudgemnt}>
             <Judgement is={Value.Bad}>
               <Lorem color={colors.gold} backgroundColor={colors.faintGold} />
@@ -85,14 +85,14 @@ const Backgrounds = withNamespaces(NameSpaces.brand)(
               <Lorem
                 color={colors.white}
                 backgroundColor={colors.gray}
-                image={require('src/experience/brandkit/images/lilah.jpg')}
+                image={require("src/experience/brandkit/images/lilah.jpg")}
               />
             </Judgement>
             <Judgement is={Value.Good}>
               <Lorem
                 color={colors.white}
                 backgroundColor={colors.dark}
-                image={require('src/experience/brandkit/images/lilahOverlay.jpg')}
+                image={require("src/experience/brandkit/images/lilahOverlay.jpg")}
               />
             </Judgement>
           </View>

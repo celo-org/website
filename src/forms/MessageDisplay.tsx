@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { StyleSheet, Text, TextStyle, View } from 'react-native'
-import { fonts } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, TextStyle, View } from "react-native"
+import { fonts } from "src/styles"
 
 interface Props {
   isShowing: boolean
@@ -22,8 +22,8 @@ export default React.memo(({ children, isShowing, style }: Props) => {
 
 const styles = StyleSheet.create({
   text: {
-    transitionProperty: 'opacity',
-    transitionDuration: '700ms',
+    transitionProperty: "opacity",
+    transitionDuration: "700ms",
   },
   showingError: {
     opacity: 100,
@@ -33,10 +33,10 @@ const styles = StyleSheet.create({
   },
   container: {
     marginVertical: 5,
-    height: 'auto',
+    height: "auto",
     maxHeight: 80,
-    transitionProperty: 'max-height',
-    transitionDuration: '600ms',
+    transitionProperty: "max-height",
+    transitionDuration: "600ms",
   },
   containerCollapsed: {
     maxHeight: 0,

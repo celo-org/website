@@ -1,16 +1,16 @@
-import * as React from 'react'
-import { colors } from 'src/styles'
+import * as React from "react"
+import { colors } from "src/styles"
 
 interface Props {
   color: colors
   size: number
   style?: unknown
   viewBox?: string
-  mixBlendMode?: 'multiply' | 'screen' // note not all blend modes work in all browsers; 'multiply' seem to be best
+  mixBlendMode?: "multiply" | "screen" // note not all blend modes work in all browsers; 'multiply' seem to be best
 }
 
 export default class OvalCoin extends React.PureComponent<Props> {
-  static defaultProps = { color: colors.primary, mixBlendMode: 'normal', viewBox: '0 0 83 98' }
+  static defaultProps = { color: colors.primary, mixBlendMode: "normal", viewBox: "0 0 83 98" }
   render() {
     const { mixBlendMode } = this.props
     return (
