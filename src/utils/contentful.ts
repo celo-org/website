@@ -1,20 +1,20 @@
-import { Document } from '@contentful/rich-text-types'
-import { CSSObject } from '@emotion/react'
-import { Asset, createClient, Entry, EntryCollection } from 'contentful'
-import getConfig from 'next/config'
-import { Page as SideBarEntry } from 'src/experience/common/Sidebar'
-import  {Props as BlurbProps} from "src/contentful/grid2-cells/Blurb"
-import { BTN } from 'src/shared/Button.3'
+import { Document } from "@contentful/rich-text-types"
+import { CSSObject } from "@emotion/react"
+import { Asset, createClient, Entry, EntryCollection } from "contentful"
+import getConfig from "next/config"
+import { Page as SideBarEntry } from "src/experience/common/Sidebar"
+import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
+import { BTN } from "src/shared/Button.3"
 
 function intialize() {
   const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
-  const isPreview = publicRuntimeConfig.ENV === 'development'
+  const isPreview = publicRuntimeConfig.ENV === "development"
   return createClient({
     space: serverRuntimeConfig.CONTENTFUL_SPACE_ID,
     accessToken: isPreview
       ? serverRuntimeConfig.CONTENTFUL_PREVIEW_ACCESS_TOKEN
       : serverRuntimeConfig.CONTENTFUL_ACCESS_TOKEN,
-    host: isPreview ? 'preview.contentful.com' : undefined,
+    host: isPreview ? "preview.contentful.com" : undefined,
   })
 }
 
@@ -36,14 +36,14 @@ interface InternalKit {
 
 export async function getKit(kitSlug: string, pageSlug: string, { locale }): Promise<InternalKit> {
   const kit = await intialize().getEntries<Kit>({
-    content_type: 'kit',
-    'fields.slug': kitSlug,
+    content_type: "kit",
+    "fields.slug": kitSlug,
     locale,
   })
 
   const data = kit.items[0].fields
 
-  const homePageSlug = kitSlug === 'merchant' ? 'index' : kitSlug
+  const homePageSlug = kitSlug === "merchant" ? "index" : kitSlug
 
   const actualPageSlug = !pageSlug ? homePageSlug : pageSlug
 
@@ -63,7 +63,7 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
       return {
         title: page.fields.title,
         href: `/experience/${kitSlug}${
-          page.fields.slug === kitSlug || page.fields.slug === 'index' ? '' : '/' + page.fields.slug
+          page.fields.slug === kitSlug || page.fields.slug === "index" ? "" : "/" + page.fields.slug
         }${addLocale(locale)}`,
         sections: [],
       }
@@ -71,9 +71,11 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
   }
 }
 
-
-export interface SectionType { name: string; contentField: Document; slug: string }
-
+export interface SectionType {
+  name: string
+  contentField: Document
+  slug: string
+}
 
 export interface ContentfulButton {
   name: string
@@ -95,6 +97,24 @@ export interface RoledexContentType {
   sheets: Entry<InfoSheetContentType>[]
 }
 
+export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
+
+interface FieldContentType {
+  name: string
+  placeholder?: string
+  label?: string
+  required?: boolean
+  type?: InputTypes
+}
+
+export interface FormContentType {
+  fields: Entry<FieldContentType>[]
+  colSpan: number
+  layout?: { grid: string[][] }
+  submitText: string
+  route: string
+}
+
 export interface ThumbnailType {
   title: string
   link: string
@@ -104,6 +124,7 @@ export interface FreeContentType {
   backgroundColor: string
   cssStyle: CSSObject
   body: Document
+  colSpan: number
 }
 
 export interface PlaylistContentType {
@@ -113,7 +134,12 @@ export interface PlaylistContentType {
   media?: Entry<ThumbnailType>[]
 }
 
-export type CellContentType = BlurbProps | FreeContentType | RoledexContentType | PlaylistContentType
+export type CellContentType =
+  | BlurbProps
+  | FreeContentType
+  | RoledexContentType
+  | PlaylistContentType
+  | FormContentType
 
 export interface GridRowContentType {
   id: string
@@ -133,29 +159,28 @@ export interface CoverContentType {
   illoFirst?: boolean
 }
 
-
-
 export interface ContentfulPage<T> {
   title: string
   slug: string
   description: string
   sections: Entry<T>[]
+  openGraph?: Asset
 }
 
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {
-  const pages = await intialize().getEntries<ContentfulPage<SectionType| GridRowContentType>>({
-    content_type: 'page',
-    'fields.slug': slug,
+  const pages = await intialize().getEntries<ContentfulPage<SectionType | GridRowContentType>>({
+    content_type: "page",
+    "fields.slug": slug,
     include: 5,
     locale,
   })
-  return processPages<SectionType| GridRowContentType>(pages, showSysData)
+  return processPages<SectionType | GridRowContentType>(pages, showSysData)
 }
 
 export async function getPageById<T>(id: string, { locale }) {
   const pages = await intialize().getEntries<ContentfulPage<T>>({
-    content_type: 'page',
-    'sys.id': id,
+    content_type: "page",
+    "sys.id": id,
     include: 5,
     locale,
   })
@@ -164,13 +189,15 @@ export async function getPageById<T>(id: string, { locale }) {
 
 function processPages<T>(pages: EntryCollection<ContentfulPage<T>>, showSysData?: boolean) {
   const data = pages.items[0].fields
-  const sections = showSysData ? data.sections : (data.sections || []).map((section) => section.fields)
+  const sections = showSysData
+    ? data.sections
+    : (data.sections || []).map((section) => section.fields)
   return { ...data, sections, updatedAt: pages.items[0].sys.updatedAt }
 }
 
 export function addLocale(locale) {
-  if (locale === 'en-US') {
-    return ''
+  if (locale === "en-US") {
+    return ""
   } else {
     return `?locale=${locale}`
   }
@@ -189,9 +216,9 @@ interface FAQcollection {
 export async function getFAQ({ locale }) {
   const result = await intialize().getEntries<FAQcollection>({
     locale,
-    content_type: 'faq',
+    content_type: "faq",
     include: 3,
-    'fields.key': 'celoFAQ',
+    "fields.key": "celoFAQ",
   })
   const faqPage = result.items[0]
   return faqPage

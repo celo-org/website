@@ -1,7 +1,7 @@
-import getConfig from 'next/config'
-import { FellowApp, FellowKeys } from '../fullstack/Fellowship'
-import airtableInit, { AirRecord } from '../server/airtable'
-const TABLE_NAME = 'Fellowship Application'
+import getConfig from "next/config"
+import { FellowApp, FellowKeys } from "../fullstack/Fellowship"
+import airtableInit, { AirRecord } from "../server/airtable"
+const TABLE_NAME = "Fellowship Application"
 
 function getAirtable() {
   const { serverRuntimeConfig } = getConfig()
@@ -9,7 +9,7 @@ function getAirtable() {
 }
 
 export async function submitFellowApp(fields: FellowApp) {
-  return (getAirtable().create(migrate(fields)) as unknown) as Promise<AirRecord<FellowApp>>
+  return getAirtable().create(migrate(fields)) as unknown as Promise<AirRecord<FellowApp>>
 }
 
 function migrate(fields: FellowApp) {

@@ -1,3 +1,3 @@
-import Page from 'src/plumo/Landing'
+import Page from "src/plumo/Landing"
 
 export default Page

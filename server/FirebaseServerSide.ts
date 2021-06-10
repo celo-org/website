@@ -1,8 +1,8 @@
-import  firebase from 'firebase/app'
-import 'firebase/auth'
-import 'firebase/database'
-import getConfig from 'next/config'
-import Sentry from '../server/sentry'
+import firebase from "firebase/app"
+import "firebase/auth"
+import "firebase/database"
+import getConfig from "next/config"
+import Sentry from "../server/sentry"
 import {
   Address,
   E164Number,
@@ -11,7 +11,7 @@ import {
   RequestRecord,
   RequestStatus,
   RequestType,
-} from '../src/fauceting/FaucetInterfaces'
+} from "../src/fauceting/FaucetInterfaces"
 
 async function getFirebase() {
   if (!firebase.apps.length) {
@@ -21,14 +21,14 @@ async function getFirebase() {
     const loginUsername = serverRuntimeConfig.FIREBASE_LOGIN_USERNAME
     const loginPassword = serverRuntimeConfig.FIREBASE_LOGIN_PASSWORD
     if (loginUsername === undefined || loginUsername === null || loginUsername.length === 0) {
-      throw new Error('Login username is empty')
+      throw new Error("Login username is empty")
     }
     try {
       // Source: https://firebase.google.com/docs/auth
       await firebase.auth().signInWithEmailAndPassword(loginUsername, loginPassword)
     } catch (e) {
       Sentry.withScope((scope) => {
-        scope.setTag('Service', 'Firebase')
+        scope.setTag("Service", "Firebase")
         Sentry.captureException(e)
       })
       console.error(`Fail to login into Firebase: ${e}`)
@@ -63,7 +63,7 @@ export async function sendRequest(
     return ref.key
   } catch (e) {
     Sentry.withScope((scope) => {
-      scope.setTag('Service', 'Firebase')
+      scope.setTag("Service", "Firebase")
       Sentry.captureException(e)
     })
 

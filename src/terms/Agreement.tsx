@@ -1,14 +1,14 @@
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { Document } from '@contentful/rich-text-types'
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { renderNode } from 'src/contentful/nodes/nodes'
-import { H1 } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { HEADER_HEIGHT } from 'src/shared/Styles'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { Document } from "@contentful/rich-text-types"
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { renderNode } from "src/contentful/nodes/nodes"
+import { H1 } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
+import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { HEADER_HEIGHT } from "src/shared/Styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 const OPTIONS = {
   renderNode,
@@ -32,7 +32,7 @@ class Agreement extends React.PureComponent<I18nProps & Props> {
       let pageData = {}
       // when run on server import fetching code and run. on client send req to api
       if (context.req) {
-        const getPageBySlug = await import('src/utils/contentful').then((mod) => mod.getPageBySlug)
+        const getPageBySlug = await import("src/utils/contentful").then((mod) => mod.getPageBySlug)
         pageData = await getPageBySlug(context.pathname.replace(/^\//, ""), {
           locale: "en-US",
         })
@@ -65,7 +65,7 @@ class Agreement extends React.PureComponent<I18nProps & Props> {
           <GridRow>
             <Cell span={Spans.fourth}>
               <Text style={fonts.h6}>
-                {t('updatedOn', { date: toLocaleDate(updatedAt, i18n.language) })}
+                {t("updatedOn", { date: toLocaleDate(updatedAt, i18n.language) })}
               </Text>
             </Cell>
             <Cell span={Spans.three4th}>
@@ -82,9 +82,9 @@ class Agreement extends React.PureComponent<I18nProps & Props> {
 
 function toLocaleDate(dateString: string, locale: string) {
   return new Date(dateString).toLocaleDateString(locale, {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   })
 }
 

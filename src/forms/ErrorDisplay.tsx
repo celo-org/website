@@ -1,13 +1,13 @@
-import * as React from 'react'
-import MessageDisplay from 'src/forms/MessageDisplay'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import { textStyles } from 'src/styles'
+import * as React from "react"
+import MessageDisplay from "src/forms/MessageDisplay"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { textStyles } from "src/styles"
 
 export enum ErrorKeys {
-  'email' = 'email',
-  'pleaseWait' = 'pleaseWait',
-  'unknownError' = 'unknownError',
-  'generic' = 'generic',
+  "email" = "email",
+  "pleaseWait" = "pleaseWait",
+  "unknownError" = "unknownError",
+  "generic" = "generic",
 }
 
 export function getErrorTransKey(field: string) {

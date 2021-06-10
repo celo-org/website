@@ -1,3 +1,3 @@
-import Agreement from 'src/terms/Agreement'
+import Agreement from "src/terms/Agreement"
 
 export default Agreement

@@ -1,18 +1,18 @@
-import * as React from 'react'
-import LazyFade from 'react-lazyload-fadein'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import Ally from 'src/alliance/AllianceMember'
-import { Category as CategoryEnum } from 'src/alliance/CategoryEnum'
-import gatherAllies from 'src/alliance/gatherAllies'
-import { H2, H4 } from 'src/fonts/Fonts'
-import { NameSpaces, Trans, useTranslation } from 'src/i18n'
-import External from 'src/icons/External'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import { ListItem } from 'src/shared/DropDown'
-import DropDownGroup from 'src/shared/DropDownGroup'
-import { externalizeURL } from 'src/shared/Outbound'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import LazyFade from "react-lazyload-fadein"
+import { Image, StyleSheet, Text, View } from "react-native"
+import Ally from "src/alliance/AllianceMember"
+import { Category as CategoryEnum } from "src/alliance/CategoryEnum"
+import gatherAllies from "src/alliance/gatherAllies"
+import { H2, H4 } from "src/fonts/Fonts"
+import { NameSpaces, Trans, useTranslation } from "src/i18n"
+import External from "src/icons/External"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { useScreenSize } from "src/layout/ScreenSize"
+import { ListItem } from "src/shared/DropDown"
+import DropDownGroup from "src/shared/DropDownGroup"
+import { externalizeURL } from "src/shared/Outbound"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 function initialState() {
   return Object.keys(CategoryEnum).map((key: CategoryEnum) => {
@@ -23,7 +23,7 @@ function initialState() {
   })
 }
 
-const ALL = 'all'
+const ALL = "all"
 
 export default function Members() {
   const { t } = useTranslation(NameSpaces.alliance)
@@ -53,28 +53,30 @@ export default function Members() {
         : alliesByCategory.filter(({ name }) => name === selectedFilter),
     [alliesByCategory, selectedFilter]
   )
-
-  function buildDropDownProps(currentFilter: string): ListItem[] {
-    return alliesByCategory.map(({ name }) => {
-      return {
-        id: name,
-        selected: name === currentFilter,
-        label: t(`members.categoryTitle.${name.toLocaleLowerCase()}`),
-      }
-    })
-  }
+  const buildDropDownProps = React.useCallback(
+    function buildDropDownProps(currentFilter: string): ListItem[] {
+      return alliesByCategory.map(({ name }) => {
+        return {
+          id: name,
+          selected: name === currentFilter,
+          label: t(`members.categoryTitle.${name.toLocaleLowerCase()}`),
+        }
+      })
+    },
+    [alliesByCategory, t]
+  )
 
   return (
-    <View nativeID={'members'}>
+    <View nativeID={"members"}>
       <GridRow
         desktopStyle={[standardStyles.sectionMarginTop, standardStyles.centered]}
-        tabletStyle={[standardStyles.sectionMarginTopTablet, { justifyContent: 'flex-end' }]}
+        tabletStyle={[standardStyles.sectionMarginTopTablet, { justifyContent: "flex-end" }]}
         mobileStyle={standardStyles.sectionMarginTopMobile}
       >
         <Cell span={Spans.half} tabletSpan={Spans.three4th}>
-          <H2 style={[styles.memberTitle, !isTablet && textStyles.center]}>{t('members.title')}</H2>
+          <H2 style={[styles.memberTitle, !isTablet && textStyles.center]}>{t("members.title")}</H2>
           <H4 style={[standardStyles.blockMarginBottomMobile, isMobile && textStyles.center]}>
-            <Trans i18nKey={'members.subtitle'} ns={NameSpaces.alliance}>
+            <Trans i18nKey={"members.subtitle"} ns={NameSpaces.alliance}>
               <Text style={textStyles.italic}>{}</Text>
             </Trans>
           </H4>
@@ -88,16 +90,15 @@ export default function Members() {
       >
         <Cell span={Spans.fourth}>
           <View style={styles.selectionArea}>
-            <Text style={[fonts.h6, styles.filterLabel]}>{t('filterLabel')}</Text>
+            <Text style={[fonts.h6, styles.filterLabel]}>{t("filterLabel")}</Text>
             <DropDownGroup
               data={[
                 {
                   name: t(`members.categoryTitle.all`),
-                  list: React.useMemo(() => buildDropDownProps(selectedFilter), [
-                    t,
-                    alliesByCategory,
-                    selectedFilter,
-                  ]),
+                  list: React.useMemo(
+                    () => buildDropDownProps(selectedFilter),
+                    [buildDropDownProps, selectedFilter]
+                  ),
                   onSelect: setFilter,
                   onClear,
                 },
@@ -150,7 +151,7 @@ const Member = React.memo(function _Member({ logo, name, url }: Ally) {
     <LazyFade>
       {(onLoad: () => void) => (
         <View style={styles.member}>
-          <a target={'_blank'} href={href}>
+          <a target={"_blank"} href={href} rel="noreferrer">
             <View style={styles.memberName}>
               <Image
                 resizeMode="contain"
@@ -165,7 +166,7 @@ const Member = React.memo(function _Member({ logo, name, url }: Ally) {
               </Text>
             </View>
           </a>
-          {href && <External size={12} color={colors.dark}/>}
+          {href && <External size={12} color={colors.dark} />}
         </View>
       )}
     </LazyFade>
@@ -174,7 +175,12 @@ const Member = React.memo(function _Member({ logo, name, url }: Ally) {
   )
 })
 
-function FallBack({ text, url }) {
+interface FallbackProps {
+  text: string
+  url: string
+}
+
+function FallBack({ text, url }: FallbackProps) {
   return (
     <View style={styles.member}>
       <View style={[standardStyles.centered, styles.logo]}>
@@ -186,7 +192,7 @@ function FallBack({ text, url }) {
   )
 }
 
-const hrefAttrs = {target:"blank", "rel": "noopenner"}
+const hrefAttrs = { target: "blank", rel: "noopenner" }
 
 const ROW_HEIGHT = 50
 const COLUMN_WIDTH = 180
@@ -195,7 +201,7 @@ const styles = StyleSheet.create({
   selectionArea: { maxWidth: 220 },
   membersArea: { minHeight: 650 },
   memberTitle: { marginBottom: 5 },
-  memberName: { flexDirection: 'column' },
+  memberName: { flexDirection: "column" },
   grayLine: {
     marginTop: 2,
     borderBottomColor: colors.gray,
@@ -203,25 +209,25 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   categoryContainer: {
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
     marginVertical: 30,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
     minHeight: 90,
   },
   categoryContainerMobile: {
-    alignItems: 'center',
-    flexDirection: 'column',
+    alignItems: "center",
+    flexDirection: "column",
   },
   categoryContainerDesktop: {
-    display: 'grid',
+    display: "grid",
     gridTemplateColumns: `repeat(3, ${COLUMN_WIDTH}px)`,
   },
   member: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    alignContent: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    alignContent: "center",
+    justifyContent: "center",
     marginHorizontal: 20,
     marginVertical: 30,
     width: COLUMN_WIDTH,

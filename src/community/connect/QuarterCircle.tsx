@@ -1,11 +1,10 @@
-import * as React from 'react'
-import LazyLoad from 'react-lazyload'
-import { StyleSheet, ViewStyle } from 'react-native'
-import ringPaths from 'src/community/connect/QuarterRingOfVectors'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import { Path } from 'src/shared/svg'
-import { baseCoinStyle, colors } from 'src/styles'
-
+import * as React from "react"
+import LazyLoad from "react-lazyload"
+import { StyleSheet, ViewStyle } from "react-native"
+import ringPaths from "src/community/connect/QuarterRingOfVectors"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import { Path } from "src/shared/svg"
+import { baseCoinStyle, colors } from "src/styles"
 
 type Props = ScreenProps
 class QuarterCircle extends React.PureComponent<Props> {
@@ -24,7 +23,7 @@ class QuarterCircle extends React.PureComponent<Props> {
       <LazyLoad unmountIfInvisible={true} height={height}>
         <svg height={height} width={width} viewBox="0 0 950 750" fill="none">
           <mask id="mask0" y="0" width={width * 2} height={height}>
-            <rect width={width * 2} height={height} fill={'#000'} />
+            <rect width={width * 2} height={height} fill={"#000"} />
           </mask>
           <g>
             {ringPaths.map((d, index) => {
@@ -60,7 +59,7 @@ const DELAY = 800
 
 const standard = {
   stroke: colors.screenGray,
-  fill: 'transparent',
+  fill: "transparent",
 }
 
 const outline = {
@@ -79,9 +78,9 @@ function pathStyle(index: number) {
     animationDelay: `${DELAY + DURATION * internalIndex * 1.5}ms`,
     animationKeyframes: [
       {
-        '0%': standard,
-        '50%': outline,
-        '100%': index === END_INDEX ? full : standard,
+        "0%": standard,
+        "50%": outline,
+        "100%": index === END_INDEX ? full : standard,
       },
     ],
   }
@@ -89,12 +88,12 @@ function pathStyle(index: number) {
 
 const styles = StyleSheet.create({
   base: {
-    fill: 'transparent',
+    fill: "transparent",
   },
   animationBase: {
-    animationFillMode: 'both',
+    animationFillMode: "both",
     animationDuration: `${DURATION}ms`,
     animationIterationCount: 1,
-    animationTimingFunction: 'ease-in',
+    animationTimingFunction: "ease-in",
   },
 })

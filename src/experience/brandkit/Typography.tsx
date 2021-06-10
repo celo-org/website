@@ -1,28 +1,28 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Page, { TYPE_PATH } from 'src/experience/brandkit/common/Page'
-import DownloadButton from 'src/experience/brandkit/DownloadButton'
-import { GARMOND_TRACKING, JOST_TRACKING } from 'src/experience/brandkit/tracking'
-import UseageExamples from 'src/experience/brandkit/typography/UseageExample'
-import { brandStyles } from 'src/experience/common/constants'
-import PageHeadline from 'src/experience/common/PageHeadline'
-import SectionTitle from 'src/experience/common/SectionTitle'
-import { H2, H3 } from 'src/fonts/Fonts'
-import { I18nProps, NameSpaces, Trans, withNamespaces } from 'src/i18n'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import InlineAnchor from 'src/shared/InlineAnchor'
-import { hashNav } from 'src/shared/menu-items'
-import { fontInfo, fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import Page, { TYPE_PATH } from "src/experience/brandkit/common/Page"
+import DownloadButton from "src/experience/brandkit/DownloadButton"
+import { GARMOND_TRACKING, JOST_TRACKING } from "src/experience/brandkit/tracking"
+import UseageExamples from "src/experience/brandkit/typography/UseageExample"
+import { brandStyles } from "src/experience/common/constants"
+import PageHeadline from "src/experience/common/PageHeadline"
+import SectionTitle from "src/experience/common/SectionTitle"
+import { H2, H3 } from "src/fonts/Fonts"
+import { I18nProps, NameSpaces, Trans, withNamespaces } from "src/i18n"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import InlineAnchor from "src/shared/InlineAnchor"
+import { hashNav } from "src/shared/menu-items"
+import { fontInfo, fonts, standardStyles } from "src/styles"
 const { brandTypography } = hashNav
 
 function getWeight(weight: string | undefined) {
   switch (weight) {
-    case '500':
-      return 'Medium'
-    case '400':
-      return 'Book'
+    case "500":
+      return "Medium"
+    case "400":
+      return "Book"
     case undefined:
-      return 'Regular'
+      return "Regular"
     default:
       return weight
   }
@@ -32,8 +32,8 @@ export default React.memo(
   withNamespaces(NameSpaces.brand)(function Typography({ t }: I18nProps) {
     return (
       <Page
-        title={t('typography.title')}
-        metaDescription={t('typography.headline')}
+        title={t("typography.title")}
+        metaDescription={t("typography.headline")}
         path={TYPE_PATH}
         sections={[
           { id: brandTypography.overview, children: <Overview /> },
@@ -49,31 +49,31 @@ const Overview = withNamespaces(NameSpaces.brand)(
     return (
       <View>
         <PageHeadline
-          title={t('typography.title')}
-          headline={t('typography.headline')}
+          title={t("typography.title")}
+          headline={t("typography.headline")}
           style={standardStyles.blockMarginBottom}
         />
         <View style={brandStyles.gap}>
-          <Text style={fonts.h5}>{t('typography.facesTitle')}</Text>
+          <Text style={fonts.h5}>{t("typography.facesTitle")}</Text>
           <Text style={[fonts.p, standardStyles.elementalMargin]}>
-            <Trans ns={NameSpaces.brand} i18nKey={'typography.facesText'}>
+            <Trans ns={NameSpaces.brand} i18nKey={"typography.facesText"}>
               <InlineAnchor href="https://medium.com/celoOrg/the-why-of-the-celo-coin-part-1-of-3-5e5701805847">
                 philosophy
               </InlineAnchor>
             </Trans>
           </Text>
-          <H2 style={styles.hero}>{t('typography.mainFontTitle')}</H2>
+          <H2 style={styles.hero}>{t("typography.mainFontTitle")}</H2>
           <Text style={[fonts.p, standardStyles.elementalMarginBottom]}>
-            {t('typography.mainFontText')}
+            {t("typography.mainFontText")}
           </Text>
           <DownloadButton
             uri="https://fonts.google.com/specimen/EB+Garamond"
             trackingData={GARMOND_TRACKING}
           />
           <View style={standardStyles.blockMarginTopTablet}>
-            <H3 style={styles.hero}>{t('typography.subFontTitle')}</H3>
+            <H3 style={styles.hero}>{t("typography.subFontTitle")}</H3>
             <Text style={[fonts.p, standardStyles.elementalMarginBottom]}>
-              {t('typography.subFontText')}
+              {t("typography.subFontText")}
             </Text>
             <DownloadButton
               uri="https://indestructibletype.com/Jost.html"
@@ -87,14 +87,14 @@ const Overview = withNamespaces(NameSpaces.brand)(
 )
 
 const TYPEFACES = [
-  { font: fonts.h1, name: 'Heading One', data: fontInfo.h1 },
-  { font: fonts.h2, name: 'Heading Two', data: fontInfo.h2 },
-  { font: fonts.h3, name: 'Heading Three', data: fontInfo.h3 },
-  { font: fonts.h4, name: 'Heading Four', data: fontInfo.h4 },
-  { font: fonts.h5, name: 'Heading Five', data: fontInfo.h5 },
-  { font: fonts.h6, name: 'Heading Six', data: fontInfo.h6 },
-  { font: fonts.p, name: 'Body', data: fontInfo.p },
-  { font: fonts.legal, name: 'Small', data: fontInfo.legal },
+  { font: fonts.h1, name: "Heading One", data: fontInfo.h1 },
+  { font: fonts.h2, name: "Heading Two", data: fontInfo.h2 },
+  { font: fonts.h3, name: "Heading Three", data: fontInfo.h3 },
+  { font: fonts.h4, name: "Heading Four", data: fontInfo.h4 },
+  { font: fonts.h5, name: "Heading Five", data: fontInfo.h5 },
+  { font: fonts.h6, name: "Heading Six", data: fontInfo.h6 },
+  { font: fonts.p, name: "Body", data: fontInfo.p },
+  { font: fonts.legal, name: "Small", data: fontInfo.legal },
 ]
 
 const TypeScale = withNamespaces(NameSpaces.brand)(
@@ -103,9 +103,9 @@ const TypeScale = withNamespaces(NameSpaces.brand)(
       return (
         <View>
           <SectionTitle containerStyle={brandStyles.gap}>
-            {t('typography.typescaleTitle')}
+            {t("typography.typescaleTitle")}
           </SectionTitle>
-          <Text style={[fonts.p, brandStyles.gap]}>{t('typography.typescaleText')}</Text>
+          <Text style={[fonts.p, brandStyles.gap]}>{t("typography.typescaleText")}</Text>
           <View
             style={[
               standardStyles.elementalMarginTop,
@@ -135,7 +135,7 @@ const TypeScale = withNamespaces(NameSpaces.brand)(
                     ]}
                   >
                     <Text style={fonts.h6}>
-                      {typeface.data.fontFamily.split(',')[0]} •{' '}
+                      {typeface.data.fontFamily.split(",")[0]} •{" "}
                       {getWeight(typeface.data.fontWeight)}
                     </Text>
                     <View>
@@ -164,19 +164,19 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   fontInfo: {
-    justifyContent: 'space-between',
-    alignItems: 'flex-end',
-    alignContent: 'flex-end',
+    justifyContent: "space-between",
+    alignItems: "flex-end",
+    alignContent: "flex-end",
     paddingBottom: 15,
     paddingTop: 30,
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
   fontNameBox: { flex: 1, minWidth: 280 },
   fontInfoMobile: {
     paddingBottom: 15,
     paddingTop: 30,
   },
-  stylesArea: { flex: 1, minWidth: 250, justifyContent: 'space-between', marginTop: 5 },
+  stylesArea: { flex: 1, minWidth: 250, justifyContent: "space-between", marginTop: 5 },
   stylesAreaMobile: { flex: 1, marginTop: 5 },
   hero: {
     margin: 30,

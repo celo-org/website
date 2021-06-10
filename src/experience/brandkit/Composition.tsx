@@ -1,47 +1,47 @@
-import * as React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import Page, { COMPOSITION_PATH } from 'src/experience/brandkit/common/Page'
-import exampleImage from 'src/experience/brandkit/images/aroundPhone.png'
-import { brandStyles } from 'src/experience/common/constants'
-import PageHeadline from 'src/experience/common/PageHeadline'
-import { H2, H4 } from 'src/fonts/Fonts'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { hashNav } from 'src/shared/menu-items'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { Image, StyleSheet, Text, View } from "react-native"
+import Page, { COMPOSITION_PATH } from "src/experience/brandkit/common/Page"
+import exampleImage from "src/experience/brandkit/images/aroundPhone.png"
+import { brandStyles } from "src/experience/common/constants"
+import PageHeadline from "src/experience/common/PageHeadline"
+import { H2, H4 } from "src/fonts/Fonts"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { hashNav } from "src/shared/menu-items"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
-export default React.memo(
-  withNamespaces(NameSpaces.brand)(function Intro({ t }: I18nProps) {
-    return (
-      <>
-        <Page
-          title="Composition"
-          path={COMPOSITION_PATH}
-          metaDescription={t('composition.introduction')}
-          sections={[
-            { id: hashNav.brandComposition.overview, children: <Overview /> },
-            { id: hashNav.brandComposition.grid, children: <GridArea /> },
-          ]}
-        />
-      </>
-    )
-  })
-)
+export default React.memo(function Intro() {
+  const { t } = useTranslation(NameSpaces.brand)
+  return (
+    <>
+      <Page
+        title="Composition"
+        path={COMPOSITION_PATH}
+        metaDescription={t("composition.introduction")}
+        sections={[
+          { id: hashNav.brandComposition.overview, children: <Overview /> },
+          { id: hashNav.brandComposition.grid, children: <GridArea /> },
+        ]}
+      />
+    </>
+  )
+})
 
-const imageGridArea = { gridArea: 'image' } as any
+const imageGridArea = { gridArea: "image" } as any
 
-const Overview = withNamespaces(NameSpaces.brand)(function _Overview({ t }: I18nProps) {
+function Overview() {
+  const { t } = useTranslation(NameSpaces.brand)
   return (
     <>
       <PageHeadline
-        title={t('composition.title')}
-        headline={t('composition.headline')}
+        title={t("composition.title")}
+        headline={t("composition.headline")}
         style={standardStyles.blockMarginBottom}
       />
       <View style={brandStyles.gap}>
         <Text style={[fonts.h5, standardStyles.elementalMarginBottom]}>
-          {t('composition.alignmentTitle')}
+          {t("composition.alignmentTitle")}
         </Text>
-        <Text style={fonts.p}>{t('composition.alignmentText')}</Text>
+        <Text style={fonts.p}>{t("composition.alignmentText")}</Text>
         <View
           style={[
             styles.alignments,
@@ -51,16 +51,16 @@ const Overview = withNamespaces(NameSpaces.brand)(function _Overview({ t }: I18n
         >
           <View style={styles.alignmentExample}>
             <H4 style={standardStyles.elementalMarginBottom}>
-              {t('composition.alignmentExampleTitle')}
+              {t("composition.alignmentExampleTitle")}
             </H4>
             <Image source={exampleImage} style={styles.graphicBig} />
             <Text style={[fonts.micro, styles.subtitle, standardStyles.elementalMarginTop]}>
-              {t('composition.alignmentExampleSubtitle')}
+              {t("composition.alignmentExampleSubtitle")}
             </Text>
-            <Text style={fonts.legal}>{t('composition.alignmentExampleText')}</Text>
+            <Text style={fonts.legal}>{t("composition.alignmentExampleText")}</Text>
           </View>
           <View style={[styles.alignmentExample, styles.alignment2]}>
-            <AlignmentExampleTitle t={t} />
+            <AlignmentExampleTitle />
             <Image source={exampleImage} style={styles.graphicBig} />
             <Text
               style={[
@@ -70,33 +70,33 @@ const Overview = withNamespaces(NameSpaces.brand)(function _Overview({ t }: I18n
                 standardStyles.elementalMarginTop,
               ]}
             >
-              {t('composition.alignmentExampleSubtitle')}
+              {t("composition.alignmentExampleSubtitle")}
             </Text>
             <Text style={[fonts.legal, textStyles.center]}>
-              {t('composition.alignmentExampleText')}
+              {t("composition.alignmentExampleText")}
             </Text>
           </View>
           <View style={styles.alignmentExample}>
-            <AlignmentExampleTitle t={t} />
+            <AlignmentExampleTitle />
             <View style={[standardStyles.row, standardStyles.elementalMarginTop]}>
               <Image source={exampleImage} style={styles.graphicTiny} />
               <View style={styles.alignment3row}>
                 <Text style={[fonts.micro, styles.subtitle]}>
-                  {t('composition.alignmentExampleSubtitle')}
+                  {t("composition.alignmentExampleSubtitle")}
                 </Text>
-                <Text style={fonts.legal}>{t('composition.alignmentExampleText')}</Text>
+                <Text style={fonts.legal}>{t("composition.alignmentExampleText")}</Text>
               </View>
             </View>
           </View>
           <View style={[styles.alignmentExample]}>
-            <AlignmentExampleTitle t={t} />
+            <AlignmentExampleTitle />
             <View style={styles.fourthAlignment}>
-              <Text style={[fonts.micro, styles.subtitle, { gridArea: 'subtitle' }]}>
-                {t('composition.alignmentExampleSubtitle')}
+              <Text style={[fonts.micro, styles.subtitle, { gridArea: "subtitle" }]}>
+                {t("composition.alignmentExampleSubtitle")}
               </Text>
               <Image source={exampleImage} style={[styles.graphicSmall, imageGridArea]} />
-              <Text style={[fonts.legal, { gridArea: 'text' }]}>
-                {t('composition.alignmentExampleText')}
+              <Text style={[fonts.legal, { gridArea: "text" }]}>
+                {t("composition.alignmentExampleText")}
               </Text>
             </View>
           </View>
@@ -104,30 +104,38 @@ const Overview = withNamespaces(NameSpaces.brand)(function _Overview({ t }: I18n
       </View>
     </>
   )
-})
+}
 
-const GridArea = withNamespaces(NameSpaces.brand)(function _Grid({ t }: I18nProps) {
+function GridArea() {
+  const { t } = useTranslation(NameSpaces.brand)
   return (
     <View style={brandStyles.gap}>
-      <H2 style={standardStyles.elementalMarginBottom}>{t('composition.gridTitle')}</H2>
-      <Text style={fonts.p}>{t('composition.gridText')}</Text>
+      <H2 style={standardStyles.elementalMarginBottom}>{t("composition.gridTitle")}</H2>
+      <Text style={fonts.p}>{t("composition.gridText")}</Text>
       <View style={[styles.gridExamplesContainer, standardStyles.blockMarginTopTablet]}>
-        <GridExamples size={'⅟₁'} row={'1'} colStart="1" colEnd={'12'} />
-        <GridExamples size={'½'} row={'2'} colStart="1" colEnd={'6'} />
-        <GridExamples size={'½'} row={'2'} colStart="6" colEnd={'12'} />
-        <GridExamples size={'⅓'} row={'3'} colStart="1" colEnd={'4'} />
-        <GridExamples size={'⅓'} row={'3'} colStart="4" colEnd={'8'} />
-        <GridExamples size={'⅓'} row={'3'} colStart="8" colEnd={'12'} />
-        <GridExamples size={'¼'} row={'4'} colStart="1" colEnd={'3'} />
-        <GridExamples size={'¼'} row={'4'} colStart="3" colEnd={'6'} />
-        <GridExamples size={'¼'} row={'4'} colStart="6" colEnd={'9'} />
-        <GridExamples size={'¼'} row={'4'} colStart="9" colEnd={'12'} />
+        <GridExamples size={"⅟₁"} row={"1"} colStart="1" colEnd={"12"} />
+        <GridExamples size={"½"} row={"2"} colStart="1" colEnd={"6"} />
+        <GridExamples size={"½"} row={"2"} colStart="6" colEnd={"12"} />
+        <GridExamples size={"⅓"} row={"3"} colStart="1" colEnd={"4"} />
+        <GridExamples size={"⅓"} row={"3"} colStart="4" colEnd={"8"} />
+        <GridExamples size={"⅓"} row={"3"} colStart="8" colEnd={"12"} />
+        <GridExamples size={"¼"} row={"4"} colStart="1" colEnd={"3"} />
+        <GridExamples size={"¼"} row={"4"} colStart="3" colEnd={"6"} />
+        <GridExamples size={"¼"} row={"4"} colStart="6" colEnd={"9"} />
+        <GridExamples size={"¼"} row={"4"} colStart="9" colEnd={"12"} />
       </View>
     </View>
   )
-})
+}
 
-function GridExamples({ size, colStart, colEnd, row }) {
+interface GridExProps {
+  size: string
+  colStart: string
+  colEnd: string
+  row: string
+}
+
+function GridExamples({ size, colStart, colEnd, row }: GridExProps) {
   return (
     <View style={[styles.gridExample, { gridArea: `${row} / ${colStart} / ${row} / ${colEnd} ` }]}>
       <Text style={[fonts.a, styles.gridExampleWithin]}>{size}</Text>
@@ -135,17 +143,18 @@ function GridExamples({ size, colStart, colEnd, row }) {
   )
 }
 
-function AlignmentExampleTitle({ t }) {
+function AlignmentExampleTitle() {
+  const { t } = useTranslation(NameSpaces.brand)
   return (
     <H4 style={[standardStyles.elementalMarginBottom, textStyles.center]}>
-      {t('composition.alignmentExampleTitle')}
+      {t("composition.alignmentExampleTitle")}
     </H4>
   )
 }
 
 const styles = StyleSheet.create({
   gridExamplesContainer: {
-    display: 'grid',
+    display: "grid",
     gridColumns: 12,
     gridColumnGap: "15px",
     gridRowGap: "15px",
@@ -157,19 +166,19 @@ const styles = StyleSheet.create({
   },
   gridExampleWithin: {
     borderColor: colors.purple,
-    borderStyle: 'dashed',
+    borderStyle: "dashed",
     borderWidth: 1,
     paddingHorizontal: 8,
     paddingVertical: 12,
     color: colors.purpleScreen,
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: 22,
     letterSpacing: -8,
   },
   alignments: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    display: 'grid',
+    flexDirection: "row",
+    flexWrap: "wrap",
+    display: "grid",
     gridRowGap: "15px",
     gridColumnGap: "20px",
     gridTemplateColumns: `repeat(auto-fit, minmax(280px, 1fr))`,
@@ -181,13 +190,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     maxWidth: 400,
   },
-  alignment2: { alignItems: 'center' },
+  alignment2: { alignItems: "center" },
   alignment3row: { flex: 1, paddingLeft: 10 },
   fourthAlignment: {
     marginTop: 5,
-    display: 'grid',
+    display: "grid",
     gridTemplateColumns: `repeat(3, 1fr)`,
-    gridTemplateRows: 'repeat(2, 1fr)',
+    gridTemplateRows: "repeat(2, 1fr)",
     gridTemplateAreas: `". image image" "subtitle text text"`,
     gridColumnGap: "10px",
   },

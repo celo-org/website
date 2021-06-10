@@ -1,2 +1,2 @@
-import CeloRewardsTerms from 'src/celo-rewards/CeloRewardsTerms'
+import CeloRewardsTerms from "src/celo-rewards/CeloRewardsTerms"
 export default CeloRewardsTerms

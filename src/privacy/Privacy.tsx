@@ -1,11 +1,11 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H1, Li, TABLE, TD, TH, TR, Ul } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import SideTitledSection from 'src/layout/SideTitledSection'
-import Link from 'src/shared/Link'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H1, Li, TABLE, TD, TH, TR, Ul } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import SideTitledSection from "src/layout/SideTitledSection"
+import Link from "src/shared/Link"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 export default class Privacy extends React.Component {
   render() {
@@ -13,9 +13,9 @@ export default class Privacy extends React.Component {
       <View style={styles.container}>
         <OpenGraph
           title="Privacy Policy"
-          path={'/privacy'}
+          path={"/privacy"}
           description={
-            'This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service.'
+            "This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service."
           }
         />
         <GridRow
@@ -57,21 +57,22 @@ export default class Privacy extends React.Component {
         </GridRow>
         <SideTitledSection span={Spans.three4th} title="Overview">
           <P>
-            Unless we specifically state otherwise, the Celo Foundation is the data processor of the Personal Data
-            we process, and is therefore responsible for ensuring that the systems and processes we
-            use are compliant with data protection laws, to the extent applicable to us.
+            Unless we specifically state otherwise, the Celo Foundation is the data processor of the
+            Personal Data we process, and is therefore responsible for ensuring that the systems and
+            processes we use are compliant with data protection laws, to the extent applicable to
+            us.
           </P>
           <P>
-            Celo Foundation personnel are required to comply with this Privacy Policy and complete data
-            protection training, where appropriate.
+            Celo Foundation personnel are required to comply with this Privacy Policy and complete
+            data protection training, where appropriate.
           </P>
         </SideTitledSection>
         <SideTitledSection span={Spans.three4th} title="Collection of Personal Data">
           <P>
-            The Celo Foundation collects information that you provide directly to us when you browse our Site,
-            register to receive newsletter requests or other information, provide feedback through
-            surveys, participate in any interactive features on our Sites including contests,
-            promotions, challenges, activities or events.
+            The Celo Foundation collects information that you provide directly to us when you browse
+            our Site, register to receive newsletter requests or other information, provide feedback
+            through surveys, participate in any interactive features on our Sites including
+            contests, promotions, challenges, activities or events.
           </P>
           <P>
             We also collect data provided by job applicants or others on our Sites or offline means
@@ -117,10 +118,11 @@ export default class Privacy extends React.Component {
               relevant marketing, updates and invitations.
             </Li>
             <Li>
-              To<B>
-                {' '}
+              To
+              <B>
+                {" "}
                 consider individuals for employment and contractor opportunities and manage
-                on-boarding processes{' '}
+                on-boarding processes{" "}
               </B>
               we use job applicant data. The processing is necessary for the purposes of recruitment
               and on-boarding.
@@ -288,8 +290,11 @@ export default class Privacy extends React.Component {
           </P>
           <P>
             You may also contact us to address and resolve concerns you may have about our use of
-            your Personal Data. Please contact us at{' '}
-            <Link href="mailto:privacy@celo.org"><a>privacy@celo.org</a></Link>.
+            your Personal Data. Please contact us at{" "}
+            <Link href="mailto:privacy@celo.org">
+              <a>privacy@celo.org</a>
+            </Link>
+            .
           </P>
         </SideTitledSection>
         <SideTitledSection span={Spans.three4th} title="Changes To This Privacy Policy">

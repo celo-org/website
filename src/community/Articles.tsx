@@ -1,11 +1,11 @@
-import { Articles as Props } from 'fullstack/ArticleProps'
-import * as React from 'react'
-import FadeIn from 'react-lazyload-fadein'
-import { StyleSheet, View } from 'react-native'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Card from 'src/shared/Card'
-import Spinner from 'src/shared/Spinner'
-import { colors, standardStyles } from 'src/styles'
+import { Articles as Props } from "fullstack/ArticleProps"
+import * as React from "react"
+import FadeIn from "react-lazyload-fadein"
+import { StyleSheet, View } from "react-native"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Card from "src/shared/Card"
+import Spinner from "src/shared/Spinner"
+import { colors, standardStyles } from "src/styles"
 
 interface OwnProps {
   loading: boolean
@@ -46,17 +46,17 @@ function Placeholder() {
     <GridRow allStyle={[styles.body, standardStyles.centered]}>
       <Cell span={Spans.third} tabletSpan={Spans.half}>
         <View style={[standardStyles.centered, styles.placeholder]}>
-          <Spinner color={colors.white} size={'medium'} />
+          <Spinner color={colors.white} size={"medium"} />
         </View>
       </Cell>
       <Cell span={Spans.third} tabletSpan={Spans.half}>
         <View style={[standardStyles.centered, styles.placeholder]}>
-          <Spinner color={colors.white} size={'medium'} />
+          <Spinner color={colors.white} size={"medium"} />
         </View>
       </Cell>
       <Cell span={Spans.third} tabletSpan={Spans.half}>
         <View style={[standardStyles.centered, styles.placeholder]}>
-          <Spinner color={colors.white} size={'medium'} />
+          <Spinner color={colors.white} size={"medium"} />
         </View>
       </Cell>
     </GridRow>
@@ -66,17 +66,17 @@ function Placeholder() {
 const styles = StyleSheet.create({
   body: {
     paddingHorizontal: 0,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
   cell: {
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
   placeholder: {
     marginTop: 15,
     height: 500,
-    width: '100%',
+    width: "100%",
     backgroundColor: colors.light,
   },
 })

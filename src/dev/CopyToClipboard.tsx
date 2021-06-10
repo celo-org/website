@@ -1,9 +1,9 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import CopyIcon from 'src/icons/CopyIcon'
-import Hoverable from 'src/shared/Hoverable'
-import { colors } from 'src/styles'
-import { copyToClipboad } from 'src/utils/utils'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import CopyIcon from "src/icons/CopyIcon"
+import Hoverable from "src/shared/Hoverable"
+import { colors } from "src/styles"
+import { copyToClipboad } from "src/utils/utils"
 
 interface Props {
   content: string
@@ -56,13 +56,13 @@ export default CopyToClipboard
 
 const styles = StyleSheet.create({
   container: {
-    display: 'inline-flex',
+    display: "inline-flex",
     paddingHorizontal: 8,
     height: 14,
   },
   icon: {
-    display: 'inline-flex',
-    cursor: 'pointer',
+    display: "inline-flex",
+    cursor: "pointer",
     fontSize: 16,
     lineHeight: 14,
     height: 14,

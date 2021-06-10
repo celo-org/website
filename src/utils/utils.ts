@@ -1,15 +1,15 @@
-import NetworkSpeed from 'network-speed'
-import { Clipboard } from 'react-native'
+import NetworkSpeed from "network-speed"
+import { Clipboard } from "react-native"
 
 export function randomIntegerInRange(min: number, max: number) {
   return Math.round(Math.random() * (max - min + 1)) + min
 }
 
-export function scrollTo(elementID: string, position?: 'start' | 'center') {
+export function scrollTo(elementID: string, position?: "start" | "center") {
   const element = document.getElementById(elementID)
   if (element) {
     element.scrollIntoView({
-      behavior: 'smooth',
+      behavior: "smooth",
       block: position,
       inline: position,
     })
@@ -31,40 +31,39 @@ export async function getNetworkDownloadSpeed() {
     const speed: Speeds = await testNetworkSpeed.checkDownloadSpeed(baseUrl, byteSize)
     return speed
   } catch (e) {
-    return { mbps: '0', kbps: '0', bps: '0' }
+    return { mbps: "0", kbps: "0", bps: "0" }
   }
 }
 
 const MIN_MB_FOR_FAST = 5
 
 async function isFast(speed: number | EffectiveTypes) {
-  if (speed === EffectiveTypes['4g']) {
+  if (speed === EffectiveTypes["4g"]) {
     return true
   }
-  if (typeof speed === 'number' && speed > MIN_MB_FOR_FAST) {
+  if (typeof speed === "number" && speed > MIN_MB_FOR_FAST) {
     return true
   }
   return false
 }
 
-
 export function getEffectiveConnection(navigator: Navigator): EffectiveTypes {
   const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection
-  return (connection && connection.effectiveType) || 'unknown'
+  return (connection && connection.effectiveType) || "unknown"
 }
 
 // from http://wicg.github.io/netinfo/#dom-effectiveconnectiontype-slow-2g
 export enum EffectiveTypes {
-  '2g' = '2g',
-  '3g' = '3g',
-  '4g' = '4g',
-  'slow-2g' = 'slow-2g',
-  'unknown' = 'unknown',
+  "2g" = "2g",
+  "3g" = "3g",
+  "4g" = "4g",
+  "slow-2g" = "slow-2g",
+  "unknown" = "unknown",
 }
 
 export async function hasGoodConnection() {
   const chromesBuiltInMethod = getEffectiveConnection(window.navigator)
-  if (chromesBuiltInMethod !== 'unknown') {
+  if (chromesBuiltInMethod !== "unknown") {
     return isFast(chromesBuiltInMethod)
   }
 
@@ -105,16 +104,16 @@ export function isBrowser() {
 }
 
 export function cutAddress(address: string) {
-  return address.toUpperCase().replace(/^0x([a-f0-9]{4}).+([a-f0-9]{4})$/i, '0x$1...$2')
+  return address.toUpperCase().replace(/^0x([a-f0-9]{4}).+([a-f0-9]{4})$/i, "0x$1...$2")
 }
 
-export function formatNumber(n: number, decimals: number = 2) {
+export function formatNumber(n: number, decimals = 2) {
   if (n === Infinity) {
     return undefined as string
   }
   return isNaN(+n)
     ? (0).toFixed(decimals)
-    : (+n).toFixed(decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+    : (+n).toFixed(decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 }
 
 export function copyToClipboad(text: string) {
@@ -126,5 +125,5 @@ export function weiToDecimal(number: number) {
 }
 
 export function isExternalLink(link: string) {
-  return link.startsWith('http')
+  return link.startsWith("http")
 }

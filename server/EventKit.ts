@@ -1,8 +1,8 @@
-import { Attachment, FieldSet, Table } from 'airtable'
-import airtableInit from './airtable'
-import cache from './cache'
+import { Attachment, FieldSet, Table } from "airtable"
+import airtableInit from "./airtable"
+import cache from "./cache"
 
-const AIRTABLE_BASE_ID = 'appjKfoHvrO5SZWdd'
+const AIRTABLE_BASE_ID = "appjKfoHvrO5SZWdd"
 
 interface Fields extends FieldSet {
   Name: string
@@ -14,7 +14,7 @@ interface Fields extends FieldSet {
 }
 
 export enum Sheets {
-  Planning = 'Planning',
+  Planning = "Planning",
 }
 
 export default async function getAssets(sheet: Sheets) {
@@ -28,7 +28,7 @@ async function fetchAssets(sheet: Sheets) {
     .select({
       pageSize: 100,
       filterByFormula: `${TERMS_SIGNED}`,
-      sort: [{ field: 'Order', direction: 'asc' }],
+      sort: [{ field: "Order", direction: "asc" }],
     })
     .eachPage((records, fetchNextPage) => {
       records.forEach((doc) => assets.push(normalize(doc.fields, doc.id)))
@@ -41,7 +41,7 @@ function getAirtable(sheet: Sheets): Table<Fields> {
   return airtableInit(AIRTABLE_BASE_ID)(sheet) as Table<Fields>
 }
 
-const TERMS_SIGNED = 'Terms=1'
+const TERMS_SIGNED = "Terms=1"
 
 function normalize(asset: Fields, id: string) {
   return {
@@ -61,7 +61,7 @@ function getPreview(asset: Fields) {
       previewField[0] &&
       previewField[0].thumbnails &&
       previewField[0].thumbnails.large.url) ||
-    ''
+    ""
   )
 }
 

@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Pigment, { ColorData } from 'src/experience/brandkit/color/Pigment'
-import { GAP } from 'src/experience/common/constants'
-import { fonts, standardStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import Pigment, { ColorData } from "src/experience/brandkit/color/Pigment"
+import { GAP } from "src/experience/common/constants"
+import { fonts, standardStyles } from "src/styles"
 
 interface Props {
   colors: ColorData[]
@@ -28,8 +28,8 @@ export default function Palette({ text, title, colors }: Props) {
 
 const styles = StyleSheet.create({
   swatch: {
-    flexWrap: 'wrap',
-    flexDirection: 'row',
+    flexWrap: "wrap",
+    flexDirection: "row",
   },
   gap: {
     marginHorizontal: GAP,

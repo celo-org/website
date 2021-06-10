@@ -1,3 +1,3 @@
-import JoinPage from 'src/join/JoinPage'
+import JoinPage from "src/join/JoinPage"
 
 export default JoinPage

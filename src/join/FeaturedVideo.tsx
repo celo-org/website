@@ -1,12 +1,12 @@
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { H2 } from 'src/fonts/Fonts'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Fade from 'src/shared/AwesomeFade'
-import VideoModal from 'src/shared/VideoModal'
-import { colors, standardStyles, textStyles } from 'src/styles'
-const image = require('src/join/claire-video-banner.jpg')
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import { H2 } from "src/fonts/Fonts"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Fade from "src/shared/AwesomeFade"
+import VideoModal from "src/shared/VideoModal"
+import { colors, standardStyles, textStyles } from "src/styles"
+const image = require("src/join/claire-video-banner.jpg")
 
 class FeaturedVideo extends React.PureComponent<I18nProps> {
   render() {
@@ -19,10 +19,10 @@ class FeaturedVideo extends React.PureComponent<I18nProps> {
           allStyle={[standardStyles.centered, standardStyles.elementalMarginBottom]}
         >
           <Cell span={Spans.three4th}>
-            <Fade distance={'20px'}>
+            <Fade distance={"20px"}>
               <View style={standardStyles.centered}>
                 <H2 style={[textStyles.center, styles.heading]}>
-                  {this.props.t('buildAFinancialSys')}
+                  {this.props.t("buildAFinancialSys")}
                 </H2>
               </View>
             </Fade>
@@ -37,7 +37,7 @@ class FeaturedVideo extends React.PureComponent<I18nProps> {
             {
               <VideoModal
                 previewImage={image}
-                videoID={'vwfHiaVzc2E'}
+                videoID={"vwfHiaVzc2E"}
                 ariaDescription="Video on working on Celo"
               />
             }
@@ -51,7 +51,7 @@ class FeaturedVideo extends React.PureComponent<I18nProps> {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.deepBlue,
-    width: '100%',
+    width: "100%",
     paddingBottom: 40,
   },
   heading: {
@@ -59,4 +59,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default withNamespaces('jobs')(FeaturedVideo)
+export default withNamespaces("jobs")(FeaturedVideo)

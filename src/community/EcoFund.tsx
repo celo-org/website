@@ -1,22 +1,23 @@
-import * as React from 'react'
-import { Image, ImageStyle, StyleSheet, Text, TextStyle, View } from 'react-native'
-import ah from 'src/community/ah-logo.png'
-import polychain from 'src/community/polychain-logo.png'
-import { H2 } from 'src/fonts/Fonts'
-import { ErrorDisplay, ErrorKeys } from 'src/forms/ErrorDisplay'
-import FormContainer, { emailIsValid, hasField } from 'src/forms/Form'
-import { Form } from 'src/forms/FormComponents'
-import { LabeledInput } from 'src/forms/LabeledInput'
-import SubmitButton from 'src/forms/SubmitButton'
-import SuccessDisplay from 'src/forms/SuccessDisplay'
-import { I18nProps, NameSpaces, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { ScreenProps, ScreenSizes, withScreenSize } from 'src/layout/ScreenSize'
-import Rings from 'src/logos/RingsGlyph'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import menuItems, { hashNav } from 'src/shared/menu-items'
-import Navigation, { NavigationTheme } from 'src/shared/Navigation'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { Image, ImageStyle, StyleSheet, Text, TextStyle, View } from "react-native"
+import ah from "src/community/ah-logo.png"
+import polychain from "src/community/polychain-logo.png"
+import { H2 } from "src/fonts/Fonts"
+import { ErrorDisplay, ErrorKeys } from "src/forms/ErrorDisplay"
+import FormContainer from "src/forms/Form"
+import { emailIsValid, hasField } from "src/forms/emailIsValid"
+import { Form } from "src/forms/FormComponents"
+import { LabeledInput } from "src/forms/LabeledInput"
+import SubmitButton from "src/forms/SubmitButton"
+import SuccessDisplay from "src/forms/SuccessDisplay"
+import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import Rings from "src/logos/RingsGlyph"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import menuItems, { hashNav } from "src/shared/menu-items"
+import Navigation, { NavigationTheme } from "src/shared/Navigation"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 import {
   Application,
   ApplicationFields,
@@ -25,7 +26,7 @@ import {
   RecommendationFields,
   RecommendationKeys,
   Tables,
-} from '../../fullstack/EcoFundFields'
+} from "../../fullstack/EcoFundFields"
 
 interface State {
   table: Tables
@@ -53,12 +54,14 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
         mobileStyle={[standardStyles.sectionMarginTopMobile]}
       >
         <Cell span={Spans.half} style={screen !== ScreenSizes.MOBILE && styles.insideEdge}>
-          <H2>{t('ecoFund.title')}</H2>
-          <Text style={[fonts.p, textStyles.italic]}>{t('ecoFund.poweredBy')}</Text>
-          <Text style={[fonts.p, standardStyles.elementalMargin]}>{t('ecoFund.description')}</Text>
+          <H2>{t("ecoFund.title")}</H2>
+          <Text style={[fonts.p, textStyles.italic]}>{t("ecoFund.poweredBy")}</Text>
+          <Text style={[fonts.p, standardStyles.elementalMargin]}>{t("ecoFund.description")}</Text>
           <View style={[standardStyles.row, standardStyles.elementalMargin, standardStyles.wrap]}>
             <View style={styles.partners}>
-              <Text style={[fonts.h6, styles.partnerText as TextStyle]}>{t('ecoFund.generalPartner')}</Text>
+              <Text style={[fonts.h6, styles.partnerText as TextStyle]}>
+                {t("ecoFund.generalPartner")}
+              </Text>
               <Image
                 resizeMode="contain"
                 accessibilityLabel="Polychain"
@@ -67,7 +70,9 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               />
             </View>
             <View style={styles.partners}>
-              <Text style={[fonts.h6, styles.partnerText  as TextStyle]}>{t('ecoFund.limitedPartners')}</Text>
+              <Text style={[fonts.h6, styles.partnerText as TextStyle]}>
+                {t("ecoFund.limitedPartners")}
+              </Text>
               <View style={[standardStyles.row, styles.limitedPartners]}>
                 <Rings color={colors.dark} height={40} />
                 <Image
@@ -81,7 +86,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
           </View>
           <Button
             style={styles.button as TextStyle}
-            text={t('ecoFund.link')}
+            text={t("ecoFund.link")}
             kind={BTN.NAKED}
             size={SIZE.normal}
             href={menuItems.BUILD.link}
@@ -100,13 +105,13 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
             <Navigation
               theme={NavigationTheme.LIGHT}
               onPress={this.selectApplication}
-              text={t('ecoFund.applyForFunding')}
+              text={t("ecoFund.applyForFunding")}
               selected={this.state.table === Tables.Applicants}
             />
             <Navigation
               theme={NavigationTheme.LIGHT}
               onPress={this.selectRecommendation}
-              text={t('ecoFund.recommendProject')}
+              text={t("ecoFund.recommendProject")}
               selected={this.state.table === Tables.Recommendations}
             />
           </View>
@@ -130,29 +135,29 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
                       <LabeledInput
                         key={key}
                         displayErrorAs={
-                          key === 'founderEmail' || key === 'coFounderEmail'
+                          key === "founderEmail" || key === "coFounderEmail"
                             ? ErrorKeys.email
                             : undefined
                         }
                         label={ApplicationFields[key]}
                         value={formState.form[key]}
                         name={key}
-                        multiline={key === 'product'}
+                        multiline={key === "product"}
                         onInput={onInput}
                         allErrors={formState.errors}
                       />
                     ))}
                     <SubmitButton
                       isLoading={formState.isLoading}
-                      text={t('apply')}
+                      text={t("apply")}
                       onPress={onSubmit}
                       size={SIZE.big}
                       style={standardStyles.elementalMarginBottom}
-                      align={'flex-start'}
+                      align={"flex-start"}
                     />
                     <SuccessDisplay
                       isShowing={formState.isComplete}
-                      message={t('common:applicationSubmitted')}
+                      message={t("common:applicationSubmitted")}
                     />
                     <ErrorDisplay isShowing={!!formState.apiError} field={formState.apiError} />
                   </Form>
@@ -178,26 +183,26 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
                     {RecommendationKeys.map((key) => (
                       <LabeledInput
                         key={key}
-                        displayErrorAs={key === 'founderEmail' ? ErrorKeys.email : undefined}
+                        displayErrorAs={key === "founderEmail" ? ErrorKeys.email : undefined}
                         label={RecommendationFields[key]}
                         value={formState.form[key]}
                         name={key}
-                        multiline={key === 'why'}
+                        multiline={key === "why"}
                         onInput={onInput}
                         allErrors={formState.errors}
                       />
                     ))}
                     <SubmitButton
                       isLoading={formState.isLoading}
-                      text={t('recommend')}
+                      text={t("recommend")}
                       onPress={onSubmit}
                       style={standardStyles.elementalMarginBottom}
                       size={SIZE.big}
-                      align={'flex-start'}
+                      align={"flex-start"}
                     />
                     <SuccessDisplay
                       isShowing={formState.isComplete}
-                      message={t('recommendationSubmitted')}
+                      message={t("recommendationSubmitted")}
                     />
                     <ErrorDisplay isShowing={!!formState.apiError} field={formState.apiError} />
                   </Form>
@@ -212,38 +217,38 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
 }
 
 const blankRecForm: Recommendation = {
-  org: '',
-  email: '',
-  founderEmail: '',
-  founderName: '',
-  why: '',
+  org: "",
+  email: "",
+  founderEmail: "",
+  founderName: "",
+  why: "",
 }
 
 function invalidRecFields(fields: Record<keyof Recommendation, string>) {
   return Object.keys(fields).filter((key: keyof Recommendation) => {
-    return key === 'founderEmail' || key === 'email'
+    return key === "founderEmail" || key === "email"
       ? !emailIsValid(fields[key])
       : !hasField(fields[key])
   })
 }
 
 const blankApplicationForm: Application = {
-  org: '',
-  url: '',
-  product: '',
-  about: '',
-  founderEmail: '',
-  coFounderEmail: '',
-  video: '',
+  org: "",
+  url: "",
+  product: "",
+  about: "",
+  founderEmail: "",
+  coFounderEmail: "",
+  video: "",
 }
 
 function invalidApplicationFields(fields: Record<keyof Application, string>) {
   return Object.keys(fields).filter((key) => {
-    if (key === 'founderEmail') {
+    if (key === "founderEmail") {
       return !emailIsValid(fields[key])
-    } else if (key === 'coFounderEmail') {
+    } else if (key === "coFounderEmail") {
       return fields.coFounderEmail.length > 0 ? !emailIsValid(fields[key]) : false
-    } else if (key === 'video') {
+    } else if (key === "video") {
       return false
     } else {
       return !hasField(fields[key])
@@ -255,7 +260,7 @@ export default withScreenSize(withNamespaces(NameSpaces.community)(EcoFund))
 
 const styles = StyleSheet.create({
   limitedPartners: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   polyChain: {
     marginRight: 40,
@@ -270,16 +275,16 @@ const styles = StyleSheet.create({
   },
   hidden: {
     // @ts-ignore
-    visibility: 'hidden',
+    visibility: "hidden",
   },
   shorterForm: {
-    position: 'absolute',
+    position: "absolute",
   },
   button: {
     marginVertical: 15,
   },
   partners: {
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
   partnerText: {
     marginTop: 20,
@@ -289,6 +294,6 @@ const styles = StyleSheet.create({
     paddingRight: 30,
   },
   formContainer: {
-    width: '100%',
+    width: "100%",
   },
 })

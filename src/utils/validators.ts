@@ -1,8 +1,8 @@
-import { BigNumber } from 'bignumber.js'
-import { styles } from 'src/dev/ValidatorsListStyles'
-import { weiToDecimal } from 'src/utils/utils'
+import { BigNumber } from "bignumber.js"
+import { styles } from "src/dev/ValidatorsListStyles"
+import { weiToDecimal } from "src/utils/utils"
 
-export const localStoragePinnedKey = 'pinnedValidators'
+export const localStoragePinnedKey = "pinnedValidators"
 
 export interface Edges<T> {
   edges: {
@@ -92,7 +92,7 @@ export interface ValidatorsListData {
 
 export const orderAccessors = {
   order: (_) => _.order,
-  name: (_) => (_.name || '').toLowerCase() || null,
+  name: (_) => (_.name || "").toLowerCase() || null,
   total: (_) => _.numMembers * 1000 + _.elected,
   votes: (_) => +_.votesAbsolute || 0,
   rawVotes: (_) => _.votesRaw || 0,
@@ -111,7 +111,7 @@ export const orderAccessors = {
  * @return {number}     1 if the address is pinned, 0 if not
  */
 export function isPinned(address: Address) {
-  const list = (localStorage.getItem(localStoragePinnedKey) || '').split(',') || []
+  const list = (localStorage.getItem(localStoragePinnedKey) || "").split(",") || []
   return +list.includes(address)
 }
 
@@ -122,14 +122,14 @@ export function isPinned(address: Address) {
  * @return {boolean}    Whether the given validator is pinned
  */
 export function togglePin(address: Address) {
-  let list = (localStorage.getItem(localStoragePinnedKey) || '').split(',') || []
+  let list = (localStorage.getItem(localStoragePinnedKey) || "").split(",") || []
   const pinned = list.includes(address)
   if (!pinned) {
     list.push(address)
   } else {
     list = list.filter((_) => _ !== address)
   }
-  localStorage.setItem(localStoragePinnedKey, list.join(','))
+  localStorage.setItem(localStoragePinnedKey, list.join(","))
 }
 
 /**
@@ -143,7 +143,7 @@ export function cleanData({ celoValidatorGroups, latestBlock }: ValidatorsListDa
     .map(({ receivableVotes }) => new BigNumber(receivableVotes))
     .reduce((acc: BigNumber, _) => acc.plus(_), new BigNumber(0))
 
-  const getClaims = (claims: CeloValidatorGroup['account']['claims'] = {} as any): string[] =>
+  const getClaims = (claims: CeloValidatorGroup["account"]["claims"] = {} as any): string[] =>
     (claims.edges || [])
       .map(({ node }) => node)
       .filter(({ verified }) => verified)

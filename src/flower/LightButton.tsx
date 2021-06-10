@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { StyleSheet, Text } from 'react-native'
-import Hoverable from 'src/shared/Hoverable'
-import { colors, fonts, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text } from "react-native"
+import Hoverable from "src/shared/Hoverable"
+import { colors, fonts, textStyles } from "src/styles"
 
 interface Props {
   href?: string
@@ -38,14 +38,8 @@ function usePressable() {
 }
 
 export default function LightButon({ href, children, style, onPress }: Props) {
-  const {
-    onMouseEnter,
-    onMouseLeave,
-    onMouseDown,
-    onMouseUp,
-    isPressing,
-    isHovering,
-  } = usePressable()
+  const { onMouseEnter, onMouseLeave, onMouseDown, onMouseUp, isPressing, isHovering } =
+    usePressable()
   return (
     <Hoverable
       onHoverIn={onMouseEnter}
@@ -81,11 +75,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.lightGray,
     paddingVertical: 9,
-    cursor: 'pointer',
-    alignItems: 'center',
-    display: 'inline-flex',
-    transitionProperty: 'background-color, border',
-    transitionDuration: '300ms',
+    cursor: "pointer",
+    alignItems: "center",
+    display: "inline-flex",
+    transitionProperty: "background-color, border",
+    transitionDuration: "300ms",
   },
   hover: {
     backgroundColor: colors.gray,

@@ -1,10 +1,10 @@
-import * as React from 'react'
+import * as React from "react"
 import {
   StyleSheet,
   unstable_createElement as createElement,
   View,
   ViewStyle,
-} from 'react-native-web'
+} from "react-native-web"
 
 interface Props {
   onLayout?: (event) => void
@@ -19,10 +19,10 @@ export default class AspectRatio extends React.Component<Props> {
 
     return (
       <View onLayout={onLayout} style={[styles.root, style]}>
-        {createElement('div', {
+        {createElement("div", {
           style: [styles.ratio, { paddingBottom: `${percentage}%` }],
         })}
-        {createElement('div', {
+        {createElement("div", {
           children,
           style: styles.content,
         })}
@@ -33,19 +33,19 @@ export default class AspectRatio extends React.Component<Props> {
 
 const styles = StyleSheet.create({
   root: {
-    display: 'block',
-    overflow: 'hidden',
+    display: "block",
+    overflow: "hidden",
   },
   ratio: {
-    display: 'block',
-    width: '100%',
+    display: "block",
+    width: "100%",
   },
   content: {
     bottom: 0,
-    height: '100%',
+    height: "100%",
     left: 0,
-    position: 'absolute',
+    position: "absolute",
     top: 0,
-    width: '100%',
+    width: "100%",
   },
 })

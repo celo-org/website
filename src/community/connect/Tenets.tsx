@@ -1,46 +1,46 @@
-import Carousel from 'nuka-carousel'
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import PagingDots from 'src/carousel/PagingDots'
-import { H2, H3, H4 } from 'src/fonts/Fonts'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import Fade from 'src/shared/AwesomeFade'
-import { hashNav } from 'src/shared/menu-items'
-import ResponsiveImage from 'src/shared/ResponsiveImage'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import Carousel from "nuka-carousel"
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import PagingDots from "src/carousel/PagingDots"
+import { H2, H3, H4 } from "src/fonts/Fonts"
+import { I18nProps, withNamespaces } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import Fade from "src/shared/AwesomeFade"
+import { hashNav } from "src/shared/menu-items"
+import ResponsiveImage from "src/shared/ResponsiveImage"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 type Props = I18nProps
 
-const TENET_ILLOS = ['design', 'innovate', 'beauty', 'humility']
+const TENET_ILLOS = ["design", "innovate", "beauty", "humility"]
 
 const IMAGE_MAP = {
   design: {
-    large: require('src/community/connect/01-Tenets.jpg'),
-    medium: require('src/community/connect/01-Tenets-427.jpg'),
-    small: require('src/community/connect/01-Tenets-460.jpg'),
+    large: require("src/community/connect/01-Tenets.jpg"),
+    medium: require("src/community/connect/01-Tenets-427.jpg"),
+    small: require("src/community/connect/01-Tenets-460.jpg"),
   },
   innovate: {
-    large: require('src/community/connect/02-Tenets.jpg'),
-    medium: require('src/community/connect/02-Tenets-427.jpg'),
-    small: require('src/community/connect/02-Tenets-460.jpg'),
+    large: require("src/community/connect/02-Tenets.jpg"),
+    medium: require("src/community/connect/02-Tenets-427.jpg"),
+    small: require("src/community/connect/02-Tenets-460.jpg"),
   },
   beauty: {
-    large: require('src/community/connect/03-Tenets.jpg'),
-    medium: require('src/community/connect/03-Tenets-427.jpg'),
-    small: require('src/community/connect/03-Tenets-460.jpg'),
+    large: require("src/community/connect/03-Tenets.jpg"),
+    medium: require("src/community/connect/03-Tenets-427.jpg"),
+    small: require("src/community/connect/03-Tenets-460.jpg"),
   },
   humility: {
-    large: require('src/community/connect/04-Tenets.jpg'),
-    medium: require('src/community/connect/04-Tenets-427.jpg'),
-    small: require('src/community/connect/04-Tenets-460.jpg'),
+    large: require("src/community/connect/04-Tenets.jpg"),
+    medium: require("src/community/connect/04-Tenets-427.jpg"),
+    small: require("src/community/connect/04-Tenets-460.jpg"),
   },
 }
 
 class Tenets extends React.PureComponent<Props> {
   componentDidMount() {
     // ensure the Carousel sizes correctly
-    setTimeout(() => window.dispatchEvent(new Event('resize')),1)
+    setTimeout(() => window.dispatchEvent(new Event("resize")), 1)
   }
   render() {
     const { t } = this.props
@@ -53,19 +53,19 @@ class Tenets extends React.PureComponent<Props> {
           desktopStyle={standardStyles.sectionMargin}
         >
           <Cell span={Spans.three4th}>
-            <Fade distance={'20px'}>
+            <Fade distance={"20px"}>
               <View style={standardStyles.centered}>
                 <H2 style={[textStyles.center, standardStyles.elementalMarginBottom]}>
-                  {t('tenetTitle')}
+                  {t("tenetTitle")}
                 </H2>
-                <H4 style={[textStyles.center]}>{t('tenetSubtitle')}</H4>
+                <H4 style={[textStyles.center]}>{t("tenetSubtitle")}</H4>
               </View>
             </Fade>
           </Cell>
         </GridRow>
-        <Fade distance={'20px'}>
+        <Fade distance={"20px"}>
           <Carousel
-            heightMode={'current'}
+            heightMode={"current"}
             autoplay={false}
             dragging={true}
             swiping={true}
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 15,
   },
   dotContainer: {
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   innerPadding: { paddingRight: 30 },
   dot: {
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.gray,
   },
   active: { backgroundColor: colors.primary },
-  image: { height: '100%', width: '100%' },
+  image: { height: "100%", width: "100%" },
 })
 
-export default withNamespaces('community')(Tenets)
+export default withNamespaces("community")(Tenets)

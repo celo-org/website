@@ -1,23 +1,23 @@
-import * as React from "react";
-import { Li, Ul } from "src/fonts/Fonts";
-import { NameSpaces, useTranslation } from "src/i18n";
-import { B, P } from "./stylingElements";
+import * as React from "react"
+import { Li, Ul } from "src/fonts/Fonts"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { B, P } from "./stylingElements"
 
 interface Props {
-  baseTranslation: string;
-  totalTiers: number;
-  includeTitle?: boolean;
+  baseTranslation: string
+  totalTiers: number
+  includeTitle?: boolean
 }
 
 function TierList({ baseTranslation, totalTiers, includeTitle = true }: Props) {
-  const { t } = useTranslation(NameSpaces.celoRewards);
+  const { t } = useTranslation(NameSpaces.celoRewards)
 
-  const listItems = [];
+  const listItems = []
   for (let i = 1; i <= totalTiers; i++) {
     listItems.push({
       title: t(`${baseTranslation}.tier${i}.title`),
       body: t(`${baseTranslation}.tier${i}.body`),
-    });
+    })
   }
 
   return (
@@ -36,7 +36,7 @@ function TierList({ baseTranslation, totalTiers, includeTitle = true }: Props) {
         </Li>
       ))}
     </Ul>
-  );
+  )
 }
 
-export default TierList;
+export default TierList

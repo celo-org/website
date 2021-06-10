@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react'
-import { findNodeHandle } from 'react-native'
+import { useEffect, useState } from "react"
+import { findNodeHandle } from "react-native"
 
 // from https://usehooks.com/useOnScreen/
-export default function useOnScreen(ref, fraction = 0, rootMargin = '0px') {
+export default function useOnScreen(ref, fraction = 0, rootMargin = "0px") {
   // State and setter for storing whether element is visible
   const [isIntersecting, setIntersecting] = useState(false)
 
   useEffect(() => {
     if (
-      !('IntersectionObserver' in window) ||
-      !('IntersectionObserverEntry' in window) ||
-      !('intersectionRatio' in window.IntersectionObserverEntry.prototype)
+      !("IntersectionObserver" in window) ||
+      !("IntersectionObserverEntry" in window) ||
+      !("intersectionRatio" in window.IntersectionObserverEntry.prototype)
     ) {
       // if we cant check if element is on screen, just assume it is.
       setIntersecting(true)
@@ -34,7 +34,7 @@ export default function useOnScreen(ref, fraction = 0, rootMargin = '0px') {
     return () => {
       observer.unobserve(element)
     }
-  }, []) // Empty array ensures that effect is only run on mount and unmount
+  }, [fraction, rootMargin, ref]) // Empty array ensures that effect is only run on mount and unmount
 
   return isIntersecting
 }

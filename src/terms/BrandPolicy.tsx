@@ -1,10 +1,10 @@
-import { View } from 'react-native'
-import brandPolicyContent from 'src/content/brand-policy.md'
-import Markdown from 'src/experience/Markdown'
-import { H1 } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { standardStyles, textStyles } from 'src/styles'
+import { View } from "react-native"
+import brandPolicyContent from "src/content/brand-policy.md"
+import Markdown from "src/experience/Markdown"
+import { H1 } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { standardStyles, textStyles } from "src/styles"
 
 export default function BrandPolicy() {
   return (

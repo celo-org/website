@@ -1,13 +1,13 @@
-import Community from 'pages/community'
-import * as React from 'react'
-import * as renderer from 'react-test-renderer'
-import { TestProvider } from 'src/_page-tests/test-utils'
+import Community from "pages/community"
+import * as React from "react"
+import * as renderer from "react-test-renderer"
+import { TestProvider } from "src/_page-tests/test-utils"
 
-describe('Community', () => {
+describe("Community", () => {
   beforeEach(() => {
     global.fetch.mockResponseOnce(JSON.stringify({ articles: [] }))
   })
-  it('renders', () => {
+  it("renders", () => {
     const tree = renderer
       .create(
         <TestProvider>

@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H2 } from 'src/fonts/Fonts'
-import preview from 'src/home/involvement/preview.png'
-import { NameSpaces, useTranslation } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import menuItems, { hashNav } from 'src/shared/menu-items'
-import Navigation, { NavigationTheme } from 'src/shared/Navigation'
-import Photo from 'src/shared/Photo'
-import { fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H2 } from "src/fonts/Fonts"
+import preview from "src/home/involvement/preview.png"
+import { NameSpaces, useTranslation } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { useScreenSize } from "src/layout/ScreenSize"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import menuItems, { hashNav } from "src/shared/menu-items"
+import Navigation, { NavigationTheme } from "src/shared/Navigation"
+import Photo from "src/shared/Photo"
+import { fonts, standardStyles, textStyles } from "src/styles"
 
 enum Paths {
   build,
@@ -74,19 +74,19 @@ export default function Involvement() {
 
 const styles = StyleSheet.create({
   buttons: {
-    alignItems: 'center',
-    flexWrap: 'wrap-reverse',
+    alignItems: "center",
+    flexWrap: "wrap-reverse",
   },
   controls: {
-    transitionProperty: 'transform',
-    transitionDuration: '300ms',
-    justifyContent: 'space-between',
+    transitionProperty: "transform",
+    transitionDuration: "300ms",
+    justifyContent: "space-between",
   },
   content: {
-    animationDelay: '250ms',
+    animationDelay: "250ms",
     animationIterationCount: 1,
-    animationFillMode: 'both',
-    animationDuration: '1200ms',
+    animationFillMode: "both",
+    animationDuration: "1200ms",
     animationKeyframes: [
       {
         from: { opacity: 0 },
@@ -127,38 +127,42 @@ function Control({ path, currentPath, setPath }: ControlProps) {
 
 const LINKS = {
   [Paths.build]: {
-    primary: 'https://docs.celo.org/v/master/developer-guide/overview/introduction',
-    secondary: 'https://www.crowdcast.io/e/celo-tech-talks-part-2',
+    primary: "https://docs.celo.org/v/master/developer-guide/overview/introduction",
+    secondary: "https://www.crowdcast.io/e/celo-tech-talks-part-2",
     img: require(`src/home/involvement/build.jpg`),
   },
   [Paths.grow]: {
-    primary: 'https://c-labs.typeform.com/to/gj9aUp',
+    primary: "/experiences/grants",
     secondary: `${menuItems.COMMUNITY.link}#${hashNav.connect.fund}`,
     img: require(`src/home/involvement/grow.jpg`),
   },
   [Paths.validate]: {
-    primary: 'https://docs.celo.org/getting-started/mainnet/running-a-validator-in-mainnet',
-    secondary: 'https://chat.celo.org',
+    primary: "https://docs.celo.org/getting-started/mainnet/running-a-validator-in-mainnet",
+    secondary: "https://chat.celo.org",
     img: require(`src/home/involvement/validate.png`),
   },
   [Paths.partner]: {
-    primary: 'https://medium.com/celoorg/alliance/home',
-    secondary: 'https://celo.org/alliance',
+    primary: "https://medium.com/celoorg/alliance/home",
+    secondary: "https://celo.org/alliance",
     img: require(`src/home/involvement/partner.jpg`),
   },
   [Paths.connect]: {
-    primary: 'https://airtable.com/shrfUJWk1eKfFcZKb',
-    secondary: `${menuItems.COMMUNITY.link}#${hashNav.connect.events}`,
+    primary: "https://airtable.com/shrfUJWk1eKfFcZKb",
+    secondary: "https://chat.celo.org",
     img: require(`src/home/involvement/connect.jpg`),
   },
   [Paths.work]: {
     primary: menuItems.JOBS.link,
-    secondary: `${menuItems.COMMUNITY.link}#${hashNav.connect.fellowship}`,
     img: require(`src/home/involvement/work.jpg`),
+    secondary: null,
   },
 }
 
-function Content({ path }) {
+interface ContnetProps {
+  path: Paths
+}
+
+function Content({ path }: ContnetProps) {
   const { t } = useTranslation(NameSpaces.home)
   const { isMobile } = useScreenSize()
   return (
@@ -178,13 +182,15 @@ function Content({ path }) {
               style={styles.primary}
               href={LINKS[path].primary}
             />
-            <Button
-              kind={BTN.NAKED}
-              text={t(`involve.paths.${path}.secondary`)}
-              size={SIZE.normal}
-              style={styles.secondary}
-              href={LINKS[path].secondary}
-            />
+            {!LINKS[path].secondary ? null : (
+              <Button
+                kind={BTN.NAKED}
+                text={t(`involve.paths.${path}.secondary`)}
+                size={SIZE.normal}
+                style={styles.secondary}
+                href={LINKS[path].secondary}
+              />
+            )}
           </View>
         </View>
       </Cell>

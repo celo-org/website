@@ -1,4 +1,4 @@
-import {useRef, useEffect, useReducer} from "react"
+import { useRef, useEffect, useReducer } from "react"
 
 interface StatsState {
   avgBlockTime: string
@@ -8,10 +8,10 @@ interface StatsState {
 }
 
 enum StatKeys {
-  "avgBlockTime"= "avgBlockTime",
+  "avgBlockTime" = "avgBlockTime",
   "blockCount" = "blockCount",
-  "totalTx"= "totalTx",
-  "addressCount" = "addressCount"
+  "totalTx" = "totalTx",
+  "addressCount" = "addressCount",
 }
 
 interface StatsTransport {
@@ -29,43 +29,43 @@ type State = Partial<StatsState>
 type Action = InitialResponse | StatsTransport
 
 export default function useStatsRelay() {
-  const ws = useRef<WebSocket>(null);
-  const initialState:State = {
-    addressCount: 0
+  const ws = useRef<WebSocket>(null)
+  const initialState: State = {
+    addressCount: 0,
   }
 
-  const [stats, dispatch] = useReducer((state:State, action: Action) => {
-    switch (action.action)  {
+  const [stats, dispatch] = useReducer((state: State, action: Action) => {
+    switch (action.action) {
       case "init":
         const addressCount = toNumber(action.value.addressCount)
-        return {...action.value, addressCount}
+        return { ...action.value, addressCount }
       case StatKeys.addressCount:
-        const addressAsNumber =  toNumber(action.value)
+        const addressAsNumber = toNumber(action.value)
         if (addressAsNumber > state.addressCount) {
-          return {...state, addressCount:addressAsNumber }
+          return { ...state, addressCount: addressAsNumber }
         }
+        return state
       case StatKeys.avgBlockTime:
-        return {...state, avgBlockTime: action.value}
+        return { ...state, avgBlockTime: action.value }
       case StatKeys.blockCount:
-        return {...state, blockCount: action.value}
+        return { ...state, blockCount: action.value }
       case StatKeys.totalTx:
-        return {...state, totalTx: action.value}
+        return { ...state, totalTx: action.value }
       default:
-      console.warn("Bug", action)
-      return state
+        console.warn("Bug", action)
+        return state
     }
   }, initialState)
 
   useEffect(() => {
     const queues: Record<StatKeys, StatsTransport[]> = {
-      [StatKeys.addressCount]:[],
-      [StatKeys.avgBlockTime]:[],
-      [StatKeys.blockCount]:[],
-      [StatKeys.totalTx]:[]
+      [StatKeys.addressCount]: [],
+      [StatKeys.avgBlockTime]: [],
+      [StatKeys.blockCount]: [],
+      [StatKeys.totalTx]: [],
     }
 
     function relayURI() {
-
       const host = "web-stats-relay-dot-celo-testnet.wl.r.appspot.com"
       const protocol = window.location.protocol === "https:" ? "wss" : "ws"
       return `${protocol}://${host}/stats`
@@ -79,37 +79,35 @@ export default function useStatsRelay() {
 
     ws.current.onmessage = (event) => {
       const data: Action = JSON.parse(event.data)
-       if (data.action === "init") {
-         requestAnimationFrame(() => dispatch(data))
-       } else {
-         queues[data.action].push(data)
-       }
+      if (data.action === "init") {
+        requestAnimationFrame(() => dispatch(data))
+      } else {
+        queues[data.action].push(data)
+      }
     }
 
     // spread out the updates as they tend to come in chunks and then nothing at all.
     const interval = setInterval(() => {
-        Object.keys(StatKeys).forEach((key: StatKeys) => {
-          const update = queues[key].shift()
-          if (update) {
-            dispatch(update)
-          }
-        })
+      Object.keys(StatKeys).forEach((key: StatKeys) => {
+        const update = queues[key].shift()
+        if (update) {
+          dispatch(update)
+        }
+      })
+    }, 350)
 
-      }, 350)
-
-
-    ws.current.onclose = (data) => console.info("ws closed", data);
+    ws.current.onclose = (data) => console.info("ws closed", data)
 
     return () => {
       clearInterval(interval)
-      ws.current.close();
-    };
+      ws.current.close()
+    }
   }, [])
 
   return stats
 }
 
-function toNumber(stringValue: string| undefined | number): number {
+function toNumber(stringValue: string | undefined | number): number {
   if (typeof stringValue === "number") {
     return stringValue as number
   }

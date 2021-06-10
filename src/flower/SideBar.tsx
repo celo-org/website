@@ -1,17 +1,21 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { H4 } from 'src/fonts/Fonts'
-import { useCopyToClipboard } from 'src/hooks/useCopyToClipboard'
-import Chainlink from 'src/icons/Chainlink'
-import { TweetLogo } from 'src/icons/TwitterLogo'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import { colors, fonts, standardStyles, textStyles, typeFaces } from 'src/styles'
-import LightButton from './LightButton'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { H4 } from "src/fonts/Fonts"
+import { useCopyToClipboard } from "src/hooks/useCopyToClipboard"
+import Chainlink from "src/icons/Chainlink"
+import { TweetLogo } from "src/icons/TwitterLogo"
+import { useScreenSize } from "src/layout/ScreenSize"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import { colors, fonts, standardStyles, textStyles, typeFaces } from "src/styles"
+import LightButton from "./LightButton"
 
 const WIDTH = 340
 
-export default function SideBar({ isOpen }) {
+interface Props {
+  isOpen: boolean
+}
+
+export default function SideBar({ isOpen }: Props) {
   const { isMobile } = useScreenSize()
   const openStyle = isMobile ? styles.showSideMobile : styles.showSide
   const closedStyle = isMobile ? styles.hideSideMobile : styles.hideSide
@@ -31,7 +35,7 @@ export default function SideBar({ isOpen }) {
           </H4>
           <Text style={[fonts.p, styles.aside]}>
             This art form is a testament to the creative trinity of code, poetry, and illustration.
-            As a work centered around channelling the Celo story,{' '}
+            As a work centered around channelling the Celo story,{" "}
             <Text style={textStyles.italic}>For Value Flowers</Text> is a gift of optimism. It gives
             shape to a spirit of collective prosperity, and celebrates it when brought to life.
           </Text>
@@ -49,13 +53,6 @@ export default function SideBar({ isOpen }) {
               href="https://medium.com/celoorg/a-celebration-of-heart-for-celo-44bbbba94a2c"
               size={SIZE.normal}
             />
-            {/* <Button
-              kind={BTN.DARKNAKED}
-              text="Read about the art"
-              href="#artlink"
-              style={styles.chevronButton}
-              size={SIZE.normal}
-            /> */}
           </View>
           <View style={[standardStyles.row, standardStyles.elementalMargin]}>
             <TweetButton />
@@ -106,8 +103,8 @@ function CopyButton() {
 }
 
 const TweetButton = React.memo(() => {
-  const text = encodeURI('Blooming more beautiful money — for value flowers 🌺')
-  const url = 'celo.org/flowers'
+  const text = encodeURI("Blooming more beautiful money — for value flowers 🌺")
+  const url = "celo.org/flowers"
   return (
     <>
       <LightButton
@@ -119,7 +116,12 @@ const TweetButton = React.memo(() => {
   )
 })
 
-function Contributor({ role, name }) {
+interface ContriProps {
+  role: string
+  name: string
+}
+
+function Contributor({ role, name }: ContriProps) {
   return (
     <View style={styles.contributor}>
       <Text style={[fonts.mini, styles.role]}>{role}</Text>
@@ -131,37 +133,37 @@ function Contributor({ role, name }) {
 const styles = StyleSheet.create({
   expander: {
     width: 0,
-    willChange: 'width',
-    transitionProperty: 'width',
-    transitionDuration: '1300ms',
+    willChange: "width",
+    transitionProperty: "width",
+    transitionDuration: "1300ms",
   },
   expanderOpen: {
-    transitionDuration: '1200ms',
+    transitionDuration: "1200ms",
     width: WIDTH,
   },
   root: {
     paddingHorizontal: 16,
     backgroundColor: colors.white,
-    justifyContent: 'space-between',
-    minHeight: 'calc(100vh - 50px)',
-    willChange: 'opacity',
-    transitionProperty: 'opacity, transform',
+    justifyContent: "space-between",
+    minHeight: "calc(100vh - 50px)",
+    willChange: "opacity",
+    transitionProperty: "opacity, transform",
     width: WIDTH,
-    position: 'absolute',
+    position: "absolute",
     right: 0,
   },
   rootMobile: {
-    willChange: 'opacity, transform',
-    transitionProperty: 'opacity, transform',
-    transitionDuration: '800ms',
-    width: '100vw',
+    willChange: "opacity, transform",
+    transitionProperty: "opacity, transform",
+    transitionDuration: "800ms",
+    width: "100vw",
   },
   showSideMobile: {
-    transitionDelay: '600ms',
+    transitionDelay: "600ms",
     height: 400,
-    minHeight: 'calc(100vh - 50px)',
-    overflow: 'scroll',
-    width: '100vw',
+    minHeight: "calc(100vh - 50px)",
+    overflow: "scroll",
+    width: "100vw",
     transform: [{ translateY: 0 }],
     opacity: 1,
   },
@@ -171,20 +173,20 @@ const styles = StyleSheet.create({
     zIndex: -20,
   },
   showSide: {
-    transitionDuration: '800ms',
-    transitionDelay: '400ms',
+    transitionDuration: "800ms",
+    transitionDelay: "400ms",
     opacity: 1,
     transform: [{ translateX: 0 }],
   },
   hideSide: {
-    transitionProperty: 'opacity, transform',
-    transitionDuration: '800ms',
+    transitionProperty: "opacity, transform",
+    transitionDuration: "800ms",
     opacity: 0,
     transform: [{ translateX: 120 }],
   },
   role: {
-    textTransform: 'uppercase',
-    fontWeight: 'bold',
+    textTransform: "uppercase",
+    fontWeight: "bold",
     letterSpacing: 4,
     lineHeight: 20,
     marginBottom: 4,
@@ -199,8 +201,8 @@ const styles = StyleSheet.create({
   },
   copyButton: { marginLeft: 10 },
   copyButtonText: {
-    transitionDuration: '400ms',
-    transitionProperty: 'opacity, width',
+    transitionDuration: "400ms",
+    transitionProperty: "opacity, width",
   },
   copyButtonTextHiding: {
     transform: [{ scaleX: 0 }],
@@ -218,7 +220,7 @@ const styles = StyleSheet.create({
   },
   chevronButton: {
     fontFamily: typeFaces.garamond,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginTop: 20,
   },
   mobileTitle: {

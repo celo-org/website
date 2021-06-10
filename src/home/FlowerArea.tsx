@@ -1,19 +1,19 @@
-import * as React from 'react'
-import { Image, StyleSheet, View } from 'react-native'
-import { H2, H4 } from 'src/fonts/Fonts'
-import MistFlowerMobile from 'src/home/mist-flower-mobile.jpg'
-import MistFlower from 'src/home/mist-flower.jpg'
-import { useTranslation } from 'src/i18n'
-import { Cell, GridRow, Spans } from 'src/layout/GridRow'
-import { useScreenSize } from 'src/layout/ScreenSize'
-import AspectRatio from 'src/shared/AspectRatio'
-import Fade from 'src/shared/AwesomeFade'
-import Button, { BTN, SIZE } from 'src/shared/Button.3'
-import pagePaths, { CeloLinks } from 'src/shared/menu-items'
-import { standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { Image, StyleSheet, View } from "react-native"
+import { H2, H4 } from "src/fonts/Fonts"
+import MistFlowerMobile from "src/home/mist-flower-mobile.jpg"
+import MistFlower from "src/home/mist-flower.jpg"
+import { useTranslation } from "src/i18n"
+import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { useScreenSize } from "src/layout/ScreenSize"
+import AspectRatio from "src/shared/AspectRatio"
+import Fade from "src/shared/AwesomeFade"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import pagePaths, { CeloLinks } from "src/shared/menu-items"
+import { standardStyles, textStyles } from "src/styles"
 
 export default function FlowerArea() {
-  const [t] = useTranslation('home')
+  const [t] = useTranslation("home")
   const { isMobile } = useScreenSize()
   return (
     <GridRow
@@ -35,26 +35,26 @@ export default function FlowerArea() {
               standardStyles.elementalMarginTop,
             ]}
           >
-            {isMobile ? t('flowersTitleMobile') : t('flowersTitle')}
+            {isMobile ? t("flowersTitleMobile") : t("flowersTitle")}
           </H2>
           <H4 style={[textStyles.center, standardStyles.elementalMarginBottom]}>
-            {t('flowersSubtitle')}
+            {t("flowersSubtitle")}
           </H4>
           <View style={standardStyles.row}>
             <Button
-              text={t('flowersButton')}
+              text={t("flowersButton")}
               style={styles.kuneco}
               href={pagePaths.FLOWERS.link}
               kind={BTN.NAKED}
               size={SIZE.normal}
-              target={'_blank'}
+              target={"_blank"}
             />
             <Button
-              text={'Kuneco'}
+              text={"Kuneco"}
               href={CeloLinks.kuneco}
               kind={BTN.NAKED}
               size={SIZE.normal}
-              target={'_blank'}
+              target={"_blank"}
             />
           </View>
         </View>

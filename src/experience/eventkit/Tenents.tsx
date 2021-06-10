@@ -1,20 +1,20 @@
-import frontMatter from 'front-matter'
-import * as React from 'react'
-import { Image, ImageRequireSource, StyleSheet, Text, View } from 'react-native'
-import designForAll from 'src/experience/eventkit/content/tenents/design-for-all.md'
-import embodyHumility from 'src/experience/eventkit/content/tenents/embodying-humility.md'
-import innovatingOnMoney from 'src/experience/eventkit/content/tenents/innovating-on-money.md'
-import strivingForBeauty from 'src/experience/eventkit/content/tenents/striving-for-beauty.md'
+import frontMatter from "front-matter"
+import * as React from "react"
+import { Image, ImageRequireSource, StyleSheet, Text, View } from "react-native"
+import designForAll from "src/experience/eventkit/content/tenents/design-for-all.md"
+import embodyHumility from "src/experience/eventkit/content/tenents/embodying-humility.md"
+import innovatingOnMoney from "src/experience/eventkit/content/tenents/innovating-on-money.md"
+import strivingForBeauty from "src/experience/eventkit/content/tenents/striving-for-beauty.md"
 
-import designForAllImg from 'src/experience/eventkit/content/tenents/design-for-all.png'
-import embodyHumilityImg from 'src/experience/eventkit/content/tenents/embodying-humility.png'
-import innovatingOnMoneyImg from 'src/experience/eventkit/content/tenents/innovating-on-money.png'
-import strivingForBeautyImg from 'src/experience/eventkit/content/tenents/striving-for-beauty.png'
+import designForAllImg from "src/experience/eventkit/content/tenents/design-for-all.png"
+import embodyHumilityImg from "src/experience/eventkit/content/tenents/embodying-humility.png"
+import innovatingOnMoneyImg from "src/experience/eventkit/content/tenents/innovating-on-money.png"
+import strivingForBeautyImg from "src/experience/eventkit/content/tenents/striving-for-beauty.png"
 
-import Markdown, { Attributes } from 'src/experience/Markdown'
-import { H3 } from 'src/fonts/Fonts'
-import AspectRatio from 'src/shared/AspectRatio'
-import { fonts, standardStyles } from 'src/styles'
+import Markdown, { Attributes } from "src/experience/Markdown"
+import { H3 } from "src/fonts/Fonts"
+import AspectRatio from "src/shared/AspectRatio"
+import { fonts, standardStyles } from "src/styles"
 
 const DESIGN_FOR_ALL = frontMatter<Attributes>(designForAll)
 const HUMILITY = frontMatter<Attributes>(embodyHumility)
@@ -46,9 +46,9 @@ function Tenent({ body, title, description, image }: Props & Attributes) {
 const styles = StyleSheet.create({
   root: {
     marginVertical: 15,
-    flexDirection: 'row',
+    flexDirection: "row",
     flex: 1,
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
   info: {
     marginVertical: 15,

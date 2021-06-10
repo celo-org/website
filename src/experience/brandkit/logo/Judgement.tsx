@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { Image, StyleSheet, View } from 'react-native'
-import { GAP } from 'src/experience/common/constants'
-import { standardStyles } from 'src/styles'
+import * as React from "react"
+import { Image, StyleSheet, View } from "react-native"
+import { GAP } from "src/experience/common/constants"
+import { standardStyles } from "src/styles"
 
 export enum Value {
   Good,
@@ -20,8 +20,8 @@ export default function Judgement({ is, children }: Props) {
         style={styles.image}
         source={
           is === Value.Bad
-            ? require('src/experience/brandkit/images/X.png')
-            : require('src/experience/brandkit/images/Check.png')
+            ? require("src/experience/brandkit/images/X.png")
+            : require("src/experience/brandkit/images/Check.png")
         }
       />
       {children}

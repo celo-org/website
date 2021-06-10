@@ -1,5 +1,5 @@
-import AirtableAPI, { Attachment } from 'airtable'
-import getConfig from 'next/config'
+import AirtableAPI, { Attachment } from "airtable"
+import getConfig from "next/config"
 
 let airTableSingleton: AirtableAPI
 
@@ -31,13 +31,13 @@ export interface AirRecord<Fields> {
 }
 
 export enum ImageSizes {
-  large = 'large',
-  small = 'small',
+  large = "large",
+  small = "small",
 }
 
 export function getImageURI(previewField: Attachment[], size: ImageSizes) {
   const thumb = getThumbnail(previewField, size)
-  return thumb ? thumb.url : ''
+  return thumb ? thumb.url : ""
 }
 
 export function getWidthAndHeight(imageField: Attachment[]) {

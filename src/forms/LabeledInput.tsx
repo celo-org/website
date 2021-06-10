@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { ErrorDisplay, ErrorKeys, getErrorTransKey } from 'src/forms/ErrorDisplay'
-import { TextInput } from 'src/forms/TextInput'
-import { colors, fonts, standardStyles, textStyles } from 'src/styles'
+import * as React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { ErrorDisplay, ErrorKeys, getErrorTransKey } from "src/forms/ErrorDisplay"
+import { TextInput } from "src/forms/TextInput"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 interface LabelProps {
   name: string
@@ -34,7 +34,7 @@ export function LabeledInput({
   return (
     <View style={styles.container}>
       <View style={styles.labelBox}>
-        <Text accessibilityRole={'label'} style={[fonts.a, textStyles.medium, styles.label]}>
+        <Text accessibilityRole={"label"} style={[fonts.a, textStyles.medium, styles.label]}>
           {label}
         </Text>
       </View>

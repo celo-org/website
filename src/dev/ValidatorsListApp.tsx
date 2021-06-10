@@ -1,26 +1,27 @@
-import { ApolloProvider, Query } from '@apollo/react-components'
-import ApolloClient from 'apollo-boost'
-import { InMemoryCache } from 'apollo-cache-inmemory'
-import gql from 'graphql-tag'
-import getConfig from 'next/config'
-import { Router, withRouter } from 'next/router'
-import * as React from 'react'
-import { StyleSheet, View } from 'react-native'
-import ShowApolloError from 'src/dev/ShowApolloError'
-import ValidatorsList from 'src/dev/ValidatorsList'
-import { styles } from 'src/dev/ValidatorsListStyles'
-import { H2 } from 'src/fonts/Fonts'
-import OpenGraph from 'src/header/OpenGraph'
-import { I18nProps, withNamespaces } from 'src/i18n'
-import menuItems from 'src/shared/menu-items'
-import Navigation, { NavigationTheme } from 'src/shared/Navigation'
-import Spinner from 'src/shared/Spinner'
-import { colors, standardStyles, textStyles } from 'src/styles'
-import { cleanData } from 'src/utils/validators'
+import { css } from "@emotion/react"
+import { ApolloProvider, Query } from "@apollo/react-components"
+import ApolloClient from "apollo-boost"
+import { InMemoryCache } from "apollo-cache-inmemory"
+import gql from "graphql-tag"
+import getConfig from "next/config"
+import { Router, withRouter } from "next/router"
+import * as React from "react"
+import { StyleSheet, View } from "react-native"
+import ShowApolloError from "src/dev/ShowApolloError"
+import ValidatorsList from "src/dev/ValidatorsList"
+import { styles } from "src/dev/ValidatorsListStyles"
+import { H2 } from "src/fonts/Fonts"
+import OpenGraph from "src/header/OpenGraph"
+import { I18nProps, withNamespaces } from "src/i18n"
+import menuItems from "src/shared/menu-items"
+import Navigation, { NavigationTheme } from "src/shared/Navigation"
+import Spinner from "src/shared/Spinner"
+import { colors, standardStyles, textStyles } from "src/styles"
+import { cleanData } from "src/utils/validators"
 
 const networkMenu = [
-  ['Mainnet', menuItems.VALIDATORS_LIST.link],
-  ['Baklava', menuItems.VALIDATORS_LIST__BAKLAVA.link],
+  ["Mainnet", menuItems.VALIDATORS_LIST.link],
+  ["Baklava", menuItems.VALIDATORS_LIST__BAKLAVA.link],
   // ['Baklavastaging', menuItems.VALIDATORS_LIST_BAKLAVASTAGING.link],
 ]
 
@@ -112,23 +113,25 @@ class ValidatorsListApp extends React.PureComponent<Props> {
       () => this.props.router.push(link),
     ])
     return (
-      <>
+      <div css={rootCss}>
         <OpenGraph
           title="Celo Validators"
           path={menuItems.VALIDATORS_LIST.link}
           description="View status of Validators on the Celo Network"
         />
+
         <View style={[styles.cover, styles.pStaticOverflow, compStyles.fullHeight]}>
           <H2
             style={[
               textStyles.center,
-              standardStyles.blockMarginTopTablet,
+              compStyles.blockMarginTopTabletValidator,
               standardStyles.elementalMarginBottom,
               textStyles.invert,
             ]}
           >
             Validators
           </H2>
+
           <View>
             <View style={styles.links}>
               {networkMenuList.map(([name, link, navigate]: any) => (
@@ -177,22 +180,33 @@ class ValidatorsListApp extends React.PureComponent<Props> {
             </Query>
           </ApolloProvider>
         </View>
-      </>
+      </div>
     )
   }
 }
 
 const compStyles = StyleSheet.create({
-  fullHeight: { minHeight: 'calc(100vh - 75px)' },
+  fullHeight: {
+    minHeight: "calc(100vh - 75px)",
+    width: "fit-content",
+    backgroundColor: colors.dark,
+  },
   useSpace: {
     flex: 1,
-    paddingBottom: '20vh',
+    paddingBottom: "20vh",
+  },
+  blockMarginTopTabletValidator: {
+    marginTop: 116,
   },
 })
 
-export default withNamespaces('dev')(withRouter<Props>(ValidatorsListApp))
+const rootCss = css({
+  backgroundColor: colors.dark,
+})
+
+export default withNamespaces("dev")(withRouter<Props>(ValidatorsListApp))
 
 export const ValidatorsListAppWithNetwork = (networkName: string) => {
-  const Comp = withNamespaces('dev')(withRouter<Props>(ValidatorsListApp))
+  const Comp = withNamespaces("dev")(withRouter<Props>(ValidatorsListApp))
   return () => <Comp network={networkName} />
 }
