@@ -8,12 +8,12 @@ import { GridRow } from 'src/layout/Grid2'
 import {  WHEN_MOBILE, whiteText } from 'src/estyles'
 import { colors, typeFaces } from 'src/styles'
 import { Radio } from 'src/table/table'
-import useCurrentRound from "./useCurrentRound"
+import useLiveRound from "./useCurrentRound"
 import usePhase from './usePhase'
 import Safety from "./Safety"
 
 function useDropDown(): [number, () => void, (key: number) => void] {
-  const [value, _setValue] = React.useState(0)
+  const [value, _setValue] = React.useState(1)
   function clear() {
     _setValue(0)
   }
@@ -67,31 +67,38 @@ function useDropDownOptions(
 
 function useRound(): Rounds {
   const [round, onClearRound, onSelectRound] = useDropDown()
-  const currentRound = useCurrentRound()
+  const liveRound = useLiveRound()
   const {isValidating, phases} = usePhase()
 
   const [phase, setPhase] = React.useState(1)
 
   const phaseRounds = (phase === 1 ? phases?.phase1 : phases?.phase2) ||[]
 
-  const roundIsCurrent = currentRound.round === round
 
   // if phase 2 is available select it
   React.useEffect(() => {
     if (phases?.phase2) {
       setPhase(2)
     }
-  }, [phases?.phase2])
+  }, [!!phases?.phase2])
+
+  // set to most recent round if we can if we can
+  React.useEffect(() => {
+    onSelectRound( phaseRounds.length - 1)
+  }, [phaseRounds.length])
+
+
+  const roundIsCurrent = liveRound.round === round
 
   const rows: Row[] = React.useMemo(
     () => {
-      if (!isValidating) {
+      if (!isValidating && phaseRounds[round]) {
         return Object.keys(phaseRounds[round]).map((key) => {
           return {
             address: key,
             ...phaseRounds[round][key],
-            count: roundIsCurrent ? currentRound.progressCompleted[key] : 100,
-            max: roundIsCurrent ? currentRound.chunkCount : 100,
+            count: roundIsCurrent ? liveRound.progressCompleted[key] : 100,
+            max: roundIsCurrent ? liveRound.chunkCount : 100,
           }
         })
       }
@@ -99,7 +106,7 @@ function useRound(): Rounds {
         return []
       }
     },
-    [round, isValidating, phaseRounds, currentRound.loading]
+    [round, isValidating, phaseRounds[round], liveRound.loading]
   )
 
   const dropDownData = useDropDownOptions(phaseRounds,
@@ -115,12 +122,12 @@ function useRound(): Rounds {
     phase,
     dropDownData,
     isPhaseLoading: isValidating,
-    isActiveRoundLoading: currentRound.loading,
+    isActiveRoundLoading: liveRound.loading,
     phase2Available: !!phases?.phase2
   }
 }
 
-export default function Rounds(): JSX.Element {
+export default React.memo(function Rounds(): JSX.Element {
   const { t } = useTranslation("plumo")
 
   const {rows, phase2Available, setPhase, phase, dropDownData,  isActiveRoundLoading} = useRound()
@@ -150,7 +157,7 @@ export default function Rounds(): JSX.Element {
       </Safety>
     </GridRow>
   )
-}
+})
 
 interface PhaseProps {
   phase: number

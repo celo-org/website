@@ -1,7 +1,7 @@
 import React from "react"
 import useSWR from "swr"
 
-async function fetcher(url) {
+async function fetcher(url: string) {
   const response = await fetch(url)
   return response.json()
 }
@@ -11,11 +11,13 @@ interface Response {
   status: string
 }
 // TODO get url for round
-const URL = "https://plumo-setup-phase-1.azurefd.net/ceremony"
+const URL = "https://plumo-setup-phase-2.azurefd.net/ceremony"
 
 export default function useCurrentRound() {
-  const {data} = useSWR<Response>(URL, fetcher)
-  return React.useMemo(() => processData(data), [data?.result, data?.status])
+  const { data } = useSWR<Response>(URL, fetcher)
+  const status = data?.status
+  const result = data?.result
+  return React.useMemo(() => processData(status, result), [status, result])
 }
 
 interface Contribution {
@@ -71,46 +73,53 @@ interface ProcessedData {
   progress: Record<string, number>
 }
 
-function processData(data?: Response): ProcessedData {
+function processData(status: string, result?: RawData): ProcessedData {
   const processeed: ProcessedData = {
     loading: true,
-    round:  0,
+    round: 0,
     chunkCount: 0,
     participantIds: [],
     progressCompleted: {},
-    progress: {}
+    progress: {},
   }
-  if (data?.status !== "ok") {
+  if (status !== "ok") {
     return processeed
   }
 
-  let result = data?.result
-  processeed.round = result.round;
-  processeed.chunkCount = result.chunks.length;
-  processeed.participantIds = result.contributorIds;
+  processeed.round = result.round
+  processeed.chunkCount = result.chunks.length
+  processeed.participantIds = result.contributorIds
   processeed.participantIds.forEach((participantId) => {
     processeed.progress[participantId] = result.chunks.reduce((accumulator, currentValue) => {
-      return accumulator + currentValue.contributions.reduce((accumulator, currentValue) => {
-        if (currentValue.contributorId == participantId && currentValue.verified) {
-          return accumulator+1;
-        } else {
-          return accumulator+0;
-        }
-      }, 0);
-    }, 0);
-    processeed.progressCompleted[participantId] = result.chunks.reduce((accumulator, currentValue) => {
-      return accumulator + currentValue.contributions.reduce((accumulator, currentValue) => {
-        if (currentValue.contributorId == participantId) {
-          return accumulator+1;
-        } else {
-          return accumulator+0;
-        }
-      }, 0);
-    }, 0);
+      return (
+        accumulator +
+        currentValue.contributions.reduce((accumulator, currentValue) => {
+          if (currentValue.contributorId == participantId && currentValue.verified) {
+            return accumulator + 1
+          } else {
+            return accumulator + 0
+          }
+        }, 0)
+      )
+    }, 0)
+    processeed.progressCompleted[participantId] = result.chunks.reduce(
+      (accumulator, currentValue) => {
+        return (
+          accumulator +
+          currentValue.contributions.reduce((accumulator, currentValue) => {
+            if (currentValue.contributorId == participantId) {
+              return accumulator + 1
+            } else {
+              return accumulator + 0
+            }
+          }, 0)
+        )
+      },
+      0
+    )
   })
 
   processeed.loading = false
 
   return processeed
 }
-
