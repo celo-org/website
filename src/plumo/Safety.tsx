@@ -7,7 +7,11 @@ interface State {
   error: string
 }
 
-export default class Safety extends React.Component {
+interface Props {
+  children: React.ReactNode
+}
+
+export default class Safety extends React.Component<Props, State> {
   state: State = { hasError: false, error: "" }
 
   static getDerivedStateFromError(error) {

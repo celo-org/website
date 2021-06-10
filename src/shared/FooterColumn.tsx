@@ -4,7 +4,7 @@ import { useScreenSize } from 'src/layout/ScreenSize'
 import Button, { BTN } from 'src/shared/Button.3'
 import { fonts, standardStyles, textStyles } from 'src/styles'
 
-interface Link {
+export interface LinkType {
   name: string
   link: string
   icon?: React.ReactNode
@@ -12,7 +12,7 @@ interface Link {
 
 interface Props {
   heading: string
-  links: Link[]
+  links: LinkType[]
   style?: ViewStyle | ViewStyle[]
   darkMode?: boolean
 }

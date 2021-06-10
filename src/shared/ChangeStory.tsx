@@ -12,7 +12,7 @@ const CHANGE_STORY = [
   "새로운 이야기를 쓰다", // ko
 ]
 
-export default function ChangeStory({darkMode}) {
+export default function ChangeStory({ darkMode }: { darkMode: boolean }) {
   const [count, setCount] = React.useState(0)
 
   const next = () => {
@@ -34,7 +34,9 @@ export default function ChangeStory({darkMode}) {
         source={globe}
         style={[styles.globe, styles.symbols, isMobile && styles.globeMobile]}
       />
-      {!isMobile && <Text style={[styles.separator, styles.symbols, darkMode && textStyles.invert]}>|</Text>}
+      {!isMobile && (
+        <Text style={[styles.separator, styles.symbols, darkMode && textStyles.invert]}>|</Text>
+      )}
       <Wipe text={CHANGE_STORY[count]} darkMode={darkMode} />
     </View>
   )

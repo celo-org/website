@@ -21,7 +21,7 @@ import { useScreenSize } from "src/layout/ScreenSize"
 import RingsGlyph from "src/logos/RingsGlyph"
 import ChangeStory from "src/shared/ChangeStory"
 import FooterColumn from "src/shared/FooterColumn"
-import InlineAnchor from "src/shared/InlineAnchor"
+import InlineAnchor, { LinkType } from "src/shared/InlineAnchor"
 import menu, { CeloLinks, hashNav, MAIN_MENU } from "src/shared/menu-items"
 import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
@@ -219,23 +219,30 @@ export default function Footer({ hideForm, darkMode }: Props) {
   )
 }
 
-function MobileLinks({footerMenu, darkMode}) {
+interface MobileLinkProps {
+  footerMenu: LinkType[]
+  darkMode: boolean
+}
+
+function MobileLinks({ footerMenu, darkMode }: MobileLinkProps) {
   const { t } = useTranslation(NameSpaces.common)
 
   return (
     <>
       <View style={standardStyles.row}>
-        <FooterColumn darkMode={darkMode} heading={'Celo'} links={footerMenu} />
-        <FooterColumn darkMode={darkMode}
-          heading={t('footer.social')}
+        <FooterColumn darkMode={darkMode} heading={"Celo"} links={footerMenu} />
+        <FooterColumn
+          darkMode={darkMode}
+          heading={t("footer.social")}
           links={socialMenu(darkMode)}
           style={styles.endMobileColumn}
         />
       </View>
       <View style={standardStyles.row}>
-        <FooterColumn darkMode={darkMode} heading={t('footer.resources')} links={RESOURCE_MENU} />
-        <FooterColumn darkMode={darkMode}
-          heading={t('footer.technology')}
+        <FooterColumn darkMode={darkMode} heading={t("footer.resources")} links={RESOURCE_MENU} />
+        <FooterColumn
+          darkMode={darkMode}
+          heading={t("footer.technology")}
           links={TECH_MENU}
           style={styles.endMobileColumn}
         />

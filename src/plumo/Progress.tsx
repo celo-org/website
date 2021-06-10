@@ -3,13 +3,27 @@ import {css, keyframes} from "@emotion/react"
 import { colors } from 'src/styles'
 import { WHEN_MOBILE } from 'src/estyles'
 
-export function Progress({ count = 0, max = 100, loading }) {
-  const percent =  ((max - count) / max) * 100
-  return <div css={rootCss} role="progressbar" aria-valuenow={count} aria-valuemin={0} aria-valuemax={max}>
-    <div css={css(progressCSS, loading ? loadingCss : {transform: `translateX(-${(percent)}%)`})}>
-      <div css={insideCss} />
+interface Props {
+  count: number
+  max: number
+  loading: boolean
+}
+
+export function Progress({ count = 0, max = 100, loading }: Props) {
+  const percent = ((max - count) / max) * 100
+  return (
+    <div
+      css={rootCss}
+      role="progressbar"
+      aria-valuenow={count}
+      aria-valuemin={0}
+      aria-valuemax={max}
+    >
+      <div css={css(progressCSS, loading ? loadingCss : { transform: `translateX(-${percent}%)` })}>
+        <div css={insideCss} />
+      </div>
     </div>
-  </div>
+  )
 }
 
 const commonCss = css({

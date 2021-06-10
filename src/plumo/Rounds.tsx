@@ -43,14 +43,16 @@ function useDropDownOptions(
 ) {
   const { t } = useTranslation("plumo")
   const dropDownListOptions = React.useMemo(
-    () => roundsInPhase.map((_, index) => {
-            return {
-              id: index.toString(),
-              selected: round === index,
-              label: t(`round.${index}`),
-            }
-          }),
-      [round, phase, roundsInPhase]
+    () =>
+      roundsInPhase.map((_, index) => {
+        return {
+          phase,
+          id: index.toString(),
+          selected: round === index,
+          label: t(`round.${index}`),
+        }
+      }),
+    [round, phase, roundsInPhase, t]
   )
 
   const dropDownData = [
@@ -72,42 +74,48 @@ function useRound(): Rounds {
 
   const [phase, setPhase] = React.useState(1)
 
-  const phaseRounds = (phase === 1 ? phases?.phase1 : phases?.phase2) ||[]
+  const phaseRounds = React.useMemo(() => {
+    return (phase === 1 ? phases?.phase1 : phases?.phase2) || []
+  }, [phase, phases])
 
-
+  const phase2Data = phases?.phase2
   // if phase 2 is available select it
   React.useEffect(() => {
-    if (phases?.phase2) {
+    if (phase2Data) {
       setPhase(2)
     }
-  }, [!!phases?.phase2])
+  }, [phase2Data])
 
   // set to most recent round if we can if we can
+  const numberOfRoundsInPhase = phaseRounds.length - 1
   React.useEffect(() => {
-    onSelectRound( phaseRounds.length - 1)
-  }, [phaseRounds.length])
+    onSelectRound(numberOfRoundsInPhase)
+  }, [numberOfRoundsInPhase, phase, onSelectRound])
 
 
   const roundIsCurrent = liveRound.round === round
 
-  const rows: Row[] = React.useMemo(
-    () => {
-      if (!isValidating && phaseRounds[round]) {
-        return Object.keys(phaseRounds[round]).map((key) => {
-          return {
-            address: key,
-            ...phaseRounds[round][key],
-            count: roundIsCurrent ? liveRound.progressCompleted[key] : 100,
-            max: roundIsCurrent ? liveRound.chunkCount : 100,
-          }
-        })
-      }
-      else {
-        return []
-      }
-    },
-    [round, isValidating, phaseRounds[round], liveRound.loading]
-  )
+  const rows: Row[] = React.useMemo(() => {
+    if (!isValidating && phaseRounds[round]) {
+      return Object.keys(phaseRounds[round]).map((key) => {
+        return {
+          address: key,
+          ...phaseRounds[round][key],
+          count: roundIsCurrent ? liveRound.progressCompleted[key] : 100,
+          max: roundIsCurrent ? liveRound.chunkCount : 100,
+        }
+      })
+    } else {
+      return []
+    }
+  }, [
+    round,
+    isValidating,
+    phaseRounds,
+    liveRound.chunkCount,
+    liveRound.progressCompleted,
+    roundIsCurrent,
+  ])
 
   const dropDownData = useDropDownOptions(phaseRounds,
     phase,
