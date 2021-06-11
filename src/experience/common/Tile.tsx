@@ -24,6 +24,7 @@ export function Tile({ content, numberAcross, ratio }: TileProps) {
   const size = useTileSize(numberAcross)
   const { width, height } = content?.fields?.image?.fields?.file?.details?.image || {}
   const realRatio = width && height ? width / height : ratio || 1
+  const startsWithDashes = content?.fields?.download?.fields?.file?.url.startsWith("//")
   return (
     <Showcase
       key={content.sys.id}
@@ -32,7 +33,7 @@ export function Tile({ content, numberAcross, ratio }: TileProps) {
       description={content.fields.description}
       name={content.fields.title}
       preview={content?.fields?.image?.fields?.file?.url}
-      uri={"https:" + content?.fields?.download?.fields?.file?.url}
+      uri={startsWithDashes ? "https:" + content?.fields?.download?.fields?.file?.url : content?.fields?.download?.fields?.file?.url}
       loading={false}
       size={size}
     />
