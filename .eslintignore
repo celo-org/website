@@ -1,0 +1,19 @@
+.next/
+node_modules/
+dist/
+dist/**
+
+# keys
+env-config.js
+server-env-config.js
+yarn-error.log
+
+coverage/
+sandbox.tsx
+
+/public/sitemap.xml
+/public/robots.txt
+.eslintcache
+.env.development
+.env.local
+.env.production

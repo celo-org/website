@@ -1,9 +1,5 @@
 import { RequestStatus, RequestType } from "src/fauceting/FaucetInterfaces"
 
-export function getCaptchaKey() {
-  return process.env.NEXT_PUBLIC_RECAPTCHA || ""
-}
-
 export function validateBeneficary(addressOrE164: string, kind: RequestType) {
   if (kind === RequestType.Invite) {
     return validateNumber(addressOrE164)

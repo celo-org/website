@@ -47,26 +47,6 @@ const KeyImageryWrapped: NextPage<Props> = React.memo(function KeyImagery({
   )
 })
 
-KeyImageryWrapped.getInitialProps = async ({ req }): Promise<Props> => {
-  let results
-  // req exists if and only if this is being run on serverside
-  if (req) {
-    const AssetBase = await import("src/../server/AssetBase")
-    results = await Promise.all([
-      AssetBase.default(AssetBase.AssetSheet.Illustrations),
-      AssetBase.default(AssetBase.AssetSheet.AbstractGraphics),
-    ])
-  } else {
-    results = await Promise.all([fetchAsset("illustrations"), fetchAsset("abstract-graphics")])
-  }
-
-  return { illos: results[0], graphics: results[1] }
-}
-
-function fetchAsset(kind: "illustrations" | "abstract-graphics") {
-  return fetch(`/api/experience/assets/${kind}`).then((result) => result.json())
-}
-
 export default KeyImageryWrapped
 
 function Overview() {
