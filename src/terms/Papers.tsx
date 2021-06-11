@@ -2,20 +2,19 @@ import * as React from "react"
 import { StyleSheet, Text, View } from "react-native"
 import { H1 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
-import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { NameSpaces } from "src/i18n"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import SideTitledSection from "src/layout/SideTitledSection"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { fonts, standardStyles, textStyles } from "src/styles"
 import { HelpfulLink } from "./HelpfulLink"
 import whitePaperImage from "./celo-whitepapers.jpg"
+import { useTranslation } from "src/i18n"
 
-class Papers extends React.PureComponent<I18nProps> {
-  static getInitialProps() {
-    return { namespacesRequired: [NameSpaces.papers, NameSpaces.common] }
-  }
-  render() {
-    const { t } = this.props
+
+
+function Papers() {
+    const { t } = useTranslation(NameSpaces.papers)
     return (
       <>
         <OpenGraph
@@ -83,10 +82,9 @@ class Papers extends React.PureComponent<I18nProps> {
         </View>
       </>
     )
-  }
 }
 
-export default withNamespaces(NameSpaces.papers)(Papers)
+export default Papers
 
 const styles = StyleSheet.create({
   container: {

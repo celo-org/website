@@ -45,10 +45,6 @@ function CeloRewards({}) {
   )
 }
 
-CeloRewards.getInitialProps = async () => ({
-  namespacesRequired: [NameSpaces.celoRewards],
-})
-
 export default CeloRewards
 
 const styles = StyleSheet.create({

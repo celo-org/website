@@ -176,10 +176,6 @@ function CeloRewardsTerms() {
   )
 }
 
-CeloRewardsTerms.getInitialProps = async () => ({
-  namespacesRequired: [NameSpaces.celoRewards],
-})
-
 export default CeloRewardsTerms
 
 const styles = StyleSheet.create({

@@ -4,7 +4,6 @@ import { View } from "react-native"
 import Events from "src/community/connect/Events"
 import { getEvents } from "src/community/connect/EventsData"
 import OpenGraph from "src/header/OpenGraph"
-import { NameSpaces } from "src/i18n"
 import { standardStyles } from "src/styles"
 
 const preview = require("src/community/connect/preview.jpg")
@@ -16,10 +15,6 @@ interface State {
 }
 
 export default class PastEventsPage extends React.PureComponent<Record<string, never>, State> {
-  static getInitialProps() {
-    return { namespacesRequired: [NameSpaces.common, NameSpaces.community] }
-  }
-
   static getDerivedStateFromError() {
     return { hasError: true }
   }

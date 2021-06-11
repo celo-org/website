@@ -32,20 +32,6 @@ async function pronunceCelo() {
 }
 
 export class About extends React.Component<Props & I18nProps> {
-  static async getInitialProps({ req }) {
-    let contributors
-    if (req) {
-      const getContributors = await import("src/../server/getContributors")
-      contributors = await getContributors.default()
-    } else {
-      contributors = await fetch(`/api/contributors`).then((result) => result.json())
-    }
-    const shuffleSeed = await import("shuffle-seed").then((mod) => mod.default)
-
-    const shuffledTeam = shuffleSeed.shuffle(contributors, Math.random())
-    return { contributors: shuffledTeam }
-  }
-
   render() {
     const { t, contributors } = this.props
 

@@ -2,7 +2,6 @@ import { css } from "@emotion/react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { Entry } from "contentful"
 import {
-  getPageBySlug,
   ContentfulPage,
   GridRowContentType,
   SectionType,
@@ -181,8 +180,3 @@ const sectionsCss = css({
     paddingBottom: 24,
   },
 })
-
-export async function getServerSideProps() {
-  const page = await getPageBySlug("public-sector", { locale: "en-US" }, true)
-  return { props: page }
-}
