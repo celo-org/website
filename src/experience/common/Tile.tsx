@@ -32,7 +32,7 @@ export function Tile({ content, numberAcross, ratio }: TileProps) {
       description={content.fields.description}
       name={content.fields.title}
       preview={content?.fields?.image?.fields?.file?.url}
-      uri={content?.fields?.download?.fields?.file?.url}
+      uri={"https:" + content?.fields?.download?.fields?.file?.url}
       loading={false}
       size={size}
     />
