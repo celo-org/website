@@ -23,7 +23,8 @@ import Roledex from "src/contentful/grid2-cells/Roledex"
 import PlayList from "src/contentful/grid2-cells/Playlist"
 import Form from "src/contentful/grid2-cells/Form"
 type Props = ContentfulPage<GridRowContentType | SectionType>
-
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+import { NameSpaces } from "src/i18n"
 import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
 import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
 import { TABLE } from "src/contentful/nodes/embeds/TABLE"
@@ -184,5 +185,10 @@ const sectionsCss = css({
 export async function getServerSideProps({ params }) {
   console.info(params)
   const page = await getPageBySlug("demo", { locale: "en-US" }, true)
-  return { props: page }
+  return {
+    props: {
+      ...page,
+      ...(await serverSideTranslations("en", [NameSpaces.common, NameSpaces.dev])),
+    },
+  }
 }

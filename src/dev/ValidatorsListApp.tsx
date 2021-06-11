@@ -104,9 +104,6 @@ type Props = I18nProps & { network?: string; router: Router }
 class ValidatorsListApp extends React.PureComponent<Props> {
   render() {
     const { network } = this.props
-    if (!getConfig().publicRuntimeConfig.FLAGS.VALIDATORS) {
-      return null
-    }
     const networkMenuList = networkMenu.map(([name, link]) => [
       name,
       link,

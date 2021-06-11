@@ -10,10 +10,6 @@ import menuItems from "src/shared/menu-items"
 const previewImage = require("src/dev/opengraph.jpg")
 
 class ValidatorPage extends React.PureComponent<I18nProps> {
-  static getInitialProps() {
-    return { namespacesRequired: ["common", "dev"] }
-  }
-
   render() {
     return (
       <View style={styles.container}>

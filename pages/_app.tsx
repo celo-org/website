@@ -1,5 +1,4 @@
 import App from "next/app"
-import getConfig from "next/config"
 import dynamic from "next/dynamic"
 import Head from "next/head"
 import * as React from "react"
@@ -63,7 +62,7 @@ class MyApp extends App {
       await analyticsModule.default.page()
     })
 
-    if (getConfig().publicRuntimeConfig.FLAGS.ENV === "development") {
+    if (process.env.ENV === "development") {
       const { checkH1Count } = await import("src/shared/checkH1Count")
       checkH1Count()
     }
