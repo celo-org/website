@@ -14,7 +14,7 @@ export async function getServerSideProps() {
     props: makeSafeForJson({
       illos,
       graphics,
-      ...(await serverSideTranslations("en", [(NameSpaces.common, NameSpaces.brand)])),
+      ...(await serverSideTranslations("en", [NameSpaces.common, NameSpaces.brand])),
     }),
   }
 }

@@ -6,7 +6,7 @@ import { NameSpaces } from "src/i18n"
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [(NameSpaces.common, NameSpaces.celoRewards)])),
+      ...(await serverSideTranslations(locale, [NameSpaces.common, NameSpaces.celoRewards])),
     },
   }
 }

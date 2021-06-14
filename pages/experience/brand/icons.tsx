@@ -11,7 +11,7 @@ export async function getServerSideProps() {
   return {
     props: makeSafeForJson({
       icons,
-      ...(await serverSideTranslations("en", [(NameSpaces.common, NameSpaces.brand)])),
+      ...(await serverSideTranslations("en", [NameSpaces.common, NameSpaces.brand])),
     }),
   }
 }

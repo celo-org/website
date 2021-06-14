@@ -6,7 +6,7 @@ import { NameSpaces } from "src/i18n"
 export async function getStaticProps() {
   return {
     props: {
-      ...(await serverSideTranslations("en", [(NameSpaces.common, NameSpaces.brand)])),
+      ...(await serverSideTranslations("en", [NameSpaces.common, NameSpaces.brand])),
     },
   }
 }
