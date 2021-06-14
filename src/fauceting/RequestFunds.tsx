@@ -8,6 +8,7 @@ import { postForm } from "src/forms/postForm"
 import { TextInput } from "src/forms/TextInput"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import { colors, standardStyles } from "src/styles"
+import getConfig from "next/config"
 import subscribeRequest from "../../server/FirebaseClient"
 
 interface State {
@@ -20,6 +21,7 @@ interface State {
   mobileOS: MobileOS | null
 }
 
+const RECAPTCHA_SITE_KEY = getConfig().publicRuntimeConfig.RECAPTCHA_SITE_KEY
 interface Props {
   kind: RequestType
 }
@@ -148,7 +150,7 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
         />
         <View style={[styles.recaptcha, standardStyles.elementalMargin]}>
           <ReCAPTCHA
-            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA}
+            sitekey={RECAPTCHA_SITE_KEY}
             onChange={this.onCaptcha}
             ref={this.recaptchaRef}
           />
