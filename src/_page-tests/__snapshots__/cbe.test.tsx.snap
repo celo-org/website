@@ -132,7 +132,7 @@ exports[`CBE renders 1`] = `
           }
         }
       >
-        subTitle
+        Empowering 6B mobile phone users worldwide with
       </h4>
       <h1
         aria-level="1"
@@ -153,7 +153,7 @@ exports[`CBE renders 1`] = `
           }
         }
       >
-        mainTitle
+        Mobile-first financial solutions
       </h1>
     </div>
   </div>
@@ -259,7 +259,7 @@ exports[`CBE renders 1`] = `
             }
           }
         >
-          adventure1.title
+          A Mobile-First Blockchain Platform
         </h3>
         <div
           className="css-text-901oao"
@@ -275,7 +275,7 @@ exports[`CBE renders 1`] = `
             }
           }
         >
-          adventure1.text
+          Get updates on the Celo platform: news, technology, and community.
         </div>
       </div>
       <div
@@ -342,7 +342,7 @@ exports[`CBE renders 1`] = `
             }
             target="_blank"
           >
-            adventure1.link
+            Sign up
             <div
               className="css-view-1dbjc4n"
               style={
@@ -454,7 +454,7 @@ exports[`CBE renders 1`] = `
             }
           }
         >
-          adventure2.title
+          Join the Celo community
         </h3>
         <div
           className="css-text-901oao"
@@ -470,7 +470,7 @@ exports[`CBE renders 1`] = `
             }
           }
         >
-          adventure2.text
+          Join the live conversation and be a part of shaping the direction of the platform.
         </div>
       </div>
       <div
@@ -537,7 +537,7 @@ exports[`CBE renders 1`] = `
             }
             target="_blank"
           >
-            adventure2.link
+            Connect
             <div
               className="css-view-1dbjc4n"
               style={
@@ -649,7 +649,7 @@ exports[`CBE renders 1`] = `
             }
           }
         >
-          adventure3.title
+          Send, receive, store cUSD
         </h3>
         <div
           className="css-text-901oao"
@@ -665,7 +665,7 @@ exports[`CBE renders 1`] = `
             }
           }
         >
-          adventure3.text
+          Start sending and sharing value easily around the world with Valora.
         </div>
       </div>
       <div
@@ -732,7 +732,7 @@ exports[`CBE renders 1`] = `
             }
             target="_blank"
           >
-            adventure3.link
+            Get Valora
             <div
               className="css-view-1dbjc4n"
               style={
@@ -865,7 +865,7 @@ exports[`CBE renders 1`] = `
           }
         }
       >
-        sequenceTitle
+        Celo Lessons on Coinbase Earn
       </h4>
     </div>
   </div>
@@ -1003,7 +1003,7 @@ exports[`CBE renders 1`] = `
         }
         target="_blank"
       >
-        lesson1
+        Lesson 1: What is the Celo Platform?
       </a>
       <div
         className="css-text-901oao"
@@ -1021,7 +1021,7 @@ exports[`CBE renders 1`] = `
           }
         }
       >
-        minutes
+        3 minutes
       </div>
     </div>
     <div
@@ -1138,7 +1138,7 @@ exports[`CBE renders 1`] = `
         }
         target="_blank"
       >
-        lesson2
+        Lesson 2: What is CELO?
       </a>
       <div
         className="css-text-901oao"
@@ -1156,7 +1156,7 @@ exports[`CBE renders 1`] = `
           }
         }
       >
-        minutes
+        2 minutes
       </div>
     </div>
     <div
@@ -1273,7 +1273,7 @@ exports[`CBE renders 1`] = `
         }
         target="_blank"
       >
-        lesson3
+        Lesson 3: What can Celo Dollars do?
       </a>
       <div
         className="css-text-901oao"
@@ -1291,7 +1291,7 @@ exports[`CBE renders 1`] = `
           }
         }
       >
-        minutes
+        3 minutes
       </div>
     </div>
   </div>
