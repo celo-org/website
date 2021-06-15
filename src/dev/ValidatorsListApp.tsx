@@ -21,12 +21,10 @@ import { cleanData } from "src/utils/validators"
 const networkMenu = [
   ["Mainnet", menuItems.VALIDATORS_LIST.link],
   ["Baklava", menuItems.VALIDATORS_LIST__BAKLAVA.link],
-  // ['Baklavastaging', menuItems.VALIDATORS_LIST_BAKLAVASTAGING.link],
 ]
 
 const BLOCKSCOUT = {
   baklava: "https://baklava-blockscout.celo-testnet.org/graphiql",
-  baklavastaging: "https://baklavastaging-blockscout.celo-testnet.org/graphiql",
   mainnet: "https://explorer.celo.org/graphiql",
 }
 

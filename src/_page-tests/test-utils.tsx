@@ -1,7 +1,6 @@
 import { render } from "@testing-library/react"
 import * as React from "react"
 import i18nForTests from "src/utils/i18nForTests"
-// import i18nConfig from "src/../next-i18next.config.js"
 interface Props {
   children?: React.ReactNode
 }
