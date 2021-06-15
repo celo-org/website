@@ -9,9 +9,6 @@ import { HEADER_HEIGHT } from "src/shared/Styles"
 import { fonts, standardStyles, textStyles } from "src/styles"
 
 class StakeoffTerms extends React.PureComponent<I18nProps> {
-  static getInitialProps() {
-    return { namespacesRequired: [NameSpaces.terms, NameSpaces.common] }
-  }
   render() {
     const { t } = this.props
     return (
@@ -430,9 +427,9 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                   both parties. YOU AND COMPANY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER
                   ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN
                   ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. Further, unless both you and
-                  Company agree otherwise, the arbitrator may not consolidate more than one
-                  person's claims with your claims, and may not otherwise preside over any form
-                  of a representative or class proceeding. If this specific provision is found to be
+                  Company agree otherwise, the arbitrator may not consolidate more than one person's
+                  claims with your claims, and may not otherwise preside over any form of a
+                  representative or class proceeding. If this specific provision is found to be
                   unenforceable, then the entirety of this Dispute Resolution section shall be null
                   and void.
                 </Li>

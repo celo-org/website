@@ -19,12 +19,6 @@ interface State {
 }
 
 class FaucetPage extends React.Component<I18nProps, State> {
-  static getInitialProps = () => {
-    return {
-      namespacesRequired: [NameSpaces.faucet, NameSpaces.common],
-    }
-  }
-
   render() {
     const { t } = this.props
 

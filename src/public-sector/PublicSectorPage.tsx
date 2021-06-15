@@ -2,7 +2,7 @@ import {css} from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { cellSwitch } from "./cellSwitch"
 import { Entry } from 'contentful'
-import { getPageBySlug, ContentfulPage, GridRowContentType, SectionType, CoverContentType, FormContentType } from 'src/utils/contentful'
+import { ContentfulPage, GridRowContentType, SectionType, CoverContentType, FormContentType } from 'src/utils/contentful'
 import { flex, WHEN_MOBILE } from 'src/estyles'
 import { GridRow } from 'src/layout/Grid2'
 import OpenGraph from 'src/header/OpenGraph'
@@ -12,6 +12,7 @@ import {GALLARY} from "src/contentful/nodes/embeds/GALLARY"
 import {TABLE} from "src/contentful/nodes/embeds/TABLE"
 import { BLOCKS, INLINES, Block} from '@contentful/rich-text-types'
 import Cover from "src/contentful/Cover"
+
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
@@ -107,8 +108,3 @@ const sectionsCss = css({
     paddingBottom: 24,
   },
 })
-
-export async function getServerSideProps() {
-  const page = await getPageBySlug("public-sector", { locale: "en-US" }, true)
-  return { props: page }
-}

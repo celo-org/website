@@ -1,26 +1,27 @@
-import { initReactI18next } from "react-i18next"
-import NextI18NextInstance, { NameSpaces } from "src/i18n"
+import { NameSpaces } from "src/i18n"
+import i18next from "i18next"
 
-// tslint:disable-next-line: no-floating-promises
-NextI18NextInstance.i18n.use(initReactI18next).init({
+i18next.init({
   load: "all",
   fallbackLng: "en",
   resources: {
     en: {
-      [NameSpaces.about]: require("public/static/locales/en/about.json"),
-      [NameSpaces.alliance]: require("public/static/locales/en/alliance.json"),
-      [NameSpaces.audits]: require("public/static/locales/en/audits.json"),
-      [NameSpaces.brand]: require("public/static/locales/en/brand.json"),
-      [NameSpaces.celoRewards]: require("public/static/locales/en/celoRewards.json"),
-      [NameSpaces.community]: require("public/static/locales/en/community.json"),
-      [NameSpaces.common]: require("public/static/locales/en/common.json"),
-      [NameSpaces.dev]: require("public/static/locales/en/dev.json"),
-      [NameSpaces.download]: require("public/static/locales/en/download.json"),
-      [NameSpaces.faucet]: require("public/static/locales/en/faucet.json"),
-      [NameSpaces.home]: require("public/static/locales/en/home.json"),
-      [NameSpaces.jobs]: require("public/static/locales/en/jobs.json"),
-      [NameSpaces.terms]: require("public/static/locales/en/terms.json"),
-      [NameSpaces.papers]: require("public/static/locales/en/papers.json"),
+      [NameSpaces.about]: require("public/locales/en/about.json"),
+      [NameSpaces.alliance]: require("public/locales/en/alliance.json"),
+      [NameSpaces.audits]: require("public/locales/en/audits.json"),
+      [NameSpaces.brand]: require("public/locales/en/brand.json"),
+      [NameSpaces.celoRewards]: require("public/locales/en/celoRewards.json"),
+      [NameSpaces.community]: require("public/locales/en/community.json"),
+      [NameSpaces.common]: require("public/locales/en/common.json"),
+      [NameSpaces.cbe]: require("public/locales/en/cbe.json"),
+      [NameSpaces.dev]: require("public/locales/en/dev.json"),
+      [NameSpaces.download]: require("public/locales/en/download.json"),
+      [NameSpaces.faucet]: require("public/locales/en/faucet.json"),
+      [NameSpaces.home]: require("public/locales/en/home.json"),
+      [NameSpaces.jobs]: require("public/locales/en/jobs.json"),
+      [NameSpaces.papers]: require("public/locales/en/papers.json"),
+      [NameSpaces.press]: require("public/locales/en/press.json"),
+      [NameSpaces.terms]: require("public/locales/en/terms.json"),
     },
   },
   // have a common namespace used around the full app
@@ -29,6 +30,6 @@ NextI18NextInstance.i18n.use(initReactI18next).init({
   debug: false,
 })
 
-NextI18NextInstance.i18n.languages = ["en"]
+i18next.languages = ["en"]
 
-export default NextI18NextInstance
+export default i18next

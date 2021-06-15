@@ -1,6 +1,8 @@
 import { GetServerSideProps } from "next"
 import { Props } from "src/experience/contentful/ContentfulKit"
 import { getKit, getPageById, SectionType } from "src/utils/contentful"
+import makeSafeForJson from "src/utils/makeSafeForJson"
+import { NameSpaces } from "src/i18n"
 
 const getServerSideProps: GetServerSideProps<
   Props | Record<string, any>,
@@ -26,6 +28,8 @@ const getServerSideProps: GetServerSideProps<
       }
     }
 
+    const { serverSideTranslations } = await import("next-i18next/serverSideTranslations")
+
     const page = await getPageById<SectionType>(kit.pageID, { locale })
     const questionMark = resolvedUrl.indexOf("?")
     const newUrl = resolvedUrl.substring(0, questionMark)
@@ -33,7 +37,7 @@ const getServerSideProps: GetServerSideProps<
     const sidebar = kit.sidebar.map((entry) => {
       if (entry.href === newUrl || entry.href === req.url) {
         return {
-          ...nullify(entry),
+          ...makeSafeForJson(entry),
           sections: page.sections.map((section) => ({
             title: section.name || null,
             href: `${entry.href}#${section.slug}`,
@@ -44,8 +48,9 @@ const getServerSideProps: GetServerSideProps<
     })
     return {
       props: {
-        ...nullify(kit),
-        ...nullify(page),
+        ...(await serverSideTranslations("en", [NameSpaces.common])),
+        ...makeSafeForJson(kit),
+        ...makeSafeForJson(page),
         sections: page.sections as SectionType[],
         ogImage: kit.ogImage?.fields?.file?.url || "",
         sidebar,
@@ -58,24 +63,6 @@ const getServerSideProps: GetServerSideProps<
       notFound: true,
     }
   }
-}
-
-function nullify(obj: any) {
-  if (typeof obj === "object") {
-    // iterating over the object using for..in
-    for (const keys in obj) {
-      // checking if the current value is an object itself
-      if (typeof obj[keys] === "object") {
-        // if so then again calling the same function
-        nullify(obj[keys])
-      } else {
-        // else getting the value and replacing single { with {{ and so on
-        const keyValue = obj[keys]
-        obj[keys] = keyValue === undefined ? null : keyValue
-      }
-    }
-  }
-  return obj
 }
 
 export default getServerSideProps

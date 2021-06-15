@@ -25,28 +25,7 @@ interface Props {
 }
 
 class PressPage extends React.PureComponent<I18nProps & Props> {
-  static async getInitialProps(context) {
-    let press = []
-    let languages = []
-    try {
-      // when run on server import fetching code and run. on client send req to api
-      if (context.req) {
-        const getpress = await import("src/../server/fetchPress")
-        press = await getpress.default()
-        languages = context.req.headers["accept-language"]
-          .toLowerCase()
-          .split(",")
-          .map((s) => s.substr(0, 2))
-      } else {
-        const res = await fetch(`/api/press`)
-        press = await res.json()
-        languages = navigator.languages ? navigator.languages.map((s) => s.substr(0, 2)) : []
-      }
-      return { press, languages }
-    } catch {
-      return { press, languages }
-    }
-  }
+
   render() {
     const { t, press, languages, i18n } = this.props
     const langList = new Set(languages)

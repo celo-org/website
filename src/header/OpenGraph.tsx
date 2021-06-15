@@ -1,4 +1,3 @@
-import getConfig from "next/config"
 import Head from "next/head"
 import * as React from "react"
 import { ImageRequireSource } from "react-native"
@@ -10,8 +9,7 @@ interface Props {
 }
 
 export default function OpenGraph({ description, image, title, path }: Props) {
-  const { publicRuntimeConfig } = getConfig()
-  const BASE_URL = publicRuntimeConfig.BASE_URL
+  const BASE_URL = process.env.BASE_URL
   const metaImage = typeof image === "string" && image.startsWith("//") ? image : BASE_URL + image
   return (
     <Head>

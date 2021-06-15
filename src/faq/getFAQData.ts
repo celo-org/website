@@ -1,12 +1,16 @@
 import { GetServerSideProps } from "next"
 import { Props } from "src/faq/FAQ"
 import { getFAQ } from "src/utils/contentful"
+import { NameSpaces } from "src/i18n"
 
-const getServerSideProps: GetServerSideProps<Props> = async function getServerSideProp({ query }) {
-  const locale = query.locale || "en-US"
-  const faqs = await getFAQ({ locale })
+const getServerSideProps: GetServerSideProps<Props> = async function getServerSideProp({ locale }) {
+  const lang = locale === "en" ? "en-US" : locale
+  const faqs = await getFAQ({ locale: lang })
+  const { serverSideTranslations } = await import("next-i18next/serverSideTranslations")
+
   return {
     props: {
+      ...(await serverSideTranslations(locale, [NameSpaces.common, "faq"])),
       title: faqs.fields.title,
       list: faqs.fields.list.map((item) => {
         return {

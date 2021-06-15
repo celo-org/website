@@ -3,7 +3,6 @@ import { ApolloProvider, Query } from "@apollo/react-components"
 import ApolloClient from "apollo-boost"
 import { InMemoryCache } from "apollo-cache-inmemory"
 import gql from "graphql-tag"
-import getConfig from "next/config"
 import { Router, withRouter } from "next/router"
 import * as React from "react"
 import { StyleSheet, View } from "react-native"
@@ -22,14 +21,16 @@ import { cleanData } from "src/utils/validators"
 const networkMenu = [
   ["Mainnet", menuItems.VALIDATORS_LIST.link],
   ["Baklava", menuItems.VALIDATORS_LIST__BAKLAVA.link],
-  // ['Baklavastaging', menuItems.VALIDATORS_LIST_BAKLAVASTAGING.link],
 ]
+
+const BLOCKSCOUT = {
+  baklava: "https://baklava-blockscout.celo-testnet.org/graphiql",
+  mainnet: "https://explorer.celo.org/graphiql",
+}
 
 function createApolloClient(network: string) {
   return new ApolloClient({
-    uri:
-      getConfig().publicRuntimeConfig.BLOCKSCOUT[network] ||
-      getConfig().publicRuntimeConfig.BLOCKSCOUT.uri,
+    uri: BLOCKSCOUT[network],
     cache: new InMemoryCache(),
     // TODO: Remove this workaround when the backend service fixes not needed errors
     fetch: async (...args) => {
@@ -104,9 +105,6 @@ type Props = I18nProps & { network?: string; router: Router }
 class ValidatorsListApp extends React.PureComponent<Props> {
   render() {
     const { network } = this.props
-    if (!getConfig().publicRuntimeConfig.FLAGS.VALIDATORS) {
-      return null
-    }
     const networkMenuList = networkMenu.map(([name, link]) => [
       name,
       link,
