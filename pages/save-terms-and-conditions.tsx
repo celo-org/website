@@ -4,6 +4,9 @@ import { getPageBySlug, SectionType } from "src/utils/contentful"
 import OpenGraph from "src/header/OpenGraph"
 import { renderNode } from "src/contentful/nodes/nodes"
 import { GridRow } from "src/layout/Grid2"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+import { NameSpaces } from "src/i18n"
+
 
 interface Props {
   title: string
@@ -29,11 +32,12 @@ export default function SavingsTerms(props: Props) {
   )
 }
 
-export async function getServerSideProps(): Promise<{ props: Props }> {
+export async function getServerSideProps({ locale }): Promise<{ props: Props }> {
   const page = await getPageBySlug("save-terms-and-conditions", { locale: "en-US" }, false)
   const sections = page.sections as SectionType[]
   return {
     props: {
+      ...(await serverSideTranslations(locale, [NameSpaces.common])),
       ...page,
       sections,
     },

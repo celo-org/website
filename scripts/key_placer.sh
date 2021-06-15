@@ -6,6 +6,9 @@ echo "Processing encrypted files"
 files=(
   "env-config.js"
   "server-env-config.js"
+  ".env.local"
+  ".env.development"
+  ".env.production"
 )
 
 if [[ -z "$1" ]]; then

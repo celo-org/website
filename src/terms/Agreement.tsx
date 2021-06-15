@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from "react-native"
 import { renderNode } from "src/contentful/nodes/nodes"
 import { H1 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
-import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { NameSpaces, useTranslation } from "src/i18n"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { fonts, standardStyles, textStyles } from "src/styles"
@@ -25,59 +25,39 @@ interface Props {
   }[]
 }
 
-class Agreement extends React.PureComponent<I18nProps & Props> {
-  static async getInitialProps(context) {
-    const props = { namespacesRequired: [NameSpaces.terms, NameSpaces.common] }
-    try {
-      let pageData = {}
-      // when run on server import fetching code and run. on client send req to api
-      if (context.req) {
-        const getPageBySlug = await import("src/utils/contentful").then((mod) => mod.getPageBySlug)
-        pageData = await getPageBySlug(context.pathname.replace(/^\//, ""), {
-          locale: "en-US",
-        })
-      } else {
-        const res = await fetch(`/api/page${context.pathname}`)
-        pageData = await res.json()
-      }
-      return { ...pageData, ...props }
-    } catch {
-      return props
-    }
-  }
-  render() {
-    const { t, title, sections, updatedAt, i18n, description } = this.props
-    return (
-      <>
-        <OpenGraph title={title} path={NameSpaces.terms} description={description} />
-        <View style={styles.container}>
-          <GridRow
-            allStyle={standardStyles.centered}
-            desktopStyle={standardStyles.blockMarginBottom}
-            tabletStyle={standardStyles.blockMarginBottomTablet}
-            mobileStyle={standardStyles.blockMarginBottomMobile}
-          >
-            <Cell span={Spans.fourth}>{}</Cell>
-            <Cell span={Spans.three4th} style={standardStyles.centered}>
-              <H1 style={textStyles.center}>{title}</H1>
-            </Cell>
-          </GridRow>
-          <GridRow>
-            <Cell span={Spans.fourth}>
-              <Text style={fonts.h6}>
-                {t("updatedOn", { date: toLocaleDate(updatedAt, i18n.language) })}
-              </Text>
-            </Cell>
-            <Cell span={Spans.three4th}>
-              {sections.map((section) => {
-                return documentToReactComponents(section.contentField, OPTIONS)
-              })}
-            </Cell>
-          </GridRow>
-        </View>
-      </>
-    )
-  }
+function Agreement(props: Props) {
+  const { t, i18n } = useTranslation(NameSpaces.terms)
+  const { title, sections, updatedAt, description } = props
+  return (
+    <>
+      <OpenGraph title={title} path={NameSpaces.terms} description={description} />
+      <View style={styles.container}>
+        <GridRow
+          allStyle={standardStyles.centered}
+          desktopStyle={standardStyles.blockMarginBottom}
+          tabletStyle={standardStyles.blockMarginBottomTablet}
+          mobileStyle={standardStyles.blockMarginBottomMobile}
+        >
+          <Cell span={Spans.fourth}>{}</Cell>
+          <Cell span={Spans.three4th} style={standardStyles.centered}>
+            <H1 style={textStyles.center}>{title}</H1>
+          </Cell>
+        </GridRow>
+        <GridRow>
+          <Cell span={Spans.fourth}>
+            <Text style={fonts.h6}>
+              {t("updatedOn", { date: toLocaleDate(updatedAt, i18n.language) })}
+            </Text>
+          </Cell>
+          <Cell span={Spans.three4th}>
+            {sections.map((section) => {
+              return documentToReactComponents(section.contentField, OPTIONS)
+            })}
+          </Cell>
+        </GridRow>
+      </View>
+    </>
+  )
 }
 
 function toLocaleDate(dateString: string, locale: string) {
@@ -88,7 +68,7 @@ function toLocaleDate(dateString: string, locale: string) {
   })
 }
 
-export default withNamespaces(NameSpaces.terms)(Agreement)
+export default Agreement
 
 const styles = StyleSheet.create({
   container: {

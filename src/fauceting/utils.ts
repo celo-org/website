@@ -1,9 +1,4 @@
-import getConfig from "next/config"
 import { RequestStatus, RequestType } from "src/fauceting/FaucetInterfaces"
-
-export function getCaptchaKey() {
-  return getConfig().publicRuntimeConfig.RECAPTCHA
-}
 
 export function validateBeneficary(addressOrE164: string, kind: RequestType) {
   if (kind === RequestType.Invite) {
@@ -14,7 +9,6 @@ export function validateBeneficary(addressOrE164: string, kind: RequestType) {
 }
 
 function validateNumber(number: string) {
-  //  TODO use our phone utils from @celo/utils
   const E164RegEx = /^\+[1-9][0-9]{1,14}$/
   return E164RegEx.test(number)
 }

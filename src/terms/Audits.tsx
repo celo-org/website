@@ -44,9 +44,6 @@ const AUDITS = DATA.reduce((agg, current) => {
 }, {})
 
 class Audits extends React.PureComponent<I18nProps> {
-  static getInitialProps() {
-    return { namespacesRequired: [NameSpaces.audits, NameSpaces.common] }
-  }
   render() {
     const { t } = this.props
     return (

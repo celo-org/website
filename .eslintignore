@@ -1,6 +1,7 @@
 .next/
 node_modules/
 dist/
+dist/**
 
 # keys
 env-config.js

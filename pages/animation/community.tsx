@@ -6,9 +6,6 @@ import LogoCombinedColor from "src/logos/LogoDarkBg"
 import { colors } from "src/styles"
 const preview = require("src/community/connect/preview.jpg")
 export default class CommunityDemo extends React.PureComponent {
-  static getInitialProps = () => {
-    return { namespacesRequired: [] }
-  }
   render() {
     return (
       <>
