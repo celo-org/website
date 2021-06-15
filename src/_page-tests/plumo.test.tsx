@@ -8,7 +8,12 @@ describe("PlumoLanding", () => {
     const tree = renderer
       .create(
         <TestProvider>
-          <PlumoLanding />
+          <PlumoLanding
+            title="Plumo"
+            description="Things about Plumo"
+            slug="/plumo"
+            sections={[]}
+          />
         </TestProvider>
       )
       .toJSON()

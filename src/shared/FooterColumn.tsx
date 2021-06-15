@@ -1,10 +1,10 @@
-import * as React from "react"
-import { StyleSheet, Text, View, ViewStyle } from "react-native"
-import { useScreenSize } from "src/layout/ScreenSize"
-import Button, { BTN } from "src/shared/Button.3"
-import { fonts, standardStyles } from "src/styles"
+import * as React from 'react'
+import { StyleSheet, Text, View, ViewStyle } from 'react-native'
+import { useScreenSize } from 'src/layout/ScreenSize'
+import Button, { BTN } from 'src/shared/Button.3'
+import { fonts, standardStyles, textStyles } from 'src/styles'
 
-interface Link {
+export interface LinkType {
   name: string
   link: string
   icon?: React.ReactNode
@@ -12,15 +12,16 @@ interface Link {
 
 interface Props {
   heading: string
-  links: Link[]
+  links: LinkType[]
   style?: ViewStyle | ViewStyle[]
+  darkMode?: boolean
 }
 
-export default React.memo(function FooterColumn({ heading, links, style }: Props) {
+export default React.memo(function FooterColumn({ heading, links, style ,darkMode}: Props) {
   const { isMobile } = useScreenSize()
   return (
     <View style={[isMobile ? styles.rootMobile : styles.root, style]}>
-      <Text style={[fonts.h6, standardStyles.elementalMarginBottom]}>{heading}</Text>
+      <Text style={[fonts.h6, standardStyles.elementalMarginBottom, textStyles.invert]}>{heading}</Text>
       {links.map(({ name, link, icon }) => (
         <View style={styles.linkContainer} key={link}>
           <Button
@@ -29,7 +30,7 @@ export default React.memo(function FooterColumn({ heading, links, style }: Props
             kind={BTN.INLINE}
             text={name}
             href={link}
-            style={linkStyle}
+            style={[styles.link, fonts.legal, darkMode && textStyles.invert]}
           />
         </View>
       ))}
@@ -55,5 +56,3 @@ const styles = StyleSheet.create({
     marginVertical: 8,
   },
 })
-
-const linkStyle = [styles.link, fonts.legal]

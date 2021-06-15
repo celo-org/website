@@ -1,8 +1,9 @@
-import * as React from "react"
-import { StyleSheet, View } from "react-native"
-import DropDown, { ListItem } from "src/shared/DropDown"
+import * as React from 'react'
+import { StyleSheet, View } from 'react-native'
+import { flex, flexRow } from 'src/estyles'
+import DropDown, { ListItem } from 'src/shared/DropDown'
 
-interface DropDownProps {
+export interface DropDownProps {
   name: string
   list: ListItem[]
   onSelect: (key: string) => void
@@ -11,6 +12,8 @@ interface DropDownProps {
 
 interface Props {
   data: DropDownProps[]
+  direction?: "horizontal"| "vertical"
+  darkMode?: boolean
 }
 
 interface State {
@@ -31,7 +34,7 @@ export default class DropDownGroup extends React.Component<Props, State> {
   render = () => {
     return (
       <>
-        <View>
+        <div css={this.props.direction  === 'horizontal'? flexRow : flex} >
           {this.props.data.map((dropDownProps, index) => {
             return (
               <DropDown
@@ -43,10 +46,11 @@ export default class DropDownGroup extends React.Component<Props, State> {
                 isOpen={index === this.state.openIndex}
                 index={index}
                 toggleOpen={this.setOpenDropDown}
+                darkMode={this.props.darkMode}
               />
             )
           })}
-        </View>
+        </div>
         {this.state.openIndex !== null && <View style={styles.overlay} onClick={this.closeAll} />}
       </>
     )
