@@ -18,6 +18,7 @@ interface PropContext {
 
 export default class MyDocument extends Document<Props> {
   static async getInitialProps(context: DocumentContext & PropContext) {
+    const initialProps = await Document.getInitialProps(context)
     const userAgent = context?.req?.headers["user-agent"]
     setDimensionsForScreen(userAgent)
     AppRegistry.registerComponent("Main", () => Main)
@@ -35,7 +36,12 @@ export default class MyDocument extends Document<Props> {
       Sentry.captureException(context.err)
     }
 
-    return { ...page, styles: React.Children.toArray(styles), pathname: context.pathname }
+    return {
+      ...page,
+      styles: React.Children.toArray(styles),
+      pathname: context.pathname,
+      ...initialProps,
+    }
   }
 
   render() {
