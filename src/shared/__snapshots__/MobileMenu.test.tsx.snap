@@ -2,62 +2,35 @@
 
 exports[`Main MobileMenu renders 1`] = `
 <div
-  className="css-view-1dbjc4n"
-  style={
+  css={
     Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxOrient": "vertical",
-      "WebkitBoxPack": "start",
-      "WebkitFlex": 1,
-      "WebkitFlexDirection": "column",
-      "WebkitJustifyContent": "flex-start",
-      "alignItems": "center",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
-      "msFlex": "1 1 0%",
-      "msFlexAlign": "center",
-      "msFlexDirection": "column",
-      "msFlexPack": "start",
-      "paddingBottom": "30px",
-      "paddingLeft": "20px",
-      "paddingRight": "20px",
-      "paddingTop": "30px",
+      "map": undefined,
+      "name": "9j3wcj",
+      "next": undefined,
+      "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex-direction:column;align-items:center;justify-content:flex-start;flex:1;padding-top:30px;padding-bottom:30px;padding-right:20px;padding-left:20px;",
+      "toString": [Function],
     }
   }
 >
   <div
-    className="css-view-1dbjc4n"
-    style={
+    css={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitBoxPack": "justify",
-        "WebkitFlexDirection": "column",
-        "WebkitJustifyContent": "space-around",
-        "alignItems": "center",
-        "flexDirection": "column",
-        "justifyContent": "space-around",
-        "msFlexAlign": "center",
-        "msFlexDirection": "column",
-        "msFlexPack": "distribute",
-        "paddingLeft": "20px",
-        "paddingRight": "20px",
+        "map": undefined,
+        "name": "1ujwvv1",
+        "next": undefined,
+        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-items:center;padding-left:20px;padding-right:20px;flex-direction:column;justify-content:space-around;",
+        "toString": [Function],
       }
     }
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
+      css={
         Object {
-          "marginBottom": "25px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-          "marginTop": "25px",
+          "map": undefined,
+          "name": "ah7dwx",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
+          "toString": [Function],
         }
       }
     >
@@ -128,13 +101,13 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
-      style={
+      css={
         Object {
-          "marginBottom": "25px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-          "marginTop": "25px",
+          "map": undefined,
+          "name": "ah7dwx",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
+          "toString": [Function],
         }
       }
     >
@@ -200,13 +173,13 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
-      style={
+      css={
         Object {
-          "marginBottom": "25px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-          "marginTop": "25px",
+          "map": undefined,
+          "name": "ah7dwx",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
+          "toString": [Function],
         }
       }
     >
@@ -272,13 +245,13 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
-      style={
+      css={
         Object {
-          "marginBottom": "25px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-          "marginTop": "25px",
+          "map": undefined,
+          "name": "ah7dwx",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
+          "toString": [Function],
         }
       }
     >
@@ -344,13 +317,13 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
-      style={
+      css={
         Object {
-          "marginBottom": "25px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-          "marginTop": "25px",
+          "map": undefined,
+          "name": "ah7dwx",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
+          "toString": [Function],
         }
       }
     >
@@ -416,13 +389,13 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
-      style={
+      css={
         Object {
-          "marginBottom": "25px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-          "marginTop": "25px",
+          "map": undefined,
+          "name": "ah7dwx",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
+          "toString": [Function],
         }
       }
     >
@@ -488,13 +461,13 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
-      style={
+      css={
         Object {
-          "marginBottom": "25px",
-          "marginLeft": "10px",
-          "marginRight": "10px",
-          "marginTop": "25px",
+          "map": undefined,
+          "name": "ah7dwx",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
+          "toString": [Function],
         }
       }
     >
@@ -561,19 +534,13 @@ exports[`Main MobileMenu renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
-    style={
+    css={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxPack": "center",
-        "WebkitJustifyContent": "center",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "msFlexAlign": "center",
-        "msFlexPack": "center",
-        "paddingBottom": "30px",
-        "paddingTop": "30px",
+        "map": undefined,
+        "name": "w621i7",
+        "next": undefined,
+        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;padding-top:30px;padding-bottom:30px;justify-content:center;align-items:center;",
+        "toString": [Function],
       }
     }
   >
