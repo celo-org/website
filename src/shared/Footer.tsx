@@ -151,10 +151,8 @@ export default function Footer({ hideForm, darkMode }: Props) {
             style={[standardStyles.centered, styles.form]}
           >
             <img src={sendCoinIcon} css={emailLogoCss} width={50} height={50} />
-            <p css={recieveUpdatesCss}>
-              {t("receiveUpdates")}
-            </p>
-            <EmailForm submitText={t("signUp")} route={"/contacts"} isDarkMode={false} />
+            <p css={recieveUpdatesCss}>{t("receiveUpdates")}</p>
+            <EmailForm submitText={t("signUp")} route={"contact"} isDarkMode={false} />
           </Cell>
         </GridRow>
       )}
@@ -211,12 +209,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
           <Lazy unmountIfInvisible={true}>
             <ChangeStory darkMode={darkMode} />
           </Lazy>
-          <small
-            css={css(
-              copyrightStyle,
-              darkMode && whiteText,
-            )}
-          >
+          <small css={css(copyrightStyle, darkMode && whiteText)}>
             {t("footer.copyright", { year })}
           </small>
         </Cell>
