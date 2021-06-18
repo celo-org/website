@@ -1,18 +1,18 @@
 import App from "next/app"
 import dynamic from "next/dynamic"
+import { css } from "@emotion/react"
 import Head from "next/head"
 import * as React from "react"
-import { View } from "react-native"
-import { H1 } from "src/fonts/Fonts"
 import Navigation from "src/header/Navigation"
 import { ScreenSizeProvider } from "src/layout/ScreenSize"
 import Button, { BTN } from "src/shared/Button.3"
 import Footer from "src/shared/Footer"
 import pagePaths from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { standardStyles, textStyles } from "src/styles"
+import { fonts, textStyles } from "src/estyles"
 import { getSentry, initSentry } from "src/utils/sentry"
-import { appWithTranslation } from "../src/i18n"
+import { appWithTranslation } from "src/i18n"
+import { flex } from "src/estyles"
 const SECOND = 1000
 const Progress = dynamic(import("src/shared/Progress"))
 
@@ -104,9 +104,9 @@ class MyApp extends App {
           {this.skipNavigation() || <Navigation />}
           {this.state.hasError ? <FiveHundred /> : <Component {...pageProps} />}
           {this.skipNavigation() || (
-            <View>
+            <div css={footerWrapperCss}>
               <Footer />
-            </View>
+            </div>
           )}
           {this.state.showConsent && (
             <CookieConsent onAgree={this.onAgree} onDisagree={this.onDisagree} />
@@ -117,16 +117,31 @@ class MyApp extends App {
   }
 }
 
+const footerWrapperCss = css(flex, {
+  position: "relative",
+})
+
 function FiveHundred() {
   return (
-    <View style={[standardStyles.centered, { height: "50vh" }]}>
-      <H1 style={[textStyles.center, standardStyles.blockMarginBottomTablet]}>
-        Oops something went wrong
-      </H1>
+    <div css={fiveHundredWrapCss}>
+      <h1 css={errorTitle}>
+        Something went wrong
+      </h1>
       <Button text="Return Home" href="/" kind={BTN.SECONDARY} />
-    </View>
+    </div>
   )
 }
+
+const fiveHundredWrapCss = css(flex, {
+  justifyContent: "center",
+  alignItems: "center",
+  minHeight: "50vh",
+})
+
+const errorTitle = css(fonts.h1, textStyles.center, {
+  marginBottom: 48,
+  marginTop: 48,
+})
 
 export default appWithTranslation(MyApp)
 
