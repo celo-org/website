@@ -1,10 +1,10 @@
+import { css } from "@emotion/react"
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
+import { flex } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import RingsGlyph from "src/logos/RingsGlyph"
 import Button, { BTN } from "src/shared/Button.3"
 import { MenuLink } from "src/shared/menu-items"
-import { standardStyles } from "src/styles"
 interface Props {
   currentPage: string
   menu: MenuLink[]
@@ -13,57 +13,66 @@ interface Props {
 export default function MobileMenu({ currentPage, menu }: Props) {
   const { t } = useTranslation(NameSpaces.common)
   return (
-    <View style={styles.root}>
-      <View style={styles.menu}>
+    <div css={styles.root}>
+      <div css={styles.menu}>
         {menu.map((item) => {
           const linkIsToCurrentPage = currentPage === item.link
           const btnKind = linkIsToCurrentPage ? BTN.TERTIARY : BTN.NAV
 
           return (
-            <View key={item.name} style={styles.menuItem}>
-              {/* 
-              // @ts-ignore */}
+            <div key={item.name} css={styles.menuItem}>
               <Button
                 href={item.link}
                 text={t(item.name)}
                 kind={btnKind}
                 key={item.name}
                 align={"center"}
-                style={styles.buttonText}
+                style={btnStyle}
               />
-            </View>
+            </div>
           )
         })}
-      </View>
-      <View style={[standardStyles.centered, styles.rings]}>
+      </div>
+      <div css={styles.rings}>
         <RingsGlyph height={30} />
-      </View>
-    </View>
+      </div>
+    </div>
   )
 }
 
-const styles = StyleSheet.create({
-  root: {
+const styles = {
+  root: css(flex, {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-start",
     flex: 1,
-    paddingVertical: 30,
-    paddingHorizontal: 20,
-  },
-  rings: { paddingVertical: 30 },
-  menu: {
+    paddingTop: 30,
+    paddingBottom: 30,
+    paddingRight: 20,
+    paddingLeft: 20,
+  }),
+  rings: css(flex,{
+    paddingTop: 30,
+    paddingBottom: 30,
+    justifyContent: 'center',
+    alignItems: "center"
+  }),
+  menu: css(flex,{
     alignItems: "center",
-    paddingHorizontal: 20,
+    paddingLeft: 20,
+    paddingRight: 20,
     flexDirection: "column",
     justifyContent: "space-around",
-  },
-  menuItem: {
-    marginHorizontal: 10,
-    marginVertical: 25,
-  },
-  buttonText: {
-    fontSize: 20,
-    alignItems: "center",
-  },
-})
+  }),
+  menuItem: css(flex,{
+    marginLeft: 10,
+    marginRight:10,
+    marginTop: 25,
+    marginBottom: 25,
+  }),
+}
+
+const btnStyle = {
+  fontSize: 20,
+  alignItems: "center" as const,
+}

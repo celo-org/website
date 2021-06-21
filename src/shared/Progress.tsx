@@ -1,8 +1,9 @@
 import { useRouter } from "next/router"
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
+import { css, keyframes } from "@emotion/react"
 import { colors } from "src/styles"
 import { EffectiveTypes, getEffectiveConnection } from "src/utils/utils"
+import { flexRow } from "src/estyles"
 
 // https://nextjs.org/docs/api-reference/next/router#router-api
 enum RouterEvents {
@@ -54,31 +55,67 @@ export default function Progress() {
 
   if (isPageTurning) {
     const speed = getEffectiveConnection(navigator)
-    const animationSpeed = styles[speed]
-    const visibility = isPageTurning ? styles.visible : styles.hidden
+    const animationSpeed = durations[speed]
+    const visibility = isPageTurning ? visibleCss : hiddenCss
     return (
-      <View style={styles.container} key={route}>
-        <View
-          style={[styles.bar, animationSpeed, visibility, hasError ? styles.bad : styles.good]}
+      <div css={rootCss} key={route}>
+        <div
+          css={css(barCss, animationSpeed, visibility, hasError ? badStyle : goodStyle)}
         />
-      </View>
+      </div>
     )
   }
   return null
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-    alignItems: "center",
-    zIndex: 1000,
-    height: 2,
-    width: "100%",
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-  },
+const rootCss = css(flexRow, {
+  alignItems: "center",
+  zIndex: 1000,
+  height: 2,
+  width: "100%",
+  position: "absolute",
+  top: 0,
+  left: 0,
+  right: 0,
+})
+
+const hiddenCss = css({
+  top: -2,
+})
+
+const visibleCss = css({
+  top: 0
+})
+
+const badStyle = css({
+  backgroundColor: colors.red,
+})
+
+const goodStyle = css({
+  backgroundColor: colors.primary,
+})
+
+const progressive = keyframes`
+  from {
+    transform: scaleX(0)
+  }
+
+  to {
+    transform: scaleX(1)
+  }
+`
+const barCss = css({
+  height: "100%",
+  width: "100%",
+  transformOrigin: "left",
+  transitionDuration: "1s, 0.4s",
+  transitionProperty: "background-color, top",
+  animationFillMode: "both",
+  animationTimingFunction: "cubic-bezier(0,.58,.51,1.01)",
+  animationName: progressive
+})
+
+const durations = {
   [EffectiveTypes["slow-2g"]]: {
     animationDuration: `30s`,
   },
@@ -94,35 +131,4 @@ const styles = StyleSheet.create({
   [EffectiveTypes["4g"]]: {
     animationDuration: `5s`,
   },
-  good: {
-    backgroundColor: colors.primary,
-  },
-  bad: {
-    backgroundColor: colors.red,
-  },
-  bar: {
-    transitionProperty: ["background-color", "top"],
-    transitionDuration: ["1s", "0.4s"],
-    height: "100%",
-    width: "100%",
-    top: 0,
-    transformOrigin: "left",
-    animationFillMode: "both",
-    animationTimingFunction: "cubic-bezier(0,.58,.51,1.01)",
-    animationKeyframes: [
-      {
-        "0%": {
-          transform: [{ scaleX: 0 }],
-        },
-
-        "100%": {
-          transform: [{ scaleX: 1 }],
-        },
-      },
-    ],
-  },
-  visible: {},
-  hidden: {
-    top: -2,
-  },
-})
+}
