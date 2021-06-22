@@ -63,6 +63,7 @@ function CeloRewardsTerms() {
         description={t("description.first")}
       />
       <View style={styles.container}>
+        <TitleAndDescription title={''} description={t("banner")} descriptionStyle={styles.banner} />
         <TitleAndDescription title={t("terms.title")} />
         <TitleAndDescription
           title={t("terms.howItWorks.title")}
@@ -182,6 +183,13 @@ const styles = StyleSheet.create({
   container: {
     marginTop: HEADER_HEIGHT,
     paddingTop: HEADER_HEIGHT,
+  },
+  banner: {
+    backgroundColor: colors.lightGray,
+    fontSize: 20,
+    padding: 8,
+    borderRadius: 4,
+    marginBottom: 100,
   },
   listItem: {
     fontSize: 18,
