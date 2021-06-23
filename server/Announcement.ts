@@ -1,7 +1,7 @@
 import getConfig from "next/config"
 import airtableInit from "../server/airtable"
 import Sentry from "../server/sentry"
-import cache from "./cache"
+import { fetchCached, MINUTE } from "./cache"
 
 export interface Fields {
   live?: boolean
@@ -17,7 +17,12 @@ interface Record {
 // countryCode is a ISO 3166-1 alpha-2
 export default async function latestAnnouncements(countryCode: string): Promise<Fields[]> {
   try {
-    const announcements = await cache<Fields[]>("blue-announcements", fetchAnouncmentRecords)
+    const announcements = await fetchCached<Fields[]>(
+      "blue-announcements",
+      "en",
+      1 * MINUTE,
+      fetchAnouncmentRecords
+    )
 
     const anyBlocked = announcements.some(
       (announcement) => announcement.block && announcement.block.length > 0
