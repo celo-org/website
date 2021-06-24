@@ -1,45 +1,53 @@
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
 import OpenGraph from "src/header/OpenGraph"
 import celoHero from "src/home/celo-hero.png"
-import HomeBackers from "src/home/HomeBackers"
-import Involvement from "src/home/Involvement"
-import HomeBuild from "src/home/HomeBuild"
-import { TwoAssets } from "src/home/TwoAssets"
-import { NameSpaces, useTranslation } from "src/i18n"
 import Cover from "./Cover"
 import Press from "src/press/Press"
 import { useScreenSize } from "src/layout/ScreenSize"
+import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
+import { GridRow } from "src/layout/Grid2"
+import { css } from "@emotion/react"
+import { cellSwitch } from "./cellSwitch"
+type Props = ContentfulPage<GridRowContentType>
 
-
-export default function Home() {
-  const { t } = useTranslation(NameSpaces.home)
+export default function Home(props: Props) {
   const { isMobile } = useScreenSize()
   return (
-    <View style={styles.container}>
+    <div css={rootCss}>
       <OpenGraph
-        title={t("pageTitle")}
-        description={t("pageDescription")}
+        title={props.title}
+        description={props.description}
         path={"/"}
         image={celoHero}
       />
       <Cover />
       {!isMobile && <Press />}
-      <HomeBuild />
-      <TwoAssets />
-      <Involvement />
-      <HomeBackers />
-    </View>
+      {props.sections.map(section =>{
+        if (section.sys.contentType.sys.id === "grid-row") {
+          const fields = section.fields as GridRowContentType
+          return (
+            <GridRow
+              key={section.sys.id}
+              id={fields.id}
+              columns={fields.columns}
+              css={css(fields.cssStyle)}
+            >
+              {fields.cells.map((cell) => cellSwitch(cell, fields.darkMode))}
+            </GridRow>
+          )
+      } else {
+        console.log("no rendered for", section.sys.contentType.sys.id )
+      }
+      })
+    }
+    </div>
   )
 }
 
-
-const styles = StyleSheet.create({
-  container: {
-    display: "flex",
-    position: "relative",
-    flexDirection: "column",
-    overflow: "hidden",
-    maxWidth: "100vw",
-  },
+const rootCss = css({
+  display: "flex",
+  position: "relative",
+  flexDirection: "column",
+  overflow: "hidden",
+  maxWidth: "100vw",
 })
