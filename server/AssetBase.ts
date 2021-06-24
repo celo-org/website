@@ -1,7 +1,7 @@
 import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import AssetProps from "src/../fullstack/AssetProps"
-import { fetchCached, MINUTE } from "../server/cache"
+import { fetchCached, MINUTE } from "./cache"
 import airtableInit from "./airtable"
 
 const ASSSET_FIELD_LIGHT = "Assets (on light bg)"
