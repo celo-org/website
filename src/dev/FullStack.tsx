@@ -187,7 +187,7 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
               title={t("mobile.title")}
               text={t("mobile.text")}
               buttonOne={{ title: t("installWallet"), href: CeloLinks.walletApp }}
-              buttonTwo={{ title: t("seeCode"), href: CeloLinks.monorepo }}
+              buttonTwo={{ title: t("seeCode"), href: CeloLinks.gitHub }}
             >
               <Li style={textStyles.invert}>{t("mobile.nonCustodial")}</Li>
               <Li style={textStyles.invert}>{t("mobile.mobileUltra")}</Li>
@@ -202,7 +202,7 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
               title={t("protocol.title")}
               text={t("protocol.text")}
               buttonOne={{ title: t("readMore"), href: CeloLinks.docsOverview }}
-              buttonTwo={{ title: t("seeCode"), href: CeloLinks.monorepo }}
+              buttonTwo={{ title: t("seeCode"), href: CeloLinks.gitHub }}
             >
               <Li style={textStyles.invert}>{t("protocol.algoReserve")}</Li>
               <Li style={textStyles.invert}>{t("protocol.cryptoCollat")}</Li>
