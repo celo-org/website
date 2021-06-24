@@ -27,7 +27,12 @@ import { flex, flexRow, fonts, WHEN_MOBILE, WHEN_TABLET, whiteText } from "src/e
 
 const MENU = [
   menu.HOME,
-  ...MAIN_MENU,
+  menu.ABOUT_US,
+  menu.JOBS,
+  menu.BUILD,
+  menu.DEVELOPERS,
+  menu.ALLIANCE_COLLECTIVE,
+  menu.COMMUNITY,
   {
     name: "annualReport",
     link: "https://drive.google.com/file/d/1V00HirrpwSaUsapZoWVglRexBvrFuud7/view",
