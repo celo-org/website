@@ -4805,7 +4805,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
                   dir="auto"
-                  href="https://github.com/celo-org"
+                  href="https://github.com/celo-org/celo-monorepo"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
