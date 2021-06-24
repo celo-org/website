@@ -187,7 +187,7 @@ export default function Header() {
         willShowHamburger={willShowHamburger}
         isHomePage={isHomePage}
         mobileMenuActive={mobileMenuActive}
-        bannerHeight={bannerHeight}
+        bannerHeight={isBannerShowing ? bannerHeight : 0}
         clickHamburger={clickHamburger}
       />
     </div>
@@ -425,7 +425,7 @@ const styles = {
   }),
   hamburger: css({
     position: "fixed",
-    top: 5,
+    top: 0,
     right: 5,
     opacity: 0,
     display: "none",
