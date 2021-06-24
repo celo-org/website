@@ -25,9 +25,9 @@ export enum Spans {
 
 export function GridRow(props: GridProps) {
   const gridTemplateColumns = "1fr ".repeat(props.columns)
-  const mainCss = css(rootCss, {
-    [WHEN_DESKTOP]: { gridTemplateColumns },
-    [WHEN_TABLET]: { gridTemplateColumns },
+  const mainCss = css(containerCss, {
+    [WHEN_DESKTOP]: {gridTemplateColumns},
+    [WHEN_TABLET]: {gridTemplateColumns}
   })
   return (
     <section css={css(props.wrapperCss, props.darkMode ? darkBackground : wrapperStyle)}>
@@ -38,40 +38,43 @@ export function GridRow(props: GridProps) {
   )
 }
 
-const wrapperStyle = css(flex, {
-  overflow: "hidden",
+const wrapperStyle = css(flex,{
+  overflow: 'hidden',
+  alignItems: "center",
+  alignSelf: 'center',
+  width: '100%',
 })
 
 const darkBackground = css(wrapperStyle, {
   backgroundColor: colors.dark,
 })
 
-const rootCss = css(flex, {
-  alignSelf: "center",
-  flexDirection: "column",
-  paddingLeft: gap / 2,
-  paddingRight: gap / 2,
-  width: "100%",
-  maxWidth: "100vw",
-  overflow: "hidden",
-  flexWrap: "wrap",
-  [WHEN_TABLET]: {
-    display: "grid",
+
+const containerCss = css(flex,{
+    alignSelf: 'center',
+    flexDirection: 'column',
+    paddingLeft: gap / 2,
+    paddingRight: gap / 2,
+    width: '100%',
+    maxWidth: '100vw',
+    overflow: "hidden",
+    flexWrap: "wrap",
     columnGap: `${gap}px`,
-    gridAutoRows: "auto",
-    alignSelf: "center",
-    flexDirection: "row",
-    paddingRight: gap,
-    paddingLeft: gap,
-    width: "100%",
-    maxWidth: 958 + gap,
-  },
-  [WHEN_DESKTOP]: {
-    display: "grid",
-    columnGap: `${gap}px`,
-    gridAutoRows: "auto",
-    alignSelf: "center",
-    width: "100%",
-    maxWidth: 1080 + gap,
-  },
+    [WHEN_TABLET] : {
+      display: "grid",
+      gridAutoRows: "auto",
+      alignSelf: 'center',
+      flexDirection: 'row',
+      paddingRight: gap,
+      paddingLeft: gap,
+      width: '100%',
+      maxWidth: 958 + gap
+    },
+    [WHEN_DESKTOP] : {
+      display: "grid",
+      gridAutoRows: "auto",
+      alignSelf: 'center',
+      width: '100%',
+      maxWidth: 1080 + gap,
+    }
 })

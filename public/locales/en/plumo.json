@@ -1,0 +1,33 @@
+{
+  "pageTitle": "The Plumo Ceremony",
+  "pageDescription": "A SNARK-based ultralight client protocol on Celo",
+  "navSignup": "Join the ceremony",
+  "coverTitle": "Plumo",
+  "coverSubtitle": "Plumo Ceremony is open for contributors",
+  "ctaHeader": "Join the ceremony",
+  "ctaBtn": "Read more",
+  "learnMore": "Learn more",
+  "ceremonyResults": "Ceremony Results",
+  "phase1": "Powers of Tau",
+  "phase2": "Plumo Circuit",
+  "phaseLabel": "Phase",
+  "roundLabel": "Round",
+  "table": {
+    "publicKey": "Public Key",
+    "name": "Name",
+    "attestations": "Attestations"
+  },
+  "round": [
+    "Zero",
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+    "Ten"
+  ]
+}

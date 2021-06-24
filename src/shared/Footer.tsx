@@ -1,6 +1,7 @@
 import * as React from "react"
 import Lazy from "react-lazyload"
-import { Image, StyleSheet, Text, View } from "react-native"
+import { StyleSheet } from "react-native"
+import { css } from "@emotion/react"
 import EmailForm from "src/forms/EmailForm"
 import { NameSpaces, Trans, useTranslation } from "src/i18n"
 import Discord from "src/icons/Discord"
@@ -8,7 +9,6 @@ import Discourse from "src/icons/Discourse"
 import Instagram from "src/icons/Instagram"
 import MediumLogo from "src/icons/MediumLogo"
 import Octocat from "src/icons/Octocat"
-import DefiPulse from "src/icons/DefiPulse"
 import sendCoinIcon from "src/icons/send-green-coin-lg-bg.png"
 import LinkedIn from "src/icons/LinkedIn"
 import Twitch from "src/icons/Twitch"
@@ -20,10 +20,10 @@ import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { useScreenSize } from "src/layout/ScreenSize"
 import RingsGlyph from "src/logos/RingsGlyph"
 import ChangeStory from "src/shared/ChangeStory"
-import FooterColumn from "src/shared/FooterColumn"
-import InlineAnchor from "src/shared/InlineAnchor"
+import FooterColumn, { LinkType } from "src/shared/FooterColumn"
 import menu, { CeloLinks, hashNav, MAIN_MENU } from "src/shared/menu-items"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { colors, standardStyles } from "src/styles"
+import { flex, flexRow, fonts, WHEN_MOBILE, WHEN_TABLET, whiteText } from "src/estyles"
 
 const MENU = [
   menu.HOME,
@@ -56,76 +56,75 @@ const RESOURCE_MENU = [
 ]
 
 const ICON_SIZE = 13
-const SOCIAL_MENU = [
-  {
-    name: "Blog",
-    link: CeloLinks.mediumPublication,
-    icon: <MediumLogo height={ICON_SIZE} color={colors.dark} wrapWithLink={false} />,
-  },
-  {
-    name: "GitHub",
-    link: CeloLinks.gitHub,
-    icon: <Octocat size={ICON_SIZE} color={colors.dark} />,
-  },
-  {
-    name: "Twitter",
-    link: CeloLinks.twitter,
-    icon: <TweetLogo height={ICON_SIZE} color={colors.dark} />,
-  },
-  {
-    name: "Forum",
-    link: CeloLinks.discourse,
-    icon: <Discourse size={ICON_SIZE} color={colors.dark} />,
-  },
-  {
-    name: "Chat",
-    link: CeloLinks.discord,
-    icon: <Discord size={ICON_SIZE} color={colors.dark} />,
-  },
-  {
-    name: "YouTube",
-    link: CeloLinks.youtube,
-    icon: <YouTube size={ICON_SIZE} color={colors.dark} />,
-  },
-  {
-    name: "Instagram",
-    link: CeloLinks.instagram,
-    icon: <Instagram size={ICON_SIZE} />,
-  },
-  {
-    name: "Defi Pulse",
-    link: CeloLinks.defiPulse,
-    icon: <DefiPulse size={ICON_SIZE} color={colors.dark} />,
-  },
-  {
-    name: "LinkedIn",
-    link: CeloLinks.linkedIn,
-    icon: <LinkedIn size={ICON_SIZE} color={colors.dark} />,
-  },
-  {
-    name: "Twitch",
-    link: CeloLinks.twitch,
-    icon: <Twitch size={ICON_SIZE} color={colors.dark} />,
-  },
-  {
-    name: "Reddit",
-    link: CeloLinks.reddit,
-    icon: <Reddit size={ICON_SIZE} color={colors.dark} />,
-  },
-  {
-    name: "Telegram",
-    link: CeloLinks.telegram,
-    icon: <Telegram size={ICON_SIZE} color={colors.dark} />,
-  },
-]
+function socialMenu(darkMode:boolean) {
+  const iconColor = darkMode  ? colors.white : colors.dark
+  return [
+    {
+      name: "Blog",
+      link: CeloLinks.mediumPublication,
+      icon: <MediumLogo height={ICON_SIZE} color={iconColor} wrapWithLink={false} />,
+    },
+    {
+      name: "GitHub",
+      link: CeloLinks.gitHub,
+      icon: <Octocat size={ICON_SIZE} color={iconColor} />,
+    },
+    {
+      name: "Twitter",
+      link: CeloLinks.twitter,
+      icon: <TweetLogo height={ICON_SIZE} color={iconColor} />,
+    },
+    {
+      name: "Forum",
+      link: CeloLinks.discourse,
+      icon: <Discourse size={ICON_SIZE} color={iconColor} />,
+    },
+    {
+      name: "Chat",
+      link: CeloLinks.discord,
+      icon: <Discord size={ICON_SIZE} color={iconColor} />,
+    },
+    {
+      name: "YouTube",
+      link: CeloLinks.youtube,
+      icon: <YouTube size={ICON_SIZE} color={iconColor} />,
+    },
+    {
+      name: "Instagram",
+      link: CeloLinks.instagram,
+      icon: <Instagram size={ICON_SIZE} color={iconColor} />,
+    },
+    {
+      name: "LinkedIn",
+      link: CeloLinks.linkedIn,
+      icon: <LinkedIn size={ICON_SIZE} color={iconColor} />,
+    },
+    {
+      name: "Twitch",
+      link: CeloLinks.twitch,
+      icon: <Twitch size={ICON_SIZE} color={iconColor} />,
+    },
+    {
+      name: "Reddit",
+      link: CeloLinks.reddit,
+      icon: <Reddit size={ICON_SIZE} color={iconColor} />,
+    },
+    {
+      name: "Telegram",
+      link: CeloLinks.telegram,
+      icon: <Telegram size={ICON_SIZE} color={iconColor} />,
+    },
+  ]
+}
 
 interface Props {
   hideForm?: boolean
+  darkMode?: boolean
 }
 
-export default function Footer({ hideForm }: Props) {
+export default function Footer({ hideForm, darkMode }: Props) {
   const { t } = useTranslation(NameSpaces.common)
-  const { isMobile, isTablet } = useScreenSize()
+  const { isMobile } = useScreenSize()
   const year = new Date().getFullYear()
   const footerMenu = React.useMemo(
     () =>
@@ -141,7 +140,7 @@ export default function Footer({ hideForm }: Props) {
     <>
       {!hideForm && (
         <GridRow
-          allStyle={standardStyles.centered}
+          allStyle={[standardStyles.centered, darkMode && standardStyles.darkBackground]}
           desktopStyle={standardStyles.blockMarginTop}
           tabletStyle={standardStyles.blockMarginTopTablet}
           mobileStyle={standardStyles.blockMarginTopMobile}
@@ -151,18 +150,9 @@ export default function Footer({ hideForm }: Props) {
             tabletSpan={Spans.twoThird}
             style={[standardStyles.centered, styles.form]}
           >
-            <Image resizeMode="contain" source={{ uri: sendCoinIcon }} style={styles.emailLogo} />
-            <Text
-              style={[
-                fonts.p,
-                textStyles.center,
-                standardStyles.halfElement,
-                standardStyles.elementalMarginTop,
-              ]}
-            >
-              {t("receiveUpdates")}
-            </Text>
-            <EmailForm submitText={t("signUp")} route={"/contacts"} isDarkMode={false} />
+            <img src={sendCoinIcon} css={emailLogoCss} width={50} height={50} />
+            <p css={recieveUpdatesCss}>{t("receiveUpdates")}</p>
+            <EmailForm submitText={t("signUp")} route={"contact"} isDarkMode={false} />
           </Cell>
         </GridRow>
       )}
@@ -170,27 +160,42 @@ export default function Footer({ hideForm }: Props) {
         desktopStyle={standardStyles.blockMarginTop}
         tabletStyle={[standardStyles.blockMarginTopTablet, styles.column]}
         mobileStyle={standardStyles.blockMarginTopMobile}
+        allStyle={darkMode && standardStyles.darkBackground}
       >
         <Cell span={Spans.third} tabletSpan={Spans.twoThird}>
-          <View style={isMobile ? [standardStyles.centered, styles.ringsMobile] : styles.rings}>
-            <RingsGlyph />
-          </View>
-          <Details />
+          <div css={ringsCSS}>
+            <RingsGlyph darkMode={darkMode} />
+          </div>
+          <Details darkMode={darkMode} />
         </Cell>
         <Cell span={Spans.twoThird} tabletSpan={Spans.full}>
           {isMobile ? (
-            <MobileLinks footerMenu={footerMenu} />
+            <MobileLinks footerMenu={footerMenu} darkMode={darkMode} />
           ) : (
-            <View style={isTablet ? styles.linksAreaTablet : styles.linksArea}>
-              <FooterColumn style={styles.linkColumnStart} heading={"Celo"} links={footerMenu} />
-              <FooterColumn heading={t("footer.technology")} links={TECH_MENU} />
-              <FooterColumn heading={t("footer.resources")} links={RESOURCE_MENU} />
+            <div css={linksAreaCss}>
               <FooterColumn
-                style={styles.linkColumnEnd}
-                heading={t("footer.social")}
-                links={SOCIAL_MENU}
+                css={linkColumnStartCss}
+                heading={"Celo"}
+                links={footerMenu}
+                darkMode={darkMode}
               />
-            </View>
+              <FooterColumn
+                heading={t("footer.technology")}
+                links={TECH_MENU}
+                darkMode={darkMode}
+              />
+              <FooterColumn
+                heading={t("footer.resources")}
+                links={RESOURCE_MENU}
+                darkMode={darkMode}
+              />
+              <FooterColumn
+                darkMode={darkMode}
+                css={linkColumnEndCss}
+                heading={t("footer.social")}
+                links={socialMenu(darkMode)}
+              />
+            </div>
           )}
         </Cell>
       </GridRow>
@@ -198,108 +203,153 @@ export default function Footer({ hideForm }: Props) {
         desktopStyle={standardStyles.blockMargin}
         tabletStyle={standardStyles.blockMarginTablet}
         mobileStyle={standardStyles.blockMarginMobile}
+        allStyle={darkMode && standardStyles.darkBackground}
       >
         <Cell span={Spans.full} style={isMobile ? standardStyles.centered : styles.toes}>
           <Lazy unmountIfInvisible={true}>
-            <ChangeStory />
+            <ChangeStory darkMode={darkMode} />
           </Lazy>
-          <Text style={[fonts.legal, styles.copyright, isMobile && textStyles.center]}>
+          <small css={css(copyrightStyle, darkMode && whiteText)}>
             {t("footer.copyright", { year })}
-          </Text>
+          </small>
         </Cell>
       </GridRow>
     </>
   )
 }
 
-interface ModuleLinksProps {
-  footerMenu: typeof MENU
+interface MobileLinkProps {
+  footerMenu: LinkType[]
+  darkMode: boolean
 }
 
-function MobileLinks({ footerMenu }: ModuleLinksProps) {
+function MobileLinks({ footerMenu, darkMode }: MobileLinkProps) {
   const { t } = useTranslation(NameSpaces.common)
 
   return (
     <>
-      <View style={standardStyles.row}>
-        <FooterColumn heading={"Celo"} links={footerMenu} />
+      <div css={flexRow}>
+        <FooterColumn darkMode={darkMode} heading={"Celo"} links={footerMenu} />
         <FooterColumn
+          darkMode={darkMode}
           heading={t("footer.social")}
-          links={SOCIAL_MENU}
-          style={styles.endMobileColumn}
+          links={socialMenu(darkMode)}
+          css={endMobileColumnCss}
         />
-      </View>
-      <View style={standardStyles.row}>
-        <FooterColumn heading={t("footer.resources")} links={RESOURCE_MENU} />
+      </div>
+      <div css={flexRow}>
+        <FooterColumn darkMode={darkMode} heading={t("footer.resources")} links={RESOURCE_MENU} />
         <FooterColumn
+          darkMode={darkMode}
           heading={t("footer.technology")}
           links={TECH_MENU}
-          style={styles.endMobileColumn}
+          css={endMobileColumnCss}
         />
-      </View>
+      </div>
     </>
   )
 }
 
-const Details = React.memo(function _Details() {
+interface DetailProps {
+  darkMode?: boolean
+}
+
+const Details = React.memo(function _Details({darkMode}: DetailProps) {
   const { t } = useTranslation(NameSpaces.common)
-  const { isMobile } = useScreenSize()
-  const fontStyling = [
+  const fontStyling = css(
     fonts.legal,
-    styles.detailsText,
-    !isMobile ? textStyles.left : textStyles.center,
-  ]
-  return (
-    <View style={[styles.details, isMobile && standardStyles.centered]}>
-      <Text style={fontStyling}>{t("disclaimer")}</Text>
-      <Text style={fontStyling}>
-        <Trans ns={NameSpaces.common} i18nKey={"footerReadMoreTerms"}>
-          <InlineAnchor href={menu.TERMS.link}>Terms of Service</InlineAnchor>
-        </Trans>
-      </Text>
-    </View>
+    detailsTextCss,
+    darkMode && whiteText,
   )
+  return (
+    <div css={detailsCss}>
+      <p css={fontStyling}>{t("disclaimer")}</p>
+      <p css={fontStyling}>
+        <Trans ns={NameSpaces.common} i18nKey={"footerReadMoreTerms"}>
+          <a css={hrefCss} href={menu.TERMS.link}>Terms of Service</a>
+        </Trans>
+      </p>
+    </div>
+  )
+})
+
+const detailsCss = css(flex, {
+  paddingBottom: 20,
+  [WHEN_MOBILE]: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+})
+
+const hrefCss = css({
+    color: "inherit"
+})
+
+const recieveUpdatesCss = css(
+  fonts.body,
+  {
+    textAlign: "center",
+    marginTop: 20,
+    marginBottom: 10
+  }
+)
+
+const detailsTextCss = css({
+  marginBottom: 20,
+  maxWidth: 350,
+  textAlign: "left",
+  [WHEN_MOBILE]: {
+    textAlign: "center",
+  },
 })
 
 const styles = StyleSheet.create({
   column: {
     flexDirection: "column",
   },
-  linksArea: {
-    flexDirection: "row",
-    justifyContent: "space-around",
-  },
-  linksAreaTablet: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  details: {
-    paddingBottom: 20,
-  },
-  detailsText: {
-    marginBottom: 20,
-    maxWidth: 350,
-  },
-  ringsMobile: { marginBottom: 30 },
-  rings: { marginBottom: 20, transform: [{ translateY: -10 }] },
   form: {
     maxWidth: 550,
   },
-  emailLogo: { width: 50, height: 50, marginVertical: 10 },
   toes: {
     flexDirection: "row",
     justifyContent: "space-between",
   },
-  linkColumnStart: {
-    paddingStart: 0,
+})
+
+const linkColumnStartCss = css({
+  paddingStart: 0,
+})
+
+const linkColumnEndCss = css({
+  paddingEnd: 0,
+})
+
+const endMobileColumnCss = css({
+  marginLeft: 20,
+})
+
+const copyrightStyle = css(fonts.legal, {
+  zIndex: 10, // ensure copyright is above the sliding div from ChangeStory animation
+})
+
+const ringsCSS = css(flex, {
+  marginBottom: 20,
+  transform: "translateY(-10px)",
+  [WHEN_MOBILE]: {
+    marginBottom: 30,
+    justifyContent: "center",
+    alignItems: "center",
   },
-  linkColumnEnd: {
-    paddingEnd: 0,
-  },
-  endMobileColumn: {
-    marginLeft: 20,
-  },
-  copyright: {
-    zIndex: 10, // ensure copyright is above the sliding div from ChangeStory animation
+})
+
+const emailLogoCss = css({
+  objectFit: "contain",
+  margin: 10,
+})
+
+const linksAreaCss = css(flexRow, {
+  justifyContent: "space-around",
+  [WHEN_TABLET]: {
+    justifyContent: "space-between",
   },
 })

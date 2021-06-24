@@ -5801,12 +5801,13 @@ Blue represents help within digital experiences like websites and mobile applica
         }
       >
         <div
-          className="css-view-1dbjc4n"
-          style={
+          css={
             Object {
-              "WebkitTransform": "translateY(-10px)",
-              "marginBottom": "20px",
-              "transform": "translateY(-10px)",
+              "map": undefined,
+              "name": "imitc6",
+              "next": undefined,
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-bottom:20px;transform:translateY(-10px);@media (max-width: 576px){margin-bottom:30px;justify-content:center;align-items:center;}",
+              "toString": [Function],
             }
           }
         >
@@ -5831,84 +5832,56 @@ Blue represents help within digital experiences like websites and mobile applica
           </svg>
         </div>
         <div
-          className="css-view-1dbjc4n"
-          style={
+          css={
             Object {
-              "paddingBottom": "20px",
+              "map": undefined,
+              "name": "mel2sl",
+              "next": undefined,
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;padding-bottom:20px;@media (max-width: 576px){justify-content:center;align-items:center;}",
+              "toString": [Function],
             }
           }
         >
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
+          <p
+            css={
               Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "16px",
-                "lineHeight": "20px",
-                "marginBottom": "20px",
-                "maxWidth": "350px",
-                "textAlign": "left",
-                "textRendering": "geometricPrecision",
+                "map": undefined,
+                "name": "t37gzz",
+                "next": undefined,
+                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
+                "toString": [Function],
               }
             }
           >
             Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
-          </div>
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
+          </p>
+          <p
+            css={
               Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "16px",
-                "lineHeight": "20px",
-                "marginBottom": "20px",
-                "maxWidth": "350px",
-                "textAlign": "left",
-                "textRendering": "geometricPrecision",
+                "map": undefined,
+                "name": "t37gzz",
+                "next": undefined,
+                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
+                "toString": [Function],
               }
             }
           >
             Read more in Celo 
-            <div
-              className="css-view-1dbjc4n"
-              onClick={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              style={
+            <a
+              css={
                 Object {
-                  "display": "inline",
+                  "map": undefined,
+                  "name": "q2y3yl",
+                  "next": undefined,
+                  "styles": "color:inherit;",
+                  "toString": [Function],
                 }
               }
+              href="/terms"
             >
-              <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-                href="/terms"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-                role="link"
-                style={
-                  Object {
-                    "WebkitTextDecorationStyle": "solid",
-                    "cursor": "pointer",
-                    "display": "inline",
-                    "opacity": 1,
-                    "textDecoration": "underline",
-                    "textDecorationStyle": "solid",
-                  }
-                }
-              >
-                Terms of Service
-              </a>
-            </div>
-          </div>
+              Terms of Service
+            </a>
+          </p>
         </div>
       </div>
       <div
@@ -5931,54 +5904,48 @@ Blue represents help within digital experiences like websites and mobile applica
         }
       >
         <div
-          className="css-view-1dbjc4n"
-          style={
+          css={
             Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "horizontal",
-              "WebkitBoxPack": "justify",
-              "WebkitFlexDirection": "row",
-              "WebkitJustifyContent": "space-around",
-              "flexDirection": "row",
-              "justifyContent": "space-around",
-              "msFlexDirection": "row",
-              "msFlexPack": "distribute",
+              "map": undefined,
+              "name": "1qrhj6b",
+              "next": undefined,
+              "styles": "box-sizing:border-box;display:flex;flex-direction:row;;justify-content:space-around;@media (min-width: 576px) and (max-width: 992px){justify-content:space-between;}",
+              "toString": [Function],
             }
           }
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
+            css={
               Object {
-                "paddingLeft": "0px",
-                "paddingRight": "25px",
+                "map": undefined,
+                "name": "n94rvo",
+                "next": undefined,
+                "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
+                "toString": [Function],
               }
             }
           >
-            <div
-              className="css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              style={
+            <h6
+              css={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "18px",
-                  "marginBottom": "20px",
-                  "textRendering": "geometricPrecision",
+                  "map": undefined,
+                  "name": "1qbjl2m",
+                  "next": undefined,
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
+                  "toString": [Function],
                 }
               }
             >
               Celo
-            </div>
+            </h6>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6029,11 +5996,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6084,11 +6053,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6139,11 +6110,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6194,11 +6167,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6249,11 +6224,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6304,11 +6281,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6359,11 +6338,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6415,38 +6396,37 @@ Blue represents help within digital experiences like websites and mobile applica
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
-            style={
+            css={
               Object {
-                "paddingLeft": "25px",
-                "paddingRight": "25px",
+                "map": undefined,
+                "name": "n94rvo",
+                "next": undefined,
+                "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
+                "toString": [Function],
               }
             }
           >
-            <div
-              className="css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              style={
+            <h6
+              css={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "18px",
-                  "marginBottom": "20px",
-                  "textRendering": "geometricPrecision",
+                  "map": undefined,
+                  "name": "1qbjl2m",
+                  "next": undefined,
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
+                  "toString": [Function],
                 }
               }
             >
               Technology
-            </div>
+            </h6>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6497,11 +6477,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6552,11 +6534,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6607,11 +6591,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6662,11 +6648,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6718,38 +6706,37 @@ Blue represents help within digital experiences like websites and mobile applica
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
-            style={
+            css={
               Object {
-                "paddingLeft": "25px",
-                "paddingRight": "25px",
+                "map": undefined,
+                "name": "n94rvo",
+                "next": undefined,
+                "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
+                "toString": [Function],
               }
             }
           >
-            <div
-              className="css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              style={
+            <h6
+              css={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "18px",
-                  "marginBottom": "20px",
-                  "textRendering": "geometricPrecision",
+                  "map": undefined,
+                  "name": "1qbjl2m",
+                  "next": undefined,
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
+                  "toString": [Function],
                 }
               }
             >
               Resources
-            </div>
+            </h6>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6800,11 +6787,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6855,11 +6844,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6910,11 +6901,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -6965,11 +6958,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7020,11 +7015,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7075,11 +7072,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7130,11 +7129,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7185,11 +7186,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7240,11 +7243,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7296,38 +7301,37 @@ Blue represents help within digital experiences like websites and mobile applica
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
-            style={
+            css={
               Object {
-                "paddingLeft": "25px",
-                "paddingRight": "0px",
+                "map": undefined,
+                "name": "n94rvo",
+                "next": undefined,
+                "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
+                "toString": [Function],
               }
             }
           >
-            <div
-              className="css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              style={
+            <h6
+              css={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "18px",
-                  "marginBottom": "20px",
-                  "textRendering": "geometricPrecision",
+                  "map": undefined,
+                  "name": "1qbjl2m",
+                  "next": undefined,
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
+                  "toString": [Function],
                 }
               }
             >
               Social
-            </div>
+            </h6>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7402,11 +7406,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7483,11 +7489,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7562,11 +7570,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7641,11 +7651,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7722,11 +7734,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7801,11 +7815,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -7870,6 +7886,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       </title>
                       <path
                         d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                        fill="#2E3338"
                       />
                     </svg>
                   </div>
@@ -7878,87 +7895,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
-                }
-              }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
-              >
-                <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  dir="auto"
-                  href="https://defipulse.com/"
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                  rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(46,51,56,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
-                  target="_blank"
-                >
-                  <div
-                    className="css-view-1dbjc4n"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
-                  >
-                    <svg
-                      fill="none"
-                      height={13}
-                      viewBox="0 0 13 15"
-                      width={13}
-                    >
-                      <path
-                        d="M10.6466 3.80952C11.9841 5.16483 12.5806 6.66667 12.5806 8.60806C12.5806 12.381 9.8693 15 6.00111 15H2.20523L0 12.7656V0H3.86819C5.94689 0 7.68215 0.750916 8.87514 2.01465L10.6466 3.80952ZM2.09677 2.01465L2.0787 2.47253L3.95856 4.35897V3.9011L2.09677 2.01465ZM4.26585 3.84615L2.45829 2.01465H2.20523L4.01279 3.84615H4.26585ZM4.8985 3.84615L3.09093 2.01465H2.58482L4.39238 3.84615H4.8985ZM3.88626 2.01465H3.21746L5.02503 3.84615H5.69383L3.88626 2.01465ZM6.34455 3.84615L4.57314 2.05128C4.39238 2.03297 4.21162 2.01465 4.01279 2.01465L5.82036 3.84615H6.00111C6.10957 3.84615 6.23609 3.84615 6.34455 3.84615ZM6.90489 3.9011L5.18771 2.16117C5.0431 2.12454 4.88042 2.10623 4.71774 2.0696L6.47108 3.84615C6.61568 3.86447 6.77836 3.88278 6.90489 3.9011ZM7.42909 4.0293L5.74805 2.32601C5.62152 2.28938 5.49499 2.23443 5.35039 2.1978L7.06757 3.93773C7.1941 3.97436 7.30256 3.99267 7.42909 4.0293ZM7.60984 4.10256C7.7183 4.15751 7.84483 4.21245 7.95328 4.2674L6.32647 2.61905C6.21802 2.5641 6.09149 2.49084 5.96496 2.4359L7.60984 4.10256ZM2.06062 6.00733L2.38598 6.337L2.31368 6.41026L2.06062 6.15385V10.8608H3.94049V4.48718L2.06062 2.60073V3.04029L3.85011 4.85348L3.77781 4.90842L2.06062 3.1685V3.62637L3.54283 5.14652L3.4886 5.21978L2.06062 3.77289V4.23077L3.25361 5.45788L3.19939 5.53114L2.06062 4.37729V4.83517L2.9644 5.76923L2.91018 5.84249L2.06062 4.98169V5.45788L2.67519 6.08059L2.60289 6.15385L2.06062 5.6044V6.00733ZM7.82675 3.99267C7.51947 3.51648 7.1218 3.11355 6.65183 2.8022L7.82675 3.99267ZM10.4658 3.97436L9.74277 3.22344C10.2127 4.13919 10.5381 5.25641 10.5381 6.42857C10.5381 6.55678 10.5381 6.68498 10.5381 6.79487L12.3457 8.64469V8.60806C12.3276 6.72161 11.7311 5.29304 10.4658 3.97436ZM4.19355 10.8608C6.77836 10.7143 8.44132 8.99267 8.44132 6.44689C8.44132 5.78755 8.33287 5.16483 8.11596 4.6337C7.57369 4.24908 6.95912 4.10256 6.00111 4.10256H4.19355V10.8608ZM10.1585 8.73626L12.0384 10.641C12.2191 10.0549 12.3276 9.43223 12.3457 8.75458L10.52 6.90476C10.4658 7.58242 10.3393 8.1685 10.1585 8.73626ZM12.0022 10.7326L10.1224 8.82784C9.95968 9.28572 9.74277 9.70696 9.48971 10.0733L11.3877 12.0147C11.6407 11.63 11.8395 11.1905 12.0022 10.7326ZM10.6104 12.9853C10.8815 12.7106 11.1165 12.4176 11.3334 12.0879L9.43548 10.1648C9.21858 10.4762 8.96552 10.7692 8.67631 11.044L10.6104 12.9853ZM7.84483 11.7033L9.77892 13.663C10.0501 13.4799 10.3031 13.2601 10.5562 13.0403L8.62208 11.0806C8.36902 11.3187 8.11596 11.5201 7.84483 11.7033ZM6.9772 12.1795L8.91129 14.1392C9.18242 14.011 9.43548 13.8645 9.68854 13.7179L7.75445 11.7582C7.51947 11.9231 7.26641 12.0513 6.9772 12.1795ZM6.14572 12.4908L8.07981 14.4506C8.33287 14.3773 8.58593 14.2857 8.83899 14.1758L6.90489 12.2161C6.65184 12.326 6.41685 12.4176 6.14572 12.4908ZM5.35039 12.6923L7.26641 14.652C7.51947 14.6154 7.75445 14.5604 7.98943 14.4872L6.07341 12.5458C5.83843 12.6007 5.58537 12.6557 5.35039 12.6923ZM5.22386 12.7106C5.00695 12.7473 4.79004 12.7839 4.57314 12.8022L6.47108 14.7253C6.70606 14.7253 6.92297 14.6886 7.13988 14.6703L5.22386 12.7106ZM5.74805 14.7436H6.00111C6.12764 14.7436 6.2361 14.7436 6.36263 14.7436L4.46468 12.8205C4.26585 12.8205 4.06702 12.8388 3.86819 12.8388L5.74805 14.7436ZM0.433815 12.8205L2.31368 14.7253H2.44021L0.560345 12.8205H0.433815ZM0.686874 12.8205L2.56674 14.7253H2.72942L0.849555 12.8205H0.686874ZM0.958009 12.8205L2.83788 14.7253H3.03671L1.17492 12.8205H0.958009ZM1.30145 12.8205L3.18131 14.7253H3.43437L1.5545 12.8205H1.30145ZM1.68103 12.8205L3.5609 14.7253H3.86819L1.98832 12.8205H1.68103ZM2.11485 12.8205L3.99472 14.7253H4.3743L2.47636 12.8205H2.11485ZM2.62097 12.8205L4.50083 14.7253H4.95272L3.07286 12.8205H2.62097ZM3.19939 12.8205L5.07925 14.7253H5.62152L3.72358 12.8205H3.19939Z"
-                        fill="#2E3338"
-                      />
-                    </svg>
-                  </div>
-                  Defi Pulse
-                </a>
-              </div>
-            </div>
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -8030,11 +7973,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -8106,11 +8051,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -8182,11 +8129,13 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
+              css={
                 Object {
-                  "marginBottom": "8px",
-                  "marginTop": "8px",
+                  "map": undefined,
+                  "name": "1xlzx9v",
+                  "next": undefined,
+                  "styles": "margin-top:8px;margin-bottom:8px;",
+                  "toString": [Function],
                 }
               }
             >
@@ -8323,23 +8272,19 @@ Blue represents help within digital experiences like websites and mobile applica
             }
           />
         </div>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
+        <small
+          css={
             Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "16px",
-              "lineHeight": "20px",
-              "textRendering": "geometricPrecision",
-              "zIndex": 10,
+              "map": undefined,
+              "name": "2xk5ul",
+              "next": undefined,
+              "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;z-index:10;;",
+              "toString": [Function],
             }
           }
         >
           The Celo Foundation, © Celo 2021
-        </div>
+        </small>
       </div>
     </div>
   </div>

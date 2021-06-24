@@ -9,24 +9,12 @@ import preview from "src/community/connect/preview.jpg"
 import Tenets from "src/community/connect/Tenets"
 import EcoFund from "src/community/EcoFund"
 import OpenGraph from "src/header/OpenGraph"
-import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import {  NameSpaces, useTranslation } from "src/i18n"
 import { hashNav } from "src/shared/menu-items"
 
-type Props = I18nProps
 
-// only send used translations to the client
-const NAME_SPACES = ["common", "community"]
-
-export class CommunityPage extends React.Component<Props> {
-  // This is Next.js method that runs serverside. it is only available on page components
-  static getInitialProps = () => {
-    return {
-      namespacesRequired: NAME_SPACES,
-    }
-  }
-
-  render() {
-    const { t } = this.props
+export function CommunityPage() {
+    const { t } = useTranslation(NameSpaces.community)
     return (
       <>
         <OpenGraph
@@ -51,7 +39,6 @@ export class CommunityPage extends React.Component<Props> {
         </View>
       </>
     )
-  }
 }
 
-export default withNamespaces(NameSpaces.community)(CommunityPage)
+export default CommunityPage

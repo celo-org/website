@@ -5,9 +5,6 @@ import Rise from "src/join/Rise"
 import LogoCombinedColor from "src/logos/LogoLightBg"
 
 export default class RiseDemo extends React.PureComponent {
-  static getInitialProps = () => {
-    return { namespacesRequired: [] }
-  }
   render() {
     return (
       <>

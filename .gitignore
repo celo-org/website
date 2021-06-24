@@ -13,3 +13,6 @@ sandbox.tsx
 /public/sitemap.xml
 /public/robots.txt
 .eslintcache
+.env.development
+.env.local
+.env.production

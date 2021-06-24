@@ -1,4 +1,16 @@
-import page, { getServerSideProps as gsp } from "src/public-sector/PublicSectorPage"
+import page from "src/public-sector/PublicSectorPage"
+import { getPageBySlug } from "src/utils/contentful"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+import { NameSpaces } from "src/i18n"
+
 export default page
 
-export const getServerSideProps = gsp
+export async function getServerSideProps({  locale  }) {
+  const page = await getPageBySlug("public-sector", { locale: "en-US" }, true)
+  return {
+    props: {
+        ...page,
+        ...(await serverSideTranslations(locale, [NameSpaces.common, NameSpaces.terms])),
+    },
+  }
+}

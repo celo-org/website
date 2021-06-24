@@ -29,11 +29,7 @@ export const garamond = css({
   fontFamily: typeFaces.garamond,
 })
 
-export const whiteText = css({
-  color: "white",
-})
-
-export const sectionTitle = css(jost, {
+export const sectionTitle = css(jost,{
   marginTop: 8,
   fontWeight: 500,
   fontSize: 12,
@@ -53,19 +49,22 @@ const headingReset = css({
 
 export const fonts = {
   body,
-  h1: css(fontInfo.h1 as any, headingReset, { lineHeight: `${fontInfo.h1.lineHeight}px` }),
-  h1Mobile: css(fontInfo.h1Mobile as any, headingReset, {
-    lineHeight: `${fontInfo.h1Mobile.lineHeight}px`,
-  }),
-  h2: css(headingReset, fontInfo.h2 as any, { lineHeight: `${fontInfo.h2.lineHeight}px` }),
-  h3: css(headingReset, fontInfo.h3 as any, { lineHeight: `${fontInfo.h3.lineHeight}px` }),
-  h4: css(headingReset, fontInfo.h4 as any, { lineHeight: `${fontInfo.h4.lineHeight}px` }),
-  h5: css(headingReset, fontInfo.h5 as any, { lineHeight: `${fontInfo.h5.lineHeight}px` }),
-  h6: css(headingReset, fontInfo.h6 as any, { lineHeight: `${fontInfo.h6.lineHeight}px` }),
-  navigation: css(fontInfo.navigation as any, {
-    lineHeight: `${fontInfo.navigation.lineHeight}px`,
-  }),
+  h1: css(fontInfo.h1 as any, headingReset, {lineHeight: `${fontInfo.h1.lineHeight}px`}),
+  h1Mobile: css(fontInfo.h1Mobile as any, headingReset, {lineHeight: `${fontInfo.h1Mobile.lineHeight}px`}),
+  h2: css(headingReset, fontInfo.h2 as any,  {lineHeight: `${fontInfo.h2.lineHeight}px`}),
+  h3: css(headingReset, fontInfo.h3 as any,  {lineHeight: `${fontInfo.h3.lineHeight}px`}),
+  h4: css(headingReset, fontInfo.h4 as any,  {lineHeight: `${fontInfo.h4.lineHeight}px`}),
+  h5: css(headingReset, fontInfo.h5 as any,  {lineHeight: `${fontInfo.h5.lineHeight}px`}),
+  h6: css(headingReset, fontInfo.h6 as any,  {lineHeight: `${fontInfo.h6.lineHeight}px`}),
+  legal: css(headingReset, fontInfo.legal as any,  {lineHeight: `${fontInfo.legal.lineHeight}px`}),
+  navigation: css(fontInfo.navigation as any,  {lineHeight: `${fontInfo.navigation.lineHeight}px`}),
 }
+
+
+export const whiteText = css({
+  color: colors.white
+})
+
 
 export const textStyles = {
   center: css({
@@ -94,9 +93,10 @@ export const WHEN_TABLET = `@media (min-width: ${TABLET_BREAKPOINT}px) and (max-
 
 export const WHEN_MOBILE = `@media (max-width: ${TABLET_BREAKPOINT}px)`
 
+export const WHEN_LONG_PHONE = `@media (max-width: 400px) and (min-height: 790px)`
+
 export const WHEN_SMALL_MOBILE = `@media (max-width: 330px)`
 
-export const WHEN_LONG_PHONE = `@media (max-width: 400px) and (min-height: 790px)`
 
 export const labelStyle = css(jost, flex, {
   color: colors.secondary,
@@ -136,5 +136,5 @@ export const inputDarkStyle = css(inputStyle, {
 })
 
 export const errorStyle = css({
-  color: colors.error,
+  color: colors.error
 })
