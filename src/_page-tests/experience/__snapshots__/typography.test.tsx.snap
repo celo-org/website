@@ -2219,7 +2219,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "24px",
                         "fontWeight": "400",
-                        "lineHeight": "28px",
+                        "lineHeight": "50px",
                         "textRendering": "geometricPrecision",
                       }
                     }
@@ -2288,7 +2288,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     >
                       24
                       px / 
-                      28
+                      50
                       px
                     </div>
                   </div>
