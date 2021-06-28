@@ -425,7 +425,7 @@ const styles = {
   }),
   hamburger: css({
     position: "fixed",
-    top: 0,
+    top: 10,
     right: 5,
     opacity: 0,
     display: "none",
