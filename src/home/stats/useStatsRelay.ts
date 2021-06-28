@@ -39,20 +39,11 @@ export default function useStatsRelay() {
       case "init":
         const addressCount = toNumber(action.value.addressCount)
         return { ...action.value, addressCount }
-      case StatKeys.addressCount:
-        const addressAsNumber = toNumber(action.value)
-        if (addressAsNumber > state.addressCount) {
-          return { ...state, addressCount: addressAsNumber }
-        }
-        return state
       case StatKeys.avgBlockTime:
         return { ...state, avgBlockTime: action.value }
-      case StatKeys.blockCount:
-        return { ...state, blockCount: action.value }
       case StatKeys.totalTx:
         return { ...state, totalTx: action.value }
       default:
-        console.warn("Bug", action)
         return state
     }
   }, initialState)
@@ -94,7 +85,7 @@ export default function useStatsRelay() {
           dispatch(update)
         }
       })
-    }, 350)
+    }, 250)
 
     ws.current.onclose = (data) => console.info("ws closed", data)
 
