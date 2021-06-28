@@ -21,13 +21,18 @@ import { useScreenSize } from "src/layout/ScreenSize"
 import RingsGlyph from "src/logos/RingsGlyph"
 import ChangeStory from "src/shared/ChangeStory"
 import FooterColumn, { LinkType } from "src/shared/FooterColumn"
-import menu, { CeloLinks, hashNav, MAIN_MENU } from "src/shared/menu-items"
+import menu, { CeloLinks, hashNav } from "src/shared/menu-items"
 import { colors, standardStyles } from "src/styles"
 import { flex, flexRow, fonts, WHEN_MOBILE, WHEN_TABLET, whiteText } from "src/estyles"
 
 const MENU = [
   menu.HOME,
-  ...MAIN_MENU,
+  menu.ABOUT_US,
+  menu.JOBS,
+  menu.BUILD,
+  menu.DEVELOPERS,
+  menu.ALLIANCE_COLLECTIVE,
+  menu.COMMUNITY,
   {
     name: "annualReport",
     link: "https://drive.google.com/file/d/1V00HirrpwSaUsapZoWVglRexBvrFuud7/view",
