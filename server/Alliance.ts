@@ -4,7 +4,7 @@ import Ally, { NewMember } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
 import addToCRM from "./addToCRM"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
-import { cache } from "./cache"
+import { fetchCached, MINUTE } from "./cache"
 
 export const CATEGORY_FIELD = "Web Category*"
 export const LOGO_FIELD = "Logo Upload"
@@ -24,7 +24,9 @@ const WRITE_SHEET = "Web Requests"
 export default async function getAllies() {
   return Promise.all(
     Object.keys(Category).map((category) => {
-      return cache(`air-${READ_SHEET}-${category}`, fetchAllies, { args: category })
+      return fetchCached(`air-${READ_SHEET}-${category}`, "en", 2 * MINUTE, () =>
+        fetchAllies(category as Category)
+      )
     })
   )
 }

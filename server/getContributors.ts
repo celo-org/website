@@ -2,7 +2,7 @@ import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import { Contributor } from "../src/about/Contributor"
 import airtableInit from "./airtable"
-import { cache } from "./cache"
+import { fetchCached, MINUTE } from "./cache"
 
 interface Fields extends FieldSet {
   "Full Name": string
@@ -17,7 +17,7 @@ interface Fields extends FieldSet {
 const SHEET = "About Profiles"
 
 export default async function getContributors() {
-  return cache(`air-${SHEET}`, fetchContributors)
+  return fetchCached(`air-${SHEET}`, "en", 3 * MINUTE, fetchContributors)
 }
 
 async function fetchContributors() {

@@ -1,6 +1,6 @@
 import { Attachment, FieldSet, Table } from "airtable"
 import airtableInit from "./airtable"
-import cache from "./cache"
+import { fetchCached, MINUTE } from "./cache"
 
 const AIRTABLE_BASE_ID = "appjKfoHvrO5SZWdd"
 
@@ -18,7 +18,7 @@ export enum Sheets {
 }
 
 export default async function getAssets(sheet: Sheets) {
-  return cache(`exp-events-${sheet}`, fetchAssets, { args: sheet, minutes: 10 })
+  return fetchCached(`exp-events-${sheet}`, "en", 5 * MINUTE, () => fetchAssets(sheet))
 }
 
 async function fetchAssets(sheet: Sheets) {
