@@ -692,9 +692,9 @@ exports[`Navigation renders 1`] = `
     css={
       Object {
         "map": undefined,
-        "name": "1oj332q",
+        "name": "1byggte",
         "next": undefined,
-        "styles": "position:fixed;top:5px;right:5px;opacity:0;display:none;@media (min-width: 992px){display:none;};transition-property:opacity color;transition-duration:200ms;;opacity:1;display:block;",
+        "styles": "position:fixed;top:0;right:5px;opacity:0;display:none;@media (min-width: 992px){display:none;};transition-property:opacity color;transition-duration:200ms;;opacity:1;display:block;",
         "toString": [Function],
       }
     }
