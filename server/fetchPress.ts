@@ -1,7 +1,7 @@
 import getConfig from "next/config"
 import { PressArticleFields } from "src/press/PressPage"
 import airtableInit from "./airtable"
-import cache from "./cache"
+import { fetchCached, MINUTE } from "./cache"
 
 async function fetchPress() {
   const records = (await getAirtable()
@@ -11,7 +11,7 @@ async function fetchPress() {
 }
 
 export default async function getMilestones() {
-  const releases = await cache("celo-press", fetchPress)
+  const releases = await fetchCached("celo-press", "en", 1 * MINUTE, fetchPress)
   return releases.map(({ fields }) => fields)
 }
 
