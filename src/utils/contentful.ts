@@ -5,6 +5,7 @@ import getConfig from "next/config"
 import { Page as SideBarEntry } from "src/experience/common/Sidebar"
 import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import { BTN } from "src/shared/Button.3"
+import { fetchCached, MINUTE } from "src/../server/cache"
 
 function intialize() {
   const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -33,8 +34,13 @@ interface InternalKit {
   pageID: string
   sidebar: SideBarEntry[]
 }
-
 export async function getKit(kitSlug: string, pageSlug: string, { locale }): Promise<InternalKit> {
+  return fetchCached(`kit:${kitSlug}:${pageSlug || "home"}`, locale, 3 * MINUTE, () =>
+    fetchKit(kitSlug, pageSlug, { locale })
+  )
+}
+
+async function fetchKit(kitSlug: string, pageSlug: string, { locale }): Promise<InternalKit> {
   const kit = await intialize().getEntries<Kit>({
     content_type: "kit",
     "fields.slug": kitSlug,
@@ -168,6 +174,12 @@ export interface ContentfulPage<T> {
 }
 
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {
+  return fetchCached(`page-slug:${slug}`, locale, 2 * MINUTE, () =>
+    fetchPageBySlug(slug, { locale }, showSysData)
+  )
+}
+
+async function fetchPageBySlug(slug: string, { locale }, showSysData?: boolean) {
   const pages = await intialize().getEntries<ContentfulPage<SectionType | GridRowContentType>>({
     content_type: "page",
     "fields.slug": slug,
@@ -178,6 +190,10 @@ export async function getPageBySlug(slug: string, { locale }, showSysData?: bool
 }
 
 export async function getPageById<T>(id: string, { locale }) {
+  return fetchCached(`page-by-id:${id}`, locale, 2 * MINUTE, () => fetchPageById<T>(id, { locale }))
+}
+
+export async function fetchPageById<T>(id: string, { locale }) {
   const pages = await intialize().getEntries<ContentfulPage<T>>({
     content_type: "page",
     "sys.id": id,
@@ -214,6 +230,10 @@ interface FAQcollection {
 }
 
 export async function getFAQ({ locale }) {
+  return fetchCached("celoFAQ", locale, 3 * MINUTE, () => fetchFAQ({ locale }))
+}
+
+export async function fetchFAQ({ locale }) {
   const result = await intialize().getEntries<FAQcollection>({
     locale,
     content_type: "faq",

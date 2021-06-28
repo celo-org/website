@@ -1,7 +1,7 @@
 import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import AssetProps from "src/../fullstack/AssetProps"
-import cache from "../server/cache"
+import { fetchCached, MINUTE } from "./cache"
 import airtableInit from "./airtable"
 
 const ASSSET_FIELD_LIGHT = "Assets (on light bg)"
@@ -32,11 +32,11 @@ export default async function combineTagsWithAssets(sheet: AssetSheet) {
 }
 
 async function getAssets(sheet: AssetSheet) {
-  return cache(`brand-assets-${sheet}`, fetchAssets, { args: sheet, minutes: 10 })
+  return fetchCached(`brand-assets-${sheet}`, "en", 3 * MINUTE, () => fetchAssets(sheet))
 }
 
 async function getTags() {
-  return cache(`brand-assets-tags`, fetchTags, { minutes: 10 })
+  return fetchCached(`brand-assets-tags`, "en", 3 * MINUTE, fetchTags)
 }
 
 async function fetchTags(): Promise<Record<string, Tag>> {
