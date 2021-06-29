@@ -4,7 +4,7 @@ import { NameSpaces } from "src/i18n"
 import { getPageBySlug } from "src/utils/contentful"
 
 export async function getServerSideProps() {
-  const page = await getPageBySlug("home", { locale: "en-US" })
+  const page = await getPageBySlug("home", { locale: "en-US" }, true)
   return {
     props: {
       ...page,
