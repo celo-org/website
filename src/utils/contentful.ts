@@ -173,6 +173,16 @@ export interface ContentfulPage<T> {
   openGraph?: Asset
 }
 
+export interface GallaryItem {
+  url: string
+  image: Asset
+}
+
+export interface LogoGallary {
+  name: string
+  list: Entry<GallaryItem>[]
+}
+
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {
   return fetchCached(`page-slug:${slug}`, locale, 2 * MINUTE, () =>
     fetchPageBySlug(slug, { locale }, showSysData)

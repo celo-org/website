@@ -1,28 +1,21 @@
 import * as React from "react"
 import { css } from "@emotion/react"
-import { fonts, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
-import { NameSpaces, useTranslation } from "src/i18n"
-import Button, { BTN } from "src/shared/Button.3"
-import { CeloLinks } from "src/shared/menu-items"
+import { fonts, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_TABLET_AND_UP } from "src/estyles"
 import { colors } from "src/styles"
+import { Document } from "@contentful/rich-text-types"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-export default function CoverContent() {
-  const { t } = useTranslation(NameSpaces.home)
+interface Props {
+  title: string
+  subtitle: Document
+}
 
+export default function CoverContent(props: Props) {
   return (
     <div css={rootCss}>
       <div css={blurCss} />
-      <h1 css={heading}>{t("pageHeader")}</h1>
-      <p css={subheading}>{t("pageSubheader")}</p>
-      <div css={buttons}>
-        <Button
-          text={t("coverPrimeButton")}
-          href={CeloLinks.docsOverview}
-          kind={BTN.PRIMARY}
-          target={"_blank"}
-        />
-        {/* <Button size={SIZE.normal} text={t("coverSecondButton")} href={CeloLinks.docsOverview} kind={BTN.NAKED} target={"_blank"} /> */}
-      </div>
+      <h1 css={heading}>{props.title}</h1>
+      <span css={subheading}>{documentToReactComponents(props.subtitle)}</span>
     </div>
   )
 }
@@ -49,7 +42,7 @@ const blurCss = css({
 const rootCss = css(centered, {
   maxWidth: 660,
   width: "90vw",
-  marginBottom: 24,
+  marginBottom: 0,
   padding: 24,
   position: "relative",
   [WHEN_TABLET]: {
@@ -61,7 +54,7 @@ const rootCss = css(centered, {
     paddingBottom: 12,
   },
   [WHEN_DESKTOP]: {
-    paddingTop: 150,
+    paddingTop: 60,
   },
 })
 
@@ -74,23 +67,11 @@ const heading = css(fonts.h1, {
 const subheading = css(fonts.body, {
   color: colors.lightGray,
   textAlign: "center",
-  marginTop: 24,
-  marginBottom: 24,
-  [WHEN_TABLET]: {
+  [WHEN_TABLET_AND_UP]: {
     maxWidth: 500,
   },
-})
-
-const buttons = css(centered, {
-  flexDirection: "row",
-  flexWrap: "wrap",
-  alignItems: "center",
-  justifyContent: "center",
-  columnGap: 24,
-  rowGap: 24,
-  width: 290,
-  maxWidth: "90vw",
-  ["@media (max-width: 312px)"]: {
-    justifyContent: "center",
+  p: {
+    marginTop: 16,
+    marginBottom:0 ,
   },
 })
