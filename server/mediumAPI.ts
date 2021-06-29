@@ -1,7 +1,7 @@
 import { parse, validate } from "fast-xml-parser"
 import { Articles } from "fullstack/ArticleProps"
 import htmlToFormattedText from "html-to-formatted-text"
-import cache from "../server/cache"
+import { fetchCached, MINUTE } from "../server/cache"
 import Sentry from "../server/sentry"
 import retryAbortableFetch from "../src/utils/retryAbortableFetch"
 interface JSONRSS {
@@ -72,9 +72,9 @@ function transform(items: JSONRSSItem[]) {
 function parseXML(xmlData: string): JSONRSSItem[] {
   if (validate(xmlData) === true) {
     const jsonRSS: JSONRSS = parse(xmlData, {})
-    const item = jsonRSS.rss.channel.item
+    const item = jsonRSS.rss?.channel?.item
     // this happens when there is only one item aka article returned
-    return item instanceof Array ? item : [item]
+    return item instanceof Array ? item : !item ? [] : [item]
   } else {
     return []
   }
@@ -95,7 +95,9 @@ async function getAndTransform(tagged?: string) {
 
 export async function getFormattedMediumArticles(tagged?: string): Promise<Articles> {
   try {
-    const articles = await cache(`medium-blog-${tagged}`, getAndTransform, { args: tagged })
+    const articles = await fetchCached(`medium-blog-${tagged}`, "en", MINUTE * 5, () =>
+      getAndTransform(tagged)
+    )
     return { articles }
   } catch (e) {
     Sentry.withScope((scope) => {

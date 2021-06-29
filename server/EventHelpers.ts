@@ -2,7 +2,7 @@ import getConfig from "next/config"
 import { EventProps } from "../fullstack/EventProps"
 import airtableInit from "../server/airtable"
 import Sentry from "../server/sentry"
-import cache from "./cache"
+import { fetchCached, MINUTE } from "./cache"
 const TABLE_NAME = "All Events"
 // Intermediate step Event With all String Values
 interface IncomingEvent {
@@ -57,8 +57,11 @@ export interface RawAirTableEvent {
 }
 
 export default async function getFormattedEvents(isFuture: boolean) {
-  const eventData = await cache(`events-list-${isFuture ? "future" : "past"}`, () =>
-    fetchEventsFromAirtable(isFuture)
+  const eventData = await fetchCached(
+    `events-list-${isFuture ? "future" : "past"}`,
+    "en",
+    3 * MINUTE,
+    () => fetchEventsFromAirtable(isFuture)
   )
   return splitEvents(normalizeEvents(eventData as RawAirTableEvent[]))
 }

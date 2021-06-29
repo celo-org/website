@@ -109,15 +109,20 @@ const backgroundArea = css({
   backgroundColor: colors.dark,
   [WHEN_LONG_PHONE]: {
     backgroundImage: `url(${celoAsStarsMobileLong})`,
+    top: 0,
+    minHeight: "100vh"
   },
   [WHEN_MOBILE]: {
     backgroundImage: `url(${celoAsStarsMobileShort})`,
+    top: 0,
+    minHeight: "100vh"
   },
   [WHEN_TABLET]: {
     width: "100vw",
     minHeight: "100vh",
     backgroundImage: `url(${celoAsStarsTablet})`,
     backgroundPosition: "bottom",
+    top: 0
   },
   [WHEN_DESKTOP]: {
     width: backgroundDesktopSize.width,
