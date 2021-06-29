@@ -16,7 +16,6 @@ interface OwnProps {
 export type Props = ContentfulPage<GridRowContentType> & OwnProps
 
 export default function Home(props: Props) {
-  debugger
   return (
     <div css={rootCss}>
       <OpenGraph title={props.title} description={props.description} path={"/"} image={celoHero} />
@@ -26,6 +25,7 @@ export default function Home(props: Props) {
           const fields = section.fields as GridRowContentType
           return (
             <GridRow
+              darkMode={fields.darkMode}
               key={section.sys.id}
               id={fields.id}
               columns={fields.columns}
