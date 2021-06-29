@@ -43,7 +43,6 @@ export default function Cover(props: Props) {
               data={examplePhones}
               width={1016}
               height={524}
-              css={phonesCss}
             />
           </picture>
         )}
@@ -55,10 +54,6 @@ export default function Cover(props: Props) {
   )
 }
 const backgroundDesktopSize = { width: "100%" }
-
-const phonesCss = css({
-  marginBottom: 24,
-})
 
 const rootCss = css(flex, {
   overflow: "hidden",

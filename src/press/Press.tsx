@@ -75,11 +75,12 @@ const backgroundCss = css(flex, {
       "linear-gradient(180deg, rgba(46, 51, 56, 0.1) 1%, rgba(46, 51, 56, 0.6) 20%, #2E3338 48.13%)",
     zIndex: 20,
     opacity: 1,
+    paddingTop: 60,
+    paddingBottom: 60,
   },
 })
 
 const containercss = css({
-  marginBottom: 64,
   alignItems: "center",
   justifyContent: "center",
 })
