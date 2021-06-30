@@ -17,9 +17,8 @@ function useDropDown(): [number, () => void, (key: number) => void] {
   function clear() {
     _setValue(0)
   }
-  function setValue(val: string | number) {
-    _setValue(Number(val))
-  }
+  const setValue = React.useCallback((val: string | number) => _setValue(Number(val)), [_setValue])
+
   return [value, clear, setValue]
 }
 
