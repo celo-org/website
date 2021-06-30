@@ -13,12 +13,12 @@ import { useScreenSize } from "src/layout/ScreenSize"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Press from "src/press/Press"
 import { Document } from "@contentful/rich-text-types"
-import { LogoGallary } from "src/utils/contentful"
+import { LogoGallery } from "src/utils/contentful"
 
 interface Props {
   title: string
   subtitle: Document
-  press: LogoGallary
+  press: LogoGallery
 }
 
 export default function Cover(props: Props) {

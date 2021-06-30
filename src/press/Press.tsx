@@ -6,12 +6,12 @@ import Button, { BTN, SIZE } from "src/shared/Button.3"
 import MENU from "src/shared/menu-items"
 import { colors } from "src/styles"
 import { GridRow } from "src/layout/Grid2"
-import { LogoGallary } from "src/utils/contentful"
+import { LogoGallery } from "src/utils/contentful"
 
 
-export default function Press(props: LogoGallary) {
+export default function Press(props: LogoGallery) {
   const { t } = useTranslation("home")
-    return (
+  return (
     <div css={backgroundCss}>
       <GridRow columns={1} css={containercss}>
         <div css={logoContainerCss}>
@@ -24,10 +24,7 @@ export default function Press(props: LogoGallary) {
                 <picture>
                   <source srcSet={`${file?.url}?fm=webp 2x`} type="image/webp" />
                   <source srcSet={`${file?.url} 2x`} />
-                  <source
-                    srcSet={`${file?.url}?fm=webp&h=24`}
-                    type="image/webp"
-                  />
+                  <source srcSet={`${file?.url}?fm=webp&h=24`} type="image/webp" />
                   <img
                     alt={fields.image?.fields?.description}
                     loading={"lazy"}

@@ -2,7 +2,7 @@ import * as React from "react"
 import OpenGraph from "src/header/OpenGraph"
 import celoHero from "src/home/celo-hero.png"
 import Cover from "./Cover"
-import { ContentfulPage, GridRowContentType, LogoGallary } from "src/utils/contentful"
+import { ContentfulPage, GridRowContentType, LogoGallery } from "src/utils/contentful"
 import { GridRow } from "src/layout/Grid2"
 import { css } from "@emotion/react"
 import { cellSwitch } from "./cellSwitch"
@@ -10,7 +10,7 @@ import { CoverContentType } from "src/utils/contentful"
 
 interface OwnProps {
   cover?: CoverContentType
-  press?: LogoGallary
+  press?: LogoGallery
 }
 
 export type Props = ContentfulPage<GridRowContentType> & OwnProps
