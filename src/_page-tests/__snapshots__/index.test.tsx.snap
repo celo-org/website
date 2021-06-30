@@ -16,9 +16,9 @@ exports[`HomePage renders 1`] = `
     css={
       Object {
         "map": undefined,
-        "name": "1d468tg",
+        "name": "qvo440",
         "next": undefined,
-        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;position:relative;align-self:center;align-items:center;background-color:#2E3338;width:100%;max-width:100vw;@media (max-width: 576px){justify-content:center;}@media (max-height: 568px){justify-content:flex-end;padding-bottom:30px;}@media (min-width: 576px) and (max-width: 992px){padding-top:60px;width:100vw;height:100vh;min-height:1068px;}@media (min-width: 992px){padding-top:0;min-height:1066px;};padding-top:50px;@media (max-width: 576px){min-height:calc(100vh - 50px);}",
+        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;position:relative;align-self:center;align-items:center;background-color:#2E3338;width:100%;max-width:100vw;@media (max-width: 576px){justify-content:center;min-height:calc(100vh);}@media (max-height: 568px){justify-content:flex-end;padding-bottom:30px;}@media (min-width: 576px) and (max-width: 992px){padding-top:60px;width:100vw;height:100vh;min-height:1068px;}@media (min-width: 992px){padding-top:0;padding-bottom:24px;};padding-top:50px;",
         "toString": [Function],
       }
     }
@@ -27,7 +27,7 @@ exports[`HomePage renders 1`] = `
       css={
         Object {
           "map": undefined,
-          "name": "1uobu1j",
+          "name": "6cmqz9",
           "next": Object {
             "name": "animation-q4bcp7",
             "next": undefined,
@@ -47,7 +47,7 @@ exports[`HomePage renders 1`] = `
   }
 }",
           },
-          "styles": "position:absolute;background-repeat:no-repeat;background-size:cover;animation-iteration-count:1;animation-fill-mode:both;animation-delay:50ms;animation-duration:6s;animation-name:animation-q4bcp7;animation-timing-function:ease-in-out;opacity:0.1;width:100%;background-color:#2E3338;@media (max-width: 400px) and (min-height: 790px){background-image:url(image.png);top:0;min-height:100vh;}@media (max-width: 576px){background-image:url(image.png);top:0;min-height:100vh;}@media (min-width: 576px) and (max-width: 992px){width:100vw;min-height:100vh;background-image:url(image.png);background-position:bottom;top:0;}@media (min-width: 992px){width:1379px;background-image:url(image.png);};top:50px;height:calc(100% - 50px);",
+          "styles": "top:0;position:absolute;background-repeat:no-repeat;background-size:cover;animation-iteration-count:1;animation-fill-mode:both;animation-delay:50ms;animation-duration:6s;animation-name:animation-q4bcp7;animation-timing-function:ease-in-out;opacity:0.1;width:100%;background-color:#2E3338;@media (max-width: 400px) and (min-height: 790px){background-image:url(image.png);top:0;min-height:100vh;}@media (max-width: 576px){background-image:url(image.png);top:0;min-height:100vh;}@media (min-width: 576px) and (max-width: 992px){width:100vw;min-height:100vh;background-image:url(image.png);background-position:bottom;top:0;}@media (min-width: 992px){width:100%;background-image:url(image.png);};height:calc(100% - 50px);",
           "toString": [Function],
         }
       }
@@ -56,9 +56,9 @@ exports[`HomePage renders 1`] = `
       css={
         Object {
           "map": undefined,
-          "name": "xf1pm8",
+          "name": "zurjp",
           "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-items:center;z-index:10;@media (min-width: 992px){width:1379px;height:1141px;z-index:20;}@media (min-width: 576px) and (max-width: 992px){padding-top:72px;}@media (max-width: 576px){padding-top:24px;padding-bottom:16px;}@media (max-width: 400px) and (min-height: 790px){padding-bottom:0;}",
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-items:center;z-index:10;@media (min-width: 992px){width:100%;z-index:20;}@media (min-width: 576px) and (max-width: 992px){padding-top:72px;}@media (max-width: 576px){padding-top:24px;padding-bottom:16px;}@media (max-width: 400px) and (min-height: 790px){padding-bottom:0;}",
           "toString": [Function],
         }
       }
@@ -67,9 +67,9 @@ exports[`HomePage renders 1`] = `
         css={
           Object {
             "map": undefined,
-            "name": "tsolxr",
+            "name": "1a0mso6",
             "next": undefined,
-            "styles": "display:flex;flex-direction:column;align-items:center;;max-width:660px;width:90vw;margin-bottom:24px;padding:24px;position:relative;@media (min-width: 576px) and (max-width: 992px){max-width:580px;}@media (max-width: 576px){max-width:310px;padding-top:56px;padding-bottom:12px;}@media (min-width: 992px){padding-top:150px;}",
+            "styles": "display:flex;flex-direction:column;align-items:center;;max-width:660px;width:90vw;margin-bottom:0;padding:24px;position:relative;@media (min-width: 576px) and (max-width: 992px){max-width:580px;}@media (max-width: 576px){max-width:310px;padding-top:56px;padding-bottom:12px;}@media (min-width: 992px){padding-top:60px;}",
             "toString": [Function],
           }
         }
@@ -95,159 +95,39 @@ exports[`HomePage renders 1`] = `
               "toString": [Function],
             }
           }
-        >
-          Global payments infrastructure built for mobile
-        </h1>
-        <p
+        />
+        <span
           css={
             Object {
               "map": undefined,
-              "name": "1vh2w24",
+              "name": "k6azhh",
               "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;color:#EDEEEF;text-align:center;margin-top:24px;margin-bottom:24px;@media (min-width: 576px) and (max-width: 992px){max-width:500px;}",
+              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;color:#EDEEEF;text-align:center;@media (min-width: 576px){max-width:500px;}p{margin-top:16px;margin-bottom:0;}",
               "toString": [Function],
             }
           }
-        >
-          Thousands of organizations and individuals are developing,  growing, and governing Celo, an open-source platform that enables anyone to build borderless applications
-        </p>
-        <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "bit6uz",
-              "next": undefined,
-              "styles": "display:flex;flex-direction:column;align-items:center;;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;column-gap:24px;row-gap:24px;width:290px;max-width:90vw;@media (max-width: 312px){justify-content:center;}",
-              "toString": [Function],
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-          >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="https://docs.celo.org/overview"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "WebkitBoxFlex": 0,
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexGrow": 0,
-                  "WebkitJustifyContent": "center",
-                  "alignItems": "center",
-                  "backgroundColor": "rgba(53,208,127,1.00)",
-                  "borderBottomColor": "rgba(53,208,127,1.00)",
-                  "borderBottomLeftRadius": "3px",
-                  "borderBottomRightRadius": "3px",
-                  "borderBottomWidth": "1px",
-                  "borderLeftColor": "rgba(53,208,127,1.00)",
-                  "borderLeftWidth": "1px",
-                  "borderRightColor": "rgba(53,208,127,1.00)",
-                  "borderRightWidth": "1px",
-                  "borderTopColor": "rgba(53,208,127,1.00)",
-                  "borderTopLeftRadius": "3px",
-                  "borderTopRightRadius": "3px",
-                  "borderTopWidth": "1px",
-                  "color": "rgba(255,255,255,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "flexGrow": 0,
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "justifyContent": "center",
-                  "lineHeight": "16px",
-                  "minWidth": "150px",
-                  "msFlexAlign": "center",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 0,
-                  "opacity": 1,
-                  "paddingBottom": "10px",
-                  "paddingLeft": "20px",
-                  "paddingRight": "20px",
-                  "paddingTop": "10px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                  "width": "fit-content",
-                }
-              }
-              target="_blank"
-            >
-              Start Building
-            </a>
-          </div>
-        </div>
+        />
       </div>
     </div>
-  </div>
-  <div
-    css={
-      Object {
-        "map": undefined,
-        "name": "ruexez",
-        "next": undefined,
-        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;background-color:#2E3338;@media (max-width: 576px){opacity:0.9;padding-top:24px;background-color:rgba(46, 51, 56, 0.5);z-index:10;box-shadow:-1px 5px 22px 7px rgba(46, 51, 56, 0.5);}",
-        "toString": [Function],
-      }
-    }
-  >
     <div
-      className="css-view-1dbjc4n"
-      style={
+      css={
         Object {
-          "WebkitAlignSelf": "center",
-          "WebkitBoxDirection": "normal",
-          "WebkitBoxOrient": "vertical",
-          "WebkitFlexDirection": "column",
-          "alignSelf": "center",
-          "flexDirection": "column",
-          "marginBottom": "30px",
-          "maxWidth": "100vw",
-          "msFlexDirection": "column",
-          "msFlexItemAlign": "center",
-          "msGridRowAlign": "center",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "width": "100%",
+          "map": undefined,
+          "name": "vrmywl",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;@media (max-width: 576px){opacity:0.9;padding-top:24px;background-color:rgba(46, 51, 56, 0.5);z-index:10;box-shadow:-1px 5px 22px 7px rgba(46, 51, 56, 0.5);}@media (min-width: 576px){width:100%;background-color:#2E3338;background:linear-gradient(180deg, rgba(46, 51, 56, 0.1) 1%, rgba(46, 51, 56, 0.6) 20%, #2E3338 48.13%);z-index:20;opacity:1;padding-top:60px;padding-bottom:60px;}",
+          "toString": [Function],
         }
       }
     >
-      <div
-        className="css-view-1dbjc4n"
-        style={
+      <section
+        css={
           Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "WebkitBoxFlex": 0,
-            "WebkitBoxPack": "center",
-            "WebkitFlexGrow": 0,
-            "WebkitFlexShrink": 0,
-            "WebkitJustifyContent": "center",
-            "alignItems": "center",
-            "flexGrow": 0,
-            "flexShrink": 0,
-            "justifyContent": "center",
-            "msFlexAlign": "center",
-            "msFlexNegative": 0,
-            "msFlexPack": "center",
-            "msFlexPositive": 0,
-            "paddingBottom": "10px",
-            "paddingLeft": "10px",
-            "paddingRight": "10px",
-            "paddingTop": "10px",
-            "width": "100%",
+            "map": undefined,
+            "name": "pnyh7x",
+            "next": undefined,
+            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
+            "toString": [Function],
           }
         }
       >
@@ -255,319 +135,220 @@ exports[`HomePage renders 1`] = `
           css={
             Object {
               "map": undefined,
-              "name": "1xnt9ts",
+              "name": "1dav2mh",
               "next": undefined,
-              "styles": "display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;align-content:center;justify-content:center;opacity:0.7;@media (max-width: 576px){display:none;}",
-              "toString": [Function],
-            }
-          }
-        >
-          <a
-            href="https://www.theblockcrypto.com/post/94012/celo-stablecoin-morgan-beller-advisor"
-            rel="noopener"
-            target="_blank"
-          >
-            <img
-              alt="The Block"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "15vk6sw",
-                  "next": undefined,
-                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:12px;margin-bottom:12px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;}@media (max-width: 576px){height:20px;width:104px;margin-left:12px;margin-right:12px;margin-top:12px;margin-bottom:12px;};",
-                  "toString": [Function],
-                }
-              }
-              height={25}
-              loading="lazy"
-              src="image.png"
-              width={130}
-            />
-          </a>
-          <a
-            href="https://www.wsj.com/articles/startup-celo-aims-to-make-crypto-accessible-to-mainstream-mobile-users-11554204600"
-            rel="noopener"
-            target="_blank"
-          >
-            <img
-              alt="Wall Street Journal"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1uvcys1",
-                  "next": undefined,
-                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:12px;margin-bottom:12px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;}@media (max-width: 576px){height:20px;width:104px;margin-left:12px;margin-right:12px;margin-top:12px;margin-bottom:12px;};height:50px;width:180px;",
-                  "toString": [Function],
-                }
-              }
-              height={50}
-              loading="lazy"
-              src="image.png"
-              width={180}
-            />
-          </a>
-          <a
-            href="https://fortune.com/2021/02/10/one-day-well-all-yawn-about-blockchain/"
-            rel="noopener"
-            target="_blank"
-          >
-            <img
-              alt="Fortune"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "15vk6sw",
-                  "next": undefined,
-                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:12px;margin-bottom:12px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;}@media (max-width: 576px){height:20px;width:104px;margin-left:12px;margin-right:12px;margin-top:12px;margin-bottom:12px;};",
-                  "toString": [Function],
-                }
-              }
-              height={25}
-              loading="lazy"
-              src="image.png"
-              width={130}
-            />
-          </a>
-          <a
-            href="https://decrypt.co/57246/celo-raises-20-million-as-it-debuts-decentralized-venmo-competitor"
-            rel="noopener"
-            target="_blank"
-          >
-            <img
-              alt="Decrypt"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "15vk6sw",
-                  "next": undefined,
-                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:12px;margin-bottom:12px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;}@media (max-width: 576px){height:20px;width:104px;margin-left:12px;margin-right:12px;margin-top:12px;margin-bottom:12px;};",
-                  "toString": [Function],
-                }
-              }
-              height={25}
-              loading="lazy"
-              src="image.png"
-              width={130}
-            />
-          </a>
-          <a
-            href="https://techcrunch.com/2018/09/05/googles-launchpad-studio-accelerator-welcomes-a-cohort-of-blockchain-and-finance-startups/"
-            rel="noopener"
-            target="_blank"
-          >
-            <img
-              alt="TechCrunch"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "15vk6sw",
-                  "next": undefined,
-                  "styles": "object-fit:contain;height:25px;width:130px;margin-top:12px;margin-bottom:12px;margin-left:5vw;margin-right:5vw;cursor:pointer;@media (min-width: 576px){margin-left:20px;margin-right:20px;}@media (max-width: 576px){height:20px;width:104px;margin-left:12px;margin-right:12px;margin-top:12px;margin-bottom:12px;};",
-                  "toString": [Function],
-                }
-              }
-              height={25}
-              loading="lazy"
-              src="image.png"
-              width={130}
-            />
-          </a>
-        </div>
-        <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1bcwlar",
-              "next": undefined,
-              "styles": "display:grid;grid-template-columns:1fr 1fr;column-gap:24px;row-gap:24px;;margin-top:24px;",
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr ;}",
               "toString": [Function],
             }
           }
         >
           <div
-            className="css-view-1dbjc4n"
-            onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
-                  "WebkitBoxOrient": "horizontal",
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitJustifyContent": "center",
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "borderBottomColor": "rgba(0,0,0,0.00)",
-                  "borderLeftColor": "rgba(0,0,0,0.00)",
-                  "borderRightColor": "rgba(0,0,0,0.00)",
-                  "borderTopColor": "rgba(0,0,0,0.00)",
-                  "flexDirection": "row",
-                  "flexGrow": 0,
-                  "justifyContent": "center",
-                  "msFlexDirection": "row",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 0,
-                  "opacity": 1,
-                  "outlineColor": "transparent",
-                  "width": "fit-content",
-                }
+            css={
+              Object {
+                "map": undefined,
+                "name": "j86fry",
+                "next": undefined,
+                "styles": "display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;align-content:center;justify-content:center;@media (max-width: 576px){display:none;}",
+                "toString": [Function],
               }
-            >
-              <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                dir="auto"
-                href="/press"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-                role="link"
-                style={
-                  Object {
-                    "WebkitAlignItems": "center",
-                    "WebkitBoxAlign": "center",
-                    "alignItems": "center",
-                    "color": "rgba(53,208,127,1.00)",
-                    "cursor": "pointer",
-                    "display": "inline-flex",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "16px",
-                    "msFlexAlign": "center",
-                    "textAlign": "center",
-                    "textRendering": "geometricPrecision",
-                  }
-                }
-              >
-                Recent News
-                <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "display": "inline-flex",
-                      "paddingLeft": "0.4em",
-                      "paddingTop": "0.185em",
-                    }
-                  }
-                >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(0)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
+            }
+          />
           <div
-            className="css-view-1dbjc4n"
-            onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
+            css={
+              Object {
+                "map": undefined,
+                "name": "15j6p0s",
+                "next": undefined,
+                "styles": "display:grid;grid-template-columns:1fr 1fr;column-gap:24px;row-gap:24px;;max-width:266px;padding-top:28px;margin:auto;",
+                "toString": [Function],
+              }
+            }
           >
             <div
               className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
-                  "WebkitBoxOrient": "horizontal",
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitJustifyContent": "center",
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "borderBottomColor": "rgba(0,0,0,0.00)",
-                  "borderLeftColor": "rgba(0,0,0,0.00)",
-                  "borderRightColor": "rgba(0,0,0,0.00)",
-                  "borderTopColor": "rgba(0,0,0,0.00)",
-                  "flexDirection": "row",
-                  "flexGrow": 0,
-                  "justifyContent": "center",
-                  "msFlexDirection": "row",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 0,
-                  "opacity": 1,
-                  "outlineColor": "transparent",
-                  "width": "fit-content",
-                }
-              }
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
             >
-              <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                dir="auto"
-                href="mailto:press@celo.org"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-                role="link"
+              <div
+                className="css-view-1dbjc4n"
                 style={
                   Object {
-                    "WebkitAlignItems": "center",
-                    "WebkitBoxAlign": "center",
-                    "alignItems": "center",
-                    "color": "rgba(53,208,127,1.00)",
-                    "cursor": "pointer",
-                    "display": "inline-flex",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "16px",
-                    "msFlexAlign": "center",
-                    "textAlign": "center",
-                    "textRendering": "geometricPrecision",
+                    "WebkitBoxDirection": "normal",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxOrient": "horizontal",
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexDirection": "row",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "flexDirection": "row",
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                    "msFlexDirection": "row",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "width": "fit-content",
                   }
                 }
               >
-                Contact Press
-                <div
-                  className="css-view-1dbjc4n"
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="/press"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  role="link"
                   style={
                     Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "alignItems": "center",
+                      "color": "rgba(53,208,127,1.00)",
+                      "cursor": "pointer",
                       "display": "inline-flex",
-                      "paddingLeft": "0.4em",
-                      "paddingTop": "0.185em",
+                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "500",
+                      "lineHeight": "16px",
+                      "msFlexAlign": "center",
+                      "textAlign": "center",
+                      "textRendering": "geometricPrecision",
                     }
                   }
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(0)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
+                  Recent News
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "paddingLeft": "0.4em",
+                        "paddingTop": "0.185em",
+                      }
+                    }
                   >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </div>
-              </a>
+                    <svg
+                      fill="none"
+                      height="0.75em"
+                      transform="rotate(0)"
+                      viewBox="0 0 8 12"
+                      width="0.75em"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                        fill="#35D07F"
+                        fillRule="evenodd"
+                        opacity={1}
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "WebkitBoxDirection": "normal",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxOrient": "horizontal",
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexDirection": "row",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "flexDirection": "row",
+                    "flexGrow": 0,
+                    "justifyContent": "center",
+                    "msFlexDirection": "row",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="mailto:press@celo.org"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "alignItems": "center",
+                      "color": "rgba(53,208,127,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "500",
+                      "lineHeight": "16px",
+                      "msFlexAlign": "center",
+                      "textAlign": "center",
+                      "textRendering": "geometricPrecision",
+                    }
+                  }
+                >
+                  Contact Press
+                  <div
+                    className="css-view-1dbjc4n"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "paddingLeft": "0.4em",
+                        "paddingTop": "0.185em",
+                      }
+                    }
+                  >
+                    <svg
+                      fill="none"
+                      height="0.75em"
+                      transform="rotate(0)"
+                      viewBox="0 0 8 12"
+                      width="0.75em"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                        fill="#35D07F"
+                        fillRule="evenodd"
+                        opacity={1}
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </div>

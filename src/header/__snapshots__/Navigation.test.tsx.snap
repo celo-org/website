@@ -5,9 +5,9 @@ exports[`Navigation renders 1`] = `
   css={
     Object {
       "map": undefined,
-      "name": "wndxe7",
+      "name": "495g5j",
       "next": undefined,
-      "styles": "display:flex;position:fixed;left:0;right:0;display:flex;flex-direction:row;height:75px;justify-content:center;align-items:center;z-index:10;max-width:100vw;transition-property:top;transition-duration:200ms;;top:0;",
+      "styles": "display:flex;position:fixed;left:0;right:0;display:flex;flex-direction:row;height:75px;justify-content:center;align-items:center;z-index:12;max-width:100vw;transition-property:top;transition-duration:200ms;;top:0;",
       "toString": [Function],
     }
   }

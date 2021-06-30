@@ -341,7 +341,7 @@ const styles = {
     height: HEADER_HEIGHT,
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 10,
+    zIndex: 12,
     maxWidth: "100vw",
     transitionProperty: "top",
     transitionDuration: "200ms",

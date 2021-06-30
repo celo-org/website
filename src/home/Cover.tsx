@@ -11,26 +11,29 @@ import Stats from "./stats/Stats"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { NameSpaces, useTranslation } from "src/i18n"
-import { HEADER_HEIGHT } from "src/shared/Styles"
 import Press from "src/press/Press"
+import { Document } from "@contentful/rich-text-types"
+import { LogoGallery } from "src/utils/contentful"
 
-export default function Cover() {
-  const { isMobile, isDesktop, isTablet, bannerHeight } = useScreenSize()
+interface Props {
+  title: string
+  subtitle: Document
+  press: LogoGallery
+}
+
+export default function Cover(props: Props) {
+  debugger
+  const { isDesktop, isTablet, bannerHeight } = useScreenSize()
   const { t } = useTranslation(NameSpaces.home)
   return (
     <div
       css={css(rootCss, {
         paddingTop: bannerHeight,
-        [WHEN_MOBILE]: {
-          minHeight: `calc(100vh - ${bannerHeight}px)`,
-        },
       })}
     >
-      <div
-        css={css(backgroundArea, { top: bannerHeight, height: `calc(100% - ${bannerHeight}px)` })}
-      />
+      <div css={css(backgroundArea, { height: `calc(100% - ${bannerHeight}px)` })} />
       <div css={useableArea}>
-        <CoverContent />
+        <CoverContent title={props.title} subtitle={props.subtitle} />
         {(isDesktop || isTablet) && (
           <picture>
             <object
@@ -44,13 +47,13 @@ export default function Cover() {
           </picture>
         )}
       </div>
-      {isMobile && <Press />}
+      <Press {...props.press} />
 
       {isDesktop && <Stats />}
     </div>
   )
 }
-const backgroundDesktopSize = { height: 1066, width: 1379 }
+const backgroundDesktopSize = { width: "100%" }
 
 const rootCss = css(flex, {
   overflow: "hidden",
@@ -62,6 +65,7 @@ const rootCss = css(flex, {
   maxWidth: "100vw",
   [WHEN_MOBILE]: {
     justifyContent: "center",
+    minHeight: `calc(100vh)`,
   },
   ["@media (max-height: 568px)"]: {
     justifyContent: "flex-end",
@@ -75,7 +79,7 @@ const rootCss = css(flex, {
   },
   [WHEN_DESKTOP]: {
     paddingTop: 0,
-    minHeight: backgroundDesktopSize.height,
+    paddingBottom: 24,
   },
 })
 
@@ -95,6 +99,7 @@ const starKeyFrames = keyframes`
   }
 `
 const backgroundArea = css({
+  top: 0,
   position: "absolute",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
@@ -110,19 +115,19 @@ const backgroundArea = css({
   [WHEN_LONG_PHONE]: {
     backgroundImage: `url(${celoAsStarsMobileLong})`,
     top: 0,
-    minHeight: "100vh"
+    minHeight: "100vh",
   },
   [WHEN_MOBILE]: {
     backgroundImage: `url(${celoAsStarsMobileShort})`,
     top: 0,
-    minHeight: "100vh"
+    minHeight: "100vh",
   },
   [WHEN_TABLET]: {
     width: "100vw",
     minHeight: "100vh",
     backgroundImage: `url(${celoAsStarsTablet})`,
     backgroundPosition: "bottom",
-    top: 0
+    top: 0,
   },
   [WHEN_DESKTOP]: {
     width: backgroundDesktopSize.width,
@@ -135,7 +140,6 @@ const useableArea = css(flex, {
   zIndex: 10,
   [WHEN_DESKTOP]: {
     width: backgroundDesktopSize.width,
-    height: backgroundDesktopSize.height + HEADER_HEIGHT,
     zIndex: 20,
   },
   [WHEN_TABLET]: {
