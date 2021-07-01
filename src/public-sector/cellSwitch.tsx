@@ -9,22 +9,17 @@ import {
   RoledexContentType,
   PlaylistContentType,
   FormContentType,
+  HeadingContentType,
 } from "src/utils/contentful"
 import Form from "src/contentful/grid2-cells/Form"
+import { Heading } from "src/contentful/grid2-cells/Heading"
 
-
-export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
+export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
     switch (entry.sys.contentType.sys.id) {
       case "roledex":
         const roledex = entry.fields as RoledexContentType
-        return (
-          <Roledex
-            key={entry.sys.id}
-            title={roledex.title}
-            sheets={roledex.sheets}
-          />
-        )
+        return <Roledex key={entry.sys.id} title={roledex.title} sheets={roledex.sheets} />
       case "freeContent":
         const freeContent = entry.fields as FreeContentType
         return (
@@ -71,6 +66,20 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
             title={playlist.title}
             description={playlist.description}
             listId={playlist.listId}
+          />
+        )
+      case "heading":
+        const heading = entry.fields as HeadingContentType
+        return (
+          <Heading
+            key={entry.sys.id}
+            darkMode={darkMode}
+            span={columns}
+            title={heading.title}
+            subTitle={heading.subTitle}
+            titleCss={heading.titleCss}
+            subTitleCss={heading.subTitleCss}
+            image={heading.image}
           />
         )
     }

@@ -58,7 +58,7 @@ export default function Cover(props: CoverContentType) {
             height={size?.height}
             css={props.illoFirst ? imageFirstCss : imageCss}
             src={props.imageDesktop?.fields.file.url}
-            alt={props.imageDesktop.fields.description}
+            alt={props.imageDesktop?.fields.description}
           />
         </picture>
       </div>

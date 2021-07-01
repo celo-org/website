@@ -5,10 +5,12 @@ import { renderNode } from "src/contentful/nodes/nodes"
 import { BLOCKS, INLINES, Block, Document } from "@contentful/rich-text-types"
 import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
 import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
+import { ROW } from "../nodes/embeds/ROW"
 
 const EMBEDDABLE = {
   ...BUTTON,
   ...GALLARY,
+  ...ROW,
 }
 
 function embedded(node: Block) {

@@ -1,13 +1,14 @@
 import { Asset } from "contentful"
 import * as React from "react"
-import Button, { BTN } from "src/shared/Button.3"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
 
 interface Props {
   fields: {
     words: string
     href: string
-    kind: BTN.NAV | BTN.DARKNAV
+    kind: BTN.NAV | BTN.DARKNAV | BTN.PRIMARY
     assetLink?: Asset
+    size?: SIZE
   }
 }
 
@@ -17,6 +18,7 @@ export const BUTTON = {
       text={fields.words}
       href={fields.href || fields.assetLink?.fields?.file?.url}
       kind={fields.kind}
+      size={fields.size}
     />
   ),
 }
