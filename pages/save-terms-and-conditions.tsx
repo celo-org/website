@@ -34,6 +34,12 @@ export default function SavingsTerms(props: Props) {
 
 export async function getServerSideProps({ locale }): Promise<{ props: Props }> {
   const page = await getPageBySlug("save-terms-and-conditions", { locale: "en-US" }, false)
+
+  if (!page) {
+    return { notFound: true }
+  }
+
+
   const sections = page.sections as SectionType[]
   return {
     props: {

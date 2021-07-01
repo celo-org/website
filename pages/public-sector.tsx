@@ -7,6 +7,12 @@ export default page
 
 export async function getServerSideProps({  locale  }) {
   const page = await getPageBySlug("public-sector", { locale: "en-US" }, true)
+
+  if (!page) {
+    return { notFound: true }
+  }
+
+
   return {
     props: {
         ...page,
