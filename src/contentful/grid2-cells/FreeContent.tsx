@@ -1,11 +1,10 @@
 import { css } from "@emotion/react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import { flex, WHEN_MOBILE } from "src/estyles"
+import { flex, fonts, WHEN_MOBILE } from "src/estyles"
 import { renderNode } from "src/contentful/nodes/nodes"
 import { BLOCKS, INLINES, Block, Document } from "@contentful/rich-text-types"
 import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
 import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
-import { typeFaces } from "src/styles"
 
 const EMBEDDABLE = {
   ...BUTTON,
@@ -28,24 +27,14 @@ const OPTIONS = {
   renderNode: {
     ...renderNode,
     [BLOCKS.HEADING_1]: (_, children: string) => {
-      return <h2 css={h1Font}>{children}</h2>
+      return <h2 css={h1ResponsiveCss}>{children}</h2>
     },
     [BLOCKS.EMBEDDED_ENTRY]: embedded,
     [INLINES.EMBEDDED_ENTRY]: embedded,
   },
 }
 
-const h1Font = css({
-  fontFamily: typeFaces.garamond,
-  fontSize: "48px",
-  fontWeight: "normal",
-  lineHeight: "56px",
-  [WHEN_MOBILE]: {
-    fontSize: "36px",
-    lineHeight: "40px",
-  }
-})
-
+const h1ResponsiveCss = css(fonts.h1, { [WHEN_MOBILE]: fonts.h1Mobile })
 interface Props {
   colSpan: number
   body: Document
