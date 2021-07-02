@@ -110,8 +110,8 @@ function headingStyle(type: Headings, darkMode: boolean) {
     case "small":
       return css(fonts.h5, headingCss, darkMode && whiteText)
     case "plain":
-      return css(fonts.body, {fontWeight: "normal"}, headingCss, darkMode && whiteText)
-      default:
+      return css(fonts.body, { fontWeight: "normal" }, headingCss, darkMode && whiteText)
+    default:
       return css(fonts.h3, headingCss, darkMode && whiteText)
   }
 }
