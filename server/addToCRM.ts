@@ -90,6 +90,7 @@ async function processResponse(response: Response) {
     return json
   }
   const error = await response.json()
+  console.info("active-campaign-error", error)
   throw { status: response.statusText, error: error.errors }
 }
 

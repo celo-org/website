@@ -152,7 +152,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
           >
             <img src={sendCoinIcon} css={emailLogoCss} width={50} height={50} />
             <p css={recieveUpdatesCss}>{t("receiveUpdates")}</p>
-            <EmailForm submitText={t("signUp")} route={"contact"} isDarkMode={false} />
+            <EmailForm submitText={t("signUp")} route={"contacts"} isDarkMode={false} />
           </Cell>
         </GridRow>
       )}
