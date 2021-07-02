@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import { flex } from "src/estyles"
+import { flex, fonts, WHEN_MOBILE } from "src/estyles"
 import { renderNode } from "src/contentful/nodes/nodes"
 import { BLOCKS, INLINES, Block, Document } from "@contentful/rich-text-types"
 import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
@@ -26,11 +26,15 @@ function embedded(node: Block) {
 const OPTIONS = {
   renderNode: {
     ...renderNode,
+    [BLOCKS.HEADING_1]: (_, children: string) => {
+      return <h2 css={h1ResponsiveCss}>{children}</h2>
+    },
     [BLOCKS.EMBEDDED_ENTRY]: embedded,
     [INLINES.EMBEDDED_ENTRY]: embedded,
   },
 }
 
+const h1ResponsiveCss = css(fonts.h1, { [WHEN_MOBILE]: fonts.h1Mobile })
 interface Props {
   colSpan: number
   body: Document
@@ -59,4 +63,4 @@ const rootCss = css(flex, {
   },
 })
 
-const darkModeText = css({ "h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })
+const darkModeText = css({ "h1, h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })
