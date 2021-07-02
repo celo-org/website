@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import { flex } from "src/estyles"
+import { flex, WHEN_MOBILE } from "src/estyles"
 import { renderNode } from "src/contentful/nodes/nodes"
 import { BLOCKS, INLINES, Block, Document } from "@contentful/rich-text-types"
 import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
@@ -38,7 +38,12 @@ const OPTIONS = {
 const h1Font = css({
   fontFamily: typeFaces.garamond,
   fontSize: "48px",
-  fontWeight: "normal"
+  fontWeight: "normal",
+  lineHeight: "56px",
+  [WHEN_MOBILE]: {
+    fontSize: "36px",
+    lineHeight: "40px",
+  }
 })
 
 interface Props {
