@@ -11,9 +11,10 @@ interface Props {
 }
 
 export function Heading(props: Props & HeadingContentType) {
-  function SubTitle(_, children) {
+  const propSubtitleCss =  props.subTitleCss
+  function SubTitle(_, children: React.ReactNode) {
     return (
-      <h3 css={css(subtitleCss, props.subTitleCss, props.darkMode && whiteText)}>{children}</h3>
+      <h3 css={css(subtitleCss, propSubtitleCss, props.darkMode && whiteText)}>{children}</h3>
     )
   }
 
