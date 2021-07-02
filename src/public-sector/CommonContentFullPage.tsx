@@ -1,25 +1,32 @@
-import {css} from "@emotion/react"
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { css } from "@emotion/react"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { cellSwitch } from "./cellSwitch"
-import { Entry } from 'contentful'
-import { ContentfulPage, GridRowContentType, SectionType, CoverContentType, FormContentType } from 'src/utils/contentful'
-import { flex, WHEN_MOBILE } from 'src/estyles'
-import { GridRow } from 'src/layout/Grid2'
-import OpenGraph from 'src/header/OpenGraph'
-import {renderNode} from "src/contentful/nodes/nodes"
-import {BUTTON} from "src/contentful/nodes/embeds/BUTTON"
-import {GALLARY} from "src/contentful/nodes/embeds/GALLARY"
-import {TABLE} from "src/contentful/nodes/embeds/TABLE"
-import { BLOCKS, INLINES, Block} from '@contentful/rich-text-types'
+import { Entry } from "contentful"
+import {
+  ContentfulPage,
+  GridRowContentType,
+  SectionType,
+  CoverContentType,
+  FormContentType,
+} from "src/utils/contentful"
+import { flex, WHEN_DESKTOP, WHEN_MOBILE } from "src/estyles"
+import { GridRow } from "src/layout/Grid2"
+import OpenGraph from "src/header/OpenGraph"
+import { renderNode } from "src/contentful/nodes/nodes"
+import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
+import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
+import { TABLE } from "src/contentful/nodes/embeds/TABLE"
+import { BLOCKS, INLINES, Block } from "@contentful/rich-text-types"
 import Cover from "src/contentful/Cover"
-
+import { ROW } from "src/contentful/nodes/embeds/ROW"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
-const EMBEDDABLE =  {
+const EMBEDDABLE = {
   ...BUTTON,
   ...GALLARY,
   ...TABLE,
+  ...ROW,
 }
 
 function embedded(node: Block) {
@@ -42,7 +49,7 @@ const OPTIONS = {
   },
 }
 
-export default function PublicSectorPage(props: Props) {
+export default function CommonPage(props: Props) {
   return (
     <>
       <OpenGraph
@@ -84,9 +91,15 @@ function pageSwitch(
           darkMode={gridFields.darkMode}
           id={gridFields.id}
           columns={gridFields.columns}
-          css={css(sectionsCss, gridFields.cssStyle)}
+          css={css(
+            sectionsCss,
+            gridFields.cssStyle,
+            gridFields.desktopCss && { [WHEN_DESKTOP]: gridFields.desktopCss }
+          )}
         >
-          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.darkMode))}
+          {gridFields.cells.map((cell) =>
+            cellSwitch(cell, gridFields.darkMode, gridFields.columns)
+          )}
         </GridRow>
       )
     default:
@@ -98,7 +111,6 @@ function pageSwitch(
       )
   }
 }
-
 
 const sectionsCss = css({
   paddingTop: 80,

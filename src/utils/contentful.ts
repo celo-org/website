@@ -140,17 +140,27 @@ export interface PlaylistContentType {
   media?: Entry<ThumbnailType>[]
 }
 
+export interface HeadingContentType {
+  title: string
+  subTitle: Document
+  titleCss?: CSSObject
+  subTitleCss?: CSSObject
+  image?: Asset
+}
+
 export type CellContentType =
   | BlurbProps
   | FreeContentType
   | RoledexContentType
   | PlaylistContentType
   | FormContentType
+  | HeadingContentType
 
 export interface GridRowContentType {
   id: string
   cells: Entry<CellContentType>[]
   cssStyle?: CSSObject
+  desktopCss?: CSSObject
   columns: 1 | 2 | 3 | 4
   darkMode?: boolean
 }
@@ -214,7 +224,12 @@ export async function fetchPageById<T>(id: string, { locale }) {
 }
 
 function processPages<T>(pages: EntryCollection<ContentfulPage<T>>, showSysData?: boolean) {
-  const data = pages.items[0].fields
+  const data = pages?.items[0]?.fields
+
+  if (!data) {
+    return null
+  }
+
   const sections = showSysData
     ? data.sections
     : (data.sections || []).map((section) => section.fields)

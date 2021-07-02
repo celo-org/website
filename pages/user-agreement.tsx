@@ -8,6 +8,11 @@ export async function getServerSideProps({ locale }) {
     locale: "en-US",
   })
 
+  if (!pageData) {
+    return { notFound: true }
+  }
+
+
   return {
     props: {
       ...pageData,
