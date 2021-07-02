@@ -1,10 +1,10 @@
-import PublicSectorPage from "src/public-sector/CommonContentFullPage"
+import CommonPage from "src/public-sector/CommonContentFullPage"
 import { getPageBySlug } from "src/utils/contentful"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
 import { GetServerSideProps } from "next"
 
-export default PublicSectorPage
+export default CommonPage
 
 export const getServerSideProps: GetServerSideProps = async function getServerSideProps({
   locale,

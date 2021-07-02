@@ -6,12 +6,15 @@ import { flex, fonts, WHEN_MOBILE, whiteText } from "src/estyles"
 import Button, { SIZE } from "src/shared/Button.3"
 import { standardStyles } from "src/styles"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import { Document } from "@contentful/rich-text-types"
+import { Document, BLOCKS, Block } from "@contentful/rich-text-types"
 import renderNode, { renderWhiteParagraph } from "src/contentful/nodes/paragraph"
+import { ROW } from "src/contentful/nodes/embeds/ROW"
+
 enum Headings {
   "large" = "large",
   "medium" = "medium",
   "small" = "small",
+  "plain" = "plain",
 }
 
 export interface Props {
@@ -23,14 +26,32 @@ export interface Props {
   darkMode?: boolean
 }
 
+function embedded(node: Block) {
+  const contentType = node.data?.target?.sys?.contentType?.sys?.id
+  const renderer = ROW[contentType]
+
+  if (renderer) {
+    return renderer(node.data.target)
+  } else {
+    console.info(contentType)
+    return null
+  }
+}
+
+const embeddable = { [BLOCKS.EMBEDDED_ENTRY]: embedded }
+
+const renderWhiteParagraphWithRow = { ...renderWhiteParagraph, ...embeddable }
+
+const renderParagraphWithRow = { ...renderNode, ...embeddable }
+
 export default function Blurb(props: Props) {
   return (
     <div css={rootCss}>
       <div css={containerCss}>
         <img src={props.icon?.fields?.file?.url} css={imageCss} width={100} height={100} />
-        <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>
+        {props.title && <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>}
         {documentToReactComponents(props.body, {
-          renderNode: props.darkMode ? renderWhiteParagraph : renderNode,
+          renderNode: props.darkMode ? renderWhiteParagraphWithRow : renderParagraphWithRow,
         })}
       </div>
       {props.link && (
@@ -88,7 +109,9 @@ function headingStyle(type: Headings, darkMode: boolean) {
       return css(fonts.h4, headingCss, darkMode && whiteText)
     case "small":
       return css(fonts.h5, headingCss, darkMode && whiteText)
-    default:
+    case "plain":
+      return css(fonts.body, {fontWeight: "normal"}, headingCss, darkMode && whiteText)
+      default:
       return css(fonts.h3, headingCss, darkMode && whiteText)
   }
 }

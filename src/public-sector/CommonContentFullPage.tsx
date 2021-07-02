@@ -49,7 +49,7 @@ const OPTIONS = {
   },
 }
 
-export default function PublicSectorPage(props: Props) {
+export default function CommonPage(props: Props) {
   return (
     <>
       <OpenGraph
