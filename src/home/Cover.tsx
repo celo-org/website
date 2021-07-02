@@ -22,7 +22,6 @@ interface Props {
 }
 
 export default function Cover(props: Props) {
-  debugger
   const { isDesktop, isTablet, bannerHeight } = useScreenSize()
   const { t } = useTranslation(NameSpaces.home)
   return (
