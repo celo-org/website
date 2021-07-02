@@ -1,4 +1,4 @@
-import {css} from "@emotion/react"
+import { css } from "@emotion/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { flex } from "src/estyles"
 import { renderNode } from "src/contentful/nodes/nodes"
@@ -25,6 +25,6 @@ export function FreeContent({ colSpan, body, cssStyle, backgroundColor, darkMode
   )
 }
 
-const rootCss = css(flex,{})
+const rootCss = css(flex, {})
 
-const darkModeText = css({"h2, h3, h4, h5, h6, p, div, ul, span": {color:"white"}})
+const darkModeText = css({ "h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })

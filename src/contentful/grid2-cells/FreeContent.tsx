@@ -5,6 +5,7 @@ import { renderNode } from "src/contentful/nodes/nodes"
 import { BLOCKS, INLINES, Block, Document } from "@contentful/rich-text-types"
 import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
 import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
+import { typeFaces } from "src/styles"
 
 const EMBEDDABLE = {
   ...BUTTON,
@@ -26,10 +27,19 @@ function embedded(node: Block) {
 const OPTIONS = {
   renderNode: {
     ...renderNode,
+    [BLOCKS.HEADING_1]: (_, children: string) => {
+      return <h2 css={h1Font}>{children}</h2>
+    },
     [BLOCKS.EMBEDDED_ENTRY]: embedded,
     [INLINES.EMBEDDED_ENTRY]: embedded,
   },
 }
+
+const h1Font = css({
+  fontFamily: typeFaces.garamond,
+  fontSize: "48px",
+  fontWeight: "normal"
+})
 
 interface Props {
   colSpan: number
@@ -59,4 +69,4 @@ const rootCss = css(flex, {
   },
 })
 
-const darkModeText = css({ "h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })
+const darkModeText = css({ "h1, h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })
