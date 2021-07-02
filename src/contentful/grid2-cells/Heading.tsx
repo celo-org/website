@@ -3,7 +3,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from "@contentful/rich-text-types"
 
 import { HeadingContentType } from "src/utils/contentful"
-import { flex, fonts } from "src/estyles"
+import { flex, fonts, whiteText } from "src/estyles"
 
 interface Props {
   span: number
@@ -12,7 +12,9 @@ interface Props {
 
 export function Heading(props: Props & HeadingContentType) {
   function SubTitle(_, children) {
-    return <h3 css={css(subtitleCss, props.subTitleCss)}>{children}</h3>
+    return (
+      <h3 css={css(subtitleCss, props.subTitleCss, props.darkMode && whiteText)}>{children}</h3>
+    )
   }
 
   const subtitleOptions = {
@@ -32,7 +34,7 @@ export function Heading(props: Props & HeadingContentType) {
           height={imageFile.details.image.height}
         />
       )}
-      {<h2 css={css(titleCSS, props.titleCss)}>{props.title}</h2>}
+      {<h2 css={css(titleCSS, props.titleCss, props.darkMode && whiteText)}>{props.title}</h2>}
       {documentToReactComponents(props.subTitle, subtitleOptions)}
     </div>
   )
