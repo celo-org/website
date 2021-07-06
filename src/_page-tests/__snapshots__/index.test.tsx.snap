@@ -56,9 +56,9 @@ exports[`HomePage renders 1`] = `
       css={
         Object {
           "map": undefined,
-          "name": "zurjp",
+          "name": "kitalr",
           "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-items:center;z-index:10;@media (min-width: 992px){width:100%;z-index:20;}@media (min-width: 576px) and (max-width: 992px){padding-top:72px;}@media (max-width: 576px){padding-top:24px;padding-bottom:16px;}@media (max-width: 400px) and (min-height: 790px){padding-bottom:0;}",
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-items:center;z-index:10;@media (min-width: 992px){width:100%;z-index:20;padding-top:48px;}@media (min-width: 576px) and (max-width: 992px){padding-top:72px;}@media (max-width: 576px){padding-top:24px;padding-bottom:16px;}@media (max-width: 400px) and (min-height: 790px){padding-bottom:0;}",
           "toString": [Function],
         }
       }

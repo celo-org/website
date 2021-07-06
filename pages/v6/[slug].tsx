@@ -81,6 +81,7 @@ function pageSwitch(
       const coverFields = section.fields as CoverContentType
       return (
         <Cover
+          superSize={coverFields.superSize}
           key={section.sys.id}
           darkMode={coverFields.darkMode}
           illoFirst={coverFields.illoFirst}
