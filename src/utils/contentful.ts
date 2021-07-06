@@ -142,6 +142,7 @@ export interface PlaylistContentType {
 
 export interface HeadingContentType {
   title: string
+  displayTitleH1?: boolean
   subTitle: Document
   titleCss?: CSSObject
   subTitleCss?: CSSObject
@@ -167,6 +168,7 @@ export interface GridRowContentType {
 
 export interface CoverContentType {
   title: string
+  superSize: boolean
   subTitle: Document
   links?: Entry<ContentfulButton>[]
   imageDesktop: Asset

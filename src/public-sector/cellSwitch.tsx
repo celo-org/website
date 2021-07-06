@@ -76,6 +76,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             darkMode={darkMode}
             span={columns}
             title={heading.title}
+            displayTitleH1={heading.displayTitleH1}
             subTitle={heading.subTitle}
             titleCss={heading.titleCss}
             subTitleCss={heading.subTitleCss}

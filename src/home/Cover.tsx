@@ -140,6 +140,7 @@ const useableArea = css(flex, {
   [WHEN_DESKTOP]: {
     width: backgroundDesktopSize.width,
     zIndex: 20,
+    paddingTop: 48,
   },
   [WHEN_TABLET]: {
     paddingTop: 72,

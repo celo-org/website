@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { flex, fonts, WHEN_MOBILE } from "src/estyles"
-import { renderNode } from "src/contentful/nodes/nodes"
+import renderNode from "src/contentful/nodes/enodes"
 import { BLOCKS, INLINES, Block, Document } from "@contentful/rich-text-types"
 import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
 import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"

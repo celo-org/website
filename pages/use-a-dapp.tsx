@@ -9,7 +9,7 @@ export default CommonPage
 export const getServerSideProps: GetServerSideProps = async function getServerSideProps({
   locale,
 }) {
-  const page = await getPageBySlug("use-dapp", { locale: "en-US" }, true)
+  const page = await getPageBySlug("use-a-dapp", { locale: "en-US" }, true)
 
   if (!page) {
     return { notFound: true }
