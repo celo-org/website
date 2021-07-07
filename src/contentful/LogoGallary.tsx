@@ -18,11 +18,10 @@ export default function LogoGallary({ list, cssStyle }: Props) {
       {list.map(({ sys, fields }) => {
         const width = fields.image.fields.file.details.image.width / 2
         const height = fields.image.fields.file.details.image.height / 2
-
         return (
           <a
             title={fields.image.fields.description}
-            css={css(itemStyle, cssStyle)}
+            css={css(cssStyle ? cssStyle : itemStyle)}
             key={sys.id}
             href={fields.url}
             target={"_blank"}
@@ -55,7 +54,6 @@ const rootStyle = css(flexRow, {
   flexWrap: "wrap",
   justifyContent: "space-around",
   alignItems: "center",
-  maxWidth: 840,
   marginTop: 32,
 })
 
