@@ -17,7 +17,13 @@ export const getServerSideProps: GetServerSideProps<Props> = async function getS
   const sections = page.sections as Entry<GridRowContentType | CoverContentType | LogoGallery>[]
   const cover = sections.find(finder("cover")) as Entry<CoverContentType>
   const press = sections.find(finder("logoGallery")) as Entry<LogoGallery>
-  const filtered = sections.filter(finder("grid-row")) as Entry<GridRowContentType>[]
+  const filtered = sections.filter(
+    ({
+      sys: {
+        contentType: { sys },
+      },
+    }) => sys.id === "grid-row" || sys.id === "horizontal"
+  ) as Entry<GridRowContentType>[]
 
   return {
     props: {

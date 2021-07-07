@@ -7,6 +7,7 @@ import { GridRow } from "src/layout/Grid2"
 import { css } from "@emotion/react"
 import { cellSwitch } from "./cellSwitch"
 import { CoverContentType } from "src/utils/contentful"
+import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
 
 interface OwnProps {
   cover?: CoverContentType
@@ -34,6 +35,9 @@ export default function Home(props: Props) {
               {fields.cells.map((cell) => cellSwitch(cell, fields.darkMode))}
             </GridRow>
           )
+        } else if (section.sys.contentType.sys.id === "horizontal") {
+          const hr = section.fields as HorizontalType
+          return <HR key={section.sys.id} darkMode={hr.darkMode} />
         } else {
           console.log("no rendered for", section.sys.contentType.sys.id)
         }
