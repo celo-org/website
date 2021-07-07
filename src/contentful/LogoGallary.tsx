@@ -9,9 +9,10 @@ interface Logo {
 
 interface Props {
   list: Entry<Logo>[]
+  cssStyle?: any
 }
 
-export default function LogoGallary({ list }: Props) {
+export default function LogoGallary({ list, cssStyle }: Props) {
   return (
     <div css={rootStyle}>
       {list.map(({ sys, fields }) => {
@@ -21,7 +22,7 @@ export default function LogoGallary({ list }: Props) {
         return (
           <a
             title={fields.image.fields.description}
-            css={itemStyle}
+            css={css(itemStyle, cssStyle)}
             key={sys.id}
             href={fields.url}
             target={"_blank"}
