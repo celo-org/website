@@ -35,7 +35,18 @@ export function Heading(props: Props & HeadingContentType) {
           height={imageFile.details.image.height}
         />
       )}
-      {<h2 css={css(titleCSS, props.titleCss, props.darkMode && whiteText)}>{props.title}</h2>}
+      {
+        <h2
+          css={css(
+            props.displayTitleH1 ? fonts.h1 : fonts.h2,
+            titleCSS,
+            props.titleCss,
+            props.darkMode && whiteText
+          )}
+        >
+          {props.title}
+        </h2>
+      }
       {documentToReactComponents(props.subTitle, subtitleOptions)}
     </div>
   )
@@ -50,7 +61,7 @@ const subtitleCss = css(fonts.h4, {
   textAlign: "center",
 })
 
-const titleCSS = css(fonts.h1, {
+const titleCSS = css({
   textAlign: "center",
   marginBottom: 24,
 })

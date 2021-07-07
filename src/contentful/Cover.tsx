@@ -13,9 +13,19 @@ import {
 import { GridRow } from "src/layout/Grid2"
 import { TABLET_BREAKPOINT } from "src/shared/Styles"
 import { CoverContentType } from "src/utils/contentful"
-import renderNode from "src/contentful/nodes/paragraph"
+import renderers from "src/contentful/nodes/enodes"
 import Button, { SIZE } from "src/shared/Button.3"
 import { useScreenSize } from "src/layout/ScreenSize"
+import { BLOCKS } from "@contentful/rich-text-types"
+
+const OPTIONS = {
+  renderNode: {
+    ...renderers,
+    [BLOCKS.HEADING_1]: (_, children: string) => {
+      return <h2 css={fonts.h1}>{children}</h2>
+    },
+  },
+}
 
 export default function Cover(props: CoverContentType) {
   const { isMobile } = useScreenSize()
@@ -30,9 +40,11 @@ export default function Cover(props: CoverContentType) {
       css={props.illoFirst ? imageFirstRootCss : rootCss}
     >
       <div css={contentCss}>
-        <h1 css={css(titleCss, props.darkMode && whiteText)}>{props.title}</h1>
+        <h1 css={css(props.superSize ? titleCss : fonts.h1, props.darkMode && whiteText)}>
+          {props.title}
+        </h1>
         <span css={props.darkMode ? subtitleDarkMode : subtitleCss}>
-          {documentToReactComponents(props.subTitle, { renderNode })}
+          {documentToReactComponents(props.subTitle, OPTIONS)}
         </span>
         <div css={linkAreaCss}>
           {props.links?.map((link) => (
@@ -116,7 +128,7 @@ const subtitleCss = css({
 })
 
 const subtitleDarkMode = css(whiteText, subtitleCss, {
-  p: whiteText,
+  "h1, h2, h3, h4, p": whiteText,
 })
 
 const contentCss = css(flex, {
