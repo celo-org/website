@@ -130,6 +130,7 @@ export interface FreeContentType {
   backgroundColor: string
   colSpan?: 1 | 2 | 3 | 4
   cssStyle: CSSObject
+  listStyleImage?: Asset
   body: Document
 }
 

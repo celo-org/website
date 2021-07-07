@@ -25,7 +25,7 @@ const darkBackground = css(background, {
 const rootCss = css({
   marginTop: 0,
   marginBottom: 0,
-  width: `calc(100% - ${2  * gap}px)`,
+  width: `calc(100% - ${2 * gap}px)`,
   height: 1,
   alignSelf: "center",
   border: 0,

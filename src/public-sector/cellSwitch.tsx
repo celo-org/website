@@ -1,8 +1,8 @@
-import { Entry } from 'contentful'
+import { Entry } from "contentful"
 import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
 import Roledex from "src/contentful/grid2-cells/Roledex"
 import PlayList from "src/contentful/grid2-cells/Playlist"
-import Blurb, {Props as BlurbProps} from "src/contentful/grid2-cells/Blurb"
+import Blurb, { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import {
   CellContentType,
   FreeContentType,
@@ -29,7 +29,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             body={freeContent.body}
             darkMode={darkMode}
             cssStyle={freeContent.cssStyle}
-            backgroundColor={freeContent.backgroundColor}
+            listStyleImage={freeContent.listStyleImage}
           />
         )
       case "form":

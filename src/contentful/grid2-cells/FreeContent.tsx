@@ -1,4 +1,4 @@
-import { css } from "@emotion/react"
+import { css, CSSObject } from "@emotion/react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { flex, fonts, WHEN_MOBILE } from "src/estyles"
 import renderNode from "src/contentful/nodes/enodes"
@@ -6,6 +6,7 @@ import { BLOCKS, INLINES, Block, Document } from "@contentful/rich-text-types"
 import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
 import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
 import { ROW } from "../nodes/embeds/ROW"
+import { Asset } from "contentful"
 
 const EMBEDDABLE = {
   ...BUTTON,
@@ -41,14 +42,22 @@ interface Props {
   colSpan: number
   body: Document
   cssStyle: any
-  backgroundColor: string
   darkMode: boolean
+  listStyleImage?: Asset
 }
 
-export function FreeContent({ colSpan, body, cssStyle, backgroundColor, darkMode }: Props) {
+export function FreeContent({ colSpan, body, cssStyle, darkMode, listStyleImage }: Props) {
+  const customBullets = listStyleImage
+    ? {
+        ul: {
+          listStyleImage: `url(${listStyleImage.fields.file.url})`,
+        },
+      }
+    : null
+
   return (
-    <div css={css(rootCss, { gridColumn: `span ${colSpan}`, backgroundColor })}>
-      <div css={css(flex, darkMode && darkModeText, cssStyle)}>
+    <div css={css(rootCss, { gridColumn: `span ${colSpan}` })}>
+      <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
         {documentToReactComponents(body, OPTIONS)}
       </div>
     </div>

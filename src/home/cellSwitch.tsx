@@ -16,7 +16,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
             body={freeContent.body}
             darkMode={darkMode}
             cssStyle={freeContent.cssStyle}
-            backgroundColor={freeContent.backgroundColor}
+            listStyleImage={freeContent.listStyleImage}
           />
         )
 
