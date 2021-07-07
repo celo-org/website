@@ -41,7 +41,7 @@ const h1ResponsiveCss = css(fonts.h1, { [WHEN_MOBILE]: fonts.h1Mobile })
 interface Props {
   colSpan: number
   body: Document
-  cssStyle: any
+  cssStyle?: CSSObject
   darkMode: boolean
   listStyleImage?: Asset
 }
