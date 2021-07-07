@@ -2,6 +2,7 @@ import { Entry } from "contentful"
 import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
 import Blurb, { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import { CellContentType, FreeContentType } from "src/utils/contentful"
+import * as React from "react"
 
 export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
   if (entry) {
