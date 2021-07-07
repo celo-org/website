@@ -1,4 +1,4 @@
-import { css } from "@emotion/react"
+import { css, CSSObject } from "@emotion/react"
 import { Asset, Entry } from "contentful"
 import { flex, flexRow, WHEN_MOBILE } from "src/estyles"
 
@@ -9,7 +9,7 @@ interface Logo {
 
 interface Props {
   list: Entry<Logo>[]
-  cssStyle?: any
+  cssStyle?: CSSObject
 }
 
 export default function LogoGallary({ list, cssStyle }: Props) {
