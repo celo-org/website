@@ -81,6 +81,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             subTitle={heading.subTitle}
             titleCss={heading.titleCss}
             subTitleCss={heading.subTitleCss}
+            cssStyle={heading.cssStyle}
             image={heading.image}
           />
         )

@@ -9,6 +9,7 @@ interface Props {
     kind: BTN.NAV | BTN.DARKNAV | BTN.PRIMARY
     assetLink?: Asset
     size?: SIZE
+    align?: "center" | "flex-start" | "flex-end"
   }
 }
 
@@ -19,6 +20,7 @@ export const BUTTON = {
       href={fields.href || fields.assetLink?.fields?.file?.url}
       kind={fields.kind}
       size={fields.size}
+      align={fields.align}
     />
   ),
 }

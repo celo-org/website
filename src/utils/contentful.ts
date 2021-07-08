@@ -147,6 +147,7 @@ export interface HeadingContentType {
   subTitle: Document
   titleCss?: CSSObject
   subTitleCss?: CSSObject
+  cssStyle?: CSSObject
   image?: Asset
 }
 

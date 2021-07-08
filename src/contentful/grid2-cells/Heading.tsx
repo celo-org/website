@@ -27,7 +27,7 @@ export function Heading(props: Props & HeadingContentType) {
   const imageFile = props.image?.fields?.file
 
   return (
-    <div css={css(rootCss, { gridColumn: `span ${props.span}` })}>
+    <div css={css(rootCss, props.cssStyle, { gridColumn: `span ${props.span}` })}>
       {imageFile && (
         <img
           src={imageFile.url}
