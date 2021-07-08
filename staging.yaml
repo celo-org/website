@@ -46,6 +46,10 @@ handlers:
   - url: /papers/future-of-digital-currencies
     static_files: public/papers/shaping-future-of-digital-currencies.pdf
     upload: public/papers/shaping-future-of-digital-currencies.pdf
-
+  
+  - url: /annual-reports/2020
+    static_files: public/papers/celo-foundation-2020-report.pdf
+    upload: public/papers/celo-foundation-2020-report.pdf
+    
   - url: /.*
     script: auto

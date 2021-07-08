@@ -30,7 +30,7 @@ const MENU = [
   ...MAIN_MENU,
   {
     name: "annualReport",
-    link: "https://drive.google.com/file/d/1V00HirrpwSaUsapZoWVglRexBvrFuud7/view",
+    link: "/annual-reports/2020",
   },
 ]
 const TECH_MENU = [
@@ -56,8 +56,8 @@ const RESOURCE_MENU = [
 ]
 
 const ICON_SIZE = 13
-function socialMenu(darkMode:boolean) {
-  const iconColor = darkMode  ? colors.white : colors.dark
+function socialMenu(darkMode: boolean) {
+  const iconColor = darkMode ? colors.white : colors.dark
   return [
     {
       name: "Blog",
@@ -254,7 +254,7 @@ interface DetailProps {
   darkMode?: boolean
 }
 
-const Details = React.memo(function _Details({darkMode}: DetailProps) {
+const Details = React.memo(function _Details({ darkMode }: DetailProps) {
   const { t } = useTranslation(NameSpaces.common)
   const fontStyling = css(
     fonts.legal,
@@ -282,7 +282,7 @@ const detailsCss = css(flex, {
 })
 
 const hrefCss = css({
-    color: "inherit"
+  color: "inherit"
 })
 
 const recieveUpdatesCss = css(
