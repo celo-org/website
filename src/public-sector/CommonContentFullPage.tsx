@@ -18,7 +18,7 @@ import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
 import { TABLE } from "src/contentful/nodes/embeds/TABLE"
 import { BLOCKS, INLINES, Block } from "@contentful/rich-text-types"
 import Cover from "src/contentful/Cover"
-import HR from "src/contentful/HorizontalRule"
+import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
 import { ROW } from "src/contentful/nodes/embeds/ROW"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
@@ -67,7 +67,9 @@ export default function CommonPage(props: Props) {
 const rootCss = css(flex, {})
 
 function pageSwitch(
-  section: Entry<GridRowContentType | SectionType | CoverContentType | FormContentType>
+  section: Entry<
+    GridRowContentType | SectionType | CoverContentType | FormContentType | HorizontalType
+  >
 ) {
   switch (section.sys.contentType.sys.id) {
     case "cover":
@@ -105,7 +107,8 @@ function pageSwitch(
         </GridRow>
       )
     case "horizontal":
-      return <HR key={section.sys.id} />
+      const hr = section.fields as HorizontalType
+      return <HR key={section.sys.id} darkMode={hr.darkMode} />
     default:
       const sectionfields = section.fields as SectionType
       return (
