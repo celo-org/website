@@ -5,7 +5,7 @@ import Cover from "./Cover"
 import { ContentfulPage, GridRowContentType, LogoGallery } from "src/utils/contentful"
 import { GridRow } from "src/layout/Grid2"
 import { css } from "@emotion/react"
-import { cellSwitch } from "./cellSwitch"
+import { cellSwitch } from "src/public-sector/cellSwitch"
 import { CoverContentType } from "src/utils/contentful"
 import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
 
@@ -32,7 +32,7 @@ export default function Home(props: Props) {
               columns={fields.columns}
               css={css(fields.cssStyle)}
             >
-              {fields.cells.map((cell) => cellSwitch(cell, fields.darkMode))}
+              {fields.cells.map((cell) => cellSwitch(cell, fields.darkMode, fields.columns))}
             </GridRow>
           )
         } else if (section.sys.contentType.sys.id === "horizontal") {

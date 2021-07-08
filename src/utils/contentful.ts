@@ -194,6 +194,7 @@ export interface GalleryItem {
 export interface LogoGallery {
   name: string
   list: Entry<GalleryItem>[]
+  cssStyle?: any
 }
 
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {
