@@ -13,6 +13,7 @@ import {
 } from "src/utils/contentful"
 import Form from "src/contentful/grid2-cells/Form"
 import { Heading } from "src/contentful/grid2-cells/Heading"
+import * as React from "react"
 
 export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
