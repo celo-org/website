@@ -1,10 +1,8 @@
 import * as React from "react"
 import { View } from "react-native"
 import ArticleData from "src/community/connect/ArticleData"
-import CodeOfConduct from "src/community/connect/CodeOfConduct"
 import Contribute from "src/community/connect/Contribute"
 import CoverArea from "src/community/connect/CoverArea"
-import FellowSection from "src/community/connect/FellowSection"
 import preview from "src/community/connect/preview.jpg"
 import Tenets from "src/community/connect/Tenets"
 import EcoFund from "src/community/EcoFund"
@@ -28,13 +26,9 @@ export function CommunityPage() {
         <View>
           <CoverArea />
           <Tenets />
-
-          <CodeOfConduct />
-
           <ArticleData title={t("articles.title")} />
           <Contribute />
           <EcoFund />
-          <FellowSection />
           <View nativeID={hashNav.connect.newsletter} />
         </View>
       </>

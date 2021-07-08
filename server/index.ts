@@ -138,6 +138,10 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect("/community")
   })
 
+  server.get("/code-of-conduct", (_, res) => {
+    res.redirect("https://github.com/celo-org/website/blob/master/src/content/code-of-conduct.md")
+  })
+
   server.get("/tos", (_, res) => {
     res.redirect("/user-agreement")
   })
