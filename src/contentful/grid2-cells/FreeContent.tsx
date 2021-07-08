@@ -72,6 +72,7 @@ const rootCss = css(flex, {
   "h2:first-of-type": {
     marginTop: 8,
   },
+  ul: { paddingInlineStart: 16 },
 })
 
 const darkModeText = css({ "h1, h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })
