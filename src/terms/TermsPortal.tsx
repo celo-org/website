@@ -29,7 +29,6 @@ function TermsPortal() {
         <SideTitledSection title={t("helpfulLinks")}>
           <View style={styles.links}>
             <HelpfulLink text={t("userAgreementLink")} href={CeloLinks.agreement} />
-            <HelpfulLink text={t("faq")} href={menuItems.FAQ.link} />
             <HelpfulLink text={t("privacyPolicy")} href={menuItems.PRIVACY.link} />
             <HelpfulLink text={t("disclaimer")} href={CeloLinks.disclaimer} />
           </View>

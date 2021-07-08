@@ -55,7 +55,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
       res.redirect("/jobs")
     })
   })
-  ;["/about-us"].forEach((route) => {
+  ;["/about-us", "/faq"].forEach((route) => {
     server.get(route, (_, res) => {
       res.redirect("/about")
     })

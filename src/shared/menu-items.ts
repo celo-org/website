@@ -106,11 +106,6 @@ export const pagePaths = {
     name: "For Value Flowers",
     link: "/flowers",
   },
-  FAQ: {
-    name: "FAQ",
-    link: "/faq",
-    isDark: false,
-  },
   FAUCET: {
     name: "Faucet",
     link: "/developers/faucet",
