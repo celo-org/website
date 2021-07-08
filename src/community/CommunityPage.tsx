@@ -19,7 +19,7 @@ export function CommunityPage() {
           path="/community"
           title={t("pageTitle")}
           description={
-            "Celo is building a financial system that allows more people to participate, and we invite you to join the conversation and our community. Diverse perspectives and inclusive conversations welcomed."
+            "Celo is a financial system that allows more people to participate, and we invite you to join the conversation and our community. Diverse perspectives and inclusive conversations welcomed."
           }
           image={preview}
         />
