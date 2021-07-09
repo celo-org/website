@@ -120,7 +120,11 @@ function useMobileMenu(): [boolean, () => void] {
   return [mobileMenuActive, clickHamburger]
 }
 
-export default function Header() {
+interface Props {
+  darkMode: boolean
+}
+
+export default function Header(props: Props) {
   const { bannerHeight } = useScreenSize()
   const { setBannerVisible, isBannerShowing } = useBanner()
   const { pathname } = useRouter()
@@ -131,7 +135,8 @@ export default function Header() {
   const { menuFaded, belowFoldUpScroll } = useScroll()
   const willShowHamburger = !menuFaded || mobileMenuActive
 
-  const isDarkMode = attributes.isDark || (attributes.translucent && !belowFoldUpScroll)
+  const isDarkMode =
+    attributes.isDark || props.darkMode || (attributes.translucent && !belowFoldUpScroll)
 
   const backgroundColor = React.useMemo(() => {
     const translucentAndNotUp = attributes.translucent && !belowFoldUpScroll
@@ -341,7 +346,7 @@ const styles = {
     height: HEADER_HEIGHT,
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 12,
+    zIndex: 30,
     maxWidth: "100vw",
     transitionProperty: "top",
     transitionDuration: "200ms",

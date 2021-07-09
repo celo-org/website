@@ -185,6 +185,7 @@ export interface ContentfulPage<T> {
   description: string
   sections: Entry<T>[]
   openGraph?: Asset
+  darkNav: boolean
 }
 
 export interface GalleryItem {
