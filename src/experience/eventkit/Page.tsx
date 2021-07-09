@@ -22,10 +22,6 @@ const PAGES = [
     sections: [
       { title: "Overview", href: `${FLAVOR_PATH}#${hashNav.eventsFlavor.overview}` },
       {
-        title: "Code of Conduct",
-        href: `${FLAVOR_PATH}#${hashNav.eventsFlavor.codeOfConduct}`,
-      },
-      {
         title: "Foster Growth",
         href: `${FLAVOR_PATH}#${hashNav.eventsFlavor.foster}`,
       },

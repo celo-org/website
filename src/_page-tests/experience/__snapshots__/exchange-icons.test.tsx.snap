@@ -1592,41 +1592,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 }
               }
             >
-              These assets may only be used to represent Celo assets on exchanges. The use of the Celo Exchange Icons requires following the Celo Community Code of Conduct as provided 
-              <div
-                className="css-view-1dbjc4n"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
-              >
-                <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-                  href="/code-of-conduct"
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitTextDecorationStyle": "solid",
-                      "cursor": "pointer",
-                      "display": "inline",
-                      "opacity": 1,
-                      "textDecoration": "underline",
-                      "textDecorationStyle": "solid",
-                    }
-                  }
-                >
-                  here
-                </a>
-              </div>
-               and 
+              These assets may only be used to represent Celo assets on exchanges. The use of the Celo Exchange Icons requires following the Celo Foundation 
               <div
                 className="css-view-1dbjc4n"
                 onClick={[Function]}
@@ -4901,63 +4867,6 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             >
               Resources
             </h6>
-            <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
-              >
-                <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  dir="auto"
-                  href="/code-of-conduct"
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                  rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(46,51,56,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
-                  target="_blank"
-                >
-                  Code of Conduct
-                </a>
-              </div>
-            </div>
             <div
               css={
                 Object {

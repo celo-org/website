@@ -5,7 +5,6 @@ import { hashNav } from "src/shared/menu-items"
 
 const sections = [
   hashNav.eventsFlavor.overview,
-  hashNav.eventsFlavor.codeOfConduct,
   hashNav.eventsFlavor.foster,
   hashNav.eventsFlavor.uniqueGifts,
   hashNav.eventsFlavor.rituals,

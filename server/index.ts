@@ -55,7 +55,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
       res.redirect("/jobs")
     })
   })
-  ;["/about-us"].forEach((route) => {
+  ;["/about-us", "/faq"].forEach((route) => {
     server.get(route, (_, res) => {
       res.redirect("/about")
     })
@@ -141,6 +141,10 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 
   server.get("/connect", (_, res) => {
     res.redirect("/community")
+  })
+
+  server.get("/code-of-conduct", (_, res) => {
+    res.redirect("https://github.com/celo-org/website/blob/master/src/content/code-of-conduct.md")
   })
 
   server.get("/tos", (_, res) => {
