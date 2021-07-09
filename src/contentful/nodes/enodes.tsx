@@ -30,6 +30,7 @@ const renderNode: RenderNode = {
   [BLOCKS.EMBEDDED_ASSET]: (node) => {
     const asset = node.data.target as Asset
     const file = asset.fields.file
+    asset.fields.file.contentType === "image/svg+xml"
     return (
       <div
         style={{
@@ -44,6 +45,7 @@ const renderNode: RenderNode = {
           alt={asset.fields.description}
           width={file.details.image?.width}
           height={file.details.image?.height}
+          unoptimized={asset.fields.file.contentType === "image/svg+xml"}
         />
       </div>
     )

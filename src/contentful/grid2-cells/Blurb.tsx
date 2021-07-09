@@ -43,12 +43,12 @@ const embeddable = { [BLOCKS.EMBEDDED_ENTRY]: embedded }
 const renderWhiteParagraphWithRow = { ...renderWhiteParagraph, ...embeddable }
 
 const renderParagraphWithRow = { ...renderNode, ...embeddable }
-
 export default function Blurb(props: Props) {
+  const imageURL = props.icon?.fields?.file?.url
   return (
     <div css={rootCss}>
       <div css={containerCss}>
-        <img src={props.icon?.fields?.file?.url} css={imageCss} width={100} height={100} />
+        {imageURL && <img src={imageURL} css={imageCss} width={100} height={100} />}
         {props.title && <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>}
         {documentToReactComponents(props.body, {
           renderNode: props.darkMode ? renderWhiteParagraphWithRow : renderParagraphWithRow,
