@@ -1494,23 +1494,6 @@ exports[`Experience/Brandkit renders 1`] = `
               style={
                 Object {
                   "color": "rgba(46,51,56,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "20px",
-                  "lineHeight": "28px",
-                  "marginBottom": "20px",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
-              Shared norms and behaviors are the foundation of a beautiful community. Support the effort responsibly.
-            </div>
-            <div
-              className="css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              style={
-                Object {
-                  "color": "rgba(46,51,56,1.00)",
                   "fontFamily": "Jost, futura-pt, futura, sans-serif",
                   "fontSize": "20px",
                   "fontWeight": "500",
@@ -1537,7 +1520,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 }
               }
             >
-              Celo is the owner of all the brand assets and derivatives. You may not:
+              The Celo Foundation is the owner of all the brand assets and derivatives. You may not:
               <ul
                 className="css-reset-4rbku5 css-view-1dbjc4n"
                 role="list"

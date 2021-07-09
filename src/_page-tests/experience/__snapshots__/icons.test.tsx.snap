@@ -1534,40 +1534,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               >
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-                  href="/code-of-conduct"
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitTextDecorationStyle": "solid",
-                      "cursor": "pointer",
-                      "display": "inline",
-                      "opacity": 1,
-                      "textDecoration": "underline",
-                      "textDecorationStyle": "solid",
-                    }
-                  }
-                >
-                  Community Code of Conduct
-                </a>
-              </div>
-               and 
-              <div
-                className="css-view-1dbjc4n"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
-              >
-                <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
                   href="/brand-policy"
                   onClick={[Function]}
                   onMouseEnter={[Function]}

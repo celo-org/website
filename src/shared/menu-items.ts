@@ -82,11 +82,6 @@ export const pagePaths = {
     link: "/celo-rewards-terms-and-conditions",
     isDark: false,
   },
-  CODE_OF_CONDUCT: {
-    name: "Code of Conduct",
-    link: "/code-of-conduct",
-    isDark: false,
-  },
   COMMUNITY: {
     name: "Community",
     link: "/community",
@@ -306,7 +301,6 @@ export const hashNav = {
   },
   eventsFlavor: {
     overview: "overview",
-    codeOfConduct: "code-of-conduct",
     foster: "foster",
     uniqueGifts: "unique-gifts",
     rituals: "rituals",

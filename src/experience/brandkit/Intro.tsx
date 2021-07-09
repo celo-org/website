@@ -7,7 +7,7 @@ import SectionTitle from "src/experience/common/SectionTitle"
 import { H1, H4, Li, Ul } from "src/fonts/Fonts"
 import { I18nProps, NameSpaces, Trans, useTranslation, withNamespaces } from "src/i18n"
 import InlineAnchor from "src/shared/InlineAnchor"
-import menuItems, { hashNav } from "src/shared/menu-items"
+import { hashNav } from "src/shared/menu-items"
 import { fonts, standardStyles } from "src/styles"
 
 export default React.memo(
@@ -34,12 +34,6 @@ const Overview = withNamespaces(NameSpaces.brand)(function _Overview({ t }: I18n
       <H1 style={standardStyles.elementalMarginBottom}>{t("home.title")}</H1>
       <H4 style={standardStyles.blockMarginBottom}>{t("home.introduction")}</H4>
       <Text style={[fonts.h5, standardStyles.elementalMarginBottom]}>{t("home.useageTitle")}</Text>
-      <Text style={[fonts.p, standardStyles.elementalMarginBottom]}>
-        <Trans ns={NameSpaces.brand} i18nKey="home.useageText">
-          <InlineAnchor href={menuItems.CODE_OF_CONDUCT.link}>Code Of Conduct</InlineAnchor>
-        </Trans>
-      </Text>
-
       <Text style={[fonts.h5, standardStyles.elementalMargin]}>{t("home.importantRemember")}</Text>
       <Text style={fonts.p}>
         {t("home.celoOwner")}
