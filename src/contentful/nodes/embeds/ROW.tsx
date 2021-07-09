@@ -12,15 +12,26 @@ interface Props {
 export const ROW = {
   row: ({ fields }: Entry<Props>) => (
     <div css={css(rootStyle, fields.cssStyle)}>
-      {fields.items.map(({ fields: { image }, sys }) => (
-        <img
-          key={sys.id}
-          alt={image.fields.description}
-          src={image.fields.file.url}
-          width={image.fields.file.details.image.width}
-          height={image.fields.file.details.image.height}
-        />
-      ))}
+      {fields.items.map(({ fields: { image, url }, sys }) => {
+        const rendered = (
+          <img
+              key={sys.id}
+              alt={image.fields.description}
+              src={image.fields.file.url}
+              width={image.fields.file.details.image.width}
+              height={image.fields.file.details.image.height}
+            />
+        )
+
+        if (url) {
+          return (
+            <a href={url} rel="noreferrer">
+              {rendered}
+            </a>
+          )
+        }
+        return rendered
+      })}
     </div>
   ),
 }
