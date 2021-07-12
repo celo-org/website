@@ -2,35 +2,53 @@ import { css, CSSObject } from "@emotion/react"
 import { flexRow } from "src/estyles"
 import { Entry } from "contentful"
 import { GalleryItem } from "src/utils/contentful"
+import {Props as ButtonShape} from "src/contentful/nodes/embeds/BUTTON"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
 
 type Item = GalleryItem
 interface Props {
-  items: Entry<Item>[]
+  items: Entry<Item| ButtonShape>[]
   cssStyle?: CSSObject
 }
 
 export const ROW = {
   row: ({ fields }: Entry<Props>) => (
     <div css={css(rootStyle, fields.cssStyle)}>
-      {fields.items.map(({ fields: { image, url }, sys }) => {
-        const rendered = (
-          <img
-              key={sys.id}
-              alt={image.fields.description}
-              src={image.fields.file.url}
-              width={image.fields.file.details.image.width}
-              height={image.fields.file.details.image.height}
-            />
-        )
+      {fields.items.map(({ fields, sys }) => {
+        switch (sys.contentType.sys.id) {
+          case "button":
+            const button = fields as ButtonShape
 
-        if (url) {
-          return (
-            <a href={url} rel="noreferrer">
-              {rendered}
-            </a>
-          )
-        }
-        return rendered
+            return  <Button
+            text={button.words}
+            href={button.href || button.assetLink?.fields?.file?.url}
+            kind={button.kind}
+            size={button.size}
+            align={button.align}
+          />
+
+          case "logoGalleryItem":
+            const item = fields as Item
+              const imageFields =  item?.image?.fields
+              const rendered = (
+                <img
+                  key={sys.id}
+                  alt={imageFields?.description}
+                  src={imageFields?.file?.url}
+                  width={imageFields?.file?.details?.image?.width}
+                  height={imageFields?.file?.details?.image?.height}
+                />
+              )
+
+              if (item.url) {
+                return (
+                  <a href={item.url} rel="noreferrer">
+                    {rendered}
+                  </a>
+                )
+              }
+              return rendered
+          }
       })}
     </div>
   ),
