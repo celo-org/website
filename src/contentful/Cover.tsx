@@ -68,7 +68,7 @@ export default function Cover(props: CoverContentType) {
           <img
             width={size?.width}
             height={size?.height}
-            css={props.illoFirst ? imageFirstCss : imageCss}
+            css={css(props.illoFirst ? imageFirstCss : imageCss, props.verticalPosition === "flushBottomText" && flushBottomCss)}
             src={props.imageDesktop?.fields.file.url}
             alt={props.imageDesktop?.fields.description}
           />
@@ -175,12 +175,15 @@ const illoCss = css({
 })
 
 const imageCss = css({
-  position: "absolute",
   overflow: "visible",
   [WHEN_MOBILE]: {
-    position: "static",
     overflow: "inherit",
   },
+
+})
+
+const flushBottomCss = css({
+  position: "absolute",
   [WHEN_TABLET_AND_UP]: {
     bottom: 0,
   },

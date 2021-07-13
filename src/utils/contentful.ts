@@ -187,6 +187,7 @@ export interface CoverContentType {
   imageMobile: Asset
   darkMode?: boolean
   illoFirst?: boolean
+  verticalPosition: "centered" | "flushBottomText"
 }
 
 export interface ContentfulPage<T> {
