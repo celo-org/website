@@ -40,6 +40,7 @@ const TestData: ContentfulPage<GridRowContentType> = {
   title: "Celo Home",
   description: "A description of Celo",
   slug: "home",
+  darkNav: false,
   sections: [
     {
       sys: {
@@ -69,6 +70,7 @@ describe("HomePage", () => {
       .create(
         <TestProvider>
           <HomePage
+            darkNav={false}
             title={TestData.title}
             description={TestData.description}
             slug={TestData.slug}

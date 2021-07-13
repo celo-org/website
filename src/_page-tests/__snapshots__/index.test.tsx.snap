@@ -396,19 +396,6 @@ exports[`HomePage renders 1`] = `
             }
           }
         >
-          <img
-            css={
-              Object {
-                "map": undefined,
-                "name": "1mf35eq",
-                "next": undefined,
-                "styles": "width:100px;height:100px;",
-                "toString": [Function],
-              }
-            }
-            height={100}
-            width={100}
-          />
           <h4
             css={
               Object {
@@ -459,19 +446,6 @@ exports[`HomePage renders 1`] = `
             }
           }
         >
-          <img
-            css={
-              Object {
-                "map": undefined,
-                "name": "1mf35eq",
-                "next": undefined,
-                "styles": "width:100px;height:100px;",
-                "toString": [Function],
-              }
-            }
-            height={100}
-            width={100}
-          />
           <h4
             css={
               Object {
@@ -522,19 +496,6 @@ exports[`HomePage renders 1`] = `
             }
           }
         >
-          <img
-            css={
-              Object {
-                "map": undefined,
-                "name": "1mf35eq",
-                "next": undefined,
-                "styles": "width:100px;height:100px;",
-                "toString": [Function],
-              }
-            }
-            height={100}
-            width={100}
-          />
           <h4
             css={
               Object {
