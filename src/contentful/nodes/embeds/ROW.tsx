@@ -3,7 +3,7 @@ import { flexRow } from "src/estyles"
 import { Entry } from "contentful"
 import { GalleryItem } from "src/utils/contentful"
 import {Props as ButtonShape} from "src/contentful/nodes/embeds/BUTTON"
-import Button, { BTN, SIZE } from "src/shared/Button.3"
+import Button from "src/shared/Button.3"
 
 type Item = GalleryItem
 interface Props {

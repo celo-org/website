@@ -30,7 +30,6 @@ const renderNode: RenderNode = {
   [BLOCKS.EMBEDDED_ASSET]: (node) => {
     const asset = node.data.target as Asset
     const file = asset.fields.file
-    asset.fields.file.contentType === "image/svg+xml"
     return (
       <div
         style={{
