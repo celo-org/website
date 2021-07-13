@@ -10,10 +10,12 @@ import {
   PlaylistContentType,
   FormContentType,
   HeadingContentType,
+  PictureType,
 } from "src/utils/contentful"
 import Form from "src/contentful/grid2-cells/Form"
 import { Heading } from "src/contentful/grid2-cells/Heading"
 import * as React from "react"
+import Picture from "./Picture"
 
 export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
@@ -58,6 +60,9 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             icon={blurbProp.icon}
           />
         )
+      case "picture":
+        const picture = entry.fields as PictureType
+        return <Picture {...picture} />
       case "youTubePlayist":
         const playlist = entry.fields as PlaylistContentType
         return (

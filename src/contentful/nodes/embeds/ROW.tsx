@@ -19,13 +19,15 @@ export const ROW = {
           case "button":
             const button = fields as ButtonShape
 
-            return  <Button
-            text={button.words}
-            href={button.href || button.assetLink?.fields?.file?.url}
-            kind={button.kind}
-            size={button.size}
-            align={button.align}
-          />
+            return (
+              <Button
+                text={button.words}
+                href={button.href || button.assetLink?.fields?.file?.url}
+                kind={button.kind}
+                size={button.size}
+                align={button.align}
+              />
+            )
 
           case "logoGalleryItem":
             const item = fields as Item

@@ -141,6 +141,15 @@ export interface PlaylistContentType {
   media?: Entry<ThumbnailType>[]
 }
 
+export interface PictureType {
+  description: string
+  desktop: Asset
+  mobile: Asset
+  objectFit: "cover" | "contain"
+  span: 1 | 2 | 3 | 4
+  cssStyle?: CSSObject
+}
+
 export interface HeadingContentType {
   title: string
   displayTitleH1?: boolean
@@ -153,11 +162,12 @@ export interface HeadingContentType {
 
 export type CellContentType =
   | BlurbProps
-  | FreeContentType
-  | RoledexContentType
-  | PlaylistContentType
   | FormContentType
   | HeadingContentType
+  | RoledexContentType
+  | PlaylistContentType
+  | PictureType
+  | FreeContentType
 
 export interface GridRowContentType {
   id: string
