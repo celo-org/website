@@ -747,59 +747,6 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 }
               }
             >
-              To follow the Celo Community Code of Conduct as provided
-               
-              <div
-                className="css-view-1dbjc4n"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
-              >
-                <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-                  href="https://celo.org/code-of-conduct"
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitTextDecorationStyle": "solid",
-                      "cursor": "pointer",
-                      "display": "inline",
-                      "opacity": 1,
-                      "textDecoration": "underline",
-                      "textDecorationStyle": "solid",
-                    }
-                  }
-                >
-                  here
-                </a>
-              </div>
-            </li>
-            <li
-              className="css-reset-4rbku5 css-text-901oao css-textHasAncestor-16my406"
-              onClick={[Function]}
-              role="listitem"
-              style={
-                Object {
-                  "color": "rgba(46,51,56,1.00)",
-                  "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "20px",
-                  "lineHeight": "28px",
-                  "listStyle": "lower-alpha",
-                  "marginBottom": "20px",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
               You will not tamper with or hack TGCSO, the Celo Technology, the Company’s or other participants’ computer systems,or the technical delivery systems of Company’s providers including without limitation any attacks that may violate Amazon Web Services Acceptable Use Policy and Google Cloud Platform's Acceptable Use Policy;
                
             </li>

@@ -17,9 +17,8 @@ function useDropDown(): [number, () => void, (key: number) => void] {
   function clear() {
     _setValue(0)
   }
-  function setValue(val: string | number) {
-    _setValue(Number(val))
-  }
+  const setValue = React.useCallback((val: string | number) => _setValue(Number(val)), [_setValue])
+
   return [value, clear, setValue]
 }
 
@@ -198,6 +197,7 @@ const Phases = React.memo(function Phases({phase, setPhase, phase2Started}: Phas
 const rootCss = css({
   maxWidth: 720,
   marginTop: 16,
+  display: "grid", // fixes a safari bug where row heights were wrong
 })
 
 const dropdownsCss = css({

@@ -13,7 +13,7 @@ const OPTS = { revalidateOnFocus: false, revalidateOnReconnect: false, dedupingI
 
 export default function usePhase() {
   const { data, error, isValidating } = useSWR<Phases>(URL, fetcher, OPTS)
-  console.log("phases", data, "error", error)
+  console.log("phases", data, error && `error: ${error}`)
   return { phases: data, isValidating }
 }
 

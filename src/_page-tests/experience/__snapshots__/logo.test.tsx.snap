@@ -1546,75 +1546,6 @@ exports[`Experience/Logo renders 1`] = `
                 </a>
               </div>
               <div
-                className="css-text-901oao"
-                dir="auto"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "color": "rgba(46,51,56,1.00)",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "20px",
-                    "fontWeight": "500",
-                    "lineHeight": "24px",
-                    "marginTop": "60px",
-                    "textRendering": "geometricPrecision",
-                  }
-                }
-              >
-                Usage & License Note
-              </div>
-              <div
-                className="css-text-901oao"
-                dir="auto"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "color": "rgba(46,51,56,1.00)",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                    "fontSize": "20px",
-                    "lineHeight": "28px",
-                    "marginBottom": "60px",
-                    "marginTop": "20px",
-                    "textRendering": "geometricPrecision",
-                  }
-                }
-              >
-                The use of the Celo logo requires following the Celo Community Code of Conduct as provided 
-                <div
-                  className="css-view-1dbjc4n"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
-                >
-                  <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
-                    href="/code-of-conduct"
-                    onClick={[Function]}
-                    onMouseEnter={[Function]}
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitTextDecorationStyle": "solid",
-                        "cursor": "pointer",
-                        "display": "inline",
-                        "opacity": 1,
-                        "textDecoration": "underline",
-                        "textDecorationStyle": "solid",
-                      }
-                    }
-                  >
-                    here.
-                  </a>
-                </div>
-              </div>
-              <div
                 className="css-view-1dbjc4n"
                 style={
                   Object {
@@ -6483,7 +6414,7 @@ Please use the full-color logo whenever possible.
                 <a
                   className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
                   dir="auto"
-                  href="https://drive.google.com/file/d/1V00HirrpwSaUsapZoWVglRexBvrFuud7/view"
+                  href="/annual-reports/2020"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
@@ -6848,63 +6779,6 @@ Please use the full-color logo whenever possible.
             >
               Resources
             </h6>
-            <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
-            >
-              <div
-                className="css-view-1dbjc4n"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
-              >
-                <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-                  dir="auto"
-                  href="/code-of-conduct"
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                  rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(46,51,56,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
-                  target="_blank"
-                >
-                  Code of Conduct
-                </a>
-              </div>
-            </div>
             <div
               css={
                 Object {

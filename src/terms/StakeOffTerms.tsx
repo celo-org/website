@@ -220,11 +220,6 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                   General Prohibitions and Company’s Enforcement Rights. You agree to the following:
                   <Ul>
                     <Li listStyle={ListType.alpha}>
-                      To follow the Celo Community Code of Conduct as provided{" "}
-                      <Link href="https://celo.org/code-of-conduct">here</Link>
-                    </Li>
-
-                    <Li listStyle={ListType.alpha}>
                       You will not tamper with or hack TGCSO, the Celo Technology, the Company’s or
                       other participants’ computer systems,or the technical delivery systems of
                       Company’s providers including without limitation any attacks that may violate

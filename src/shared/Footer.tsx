@@ -35,7 +35,7 @@ const MENU = [
   menu.COMMUNITY,
   {
     name: "annualReport",
-    link: "https://drive.google.com/file/d/1V00HirrpwSaUsapZoWVglRexBvrFuud7/view",
+    link: "/annual-reports/2020",
   },
 ]
 const TECH_MENU = [
@@ -48,7 +48,6 @@ const TECH_MENU = [
 const eventsLink = `${menu.COMMUNITY.link}#${hashNav.connect.events}`
 const ecoFundLink = `${menu.COMMUNITY.link}#${hashNav.connect.fund}`
 const RESOURCE_MENU = [
-  menu.CODE_OF_CONDUCT,
   menu.BRAND_POLICY,
   menu.PRESS,
   { name: "Events", link: eventsLink },
@@ -61,8 +60,8 @@ const RESOURCE_MENU = [
 ]
 
 const ICON_SIZE = 13
-function socialMenu(darkMode:boolean) {
-  const iconColor = darkMode  ? colors.white : colors.dark
+function socialMenu(darkMode: boolean) {
+  const iconColor = darkMode ? colors.white : colors.dark
   return [
     {
       name: "Blog",
@@ -157,7 +156,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
           >
             <img src={sendCoinIcon} css={emailLogoCss} width={50} height={50} />
             <p css={recieveUpdatesCss}>{t("receiveUpdates")}</p>
-            <EmailForm submitText={t("signUp")} route={"contact"} isDarkMode={false} />
+            <EmailForm submitText={t("signUp")} route={"contacts"} isDarkMode={false} />
           </Cell>
         </GridRow>
       )}
@@ -259,7 +258,7 @@ interface DetailProps {
   darkMode?: boolean
 }
 
-const Details = React.memo(function _Details({darkMode}: DetailProps) {
+const Details = React.memo(function _Details({ darkMode }: DetailProps) {
   const { t } = useTranslation(NameSpaces.common)
   const fontStyling = css(
     fonts.legal,
@@ -287,7 +286,7 @@ const detailsCss = css(flex, {
 })
 
 const hrefCss = css({
-    color: "inherit"
+  color: "inherit"
 })
 
 const recieveUpdatesCss = css(
