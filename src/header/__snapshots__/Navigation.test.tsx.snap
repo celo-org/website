@@ -325,6 +325,70 @@ exports[`Navigation renders 1`] = `
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
             dir="auto"
+            href="/dapps"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="link"
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxFlex": 0,
+                "WebkitBoxPack": "center",
+                "WebkitFlexGrow": 0,
+                "WebkitJustifyContent": "center",
+                "alignItems": "center",
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "borderBottomColor": "rgba(0,0,0,0.00)",
+                "borderLeftColor": "rgba(0,0,0,0.00)",
+                "borderRightColor": "rgba(0,0,0,0.00)",
+                "borderTopColor": "rgba(0,0,0,0.00)",
+                "color": "rgba(46,51,56,1.00)",
+                "cursor": "pointer",
+                "display": "inline-flex",
+                "flexGrow": 0,
+                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "justifyContent": "center",
+                "lineHeight": "16px",
+                "msFlexAlign": "center",
+                "msFlexPack": "center",
+                "msFlexPositive": 0,
+                "opacity": 1,
+                "outlineColor": "transparent",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+                "width": "fit-content",
+              }
+            }
+          >
+            Ecosystem
+          </a>
+        </div>
+      </div>
+      <div
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            dir="auto"
             href="/alliance"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -429,7 +493,7 @@ exports[`Navigation renders 1`] = `
             }
             target="_blank"
           >
-            Blog
+            
             <div
               className="css-view-1dbjc4n"
               style={
@@ -528,7 +592,7 @@ exports[`Navigation renders 1`] = `
             }
             target="_blank"
           >
-            GitHub
+            
             <div
               className="css-view-1dbjc4n"
               style={

@@ -56,9 +56,9 @@ exports[`HomePage renders 1`] = `
       css={
         Object {
           "map": undefined,
-          "name": "kitalr",
+          "name": "1j8tml9",
           "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-items:center;z-index:10;@media (min-width: 992px){width:100%;z-index:20;padding-top:48px;}@media (min-width: 576px) and (max-width: 992px){padding-top:72px;}@media (max-width: 576px){padding-top:24px;padding-bottom:16px;}@media (max-width: 400px) and (min-height: 790px){padding-bottom:0;}",
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-items:center;z-index:10;@media (min-width: 992px){width:100%;z-index:20;padding-top:48px;}@media (min-width: 576px) and (max-width: 992px){padding-top:72px;}@media (max-width: 576px){padding-top:16px;padding-bottom:16px;}",
           "toString": [Function],
         }
       }
@@ -67,9 +67,9 @@ exports[`HomePage renders 1`] = `
         css={
           Object {
             "map": undefined,
-            "name": "1a0mso6",
+            "name": "1kak402",
             "next": undefined,
-            "styles": "display:flex;flex-direction:column;align-items:center;;max-width:660px;width:90vw;margin-bottom:0;padding:24px;position:relative;@media (min-width: 576px) and (max-width: 992px){max-width:580px;}@media (max-width: 576px){max-width:310px;padding-top:56px;padding-bottom:12px;}@media (min-width: 992px){padding-top:60px;}",
+            "styles": "display:flex;flex-direction:column;align-items:center;;max-width:660px;width:90vw;margin-bottom:0;padding:24px;position:relative;@media (min-width: 576px) and (max-width: 992px){max-width:580px;}@media (max-width: 576px){max-width:310px;padding-top:24px;padding-bottom:24px;}@media (min-width: 992px){padding-top:60px;}",
             "toString": [Function],
           }
         }
@@ -113,9 +113,9 @@ exports[`HomePage renders 1`] = `
       css={
         Object {
           "map": undefined,
-          "name": "vrmywl",
+          "name": "w751s7",
           "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;@media (max-width: 576px){opacity:0.9;padding-top:24px;background-color:rgba(46, 51, 56, 0.5);z-index:10;box-shadow:-1px 5px 22px 7px rgba(46, 51, 56, 0.5);}@media (min-width: 576px){width:100%;background-color:#2E3338;background:linear-gradient(180deg, rgba(46, 51, 56, 0.1) 1%, rgba(46, 51, 56, 0.6) 20%, #2E3338 48.13%);z-index:20;opacity:1;padding-top:60px;padding-bottom:60px;}",
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;@media (max-width: 576px){opacity:0.9;padding-top:24px;padding-bottom:40px;background-color:rgba(46, 51, 56, 0.5);z-index:10;box-shadow:-1px 5px 22px 7px rgba(46, 51, 56, 0.5);}@media (min-width: 576px){width:100%;background-color:#2E3338;background:linear-gradient(180deg, rgba(46, 51, 56, 0.1) 1%, rgba(46, 51, 56, 0.6) 20%, #2E3338 48.13%);z-index:20;opacity:1;padding-top:60px;padding-bottom:60px;}",
           "toString": [Function],
         }
       }
