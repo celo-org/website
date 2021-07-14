@@ -146,10 +146,7 @@ const useableArea = css(flex, {
     paddingTop: 72,
   },
   [WHEN_MOBILE]: {
-    paddingTop: 24,
+    paddingTop: 16,
     paddingBottom: 16,
-  },
-  [WHEN_LONG_PHONE]: {
-    paddingBottom: 0,
   },
 })

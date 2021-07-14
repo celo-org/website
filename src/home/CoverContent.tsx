@@ -50,8 +50,8 @@ const rootCss = css(centered, {
   },
   [WHEN_MOBILE]: {
     maxWidth: 310,
-    paddingTop: 56,
-    paddingBottom: 12,
+    paddingTop: 24,
+    paddingBottom: 24,
   },
   [WHEN_DESKTOP]: {
     paddingTop: 60,

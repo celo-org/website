@@ -248,8 +248,8 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
         props.menuFaded ? styles.menuInvisible : styles.menuVisible,
       ]}
     >
-      {menuItems.map((item, index) => (
-        <div key={index} css={styles.linkWrapper}>
+      {menuItems.map((item) => (
+        <div key={item.link} css={styles.linkWrapper}>
           <Button
             kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
             href={item.link}
@@ -266,7 +266,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
         <Button
           kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
           href={"https://medium.com/CeloHQ"}
-          text={t("blog")}
+          text={""}
           target={"_blank"}
           iconRight={<MediumLogo height={20} color={foregroundColor} wrapWithLink={false} />}
         />
@@ -275,7 +275,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
         <Button
           kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
           href={CeloLinks.gitHub}
-          text={t("github")}
+          text={""}
           target={"_blank"}
           iconRight={<Octocat size={22} color={props.isDarkMode ? colors.white : colors.dark} />}
         />

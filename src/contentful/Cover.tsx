@@ -195,9 +195,9 @@ const imageCss = css({
 })
 
 const flushBottomCss = css({
-  position: "absolute",
   [WHEN_TABLET_AND_UP]: {
     bottom: 0,
+    position: "absolute",
   },
 })
 

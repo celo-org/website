@@ -59,6 +59,7 @@ export default function Blurb(props: Props) {
             src={`https:${imageURL}`}
             width={width}
             height={height}
+            alt=""
             css={props.isNaturalSize ? {} : fixedSizeCss}
           />
         )}

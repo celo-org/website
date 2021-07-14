@@ -18,6 +18,7 @@ function blurbFactory(unique): Entry<BlurbProps> {
       contentType: { sys: { id: "proposition", type: "Link", linkType: "ContentType" } },
     },
     fields: {
+      isNaturalSize: false,
       title: `Blurb ${unique}`,
       body: {
         nodeType: BLOCKS.DOCUMENT,

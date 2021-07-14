@@ -389,9 +389,9 @@ exports[`HomePage renders 1`] = `
           css={
             Object {
               "map": undefined,
-              "name": "qb3b49",
+              "name": "1qilrns",
               "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;}",
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;li{list-style:none;}ul{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inlin-eend:0;padding-inline-start:0;}}",
               "toString": [Function],
             }
           }
@@ -439,9 +439,9 @@ exports[`HomePage renders 1`] = `
           css={
             Object {
               "map": undefined,
-              "name": "qb3b49",
+              "name": "1qilrns",
               "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;}",
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;li{list-style:none;}ul{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inlin-eend:0;padding-inline-start:0;}}",
               "toString": [Function],
             }
           }
@@ -489,9 +489,9 @@ exports[`HomePage renders 1`] = `
           css={
             Object {
               "map": undefined,
-              "name": "qb3b49",
+              "name": "1qilrns",
               "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;}",
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;li{list-style:none;}ul{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inlin-eend:0;padding-inline-start:0;}}",
               "toString": [Function],
             }
           }
