@@ -1,7 +1,5 @@
 {
   "disclaimer": "Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.",
-  "About Us": "About Us",
-  "Join Us": "Join Us",
   "Home": "Home",
   "Join": "Join",
   "Technology": "Technology",
@@ -66,10 +64,6 @@
   "readMoreFromOurBlog": "Read more on our blog",
   "receiveUpdates": "Receive the latest updates to your inbox",
   "signUp": "Sign Up",
-  "conductBtn": "Read Document",
-  "experienceLabel": "Experience",
-  "conductLabel": "Code of Conduct",
-  "conductText": "Shared norms and behaviors are the foundation of a beautiful community. Please read and respect our code of conduct.",
   "socialLabel": "Engage",
   "validationErrors": {
     "email": "Please enter a valid email",

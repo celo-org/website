@@ -13,14 +13,13 @@ import { BACKGROUND_PALETTE } from "src/experience/common/data"
 import SectionTitle from "src/experience/common/SectionTitle"
 import TripplePairing from "src/experience/common/TripplePairing"
 import { H1, H4 } from "src/fonts/Fonts"
-import { NameSpaces, Trans, useTranslation } from "src/i18n"
+import { NameSpaces, useTranslation } from "src/i18n"
 import { ScreenSizes, useScreenSize } from "src/layout/ScreenSize"
 import LogoLightBg from "src/logos/LogoLightBg"
 import RingsGlyph from "src/logos/RingsGlyph"
 import AspectRatio from "src/shared/AspectRatio"
 import Button, { BTN } from "src/shared/Button.3"
-import InlineAnchor from "src/shared/InlineAnchor"
-import menuItems, { hashNav } from "src/shared/menu-items"
+import { hashNav } from "src/shared/menu-items"
 import { colors, fonts, standardStyles } from "src/styles"
 
 export default React.memo(function Logo() {
@@ -59,14 +58,6 @@ const Overview = React.memo(function _Overview() {
           onPress={onPressDownload}
           href="/assets/CeloLogoPackage.zip"
         />
-        <Text style={[fonts.h5, standardStyles.blockMarginTop]}>{t("licenseTitle")}</Text>
-        <Text
-          style={[fonts.p, standardStyles.blockMarginBottom, standardStyles.elementalMarginTop]}
-        >
-          <Trans ns={NameSpaces.brand} i18nKey="logo.license">
-            <InlineAnchor href={menuItems.CODE_OF_CONDUCT.link}>here</InlineAnchor>
-          </Trans>
-        </Text>
         <View style={[standardStyles.centered, styles.fullScreenLogo]}>
           <LogoLightBg height={100} />
         </View>

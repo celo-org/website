@@ -55,7 +55,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
       res.redirect("/jobs")
     })
   })
-  ;["/about-us"].forEach((route) => {
+  ;["/about-us", "/faq"].forEach((route) => {
     server.get(route, (_, res) => {
       res.redirect("/about")
     })
@@ -132,14 +132,23 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   server.get("/papers/whitepaper/chinese", (_, res) => {
     res.redirect("/papers/celo-wp-simplified-chinese.pdf")
   })
-  ;["/brand", "/grants"].forEach((slug) => {
-    server.get(slug, (_, res) => {
-      res.redirect(`/experience${slug}`)
-    })
+
+  server.get("papers/annual-reports/2020", (_, res) => {
+    res.redirect("papers/celo-foundation-2020-report.pdf")
   })
+
+    ;["/brand", "/grants"].forEach((slug) => {
+      server.get(slug, (_, res) => {
+        res.redirect(`/experience${slug}`)
+      })
+    })
 
   server.get("/connect", (_, res) => {
     res.redirect("/community")
+  })
+
+  server.get("/code-of-conduct", (_, res) => {
+    res.redirect("https://github.com/celo-org/website/blob/master/src/content/code-of-conduct.md")
   })
 
   server.get("/tos", (_, res) => {
