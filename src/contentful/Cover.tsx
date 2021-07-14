@@ -40,10 +40,16 @@ export default function Cover(props: CoverContentType) {
       css={props.illoFirst ? imageFirstRootCss : rootCss}
     >
       <div css={contentCss}>
-        <h1 css={css(props.superSize ? titleCss : fonts.h1, props.darkMode && whiteText)}>
+        <h1
+          css={css(
+            props.superSize ? titleCss : fonts.h1,
+            centerMobileCss,
+            props.darkMode && whiteText
+          )}
+        >
           {props.title}
         </h1>
-        <span css={props.darkMode ? subtitleDarkMode : subtitleCss}>
+        <span css={props.darkMode ? subtitleDarkMode : centerMobileCss}>
           {documentToReactComponents(props.subTitle, OPTIONS)}
         </span>
         <div css={linkAreaCss}>
@@ -68,7 +74,13 @@ export default function Cover(props: CoverContentType) {
           <img
             width={size?.width}
             height={size?.height}
-            css={css(props.illoFirst ? imageFirstCss : imageCss, props.verticalPosition === "flushBottomText" && flushBottomCss)}
+            css={css(
+
+              props.illoFirst ? imageFirstCss : imageCss,
+
+              props.verticalPosition === "flushBottomText" && flushBottomCss
+
+            )}
             src={props.imageDesktop?.fields.file.url}
             alt={props.imageDesktop?.fields.description}
           />
@@ -121,13 +133,13 @@ const titleCss = css(fonts.h1, {
   },
 })
 
-const subtitleCss = css({
+const centerMobileCss = css({
   [WHEN_MOBILE]: {
     textAlign: "center",
   },
 })
 
-const subtitleDarkMode = css(whiteText, subtitleCss, {
+const subtitleDarkMode = css(whiteText, centerMobileCss, {
   "h1, h2, h3, h4, p": whiteText,
 })
 
