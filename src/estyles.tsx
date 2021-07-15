@@ -61,9 +61,6 @@ export const fonts = {
 }
 
 
-export const whiteText = css({
-  color: colors.white
-})
 
 
 export const textStyles = {
@@ -137,4 +134,11 @@ export const inputDarkStyle = css(inputStyle, {
 
 export const errorStyle = css({
   color: colors.error
+})
+
+export const whiteText = css({
+  color: colors.white,
+  [WHEN_MOBILE]: {
+    color: colors.white,
+  },
 })

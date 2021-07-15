@@ -22,7 +22,7 @@ const OPTIONS = {
   renderNode: {
     ...renderers,
     [BLOCKS.HEADING_1]: (_, children: string) => {
-      return <h2 css={fonts.h1}>{children}</h2>
+      return <h2 css={rH1}>{children}</h2>
     },
   },
 }
@@ -41,11 +41,7 @@ export default function Cover(props: CoverContentType) {
     >
       <div css={contentCss}>
         <h1
-          css={css(
-            props.superSize ? titleCss : fonts.h1,
-            centerMobileCss,
-            props.darkMode && whiteText
-          )}
+          css={css(props.superSize ? titleCss : rH1, centerMobileCss, props.darkMode && whiteText)}
         >
           {props.title}
         </h1>
@@ -75,11 +71,9 @@ export default function Cover(props: CoverContentType) {
             width={size?.width}
             height={size?.height}
             css={css(
-
               props.illoFirst ? imageFirstCss : imageCss,
 
               props.verticalPosition === "flushBottomText" && flushBottomCss
-
             )}
             src={props.imageDesktop?.fields.file.url}
             alt={props.imageDesktop?.fields.description}
@@ -203,4 +197,8 @@ const flushBottomCss = css({
 
 const imageFirstCss = css(imageCss, {
   right: 0,
+})
+
+const rH1 = css(fonts.h1, {
+  [WHEN_MOBILE]: fonts.h1Mobile,
 })
