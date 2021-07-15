@@ -9,6 +9,7 @@ describe("PlumoLanding", () => {
       .create(
         <TestProvider>
           <PlumoLanding
+            darkNav={true}
             title="Plumo"
             description="Things about Plumo"
             slug="/plumo"

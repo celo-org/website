@@ -28,6 +28,9 @@ export default function Cover(props: Props) {
     <div
       css={css(rootCss, {
         paddingTop: bannerHeight,
+        [WHEN_MOBILE]: {
+          paddingTop: 0,
+        },
       })}
     >
       <div css={css(backgroundArea, { height: `calc(100% - ${bannerHeight}px)` })} />
@@ -146,10 +149,7 @@ const useableArea = css(flex, {
     paddingTop: 72,
   },
   [WHEN_MOBILE]: {
-    paddingTop: 24,
+    paddingTop: 16,
     paddingBottom: 16,
-  },
-  [WHEN_LONG_PHONE]: {
-    paddingBottom: 0,
   },
 })

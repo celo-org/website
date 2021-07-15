@@ -101,7 +101,7 @@ class MyApp extends App {
         </Head>
         <ScreenSizeProvider>
           <Progress />
-          {this.skipNavigation() || <Navigation />}
+          {this.skipNavigation() || <Navigation darkMode={pageProps?.darkNav} />}
           {this.state.hasError ? <FiveHundred /> : <Component {...pageProps} />}
           {this.skipNavigation() || (
             <div css={footerWrapperCss}>

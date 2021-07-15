@@ -60,7 +60,8 @@ export default function Press(props: LogoGallery) {
 const backgroundCss = css(flex, {
   [WHEN_MOBILE]: {
     opacity: 0.9,
-    paddingTop: 24,
+    paddingTop: 16,
+    paddingBottom: 40,
     backgroundColor: colors.darkTransparent,
     zIndex: 10,
     boxShadow: `-1px 5px 22px 7px ${colors.darkTransparent}`,

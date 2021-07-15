@@ -76,6 +76,7 @@ function pageSwitch(
       const coverFields = section.fields as CoverContentType
       return (
         <Cover
+          verticalPosition={coverFields.verticalPosition}
           key={section.sys.id}
           darkMode={coverFields.darkMode}
           superSize={coverFields.superSize}
@@ -123,7 +124,7 @@ const sectionsCss = css({
   paddingTop: 80,
   paddingBottom: 80,
   [WHEN_MOBILE]: {
-    paddingTop: 24,
-    paddingBottom: 24,
+    paddingTop: 40,
+    paddingBottom: 40,
   },
 })

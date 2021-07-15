@@ -65,25 +65,29 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
       res.redirect("/terms")
     })
   })
-  ;["/applications", "/technology", "/dev", "/devs", "/develop", "/build", "/developer"].forEach(
-    (route) => {
-      server.get(route, (_, res) => {
-        res.redirect("/developers")
-      })
-    }
-  )
+  ;["/technology", "/dev", "/devs", "/develop", "/developer"].forEach((route) => {
+    server.get(route, (_, res) => {
+      res.redirect("/developers")
+    })
+  })
   ;["/build/validators"].forEach((route) => {
     server.get(route, (_, res) => {
       res.redirect("/validators/explore")
+    })
+  })
+  ;["/test-wallet", "build/download"].forEach((route) => {
+    server.get(route, (_, res) => {
+      res.redirect("/developers/wallet")
     })
   })
 
   server.get("/build/*", (req, res) => {
     res.redirect(`/developers/${req.params[0]}`)
   })
-  ;["/test-wallet", "build/download"].forEach((route) => {
+  ;["/apps", "/applications"].forEach((route) => {
     server.get(route, (_, res) => {
-      res.redirect("/developers/wallet")
+      // Note this is from contentful
+      res.redirect("/dapps")
     })
   })
 

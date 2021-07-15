@@ -97,6 +97,11 @@ export const pagePaths = {
     link: "/developers",
     isDark: true,
   },
+  ECOSYSTEM: {
+    name: "Ecosystem",
+    link: "/dapps",
+    isDark: true,
+  },
   FLOWERS: {
     name: "For Value Flowers",
     link: "/flowers",
@@ -191,6 +196,7 @@ export const MAIN_MENU = [
   pagePaths.ABOUT_US,
   pagePaths.DEVELOPERS,
   pagePaths.COMMUNITY,
+  pagePaths.ECOSYSTEM,
   pagePaths.ALLIANCE_COLLECTIVE,
 ]
 

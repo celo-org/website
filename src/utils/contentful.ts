@@ -141,22 +141,33 @@ export interface PlaylistContentType {
   media?: Entry<ThumbnailType>[]
 }
 
+export interface PictureType {
+  description: string
+  desktop: Asset
+  mobile: Asset
+  objectFit: "cover" | "contain"
+  span: 1 | 2 | 3 | 4
+  cssStyle?: CSSObject
+}
+
 export interface HeadingContentType {
   title: string
   displayTitleH1?: boolean
   subTitle: Document
   titleCss?: CSSObject
   subTitleCss?: CSSObject
+  cssStyle?: CSSObject
   image?: Asset
 }
 
 export type CellContentType =
   | BlurbProps
-  | FreeContentType
-  | RoledexContentType
-  | PlaylistContentType
   | FormContentType
   | HeadingContentType
+  | RoledexContentType
+  | PlaylistContentType
+  | PictureType
+  | FreeContentType
 
 export interface GridRowContentType {
   id: string
@@ -176,6 +187,7 @@ export interface CoverContentType {
   imageMobile: Asset
   darkMode?: boolean
   illoFirst?: boolean
+  verticalPosition: "centered" | "flushBottomText"
 }
 
 export interface ContentfulPage<T> {
@@ -184,6 +196,7 @@ export interface ContentfulPage<T> {
   description: string
   sections: Entry<T>[]
   openGraph?: Asset
+  darkNav: boolean
 }
 
 export interface GalleryItem {

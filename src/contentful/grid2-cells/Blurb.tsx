@@ -9,7 +9,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { Document, BLOCKS, Block } from "@contentful/rich-text-types"
 import renderNode, { renderWhiteParagraph } from "src/contentful/nodes/paragraph"
 import { ROW } from "src/contentful/nodes/embeds/ROW"
-
+import Image from "next/image"
 enum Headings {
   "large" = "large",
   "medium" = "medium",
@@ -24,6 +24,7 @@ export interface Props {
   body: Document
   link?: Entry<ContentfulButton>
   darkMode?: boolean
+  isNaturalSize: boolean
 }
 
 function embedded(node: Block) {
@@ -43,12 +44,25 @@ const embeddable = { [BLOCKS.EMBEDDED_ENTRY]: embedded }
 const renderWhiteParagraphWithRow = { ...renderWhiteParagraph, ...embeddable }
 
 const renderParagraphWithRow = { ...renderNode, ...embeddable }
-
 export default function Blurb(props: Props) {
+  const image = props.icon?.fields?.file
+  const imageURL = image?.url
+  const width = props.isNaturalSize ? image?.details?.image?.width : 100
+  const height = props.isNaturalSize ? image?.details?.image?.height : 100
   return (
     <div css={rootCss}>
       <div css={containerCss}>
-        <img src={props.icon?.fields?.file?.url} css={imageCss} width={100} height={100} />
+        {imageURL && (
+          <Image
+            unoptimized={true}
+            layout={props.isNaturalSize ? "intrinsic" : "fixed"}
+            src={`https:${imageURL}`}
+            width={width}
+            height={height}
+            alt=""
+            css={props.isNaturalSize ? {} : fixedSizeCss}
+          />
+        )}
         {props.title && <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>}
         {documentToReactComponents(props.body, {
           renderNode: props.darkMode ? renderWhiteParagraphWithRow : renderParagraphWithRow,
@@ -90,10 +104,20 @@ const containerCss = css(flex, {
     alignContent: "center",
     textAlign: "center",
     maxWidth: 288,
+    li: {
+      listStyle: "none",
+    },
+    ul: {
+      marginBlockStart: 0,
+      marginBlockEnd: 0,
+      marginInlineStart: 0,
+      marginInlinEend: 0,
+      paddingInlineStart: 0,
+    },
   },
 })
 
-const imageCss = css({
+const fixedSizeCss = css({
   width: 100,
   height: 100,
 })

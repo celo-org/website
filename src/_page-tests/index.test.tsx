@@ -18,6 +18,7 @@ function blurbFactory(unique): Entry<BlurbProps> {
       contentType: { sys: { id: "proposition", type: "Link", linkType: "ContentType" } },
     },
     fields: {
+      isNaturalSize: false,
       title: `Blurb ${unique}`,
       body: {
         nodeType: BLOCKS.DOCUMENT,
@@ -40,6 +41,7 @@ const TestData: ContentfulPage<GridRowContentType> = {
   title: "Celo Home",
   description: "A description of Celo",
   slug: "home",
+  darkNav: false,
   sections: [
     {
       sys: {
@@ -69,6 +71,7 @@ describe("HomePage", () => {
       .create(
         <TestProvider>
           <HomePage
+            darkNav={false}
             title={TestData.title}
             description={TestData.description}
             slug={TestData.slug}

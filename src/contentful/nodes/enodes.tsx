@@ -44,6 +44,7 @@ const renderNode: RenderNode = {
           alt={asset.fields.description}
           width={file.details.image?.width}
           height={file.details.image?.height}
+          unoptimized={asset.fields.file.contentType === "image/svg+xml"}
         />
       </div>
     )

@@ -8,8 +8,9 @@ export default CommonPage
 
 export const getServerSideProps: GetServerSideProps = async function getServerSideProps({
   locale,
+  params,
 }) {
-  const page = await getPageBySlug("build-on-celo", { locale: "en-US" }, true)
+  const page = await getPageBySlug(params.slug as string, { locale: "en-US" }, true)
 
   if (!page) {
     return { notFound: true }

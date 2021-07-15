@@ -8,6 +8,7 @@ import { css } from "@emotion/react"
 import { cellSwitch } from "src/public-sector/cellSwitch"
 import { CoverContentType } from "src/utils/contentful"
 import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
+import { WHEN_DESKTOP } from "src/estyles"
 
 interface OwnProps {
   cover?: CoverContentType
@@ -30,7 +31,7 @@ export default function Home(props: Props) {
               key={section.sys.id}
               id={fields.id}
               columns={fields.columns}
-              css={css(fields.cssStyle)}
+              css={css(fields.cssStyle, fields.desktopCss && { [WHEN_DESKTOP]: fields.desktopCss })}
             >
               {fields.cells.map((cell) => cellSwitch(cell, fields.darkMode, fields.columns))}
             </GridRow>
