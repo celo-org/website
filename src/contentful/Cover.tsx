@@ -45,7 +45,7 @@ export default function Cover(props: CoverContentType) {
         >
           {props.title}
         </h1>
-        <span css={props.darkMode ? subtitleDarkMode : centerMobileCss}>
+        <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
           {documentToReactComponents(props.subTitle, OPTIONS)}
         </span>
         <div css={linkAreaCss}>
@@ -127,6 +127,10 @@ const titleCss = css(fonts.h1, {
   },
 })
 
+const subTextCss = css({
+  marginTop: 16,
+})
+
 const centerMobileCss = css({
   [WHEN_MOBILE]: {
     textAlign: "center",
@@ -174,6 +178,7 @@ const illoCss = css({
   gridArea: "illo",
   position: "relative",
   [WHEN_MOBILE]: {
+    marginTop: 24,
     width: "100vw",
     justifyContent: "center",
     alignItems: "center",
