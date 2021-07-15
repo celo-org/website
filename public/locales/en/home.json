@@ -11,29 +11,27 @@
   "statsAddresses": "Total addresses",
   "statsTransactions": "Total transactions",
   "statsAvgTime": "Average block time",
-  "carbonTonsOffset": "Carbon Tons Offset",
+  "daysCarbonNegative": "Days Carbon Negative",
   "whitePaper": "Read Celo White Paper",
   "stabilityPaper": "Read Stability White Paper",
   "stabilityAnalysis": "Stability Analysis",
   "readMore": "Read more about our technology",
   "readIntroGuide": "Read Intro Guide",
   "buildTitle": "The Platform for Mobile DeFi",
-  "build1":{
+  "build1": {
     "title": "Mobile",
     "text": "Hyper-efficient light client and full node incentives allowing for scalability to 6 billion smartphones. Full EVM compatibility making it easy to get started.",
     "link": "Make it mobile wih DappKit"
-    },
+  },
   "build2": {
     "title": "Stable",
     "text": "Growing family of native stablecoins, like Celo Dollars, which follow the value of fiat currencies. Pay transaction fees with stablecoins or your own tokens.",
     "link": "Learn more about Celo Dollars"
-
   },
   "build3": {
     "title": "Usable",
     "text": "Users can easily send currency to any mobile number, enabled by Celo’s decentralized phone verification protocol, and get access to a growing ecosystem of global cash-in cash-out options.",
     "link": "See it in action with Valora"
-
   },
   "twoMoneyTitle": "Global digital assets powered by Celo",
   "stableCoins": "Named for the currencies they follow, Celo Dollars (cUSD) and Celo Euro (cEUR) are stablecoins that allow you to share value faster, cheaper and more easily on your mobile phone.",

@@ -130,6 +130,7 @@ export interface FreeContentType {
   backgroundColor: string
   colSpan?: 1 | 2 | 3 | 4
   cssStyle: CSSObject
+  listStyleImage?: Asset
   body: Document
 }
 
@@ -140,29 +141,53 @@ export interface PlaylistContentType {
   media?: Entry<ThumbnailType>[]
 }
 
+export interface PictureType {
+  description: string
+  desktop: Asset
+  mobile: Asset
+  objectFit: "cover" | "contain"
+  span: 1 | 2 | 3 | 4
+  cssStyle?: CSSObject
+}
+
+export interface HeadingContentType {
+  title: string
+  displayTitleH1?: boolean
+  subTitle: Document
+  titleCss?: CSSObject
+  subTitleCss?: CSSObject
+  cssStyle?: CSSObject
+  image?: Asset
+}
+
 export type CellContentType =
   | BlurbProps
-  | FreeContentType
+  | FormContentType
+  | HeadingContentType
   | RoledexContentType
   | PlaylistContentType
-  | FormContentType
+  | PictureType
+  | FreeContentType
 
 export interface GridRowContentType {
   id: string
   cells: Entry<CellContentType>[]
   cssStyle?: CSSObject
+  desktopCss?: CSSObject
   columns: 1 | 2 | 3 | 4
   darkMode?: boolean
 }
 
 export interface CoverContentType {
   title: string
+  superSize: boolean
   subTitle: Document
   links?: Entry<ContentfulButton>[]
   imageDesktop: Asset
   imageMobile: Asset
   darkMode?: boolean
   illoFirst?: boolean
+  verticalPosition: "centered" | "flushBottomText"
 }
 
 export interface ContentfulPage<T> {
@@ -171,6 +196,18 @@ export interface ContentfulPage<T> {
   description: string
   sections: Entry<T>[]
   openGraph?: Asset
+  darkNav: boolean
+}
+
+export interface GalleryItem {
+  url: string
+  image: Asset
+}
+
+export interface LogoGallery {
+  name: string
+  list: Entry<GalleryItem>[]
+  cssStyle?: any
 }
 
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {
@@ -204,7 +241,12 @@ export async function fetchPageById<T>(id: string, { locale }) {
 }
 
 function processPages<T>(pages: EntryCollection<ContentfulPage<T>>, showSysData?: boolean) {
-  const data = pages.items[0].fields
+  const data = pages?.items[0]?.fields
+
+  if (!data) {
+    return null
+  }
+
   const sections = showSysData
     ? data.sections
     : (data.sections || []).map((section) => section.fields)

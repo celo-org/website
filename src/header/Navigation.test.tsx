@@ -8,7 +8,7 @@ describe("Navigation", () => {
     const tree = renderer
       .create(
         <TestProvider>
-          <Navigation />
+          <Navigation darkMode={false} />
         </TestProvider>
       )
       .toJSON()

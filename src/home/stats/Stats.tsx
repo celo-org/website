@@ -9,8 +9,8 @@ import CarbonStats from "./CarbonStats"
 
 export default function Stats() {
   const { t } = useTranslation(NameSpaces.home)
-  const { addressCount, avgBlockTime, blockCount, totalTx } = useStatsRelay()
-  const allLoaded = addressCount && avgBlockTime && blockCount && totalTx
+  const { avgBlockTime, totalTx } = useStatsRelay()
+  const allLoaded = avgBlockTime && totalTx
   return (
     <figure aria-hidden={!allLoaded} css={css(rootCss, allLoaded && appear)}>
       <RingsGlyph color={colors.white} height={20} />
@@ -19,16 +19,6 @@ export default function Stats() {
           {t("statsHeading")}
         </a>
       </figcaption>
-      <Datum
-        value={blockCount?.toLocaleString()}
-        title={t("statsBlockCount")}
-        id="stat-blockcount"
-      />
-      <Datum
-        value={addressCount.toLocaleString()}
-        title={t("statsAddresses")}
-        id="stat-addressess"
-      />
       <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx" />
       <Datum value={`${avgBlockTime || 0}s`} title={t("statsAvgTime")} id="stat-time" />
       <CarbonStats />
@@ -143,7 +133,7 @@ const celobration = keyframes`
 
 const specialCss = css({
   animationName: celobration,
-  animationDuration: "350ms",
+  animationDuration: "150ms",
   animationIterationCount: 1,
 })
 

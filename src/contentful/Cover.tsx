@@ -13,9 +13,19 @@ import {
 import { GridRow } from "src/layout/Grid2"
 import { TABLET_BREAKPOINT } from "src/shared/Styles"
 import { CoverContentType } from "src/utils/contentful"
-import renderNode from "src/contentful/nodes/paragraph"
+import renderers from "src/contentful/nodes/enodes"
 import Button, { SIZE } from "src/shared/Button.3"
 import { useScreenSize } from "src/layout/ScreenSize"
+import { BLOCKS } from "@contentful/rich-text-types"
+
+const OPTIONS = {
+  renderNode: {
+    ...renderers,
+    [BLOCKS.HEADING_1]: (_, children: string) => {
+      return <h2 css={rH1}>{children}</h2>
+    },
+  },
+}
 
 export default function Cover(props: CoverContentType) {
   const { isMobile } = useScreenSize()
@@ -30,9 +40,13 @@ export default function Cover(props: CoverContentType) {
       css={props.illoFirst ? imageFirstRootCss : rootCss}
     >
       <div css={contentCss}>
-        <h1 css={css(titleCss, props.darkMode && whiteText)}>{props.title}</h1>
-        <span css={props.darkMode ? subtitleDarkMode : subtitleCss}>
-          {documentToReactComponents(props.subTitle, { renderNode })}
+        <h1
+          css={css(props.superSize ? titleCss : rH1, centerMobileCss, props.darkMode && whiteText)}
+        >
+          {props.title}
+        </h1>
+        <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
+          {documentToReactComponents(props.subTitle, OPTIONS)}
         </span>
         <div css={linkAreaCss}>
           {props.links?.map((link) => (
@@ -56,9 +70,13 @@ export default function Cover(props: CoverContentType) {
           <img
             width={size?.width}
             height={size?.height}
-            css={props.illoFirst ? imageFirstCss : imageCss}
+            css={css(
+              props.illoFirst ? imageFirstCss : imageCss,
+
+              props.verticalPosition === "flushBottomText" && flushBottomCss
+            )}
             src={props.imageDesktop?.fields.file.url}
-            alt={props.imageDesktop.fields.description}
+            alt={props.imageDesktop?.fields.description}
           />
         </picture>
       </div>
@@ -109,14 +127,18 @@ const titleCss = css(fonts.h1, {
   },
 })
 
-const subtitleCss = css({
+const subTextCss = css({
+  marginTop: 16,
+})
+
+const centerMobileCss = css({
   [WHEN_MOBILE]: {
     textAlign: "center",
   },
 })
 
-const subtitleDarkMode = css(whiteText, subtitleCss, {
-  p: whiteText,
+const subtitleDarkMode = css(whiteText, centerMobileCss, {
+  "h1, h2, h3, h4, p": whiteText,
 })
 
 const contentCss = css(flex, {
@@ -156,6 +178,7 @@ const illoCss = css({
   gridArea: "illo",
   position: "relative",
   [WHEN_MOBILE]: {
+    marginTop: 56,
     width: "100vw",
     justifyContent: "center",
     alignItems: "center",
@@ -163,17 +186,24 @@ const illoCss = css({
 })
 
 const imageCss = css({
-  position: "absolute",
   overflow: "visible",
   [WHEN_MOBILE]: {
-    position: "static",
     overflow: "inherit",
   },
+
+})
+
+const flushBottomCss = css({
   [WHEN_TABLET_AND_UP]: {
     bottom: 0,
+    position: "absolute",
   },
 })
 
 const imageFirstCss = css(imageCss, {
   right: 0,
+})
+
+const rH1 = css(fonts.h1, {
+  [WHEN_MOBILE]: fonts.h1Mobile,
 })

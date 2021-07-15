@@ -168,9 +168,9 @@ Array [
             css={
               Object {
                 "map": undefined,
-                "name": "1d2xqv1",
+                "name": "1qe7u0w",
                 "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;color:#FFFFFF;;",
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};",
                 "toString": [Function],
               }
             }
@@ -206,9 +206,9 @@ Array [
           css={
             Object {
               "map": undefined,
-              "name": "1gckkqk",
+              "name": "12esxdr",
               "next": undefined,
-              "styles": "color:#FFFFFF;;font-family:Jost, futura-pt, futura, sans-serif;font-weight:normal;font-size:28px;lineheight:1.29px;@media (max-width: 576px){font-size:22px;}",
+              "styles": "color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};font-family:Jost, futura-pt, futura, sans-serif;font-weight:normal;font-size:28px;lineheight:1.29px;@media (max-width: 576px){font-size:22px;}",
               "toString": [Function],
             }
           }
@@ -238,9 +238,9 @@ Array [
             css={
               Object {
                 "map": undefined,
-                "name": "1mem97e",
+                "name": "z7wl3o",
                 "next": undefined,
-                "styles": "color:#FFFFFF;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;font-weight:bold;;grid-area:phase-label;",
+                "styles": "color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;font-weight:bold;;grid-area:phase-label;",
                 "toString": [Function],
               }
             }
@@ -454,9 +454,9 @@ Array [
             css={
               Object {
                 "map": undefined,
-                "name": "1cdajxa",
+                "name": "1qqpj2c",
                 "next": undefined,
-                "styles": "color:#FFFFFF;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;font-weight:bold;;grid-area:round-label;margin-bottom:12px;@media (max-width: 576px){margin-top:12px;margin-bottom:6px;}",
+                "styles": "color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;font-weight:bold;;grid-area:round-label;margin-bottom:12px;@media (max-width: 576px){margin-top:12px;margin-bottom:6px;}",
                 "toString": [Function],
               }
             }
@@ -841,9 +841,9 @@ Array [
             css={
               Object {
                 "map": undefined,
-                "name": "17sqy7a",
+                "name": "9wu0w8",
                 "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};color:#FFFFFF;;",
+                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};",
                 "toString": [Function],
               }
             }
@@ -854,9 +854,9 @@ Array [
             css={
               Object {
                 "map": undefined,
-                "name": "17sqy7a",
+                "name": "9wu0w8",
                 "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};color:#FFFFFF;;",
+                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};",
                 "toString": [Function],
               }
             }
@@ -924,9 +924,9 @@ Array [
               css={
                 Object {
                   "map": undefined,
-                  "name": "1f0vqhk",
+                  "name": "1uebync",
                   "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;color:#FFFFFF;;",
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};",
                   "toString": [Function],
                 }
               }
@@ -1405,9 +1405,9 @@ Array [
               css={
                 Object {
                   "map": undefined,
-                  "name": "1f0vqhk",
+                  "name": "1uebync",
                   "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;color:#FFFFFF;;",
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};",
                   "toString": [Function],
                 }
               }
@@ -1715,9 +1715,9 @@ Array [
               css={
                 Object {
                   "map": undefined,
-                  "name": "1f0vqhk",
+                  "name": "1uebync",
                   "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;color:#FFFFFF;;",
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};",
                   "toString": [Function],
                 }
               }
@@ -2253,9 +2253,9 @@ Array [
               css={
                 Object {
                   "map": undefined,
-                  "name": "1f0vqhk",
+                  "name": "1uebync",
                   "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;color:#FFFFFF;;",
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};",
                   "toString": [Function],
                 }
               }
@@ -3215,9 +3215,9 @@ Array [
           css={
             Object {
               "map": undefined,
-              "name": "orrocw",
+              "name": "1oujplc",
               "next": undefined,
-              "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;z-index:10;;color:#FFFFFF;;",
+              "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;z-index:10;;color:#FFFFFF;@media (max-width: 576px){color:#FFFFFF;};",
               "toString": [Function],
             }
           }

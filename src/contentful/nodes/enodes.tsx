@@ -1,34 +1,31 @@
 import { RenderNode } from "@contentful/rich-text-react-renderer"
-import { BLOCKS, INLINES } from "@contentful/rich-text-types"
-import { Asset } from "contentful"
+import { BLOCKS } from "@contentful/rich-text-types"
 import * as React from "react"
-import { Text } from "react-native"
-import { H1, H2, H3, H4 } from "src/fonts/Fonts"
-import InlineAnchor from "src/shared/InlineAnchor"
-import { fonts, standardStyles } from "src/styles"
+import { Asset } from "contentful"
 import Image from "next/image"
+import { fonts } from "src/estyles"
 
-export const renderNode: RenderNode = {
+const renderNode: RenderNode = {
   [BLOCKS.HEADING_1]: (_, children: string) => {
-    return <H1>{children}</H1>
+    return <h2 css={fonts.h1}>{children}</h2>
   },
   [BLOCKS.HEADING_2]: (_, children: string) => {
-    return <H2 style={standardStyles.blockMarginTopTablet}>{children}</H2>
+    return <h2 css={fonts.h2}>{children}</h2>
   },
   [BLOCKS.HEADING_3]: (_, children: string) => {
-    return <H3 style={standardStyles.blockMarginTopTablet}>{children}</H3>
+    return <h3 css={fonts.h3}>{children}</h3>
   },
   [BLOCKS.HEADING_4]: (_, children: string) => {
-    return <H4 style={standardStyles.elementalMargin}>{children}</H4>
+    return <h4 css={fonts.h4}>{children}</h4>
   },
   [BLOCKS.HEADING_5]: (_, children: string) => {
-    return <Text style={fonts.h5}>{children}</Text>
+    return <h5 css={fonts.h5}>{children}</h5>
+  },
+  [BLOCKS.HEADING_6]: (_, children: string) => {
+    return <h6 css={fonts.h6}>{children}</h6>
   },
   [BLOCKS.PARAGRAPH]: (_, children: string) => {
-    return <Text style={[fonts.p, standardStyles.halfElement]}>{children}</Text>
-  },
-  [INLINES.HYPERLINK]: (node, children: string) => {
-    return <InlineAnchor href={node.data.uri}>{children}</InlineAnchor>
+    return <p css={fonts.body}>{children}</p>
   },
   [BLOCKS.EMBEDDED_ASSET]: (node) => {
     const asset = node.data.target as Asset
@@ -47,8 +44,11 @@ export const renderNode: RenderNode = {
           alt={asset.fields.description}
           width={file.details.image?.width}
           height={file.details.image?.height}
+          unoptimized={asset.fields.file.contentType === "image/svg+xml"}
         />
       </div>
     )
   },
 }
+
+export default renderNode

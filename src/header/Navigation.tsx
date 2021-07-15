@@ -120,7 +120,11 @@ function useMobileMenu(): [boolean, () => void] {
   return [mobileMenuActive, clickHamburger]
 }
 
-export default function Header() {
+interface Props {
+  darkMode: boolean
+}
+
+export default function Header(props: Props) {
   const { bannerHeight } = useScreenSize()
   const { setBannerVisible, isBannerShowing } = useBanner()
   const { pathname } = useRouter()
@@ -131,7 +135,8 @@ export default function Header() {
   const { menuFaded, belowFoldUpScroll } = useScroll()
   const willShowHamburger = !menuFaded || mobileMenuActive
 
-  const isDarkMode = attributes.isDark || (attributes.translucent && !belowFoldUpScroll)
+  const isDarkMode =
+    attributes.isDark || props.darkMode || (attributes.translucent && !belowFoldUpScroll)
 
   const backgroundColor = React.useMemo(() => {
     const translucentAndNotUp = attributes.translucent && !belowFoldUpScroll
@@ -243,8 +248,8 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
         props.menuFaded ? styles.menuInvisible : styles.menuVisible,
       ]}
     >
-      {menuItems.map((item, index) => (
-        <div key={index} css={styles.linkWrapper}>
+      {menuItems.map((item) => (
+        <div key={item.link} css={styles.linkWrapper}>
           <Button
             kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
             href={item.link}
@@ -261,7 +266,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
         <Button
           kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
           href={"https://medium.com/CeloHQ"}
-          text={t("blog")}
+          text={""}
           target={"_blank"}
           iconRight={<MediumLogo height={20} color={foregroundColor} wrapWithLink={false} />}
         />
@@ -270,7 +275,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
         <Button
           kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
           href={CeloLinks.gitHub}
-          text={t("github")}
+          text={""}
           target={"_blank"}
           iconRight={<Octocat size={22} color={props.isDarkMode ? colors.white : colors.dark} />}
         />
@@ -341,7 +346,7 @@ const styles = {
     height: HEADER_HEIGHT,
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 10,
+    zIndex: 30,
     maxWidth: "100vw",
     transitionProperty: "top",
     transitionDuration: "200ms",

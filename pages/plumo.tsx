@@ -11,6 +11,12 @@ export default Page
 
 export async function getServerSideProps({locale}) {
   const page = await getPageBySlug("plumo", {locale: 'en-US'}, true)
+
+  if (!page) {
+    return { notFound: true }
+  }
+
+
   return {
     props: {
     ...page ,

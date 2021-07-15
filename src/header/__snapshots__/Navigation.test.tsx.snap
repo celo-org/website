@@ -5,9 +5,9 @@ exports[`Navigation renders 1`] = `
   css={
     Object {
       "map": undefined,
-      "name": "wndxe7",
+      "name": "436tdk",
       "next": undefined,
-      "styles": "display:flex;position:fixed;left:0;right:0;display:flex;flex-direction:row;height:75px;justify-content:center;align-items:center;z-index:10;max-width:100vw;transition-property:top;transition-duration:200ms;;top:0;",
+      "styles": "display:flex;position:fixed;left:0;right:0;display:flex;flex-direction:row;height:75px;justify-content:center;align-items:center;z-index:30;max-width:100vw;transition-property:top;transition-duration:200ms;;top:0;",
       "toString": [Function],
     }
   }
@@ -197,134 +197,6 @@ exports[`Navigation renders 1`] = `
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
             dir="auto"
-            href="/jobs"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="link"
-            style={
-              Object {
-                "WebkitAlignItems": "center",
-                "WebkitBoxAlign": "center",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxPack": "center",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "alignItems": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
-                "cursor": "pointer",
-                "display": "inline-flex",
-                "flexGrow": 0,
-                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                "fontSize": "16px",
-                "fontWeight": "500",
-                "justifyContent": "center",
-                "lineHeight": "16px",
-                "msFlexAlign": "center",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-                "width": "fit-content",
-              }
-            }
-          >
-            Join
-          </a>
-        </div>
-      </div>
-      <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            dir="auto"
-            href="/validators"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="link"
-            style={
-              Object {
-                "WebkitAlignItems": "center",
-                "WebkitBoxAlign": "center",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxPack": "center",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "alignItems": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
-                "cursor": "pointer",
-                "display": "inline-flex",
-                "flexGrow": 0,
-                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                "fontSize": "16px",
-                "fontWeight": "500",
-                "justifyContent": "center",
-                "lineHeight": "16px",
-                "msFlexAlign": "center",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-                "width": "fit-content",
-              }
-            }
-          >
-            Validators
-          </a>
-        </div>
-      </div>
-      <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            dir="auto"
             href="/developers"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -364,70 +236,6 @@ exports[`Navigation renders 1`] = `
             }
           >
             Developers
-          </a>
-        </div>
-      </div>
-      <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-            dir="auto"
-            href="/alliance"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="link"
-            style={
-              Object {
-                "WebkitAlignItems": "center",
-                "WebkitBoxAlign": "center",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxPack": "center",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "alignItems": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
-                "cursor": "pointer",
-                "display": "inline-flex",
-                "flexGrow": 0,
-                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                "fontSize": "16px",
-                "fontWeight": "500",
-                "justifyContent": "center",
-                "lineHeight": "16px",
-                "msFlexAlign": "center",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-                "width": "fit-content",
-              }
-            }
-          >
-            Alliance
           </a>
         </div>
       </div>
@@ -517,6 +325,134 @@ exports[`Navigation renders 1`] = `
           <a
             className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
             dir="auto"
+            href="/dapps"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="link"
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxFlex": 0,
+                "WebkitBoxPack": "center",
+                "WebkitFlexGrow": 0,
+                "WebkitJustifyContent": "center",
+                "alignItems": "center",
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "borderBottomColor": "rgba(0,0,0,0.00)",
+                "borderLeftColor": "rgba(0,0,0,0.00)",
+                "borderRightColor": "rgba(0,0,0,0.00)",
+                "borderTopColor": "rgba(0,0,0,0.00)",
+                "color": "rgba(46,51,56,1.00)",
+                "cursor": "pointer",
+                "display": "inline-flex",
+                "flexGrow": 0,
+                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "justifyContent": "center",
+                "lineHeight": "16px",
+                "msFlexAlign": "center",
+                "msFlexPack": "center",
+                "msFlexPositive": 0,
+                "opacity": 1,
+                "outlineColor": "transparent",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+                "width": "fit-content",
+              }
+            }
+          >
+            Ecosystem
+          </a>
+        </div>
+      </div>
+      <div
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            dir="auto"
+            href="/alliance"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="link"
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "WebkitBoxFlex": 0,
+                "WebkitBoxPack": "center",
+                "WebkitFlexGrow": 0,
+                "WebkitJustifyContent": "center",
+                "alignItems": "center",
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "borderBottomColor": "rgba(0,0,0,0.00)",
+                "borderLeftColor": "rgba(0,0,0,0.00)",
+                "borderRightColor": "rgba(0,0,0,0.00)",
+                "borderTopColor": "rgba(0,0,0,0.00)",
+                "color": "rgba(46,51,56,1.00)",
+                "cursor": "pointer",
+                "display": "inline-flex",
+                "flexGrow": 0,
+                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "justifyContent": "center",
+                "lineHeight": "16px",
+                "msFlexAlign": "center",
+                "msFlexPack": "center",
+                "msFlexPositive": 0,
+                "opacity": 1,
+                "outlineColor": "transparent",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+                "width": "fit-content",
+              }
+            }
+          >
+            Alliance
+          </a>
+        </div>
+      </div>
+      <div
+        css={
+          Object {
+            "map": undefined,
+            "name": "ft8sjx",
+            "next": undefined,
+            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
+            "toString": [Function],
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        >
+          <a
+            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            dir="auto"
             href="https://medium.com/CeloHQ"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -557,7 +493,7 @@ exports[`Navigation renders 1`] = `
             }
             target="_blank"
           >
-            Blog
+            
             <div
               className="css-view-1dbjc4n"
               style={
@@ -656,7 +592,7 @@ exports[`Navigation renders 1`] = `
             }
             target="_blank"
           >
-            GitHub
+            
             <div
               className="css-view-1dbjc4n"
               style={

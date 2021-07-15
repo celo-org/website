@@ -1,30 +1,28 @@
-import { Entry } from 'contentful'
+import { Entry } from "contentful"
 import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
 import Roledex from "src/contentful/grid2-cells/Roledex"
 import PlayList from "src/contentful/grid2-cells/Playlist"
-import Blurb, {Props as BlurbProps} from "src/contentful/grid2-cells/Blurb"
+import Blurb, { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import {
   CellContentType,
   FreeContentType,
   RoledexContentType,
   PlaylistContentType,
   FormContentType,
+  HeadingContentType,
+  PictureType,
 } from "src/utils/contentful"
 import Form from "src/contentful/grid2-cells/Form"
+import { Heading } from "src/contentful/grid2-cells/Heading"
+import * as React from "react"
+import Picture from "./Picture"
 
-
-export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
+export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
     switch (entry.sys.contentType.sys.id) {
       case "roledex":
         const roledex = entry.fields as RoledexContentType
-        return (
-          <Roledex
-            key={entry.sys.id}
-            title={roledex.title}
-            sheets={roledex.sheets}
-          />
-        )
+        return <Roledex key={entry.sys.id} title={roledex.title} sheets={roledex.sheets} />
       case "freeContent":
         const freeContent = entry.fields as FreeContentType
         return (
@@ -34,7 +32,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
             body={freeContent.body}
             darkMode={darkMode}
             cssStyle={freeContent.cssStyle}
-            backgroundColor={freeContent.backgroundColor}
+            listStyleImage={freeContent.listStyleImage}
           />
         )
       case "form":
@@ -60,8 +58,12 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
             darkMode={darkMode}
             link={blurbProp.link}
             icon={blurbProp.icon}
+            isNaturalSize={blurbProp.isNaturalSize}
           />
         )
+      case "picture":
+        const picture = entry.fields as PictureType
+        return <Picture {...picture} />
       case "youTubePlayist":
         const playlist = entry.fields as PlaylistContentType
         return (
@@ -71,6 +73,22 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean) {
             title={playlist.title}
             description={playlist.description}
             listId={playlist.listId}
+          />
+        )
+      case "heading":
+        const heading = entry.fields as HeadingContentType
+        return (
+          <Heading
+            key={entry.sys.id}
+            darkMode={darkMode}
+            span={columns}
+            title={heading.title}
+            displayTitleH1={heading.displayTitleH1}
+            subTitle={heading.subTitle}
+            titleCss={heading.titleCss}
+            subTitleCss={heading.subTitleCss}
+            cssStyle={heading.cssStyle}
+            image={heading.image}
           />
         )
     }

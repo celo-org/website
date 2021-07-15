@@ -1,25 +1,33 @@
-import {css} from "@emotion/react"
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { css } from "@emotion/react"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { cellSwitch } from "./cellSwitch"
-import { Entry } from 'contentful'
-import { ContentfulPage, GridRowContentType, SectionType, CoverContentType, FormContentType } from 'src/utils/contentful'
-import { flex, WHEN_MOBILE } from 'src/estyles'
-import { GridRow } from 'src/layout/Grid2'
-import OpenGraph from 'src/header/OpenGraph'
-import {renderNode} from "src/contentful/nodes/nodes"
-import {BUTTON} from "src/contentful/nodes/embeds/BUTTON"
-import {GALLARY} from "src/contentful/nodes/embeds/GALLARY"
-import {TABLE} from "src/contentful/nodes/embeds/TABLE"
-import { BLOCKS, INLINES, Block} from '@contentful/rich-text-types'
+import { Entry } from "contentful"
+import {
+  ContentfulPage,
+  GridRowContentType,
+  SectionType,
+  CoverContentType,
+  FormContentType,
+} from "src/utils/contentful"
+import { flex, WHEN_DESKTOP, WHEN_MOBILE } from "src/estyles"
+import { GridRow } from "src/layout/Grid2"
+import OpenGraph from "src/header/OpenGraph"
+import { renderNode } from "src/contentful/nodes/nodes"
+import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
+import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
+import { TABLE } from "src/contentful/nodes/embeds/TABLE"
+import { BLOCKS, INLINES, Block } from "@contentful/rich-text-types"
 import Cover from "src/contentful/Cover"
-
+import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
+import { ROW } from "src/contentful/nodes/embeds/ROW"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
-const EMBEDDABLE =  {
+const EMBEDDABLE = {
   ...BUTTON,
   ...GALLARY,
   ...TABLE,
+  ...ROW,
 }
 
 function embedded(node: Block) {
@@ -42,7 +50,7 @@ const OPTIONS = {
   },
 }
 
-export default function PublicSectorPage(props: Props) {
+export default function CommonPage(props: Props) {
   return (
     <>
       <OpenGraph
@@ -59,15 +67,19 @@ export default function PublicSectorPage(props: Props) {
 const rootCss = css(flex, {})
 
 function pageSwitch(
-  section: Entry<GridRowContentType | SectionType | CoverContentType | FormContentType>
+  section: Entry<
+    GridRowContentType | SectionType | CoverContentType | FormContentType | HorizontalType
+  >
 ) {
   switch (section.sys.contentType.sys.id) {
     case "cover":
       const coverFields = section.fields as CoverContentType
       return (
         <Cover
+          verticalPosition={coverFields.verticalPosition}
           key={section.sys.id}
           darkMode={coverFields.darkMode}
+          superSize={coverFields.superSize}
           illoFirst={coverFields.illoFirst}
           title={coverFields.title}
           subTitle={coverFields.subTitle}
@@ -84,11 +96,20 @@ function pageSwitch(
           darkMode={gridFields.darkMode}
           id={gridFields.id}
           columns={gridFields.columns}
-          css={css(sectionsCss, gridFields.cssStyle)}
+          css={css(
+            sectionsCss,
+            gridFields.cssStyle,
+            gridFields.desktopCss && { [WHEN_DESKTOP]: gridFields.desktopCss }
+          )}
         >
-          {gridFields.cells.map((cell) => cellSwitch(cell, gridFields.darkMode))}
+          {gridFields.cells.map((cell) =>
+            cellSwitch(cell, gridFields.darkMode, gridFields.columns)
+          )}
         </GridRow>
       )
+    case "horizontal":
+      const hr = section.fields as HorizontalType
+      return <HR key={section.sys.id} darkMode={hr.darkMode} />
     default:
       const sectionfields = section.fields as SectionType
       return (
@@ -99,12 +120,11 @@ function pageSwitch(
   }
 }
 
-
 const sectionsCss = css({
   paddingTop: 80,
   paddingBottom: 80,
   [WHEN_MOBILE]: {
-    paddingTop: 24,
-    paddingBottom: 24,
+    paddingTop: 40,
+    paddingBottom: 40,
   },
 })

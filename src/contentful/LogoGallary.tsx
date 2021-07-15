@@ -1,4 +1,4 @@
-import { css } from "@emotion/react"
+import { css, CSSObject } from "@emotion/react"
 import { Asset, Entry } from "contentful"
 import { flex, flexRow, WHEN_MOBILE } from "src/estyles"
 
@@ -9,19 +9,19 @@ interface Logo {
 
 interface Props {
   list: Entry<Logo>[]
+  cssStyle?: CSSObject
 }
 
-export default function LogoGallary({ list }: Props) {
+export default function LogoGallary({ list, cssStyle }: Props) {
   return (
     <div css={rootStyle}>
       {list.map(({ sys, fields }) => {
         const width = fields.image.fields.file.details.image.width / 2
         const height = fields.image.fields.file.details.image.height / 2
-
         return (
           <a
             title={fields.image.fields.description}
-            css={itemStyle}
+            css={css(cssStyle ? cssStyle : itemStyle)}
             key={sys.id}
             href={fields.url}
             target={"_blank"}
@@ -54,7 +54,6 @@ const rootStyle = css(flexRow, {
   flexWrap: "wrap",
   justifyContent: "space-around",
   alignItems: "center",
-  maxWidth: 840,
   marginTop: 32,
 })
 

@@ -6,6 +6,7 @@ import { renderNode } from "src/contentful/nodes/nodes"
 import { GridRow } from "src/layout/Grid2"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
+import { GetServerSideProps } from "next"
 
 
 interface Props {
@@ -32,8 +33,15 @@ export default function SavingsTerms(props: Props) {
   )
 }
 
-export async function getServerSideProps({ locale }): Promise<{ props: Props }> {
+export const getServerSideProps: GetServerSideProps<Props> = async function getServerSideProps({
+  locale,
+}) {
   const page = await getPageBySlug("save-terms-and-conditions", { locale: "en-US" }, false)
+
+  if (!page) {
+    return { notFound: true }
+  }
+
   const sections = page.sections as SectionType[]
   return {
     props: {
