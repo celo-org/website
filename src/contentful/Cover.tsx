@@ -178,7 +178,7 @@ const illoCss = css({
   gridArea: "illo",
   position: "relative",
   [WHEN_MOBILE]: {
-    marginTop: 48,
+    marginTop: 56,
     width: "100vw",
     justifyContent: "center",
     alignItems: "center",
