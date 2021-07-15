@@ -20,6 +20,7 @@ export const BUTTON = {
       kind={fields.kind}
       size={fields.size}
       align={fields.align}
+      target={fields.assetLink?.fields?.file?.url || (fields.href?.startsWith("http") && "_blank")}
     />
   ),
 }

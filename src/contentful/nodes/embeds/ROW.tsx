@@ -29,6 +29,10 @@ export const ROW = {
                 kind={button.kind}
                 size={button.size}
                 align={button.align}
+                target={
+                  button.assetLink?.fields?.file?.url ||
+                  (button.href?.startsWith("http") && "_blank")
+                }
               />
             )
 
