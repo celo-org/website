@@ -71,10 +71,14 @@ export default function Blurb(props: Props) {
       {props.link && (
         <Button
           style={standardStyles.elementalMarginTop}
-          href={props.link.fields.href}
+          href={props.link.fields.href || props.link.fields.assetLink?.fields?.file?.url}
           text={props.link.fields.words}
           kind={props.link.fields.kind}
           size={SIZE.normal}
+          target={
+            props.link.fields.assetLink?.fields?.file?.url ||
+            (props.link.fields.href?.startsWith("http") && "_blank")
+          }
         />
       )}
     </div>
