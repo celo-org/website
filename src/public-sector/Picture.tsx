@@ -4,7 +4,14 @@ import { TABLET_BREAKPOINT } from "src/shared/Styles"
 import React from "react"
 import { PictureType } from "src/utils/contentful"
 
-export default function Picture({ span, desktop, mobile, description, objectFit }: PictureType) {
+export default function Picture({
+  span,
+  desktop,
+  mobile,
+  cssStyle,
+  description,
+  objectFit,
+}: PictureType) {
   const desktopImage = desktop?.fields?.file
   const mobileImage = mobile?.fields?.file
   const mobileHeight = mobileImage?.details?.image?.height
@@ -17,14 +24,14 @@ export default function Picture({ span, desktop, mobile, description, objectFit 
 
   const wrapperCss = React.useMemo(
     () =>
-      css(ratioCss, {
+      css(ratioCss, cssStyle, {
         gridColumn: `span ${span}`,
         paddingBottom: `${mobileRatio * 100}%`,
         [WHEN_TABLET_AND_UP]: {
           paddingBottom: `${desktopRatio * 100}%`,
         },
       }),
-    [mobileRatio, desktopRatio, span]
+    [mobileRatio, desktopRatio, span, cssStyle]
   )
 
   return (

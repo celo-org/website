@@ -28,6 +28,9 @@ export default function Cover(props: Props) {
     <div
       css={css(rootCss, {
         paddingTop: bannerHeight,
+        [WHEN_MOBILE]: {
+          paddingTop: 0,
+        },
       })}
     >
       <div css={css(backgroundArea, { height: `calc(100% - ${bannerHeight}px)` })} />
