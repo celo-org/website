@@ -23,7 +23,7 @@ export default function Home(props: Props) {
         title={props.title}
         description={props.description}
         path={"/"}
-        image={props.openGraph?.fields?.file?.url}
+        image={`https:${props.openGraph?.fields?.file?.url}`}
       />
       <Cover title={props.cover?.title} subtitle={props.cover?.subTitle} press={props.press} />
       {props.sections.map((section) => {
