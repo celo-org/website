@@ -1,6 +1,5 @@
 import * as React from "react"
 import OpenGraph from "src/header/OpenGraph"
-import celoHero from "src/home/celo-hero.png"
 import Cover from "./Cover"
 import { ContentfulPage, GridRowContentType, LogoGallery } from "src/utils/contentful"
 import { GridRow } from "src/layout/Grid2"
@@ -20,7 +19,12 @@ export type Props = ContentfulPage<GridRowContentType> & OwnProps
 export default function Home(props: Props) {
   return (
     <div css={rootCss}>
-      <OpenGraph title={props.title} description={props.description} path={"/"} image={celoHero} />
+      <OpenGraph
+        title={props.title}
+        description={props.description}
+        path={"/"}
+        image={props.openGraph?.fields?.file?.url}
+      />
       <Cover title={props.cover?.title} subtitle={props.cover?.subTitle} press={props.press} />
       {props.sections.map((section) => {
         if (section.sys.contentType.sys.id === "grid-row") {
