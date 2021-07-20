@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 import * as React from "react"
-import { flex, flexRow, gridRow, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
+import { flex, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { useTranslation } from "src/i18n"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import MENU from "src/shared/menu-items"
