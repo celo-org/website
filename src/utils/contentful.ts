@@ -189,6 +189,7 @@ export interface CoverContentType {
   illoFirst?: boolean
   verticalPosition: "centered" | "flushBottomText"
   imageFit: "contain" | "overflow"
+  resolution: 1 | 2
 }
 
 export interface ContentfulPage<T> {

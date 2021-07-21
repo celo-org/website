@@ -18,6 +18,7 @@ import Button, { SIZE } from "src/shared/Button.3"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { RenderNode } from "@contentful/rich-text-react-renderer"
+import { Asset } from "contentful"
 
 const OPTIONS = {
   renderNode: {
@@ -30,9 +31,12 @@ const OPTIONS = {
 
 export default function Cover(props: CoverContentType) {
   const { isMobile } = useScreenSize()
+  const resolution = props.resolution || 2
+
   const size = isMobile
     ? props.imageMobile?.fields?.file?.details.image
     : props.imageDesktop?.fields?.file?.details.image
+
   return (
     <GridRow
       columns={2}
@@ -74,30 +78,49 @@ export default function Cover(props: CoverContentType) {
         }
       >
         <picture>
-          <source
-            media={`(min-width: ${TABLET_BREAKPOINT}px) 2x`}
-            srcSet={props.imageDesktop?.fields.file.url}
-          />
+          {resolution === 2 && (
+            <>
+              <source
+                media={`(min-width: ${TABLET_BREAKPOINT}px) 2x`}
+                srcSet={props.imageDesktop?.fields.file.url}
+              />
+              <source
+                media={`(max-width: ${TABLET_BREAKPOINT}px) 2x`}
+                srcSet={props.imageMobile?.fields.file.url}
+              />
+            </>
+          )}
           <source
             media={`(min-width: ${TABLET_BREAKPOINT}px)`}
-            srcSet={props.imageDesktop?.fields.file.url}
+            srcSet={trueWidth(props.imageDesktop?.fields.file, resolution)}
           />
-
           <img
-            width={size?.width}
-            height={size?.height}
+            width={viewSize(size?.width, resolution)}
+            height={viewSize(size?.height, resolution)}
             css={css(
               props.illoFirst ? imageFirstCss : imageCss,
               props.verticalPosition === "flushBottomText" && flushBottomCss,
               props.imageFit === "contain" && imageContain
             )}
-            src={props.imageMobile?.fields.file.url}
+            src={trueWidth(props.imageMobile?.fields.file, resolution)}
             alt={props.imageDesktop?.fields.description}
           />
         </picture>
       </div>
     </GridRow>
   )
+}
+
+function viewSize(number: number, res: number) {
+  return Math.round(number / res)
+}
+
+function trueWidth(file: Asset["fields"]["file"], res: number) {
+  if (res === 1) {
+    return file.url
+  } else {
+    return `${file.url}?w=${viewSize(file.details.image.width, res)}`
+  }
 }
 
 const wrapperCss = css(flex, {
