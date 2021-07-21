@@ -188,6 +188,7 @@ export interface CoverContentType {
   darkMode?: boolean
   illoFirst?: boolean
   verticalPosition: "centered" | "flushBottomText"
+  imageFit: "contain" | "overflow"
 }
 
 export interface ContentfulPage<T> {

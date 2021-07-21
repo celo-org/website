@@ -17,6 +17,7 @@ import renderers from "src/contentful/nodes/enodes"
 import Button, { SIZE } from "src/shared/Button.3"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { BLOCKS } from "@contentful/rich-text-types"
+import { RenderNode } from "@contentful/rich-text-react-renderer"
 
 const OPTIONS = {
   renderNode: {
@@ -24,7 +25,7 @@ const OPTIONS = {
     [BLOCKS.HEADING_1]: (_, children: string) => {
       return <h2 css={rH1}>{children}</h2>
     },
-  },
+  } as RenderNode,
 }
 
 export default function Cover(props: CoverContentType) {
@@ -61,21 +62,36 @@ export default function Cover(props: CoverContentType) {
           ))}
         </div>
       </div>
-      <div css={illoCss}>
+      <div
+        css={
+          props.imageFit === "contain"
+            ? css(illoContain, {
+                [WHEN_TABLET]: {
+                  paddingTop: `${(size.height / size.width) * 100}%`,
+                },
+              })
+            : illoCss
+        }
+      >
         <picture>
           <source
-            media={`(max-width: ${TABLET_BREAKPOINT}px)`}
-            srcSet={props.imageMobile?.fields.file.url}
+            media={`(min-width: ${TABLET_BREAKPOINT}px) 2x`}
+            srcSet={props.imageDesktop?.fields.file.url}
           />
+          <source
+            media={`(min-width: ${TABLET_BREAKPOINT}px)`}
+            srcSet={props.imageDesktop?.fields.file.url}
+          />
+
           <img
             width={size?.width}
             height={size?.height}
             css={css(
               props.illoFirst ? imageFirstCss : imageCss,
-
-              props.verticalPosition === "flushBottomText" && flushBottomCss
+              props.verticalPosition === "flushBottomText" && flushBottomCss,
+              props.imageFit === "contain" && imageContain
             )}
-            src={props.imageDesktop?.fields.file.url}
+            src={props.imageMobile?.fields.file.url}
             alt={props.imageDesktop?.fields.description}
           />
         </picture>
@@ -185,12 +201,28 @@ const illoCss = css({
   },
 })
 
+const illoContain = css(illoCss, {
+  [WHEN_TABLET]: {
+    height: 0,
+    overflow: "hidden",
+  },
+})
+
 const imageCss = css({
   overflow: "visible",
   [WHEN_MOBILE]: {
     overflow: "inherit",
   },
+})
 
+const imageContain = css({
+  [WHEN_TABLET]: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+  },
 })
 
 const flushBottomCss = css({
