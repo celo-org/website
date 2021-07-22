@@ -60,6 +60,7 @@ Array [
       }
     >
       <img
+        alt="Envelop with Green Coin Sliding in"
         css={
           Object {
             "map": undefined,

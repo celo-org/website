@@ -154,7 +154,13 @@ export default function Footer({ hideForm, darkMode }: Props) {
             tabletSpan={Spans.twoThird}
             style={[standardStyles.centered, styles.form]}
           >
-            <img src={sendCoinIcon} css={emailLogoCss} width={50} height={50} />
+            <img
+              src={sendCoinIcon}
+              css={emailLogoCss}
+              width={50}
+              height={50}
+              alt={t("footer.emailIconAlt")}
+            />
             <p css={recieveUpdatesCss}>{t("receiveUpdates")}</p>
             <EmailForm submitText={t("signUp")} route={"contacts"} isDarkMode={false} />
           </Cell>
