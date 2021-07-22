@@ -76,6 +76,8 @@ function pageSwitch(
       const coverFields = section.fields as CoverContentType
       return (
         <Cover
+          resolution={coverFields.resolution}
+          imageFit={coverFields.imageFit}
           verticalPosition={coverFields.verticalPosition}
           key={section.sys.id}
           darkMode={coverFields.darkMode}
