@@ -39,12 +39,12 @@ export default function Picture({
   return (
     <div css={wrapperCss}>
       <picture>
-        <source media={`(min-width: ${TABLET_BREAKPOINT}px 2x`} srcSet={`${desktopImage?.url}`} />
+        <source media={`(min-width: ${TABLET_BREAKPOINT}px)`} srcSet={`${desktopImage?.url} 2x`} />
         <source
-          media={`(min-width: ${TABLET_BREAKPOINT}px`}
+          media={`(min-width: ${TABLET_BREAKPOINT}px)`}
           srcSet={`${desktopImage?.url}?w=${Math.floor(desktopWidth / 2)}`}
         />
-        <source media={`(max-width: ${TABLET_BREAKPOINT}px 2x`} srcSet={`${mobileImage?.url}`} />
+        <source media={`(max-width: ${TABLET_BREAKPOINT}px)`} srcSet={`${mobileImage?.url} 2x`} />
         <img
           css={css(imageCss, {
             objectFit,
