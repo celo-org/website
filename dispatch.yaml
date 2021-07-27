@@ -16,7 +16,7 @@ dispatch:
   - url: dev.celo.org/*
     service: development
 
-  - url: staging.celo.org/*
+  - url: stage.celo.org/*
     service: stage
 
   - url: preview.celo.org/*

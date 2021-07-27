@@ -15,7 +15,7 @@
     "deploy:routes:prod": "gcloud config set project celo-org-website; DISPATCH=dispatch.yaml yarn run deploy:routes",
     "deploy:dev": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=development MANIFEST=development.yaml yarn run deploy",
     "deploy:preview": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=development MANIFEST=development.yaml yarn run deploy",
-    "deploy:stage": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=staging MANIFEST=staging.yaml yarn run deploy",
+    "deploy:stage": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=staging MANIFEST=stage.yaml yarn run deploy",
     "deploy:prod": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=production MANIFEST=production.yaml yarn run deploy",
     "view": "gcloud app browse -s $DEPLOY_ENV",
     "lint": "eslint .",
