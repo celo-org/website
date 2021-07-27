@@ -71,7 +71,7 @@ export default function Cover(props: CoverContentType) {
           props.imageFit === "contain"
             ? css(illoContain, {
                 [WHEN_TABLET]: {
-                  paddingTop: `${(size.height / size.width) * 100}%`,
+                  paddingTop: `${(size?.height || 1 / size?.width || 1) * 100}%`,
                 },
               })
             : illoCss
@@ -117,9 +117,9 @@ function viewSize(number: number, res: number) {
 
 function trueWidth(file: Asset["fields"]["file"], res: number) {
   if (res === 1) {
-    return file.url
+    return file?.url
   } else {
-    return `${file.url}?w=${viewSize(file.details.image.width, res)}`
+    return `${file?.url}?w=${viewSize(file?.details?.image?.width, res)}`
   }
 }
 

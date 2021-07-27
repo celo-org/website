@@ -16,7 +16,7 @@ async function playlistfetcher(listId: string) {
 }
 export function useYoutube(id: string): undefined | Props[] {
   const ytData = useAsync(playlistfetcher, [id])
-  return ytData?.result?.items?.map(itemToThumbnailProps)
+  return ytData?.result?.items?.filter(filterer).map(itemToThumbnailProps)
 }
 
 interface YTThumbnail {
@@ -53,9 +53,13 @@ interface YouTubeItem {
   }
 }
 
+function filterer(item: YouTubeItem) {
+  return item.contentDetails.videoPublishedAt
+}
+
 function itemToThumbnailProps(item: YouTubeItem): Props {
   const title = item.snippet.title
-  const image = item.snippet.thumbnails.medium.url
+  const image = item.snippet.thumbnails?.medium?.url
   const link = `https://www.youtube.com/watch?v=${item.contentDetails.videoId}`
   const altText = item.snippet.description
   return { image, title, link, altText, id: item.id }
