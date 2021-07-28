@@ -34,7 +34,7 @@
     "@emotion/react": "^11.1.5",
     "@odnh/use-swipe": "^1.0.0",
     "@sentry/browser": "^6.2.5",
-    "@sentry/node": "^6.2.5",
+    "@sentry/node": "^6.8.0",
     "airtable": "^0.8.1",
     "apollo-boost": "^0.4.4",
     "big-integer": "^1.6.48",
