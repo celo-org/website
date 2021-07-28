@@ -24,66 +24,66 @@ interface Props {
   languages: string
 }
 
-class PressPage extends React.PureComponent<I18nProps & Props> {
+function PressPage(props: I18nProps & Props) {
+  const { t, press, languages, i18n } = props
 
-  render() {
-    const { t, press, languages, i18n } = this.props
+  const formatted = React.useMemo(() => {
     const langList = new Set(languages)
 
-    const formated = press
+    return press
       .filter(
         (article) =>
-          langList.has(Languages[article.language]) || Languages[article.language] === i18n.language
+          Languages[article.language] === i18n.language || langList.has(Languages[article.language])
       )
       .reduce(groupByMonth, {})
+  }, [languages, press, i18n.language])
 
-    return (
-      <>
-        <OpenGraph
-          title={"Celo | Press"}
-          path={NameSpaces.audits}
-          description={t("metaDescription")}
-        />
-        <div css={containerCss}>
-          <GridRow
-            allStyle={standardStyles.centered}
-            desktopStyle={standardStyles.blockMarginBottom}
-            tabletStyle={standardStyles.blockMarginBottomTablet}
-            mobileStyle={standardStyles.blockMarginBottomMobile}
-          >
-            <Cell span={Spans.three4th} style={standardStyles.centered}>
-              <h1 css={titleCss}>{t("title")}</h1>
-              <Button
-                text={t("contact")}
-                kind={BTN.NAKED}
-                size={SIZE.big}
-                href={"mailto:press@celo.org"}
-              />
-            </Cell>
-          </GridRow>
-          {Object.keys(formated).map((date) => {
-            return (
-              <SideTitledSection
-                key={date}
-                span={Spans.three4th}
-                title={new Date(date).toLocaleDateString(this.props.i18n.language, DATE_FORMAT)}
-              >
-                {formated[date].map((item) => (
-                  <div css={referenceCss} key={item.title}>
-                    <p css={articleCss}>{item.title}</p>
-                    <p css={publisherLinkCss}>
-                      <span css={publisherCss}>{t("by", { publisher: item.publication })}</span>
-                      {item.link && <HelpfulLink text={t("read")} href={item.link} />}
-                    </p>
-                  </div>
-                ))}
-              </SideTitledSection>
-            )
-          })}
-        </div>
-      </>
-    )
-  }
+  return (
+    <>
+      <OpenGraph
+        title={"Celo | Press"}
+        path={NameSpaces.audits}
+        description={t("metaDescription")}
+      />
+      <div css={containerCss}>
+        <GridRow
+          allStyle={standardStyles.centered}
+          desktopStyle={standardStyles.blockMarginBottom}
+          tabletStyle={standardStyles.blockMarginBottomTablet}
+          mobileStyle={standardStyles.blockMarginBottomMobile}
+        >
+          <Cell span={Spans.three4th} style={standardStyles.centered}>
+            <h1 css={titleCss}>{t("title")}</h1>
+            <Button
+              text={t("contact")}
+              kind={BTN.NAKED}
+              size={SIZE.big}
+              href={"mailto:press@celo.org"}
+            />
+          </Cell>
+        </GridRow>
+        {Object.keys(formatted).map((date) => {
+          return (
+            <SideTitledSection
+              key={date}
+              span={Spans.three4th}
+              title={new Date(date).toLocaleDateString(this.props.i18n.language, DATE_FORMAT)}
+            >
+              {formatted[date].map((item) => (
+                <div css={referenceCss} key={item.title}>
+                  <p css={articleCss}>{item.title}</p>
+                  <p css={publisherLinkCss}>
+                    <span css={publisherCss}>{t("by", { publisher: item.publication })}</span>
+                    {item.link && <HelpfulLink text={t("read")} href={item.link} />}
+                  </p>
+                </div>
+              ))}
+            </SideTitledSection>
+          )
+        })}
+      </div>
+    </>
+  )
 }
 
 const titleCss = css(eFonts.h1, {
