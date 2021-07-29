@@ -67,7 +67,7 @@ function PressPage(props: I18nProps & Props) {
             <SideTitledSection
               key={date}
               span={Spans.three4th}
-              title={new Date(date).toLocaleDateString(this.props.i18n.language, DATE_FORMAT)}
+              title={new Date(date).toLocaleDateString(props.i18n.language, DATE_FORMAT)}
             >
               {formatted[date].map((item) => (
                 <div css={referenceCss} key={item.title}>
