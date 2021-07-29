@@ -4,12 +4,13 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
 
 export async function getServerSideProps(context) {
-  const getpress = await import("src/../server/fetchPress")
-  const press = await getpress.default()
-  const languages = context.req.headers["accept-language"]
-    .toLowerCase()
-    .split(",")
-    .map((s) => s.substr(0, 2))
+  const getPress = await import("src/../server/fetchPress")
+  const press = await getPress.default()
+  const languages =
+    context.req.headers["accept-language"]
+      ?.toLowerCase()
+      ?.split(",")
+      ?.map((s: string) => s.substr(0, 2)) || defaultLang
 
   return {
     props: makeSafeForJson({
@@ -20,5 +21,7 @@ export async function getServerSideProps(context) {
     }),
   }
 }
+
+const defaultLang = ["en"]
 
 export default Papers
