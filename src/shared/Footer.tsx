@@ -1,5 +1,4 @@
 import * as React from "react"
-import Lazy from "react-lazyload"
 import { css } from "@emotion/react"
 import EmailForm from "src/forms/EmailForm"
 import { NameSpaces, Trans, useTranslation } from "src/i18n"
@@ -229,9 +228,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
         })}
       >
         <div css={toesCss}>
-          <Lazy unmountIfInvisible={true}>
-            <ChangeStory darkMode={darkMode} />
-          </Lazy>
+          <ChangeStory darkMode={darkMode} />
           <small css={css(copyrightStyle, darkMode && whiteText)}>
             {t("footer.copyright", { year })}
           </small>
