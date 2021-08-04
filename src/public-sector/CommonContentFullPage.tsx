@@ -66,7 +66,7 @@ export default function CommonPage(props: Props) {
 
 const rootCss = css(flex, {})
 
-function pageSwitch(
+export function pageSwitch(
   section: Entry<
     GridRowContentType | SectionType | CoverContentType | FormContentType | HorizontalType
   >
