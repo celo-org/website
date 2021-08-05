@@ -11,5 +11,1479 @@ exports[`DevelopersPage renders 1`] = `
       "toString": [Function],
     }
   }
-/>
+>
+  <section
+    css={
+      Object {
+        "map": undefined,
+        "name": "pnyh7x",
+        "next": undefined,
+        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
+        "toString": [Function],
+      }
+    }
+  >
+    <div
+      css={
+        Object {
+          "map": undefined,
+          "name": "4s0z69",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr 1fr 1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr 1fr 1fr ;}",
+          "toString": [Function],
+        }
+      }
+      id="test"
+    >
+      <div
+        css={
+          Object {
+            "map": undefined,
+            "name": "1usgoqe",
+            "next": undefined,
+            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;justify-content:space-between;margin-bottom:36px;@media (max-width: 576px){align-items:center;align-content:center;}",
+            "toString": [Function],
+          }
+        }
+      >
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "1qilrns",
+              "next": undefined,
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;li{list-style:none;}ul{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inlin-eend:0;padding-inline-start:0;}}",
+              "toString": [Function],
+            }
+          }
+        >
+          <h4
+            css={
+              Object {
+                "map": undefined,
+                "name": "9oenxr",
+                "next": undefined,
+                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:24px;line-height:28;font-weight:400;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;margin-top:16px;margin-bottom:12px;;",
+                "toString": [Function],
+              }
+            }
+          >
+            Blurb romeo
+          </h4>
+          <p
+            css={
+              Object {
+                "map": undefined,
+                "name": "ronyck",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
+                "toString": [Function],
+              }
+            }
+          >
+            Hello World
+          </p>
+        </div>
+      </div>
+      <div
+        css={
+          Object {
+            "map": undefined,
+            "name": "1usgoqe",
+            "next": undefined,
+            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;justify-content:space-between;margin-bottom:36px;@media (max-width: 576px){align-items:center;align-content:center;}",
+            "toString": [Function],
+          }
+        }
+      >
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "1qilrns",
+              "next": undefined,
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;li{list-style:none;}ul{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inlin-eend:0;padding-inline-start:0;}}",
+              "toString": [Function],
+            }
+          }
+        >
+          <h4
+            css={
+              Object {
+                "map": undefined,
+                "name": "9oenxr",
+                "next": undefined,
+                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:24px;line-height:28;font-weight:400;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;margin-top:16px;margin-bottom:12px;;",
+                "toString": [Function],
+              }
+            }
+          >
+            Blurb soma
+          </h4>
+          <p
+            css={
+              Object {
+                "map": undefined,
+                "name": "ronyck",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
+                "toString": [Function],
+              }
+            }
+          >
+            Hello World
+          </p>
+        </div>
+      </div>
+      <div
+        css={
+          Object {
+            "map": undefined,
+            "name": "1usgoqe",
+            "next": undefined,
+            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;justify-content:space-between;margin-bottom:36px;@media (max-width: 576px){align-items:center;align-content:center;}",
+            "toString": [Function],
+          }
+        }
+      >
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "1qilrns",
+              "next": undefined,
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;li{list-style:none;}ul{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inlin-eend:0;padding-inline-start:0;}}",
+              "toString": [Function],
+            }
+          }
+        >
+          <h4
+            css={
+              Object {
+                "map": undefined,
+                "name": "9oenxr",
+                "next": undefined,
+                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:24px;line-height:28;font-weight:400;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;margin-top:16px;margin-bottom:12px;;",
+                "toString": [Function],
+              }
+            }
+          >
+            Blurb rico
+          </h4>
+          <p
+            css={
+              Object {
+                "map": undefined,
+                "name": "ronyck",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
+                "toString": [Function],
+              }
+            }
+          >
+            Hello World
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "backgroundColor": "rgba(46,51,56,1.00)",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitAlignSelf": "center",
+          "WebkitBoxDirection": "normal",
+          "WebkitBoxLines": "multiple",
+          "WebkitBoxOrient": "vertical",
+          "WebkitFlexDirection": "column",
+          "WebkitFlexWrap": "wrap",
+          "alignSelf": "center",
+          "flexDirection": "column",
+          "flexWrap": "wrap",
+          "marginTop": "50px",
+          "maxWidth": "100vw",
+          "msFlexDirection": "column",
+          "msFlexItemAlign": "center",
+          "msFlexWrap": "wrap",
+          "msGridRowAlign": "center",
+          "overflowX": "hidden",
+          "overflowY": "hidden",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitBoxFlex": 0,
+            "WebkitFlexGrow": 0,
+            "WebkitFlexShrink": 0,
+            "flexGrow": 0,
+            "flexShrink": 0,
+            "msFlexNegative": 0,
+            "msFlexPositive": 0,
+            "paddingBottom": "10px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "paddingTop": "10px",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "maxWidth": "400px",
+                "width": "100%",
+              }
+            }
+          >
+            <h2
+              aria-level="2"
+              className="css-reset-4rbku5 css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              role="heading"
+              style={
+                Object {
+                  "color": "rgba(255,255,255,1.00)",
+                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontSize": "28px",
+                  "lineHeight": "32px",
+                  "textRendering": "geometricPrecision",
+                  "textTransform": "none",
+                }
+              }
+            >
+              Full Stack Approach
+            </h2>
+            <h3
+              aria-level="3"
+              className="css-reset-4rbku5 css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              role="heading"
+              style={
+                Object {
+                  "color": "rgba(255,255,255,1.00)",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "24px",
+                  "lineHeight": "32px",
+                  "marginBottom": "20px",
+                  "marginTop": "20px",
+                  "textRendering": "geometricPrecision",
+                  "textTransform": "none",
+                }
+              }
+            >
+              Celo Layers of Technology
+            </h3>
+            <div
+              className="css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(255,255,255,1.00)",
+                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontSize": "20px",
+                  "lineHeight": "28px",
+                  "marginBottom": "20px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Each layer of the technical stack is designed to meet mobile user needs.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitBoxFlex": 0,
+            "WebkitFlexGrow": 0,
+            "WebkitFlexShrink": 0,
+            "flexGrow": 0,
+            "flexShrink": 0,
+            "msFlexNegative": 0,
+            "msFlexPositive": 0,
+            "paddingBottom": "10px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "paddingTop": "10px",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          id="applications"
+          style={
+            Object {
+              "MozTransitionProperty": "opacity",
+              "WebkitBoxDirection": "normal",
+              "WebkitBoxOrient": "horizontal",
+              "WebkitBoxPack": "justify",
+              "WebkitFlex": 1,
+              "WebkitFlexBasis": "auto",
+              "WebkitFlexDirection": "row",
+              "WebkitJustifyContent": "space-between",
+              "WebkitTransitionDuration": "500ms",
+              "WebkitTransitionProperty": "opacity",
+              "flex": 1,
+              "flexBasis": "auto",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginBottom": "20px",
+              "marginTop": "20px",
+              "msFlex": "1 1 0%",
+              "msFlexDirection": "row",
+              "msFlexPack": "justify",
+              "msFlexPreferredSize": "auto",
+              "opacity": 1,
+              "transitionDuration": "500ms",
+              "transitionProperty": "opacity",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitFlex": 1,
+                "flex": 1,
+                "maxWidth": "400px",
+                "msFlex": "1 1 0%",
+              }
+            }
+          >
+            <div
+              className="css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(255,255,255,1.00)",
+                  "cursor": "pointer",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "lineHeight": "18px",
+                  "marginBottom": "20px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Applications
+            </div>
+            <div
+              className="css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(255,255,255,1.00)",
+                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontSize": "20px",
+                  "lineHeight": "28px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Send or Request stable assets easily with anyone in your address book, powered by decentralized phone number verification
+            </div>
+            <ul
+              className="css-reset-4rbku5 css-view-1dbjc4n"
+              role="list"
+              style={
+                Object {
+                  "listStyle": "disc",
+                  "marginLeft": "10px",
+                  "marginTop": "20px",
+                  "paddingLeft": "20px",
+                }
+              }
+            >
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Non-custodial wallet
+              </li>
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Mobile ultralight client
+              </li>
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Exchange between stable assets and CELO
+              </li>
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                QR Code Support
+              </li>
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Mobile first SDK
+              </li>
+            </ul>
+          </div>
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "marginLeft": "10px",
+                "marginRight": "10px",
+                "marginTop": "45px",
+              }
+            }
+          >
+            <div
+              className="css-view-1dbjc4n"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                dir="auto"
+                href="/developers/wallet"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(53,208,127,1.00)",
+                    "borderBottomColor": "rgba(53,208,127,1.00)",
+                    "borderBottomLeftRadius": "3px",
+                    "borderBottomRightRadius": "3px",
+                    "borderBottomWidth": "1px",
+                    "borderLeftColor": "rgba(53,208,127,1.00)",
+                    "borderLeftWidth": "1px",
+                    "borderRightColor": "rgba(53,208,127,1.00)",
+                    "borderRightWidth": "1px",
+                    "borderTopColor": "rgba(53,208,127,1.00)",
+                    "borderTopLeftRadius": "3px",
+                    "borderTopRightRadius": "3px",
+                    "borderTopWidth": "1px",
+                    "color": "rgba(255,255,255,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "minWidth": "150px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "paddingBottom": "10px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "20px",
+                    "paddingTop": "10px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+                target="_blank"
+              >
+                Get Test Wallet
+              </a>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "marginBottom": "10px",
+                  "marginTop": "10px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              style={
+                Object {
+                  "WebkitAlignItems": "flex-start",
+                  "WebkitBoxAlign": "start",
+                  "alignItems": "flex-start",
+                  "msFlexAlign": "start",
+                }
+              }
+            >
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(221,221,221,1.00)",
+                    "borderBottomLeftRadius": "3px",
+                    "borderBottomRightRadius": "3px",
+                    "borderBottomWidth": "1px",
+                    "borderLeftColor": "rgba(221,221,221,1.00)",
+                    "borderLeftWidth": "1px",
+                    "borderRightColor": "rgba(221,221,221,1.00)",
+                    "borderRightWidth": "1px",
+                    "borderTopColor": "rgba(221,221,221,1.00)",
+                    "borderTopLeftRadius": "3px",
+                    "borderTopRightRadius": "3px",
+                    "borderTopWidth": "1px",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="https://github.com/celo-org/celo-monorepo"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "WebkitBoxFlex": 0,
+                      "WebkitBoxPack": "center",
+                      "WebkitFlexGrow": 0,
+                      "WebkitJustifyContent": "center",
+                      "alignItems": "center",
+                      "color": "rgba(53,208,127,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "flexGrow": 0,
+                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "500",
+                      "justifyContent": "center",
+                      "lineHeight": "16px",
+                      "minWidth": "150px",
+                      "msFlexAlign": "center",
+                      "msFlexPack": "center",
+                      "msFlexPositive": 0,
+                      "opacity": 1,
+                      "paddingBottom": "9px",
+                      "paddingLeft": "20px",
+                      "paddingRight": "20px",
+                      "paddingTop": "9px",
+                      "textAlign": "center",
+                      "textRendering": "geometricPrecision",
+                      "width": "fit-content",
+                    }
+                  }
+                  target="_blank"
+                >
+                  See Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-view-1dbjc4n"
+          id="contracts"
+          style={
+            Object {
+              "MozTransitionProperty": "opacity",
+              "WebkitBoxDirection": "normal",
+              "WebkitBoxOrient": "horizontal",
+              "WebkitBoxPack": "justify",
+              "WebkitFlex": 1,
+              "WebkitFlexBasis": "auto",
+              "WebkitFlexDirection": "row",
+              "WebkitJustifyContent": "space-between",
+              "WebkitTransitionDuration": "500ms",
+              "WebkitTransitionProperty": "opacity",
+              "flex": 1,
+              "flexBasis": "auto",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginBottom": "20px",
+              "marginTop": "20px",
+              "msFlex": "1 1 0%",
+              "msFlexDirection": "row",
+              "msFlexPack": "justify",
+              "msFlexPreferredSize": "auto",
+              "opacity": 1,
+              "transitionDuration": "500ms",
+              "transitionProperty": "opacity",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitFlex": 1,
+                "flex": 1,
+                "maxWidth": "400px",
+                "msFlex": "1 1 0%",
+              }
+            }
+          >
+            <div
+              className="css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(255,255,255,1.00)",
+                  "cursor": "pointer",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "lineHeight": "18px",
+                  "marginBottom": "20px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Core Contracts
+            </div>
+            <div
+              className="css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(255,255,255,1.00)",
+                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontSize": "20px",
+                  "lineHeight": "28px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Designed to support an ecology of stable value currencies. The first stablecoin, cUSD, tracks the value of the US Dollar.
+            </div>
+            <ul
+              className="css-reset-4rbku5 css-view-1dbjc4n"
+              role="list"
+              style={
+                Object {
+                  "listStyle": "disc",
+                  "marginLeft": "10px",
+                  "marginTop": "20px",
+                  "paddingLeft": "20px",
+                }
+              }
+            >
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Algorithmic reserve-backed stabilization mechanism
+              </li>
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Crypto-asset collateralized
+              </li>
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Native support for multiple stablecoins
+              </li>
+            </ul>
+          </div>
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "marginLeft": "10px",
+                "marginRight": "10px",
+                "marginTop": "45px",
+              }
+            }
+          >
+            <div
+              className="css-view-1dbjc4n"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                dir="auto"
+                href="https://docs.celo.org/overview"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(53,208,127,1.00)",
+                    "borderBottomColor": "rgba(53,208,127,1.00)",
+                    "borderBottomLeftRadius": "3px",
+                    "borderBottomRightRadius": "3px",
+                    "borderBottomWidth": "1px",
+                    "borderLeftColor": "rgba(53,208,127,1.00)",
+                    "borderLeftWidth": "1px",
+                    "borderRightColor": "rgba(53,208,127,1.00)",
+                    "borderRightWidth": "1px",
+                    "borderTopColor": "rgba(53,208,127,1.00)",
+                    "borderTopLeftRadius": "3px",
+                    "borderTopRightRadius": "3px",
+                    "borderTopWidth": "1px",
+                    "color": "rgba(255,255,255,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "minWidth": "150px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "paddingBottom": "10px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "20px",
+                    "paddingTop": "10px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+                target="_blank"
+              >
+                Read More
+              </a>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "marginBottom": "10px",
+                  "marginTop": "10px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              style={
+                Object {
+                  "WebkitAlignItems": "flex-start",
+                  "WebkitBoxAlign": "start",
+                  "alignItems": "flex-start",
+                  "msFlexAlign": "start",
+                }
+              }
+            >
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(221,221,221,1.00)",
+                    "borderBottomLeftRadius": "3px",
+                    "borderBottomRightRadius": "3px",
+                    "borderBottomWidth": "1px",
+                    "borderLeftColor": "rgba(221,221,221,1.00)",
+                    "borderLeftWidth": "1px",
+                    "borderRightColor": "rgba(221,221,221,1.00)",
+                    "borderRightWidth": "1px",
+                    "borderTopColor": "rgba(221,221,221,1.00)",
+                    "borderTopLeftRadius": "3px",
+                    "borderTopRightRadius": "3px",
+                    "borderTopWidth": "1px",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="https://github.com/celo-org/celo-monorepo"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "WebkitBoxFlex": 0,
+                      "WebkitBoxPack": "center",
+                      "WebkitFlexGrow": 0,
+                      "WebkitJustifyContent": "center",
+                      "alignItems": "center",
+                      "color": "rgba(53,208,127,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "flexGrow": 0,
+                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "500",
+                      "justifyContent": "center",
+                      "lineHeight": "16px",
+                      "minWidth": "150px",
+                      "msFlexAlign": "center",
+                      "msFlexPack": "center",
+                      "msFlexPositive": 0,
+                      "opacity": 1,
+                      "paddingBottom": "9px",
+                      "paddingLeft": "20px",
+                      "paddingRight": "20px",
+                      "paddingTop": "9px",
+                      "textAlign": "center",
+                      "textRendering": "geometricPrecision",
+                      "width": "fit-content",
+                    }
+                  }
+                  target="_blank"
+                >
+                  See Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-view-1dbjc4n"
+          id="blockchain"
+          style={
+            Object {
+              "MozTransitionProperty": "opacity",
+              "WebkitBoxDirection": "normal",
+              "WebkitBoxOrient": "horizontal",
+              "WebkitBoxPack": "justify",
+              "WebkitFlex": 1,
+              "WebkitFlexBasis": "auto",
+              "WebkitFlexDirection": "row",
+              "WebkitJustifyContent": "space-between",
+              "WebkitTransitionDuration": "500ms",
+              "WebkitTransitionProperty": "opacity",
+              "flex": 1,
+              "flexBasis": "auto",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginBottom": "20px",
+              "marginTop": "20px",
+              "msFlex": "1 1 0%",
+              "msFlexDirection": "row",
+              "msFlexPack": "justify",
+              "msFlexPreferredSize": "auto",
+              "opacity": 1,
+              "transitionDuration": "500ms",
+              "transitionProperty": "opacity",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitFlex": 1,
+                "flex": 1,
+                "maxWidth": "400px",
+                "msFlex": "1 1 0%",
+              }
+            }
+          >
+            <div
+              className="css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(255,255,255,1.00)",
+                  "cursor": "pointer",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "lineHeight": "18px",
+                  "marginBottom": "20px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Blockchain
+            </div>
+            <div
+              className="css-text-901oao"
+              dir="auto"
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "rgba(255,255,255,1.00)",
+                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontSize": "20px",
+                  "lineHeight": "28px",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Open source smart contract platform built on decentralized infrastructure.
+            </div>
+            <ul
+              className="css-reset-4rbku5 css-view-1dbjc4n"
+              role="list"
+              style={
+                Object {
+                  "listStyle": "disc",
+                  "marginLeft": "10px",
+                  "marginTop": "20px",
+                  "paddingLeft": "20px",
+                }
+              }
+            >
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Proof of Stake based consensus with high throughput, low latency, and zero carbon
+              </li>
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Incentives for serving mobile devices
+              </li>
+              <li
+                className="css-reset-4rbku5 css-text-901oao"
+                dir="auto"
+                onClick={[Function]}
+                role="listitem"
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,1.00)",
+                    "display": "list-item",
+                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontSize": "20px",
+                    "lineHeight": "28px",
+                    "listStyle": "inherit",
+                    "marginBottom": "20px",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                On-chain governance
+              </li>
+            </ul>
+          </div>
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "marginLeft": "10px",
+                "marginRight": "10px",
+                "marginTop": "45px",
+              }
+            }
+          >
+            <div
+              className="css-view-1dbjc4n"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                dir="auto"
+                href="https://docs.celo.org/overview"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(53,208,127,1.00)",
+                    "borderBottomColor": "rgba(53,208,127,1.00)",
+                    "borderBottomLeftRadius": "3px",
+                    "borderBottomRightRadius": "3px",
+                    "borderBottomWidth": "1px",
+                    "borderLeftColor": "rgba(53,208,127,1.00)",
+                    "borderLeftWidth": "1px",
+                    "borderRightColor": "rgba(53,208,127,1.00)",
+                    "borderRightWidth": "1px",
+                    "borderTopColor": "rgba(53,208,127,1.00)",
+                    "borderTopLeftRadius": "3px",
+                    "borderTopRightRadius": "3px",
+                    "borderTopWidth": "1px",
+                    "color": "rgba(255,255,255,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "minWidth": "150px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "paddingBottom": "10px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "20px",
+                    "paddingTop": "10px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+                target="_blank"
+              >
+                Read More
+              </a>
+            </div>
+            <div
+              className="css-view-1dbjc4n"
+              style={
+                Object {
+                  "marginBottom": "10px",
+                  "marginTop": "10px",
+                }
+              }
+            />
+            <div
+              className="css-view-1dbjc4n"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              style={
+                Object {
+                  "WebkitAlignItems": "flex-start",
+                  "WebkitBoxAlign": "start",
+                  "alignItems": "flex-start",
+                  "msFlexAlign": "start",
+                }
+              }
+            >
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(221,221,221,1.00)",
+                    "borderBottomLeftRadius": "3px",
+                    "borderBottomRightRadius": "3px",
+                    "borderBottomWidth": "1px",
+                    "borderLeftColor": "rgba(221,221,221,1.00)",
+                    "borderLeftWidth": "1px",
+                    "borderRightColor": "rgba(221,221,221,1.00)",
+                    "borderRightWidth": "1px",
+                    "borderTopColor": "rgba(221,221,221,1.00)",
+                    "borderTopLeftRadius": "3px",
+                    "borderTopRightRadius": "3px",
+                    "borderTopWidth": "1px",
+                  }
+                }
+              >
+                <a
+                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  dir="auto"
+                  href="https://github.com/celo-org/celo-blockchain"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  role="link"
+                  style={
+                    Object {
+                      "WebkitAlignItems": "center",
+                      "WebkitBoxAlign": "center",
+                      "WebkitBoxFlex": 0,
+                      "WebkitBoxPack": "center",
+                      "WebkitFlexGrow": 0,
+                      "WebkitJustifyContent": "center",
+                      "alignItems": "center",
+                      "color": "rgba(53,208,127,1.00)",
+                      "cursor": "pointer",
+                      "display": "inline-flex",
+                      "flexGrow": 0,
+                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                      "fontSize": "16px",
+                      "fontWeight": "500",
+                      "justifyContent": "center",
+                      "lineHeight": "16px",
+                      "minWidth": "150px",
+                      "msFlexAlign": "center",
+                      "msFlexPack": "center",
+                      "msFlexPositive": 0,
+                      "opacity": 1,
+                      "paddingBottom": "9px",
+                      "paddingLeft": "20px",
+                      "paddingRight": "20px",
+                      "paddingTop": "9px",
+                      "textAlign": "center",
+                      "textRendering": "geometricPrecision",
+                      "width": "fit-content",
+                    }
+                  }
+                  target="_blank"
+                >
+                  See Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "MozTransitionProperty": "opacity",
+              "WebkitAlignItems": "center",
+              "WebkitBoxAlign": "center",
+              "WebkitBoxPack": "center",
+              "WebkitJustifyContent": "center",
+              "WebkitTransitionDuration": "100ms",
+              "WebkitTransitionProperty": "opacity",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "msFlexAlign": "center",
+              "msFlexPack": "center",
+              "transitionDuration": "100ms",
+              "transitionProperty": "opacity",
+              "zIndex": 1,
+            }
+          }
+        >
+          <h4
+            aria-level="4"
+            className="css-reset-4rbku5 css-text-901oao"
+            dir="auto"
+            onClick={[Function]}
+            role="heading"
+            style={
+              Object {
+                "color": "rgba(255,255,255,1.00)",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "24px",
+                "lineHeight": "32px",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+                "textTransform": "none",
+              }
+            }
+          >
+            Browse the Code
+          </h4>
+          <div
+            className="css-text-901oao"
+            dir="auto"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "rgba(255,255,255,1.00)",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "16px",
+                "lineHeight": "20px",
+                "marginBottom": "20px",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            Explore and contribute to the Celo codebase
+             
+          </div>
+          <div
+            className="css-view-1dbjc4n"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          >
+            <a
+              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              dir="auto"
+              href="https://github.com/celo-org/celo-monorepo"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              rel="noopener"
+              role="link"
+              style={
+                Object {
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(53,208,127,1.00)",
+                  "borderBottomColor": "rgba(53,208,127,1.00)",
+                  "borderBottomLeftRadius": "3px",
+                  "borderBottomRightRadius": "3px",
+                  "borderBottomWidth": "1px",
+                  "borderLeftColor": "rgba(53,208,127,1.00)",
+                  "borderLeftWidth": "1px",
+                  "borderRightColor": "rgba(53,208,127,1.00)",
+                  "borderRightWidth": "1px",
+                  "borderTopColor": "rgba(53,208,127,1.00)",
+                  "borderTopLeftRadius": "3px",
+                  "borderTopRightRadius": "3px",
+                  "borderTopWidth": "1px",
+                  "color": "rgba(255,255,255,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "flexGrow": 0,
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "justifyContent": "center",
+                  "lineHeight": "16px",
+                  "minWidth": "150px",
+                  "msFlexAlign": "center",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "paddingBottom": "10px",
+                  "paddingLeft": "20px",
+                  "paddingRight": "20px",
+                  "paddingTop": "10px",
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
+                  "width": "fit-content",
+                }
+              }
+              target="_blank"
+            >
+              View On Github
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "display": "inline-flex",
+                    "paddingLeft": "8px",
+                  }
+                }
+              >
+                <svg
+                  fill="none"
+                  height={20}
+                  viewBox="0 0 25 24"
+                  width={20}
+                >
+                  <title>
+                    Github
+                  </title>
+                  <path
+                    clipRule="evenodd"
+                    d="M12.3019 0C5.50526 0 0 5.50526 0 12.3019C0 17.7392 3.52669 22.3458 8.4127 23.977C9.0244 24.0902 9.25095 23.7126 9.25095 23.3804C9.25095 23.0858 9.2434 22.3156 9.23585 21.2885C5.81488 22.0286 5.08991 19.6422 5.08991 19.6422C4.53108 18.2225 3.72304 17.8373 3.72304 17.8373C2.60537 17.0746 3.80611 17.0897 3.80611 17.0897C5.03705 17.1803 5.69405 18.3584 5.69405 18.3584C6.78906 20.2388 8.57129 19.6951 9.27361 19.3779C9.38688 18.585 9.70406 18.0412 10.0514 17.7316C7.32524 17.4295 4.45556 16.3723 4.45556 11.66C4.45556 10.3158 4.93132 9.22074 5.72426 8.35984C5.59588 8.04266 5.17298 6.79662 5.83754 5.10501C5.83754 5.10501 6.87213 4.77274 9.22074 6.36616C10.2025 6.0943 11.2522 5.95837 12.3019 5.95082C13.344 5.95837 14.4013 6.0943 15.383 6.36616C17.7316 4.77274 18.7662 5.10501 18.7662 5.10501C19.4383 6.79662 19.0154 8.05021 18.887 8.35984C19.6724 9.22074 20.1482 10.3158 20.1482 11.66C20.1482 16.3874 17.271 17.422 14.5297 17.7316C14.9677 18.1092 15.3679 18.8644 15.3679 20.0123C15.3679 21.6586 15.3528 22.9801 15.3528 23.3879C15.3528 23.7202 15.5718 24.0978 16.1986 23.977C21.0846 22.3458 24.6038 17.7392 24.6038 12.3094C24.6038 5.50526 19.0985 0 12.3019 0Z"
+                    fill="#FFFFFF"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;
