@@ -2,6 +2,7 @@ import { css } from "@emotion/react"
 import * as React from "react"
 import FullStack from "src/dev/FullStack"
 import { flex } from "src/estyles"
+import OpenGraph from "src/header/OpenGraph"
 import { Props } from "src/home/Home"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 
@@ -10,6 +11,12 @@ export default function Developers(props: Props) {
   items.splice(3, 0, <FullStack />)
   return (
     <>
+      <OpenGraph
+        image={props.openGraph?.fields?.file?.url}
+        title={props.title}
+        description={props.description}
+        path={props.slug}
+      />
       <div css={rootCss}>{items}</div>
     </>
 
