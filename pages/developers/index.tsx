@@ -16,7 +16,7 @@ export async function getServerSideProps({ locale }) {
   return {
     props: {
       ...page,
-      ...(await serverSideTranslations(locale, [NameSpaces.dev])),
+      ...(await serverSideTranslations(locale, [NameSpaces.common, NameSpaces.dev])),
     },
   }
 }
