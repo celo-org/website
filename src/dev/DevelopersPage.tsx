@@ -7,8 +7,11 @@ import { Props } from "src/home/Home"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 
 export default function Developers(props: Props) {
-  const items = props.sections.map(pageSwitch)
-  items.splice(3, 0, <FullStack />)
+  let items
+  if (props.sections) {
+    items = props.sections.map(pageSwitch)
+    items.splice(3, 0, <FullStack />)
+  }
   return (
     <>
       <OpenGraph
@@ -17,7 +20,7 @@ export default function Developers(props: Props) {
         description={props.description}
         path={props.slug}
       />
-      <div css={rootCss}>{items}</div>
+      <div css={rootCss}>{props.sections ? items : <></>}</div>
     </>
 
   )
