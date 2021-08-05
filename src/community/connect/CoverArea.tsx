@@ -1,9 +1,9 @@
 import * as React from "react"
 import { StyleSheet, Text, View } from "react-native"
 import CeloRoles from "src/community/connect/CeloRoles"
-import { H1, H4 } from "src/fonts/Fonts"
-import EmailForm from "src/forms/EmailForm"
+import { H1 } from "src/fonts/Fonts"
 import { NameSpaces, useTranslation } from "src/i18n"
+import Discord from "src/icons/Discord"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { ScreenSizes, useScreenSize } from "src/layout/ScreenSize"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
@@ -40,6 +40,7 @@ export default React.memo(function CoverArea() {
             size={SIZE.big}
             text={t("cover.joinMovement")}
             href={CeloLinks.discord}
+            iconRight={<Discord color={colors.white} size={24} />}
             target={"_blank"}
           />
         </View>
