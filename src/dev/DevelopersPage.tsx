@@ -8,8 +8,12 @@ import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 
 export default function Developers(props: Props) {
   const { t } = useTranslation(NameSpaces.dev)
+  const items = props.sections.map(pageSwitch)
   return (
-    <div css={rootCss}>{props.sections.map(pageSwitch)}</div>
+    <>
+      <div css={rootCss}>{items}</div>
+      <div css={rootCss}>{items.splice(3, 0, <FullStack />)}</div>
+    </>
 
   )
 }
