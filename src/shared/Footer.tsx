@@ -1,6 +1,4 @@
 import * as React from "react"
-import Lazy from "react-lazyload"
-import { StyleSheet } from "react-native"
 import { css } from "@emotion/react"
 import EmailForm from "src/forms/EmailForm"
 import { NameSpaces, Trans, useTranslation } from "src/i18n"
@@ -16,14 +14,23 @@ import Reddit from "src/icons/Reddit"
 import Telegram from "src/icons/Telegram"
 import { TweetLogo } from "src/icons/TwitterLogo"
 import YouTube from "src/icons/YouTube"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { GridRow, Cell, Spans } from "src/layout/Grid2"
 import { useScreenSize } from "src/layout/ScreenSize"
 import RingsGlyph from "src/logos/RingsGlyph"
 import ChangeStory from "src/shared/ChangeStory"
 import FooterColumn, { LinkType } from "src/shared/FooterColumn"
 import menu, { CeloLinks, hashNav } from "src/shared/menu-items"
-import { colors, standardStyles } from "src/styles"
-import { flex, flexRow, fonts, WHEN_MOBILE, WHEN_TABLET, whiteText } from "src/estyles"
+import { colors } from "src/styles"
+import {
+  flex,
+  flexRow,
+  fonts,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+  whiteText,
+  standardStyles,
+  WHEN_DESKTOP,
+} from "src/estyles"
 
 const MENU = [
   menu.HOME,
@@ -144,41 +151,43 @@ export default function Footer({ hideForm, darkMode }: Props) {
     <>
       {!hideForm && (
         <GridRow
-          allStyle={[standardStyles.centered, darkMode && standardStyles.darkBackground]}
-          desktopStyle={standardStyles.blockMarginTop}
-          tabletStyle={standardStyles.blockMarginTopTablet}
-          mobileStyle={standardStyles.blockMarginTopMobile}
+          columns={1}
+          darkMode={darkMode}
+          css={css(standardStyles.centered, {
+            [WHEN_DESKTOP]: css(standardStyles.blockMarginTop, flex),
+            [WHEN_TABLET]: css(standardStyles.blockMarginTopTablet, flex),
+            [WHEN_MOBILE]: standardStyles.blockMarginTopMobile,
+          })}
         >
-          <Cell
-            span={Spans.half}
-            tabletSpan={Spans.twoThird}
-            style={[standardStyles.centered, styles.form]}
-          >
+          <div css={formStyle}>
             <img
               src={sendCoinIcon}
               css={emailLogoCss}
               width={50}
-              height={50}
+              height={60}
               alt={t("footer.emailIconAlt")}
             />
-            <p css={recieveUpdatesCss}>{t("receiveUpdates")}</p>
+            <p css={receiveUpdatesCss}>{t("receiveUpdates")}</p>
             <EmailForm submitText={t("signUp")} route={"contacts"} isDarkMode={false} />
-          </Cell>
+          </div>
         </GridRow>
       )}
       <GridRow
-        desktopStyle={standardStyles.blockMarginTop}
-        tabletStyle={[standardStyles.blockMarginTopTablet, styles.column]}
-        mobileStyle={standardStyles.blockMarginTopMobile}
-        allStyle={darkMode && standardStyles.darkBackground}
+        columns={3}
+        darkMode={darkMode}
+        css={css({
+          [WHEN_DESKTOP]: css(standardStyles.blockMarginTop),
+          [WHEN_TABLET]: css(standardStyles.blockMarginTopTablet),
+          [WHEN_MOBILE]: standardStyles.blockMarginTopMobile,
+        })}
       >
-        <Cell span={Spans.third} tabletSpan={Spans.twoThird}>
+        <Cell span={Spans.one} tabletSpan={Spans.three}>
           <div css={ringsCSS}>
             <RingsGlyph darkMode={darkMode} />
           </div>
           <Details darkMode={darkMode} />
         </Cell>
-        <Cell span={Spans.twoThird} tabletSpan={Spans.full}>
+        <Cell span={Spans.two} tabletSpan={Spans.three}>
           {isMobile ? (
             <MobileLinks footerMenu={footerMenu} darkMode={darkMode} />
           ) : (
@@ -210,19 +219,20 @@ export default function Footer({ hideForm, darkMode }: Props) {
         </Cell>
       </GridRow>
       <GridRow
-        desktopStyle={standardStyles.blockMargin}
-        tabletStyle={standardStyles.blockMarginTablet}
-        mobileStyle={standardStyles.blockMarginMobile}
-        allStyle={darkMode && standardStyles.darkBackground}
+        columns={1}
+        darkMode={darkMode}
+        css={css({
+          [WHEN_DESKTOP]: css(standardStyles.blockMargin),
+          [WHEN_TABLET]: css(standardStyles.blockMarginTablet),
+          [WHEN_MOBILE]: standardStyles.blockMarginMobile,
+        })}
       >
-        <Cell span={Spans.full} style={isMobile ? standardStyles.centered : styles.toes}>
-          <Lazy unmountIfInvisible={true}>
-            <ChangeStory darkMode={darkMode} />
-          </Lazy>
+        <div css={toesCss}>
+          <ChangeStory darkMode={darkMode} />
           <small css={css(copyrightStyle, darkMode && whiteText)}>
             {t("footer.copyright", { year })}
           </small>
-        </Cell>
+        </div>
       </GridRow>
     </>
   )
@@ -266,17 +276,15 @@ interface DetailProps {
 
 const Details = React.memo(function _Details({ darkMode }: DetailProps) {
   const { t } = useTranslation(NameSpaces.common)
-  const fontStyling = css(
-    fonts.legal,
-    detailsTextCss,
-    darkMode && whiteText,
-  )
+  const fontStyling = css(fonts.legal, detailsTextCss, darkMode && whiteText)
   return (
     <div css={detailsCss}>
       <p css={fontStyling}>{t("disclaimer")}</p>
       <p css={fontStyling}>
         <Trans ns={NameSpaces.common} i18nKey={"footerReadMoreTerms"}>
-          <a css={hrefCss} href={menu.TERMS.link}>Terms of Service</a>
+          <a css={hrefCss} href={menu.TERMS.link}>
+            Terms of Service
+          </a>
         </Trans>
       </p>
     </div>
@@ -292,17 +300,14 @@ const detailsCss = css(flex, {
 })
 
 const hrefCss = css({
-  color: "inherit"
+  color: "inherit",
 })
 
-const recieveUpdatesCss = css(
-  fonts.body,
-  {
-    textAlign: "center",
-    marginTop: 20,
-    marginBottom: 10
-  }
-)
+const receiveUpdatesCss = css(fonts.body, {
+  textAlign: "center",
+  marginTop: 20,
+  marginBottom: 10,
+})
 
 const detailsTextCss = css({
   marginBottom: 20,
@@ -313,17 +318,22 @@ const detailsTextCss = css({
   },
 })
 
-const styles = StyleSheet.create({
-  column: {
+const toesCss = css(flex, {
+  flexDirection: "row",
+  justifyContent: "space-between",
+  [WHEN_MOBILE]: css({
     flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  }),
+})
+
+const formStyle = css(flex, standardStyles.centered, {
+  maxWidth: 550,
+  [WHEN_DESKTOP]: {
+    width: "50%",
   },
-  form: {
-    maxWidth: 550,
-  },
-  toes: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
+  [WHEN_TABLET]: { width: "66.66%" },
 })
 
 const linkColumnStartCss = css({
@@ -344,7 +354,6 @@ const copyrightStyle = css(fonts.legal, {
 
 const ringsCSS = css(flex, {
   marginBottom: 20,
-  transform: "translateY(-10px)",
   [WHEN_MOBILE]: {
     marginBottom: 30,
     justifyContent: "center",
