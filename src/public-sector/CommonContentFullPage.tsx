@@ -1,5 +1,6 @@
 import { css } from "@emotion/react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import React from "react"
 import { cellSwitch } from "./cellSwitch"
 import { Entry } from "contentful"
 import {
@@ -66,7 +67,7 @@ export default function CommonPage(props: Props) {
 
 const rootCss = css(flex, {})
 
-function pageSwitch(
+export function pageSwitch(
   section: Entry<
     GridRowContentType | SectionType | CoverContentType | FormContentType | HorizontalType
   >
