@@ -13,7 +13,6 @@ import { CeloLinks } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { colors, fonts, standardStyles, textStyles } from "src/styles"
 import { css } from "@emotion/react"
-import { flex } from "src/estyles"
 interface State {
   address: string
   requestState: RequestState
