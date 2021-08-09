@@ -12,6 +12,8 @@ import InlineAnchor from "src/shared/InlineAnchor"
 import { CeloLinks } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { css } from "@emotion/react"
+import { flex } from "src/estyles"
 interface State {
   address: string
   requestState: RequestState
@@ -30,7 +32,7 @@ class FaucetPage extends React.Component<I18nProps, State> {
           description={t("description")}
           image={require("src/fauceting/ogimage-faucet.png")}
         />
-        <View style={styles.container}>
+        <div css={container}>
           <H1 style={[textStyles.center, standardStyles.sectionMarginTablet]}>{t("title")}</H1>
           <SideTitledSection title={t("addFunds")} text={t("addFundsText")}>
             <RequestFunds kind={RequestType.Faucet} />
@@ -81,7 +83,7 @@ class FaucetPage extends React.Component<I18nProps, State> {
               href={CeloLinks.nodeDocs}
             />
           </SideTitledSection>
-        </View>
+        </div>
       </>
     )
   }
@@ -107,6 +109,12 @@ function ContentWithCTA({ emphasis, text, btnText, href }: CTAProps) {
 }
 
 export default withNamespaces(NameSpaces.faucet)(FaucetPage)
+
+const container = css({
+  marginTop: HEADER_HEIGHT,
+  display: "flex",
+  flexDirection: "column"
+})
 
 const styles = StyleSheet.create({
   container: {
