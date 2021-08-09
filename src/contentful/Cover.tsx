@@ -81,12 +81,12 @@ export default function Cover(props: CoverContentType) {
           {resolution === 2 && (
             <>
               <source
-                media={`(min-width: ${TABLET_BREAKPOINT}px) 2x`}
-                srcSet={props.imageDesktop?.fields.file.url}
+                media={`(min-width: ${TABLET_BREAKPOINT}px)`}
+                srcSet={`${props.imageDesktop?.fields.file.url} 2x`}
               />
               <source
-                media={`(max-width: ${TABLET_BREAKPOINT}px) 2x`}
-                srcSet={props.imageMobile?.fields.file.url}
+                media={`(max-width: ${TABLET_BREAKPOINT}px)`}
+                srcSet={`${props.imageMobile?.fields.file.url} 2x`}
               />
             </>
           )}

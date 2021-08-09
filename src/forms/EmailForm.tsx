@@ -29,7 +29,7 @@ type Props = OwnProps
 
 // return array of all invalid fields
 const validateFields = ({ email }: { email: string }) => {
-  // check email is present and within  and has a @ char that is the secondar chracter or greater
+  // check email is present and within  and has a @ char that is the second character or greater
   if (emailIsValid(email)) {
     return []
   } else {
