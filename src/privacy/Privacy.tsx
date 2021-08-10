@@ -324,11 +324,11 @@ export default class Privacy extends React.Component {
 }
 
 function P({ children }: { children: React.ReactNode }) {
-  return <div css={[fonts.body, paragraph]}>{children}</div>
+  return <p css={[fonts.body, paragraph]}>{children}</p>
 }
 
 function B({ children }: { children: React.ReactNode }) {
-  return <div css={[fonts.body, textStyles.heavy]}>{children}</div>
+  return <span css={[fonts.body, textStyles.heavy]}>{children}</span>
 }
 
 const container = css({
@@ -339,4 +339,5 @@ const container = css({
 
 const paragraph = css({
   marginBottom: 24,
+  marginTop: 0,
 })
