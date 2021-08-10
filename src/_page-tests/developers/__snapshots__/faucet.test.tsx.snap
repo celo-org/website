@@ -2,10 +2,13 @@
 
 exports[`Faucet renders 1`] = `
 <div
-  className="css-view-1dbjc4n"
-  style={
+  css={
     Object {
-      "marginTop": "75px",
+      "map": undefined,
+      "name": "1yttnl",
+      "next": undefined,
+      "styles": "margin-top:75px;display:flex;flex-direction:column;",
+      "toString": [Function],
     }
   }
 >

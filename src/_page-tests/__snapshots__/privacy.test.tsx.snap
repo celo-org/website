@@ -2,10 +2,13 @@
 
 exports[`Privacy renders 1`] = `
 <div
-  className="css-view-1dbjc4n"
-  style={
+  css={
     Object {
-      "marginTop": "100px",
+      "map": undefined,
+      "name": "1bfhzmg",
+      "next": undefined,
+      "styles": "margin-top:100px;display:flex;flex-direction:column;",
+      "toString": [Function],
     }
   }
 >
