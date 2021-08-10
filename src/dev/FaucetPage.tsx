@@ -2,7 +2,6 @@ import * as React from "react"
 import { RequestType } from "src/fauceting/FaucetInterfaces"
 import RequestFunds from "src/fauceting/RequestFunds"
 import { RequestState } from "src/fauceting/utils"
-import { H1 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, Trans, withNamespaces } from "src/i18n"
 import SideTitledSection from "src/layout/SideTitledSection"
@@ -31,7 +30,7 @@ class FaucetPage extends React.Component<I18nProps, State> {
           image={require("src/fauceting/ogimage-faucet.png")}
         />
         <div css={container}>
-          <H1 style={[textStyles.center, standardStyles.sectionMarginTablet]}>{t("title")}</H1>
+          <h1 css={[fonts.h1, textStyles.center, standardStyles.sectionMarginTablet]}>{t("title")}</h1>
           <SideTitledSection title={t("addFunds")} text={t("addFundsText")}>
             <RequestFunds kind={RequestType.Faucet} />
           </SideTitledSection>
