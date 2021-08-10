@@ -324,11 +324,11 @@ export default class Privacy extends React.Component {
 }
 
 function P({ children }: { children: React.ReactNode }) {
-  return <p css={[fonts.body, paragraph]}>{children}</p>
+  return <div css={[fonts.body, paragraph]}>{children}</div>
 }
 
 function B({ children }: { children: React.ReactNode }) {
-  return <p css={[fonts.body, textStyles.heavy]}>{children}</p>
+  return <div css={[fonts.body, textStyles.heavy]}>{children}</div>
 }
 
 const container = css({
