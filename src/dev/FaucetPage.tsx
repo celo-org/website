@@ -11,8 +11,8 @@ import Button, { BTN, SIZE } from "src/shared/Button.3"
 import InlineAnchor from "src/shared/InlineAnchor"
 import { CeloLinks } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
 import { css } from "@emotion/react"
+import { fonts, textStyles, standardStyles } from "src/estyles"
 interface State {
   address: string
   requestState: RequestState
@@ -97,13 +97,13 @@ interface CTAProps {
 
 function ContentWithCTA({ emphasis, text, btnText, href }: CTAProps) {
   return (
-    <View style={standardStyles.elementalMarginBottom}>
-      <Text style={[fonts.p, styles.content]}>
-        <Text style={textStyles.heavy}>{emphasis} </Text>
+    <div css={standardStyles.elementalMarginBottom}>
+      <div css={[fonts.body, styles.content]}>
+        <span css={textStyles.heavy}>{emphasis} </span>
         {text}
-      </Text>
+      </div>
       <Button text={btnText} href={href} kind={BTN.NAKED} size={SIZE.normal} />
-    </View>
+    </div>
   )
 }
 
@@ -115,17 +115,8 @@ const container = css({
   flexDirection: "column"
 })
 
-const styles = StyleSheet.create({
-  container: {
-    marginTop: HEADER_HEIGHT,
-  },
-  content: {
-    paddingBottom: 10,
-  },
-  buttonContainer: {
-    alignItems: "flex-start",
-  },
-  errorBorder: {
-    borderColor: colors.error,
-  },
-})
+const styles = {
+  content: css({
+    paddingBottom: 10
+  })
+}
