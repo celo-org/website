@@ -1,10 +1,16 @@
-import { View } from "react-native"
 import brandPolicyContent from "src/content/brand-policy.md"
 import Markdown from "src/experience/Markdown"
 import { H1 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { standardStyles, textStyles } from "src/styles"
+import { css } from "@emotion/react"
+
+const layout = css({
+  display: "flex",
+  flexDirection: "column"
+}
+)
 
 export default function BrandPolicy() {
   return (
@@ -14,7 +20,7 @@ export default function BrandPolicy() {
         path="/brand-policy"
         description="How to use the Brand Assets (trademark, copyrights & intellectual property) to promote the Celo community while protecting Celo Brand idenity."
       />
-      <View>
+      <div css={layout}>
         <GridRow
           allStyle={standardStyles.centered}
           desktopStyle={standardStyles.sectionMarginTop}
@@ -30,7 +36,7 @@ export default function BrandPolicy() {
             <Markdown source={brandPolicyContent} />
           </Cell>
         </GridRow>
-      </View>
+      </div>
     </>
   )
 }
