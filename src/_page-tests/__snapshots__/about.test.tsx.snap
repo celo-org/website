@@ -1054,7 +1054,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
           }
         }
       >
-        Unique Purpose
+        value1Title
       </h4>
       <div
         className="css-text-901oao"
@@ -1072,7 +1072,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
           }
         }
       >
-        We believe that everyone has their own unique path of growth, and that personal fulfilment depends in large part on being able to reach one’s potential along that path. We embrace values that enable people to grow towards their full potential.
+        value1Text
       </div>
     </div>
   </div>
@@ -1622,7 +1622,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
           }
         }
       >
-        Connectedness
+        value2Title
       </h4>
       <div
         className="css-text-901oao"
@@ -1640,7 +1640,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
           }
         }
       >
-        We believe that people live primarily in connection to one another. We recognize that individuals are healthier and happier when they are members of a strong social community with meaningful relationships – that is, when they are living within a healthy and happy whole. We embrace values that strengthen community.
+        value2Text
       </div>
     </div>
   </div>
@@ -1750,7 +1750,7 @@ Change the story.
         }
       }
     >
-      – Charles Eisenstein
+      – beautifulLifeSource
     </div>
   </div>
   <div
@@ -2631,7 +2631,7 @@ Change the story.
           }
         }
       >
-        Early Backers
+        celoBackers
       </h3>
     </div>
     <div
@@ -2667,7 +2667,7 @@ Change the story.
           }
         }
       >
-        Celo is supported by over 80 companies and individuals, including prominent venture funds, C-level operators, academics, and experts across a wide range of fields, including in no particular order
+        celoBackersText
       </div>
     </div>
   </div>
@@ -4203,7 +4203,7 @@ Change the story.
           }
         }
       >
-        For media inquiries, please contact us at
+        pressText
          
         <div
           className="css-view-1dbjc4n"
