@@ -111,7 +111,7 @@ function isActive(path: string, currentPath: string) {
 }
 
 function isActiveSection(path: string, routeHash: string) {
-  return routeHash.length ? path.endsWith(routeHash) : path.endsWith("overview")
+  return routeHash.length ? path?.endsWith(routeHash) : path?.endsWith("overview")
 }
 
 const styles = StyleSheet.create({

@@ -55,7 +55,7 @@ function getAirtable() {
 // just export for testing!
 // remove announcements that have been marked as blocked for the country our ip says we are in
 export function censor(announcements: Fields[], country?: string) {
-  const lowerCountry = country && country.toLowerCase && country.toLowerCase()
+  const lowerCountry = country?.toLowerCase()
 
   if (!country) {
     return announcements.filter((announcement) => !announcement.block)
