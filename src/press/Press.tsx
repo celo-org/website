@@ -1,13 +1,12 @@
 import { css } from "@emotion/react"
 import * as React from "react"
-import { flex, gridRow, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
+import { flex, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { useTranslation } from "src/i18n"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import MENU from "src/shared/menu-items"
 import { colors } from "src/styles"
 import { GridRow } from "src/layout/Grid2"
 import { LogoGallery } from "src/utils/contentful"
-
 
 export default function Press(props: LogoGallery) {
   const { t } = useTranslation("home")
@@ -44,12 +43,7 @@ export default function Press(props: LogoGallery) {
             kind={BTN.NAKED}
             size={SIZE.normal}
             href={MENU.PRESS.link}
-          />
-          <Button
-            text={t("contactPress")}
-            kind={BTN.NAKED}
-            size={SIZE.normal}
-            href={"mailto:press@celo.org"}
+            align={"center"}
           />
         </div>
       </GridRow>
@@ -83,10 +77,8 @@ const containercss = css({
   justifyContent: "center",
 })
 
-const links = css(gridRow, {
-  maxWidth: 266,
+const links = css(flex, {
   paddingTop: 28,
-  margin: "auto",
 })
 
 const logoCss = css({

@@ -1,40 +1,28 @@
+import { css } from "@emotion/react"
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
-import previewImage from "src/dev/dev-og.png"
-import DeveloperPhoneCover from "src/dev/DeveloperPhoneCover"
-import { Contribute, EngageAsDeveloper } from "src/dev/Engage"
-import Features from "src/dev/Features"
 import FullStack from "src/dev/FullStack"
-import { H2, H3 } from "src/fonts/Fonts"
+import { flex } from "src/estyles"
 import OpenGraph from "src/header/OpenGraph"
-import { NameSpaces, useTranslation } from "src/i18n"
-import menuItems from "src/shared/menu-items"
-import { standardStyles } from "src/styles"
+import { Props } from "src/home/Home"
+import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 
-export default function Developers() {
-    const { t } = useTranslation(NameSpaces.dev)
-    return (
-      <View style={styles.container}>
-        <OpenGraph
-          image={previewImage}
-          path={menuItems.BUILD.link}
-          title={"Celo Developers | Celo SDK"}
-          description={
-            "Innovative tools to build native mobile dApps. Celo is a proof-of-stake based blockchain with smart contracts that allows for an ecosystem of powerful applications."
-          }
-        />
-        <DeveloperPhoneCover />
-        <FullStack />
-        <Features />
-        <EngageAsDeveloper>
-          <H3 style={standardStyles.elementalMarginBottom}>{t("engage.developers.verb")}</H3>
-          <H2 style={standardStyles.elementalMarginBottom}>{t("getInvolved")}</H2>
-        </EngageAsDeveloper>
-        <Contribute />
-      </View>
-    )
-  }
+export default function Developers(props: Props) {
+  const items = props.sections.map(pageSwitch)
+  items.splice(3, 0, <FullStack />)
+  return (
+    <>
+      <OpenGraph
+        image={props.openGraph?.fields?.file?.url}
+        title={props.title}
+        description={props.description}
+        path={props.slug}
+      />
+      <div css={rootCss}>{props.sections ? items : <></>}</div>
+    </>
 
-const styles = StyleSheet.create({
-  container: { scrollPadding: 20 },
-})
+  )
+}
+
+const rootCss = css(flex, {})
+
+

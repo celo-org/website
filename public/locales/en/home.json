@@ -11,7 +11,7 @@
   "statsAddresses": "Total addresses",
   "statsTransactions": "Total transactions",
   "statsAvgTime": "Average block time",
-  "daysCarbonNegative": "Days Carbon Negative",
+  "daysCarbonNegative": "Days carbon negative",
   "whitePaper": "Read Celo White Paper",
   "stabilityPaper": "Read Stability White Paper",
   "stabilityAnalysis": "Stability Analysis",
@@ -33,69 +33,10 @@
     "text": "Users can easily send currency to any mobile number, enabled by Celo’s decentralized phone verification protocol, and get access to a growing ecosystem of global cash-in cash-out options.",
     "link": "See it in action with Valora"
   },
-  "twoMoneyTitle": "Global digital assets powered by Celo",
-  "stableCoins": "Named for the currencies they follow, Celo Dollars (cUSD) and Celo Euro (cEUR) are stablecoins that allow you to share value faster, cheaper and more easily on your mobile phone.",
-  "CELOinfo": "CELO is a utility and governance asset for the Celo community, which has a fixed supply and variable value. With CELO, you can help shape the direction of the Celo Platform.",
-  "learnGovernance": "Learn About Governance",
-  "celoDollars": "Celo Dollars",
-  "celoEuros": "Celo Euros",
-  "viewReserve": "View Reserve",
   "stayConnected": "Stay Connected",
   "backers": "Early Backers",
   "buildOnCelo": "Build on Celo",
-  "flowersTitle": "A Gift of Heart: For Value Flowers",
-  "flowersTitleMobile": "A Gift of Heart:\nFor Value Flowers",
-  "flowersSubtitle": "Art inspired by the spirit and mission of Celo",
-  "flowersButton": "For Value Flowers",
   "learnMore": "Learn More",
   "submit": "Submit",
-  "recentNews": "Recent News",
-  "involve": {
-    "subtitle": "Ways to get involved with the Celo ecosystem",
-    "title": "Choose your path with Celo",
-    "paths": [
-      {
-        "name": "Build",
-        "title": "Develop mobile dApps on Celo",
-        "primary": "Learn About SDK",
-        "secondary": "Watch a Video",
-        "text": "Explore, build, and ship ideas for your community using Celo’s developer tools."
-      },
-      {
-        "name": "Grow",
-        "title": "Scale your business on Celo",
-        "primary": "Apply for Grants",
-        "secondary": "Ecosystem VC Fund",
-        "text": "Have a product, users, and traction? Or a tangible solution for the Celo ecosystem? Take your business to the next level with funding through the Celo Grants Program or the Polychain Ecosystem VC Fund."
-      },
-      {
-        "name": "Validate",
-        "title": "Operate and secure the network",
-        "primary": "Read Docs",
-        "secondary": "Join the Conversation",
-        "text": "Participate as a validator in Celo's proof of stake consensus protocol."
-      },
-      {
-        "name": "Partner",
-        "title": "Join the Alliance for Prosperity",
-        "primary": "Learn More",
-        "secondary": "Apply for Alliance",
-        "text": "Take action to solve real-world problems with a growing community of mission-aligned organizations around the world."
-      },
-      {
-        "name": "Connect",
-        "title": "Join the Celo movement",
-        "primary": "Become an Ambassador",
-        "secondary": "Chat with the Community",
-        "text": "A place to belong with fellow developers, designers, dreamers, and doers. Connect with the Celo community to share your gifts of prosperity."
-      },
-      {
-        "name": "Work",
-        "title": "Work with value",
-        "primary": "View Open Roles",
-        "text": "Explore opportunities at cLabs, the team that initially shaped Celo and a member of the Alliance for Prosperity. cLabs has offices in Berlin, Buenos Aires, and San Francisco, with contributors around the world."
-      }
-    ]
-  },
-  "contactPress": "Contact Press"
+  "recentNews": "Recent News"
 }

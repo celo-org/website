@@ -1,16 +1,17 @@
 import * as React from "react"
-import { StyleSheet, Text, View } from "react-native"
-import { H1, Li, TABLE, TD, TH, TR, Ul } from "src/fonts/Fonts"
+import { Li, TABLE, TD, TH, TR, Ul } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import SideTitledSection from "src/layout/SideTitledSection"
 import Link from "src/shared/Link"
-import { fonts, standardStyles, textStyles } from "src/styles"
+import { standardStyles, textStyles } from "src/styles"
+import { fonts } from "src/estyles"
+import { css } from "@emotion/react"
 
 export default class Privacy extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <div css={container}>
         <OpenGraph
           title="Privacy Policy"
           path={"/privacy"}
@@ -24,14 +25,14 @@ export default class Privacy extends React.Component {
           tabletStyle={standardStyles.blockMarginBottomTablet}
           mobileStyle={standardStyles.blockMarginBottomMobile}
         >
-          <Cell span={Spans.fourth}>{}</Cell>
+          <Cell span={Spans.fourth}>{ }</Cell>
           <Cell span={Spans.three4th}>
-            <H1>Privacy Policy</H1>
+            <h1 css={fonts.h1}>Privacy Policy</h1>
           </Cell>
         </GridRow>
         <GridRow>
           <Cell span={Spans.fourth}>
-            <Text style={fonts.h6}>Valid as of May 17, 2020</Text>
+            <h6 css={fonts.h6}>Valid as of May 17, 2020</h6>
           </Cell>
           <Cell span={Spans.three4th}>
             <P>
@@ -317,24 +318,26 @@ export default class Privacy extends React.Component {
             of each third-party service, website, and/or application prior to use.
           </P>
         </SideTitledSection>
-      </View>
+      </div>
     )
   }
 }
 
 function P({ children }: { children: React.ReactNode }) {
-  return <Text style={[fonts.p, styles.paragraph]}>{children}</Text>
+  return <p css={[fonts.body, paragraph]}>{children}</p>
 }
 
 function B({ children }: { children: React.ReactNode }) {
-  return <Text style={textStyles.heavy}>{children}</Text>
+  return <span css={[fonts.body, textStyles.heavy]}>{children}</span>
 }
 
-const styles = StyleSheet.create({
-  container: {
-    marginTop: 100,
-  },
-  paragraph: {
-    marginBottom: 24,
-  },
+const container = css({
+  marginTop: 100,
+  display: "flex",
+  flexDirection: "column",
+})
+
+const paragraph = css({
+  marginBottom: 24,
+  marginTop: 0,
 })

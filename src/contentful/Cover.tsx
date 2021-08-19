@@ -17,6 +17,8 @@ import renderers from "src/contentful/nodes/enodes"
 import Button, { SIZE } from "src/shared/Button.3"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { BLOCKS } from "@contentful/rich-text-types"
+import { RenderNode } from "@contentful/rich-text-react-renderer"
+import { Asset } from "contentful"
 
 const OPTIONS = {
   renderNode: {
@@ -24,14 +26,17 @@ const OPTIONS = {
     [BLOCKS.HEADING_1]: (_, children: string) => {
       return <h2 css={rH1}>{children}</h2>
     },
-  },
+  } as RenderNode,
 }
 
 export default function Cover(props: CoverContentType) {
   const { isMobile } = useScreenSize()
+  const resolution = props.resolution || 2
+
   const size = isMobile
     ? props.imageMobile?.fields?.file?.details.image
     : props.imageDesktop?.fields?.file?.details.image
+
   return (
     <GridRow
       columns={2}
@@ -61,27 +66,61 @@ export default function Cover(props: CoverContentType) {
           ))}
         </div>
       </div>
-      <div css={illoCss}>
+      <div
+        css={
+          props.imageFit === "contain"
+            ? css(illoContain, {
+                [WHEN_TABLET]: {
+                  paddingTop: `${(size?.height || 1 / size?.width || 1) * 100}%`,
+                },
+              })
+            : illoCss
+        }
+      >
         <picture>
+          {resolution === 2 && (
+            <>
+              <source
+                media={`(min-width: ${TABLET_BREAKPOINT}px)`}
+                srcSet={`${props.imageDesktop?.fields.file.url} 2x`}
+              />
+              <source
+                media={`(max-width: ${TABLET_BREAKPOINT}px)`}
+                srcSet={`${props.imageMobile?.fields.file.url} 2x`}
+              />
+            </>
+          )}
           <source
-            media={`(max-width: ${TABLET_BREAKPOINT}px)`}
-            srcSet={props.imageMobile?.fields.file.url}
+            media={`(min-width: ${TABLET_BREAKPOINT}px)`}
+            srcSet={trueWidth(props.imageDesktop?.fields.file, resolution)}
           />
           <img
-            width={size?.width}
-            height={size?.height}
+            width={viewSize(size?.width, resolution)}
+            height={viewSize(size?.height, resolution)}
             css={css(
               props.illoFirst ? imageFirstCss : imageCss,
-
-              props.verticalPosition === "flushBottomText" && flushBottomCss
+              props.verticalPosition === "flushBottomText" && flushBottomCss,
+              props.imageFit === "contain" && imageContain
             )}
-            src={props.imageDesktop?.fields.file.url}
+            src={trueWidth(props.imageMobile?.fields.file, resolution)}
             alt={props.imageDesktop?.fields.description}
           />
         </picture>
       </div>
     </GridRow>
   )
+}
+
+function viewSize(number: number, res: number) {
+  return Math.round(number / res)
+}
+
+function trueWidth(file: Asset["fields"]["file"], res: number) {
+  if (res === 1) {
+    return file?.url
+  } else {
+    return `${file?.url}?w=${viewSize(file?.details?.image?.width, res)}`
+  }
 }
 
 const wrapperCss = css(flex, {
@@ -185,12 +224,28 @@ const illoCss = css({
   },
 })
 
+const illoContain = css(illoCss, {
+  [WHEN_TABLET]: {
+    height: 0,
+    overflow: "hidden",
+  },
+})
+
 const imageCss = css({
   overflow: "visible",
   [WHEN_MOBILE]: {
     overflow: "inherit",
   },
+})
 
+const imageContain = css({
+  [WHEN_TABLET]: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+  },
 })
 
 const flushBottomCss = css({

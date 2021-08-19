@@ -7,10 +7,13 @@ interface Props {
   title: string
   path: string
 }
+const BASE_URL = process.env.BASE_URL
 
 export default function OpenGraph({ description, image, title, path }: Props) {
-  const BASE_URL = process.env.BASE_URL
-  const metaImage = typeof image === "string" && image.startsWith("//") ? image : BASE_URL + image
+  const metaImage =
+    typeof image === "string" && (image.startsWith("//") || image.startsWith("http"))
+      ? image
+      : BASE_URL + image
   return (
     <Head>
       <title>{title}</title>
