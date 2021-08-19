@@ -13,6 +13,7 @@ import { ListItem } from "src/shared/DropDown"
 import DropDownGroup from "src/shared/DropDownGroup"
 import { externalizeURL } from "src/shared/Outbound"
 import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { css } from "@emotion/react"
 
 function initialState() {
   return Object.keys(CategoryEnum).map((key: CategoryEnum) => {
@@ -151,7 +152,7 @@ const Member = React.memo(function _Member({ logo, name, url }: Ally) {
     <LazyFade>
       {(onLoad: () => void) => (
         <View style={styles.member}>
-          <a target={"_blank"} href={href} rel="noreferrer">
+          <a target={"_blank"} href={href} rel="noreferrer" css={memberTag}>
             <View style={styles.memberName}>
               <Image
                 resizeMode="contain"
@@ -174,6 +175,8 @@ const Member = React.memo(function _Member({ logo, name, url }: Ally) {
     <FallBack text={name} url={href} />
   )
 })
+
+
 
 interface FallbackProps {
   text: string
@@ -243,4 +246,7 @@ const styles = StyleSheet.create({
   filterLabel: {
     marginBottom: 5,
   },
+})
+const memberTag = css({
+  textDecoration: "none"
 })
