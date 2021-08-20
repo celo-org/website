@@ -4,6 +4,7 @@ import { TABLET_BREAKPOINT } from "src/shared/Styles"
 import React from "react"
 import { PictureType } from "src/utils/contentful"
 
+// expects images to be 2x retina
 export default function Picture({
   span,
   desktop,
@@ -22,6 +23,7 @@ export default function Picture({
   const desktopWidth = desktopImage?.details?.image?.width
   const desktopRatio = desktopHeight / desktopWidth
 
+
   const wrapperCss = React.useMemo(
     () =>
       css(ratioCss, cssStyle, {
@@ -37,7 +39,12 @@ export default function Picture({
   return (
     <div css={wrapperCss}>
       <picture>
-        <source media={`(min-width: ${TABLET_BREAKPOINT}px`} srcSet={`${desktopImage?.url}`} />
+        <source media={`(min-width: ${TABLET_BREAKPOINT}px)`} srcSet={`${desktopImage?.url} 2x`} />
+        <source
+          media={`(min-width: ${TABLET_BREAKPOINT}px)`}
+          srcSet={`${desktopImage?.url}?w=${Math.floor(desktopWidth / 2)}`}
+        />
+        <source media={`(max-width: ${TABLET_BREAKPOINT}px)`} srcSet={`${mobileImage?.url} 2x`} />
         <img
           css={css(imageCss, {
             objectFit,
@@ -46,7 +53,7 @@ export default function Picture({
           width={mobileWidth}
           height={mobileHeight}
           alt={description}
-          src={`${mobileImage?.url}`}
+          src={`${mobileImage?.url}?w=${Math.floor(mobileWidth / 2)}`}
         />
       </picture>
     </div>

@@ -65,7 +65,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
       res.redirect("/terms")
     })
   })
-  ;["/technology", "/dev", "/devs", "/develop", "/developer"].forEach((route) => {
+  ;["/technology", "/dev", "/devs", "/develop", "/developer", "/build"].forEach((route) => {
     server.get(route, (_, res) => {
       res.redirect("/developers")
     })
@@ -136,12 +136,11 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   server.get("papers/annual-reports/2020", (_, res) => {
     res.redirect("papers/celo-foundation-2020-report.pdf")
   })
-
-    ;["/brand", "/grants"].forEach((slug) => {
-      server.get(slug, (_, res) => {
-        res.redirect(`/experience${slug}`)
-      })
+  ;["/brand", "/grants"].forEach((slug) => {
+    server.get(slug, (_, res) => {
+      res.redirect(`/experience${slug}`)
     })
+  })
 
   server.get("/connect", (_, res) => {
     res.redirect("/community")

@@ -1,8 +1,16 @@
 import * as React from "react"
-import { Image, StyleSheet, Text, View } from "react-native"
-import { useScreenSize } from "src/layout/ScreenSize"
+import { css, keyframes } from "@emotion/react"
 import globe from "src/shared/world-spin.gif"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/styles"
+import {
+  WHEN_MOBILE,
+  textStyles,
+  whiteText,
+  flexRow,
+  flex,
+  darkBackground,
+  fonts,
+} from "src/estyles"
 
 const CHANGE_STORY = [
   "Change the Story", // en
@@ -26,105 +34,121 @@ export default function ChangeStory({ darkMode }: { darkMode: boolean }) {
     return () => clearTimeout(timer)
   }, [count])
 
-  const { isMobile } = useScreenSize()
-
   return (
-    <View style={[styles.container, isMobile ? standardStyles.centered : standardStyles.row]}>
-      <Image
-        source={globe}
-        style={[styles.globe, styles.symbols, isMobile && styles.globeMobile]}
-      />
-      {!isMobile && (
-        <Text style={[styles.separator, styles.symbols, darkMode && textStyles.invert]}>|</Text>
-      )}
+    <div css={containerCss}>
+      <img src={globe} css={globeCss} />
+      <span css={css(separatorCss, darkMode && whiteText)}>|</span>
       <Wipe text={CHANGE_STORY[count]} darkMode={darkMode} />
-    </View>
+    </div>
   )
 }
 
 interface WipeProps {
   text: string
-  darkMode?:boolean
+  darkMode?: boolean
 }
 
 const Wipe = React.memo(function _Wipe({ text, darkMode }: WipeProps) {
-  const { isMobile } = useScreenSize()
   return (
-    <View>
-      <View key={`hide-${text}`} style={[styles.mask, darkMode && standardStyles.darkBackground, styles.hide]} />
-      <Text
-        key={text}
-        style={[fonts.legal, darkMode && textStyles.invert, isMobile && textStyles.center, textStyles.italic, styles.textFadeIn]}
-      >
+    <div css={wipeRootCss}>
+      <div key={`hide-${text}`} css={css(maskCss, darkMode && darkBackground, hideCss)} />
+      <span key={text} css={css(fonts.legal, darkMode && whiteText, textStyles.italic, textFadeIn)}>
         "{text}"
-      </Text>
-      <View key={`reveal-${text}`} style={[styles.mask,darkMode && standardStyles.darkBackground, styles.reveal]} />
-    </View>
+      </span>
+      <div key={`reveal-${text}`} css={css(maskCss, darkMode && darkBackground, revealCss)} />
+    </div>
   )
+})
+
+const wipeRootCss = css(flex, {
+  position: "relative",
 })
 
 const DURATION = 4000
 const TRANSITION_TIME = 250
 
-const styles = StyleSheet.create({
-  globe: {
-    width: 20,
-    height: 20,
+const globeCss = css({
+  width: 20,
+  height: 20,
+  zIndex: 10,
+  [WHEN_MOBILE]: {
+    marginBottom: 8,
   },
-  globeMobile: { marginBottom: 8 },
-  symbols: {
-    zIndex: 10,
-  },
-  separator: {
-    marginHorizontal: 10,
-  },
-  textFadeIn: {
-    animationFillMode: "both",
-    animationIterationCount: 1,
-    animationDuration: "750ms",
-    animationKeyframes: [
-      {
-        from: {
-          opacity: 0,
-        },
-        to: { opacity: 1 },
-      },
-    ],
-  },
-  mask: {
-    backgroundColor: colors.white,
-    position: "absolute",
-    height: "100%",
-    width: "101%",
-    animationDuration: `${TRANSITION_TIME}ms`,
-    animationIterationCount: 1,
-    animationTimingFunction: "linear",
-    animationFillMode: "both",
-  },
+})
 
-  hide: {
-    animationDelay: `${DURATION - TRANSITION_TIME * 2}ms`,
-    animationKeyframes: [
-      {
-        "0%": {
-          transform: [{ translateX: "-100%" }],
-        },
-        "100%": { transform: [{ translateX: 0 }] },
-      },
-    ],
+const separatorCss = css({
+  marginLeft: 10,
+  marginRight: 10,
+  zIndex: 10,
+  [WHEN_MOBILE]: {
+    display: "none",
   },
-  reveal: {
-    animationKeyframes: [
-      {
-        "0%": {
-          transform: [{ translateX: 0 }],
-        },
-        "100%": { transform: [{ translateX: "100%" }] },
-      },
-    ],
+})
+
+const containerCss = css(flexRow, {
+  marginBottom: 20,
+  overflow: "hidden",
+  [WHEN_MOBILE]: {
+    justifyContent: "center",
+    alignItems: "center",
   },
-  container: {
-    marginBottom: 20,
-    overflow: "hidden",
+})
+
+const maskCss = css(flex, {
+  backgroundColor: colors.white,
+  position: "absolute",
+  height: "100%",
+  width: "101%",
+  animationDuration: `${TRANSITION_TIME}ms`,
+  animationIterationCount: 1,
+  animationTimingFunction: "linear",
+  animationFillMode: "both",
+})
+
+const hideKeyFrames = keyframes`
+  from {
+    transform: translateX(-100%)
+  }
+  to {
+    transform: translateX(0%)
+  }
+`
+
+const revealKeyframes = keyframes`
+  from {
+    transform: translateX(0%)
+  }
+
+  to {
+    transform: translateX(100%)
+  }
+`
+
+const hideCss = css({
+  animationDelay: `${DURATION - TRANSITION_TIME * 2}ms`,
+  animationName: hideKeyFrames,
+})
+
+const revealCss = css({
+  animationName: revealKeyframes,
+})
+
+const textKeyFrames = keyframes`
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+`
+
+const textFadeIn = css({
+  animationFillMode: "both",
+  animationIterationCount: 1,
+  animationDuration: "750ms",
+  animationName: textKeyFrames,
+  [WHEN_MOBILE]: {
+    textAlign: "center",
   },
 })

@@ -1,9 +1,7 @@
 import * as React from "react"
-import { StyleSheet, Text, View } from "react-native"
 import { RequestType } from "src/fauceting/FaucetInterfaces"
 import RequestFunds from "src/fauceting/RequestFunds"
 import { RequestState } from "src/fauceting/utils"
-import { H1 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, Trans, withNamespaces } from "src/i18n"
 import SideTitledSection from "src/layout/SideTitledSection"
@@ -11,7 +9,8 @@ import Button, { BTN, SIZE } from "src/shared/Button.3"
 import InlineAnchor from "src/shared/InlineAnchor"
 import { CeloLinks } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { css } from "@emotion/react"
+import { fonts, textStyles, standardStyles } from "src/estyles"
 interface State {
   address: string
   requestState: RequestState
@@ -30,8 +29,8 @@ class FaucetPage extends React.Component<I18nProps, State> {
           description={t("description")}
           image={require("src/fauceting/ogimage-faucet.png")}
         />
-        <View style={styles.container}>
-          <H1 style={[textStyles.center, standardStyles.sectionMarginTablet]}>{t("title")}</H1>
+        <div css={container}>
+          <h1 css={[fonts.h1, textStyles.center, standardStyles.sectionMarginTablet]}>{t("title")}</h1>
           <SideTitledSection title={t("addFunds")} text={t("addFundsText")}>
             <RequestFunds kind={RequestType.Faucet} />
           </SideTitledSection>
@@ -81,7 +80,7 @@ class FaucetPage extends React.Component<I18nProps, State> {
               href={CeloLinks.nodeDocs}
             />
           </SideTitledSection>
-        </View>
+        </div>
       </>
     )
   }
@@ -96,29 +95,26 @@ interface CTAProps {
 
 function ContentWithCTA({ emphasis, text, btnText, href }: CTAProps) {
   return (
-    <View style={standardStyles.elementalMarginBottom}>
-      <Text style={[fonts.p, styles.content]}>
-        <Text style={textStyles.heavy}>{emphasis} </Text>
+    <div css={standardStyles.elementalMarginBottom}>
+      <div css={[fonts.body, styles.content]}>
+        <span css={textStyles.heavy}>{emphasis} </span>
         {text}
-      </Text>
+      </div>
       <Button text={btnText} href={href} kind={BTN.NAKED} size={SIZE.normal} />
-    </View>
+    </div>
   )
 }
 
 export default withNamespaces(NameSpaces.faucet)(FaucetPage)
 
-const styles = StyleSheet.create({
-  container: {
-    marginTop: HEADER_HEIGHT,
-  },
-  content: {
-    paddingBottom: 10,
-  },
-  buttonContainer: {
-    alignItems: "flex-start",
-  },
-  errorBorder: {
-    borderColor: colors.error,
-  },
+const container = css({
+  marginTop: HEADER_HEIGHT,
+  display: "flex",
+  flexDirection: "column"
 })
+
+const styles = {
+  content: css({
+    paddingBottom: 10
+  })
+}
