@@ -4,11 +4,11 @@ echo "Processing encrypted files"
 
 # Set list of secret files to encrypt and decrypt.
 files=(
-  "env-config.js"
-  "server-env-config.js"
-  ".env.local"
-  ".env.development"
-  ".env.production"
+  "env-config.js:celo-testnet-production"
+  "server-env-config.js:celo-testnet-production"
+  ".env.local:celo-testnet"
+  ".env.development:celo-testnet"
+  ".env.production:celo-testnet-production"
 )
 
 if [[ -z "$1" ]]; then
@@ -29,7 +29,8 @@ cd ..
 # place templates to be used (if they exist) in case the environment
 # doesn't have access to decryption keys
 if [[ $1 == "decrypt" ]]; then
-  for file_path in "${files[@]}"; do
+  for file_path_map in "${files[@]}"; do
+    file_path=${file_path_map%%:*}
     template_file_path="$file_path.template"
 
     if test -f "$template_file_path" && ! test -f "$file_path"; then
@@ -44,7 +45,9 @@ if [[ $? -eq 1 ]]; then
   exit 0
 fi
 
-for file_path in "${files[@]}"; do
+for file_path_map in "${files[@]}"; do
+  file_path=${file_path_map%%:*}
+  environment=${file_path_map#*:}
   encrypted_file_path="$file_path.enc"
 
   # When decrypting ensure the encrypted file exists or skip.
@@ -62,9 +65,9 @@ for file_path in "${files[@]}"; do
   fi
 
   # Encrypt or decrypt this file.
-  gcloud kms $1 --ciphertext-file=$encrypted_file_path --plaintext-file=$file_path --key=github-key --keyring=celo-keyring --location=global --project celo-testnet
+  gcloud kms $1 --ciphertext-file=$encrypted_file_path --plaintext-file=$file_path --key=github-mnemonic-key --keyring=celo-keyring --location=global --project $environment
   if [[ $? -eq 1 ]]; then
-    echo "Only cLabs employees can $1 keys - skipping ${1}ion"
+    echo "Only cLabs employees with $environment access can $1 keys - skipping ${1}ion"
     exit 0
   fi
 done
