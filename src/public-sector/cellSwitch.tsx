@@ -63,7 +63,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
         )
       case "picture":
         const picture = entry.fields as PictureType
-        return <Picture {...picture} />
+        return <Picture key={entry.sys.id} {...picture} />
       case "youTubePlayist":
         const playlist = entry.fields as PlaylistContentType
         return (
