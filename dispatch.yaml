@@ -1,0 +1,24 @@
+# Host-based routing rules for the celo-org-website project. https://cloud.google.com/appengine/docs/flexible/nodejs/reference/dispatch-yaml
+# Use `yarn deploy:routes:prod` to deploy.
+dispatch:
+  - url: celo.org/*
+    service: production
+
+  - url: www.celo.org/*
+    service: production
+
+  - url: openpgpkey.celo.org/.well-known/openpgpkey/*
+    service: production
+
+  - url: openpgpkey.clabs.co/.well-known/openpgpkey/*
+    service: production
+
+  - url: dev.celo.org/*
+    service: development
+
+  - url: staging.celo.org/*
+    service: staging
+
+  - url: preview.celo.org/*
+    service: preview
+

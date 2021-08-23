@@ -1,11 +1,11 @@
 runtime: nodejs14
 env: standard
-service: website-staging
+service: preview
 instance_class: F2
-default_expiration: 30d
+default_expiration: 1d
 env_variables:
   NODE_ENV: 'production'
-  DEPLOY_ENV: 'staging'
+  DEPLOY_ENV: 'development'
 
 handlers:
   - url: /_next/static
@@ -31,10 +31,6 @@ handlers:
     static_files: public/papers/Celo__A_Multi_Asset_Cryptographic_Protocol_for_Decentralized_Social_Payments.pdf
     upload: public/papers/Celo__A_Multi_Asset_Cryptographic_Protocol_for_Decentralized_Social_Payments.pdf
 
-  - url: /papers/covid-aid
-    static_files: public/papers/humanitarian-COVID-aid-on-celo.pdf
-    upload: public/papers/humanitarian-COVID-aid-on-celo.pdf
-
   - url: /papers/stability
     static_files: public/papers/Celo_Stability_Analysis.pdf
     upload: public/papers/Celo_Stability_Analysis.pdf
@@ -43,13 +39,17 @@ handlers:
     static_files: public/papers/cLabs_CBDC_Velocity_v3.pdf
     upload: public/papers/cLabs_CBDC_Velocity_v3.pdf
 
+  - url: /papers/covid-aid
+    static_files: public/papers/humanitarian-COVID-aid-on-celo.pdf
+    upload: public/papers/humanitarian-COVID-aid-on-celo.pdf
+
   - url: /papers/future-of-digital-currencies
     static_files: public/papers/shaping-future-of-digital-currencies.pdf
     upload: public/papers/shaping-future-of-digital-currencies.pdf
-  
+
   - url: /annual-reports/2020
     static_files: public/papers/celo-foundation-2020-report.pdf
     upload: public/papers/celo-foundation-2020-report.pdf
-    
+
   - url: /.*
     script: auto
