@@ -57,7 +57,7 @@ export default function useStatsRelay() {
     }
 
     function relayURI() {
-      const host = "web-stats-relay-dot-celo-testnet.wl.r.appspot.com"
+      const host = "web-stats-relay-dot-celo-org-website.uc.r.appspot.com"
       const protocol = window.location.protocol === "https:" ? "wss" : "ws"
       return `${protocol}://${host}/stats`
     }
