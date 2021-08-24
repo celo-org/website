@@ -4,11 +4,11 @@ echo "Processing encrypted files"
 
 # Set list of secret files to encrypt and decrypt.
 files=(
-  "env-config.js:celo-testnet-production"
-  "server-env-config.js:celo-testnet-production"
+  "env-config.js:celo-testnet"
+  "server-env-config.js:celo-testnet"
   ".env.local:celo-testnet"
   ".env.development:celo-testnet"
-  ".env.production:celo-testnet-production"
+  ".env.production:celo-testnet"
 )
 
 if [[ -z "$1" ]]; then
