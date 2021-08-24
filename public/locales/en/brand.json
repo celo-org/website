@@ -85,7 +85,8 @@
     "searchPlaceholder": "Ex. Stable Coin",
     "searchLabel": "Explore Icons",
     "matching": "One Matching Icon",
-    "matching_0": "No Matching Icons"
+    "matching_0": "No Matching Icons",
+    "matching_plural": "{{count}} Matching Icons"
   },
   "exchangeIcons": {
     "license": "These assets may only be used to represent Celo assets on exchanges. The use of the Celo Exchange Icons requires following the Celo Foundation <0>Brand Policy.</0>"
