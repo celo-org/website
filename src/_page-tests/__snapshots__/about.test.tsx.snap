@@ -1054,7 +1054,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
           }
         }
       >
-        value1Title
+        Unique Purpose
       </h4>
       <div
         className="css-text-901oao"
@@ -1072,7 +1072,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
           }
         }
       >
-        value1Text
+        We believe that everyone has their own unique path of growth, and that personal fulfilment depends in large part on being able to reach one’s potential along that path. We embrace values that enable people to grow towards their full potential.
       </div>
     </div>
   </div>
@@ -1622,7 +1622,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
           }
         }
       >
-        value2Title
+        Connectedness
       </h4>
       <div
         className="css-text-901oao"
@@ -1640,7 +1640,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
           }
         }
       >
-        value2Text
+        We believe that people live primarily in connection to one another. We recognize that individuals are healthier and happier when they are members of a strong social community with meaningful relationships – that is, when they are living within a healthy and happy whole. We embrace values that strengthen community.
       </div>
     </div>
   </div>
@@ -1750,7 +1750,7 @@ Change the story.
         }
       }
     >
-      – beautifulLifeSource
+      – Charles Eisenstein
     </div>
   </div>
   <div
@@ -2631,7 +2631,7 @@ Change the story.
           }
         }
       >
-        celoBackers
+        Early Backers
       </h3>
     </div>
     <div
@@ -2667,17 +2667,7 @@ Change the story.
           }
         }
       >
-<<<<<<< HEAD
-<<<<<<< HEAD
-        celoBackersText
-=======
         Early CELO holders include prominent venture funds, C-level operators, academics, and experts across a wide range of fields including
->>>>>>> a3a00a2228b630604b641000631d771bd62387be
-=======
-
-        celoBackersText
-
->>>>>>> 13c5a017c87103dc3b7f025d3a8be5fbf58e1a1e
       </div>
     </div>
   </div>
@@ -4213,7 +4203,7 @@ Change the story.
           }
         }
       >
-        pressText
+        For media inquiries, please contact us at
          
         <div
           className="css-view-1dbjc4n"
