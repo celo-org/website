@@ -1,6 +1,6 @@
 runtime: nodejs14
 env: standard
-service: website-production
+service: production
 instance_class: F4
 default_expiration: 30d
 env_variables:
@@ -55,6 +55,6 @@ handlers:
   - url: /annual-reports/2020
     static_files: public/papers/celo-foundation-2020-report.pdf
     upload: public/papers/celo-foundation-2020-report.pdf
-    
+
   - url: /.*
     script: auto
