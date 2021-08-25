@@ -37,7 +37,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   nextAction()
 }
 
-; (async () => {
+;(async () => {
   await app.prepare()
   const server = express()
   server.use(helmet())
@@ -55,41 +55,41 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
       res.redirect("/jobs")
     })
   })
-    ;["/about-us", "/faq"].forEach((route) => {
-      server.get(route, (_, res) => {
-        res.redirect("/about")
-      })
+  ;["/about-us", "/faq"].forEach((route) => {
+    server.get(route, (_, res) => {
+      res.redirect("/about")
     })
-    ;["/arg_tos", "/arg_privacy", "/argentina"].forEach((route) => {
-      server.get(route, (_, res) => {
-        res.redirect("/terms")
-      })
+  })
+  ;["/arg_tos", "/arg_privacy", "/argentina"].forEach((route) => {
+    server.get(route, (_, res) => {
+      res.redirect("/terms")
     })
-    ;["/technology", "/dev", "/devs", "/develop", "/developer", "/build"].forEach((route) => {
-      server.get(route, (_, res) => {
-        res.redirect("/developers")
-      })
+  })
+  ;["/technology", "/dev", "/devs", "/develop", "/developer", "/build"].forEach((route) => {
+    server.get(route, (_, res) => {
+      res.redirect("/developers")
     })
-    ;["/build/validators"].forEach((route) => {
-      server.get(route, (_, res) => {
-        res.redirect("/validators/explore")
-      })
+  })
+  ;["/build/validators"].forEach((route) => {
+    server.get(route, (_, res) => {
+      res.redirect("/validators/explore")
     })
-    ;["/test-wallet", "build/download"].forEach((route) => {
-      server.get(route, (_, res) => {
-        res.redirect("/developers/wallet")
-      })
+  })
+  ;["/test-wallet", "build/download"].forEach((route) => {
+    server.get(route, (_, res) => {
+      res.redirect("/developers/wallet")
     })
+  })
 
   server.get("/build/*", (req, res) => {
     res.redirect(`/developers/${req.params[0]}`)
   })
-    ;["/apps", "/applications"].forEach((route) => {
-      server.get(route, (_, res) => {
-        // Note this is from contentful
-        res.redirect("/dapps")
-      })
+  ;["/apps", "/applications"].forEach((route) => {
+    server.get(route, (_, res) => {
+      // Note this is from contentful
+      res.redirect("/dapps")
     })
+  })
 
   server.get("/papers/stability", (_, res) => {
     res.redirect("/papers/Celo_Stability_Analysis.pdf")
@@ -136,12 +136,11 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   server.get("papers/annual-reports/2020", (_, res) => {
     res.redirect("papers/celo-foundation-2020-report.pdf")
   })
-
-    ;["/brand", "/grants"].forEach((slug) => {
-      server.get(slug, (_, res) => {
-        res.redirect(`/experience${slug}`)
-      })
+  ;["/brand", "/grants"].forEach((slug) => {
+    server.get(slug, (_, res) => {
+      res.redirect(`/experience${slug}`)
     })
+  })
 
   server.get("/connect", (_, res) => {
     res.redirect("/community")
@@ -163,42 +162,23 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect("https://forum.celo.org/t/the-great-celo-stake-off-the-details/136")
   })
 
-    // File serving for OpenPGP WKD https://gnupg.org/blog/20161027-hosting-a-web-key-directory.html
-    // Content must be served on multiple paths, and cannot use a redirect.
-    ;["/.well-known/openpgpkey/hu/:userId", "/.well-known/openpgpkey/:host/hu/:userId"].forEach(
-      (route) => {
-        server.get(route, (req, res) => {
-          const host = req.params.host ?? req.hostname
-          if (!req.hostname.includes(host)) {
-            res.sendStatus(400)
-            return
-          }
-          const userId = req.params.userId ?? ""
-          if (!/\w+/.test(userId)) {
-            res.sendStatus(400)
-            return
-          }
-          res.sendFile(
-            path.join(host, "hu", userId),
-            { root: path.join(process.cwd(), "openpgpkey") },
-            (err) => {
-              if (err) {
-                res.sendStatus(404)
-              }
-            }
-          )
-        })
-      }
-    )
-    ;["/.well-known/openpgpkey/policy", "/.well-known/openpgpkey/:host/policy"].forEach((route) => {
+  // File serving for OpenPGP WKD https://gnupg.org/blog/20161027-hosting-a-web-key-directory.html
+  // Content must be served on multiple paths, and cannot use a redirect.
+  ;["/.well-known/openpgpkey/hu/:userId", "/.well-known/openpgpkey/:host/hu/:userId"].forEach(
+    (route) => {
       server.get(route, (req, res) => {
         const host = req.params.host ?? req.hostname
         if (!req.hostname.includes(host)) {
           res.sendStatus(400)
           return
         }
+        const userId = req.params.userId ?? ""
+        if (!/\w+/.test(userId)) {
+          res.sendStatus(400)
+          return
+        }
         res.sendFile(
-          path.join(host, "policy"),
+          path.join(host, "hu", userId),
           { root: path.join(process.cwd(), "openpgpkey") },
           (err) => {
             if (err) {
@@ -207,7 +187,26 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
           }
         )
       })
+    }
+  )
+  ;["/.well-known/openpgpkey/policy", "/.well-known/openpgpkey/:host/policy"].forEach((route) => {
+    server.get(route, (req, res) => {
+      const host = req.params.host ?? req.hostname
+      if (!req.hostname.includes(host)) {
+        res.sendStatus(400)
+        return
+      }
+      res.sendFile(
+        path.join(host, "policy"),
+        { root: path.join(process.cwd(), "openpgpkey") },
+        (err) => {
+          if (err) {
+            res.sendStatus(404)
+          }
+        }
+      )
     })
+  })
 
   server.use(bodyParser.json())
 

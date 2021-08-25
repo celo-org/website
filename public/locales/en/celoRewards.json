@@ -75,7 +75,6 @@
       "2-2": "You hold 0 cUSD from February 1st, 20:00 UTC to February 4th, 08:00 UTC",
       "2-3": "You add 10 cUSD on February 4th, 08:00 UTC (halfway through the rewards period)",
       "2-4": "You keep this balance in your wallet until February 8th, 20:00 UTC",
-      "2-5": "Your qualifying balance for this rewards period would be of approximately 5 cUSD (depending on rounding and average block time).",
       "3": "<0>It can take some time to process the rewards and send them.</0> Rewards will usually be processed within 3 days of the end of the earnings period."
     },
     "notices": {
