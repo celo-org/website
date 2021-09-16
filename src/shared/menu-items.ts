@@ -151,7 +151,7 @@ export const pagePaths = {
     isDark: true,
   },
   PUBLIC_SECTOR: {
-    name: "Public Sector",
+    name: "Government",
     link: "/public-sector",
     isDark: true,
     translucent: {
