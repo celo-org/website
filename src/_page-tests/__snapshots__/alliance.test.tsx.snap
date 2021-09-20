@@ -4371,55 +4371,1341 @@ exports[`Alliance renders 1`] = `
         suppressHydrationWarning={true}
       />
     </div>
-    <div
-      className="css-text-901oao"
-      dir="auto"
-      onClick={[Function]}
-      style={
+    <blockquote
+      css={
         Object {
-          "color": "rgba(255,255,255,1.00)",
-          "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-          "fontSize": "65px",
-          "fontStyle": "italic",
-          "lineHeight": "72px",
-          "maxWidth": "1200px",
-          "textAlign": "center",
-          "textRendering": "geometricPrecision",
+          "map": undefined,
+          "name": "1da3861",
+          "next": undefined,
+          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;font-size:65px;line-height:72px;font-style:italic;max-width:1200px;@media (max-width: 576px){font-size:42px;line-height:50px;font-style:italic;};color:#FFFFFF;",
+          "toString": [Function],
         }
       }
     >
       “
       The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications
       ”
-    </div>
-    <div
-      className="css-text-901oao"
-      dir="auto"
-      onClick={[Function]}
-      style={
+    </blockquote>
+    <figcaption
+      css={
         Object {
-          "color": "rgba(255,255,255,1.00)",
-          "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-          "fontSize": "48px",
-          "lineHeight": "56px",
-          "marginTop": "40px",
-          "textAlign": "center",
-          "textRendering": "geometricPrecision",
+          "map": undefined,
+          "name": "1t7non3",
+          "next": undefined,
+          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;margin-top:40px;font-size:36px;@media (max-width: 576px){font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:36px;line-height:40;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:40px;;};color:#FFFFFF;",
+          "toString": [Function],
         }
       }
     >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
-        onClick={[Function]}
-        style={
+      <span>
+        Gigi Gatti, Grameen Foundation
+      </span>
+    </figcaption>
+  </div>
+  <section
+    css={
+      Object {
+        "map": undefined,
+        "name": "pnyh7x",
+        "next": undefined,
+        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
+        "toString": [Function],
+      }
+    }
+  >
+    <div
+      css={
+        Object {
+          "map": undefined,
+          "name": "1dav2mh",
+          "next": undefined,
+          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr ;}",
+          "toString": [Function],
+        }
+      }
+    >
+      <h3
+        css={
           Object {
-            "fontSize": "36px",
+            "map": undefined,
+            "name": "1tn82yu",
+            "next": undefined,
+            "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:24px;line-height:28;font-weight:400;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;margin-bottom:20px;@media (max-width: 576px){text-align:center;}",
+            "toString": [Function],
           }
         }
       >
-        Gigi Gatti, Grameen Foundation
-      </span>
+        Benefits of collaborating on a mission-driven blockchain
+      </h3>
+      <h2
+        css={
+          Object {
+            "map": undefined,
+            "name": "rdwl56",
+            "next": undefined,
+            "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:40px;line-height:48;text-rendering:geometricPrecision;color:#2E3338;line-height:48px;;margin:20px 0px;@media (max-width: 576px){text-align:center;}",
+            "toString": [Function],
+          }
+        }
+      >
+        What the Alliance offers
+      </h2>
+      <div
+        css={
+          Object {
+            "map": undefined,
+            "name": "3y4j0m",
+            "next": undefined,
+            "styles": "box-sizing:border-box;display:flex;flex-direction:row;;justify-content:center;align-items:center;;flex-wrap:wrap;",
+            "toString": [Function],
+          }
+        }
+      >
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "d8ybav",
+              "next": undefined,
+              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
+              "toString": [Function],
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
+            <img
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "1mf35eq",
+                  "next": undefined,
+                  "styles": "width:100px;height:100px;",
+                  "toString": [Function],
+                }
+              }
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"/image.png\\")",
+                  "backgroundPosition": "0% 0%",
+                  "backgroundSize": "cover",
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "filter": "blur(20px)",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+            <noscript>
+              <img
+                css={
+                  Object {
+                    "map": undefined,
+                    "name": "1mf35eq",
+                    "next": undefined,
+                    "styles": "width:100px;height:100px;",
+                    "toString": [Function],
+                  }
+                }
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </div>
+          <p
+            css={
+              Object {
+                "map": undefined,
+                "name": "15bbqtc",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
+                "toString": [Function],
+              }
+            }
+          >
+            Connect with like-minded members
+          </p>
+        </div>
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "d8ybav",
+              "next": undefined,
+              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
+              "toString": [Function],
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
+            <img
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "1mf35eq",
+                  "next": undefined,
+                  "styles": "width:100px;height:100px;",
+                  "toString": [Function],
+                }
+              }
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"/image.png\\")",
+                  "backgroundPosition": "0% 0%",
+                  "backgroundSize": "cover",
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "filter": "blur(20px)",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+            <noscript>
+              <img
+                css={
+                  Object {
+                    "map": undefined,
+                    "name": "1mf35eq",
+                    "next": undefined,
+                    "styles": "width:100px;height:100px;",
+                    "toString": [Function],
+                  }
+                }
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </div>
+          <p
+            css={
+              Object {
+                "map": undefined,
+                "name": "15bbqtc",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
+                "toString": [Function],
+              }
+            }
+          >
+            Build and shape improvements to the Celo platform
+          </p>
+        </div>
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "d8ybav",
+              "next": undefined,
+              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
+              "toString": [Function],
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
+            <img
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "1mf35eq",
+                  "next": undefined,
+                  "styles": "width:100px;height:100px;",
+                  "toString": [Function],
+                }
+              }
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"/image.png\\")",
+                  "backgroundPosition": "0% 0%",
+                  "backgroundSize": "cover",
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "filter": "blur(20px)",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+            <noscript>
+              <img
+                css={
+                  Object {
+                    "map": undefined,
+                    "name": "1mf35eq",
+                    "next": undefined,
+                    "styles": "width:100px;height:100px;",
+                    "toString": [Function],
+                  }
+                }
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </div>
+          <p
+            css={
+              Object {
+                "map": undefined,
+                "name": "15bbqtc",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
+                "toString": [Function],
+              }
+            }
+          >
+            Attend special programs and events
+          </p>
+        </div>
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "d8ybav",
+              "next": undefined,
+              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
+              "toString": [Function],
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
+            <img
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "1mf35eq",
+                  "next": undefined,
+                  "styles": "width:100px;height:100px;",
+                  "toString": [Function],
+                }
+              }
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"/image.png\\")",
+                  "backgroundPosition": "0% 0%",
+                  "backgroundSize": "cover",
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "filter": "blur(20px)",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+            <noscript>
+              <img
+                css={
+                  Object {
+                    "map": undefined,
+                    "name": "1mf35eq",
+                    "next": undefined,
+                    "styles": "width:100px;height:100px;",
+                    "toString": [Function],
+                  }
+                }
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </div>
+          <p
+            css={
+              Object {
+                "map": undefined,
+                "name": "15bbqtc",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
+                "toString": [Function],
+              }
+            }
+          >
+            Access to education and support
+          </p>
+        </div>
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "d8ybav",
+              "next": undefined,
+              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
+              "toString": [Function],
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
+            <img
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "1mf35eq",
+                  "next": undefined,
+                  "styles": "width:100px;height:100px;",
+                  "toString": [Function],
+                }
+              }
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"/image.png\\")",
+                  "backgroundPosition": "0% 0%",
+                  "backgroundSize": "cover",
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "filter": "blur(20px)",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+            <noscript>
+              <img
+                css={
+                  Object {
+                    "map": undefined,
+                    "name": "1mf35eq",
+                    "next": undefined,
+                    "styles": "width:100px;height:100px;",
+                    "toString": [Function],
+                  }
+                }
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </div>
+          <p
+            css={
+              Object {
+                "map": undefined,
+                "name": "15bbqtc",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
+                "toString": [Function],
+              }
+            }
+          >
+            Expand your reach to help more communities
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
+  <div
+    className="css-view-1dbjc4n"
+    id="blog"
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitAlignSelf": "center",
+          "WebkitBoxDirection": "normal",
+          "WebkitBoxOrient": "vertical",
+          "WebkitFlexDirection": "column",
+          "alignSelf": "center",
+          "flexDirection": "column",
+          "marginBottom": "30px",
+          "marginTop": "50px",
+          "maxWidth": "100vw",
+          "msFlexDirection": "column",
+          "msFlexItemAlign": "center",
+          "msGridRowAlign": "center",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitAlignItems": "center",
+            "WebkitBoxAlign": "center",
+            "WebkitBoxFlex": 0,
+            "WebkitBoxPack": "center",
+            "WebkitFlexGrow": 0,
+            "WebkitFlexShrink": 0,
+            "WebkitJustifyContent": "center",
+            "alignItems": "center",
+            "flexGrow": 0,
+            "flexShrink": 0,
+            "justifyContent": "center",
+            "msFlexAlign": "center",
+            "msFlexNegative": 0,
+            "msFlexPack": "center",
+            "msFlexPositive": 0,
+            "paddingBottom": "10px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "paddingTop": "10px",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="css-q7lffx"
+        >
+          <h2
+            aria-level="2"
+            className="css-reset-4rbku5 css-text-901oao"
+            dir="auto"
+            onClick={[Function]}
+            role="heading"
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "28px",
+                "lineHeight": "32px",
+                "textRendering": "geometricPrecision",
+                "textTransform": "none",
+              }
+            }
+          >
+            Stories from the Alliance
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitAlignItems": "center",
+          "WebkitAlignSelf": "center",
+          "WebkitBoxAlign": "center",
+          "WebkitBoxDirection": "normal",
+          "WebkitBoxLines": "multiple",
+          "WebkitBoxOrient": "vertical",
+          "WebkitBoxPack": "center",
+          "WebkitFlexDirection": "column",
+          "WebkitFlexWrap": "wrap",
+          "WebkitJustifyContent": "center",
+          "alignItems": "center",
+          "alignSelf": "center",
+          "flexDirection": "column",
+          "flexWrap": "wrap",
+          "justifyContent": "center",
+          "maxWidth": "100vw",
+          "msFlexAlign": "center",
+          "msFlexDirection": "column",
+          "msFlexItemAlign": "center",
+          "msFlexPack": "center",
+          "msFlexWrap": "wrap",
+          "msGridRowAlign": "center",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitBoxFlex": 0,
+            "WebkitFlexGrow": 0,
+            "WebkitFlexShrink": 0,
+            "flexGrow": 0,
+            "flexShrink": 0,
+            "msFlexNegative": 0,
+            "msFlexPositive": 0,
+            "paddingBottom": "10px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "paddingTop": "10px",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "WebkitAlignItems": "center",
+              "WebkitBoxAlign": "center",
+              "WebkitBoxPack": "center",
+              "WebkitJustifyContent": "center",
+              "alignItems": "center",
+              "backgroundColor": "rgba(229,229,229,1.00)",
+              "height": "500px",
+              "justifyContent": "center",
+              "marginTop": "15px",
+              "msFlexAlign": "center",
+              "msFlexPack": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            aria-label="loading"
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "height": "50px",
+                "width": "50px",
+              }
+            }
+          >
+            <span>
+              ...
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitBoxFlex": 0,
+            "WebkitFlexGrow": 0,
+            "WebkitFlexShrink": 0,
+            "flexGrow": 0,
+            "flexShrink": 0,
+            "msFlexNegative": 0,
+            "msFlexPositive": 0,
+            "paddingBottom": "10px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "paddingTop": "10px",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "WebkitAlignItems": "center",
+              "WebkitBoxAlign": "center",
+              "WebkitBoxPack": "center",
+              "WebkitJustifyContent": "center",
+              "alignItems": "center",
+              "backgroundColor": "rgba(229,229,229,1.00)",
+              "height": "500px",
+              "justifyContent": "center",
+              "marginTop": "15px",
+              "msFlexAlign": "center",
+              "msFlexPack": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            aria-label="loading"
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "height": "50px",
+                "width": "50px",
+              }
+            }
+          >
+            <span>
+              ...
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitBoxFlex": 0,
+            "WebkitFlexGrow": 0,
+            "WebkitFlexShrink": 0,
+            "flexGrow": 0,
+            "flexShrink": 0,
+            "msFlexNegative": 0,
+            "msFlexPositive": 0,
+            "paddingBottom": "10px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "paddingTop": "10px",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          style={
+            Object {
+              "WebkitAlignItems": "center",
+              "WebkitBoxAlign": "center",
+              "WebkitBoxPack": "center",
+              "WebkitJustifyContent": "center",
+              "alignItems": "center",
+              "backgroundColor": "rgba(229,229,229,1.00)",
+              "height": "500px",
+              "justifyContent": "center",
+              "marginTop": "15px",
+              "msFlexAlign": "center",
+              "msFlexPack": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            aria-label="loading"
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "height": "50px",
+                "width": "50px",
+              }
+            }
+          >
+            <span>
+              ...
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitAlignSelf": "center",
+          "WebkitBoxDirection": "normal",
+          "WebkitBoxOrient": "vertical",
+          "WebkitFlexDirection": "column",
+          "alignSelf": "center",
+          "flexDirection": "column",
+          "marginBottom": "50px",
+          "marginTop": "20px",
+          "maxWidth": "100vw",
+          "msFlexDirection": "column",
+          "msFlexItemAlign": "center",
+          "msGridRowAlign": "center",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "WebkitAlignItems": "center",
+            "WebkitBoxAlign": "center",
+            "WebkitBoxFlex": 0,
+            "WebkitBoxPack": "center",
+            "WebkitFlexGrow": 0,
+            "WebkitFlexShrink": 0,
+            "WebkitJustifyContent": "center",
+            "alignItems": "center",
+            "flexGrow": 0,
+            "flexShrink": 0,
+            "justifyContent": "center",
+            "msFlexAlign": "center",
+            "msFlexNegative": 0,
+            "msFlexPack": "center",
+            "msFlexPositive": 0,
+            "paddingBottom": "10px",
+            "paddingLeft": "10px",
+            "paddingRight": "10px",
+            "paddingTop": "10px",
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="css-view-1dbjc4n"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+        >
+          <div
+            className="css-view-1dbjc4n"
+            style={
+              Object {
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxFlex": 0,
+                "WebkitBoxOrient": "horizontal",
+                "WebkitBoxPack": "center",
+                "WebkitFlexDirection": "row",
+                "WebkitFlexGrow": 0,
+                "WebkitJustifyContent": "center",
+                "backgroundColor": "rgba(0,0,0,0.00)",
+                "borderBottomColor": "rgba(0,0,0,0.00)",
+                "borderLeftColor": "rgba(0,0,0,0.00)",
+                "borderRightColor": "rgba(0,0,0,0.00)",
+                "borderTopColor": "rgba(0,0,0,0.00)",
+                "flexDirection": "row",
+                "flexGrow": 0,
+                "justifyContent": "center",
+                "msFlexDirection": "row",
+                "msFlexPack": "center",
+                "msFlexPositive": 0,
+                "opacity": 1,
+                "outlineColor": "transparent",
+                "width": "fit-content",
+              }
+            }
+          >
+            <a
+              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              dir="auto"
+              href="https://medium.com/celoOrg"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="link"
+              style={
+                Object {
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "alignItems": "center",
+                  "color": "rgba(46,51,56,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "16px",
+                  "fontWeight": "500",
+                  "lineHeight": "16px",
+                  "msFlexAlign": "center",
+                  "opacity": 1,
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
+                }
+              }
+            >
+              Read more on our blog
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "display": "inline-flex",
+                    "paddingLeft": "8px",
+                  }
+                }
+              >
+                <svg
+                  fill="none"
+                  height={16}
+                  viewBox="0 0 24 24"
+                  width={16}
+                >
+                  <title>
+                    Medium
+                  </title>
+                  <path
+                    d="M0 0V24H24V0H0ZM19.9385 5.68615L18.6511 6.92062C18.5403 7.00554 18.4849 7.14462 18.5083 7.28246V16.3495C18.4849 16.4874 18.5403 16.6265 18.6511 16.7114L19.9089 17.9446V18.2154H13.5852V17.9446L14.8874 16.6806C15.0154 16.5526 15.0154 16.5157 15.0154 16.32V8.99077L11.3957 18.1858H10.9058L6.69046 8.99077V15.1532C6.656 15.4117 6.74215 15.6726 6.92431 15.8609L8.61785 17.9151V18.1858H3.81538V17.9151L5.50892 15.8609C5.68985 15.6726 5.77108 15.4105 5.72677 15.1532V8.02708C5.74769 7.82892 5.67138 7.63323 5.52369 7.50031L4.01846 5.68615V5.41538H8.69292L12.3065 13.3391L15.4818 5.41538H19.9385V5.68615Z"
+                    fill="#2E3338"
+                  />
+                </svg>
+              </div>
+              <div
+                className="css-view-1dbjc4n"
+                style={
+                  Object {
+                    "display": "inline-flex",
+                    "paddingLeft": "0.4em",
+                    "paddingTop": "0.185em",
+                  }
+                }
+              >
+                <svg
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
+                >
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#2E3338"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
+        "WebkitBoxPack": "center",
+        "WebkitJustifyContent": "center",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "minHeight": "510px",
+        "msFlexAlign": "center",
+        "msFlexPack": "center",
+        "paddingBottom": "15px",
+        "paddingLeft": "30px",
+        "paddingRight": "30px",
+        "paddingTop": "15px",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitFlexBasis": "auto",
+          "bottom": "0px",
+          "flexBasis": "auto",
+          "left": "0px",
+          "msFlexPreferredSize": "auto",
+          "overflowX": "hidden",
+          "overflowY": "hidden",
+          "position": "absolute",
+          "right": "0px",
+          "top": "0px",
+          "width": "100%",
+          "zIndex": -1,
+        }
+      }
+    >
+      <div
+        className="css-view-1dbjc4n"
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,0.00)",
+            "backgroundPosition": "center",
+            "backgroundRepeat": "no-repeat",
+            "backgroundSize": "cover",
+            "bottom": "0px",
+            "height": "100%",
+            "left": "0px",
+            "position": "absolute",
+            "right": "0px",
+            "top": "0px",
+            "width": "100%",
+            "zIndex": -1,
+          }
+        }
+        suppressHydrationWarning={true}
+      />
+    </div>
+    <blockquote
+      css={
+        Object {
+          "map": undefined,
+          "name": "1ouj4nj",
+          "next": undefined,
+          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;font-size:65px;line-height:72px;font-style:italic;max-width:1200px;@media (max-width: 576px){font-size:42px;line-height:50px;font-style:italic;};color:#2E3338;",
+          "toString": [Function],
+        }
+      }
+    >
+      “
+      Our hope is that this Alliance will start unlocking the potential of internet money
+      ”
+    </blockquote>
+    <figcaption
+      css={
+        Object {
+          "map": undefined,
+          "name": "hmedu4",
+          "next": undefined,
+          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;margin-top:40px;font-size:36px;@media (max-width: 576px){font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:36px;line-height:40;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:40px;;};color:#2E3338;",
+          "toString": [Function],
+        }
+      }
+    >
+      <span>
+        Katie Haun, Andreessen Horowitz
+      </span>
+    </figcaption>
   </div>
   <div
     className="css-view-1dbjc4n"
@@ -6354,1034 +7640,6 @@ exports[`Alliance renders 1`] = `
               }
             }
           />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxPack": "center",
-        "WebkitJustifyContent": "center",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "minHeight": "510px",
-        "msFlexAlign": "center",
-        "msFlexPack": "center",
-        "paddingBottom": "15px",
-        "paddingLeft": "30px",
-        "paddingRight": "30px",
-        "paddingTop": "15px",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitFlexBasis": "auto",
-          "bottom": "0px",
-          "flexBasis": "auto",
-          "left": "0px",
-          "msFlexPreferredSize": "auto",
-          "overflowX": "hidden",
-          "overflowY": "hidden",
-          "position": "absolute",
-          "right": "0px",
-          "top": "0px",
-          "width": "100%",
-          "zIndex": -1,
-        }
-      }
-    >
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "backgroundColor": "rgba(0,0,0,0.00)",
-            "backgroundPosition": "center",
-            "backgroundRepeat": "no-repeat",
-            "backgroundSize": "cover",
-            "bottom": "0px",
-            "height": "100%",
-            "left": "0px",
-            "position": "absolute",
-            "right": "0px",
-            "top": "0px",
-            "width": "100%",
-            "zIndex": -1,
-          }
-        }
-        suppressHydrationWarning={true}
-      />
-    </div>
-    <div
-      className="css-text-901oao"
-      dir="auto"
-      onClick={[Function]}
-      style={
-        Object {
-          "color": "rgba(46,51,56,1.00)",
-          "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-          "fontSize": "65px",
-          "fontStyle": "italic",
-          "lineHeight": "72px",
-          "maxWidth": "1200px",
-          "textAlign": "center",
-          "textRendering": "geometricPrecision",
-        }
-      }
-    >
-      “
-      Our hope is that this Alliance will start unlocking the potential of internet money
-      ”
-    </div>
-    <div
-      className="css-text-901oao"
-      dir="auto"
-      onClick={[Function]}
-      style={
-        Object {
-          "color": "rgba(46,51,56,1.00)",
-          "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-          "fontSize": "48px",
-          "lineHeight": "56px",
-          "marginTop": "40px",
-          "textAlign": "center",
-          "textRendering": "geometricPrecision",
-        }
-      }
-    >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
-        onClick={[Function]}
-        style={
-          Object {
-            "fontSize": "36px",
-          }
-        }
-      >
-        Katie Haun, Andreessen Horowitz
-      </span>
-    </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    id="blog"
-  >
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitAlignSelf": "center",
-          "WebkitBoxDirection": "normal",
-          "WebkitBoxOrient": "vertical",
-          "WebkitFlexDirection": "column",
-          "alignSelf": "center",
-          "flexDirection": "column",
-          "marginBottom": "30px",
-          "marginTop": "50px",
-          "maxWidth": "100vw",
-          "msFlexDirection": "column",
-          "msFlexItemAlign": "center",
-          "msGridRowAlign": "center",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "WebkitBoxFlex": 0,
-            "WebkitBoxPack": "center",
-            "WebkitFlexGrow": 0,
-            "WebkitFlexShrink": 0,
-            "WebkitJustifyContent": "center",
-            "alignItems": "center",
-            "flexGrow": 0,
-            "flexShrink": 0,
-            "justifyContent": "center",
-            "msFlexAlign": "center",
-            "msFlexNegative": 0,
-            "msFlexPack": "center",
-            "msFlexPositive": 0,
-            "paddingBottom": "10px",
-            "paddingLeft": "10px",
-            "paddingRight": "10px",
-            "paddingTop": "10px",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          className="css-q7lffx"
-        >
-          <h2
-            aria-level="2"
-            className="css-reset-4rbku5 css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            role="heading"
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "28px",
-                "lineHeight": "32px",
-                "textRendering": "geometricPrecision",
-                "textTransform": "none",
-              }
-            }
-          >
-            Stories from the Alliance
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitAlignItems": "center",
-          "WebkitAlignSelf": "center",
-          "WebkitBoxAlign": "center",
-          "WebkitBoxDirection": "normal",
-          "WebkitBoxLines": "multiple",
-          "WebkitBoxOrient": "vertical",
-          "WebkitBoxPack": "center",
-          "WebkitFlexDirection": "column",
-          "WebkitFlexWrap": "wrap",
-          "WebkitJustifyContent": "center",
-          "alignItems": "center",
-          "alignSelf": "center",
-          "flexDirection": "column",
-          "flexWrap": "wrap",
-          "justifyContent": "center",
-          "maxWidth": "100vw",
-          "msFlexAlign": "center",
-          "msFlexDirection": "column",
-          "msFlexItemAlign": "center",
-          "msFlexPack": "center",
-          "msFlexWrap": "wrap",
-          "msGridRowAlign": "center",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxFlex": 0,
-            "WebkitFlexGrow": 0,
-            "WebkitFlexShrink": 0,
-            "flexGrow": 0,
-            "flexShrink": 0,
-            "msFlexNegative": 0,
-            "msFlexPositive": 0,
-            "paddingBottom": "10px",
-            "paddingLeft": "10px",
-            "paddingRight": "10px",
-            "paddingTop": "10px",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxPack": "center",
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(229,229,229,1.00)",
-              "height": "500px",
-              "justifyContent": "center",
-              "marginTop": "15px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            aria-label="loading"
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "height": "50px",
-                "width": "50px",
-              }
-            }
-          >
-            <span>
-              ...
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxFlex": 0,
-            "WebkitFlexGrow": 0,
-            "WebkitFlexShrink": 0,
-            "flexGrow": 0,
-            "flexShrink": 0,
-            "msFlexNegative": 0,
-            "msFlexPositive": 0,
-            "paddingBottom": "10px",
-            "paddingLeft": "10px",
-            "paddingRight": "10px",
-            "paddingTop": "10px",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxPack": "center",
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(229,229,229,1.00)",
-              "height": "500px",
-              "justifyContent": "center",
-              "marginTop": "15px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            aria-label="loading"
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "height": "50px",
-                "width": "50px",
-              }
-            }
-          >
-            <span>
-              ...
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxFlex": 0,
-            "WebkitFlexGrow": 0,
-            "WebkitFlexShrink": 0,
-            "flexGrow": 0,
-            "flexShrink": 0,
-            "msFlexNegative": 0,
-            "msFlexPositive": 0,
-            "paddingBottom": "10px",
-            "paddingLeft": "10px",
-            "paddingRight": "10px",
-            "paddingTop": "10px",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxPack": "center",
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(229,229,229,1.00)",
-              "height": "500px",
-              "justifyContent": "center",
-              "marginTop": "15px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            aria-label="loading"
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "height": "50px",
-                "width": "50px",
-              }
-            }
-          >
-            <span>
-              ...
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitAlignSelf": "center",
-          "WebkitBoxDirection": "normal",
-          "WebkitBoxOrient": "vertical",
-          "WebkitFlexDirection": "column",
-          "alignSelf": "center",
-          "flexDirection": "column",
-          "marginBottom": "50px",
-          "marginTop": "20px",
-          "maxWidth": "100vw",
-          "msFlexDirection": "column",
-          "msFlexItemAlign": "center",
-          "msGridRowAlign": "center",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "WebkitBoxFlex": 0,
-            "WebkitBoxPack": "center",
-            "WebkitFlexGrow": 0,
-            "WebkitFlexShrink": 0,
-            "WebkitJustifyContent": "center",
-            "alignItems": "center",
-            "flexGrow": 0,
-            "flexShrink": 0,
-            "justifyContent": "center",
-            "msFlexAlign": "center",
-            "msFlexNegative": 0,
-            "msFlexPack": "center",
-            "msFlexPositive": 0,
-            "paddingBottom": "10px",
-            "paddingLeft": "10px",
-            "paddingRight": "10px",
-            "paddingTop": "10px",
-            "width": "100%",
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
-          >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="https://medium.com/celoOrg"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(46,51,56,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "msFlexAlign": "center",
-                  "opacity": 1,
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
-              Read more on our blog
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "8px",
-                  }
-                }
-              >
-                <svg
-                  fill="none"
-                  height={16}
-                  viewBox="0 0 24 24"
-                  width={16}
-                >
-                  <title>
-                    Medium
-                  </title>
-                  <path
-                    d="M0 0V24H24V0H0ZM19.9385 5.68615L18.6511 6.92062C18.5403 7.00554 18.4849 7.14462 18.5083 7.28246V16.3495C18.4849 16.4874 18.5403 16.6265 18.6511 16.7114L19.9089 17.9446V18.2154H13.5852V17.9446L14.8874 16.6806C15.0154 16.5526 15.0154 16.5157 15.0154 16.32V8.99077L11.3957 18.1858H10.9058L6.69046 8.99077V15.1532C6.656 15.4117 6.74215 15.6726 6.92431 15.8609L8.61785 17.9151V18.1858H3.81538V17.9151L5.50892 15.8609C5.68985 15.6726 5.77108 15.4105 5.72677 15.1532V8.02708C5.74769 7.82892 5.67138 7.63323 5.52369 7.50031L4.01846 5.68615V5.41538H8.69292L12.3065 13.3391L15.4818 5.41538H19.9385V5.68615Z"
-                    fill="#2E3338"
-                  />
-                </svg>
-              </div>
-              <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
-                  }
-                }
-              >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#2E3338"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "30px",
-        "marginTop": "30px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      >
-        Benefits of collaborating on a mission-driven blockchain
-      </div>
-      <h2
-        aria-level="2"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "28px",
-            "lineHeight": "32px",
-            "marginBottom": "20px",
-            "marginTop": "20px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        What the Alliance offers
-      </h2>
-      <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitBoxPack": "center",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "WebkitJustifyContent": "center",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "justifyContent": "center",
-            "marginTop": "40px",
-            "msFlexAlign": "center",
-            "msFlexDirection": "row",
-            "msFlexPack": "center",
-            "msFlexWrap": "wrap",
-          }
-        }
-      >
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxPack": "center",
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "justifyContent": "center",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "100px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100px",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-          </div>
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "20px",
-                "lineHeight": "28px",
-                "marginBottom": "30px",
-                "marginLeft": "50px",
-                "marginRight": "50px",
-                "marginTop": "30px",
-                "maxWidth": "240px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Connect with like-minded members
-          </div>
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxPack": "center",
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "justifyContent": "center",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "100px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100px",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-          </div>
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "20px",
-                "lineHeight": "28px",
-                "marginBottom": "30px",
-                "marginLeft": "50px",
-                "marginRight": "50px",
-                "marginTop": "30px",
-                "maxWidth": "240px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Build and shape improvements to the Celo platform
-          </div>
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxPack": "center",
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "justifyContent": "center",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "100px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100px",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-          </div>
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "20px",
-                "lineHeight": "28px",
-                "marginBottom": "30px",
-                "marginLeft": "50px",
-                "marginRight": "50px",
-                "marginTop": "30px",
-                "maxWidth": "240px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Attend special programs and events
-          </div>
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxPack": "center",
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "justifyContent": "center",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "100px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100px",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-          </div>
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "20px",
-                "lineHeight": "28px",
-                "marginBottom": "30px",
-                "marginLeft": "50px",
-                "marginRight": "50px",
-                "marginTop": "30px",
-                "maxWidth": "240px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Access to education and support
-          </div>
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxPack": "center",
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "justifyContent": "center",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-            }
-          }
-        >
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "100px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100px",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-          </div>
-          <div
-            className="css-text-901oao"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(46,51,56,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "20px",
-                "lineHeight": "28px",
-                "marginBottom": "30px",
-                "marginLeft": "50px",
-                "marginRight": "50px",
-                "marginTop": "30px",
-                "maxWidth": "240px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Expand your reach to help more communities
-          </div>
         </div>
       </div>
     </div>

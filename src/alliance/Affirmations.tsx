@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Image, ImageSourcePropType, StyleSheet, Text, View, ViewStyle } from "react-native"
+import { Image, StyleSheet, Text, View, ViewStyle } from "react-native"
 import {
   clabs,
   clabsMobile,
@@ -56,7 +56,7 @@ export default function Affirmations() {
         image={laboratoria}
         imageMobile={laboratoriaMobile}
         preview={laboratoriaPreview}
-        logo={<Image resizeMode="contain" source={laboratoriaLogo} style={orgStyle.laboratoria} />}
+        logo={<Image resizeMode="contain" source={{uri:laboratoriaLogo.src}} style={orgStyle.laboratoria} />}
         contentStyle={!isMobile && styles.laborStyle}
       />
       <Exemplar
@@ -65,7 +65,7 @@ export default function Affirmations() {
         image={wfp}
         imageMobile={wfpMobile}
         preview={wfpPreview}
-        logo={<Image resizeMode="contain" source={wfpLogo} style={orgStyle.wfpLogo} />}
+        logo={<Image resizeMode="contain" source={{uri:wfpLogo.src}} style={orgStyle.wfpLogo} />}
         button={{
           text: t("affirmations.wfpButton"),
           href: "https://medium.com/celoorg/how-to-design-for-all-stories-from-tanzania-refugees-8b34594d64ae",
@@ -82,7 +82,7 @@ export default function Affirmations() {
           text: t("affirmations.cLabsButton"),
           href: "https://medium.com/celoorg/a-cryptocurrency-for-every-juan-144144e62d5",
         }}
-        logo={<Image resizeMode="contain" source={cLabsLogo} style={orgStyle.cLabsLogo} />}
+        logo={<Image resizeMode="contain" source={{uri:cLabsLogo.src}} style={orgStyle.cLabsLogo} />}
         contentStyle={!isMobile && styles.wfpStyle}
       />
     </View>
@@ -90,9 +90,9 @@ export default function Affirmations() {
 }
 
 interface Props {
-  image: ImageSourcePropType
-  imageMobile: ImageSourcePropType
-  preview: ImageSourcePropType
+  image: StaticImageData
+  imageMobile: StaticImageData
+  preview: StaticImageData
   logo: React.ReactNode
   belief: React.ReactNode
   copy: string
@@ -132,7 +132,7 @@ function Exemplar({
           </View>
           {isMobile && (
             <View style={styles.photoContainerMobile}>
-              <Photo image={imageMobile} ratio={16 / 10} preview={preview} />
+              <Photo image={{uri:imageMobile.src}} ratio={16 / 10} preview={preview} />
             </View>
           )}
           <Text style={fonts.p}>{copy}</Text>
@@ -152,7 +152,7 @@ function Exemplar({
       {!isMobile && (
         <Cell span={Spans.half}>
           <View style={!isMobile && styles.photoContainer}>
-            <Photo image={image} ratio={471 / 550} preview={preview} />
+            <Photo image={{uri:image.src}} ratio={471 / 550} preview={preview} />
           </View>
         </Cell>
       )}

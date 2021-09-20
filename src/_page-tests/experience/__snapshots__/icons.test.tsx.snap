@@ -4619,7 +4619,9 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   "toString": [Function],
                 }
               }
-              src="image.png"
+              height={100}
+              src="/image.png"
+              width={100}
             />
             <span
               css={

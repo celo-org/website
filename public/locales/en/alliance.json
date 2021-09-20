@@ -4,6 +4,7 @@
   "mission": "Create a more prosperous world with mission-aligned organizations",
   "filterLabel": "Refine By",
   "mediumArticlesTitle": "Stories from the Alliance",
+  "readMore": "Read article",
   "form": {
     "name": "Name",
     "email": "Email",

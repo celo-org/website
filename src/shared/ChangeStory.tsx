@@ -36,7 +36,7 @@ export default function ChangeStory({ darkMode }: { darkMode: boolean }) {
 
   return (
     <div css={containerCss}>
-      <img src={globe} css={globeCss} />
+      <img src={globe.src} css={globeCss} height={globe.height} width={globe.width}  />
       <span css={css(separatorCss, darkMode && whiteText)}>|</span>
       <Wipe text={CHANGE_STORY[count]} darkMode={darkMode} />
     </div>

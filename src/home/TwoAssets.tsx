@@ -46,7 +46,7 @@ export function TwoAssets() {
           ticker="cUSD & cEUR"
           info={t("stableCoins")}
           icon={
-            <img src={BigStables} width={132} height={ICON_SIZE} style={{ marginBottom: 20 }} />
+            <img src={BigStables.src} width={132} height={ICON_SIZE} style={{ marginBottom: 20 }} />
           }
         >
           <Button

@@ -758,7 +758,6 @@ More importantly, we are driven by purpose – to solve real-world problems such
       style={
         Object {
           "backgroundColor": "rgba(0,0,0,0.00)",
-          "backgroundImage": "url(\\"image.png\\")",
           "backgroundPosition": "center",
           "backgroundRepeat": "no-repeat",
           "backgroundSize": "cover",
@@ -773,12 +772,6 @@ More importantly, we are driven by purpose – to solve real-world problems such
         }
       }
       suppressHydrationWarning={true}
-    />
-    <img
-      alt=""
-      className="css-accessibilityImage-9pa8cd"
-      draggable={false}
-      src="image.png"
     />
   </div>
   <div
@@ -1689,7 +1682,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         style={
           Object {
             "backgroundColor": "rgba(0,0,0,0.00)",
-            "backgroundImage": "url(\\"image.png\\")",
+            "backgroundImage": "url(\\"/image.png\\")",
             "backgroundPosition": "center",
             "backgroundRepeat": "no-repeat",
             "backgroundSize": "cover",
@@ -1709,23 +1702,17 @@ More importantly, we are driven by purpose – to solve real-world problems such
         alt=""
         className="css-accessibilityImage-9pa8cd"
         draggable={false}
-        src="image.png"
+        src="/image.png"
       />
     </div>
-    <div
-      className="css-text-901oao"
-      dir="auto"
-      onClick={[Function]}
-      style={
+    <blockquote
+      css={
         Object {
-          "color": "rgba(255,255,255,1.00)",
-          "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-          "fontSize": "65px",
-          "fontStyle": "italic",
-          "lineHeight": "72px",
-          "maxWidth": "1200px",
-          "textAlign": "center",
-          "textRendering": "geometricPrecision",
+          "map": undefined,
+          "name": "1da3861",
+          "next": undefined,
+          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;font-size:65px;line-height:72px;font-style:italic;max-width:1200px;@media (max-width: 576px){font-size:42px;line-height:50px;font-style:italic;};color:#FFFFFF;",
+          "toString": [Function],
         }
       }
     >
@@ -1733,25 +1720,20 @@ More importantly, we are driven by purpose – to solve real-world problems such
       How do we change the world?
 Change the story.
       ”
-    </div>
-    <div
-      className="css-text-901oao"
-      dir="auto"
-      onClick={[Function]}
-      style={
+    </blockquote>
+    <figcaption
+      css={
         Object {
-          "color": "rgba(255,255,255,1.00)",
-          "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-          "fontSize": "48px",
-          "lineHeight": "56px",
-          "marginTop": "40px",
-          "textAlign": "center",
-          "textRendering": "geometricPrecision",
+          "map": undefined,
+          "name": "1t7non3",
+          "next": undefined,
+          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;margin-top:40px;font-size:36px;@media (max-width: 576px){font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:36px;line-height:40;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:40px;;};color:#FFFFFF;",
+          "toString": [Function],
         }
       }
     >
       – Charles Eisenstein
-    </div>
+    </figcaption>
   </div>
   <div
     className="css-view-1dbjc4n"

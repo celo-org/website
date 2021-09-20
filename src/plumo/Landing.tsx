@@ -51,7 +51,7 @@ export default function PlumoLanding(props: Props) {
       <div css={rootCss}>
         <GridRow columns={1} css={coverCss}>
           <header css={logoCss}>
-            <img src={gradientFeathers} width={72} height={72} />
+            <img src={gradientFeathers.src} width={72} height={72} />
             <h1 css={titleCss}>{props.title}</h1>
           </header>
         </GridRow>

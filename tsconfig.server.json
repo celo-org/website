@@ -7,5 +7,5 @@
     "lib": ["es2017", "DOM"],
     "baseUrl": "."
   },
-  "include": ["server/**/*.ts", "src/lib.dom.d.ts", "src/react-native-aug.d.ts"]
+  "include": ["server/**/*.ts", "src/lib.dom.d.ts", "src/react-native-aug.d.ts", "next-env.d.ts"]
 }

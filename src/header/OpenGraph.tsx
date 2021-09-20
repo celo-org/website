@@ -3,17 +3,19 @@ import * as React from "react"
 import { ImageRequireSource } from "react-native"
 interface Props {
   description: string
-  image?: ImageRequireSource | string
+  image?: ImageRequireSource | string | StaticImageData
   title: string
   path: string
 }
+
+
 const BASE_URL = process.env.BASE_URL
 
 export default function OpenGraph({ description, image, title, path }: Props) {
   const metaImage =
     typeof image === "string" && (image.startsWith("//") || image.startsWith("http"))
       ? image
-      : BASE_URL + image
+      : BASE_URL + (typeof image === "object" ? image.src : image)
   return (
     <Head>
       <title>{title}</title>

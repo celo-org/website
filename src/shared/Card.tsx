@@ -1,6 +1,6 @@
 import * as React from "react"
+import { useTranslation } from "react-i18next"
 import { Image, StyleSheet, Text, View } from "react-native"
-import { I18nProps, withNamespaces } from "src/i18n"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import { fonts, standardStyles } from "src/styles"
 
@@ -12,9 +12,9 @@ export interface Props {
   onLoad?: () => void
 }
 
-type CompleteProps = Props & I18nProps
 
-export function Card({ imgSource, href, title, text, t, onLoad }: CompleteProps) {
+export default function Card({ imgSource, href, title, text, onLoad }: Props) {
+  const {t} = useTranslation("common")
   return (
     <View style={styles.structure}>
       <Image
@@ -32,7 +32,7 @@ export function Card({ imgSource, href, title, text, t, onLoad }: CompleteProps)
         </View>
         <View style={standardStyles.elementalMargin}>
           <Button
-            text={t("readMore")}
+            text={t("readArticle")}
             kind={BTN.NAKED}
             size={SIZE.normal}
             href={href}
@@ -67,4 +67,3 @@ const styles = StyleSheet.create({
   },
 })
 
-export default withNamespaces("community")(Card)

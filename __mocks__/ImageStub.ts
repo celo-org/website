@@ -1,1 +1,1 @@
-export default 'image.png'
+export default { src: "/image.png", width: 100, height: 100, blurDataURL: "/image.png" }
