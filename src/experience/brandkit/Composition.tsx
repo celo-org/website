@@ -17,6 +17,7 @@ export default React.memo(function Intro() {
         title="Composition"
         path={COMPOSITION_PATH}
         metaDescription={t("composition.introduction")}
+        //There is no composition.introduction
         sections={[
           { id: hashNav.brandComposition.overview, children: <Overview /> },
           { id: hashNav.brandComposition.grid, children: <GridArea /> },

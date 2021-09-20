@@ -2,31 +2,41 @@
 
 exports[`Faucet renders 1`] = `
 <div
-  className="css-view-1dbjc4n"
-  style={
+  css={
     Object {
-      "marginTop": "75px",
+      "map": undefined,
+      "name": "1yttnl",
+      "next": undefined,
+      "styles": "margin-top:75px;display:flex;flex-direction:column;",
+      "toString": [Function],
     }
   }
 >
   <h1
-    aria-level="1"
-    className="css-reset-4rbku5 css-text-901oao"
-    dir="auto"
-    onClick={[Function]}
-    role="heading"
-    style={
-      Object {
-        "color": "rgba(46,51,56,1.00)",
-        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-        "fontSize": "36px",
-        "lineHeight": "40px",
-        "marginBottom": "75px",
-        "marginTop": "75px",
-        "textAlign": "center",
-        "textRendering": "geometricPrecision",
-        "textTransform": "none",
-      }
+    css={
+      Array [
+        Object {
+          "map": undefined,
+          "name": "vosu65",
+          "next": undefined,
+          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;",
+          "toString": [Function],
+        },
+        Object {
+          "map": undefined,
+          "name": "xi606m",
+          "next": undefined,
+          "styles": "text-align:center;",
+          "toString": [Function],
+        },
+        Object {
+          "map": undefined,
+          "name": "1v1ihin",
+          "next": undefined,
+          "styles": "margin-top:75px;margin-bottom:75px;",
+          "toString": [Function],
+        },
+      ]
     }
   >
     Fund your Testnet Account
@@ -679,34 +689,44 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         }
       />
       <div
-        className="css-view-1dbjc4n"
-        style={
+        css={
           Object {
-            "marginBottom": "20px",
+            "map": undefined,
+            "name": "uewl2b",
+            "next": undefined,
+            "styles": "margin-bottom:20px;",
+            "toString": [Function],
           }
         }
       >
         <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "20px",
-              "lineHeight": "28px",
-              "paddingBottom": "10px",
-              "textRendering": "geometricPrecision",
-            }
+          css={
+            Array [
+              Object {
+                "map": undefined,
+                "name": "ronyck",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
+                "toString": [Function],
+              },
+              Object {
+                "map": undefined,
+                "name": "l57rop",
+                "next": undefined,
+                "styles": "padding-bottom:10px;",
+                "toString": [Function],
+              },
+            ]
           }
         >
           <span
-            className="css-text-901oao css-textHasAncestor-16my406"
-            onClick={[Function]}
-            style={
+            css={
               Object {
-                "fontWeight": "bold",
+                "map": undefined,
+                "name": "in3yi3",
+                "next": undefined,
+                "styles": "font-weight:bold;",
+                "toString": [Function],
               }
             }
           >
@@ -904,34 +924,44 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         }
       />
       <div
-        className="css-view-1dbjc4n"
-        style={
+        css={
           Object {
-            "marginBottom": "20px",
+            "map": undefined,
+            "name": "uewl2b",
+            "next": undefined,
+            "styles": "margin-bottom:20px;",
+            "toString": [Function],
           }
         }
       >
         <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "20px",
-              "lineHeight": "28px",
-              "paddingBottom": "10px",
-              "textRendering": "geometricPrecision",
-            }
+          css={
+            Array [
+              Object {
+                "map": undefined,
+                "name": "ronyck",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
+                "toString": [Function],
+              },
+              Object {
+                "map": undefined,
+                "name": "l57rop",
+                "next": undefined,
+                "styles": "padding-bottom:10px;",
+                "toString": [Function],
+              },
+            ]
           }
         >
           <span
-            className="css-text-901oao css-textHasAncestor-16my406"
-            onClick={[Function]}
-            style={
+            css={
               Object {
-                "fontWeight": "bold",
+                "map": undefined,
+                "name": "in3yi3",
+                "next": undefined,
+                "styles": "font-weight:bold;",
+                "toString": [Function],
               }
             }
           >
@@ -1033,34 +1063,44 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
-        style={
+        css={
           Object {
-            "marginBottom": "20px",
+            "map": undefined,
+            "name": "uewl2b",
+            "next": undefined,
+            "styles": "margin-bottom:20px;",
+            "toString": [Function],
           }
         }
       >
         <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "20px",
-              "lineHeight": "28px",
-              "paddingBottom": "10px",
-              "textRendering": "geometricPrecision",
-            }
+          css={
+            Array [
+              Object {
+                "map": undefined,
+                "name": "ronyck",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
+                "toString": [Function],
+              },
+              Object {
+                "map": undefined,
+                "name": "l57rop",
+                "next": undefined,
+                "styles": "padding-bottom:10px;",
+                "toString": [Function],
+              },
+            ]
           }
         >
           <span
-            className="css-text-901oao css-textHasAncestor-16my406"
-            onClick={[Function]}
-            style={
+            css={
               Object {
-                "fontWeight": "bold",
+                "map": undefined,
+                "name": "in3yi3",
+                "next": undefined,
+                "styles": "font-weight:bold;",
+                "toString": [Function],
               }
             }
           >
@@ -1162,34 +1202,44 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
-        style={
+        css={
           Object {
-            "marginBottom": "20px",
+            "map": undefined,
+            "name": "uewl2b",
+            "next": undefined,
+            "styles": "margin-bottom:20px;",
+            "toString": [Function],
           }
         }
       >
         <div
-          className="css-text-901oao"
-          dir="auto"
-          onClick={[Function]}
-          style={
-            Object {
-              "color": "rgba(46,51,56,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "20px",
-              "lineHeight": "28px",
-              "paddingBottom": "10px",
-              "textRendering": "geometricPrecision",
-            }
+          css={
+            Array [
+              Object {
+                "map": undefined,
+                "name": "ronyck",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
+                "toString": [Function],
+              },
+              Object {
+                "map": undefined,
+                "name": "l57rop",
+                "next": undefined,
+                "styles": "padding-bottom:10px;",
+                "toString": [Function],
+              },
+            ]
           }
         >
           <span
-            className="css-text-901oao css-textHasAncestor-16my406"
-            onClick={[Function]}
-            style={
+            css={
               Object {
-                "fontWeight": "bold",
+                "map": undefined,
+                "name": "in3yi3",
+                "next": undefined,
+                "styles": "font-weight:bold;",
+                "toString": [Function],
               }
             }
           >

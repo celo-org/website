@@ -29,12 +29,12 @@ const HomeBackers = ({ t }: I18nProps) => {
           <View style={styles.logoContainer}>
             {homeBackers.map((backer) => (
               <Image
-                resizeMode={"contain"}
-                style={[styles.backerLogo, { height: backer.height }]}
-                key={backer.id}
-                source={{ uri: backer.image }}
+              resizeMode={"contain"}
+              style={[styles.backerLogo, { height: backer.height }]}
+              key={backer.id}
+              source={{ uri: backer.image }}
               />
-            ))}
+              ))}
           </View>
         </Responsive>
         <View style={[styles.linkContainer, standardStyles.elementalMarginTop]}>
