@@ -151,7 +151,7 @@ export const pagePaths = {
     isDark: true,
   },
   PUBLIC_SECTOR: {
-    name: "Public Sector",
+    name: "Government",
     link: "/public-sector",
     isDark: true,
     translucent: {
@@ -198,6 +198,7 @@ export const MAIN_MENU = [
   pagePaths.COMMUNITY,
   pagePaths.ECOSYSTEM,
   pagePaths.ALLIANCE_COLLECTIVE,
+  pagePaths.PUBLIC_SECTOR,
 ]
 
 // TODO: Temporary link to the master branch documentation for 'sdkDocs' and 'sdkTutorial'
