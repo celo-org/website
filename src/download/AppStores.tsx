@@ -6,6 +6,8 @@ import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { CeloLinks } from "src/shared/menu-items"
 import { standardStyles, textStyles } from "src/styles"
+import ValoraLogo from "src/icons/valora-icon.png"
+import Walletlogo from "src/icons/06-Celo-Coins-light.png"
 
 export default withNamespaces(NameSpaces.download)(
   React.memo(function AppStores({ t }: I18nProps) {
@@ -25,13 +27,13 @@ export default withNamespaces(NameSpaces.download)(
         </GridRow>
         <GridRow allStyle={standardStyles.centered}>
           <Adventure
-            source={require("src/icons/valora-icon.png")}
+            source={ValoraLogo}
             title="Valora"
             text="For iOS and Android"
             link={{ text: "Get Valora", href: CeloLinks.valora }}
           />
           <Adventure
-            source={require("src/icons/06-Celo-Coins-light.png")}
+            source={Walletlogo}
             title="Celo Web Wallet"
             text="For web browsers"
             link={{ text: "Go to Celo Web Wallet", href: CeloLinks.celoWebWallet }}

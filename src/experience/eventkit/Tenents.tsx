@@ -1,11 +1,11 @@
 import frontMatter from "front-matter"
 import * as React from "react"
-import { Image, ImageRequireSource, StyleSheet, Text, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 import designForAll from "src/experience/eventkit/content/tenents/design-for-all.md"
 import embodyHumility from "src/experience/eventkit/content/tenents/embodying-humility.md"
 import innovatingOnMoney from "src/experience/eventkit/content/tenents/innovating-on-money.md"
 import strivingForBeauty from "src/experience/eventkit/content/tenents/striving-for-beauty.md"
-
+import Image from "next/image"
 import designForAllImg from "src/experience/eventkit/content/tenents/design-for-all.png"
 import embodyHumilityImg from "src/experience/eventkit/content/tenents/embodying-humility.png"
 import innovatingOnMoneyImg from "src/experience/eventkit/content/tenents/innovating-on-money.png"
@@ -23,7 +23,7 @@ const BEAUTY = frontMatter<Attributes>(strivingForBeauty)
 
 interface Props {
   body: string
-  image?: ImageRequireSource
+  image?: StaticImageData
 }
 
 function Tenent({ body, title, description, image }: Props & Attributes) {
@@ -33,7 +33,7 @@ function Tenent({ body, title, description, image }: Props & Attributes) {
         <H3 style={standardStyles.elementalMarginBottom}>{title}</H3>
         <Text style={[fonts.p, standardStyles.elementalMarginBottom]}>{description}</Text>
         <AspectRatio ratio={280 / 170} style={styles.illo}>
-          <Image source={image} style={standardStyles.image} />
+          <Image src={image} />
         </AspectRatio>
       </View>
       <View style={styles.content}>

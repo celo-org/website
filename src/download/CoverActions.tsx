@@ -6,9 +6,9 @@ import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
 import { CeloLinks } from "src/shared/menu-items"
 import { standardStyles } from "src/styles"
-const exchangeImg = require("src/download/exchange.png")
-const faucetImage = require("src/dev/Faucet.png")
-const paymentImg = require("src/download/payments.png")
+import exchangeImg from "src/download/exchange.png"
+import faucetImage from "src/dev/Faucet.png"
+import paymentImg from "src/download/payments.png"
 
 type Props = I18nProps & ScreenProps
 

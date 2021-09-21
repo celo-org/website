@@ -36,12 +36,12 @@ export function usePageTurner() {
       },
     }
 
-    Object.keys(RouterEvents).forEach((eventType) => {
+    Object.keys(RouterEvents).forEach((eventType: RouterEvents) => {
       router.events.on(eventType, eventHandlers[eventType])
     })
 
     return () => {
-      Object.keys(RouterEvents).forEach((eventType) => {
+      Object.keys(RouterEvents).forEach((eventType: RouterEvents) => {
         router.events.off(eventType, eventHandlers[eventType])
       })
     }

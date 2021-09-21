@@ -42,7 +42,7 @@ export default function Cover(props: Props) {
               title={t("coverPhonesImage")}
               aria-label={t("coverPhonesImage")}
               type="image/svg+xml"
-              data={examplePhones}
+              data={examplePhones.src}
               width={1016}
               height={524}
             />
@@ -115,25 +115,25 @@ const backgroundArea = css({
   width: "100%",
   backgroundColor: colors.dark,
   [WHEN_LONG_PHONE]: {
-    backgroundImage: `url(${celoAsStarsMobileLong})`,
+    backgroundImage: `url(${celoAsStarsMobileLong.src})`,
     top: 0,
     minHeight: "100vh",
   },
   [WHEN_MOBILE]: {
-    backgroundImage: `url(${celoAsStarsMobileShort})`,
+    backgroundImage: `url(${celoAsStarsMobileShort.src})`,
     top: 0,
     minHeight: "100vh",
   },
   [WHEN_TABLET]: {
     width: "100vw",
     minHeight: "100vh",
-    backgroundImage: `url(${celoAsStarsTablet})`,
+    backgroundImage: `url(${celoAsStarsTablet.src})`,
     backgroundPosition: "bottom",
     top: 0,
   },
   [WHEN_DESKTOP]: {
     width: backgroundDesktopSize.width,
-    backgroundImage: `url(${celoAsStarsDesktop})`,
+    backgroundImage: `url(${celoAsStarsDesktop.src})`,
   },
 })
 
