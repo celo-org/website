@@ -1,5 +1,5 @@
 import * as React from "react"
-import { StyleSheet, Text, View } from "react-native"
+import { StyleSheet, View } from "react-native"
 import Affirmations from "src/alliance/Affirmations"
 import Benefits from "src/alliance/Benefits"
 import CollectiveMission from "src/alliance/CollectiveMission"
@@ -73,19 +73,21 @@ export default function Main() {
         quote={
           "The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications"
         }
-        citation={<Text style={styles.citation}>Gigi Gatti, Grameen Foundation</Text>}
+        citation={<span>Gigi Gatti, Grameen Foundation</span>}
       />
-      <Members />
+      <Benefits />
+      <ArticleData title={t("mediumArticlesTitle")} tagged={"alliance"} />
       <BeautifulQuote
         color={colors.dark}
         imgSource={fences}
         quote={
           "Our hope is that this Alliance will start unlocking the potential of internet money"
         }
-        citation={<Text style={styles.citation}>Katie Haun, Andreessen Horowitz</Text>}
+        citation={<span>Katie Haun, Andreessen Horowitz</span>}
       />
-      <ArticleData title={t("mediumArticlesTitle")} tagged={"alliance"} />
-      <Benefits />
+
+      <Members />
+
       <WheelWithForm />
     </View>
   )

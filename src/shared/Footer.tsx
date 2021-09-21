@@ -161,7 +161,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
         >
           <div css={formStyle}>
             <img
-              src={sendCoinIcon}
+              src={sendCoinIcon.src}
               css={emailLogoCss}
               width={50}
               height={60}

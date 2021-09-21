@@ -19,7 +19,7 @@ import BeautifulQuote from "src/shared/BeautifulQuote"
 import Button, { BTN } from "src/shared/Button.3"
 import InlineAnchor from "src/shared/InlineAnchor"
 import menuItems from "src/shared/menu-items"
-import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors, fonts, standardStyles, textStyles } from "src/styles"
 
 interface Props {
   contributors: Contributor[]
@@ -97,6 +97,7 @@ export class About extends React.Component<Props & I18nProps> {
           </BookLayout>
           <CeloValues />
           <BeautifulQuote
+            color={colors.white}
             quote={t("beautifulLifeQuote")}
             imgSource={sacredEconBack}
             citation={`– ${t("beautifulLifeSource")}`}

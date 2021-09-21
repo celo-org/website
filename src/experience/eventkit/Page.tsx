@@ -2,6 +2,7 @@ import * as React from "react"
 import Page from "src/experience/common/Page"
 import metaDescription from "src/experience/eventkit/content/meta.md"
 import menu, { hashNav } from "src/shared/menu-items"
+import openGraph from "src/experience/brandkit/images/ogimage-brandkit.png"
 export const ROOT = menu.EVENTS_KIT.link
 
 export const FLAVOR_PATH = `${ROOT}/flavor`
@@ -71,6 +72,7 @@ interface Props {
   path: string
 }
 
+
 export default function BrandKitPage({ sections, title, path }: Props) {
   return (
     <Page
@@ -80,7 +82,7 @@ export default function BrandKitPage({ sections, title, path }: Props) {
       kitName="EventKit"
       path={path}
       metaDescription={metaDescription}
-      ogImage={require("src/experience/brandkit/images/ogimage-brandkit.png")}
+      ogImage={openGraph.src}
     />
   )
 }

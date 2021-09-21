@@ -1,6 +1,4 @@
 import * as React from "react"
-import { Image, ImageSourcePropType, StyleSheet, Text, View } from "react-native"
-import { H2 } from "src/fonts/Fonts"
 import { NameSpaces, useTranslation } from "src/i18n"
 import {
   buildWithCeloOnLight,
@@ -9,10 +7,10 @@ import {
   educateOnLight,
   expandReachOnLight,
 } from "src/icons"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
-import { useScreenSize } from "src/layout/ScreenSize"
-import { fonts, standardStyles, textStyles } from "src/styles"
-
+import { GridRow } from "src/layout/Grid2"
+import { flex, flexRow, fonts, standardStyles, textStyles, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import Image from "next/image"
+import { css } from "@emotion/react"
 const OFFERINGS = [
   connectPeopleOnLight,
   buildWithCeloOnLight,
@@ -23,62 +21,72 @@ const OFFERINGS = [
 
 export default React.memo(function Benefits() {
   const { t } = useTranslation(NameSpaces.alliance)
-  const { isMobile } = useScreenSize()
   return (
     <GridRow
-      desktopStyle={standardStyles.blockMargin}
-      tabletStyle={standardStyles.blockMarginTablet}
-      mobileStyle={standardStyles.blockMarginMobile}
+      columns={1}
+      css={rootCss}
     >
-      <Cell span={Spans.full}>
-        <Text style={[fonts.h3Mobile, isMobile && textStyles.center]}>
+        <h3 css={styles.header}>
           {t("benefits.headline")}
-        </Text>
-        <H2 style={[standardStyles.elementalMargin, isMobile && textStyles.center]}>
+        </h3>
+        <h2 css={styles.mainHeader}>
           {t("benefits.title")}
-        </H2>
-        <View
-          style={[
-            styles.offeringsArea,
-            standardStyles.centered,
-            standardStyles.blockMarginTopTablet,
-          ]}
-        >
+        </h2>
+        <div css={styles.offeringsArea}>
           {OFFERINGS.map((img, index) => (
             <Offering key={index} text={t(`benefits.offerings.${index}`)} icon={img} />
           ))}
-        </View>
-      </Cell>
+        </div>
     </GridRow>
   )
 })
 
 interface OfferingProps {
-  icon: ImageSourcePropType
+  icon: StaticImageData
   text: string
 }
 
 const Offering = React.memo(function _Offering({ icon, text }: OfferingProps) {
   return (
-    <View style={standardStyles.centered}>
-      <Image resizeMode="contain" source={icon} style={styles.offeringImage} />
-      <Text style={[fonts.p, styles.offeringText, textStyles.center]}>{text}</Text>
-    </View>
+    <div css={styles.offeringRoot}>
+      <Image placeholder={"blur"} blurDataURL={icon.blurDataURL} layout="intrinsic" width={100} height={100} src={icon.src} css={styles.offeringImage} />
+      <p css={styles.offeringText}>{text}</p>
+    </div>
   )
 })
 
-const styles = StyleSheet.create({
-  offeringText: {
+const rootCss = css({
+  [WHEN_MOBILE]: standardStyles.blockMarginMobile,
+  [WHEN_TABLET]: standardStyles.blockMarginTablet,
+  [WHEN_DESKTOP]: standardStyles.blockMargin
+})
+
+const styles = {
+  header: css(fonts.h3, {
+    marginBottom: 20,
+    [WHEN_MOBILE]: {
+      textAlign: "center"
+    }
+  }),
+  mainHeader: css(fonts.h2,{
+    margin: "20px 0px",
+    [WHEN_MOBILE]: {
+      textAlign: "center"
+    }
+  }),
+  offeringRoot: css(standardStyles.centered, flex,{}),
+  offeringText: css(fonts.body,  textStyles.center, {
     maxWidth: 240,
-    marginHorizontal: 50,
-    marginVertical: 30,
-  },
-  offeringImage: {
+    margin: "30px 50px",
+  }),
+  offeringImage: css({
     width: 100,
     height: 100,
-  },
-  offeringsArea: {
-    flexDirection: "row",
+  }),
+  offeringsArea: css(
+    flexRow,
+    standardStyles.centered,
+    {
     flexWrap: "wrap",
-  },
-})
+  }),
+}

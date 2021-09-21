@@ -161,7 +161,7 @@ Array [
         >
           <img
             height={72}
-            src="image.png"
+            src="/image.png"
             width={72}
           />
           <h1
@@ -3187,7 +3187,9 @@ Array [
                   "toString": [Function],
                 }
               }
-              src="image.png"
+              height={100}
+              src="/image.png"
+              width={100}
             />
             <span
               css={

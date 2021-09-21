@@ -4614,7 +4614,9 @@ Images have descriptions that act as guidelines for both accessibility and commu
                   "toString": [Function],
                 }
               }
-              src="image.png"
+              height={100}
+              src="/image.png"
+              width={100}
             />
             <span
               css={

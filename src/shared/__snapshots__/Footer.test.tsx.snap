@@ -47,7 +47,7 @@ Array [
             }
           }
           height={60}
-          src="image.png"
+          src="/image.png"
           width={50}
         />
         <p
@@ -2745,7 +2745,9 @@ Array [
                 "toString": [Function],
               }
             }
-            src="image.png"
+            height={100}
+            src="/image.png"
+            width={100}
           />
           <span
             css={

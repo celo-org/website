@@ -5572,7 +5572,9 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   "toString": [Function],
                 }
               }
-              src="image.png"
+              height={100}
+              src="/image.png"
+              width={100}
             />
             <span
               css={

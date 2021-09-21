@@ -1,6 +1,6 @@
 import * as React from "react"
 import FadeIn from "react-lazyload-fadein"
-import { Image, ImageSourcePropType, StyleSheet, Text, View, ViewStyle } from "react-native"
+import { Image, StyleSheet, Text, View, ViewStyle } from "react-native"
 import { H3 } from "src/fonts/Fonts"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import { fonts, standardStyles, textStyles } from "src/styles"
@@ -8,7 +8,7 @@ import { fonts, standardStyles, textStyles } from "src/styles"
 interface Props {
   title: string
   text?: string
-  graphic: ImageSourcePropType
+  graphic: StaticImageData
   link?: { href: string; text: string }
   style?: ViewStyle
   isMobile: boolean
@@ -22,7 +22,7 @@ export default function CoverAction({ title, text, graphic, link, isMobile, styl
       <View style={isMobile && standardStyles.centered}>
         <FadeIn>
           {(load) => (
-            <Image resizeMode="contain" onLoad={load} source={graphic} style={styles.graphic} />
+            <Image resizeMode="contain" onLoad={load} source={{uri: graphic.src}} style={styles.graphic} />
           )}
         </FadeIn>
         <H3
