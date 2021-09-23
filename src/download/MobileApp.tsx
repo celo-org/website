@@ -7,6 +7,7 @@ import OpenGraph from "src/header/OpenGraph"
 import { CeloLinks } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { colors } from "src/styles"
+import openGraph from "src/download/ogimage-wallet.png"
 
 export default class MobileApp extends React.PureComponent {
   render() {
@@ -17,7 +18,7 @@ export default class MobileApp extends React.PureComponent {
             title={"Celo Test Wallet"}
             path={CeloLinks.walletApp}
             description={""}
-            image={require("src/download/ogimage-wallet.png")}
+            image={openGraph}
           />
           <Cover />
           <CoverActions />

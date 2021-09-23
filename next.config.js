@@ -1,13 +1,9 @@
-const withImages = require('next-images')
 const envConfig = require('./env-config')
 const serverEnvConfig = require('./server-env-config')
 const { i18n } = require("./next-i18next.config")
-module.exports = withImages({
+module.exports = {
   i18n,
   inlineImageLimit: 1024,
-  future: {
-    webpack5: true,
-  },
   images: {
     domains: ["images.ctfassets.net", "i.ytimg.com", "*.ytimg.com"],
   },
@@ -92,4 +88,4 @@ module.exports = withImages({
 
     return config
   },
-})
+}

@@ -4118,7 +4118,9 @@ exports[`Experience/Brandkit renders 1`] = `
                   "toString": [Function],
                 }
               }
-              src="image.png"
+              height={100}
+              src="/image.png"
+              width={100}
             />
             <span
               css={

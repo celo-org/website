@@ -33,7 +33,6 @@ interface Props {
 }
 
 export default class Form extends React.Component<Props, State> {
-  state: State
   constructor(props, context) {
     super(props, context)
     this.state = {

@@ -65,7 +65,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               <Image
                 resizeMode="contain"
                 accessibilityLabel="Polychain"
-                source={{ uri: polychain }}
+                source={{ uri: polychain.src }}
                 style={styles.polyChain as ImageStyle}
               />
             </View>
