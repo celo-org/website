@@ -177,7 +177,7 @@ exports[`JoinJobsPage with jobs renders 1`] = `
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
               dir="auto"
-              href="https://boards.greenhouse.io/celofoundation"
+              href="https://clabs.co/careers"
               onClick={[Function]}
               onMouseEnter={[Function]}
               rel="noopener"
@@ -4060,7 +4060,7 @@ exports[`JoinJobsPage without jobs renders 1`] = `
             <a
               className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
               dir="auto"
-              href="https://boards.greenhouse.io/celofoundation"
+              href="https://clabs.co/careers"
               onClick={[Function]}
               onMouseEnter={[Function]}
               rel="noopener"
