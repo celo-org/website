@@ -65,7 +65,7 @@ export default React.memo(function StackSection(props: Props) {
         {props.buttonThree ? 
          <Button
           text={buttonThree.title}
-          kind={BTN.SECONDARY}
+          kind={BTN.PRIMARY}
           size={isDesktop ? SIZE.small : SIZE.normal}
           href={buttonThree.href}
           target={"blank"}
