@@ -25,15 +25,22 @@ export function Heading(props: Props & HeadingContentType) {
   }
 
   const imageFile = props.image?.fields?.file
-
   return (
     <div css={css(rootCss, props.cssStyle, { gridColumn: `span ${props.span}` })}>
       {imageFile && (
+        props.title === "Public Sector on Celo" ?
+          <img
+          src={imageFile.url}
+          width={imageFile.details.image.width / 2}
+          height={imageFile.details.image.height / 2}
+        />
+       :
         <img
           src={imageFile.url}
           width={imageFile.details.image.width}
           height={imageFile.details.image.height}
         />
+        
       )}
       {
         <h2

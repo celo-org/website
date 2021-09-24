@@ -45,10 +45,19 @@ const renderWhiteParagraphWithRow = { ...renderWhiteParagraph, ...embeddable }
 
 const renderParagraphWithRow = { ...renderNode, ...embeddable }
 export default function Blurb(props: Props) {
+  
   const image = props.icon?.fields?.file
   const imageURL = image?.url
-  const width = props.isNaturalSize ? image?.details?.image?.width : 100
-  const height = props.isNaturalSize ? image?.details?.image?.height : 100
+  let width: number
+  let height: number
+  if(props.title === "Explore" || props.title === "Experience" || props.title === "Experiment"){
+  width = props.isNaturalSize ? image?.details?.image?.width : 48
+  height = props.isNaturalSize ? image?.details?.image?.height : 48
+}else{
+  width = props.isNaturalSize ? image?.details?.image?.width : 100
+  height = props.isNaturalSize ? image?.details?.image?.height : 100
+
+}
   return (
     <div css={rootCss}>
       <div css={containerCss}>
