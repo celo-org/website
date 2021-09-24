@@ -1,0 +1,35 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+# Our security address
+security@clabs.co
+
+# Our OpenPGP key
+Encryption: https://pgp.mit.edu/pks/lookup?op=get&search=0x518291A0E2109CCE
+
+# Our bug bounty brogram
+Bug bounty: https://hackerone.com/celo
+
+# Our security program
+https://github.com/celo-org/celo-monorepo/security/policy
+
+#Careers at cLabs
+Hiring: https://clabs.co/careers
+
+Preferred-Languages: en
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEvjEVzh0xhO5mTMlwhDqHYqMsOOoFAmFLVMIACgkQhDqHYqMs
+OOqWOA/+LFTfCAbYH+Zgbk9fGcI3L3a86NjIa25BdL2vwhrcM68T/4qCWDoz6Ywc
+VFEGizNsgO0HvVM9+nQJBT/YuVsNV0s7Adt5yzEpZE2gCFt3uQ9VAQ7wcuTvggCr
+BOiys0Tfuq262jhV3aZCaO+aZ9BX38ciZN7aK1gpSH//keJxW3BD1M0iDSUwtP6f
+79MiUCWX3oxGsOYPg0uIZJ2ybFTI6i6Y6QMIP1XnWmY0KfBbal7J7Jh3ZRqk5ZB5
+gKCRHAogpW0byFQv7P2pxSPy/anPwmXmyA09yyawuEyRm6StNSnxTgSNK64niMY0
+NkO/w1222kjM2QfM/GHzQoddv+DSF7HGcHyb66OsJ5WQtHG61VYy2Uc/b6bsbtwC
+h1+KHCquot9OOhmV5UEExrWmI8OWnRSy+IBxpQO/7W+rswA9qjI/aLTm+EU1qMHT
+IFM8apsmn8LZb0CdHUJk3AciWlOjZFM3KuM9E1RkLddDHEkubvdtcrvWjL8kiq7K
+Wn2e4sA6rBzR51hmTGghwBKsHzbpY+brxFjTxozyw/7ltRixJTuJH8GECSPOFmhP
+DUnBtIdzuF+1QReo7tW3pM146MbkJ/+537Nrs8fHp4EUNa5/v/6NKNIp8tzwT+7i
+lcg2d+XXGSYOvJ9ffobYbWeDymQ+8ReVe2rpEcQwS4Hx56EA9co=
+=Ubm1
+-----END PGP SIGNATURE-----
