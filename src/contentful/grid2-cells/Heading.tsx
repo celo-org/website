@@ -11,7 +11,6 @@ interface Props {
 }
 
 export function Heading(props: Props & HeadingContentType) {
-  console.log(props, "<---- this is props")
   const propSubtitleCss =  props.subTitleCss
   function SubTitle(_, children: React.ReactNode) {
     return (
