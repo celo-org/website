@@ -31,9 +31,9 @@ export function CommunityPage(props: Props) {
           <CoverArea />
           <Tenets />
           <ArticleData title={t("articles.title")} />
+          {props.sections ? items : <></>}
           <Contribute />
           <EcoFund />
-          {props.sections ? items : <></>}
           <View nativeID={hashNav.connect.newsletter} />
         </View>
       </>
