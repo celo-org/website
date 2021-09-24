@@ -71,7 +71,7 @@ export default function Cover(props: CoverContentType) {
           props.imageFit === "contain"
             ? css(illoContain, {
                 [WHEN_TABLET]: {
-                  paddingTop: `${(size?.height || 1 / size?.width || 1) * 100}%`,
+                  paddingTop: `${((size?.height || 1) / (size?.width || 1)) * 100}%`,
                 },
               })
             : illoCss
