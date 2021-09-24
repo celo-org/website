@@ -1430,82 +1430,87 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@sentry/browser@^6.2.5":
-  version "6.2.5"
-  resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-6.2.5.tgz#35e259e16521d26f348a06b31eb495e0033111d6"
-  integrity sha512-nlvaE+D7oaj4MxoY9ikw+krQDOjftnDYJQnOwOraXPk7KYM6YwmkakLuE+x/AkaH3FQVTQF330VAa9d6SWETlA==
+"@sentry/browser@^6.13.2":
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-6.13.2.tgz#8b731ecf8c3cdd92a4b6893a26f975fd5844056d"
+  integrity sha512-bkFXK4vAp2UX/4rQY0pj2Iky55Gnwr79CtveoeeMshoLy5iDgZ8gvnLNAz7om4B9OQk1u7NzLEa4IXAmHTUyag==
   dependencies:
-    "@sentry/core" "6.2.5"
-    "@sentry/types" "6.2.5"
-    "@sentry/utils" "6.2.5"
+    "@sentry/core" "6.13.2"
+    "@sentry/types" "6.13.2"
+    "@sentry/utils" "6.13.2"
     tslib "^1.9.3"
 
-"@sentry/core@6.2.5":
-  version "6.2.5"
-  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-6.2.5.tgz#e75093f8598becc0a4a0be927f32f7ac49e8588f"
-  integrity sha512-I+AkgIFO6sDUoHQticP6I27TT3L+i6TUS03in3IEtpBcSeP2jyhlxI8l/wdA7gsBqUPdQ4GHOOaNgtFIcr8qag==
+"@sentry/core@6.13.2":
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-6.13.2.tgz#2ce164f81667aa89cd116f807d772b4718434583"
+  integrity sha512-snXNNFLwlS7yYxKTX4DBXebvJK+6ikBWN6noQ1CHowvM3ReFBlrdrs0Z0SsSFEzXm2S4q7f6HHbm66GSQZ/8FQ==
   dependencies:
-    "@sentry/hub" "6.2.5"
-    "@sentry/minimal" "6.2.5"
-    "@sentry/types" "6.2.5"
-    "@sentry/utils" "6.2.5"
+    "@sentry/hub" "6.13.2"
+    "@sentry/minimal" "6.13.2"
+    "@sentry/types" "6.13.2"
+    "@sentry/utils" "6.13.2"
     tslib "^1.9.3"
 
-"@sentry/hub@6.2.5":
-  version "6.2.5"
-  resolved "https://registry.yarnpkg.com/@sentry/hub/-/hub-6.2.5.tgz#324cae0c90d736cd1032e94104bf3f18becec4d6"
-  integrity sha512-YlEFdEhcfqpl2HC+/dWXBsBJEljyMzFS7LRRjCk8QANcOdp9PhwQjwebUB4/ulOBjHPP2WZk7fBBd/IKDasTUg==
+"@sentry/hub@6.13.2":
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/@sentry/hub/-/hub-6.13.2.tgz#ebc66fd55c96c7686a53ffd3521b6a63f883bb79"
+  integrity sha512-sppSuJdNMiMC/vFm/dQowCBh11uTrmvks00fc190YWgxHshodJwXMdpc+pN61VSOmy2QA4MbQ5aMAgHzPzel3A==
   dependencies:
-    "@sentry/types" "6.2.5"
-    "@sentry/utils" "6.2.5"
+    "@sentry/types" "6.13.2"
+    "@sentry/utils" "6.13.2"
     tslib "^1.9.3"
 
-"@sentry/minimal@6.2.5":
-  version "6.2.5"
-  resolved "https://registry.yarnpkg.com/@sentry/minimal/-/minimal-6.2.5.tgz#3e963e868bfa68e97581403521fd4e09a8965b02"
-  integrity sha512-RKP4Qx3p7Cv0oX1cPKAkNVFYM7p2k1t32cNk1+rrVQS4hwlJ7Eg6m6fsqsO+85jd6Ne/FnyYsfo9cDD3ImTlWQ==
+"@sentry/minimal@6.13.2":
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/@sentry/minimal/-/minimal-6.13.2.tgz#de3ecc62b9463bf56ccdbcf4c75f7ea1aeeebc11"
+  integrity sha512-6iJfEvHzzpGBHDfLxSHcGObh73XU1OSQKWjuhDOe7UQDyI4BQmTfcXAC+Fr8sm8C/tIsmpVi/XJhs8cubFdSMw==
   dependencies:
-    "@sentry/hub" "6.2.5"
-    "@sentry/types" "6.2.5"
+    "@sentry/hub" "6.13.2"
+    "@sentry/types" "6.13.2"
     tslib "^1.9.3"
 
-"@sentry/node@^6.2.5":
-  version "6.2.5"
-  resolved "https://registry.yarnpkg.com/@sentry/node/-/node-6.2.5.tgz#6e6694c0c3ce6ca231710f40da0cac7fd5c645ef"
-  integrity sha512-/iM3khzGnUH713VFhZBAEYJhb/saEQSVz7Udogml+O7mFQ4rutnwJhgoGcB9YYrwMv2m7qOSszkdZbemDV6k2g==
+"@sentry/node@^6.13.2":
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/@sentry/node/-/node-6.13.2.tgz#6f5ee51eacad19b59e6ffb70b2d0e14396fd6233"
+  integrity sha512-0Vw22amG143MTiNaSny66YGU3+uW7HxyGI9TLGE7aJY1nNmC0DE+OgqQYGBRCrrPu+VFXRDxrOg9b15A1gKqjA==
   dependencies:
-    "@sentry/core" "6.2.5"
-    "@sentry/hub" "6.2.5"
-    "@sentry/tracing" "6.2.5"
-    "@sentry/types" "6.2.5"
-    "@sentry/utils" "6.2.5"
+    "@sentry/core" "6.13.2"
+    "@sentry/hub" "6.13.2"
+    "@sentry/tracing" "6.13.2"
+    "@sentry/types" "6.13.2"
+    "@sentry/utils" "6.13.2"
     cookie "^0.4.1"
     https-proxy-agent "^5.0.0"
     lru_map "^0.3.3"
     tslib "^1.9.3"
 
-"@sentry/tracing@6.2.5":
-  version "6.2.5"
-  resolved "https://registry.yarnpkg.com/@sentry/tracing/-/tracing-6.2.5.tgz#3f5dadfdccdb5c1fb2eef68458c7c34329b0a34a"
-  integrity sha512-j/hM0BoHxfrNLxPeEJ5Vq4R34hO/TOHMEpLR3FdnunBXbsmjoKMMygIkPxnpML5XWtvukAehbwpDXldwMYz83w==
+"@sentry/tracing@6.13.2":
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/@sentry/tracing/-/tracing-6.13.2.tgz#512389ba459f48ae75e14f1528ab062dc46e4956"
+  integrity sha512-bHJz+C/nd6biWTNcYAu91JeRilsvVgaye4POkdzWSmD0XoLWHVMrpCQobGpXe7onkp2noU3YQjhqgtBqPHtnpw==
   dependencies:
-    "@sentry/hub" "6.2.5"
-    "@sentry/minimal" "6.2.5"
-    "@sentry/types" "6.2.5"
-    "@sentry/utils" "6.2.5"
+    "@sentry/hub" "6.13.2"
+    "@sentry/minimal" "6.13.2"
+    "@sentry/types" "6.13.2"
+    "@sentry/utils" "6.13.2"
     tslib "^1.9.3"
 
-"@sentry/types@6.2.5", "@sentry/types@^6.2.5":
+"@sentry/types@6.13.2":
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-6.13.2.tgz#8388d5b92ea8608936e7aae842801dc90e0184e6"
+  integrity sha512-6WjGj/VjjN8LZDtqJH5ikeB1o39rO1gYS6anBxiS3d0sXNBb3Ux0pNNDFoBxQpOhmdDHXYS57MEptX9EV82gmg==
+
+"@sentry/types@^6.2.5":
   version "6.2.5"
   resolved "https://registry.yarnpkg.com/@sentry/types/-/types-6.2.5.tgz#34b75285b149e0b9bc5fd54fcc2c445d978c7f2e"
   integrity sha512-1Sux6CLYrV9bETMsGP/HuLFLouwKoX93CWzG8BjMueW+Di0OGxZphYjXrGuDs8xO8bAKEVGCHgVQdcB2jevS0w==
 
-"@sentry/utils@6.2.5":
-  version "6.2.5"
-  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-6.2.5.tgz#be90d056b09ed1216097d7a29e3e81ba39238e1b"
-  integrity sha512-fJoLUZHrd5MPylV1dT4qL74yNFDl1Ur/dab+pKNSyvnHPnbZ/LRM7aJ8VaRY/A7ZdpRowU+E14e/Yeem2c6gtQ==
+"@sentry/utils@6.13.2":
+  version "6.13.2"
+  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-6.13.2.tgz#fb8010e7b67cc8c084d8067d64ef25289269cda5"
+  integrity sha512-foF4PbxqPMWNbuqdXkdoOmKm3quu3PP7Q7j/0pXkri4DtCuvF/lKY92mbY0V9rHS/phCoj+3/Se5JvM2ymh2/w==
   dependencies:
-    "@sentry/types" "6.2.5"
+    "@sentry/types" "6.13.2"
     tslib "^1.9.3"
 
 "@sinonjs/commons@^1.7.0":
@@ -4427,12 +4432,7 @@ fast-copy@^2.1.0:
   resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.1.1.tgz#f5cbcf2df64215e59b8e43f0b2caabc19848083a"
   integrity sha512-Qod3DdRgFZ8GUIM6ygeoZYpQ0QLW9cf/FS9KhhjlYggcSZXWAemAw8BOCO5LuYCrR3Uj3qXDVTUzOUwG8C7beQ==
 
-fast-deep-equal@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
-  integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
-
-fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
+fast-deep-equal@3.1.3, fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
@@ -8094,7 +8094,7 @@ prompts@^2.0.1:
     kleur "^3.0.0"
     sisteransi "^1.0.0"
 
-prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.3, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8353,10 +8353,10 @@ react-google-recaptcha@^2.0.1:
     prop-types "^15.5.0"
     react-async-script "^1.1.1"
 
-react-hook-form@^7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.1.1.tgz#b0e2990d4dfa153c4ff2f27fe72ff73d2fbe6a26"
-  integrity sha512-d+tE+8FKLXioxemPnMnBOniMgmbCmAhBkP6EdOaJbqVpeRxfCfySMmg6EU9oruwnJbYpjx+IHTgheADqE8ruGA==
+react-hook-form@^7.15.4:
+  version "7.15.4"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.15.4.tgz#5ddb9cb286ed5e261ce47fdbfe019c469980b3f5"
+  integrity sha512-jEtsDBPfpkz1uuJVlTLDOg+jO3cG9pFHT3g5uayVvlNT551IetXE1iwrSaxUR/QPWyJA2FLx4Q/VjO2viZNfLg==
 
 react-i18next@^11.8.13:
   version "11.10.0"
@@ -8498,14 +8498,14 @@ react-transition-group@^2.2.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-youtube@7.9.0:
-  version "7.9.0"
-  resolved "https://registry.yarnpkg.com/react-youtube/-/react-youtube-7.9.0.tgz#cf513c253581e1e45aa412a77d03420dfd7f7ba7"
-  integrity sha512-2+nBF4qP8nStYEILIO1/SylKOCnnJUxuZm+qCeWA0eeZxnWZIIixfAeAqbzblwx5L1n/26ACocy3epm9Glox8w==
+react-youtube@^7.13.1:
+  version "7.13.1"
+  resolved "https://registry.yarnpkg.com/react-youtube/-/react-youtube-7.13.1.tgz#3b327599a687bf22e071468818522920b36bcb57"
+  integrity sha512-b++TLHmHDpd0ZBS1wcbYabbuchU+W4jtx5A2MUQX0BINNKKsaIQX29sn/aLvZ9v5luwAoceia3VGtyz9blaB9w==
   dependencies:
-    fast-deep-equal "^2.0.1"
-    prop-types "^15.5.3"
-    youtube-player "^5.5.1"
+    fast-deep-equal "3.1.3"
+    prop-types "15.7.2"
+    youtube-player "5.5.2"
 
 react@^17.0.2:
   version "17.0.2"
@@ -10419,7 +10419,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-youtube-player@^5.5.1:
+youtube-player@5.5.2:
   version "5.5.2"
   resolved "https://registry.yarnpkg.com/youtube-player/-/youtube-player-5.5.2.tgz#052b86b1eabe21ff331095ffffeae285fa7f7cb5"
   integrity sha512-ZGtsemSpXnDky2AUYWgxjaopgB+shFHgXVpiJFeNB5nWEugpW1KWYDaHKuLqh2b67r24GtP6HoSW5swvf0fFIQ==

@@ -5,17 +5,6 @@ import AspectRatio from "src/shared/AspectRatio"
 import EX from "src/shared/EX"
 import PlayCircle from "src/shared/PlayCircle"
 import { getSentry } from "src/utils/sentry"
-interface YT {
-  videoId: string
-  opts: {
-    height: number
-    width: number
-    playerVars: { autoplay: number; controls: number; playsinline: number; modestbranding: number }
-  }
-  onEnd: () => void
-  onReady: ({ target }: { target: any }) => void
-}
-
 interface ModalInterface {
   isOpen: boolean
   onRequestClose: () => void
@@ -27,7 +16,7 @@ interface ModalInterface {
 }
 
 const ReactModal = dynamic<ModalInterface>(import("react-modal"))
-const YouTube = dynamic<YT>(import("react-youtube"), { ssr: false })
+const YouTube = dynamic(import("react-youtube"), { ssr: false })
 interface Props {
   videoID: string
   previewImage?: string
@@ -80,14 +69,14 @@ export default class VideoModal extends React.Component<Props, State> {
 
   render() {
     const opts = {
-      height: this.playerHeight(),
-      width: this.state.width,
+      height: this.playerHeight().toString(),
+      width: this.state.width.toString(),
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
-        controls: 1,
-        playsinline: 1,
-        modestbranding: 1,
+        autoplay: 1 as const,
+        controls: 1 as const,
+        playsinline: 1 as const,
+        modestbranding: 1 as const,
       },
     }
 
