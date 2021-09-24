@@ -90,6 +90,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             subTitleCss={heading.subTitleCss}
             cssStyle={heading.cssStyle}
             image={heading.image}
+            newIcon={heading.newIcon}
           />
         )
     }

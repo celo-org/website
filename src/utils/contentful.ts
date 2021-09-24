@@ -158,6 +158,7 @@ export interface HeadingContentType {
   subTitleCss?: CSSObject
   cssStyle?: CSSObject
   image?: Asset
+  newIcon: boolean
 }
 
 export type CellContentType =

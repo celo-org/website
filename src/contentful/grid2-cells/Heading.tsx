@@ -11,6 +11,7 @@ interface Props {
 }
 
 export function Heading(props: Props & HeadingContentType) {
+  console.log(props, "<---- this is props")
   const propSubtitleCss =  props.subTitleCss
   function SubTitle(_, children: React.ReactNode) {
     return (
@@ -28,7 +29,7 @@ export function Heading(props: Props & HeadingContentType) {
   return (
     <div css={css(rootCss, props.cssStyle, { gridColumn: `span ${props.span}` })}>
       {imageFile && (
-        props.title === "Public Sector on Celo" ?
+        props.newIcon ?
           <img
           src={imageFile.url}
           width={imageFile.details.image.width / 2}
