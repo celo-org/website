@@ -596,7 +596,6 @@ Do not send real funds.
             <svg
               fill="#2E3338"
               height="100%"
-              style={Object {}}
               viewBox="0 0 269 666"
               width="100%"
             >
@@ -733,19 +732,36 @@ Do not send real funds.
                 }
               >
                 <path
-                  className="r-animationKeyframes-kl28h1"
-                  d="M130.57 322.53C130.624 333.352 123.502 341.889 114.731 341.611C106.042 341.332 99.012 332.492 98.9594 321.857C98.9067 311.222 105.85 302.669 114.539 302.761C123.308 302.87 130.517 311.726 130.57 322.53Z"
-                  strokeMiterlimit="10"
-                  style={
+                  css={
                     Object {
-                      "WebkitAnimationDuration": "5s",
-                      "WebkitAnimationIterationCount": "infinite",
-                      "WebkitAnimationTimingFunction": "ease-in-out",
-                      "animationDuration": "5s",
-                      "animationIterationCount": "infinite",
-                      "animationTimingFunction": "ease-in-out",
+                      "map": undefined,
+                      "name": "ia9g2o",
+                      "next": Object {
+                        "name": "animation-10vn01y",
+                        "next": undefined,
+                        "styles": "@keyframes animation-10vn01y{
+  0% {
+    stroke: #35D07F;
+    fill: \\"transparent\\";
+  }
+
+  50% {
+    stroke: #4CDD91;
+    fill: #35D07F;
+  }
+
+  100% {
+    stroke: #35D07F;
+    fill: \\"transparent\\";
+  }
+}",
+                      },
+                      "styles": "animation-duration:5s;animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-name:animation-10vn01y;",
+                      "toString": [Function],
                     }
                   }
+                  d="M130.57 322.53C130.624 333.352 123.502 341.889 114.731 341.611C106.042 341.332 99.012 332.492 98.9594 321.857C98.9067 311.222 105.85 302.669 114.539 302.761C123.308 302.87 130.517 311.726 130.57 322.53Z"
+                  strokeMiterlimit="10"
                 />
               </g>
             </svg>

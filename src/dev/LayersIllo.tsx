@@ -1,7 +1,6 @@
 import * as React from "react"
-import { StyleSheet } from "react-native"
-import { Path } from "src/shared/svg"
 import { colors } from "src/styles"
+import { css } from "@emotion/react"
 
 const VECTORS = [
   "M15.489 18.5002C10.5885 18.5002 8.13484 12.5749 11.6006 9.11039L15.6851 5.02734C18.4043 2.3092 22.0916 0.78225 25.9363 0.78225L341.756 0.782236C345.727 0.782236 349.524 2.41039 352.261 5.28674L355.993 9.20877C359.325 12.711 356.843 18.5002 352.008 18.5002L15.489 18.5002Z",
@@ -20,14 +19,12 @@ export default React.memo<Props>(function LayersIllo({ activeLayer, onSelectLaye
       {VECTORS.map((vector, index) => {
         const onPress = () => onSelectLayer(index)
         return (
-          <Path
+          <path
             key={vector}
+            aria-selected={activeLayer === index }
             d={vector}
-            onPress={onPress}
-            style={[
-              styles.clicky,
-              activeLayer === "all" || activeLayer === index ? styles.active : styles.inactive,
-            ]}
+            onClick={onPress}
+            css={ activeLayer === "all" || activeLayer === index ? activeStyle : inactiveStyle}
             stroke={colors.white}
             fill={"transparent"}
           />
@@ -37,20 +34,22 @@ export default React.memo<Props>(function LayersIllo({ activeLayer, onSelectLaye
   )
 })
 
-const styles = StyleSheet.create({
-  active: {
-    opacity: 1,
-    transform: [{ scale: 1 }],
-    transitionProperty: "opacity transform",
-    transitionDuration: "1s",
-  },
-  inactive: {
-    transitionProperty: "opacity transform",
-    transitionDuration: "1s",
-    transform: [{ scale: 0.95 }, { translateX: 10 }],
-    opacity: 0.5,
-  },
-  clicky: {
-    cursor: "pointer",
-  },
+const clickable = css({
+  cursor: "pointer",
 })
+
+const  activeStyle = css(clickable,{
+    opacity: 1,
+    transform: "scale(1)",
+    transitionProperty: "opacity transform",
+    transitionDuration: "1s",
+  })
+
+const inactiveStyle = css(clickable,{
+  transitionProperty: "opacity transform",
+  transitionDuration: "1s",
+  transform: "scale(0.95) translateX(10)",
+  opacity: 0.5,
+})
+
+
