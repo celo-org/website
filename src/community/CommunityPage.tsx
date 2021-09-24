@@ -16,7 +16,7 @@ import { Props } from "src/home/Home"
 
 export function CommunityPage(props: Props) {
     const { t } = useTranslation(NameSpaces.community)
-    const items = props.sections.map(pageSwitch)
+    const items = props.sections?.map(pageSwitch)
     return (
       <>
         <OpenGraph
