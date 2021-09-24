@@ -25,12 +25,13 @@ export interface Props {
   link?: Entry<ContentfulButton>
   darkMode?: boolean
   isNaturalSize: boolean
+  newIcon: boolean
 }
 
 function embedded(node: Block) {
   const contentType = node.data?.target?.sys?.contentType?.sys?.id
   const renderer = ROW[contentType]
-
+  
   if (renderer) {
     return renderer(node.data.target)
   } else {
@@ -50,7 +51,7 @@ export default function Blurb(props: Props) {
   const imageURL = image?.url
   let width: number
   let height: number
-  if(props.title === "Explore" || props.title === "Experience" || props.title === "Experiment"){
+  if(props.newIcon){
   width = props.isNaturalSize ? image?.details?.image?.width : 48
   height = props.isNaturalSize ? image?.details?.image?.height : 48
 }else{

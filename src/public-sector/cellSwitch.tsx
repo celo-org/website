@@ -59,6 +59,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             link={blurbProp.link}
             icon={blurbProp.icon}
             isNaturalSize={blurbProp.isNaturalSize}
+            newIcon={blurbProp.newIcon}
           />
         )
       case "picture":
