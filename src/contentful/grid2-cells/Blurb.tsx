@@ -49,16 +49,9 @@ export default function Blurb(props: Props) {
   
   const image = props.icon?.fields?.file
   const imageURL = image?.url
-  let width: number
-  let height: number
-  if(props.newIcon){
-  width = props.isNaturalSize ? image?.details?.image?.width : 48
-  height = props.isNaturalSize ? image?.details?.image?.height : 48
-}else{
-  width = props.isNaturalSize ? image?.details?.image?.width : 100
-  height = props.isNaturalSize ? image?.details?.image?.height : 100
+  let width = props.isNaturalSize ? image?.details?.image?.width : props.newIcon ? 48 : 100
+  let height = props.isNaturalSize ? image?.details?.image?.height : props.newIcon ? 48 : 100
 
-}
   return (
     <div css={rootCss}>
       <div css={containerCss}>
