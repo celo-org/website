@@ -19,6 +19,7 @@ import { useScreenSize } from "src/layout/ScreenSize"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { RenderNode } from "@contentful/rich-text-react-renderer"
 import { Asset } from "contentful"
+import { colors } from "src/styles"
 
 const OPTIONS = {
   renderNode: {
@@ -30,6 +31,7 @@ const OPTIONS = {
 }
 
 export default function Cover(props: CoverContentType) {
+  console.log(props.subTitle, "<---- this is the subTitle")
   const { isMobile } = useScreenSize()
   const resolution = props.resolution || 2
 
@@ -171,6 +173,10 @@ const titleCss = css(fonts.h1, {
 
 const subTextCss = css({
   marginTop: 16,
+  "a":{
+    textDecoration: "none",
+    color: colors.white
+  }
 })
 
 const centerMobileCss = css({
