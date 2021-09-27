@@ -31,7 +31,6 @@ const OPTIONS = {
 }
 
 export default function Cover(props: CoverContentType) {
-  console.log(props.subTitle, "<---- this is the subTitle")
   const { isMobile } = useScreenSize()
   const resolution = props.resolution || 2
 
