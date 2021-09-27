@@ -42,6 +42,7 @@ export const renderNode: RenderNode = {
         }}
       >
         <Image
+          unoptimized={true}
           layout={"responsive"}
           src={`https:${file.url}`}
           alt={asset.fields.description}

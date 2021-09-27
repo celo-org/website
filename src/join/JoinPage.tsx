@@ -49,7 +49,7 @@ class JoinPage extends React.PureComponent<Props> {
                     kind={BTN.PRIMARY}
                     text={t("exploreRoles")}
                     target="_blank"
-                    href={"https://boards.greenhouse.io/celofoundation"}
+                    href={"https://clabs.co/careers"}
                     size={SIZE.big}
                     align={"center"}
                   />
