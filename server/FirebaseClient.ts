@@ -1,5 +1,5 @@
-import firebase from "firebase/app"
-import "firebase/database"
+import firebase from "firebase/compat/app"
+import "firebase/compat/database"
 import getConfig from "next/config"
 import { NETWORK, RequestRecord, RequestStatus } from "../src/fauceting/FaucetInterfaces"
 // Code in this file is sent to the browser.
