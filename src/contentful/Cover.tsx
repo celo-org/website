@@ -175,6 +175,9 @@ const subTextCss = css({
   "a":{
     textDecoration: "none",
     color: colors.white
+  },
+  "h2:nth-of-type(2)":{
+    marginTop: 30
   }
 })
 
