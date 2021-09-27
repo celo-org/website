@@ -45,11 +45,14 @@ export default function Cover(props: CoverContentType) {
       css={props.illoFirst ? imageFirstRootCss : rootCss}
     >
       <div css={contentCss}>
+        {props.title &&(
         <h1
           css={css(props.superSize ? titleCss : rH1, centerMobileCss, props.darkMode && whiteText)}
         >
           {props.title}
         </h1>
+        )
+        }
         <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
           {documentToReactComponents(props.subTitle, OPTIONS)}
         </span>
