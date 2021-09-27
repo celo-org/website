@@ -48,8 +48,8 @@ const renderParagraphWithRow = { ...renderNode, ...embeddable }
 export default function Blurb(props: Props) {
   const image = props.icon?.fields?.file
   const imageURL = image?.url
-  let width = props.isNaturalSize ? image?.details?.image?.width : props.newIcon ? 48 : 100
-  let height = props.isNaturalSize ? image?.details?.image?.height : props.newIcon ? 48 : 100
+  const width = props.isNaturalSize ? image?.details?.image?.width : props.newIcon ? 48 : 100
+  const height = props.isNaturalSize ? image?.details?.image?.height : props.newIcon ? 48 : 100
 
   return (
     <div css={rootCss}>
