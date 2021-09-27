@@ -9,6 +9,7 @@ import { BLOCKS } from "@contentful/rich-text-types"
 
 function blurbFactory(unique): Entry<BlurbProps> {
   return {
+    metadata: {tags: []},
     sys: {
       id: unique,
       type: "",
@@ -44,6 +45,7 @@ const TestData: ContentfulPage<GridRowContentType> = {
   darkNav: false,
   sections: [
     {
+      metadata: {tags: []},
       sys: {
         id: "1",
         type: "",
