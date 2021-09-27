@@ -19,7 +19,7 @@ interface Props {
   children: React.ReactNode
   buttonOne: BTNProps
   buttonTwo: BTNProps
-  buttonThree?: BTNProps
+  buttonMiddle?: BTNProps
   onPress: () => void
   isSelected: boolean
 }
@@ -27,7 +27,7 @@ interface Props {
 const TRANS_DURATION = 500
 
 export default React.memo(function StackSection(props: Props) {
-  const { title, text, buttonOne, buttonTwo, children, onPress, isSelected, buttonThree } = props
+  const { title, text, buttonOne, buttonTwo, children, onPress, isSelected, buttonMiddle } = props
   const { isMobile, isDesktop } = useScreenSize()
   const containerStyle = isMobile ? styles.mobileContainer : styles.container
 
@@ -61,16 +61,18 @@ export default React.memo(function StackSection(props: Props) {
           href={buttonOne.href}
           target={"blank"}
         />
+        {props.buttonMiddle ?
+        <>
         <View style={isMobile ? styles.separatorHorizontal : styles.separator} />
-        {props.buttonThree ? 
          <Button
-          text={buttonThree.title}
+          text={buttonMiddle.title}
           kind={BTN.PRIMARY}
           size={isDesktop ? SIZE.small : SIZE.normal}
-          href={buttonThree.href}
+          href={buttonMiddle.href}
           target={"blank"}
           align="flex-start"
-        /> : <></>}
+        />
+        </>: null}
        <View style={isMobile ? styles.separatorHorizontal : styles.separator} />
         <Button
           text={buttonTwo.title}

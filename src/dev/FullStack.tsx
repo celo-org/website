@@ -188,7 +188,7 @@ class FullStack extends React.PureComponent<I18nProps & ScreenProps, State> {
               text={t("mobile.text")}
               buttonOne={{ title: t("installWallet"), href: CeloLinks.walletApp }}
               buttonTwo={{ title: t("seeCode"), href: CeloLinks.gitHub }}
-              buttonThree={{ title: t("getFunds"), href: CeloLinks.faucet }}
+              buttonMiddle={{ title: t("getFunds"), href: CeloLinks.faucet }}
             >
               <Li style={textStyles.invert}>{t("mobile.nonCustodial")}</Li>
               <Li style={textStyles.invert}>{t("mobile.mobileUltra")}</Li>
