@@ -6,7 +6,6 @@ import { Page as SideBarEntry } from "src/experience/common/Sidebar"
 import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import { BTN } from "src/shared/Button.3"
 import { fetchCached, MINUTE } from "src/../server/cache"
-import { StringValueNode } from "graphql"
 
 function intialize() {
   const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
