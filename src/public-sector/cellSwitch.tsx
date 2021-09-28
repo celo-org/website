@@ -95,7 +95,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
       case "iFrameEmbed": 
       const iframe = entry.fields as IframeContentType
       return (
-        <iframe src={iframe.url} height="500" width="100%"/>  
+        <iframe src={iframe.url} height={iframe.height} width="100%"/>  
       )
     }
   }
