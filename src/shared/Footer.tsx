@@ -8,6 +8,7 @@ import Instagram from "src/icons/Instagram"
 import MediumLogo from "src/icons/MediumLogo"
 import Octocat from "src/icons/Octocat"
 import sendCoinIcon from "src/icons/send-green-coin-lg-bg.png"
+import Evelope from "src/icons/Envelope.webp"
 import LinkedIn from "src/icons/LinkedIn"
 import Twitch from "src/icons/Twitch"
 import Reddit from "src/icons/Reddit"
@@ -161,7 +162,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
         >
           <div css={formStyle}>
             <img
-              src={sendCoinIcon.src}
+              src={Evelope.src}
               css={emailLogoCss}
               width={50}
               height={60}
@@ -364,6 +365,7 @@ const ringsCSS = css(flex, {
 const emailLogoCss = css({
   objectFit: "contain",
   margin: 10,
+  marginBottom: 0
 })
 
 const linksAreaCss = css(flexRow, {
