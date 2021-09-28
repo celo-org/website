@@ -11,6 +11,7 @@ import {
   FormContentType,
   HeadingContentType,
   PictureType,
+  IframeContentType,
 } from "src/utils/contentful"
 import Form from "src/contentful/grid2-cells/Form"
 import { Heading } from "src/contentful/grid2-cells/Heading"
@@ -91,6 +92,11 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             image={heading.image}
           />
         )
+      case "iFrameEmbed": 
+      const iframe = entry.fields as IframeContentType
+      return (
+        <iframe src={iframe.url} height="500" width="100%"/>  
+      )
     }
   }
   return null

@@ -6,6 +6,7 @@ import { Page as SideBarEntry } from "src/experience/common/Sidebar"
 import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import { BTN } from "src/shared/Button.3"
 import { fetchCached, MINUTE } from "src/../server/cache"
+import { StringValueNode } from "graphql"
 
 function intialize() {
   const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -160,6 +161,10 @@ export interface HeadingContentType {
   image?: Asset
 }
 
+export interface IframeContentType {
+  url: string
+}
+
 export type CellContentType =
   | BlurbProps
   | FormContentType
@@ -168,6 +173,7 @@ export type CellContentType =
   | PlaylistContentType
   | PictureType
   | FreeContentType
+  | IframeContentType
 
 export interface GridRowContentType {
   id: string
