@@ -11,7 +11,7 @@ describe("Community", () => {
     const tree = renderer
       .create(
         <TestProvider>
-          <Community title={""} slug={""} description={""} sections={[]} darkNav={false} />
+          <Community />
         </TestProvider>
       )
       .toJSON()
