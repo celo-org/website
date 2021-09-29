@@ -1,0 +1,175 @@
+import * as React from "react";
+import LazyFade from "react-lazyload-fadein";
+import { Image, StyleSheet, Text, View } from "react-native";
+import { Category as CategoryEnum } from "src/alliance/CategoryEnum";
+import gatherAllies from "src/alliance/gatherAllies";
+import { H2, H4 } from "src/fonts/Fonts";
+import { NameSpaces, Trans, useTranslation } from "src/i18n";
+import External from "src/icons/External";
+import { Cell, GridRow, Spans } from "src/layout/GridRow";
+import { useScreenSize } from "src/layout/ScreenSize";
+import DropDownGroup from "src/shared/DropDownGroup";
+import { externalizeURL } from "src/shared/Outbound";
+import { colors, fonts, standardStyles, textStyles } from "src/styles";
+import { css } from "@emotion/react";
+function initialState() {
+    return Object.keys(CategoryEnum).map((key) => {
+        return {
+            name: key,
+            records: [],
+        };
+    });
+}
+const ALL = "all";
+export default function Members() {
+    const { t } = useTranslation(NameSpaces.alliance);
+    const [alliesByCategory, setAllies] = React.useState(initialState());
+    const [selectedFilter, setFilter] = React.useState(ALL);
+    const { isTablet, isMobile } = useScreenSize();
+    React.useEffect(() => {
+        const signal = { aborted: false };
+        gatherAllies(setAllies, signal);
+        return () => {
+            signal.aborted = true;
+        };
+    }, []);
+    const onClear = React.useCallback(() => setFilter(ALL), []);
+    const displayedCategories = React.useMemo(() => selectedFilter === ALL
+        ? alliesByCategory
+        : alliesByCategory.filter(({ name }) => name === selectedFilter), [alliesByCategory, selectedFilter]);
+    const buildDropDownProps = React.useCallback(function buildDropDownProps(currentFilter) {
+        return alliesByCategory.map(({ name }) => {
+            return {
+                id: name,
+                selected: name === currentFilter,
+                label: t(`members.categoryTitle.${name.toLocaleLowerCase()}`),
+            };
+        });
+    }, [alliesByCategory, t]);
+    return (<View nativeID={"members"}>
+      <GridRow desktopStyle={[standardStyles.sectionMarginTop, standardStyles.centered]} tabletStyle={[standardStyles.sectionMarginTopTablet, { justifyContent: "flex-end" }]} mobileStyle={standardStyles.sectionMarginTopMobile}>
+        <Cell span={Spans.half} tabletSpan={Spans.three4th}>
+          <H2 style={[styles.memberTitle, !isTablet && textStyles.center]}>{t("members.title")}</H2>
+          <H4 style={[standardStyles.blockMarginBottomMobile, isMobile && textStyles.center]}>
+            <Trans i18nKey={"members.subtitle"} ns={NameSpaces.alliance}>
+              <Text style={textStyles.italic}></Text>
+            </Trans>
+          </H4>
+        </Cell>
+      </GridRow>
+      <GridRow allStyle={styles.membersArea} desktopStyle={standardStyles.sectionMarginBottom} tabletStyle={standardStyles.sectionMarginBottomTablet} mobileStyle={standardStyles.sectionMarginBottomMobile}>
+        <Cell span={Spans.fourth}>
+          <View style={styles.selectionArea}>
+            <Text style={[fonts.h6, styles.filterLabel]}>{t("filterLabel")}</Text>
+            <DropDownGroup data={[
+            {
+                name: t(`members.categoryTitle.all`),
+                list: React.useMemo(() => buildDropDownProps(selectedFilter), [buildDropDownProps, selectedFilter]),
+                onSelect: setFilter,
+                onClear,
+            },
+        ]}/>
+          </View>
+        </Cell>
+        <Cell span={Spans.three4th}>
+          {displayedCategories.map((category) => (<Category key={category.name} name={category.name} members={category.records}/>))}
+        </Cell>
+      </GridRow>
+    </View>);
+}
+const Category = React.memo(function _Category({ name, members }) {
+    const key = name.toLowerCase();
+    const { t } = useTranslation(NameSpaces.alliance);
+    const { isDesktop, isMobile } = useScreenSize();
+    return (<View>
+      <H4>{t(`members.categoryTitle.${key}`)}</H4>
+      <View style={styles.grayLine}/>
+      <Text style={fonts.p}>{t(`members.categoryText.${key}`)}</Text>
+      <View style={[
+            styles.categoryContainer,
+            isMobile ? styles.categoryContainerMobile : isDesktop && styles.categoryContainerDesktop,
+        ]}>
+        {members.map(({ name: memberName, logo, url }) => (<Member key={memberName} name={memberName} logo={logo} url={url}/>))}
+      </View>
+    </View>);
+});
+const Member = React.memo(function _Member({ logo, name, url }) {
+    const divisor = logo.height / ROW_HEIGHT;
+    const href = url ? externalizeURL(url) : null;
+    return logo.uri ? (<LazyFade>
+      {(onLoad) => (<View style={styles.member}>
+          <a target={"_blank"} href={href} rel="noreferrer" css={memberTag}>
+            <View style={styles.memberName}>
+              <Image resizeMode="contain" resizeMethod="resize" onLoad={onLoad} source={{ uri: logo.uri }} accessibilityLabel={name} style={[styles.logo, { width: logo.width / divisor }]}/>
+              <Text style={[fonts.mini, textStyles.italic, textStyles.center, textStyles.caption]}>
+                {name}
+              </Text>
+            </View>
+          </a>
+          {href && <External size={12} color={colors.dark}/>}
+        </View>)}
+    </LazyFade>) : (<FallBack text={name} url={href}/>);
+});
+function FallBack({ text, url }) {
+    return (<View style={styles.member}>
+      <View style={[standardStyles.centered, styles.logo]}>
+        <Text href={url} hrefAttrs={hrefAttrs} style={[fonts.micro, textStyles.center]}>
+          {text}
+        </Text>
+      </View>
+    </View>);
+}
+const hrefAttrs = { target: "blank", rel: "noopenner" };
+const ROW_HEIGHT = 50;
+const COLUMN_WIDTH = 180;
+const styles = StyleSheet.create({
+    selectionArea: { maxWidth: 220 },
+    membersArea: { minHeight: 650 },
+    memberTitle: { marginBottom: 5 },
+    memberName: { flexDirection: "column" },
+    grayLine: {
+        marginTop: 2,
+        borderBottomColor: colors.gray,
+        borderBottomWidth: 1,
+        marginBottom: 10,
+    },
+    categoryContainer: {
+        justifyContent: "space-between",
+        marginVertical: 30,
+        flexDirection: "row",
+        flexWrap: "wrap",
+        minHeight: 90,
+    },
+    categoryContainerMobile: {
+        alignItems: "center",
+        flexDirection: "column",
+    },
+    categoryContainerDesktop: {
+        display: "grid",
+        gridTemplateColumns: `repeat(3, ${COLUMN_WIDTH}px)`,
+    },
+    member: {
+        flexDirection: "row",
+        alignItems: "center",
+        alignContent: "center",
+        justifyContent: "center",
+        marginHorizontal: 20,
+        marginVertical: 30,
+        width: COLUMN_WIDTH,
+        height: ROW_HEIGHT,
+    },
+    logo: {
+        backgroundColor: colors.white,
+        marginHorizontal: 10,
+        padding: 5,
+        maxWidth: 150,
+        height: ROW_HEIGHT,
+    },
+    filterLabel: {
+        marginBottom: 5,
+    },
+});
+const memberTag = css({
+    textDecoration: "none"
+});
+//# sourceMappingURL=Members.jsx.map

@@ -1,0 +1,175 @@
+import { css } from "@emotion/react";
+import { ApolloProvider, Query } from "@apollo/react-components";
+import ApolloClient from "apollo-boost";
+import { InMemoryCache } from "apollo-cache-inmemory";
+import gql from "graphql-tag";
+import { withRouter } from "next/router";
+import * as React from "react";
+import { StyleSheet, View } from "react-native";
+import ShowApolloError from "src/dev/ShowApolloError";
+import ValidatorsList from "src/dev/ValidatorsList";
+import { styles } from "src/dev/ValidatorsListStyles";
+import { H2 } from "src/fonts/Fonts";
+import OpenGraph from "src/header/OpenGraph";
+import { withNamespaces } from "src/i18n";
+import menuItems from "src/shared/menu-items";
+import Navigation, { NavigationTheme } from "src/shared/Navigation";
+import Spinner from "src/shared/Spinner";
+import { colors, standardStyles, textStyles } from "src/styles";
+import { cleanData } from "src/utils/validators";
+const networkMenu = [
+    ["Mainnet", menuItems.VALIDATORS_LIST.link],
+    ["Baklava", menuItems.VALIDATORS_LIST__BAKLAVA.link],
+];
+const BLOCKSCOUT = {
+    baklava: "https://baklava-blockscout.celo-testnet.org/graphiql",
+    mainnet: "https://explorer.celo.org/graphiql",
+};
+function createApolloClient(network) {
+    return new ApolloClient({
+        uri: BLOCKSCOUT[network],
+        cache: new InMemoryCache(),
+        fetch: async (...args) => {
+            const response = await fetch(...args);
+            const { data } = await response.json();
+            return new Response(JSON.stringify({ data }));
+        },
+    });
+}
+const query = gql `
+  query ValidatorGroups {
+    latestBlock
+    celoValidatorGroups {
+      account {
+        address
+        lockedGold
+        name
+        usd
+        claims(first: 10) {
+          edges {
+            node {
+              address
+              element
+              type
+              verified
+            }
+          }
+        }
+      }
+      affiliates(first: 20) {
+        edges {
+          node {
+            account {
+              claims(first: 10) {
+                edges {
+                  node {
+                    address
+                    element
+                    type
+                    verified
+                  }
+                }
+              }
+            }
+            address
+            lastElected
+            lastOnline
+            lockedGold
+            name
+            score
+            usd
+            attestationsFulfilled
+            attestationsRequested
+          }
+        }
+      }
+      accumulatedRewards
+      accumulatedActive
+      commission
+      votes
+      receivableVotes
+      numMembers
+      rewardsRatio
+    }
+  }
+`;
+class ValidatorsListApp extends React.PureComponent {
+    render() {
+        const { network } = this.props;
+        const networkMenuList = networkMenu.map(([name, link]) => [
+            name,
+            link,
+            () => this.props.router.push(link),
+        ]);
+        return (<div css={rootCss}>
+        <OpenGraph title="Celo Validators" path={menuItems.VALIDATORS_LIST.link} description="View status of Validators on the Celo Network"/>
+
+        <View style={[styles.cover, styles.pStaticOverflow, compStyles.fullHeight]}>
+          <H2 style={[
+                textStyles.center,
+                compStyles.blockMarginTopTabletValidator,
+                standardStyles.elementalMarginBottom,
+                textStyles.invert,
+            ]}>
+            Validators
+          </H2>
+
+          <View>
+            <View style={styles.links}>
+              {networkMenuList.map(([name, link, navigate]) => (<View key={name} style={[styles.linkWrapper]}>
+                  <Navigation onPress={navigate} text={name} theme={NavigationTheme.DARKGOLD} selected={this.props.router.pathname === link}/>
+                </View>))}
+            </View>
+          </View>
+          <ApolloProvider client={createApolloClient(network)}>
+            <Query query={query}>
+              {({ loading, error, data }) => {
+                if (error) {
+                    return (<View style={[
+                            standardStyles.darkBackground,
+                            standardStyles.centered,
+                            compStyles.useSpace,
+                        ]}>
+                      <ShowApolloError error={error}/>
+                    </View>);
+                }
+                if (!data) {
+                    return (<View style={[
+                            standardStyles.darkBackground,
+                            standardStyles.centered,
+                            compStyles.useSpace,
+                        ]}>
+                      <Spinner size="medium" color={colors.white}/>
+                    </View>);
+                }
+                return <ValidatorsList data={cleanData(data)} isLoading={loading}/>;
+            }}
+            </Query>
+          </ApolloProvider>
+        </View>
+      </div>);
+    }
+}
+const compStyles = StyleSheet.create({
+    fullHeight: {
+        minHeight: "calc(100vh - 75px)",
+        width: "fit-content",
+        backgroundColor: colors.dark,
+    },
+    useSpace: {
+        flex: 1,
+        paddingBottom: "20vh",
+    },
+    blockMarginTopTabletValidator: {
+        marginTop: 116,
+    },
+});
+const rootCss = css({
+    backgroundColor: colors.dark,
+});
+export default withNamespaces("dev")(withRouter(ValidatorsListApp));
+export const ValidatorsListAppWithNetwork = (networkName) => {
+    const Comp = withNamespaces("dev")(withRouter(ValidatorsListApp));
+    return () => <Comp network={networkName}/>;
+};
+//# sourceMappingURL=ValidatorsListApp.jsx.map

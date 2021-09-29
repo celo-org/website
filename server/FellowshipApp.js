@@ -1,0 +1,22 @@
+import getConfig from "next/config";
+import { FellowKeys } from "../fullstack/Fellowship";
+import airtableInit from "../server/airtable";
+const TABLE_NAME = "Fellowship Application";
+function getAirtable() {
+    const { serverRuntimeConfig } = getConfig();
+    return airtableInit(serverRuntimeConfig.AIRTABLE_FELLOW_ID)(TABLE_NAME);
+}
+export async function submitFellowApp(fields) {
+    return getAirtable().create(migrate(fields));
+}
+function migrate(fields) {
+    return {
+        [FellowKeys.name]: fields.name,
+        [FellowKeys.email]: fields.email,
+        [FellowKeys.ideas]: fields.ideas,
+        [FellowKeys.deliverables]: fields.deliverables,
+        [FellowKeys.bio]: fields.bio,
+        [FellowKeys.resume]: fields.resume,
+    };
+}
+//# sourceMappingURL=FellowshipApp.js.map
