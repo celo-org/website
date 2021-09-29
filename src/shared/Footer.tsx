@@ -7,7 +7,7 @@ import Discourse from "src/icons/Discourse"
 import Instagram from "src/icons/Instagram"
 import MediumLogo from "src/icons/MediumLogo"
 import Octocat from "src/icons/Octocat"
-import Evelope from "src/icons/Envelope.webp"
+import Envelope from "src/icons/Envelope.svg"
 import LinkedIn from "src/icons/LinkedIn"
 import Twitch from "src/icons/Twitch"
 import Reddit from "src/icons/Reddit"
@@ -161,7 +161,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
         >
           <div css={formStyle}>
             <img
-              src={Evelope.src}
+              src={Envelope.src}
               css={emailLogoCss}
               width={50}
               height={60}

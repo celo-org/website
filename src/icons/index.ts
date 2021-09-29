@@ -7,6 +7,7 @@ import connectedPeopleGradient from "src/icons/Connected_People_Gradient.webp"
 import speechBubblesGradient from "src/icons/Speech_Bubbles_Gradient.webp"
 import speakerGradient from "src/icons/Speaker_Gradient.webp"
 import humanGradient from "src/icons/Human_Gradient.webp"
+import Envelope from "src/icons/Envelope.webp"
 
 export {
   buildWithCeloOnDark,
@@ -18,4 +19,5 @@ export {
   speechBubblesGradient,
   speakerGradient,
   humanGradient,
+  Envelope,
 }
