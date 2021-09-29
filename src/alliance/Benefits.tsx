@@ -1,22 +1,23 @@
 import * as React from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
 import {
-  buildWithCeloOnLight,
-  coinTalkOnLight,
-  connectPeopleOnLight,
-  educateOnLight,
-  expandReachOnLight,
+  humanGradient,
+  buildingBlocksGradient,
+  connectedPeopleGradient,
+  speechBubblesGradient,
+  speakerGradient
+
 } from "src/icons"
 import { GridRow } from "src/layout/Grid2"
 import { flex, flexRow, fonts, standardStyles, textStyles, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import Image from "next/image"
 import { css } from "@emotion/react"
 const OFFERINGS = [
-  connectPeopleOnLight,
-  buildWithCeloOnLight,
-  coinTalkOnLight,
-  educateOnLight,
-  expandReachOnLight,
+  connectedPeopleGradient,
+  buildingBlocksGradient,
+  speechBubblesGradient,
+  speakerGradient,
+  humanGradient,
 ]
 
 export default React.memo(function Benefits() {
@@ -49,7 +50,7 @@ interface OfferingProps {
 const Offering = React.memo(function _Offering({ icon, text }: OfferingProps) {
   return (
     <div css={styles.offeringRoot}>
-      <Image placeholder={"blur"} blurDataURL={icon.blurDataURL} layout="intrinsic" width={100} height={100} src={icon.src} css={styles.offeringImage} />
+      <Image placeholder={"blur"} blurDataURL={icon.blurDataURL} layout="intrinsic" width={48} height={48} src={icon.src} css={styles.offeringImage} />
       <p css={styles.offeringText}>{text}</p>
     </div>
   )
