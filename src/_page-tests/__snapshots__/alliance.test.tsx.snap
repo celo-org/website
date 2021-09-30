@@ -2218,7 +2218,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-sanqhm"
+          className="css-q7lffx"
         >
           <div
             className="css-view-1dbjc4n"
@@ -2320,7 +2320,7 @@ exports[`Alliance renders 1`] = `
           </div>
         </div>
         <div
-          className="css-sanqhm"
+          className="css-q7lffx"
         >
           <form>
             <div
@@ -5228,7 +5228,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-sanqhm"
+          className="css-q7lffx"
         >
           <h2
             aria-level="2"
@@ -5557,7 +5557,6 @@ exports[`Alliance renders 1`] = `
                   "textRendering": "geometricPrecision",
                 }
               }
-              target="_blog"
             >
               Read more on our blog
               <div

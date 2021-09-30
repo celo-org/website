@@ -389,7 +389,7 @@ exports[`Community renders 1`] = `
         }
       >
         <div
-          className="css-sanqhm"
+          className="css-q7lffx"
         >
           <div
             className="css-view-1dbjc4n"
@@ -452,7 +452,7 @@ exports[`Community renders 1`] = `
       </div>
     </div>
     <div
-      className="css-sanqhm"
+      className="css-q7lffx"
     >
       <div
         className="css-view-1dbjc4n"
@@ -1304,7 +1304,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-sanqhm"
+          className="css-q7lffx"
         >
           <h2
             aria-level="2"
@@ -1633,7 +1633,6 @@ We believe that many of these features have great potential for positive impact,
                   "textRendering": "geometricPrecision",
                 }
               }
-              target="_blog"
             >
               Read more on our blog
               <div
@@ -1835,7 +1834,6 @@ We believe that many of these features have great potential for positive impact,
                     "textRendering": "geometricPrecision",
                   }
                 }
-                target="_cfp"
               >
                 Call for Proposals
                 <div
