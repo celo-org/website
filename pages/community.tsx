@@ -1,11 +1,14 @@
 import ConnectPage from "src/community/CommunityPage"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
+import { getPageBySlug } from "src/utils/contentful"
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ locale }) {
+  const page = await getPageBySlug("community", { locale: "en-US" }, true)
   return {
     props: {
-      ...(await serverSideTranslations("en", [NameSpaces.common, NameSpaces.community])),
+      ...page,
+      ...(await serverSideTranslations(locale, [NameSpaces.common, NameSpaces.community])),
     },
   }
 }

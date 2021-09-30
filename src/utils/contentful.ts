@@ -160,6 +160,11 @@ export interface HeadingContentType {
   image?: Asset
 }
 
+export interface IframeContentType {
+  url: string
+  height: number 
+}
+
 export type CellContentType =
   | BlurbProps
   | FormContentType
@@ -168,6 +173,7 @@ export type CellContentType =
   | PlaylistContentType
   | PictureType
   | FreeContentType
+  | IframeContentType
 
 export interface GridRowContentType {
   id: string
