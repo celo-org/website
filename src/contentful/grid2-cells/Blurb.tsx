@@ -55,6 +55,7 @@ export default function Blurb(props: Props) {
     <div css={rootCss}>
       <div css={containerCss}>
         {imageURL && (
+          <div css={imageMargin}>
           <Image
             unoptimized={true}
             layout={props.isNaturalSize ? "intrinsic" : "fixed"}
@@ -63,7 +64,8 @@ export default function Blurb(props: Props) {
             height={height}
             alt=""
             css={props.isNaturalSize ? {} : fixedSizeCss}
-          />
+            />
+            </div>
         )}
         {props.title && <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>}
         {documentToReactComponents(props.body, {
@@ -120,17 +122,22 @@ const containerCss = css(flex, {
       marginInlinEend: 0,
       paddingInlineStart: 0,
     },
-  },
+  }
 })
 
 const fixedSizeCss = css({
   width: 100,
-  height: 100,
+  height: 100
 })
 
 const headingCss = css({
   marginTop: 16,
   marginBottom: 12,
+})
+
+const imageMargin = css({
+  marginBottom: 40,
+  marginTop: 40
 })
 
 function headingStyle(type: Headings, darkMode: boolean) {
