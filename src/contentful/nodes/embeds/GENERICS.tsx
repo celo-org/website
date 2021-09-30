@@ -1,6 +1,6 @@
 import * as React from "react"
 import dynamic from "next/dynamic"
-export const YouTube = dynamic<{ videoId: string }>(import("react-youtube"))
+export const YouTube = dynamic(import("react-youtube"))
 
 export const GENERICS = {
   iFrameEmbed: ({ fields }: { fields: { url: string } }) => {
