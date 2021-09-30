@@ -25,12 +25,13 @@ export interface Props {
   link?: Entry<ContentfulButton>
   darkMode?: boolean
   isNaturalSize: boolean
+  newIcon: boolean
 }
 
 function embedded(node: Block) {
   const contentType = node.data?.target?.sys?.contentType?.sys?.id
   const renderer = ROW[contentType]
-
+  
   if (renderer) {
     return renderer(node.data.target)
   } else {
@@ -47,8 +48,9 @@ const renderParagraphWithRow = { ...renderNode, ...embeddable }
 export default function Blurb(props: Props) {
   const image = props.icon?.fields?.file
   const imageURL = image?.url
-  const width = props.isNaturalSize ? image?.details?.image?.width : 100
-  const height = props.isNaturalSize ? image?.details?.image?.height : 100
+  const width = props.isNaturalSize ? image?.details?.image?.width : props.newIcon ? 48 : 100
+  const height = props.isNaturalSize ? image?.details?.image?.height : props.newIcon ? 48 : 100
+
   return (
     <div css={rootCss}>
       <div css={containerCss}>

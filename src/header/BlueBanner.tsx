@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
 import * as React from "react"
-import { useAsync } from "react-async-hook"
+import useSWR from "swr"
 import { StyleSheet, Text, View } from "react-native"
 import Chevron from "src/icons/chevron"
 import { useScreenSize } from "src/layout/ScreenSize"
@@ -113,20 +113,18 @@ async function getAnnouncement(onVisibilityChange: (visible: boolean) => void) {
 }
 
 export default function Announcement(props: AnnouncementProps) {
-  const state = useAsync(
-    () => getAnnouncement(props.onVisibilityChange),
-    [props.onVisibilityChange]
+  const state = useSWR(["/announcement",props.onVisibilityChange], () => getAnnouncement(props.onVisibilityChange),
   )
   const { setBannerHeight } = useScreenSize()
 
-  if (state.status === "success") {
+  if (!state.error && state.data) {
     return (
       <BlueBanner
-        isVisible={state.result.live}
-        link={state.result.link}
+        isVisible={state.data?.live}
+        link={state.data?.link}
         getRealHeight={setBannerHeight}
       >
-        {state.result.text}
+        {state.data?.text}
       </BlueBanner>
     )
   }

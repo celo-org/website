@@ -1,9 +1,10 @@
 import { RenderNode } from "@contentful/rich-text-react-renderer"
-import { BLOCKS } from "@contentful/rich-text-types"
+import { BLOCKS, INLINES } from "@contentful/rich-text-types"
 import * as React from "react"
 import { Asset } from "contentful"
 import Image from "next/image"
 import { fonts } from "src/estyles"
+import { isExternalLink } from "src/utils/utils"
 
 const renderNode: RenderNode = {
   [BLOCKS.HEADING_1]: (_, children: string) => {
@@ -27,6 +28,10 @@ const renderNode: RenderNode = {
   [BLOCKS.PARAGRAPH]: (_, children: string) => {
     return <p css={fonts.body}>{children}</p>
   },
+  [INLINES.HYPERLINK]: (node, children: string) => {
+    const target = isExternalLink(node.data.uri) ? "_blank" : undefined
+    return <a href={node.data.uri} target={target}>{children}</a>
+  },
   [BLOCKS.EMBEDDED_ASSET]: (node) => {
     const asset = node.data.target as Asset
     const file = asset.fields.file
@@ -44,7 +49,7 @@ const renderNode: RenderNode = {
           alt={asset.fields.description}
           width={file.details.image?.width}
           height={file.details.image?.height}
-          unoptimized={asset.fields.file.contentType === "image/svg+xml"}
+          unoptimized={true}
         />
       </div>
     )

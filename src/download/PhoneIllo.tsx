@@ -1,55 +1,54 @@
 import * as React from "react"
-import { StyleSheet } from "react-native"
-import { G, Path } from "src/shared/svg"
 import { colors } from "src/styles"
-import Svg from "svgs"
+
+import {css, keyframes} from "@emotion/react"
 
 export default React.memo(function PhoneIllo() {
   return (
-    <Svg width={"100%"} height={"100%"} viewBox="0 0 269 666" fill={colors.dark}>
-      <Path
+    <svg width={"100%"} height={"100%"} viewBox="0 0 269 666" fill={colors.dark}>
+      <path
         d="M242.076 664.653L19.3108 626.069C8.78103 624.25 1.12622 615.556 1.12622 605.426V51.1616C1.12622 40.6981 9.27489 31.82 20.2456 30.3848L242.993 1.01364C256.328 -0.738619 268.233 9.05734 268.233 21.7904V644.009C268.233 657.109 255.693 667.006 242.076 664.653Z"
         stroke={colors.secondary}
         strokeMiterlimit="10"
       />
       {VECTORS.map((vector) => (
-        <Path key={vector} d={vector} stroke={colors.secondary} strokeMiterlimit="10" />
+        <path key={vector} d={vector} stroke={colors.secondary} strokeMiterlimit="10" />
       ))}
-      <G style={{ mixBlendMode: "screen" }}>
-        <Path
+      <g style={{ mixBlendMode: "screen" }}>
+        <path
           d="M130.57 322.53C130.624 333.352 123.502 341.889 114.731 341.611C106.042 341.332 99.012 332.492 98.9594 321.857C98.9067 311.222 105.85 302.669 114.539 302.761C123.308 302.87 130.517 311.726 130.57 322.53Z"
           strokeMiterlimit="10"
-          style={styles.glow}
+          css={glowStyle}
         />
-      </G>
-    </Svg>
+      </g>
+    </svg>
   )
 })
 
-const styles = StyleSheet.create({
-  glow: {
-    animationDuration: "5s",
-    animationIterationCount: "infinite",
-    animationTimingFunction: "ease-in-out",
-    animationKeyframes: [
-      {
-        "0%": {
-          stroke: colors.primary,
-          fill: "transparent",
-        },
+const glowFrames = keyframes`
+  0% {
+    stroke: ${colors.primary};
+    fill: "transparent";
+  }
 
-        "50%": {
-          stroke: colors.primaryHover,
-          fill: colors.primary,
-        },
-        "100%": {
-          stroke: colors.primary,
-          fill: "transparent",
-        },
-      },
-    ],
-  },
+  50% {
+    stroke: ${colors.primaryHover};
+    fill: ${colors.primary};
+  }
+
+  100% {
+    stroke: ${colors.primary};
+    fill: "transparent";
+  }
+`
+
+const glowStyle = css({
+  animationDuration: "5s",
+  animationIterationCount: "infinite",
+  animationTimingFunction: "ease-in-out",
+  animationName: glowFrames
 })
+
 
 const VECTORS = [
   "M40.4972 129.199C40.5478 139.423 34.1538 148.185 26.2584 148.778C18.4434 149.371 12.1125 141.696 12.0628 131.657C12.0131 121.618 18.2626 112.84 26.0769 112.096C33.9552 111.318 40.4467 118.992 40.4972 129.199Z",

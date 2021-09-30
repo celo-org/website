@@ -1,7 +1,6 @@
 import * as React from "react"
 import { StyleSheet, View } from "react-native"
 import OvalCoin from "src/shared/OvalCoin"
-import { Line, Path } from "src/shared/svg"
 import { colors, standardStyles } from "src/styles"
 
 function Phone() {
@@ -11,11 +10,11 @@ function Phone() {
         <GreenLine />
       </View>
       <svg width="100%" height="100%" viewBox="0 0 153 358" fill="none" style={svgStyle}>
-        <Path
+        <path
           d="M17.8473 2.64592L139.728 17.2761C147.016 18.1508 152.5 24.333 152.5 31.6727V327.146C152.5 334.517 146.969 340.716 139.645 341.552L17.7584 355.469C8.56117 356.519 0.5 349.326 0.5 340.069V18.0355C0.5 8.74263 8.62072 1.53839 17.8473 2.64592Z"
           stroke="white"
         />
-        <Line
+        <line
           x1="1"
           y1="178.5"
           x2="79"

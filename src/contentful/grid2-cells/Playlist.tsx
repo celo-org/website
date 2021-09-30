@@ -76,9 +76,12 @@ const buttonCss = css(fonts.navigation, {
 })
 
 const headCss = css({
-  gridColumn: "span 3",
-  maxWidth: 480,
-  width: "calc(100vw - 24px)",
+  gridColumn: "span 2",
+  paddingBottom: 12,
+  [WHEN_MOBILE]:{
+    maxWidth: 480,
+    width: "calc(100vw - 24px)",
+  }
 })
 
 const expanderContractorCss = css(flexRow, {

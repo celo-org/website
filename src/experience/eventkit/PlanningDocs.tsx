@@ -1,10 +1,10 @@
 import * as React from "react"
-import { useAsync } from "react-async-hook"
 import { Image, StyleSheet, Text, View } from "react-native"
 import { trackDownload, Types } from "src/experience/eventkit/tracking"
 import External from "src/icons/External"
 import AspectRatio from "src/shared/AspectRatio"
 import { colors, fonts, standardStyles } from "src/styles"
+import useSWR from "swr"
 
 interface Doc {
   title: string
@@ -55,16 +55,16 @@ async function fetchDocs() {
 }
 
 export default function PlanningDocs() {
-  const planningDocs = useAsync<Doc[]>(fetchDocs, [])
+  const planningDocs = useSWR<Doc[]>("/api/experience/assets/planning", fetchDocs)
 
-  if (!planningDocs.result) {
+  if (!planningDocs.data) {
     return <View style={styles.placeholder} />
   }
 
-  if (planningDocs.result) {
+  if (planningDocs.data) {
     return (
       <View style={styles.grid}>
-        {planningDocs.result.map((doc) => {
+        {planningDocs.data.map((doc) => {
           return (
             <DocPreview key={doc.title} preview={doc.preview} uri={doc.uri} title={doc.title} />
           )
