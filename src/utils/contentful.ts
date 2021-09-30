@@ -179,7 +179,7 @@ export interface GridRowContentType {
 }
 
 export interface CoverContentType {
-  title: string
+  title?: string
   superSize: boolean
   subTitle: Document
   links?: Entry<ContentfulButton>[]

@@ -20,6 +20,7 @@ function blurbFactory(unique): Entry<BlurbProps> {
     },
     fields: {
       isNaturalSize: false,
+      newIcon: false,
       title: `Blurb ${unique}`,
       body: {
         nodeType: BLOCKS.DOCUMENT,

@@ -25,7 +25,6 @@ export function Heading(props: Props & HeadingContentType) {
   }
 
   const imageFile = props.image?.fields?.file
-
   return (
     <div css={css(rootCss, props.cssStyle, { gridColumn: `span ${props.span}` })}>
       {imageFile && (
@@ -34,6 +33,7 @@ export function Heading(props: Props & HeadingContentType) {
           width={imageFile.details.image.width}
           height={imageFile.details.image.height}
         />
+        
       )}
       {
         <h2

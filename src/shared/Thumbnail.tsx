@@ -22,6 +22,7 @@ export default function Thumbnail({ image, link, title, altText }: Props) {
   return (
     <div role="figure" css={rootCss}>
       <Image
+        unoptimized={image.includes("images.ctfassets.net") || image.includes("ytimg.com")}
         onClick={goTo}
         css={imageCss}
         alt={altText}

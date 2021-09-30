@@ -5,7 +5,7 @@ module.exports = {
   i18n,
   inlineImageLimit: 1024,
   images: {
-    domains: ["images.ctfassets.net", "i.ytimg.com", "*.ytimg.com"],
+    domains: [],
   },
   experimental: {
     modern: false,
