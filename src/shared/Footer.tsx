@@ -7,8 +7,8 @@ import Discourse from "src/icons/Discourse"
 import Instagram from "src/icons/Instagram"
 import MediumLogo from "src/icons/MediumLogo"
 import Octocat from "src/icons/Octocat"
-import sendCoinIcon from "src/icons/send-green-coin-lg-bg.png"
 import LinkedIn from "src/icons/LinkedIn"
+import envelope from "src/icons/Gradient_Envelope.png"
 import Twitch from "src/icons/Twitch"
 import Reddit from "src/icons/Reddit"
 import Telegram from "src/icons/Telegram"
@@ -161,7 +161,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
         >
           <div css={formStyle}>
             <img
-              src={sendCoinIcon.src}
+              src={envelope.src}
               css={emailLogoCss}
               width={50}
               height={60}
