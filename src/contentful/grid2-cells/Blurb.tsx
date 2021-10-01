@@ -16,7 +16,6 @@ enum Headings {
   "small" = "small",
   "plain" = "plain",
 }
-
 export interface Props {
   icon?: Asset
   title: string
