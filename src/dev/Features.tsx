@@ -7,14 +7,6 @@ import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import Fade from "src/shared/AwesomeFade"
 import { hashNav } from "src/shared/menu-items"
 import { colors, standardStyles, textStyles } from "src/styles"
-const stableImg = require("src/dev/features/stable.png")
-const pkiImg = require("src/dev/features/pki.png")
-const govImg = require("src/dev/features/gov.png")
-const stakeImg = require("src/dev/features/stake.png")
-const custodyImg = require("src/dev/features/custody.png")
-const ultraImg = require("src/dev/features/ultra.png")
-const gasImg = require("src/dev/features/gas.png")
-const evmImg = require("src/dev/features/evm.png")
 import addedCoin from "src/dev/features/Added_Coins_Dark.svg"
 import coins from "src/dev/features/Coins_Dark.svg"
 import choice from "src/dev/features/Choice_Dark.svg"
