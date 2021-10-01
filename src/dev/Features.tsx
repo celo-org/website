@@ -15,6 +15,14 @@ const custodyImg = require("src/dev/features/custody.png")
 const ultraImg = require("src/dev/features/ultra.png")
 const gasImg = require("src/dev/features/gas.png")
 const evmImg = require("src/dev/features/evm.png")
+import addedCoin from "src/dev/features/Added_Coins_Dark.svg"
+import coins from "src/dev/features/Coins_Dark.svg"
+import choice from "src/dev/features/Choice_Dark.svg"
+import ox from "src/dev/features/Ox_Dark.svg"
+import validation from "src/dev/features/Validation_Dark.svg"
+import eth from "src/dev/features/Eth_Dark.svg"
+import feather from "src/dev/features/Feather_Dark.svg"
+import human from "src/dev/features/Human_Dark.svg"
 
 type Props = I18nProps
 
@@ -42,49 +50,45 @@ export default withNamespaces("dev")(
               <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.stableValueCurrencies")}
-                  graphic={stableImg}
+                  graphic={coins}
                   text={t("feat.stableText")}
                 />
               </Cell>
               <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
-                <Feature title={t("feat.phonePKI")} graphic={pkiImg} text={t("feat.pkiText")} />
+                <Feature title={t("feat.phonePKI")} graphic={ox} text={t("feat.pkiText")} />
               </Cell>
               <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
-                <Feature title={t("feat.onChainGov")} graphic={govImg} text={t("feat.govText")} />
+                <Feature title={t("feat.onChainGov")} graphic={choice} text={t("feat.govText")} />
               </Cell>
 
               <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.selfCustody")}
-                  graphic={custodyImg}
+                  graphic={validation}
                   text={t("feat.custodyText")}
                 />
               </Cell>
               <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
-                <Feature
-                  title={t("feat.proofOfStake")}
-                  graphic={stakeImg}
-                  text={t("feat.stakeText")}
-                />
+                <Feature title={t("feat.proofOfStake")} graphic={eth} text={t("feat.stakeText")} />
               </Cell>
               <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.fastUltraLight")}
-                  graphic={ultraImg}
+                  graphic={feather}
                   text={t("feat.ultraText")}
                 />
               </Cell>
               <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.gasMultiCurrency")}
-                  graphic={gasImg}
+                  graphic={addedCoin}
                   text={t("feat.gasText")}
                 />
               </Cell>
               <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.programmable")}
-                  graphic={evmImg}
+                  graphic={human}
                   text={t("feat.programmableText")}
                 />
               </Cell>

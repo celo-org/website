@@ -5,7 +5,7 @@ import { fonts, standardStyles, textStyles } from "src/styles"
 interface Props {
   title: string
   text?: string
-  graphic: ImageSourcePropType
+  graphic: StaticImageData
 }
 
 type func = () => void
@@ -17,7 +17,12 @@ const FeatureComponent = React.memo(function Feature({ title, graphic, text }: P
     <View style={[standardStyles.elementalMargin, styles.container]}>
       <FadeIn placeholder={<View style={styles.graphic} />}>
         {(load: func) => (
-          <Image resizeMode="contain" onLoad={load} source={graphic} style={styles.graphic} />
+          <Image
+            resizeMode="contain"
+            onLoad={load}
+            source={{ uri: graphic.src }}
+            style={styles.graphic}
+          />
         )}
       </FadeIn>
       <View style={styles.textArea}>
