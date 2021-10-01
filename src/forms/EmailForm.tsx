@@ -1,16 +1,22 @@
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
 import { ErrorDisplay, ErrorKeys } from "src/forms/ErrorDisplay"
 import Form from "src/forms/Form"
 import { emailIsValid } from "src/forms/emailIsValid"
 import SubmitButton from "src/forms/SubmitButton"
 import SuccessDisplay from "src/forms/SuccessDisplay"
-import { TextInput } from "src/forms/TextInput"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { SIZE } from "src/shared/Button.3"
-import Responsive from "src/shared/Responsive"
-import { colors, fonts, standardStyles } from "src/styles"
+import { colors } from "src/styles"
+import { css } from "@emotion/react"
+import {
+  flex,
+  WHEN_TABLET_AND_UP,
+  WHEN_MOBILE,
+  fonts,
+  inputStyle,
+  inputDarkStyle,
+} from "src/estyles"
 
 const NEWSLETTER_LIST = "1"
 export const DEVELOPER_LIST = "10"
@@ -52,7 +58,7 @@ export default React.memo(function EmailForm({
   route = "/contacts",
 }: Props) {
   const inputTheme = isDarkMode ? styles.inputDarkMode : styles.inputLightMode
-  const { isDesktop } = useScreenSize()
+  const { isMobile } = useScreenSize()
   const { t } = useTranslation(NameSpaces.common)
 
   return (
@@ -61,116 +67,111 @@ export default React.memo(function EmailForm({
         const borderStyle = emailErrorStyle(formState.errors)
         const hasError = !!formState.apiError || !!formState.errors.length
         const errorKey = formState.apiError || ErrorKeys.email
-        const onChange = (newValue: string) => {
-          onInput({ name: "email", newValue })
+        const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+          onInput({ name: "email", newValue: event.target.value })
         }
 
         return (
-          <Responsive large={styles.container}>
-            <View style={styles.mobileContainer}>
-              <Responsive
-                large={[fonts.p, styles.input, inputTheme, styles.inputDesktop, borderStyle]}
-              >
-                <TextInput
-                  style={[fonts.p, styles.input, inputTheme, borderStyle]}
-                  focusStyle={
-                    isDarkMode ? standardStyles.inputDarkFocused : standardStyles.inputFocused
-                  }
-                  onChangeText={onChange}
-                  placeholder={placeholder || t("common:email") + "*"}
-                  placeholderTextColor={
-                    isDarkMode ? colors.placeholderDarkMode : colors.placeholderGray
-                  }
-                  name="email"
-                  type="email"
-                  value={formState.form.email}
-                  required={true}
-                />
-              </Responsive>
-              {!isDesktop && (
-                <View style={!!formState.errors.length && styles.feedbackMobile}>
+          <>
+            <div css={styles.container}>
+              <input
+                css={css(
+                  styles.input,
+                  inputTheme,
+                  borderStyle,
+                  isDarkMode ? inputDarkStyle : inputStyle
+                )}
+                onChange={onChange}
+                placeholder={placeholder || t("common:email") + "*"}
+                name="email"
+                type="email"
+                value={formState.form.email}
+                required={true}
+              />
+              {isMobile && (
+                <div css={!!formState.errors.length && styles.feedbackMobile}>
                   <ErrorDisplay isShowing={hasError} field={errorKey} />
-                </View>
+                </div>
               )}
-              <Responsive large={[styles.submitBtn, styles.submitBtnDesktop]}>
-                <SubmitButton
-                  isLoading={formState.isLoading}
-                  onPress={onSubmit}
-                  text={submitText}
-                  size={SIZE.fullWidth}
-                />
-              </Responsive>
-              <View style={styles.feedback}>
-                {isDesktop && <ErrorDisplay isShowing={hasError} field={errorKey} />}
-              </View>
-            </View>
-            <View style={styles.success}>
+              <SubmitButton
+                isLoading={formState.isLoading}
+                onPress={onSubmit}
+                text={submitText}
+                size={SIZE.fullWidth}
+                style={!isMobile && submitBtnDesktop}
+              />
+              <div css={styles.feedback}>
+                {!isMobile && <ErrorDisplay isShowing={hasError} field={errorKey} />}
+              </div>
+            </div>
+            <div css={styles.success}>
               <SuccessDisplay isShowing={formState.isComplete} message={t("common:shortSuccess")} />
-            </View>
-          </Responsive>
+            </div>
+          </>
         )
       }}
     </Form>
   )
 })
 
+const submitBtnDesktop = {
+  borderTopLeftRadius: 0,
+  borderBottomLeftRadius: 0,
+  marginVertical: 5,
+  paddingHorizontal: 40,
+  minWidth: 100,
+  maxHeight: 60,
+}
+
 const borderWidth = 1
 const borderRadius = 3
 
-const styles = StyleSheet.create({
-  container: {
+const styles = {
+  container: css(flex, {
     flexDirection: "row",
     width: "100%",
-  },
-  mobileContainer: {
-    width: "100%",
-    marginVertical: 5,
-    paddingBottom: 15,
-  },
-  submitBtn: {
-    marginVertical: 5,
-    paddingTop: 20,
-    paddingBottom: 20,
-    paddingHorizontal: 40,
-  },
-  submitBtnDesktop: {
-    borderTopLeftRadius: 0,
-    borderBottomLeftRadius: 0,
-  },
-  submitText: {
+    [WHEN_MOBILE]: {
+      flexDirection: "column",
+      margin: "5px 0px",
+      paddingBottom: 15,
+    },
+  }),
+  submitText: css({
     color: colors.white,
-  },
-  input: {
+  }),
+  input: css(fonts.body, {
     flex: 1,
-    paddingHorizontal: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
     paddingTop: 13,
     paddingBottom: 15,
     borderRadius,
     borderWidth,
-    marginVertical: 5,
     outlineStyle: "none",
-  },
-  inputDesktop: {
-    borderTopRightRadius: 0,
-    borderBottomRightRadius: 0,
-    borderRightWidth: 0,
-  },
-  inputLightMode: {
+    [WHEN_TABLET_AND_UP]: {
+      borderTopRightRadius: 0,
+      borderBottomRightRadius: 0,
+      borderRightWidth: 0,
+      marginRight: 0,
+      marginBottom: 4,
+    },
+  }),
+  inputLightMode: css({
     borderColor: colors.gray,
     color: colors.dark,
-  },
-  inputDarkMode: {
+  }),
+  inputDarkMode: css({
     borderColor: colors.gray,
     color: colors.white,
-  },
-  feedback: {
+  }),
+  feedback: css({
     position: "absolute",
     top: 65,
-  },
-  feedbackMobile: {
+  }),
+  feedbackMobile: css({
     marginBottom: 5,
-  },
-  success: {
+  }),
+  success: css({
     marginTop: 10,
-  },
-})
+  }),
+}
