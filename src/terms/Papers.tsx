@@ -15,6 +15,8 @@ import { useTranslation } from "src/i18n"
 
 function Papers() {
     const { t } = useTranslation(NameSpaces.papers)
+
+
     return (
       <>
         <OpenGraph
