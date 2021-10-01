@@ -6,9 +6,12 @@ import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
 import { CeloLinks } from "src/shared/menu-items"
 import { standardStyles } from "src/styles"
-import exchangeImg from "src/download/exchange.png"
-import faucetImage from "src/dev/Faucet.png"
-import paymentImg from "src/download/payments.png"
+// import exchangeImg from "src/download/exchange.png"
+// import faucetImage from "src/dev/Faucet.png"
+// import paymentImg from "src/download/payments.png"
+import coin from "src/download/Coins_Blush.svg"
+import code from "src/download/Code_Blush.svg"
+import ox from "src/download/Ox_Blush.svg"
 
 type Props = I18nProps & ScreenProps
 
@@ -25,7 +28,7 @@ export default withNamespaces(NameSpaces.download)(
           style={screen === ScreenSizes.MOBILE ? styles.mainMobile : styles.main}
         >
           <CoverAction
-            graphic={faucetImage}
+            graphic={code}
             isMobile={screen === ScreenSizes.MOBILE}
             title={t("coverAction.faucet.title")}
             text={t("coverAction.faucet.text")}
@@ -34,13 +37,13 @@ export default withNamespaces(NameSpaces.download)(
           />
 
           <CoverAction
-            graphic={paymentImg}
+            graphic={ox}
             isMobile={screen === ScreenSizes.MOBILE}
             title={t("coverAction.payments.title")}
             text={t("coverAction.payments.text")}
           />
           <CoverAction
-            graphic={exchangeImg}
+            graphic={coin}
             isMobile={screen === ScreenSizes.MOBILE}
             title={t("coverAction.exchange.title")}
             text={t("coverAction.exchange.text")}

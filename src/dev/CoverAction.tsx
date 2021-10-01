@@ -14,7 +14,7 @@ interface Props {
   isMobile: boolean
 }
 
-const GRAPHIC_SIZE = 80
+const GRAPHIC_SIZE = 48
 
 export default function CoverAction({ title, text, graphic, link, isMobile, style }: Props) {
   return (
@@ -22,7 +22,12 @@ export default function CoverAction({ title, text, graphic, link, isMobile, styl
       <View style={isMobile && standardStyles.centered}>
         <FadeIn>
           {(load) => (
-            <Image resizeMode="contain" onLoad={load} source={{uri: graphic.src}} style={styles.graphic} />
+            <Image
+              resizeMode="contain"
+              onLoad={load}
+              source={{ uri: graphic.src }}
+              style={styles.graphic}
+            />
           )}
         </FadeIn>
         <H3
@@ -50,6 +55,8 @@ const styles = StyleSheet.create({
   graphic: {
     height: GRAPHIC_SIZE,
     width: GRAPHIC_SIZE,
+    marginBottom: 40,
+    marginTop: 40,
   },
   container: {
     flex: 1,
