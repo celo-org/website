@@ -1,7 +1,8 @@
 import * as React from "react"
 import MessageDisplay from "src/forms/MessageDisplay"
 import { NameSpaces, useTranslation } from "src/i18n"
-import { textStyles } from "src/styles"
+import { colors } from "src/styles"
+import { css } from "@emotion/react"
 
 export enum ErrorKeys {
   "email" = "email",
@@ -29,8 +30,13 @@ interface ErrorProps {
 export const ErrorDisplay = React.memo(({ field, isShowing }: ErrorProps) => {
   const { t } = useTranslation(NameSpaces.common)
   return (
-    <MessageDisplay isShowing={isShowing} style={textStyles.error}>
+    <MessageDisplay isShowing={isShowing} css={errorStyle}>
       {field && t(`common:validationErrors.${field}`)}
     </MessageDisplay>
   )
+})
+
+const errorStyle = css({
+  color: colors.error,
+  fontWeight: 500,
 })

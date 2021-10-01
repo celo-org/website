@@ -73,6 +73,9 @@ export default React.memo(function EmailForm({
 
         return (
           <>
+            <div css={styles.feedback}>
+              {!isMobile && <ErrorDisplay isShowing={hasError} field={errorKey} />}
+            </div>
             <div css={styles.container}>
               <input
                 css={css(
@@ -100,9 +103,6 @@ export default React.memo(function EmailForm({
                 size={SIZE.fullWidth}
                 style={!isMobile && submitBtnDesktop}
               />
-              <div css={styles.feedback}>
-                {!isMobile && <ErrorDisplay isShowing={hasError} field={errorKey} />}
-              </div>
             </div>
             <div css={styles.success}>
               <SuccessDisplay isShowing={formState.isComplete} message={t("common:shortSuccess")} />
@@ -165,8 +165,8 @@ const styles = {
     color: colors.white,
   }),
   feedback: css({
-    position: "absolute",
-    top: 65,
+    alignSelf: "flex-start",
+    paddingLeft: 8,
   }),
   feedbackMobile: css({
     marginBottom: 5,

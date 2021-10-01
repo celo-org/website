@@ -13,6 +13,7 @@ import { NameSpaces, useTranslation } from "src/i18n"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { SIZE } from "src/shared/Button.3"
 import { standardStyles } from "src/styles"
+import { css } from "@emotion/react"
 
 const BLANK_FORM: NewMember = {
   name: "",
@@ -92,12 +93,13 @@ export default function SignupForm() {
               style={styles.buttonText}
               size={isMobile ? SIZE.fullWidth : SIZE.big}
             />
+            <SuccessDisplay
+              css={successCss}
+              isShowing={formState.isComplete}
+              message={t("common:applicationSubmitted")}
+            />
           </View>
-          <SuccessDisplay
-            style={styles.success}
-            isShowing={formState.isComplete}
-            message={t("common:applicationSubmitted")}
-          />
+
           <View style={standardStyles.centered}>
             <ErrorDisplay isShowing={!!formState.apiError} field={formState.apiError} />
           </View>
@@ -122,9 +124,12 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 20,
   },
-  success: {
-    textAlign: "center",
-    marginTop: 15,
-  },
   container: { margin: 20 },
+})
+
+const successCss = css({
+  textAlign: "center",
+  marginTop: 15,
+  color: "white",
+  alignSelf: "center",
 })
