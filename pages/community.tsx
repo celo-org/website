@@ -13,5 +13,4 @@ export async function getServerSideProps({ locale }) {
   }
 }
 
-
 export default ConnectPage
