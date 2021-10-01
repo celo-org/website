@@ -856,11 +856,13 @@ Do not send real funds.
                 Object {
                   "WebkitFlexBasis": "auto",
                   "flexBasis": "auto",
-                  "height": "80px",
+                  "height": "48px",
+                  "marginBottom": "40px",
+                  "marginTop": "40px",
                   "msFlexPreferredSize": "auto",
                   "overflowX": "hidden",
                   "overflowY": "hidden",
-                  "width": "80px",
+                  "width": "48px",
                   "zIndex": 0,
                 }
               }
@@ -1045,11 +1047,13 @@ Do not send real funds.
                 Object {
                   "WebkitFlexBasis": "auto",
                   "flexBasis": "auto",
-                  "height": "80px",
+                  "height": "48px",
+                  "marginBottom": "40px",
+                  "marginTop": "40px",
                   "msFlexPreferredSize": "auto",
                   "overflowX": "hidden",
                   "overflowY": "hidden",
-                  "width": "80px",
+                  "width": "48px",
                   "zIndex": 0,
                 }
               }
@@ -1143,11 +1147,13 @@ Do not send real funds.
                 Object {
                   "WebkitFlexBasis": "auto",
                   "flexBasis": "auto",
-                  "height": "80px",
+                  "height": "48px",
+                  "marginBottom": "40px",
+                  "marginTop": "40px",
                   "msFlexPreferredSize": "auto",
                   "overflowX": "hidden",
                   "overflowY": "hidden",
-                  "width": "80px",
+                  "width": "48px",
                   "zIndex": 0,
                 }
               }

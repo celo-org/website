@@ -4522,9 +4522,9 @@ exports[`Alliance renders 1`] = `
                 css={
                   Object {
                     "map": undefined,
-                    "name": "1mf35eq",
+                    "name": "ayyyof",
                     "next": undefined,
-                    "styles": "width:100px;height:100px;",
+                    "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                     "toString": [Function],
                   }
                 }
@@ -4563,9 +4563,9 @@ exports[`Alliance renders 1`] = `
                   css={
                     Object {
                       "map": undefined,
-                      "name": "1mf35eq",
+                      "name": "ayyyof",
                       "next": undefined,
-                      "styles": "width:100px;height:100px;",
+                      "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                       "toString": [Function],
                     }
                   }
@@ -4676,9 +4676,9 @@ exports[`Alliance renders 1`] = `
                 css={
                   Object {
                     "map": undefined,
-                    "name": "1mf35eq",
+                    "name": "ayyyof",
                     "next": undefined,
-                    "styles": "width:100px;height:100px;",
+                    "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                     "toString": [Function],
                   }
                 }
@@ -4717,9 +4717,9 @@ exports[`Alliance renders 1`] = `
                   css={
                     Object {
                       "map": undefined,
-                      "name": "1mf35eq",
+                      "name": "ayyyof",
                       "next": undefined,
-                      "styles": "width:100px;height:100px;",
+                      "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                       "toString": [Function],
                     }
                   }
@@ -4830,9 +4830,9 @@ exports[`Alliance renders 1`] = `
                 css={
                   Object {
                     "map": undefined,
-                    "name": "1mf35eq",
+                    "name": "ayyyof",
                     "next": undefined,
-                    "styles": "width:100px;height:100px;",
+                    "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                     "toString": [Function],
                   }
                 }
@@ -4871,9 +4871,9 @@ exports[`Alliance renders 1`] = `
                   css={
                     Object {
                       "map": undefined,
-                      "name": "1mf35eq",
+                      "name": "ayyyof",
                       "next": undefined,
-                      "styles": "width:100px;height:100px;",
+                      "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                       "toString": [Function],
                     }
                   }
@@ -4984,9 +4984,9 @@ exports[`Alliance renders 1`] = `
                 css={
                   Object {
                     "map": undefined,
-                    "name": "1mf35eq",
+                    "name": "ayyyof",
                     "next": undefined,
-                    "styles": "width:100px;height:100px;",
+                    "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                     "toString": [Function],
                   }
                 }
@@ -5025,9 +5025,9 @@ exports[`Alliance renders 1`] = `
                   css={
                     Object {
                       "map": undefined,
-                      "name": "1mf35eq",
+                      "name": "ayyyof",
                       "next": undefined,
-                      "styles": "width:100px;height:100px;",
+                      "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                       "toString": [Function],
                     }
                   }
@@ -5138,9 +5138,9 @@ exports[`Alliance renders 1`] = `
                 css={
                   Object {
                     "map": undefined,
-                    "name": "1mf35eq",
+                    "name": "ayyyof",
                     "next": undefined,
-                    "styles": "width:100px;height:100px;",
+                    "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                     "toString": [Function],
                   }
                 }
@@ -5179,9 +5179,9 @@ exports[`Alliance renders 1`] = `
                   css={
                     Object {
                       "map": undefined,
-                      "name": "1mf35eq",
+                      "name": "ayyyof",
                       "next": undefined,
-                      "styles": "width:100px;height:100px;",
+                      "styles": "width:100px;height:100px;margin-bottom:10px;margin-top:20px;",
                       "toString": [Function],
                     }
                   }
