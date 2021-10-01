@@ -21,6 +21,7 @@ import { BLOCKS, INLINES, Block } from "@contentful/rich-text-types"
 import Cover from "src/contentful/Cover"
 import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
 import { ROW } from "src/contentful/nodes/embeds/ROW"
+import { GENERICS } from "src/contentful/nodes/embeds/GENERICS"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
@@ -29,6 +30,7 @@ const EMBEDDABLE = {
   ...GALLARY,
   ...TABLE,
   ...ROW,
+  ...GENERICS,
 }
 
 function embedded(node: Block) {

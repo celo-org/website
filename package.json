@@ -19,7 +19,7 @@
     "deploy:prod": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=production MANIFEST=production.yaml yarn run deploy",
     "view": "gcloud app browse -s $DEPLOY_ENV",
     "lint": "eslint .",
-    "pretty": "prettier --config .prettierrc 'src/**/*.{ts,tsx}' 'pages/**/*.tsx' 'server/**/*.ts' --write",
+    "pretty": "prettier --config .prettierrc.json 'src/**/*.{ts,tsx}' 'pages/**/*.tsx' 'server/**/*.ts' --write",
     "kill-dev": "kill -9 $(lsof -ti :3000)",
     "clean-next-cache": "rm -rf .next",
     "postinstall": "yarn keys:decrypt",
@@ -140,7 +140,7 @@
     "typescript": "^4.4.3"
   },
   "lint-staged": {
-    "*.{ts, tsx}": [
+    "**/*.{ts,tsx,json,yaml}": [
       "eslint --cache --fix",
       "prettier --write"
     ]
