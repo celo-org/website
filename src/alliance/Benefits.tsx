@@ -49,7 +49,9 @@ interface OfferingProps {
 const Offering = React.memo(function _Offering({ icon, text }: OfferingProps) {
   return (
     <div css={styles.offeringRoot}>
+      <div css={styles.imgContainer}>
       <Image placeholder={"blur"} blurDataURL={icon.blurDataURL} layout="intrinsic" width={48} height={48} src={icon.src} css={styles.offeringImage} />
+      </div>
       <p css={styles.offeringText}>{text}</p>
     </div>
   )
@@ -81,7 +83,11 @@ const styles = {
   }),
   offeringImage: css({
     width: 100,
-    height: 100,
+    height: 100
+  }),
+  imgContainer: css({
+    marginBottom: 10,
+    marginTop: 20
   }),
   offeringsArea: css(
     flexRow,
