@@ -1,6 +1,6 @@
 import * as React from "react"
 import FadeIn from "react-lazyload-fadein"
-import { Image, ImageSourcePropType, StyleSheet, Text, View } from "react-native"
+import { Image, StyleSheet, Text, View } from "react-native"
 import { fonts, standardStyles, textStyles } from "src/styles"
 interface Props {
   title: string
