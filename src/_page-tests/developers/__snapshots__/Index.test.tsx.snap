@@ -1,185 +1,280 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DevelopersPage renders 1`] = `
-<div
-  css={
-    Object {
-      "map": undefined,
-      "name": "1mju3xz",
-      "next": undefined,
-      "styles": "box-sizing:border-box;display:flex;flex-direction:column;;",
-      "toString": [Function],
-    }
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-2 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
   }
+}
+
+@media (min-width: 992px) {
+  .emotion-2 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+@media (max-width: 576px) {
+  .emotion-3 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-4 p:first-of-type {
+  margin-top: 0;
+}
+
+.emotion-4 p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-4 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-align: center;
+    max-width: 288px;
+  }
+
+  .emotion-4 li {
+    list-style: none;
+  }
+
+  .emotion-4 ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
+    margin-inlin-eend: 0;
+    margin-inlin-eend: 0;
+    -webkit-padding-start: 0;
+    padding-inline-start: 0;
+  }
+}
+
+.emotion-5 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 24px;
+  line-height: 28;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.emotion-6 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+}
+
+<div
+  className="emotion-0"
 >
   <section
-    css={
-      Object {
-        "map": undefined,
-        "name": "pnyh7x",
-        "next": undefined,
-        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-        "toString": [Function],
-      }
-    }
+    className="emotion-1"
   >
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "4s0z69",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr 1fr 1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr 1fr 1fr ;}",
-          "toString": [Function],
-        }
-      }
+      className="emotion-2"
       id="test"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "1usgoqe",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;justify-content:space-between;margin-bottom:36px;@media (max-width: 576px){align-items:center;align-content:center;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-3"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1qilrns",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;li{list-style:none;}ul{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inlin-eend:0;padding-inline-start:0;}}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-4"
         >
           <h4
-            css={
-              Object {
-                "map": undefined,
-                "name": "9oenxr",
-                "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:24px;line-height:28;font-weight:400;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;margin-top:16px;margin-bottom:12px;;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-5"
           >
             Blurb romeo
           </h4>
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "ronyck",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-6"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "1usgoqe",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;justify-content:space-between;margin-bottom:36px;@media (max-width: 576px){align-items:center;align-content:center;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-3"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1qilrns",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;li{list-style:none;}ul{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inlin-eend:0;padding-inline-start:0;}}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-4"
         >
           <h4
-            css={
-              Object {
-                "map": undefined,
-                "name": "9oenxr",
-                "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:24px;line-height:28;font-weight:400;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;margin-top:16px;margin-bottom:12px;;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-5"
           >
             Blurb soma
           </h4>
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "ronyck",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-6"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "1usgoqe",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;justify-content:space-between;margin-bottom:36px;@media (max-width: 576px){align-items:center;align-content:center;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-3"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1qilrns",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex:1;p:first-of-type{margin-top:0;}p:last-of-type{margin-bottom:0;}@media (max-width: 576px){align-items:center;align-content:center;text-align:center;max-width:288px;li{list-style:none;}ul{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inlin-eend:0;padding-inline-start:0;}}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-4"
         >
           <h4
-            css={
-              Object {
-                "map": undefined,
-                "name": "9oenxr",
-                "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:24px;line-height:28;font-weight:400;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;margin-top:16px;margin-bottom:12px;;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-5"
           >
             Blurb rico
           </h4>
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "ronyck",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-6"
           >
             Hello World
           </p>
@@ -188,7 +283,7 @@ exports[`DevelopersPage renders 1`] = `
     </div>
   </section>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-15"
     style={
       Object {
         "backgroundColor": "rgba(46,51,56,1.00)",
@@ -196,7 +291,7 @@ exports[`DevelopersPage renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-15"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -223,7 +318,7 @@ exports[`DevelopersPage renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-15"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -242,10 +337,10 @@ exports[`DevelopersPage renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-15"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-15"
             style={
               Object {
                 "maxWidth": "400px",
@@ -255,7 +350,7 @@ exports[`DevelopersPage renders 1`] = `
           >
             <h2
               aria-level="2"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-20 emotion-21"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -274,7 +369,7 @@ exports[`DevelopersPage renders 1`] = `
             </h2>
             <h3
               aria-level="3"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-20 emotion-21"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -294,7 +389,7 @@ exports[`DevelopersPage renders 1`] = `
               Celo Layers of Technology
             </h3>
             <div
-              className="css-text-901oao"
+              className="emotion-21"
               dir="auto"
               onClick={[Function]}
               style={
@@ -314,7 +409,7 @@ exports[`DevelopersPage renders 1`] = `
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-15"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -333,7 +428,7 @@ exports[`DevelopersPage renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-15"
           id="applications"
           style={
             Object {
@@ -365,7 +460,7 @@ exports[`DevelopersPage renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-15"
             style={
               Object {
                 "WebkitFlex": 1,
@@ -376,7 +471,7 @@ exports[`DevelopersPage renders 1`] = `
             }
           >
             <div
-              className="css-text-901oao"
+              className="emotion-21"
               dir="auto"
               onClick={[Function]}
               style={
@@ -395,7 +490,7 @@ exports[`DevelopersPage renders 1`] = `
               Applications
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-21"
               dir="auto"
               onClick={[Function]}
               style={
@@ -411,7 +506,7 @@ exports[`DevelopersPage renders 1`] = `
               Send or Request stable assets easily with anyone in your address book, powered by decentralized phone number verification
             </div>
             <ul
-              className="css-reset-4rbku5 css-view-1dbjc4n"
+              className="emotion-20 emotion-15"
               role="list"
               style={
                 Object {
@@ -423,7 +518,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             >
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -443,7 +538,7 @@ exports[`DevelopersPage renders 1`] = `
                 Non-custodial wallet
               </li>
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -463,7 +558,7 @@ exports[`DevelopersPage renders 1`] = `
                 Mobile ultralight client
               </li>
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -483,7 +578,7 @@ exports[`DevelopersPage renders 1`] = `
                 Exchange between stable assets and CELO
               </li>
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -503,7 +598,7 @@ exports[`DevelopersPage renders 1`] = `
                 QR Code Support
               </li>
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -525,7 +620,7 @@ exports[`DevelopersPage renders 1`] = `
             </ul>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-15"
             style={
               Object {
                 "marginLeft": "10px",
@@ -535,7 +630,7 @@ exports[`DevelopersPage renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -543,7 +638,7 @@ exports[`DevelopersPage renders 1`] = `
               onMouseUp={[Function]}
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-20 emotion-45 emotion-21"
                 dir="auto"
                 href="/developers/wallet"
                 onClick={[Function]}
@@ -600,7 +695,7 @@ exports[`DevelopersPage renders 1`] = `
               </a>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               style={
                 Object {
                   "marginBottom": "10px",
@@ -609,7 +704,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             />
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -625,7 +720,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-20 emotion-45 emotion-21"
                 dir="auto"
                 href="/developers/faucet"
                 onClick={[Function]}
@@ -682,7 +777,7 @@ exports[`DevelopersPage renders 1`] = `
               </a>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               style={
                 Object {
                   "marginBottom": "10px",
@@ -691,7 +786,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             />
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -707,7 +802,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-15"
                 style={
                   Object {
                     "backgroundColor": "rgba(0,0,0,0.00)",
@@ -727,7 +822,7 @@ exports[`DevelopersPage renders 1`] = `
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-20 emotion-45 emotion-21"
                   dir="auto"
                   href="https://github.com/celo-org/celo-monorepo"
                   onClick={[Function]}
@@ -774,7 +869,7 @@ exports[`DevelopersPage renders 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-15"
           id="contracts"
           style={
             Object {
@@ -806,7 +901,7 @@ exports[`DevelopersPage renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-15"
             style={
               Object {
                 "WebkitFlex": 1,
@@ -817,7 +912,7 @@ exports[`DevelopersPage renders 1`] = `
             }
           >
             <div
-              className="css-text-901oao"
+              className="emotion-21"
               dir="auto"
               onClick={[Function]}
               style={
@@ -836,7 +931,7 @@ exports[`DevelopersPage renders 1`] = `
               Core Contracts
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-21"
               dir="auto"
               onClick={[Function]}
               style={
@@ -852,7 +947,7 @@ exports[`DevelopersPage renders 1`] = `
               Designed to support an ecology of stable value currencies. The first stablecoin, cUSD, tracks the value of the US Dollar.
             </div>
             <ul
-              className="css-reset-4rbku5 css-view-1dbjc4n"
+              className="emotion-20 emotion-15"
               role="list"
               style={
                 Object {
@@ -864,7 +959,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             >
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -884,7 +979,7 @@ exports[`DevelopersPage renders 1`] = `
                 Algorithmic reserve-backed stabilization mechanism
               </li>
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -904,7 +999,7 @@ exports[`DevelopersPage renders 1`] = `
                 Crypto-asset collateralized
               </li>
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -926,7 +1021,7 @@ exports[`DevelopersPage renders 1`] = `
             </ul>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-15"
             style={
               Object {
                 "marginLeft": "10px",
@@ -936,7 +1031,7 @@ exports[`DevelopersPage renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -944,7 +1039,7 @@ exports[`DevelopersPage renders 1`] = `
               onMouseUp={[Function]}
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-20 emotion-45 emotion-21"
                 dir="auto"
                 href="https://docs.celo.org/overview"
                 onClick={[Function]}
@@ -1001,7 +1096,7 @@ exports[`DevelopersPage renders 1`] = `
               </a>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               style={
                 Object {
                   "marginBottom": "10px",
@@ -1010,7 +1105,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             />
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -1026,7 +1121,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-15"
                 style={
                   Object {
                     "backgroundColor": "rgba(0,0,0,0.00)",
@@ -1046,7 +1141,7 @@ exports[`DevelopersPage renders 1`] = `
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-20 emotion-45 emotion-21"
                   dir="auto"
                   href="https://github.com/celo-org/celo-monorepo"
                   onClick={[Function]}
@@ -1093,7 +1188,7 @@ exports[`DevelopersPage renders 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-15"
           id="blockchain"
           style={
             Object {
@@ -1125,7 +1220,7 @@ exports[`DevelopersPage renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-15"
             style={
               Object {
                 "WebkitFlex": 1,
@@ -1136,7 +1231,7 @@ exports[`DevelopersPage renders 1`] = `
             }
           >
             <div
-              className="css-text-901oao"
+              className="emotion-21"
               dir="auto"
               onClick={[Function]}
               style={
@@ -1155,7 +1250,7 @@ exports[`DevelopersPage renders 1`] = `
               Blockchain
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-21"
               dir="auto"
               onClick={[Function]}
               style={
@@ -1171,7 +1266,7 @@ exports[`DevelopersPage renders 1`] = `
               Open source smart contract platform built on decentralized infrastructure.
             </div>
             <ul
-              className="css-reset-4rbku5 css-view-1dbjc4n"
+              className="emotion-20 emotion-15"
               role="list"
               style={
                 Object {
@@ -1183,7 +1278,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             >
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -1203,7 +1298,7 @@ exports[`DevelopersPage renders 1`] = `
                 Proof of Stake based consensus with high throughput, low latency, and zero carbon
               </li>
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -1223,7 +1318,7 @@ exports[`DevelopersPage renders 1`] = `
                 Incentives for serving mobile devices
               </li>
               <li
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-20 emotion-21"
                 dir="auto"
                 onClick={[Function]}
                 role="listitem"
@@ -1245,7 +1340,7 @@ exports[`DevelopersPage renders 1`] = `
             </ul>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-15"
             style={
               Object {
                 "marginLeft": "10px",
@@ -1255,7 +1350,7 @@ exports[`DevelopersPage renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -1263,7 +1358,7 @@ exports[`DevelopersPage renders 1`] = `
               onMouseUp={[Function]}
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-20 emotion-45 emotion-21"
                 dir="auto"
                 href="https://docs.celo.org/overview"
                 onClick={[Function]}
@@ -1320,7 +1415,7 @@ exports[`DevelopersPage renders 1`] = `
               </a>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               style={
                 Object {
                   "marginBottom": "10px",
@@ -1329,7 +1424,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             />
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-15"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -1345,7 +1440,7 @@ exports[`DevelopersPage renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-15"
                 style={
                   Object {
                     "backgroundColor": "rgba(0,0,0,0.00)",
@@ -1365,7 +1460,7 @@ exports[`DevelopersPage renders 1`] = `
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-20 emotion-45 emotion-21"
                   dir="auto"
                   href="https://github.com/celo-org/celo-blockchain"
                   onClick={[Function]}
@@ -1412,7 +1507,7 @@ exports[`DevelopersPage renders 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-15"
           style={
             Object {
               "MozTransitionProperty": "opacity",
@@ -1434,7 +1529,7 @@ exports[`DevelopersPage renders 1`] = `
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-20 emotion-21"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -1453,7 +1548,7 @@ exports[`DevelopersPage renders 1`] = `
             Browse the Code
           </h4>
           <div
-            className="css-text-901oao"
+            className="emotion-21"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1472,7 +1567,7 @@ exports[`DevelopersPage renders 1`] = `
              
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-15"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -1480,7 +1575,7 @@ exports[`DevelopersPage renders 1`] = `
             onMouseUp={[Function]}
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-20 emotion-45 emotion-21"
               dir="auto"
               href="https://github.com/celo-org/celo-monorepo"
               onClick={[Function]}
@@ -1536,7 +1631,7 @@ exports[`DevelopersPage renders 1`] = `
             >
               View On Github
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-15"
                 style={
                   Object {
                     "display": "inline-flex",

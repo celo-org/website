@@ -1,19 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Privacy renders 1`] = `
+.emotion-0 {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-4 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+}
+
+.emotion-7 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+}
+
+.emotion-9 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.emotion-47 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  font-weight: bold;
+}
+
 <div
-  css={
-    Object {
-      "map": undefined,
-      "name": "1bfhzmg",
-      "next": undefined,
-      "styles": "margin-top:100px;display:flex;flex-direction:column;",
-      "toString": [Function],
-    }
-  }
+  className="emotion-0"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignItems": "center",
@@ -42,7 +93,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -61,7 +112,7 @@ exports[`Privacy renders 1`] = `
       }
     />
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -80,22 +131,14 @@ exports[`Privacy renders 1`] = `
       }
     >
       <h1
-        css={
-          Object {
-            "map": undefined,
-            "name": "vosu65",
-            "next": undefined,
-            "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-4"
       >
         Privacy Policy
       </h1>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -115,7 +158,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -134,21 +177,13 @@ exports[`Privacy renders 1`] = `
       }
     >
       <h6
-        css={
-          Object {
-            "map": undefined,
-            "name": "1cix8av",
-            "next": undefined,
-            "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-7"
       >
         Valid as of May 17, 2020
       </h6>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -167,29 +202,12 @@ exports[`Privacy renders 1`] = `
       }
     >
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         This Privacy Policy and Cookies Statement describes how the Celo Foundation and its affiliated companies (referred to in this document as “Celo,” “we,” “us” or “our”) collects, uses, shares and otherwise processes Personal Data (defined below) including:
       </p>
       <ul
-        className="css-reset-4rbku5 css-view-1dbjc4n"
+        className="emotion-10 emotion-1"
         role="list"
         style={
           Object {
@@ -200,7 +218,7 @@ exports[`Privacy renders 1`] = `
         }
       >
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -220,7 +238,7 @@ exports[`Privacy renders 1`] = `
           Visitors to our website(s), mobile applications and other online properties (“Site” or “Sites”)
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -241,31 +259,14 @@ exports[`Privacy renders 1`] = `
         </li>
       </ul>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         In this Privacy Policy, “Personal Data” means information that (either in isolation or in combination with other information held by Celo) enables you to be identified as an individual or recognized directly or indirectly. We may collect Personal Data when you use our Sites.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -287,7 +288,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -307,7 +308,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -326,7 +327,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -345,7 +346,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -359,53 +360,19 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         Unless we specifically state otherwise, the Celo Foundation is the data processor of the Personal Data we process, and is therefore responsible for ensuring that the systems and processes we use are compliant with data protection laws, to the extent applicable to us.
       </p>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         Celo Foundation personnel are required to comply with this Privacy Policy and complete data protection training, where appropriate.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -427,7 +394,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -447,7 +414,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -466,7 +433,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -485,7 +452,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -499,119 +466,34 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         The Celo Foundation collects information that you provide directly to us when you browse our Site, register to receive newsletter requests or other information, provide feedback through surveys, participate in any interactive features on our Sites including contests, promotions, challenges, activities or events.
       </p>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         We also collect data provided by job applicants or others on our Sites or offline means in connection with employment or consulting opportunities, which may also be subject to other Policies.
       </p>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         We may also collect Computer Internet Protocol (IP) address, unique device identifier (“UDID”), cookies, web beacons, web server logs and other technologies and other data linked to a device, and data about usage of our Sites (Usage Data). A “cookie” is a text file that websites send to a visitor’s computer or other Internet-connected device to identify the visitor’s browser or to store information or settings in the browser. A “web beacon,” also known as an Internet tag, pixel tag or clear GIF, links web pages to web servers and their cookies and may be used to transmit information collected through cookies back to a web server.
       </p>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         Other types of information we may collect include your name, email address, username, password, phone number, location and any other information you choose to provide.
       </p>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         We may use these automated technologies to collect information about your equipment, browsing actions, and usage patterns. The information we obtain in this manner may include your device IP address, identifiers associated with your devices, types of devices connected to our services, web browser characteristics, device characteristics, language preferences, referring/exit pages, clickstream data, and dates and times of visits to our Site.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -633,7 +515,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -653,7 +535,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -672,7 +554,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -691,7 +573,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -705,29 +587,12 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         We use the Personal Data that we collect:
       </p>
       <ul
-        className="css-reset-4rbku5 css-view-1dbjc4n"
+        className="emotion-10 emotion-1"
         role="list"
         style={
           Object {
@@ -738,7 +603,7 @@ exports[`Privacy renders 1`] = `
         }
       >
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -756,27 +621,14 @@ exports[`Privacy renders 1`] = `
           }
         >
           <span
-            css={
-              Array [
-                Object {
-                  "map": undefined,
-                  "name": "ronyck",
-                  "next": undefined,
-                  "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                  "toString": [Function],
-                },
-                Object {
-                  "fontWeight": "bold",
-                },
-              ]
-            }
+            className="emotion-47"
           >
             To make our Sites more intuitive and easier to use
           </span>
            we use device data, cookies and other information that you may provide. This data is necessary for our legitimate interests in monitoring how our Sites are used to help us improve these Sites, and the information and tools available on these Sites.
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -795,27 +647,14 @@ exports[`Privacy renders 1`] = `
         >
           To provide 
           <span
-            css={
-              Array [
-                Object {
-                  "map": undefined,
-                  "name": "ronyck",
-                  "next": undefined,
-                  "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                  "toString": [Function],
-                },
-                Object {
-                  "fontWeight": "bold",
-                },
-              ]
-            }
+            className="emotion-47"
           >
             relevant marketing 
           </span>
           including providing you with information about events or services that may be of interest to you. It is necessary for our legitimate interests to process this information in order to provide you with tailored and relevant marketing, updates and invitations.
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -834,20 +673,7 @@ exports[`Privacy renders 1`] = `
         >
           To
           <span
-            css={
-              Array [
-                Object {
-                  "map": undefined,
-                  "name": "ronyck",
-                  "next": undefined,
-                  "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                  "toString": [Function],
-                },
-                Object {
-                  "fontWeight": "bold",
-                },
-              ]
-            }
+            className="emotion-47"
           >
              
             consider individuals for employment and contractor opportunities and manage on-boarding processes
@@ -856,7 +682,7 @@ exports[`Privacy renders 1`] = `
           we use job applicant data. The processing is necessary for the purposes of recruitment and on-boarding.
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -877,53 +703,19 @@ exports[`Privacy renders 1`] = `
         </li>
       </ul>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         We may also use automated technologies to collect information about your equipment, browsing actions, and usage patterns. The information we obtain in this manner may include your device IP address, identifiers associated with your devices, types of devices connected to our services, web browser characteristics, device characteristics, language preferences, referring/exit pages, clickstream data, and dates and times of visits to our Site.
       </p>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         The information we collect through cookies and similar technologies helps Celo (1) remember your information so you will not have to re-enter it; (2) understand how you use and interact with our website; (3) measure the usability of our website and the effectiveness of our communications; and (4) otherwise manage and enhance our website, and help ensure it is working properly. Your browser may tell you how to be notified when you receive certain types of cookies or how to restrict or disable certain types of cookies. Please note, however, that without cookies you may not be able to use all of the features of our website.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -945,7 +737,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -965,7 +757,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -984,7 +776,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1003,7 +795,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -1017,31 +809,14 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         You have control regarding our use of Personal Data for direct marketing. In certain markets, you will need to expressly consent before receiving marketing. In all markets, you can choose to not receive marketing communications at any time. If you no longer wish to receive marketing communications from Celo, or remain on a mailing list to which you previously subscribed, or receive any other marketing communication, please follow the unsubscribe link in the relevant communications or contact us as specified below.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -1063,7 +838,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1083,7 +858,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -1102,7 +877,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1121,7 +896,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -1135,7 +910,7 @@ exports[`Privacy renders 1`] = `
         }
       />
       <ul
-        className="css-reset-4rbku5 css-view-1dbjc4n"
+        className="emotion-10 emotion-1"
         role="list"
         style={
           Object {
@@ -1146,7 +921,7 @@ exports[`Privacy renders 1`] = `
         }
       >
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -1166,7 +941,7 @@ exports[`Privacy renders 1`] = `
           With vendors, consultants and other service providers who need access to such information to carry out work on our behalf;
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -1186,7 +961,7 @@ exports[`Privacy renders 1`] = `
           In response to a request for information if we believe disclosure is in accordance with any applicable law, regulation or legal process, or as otherwise required by any applicable law, rule or regulation;
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -1206,7 +981,7 @@ exports[`Privacy renders 1`] = `
           If we believe your actions are inconsistent with our user agreements or policies, or to protect the rights, property and safety of us or any third-party;
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -1226,7 +1001,7 @@ exports[`Privacy renders 1`] = `
           In connection with, or during negotiations of, any merger, sale of company assets, financing or acquisition of all or a portion of our business to another company;
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -1246,7 +1021,7 @@ exports[`Privacy renders 1`] = `
           With your consent or at your direction; and
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -1269,7 +1044,7 @@ exports[`Privacy renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -1291,7 +1066,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1311,7 +1086,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -1330,7 +1105,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1349,7 +1124,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -1363,29 +1138,12 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         We use the following sub-processors to operate our Services:
       </p>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-1"
         style={
           Object {
             "borderBottomColor": "rgba(238,238,238,1.00)",
@@ -1402,7 +1160,7 @@ exports[`Privacy renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-1"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -1426,7 +1184,7 @@ exports[`Privacy renders 1`] = `
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1459,7 +1217,7 @@ exports[`Privacy renders 1`] = `
             Third-Party Service or Vendor
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1492,7 +1250,7 @@ exports[`Privacy renders 1`] = `
             Type of Service
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1526,7 +1284,7 @@ exports[`Privacy renders 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-1"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -1550,7 +1308,7 @@ exports[`Privacy renders 1`] = `
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1581,7 +1339,7 @@ exports[`Privacy renders 1`] = `
             Segment.io Inc.
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1612,7 +1370,7 @@ exports[`Privacy renders 1`] = `
             Site Visitor Data Platform
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1644,7 +1402,7 @@ exports[`Privacy renders 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-1"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -1668,7 +1426,7 @@ exports[`Privacy renders 1`] = `
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1699,7 +1457,7 @@ exports[`Privacy renders 1`] = `
             Google
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1730,7 +1488,7 @@ exports[`Privacy renders 1`] = `
             Site Visitor Analytics
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1762,7 +1520,7 @@ exports[`Privacy renders 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-1"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -1786,7 +1544,7 @@ exports[`Privacy renders 1`] = `
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1817,7 +1575,7 @@ exports[`Privacy renders 1`] = `
             Lever, Inc.
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1848,7 +1606,7 @@ exports[`Privacy renders 1`] = `
             Applicant Tracking Platform
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1880,7 +1638,7 @@ exports[`Privacy renders 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-1"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -1904,7 +1662,7 @@ exports[`Privacy renders 1`] = `
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1935,7 +1693,7 @@ exports[`Privacy renders 1`] = `
             ActiveCampaign, LLC
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1966,7 +1724,7 @@ exports[`Privacy renders 1`] = `
             Visitor Tracking and Communication Platform
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -1998,7 +1756,7 @@ exports[`Privacy renders 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-1"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -2022,7 +1780,7 @@ exports[`Privacy renders 1`] = `
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2053,7 +1811,7 @@ exports[`Privacy renders 1`] = `
             Mixpanel
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2084,7 +1842,7 @@ exports[`Privacy renders 1`] = `
             Site Visitor Analytics
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2116,7 +1874,7 @@ exports[`Privacy renders 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-1"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -2140,7 +1898,7 @@ exports[`Privacy renders 1`] = `
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2171,7 +1929,7 @@ exports[`Privacy renders 1`] = `
             ipstack
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2202,7 +1960,7 @@ exports[`Privacy renders 1`] = `
             IP Address Geolocation
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-13"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2237,7 +1995,7 @@ exports[`Privacy renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -2259,7 +2017,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2279,7 +2037,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -2298,7 +2056,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2317,7 +2075,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -2331,29 +2089,12 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         If you are an individual from the European Economic Area (“EEA”), we collect and process your Personal Data only where we have legal basis for doing so under applicable EU laws. The legal basis depends on the Services you use and how you use them. This means we collect and use your personal data only:
       </p>
       <ul
-        className="css-reset-4rbku5 css-view-1dbjc4n"
+        className="emotion-10 emotion-1"
         role="list"
         style={
           Object {
@@ -2364,7 +2105,7 @@ exports[`Privacy renders 1`] = `
         }
       >
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -2384,7 +2125,7 @@ exports[`Privacy renders 1`] = `
           To operate our business, including to improve and develop our services, for fraud prevention purposes, improve user experience, or other legitimate interest;
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -2404,7 +2145,7 @@ exports[`Privacy renders 1`] = `
           To fulfill contractual responsibilities; and/or
         </li>
         <li
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-10 emotion-13"
           dir="auto"
           onClick={[Function]}
           role="listitem"
@@ -2425,31 +2166,14 @@ exports[`Privacy renders 1`] = `
         </li>
       </ul>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         If you have any questions about the legal basis for processing, please contact us at the address listed in the “Contact Us” section.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -2471,7 +2195,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2491,7 +2215,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -2510,7 +2234,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2529,7 +2253,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -2543,31 +2267,14 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         We may transfer your Personal Data to countries outside the United Kingdom and the European Economic Area (“EEA”), including, but not limited to the United States, where Celo’s headquarters and some of its IT systems (including email) are located.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -2589,7 +2296,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2609,7 +2316,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -2628,7 +2335,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2647,7 +2354,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -2661,31 +2368,14 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         Protecting your information is important to us. We maintain administrative, technical and physical safeguards designed to protect against accidental, unlawful or unauthorized destruction, loss, alteration, access, disclosure or use of Personal Data.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -2707,7 +2397,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2727,7 +2417,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -2746,7 +2436,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2765,7 +2455,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -2779,31 +2469,14 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         We strive to only keep your Personal Data only for the period of time needed for legitimate business purposes. In certain circumstances, however, legal or regulatory obligations may require us to retain records for a longer than we otherwise would.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -2825,7 +2498,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2845,7 +2518,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -2864,7 +2537,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2883,7 +2556,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -2897,31 +2570,14 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         Our Services are not directed to children under the age of 16. If you learn that a child under the age of 16 has provided us with personal information without consent, please contact us.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -2943,7 +2599,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2963,7 +2619,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -2982,7 +2638,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -3001,7 +2657,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -3015,68 +2671,17 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         If you are in the EEA you have have the right, subject to certain exceptions, to request a copy of the Personal Data we are processing about you, to require that any incomplete or inaccurate Personal Data is amended, to request that we delete your Personal Data (although we may not be able to delete certain data due to legal or other obligations), to object to the use of your Personal Data or to withdraw consent.
       </p>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         If you are in the EEA, you also have a right to lodge a complaint with the local data protection authority if you believe that we have not complied with the applicable data protection laws.
       </p>
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         You may also contact us to address and resolve concerns you may have about our use of your Personal Data. Please contact us at
          
@@ -3092,7 +2697,7 @@ exports[`Privacy renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -3114,7 +2719,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -3134,7 +2739,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -3153,7 +2758,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -3172,7 +2777,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -3186,31 +2791,14 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         We reserve the right to change and update this Privacy Policy from time to time. If we make changes, you will be notified of the change by the date at the top of Privacy Policy, which will reflect the last date updated.
       </p>
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -3232,7 +2820,7 @@ exports[`Privacy renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -3252,7 +2840,7 @@ exports[`Privacy renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-10 emotion-13"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -3271,7 +2859,7 @@ exports[`Privacy renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -3290,7 +2878,7 @@ exports[`Privacy renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-13"
         dir="auto"
         onClick={[Function]}
         style={
@@ -3304,24 +2892,7 @@ exports[`Privacy renders 1`] = `
         }
       />
       <p
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ronyck",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "8mathd",
-              "next": undefined,
-              "styles": "margin-bottom:24px;margin-top:0;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-9"
       >
         Certain third-party services, websites, or applications you use, or navigate to from our Services may have separate user terms and privacy policies that are independent of this Policy. This includes, for example, websites owned and operated by our customers or partners. We are not responsible for the privacy practices of these third-party services or applications. We recommend carefully reviewing the user terms and privacy statement of each third-party service, website, and/or application prior to use.
       </p>

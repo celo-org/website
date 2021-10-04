@@ -1,8 +1,641 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Experience/Color renders 1`] = `
+@keyframes animation-0 {
+  from {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animation-1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-2 {
+  from {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  to {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.emotion-7 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-340 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-341 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-341 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-341 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-341 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-341 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-341 {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-341 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-341 {
+    margin-top: 30px;
+  }
+}
+
+.emotion-342 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 1;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-342 {
+    grid-column: span 3;
+  }
+}
+
+.emotion-343 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-343 {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-344 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-344 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-345 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  margin-bottom: 20px;
+  max-width: 350px;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .emotion-345 {
+    text-align: center;
+  }
+}
+
+.emotion-347 {
+  color: inherit;
+}
+
+.emotion-348 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 2;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-348 {
+    grid-column: span 3;
+  }
+}
+
+.emotion-349 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-349 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+
+.emotion-350 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-start: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-350 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-351 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.emotion-352 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.emotion-392 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width: 576px) {
+  .emotion-392 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-466 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-end: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-466 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-535 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-535 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-535 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-535 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-535 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-535 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-535 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-535 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.emotion-536 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  .emotion-536 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-537 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .emotion-537 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-538 {
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .emotion-538 {
+    margin-bottom: 8px;
+  }
+}
+
+.emotion-539 {
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .emotion-539 {
+    display: none;
+  }
+}
+
+.emotion-540 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.emotion-541 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 3500ms;
+  animation-delay: 3500ms;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+}
+
+.emotion-542 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  font-style: italic;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+}
+
+@media (max-width: 576px) {
+  .emotion-542 {
+    text-align: center;
+  }
+}
+
+.emotion-543 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: animation-2;
+  animation-name: animation-2;
+}
+
+.emotion-544 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  z-index: 10;
+}
+
 <div
-  className="css-view-1dbjc4n"
+  className="emotion-0"
   style={
     Object {
       "isolation": "isolate",
@@ -10,7 +643,7 @@ exports[`Experience/Color renders 1`] = `
   }
 >
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "backgroundColor": "rgba(255,255,255,1.00)",
@@ -21,7 +654,7 @@ exports[`Experience/Color renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "MozTransitionProperty": "box-shadow",
@@ -35,7 +668,7 @@ exports[`Experience/Color renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -50,7 +683,7 @@ exports[`Experience/Color renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -80,7 +713,7 @@ exports[`Experience/Color renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignContent": "center",
@@ -98,7 +731,7 @@ exports[`Experience/Color renders 1`] = `
               href="/"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -154,19 +787,11 @@ exports[`Experience/Color renders 1`] = `
               </div>
             </a>
             <a
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "ytumd6",
-                  "next": undefined,
-                  "styles": "text-decoration:none;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-7"
               href="/experience/brand"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -197,7 +822,7 @@ exports[`Experience/Color renders 1`] = `
                 tabIndex="0"
               >
                 <div
-                  className="css-text-901oao"
+                  className="emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -218,7 +843,7 @@ exports[`Experience/Color renders 1`] = `
             </a>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignContent": "center",
@@ -233,7 +858,7 @@ exports[`Experience/Color renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -251,7 +876,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -275,7 +900,7 @@ exports[`Experience/Color renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -283,7 +908,7 @@ exports[`Experience/Color renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/brand"
                     onClick={[Function]}
@@ -327,7 +952,7 @@ exports[`Experience/Color renders 1`] = `
                   </a>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "bottom": "-16px",
@@ -359,7 +984,7 @@ exports[`Experience/Color renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -383,7 +1008,7 @@ exports[`Experience/Color renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -391,7 +1016,7 @@ exports[`Experience/Color renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/events"
                     onClick={[Function]}
@@ -436,7 +1061,7 @@ exports[`Experience/Color renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -460,7 +1085,7 @@ exports[`Experience/Color renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -468,7 +1093,7 @@ exports[`Experience/Color renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/grants"
                     onClick={[Function]}
@@ -513,7 +1138,7 @@ exports[`Experience/Color renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -537,7 +1162,7 @@ exports[`Experience/Color renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -545,7 +1170,7 @@ exports[`Experience/Color renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/merchant"
                     onClick={[Function]}
@@ -596,7 +1221,7 @@ exports[`Experience/Color renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -618,7 +1243,7 @@ exports[`Experience/Color renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -638,7 +1263,7 @@ exports[`Experience/Color renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         id="sidebar"
         style={
           Object {
@@ -648,7 +1273,7 @@ exports[`Experience/Color renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -656,7 +1281,7 @@ exports[`Experience/Color renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand"
             onClick={[Function]}
@@ -705,7 +1330,7 @@ exports[`Experience/Color renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -714,7 +1339,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -727,7 +1352,7 @@ exports[`Experience/Color renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -744,7 +1369,7 @@ exports[`Experience/Color renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -752,7 +1377,7 @@ exports[`Experience/Color renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/logo"
             onClick={[Function]}
@@ -801,7 +1426,7 @@ exports[`Experience/Color renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -810,7 +1435,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -823,7 +1448,7 @@ exports[`Experience/Color renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -840,7 +1465,7 @@ exports[`Experience/Color renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -848,7 +1473,7 @@ exports[`Experience/Color renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/color"
             onClick={[Function]}
@@ -897,7 +1522,7 @@ exports[`Experience/Color renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -906,7 +1531,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -919,7 +1544,7 @@ exports[`Experience/Color renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -936,7 +1561,7 @@ exports[`Experience/Color renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -944,7 +1569,7 @@ exports[`Experience/Color renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/typography"
             onClick={[Function]}
@@ -993,7 +1618,7 @@ exports[`Experience/Color renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1002,7 +1627,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1015,7 +1640,7 @@ exports[`Experience/Color renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -1032,7 +1657,7 @@ exports[`Experience/Color renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1040,7 +1665,7 @@ exports[`Experience/Color renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/composition"
             onClick={[Function]}
@@ -1089,7 +1714,7 @@ exports[`Experience/Color renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1098,7 +1723,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1111,7 +1736,7 @@ exports[`Experience/Color renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -1128,7 +1753,7 @@ exports[`Experience/Color renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1136,7 +1761,7 @@ exports[`Experience/Color renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/exchange-icons"
             onClick={[Function]}
@@ -1185,7 +1810,7 @@ exports[`Experience/Color renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1194,7 +1819,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1207,7 +1832,7 @@ exports[`Experience/Color renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1215,7 +1840,7 @@ exports[`Experience/Color renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/icons"
             onClick={[Function]}
@@ -1264,7 +1889,7 @@ exports[`Experience/Color renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1273,7 +1898,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1286,7 +1911,7 @@ exports[`Experience/Color renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1294,7 +1919,7 @@ exports[`Experience/Color renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/key-imagery"
             onClick={[Function]}
@@ -1343,7 +1968,7 @@ exports[`Experience/Color renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1352,7 +1977,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1365,7 +1990,7 @@ exports[`Experience/Color renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -1384,7 +2009,7 @@ exports[`Experience/Color renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1409,7 +2034,7 @@ exports[`Experience/Color renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "minHeight": "calc(100vh - 75px)",
@@ -1417,14 +2042,14 @@ exports[`Experience/Color renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           id="overview"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginBottom": "60px",
@@ -1435,7 +2060,7 @@ exports[`Experience/Color renders 1`] = `
             >
               <h1
                 aria-level="1"
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-14 emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 role="heading"
@@ -1455,7 +2080,7 @@ exports[`Experience/Color renders 1`] = `
               </h1>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginBottom": "60px",
@@ -1463,7 +2088,7 @@ exports[`Experience/Color renders 1`] = `
               }
             >
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -1483,7 +2108,7 @@ exports[`Experience/Color renders 1`] = `
                 Primary Brand Colors
               </div>
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -1506,7 +2131,7 @@ Celo Green is used to denote value and action including communication and applic
 Celo Dark and Celo Light are high contrast complementary colors, interchangeably switching between background and typography. Celo Dark has a tendency to represent technical content while Celo Light represents non-technical topics.
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -1522,7 +2147,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -1536,7 +2161,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -1552,7 +2177,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -1580,7 +2205,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -1609,7 +2234,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -1626,7 +2251,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -1650,10 +2275,10 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -1671,7 +2296,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       Celo Green
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -1686,7 +2311,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       #35D07F
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -1701,7 +2326,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       RGBA (53, 208, 127, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -1718,7 +2343,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -1732,7 +2357,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -1748,7 +2373,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -1776,7 +2401,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -1805,7 +2430,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -1822,7 +2447,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -1846,10 +2471,10 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -1867,7 +2492,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       Celo Gold
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -1882,7 +2507,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       #FBCC5C
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -1897,7 +2522,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       RGBA (251, 204, 92, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -1914,7 +2539,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -1928,7 +2553,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -1944,7 +2569,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -1972,7 +2597,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -2001,7 +2626,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -2018,7 +2643,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -2042,10 +2667,10 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2063,7 +2688,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       Celo Dark
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2078,7 +2703,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       #2E3338
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2093,7 +2718,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       RGBA (46, 51, 56, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2110,7 +2735,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -2124,7 +2749,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -2140,7 +2765,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -2176,7 +2801,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -2205,7 +2830,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -2222,7 +2847,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -2246,10 +2871,10 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2267,7 +2892,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       Celo White
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2282,7 +2907,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       #FFFFFF
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2297,7 +2922,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       RGBA (255, 255, 255, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2316,7 +2941,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginBottom": "60px",
@@ -2324,7 +2949,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
               }
             >
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -2344,7 +2969,7 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                 Accent Colors
               </div>
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -2367,7 +2992,7 @@ Violet, red, and cyan are colors that often represent alternative coins, project
 Blue represents help within digital experiences like websites and mobile applications.
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -2383,7 +3008,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -2397,7 +3022,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -2413,7 +3038,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -2441,7 +3066,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -2470,7 +3095,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -2487,7 +3112,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -2511,10 +3136,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2532,7 +3157,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Violet
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2547,7 +3172,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #BF97FF
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2562,7 +3187,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (191, 151, 255, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2579,7 +3204,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -2593,7 +3218,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -2609,7 +3234,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -2637,7 +3262,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -2666,7 +3291,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -2683,7 +3308,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -2707,10 +3332,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2728,7 +3353,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Red
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2743,7 +3368,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #FB7C6D
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2758,7 +3383,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (251, 124, 109, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2775,7 +3400,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -2789,7 +3414,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -2805,7 +3430,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -2833,7 +3458,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -2862,7 +3487,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -2879,7 +3504,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -2903,10 +3528,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2924,7 +3549,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Cyan
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2939,7 +3564,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #73DDFF
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2954,7 +3579,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (115, 221, 255, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2971,7 +3596,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -2985,7 +3610,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -3001,7 +3626,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -3029,7 +3654,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -3058,7 +3683,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -3075,7 +3700,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -3099,10 +3724,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3120,7 +3745,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Blue
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3135,7 +3760,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #3488EC
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3150,7 +3775,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (52, 136, 236, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3169,7 +3794,7 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginBottom": "60px",
@@ -3177,7 +3802,7 @@ Blue represents help within digital experiences like websites and mobile applica
               }
             >
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -3197,7 +3822,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 Grays
               </div>
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -3216,7 +3841,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 Grays are used when hierarchy needs to be established. Use grays to visually communicate intended ranking of importance in Typography or UI.
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -3232,7 +3857,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -3246,7 +3871,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -3262,7 +3887,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -3290,7 +3915,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -3319,7 +3944,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -3336,7 +3961,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -3360,10 +3985,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3381,7 +4006,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Heavy Gray
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3396,7 +4021,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #ABADAF
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3411,7 +4036,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (171, 173, 175, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3428,7 +4053,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -3442,7 +4067,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -3458,7 +4083,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -3486,7 +4111,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -3515,7 +4140,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -3532,7 +4157,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -3556,10 +4181,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3577,7 +4202,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Gray
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3592,7 +4217,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #DDDDDD
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3607,7 +4232,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (221, 221, 221, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3624,7 +4249,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -3638,7 +4263,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -3654,7 +4279,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -3682,7 +4307,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -3711,7 +4336,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -3728,7 +4353,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -3752,10 +4377,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3773,7 +4398,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Light Gray
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3788,7 +4413,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #EDEEEF
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3803,7 +4428,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (237, 238, 239, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3820,7 +4445,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -3834,7 +4459,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -3850,7 +4475,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -3878,7 +4503,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -3907,7 +4532,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -3924,7 +4549,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -3948,10 +4573,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3969,7 +4594,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Faint Gray
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3984,7 +4609,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #F8F9F9
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3999,7 +4624,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (248, 249, 249, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4020,14 +4645,14 @@ Blue represents help within digital experiences like websites and mobile applica
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           id="background-colors"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginBottom": "20px",
@@ -4040,7 +4665,7 @@ Blue represents help within digital experiences like websites and mobile applica
             >
               <h2
                 aria-level="2"
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-14 emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 role="heading"
@@ -4059,7 +4684,7 @@ Blue represents help within digital experiences like websites and mobile applica
               </h2>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginBottom": "60px",
@@ -4067,7 +4692,7 @@ Blue represents help within digital experiences like websites and mobile applica
               }
             >
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -4086,7 +4711,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 Background colors function as canvases in which accent and brand colors can punctuate layout compositions.
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -4102,7 +4727,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4116,7 +4741,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -4132,7 +4757,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -4168,7 +4793,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -4197,7 +4822,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -4214,7 +4839,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -4238,10 +4863,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4259,7 +4884,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Celo White
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4274,7 +4899,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #FFFFFF
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4289,7 +4914,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (255, 255, 255, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4306,7 +4931,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4320,7 +4945,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -4336,7 +4961,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -4364,7 +4989,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -4393,7 +5018,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -4410,7 +5035,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -4434,10 +5059,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4455,7 +5080,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Faint Gray
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4470,7 +5095,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #F8F9F9
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4485,7 +5110,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (248, 249, 249, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4502,7 +5127,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4516,7 +5141,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -4532,7 +5157,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -4560,7 +5185,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -4589,7 +5214,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -4606,7 +5231,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -4630,10 +5255,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4651,7 +5276,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Faint Gold
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4666,7 +5291,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #FEF2D6
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4681,7 +5306,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (254, 242, 214, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4698,7 +5323,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4712,7 +5337,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -4728,7 +5353,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -4756,7 +5381,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -4785,7 +5410,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -4802,7 +5427,7 @@ Blue represents help within digital experiences like websites and mobile applica
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -4826,10 +5451,10 @@ Blue represents help within digital experiences like websites and mobile applica
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4847,7 +5472,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       Celo Dark
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4862,7 +5487,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       #2E3338
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4877,7 +5502,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       RGBA (46, 51, 56, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -4896,7 +5521,7 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -4916,7 +5541,7 @@ Blue represents help within digital experiences like websites and mobile applica
               Contrast
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -4934,7 +5559,7 @@ Blue represents help within digital experiences like websites and mobile applica
               For accessibility, choose high contrast color combinations when laying out text.
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -4948,7 +5573,7 @@ Blue represents help within digital experiences like websites and mobile applica
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -4982,7 +5607,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="css-text-901oao"
+                  className="emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -4999,7 +5624,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -5025,7 +5650,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="css-text-901oao"
+                  className="emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -5043,7 +5668,7 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -5061,7 +5686,7 @@ Blue represents help within digital experiences like websites and mobile applica
               For best results, we recommend following these dos and don’ts:
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "width": "100%",
@@ -5069,7 +5694,7 @@ Blue represents help within digital experiences like websites and mobile applica
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -5081,7 +5706,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5094,7 +5719,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5111,7 +5736,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5132,7 +5757,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitAlignItems": "center",
@@ -5156,7 +5781,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -5174,7 +5799,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5187,7 +5812,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5204,7 +5829,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5225,7 +5850,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitAlignItems": "center",
@@ -5249,7 +5874,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -5268,7 +5893,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -5280,7 +5905,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5293,7 +5918,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5310,7 +5935,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5331,7 +5956,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitAlignItems": "center",
@@ -5355,7 +5980,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "WebkitFlexBasis": "auto",
@@ -5373,7 +5998,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5394,7 +6019,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       />
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -5412,7 +6037,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5425,7 +6050,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5442,7 +6067,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5463,7 +6088,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitAlignItems": "center",
@@ -5487,7 +6112,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "WebkitFlexBasis": "auto",
@@ -5505,7 +6130,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5526,7 +6151,7 @@ Blue represents help within digital experiences like websites and mobile applica
                       />
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -5545,7 +6170,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -5557,7 +6182,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5570,7 +6195,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5587,7 +6212,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5608,7 +6233,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitAlignItems": "center",
@@ -5632,7 +6257,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -5650,7 +6275,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5663,7 +6288,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5680,7 +6305,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5701,7 +6326,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitAlignItems": "center",
@@ -5725,7 +6350,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     }
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -5750,7 +6375,7 @@ Blue represents help within digital experiences like websites and mobile applica
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="experience-footer"
     style={
       Object {
@@ -5761,48 +6386,16 @@ Blue represents help within digital experiences like websites and mobile applica
     }
   >
     <section
-      css={
-        Object {
-          "map": undefined,
-          "name": "pnyh7x",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-340"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "4s0z69",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr 1fr 1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr 1fr 1fr ;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-341"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "yp1uga",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;;grid-column:span 1;@media (min-width: 576px) and (max-width: 992px){grid-column:span 3;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-342"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1geme6m",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-bottom:20px;@media (max-width: 576px){margin-bottom:30px;justify-content:center;align-items:center;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-343"
           >
             <svg
               fill="none"
@@ -5825,51 +6418,19 @@ Blue represents help within digital experiences like websites and mobile applica
             </svg>
           </div>
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "mel2sl",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:column;;padding-bottom:20px;@media (max-width: 576px){justify-content:center;align-items:center;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-344"
           >
             <p
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "t37gzz",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-345"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "t37gzz",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-345"
             >
               Read more in Celo 
               <a
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "q2y3yl",
-                    "next": undefined,
-                    "styles": "color:inherit;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-347"
                 href="/terms"
               >
                 Terms of Service
@@ -5878,64 +6439,24 @@ Blue represents help within digital experiences like websites and mobile applica
           </div>
         </div>
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1rf1jz1",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;;grid-column:span 2;@media (min-width: 576px) and (max-width: 992px){grid-column:span 3;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-348"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1qrhj6b",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:row;;justify-content:space-around;@media (min-width: 576px) and (max-width: 992px){justify-content:space-between;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-349"
           >
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-350"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-351"
               >
                 Celo
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5948,7 +6469,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/"
                     onClick={[Function]}
@@ -5981,18 +6502,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6005,7 +6518,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/about"
                     onClick={[Function]}
@@ -6038,18 +6551,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6062,7 +6567,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/jobs"
                     onClick={[Function]}
@@ -6095,18 +6600,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6119,7 +6616,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/validators"
                     onClick={[Function]}
@@ -6152,18 +6649,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6176,7 +6665,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/developers"
                     onClick={[Function]}
@@ -6209,18 +6698,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6233,7 +6714,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/alliance"
                     onClick={[Function]}
@@ -6266,18 +6747,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6290,7 +6763,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/community"
                     onClick={[Function]}
@@ -6323,18 +6796,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6347,7 +6812,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/annual-reports/2020"
                     onClick={[Function]}
@@ -6381,42 +6846,18 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-392"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-351"
               >
                 Technology
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6429,7 +6870,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://docs.celo.org/"
                     onClick={[Function]}
@@ -6462,18 +6903,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6486,7 +6919,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/audits"
                     onClick={[Function]}
@@ -6519,18 +6952,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6543,7 +6968,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.celoreserve.org"
                     onClick={[Function]}
@@ -6576,18 +7001,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6600,7 +7017,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/papers"
                     onClick={[Function]}
@@ -6633,18 +7050,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6657,7 +7066,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/public-sector"
                     onClick={[Function]}
@@ -6691,42 +7100,18 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-392"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-351"
               >
                 Resources
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6739,7 +7124,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/brand-policy"
                     onClick={[Function]}
@@ -6772,18 +7157,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6796,7 +7173,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/press"
                     onClick={[Function]}
@@ -6829,18 +7206,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6853,7 +7222,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/community#events"
                     onClick={[Function]}
@@ -6886,18 +7255,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6910,7 +7271,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/events"
                     onClick={[Function]}
@@ -6943,18 +7304,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6967,7 +7320,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/brand"
                     onClick={[Function]}
@@ -7000,18 +7353,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7024,7 +7369,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/merchant"
                     onClick={[Function]}
@@ -7057,18 +7402,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7081,7 +7418,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/grants"
                     onClick={[Function]}
@@ -7114,18 +7451,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7138,7 +7467,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/pilots"
                     onClick={[Function]}
@@ -7171,18 +7500,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7195,7 +7516,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/community#fund"
                     onClick={[Function]}
@@ -7229,42 +7550,18 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-466"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-351"
               >
                 Social
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7277,7 +7574,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://medium.com/celoOrg"
                     onClick={[Function]}
@@ -7306,7 +7603,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7334,18 +7631,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7358,7 +7647,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://github.com/celo-org/celo-monorepo"
                     onClick={[Function]}
@@ -7387,7 +7676,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7417,18 +7706,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7441,7 +7722,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://twitter.com/CeloOrg"
                     onClick={[Function]}
@@ -7470,7 +7751,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7498,18 +7779,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7522,7 +7795,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://forum.celo.org/"
                     onClick={[Function]}
@@ -7551,7 +7824,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7579,18 +7852,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7603,7 +7868,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://discord.gg/6yWMkgM"
                     onClick={[Function]}
@@ -7632,7 +7897,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7662,18 +7927,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7686,7 +7943,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                     onClick={[Function]}
@@ -7715,7 +7972,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7743,18 +8000,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7767,7 +8016,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.instagram.com/celoorg/"
                     onClick={[Function]}
@@ -7796,7 +8045,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7823,18 +8072,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7847,7 +8088,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.linkedin.com/company/celoOrg/"
                     onClick={[Function]}
@@ -7876,7 +8117,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7901,18 +8142,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7925,7 +8158,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.twitch.tv/celoorg"
                     onClick={[Function]}
@@ -7954,7 +8187,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7979,18 +8212,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -8003,7 +8228,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.reddit.com/r/celo/"
                     onClick={[Function]}
@@ -8032,7 +8257,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -8057,18 +8282,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-352"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -8081,7 +8298,7 @@ Blue represents help within digital experiences like websites and mobile applica
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://t.me/celoplatform"
                     onClick={[Function]}
@@ -8110,7 +8327,7 @@ Blue represents help within digital experiences like websites and mobile applica
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -8140,171 +8357,48 @@ Blue represents help within digital experiences like websites and mobile applica
       </div>
     </section>
     <section
-      css={
-        Object {
-          "map": undefined,
-          "name": "pnyh7x",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-340"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "1dav2mh",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr ;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-535"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "vzw4bb",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex-direction:row;justify-content:space-between;@media (max-width: 576px){flex-direction:column;justify-content:center;align-items:center;;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-536"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1qqd3hf",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin-bottom:20px;overflow:hidden;@media (max-width: 576px){justify-content:center;align-items:center;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-537"
           >
             <img
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "12enyax",
-                  "next": undefined,
-                  "styles": "width:20px;height:20px;z-index:10;@media (max-width: 576px){margin-bottom:8px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-538"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "j9fttm",
-                  "next": undefined,
-                  "styles": "margin-left:10px;margin-right:10px;z-index:10;@media (max-width: 576px){display:none;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-539"
             >
               |
             </span>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1qm52s3",
-                  "next": undefined,
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:column;;position:relative;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-540"
             >
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1vj6g1i",
-                    "next": Object {
-                      "name": "animation-10pgf30",
-                      "next": undefined,
-                      "styles": "@keyframes animation-10pgf30{
-  from {
-    transform: translateX(-100%)
-  }
-  to {
-    transform: translateX(0%)
-  }
-}",
-                    },
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:column;;background-color:#FFFFFF;position:absolute;height:100%;width:101%;animation-duration:250ms;animation-iteration-count:1;animation-timing-function:linear;animation-fill-mode:both;;animation-delay:3500ms;animation-name:animation-10pgf30;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-541"
               />
               <span
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1kns1qg",
-                    "next": Object {
-                      "name": "animation-hsntgn",
-                      "next": undefined,
-                      "styles": "@keyframes animation-hsntgn{
-  from {
-    opacity: 0
-  }
-
-  to {
-    opacity: 1
-  }
-}",
-                    },
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;font-style:italic;;animation-fill-mode:both;animation-iteration-count:1;animation-duration:750ms;animation-name:animation-hsntgn;@media (max-width: 576px){text-align:center;};",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-542"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "13pj5cp",
-                    "next": Object {
-                      "name": "animation-1w4hjlk",
-                      "next": undefined,
-                      "styles": "@keyframes animation-1w4hjlk{
-  from {
-    transform: translateX(0%)
-  }
-
-  to {
-    transform: translateX(100%)
-  }
-}",
-                    },
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:column;;background-color:#FFFFFF;position:absolute;height:100%;width:101%;animation-duration:250ms;animation-iteration-count:1;animation-timing-function:linear;animation-fill-mode:both;;animation-name:animation-1w4hjlk;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-543"
               />
             </div>
           </div>
           <small
-            css={
-              Object {
-                "map": undefined,
-                "name": "2xk5ul",
-                "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;z-index:10;;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-544"
           >
             The Celo Foundation, © Celo 2021
           </small>

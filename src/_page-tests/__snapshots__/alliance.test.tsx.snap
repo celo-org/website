@@ -1,11 +1,435 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alliance renders 1`] = `
+.emotion-10 {
+  opacity: 0;
+}
+
+.emotion-20 {
+  margin-bottom: 10px;
+}
+
+.emotion-24 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 5px 0;
+  height: auto;
+  max-height: 80px;
+  transition-property: max-height;
+  transition-duration: 600ms;
+  max-height: 0;
+}
+
+.emotion-25 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  transition-property: opacity;
+  transition-duration: 700ms;
+  opacity: 0;
+  color: #FF7F6D;
+  font-weight: 500;
+}
+
+.emotion-49 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  transition-property: opacity;
+  transition-duration: 700ms;
+  opacity: 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: #35D07F;
+  font-weight: 500;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-50 {
+  margin-left: 10px;
+}
+
+.emotion-139 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+  text-align: center;
+  font-size: 65px;
+  line-height: 72px;
+  font-style: italic;
+  max-width: 1200px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-139 {
+    font-size: 42px;
+    line-height: 50px;
+    font-style: italic;
+  }
+}
+
+.emotion-140 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-140 {
+    font-family: EB Garamond,eb-garamond,Garamond,serif;
+    font-size: 36px;
+    line-height: 40;
+    text-rendering: geometricPrecision;
+    color: #2E3338;
+    font-weight: normal;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 40px;
+  }
+}
+
+.emotion-141 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-142 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-142 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-142 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-142 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-142 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-142 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-142 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-142 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.emotion-143 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 24px;
+  line-height: 28;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-143 {
+    text-align: center;
+  }
+}
+
+.emotion-144 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 40px;
+  line-height: 48;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 48px;
+  margin: 20px 0px;
+}
+
+@media (max-width: 576px) {
+  .emotion-144 {
+    text-align: center;
+  }
+}
+
+.emotion-145 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-146 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-147 {
+  width: 100px;
+  height: 100px;
+}
+
+.emotion-149 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  text-align: center;
+  max-width: 240px;
+  margin: 30px 50px;
+}
+
+.emotion-194 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+  text-align: center;
+  font-size: 65px;
+  line-height: 72px;
+  font-style: italic;
+  max-width: 1200px;
+  color: #2E3338;
+}
+
+@media (max-width: 576px) {
+  .emotion-194 {
+    font-size: 42px;
+    line-height: 50px;
+    font-style: italic;
+  }
+}
+
+.emotion-195 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 36px;
+  color: #2E3338;
+}
+
+@media (max-width: 576px) {
+  .emotion-195 {
+    font-family: EB Garamond,eb-garamond,Garamond,serif;
+    font-size: 36px;
+    line-height: 40;
+    text-rendering: geometricPrecision;
+    color: #2E3338;
+    font-weight: normal;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 40px;
+  }
+}
+
+.emotion-209 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 <div
-  className="css-view-1dbjc4n"
+  className="emotion-0"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "backgroundColor": "rgba(46,51,56,1.00)",
@@ -13,7 +437,7 @@ exports[`Alliance renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -29,7 +453,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "height": "100vh",
@@ -2107,7 +2531,7 @@ exports[`Alliance renders 1`] = `
           </g>
         </svg>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -2127,7 +2551,7 @@ exports[`Alliance renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n r-animationKeyframes-194ob10"
+            className="emotion-0 r-animationKeyframes-194ob10"
             style={
               Object {
                 "WebkitAnimationDelay": "1000ms",
@@ -2145,7 +2569,7 @@ exports[`Alliance renders 1`] = `
           >
             <h4
               aria-level="4"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -2170,7 +2594,7 @@ exports[`Alliance renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -2199,7 +2623,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -2218,10 +2642,10 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-q7lffx"
+          className="emotion-10"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignItems": "center",
@@ -2276,7 +2700,7 @@ exports[`Alliance renders 1`] = `
             </svg>
             <h1
               aria-level="1"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -2298,7 +2722,7 @@ exports[`Alliance renders 1`] = `
             </h1>
             <h4
               aria-level="4"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -2319,11 +2743,11 @@ exports[`Alliance renders 1`] = `
           </div>
         </div>
         <div
-          className="css-q7lffx"
+          className="emotion-10"
         >
           <form>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginBottom": "20px",
@@ -2334,10 +2758,10 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -2349,15 +2773,10 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
-                    style={
-                      Object {
-                        "marginBottom": "10px",
-                      }
-                    }
+                    className="emotion-20"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "marginBottom": "5px",
@@ -2365,7 +2784,7 @@ exports[`Alliance renders 1`] = `
                       }
                     >
                       <label
-                        className="css-text-901oao"
+                        className="emotion-7"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -2387,7 +2806,7 @@ exports[`Alliance renders 1`] = `
                       autoCapitalize="sentences"
                       autoComplete="on"
                       autoCorrect="on"
-                      className="css-textinput-11aywtz"
+                      className="emotion-23"
                       dir="auto"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -2437,26 +2856,10 @@ exports[`Alliance renders 1`] = `
                     <div
                       aria-hidden={true}
                       aria-live="polite"
-                      css={
-                        Object {
-                          "map": undefined,
-                          "name": "1g9z2kg",
-                          "next": undefined,
-                          "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                          "toString": [Function],
-                        }
-                      }
+                      className="emotion-24"
                     >
                       <p
-                        css={
-                          Object {
-                            "map": undefined,
-                            "name": "go9nnh",
-                            "next": undefined,
-                            "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                            "toString": [Function],
-                          }
-                        }
+                        className="emotion-25"
                       >
                         Oops I’m blank!
                       </p>
@@ -2464,7 +2867,7 @@ exports[`Alliance renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -2476,15 +2879,10 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
-                    style={
-                      Object {
-                        "marginBottom": "10px",
-                      }
-                    }
+                    className="emotion-20"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "marginBottom": "5px",
@@ -2492,7 +2890,7 @@ exports[`Alliance renders 1`] = `
                       }
                     >
                       <label
-                        className="css-text-901oao"
+                        className="emotion-7"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -2514,7 +2912,7 @@ exports[`Alliance renders 1`] = `
                       autoCapitalize="sentences"
                       autoComplete="on"
                       autoCorrect="on"
-                      className="css-textinput-11aywtz"
+                      className="emotion-23"
                       dir="auto"
                       onBlur={[Function]}
                       onChange={[Function]}
@@ -2564,26 +2962,10 @@ exports[`Alliance renders 1`] = `
                     <div
                       aria-hidden={true}
                       aria-live="polite"
-                      css={
-                        Object {
-                          "map": undefined,
-                          "name": "1g9z2kg",
-                          "next": undefined,
-                          "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                          "toString": [Function],
-                        }
-                      }
+                      className="emotion-24"
                     >
                       <p
-                        css={
-                          Object {
-                            "map": undefined,
-                            "name": "go9nnh",
-                            "next": undefined,
-                            "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                            "toString": [Function],
-                          }
-                        }
+                        className="emotion-25"
                       >
                         Please enter a valid email
                       </p>
@@ -2592,7 +2974,7 @@ exports[`Alliance renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -2604,15 +2986,10 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "marginBottom": "10px",
-                    }
-                  }
+                  className="emotion-20"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginBottom": "5px",
@@ -2620,7 +2997,7 @@ exports[`Alliance renders 1`] = `
                     }
                   >
                     <label
-                      className="css-text-901oao"
+                      className="emotion-7"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2642,7 +3019,7 @@ exports[`Alliance renders 1`] = `
                     autoCapitalize="sentences"
                     autoComplete="on"
                     autoCorrect="on"
-                    className="css-textinput-11aywtz"
+                    className="emotion-23"
                     dir="auto"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -2692,7 +3069,7 @@ exports[`Alliance renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -2704,7 +3081,7 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitBoxDirection": "normal",
@@ -2716,7 +3093,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -2737,7 +3114,7 @@ exports[`Alliance renders 1`] = `
                     }
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-7"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -2771,7 +3148,7 @@ exports[`Alliance renders 1`] = `
                     />
                   </div>
                   <div
-                    className="css-text-901oao"
+                    className="emotion-7"
                     dir="auto"
                     onClick={[Function]}
                     style={
@@ -2803,7 +3180,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -2822,7 +3199,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2830,7 +3207,7 @@ exports[`Alliance renders 1`] = `
                 onMouseUp={[Function]}
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-6 emotion-46 emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   role="link"
@@ -2886,26 +3263,10 @@ exports[`Alliance renders 1`] = `
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-24"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-49"
                 >
                   <svg
                     fill="none"
@@ -2921,15 +3282,7 @@ exports[`Alliance renders 1`] = `
                     />
                   </svg>
                   <span
-                    css={
-                      Object {
-                        "map": undefined,
-                        "name": "1y6ic72",
-                        "next": undefined,
-                        "styles": "margin-left:10px;",
-                        "toString": [Function],
-                      }
-                    }
+                    className="emotion-50"
                   >
                     Application Submitted
                   </span>
@@ -2937,7 +3290,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -2954,26 +3307,10 @@ exports[`Alliance renders 1`] = `
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-24"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-25"
                 />
               </div>
             </div>
@@ -2983,7 +3320,7 @@ exports[`Alliance renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "marginBottom": "75px",
@@ -2991,7 +3328,7 @@ exports[`Alliance renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -3012,7 +3349,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -3032,7 +3369,7 @@ exports[`Alliance renders 1`] = `
       >
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-6 emotion-7"
           dir="auto"
           onClick={[Function]}
           role="heading"
@@ -3051,7 +3388,7 @@ exports[`Alliance renders 1`] = `
         </h3>
         <h2
           aria-level="2"
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-6 emotion-7"
           dir="auto"
           onClick={[Function]}
           role="heading"
@@ -3073,7 +3410,7 @@ exports[`Alliance renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -3095,7 +3432,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -3114,7 +3451,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "maxWidth": "440px",
@@ -3123,7 +3460,7 @@ exports[`Alliance renders 1`] = `
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -3141,7 +3478,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe we have a lot to learn from 
             <span
-              className="css-text-901oao css-textHasAncestor-16my406"
+              className="emotion-7 emotion-67"
               onClick={[Function]}
               style={
                 Object {
@@ -3153,7 +3490,7 @@ exports[`Alliance renders 1`] = `
             </span>
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "marginBottom": "20px",
@@ -3162,7 +3499,7 @@ exports[`Alliance renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitFlexBasis": "auto",
@@ -3177,7 +3514,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3199,7 +3536,7 @@ exports[`Alliance renders 1`] = `
             </div>
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3217,7 +3554,7 @@ exports[`Alliance renders 1`] = `
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -3236,7 +3573,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "paddingLeft": "20px",
@@ -3245,10 +3582,10 @@ exports[`Alliance renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "block",
@@ -3279,7 +3616,7 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFilter": "blur(20px)",
@@ -3297,7 +3634,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFilter": "blur(20px)",
@@ -3322,7 +3659,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "height": "100%",
@@ -3332,7 +3669,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "block",
@@ -3363,7 +3700,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -3378,7 +3715,7 @@ exports[`Alliance renders 1`] = `
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3406,7 +3743,7 @@ exports[`Alliance renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -3428,7 +3765,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -3447,7 +3784,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "maxWidth": "475px",
@@ -3456,7 +3793,7 @@ exports[`Alliance renders 1`] = `
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -3474,7 +3811,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe in designing 
             <span
-              className="css-text-901oao css-textHasAncestor-16my406"
+              className="emotion-7 emotion-67"
               onClick={[Function]}
               style={
                 Object {
@@ -3487,7 +3824,7 @@ exports[`Alliance renders 1`] = `
             , not for them.
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "marginBottom": "20px",
@@ -3496,7 +3833,7 @@ exports[`Alliance renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitFlexBasis": "auto",
@@ -3511,7 +3848,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3533,7 +3870,7 @@ exports[`Alliance renders 1`] = `
             </div>
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3549,7 +3886,7 @@ exports[`Alliance renders 1`] = `
             Collaborating to bring financial tools to refugees.
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -3557,7 +3894,7 @@ exports[`Alliance renders 1`] = `
             onMouseUp={[Function]}
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -3585,7 +3922,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-6 emotion-46 emotion-7"
                 dir="auto"
                 href="https://medium.com/celoorg/how-to-design-for-all-stories-from-tanzania-refugees-8b34594d64ae"
                 onClick={[Function]}
@@ -3612,7 +3949,7 @@ exports[`Alliance renders 1`] = `
               >
                 Tanzania Research Report
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -3643,7 +3980,7 @@ exports[`Alliance renders 1`] = `
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -3662,7 +3999,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "paddingLeft": "20px",
@@ -3671,10 +4008,10 @@ exports[`Alliance renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "block",
@@ -3705,7 +4042,7 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFilter": "blur(20px)",
@@ -3723,7 +4060,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFilter": "blur(20px)",
@@ -3748,7 +4085,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "height": "100%",
@@ -3758,7 +4095,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "block",
@@ -3789,7 +4126,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -3804,7 +4141,7 @@ exports[`Alliance renders 1`] = `
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3832,7 +4169,7 @@ exports[`Alliance renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -3854,7 +4191,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -3873,7 +4210,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "maxWidth": "400px",
@@ -3882,7 +4219,7 @@ exports[`Alliance renders 1`] = `
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -3900,7 +4237,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe systems are complex and require 
             <span
-              className="css-text-901oao css-textHasAncestor-16my406"
+              className="emotion-7 emotion-67"
               onClick={[Function]}
               style={
                 Object {
@@ -3912,7 +4249,7 @@ exports[`Alliance renders 1`] = `
             </span>
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "marginBottom": "20px",
@@ -3921,7 +4258,7 @@ exports[`Alliance renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitFlexBasis": "auto",
@@ -3936,7 +4273,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3958,7 +4295,7 @@ exports[`Alliance renders 1`] = `
             </div>
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3974,7 +4311,7 @@ exports[`Alliance renders 1`] = `
             Exploring how to bring more Filipino merchants & consumers  into the formal economy.
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -3982,7 +4319,7 @@ exports[`Alliance renders 1`] = `
             onMouseUp={[Function]}
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -4010,7 +4347,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-6 emotion-46 emotion-7"
                 dir="auto"
                 href="https://medium.com/celoorg/a-cryptocurrency-for-every-juan-144144e62d5"
                 onClick={[Function]}
@@ -4037,7 +4374,7 @@ exports[`Alliance renders 1`] = `
               >
                 Phillippines Pilot Report
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -4068,7 +4405,7 @@ exports[`Alliance renders 1`] = `
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -4087,7 +4424,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "paddingLeft": "20px",
@@ -4096,10 +4433,10 @@ exports[`Alliance renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "block",
@@ -4130,7 +4467,7 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFilter": "blur(20px)",
@@ -4148,7 +4485,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFilter": "blur(20px)",
@@ -4173,7 +4510,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "height": "100%",
@@ -4183,7 +4520,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "block",
@@ -4214,7 +4551,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -4229,7 +4566,7 @@ exports[`Alliance renders 1`] = `
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -4258,7 +4595,7 @@ exports[`Alliance renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignItems": "center",
@@ -4279,7 +4616,7 @@ exports[`Alliance renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitFlexBasis": "auto",
@@ -4298,7 +4635,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "backgroundColor": "rgba(0,0,0,0.00)",
@@ -4319,30 +4656,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      css={
-        Object {
-          "map": undefined,
-          "name": "1da3861",
-          "next": undefined,
-          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;font-size:65px;line-height:72px;font-style:italic;max-width:1200px;@media (max-width: 576px){font-size:42px;line-height:50px;font-style:italic;};color:#FFFFFF;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-139"
     >
       “
       The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications
       ”
     </blockquote>
     <figcaption
-      css={
-        Object {
-          "map": undefined,
-          "name": "1t7non3",
-          "next": undefined,
-          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;margin-top:40px;font-size:36px;@media (max-width: 576px){font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:36px;line-height:40;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:40px;;};color:#FFFFFF;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-140"
     >
       <span>
         Gigi Gatti, Grameen Foundation
@@ -4350,74 +4671,26 @@ exports[`Alliance renders 1`] = `
     </figcaption>
   </div>
   <section
-    css={
-      Object {
-        "map": undefined,
-        "name": "pnyh7x",
-        "next": undefined,
-        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-        "toString": [Function],
-      }
-    }
+    className="emotion-141"
   >
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "1dav2mh",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr ;}",
-          "toString": [Function],
-        }
-      }
+      className="emotion-142"
     >
       <h3
-        css={
-          Object {
-            "map": undefined,
-            "name": "1tn82yu",
-            "next": undefined,
-            "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:24px;line-height:28;font-weight:400;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;margin-bottom:20px;@media (max-width: 576px){text-align:center;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-143"
       >
         Benefits of collaborating on a mission-driven blockchain
       </h3>
       <h2
-        css={
-          Object {
-            "map": undefined,
-            "name": "rdwl56",
-            "next": undefined,
-            "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:40px;line-height:48;text-rendering:geometricPrecision;color:#2E3338;line-height:48px;;margin:20px 0px;@media (max-width: 576px){text-align:center;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-144"
       >
         What the Alliance offers
       </h2>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "3y4j0m",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:row;;justify-content:center;align-items:center;;flex-wrap:wrap;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-145"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "d8ybav",
-              "next": undefined,
-              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
-              "toString": [Function],
-            }
-          }
+          className="emotion-146"
         >
           <div
             style={
@@ -4456,15 +4729,7 @@ exports[`Alliance renders 1`] = `
               />
             </div>
             <img
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1mf35eq",
-                  "next": undefined,
-                  "styles": "width:100px;height:100px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-147"
               data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4497,15 +4762,7 @@ exports[`Alliance renders 1`] = `
             />
             <noscript>
               <img
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1mf35eq",
-                    "next": undefined,
-                    "styles": "width:100px;height:100px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -4537,29 +4794,13 @@ exports[`Alliance renders 1`] = `
             </noscript>
           </div>
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "15bbqtc",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-149"
           >
             Connect with like-minded members
           </p>
         </div>
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "d8ybav",
-              "next": undefined,
-              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
-              "toString": [Function],
-            }
-          }
+          className="emotion-146"
         >
           <div
             style={
@@ -4598,15 +4839,7 @@ exports[`Alliance renders 1`] = `
               />
             </div>
             <img
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1mf35eq",
-                  "next": undefined,
-                  "styles": "width:100px;height:100px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-147"
               data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4639,15 +4872,7 @@ exports[`Alliance renders 1`] = `
             />
             <noscript>
               <img
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1mf35eq",
-                    "next": undefined,
-                    "styles": "width:100px;height:100px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -4679,29 +4904,13 @@ exports[`Alliance renders 1`] = `
             </noscript>
           </div>
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "15bbqtc",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-149"
           >
             Build and shape improvements to the Celo platform
           </p>
         </div>
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "d8ybav",
-              "next": undefined,
-              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
-              "toString": [Function],
-            }
-          }
+          className="emotion-146"
         >
           <div
             style={
@@ -4740,15 +4949,7 @@ exports[`Alliance renders 1`] = `
               />
             </div>
             <img
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1mf35eq",
-                  "next": undefined,
-                  "styles": "width:100px;height:100px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-147"
               data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4781,15 +4982,7 @@ exports[`Alliance renders 1`] = `
             />
             <noscript>
               <img
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1mf35eq",
-                    "next": undefined,
-                    "styles": "width:100px;height:100px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -4821,29 +5014,13 @@ exports[`Alliance renders 1`] = `
             </noscript>
           </div>
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "15bbqtc",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-149"
           >
             Attend special programs and events
           </p>
         </div>
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "d8ybav",
-              "next": undefined,
-              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
-              "toString": [Function],
-            }
-          }
+          className="emotion-146"
         >
           <div
             style={
@@ -4882,15 +5059,7 @@ exports[`Alliance renders 1`] = `
               />
             </div>
             <img
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1mf35eq",
-                  "next": undefined,
-                  "styles": "width:100px;height:100px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-147"
               data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4923,15 +5092,7 @@ exports[`Alliance renders 1`] = `
             />
             <noscript>
               <img
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1mf35eq",
-                    "next": undefined,
-                    "styles": "width:100px;height:100px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -4963,29 +5124,13 @@ exports[`Alliance renders 1`] = `
             </noscript>
           </div>
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "15bbqtc",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-149"
           >
             Access to education and support
           </p>
         </div>
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "d8ybav",
-              "next": undefined,
-              "styles": "justify-content:center;align-items:center;;box-sizing:border-box;display:flex;flex-direction:column;;",
-              "toString": [Function],
-            }
-          }
+          className="emotion-146"
         >
           <div
             style={
@@ -5024,15 +5169,7 @@ exports[`Alliance renders 1`] = `
               />
             </div>
             <img
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1mf35eq",
-                  "next": undefined,
-                  "styles": "width:100px;height:100px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-147"
               data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5065,15 +5202,7 @@ exports[`Alliance renders 1`] = `
             />
             <noscript>
               <img
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1mf35eq",
-                    "next": undefined,
-                    "styles": "width:100px;height:100px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -5105,15 +5234,7 @@ exports[`Alliance renders 1`] = `
             </noscript>
           </div>
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "15bbqtc",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;;max-width:240px;margin:30px 50px;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-149"
           >
             Expand your reach to help more communities
           </p>
@@ -5122,11 +5243,11 @@ exports[`Alliance renders 1`] = `
     </div>
   </section>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="blog"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -5148,7 +5269,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -5175,11 +5296,11 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-q7lffx"
+          className="emotion-10"
         >
           <h2
             aria-level="2"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -5200,7 +5321,7 @@ exports[`Alliance renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -5232,7 +5353,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -5251,7 +5372,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -5271,7 +5392,7 @@ exports[`Alliance renders 1`] = `
         >
           <div
             aria-label="loading"
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "height": "50px",
@@ -5286,7 +5407,7 @@ exports[`Alliance renders 1`] = `
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -5305,7 +5426,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -5325,7 +5446,7 @@ exports[`Alliance renders 1`] = `
         >
           <div
             aria-label="loading"
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "height": "50px",
@@ -5340,7 +5461,7 @@ exports[`Alliance renders 1`] = `
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -5359,7 +5480,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -5379,7 +5500,7 @@ exports[`Alliance renders 1`] = `
         >
           <div
             aria-label="loading"
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "height": "50px",
@@ -5395,7 +5516,7 @@ exports[`Alliance renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -5417,7 +5538,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -5444,7 +5565,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -5452,7 +5573,7 @@ exports[`Alliance renders 1`] = `
           onMouseUp={[Function]}
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -5480,7 +5601,7 @@ exports[`Alliance renders 1`] = `
             }
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-6 emotion-46 emotion-7"
               dir="auto"
               href="https://medium.com/celoOrg"
               onClick={[Function]}
@@ -5507,7 +5628,7 @@ exports[`Alliance renders 1`] = `
             >
               Read more on our blog
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -5531,7 +5652,7 @@ exports[`Alliance renders 1`] = `
                 </svg>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -5563,7 +5684,7 @@ exports[`Alliance renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignItems": "center",
@@ -5584,7 +5705,7 @@ exports[`Alliance renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitFlexBasis": "auto",
@@ -5603,7 +5724,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5624,30 +5745,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      css={
-        Object {
-          "map": undefined,
-          "name": "1ouj4nj",
-          "next": undefined,
-          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;font-size:65px;line-height:72px;font-style:italic;max-width:1200px;@media (max-width: 576px){font-size:42px;line-height:50px;font-style:italic;};color:#2E3338;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-194"
     >
       “
       Our hope is that this Alliance will start unlocking the potential of internet money
       ”
     </blockquote>
     <figcaption
-      css={
-        Object {
-          "map": undefined,
-          "name": "hmedu4",
-          "next": undefined,
-          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;margin-top:40px;font-size:36px;@media (max-width: 576px){font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:36px;line-height:40;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:40px;;};color:#2E3338;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-195"
     >
       <span>
         Katie Haun, Andreessen Horowitz
@@ -5655,11 +5760,11 @@ exports[`Alliance renders 1`] = `
     </figcaption>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="members"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -5680,7 +5785,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -5700,7 +5805,7 @@ exports[`Alliance renders 1`] = `
       >
         <h2
           aria-level="2"
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-6 emotion-7"
           dir="auto"
           onClick={[Function]}
           role="heading"
@@ -5721,7 +5826,7 @@ exports[`Alliance renders 1`] = `
         </h2>
         <h4
           aria-level="4"
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-6 emotion-7"
           dir="auto"
           onClick={[Function]}
           role="heading"
@@ -5739,7 +5844,7 @@ exports[`Alliance renders 1`] = `
         >
           Member contributions, 
           <span
-            className="css-text-901oao css-textHasAncestor-16my406"
+            className="emotion-7 emotion-67"
             onClick={[Function]}
             style={
               Object {
@@ -5753,7 +5858,7 @@ exports[`Alliance renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -5775,7 +5880,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -5794,7 +5899,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "maxWidth": "220px",
@@ -5802,7 +5907,7 @@ exports[`Alliance renders 1`] = `
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -5820,18 +5925,10 @@ exports[`Alliance renders 1`] = `
             Refine By
           </div>
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "9skeys",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:column;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-209"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "position": "static",
@@ -5840,7 +5937,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -5863,7 +5960,7 @@ exports[`Alliance renders 1`] = `
                 tabIndex="0"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitAlignItems": "center",
@@ -5905,7 +6002,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <label
-                    className="css-text-901oao"
+                    className="emotion-7"
                     dir="auto"
                     onClick={[Function]}
                     style={
@@ -5947,7 +6044,7 @@ exports[`Alliance renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 role="listbox"
                 style={
                   Object {
@@ -5974,7 +6071,7 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6005,7 +6102,7 @@ exports[`Alliance renders 1`] = `
                   Show All
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6036,7 +6133,7 @@ exports[`Alliance renders 1`] = `
                   Accept
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6067,7 +6164,7 @@ exports[`Alliance renders 1`] = `
                   Acquire
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6098,7 +6195,7 @@ exports[`Alliance renders 1`] = `
                   Build
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6129,7 +6226,7 @@ exports[`Alliance renders 1`] = `
                   Community
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6160,7 +6257,7 @@ exports[`Alliance renders 1`] = `
                   Earn
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6191,7 +6288,7 @@ exports[`Alliance renders 1`] = `
                   Educate
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6222,7 +6319,7 @@ exports[`Alliance renders 1`] = `
                   Give
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6253,7 +6350,7 @@ exports[`Alliance renders 1`] = `
                   Grow
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6284,7 +6381,7 @@ exports[`Alliance renders 1`] = `
                   Lend
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6315,7 +6412,7 @@ exports[`Alliance renders 1`] = `
                   Pay
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6346,7 +6443,7 @@ exports[`Alliance renders 1`] = `
                   Preserve
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6377,7 +6474,7 @@ exports[`Alliance renders 1`] = `
                   Regenerate
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6408,7 +6505,7 @@ exports[`Alliance renders 1`] = `
                   Save
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6439,7 +6536,7 @@ exports[`Alliance renders 1`] = `
                   Secure
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   onMouseDown={[Function]}
@@ -6475,7 +6572,7 @@ exports[`Alliance renders 1`] = `
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -6494,11 +6591,11 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -6516,7 +6613,7 @@ exports[`Alliance renders 1`] = `
             Accept
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -6527,7 +6624,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -6543,7 +6640,7 @@ exports[`Alliance renders 1`] = `
             Enable your communities to easily pay for mobile top ups, utilities, and shopping online with stablecoins
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -6567,11 +6664,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -6589,7 +6686,7 @@ exports[`Alliance renders 1`] = `
             Acquire
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -6600,7 +6697,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -6616,7 +6713,7 @@ exports[`Alliance renders 1`] = `
             Make it easy to acquire stablecoins in digital wallets
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -6640,11 +6737,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -6662,7 +6759,7 @@ exports[`Alliance renders 1`] = `
             Build
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -6673,7 +6770,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -6689,7 +6786,7 @@ exports[`Alliance renders 1`] = `
             Deliver innovative solutions for your customers by building on the Celo platform
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -6713,11 +6810,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -6735,7 +6832,7 @@ exports[`Alliance renders 1`] = `
             Community
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -6746,7 +6843,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -6762,7 +6859,7 @@ exports[`Alliance renders 1`] = `
             Strengthen communities by introducing local and community currencies
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -6786,11 +6883,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -6808,7 +6905,7 @@ exports[`Alliance renders 1`] = `
             Earn
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -6819,7 +6916,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -6835,7 +6932,7 @@ exports[`Alliance renders 1`] = `
             Allow communities to earn stable, digital assets for lending their talents for various tasks
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -6859,11 +6956,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -6881,7 +6978,7 @@ exports[`Alliance renders 1`] = `
             Educate
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -6892,7 +6989,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -6908,7 +7005,7 @@ exports[`Alliance renders 1`] = `
             Incentivize communities to learn about Celo and actively engage with the Celo platform
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -6932,11 +7029,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -6954,7 +7051,7 @@ exports[`Alliance renders 1`] = `
             Give
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -6965,7 +7062,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -6981,7 +7078,7 @@ exports[`Alliance renders 1`] = `
             Increase transparency, reduce fraud, and increase mobility by giving stablecoins
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -7005,11 +7102,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7027,7 +7124,7 @@ exports[`Alliance renders 1`] = `
             Grow
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -7038,7 +7135,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -7054,7 +7151,7 @@ exports[`Alliance renders 1`] = `
             Grow the Celo platform through the purchase of the native token, CELO
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -7078,11 +7175,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7100,7 +7197,7 @@ exports[`Alliance renders 1`] = `
             Lend
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -7111,7 +7208,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -7127,7 +7224,7 @@ exports[`Alliance renders 1`] = `
             Accelerate speed of delivery and reduce costs by lending stablecoins
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -7151,11 +7248,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7173,7 +7270,7 @@ exports[`Alliance renders 1`] = `
             Pay
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -7184,7 +7281,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -7200,7 +7297,7 @@ exports[`Alliance renders 1`] = `
             Enable merchants to accept digital payments with lower fees by accepting stablecoins.
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -7224,11 +7321,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7246,7 +7343,7 @@ exports[`Alliance renders 1`] = `
             Preserve
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -7257,7 +7354,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -7273,7 +7370,7 @@ exports[`Alliance renders 1`] = `
             Preserve natural resources by supporting projects through Celo rewards
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -7297,11 +7394,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7319,7 +7416,7 @@ exports[`Alliance renders 1`] = `
             Regenerate
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -7330,7 +7427,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -7346,7 +7443,7 @@ exports[`Alliance renders 1`] = `
             Enable a regenerative, ecological economy by creating natural-capital backed assets and putting them into circulation.
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -7370,11 +7467,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7392,7 +7489,7 @@ exports[`Alliance renders 1`] = `
             Save
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -7403,7 +7500,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -7419,7 +7516,7 @@ exports[`Alliance renders 1`] = `
             Help your communities overcome inflation and build for their future by saving in stablecoins
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -7443,11 +7540,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7465,7 +7562,7 @@ exports[`Alliance renders 1`] = `
             Send
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -7476,7 +7573,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -7492,7 +7589,7 @@ exports[`Alliance renders 1`] = `
             Send remittances almost anywhere, instantly for as little as $.01
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -7516,11 +7613,11 @@ exports[`Alliance renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
         >
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7538,7 +7635,7 @@ exports[`Alliance renders 1`] = `
             Secure
           </h4>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -7549,7 +7646,7 @@ exports[`Alliance renders 1`] = `
             }
           />
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -7565,7 +7662,7 @@ exports[`Alliance renders 1`] = `
             Keep identity, assets, and the network secure
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -7592,7 +7689,7 @@ exports[`Alliance renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "backgroundColor": "rgba(46,51,56,1.00)",
@@ -7600,7 +7697,7 @@ exports[`Alliance renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -7630,7 +7727,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -7649,7 +7746,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -7704,7 +7801,7 @@ exports[`Alliance renders 1`] = `
           </svg>
           <h1
             aria-level="1"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7726,7 +7823,7 @@ exports[`Alliance renders 1`] = `
           </h1>
           <h4
             aria-level="4"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -7747,7 +7844,7 @@ exports[`Alliance renders 1`] = `
         </div>
         <form>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "marginBottom": "20px",
@@ -7758,10 +7855,10 @@ exports[`Alliance renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -7773,15 +7870,10 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "marginBottom": "10px",
-                    }
-                  }
+                  className="emotion-20"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginBottom": "5px",
@@ -7789,7 +7881,7 @@ exports[`Alliance renders 1`] = `
                     }
                   >
                     <label
-                      className="css-text-901oao"
+                      className="emotion-7"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -7811,7 +7903,7 @@ exports[`Alliance renders 1`] = `
                     autoCapitalize="sentences"
                     autoComplete="on"
                     autoCorrect="on"
-                    className="css-textinput-11aywtz"
+                    className="emotion-23"
                     dir="auto"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -7861,26 +7953,10 @@ exports[`Alliance renders 1`] = `
                   <div
                     aria-hidden={true}
                     aria-live="polite"
-                    css={
-                      Object {
-                        "map": undefined,
-                        "name": "1g9z2kg",
-                        "next": undefined,
-                        "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                        "toString": [Function],
-                      }
-                    }
+                    className="emotion-24"
                   >
                     <p
-                      css={
-                        Object {
-                          "map": undefined,
-                          "name": "go9nnh",
-                          "next": undefined,
-                          "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                          "toString": [Function],
-                        }
-                      }
+                      className="emotion-25"
                     >
                       Oops I’m blank!
                     </p>
@@ -7888,7 +7964,7 @@ exports[`Alliance renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -7900,15 +7976,10 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
-                  style={
-                    Object {
-                      "marginBottom": "10px",
-                    }
-                  }
+                  className="emotion-20"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginBottom": "5px",
@@ -7916,7 +7987,7 @@ exports[`Alliance renders 1`] = `
                     }
                   >
                     <label
-                      className="css-text-901oao"
+                      className="emotion-7"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -7938,7 +8009,7 @@ exports[`Alliance renders 1`] = `
                     autoCapitalize="sentences"
                     autoComplete="on"
                     autoCorrect="on"
-                    className="css-textinput-11aywtz"
+                    className="emotion-23"
                     dir="auto"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -7988,26 +8059,10 @@ exports[`Alliance renders 1`] = `
                   <div
                     aria-hidden={true}
                     aria-live="polite"
-                    css={
-                      Object {
-                        "map": undefined,
-                        "name": "1g9z2kg",
-                        "next": undefined,
-                        "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                        "toString": [Function],
-                      }
-                    }
+                    className="emotion-24"
                   >
                     <p
-                      css={
-                        Object {
-                          "map": undefined,
-                          "name": "go9nnh",
-                          "next": undefined,
-                          "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                          "toString": [Function],
-                        }
-                      }
+                      className="emotion-25"
                     >
                       Please enter a valid email
                     </p>
@@ -8016,7 +8071,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitFlex": 1,
@@ -8028,15 +8083,10 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
-                style={
-                  Object {
-                    "marginBottom": "10px",
-                  }
-                }
+                className="emotion-20"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "marginBottom": "5px",
@@ -8044,7 +8094,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <label
-                    className="css-text-901oao"
+                    className="emotion-7"
                     dir="auto"
                     onClick={[Function]}
                     style={
@@ -8066,7 +8116,7 @@ exports[`Alliance renders 1`] = `
                   autoCapitalize="sentences"
                   autoComplete="on"
                   autoCorrect="on"
-                  className="css-textinput-11aywtz"
+                  className="emotion-23"
                   dir="auto"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -8116,7 +8166,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitFlex": 1,
@@ -8128,7 +8178,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -8140,7 +8190,7 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "borderBottomColor": "rgba(221,221,221,1.00)",
@@ -8161,7 +8211,7 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <div
-                    className="css-text-901oao"
+                    className="emotion-7"
                     dir="auto"
                     onClick={[Function]}
                     style={
@@ -8195,7 +8245,7 @@ exports[`Alliance renders 1`] = `
                   />
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -8227,7 +8277,7 @@ exports[`Alliance renders 1`] = `
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignItems": "center",
@@ -8246,7 +8296,7 @@ exports[`Alliance renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -8254,7 +8304,7 @@ exports[`Alliance renders 1`] = `
               onMouseUp={[Function]}
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-6 emotion-46 emotion-7"
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -8310,26 +8360,10 @@ exports[`Alliance renders 1`] = `
             <div
               aria-hidden={true}
               aria-live="polite"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1g9z2kg",
-                  "next": undefined,
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-24"
             >
               <p
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "go9nnh",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-49"
               >
                 <svg
                   fill="none"
@@ -8345,15 +8379,7 @@ exports[`Alliance renders 1`] = `
                   />
                 </svg>
                 <span
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "1y6ic72",
-                      "next": undefined,
-                      "styles": "margin-left:10px;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-50"
                 >
                   Application Submitted
                 </span>
@@ -8361,7 +8387,7 @@ exports[`Alliance renders 1`] = `
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignItems": "center",
@@ -8378,26 +8404,10 @@ exports[`Alliance renders 1`] = `
             <div
               aria-hidden={true}
               aria-live="polite"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1g9z2kg",
-                  "next": undefined,
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-24"
             >
               <p
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "go9nnh",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-25"
               />
             </div>
           </div>
@@ -8405,7 +8415,7 @@ exports[`Alliance renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -8421,7 +8431,7 @@ exports[`Alliance renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "height": "100vh",

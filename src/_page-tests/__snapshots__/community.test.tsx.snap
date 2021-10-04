@@ -1,11 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Community renders 1`] = `
+.emotion-25 {
+  opacity: 0;
+}
+
+.emotion-155 {
+  margin-bottom: 10px;
+}
+
+.emotion-159 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 5px 0;
+  height: auto;
+  max-height: 80px;
+  transition-property: max-height;
+  transition-duration: 600ms;
+  max-height: 0;
+}
+
+.emotion-160 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  transition-property: opacity;
+  transition-duration: 700ms;
+  opacity: 0;
+  color: #FF7F6D;
+  font-weight: 500;
+}
+
+.emotion-202 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  transition-property: opacity;
+  transition-duration: 700ms;
+  opacity: 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: #35D07F;
+  font-weight: 500;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-203 {
+  margin-left: 10px;
+}
+
 <div
-  className="css-view-1dbjc4n"
+  className="emotion-0"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignItems": "center",
@@ -35,7 +114,7 @@ exports[`Community renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -72,7 +151,7 @@ exports[`Community renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "marginBottom": "20px",
@@ -80,7 +159,7 @@ exports[`Community renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "maxWidth": "850px",
@@ -98,7 +177,7 @@ exports[`Community renders 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -114,7 +193,7 @@ exports[`Community renders 1`] = `
         >
           <h1
             aria-level="1"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -131,7 +210,7 @@ exports[`Community renders 1`] = `
             }
           >
             <span
-              className="css-text-901oao css-textHasAncestor-16my406 r-animationKeyframes-clrlgt"
+              className="emotion-7 emotion-9 r-animationKeyframes-clrlgt"
               onClick={[Function]}
               style={
                 Object {
@@ -150,7 +229,7 @@ exports[`Community renders 1`] = `
               Developers. 
             </span>
             <span
-              className="css-text-901oao css-textHasAncestor-16my406 r-animationKeyframes-clrlgt"
+              className="emotion-7 emotion-9 r-animationKeyframes-clrlgt"
               onClick={[Function]}
               style={
                 Object {
@@ -169,7 +248,7 @@ exports[`Community renders 1`] = `
               Designers. 
             </span>
             <span
-              className="css-text-901oao css-textHasAncestor-16my406 r-animationKeyframes-clrlgt"
+              className="emotion-7 emotion-9 r-animationKeyframes-clrlgt"
               onClick={[Function]}
               style={
                 Object {
@@ -188,7 +267,7 @@ exports[`Community renders 1`] = `
               Dreamers. 
             </span>
             <span
-              className="css-text-901oao css-textHasAncestor-16my406 r-animationKeyframes-clrlgt"
+              className="emotion-7 emotion-9 r-animationKeyframes-clrlgt"
               onClick={[Function]}
               style={
                 Object {
@@ -210,7 +289,7 @@ exports[`Community renders 1`] = `
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n r-animationKeyframes-clrlgt"
+        className="emotion-0 r-animationKeyframes-clrlgt"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -235,7 +314,7 @@ exports[`Community renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -243,7 +322,7 @@ exports[`Community renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-6 emotion-19 emotion-7"
             dir="auto"
             href="https://discord.gg/6yWMkgM"
             onClick={[Function]}
@@ -300,7 +379,7 @@ exports[`Community renders 1`] = `
           >
             Join the movement
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -331,7 +410,7 @@ exports[`Community renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="tenets"
     style={
       Object {
@@ -340,7 +419,7 @@ exports[`Community renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -370,7 +449,7 @@ exports[`Community renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -389,10 +468,10 @@ exports[`Community renders 1`] = `
         }
       >
         <div
-          className="css-q7lffx"
+          className="emotion-25"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignItems": "center",
@@ -408,7 +487,7 @@ exports[`Community renders 1`] = `
           >
             <h2
               aria-level="2"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -429,7 +508,7 @@ exports[`Community renders 1`] = `
             </h2>
             <h4
               aria-level="4"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -452,10 +531,10 @@ exports[`Community renders 1`] = `
       </div>
     </div>
     <div
-      className="css-q7lffx"
+      className="emotion-25"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "marginBottom": "100px",
@@ -463,7 +542,7 @@ exports[`Community renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignSelf": "center",
@@ -483,7 +562,7 @@ exports[`Community renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxFlex": 0,
@@ -503,7 +582,7 @@ exports[`Community renders 1`] = `
           >
             <h3
               aria-level="3"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -525,7 +604,7 @@ exports[`Community renders 1`] = `
             </h3>
             <h4
               aria-level="4"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -544,7 +623,7 @@ exports[`Community renders 1`] = `
               We believe that, to create a truly inclusive financial system, we must begin by serving those who need it most.
             </h4>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "block",
@@ -575,7 +654,7 @@ exports[`Community renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlexBasis": "auto",
@@ -590,7 +669,7 @@ exports[`Community renders 1`] = `
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "backgroundColor": "rgba(0,0,0,0.00)",
@@ -614,7 +693,7 @@ exports[`Community renders 1`] = `
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxFlex": 0,
@@ -633,7 +712,7 @@ exports[`Community renders 1`] = `
             }
           >
             <div
-              className="css-text-901oao"
+              className="emotion-7"
               dir="auto"
               onClick={[Function]}
               style={
@@ -656,7 +735,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "marginBottom": "100px",
@@ -664,7 +743,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignSelf": "center",
@@ -684,7 +763,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxFlex": 0,
@@ -704,7 +783,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
           >
             <h3
               aria-level="3"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -726,7 +805,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
             </h3>
             <h4
               aria-level="4"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -745,7 +824,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
               We recognize that the features of money, like the features of any widely used technology, have a considerable impact on society.
             </h4>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "block",
@@ -776,7 +855,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlexBasis": "auto",
@@ -791,7 +870,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "backgroundColor": "rgba(0,0,0,0.00)",
@@ -815,7 +894,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxFlex": 0,
@@ -834,7 +913,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
             }
           >
             <div
-              className="css-text-901oao"
+              className="emotion-7"
               dir="auto"
               onClick={[Function]}
               style={
@@ -855,7 +934,7 @@ We believe that many of these features have great potential for positive impact,
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "marginBottom": "100px",
@@ -863,7 +942,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignSelf": "center",
@@ -883,7 +962,7 @@ We believe that many of these features have great potential for positive impact,
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxFlex": 0,
@@ -903,7 +982,7 @@ We believe that many of these features have great potential for positive impact,
           >
             <h3
               aria-level="3"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -925,7 +1004,7 @@ We believe that many of these features have great potential for positive impact,
             </h3>
             <h4
               aria-level="4"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -944,7 +1023,7 @@ We believe that many of these features have great potential for positive impact,
               We aim, as best we can, to create beauty.
             </h4>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "block",
@@ -975,7 +1054,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlexBasis": "auto",
@@ -990,7 +1069,7 @@ We believe that many of these features have great potential for positive impact,
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "backgroundColor": "rgba(0,0,0,0.00)",
@@ -1014,7 +1093,7 @@ We believe that many of these features have great potential for positive impact,
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxFlex": 0,
@@ -1033,7 +1112,7 @@ We believe that many of these features have great potential for positive impact,
             }
           >
             <div
-              className="css-text-901oao"
+              className="emotion-7"
               dir="auto"
               onClick={[Function]}
               style={
@@ -1052,7 +1131,7 @@ We believe that many of these features have great potential for positive impact,
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "marginBottom": "100px",
@@ -1060,7 +1139,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignSelf": "center",
@@ -1080,7 +1159,7 @@ We believe that many of these features have great potential for positive impact,
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxFlex": 0,
@@ -1100,7 +1179,7 @@ We believe that many of these features have great potential for positive impact,
           >
             <h3
               aria-level="3"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -1122,7 +1201,7 @@ We believe that many of these features have great potential for positive impact,
             </h3>
             <h4
               aria-level="4"
-              className="css-reset-4rbku5 css-text-901oao"
+              className="emotion-6 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="heading"
@@ -1141,7 +1220,7 @@ We believe that many of these features have great potential for positive impact,
               We strive to think lightly of ourselves and deeply of the world.
             </h4>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "block",
@@ -1172,7 +1251,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlexBasis": "auto",
@@ -1187,7 +1266,7 @@ We believe that many of these features have great potential for positive impact,
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "backgroundColor": "rgba(0,0,0,0.00)",
@@ -1211,7 +1290,7 @@ We believe that many of these features have great potential for positive impact,
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxFlex": 0,
@@ -1230,7 +1309,7 @@ We believe that many of these features have great potential for positive impact,
             }
           >
             <div
-              className="css-text-901oao"
+              className="emotion-7"
               dir="auto"
               onClick={[Function]}
               style={
@@ -1251,11 +1330,11 @@ We believe that many of these features have great potential for positive impact,
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="blog"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -1277,7 +1356,7 @@ We believe that many of these features have great potential for positive impact,
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -1304,11 +1383,11 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-q7lffx"
+          className="emotion-25"
         >
           <h2
             aria-level="2"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -1329,7 +1408,7 @@ We believe that many of these features have great potential for positive impact,
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -1361,7 +1440,7 @@ We believe that many of these features have great potential for positive impact,
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -1380,7 +1459,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -1400,7 +1479,7 @@ We believe that many of these features have great potential for positive impact,
         >
           <div
             aria-label="loading"
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "height": "50px",
@@ -1415,7 +1494,7 @@ We believe that many of these features have great potential for positive impact,
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -1434,7 +1513,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -1454,7 +1533,7 @@ We believe that many of these features have great potential for positive impact,
         >
           <div
             aria-label="loading"
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "height": "50px",
@@ -1469,7 +1548,7 @@ We believe that many of these features have great potential for positive impact,
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -1488,7 +1567,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -1508,7 +1587,7 @@ We believe that many of these features have great potential for positive impact,
         >
           <div
             aria-label="loading"
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "height": "50px",
@@ -1524,7 +1603,7 @@ We believe that many of these features have great potential for positive impact,
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -1546,7 +1625,7 @@ We believe that many of these features have great potential for positive impact,
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -1573,7 +1652,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1581,7 +1660,7 @@ We believe that many of these features have great potential for positive impact,
           onMouseUp={[Function]}
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -1609,7 +1688,7 @@ We believe that many of these features have great potential for positive impact,
             }
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-6 emotion-19 emotion-7"
               dir="auto"
               href="https://medium.com/celoOrg"
               onClick={[Function]}
@@ -1636,7 +1715,7 @@ We believe that many of these features have great potential for positive impact,
             >
               Read more on our blog
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1660,7 +1739,7 @@ We believe that many of these features have great potential for positive impact,
                 </svg>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1692,7 +1771,7 @@ We believe that many of these features have great potential for positive impact,
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "backgroundColor": "rgba(46,51,56,1.00)",
@@ -1703,7 +1782,7 @@ We believe that many of these features have great potential for positive impact,
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -1724,7 +1803,7 @@ We believe that many of these features have great potential for positive impact,
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -1747,7 +1826,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "paddingLeft": "4%",
@@ -1756,7 +1835,7 @@ We believe that many of these features have great potential for positive impact,
         >
           <h2
             aria-level="2"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-6 emotion-7"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -1775,7 +1854,7 @@ We believe that many of these features have great potential for positive impact,
             Have an idea for the Celo ecosystem? Apply to the Celo Ecosystem Fund.
           </h2>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -1783,7 +1862,7 @@ We believe that many of these features have great potential for positive impact,
             onMouseUp={[Function]}
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -1811,7 +1890,7 @@ We believe that many of these features have great potential for positive impact,
               }
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-6 emotion-19 emotion-7"
                 dir="auto"
                 href="https://medium.com/celoOrg/call-for-proposals-the-celo-fellowship-3c43b06b10f9"
                 onClick={[Function]}
@@ -1837,7 +1916,7 @@ We believe that many of these features have great potential for positive impact,
               >
                 Call for Proposals
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -1868,7 +1947,7 @@ We believe that many of these features have great potential for positive impact,
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -1902,7 +1981,7 @@ We believe that many of these features have great potential for positive impact,
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="fund"
     style={
       Object {
@@ -1924,7 +2003,7 @@ We believe that many of these features have great potential for positive impact,
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1944,7 +2023,7 @@ We believe that many of these features have great potential for positive impact,
     >
       <h2
         aria-level="2"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-6 emotion-7"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -1962,7 +2041,7 @@ We believe that many of these features have great potential for positive impact,
         Celo Ecosystem Venture Fund
       </h2>
       <div
-        className="css-text-901oao"
+        className="emotion-7"
         dir="auto"
         onClick={[Function]}
         style={
@@ -1979,7 +2058,7 @@ We believe that many of these features have great potential for positive impact,
         By Polychain
       </div>
       <div
-        className="css-text-901oao"
+        className="emotion-7"
         dir="auto"
         onClick={[Function]}
         style={
@@ -1997,7 +2076,7 @@ We believe that many of these features have great potential for positive impact,
         The Celo Ecosystem Venture Fund is a Polychain-led venture, supported by founding investors Andreessen Horowitz and Celo, with the goal of investing in and developing the Celo ecosystem. The fund aims to foster Celo’s mission of creating a more accessible financial system by making strategic, seed-stage deployments into tools and services which will leverage Celo’s protocol to build new financial infrastructure in the developing world.
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxDirection": "normal",
@@ -2015,7 +2094,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxPack": "justify",
@@ -2026,7 +2105,7 @@ We believe that many of these features have great potential for positive impact,
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2046,7 +2125,7 @@ We believe that many of these features have great potential for positive impact,
           </div>
           <div
             aria-label="Polychain"
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -2063,7 +2142,7 @@ We believe that many of these features have great potential for positive impact,
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2085,7 +2164,7 @@ We believe that many of these features have great potential for positive impact,
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxPack": "justify",
@@ -2096,7 +2175,7 @@ We believe that many of these features have great potential for positive impact,
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-7"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2115,7 +2194,7 @@ We believe that many of these features have great potential for positive impact,
             Limited Partners
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignItems": "center",
@@ -2151,7 +2230,7 @@ We believe that many of these features have great potential for positive impact,
             </svg>
             <div
               aria-label="a16z"
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitFlexBasis": "auto",
@@ -2168,7 +2247,7 @@ We believe that many of these features have great potential for positive impact,
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2192,7 +2271,7 @@ We believe that many of these features have great potential for positive impact,
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -2200,7 +2279,7 @@ We believe that many of these features have great potential for positive impact,
         onMouseUp={[Function]}
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -2228,7 +2307,7 @@ We believe that many of these features have great potential for positive impact,
           }
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-6 emotion-19 emotion-7"
             dir="auto"
             href="/validators"
             onClick={[Function]}
@@ -2256,7 +2335,7 @@ We believe that many of these features have great potential for positive impact,
           >
             Learn about building on Celo
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -2286,7 +2365,7 @@ We believe that many of these features have great potential for positive impact,
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2305,7 +2384,7 @@ We believe that many of these features have great potential for positive impact,
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -2326,7 +2405,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -2350,7 +2429,7 @@ We believe that many of these features have great potential for positive impact,
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -2358,7 +2437,7 @@ We believe that many of these features have great potential for positive impact,
             onMouseUp={[Function]}
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-6 emotion-19 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="link"
@@ -2400,7 +2479,7 @@ We believe that many of these features have great potential for positive impact,
             </a>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "bottom": "-16px",
@@ -2432,7 +2511,7 @@ We believe that many of these features have great potential for positive impact,
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -2456,7 +2535,7 @@ We believe that many of these features have great potential for positive impact,
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -2464,7 +2543,7 @@ We believe that many of these features have great potential for positive impact,
             onMouseUp={[Function]}
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-6 emotion-19 emotion-7"
               dir="auto"
               onClick={[Function]}
               role="link"
@@ -2508,7 +2587,7 @@ We believe that many of these features have great potential for positive impact,
         </div>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "marginTop": "20px",
@@ -2516,7 +2595,7 @@ We believe that many of these features have great potential for positive impact,
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "width": "100%",
@@ -2525,15 +2604,10 @@ We believe that many of these features have great potential for positive impact,
         >
           <form>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -2541,7 +2615,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -2563,7 +2637,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -2613,41 +2687,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -2655,7 +2708,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -2677,7 +2730,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -2727,41 +2780,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -2769,7 +2801,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -2791,7 +2823,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -2841,41 +2873,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -2883,7 +2894,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -2905,7 +2916,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -2955,41 +2966,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -2997,7 +2987,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -3019,7 +3009,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3069,41 +3059,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Please enter a valid email
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -3111,7 +3080,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -3133,7 +3102,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3183,41 +3152,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Please enter a valid email
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -3225,7 +3173,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -3247,7 +3195,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3297,33 +3245,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -3339,7 +3271,7 @@ We believe that many of these features have great potential for positive impact,
               }
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-6 emotion-19 emotion-7"
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -3396,26 +3328,10 @@ We believe that many of these features have great potential for positive impact,
             <div
               aria-hidden={true}
               aria-live="polite"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1g9z2kg",
-                  "next": undefined,
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-159"
             >
               <p
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "go9nnh",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-202"
               >
                 <svg
                   fill="none"
@@ -3431,15 +3347,7 @@ We believe that many of these features have great potential for positive impact,
                   />
                 </svg>
                 <span
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "1y6ic72",
-                      "next": undefined,
-                      "styles": "margin-left:10px;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-203"
                 >
                   Application Submitted
                 </span>
@@ -3448,32 +3356,16 @@ We believe that many of these features have great potential for positive impact,
             <div
               aria-hidden={true}
               aria-live="polite"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1g9z2kg",
-                  "next": undefined,
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-159"
             >
               <p
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "go9nnh",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-160"
               />
             </div>
           </form>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "position": "absolute",
@@ -3484,15 +3376,10 @@ We believe that many of these features have great potential for positive impact,
         >
           <form>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -3500,7 +3387,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -3522,7 +3409,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3572,41 +3459,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Please enter a valid email
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -3614,7 +3480,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -3636,7 +3502,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3686,41 +3552,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -3728,7 +3573,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -3750,7 +3595,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3800,41 +3645,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Please enter a valid email
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -3842,7 +3666,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -3864,7 +3688,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3914,41 +3738,20 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "marginBottom": "10px",
-                }
-              }
+              className="emotion-155"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "5px",
@@ -3956,7 +3759,7 @@ We believe that many of these features have great potential for positive impact,
                 }
               >
                 <label
-                  className="css-text-901oao"
+                  className="emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -3978,7 +3781,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="css-textinput-11aywtz"
+                className="emotion-158"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -4028,33 +3831,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1g9z2kg",
-                    "next": undefined,
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-159"
               >
                 <p
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "go9nnh",
-                      "next": undefined,
-                      "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-160"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -4070,7 +3857,7 @@ We believe that many of these features have great potential for positive impact,
               }
             >
               <a
-                className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                className="emotion-6 emotion-19 emotion-7"
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -4127,26 +3914,10 @@ We believe that many of these features have great potential for positive impact,
             <div
               aria-hidden={true}
               aria-live="polite"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1g9z2kg",
-                  "next": undefined,
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-159"
             >
               <p
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "go9nnh",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-202"
               >
                 <svg
                   fill="none"
@@ -4162,15 +3933,7 @@ We believe that many of these features have great potential for positive impact,
                   />
                 </svg>
                 <span
-                  css={
-                    Object {
-                      "map": undefined,
-                      "name": "1y6ic72",
-                      "next": undefined,
-                      "styles": "margin-left:10px;",
-                      "toString": [Function],
-                    }
-                  }
+                  className="emotion-203"
                 >
                   Recommendation Submitted
                 </span>
@@ -4179,26 +3942,10 @@ We believe that many of these features have great potential for positive impact,
             <div
               aria-hidden={true}
               aria-live="polite"
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1g9z2kg",
-                  "next": undefined,
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-159"
             >
               <p
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "go9nnh",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-160"
               />
             </div>
           </form>
@@ -4207,7 +3954,7 @@ We believe that many of these features have great potential for positive impact,
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="newsletter"
   />
 </div>
