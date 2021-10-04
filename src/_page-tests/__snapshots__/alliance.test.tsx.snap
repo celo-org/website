@@ -5,6 +5,58 @@ exports[`Alliance renders 1`] = `
   opacity: 0;
 }
 
+.emotion-17 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.emotion-18 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .emotion-18 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.emotion-19 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .emotion-20 {
   margin-bottom: 10px;
 }
@@ -43,6 +95,35 @@ exports[`Alliance renders 1`] = `
   opacity: 0;
   color: #FF7F6D;
   font-weight: 500;
+}
+
+.emotion-43 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 15px 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-43 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 .emotion-49 {
@@ -84,6 +165,17 @@ exports[`Alliance renders 1`] = `
 
 .emotion-50 {
   margin-left: 10px;
+}
+
+.emotion-51 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .emotion-139 {
@@ -2754,30 +2846,13 @@ exports[`Alliance renders 1`] = `
         >
           <form>
             <div
-              className="emotion-0"
-              style={
-                Object {
-                  "marginBottom": "20px",
-                  "marginLeft": "20px",
-                  "marginRight": "20px",
-                  "marginTop": "20px",
-                }
-              }
+              className="emotion-17"
             >
               <div
-                className="emotion-0"
+                className="emotion-18"
               >
                 <div
-                  className="emotion-0"
-                  style={
-                    Object {
-                      "WebkitFlex": 1,
-                      "flex": 1,
-                      "marginLeft": "5px",
-                      "marginRight": "5px",
-                      "msFlex": "1 1 0%",
-                    }
-                  }
+                  className="emotion-19"
                 >
                   <div
                     className="emotion-20"
@@ -2874,16 +2949,7 @@ exports[`Alliance renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="emotion-0"
-                  style={
-                    Object {
-                      "WebkitFlex": 1,
-                      "flex": 1,
-                      "marginLeft": "5px",
-                      "marginRight": "5px",
-                      "msFlex": "1 1 0%",
-                    }
-                  }
+                  className="emotion-19"
                 >
                   <div
                     className="emotion-20"
@@ -2981,16 +3047,7 @@ exports[`Alliance renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-0"
-                style={
-                  Object {
-                    "WebkitFlex": 1,
-                    "flex": 1,
-                    "marginLeft": "5px",
-                    "marginRight": "5px",
-                    "msFlex": "1 1 0%",
-                  }
-                }
+                className="emotion-19"
               >
                 <div
                   className="emotion-20"
@@ -3076,16 +3133,7 @@ exports[`Alliance renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-0"
-                style={
-                  Object {
-                    "WebkitFlex": 1,
-                    "flex": 1,
-                    "marginLeft": "5px",
-                    "marginRight": "5px",
-                    "msFlex": "1 1 0%",
-                  }
-                }
+                className="emotion-19"
               >
                 <div
                   className="emotion-0"
@@ -3187,23 +3235,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-0"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "WebkitBoxPack": "center",
-                  "WebkitJustifyContent": "center",
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                  "msFlexAlign": "center",
-                  "msFlexPack": "center",
-                  "paddingBottom": "15px",
-                  "paddingLeft": "20px",
-                  "paddingRight": "20px",
-                  "paddingTop": "15px",
-                }
-              }
+              className="emotion-43"
             >
               <div
                 className="emotion-0"
@@ -3297,19 +3329,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-0"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "WebkitBoxPack": "center",
-                  "WebkitJustifyContent": "center",
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                  "msFlexAlign": "center",
-                  "msFlexPack": "center",
-                }
-              }
+              className="emotion-51"
             >
               <div
                 aria-hidden={true}
@@ -7871,30 +7891,13 @@ exports[`Alliance renders 1`] = `
         </div>
         <form>
           <div
-            className="emotion-0"
-            style={
-              Object {
-                "marginBottom": "20px",
-                "marginLeft": "20px",
-                "marginRight": "20px",
-                "marginTop": "20px",
-              }
-            }
+            className="emotion-17"
           >
             <div
-              className="emotion-0"
+              className="emotion-18"
             >
               <div
-                className="emotion-0"
-                style={
-                  Object {
-                    "WebkitFlex": 1,
-                    "flex": 1,
-                    "marginLeft": "5px",
-                    "marginRight": "5px",
-                    "msFlex": "1 1 0%",
-                  }
-                }
+                className="emotion-19"
               >
                 <div
                   className="emotion-20"
@@ -7991,16 +7994,7 @@ exports[`Alliance renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-0"
-                style={
-                  Object {
-                    "WebkitFlex": 1,
-                    "flex": 1,
-                    "marginLeft": "5px",
-                    "marginRight": "5px",
-                    "msFlex": "1 1 0%",
-                  }
-                }
+                className="emotion-19"
               >
                 <div
                   className="emotion-20"
@@ -8098,16 +8092,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-0"
-              style={
-                Object {
-                  "WebkitFlex": 1,
-                  "flex": 1,
-                  "marginLeft": "5px",
-                  "marginRight": "5px",
-                  "msFlex": "1 1 0%",
-                }
-              }
+              className="emotion-19"
             >
               <div
                 className="emotion-20"
@@ -8193,16 +8178,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-0"
-              style={
-                Object {
-                  "WebkitFlex": 1,
-                  "flex": 1,
-                  "marginLeft": "5px",
-                  "marginRight": "5px",
-                  "msFlex": "1 1 0%",
-                }
-              }
+              className="emotion-19"
             >
               <div
                 className="emotion-0"
@@ -8304,23 +8280,7 @@ exports[`Alliance renders 1`] = `
             </div>
           </div>
           <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitAlignItems": "center",
-                "WebkitBoxAlign": "center",
-                "WebkitBoxPack": "center",
-                "WebkitJustifyContent": "center",
-                "alignItems": "center",
-                "justifyContent": "center",
-                "msFlexAlign": "center",
-                "msFlexPack": "center",
-                "paddingBottom": "15px",
-                "paddingLeft": "20px",
-                "paddingRight": "20px",
-                "paddingTop": "15px",
-              }
-            }
+            className="emotion-43"
           >
             <div
               className="emotion-0"
@@ -8414,19 +8374,7 @@ exports[`Alliance renders 1`] = `
             </div>
           </div>
           <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitAlignItems": "center",
-                "WebkitBoxAlign": "center",
-                "WebkitBoxPack": "center",
-                "WebkitJustifyContent": "center",
-                "alignItems": "center",
-                "justifyContent": "center",
-                "msFlexAlign": "center",
-                "msFlexPack": "center",
-              }
-            }
+            className="emotion-51"
           >
             <div
               aria-hidden={true}
