@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StyleSheet, View } from "react-native"
 import Feature from "src/dev/Feature"
-import { H3 } from "src/fonts/Fonts"
+import { H2 } from "src/fonts/Fonts"
 import { I18nProps, withNamespaces } from "src/i18n"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import Fade from "src/shared/AwesomeFade"
@@ -30,7 +30,7 @@ export default withNamespaces("dev")(
               mobileStyle={standardStyles.sectionMarginTopMobile}
             >
               <Cell span={Spans.full}>
-                <H3 style={textStyles.invert}>{t("featureTitle")}</H3>
+                <H2 style={[textStyles.invert, styles.headerTitle]}>{t("featureTitle")}</H2>
               </Cell>
             </GridRow>
             <GridRow
@@ -52,22 +52,18 @@ export default withNamespaces("dev")(
               <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature title={t("feat.onChainGov")} graphic={choice} text={t("feat.govText")} />
               </Cell>
-
               <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
-                  title={t("feat.selfCustody")}
+                  title={t("feat.proofOfStake")}
                   graphic={validation}
-                  text={t("feat.custodyText")}
+                  text={t("feat.stakeText")}
                 />
               </Cell>
               <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
-                <Feature title={t("feat.proofOfStake")} graphic={eth} text={t("feat.stakeText")} />
-              </Cell>
-              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
-                  title={t("feat.fastUltraLight")}
-                  graphic={feather}
-                  text={t("feat.ultraText")}
+                  title={t("feat.programmable")}
+                  graphic={eth}
+                  text={t("feat.programmableText")}
                 />
               </Cell>
               <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
@@ -79,9 +75,16 @@ export default withNamespaces("dev")(
               </Cell>
               <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
-                  title={t("feat.programmable")}
+                  title={t("feat.fastUltraLight")}
+                  graphic={feather}
+                  text={t("feat.ultraText")}
+                />
+              </Cell>
+              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
+                <Feature
+                  title={t("feat.selfCustody")}
                   graphic={human}
-                  text={t("feat.programmableText")}
+                  text={t("feat.custodyText")}
                 />
               </Cell>
             </GridRow>
@@ -99,6 +102,9 @@ const styles = StyleSheet.create({
   },
   darkBackground: {
     backgroundColor: colors.dark,
+  },
+  headerTitle: {
+    textAlign: "center",
   },
   featuresContainer: { flexWrap: "wrap" },
 })
