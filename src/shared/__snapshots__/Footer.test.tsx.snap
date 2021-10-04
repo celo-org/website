@@ -64,108 +64,72 @@ Array [
           Receive the latest updates to your inbox
         </p>
         <div
-          className="css-view-1dbjc4n"
-          style={
+          css={
             Object {
-              "marginBottom": "5px",
-              "marginTop": "5px",
-              "paddingBottom": "15px",
-              "width": "100%",
+              "map": undefined,
+              "name": "1aqvmnk",
+              "next": undefined,
+              "styles": "align-self:flex-start;padding-left:8px;",
+              "toString": [Function],
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            aria-live="polite"
+            css={
+              Object {
+                "map": undefined,
+                "name": "1g9z2kg",
+                "next": undefined,
+                "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
+                "toString": [Function],
+              }
+            }
+          >
+            <p
+              css={
+                Object {
+                  "map": undefined,
+                  "name": "go9nnh",
+                  "next": undefined,
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
+                  "toString": [Function],
+                }
+              }
+            >
+              Please enter a valid email
+            </p>
+          </div>
+        </div>
+        <div
+          css={
+            Object {
+              "map": undefined,
+              "name": "7deywp",
+              "next": undefined,
+              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex-direction:row;width:100%;@media (max-width: 576px){flex-direction:column;margin:5px 0px;padding-bottom:15px;}",
+              "toString": [Function],
             }
           }
         >
           <input
-            autoCapitalize="sentences"
-            autoComplete="on"
-            autoCorrect="on"
-            className="css-textinput-11aywtz r-placeholderTextColor-tf24u1"
-            dir="auto"
-            onBlur={[Function]}
-            onChange={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onSelect={[Function]}
-            placeholder="Email*"
-            readOnly={false}
-            spellCheck={true}
-            style={
+            css={
               Object {
-                "WebkitFlex": 1,
-                "borderBottomColor": "rgba(221,221,221,1.00)",
-                "borderBottomLeftRadius": "3px",
-                "borderBottomRightRadius": "3px",
-                "borderBottomWidth": "1px",
-                "borderLeftColor": "rgba(221,221,221,1.00)",
-                "borderLeftWidth": "1px",
-                "borderRightColor": "rgba(221,221,221,1.00)",
-                "borderRightWidth": "1px",
-                "borderTopColor": "rgba(221,221,221,1.00)",
-                "borderTopLeftRadius": "3px",
-                "borderTopRightRadius": "3px",
-                "borderTopWidth": "1px",
-                "color": "rgba(46,51,56,1.00)",
-                "flex": 1,
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "20px",
-                "lineHeight": "28px",
-                "marginBottom": "5px",
-                "marginTop": "5px",
-                "msFlex": "1 1 0%",
-                "outlineStyle": "none",
-                "paddingBottom": "15px",
-                "paddingLeft": "10px",
-                "paddingRight": "10px",
-                "paddingTop": "13px",
-                "textRendering": "geometricPrecision",
+                "map": undefined,
+                "name": "tlbnwk",
+                "next": undefined,
+                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;flex:1;padding-left:10px;padding-right:10px;padding-top:13px;padding-bottom:15px;border-radius:3px;border-width:1px;outline-style:none;@media (min-width: 576px){border-top-right-radius:0;border-bottom-right-radius:0;border-right-width:0;margin-right:0;margin-bottom:4px;};border-color:#DDDDDD;color:#2E3338;;box-sizing:border-box;display:flex;flex-direction:column;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;align-self:center;padding-left:12px;padding-right:12px;padding-top:12px;padding-bottom:16px;border-radius:3px;border-width:1px;border-style:solid;border-color:rgba(61, 61, 61, 0.2);width:100%;margin:4px;margin-bottom:8px;outline-width:0;&:focus{border-color:#35D07F;};",
+                "toString": [Function],
               }
             }
-            type="text"
+            name="email"
+            onChange={[Function]}
+            placeholder="Email*"
+            required={true}
+            type="email"
             value=""
           />
-          <div
-            className="css-view-1dbjc4n"
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "MozTransitionProperty": "max-height",
-                  "WebkitTransitionDuration": "600ms",
-                  "WebkitTransitionProperty": "max-height",
-                  "height": "auto",
-                  "marginBottom": "5px",
-                  "marginTop": "5px",
-                  "maxHeight": "0px",
-                  "transitionDuration": "600ms",
-                  "transitionProperty": "max-height",
-                }
-              }
-            >
-              <div
-                className="css-text-901oao"
-                dir="auto"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "MozTransitionProperty": "opacity",
-                    "WebkitTransitionDuration": "700ms",
-                    "WebkitTransitionProperty": "opacity",
-                    "color": "rgba(255,127,109,1.00)",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "18px",
-                    "opacity": 0,
-                    "textRendering": "geometricPrecision",
-                    "transitionDuration": "700ms",
-                    "transitionProperty": "opacity",
-                  }
-                }
-              >
-                Please enter a valid email
-              </div>
-            </div>
-          </div>
           <div
             className="css-view-1dbjc4n"
             onClick={[Function]}
@@ -190,7 +154,7 @@ Array [
                   "alignItems": "center",
                   "backgroundColor": "rgba(53,208,127,1.00)",
                   "borderBottomColor": "rgba(53,208,127,1.00)",
-                  "borderBottomLeftRadius": "3px",
+                  "borderBottomLeftRadius": "0px",
                   "borderBottomRightRadius": "3px",
                   "borderBottomWidth": "1px",
                   "borderLeftColor": "rgba(53,208,127,1.00)",
@@ -198,7 +162,7 @@ Array [
                   "borderRightColor": "rgba(53,208,127,1.00)",
                   "borderRightWidth": "1px",
                   "borderTopColor": "rgba(53,208,127,1.00)",
-                  "borderTopLeftRadius": "3px",
+                  "borderTopLeftRadius": "0px",
                   "borderTopRightRadius": "3px",
                   "borderTopWidth": "1px",
                   "color": "rgba(255,255,255,1.00)",
@@ -210,13 +174,17 @@ Array [
                   "fontWeight": "500",
                   "justifyContent": "center",
                   "lineHeight": "16px",
+                  "marginBottom": "5px",
+                  "marginTop": "5px",
+                  "maxHeight": "60px",
+                  "minWidth": "100px",
                   "msFlexAlign": "center",
                   "msFlexPack": "center",
                   "msFlexPositive": 1,
                   "opacity": 1,
                   "paddingBottom": "15px",
-                  "paddingLeft": "20px",
-                  "paddingRight": "20px",
+                  "paddingLeft": "40px",
+                  "paddingRight": "40px",
                   "paddingTop": "15px",
                   "textAlign": "center",
                   "textRendering": "geometricPrecision",
@@ -227,58 +195,39 @@ Array [
               Sign Up
             </a>
           </div>
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "position": "absolute",
-                "top": "65px",
-              }
-            }
-          />
         </div>
         <div
-          className="css-view-1dbjc4n"
-          style={
+          css={
             Object {
-              "marginTop": "10px",
+              "map": undefined,
+              "name": "1q7njkh",
+              "next": undefined,
+              "styles": "margin-top:10px;",
+              "toString": [Function],
             }
           }
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
+            aria-hidden={true}
+            aria-live="polite"
+            css={
               Object {
-                "MozTransitionProperty": "max-height",
-                "WebkitTransitionDuration": "600ms",
-                "WebkitTransitionProperty": "max-height",
-                "height": "auto",
-                "marginBottom": "5px",
-                "marginTop": "5px",
-                "maxHeight": "0px",
-                "transitionDuration": "600ms",
-                "transitionProperty": "max-height",
+                "map": undefined,
+                "name": "1g9z2kg",
+                "next": undefined,
+                "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin:5px 0;height:auto;max-height:80px;transition-property:max-height;transition-duration:600ms;;max-height:0;;",
+                "toString": [Function],
               }
             }
           >
-            <div
-              className="css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              style={
+            <p
+              css={
                 Object {
-                  "MozTransitionProperty": "opacity",
-                  "WebkitTransitionDuration": "700ms",
-                  "WebkitTransitionProperty": "opacity",
-                  "color": "rgba(53,208,127,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "18px",
-                  "opacity": 0,
-                  "textRendering": "geometricPrecision",
-                  "transitionDuration": "700ms",
-                  "transitionProperty": "opacity",
+                  "map": undefined,
+                  "name": "go9nnh",
+                  "next": undefined,
+                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;transition-property:opacity;transition-duration:700ms;;opacity:0;",
+                  "toString": [Function],
                 }
               }
             >
@@ -296,17 +245,19 @@ Array [
                 />
               </svg>
               <span
-                className="css-text-901oao css-textHasAncestor-16my406"
-                onClick={[Function]}
-                style={
+                css={
                   Object {
-                    "marginLeft": "10px",
+                    "map": undefined,
+                    "name": "1y6ic72",
+                    "next": undefined,
+                    "styles": "margin-left:10px;",
+                    "toString": [Function],
                   }
                 }
               >
                 Submitted
               </span>
-            </div>
+            </p>
           </div>
         </div>
       </div>
