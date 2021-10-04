@@ -39,45 +39,45 @@ export default withNamespaces("dev")(
               tabletStyle={standardStyles.sectionMarginBottomTablet}
               mobileStyle={[standardStyles.sectionMarginBottomMobile, styles.featuresMobile]}
             >
-              <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
+              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.stableValueCurrencies")}
                   graphic={coins}
                   text={t("feat.stableText")}
                 />
               </Cell>
-              <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
+              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature title={t("feat.phonePKI")} graphic={ox} text={t("feat.pkiText")} />
               </Cell>
-              <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
+              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature title={t("feat.onChainGov")} graphic={choice} text={t("feat.govText")} />
               </Cell>
 
-              <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
+              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.selfCustody")}
                   graphic={validation}
                   text={t("feat.custodyText")}
                 />
               </Cell>
-              <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
+              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature title={t("feat.proofOfStake")} graphic={eth} text={t("feat.stakeText")} />
               </Cell>
-              <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
+              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.fastUltraLight")}
                   graphic={feather}
                   text={t("feat.ultraText")}
                 />
               </Cell>
-              <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
+              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.gasMultiCurrency")}
                   graphic={addedCoin}
                   text={t("feat.gasText")}
                 />
               </Cell>
-              <Cell span={Spans.third} tabletSpan={Spans.half} mobileSpan={Spans.full}>
+              <Cell span={Spans.fourth} tabletSpan={Spans.half} mobileSpan={Spans.full}>
                 <Feature
                   title={t("feat.programmable")}
                   graphic={human}

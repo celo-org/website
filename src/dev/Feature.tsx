@@ -10,7 +10,7 @@ interface Props {
 
 type func = () => void
 
-const GRAPHIC_SIZE = 80
+const GRAPHIC_SIZE = 48
 
 const FeatureComponent = React.memo(function Feature({ title, graphic, text }: Props) {
   return (
@@ -37,14 +37,16 @@ export default FeatureComponent
 const styles = StyleSheet.create({
   graphic: {
     height: GRAPHIC_SIZE,
-    width: GRAPHIC_SIZE * 1.4,
+    width: GRAPHIC_SIZE,
+    marginBottom: 40,
+    marginTop: 40,
   },
   title: {
     marginVertical: 10,
   },
   container: {
     marginRight: 20,
-    flexDirection: "row",
+    flexDirection: "column",
     flex: 0,
   },
   textArea: { width: "100%", flex: 1 },
