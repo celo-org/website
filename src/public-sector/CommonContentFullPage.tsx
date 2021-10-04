@@ -30,7 +30,7 @@ const EMBEDDABLE = {
   ...GALLARY,
   ...TABLE,
   ...ROW,
-  ...GENERICS
+  ...GENERICS,
 }
 
 function embedded(node: Block) {

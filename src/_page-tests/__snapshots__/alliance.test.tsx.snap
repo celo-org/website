@@ -339,11 +339,18 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-147 {
-  width: 100px;
-  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.emotion-149 {
+.emotion-148 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.emotion-150 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -355,7 +362,7 @@ exports[`Alliance renders 1`] = `
   margin: 30px 50px;
 }
 
-.emotion-194 {
+.emotion-199 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -375,14 +382,14 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-194 {
+  .emotion-199 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-195 {
+.emotion-200 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -400,7 +407,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-195 {
+  .emotion-200 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -414,7 +421,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-209 {
+.emotion-214 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4693,87 +4700,59 @@ exports[`Alliance renders 1`] = `
           className="emotion-146"
         >
           <div
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "inline-block",
-                "margin": 0,
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="emotion-147"
           >
             <div
               style={
                 Object {
                   "boxSizing": "border-box",
-                  "display": "block",
+                  "display": "inline-block",
+                  "margin": 0,
                   "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
                 }
               }
             >
-              <img
-                alt=""
-                aria-hidden={true}
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              <div
                 style={
                   Object {
-                    "border": "none",
+                    "boxSizing": "border-box",
                     "display": "block",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "padding": 0,
                   }
                 }
-              />
-            </div>
-            <img
-              className="emotion-147"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                Object {
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
               <img
-                className="emotion-147"
+                className="emotion-148"
                 data-nimg="intrinsic"
                 decoding="async"
-                loading="lazy"
-                src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"/image.png\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -4791,10 +4770,42 @@ exports[`Alliance renders 1`] = `
                   }
                 }
               />
-            </noscript>
+              <noscript>
+                <img
+                  className="emotion-148"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-150"
           >
             Connect with like-minded members
           </p>
@@ -4803,87 +4814,59 @@ exports[`Alliance renders 1`] = `
           className="emotion-146"
         >
           <div
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "inline-block",
-                "margin": 0,
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="emotion-147"
           >
             <div
               style={
                 Object {
                   "boxSizing": "border-box",
-                  "display": "block",
+                  "display": "inline-block",
+                  "margin": 0,
                   "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
                 }
               }
             >
-              <img
-                alt=""
-                aria-hidden={true}
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              <div
                 style={
                   Object {
-                    "border": "none",
+                    "boxSizing": "border-box",
                     "display": "block",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "padding": 0,
                   }
                 }
-              />
-            </div>
-            <img
-              className="emotion-147"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                Object {
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
               <img
-                className="emotion-147"
+                className="emotion-148"
                 data-nimg="intrinsic"
                 decoding="async"
-                loading="lazy"
-                src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"/image.png\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -4901,10 +4884,42 @@ exports[`Alliance renders 1`] = `
                   }
                 }
               />
-            </noscript>
+              <noscript>
+                <img
+                  className="emotion-148"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-150"
           >
             Build and shape improvements to the Celo platform
           </p>
@@ -4913,87 +4928,59 @@ exports[`Alliance renders 1`] = `
           className="emotion-146"
         >
           <div
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "inline-block",
-                "margin": 0,
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="emotion-147"
           >
             <div
               style={
                 Object {
                   "boxSizing": "border-box",
-                  "display": "block",
+                  "display": "inline-block",
+                  "margin": 0,
                   "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
                 }
               }
             >
-              <img
-                alt=""
-                aria-hidden={true}
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              <div
                 style={
                   Object {
-                    "border": "none",
+                    "boxSizing": "border-box",
                     "display": "block",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "padding": 0,
                   }
                 }
-              />
-            </div>
-            <img
-              className="emotion-147"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                Object {
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
               <img
-                className="emotion-147"
+                className="emotion-148"
                 data-nimg="intrinsic"
                 decoding="async"
-                loading="lazy"
-                src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"/image.png\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -5011,10 +4998,42 @@ exports[`Alliance renders 1`] = `
                   }
                 }
               />
-            </noscript>
+              <noscript>
+                <img
+                  className="emotion-148"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-150"
           >
             Attend special programs and events
           </p>
@@ -5023,87 +5042,59 @@ exports[`Alliance renders 1`] = `
           className="emotion-146"
         >
           <div
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "inline-block",
-                "margin": 0,
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="emotion-147"
           >
             <div
               style={
                 Object {
                   "boxSizing": "border-box",
-                  "display": "block",
+                  "display": "inline-block",
+                  "margin": 0,
                   "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
                 }
               }
             >
-              <img
-                alt=""
-                aria-hidden={true}
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              <div
                 style={
                   Object {
-                    "border": "none",
+                    "boxSizing": "border-box",
                     "display": "block",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "padding": 0,
                   }
                 }
-              />
-            </div>
-            <img
-              className="emotion-147"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                Object {
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
               <img
-                className="emotion-147"
+                className="emotion-148"
                 data-nimg="intrinsic"
                 decoding="async"
-                loading="lazy"
-                src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"/image.png\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -5121,10 +5112,42 @@ exports[`Alliance renders 1`] = `
                   }
                 }
               />
-            </noscript>
+              <noscript>
+                <img
+                  className="emotion-148"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-150"
           >
             Access to education and support
           </p>
@@ -5133,87 +5156,59 @@ exports[`Alliance renders 1`] = `
           className="emotion-146"
         >
           <div
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "inline-block",
-                "margin": 0,
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "position": "relative",
-              }
-            }
+            className="emotion-147"
           >
             <div
               style={
                 Object {
                   "boxSizing": "border-box",
-                  "display": "block",
+                  "display": "inline-block",
+                  "margin": 0,
                   "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
                 }
               }
             >
-              <img
-                alt=""
-                aria-hidden={true}
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              <div
                 style={
                   Object {
-                    "border": "none",
+                    "boxSizing": "border-box",
                     "display": "block",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "padding": 0,
                   }
                 }
-              />
-            </div>
-            <img
-              className="emotion-147"
-              data-nimg="intrinsic"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style={
-                Object {
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "0% 0%",
-                  "backgroundSize": "cover",
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "filter": "blur(20px)",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-            <noscript>
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
               <img
-                className="emotion-147"
+                className="emotion-148"
                 data-nimg="intrinsic"
                 decoding="async"
-                loading="lazy"
-                src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 style={
                   Object {
+                    "backgroundImage": "url(\\"/image.png\\")",
+                    "backgroundPosition": "0% 0%",
+                    "backgroundSize": "cover",
                     "border": "none",
                     "bottom": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "filter": "blur(20px)",
                     "height": 0,
                     "left": 0,
                     "margin": "auto",
@@ -5231,10 +5226,42 @@ exports[`Alliance renders 1`] = `
                   }
                 }
               />
-            </noscript>
+              <noscript>
+                <img
+                  className="emotion-148"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-150"
           >
             Expand your reach to help more communities
           </p>
@@ -5745,14 +5772,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      className="emotion-194"
+      className="emotion-199"
     >
       “
       Our hope is that this Alliance will start unlocking the potential of internet money
       ”
     </blockquote>
     <figcaption
-      className="emotion-195"
+      className="emotion-200"
     >
       <span>
         Katie Haun, Andreessen Horowitz
@@ -5925,7 +5952,7 @@ exports[`Alliance renders 1`] = `
             Refine By
           </div>
           <div
-            className="emotion-209"
+            className="emotion-214"
           >
             <div
               className="emotion-0"

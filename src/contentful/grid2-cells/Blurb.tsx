@@ -16,7 +16,6 @@ enum Headings {
   "small" = "small",
   "plain" = "plain",
 }
-
 export interface Props {
   icon?: Asset
   title: string
@@ -31,7 +30,7 @@ export interface Props {
 function embedded(node: Block) {
   const contentType = node.data?.target?.sys?.contentType?.sys?.id
   const renderer = ROW[contentType]
-  
+
   if (renderer) {
     return renderer(node.data.target)
   } else {
@@ -55,15 +54,17 @@ export default function Blurb(props: Props) {
     <div css={rootCss}>
       <div css={containerCss}>
         {imageURL && (
-          <Image
-            unoptimized={true}
-            layout={props.isNaturalSize ? "intrinsic" : "fixed"}
-            src={`https:${imageURL}`}
-            width={width}
-            height={height}
-            alt=""
-            css={props.isNaturalSize ? {} : fixedSizeCss}
-          />
+          <div css={imageMargin}>
+            <Image
+              unoptimized={true}
+              layout={props.isNaturalSize ? "intrinsic" : "fixed"}
+              src={`https:${imageURL}`}
+              width={width}
+              height={height}
+              alt=""
+              css={props.isNaturalSize ? {} : fixedSizeCss}
+            />
+          </div>
         )}
         {props.title && <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>}
         {documentToReactComponents(props.body, {
@@ -131,6 +132,11 @@ const fixedSizeCss = css({
 const headingCss = css({
   marginTop: 16,
   marginBottom: 12,
+})
+
+const imageMargin = css({
+  marginBottom: 40,
+  marginTop: 40,
 })
 
 function headingStyle(type: Headings, darkMode: boolean) {

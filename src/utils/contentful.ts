@@ -162,7 +162,7 @@ export interface HeadingContentType {
 
 export interface IframeContentType {
   url: string
-  height: number 
+  height: number
 }
 
 export type CellContentType =

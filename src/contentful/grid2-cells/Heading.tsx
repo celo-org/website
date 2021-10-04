@@ -11,11 +11,9 @@ interface Props {
 }
 
 export function Heading(props: Props & HeadingContentType) {
-  const propSubtitleCss =  props.subTitleCss
+  const propSubtitleCss = props.subTitleCss
   function SubTitle(_, children: React.ReactNode) {
-    return (
-      <h3 css={css(subtitleCss, propSubtitleCss, props.darkMode && whiteText)}>{children}</h3>
-    )
+    return <h3 css={css(subtitleCss, propSubtitleCss, props.darkMode && whiteText)}>{children}</h3>
   }
 
   const subtitleOptions = {
@@ -32,8 +30,8 @@ export function Heading(props: Props & HeadingContentType) {
           src={imageFile.url}
           width={imageFile.details.image.width}
           height={imageFile.details.image.height}
+          css={imageMargin}
         />
-        
       )}
       {
         <h2
@@ -64,4 +62,8 @@ const subtitleCss = css(fonts.h4, {
 const titleCSS = css({
   textAlign: "center",
   marginBottom: 24,
+})
+
+const imageMargin = css({
+  marginBottom: 16,
 })
