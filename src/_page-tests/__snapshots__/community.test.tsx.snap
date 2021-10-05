@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Community renders 1`] = `
+.emotion-4 {
+  width: 100%;
+  max-width: 850px;
+}
+
 .emotion-25 {
   opacity: 0;
 }
@@ -159,13 +164,7 @@ exports[`Community renders 1`] = `
         }
       >
         <div
-          className="emotion-0"
-          style={
-            Object {
-              "maxWidth": "850px",
-              "width": "100%",
-            }
-          }
+          className="emotion-4"
         >
           <span
             style={
