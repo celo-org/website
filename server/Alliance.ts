@@ -2,7 +2,7 @@ import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import Ally, { NewMember } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
-import addToHubspot from "./addToHubSpot"
+import addToHubspot, { ListIDs } from "./addToHubSpot"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
 import { fetchCached, MINUTE } from "./cache"
 
@@ -61,7 +61,6 @@ export function normalize(asset: Fields): Ally {
   }
 }
 
-const ALLIANCE_LIST = "76"
 // creates entry in airtable and (if opted in) in Hubspot's Alliance list 
 export async function create(data: NewMember) {
   const actions: Promise<any>[] = [
@@ -69,7 +68,7 @@ export async function create(data: NewMember) {
   ]
 
   if (data.subscribe) {
-    actions.push(addToHubspot({ email: data.email, fullName: data.name}, ALLIANCE_LIST))
+    actions.push(addToHubspot({ email: data.email, fullName: data.name}, ListIDs.Alliance))
   }
 
   return Promise.all(actions)

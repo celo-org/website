@@ -15,6 +15,11 @@ interface CreationError {
     error: string
  }
 
+export enum ListIDs  {
+    Newsletter = "70",
+    Alliance = "76"
+}
+
 function convert(formContact: CRMInterface) {
     const [firstName, ...restNames] = formContact.fullName.split(" ")
     const lastName = restNames.join(" ")
