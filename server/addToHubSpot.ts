@@ -15,7 +15,7 @@ interface CreationError {
     error: string
  }
 
-export enum ListIDs  {
+export enum ListID {
     Newsletter = "70",
     Alliance = "76"
 }
@@ -36,19 +36,19 @@ function convert(formContact: CRMInterface) {
     return serverRuntimeConfig.HUBSPOT_API_KEY
   }
   
-export default async function addToHubspot({email, fullName}, list: string): Promise<PreparedContact | CreationError> {
+export default async function addToHubspot({email, fullName}, list: ListID): Promise<PreparedContact | CreationError> {
     const hubspotClient = new hubspot.Client({"apiKey":apiKey()})
     const preparedContact = convert({ email, fullName })
-    const SimplePublicObjectInput = { properties: preparedContact }
+    const simplePublicObjectInput = { properties: preparedContact }
       try {
-        Promise.all([await hubspotClient.crm.contacts.basicApi.create(SimplePublicObjectInput),
-        await fetch("https://api.hubapi.com/contacts/v1/lists/" + list + "/add?hapikey=" + apiKey(), {
+        Promise.all([await hubspotClient.crm.contacts.basicApi.create(simplePublicObjectInput),
+        ]), await fetch("https://api.hubapi.com/contacts/v1/lists/" + list + "/add" + "?hapikey=" + apiKey(), {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
             body:  JSON.stringify({emails: [email]})
-        })]) 
+        })
         return preparedContact
       } catch (e) {
         e.message === 'HTTP request failed'

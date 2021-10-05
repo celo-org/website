@@ -10,7 +10,7 @@ import { Tables } from "../fullstack/EcoFundFields"
 import ecoFundSubmission from "../server/EcoFundApp"
 import Sentry, { initSentryServer } from "../server/sentry"
 import { RequestType } from "../src/fauceting/FaucetInterfaces"
-import addToHubspot, { ListIDs } from "./addToHubSpot"
+import addToHubspot, { ListID } from "./addToHubSpot"
 import { create } from "./Alliance"
 import latestAnnouncements from "./Announcement"
 import { faucetOrInviteController } from "./controllers"
@@ -257,7 +257,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 
   server.post("/contacts", rateLimit, async (req, res) => {
     try {
-      await addToHubspot(req.body, ListIDs.Newsletter)
+      await addToHubspot(req.body, ListID.Newsletter)
       res.status(NO_CONTENT).send("ok")
     } catch (e) {
       respondError(res, e)

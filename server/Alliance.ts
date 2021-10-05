@@ -2,7 +2,7 @@ import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import Ally, { NewMember } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
-import addToHubspot, { ListIDs } from "./addToHubSpot"
+import addToHubspot, { ListID } from "./addToHubSpot"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
 import { fetchCached, MINUTE } from "./cache"
 
@@ -68,7 +68,7 @@ export async function create(data: NewMember) {
   ]
 
   if (data.subscribe) {
-    actions.push(addToHubspot({ email: data.email, fullName: data.name}, ListIDs.Alliance))
+    actions.push(addToHubspot({ email: data.email, fullName: data.name}, ListID.Alliance))
   }
 
   return Promise.all(actions)
