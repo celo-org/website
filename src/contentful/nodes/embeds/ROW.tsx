@@ -2,7 +2,7 @@ import { css, CSSObject } from "@emotion/react"
 import { flexRow, WHEN_MOBILE } from "src/estyles"
 import { Entry } from "contentful"
 import { GalleryItem } from "src/utils/contentful"
-import {Props as ButtonShape} from "src/contentful/nodes/embeds/BUTTON"
+import { Props as ButtonShape } from "src/contentful/nodes/embeds/BUTTON"
 import Button from "src/shared/Button.3"
 
 type Item = GalleryItem
@@ -40,13 +40,16 @@ export const ROW = {
             const item = fields as Item
             const imageFields = item?.image?.fields
             const rendered = (
-              <img
-                key={sys.id}
-                alt={imageFields?.description}
-                src={imageFields?.file?.url}
-                width={imageFields?.file?.details?.image?.width}
-                height={imageFields?.file?.details?.image?.height}
-              />
+              <div css={logoContainer}>
+                <img
+                  key={sys.id}
+                  alt={imageFields?.description}
+                  src={imageFields?.file?.url}
+                  width={imageFields?.file?.details?.image?.width}
+                  height={imageFields?.file?.details?.image?.height}
+                />
+                <p css={logoTitle}>{item.title}</p>
+              </div>
             )
 
             if (item.url) {
@@ -63,6 +66,17 @@ export const ROW = {
   ),
 }
 
-const rootStyle = css(flexRow,  {
-  flexWrap: "wrap"
+const rootStyle = css(flexRow, {
+  flexWrap: "wrap",
+})
+
+const logoContainer = css(flexRow, {
+  alignItems: "center",
+  marginLeft: 12,
+  marginRight: 12,
+})
+
+const logoTitle = css({
+  fontSize: 16,
+  fontWeight: 500,
 })
