@@ -42,7 +42,8 @@ export default function Press(props: LogoGallery) {
             text={"Sign up: Make Crypto Mobile Hackathon - $2.5M in Prizes & Seed Funding"}
             kind={BTN.NAKED}
             size={SIZE.normal}
-            href={"https://www.defiforthepeople.org/hackathon"}
+            target="_blank"
+            href={"https://mobiledefi.devpost.com/?utm_source=celo&utm_medium=banner"}
             align={"center"}
           />
         </div>
