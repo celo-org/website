@@ -1,7 +1,21 @@
 import * as hubspot from '@hubspot/api-client'
 import getConfig from "next/config"
 
-function convert(formContact) {
+interface CRMInterface {
+    email: string
+    fullName: string
+  }
+  
+interface PreparedContact {
+    email: string
+    firstname: string
+    lastname: string
+}
+interface CreationError {
+    error: string
+ }
+
+function convert(formContact: CRMInterface) {
     const [firstName, ...restNames] = formContact.fullName.split(" ")
     const lastName = restNames.join(" ")
     const properties = {
@@ -17,7 +31,7 @@ function convert(formContact) {
     return serverRuntimeConfig.HUBSPOT_API_KEY
   }
   
-export default async function addToHubspot({email, fullName}, list: string): Promise<any> {
+export default async function addToHubspot({email, fullName}, list: string): Promise<PreparedContact | CreationError> {
     const hubspotClient = new hubspot.Client({"apiKey":apiKey()})
     const preparedContact = convert({ email, fullName })
     const SimplePublicObjectInput = { properties: preparedContact }
@@ -29,8 +43,8 @@ export default async function addToHubspot({email, fullName}, list: string): Pro
               'Content-Type': 'application/json',
             },
             body:  JSON.stringify({emails: [email]})
-
-        })])
+        })]) 
+        return preparedContact
       } catch (e) {
         e.message === 'HTTP request failed'
           ? console.error(JSON.stringify(e.response, null, 2))
