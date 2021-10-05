@@ -61,6 +61,7 @@ export function normalize(asset: Fields): Ally {
   }
 }
 
+const ALLIANCE_LIST = "76"
 // creates entry in airtable and (if opted in) in Hubspot's Alliance list 
 export async function create(data: NewMember) {
   const actions: Promise<any>[] = [
@@ -68,7 +69,7 @@ export async function create(data: NewMember) {
   ]
 
   if (data.subscribe) {
-    actions.push(addToHubspot({ email: data.email, fullName: data.name}, "76"))
+    actions.push(addToHubspot({ email: data.email, fullName: data.name}, ALLIANCE_LIST))
   }
 
   return Promise.all(actions)

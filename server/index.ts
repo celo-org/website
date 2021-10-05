@@ -253,9 +253,11 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     await faucetOrInviteController(req, res, RequestType.Invite)
   })
 
+  const NEWSLETTER_LIST = "70"
+
   server.post("/contacts", rateLimit, async (req, res) => {
     try {
-      await addToHubspot(req.body, "70")
+      await addToHubspot(req.body, NEWSLETTER_LIST)
       res.status(NO_CONTENT).send("ok")
     } catch (e) {
       respondError(res, e)
