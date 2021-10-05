@@ -40,15 +40,14 @@ export const ROW = {
             const item = fields as Item
             const imageFields = item?.image?.fields
             const rendered = (
-              <div css={logoContainer}>
+              <div key={sys.id} css={logoContainer}>
                 <img
-                  key={sys.id}
                   alt={imageFields?.description}
                   src={imageFields?.file?.url}
                   width={imageFields?.file?.details?.image?.width}
                   height={imageFields?.file?.details?.image?.height}
                 />
-                <p css={logoTitle}>{item.title}</p>
+                {item.title ? <p css={logoTitle}>{item.title}</p> : null}
               </div>
             )
 
@@ -72,11 +71,10 @@ const rootStyle = css(flexRow, {
 
 const logoContainer = css(flexRow, {
   alignItems: "center",
-  marginLeft: 12,
-  marginRight: 12,
 })
 
 const logoTitle = css(jost, {
   fontSize: 16,
   fontWeight: 500,
+  marginRight: 24,
 })
