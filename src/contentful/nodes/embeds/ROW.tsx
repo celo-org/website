@@ -1,5 +1,5 @@
 import { css, CSSObject } from "@emotion/react"
-import { flexRow, WHEN_MOBILE } from "src/estyles"
+import { flexRow, WHEN_MOBILE, jost } from "src/estyles"
 import { Entry } from "contentful"
 import { GalleryItem } from "src/utils/contentful"
 import { Props as ButtonShape } from "src/contentful/nodes/embeds/BUTTON"
@@ -76,7 +76,7 @@ const logoContainer = css(flexRow, {
   marginRight: 12,
 })
 
-const logoTitle = css({
+const logoTitle = css(jost, {
   fontSize: 16,
   fontWeight: 500,
 })
