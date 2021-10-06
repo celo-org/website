@@ -210,6 +210,7 @@ export interface ContentfulPage<T> {
 export interface GalleryItem {
   url: string
   image: Asset
+  title?: string
 }
 
 export interface LogoGallery {
