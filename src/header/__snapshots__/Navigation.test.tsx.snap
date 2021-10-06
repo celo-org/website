@@ -1,62 +1,220 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation renders 1`] = `
-<div
-  css={
-    Object {
-      "map": undefined,
-      "name": "436tdk",
-      "next": undefined,
-      "styles": "display:flex;position:fixed;left:0;right:0;display:flex;flex-direction:row;height:75px;justify-content:center;align-items:center;z-index:30;max-width:100vw;transition-property:top;transition-duration:200ms;;top:0;",
-      "toString": [Function],
-    }
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 75px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 30;
+  max-width: 100vw;
+  transition-property: top;
+  transition-duration: 200ms;
+  top: 0;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  padding-left: 20px;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  height: 75px;
+  background-color: #FFFFFF;
+  transition-property: opacity color;
+  transition-duration: 200ms;
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    position: relative;
   }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 6px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.emotion-4 {
+  transition-property: opacity color;
+  transition-duration: 200ms;
+  opacity: 1;
+}
+
+.emotion-5 {
+  display: none;
+  transition-property: opacity color;
+  transition-duration: 200ms;
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .emotion-5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.emotion-42 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+.emotion-48 {
+  position: fixed;
+  top: 10px;
+  right: 5px;
+  opacity: 0;
+  display: none;
+  transition-property: opacity color;
+  transition-duration: 200ms;
+  opacity: 1;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .emotion-48 {
+    display: none;
+  }
+}
+
+<div
+  className="emotion-0"
 >
   <div
-    css={
-      Object {
-        "map": undefined,
-        "name": "1uoxsxq",
-        "next": undefined,
-        "styles": "display:flex;flex:1;flex-direction:row;justify-content:space-between;align-items:stretch;align-self:stretch;padding-left:20px;margin-right:0;@media (min-width: 992px){margin-right:0;margin-left:0;padding-right:30px;padding-left:30px;position:relative;};display:flex;position:absolute;top:0;left:0;right:0;opacity:1;height:75px;;background-color:#FFFFFF;@media (min-width: 992px){&:hover{}};transition-property:opacity color;transition-duration:200ms;;opacity:1;;",
-        "toString": [Function],
-      }
-    }
+    className="emotion-1"
   >
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "1xhj18k",
-          "next": undefined,
-          "styles": "display:flex;flex-direction:row;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-2"
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "1igz59d",
-            "next": undefined,
-            "styles": "display:flex;padding-left:6px;padding-top:20px;cursor:pointer;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-3"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "14fz1eb",
-              "next": undefined,
-              "styles": "transition-property:opacity color;transition-duration:200ms;;opacity:1;;",
-              "toString": [Function],
-            }
-          }
+          className="emotion-4"
         >
           <svg
             fill="none"
@@ -85,45 +243,13 @@ exports[`Navigation renders 1`] = `
       </div>
     </div>
     <nav
-      css={
-        Array [
-          Object {
-            "map": undefined,
-            "name": "ykwvjb",
-            "next": undefined,
-            "styles": "display:none;@media (min-width: 992px){display:flex;flex-direction:row;justify-content:flex-end;align-items:center;}",
-            "toString": [Function],
-          },
-          Object {
-            "map": undefined,
-            "name": "1sb4pvq",
-            "next": undefined,
-            "styles": "transition-property:opacity color;transition-duration:200ms;",
-            "toString": [Function],
-          },
-          Object {
-            "map": undefined,
-            "name": "whh5e5",
-            "next": undefined,
-            "styles": "opacity:1;",
-            "toString": [Function],
-          },
-        ]
-      }
+      className="emotion-5"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-6"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-7"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -131,7 +257,7 @@ exports[`Navigation renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-8 emotion-9 emotion-10"
             dir="auto"
             href="/about"
             onClick={[Function]}
@@ -176,18 +302,10 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-6"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-7"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -195,7 +313,7 @@ exports[`Navigation renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-8 emotion-9 emotion-10"
             dir="auto"
             href="/developers"
             onClick={[Function]}
@@ -240,18 +358,10 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-6"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-7"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -259,7 +369,7 @@ exports[`Navigation renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-8 emotion-9 emotion-10"
             dir="auto"
             href="/community"
             onClick={[Function]}
@@ -304,18 +414,10 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-6"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-7"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -323,7 +425,7 @@ exports[`Navigation renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-8 emotion-9 emotion-10"
             dir="auto"
             href="/dapps"
             onClick={[Function]}
@@ -368,18 +470,10 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-6"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-7"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -387,7 +481,7 @@ exports[`Navigation renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-8 emotion-9 emotion-10"
             dir="auto"
             href="/alliance"
             onClick={[Function]}
@@ -432,18 +526,10 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-6"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-7"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -451,7 +537,7 @@ exports[`Navigation renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-8 emotion-9 emotion-10"
             dir="auto"
             href="/public-sector"
             onClick={[Function]}
@@ -496,18 +582,10 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "ft8sjx",
-            "next": undefined,
-            "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-6"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-7"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -515,7 +593,7 @@ exports[`Navigation renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-8 emotion-9 emotion-10"
             dir="auto"
             href="https://medium.com/CeloHQ"
             onClick={[Function]}
@@ -559,7 +637,7 @@ exports[`Navigation renders 1`] = `
           >
             
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-7"
               style={
                 Object {
                   "display": "inline-flex",
@@ -586,27 +664,10 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        css={
-          Array [
-            Object {
-              "map": undefined,
-              "name": "ft8sjx",
-              "next": undefined,
-              "styles": "display:flex;position:relative;align-items:center;justify-content:center;flex-direction:column;margin-left:20px;margin-right:20px;",
-              "toString": [Function],
-            },
-            Object {
-              "map": undefined,
-              "name": "4axql0",
-              "next": undefined,
-              "styles": "display:flex;margin-right:10px;",
-              "toString": [Function],
-            },
-          ]
-        }
+        className="emotion-42"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-7"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -614,7 +675,7 @@ exports[`Navigation renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-8 emotion-9 emotion-10"
             dir="auto"
             href="https://github.com/celo-org/celo-monorepo"
             onClick={[Function]}
@@ -658,7 +719,7 @@ exports[`Navigation renders 1`] = `
           >
             
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-7"
               style={
                 Object {
                   "display": "inline-flex",
@@ -689,18 +750,10 @@ exports[`Navigation renders 1`] = `
     </nav>
   </div>
   <div
-    css={
-      Object {
-        "map": undefined,
-        "name": "11pkmgi",
-        "next": undefined,
-        "styles": "position:fixed;top:10px;right:5px;opacity:0;display:none;@media (min-width: 992px){display:none;};transition-property:opacity color;transition-duration:200ms;;opacity:1;display:block;",
-        "toString": [Function],
-      }
-    }
+    className="emotion-48"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-7"
       onClick={[Function]}
       onContextMenu={[Function]}
       onKeyDown={[Function]}
@@ -729,7 +782,7 @@ exports[`Navigation renders 1`] = `
       tabIndex="0"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-7"
         style={
           Object {
             "MozTransitionProperty": "transform color",
@@ -749,7 +802,7 @@ exports[`Navigation renders 1`] = `
         }
       />
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-7"
         style={
           Object {
             "MozTransitionProperty": "transform color",
@@ -767,7 +820,7 @@ exports[`Navigation renders 1`] = `
         }
       />
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-7"
         style={
           Object {
             "MozTransitionProperty": "transform color",

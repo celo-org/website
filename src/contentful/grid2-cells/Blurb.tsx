@@ -30,7 +30,7 @@ export interface Props {
 function embedded(node: Block) {
   const contentType = node.data?.target?.sys?.contentType?.sys?.id
   const renderer = ROW[contentType]
-  
+
   if (renderer) {
     return renderer(node.data.target)
   } else {
@@ -55,16 +55,16 @@ export default function Blurb(props: Props) {
       <div css={containerCss}>
         {imageURL && (
           <div css={imageMargin}>
-          <Image
-            unoptimized={true}
-            layout={props.isNaturalSize ? "intrinsic" : "fixed"}
-            src={`https:${imageURL}`}
-            width={width}
-            height={height}
-            alt=""
-            css={props.isNaturalSize ? {} : fixedSizeCss}
+            <Image
+              unoptimized={true}
+              layout={props.isNaturalSize ? "intrinsic" : "fixed"}
+              src={`https:${imageURL}`}
+              width={width}
+              height={height}
+              alt=""
+              css={props.isNaturalSize ? {} : fixedSizeCss}
             />
-            </div>
+          </div>
         )}
         {props.title && <h4 css={headingStyle(props.titleType, props.darkMode)}>{props.title}</h4>}
         {documentToReactComponents(props.body, {
@@ -121,12 +121,12 @@ const containerCss = css(flex, {
       marginInlinEend: 0,
       paddingInlineStart: 0,
     },
-  }
+  },
 })
 
 const fixedSizeCss = css({
   width: 100,
-  height: 100
+  height: 100,
 })
 
 const headingCss = css({
@@ -136,7 +136,7 @@ const headingCss = css({
 
 const imageMargin = css({
   marginBottom: 40,
-  marginTop: 40
+  marginTop: 40,
 })
 
 function headingStyle(type: Headings, darkMode: boolean) {

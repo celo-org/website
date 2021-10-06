@@ -1,8 +1,641 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Experience/Logo renders 1`] = `
+@keyframes animation-0 {
+  from {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animation-1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-2 {
+  from {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  to {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.emotion-7 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-297 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-298 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-298 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-298 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-298 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-298 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-298 {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-298 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-298 {
+    margin-top: 30px;
+  }
+}
+
+.emotion-299 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 1;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-299 {
+    grid-column: span 3;
+  }
+}
+
+.emotion-300 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-300 {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-301 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-301 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-302 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  margin-bottom: 20px;
+  max-width: 350px;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .emotion-302 {
+    text-align: center;
+  }
+}
+
+.emotion-304 {
+  color: inherit;
+}
+
+.emotion-305 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 2;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-305 {
+    grid-column: span 3;
+  }
+}
+
+.emotion-306 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-306 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+
+.emotion-307 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-start: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-307 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-308 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.emotion-309 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.emotion-349 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width: 576px) {
+  .emotion-349 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-423 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-end: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-423 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-492 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-492 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-492 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-492 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-492 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-492 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-492 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-492 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.emotion-493 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  .emotion-493 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-494 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .emotion-494 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-495 {
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .emotion-495 {
+    margin-bottom: 8px;
+  }
+}
+
+.emotion-496 {
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .emotion-496 {
+    display: none;
+  }
+}
+
+.emotion-497 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.emotion-498 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 3500ms;
+  animation-delay: 3500ms;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+}
+
+.emotion-499 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  font-style: italic;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+}
+
+@media (max-width: 576px) {
+  .emotion-499 {
+    text-align: center;
+  }
+}
+
+.emotion-500 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: animation-2;
+  animation-name: animation-2;
+}
+
+.emotion-501 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  z-index: 10;
+}
+
 <div
-  className="css-view-1dbjc4n"
+  className="emotion-0"
   style={
     Object {
       "isolation": "isolate",
@@ -10,7 +643,7 @@ exports[`Experience/Logo renders 1`] = `
   }
 >
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "backgroundColor": "rgba(255,255,255,1.00)",
@@ -21,7 +654,7 @@ exports[`Experience/Logo renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "MozTransitionProperty": "box-shadow",
@@ -35,7 +668,7 @@ exports[`Experience/Logo renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -50,7 +683,7 @@ exports[`Experience/Logo renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -80,7 +713,7 @@ exports[`Experience/Logo renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignContent": "center",
@@ -98,7 +731,7 @@ exports[`Experience/Logo renders 1`] = `
               href="/"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -154,19 +787,11 @@ exports[`Experience/Logo renders 1`] = `
               </div>
             </a>
             <a
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "ytumd6",
-                  "next": undefined,
-                  "styles": "text-decoration:none;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-7"
               href="/experience/brand"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -197,7 +822,7 @@ exports[`Experience/Logo renders 1`] = `
                 tabIndex="0"
               >
                 <div
-                  className="css-text-901oao"
+                  className="emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -218,7 +843,7 @@ exports[`Experience/Logo renders 1`] = `
             </a>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignContent": "center",
@@ -233,7 +858,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -251,7 +876,7 @@ exports[`Experience/Logo renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -275,7 +900,7 @@ exports[`Experience/Logo renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -283,7 +908,7 @@ exports[`Experience/Logo renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/brand"
                     onClick={[Function]}
@@ -327,7 +952,7 @@ exports[`Experience/Logo renders 1`] = `
                   </a>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "bottom": "-16px",
@@ -359,7 +984,7 @@ exports[`Experience/Logo renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -383,7 +1008,7 @@ exports[`Experience/Logo renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -391,7 +1016,7 @@ exports[`Experience/Logo renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/events"
                     onClick={[Function]}
@@ -436,7 +1061,7 @@ exports[`Experience/Logo renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -460,7 +1085,7 @@ exports[`Experience/Logo renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -468,7 +1093,7 @@ exports[`Experience/Logo renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/grants"
                     onClick={[Function]}
@@ -513,7 +1138,7 @@ exports[`Experience/Logo renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -537,7 +1162,7 @@ exports[`Experience/Logo renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -545,7 +1170,7 @@ exports[`Experience/Logo renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/merchant"
                     onClick={[Function]}
@@ -596,7 +1221,7 @@ exports[`Experience/Logo renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -618,7 +1243,7 @@ exports[`Experience/Logo renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -638,7 +1263,7 @@ exports[`Experience/Logo renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         id="sidebar"
         style={
           Object {
@@ -648,7 +1273,7 @@ exports[`Experience/Logo renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -656,7 +1281,7 @@ exports[`Experience/Logo renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand"
             onClick={[Function]}
@@ -705,7 +1330,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -714,7 +1339,7 @@ exports[`Experience/Logo renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -727,7 +1352,7 @@ exports[`Experience/Logo renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -744,7 +1369,7 @@ exports[`Experience/Logo renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -752,7 +1377,7 @@ exports[`Experience/Logo renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/logo"
             onClick={[Function]}
@@ -801,7 +1426,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -810,7 +1435,7 @@ exports[`Experience/Logo renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -823,7 +1448,7 @@ exports[`Experience/Logo renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -840,7 +1465,7 @@ exports[`Experience/Logo renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -848,7 +1473,7 @@ exports[`Experience/Logo renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/color"
             onClick={[Function]}
@@ -897,7 +1522,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -906,7 +1531,7 @@ exports[`Experience/Logo renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -919,7 +1544,7 @@ exports[`Experience/Logo renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -936,7 +1561,7 @@ exports[`Experience/Logo renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -944,7 +1569,7 @@ exports[`Experience/Logo renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/typography"
             onClick={[Function]}
@@ -993,7 +1618,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1002,7 +1627,7 @@ exports[`Experience/Logo renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1015,7 +1640,7 @@ exports[`Experience/Logo renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -1032,7 +1657,7 @@ exports[`Experience/Logo renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1040,7 +1665,7 @@ exports[`Experience/Logo renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/composition"
             onClick={[Function]}
@@ -1089,7 +1714,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1098,7 +1723,7 @@ exports[`Experience/Logo renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1111,7 +1736,7 @@ exports[`Experience/Logo renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -1128,7 +1753,7 @@ exports[`Experience/Logo renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1136,7 +1761,7 @@ exports[`Experience/Logo renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/exchange-icons"
             onClick={[Function]}
@@ -1185,7 +1810,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1194,7 +1819,7 @@ exports[`Experience/Logo renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1207,7 +1832,7 @@ exports[`Experience/Logo renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1215,7 +1840,7 @@ exports[`Experience/Logo renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/icons"
             onClick={[Function]}
@@ -1264,7 +1889,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1273,7 +1898,7 @@ exports[`Experience/Logo renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1286,7 +1911,7 @@ exports[`Experience/Logo renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1294,7 +1919,7 @@ exports[`Experience/Logo renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/key-imagery"
             onClick={[Function]}
@@ -1343,7 +1968,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1352,7 +1977,7 @@ exports[`Experience/Logo renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1365,7 +1990,7 @@ exports[`Experience/Logo renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -1384,7 +2009,7 @@ exports[`Experience/Logo renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1409,7 +2034,7 @@ exports[`Experience/Logo renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "minHeight": "calc(100vh - 75px)",
@@ -1417,11 +2042,11 @@ exports[`Experience/Logo renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           id="overview"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlex": 1,
@@ -1433,7 +2058,7 @@ exports[`Experience/Logo renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginLeft": "10px",
@@ -1443,7 +2068,7 @@ exports[`Experience/Logo renders 1`] = `
             >
               <h1
                 aria-level="1"
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-14 emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 role="heading"
@@ -1463,7 +2088,7 @@ exports[`Experience/Logo renders 1`] = `
               </h1>
               <h4
                 aria-level="4"
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-14 emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 role="heading"
@@ -1482,7 +2107,7 @@ exports[`Experience/Logo renders 1`] = `
                 The Celo logo is a universal signature uniting community efforts and bringing prosperity to the world.
               </h4>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1490,7 +2115,7 @@ exports[`Experience/Logo renders 1`] = `
                 onMouseUp={[Function]}
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-9"
                   dir="auto"
                   href="/assets/CeloLogoPackage.zip"
                   onClick={[Function]}
@@ -1546,7 +2171,7 @@ exports[`Experience/Logo renders 1`] = `
                 </a>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -1588,7 +2213,7 @@ exports[`Experience/Logo renders 1`] = `
                 </svg>
               </div>
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -1607,7 +2232,7 @@ exports[`Experience/Logo renders 1`] = `
                 Logo
               </div>
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -1626,7 +2251,7 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -1646,7 +2271,7 @@ Please use the full-color logo whenever possible.
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -1659,7 +2284,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitAlignItems": "center",
@@ -1711,7 +2336,7 @@ Please use the full-color logo whenever possible.
                   </svg>
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -1727,7 +2352,7 @@ Please use the full-color logo whenever possible.
                   Full color logo for lighter backgrounds
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -1735,7 +2360,7 @@ Please use the full-color logo whenever possible.
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/assets/CeloColorLogo.zip"
                     onClick={[Function]}
@@ -1782,7 +2407,7 @@ Please use the full-color logo whenever possible.
                   >
                     Download
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -1817,7 +2442,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -1830,7 +2455,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitAlignItems": "center",
@@ -1874,7 +2499,7 @@ Please use the full-color logo whenever possible.
                   </svg>
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -1890,7 +2515,7 @@ Please use the full-color logo whenever possible.
                   Full color logo for darker backgrounds
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -1898,7 +2523,7 @@ Please use the full-color logo whenever possible.
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/assets/CeloColorLogoReverse.zip"
                     onClick={[Function]}
@@ -1945,7 +2570,7 @@ Please use the full-color logo whenever possible.
                   >
                     Download
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -1980,7 +2605,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -1993,7 +2618,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitAlignItems": "center",
@@ -2045,7 +2670,7 @@ Please use the full-color logo whenever possible.
                   </svg>
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -2061,7 +2686,7 @@ Please use the full-color logo whenever possible.
                   Monochrome logo
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -2069,7 +2694,7 @@ Please use the full-color logo whenever possible.
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/assets/CeloMonochromeLogo.zip"
                     onClick={[Function]}
@@ -2116,7 +2741,7 @@ Please use the full-color logo whenever possible.
                   >
                     Download
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -2151,7 +2776,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -2164,7 +2789,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitAlignItems": "center",
@@ -2208,7 +2833,7 @@ Please use the full-color logo whenever possible.
                   </svg>
                 </div>
                 <div
-                  className="css-text-901oao"
+                  className="emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -2224,7 +2849,7 @@ Please use the full-color logo whenever possible.
                   Monochrome logo (inverse)
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -2232,7 +2857,7 @@ Please use the full-color logo whenever possible.
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/assets/CeloMonochromeLogoReverse.zip"
                     onClick={[Function]}
@@ -2279,7 +2904,7 @@ Please use the full-color logo whenever possible.
                   >
                     Download
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -2315,7 +2940,7 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginLeft": "10px",
@@ -2324,7 +2949,7 @@ Please use the full-color logo whenever possible.
               }
             >
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -2343,7 +2968,7 @@ Please use the full-color logo whenever possible.
                 Glyph
               </div>
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -2359,7 +2984,7 @@ Please use the full-color logo whenever possible.
                 Utilize the glyph when the full logo is too small to achieve maximum impact. It works best on Celo brand colors. Be sure to use the monochrome glyphs on other custom colors.
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2367,7 +2992,7 @@ Please use the full-color logo whenever possible.
                 onMouseUp={[Function]}
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-9"
                   dir="auto"
                   href="/assets/CeloGlyphs.zip"
                   onClick={[Function]}
@@ -2414,7 +3039,7 @@ Please use the full-color logo whenever possible.
                 >
                   Download
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2448,7 +3073,7 @@ Please use the full-color logo whenever possible.
                 </a>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -2469,7 +3094,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitAlignItems": "center",
@@ -2510,7 +3135,7 @@ Please use the full-color logo whenever possible.
                   </svg>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitAlignItems": "center",
@@ -2551,7 +3176,7 @@ Please use the full-color logo whenever possible.
                   </svg>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitAlignItems": "center",
@@ -2592,7 +3217,7 @@ Please use the full-color logo whenever possible.
                   </svg>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitAlignItems": "center",
@@ -2637,11 +3262,11 @@ Please use the full-color logo whenever possible.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           id="space-and-sizing"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "marginLeft": "10px",
@@ -2650,7 +3275,7 @@ Please use the full-color logo whenever possible.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginBottom": "20px",
@@ -2661,7 +3286,7 @@ Please use the full-color logo whenever possible.
             >
               <h2
                 aria-level="2"
-                className="css-reset-4rbku5 css-text-901oao"
+                className="emotion-14 emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 role="heading"
@@ -2681,7 +3306,7 @@ Please use the full-color logo whenever possible.
             </div>
           </div>
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2702,7 +3327,7 @@ Please use the full-color logo whenever possible.
             Clearspace
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "marginLeft": "10px",
@@ -2711,7 +3336,7 @@ Please use the full-color logo whenever possible.
             }
           >
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -2727,7 +3352,7 @@ Please use the full-color logo whenever possible.
               Clearspace is the protected area around the logo. This space must be kept free of all other graphics and text, including other logos. The Celo logo has allotted Clearspace based on the height of the “o” in Celo.  Please use the below image as a guide.
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -2748,7 +3373,7 @@ Please use the full-color logo whenever possible.
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "block",
@@ -2783,7 +3408,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -2798,7 +3423,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2823,10 +3448,10 @@ Please use the full-color logo whenever possible.
             </div>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
           >
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -2847,7 +3472,7 @@ Please use the full-color logo whenever possible.
               Size
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -2865,7 +3490,7 @@ Please use the full-color logo whenever possible.
               The logo and glyph should not appear smaller than their minimum height of 24 pixels on digital displays or 8mm in print.
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -2886,7 +3511,7 @@ Please use the full-color logo whenever possible.
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -2986,7 +3611,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -3089,14 +3714,14 @@ Please use the full-color logo whenever possible.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           id="backgrounds"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginLeft": "10px",
@@ -3105,7 +3730,7 @@ Please use the full-color logo whenever possible.
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "marginBottom": "20px",
@@ -3116,7 +3741,7 @@ Please use the full-color logo whenever possible.
               >
                 <h2
                   aria-level="2"
-                  className="css-reset-4rbku5 css-text-901oao"
+                  className="emotion-14 emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   role="heading"
@@ -3136,7 +3761,7 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginBottom": "60px",
@@ -3144,7 +3769,7 @@ Please use the full-color logo whenever possible.
               }
             >
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -3163,7 +3788,7 @@ Please use the full-color logo whenever possible.
                 The Celo logo works best on these brand background colors.
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -3179,7 +3804,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -3193,7 +3818,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -3209,7 +3834,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -3245,7 +3870,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -3274,7 +3899,7 @@ Please use the full-color logo whenever possible.
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -3291,7 +3916,7 @@ Please use the full-color logo whenever possible.
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -3315,10 +3940,10 @@ Please use the full-color logo whenever possible.
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3336,7 +3961,7 @@ Please use the full-color logo whenever possible.
                       Celo White
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3351,7 +3976,7 @@ Please use the full-color logo whenever possible.
                       #FFFFFF
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3366,7 +3991,7 @@ Please use the full-color logo whenever possible.
                       RGBA (255, 255, 255, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3383,7 +4008,7 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -3397,7 +4022,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -3413,7 +4038,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -3441,7 +4066,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -3470,7 +4095,7 @@ Please use the full-color logo whenever possible.
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -3487,7 +4112,7 @@ Please use the full-color logo whenever possible.
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -3511,10 +4136,10 @@ Please use the full-color logo whenever possible.
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3532,7 +4157,7 @@ Please use the full-color logo whenever possible.
                       Faint Gray
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3547,7 +4172,7 @@ Please use the full-color logo whenever possible.
                       #F8F9F9
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3562,7 +4187,7 @@ Please use the full-color logo whenever possible.
                       RGBA (248, 249, 249, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3579,7 +4204,7 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -3593,7 +4218,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -3609,7 +4234,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -3637,7 +4262,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -3666,7 +4291,7 @@ Please use the full-color logo whenever possible.
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -3683,7 +4308,7 @@ Please use the full-color logo whenever possible.
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -3707,10 +4332,10 @@ Please use the full-color logo whenever possible.
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3728,7 +4353,7 @@ Please use the full-color logo whenever possible.
                       Faint Gold
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3743,7 +4368,7 @@ Please use the full-color logo whenever possible.
                       #FEF2D6
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3758,7 +4383,7 @@ Please use the full-color logo whenever possible.
                       RGBA (254, 242, 214, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3775,7 +4400,7 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -3789,7 +4414,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseEnter={[Function]}
@@ -3805,7 +4430,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "MozTransitionProperty": "transform",
@@ -3833,7 +4458,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -3862,7 +4487,7 @@ Please use the full-color logo whenever possible.
                           />
                         </svg>
                         <div
-                          className="css-text-901oao"
+                          className="emotion-9"
                           dir="auto"
                           onClick={[Function]}
                           style={
@@ -3879,7 +4504,7 @@ Please use the full-color logo whenever possible.
                         </div>
                       </div>
                       <div
-                        className="css-text-901oao"
+                        className="emotion-9"
                         dir="auto"
                         onClick={[Function]}
                         style={
@@ -3903,10 +4528,10 @@ Please use the full-color logo whenever possible.
                     </div>
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                   >
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3924,7 +4549,7 @@ Please use the full-color logo whenever possible.
                       Celo Dark
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3939,7 +4564,7 @@ Please use the full-color logo whenever possible.
                       #2E3338
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3954,7 +4579,7 @@ Please use the full-color logo whenever possible.
                       RGBA (46, 51, 56, 0.01)
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="emotion-9"
                       dir="auto"
                       onClick={[Function]}
                       style={
@@ -3973,7 +4598,7 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -3994,7 +4619,7 @@ Please use the full-color logo whenever possible.
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -4009,7 +4634,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "display": "block",
@@ -4040,7 +4665,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "WebkitAlignItems": "center",
@@ -4085,7 +4710,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -4100,7 +4725,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "display": "block",
@@ -4131,7 +4756,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "WebkitAlignItems": "center",
@@ -4176,7 +4801,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitFlex": 1,
@@ -4191,7 +4816,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "display": "block",
@@ -4222,7 +4847,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "WebkitAlignItems": "center",
@@ -4268,7 +4893,7 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -4289,7 +4914,7 @@ Please use the full-color logo whenever possible.
               Color Backgrounds
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -4307,10 +4932,10 @@ Please use the full-color logo whenever possible.
               When it comes to applying the Celo brand to your own projects, the monochrome Celo logo works well on a variety of backgrounds. Use the dark logo on lighter backgrounds and the inverse logo on darker and more colorful backgrounds.
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -4322,7 +4947,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4336,7 +4961,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -4367,7 +4992,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -4412,7 +5037,7 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4426,7 +5051,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -4457,7 +5082,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -4503,7 +5128,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -4515,7 +5140,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4529,7 +5154,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -4560,7 +5185,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -4605,7 +5230,7 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4619,7 +5244,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -4650,7 +5275,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -4696,7 +5321,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -4708,7 +5333,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4722,7 +5347,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -4753,7 +5378,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -4798,7 +5423,7 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4812,7 +5437,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -4843,7 +5468,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -4890,7 +5515,7 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -4910,10 +5535,10 @@ Please use the full-color logo whenever possible.
               Do not overlay any of the logos of glyphs on top of images. Do not overlay the two-color logo ontop of unpreferred light colors.
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -4925,7 +5550,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -4938,7 +5563,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -4955,7 +5580,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -4976,7 +5601,7 @@ Please use the full-color logo whenever possible.
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -5007,7 +5632,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -5024,7 +5649,7 @@ Please use the full-color logo whenever possible.
                         }
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlexBasis": "auto",
@@ -5044,7 +5669,7 @@ Please use the full-color logo whenever possible.
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5092,7 +5717,7 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5105,7 +5730,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5122,7 +5747,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5143,7 +5768,7 @@ Please use the full-color logo whenever possible.
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -5174,7 +5799,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -5191,7 +5816,7 @@ Please use the full-color logo whenever possible.
                         }
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlexBasis": "auto",
@@ -5211,7 +5836,7 @@ Please use the full-color logo whenever possible.
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5260,7 +5885,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -5272,7 +5897,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5285,7 +5910,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5302,7 +5927,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5323,7 +5948,7 @@ Please use the full-color logo whenever possible.
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -5354,7 +5979,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -5399,7 +6024,7 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5412,7 +6037,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5429,7 +6054,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5450,7 +6075,7 @@ Please use the full-color logo whenever possible.
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -5481,7 +6106,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -5527,7 +6152,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -5539,7 +6164,7 @@ Please use the full-color logo whenever possible.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5552,7 +6177,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5569,7 +6194,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5590,7 +6215,7 @@ Please use the full-color logo whenever possible.
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -5621,7 +6246,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -5666,7 +6291,7 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFlex": 1,
@@ -5679,7 +6304,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "auto",
@@ -5696,7 +6321,7 @@ Please use the full-color logo whenever possible.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -5717,7 +6342,7 @@ Please use the full-color logo whenever possible.
                     />
                   </div>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "display": "block",
@@ -5748,7 +6373,7 @@ Please use the full-color logo whenever possible.
                       }
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                         style={
                           Object {
                             "WebkitAlignItems": "center",
@@ -5800,7 +6425,7 @@ Please use the full-color logo whenever possible.
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="experience-footer"
     style={
       Object {
@@ -5811,48 +6436,16 @@ Please use the full-color logo whenever possible.
     }
   >
     <section
-      css={
-        Object {
-          "map": undefined,
-          "name": "pnyh7x",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-297"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "4s0z69",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr 1fr 1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr 1fr 1fr ;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-298"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "yp1uga",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;;grid-column:span 1;@media (min-width: 576px) and (max-width: 992px){grid-column:span 3;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-299"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1geme6m",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-bottom:20px;@media (max-width: 576px){margin-bottom:30px;justify-content:center;align-items:center;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-300"
           >
             <svg
               fill="none"
@@ -5875,51 +6468,19 @@ Please use the full-color logo whenever possible.
             </svg>
           </div>
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "mel2sl",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:column;;padding-bottom:20px;@media (max-width: 576px){justify-content:center;align-items:center;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-301"
           >
             <p
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "t37gzz",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-302"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "t37gzz",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-302"
             >
               Read more in Celo 
               <a
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "q2y3yl",
-                    "next": undefined,
-                    "styles": "color:inherit;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-304"
                 href="/terms"
               >
                 Terms of Service
@@ -5928,64 +6489,24 @@ Please use the full-color logo whenever possible.
           </div>
         </div>
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1rf1jz1",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;;grid-column:span 2;@media (min-width: 576px) and (max-width: 992px){grid-column:span 3;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-305"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1qrhj6b",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:row;;justify-content:space-around;@media (min-width: 576px) and (max-width: 992px){justify-content:space-between;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-306"
           >
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-307"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-308"
               >
                 Celo
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5998,7 +6519,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/"
                     onClick={[Function]}
@@ -6031,18 +6552,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6055,7 +6568,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/about"
                     onClick={[Function]}
@@ -6088,18 +6601,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6112,7 +6617,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/jobs"
                     onClick={[Function]}
@@ -6145,18 +6650,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6169,7 +6666,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/validators"
                     onClick={[Function]}
@@ -6202,18 +6699,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6226,7 +6715,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/developers"
                     onClick={[Function]}
@@ -6259,18 +6748,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6283,7 +6764,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/alliance"
                     onClick={[Function]}
@@ -6316,18 +6797,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6340,7 +6813,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/community"
                     onClick={[Function]}
@@ -6373,18 +6846,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6397,7 +6862,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/annual-reports/2020"
                     onClick={[Function]}
@@ -6431,42 +6896,18 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-349"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-308"
               >
                 Technology
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6479,7 +6920,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://docs.celo.org/"
                     onClick={[Function]}
@@ -6512,18 +6953,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6536,7 +6969,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/audits"
                     onClick={[Function]}
@@ -6569,18 +7002,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6593,7 +7018,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.celoreserve.org"
                     onClick={[Function]}
@@ -6626,18 +7051,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6650,7 +7067,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/papers"
                     onClick={[Function]}
@@ -6683,18 +7100,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6707,7 +7116,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/public-sector"
                     onClick={[Function]}
@@ -6741,42 +7150,18 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-349"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-308"
               >
                 Resources
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6789,7 +7174,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/brand-policy"
                     onClick={[Function]}
@@ -6822,18 +7207,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6846,7 +7223,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/press"
                     onClick={[Function]}
@@ -6879,18 +7256,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6903,7 +7272,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/community#events"
                     onClick={[Function]}
@@ -6936,18 +7305,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6960,7 +7321,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/events"
                     onClick={[Function]}
@@ -6993,18 +7354,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7017,7 +7370,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/brand"
                     onClick={[Function]}
@@ -7050,18 +7403,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7074,7 +7419,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/merchant"
                     onClick={[Function]}
@@ -7107,18 +7452,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7131,7 +7468,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/grants"
                     onClick={[Function]}
@@ -7164,18 +7501,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7188,7 +7517,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/pilots"
                     onClick={[Function]}
@@ -7221,18 +7550,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7245,7 +7566,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/community#fund"
                     onClick={[Function]}
@@ -7279,42 +7600,18 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-423"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-308"
               >
                 Social
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7327,7 +7624,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://medium.com/celoOrg"
                     onClick={[Function]}
@@ -7356,7 +7653,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7384,18 +7681,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7408,7 +7697,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://github.com/celo-org/celo-monorepo"
                     onClick={[Function]}
@@ -7437,7 +7726,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7467,18 +7756,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7491,7 +7772,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://twitter.com/CeloOrg"
                     onClick={[Function]}
@@ -7520,7 +7801,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7548,18 +7829,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7572,7 +7845,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://forum.celo.org/"
                     onClick={[Function]}
@@ -7601,7 +7874,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7629,18 +7902,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7653,7 +7918,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://discord.gg/6yWMkgM"
                     onClick={[Function]}
@@ -7682,7 +7947,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7712,18 +7977,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7736,7 +7993,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                     onClick={[Function]}
@@ -7765,7 +8022,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7793,18 +8050,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7817,7 +8066,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.instagram.com/celoorg/"
                     onClick={[Function]}
@@ -7846,7 +8095,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7873,18 +8122,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7897,7 +8138,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.linkedin.com/company/celoOrg/"
                     onClick={[Function]}
@@ -7926,7 +8167,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -7951,18 +8192,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -7975,7 +8208,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.twitch.tv/celoorg"
                     onClick={[Function]}
@@ -8004,7 +8237,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -8029,18 +8262,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -8053,7 +8278,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.reddit.com/r/celo/"
                     onClick={[Function]}
@@ -8082,7 +8307,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -8107,18 +8332,10 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-309"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -8131,7 +8348,7 @@ Please use the full-color logo whenever possible.
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://t.me/celoplatform"
                     onClick={[Function]}
@@ -8160,7 +8377,7 @@ Please use the full-color logo whenever possible.
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -8190,171 +8407,48 @@ Please use the full-color logo whenever possible.
       </div>
     </section>
     <section
-      css={
-        Object {
-          "map": undefined,
-          "name": "pnyh7x",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-297"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "1dav2mh",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr ;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-492"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "vzw4bb",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex-direction:row;justify-content:space-between;@media (max-width: 576px){flex-direction:column;justify-content:center;align-items:center;;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-493"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1qqd3hf",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin-bottom:20px;overflow:hidden;@media (max-width: 576px){justify-content:center;align-items:center;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-494"
           >
             <img
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "12enyax",
-                  "next": undefined,
-                  "styles": "width:20px;height:20px;z-index:10;@media (max-width: 576px){margin-bottom:8px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-495"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "j9fttm",
-                  "next": undefined,
-                  "styles": "margin-left:10px;margin-right:10px;z-index:10;@media (max-width: 576px){display:none;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-496"
             >
               |
             </span>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1qm52s3",
-                  "next": undefined,
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:column;;position:relative;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-497"
             >
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1vj6g1i",
-                    "next": Object {
-                      "name": "animation-10pgf30",
-                      "next": undefined,
-                      "styles": "@keyframes animation-10pgf30{
-  from {
-    transform: translateX(-100%)
-  }
-  to {
-    transform: translateX(0%)
-  }
-}",
-                    },
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:column;;background-color:#FFFFFF;position:absolute;height:100%;width:101%;animation-duration:250ms;animation-iteration-count:1;animation-timing-function:linear;animation-fill-mode:both;;animation-delay:3500ms;animation-name:animation-10pgf30;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-498"
               />
               <span
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1kns1qg",
-                    "next": Object {
-                      "name": "animation-hsntgn",
-                      "next": undefined,
-                      "styles": "@keyframes animation-hsntgn{
-  from {
-    opacity: 0
-  }
-
-  to {
-    opacity: 1
-  }
-}",
-                    },
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;font-style:italic;;animation-fill-mode:both;animation-iteration-count:1;animation-duration:750ms;animation-name:animation-hsntgn;@media (max-width: 576px){text-align:center;};",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-499"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "13pj5cp",
-                    "next": Object {
-                      "name": "animation-1w4hjlk",
-                      "next": undefined,
-                      "styles": "@keyframes animation-1w4hjlk{
-  from {
-    transform: translateX(0%)
-  }
-
-  to {
-    transform: translateX(100%)
-  }
-}",
-                    },
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:column;;background-color:#FFFFFF;position:absolute;height:100%;width:101%;animation-duration:250ms;animation-iteration-count:1;animation-timing-function:linear;animation-fill-mode:both;;animation-name:animation-1w4hjlk;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-500"
               />
             </div>
           </div>
           <small
-            css={
-              Object {
-                "map": undefined,
-                "name": "2xk5ul",
-                "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;z-index:10;;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-501"
           >
             The Celo Foundation, © Celo 2021
           </small>

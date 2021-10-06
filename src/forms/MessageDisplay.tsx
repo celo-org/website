@@ -1,44 +1,47 @@
 import * as React from "react"
-import { StyleSheet, Text, TextStyle, View } from "react-native"
-import { fonts } from "src/styles"
-
+import { css } from "@emotion/react"
+import { flexRow, fonts } from "src/estyles"
 interface Props {
   isShowing: boolean
   children: React.ReactNode
-  style: TextStyle | TextStyle[]
+  className?: string
 }
 
-export default React.memo(({ children, isShowing, style }: Props) => {
+export default React.memo(({ children, isShowing, className }: Props) => {
   return (
-    <View style={[styles.container, !isShowing && styles.containerCollapsed]}>
-      <Text
-        style={[fonts.h6, styles.text, style, isShowing ? styles.showingError : styles.hidingError]}
-      >
+    <div
+      css={css(containerCss, !isShowing && collapsedCss)}
+      aria-hidden={!isShowing}
+      aria-live={"polite"}
+    >
+      <p className={className} css={css(textCSS, isShowing ? showingCss : hidingCss)}>
         {children}
-      </Text>
-    </View>
+      </p>
+    </div>
   )
 })
 
-const styles = StyleSheet.create({
-  text: {
-    transitionProperty: "opacity",
-    transitionDuration: "700ms",
-  },
-  showingError: {
-    opacity: 100,
-  },
-  hidingError: {
-    opacity: 0,
-  },
-  container: {
-    marginVertical: 5,
-    height: "auto",
-    maxHeight: 80,
-    transitionProperty: "max-height",
-    transitionDuration: "600ms",
-  },
-  containerCollapsed: {
-    maxHeight: 0,
-  },
+const containerCss = css(flexRow, {
+  margin: "5px 0",
+  height: "auto",
+  maxHeight: 80,
+  transitionProperty: "max-height",
+  transitionDuration: "600ms",
 })
+
+const collapsedCss = css({
+  maxHeight: 0,
+})
+
+const textCSS = css(fonts.h6, {
+  transitionProperty: "opacity",
+  transitionDuration: "700ms",
+})
+
+const showingCss = {
+  opacity: 100,
+}
+
+const hidingCss = {
+  opacity: 0,
+}

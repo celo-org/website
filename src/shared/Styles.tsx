@@ -2,11 +2,8 @@ import { StyleSheet } from "react-native"
 
 export const TABLET_BREAKPOINT = 576
 export const DESKTOP_BREAKPOINT = 992
-export const MENU_MAX_WIDTH = 1260
 
-export const CONSENT_HEIGHT = 180
 export const HEADER_HEIGHT = 75
-export const BANNER_HEIGHT = 0
 
 export const TextStyles = StyleSheet.create({
   table: {

@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native"
 import { ErrorDisplay, ErrorKeys, getErrorTransKey } from "src/forms/ErrorDisplay"
 import { TextInput } from "src/forms/TextInput"
 import { colors, fonts, standardStyles, textStyles } from "src/styles"
-
+import { css } from "@emotion/react"
 interface LabelProps {
   name: string
   multiline?: boolean
@@ -32,7 +32,7 @@ export function LabeledInput({
   }
 
   return (
-    <View style={styles.container}>
+    <div css={containerCss}>
       <View style={styles.labelBox}>
         <Text accessibilityRole={"label"} style={[fonts.a, textStyles.medium, styles.label]}>
           {label}
@@ -57,16 +57,17 @@ export function LabeledInput({
       {allErrors && (
         <ErrorDisplay isShowing={hasError} field={getErrorTransKey(displayErrorAs || name)} />
       )}
-    </View>
+    </div>
   )
 }
+
+const containerCss = css({
+  marginBottom: 10,
+})
 
 export const styles = StyleSheet.create({
   errorBorder: {
     borderColor: colors.error,
-  },
-  container: {
-    marginBottom: 10,
   },
   input: {
     marginVertical: 0,

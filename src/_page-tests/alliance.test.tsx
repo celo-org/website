@@ -2,12 +2,12 @@ import Alliance from "pages/alliance"
 import * as React from "react"
 import * as renderer from "react-test-renderer"
 import { TestProvider } from "src/_page-tests/test-utils"
-import { Category } from "src/alliance/CategoryEnum"
+import { Category as mockCategory } from "src/alliance/CategoryEnum"
 
 jest.mock("src/alliance/gatherAllies", () => {
   return (callback) => {
     callback(
-      Object.keys(Category).map((key: Category) => {
+      Object.keys(mockCategory).map((key: mockCategory) => {
         return {
           name: key,
           records: [],
