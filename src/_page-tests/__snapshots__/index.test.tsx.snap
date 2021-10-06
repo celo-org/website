@@ -743,9 +743,10 @@ exports[`HomePage renders 1`] = `
                 <a
                   className="emotion-15 emotion-16 emotion-17"
                   dir="auto"
-                  href="https://www.defiforthepeople.org/hackathon"
+                  href="https://mobiledefi.devpost.com/?utm_source=celo&utm_medium=banner"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
+                  rel="noopener"
                   role="link"
                   style={
                     Object {
@@ -764,6 +765,7 @@ exports[`HomePage renders 1`] = `
                       "textRendering": "geometricPrecision",
                     }
                   }
+                  target="_blank"
                 >
                   Sign up: Make Crypto Mobile Hackathon - $2.5M in Prizes & Seed Funding
                   <div
