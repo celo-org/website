@@ -17,7 +17,7 @@ module.exports = {
     '\\.(css|scss)$': '<rootDir>/__mocks__/ImageStub.ts',
     '\\.(md)$': '<rootDir>/__mocks__/MarkdownStub.ts',
     'pages/(.*)$': '<rootDir>/pages/$1',
-    'src/(.*)$': '<rootDir>/src/$1',
+    '^src/(.*)$': '<rootDir>/src/$1',
     'public/(.*)$': '<rootDir>/public/$1',
   },
   preset: 'react-native-web',
