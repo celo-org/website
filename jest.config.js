@@ -3,7 +3,7 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   testMatch: ['**/?(*.)(spec|test).ts?(x)'],
   transform: {
-    '\\.(ts|tsx)$': 'ts-jest',
+    '\\.(ts|tsx)$': 'babel-jest',
     '^.+\\.jsx?$': 'babel-jest',
   },
   globals: {
@@ -23,4 +23,5 @@ module.exports = {
   preset: 'react-native-web',
   setupFiles: ['./jestSetup.js', 'jest-canvas-mock'],
   setupFilesAfterEnv: ['./jestSetupAfter.ts'],
+  snapshotSerializers: ['@emotion/jest/serializer']
 }

@@ -1,11 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About renders 1`] = `
+.emotion-71 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+  text-align: center;
+  font-size: 65px;
+  line-height: 72px;
+  font-style: italic;
+  max-width: 1200px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-71 {
+    font-size: 42px;
+    line-height: 50px;
+    font-style: italic;
+  }
+}
+
+.emotion-72 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-72 {
+    font-family: EB Garamond,eb-garamond,Garamond,serif;
+    font-size: 36px;
+    line-height: 40;
+    text-rendering: geometricPrecision;
+    color: #2E3338;
+    font-weight: normal;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 40px;
+  }
+}
+
 <div
-  className="css-view-1dbjc4n"
+  className="emotion-0"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "height": "100vh",
@@ -14,7 +73,7 @@ exports[`About renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "height": "100vh",
@@ -43,7 +102,7 @@ exports[`About renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitFlexBasis": "auto",
@@ -58,7 +117,7 @@ exports[`About renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "backgroundColor": "rgba(0,0,0,0.00)",
@@ -80,7 +139,7 @@ exports[`About renders 1`] = `
           />
           <img
             alt=""
-            className="css-accessibilityImage-9pa8cd"
+            className="emotion-5"
             draggable={false}
             src="/images/AboutPreview.jpg"
           />
@@ -88,7 +147,7 @@ exports[`About renders 1`] = `
       </video>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -132,7 +191,7 @@ exports[`About renders 1`] = `
           
       </style>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -163,7 +222,7 @@ exports[`About renders 1`] = `
       >
         <h2
           aria-level="2"
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-8 emotion-9"
           dir="auto"
           onClick={[Function]}
           role="heading"
@@ -183,7 +242,7 @@ exports[`About renders 1`] = `
           Prosperity for All
         </h2>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -219,7 +278,7 @@ exports[`About renders 1`] = `
           </svg>
           <h3
             aria-level="3"
-            className="css-reset-4rbku5 css-text-901oao"
+            className="emotion-8 emotion-9"
             dir="auto"
             onClick={[Function]}
             role="heading"
@@ -243,7 +302,7 @@ exports[`About renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -264,7 +323,7 @@ exports[`About renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -308,7 +367,7 @@ exports[`About renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -329,7 +388,7 @@ exports[`About renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -349,7 +408,7 @@ exports[`About renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -368,7 +427,7 @@ exports[`About renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -388,7 +447,7 @@ exports[`About renders 1`] = `
     >
       <h1
         aria-level="1"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -408,7 +467,7 @@ exports[`About renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -429,7 +488,7 @@ exports[`About renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -449,7 +508,7 @@ exports[`About renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -465,7 +524,7 @@ exports[`About renders 1`] = `
         }
       >
         <span
-          className="css-text-901oao css-textHasAncestor-16my406"
+          className="emotion-9 emotion-27"
           onClick={[Function]}
           style={
             Object {
@@ -478,7 +537,7 @@ exports[`About renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -498,7 +557,7 @@ exports[`About renders 1`] = `
     >
       <h2
         aria-level="2"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -517,7 +576,7 @@ exports[`About renders 1`] = `
         Believes in a future where everyone can prosper
       </h2>
       <div
-        className="css-text-901oao"
+        className="emotion-9"
         dir="auto"
         onClick={[Function]}
         style={
@@ -537,7 +596,7 @@ exports[`About renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -559,7 +618,7 @@ exports[`About renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -579,7 +638,7 @@ exports[`About renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -598,7 +657,7 @@ exports[`About renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -618,7 +677,7 @@ exports[`About renders 1`] = `
     >
       <h2
         aria-level="2"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -636,7 +695,7 @@ exports[`About renders 1`] = `
       >
         Celo, pronounced 
         <span
-          className="css-text-901oao css-textHasAncestor-16my406"
+          className="emotion-9 emotion-27"
           onClick={[Function]}
           style={
             Object {
@@ -648,7 +707,7 @@ exports[`About renders 1`] = `
         </span>
          
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onContextMenu={[Function]}
           onKeyDown={[Function]}
@@ -715,7 +774,7 @@ exports[`About renders 1`] = `
 means ‘purpose’ in Esperanto.
       </h2>
       <div
-        className="css-text-901oao"
+        className="emotion-9"
         dir="auto"
         onClick={[Function]}
         style={
@@ -739,7 +798,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitFlexBasis": "auto",
@@ -754,7 +813,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -775,7 +834,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     />
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -796,7 +855,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -816,7 +875,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -835,7 +894,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -854,7 +913,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-9"
         dir="auto"
         onClick={[Function]}
         style={
@@ -870,7 +929,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       >
         Celo is founded on two core values: 
         <span
-          className="css-text-901oao css-textHasAncestor-16my406"
+          className="emotion-9 emotion-27"
           onClick={[Function]}
           style={
             Object {
@@ -882,7 +941,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         </span>
          and 
         <span
-          className="css-text-901oao css-textHasAncestor-16my406"
+          className="emotion-9 emotion-27"
           onClick={[Function]}
           style={
             Object {
@@ -897,7 +956,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -917,7 +976,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -936,7 +995,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "height": "350px",
@@ -1032,7 +1091,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       </div>
       <h4
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -1050,7 +1109,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         Unique Purpose
       </h4>
       <div
-        className="css-text-901oao"
+        className="emotion-9"
         dir="auto"
         onClick={[Function]}
         style={
@@ -1070,7 +1129,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -1091,7 +1150,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1110,7 +1169,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "height": "400px",
@@ -1600,7 +1659,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       </div>
       <h4
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -1618,7 +1677,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         Connectedness
       </h4>
       <div
-        className="css-text-901oao"
+        className="emotion-9"
         dir="auto"
         onClick={[Function]}
         style={
@@ -1638,7 +1697,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignItems": "center",
@@ -1659,7 +1718,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitFlexBasis": "auto",
@@ -1678,7 +1737,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "backgroundColor": "rgba(0,0,0,0.00)",
@@ -1700,21 +1759,13 @@ More importantly, we are driven by purpose – to solve real-world problems such
       />
       <img
         alt=""
-        className="css-accessibilityImage-9pa8cd"
+        className="emotion-5"
         draggable={false}
         src="/image.png"
       />
     </div>
     <blockquote
-      css={
-        Object {
-          "map": undefined,
-          "name": "1da3861",
-          "next": undefined,
-          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;font-size:65px;line-height:72px;font-style:italic;max-width:1200px;@media (max-width: 576px){font-size:42px;line-height:50px;font-style:italic;};color:#FFFFFF;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-71"
     >
       “
       How do we change the world?
@@ -1722,21 +1773,13 @@ Change the story.
       ”
     </blockquote>
     <figcaption
-      css={
-        Object {
-          "map": undefined,
-          "name": "1t7non3",
-          "next": undefined,
-          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;;text-align:center;;margin-top:40px;font-size:36px;@media (max-width: 576px){font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:36px;line-height:40;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:40px;;};color:#FFFFFF;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-72"
     >
       – Charles Eisenstein
     </figcaption>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -1757,7 +1800,7 @@ Change the story.
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1777,7 +1820,7 @@ Change the story.
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -1796,7 +1839,7 @@ Change the story.
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1815,7 +1858,7 @@ Change the story.
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-9"
         dir="auto"
         onClick={[Function]}
         style={
@@ -1831,7 +1874,7 @@ Change the story.
       >
         Celo’s philosophy is grounded in the work of Charles Eisenstein’s 
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1844,7 +1887,7 @@ Change the story.
           }
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
+            className="emotion-8 emotion-81 emotion-9 emotion-27"
             href="http://sacred-economics.com/film/"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -1866,7 +1909,7 @@ Change the story.
         .
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -1874,7 +1917,7 @@ Change the story.
         onMouseUp={[Function]}
       >
         <a
-          className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+          className="emotion-8 emotion-81 emotion-9"
           dir="auto"
           href="http://sacred-economics.com/film/"
           onClick={[Function]}
@@ -1932,7 +1975,7 @@ Change the story.
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -1953,7 +1996,7 @@ Change the story.
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1973,7 +2016,7 @@ Change the story.
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -1992,7 +2035,7 @@ Change the story.
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2011,7 +2054,7 @@ Change the story.
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-9"
         dir="auto"
         onClick={[Function]}
         style={
@@ -2028,7 +2071,7 @@ Change the story.
         A theory of change is a framework that describes how short-term actions will lead to long-term social impact. Celo’s aim is to create the conditions for prosperity, defined as: people fulfilling basic needs, growing along their own unique paths, and supporting each other. All of Celo’s projects have a specific hypothesis that tie our activities to one or more of these indicators of prosperity.
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -2036,7 +2079,7 @@ Change the story.
         onMouseUp={[Function]}
       >
         <a
-          className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+          className="emotion-8 emotion-81 emotion-9"
           dir="auto"
           href="https://medium.com/celoOrg/celos-theory-of-change-b916de44945d"
           onClick={[Function]}
@@ -2094,11 +2137,11 @@ Change the story.
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="contributors"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -2119,7 +2162,7 @@ Change the story.
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -2139,7 +2182,7 @@ Change the story.
       >
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao"
+          className="emotion-8 emotion-9"
           dir="auto"
           onClick={[Function]}
           role="heading"
@@ -2158,7 +2201,7 @@ Change the story.
         </h3>
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -2177,7 +2220,7 @@ Change the story.
         }
       >
         <div
-          className="css-text-901oao"
+          className="emotion-9"
           dir="auto"
           onClick={[Function]}
           style={
@@ -2197,7 +2240,7 @@ Change the story.
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -2217,7 +2260,7 @@ Change the story.
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -2244,7 +2287,7 @@ Change the story.
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "display": "grid",
@@ -2257,7 +2300,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -2279,7 +2322,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "block",
@@ -2310,7 +2353,7 @@ Change the story.
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "WebkitFilter": "blur(20px)",
@@ -2328,7 +2371,7 @@ Change the story.
                   }
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFilter": "blur(20px)",
@@ -2352,7 +2395,7 @@ Change the story.
                   />
                   <img
                     alt=""
-                    className="css-accessibilityImage-9pa8cd"
+                    className="emotion-5"
                     draggable={false}
                     src="test.jpg"
                   />
@@ -2360,7 +2403,7 @@ Change the story.
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitFlexBasis": "0%",
@@ -2373,7 +2416,7 @@ Change the story.
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "block",
@@ -2405,7 +2448,7 @@ Change the story.
                 >
                   <div
                     aria-label="Photo of Jon"
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "WebkitFlexBasis": "0px",
@@ -2420,7 +2463,7 @@ Change the story.
                     }
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2442,7 +2485,7 @@ Change the story.
                     />
                     <img
                       alt="Photo of Jon"
-                      className="css-accessibilityImage-9pa8cd"
+                      className="emotion-5"
                       draggable={false}
                       src="test.jpg"
                     />
@@ -2451,7 +2494,7 @@ Change the story.
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -2463,7 +2506,7 @@ Change the story.
               }
             >
               <div
-                className="css-text-901oao"
+                className="emotion-9"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -2482,7 +2525,7 @@ Change the story.
                 Jon
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxPack": "end",
@@ -2517,7 +2560,7 @@ Change the story.
               </div>
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -2533,7 +2576,7 @@ Change the story.
               Test Collective Inc
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -2556,7 +2599,7 @@ Change the story.
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="backers"
     style={
       Object {
@@ -2578,7 +2621,7 @@ Change the story.
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2598,7 +2641,7 @@ Change the story.
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -2617,7 +2660,7 @@ Change the story.
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2636,7 +2679,7 @@ Change the story.
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-9"
         dir="auto"
         onClick={[Function]}
         style={
@@ -2654,7 +2697,7 @@ Change the story.
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -2676,7 +2719,7 @@ Change the story.
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2695,7 +2738,7 @@ Change the story.
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -2719,7 +2762,7 @@ Change the story.
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -2736,7 +2779,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -2751,7 +2794,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2773,7 +2816,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -2790,7 +2833,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -2805,7 +2848,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2827,7 +2870,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -2844,7 +2887,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -2859,7 +2902,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2881,7 +2924,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -2898,7 +2941,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -2916,7 +2959,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -2933,7 +2976,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -2948,7 +2991,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2970,7 +3013,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -2987,7 +3030,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3002,7 +3045,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3024,7 +3067,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3041,7 +3084,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3056,7 +3099,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3078,7 +3121,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3095,7 +3138,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3110,7 +3153,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3132,7 +3175,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3149,7 +3192,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3164,7 +3207,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3186,7 +3229,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3203,7 +3246,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3221,7 +3264,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3238,7 +3281,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3256,7 +3299,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3273,7 +3316,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3291,7 +3334,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3308,7 +3351,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3326,7 +3369,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3343,7 +3386,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3361,7 +3404,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3378,7 +3421,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3396,7 +3439,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3413,7 +3456,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3428,7 +3471,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3450,7 +3493,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3467,7 +3510,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3482,7 +3525,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3504,7 +3547,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3521,7 +3564,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3536,7 +3579,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3558,7 +3601,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3575,7 +3618,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3590,7 +3633,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3612,7 +3655,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3629,7 +3672,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3644,7 +3687,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3666,7 +3709,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3683,7 +3726,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3698,7 +3741,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3720,7 +3763,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3737,7 +3780,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3755,7 +3798,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3772,7 +3815,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3790,7 +3833,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3807,7 +3850,7 @@ Change the story.
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitFlexBasis": "auto",
@@ -3822,7 +3865,7 @@ Change the story.
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3844,7 +3887,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3861,7 +3904,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3879,7 +3922,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3896,7 +3939,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3914,7 +3957,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3931,7 +3974,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3949,7 +3992,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -3966,7 +4009,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -3984,7 +4027,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -4001,7 +4044,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -4019,7 +4062,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -4036,7 +4079,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -4054,7 +4097,7 @@ Change the story.
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -4071,7 +4114,7 @@ Change the story.
           }
         >
           <div
-            className="css-text-901oao"
+            className="emotion-9"
             dir="auto"
             onClick={[Function]}
             style={
@@ -4092,7 +4135,7 @@ Change the story.
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -4114,7 +4157,7 @@ Change the story.
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -4134,7 +4177,7 @@ Change the story.
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-8 emotion-9"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -4153,7 +4196,7 @@ Change the story.
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -4172,7 +4215,7 @@ Change the story.
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-9"
         dir="auto"
         onClick={[Function]}
         style={
@@ -4188,7 +4231,7 @@ Change the story.
         For media inquiries, please contact us at
          
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -4201,7 +4244,7 @@ Change the story.
           }
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
+            className="emotion-8 emotion-81 emotion-9 emotion-27"
             href="mailto:press@celo.org"
             onClick={[Function]}
             onMouseEnter={[Function]}

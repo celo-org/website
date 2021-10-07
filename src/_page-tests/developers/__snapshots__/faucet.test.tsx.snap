@@ -1,48 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Faucet renders 1`] = `
+.emotion-0 {
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.emotion-47 {
+  margin-bottom: 20px;
+}
+
+.emotion-48 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+
+.emotion-49 {
+  font-weight: bold;
+}
+
 <div
-  css={
-    Object {
-      "map": undefined,
-      "name": "1yttnl",
-      "next": undefined,
-      "styles": "margin-top:75px;display:flex;flex-direction:column;",
-      "toString": [Function],
-    }
-  }
+  className="emotion-0"
 >
   <h1
-    css={
-      Array [
-        Object {
-          "map": undefined,
-          "name": "vosu65",
-          "next": undefined,
-          "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:48px;line-height:56;text-rendering:geometricPrecision;color:#2E3338;font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;line-height:56px;",
-          "toString": [Function],
-        },
-        Object {
-          "map": undefined,
-          "name": "xi606m",
-          "next": undefined,
-          "styles": "text-align:center;",
-          "toString": [Function],
-        },
-        Object {
-          "map": undefined,
-          "name": "1v1ihin",
-          "next": undefined,
-          "styles": "margin-top:75px;margin-bottom:75px;",
-          "toString": [Function],
-        },
-      ]
-    }
+    className="emotion-1"
   >
     Fund your Testnet Account
   </h1>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-2"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -64,7 +77,7 @@ exports[`Faucet renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -84,7 +97,7 @@ exports[`Faucet renders 1`] = `
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-4 emotion-5"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -103,7 +116,7 @@ exports[`Faucet renders 1`] = `
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -122,7 +135,7 @@ exports[`Faucet renders 1`] = `
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-5"
         dir="auto"
         onClick={[Function]}
         style={
@@ -140,7 +153,7 @@ exports[`Faucet renders 1`] = `
 In the Celo Wallet, you can find your address by pressing the menu icon at the top left and scrolling down to bottom. Press the address to copy it to your device’s clipboard.
       </div>
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-2"
         style={
           Object {
             "marginBottom": "20px",
@@ -152,7 +165,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           autoCapitalize="sentences"
           autoComplete="on"
           autoCorrect="on"
-          className="css-textinput-11aywtz"
+          className="emotion-9"
           dir="auto"
           onBlur={[Function]}
           onChange={[Function]}
@@ -198,7 +211,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           value=""
         />
         <div
-          className="css-text-901oao"
+          className="emotion-5"
           dir="auto"
           onClick={[Function]}
           style={
@@ -213,7 +226,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           eg. a0000aaa00a0000...a00a0a0000a00a00aa
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-2"
           style={
             Object {
               "height": "80px",
@@ -225,7 +238,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           <div />
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-2"
           style={
             Object {
               "WebkitBoxDirection": "normal",
@@ -237,7 +250,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-2"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -253,7 +266,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             }
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-4 emotion-15 emotion-5"
               dir="auto"
               onClick={[Function]}
               role="link"
@@ -307,10 +320,10 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             </a>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-2"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-2"
               style={
                 Object {
                   "WebkitAlignContent": "center",
@@ -331,7 +344,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-2"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -353,7 +366,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -373,7 +386,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-4 emotion-5"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -392,7 +405,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -411,7 +424,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-5"
         dir="auto"
         onClick={[Function]}
         style={
@@ -426,7 +439,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       >
         If you have an Android or iOS device, you can set up a funded account on the Alfajores Testnet by requesting a 
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-2"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -439,7 +452,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           }
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
+            className="emotion-4 emotion-15 emotion-5 emotion-29"
             href="/developers/wallet"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -460,7 +473,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         </div>
         . You can also 
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-2"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -473,7 +486,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           }
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
+            className="emotion-4 emotion-15 emotion-5 emotion-29"
             href="https://docs.celo.org/getting-started/faucet#creating-an-empty-account-with-the-celo-client"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -497,7 +510,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-2"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -519,7 +532,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -539,7 +552,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-4 emotion-5"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -558,7 +571,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -577,7 +590,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-5"
         dir="auto"
         onClick={[Function]}
         style={
@@ -595,7 +608,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-2"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -617,7 +630,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -637,7 +650,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-4 emotion-5"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -656,7 +669,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -675,7 +688,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-5"
         dir="auto"
         onClick={[Function]}
         style={
@@ -689,46 +702,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         }
       />
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "uewl2b",
-            "next": undefined,
-            "styles": "margin-bottom:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-47"
       >
         <div
-          css={
-            Array [
-              Object {
-                "map": undefined,
-                "name": "ronyck",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                "toString": [Function],
-              },
-              Object {
-                "map": undefined,
-                "name": "l57rop",
-                "next": undefined,
-                "styles": "padding-bottom:10px;",
-                "toString": [Function],
-              },
-            ]
-          }
+          className="emotion-48"
         >
           <span
-            css={
-              Object {
-                "map": undefined,
-                "name": "in3yi3",
-                "next": undefined,
-                "styles": "font-weight:bold;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-49"
           >
             Get Help from the Celo Community.
              
@@ -736,7 +716,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           Find answers and ask questions in the Forum
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-2"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -744,7 +724,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           onMouseUp={[Function]}
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-2"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -772,7 +752,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             }
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-4 emotion-15 emotion-5"
               dir="auto"
               href="https://forum.celo.org/"
               onClick={[Function]}
@@ -798,7 +778,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             >
               Alfajores Testnet Forum
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-2"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -830,7 +810,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-2"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -852,7 +832,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -872,7 +852,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
     >
       <h3
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
+        className="emotion-4 emotion-5"
         dir="auto"
         onClick={[Function]}
         role="heading"
@@ -891,7 +871,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       </h3>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-2"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -910,7 +890,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       }
     >
       <div
-        className="css-text-901oao"
+        className="emotion-5"
         dir="auto"
         onClick={[Function]}
         style={
@@ -924,46 +904,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         }
       />
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "uewl2b",
-            "next": undefined,
-            "styles": "margin-bottom:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-47"
       >
         <div
-          css={
-            Array [
-              Object {
-                "map": undefined,
-                "name": "ronyck",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                "toString": [Function],
-              },
-              Object {
-                "map": undefined,
-                "name": "l57rop",
-                "next": undefined,
-                "styles": "padding-bottom:10px;",
-                "toString": [Function],
-              },
-            ]
-          }
+          className="emotion-48"
         >
           <span
-            css={
-              Object {
-                "map": undefined,
-                "name": "in3yi3",
-                "next": undefined,
-                "styles": "font-weight:bold;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-49"
           >
             Build the Celo Wallet locally.
              
@@ -971,7 +918,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           Follow these instructions to build the Wallet from source, pointed at the Alfajores Testnet.
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-2"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -979,7 +926,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           onMouseUp={[Function]}
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-2"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -1007,7 +954,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             }
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-4 emotion-15 emotion-5"
               dir="auto"
               href="https://docs.celo.org/celo-codebase/wallet/intro"
               onClick={[Function]}
@@ -1033,7 +980,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             >
               Read the Wallet Tutorial
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-2"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1063,46 +1010,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "uewl2b",
-            "next": undefined,
-            "styles": "margin-bottom:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-47"
       >
         <div
-          css={
-            Array [
-              Object {
-                "map": undefined,
-                "name": "ronyck",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                "toString": [Function],
-              },
-              Object {
-                "map": undefined,
-                "name": "l57rop",
-                "next": undefined,
-                "styles": "padding-bottom:10px;",
-                "toString": [Function],
-              },
-            ]
-          }
+          className="emotion-48"
         >
           <span
-            css={
-              Object {
-                "map": undefined,
-                "name": "in3yi3",
-                "next": undefined,
-                "styles": "font-weight:bold;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-49"
           >
             View account information. 
              
@@ -1110,7 +1024,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           Check your balance and transaction history
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-2"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1118,7 +1032,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           onMouseUp={[Function]}
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-2"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -1146,7 +1060,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             }
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-4 emotion-15 emotion-5"
               dir="auto"
               href="http://alfajores-blockscout.celo-testnet.org/"
               onClick={[Function]}
@@ -1172,7 +1086,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             >
               BlockScout
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-2"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1202,46 +1116,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "uewl2b",
-            "next": undefined,
-            "styles": "margin-bottom:20px;",
-            "toString": [Function],
-          }
-        }
+        className="emotion-47"
       >
         <div
-          css={
-            Array [
-              Object {
-                "map": undefined,
-                "name": "ronyck",
-                "next": undefined,
-                "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;",
-                "toString": [Function],
-              },
-              Object {
-                "map": undefined,
-                "name": "l57rop",
-                "next": undefined,
-                "styles": "padding-bottom:10px;",
-                "toString": [Function],
-              },
-            ]
-          }
+          className="emotion-48"
         >
           <span
-            css={
-              Object {
-                "map": undefined,
-                "name": "in3yi3",
-                "next": undefined,
-                "styles": "font-weight:bold;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-49"
           >
             Interested in running your own node? 
              
@@ -1249,7 +1130,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           Follow our step-by-step guide.
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-2"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1257,7 +1138,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           onMouseUp={[Function]}
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-2"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -1285,7 +1166,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             }
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-4 emotion-15 emotion-5"
               dir="auto"
               href="https://docs.celo.org/getting-started/running-a-full-node"
               onClick={[Function]}
@@ -1311,7 +1192,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             >
               Read the Docs
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-2"
                 style={
                   Object {
                     "display": "inline-flex",

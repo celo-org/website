@@ -2,172 +2,407 @@
 
 exports[`Footer renders 1`] = `
 Array [
-  <section
-    css={
-      Object {
-        "map": undefined,
-        "name": "pnyh7x",
-        "next": undefined,
-        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-        "toString": [Function],
-      }
-    }
+  .emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    margin-top: 60px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    margin-top: 40px;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-1 {
+    margin-top: 30px;
+  }
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 550px;
+}
+
+@media (min-width: 992px) {
+  .emotion-2 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-2 {
+    width: 66.66%;
+  }
+}
+
+.emotion-3 {
+  object-fit: contain;
+  margin: 10px;
+}
+
+.emotion-4 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.emotion-5 {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  padding-left: 8px;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 5px 0;
+  height: auto;
+  max-height: 80px;
+  transition-property: max-height;
+  transition-duration: 600ms;
+  max-height: 0;
+}
+
+.emotion-7 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  transition-property: opacity;
+  transition-duration: 700ms;
+  opacity: 0;
+  color: #FF7F6D;
+  font-weight: 500;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .emotion-8 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 5px 0px;
+    padding-bottom: 15px;
+  }
+}
+
+.emotion-9 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  border-radius: 3px;
+  border-width: 1px;
+  outline-style: none;
+  border-color: #DDDDDD;
+  color: #2E3338;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(61, 61, 61, 0.2);
+  width: 100%;
+  margin: 4px;
+  margin-bottom: 8px;
+  outline-width: 0;
+}
+
+@media (min-width: 576px) {
+  .emotion-9 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+}
+
+.emotion-9:focus {
+  border-color: #35D07F;
+}
+
+.emotion-14 {
+  margin-top: 10px;
+}
+
+.emotion-16 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  transition-property: opacity;
+  transition-duration: 700ms;
+  opacity: 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: #35D07F;
+  font-weight: 500;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-17 {
+  margin-left: 10px;
+}
+
+<section
+    className="emotion-0"
   >
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "1dav2mh",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr ;}",
-          "toString": [Function],
-        }
-      }
+      className="emotion-1"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "tzawd2",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;justify-content:center;align-items:center;;max-width:550px;@media (min-width: 992px){width:50%;}@media (min-width: 576px) and (max-width: 992px){width:66.66%;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-2"
       >
         <img
           alt="Envelop with Green Coin Sliding in"
-          css={
-            Object {
-              "map": undefined,
-              "name": "19jyval",
-              "next": undefined,
-              "styles": "object-fit:contain;margin:10px;",
-              "toString": [Function],
-            }
-          }
+          className="emotion-3"
           height={60}
           src="/image.png"
           width={50}
         />
         <p
-          css={
-            Object {
-              "map": undefined,
-              "name": "9biqei",
-              "next": undefined,
-              "styles": "font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:20px;line-height:28;text-rendering:geometricPrecision;color:#2E3338;line-height:28px;;text-align:center;margin-top:20px;margin-bottom:10px;",
-              "toString": [Function],
-            }
-          }
+          className="emotion-4"
         >
           Receive the latest updates to your inbox
         </p>
         <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "marginBottom": "5px",
-              "marginTop": "5px",
-              "paddingBottom": "15px",
-              "width": "100%",
-            }
-          }
+          className="emotion-5"
+        >
+          <div
+            aria-hidden={true}
+            aria-live="polite"
+            className="emotion-6"
+          >
+            <p
+              className="emotion-7"
+            >
+              Please enter a valid email
+            </p>
+          </div>
+        </div>
+        <div
+          className="emotion-8"
         >
           <input
-            autoCapitalize="sentences"
-            autoComplete="on"
-            autoCorrect="on"
-            className="css-textinput-11aywtz r-placeholderTextColor-tf24u1"
-            dir="auto"
-            onBlur={[Function]}
+            className="emotion-9"
+            name="email"
             onChange={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onSelect={[Function]}
             placeholder="Email*"
-            readOnly={false}
-            spellCheck={true}
-            style={
-              Object {
-                "WebkitFlex": 1,
-                "borderBottomColor": "rgba(221,221,221,1.00)",
-                "borderBottomLeftRadius": "3px",
-                "borderBottomRightRadius": "3px",
-                "borderBottomWidth": "1px",
-                "borderLeftColor": "rgba(221,221,221,1.00)",
-                "borderLeftWidth": "1px",
-                "borderRightColor": "rgba(221,221,221,1.00)",
-                "borderRightWidth": "1px",
-                "borderTopColor": "rgba(221,221,221,1.00)",
-                "borderTopLeftRadius": "3px",
-                "borderTopRightRadius": "3px",
-                "borderTopWidth": "1px",
-                "color": "rgba(46,51,56,1.00)",
-                "flex": 1,
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "20px",
-                "lineHeight": "28px",
-                "marginBottom": "5px",
-                "marginTop": "5px",
-                "msFlex": "1 1 0%",
-                "outlineStyle": "none",
-                "paddingBottom": "15px",
-                "paddingLeft": "10px",
-                "paddingRight": "10px",
-                "paddingTop": "13px",
-                "textRendering": "geometricPrecision",
-              }
-            }
-            type="text"
+            required={true}
+            type="email"
             value=""
           />
           <div
-            className="css-view-1dbjc4n"
-          >
-            <div
-              className="css-view-1dbjc4n"
-              style={
-                Object {
-                  "MozTransitionProperty": "max-height",
-                  "WebkitTransitionDuration": "600ms",
-                  "WebkitTransitionProperty": "max-height",
-                  "height": "auto",
-                  "marginBottom": "5px",
-                  "marginTop": "5px",
-                  "maxHeight": "0px",
-                  "transitionDuration": "600ms",
-                  "transitionProperty": "max-height",
-                }
-              }
-            >
-              <div
-                className="css-text-901oao"
-                dir="auto"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "MozTransitionProperty": "opacity",
-                    "WebkitTransitionDuration": "700ms",
-                    "WebkitTransitionProperty": "opacity",
-                    "color": "rgba(255,127,109,1.00)",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "18px",
-                    "opacity": 0,
-                    "textRendering": "geometricPrecision",
-                    "transitionDuration": "700ms",
-                    "transitionProperty": "opacity",
-                  }
-                }
-              >
-                Please enter a valid email
-              </div>
-            </div>
-          </div>
-          <div
-            className="css-view-1dbjc4n"
+            className="emotion-10"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -175,7 +410,7 @@ Array [
             onMouseUp={[Function]}
           >
             <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+              className="emotion-11 emotion-12 emotion-13"
               dir="auto"
               onClick={[Function]}
               role="link"
@@ -190,7 +425,7 @@ Array [
                   "alignItems": "center",
                   "backgroundColor": "rgba(53,208,127,1.00)",
                   "borderBottomColor": "rgba(53,208,127,1.00)",
-                  "borderBottomLeftRadius": "3px",
+                  "borderBottomLeftRadius": "0px",
                   "borderBottomRightRadius": "3px",
                   "borderBottomWidth": "1px",
                   "borderLeftColor": "rgba(53,208,127,1.00)",
@@ -198,7 +433,7 @@ Array [
                   "borderRightColor": "rgba(53,208,127,1.00)",
                   "borderRightWidth": "1px",
                   "borderTopColor": "rgba(53,208,127,1.00)",
-                  "borderTopLeftRadius": "3px",
+                  "borderTopLeftRadius": "0px",
                   "borderTopRightRadius": "3px",
                   "borderTopWidth": "1px",
                   "color": "rgba(255,255,255,1.00)",
@@ -210,13 +445,17 @@ Array [
                   "fontWeight": "500",
                   "justifyContent": "center",
                   "lineHeight": "16px",
+                  "marginBottom": "5px",
+                  "marginTop": "5px",
+                  "maxHeight": "60px",
+                  "minWidth": "100px",
                   "msFlexAlign": "center",
                   "msFlexPack": "center",
                   "msFlexPositive": 1,
                   "opacity": 1,
                   "paddingBottom": "15px",
-                  "paddingLeft": "20px",
-                  "paddingRight": "20px",
+                  "paddingLeft": "40px",
+                  "paddingRight": "40px",
                   "paddingTop": "15px",
                   "textAlign": "center",
                   "textRendering": "geometricPrecision",
@@ -227,60 +466,17 @@ Array [
               Sign Up
             </a>
           </div>
-          <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "position": "absolute",
-                "top": "65px",
-              }
-            }
-          />
         </div>
         <div
-          className="css-view-1dbjc4n"
-          style={
-            Object {
-              "marginTop": "10px",
-            }
-          }
+          className="emotion-14"
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "MozTransitionProperty": "max-height",
-                "WebkitTransitionDuration": "600ms",
-                "WebkitTransitionProperty": "max-height",
-                "height": "auto",
-                "marginBottom": "5px",
-                "marginTop": "5px",
-                "maxHeight": "0px",
-                "transitionDuration": "600ms",
-                "transitionProperty": "max-height",
-              }
-            }
+            aria-hidden={true}
+            aria-live="polite"
+            className="emotion-6"
           >
-            <div
-              className="css-text-901oao"
-              dir="auto"
-              onClick={[Function]}
-              style={
-                Object {
-                  "MozTransitionProperty": "opacity",
-                  "WebkitTransitionDuration": "700ms",
-                  "WebkitTransitionProperty": "opacity",
-                  "color": "rgba(53,208,127,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "18px",
-                  "opacity": 0,
-                  "textRendering": "geometricPrecision",
-                  "transitionDuration": "700ms",
-                  "transitionProperty": "opacity",
-                }
-              }
+            <p
+              className="emotion-16"
             >
               <svg
                 fill="none"
@@ -296,65 +492,334 @@ Array [
                 />
               </svg>
               <span
-                className="css-text-901oao css-textHasAncestor-16my406"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "marginLeft": "10px",
-                  }
-                }
+                className="emotion-17"
               >
                 Submitted
               </span>
-            </div>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>,
-  <section
-    css={
-      Object {
-        "map": undefined,
-        "name": "pnyh7x",
-        "next": undefined,
-        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-        "toString": [Function],
-      }
-    }
+  .emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-1 {
+    margin-top: 30px;
+  }
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 1;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-2 {
+    grid-column: span 3;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-3 {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-4 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-5 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  margin-bottom: 20px;
+  max-width: 350px;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .emotion-5 {
+    text-align: center;
+  }
+}
+
+.emotion-7 {
+  color: inherit;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 2;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-8 {
+    grid-column: span 3;
+  }
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-9 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+
+.emotion-10 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-start: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-10 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-11 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.emotion-12 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.emotion-52 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width: 576px) {
+  .emotion-52 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-126 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-end: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-126 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+<section
+    className="emotion-0"
   >
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "4s0z69",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr 1fr 1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr 1fr 1fr ;}",
-          "toString": [Function],
-        }
-      }
+      className="emotion-1"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "yp1uga",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;;grid-column:span 1;@media (min-width: 576px) and (max-width: 992px){grid-column:span 3;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-2"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1geme6m",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-bottom:20px;@media (max-width: 576px){margin-bottom:30px;justify-content:center;align-items:center;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-3"
         >
           <svg
             fill="none"
@@ -377,51 +842,19 @@ Array [
           </svg>
         </div>
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "mel2sl",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;padding-bottom:20px;@media (max-width: 576px){justify-content:center;align-items:center;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-4"
         >
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "t37gzz",
-                "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
-                "toString": [Function],
-              }
-            }
+            className="emotion-5"
           >
             Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
           </p>
           <p
-            css={
-              Object {
-                "map": undefined,
-                "name": "t37gzz",
-                "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
-                "toString": [Function],
-              }
-            }
+            className="emotion-5"
           >
             Read more in Celo 
             <a
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "q2y3yl",
-                  "next": undefined,
-                  "styles": "color:inherit;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-7"
               href="/terms"
             >
               Terms of Service
@@ -430,64 +863,24 @@ Array [
         </div>
       </div>
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "1rf1jz1",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;;grid-column:span 2;@media (min-width: 576px) and (max-width: 992px){grid-column:span 3;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-8"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1qrhj6b",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:row;;justify-content:space-around;@media (min-width: 576px) and (max-width: 992px){justify-content:space-between;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-9"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "n94rvo",
-                "next": undefined,
-                "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-10"
           >
             <h6
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1qbjl2m",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-11"
             >
               Celo
             </h6>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -500,7 +893,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/"
                   onClick={[Function]}
@@ -533,18 +926,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -557,7 +942,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/about"
                   onClick={[Function]}
@@ -590,18 +975,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -614,7 +991,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/jobs"
                   onClick={[Function]}
@@ -647,18 +1024,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -671,7 +1040,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/validators"
                   onClick={[Function]}
@@ -704,18 +1073,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -728,7 +1089,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/developers"
                   onClick={[Function]}
@@ -761,18 +1122,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -785,7 +1138,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/alliance"
                   onClick={[Function]}
@@ -818,18 +1171,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -842,7 +1187,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/community"
                   onClick={[Function]}
@@ -875,18 +1220,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -899,7 +1236,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/annual-reports/2020"
                   onClick={[Function]}
@@ -933,42 +1270,18 @@ Array [
             </div>
           </div>
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "n94rvo",
-                "next": undefined,
-                "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-52"
           >
             <h6
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1qbjl2m",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-11"
             >
               Technology
             </h6>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -981,7 +1294,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://docs.celo.org/"
                   onClick={[Function]}
@@ -1014,18 +1327,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1038,7 +1343,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/audits"
                   onClick={[Function]}
@@ -1071,18 +1376,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1095,7 +1392,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://www.celoreserve.org"
                   onClick={[Function]}
@@ -1128,18 +1425,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1152,7 +1441,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/papers"
                   onClick={[Function]}
@@ -1185,18 +1474,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1209,7 +1490,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/public-sector"
                   onClick={[Function]}
@@ -1243,42 +1524,18 @@ Array [
             </div>
           </div>
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "n94rvo",
-                "next": undefined,
-                "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-52"
           >
             <h6
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1qbjl2m",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-11"
             >
               Resources
             </h6>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1291,7 +1548,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/brand-policy"
                   onClick={[Function]}
@@ -1324,18 +1581,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1348,7 +1597,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/press"
                   onClick={[Function]}
@@ -1381,18 +1630,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1405,7 +1646,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/community#events"
                   onClick={[Function]}
@@ -1438,18 +1679,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1462,7 +1695,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/experience/events"
                   onClick={[Function]}
@@ -1495,18 +1728,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1519,7 +1744,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/experience/brand"
                   onClick={[Function]}
@@ -1552,18 +1777,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1576,7 +1793,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/experience/merchant"
                   onClick={[Function]}
@@ -1609,18 +1826,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1633,7 +1842,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/experience/grants"
                   onClick={[Function]}
@@ -1666,18 +1875,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1690,7 +1891,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/experience/pilots"
                   onClick={[Function]}
@@ -1723,18 +1924,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1747,7 +1940,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="/community#fund"
                   onClick={[Function]}
@@ -1781,42 +1974,18 @@ Array [
             </div>
           </div>
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "n94rvo",
-                "next": undefined,
-                "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-126"
           >
             <h6
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1qbjl2m",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-11"
             >
               Social
             </h6>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1829,7 +1998,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://medium.com/celoOrg"
                   onClick={[Function]}
@@ -1858,7 +2027,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -1886,18 +2055,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1910,7 +2071,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://github.com/celo-org/celo-monorepo"
                   onClick={[Function]}
@@ -1939,7 +2100,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -1969,18 +2130,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1993,7 +2146,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://twitter.com/CeloOrg"
                   onClick={[Function]}
@@ -2022,7 +2175,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2050,18 +2203,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2074,7 +2219,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://forum.celo.org/"
                   onClick={[Function]}
@@ -2103,7 +2248,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2131,18 +2276,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2155,7 +2292,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://discord.gg/6yWMkgM"
                   onClick={[Function]}
@@ -2184,7 +2321,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2214,18 +2351,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2238,7 +2367,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                   onClick={[Function]}
@@ -2267,7 +2396,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2295,18 +2424,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2319,7 +2440,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://www.instagram.com/celoorg/"
                   onClick={[Function]}
@@ -2348,7 +2469,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2375,18 +2496,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2399,7 +2512,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://www.linkedin.com/company/celoOrg/"
                   onClick={[Function]}
@@ -2428,7 +2541,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2453,18 +2566,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2477,7 +2582,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://www.twitch.tv/celoorg"
                   onClick={[Function]}
@@ -2506,7 +2611,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2531,18 +2636,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2555,7 +2652,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://www.reddit.com/r/celo/"
                   onClick={[Function]}
@@ -2584,7 +2681,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2609,18 +2706,10 @@ Array [
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1xlzx9v",
-                  "next": undefined,
-                  "styles": "margin-top:8px;margin-bottom:8px;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-12"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-13"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2633,7 +2722,7 @@ Array [
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-16"
                   dir="auto"
                   href="https://t.me/celoplatform"
                   onClick={[Function]}
@@ -2662,7 +2751,7 @@ Array [
                   target="_blank"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-13"
                     style={
                       Object {
                         "display": "inline-flex",
@@ -2691,172 +2780,390 @@ Array [
       </div>
     </div>
   </section>,
-  <section
-    css={
-      Object {
-        "map": undefined,
-        "name": "pnyh7x",
-        "next": undefined,
-        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-        "toString": [Function],
-      }
-    }
+  @keyframes animation-0 {
+  from {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animation-1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-2 {
+  from {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  to {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  .emotion-2 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .emotion-3 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-4 {
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .emotion-4 {
+    margin-bottom: 8px;
+  }
+}
+
+.emotion-5 {
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .emotion-5 {
+    display: none;
+  }
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 3500ms;
+  animation-delay: 3500ms;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+}
+
+.emotion-8 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  font-style: italic;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+}
+
+@media (max-width: 576px) {
+  .emotion-8 {
+    text-align: center;
+  }
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: animation-2;
+  animation-name: animation-2;
+}
+
+.emotion-10 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  z-index: 10;
+}
+
+<section
+    className="emotion-0"
   >
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "1dav2mh",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr ;}",
-          "toString": [Function],
-        }
-      }
+      className="emotion-1"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "vzw4bb",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex-direction:row;justify-content:space-between;@media (max-width: 576px){flex-direction:column;justify-content:center;align-items:center;;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-2"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1qqd3hf",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin-bottom:20px;overflow:hidden;@media (max-width: 576px){justify-content:center;align-items:center;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-3"
         >
           <img
-            css={
-              Object {
-                "map": undefined,
-                "name": "12enyax",
-                "next": undefined,
-                "styles": "width:20px;height:20px;z-index:10;@media (max-width: 576px){margin-bottom:8px;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-4"
             height={100}
             src="/image.png"
             width={100}
           />
           <span
-            css={
-              Object {
-                "map": undefined,
-                "name": "j9fttm",
-                "next": undefined,
-                "styles": "margin-left:10px;margin-right:10px;z-index:10;@media (max-width: 576px){display:none;};",
-                "toString": [Function],
-              }
-            }
+            className="emotion-5"
           >
             |
           </span>
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1qm52s3",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:column;;position:relative;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-6"
           >
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1vj6g1i",
-                  "next": Object {
-                    "name": "animation-10pgf30",
-                    "next": undefined,
-                    "styles": "@keyframes animation-10pgf30{
-  from {
-    transform: translateX(-100%)
-  }
-  to {
-    transform: translateX(0%)
-  }
-}",
-                  },
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:column;;background-color:#FFFFFF;position:absolute;height:100%;width:101%;animation-duration:250ms;animation-iteration-count:1;animation-timing-function:linear;animation-fill-mode:both;;animation-delay:3500ms;animation-name:animation-10pgf30;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-7"
             />
             <span
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1kns1qg",
-                  "next": Object {
-                    "name": "animation-hsntgn",
-                    "next": undefined,
-                    "styles": "@keyframes animation-hsntgn{
-  from {
-    opacity: 0
-  }
-
-  to {
-    opacity: 1
-  }
-}",
-                  },
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;font-style:italic;;animation-fill-mode:both;animation-iteration-count:1;animation-duration:750ms;animation-name:animation-hsntgn;@media (max-width: 576px){text-align:center;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-8"
             >
               "
               Change the Story
               "
             </span>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "13pj5cp",
-                  "next": Object {
-                    "name": "animation-1w4hjlk",
-                    "next": undefined,
-                    "styles": "@keyframes animation-1w4hjlk{
-  from {
-    transform: translateX(0%)
-  }
-
-  to {
-    transform: translateX(100%)
-  }
-}",
-                  },
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:column;;background-color:#FFFFFF;position:absolute;height:100%;width:101%;animation-duration:250ms;animation-iteration-count:1;animation-timing-function:linear;animation-fill-mode:both;;animation-name:animation-1w4hjlk;;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-9"
             />
           </div>
         </div>
         <small
-          css={
-            Object {
-              "map": undefined,
-              "name": "2xk5ul",
-              "next": undefined,
-              "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;z-index:10;;",
-              "toString": [Function],
-            }
-          }
+          className="emotion-10"
         >
           The Celo Foundation, © Celo 2021
         </small>

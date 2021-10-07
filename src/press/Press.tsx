@@ -1,15 +1,15 @@
 import { css } from "@emotion/react"
 import * as React from "react"
 import { flex, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
-import { useTranslation } from "src/i18n"
+// import { useTranslation } from "src/i18n"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
-import MENU from "src/shared/menu-items"
+// import MENU from "src/shared/menu-items"
 import { colors } from "src/styles"
 import { GridRow } from "src/layout/Grid2"
 import { LogoGallery } from "src/utils/contentful"
 
 export default function Press(props: LogoGallery) {
-  const { t } = useTranslation("home")
+  // const { t } = useTranslation("home")
   return (
     <div css={backgroundCss}>
       <GridRow columns={1} css={containercss}>
@@ -39,10 +39,11 @@ export default function Press(props: LogoGallery) {
         </div>
         <div css={links}>
           <Button
-            text={t("recentNews")}
+            text={"Sign up: Make Crypto Mobile Hackathon - $2.5M in Prizes & Seed Funding"}
             kind={BTN.NAKED}
             size={SIZE.normal}
-            href={MENU.PRESS.link}
+            target="_blank"
+            href={"https://mobiledefi.devpost.com/?utm_source=celo&utm_medium=banner"}
             align={"center"}
           />
         </div>
@@ -113,4 +114,3 @@ const logoContainerCss = css({
     display: "none",
   },
 })
-

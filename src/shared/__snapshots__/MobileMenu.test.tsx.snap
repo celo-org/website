@@ -1,41 +1,106 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main MobileMenu renders 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.emotion-37 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <div
-  css={
-    Object {
-      "map": undefined,
-      "name": "9j3wcj",
-      "next": undefined,
-      "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex-direction:column;align-items:center;justify-content:flex-start;flex:1;padding-top:30px;padding-bottom:30px;padding-right:20px;padding-left:20px;",
-      "toString": [Function],
-    }
-  }
+  className="emotion-0"
 >
   <div
-    css={
-      Object {
-        "map": undefined,
-        "name": "1ujwvv1",
-        "next": undefined,
-        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-items:center;padding-left:20px;padding-right:20px;flex-direction:column;justify-content:space-around;",
-        "toString": [Function],
-      }
-    }
+    className="emotion-1"
   >
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "ah7dwx",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-2"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-3"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -51,7 +116,7 @@ exports[`Main MobileMenu renders 1`] = `
         }
       >
         <a
-          className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+          className="emotion-4 emotion-5 emotion-6"
           dir="auto"
           href="/"
           onClick={[Function]}
@@ -101,18 +166,10 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "ah7dwx",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-2"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-3"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -128,7 +185,7 @@ exports[`Main MobileMenu renders 1`] = `
         }
       >
         <a
-          className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+          className="emotion-4 emotion-5 emotion-6"
           dir="auto"
           href="/about"
           onClick={[Function]}
@@ -173,18 +230,10 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "ah7dwx",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-2"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-3"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -200,7 +249,7 @@ exports[`Main MobileMenu renders 1`] = `
         }
       >
         <a
-          className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+          className="emotion-4 emotion-5 emotion-6"
           dir="auto"
           href="/developers"
           onClick={[Function]}
@@ -245,18 +294,10 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "ah7dwx",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-2"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-3"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -272,7 +313,7 @@ exports[`Main MobileMenu renders 1`] = `
         }
       >
         <a
-          className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+          className="emotion-4 emotion-5 emotion-6"
           dir="auto"
           href="/community"
           onClick={[Function]}
@@ -317,18 +358,10 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "ah7dwx",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-2"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-3"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -344,7 +377,7 @@ exports[`Main MobileMenu renders 1`] = `
         }
       >
         <a
-          className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+          className="emotion-4 emotion-5 emotion-6"
           dir="auto"
           href="/dapps"
           onClick={[Function]}
@@ -389,18 +422,10 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "ah7dwx",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-2"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-3"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -416,7 +441,7 @@ exports[`Main MobileMenu renders 1`] = `
         }
       >
         <a
-          className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+          className="emotion-4 emotion-5 emotion-6"
           dir="auto"
           href="/alliance"
           onClick={[Function]}
@@ -461,18 +486,10 @@ exports[`Main MobileMenu renders 1`] = `
       </div>
     </div>
     <div
-      css={
-        Object {
-          "map": undefined,
-          "name": "ah7dwx",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-left:10px;margin-right:10px;margin-top:25px;margin-bottom:25px;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-2"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-3"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -488,7 +505,7 @@ exports[`Main MobileMenu renders 1`] = `
         }
       >
         <a
-          className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+          className="emotion-4 emotion-5 emotion-6"
           dir="auto"
           href="/public-sector"
           onClick={[Function]}
@@ -534,15 +551,7 @@ exports[`Main MobileMenu renders 1`] = `
     </div>
   </div>
   <div
-    css={
-      Object {
-        "map": undefined,
-        "name": "w621i7",
-        "next": undefined,
-        "styles": "box-sizing:border-box;display:flex;flex-direction:column;;padding-top:30px;padding-bottom:30px;justify-content:center;align-items:center;",
-        "toString": [Function],
-      }
-    }
+    className="emotion-37"
   >
     <svg
       fill="none"

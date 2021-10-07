@@ -1,8 +1,645 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Experience/ExchangeIcons renders 1`] = `
+@keyframes animation-0 {
+  from {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animation-1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-2 {
+  from {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  to {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.emotion-7 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-115 {
+  opacity: 0;
+}
+
+.emotion-260 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-261 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-261 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-261 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-261 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-261 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-261 {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-261 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-261 {
+    margin-top: 30px;
+  }
+}
+
+.emotion-262 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 1;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-262 {
+    grid-column: span 3;
+  }
+}
+
+.emotion-263 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-263 {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-264 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .emotion-264 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-265 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  margin-bottom: 20px;
+  max-width: 350px;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .emotion-265 {
+    text-align: center;
+  }
+}
+
+.emotion-267 {
+  color: inherit;
+}
+
+.emotion-268 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 2;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-268 {
+    grid-column: span 3;
+  }
+}
+
+.emotion-269 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-269 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+
+.emotion-270 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-start: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-270 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-271 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.emotion-272 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.emotion-312 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (max-width: 576px) {
+  .emotion-312 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-386 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-end: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-386 {
+    margin-top: 35px;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.emotion-455 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-455 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-455 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-455 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-455 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-455 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-455 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-455 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.emotion-456 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  .emotion-456 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-457 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .emotion-457 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-458 {
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .emotion-458 {
+    margin-bottom: 8px;
+  }
+}
+
+.emotion-459 {
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .emotion-459 {
+    display: none;
+  }
+}
+
+.emotion-460 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.emotion-461 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 3500ms;
+  animation-delay: 3500ms;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+}
+
+.emotion-462 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  font-style: italic;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: animation-1;
+  animation-name: animation-1;
+}
+
+@media (max-width: 576px) {
+  .emotion-462 {
+    text-align: center;
+  }
+}
+
+.emotion-463 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: animation-2;
+  animation-name: animation-2;
+}
+
+.emotion-464 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 20px;
+  z-index: 10;
+}
+
 <div
-  className="css-view-1dbjc4n"
+  className="emotion-0"
   style={
     Object {
       "isolation": "isolate",
@@ -10,7 +647,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   }
 >
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "backgroundColor": "rgba(255,255,255,1.00)",
@@ -21,7 +658,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "MozTransitionProperty": "box-shadow",
@@ -35,7 +672,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -50,7 +687,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -80,7 +717,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           }
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignContent": "center",
@@ -98,7 +735,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               href="/"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -154,19 +791,11 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </a>
             <a
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "ytumd6",
-                  "next": undefined,
-                  "styles": "text-decoration:none;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-7"
               href="/experience/brand"
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onContextMenu={[Function]}
                 onKeyDown={[Function]}
@@ -197,7 +826,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 tabIndex="0"
               >
                 <div
-                  className="css-text-901oao"
+                  className="emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -218,7 +847,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             </a>
           </div>
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "WebkitAlignContent": "center",
@@ -233,7 +862,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -251,7 +880,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -275,7 +904,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -283,7 +912,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/brand"
                     onClick={[Function]}
@@ -327,7 +956,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </a>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "bottom": "-16px",
@@ -359,7 +988,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -383,7 +1012,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -391,7 +1020,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/events"
                     onClick={[Function]}
@@ -436,7 +1065,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -460,7 +1089,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -468,7 +1097,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/grants"
                     onClick={[Function]}
@@ -513,7 +1142,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -537,7 +1166,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -545,7 +1174,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/merchant"
                     onClick={[Function]}
@@ -596,7 +1225,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -618,7 +1247,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -638,7 +1267,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         id="sidebar"
         style={
           Object {
@@ -648,7 +1277,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -656,7 +1285,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand"
             onClick={[Function]}
@@ -705,7 +1334,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -714,7 +1343,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -727,7 +1356,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -744,7 +1373,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -752,7 +1381,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/logo"
             onClick={[Function]}
@@ -801,7 +1430,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -810,7 +1439,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -823,7 +1452,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -840,7 +1469,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -848,7 +1477,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/color"
             onClick={[Function]}
@@ -897,7 +1526,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -906,7 +1535,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -919,7 +1548,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -936,7 +1565,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -944,7 +1573,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/typography"
             onClick={[Function]}
@@ -993,7 +1622,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1002,7 +1631,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1015,7 +1644,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -1032,7 +1661,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1040,7 +1669,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/composition"
             onClick={[Function]}
@@ -1089,7 +1718,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1098,7 +1727,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1111,7 +1740,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -1128,7 +1757,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           }
         />
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1136,7 +1765,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/exchange-icons"
             onClick={[Function]}
@@ -1185,7 +1814,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1194,7 +1823,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1207,7 +1836,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1215,7 +1844,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/icons"
             onClick={[Function]}
@@ -1264,7 +1893,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1273,7 +1902,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1286,7 +1915,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1294,7 +1923,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+            className="emotion-14 emotion-15 emotion-9"
             dir="auto"
             href="/experience/brand/key-imagery"
             onClick={[Function]}
@@ -1343,7 +1972,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1352,7 +1981,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1365,7 +1994,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </a>
         </div>
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           style={
             Object {
               "MozTransitionProperty": "transform,",
@@ -1384,7 +2013,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="emotion-0"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1409,7 +2038,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
       }
     >
       <div
-        className="css-view-1dbjc4n"
+        className="emotion-0"
         style={
           Object {
             "minHeight": "calc(100vh - 75px)",
@@ -1417,11 +2046,11 @@ exports[`Experience/ExchangeIcons renders 1`] = `
         }
       >
         <div
-          className="css-view-1dbjc4n"
+          className="emotion-0"
           id="overview"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="emotion-0"
             style={
               Object {
                 "paddingLeft": "10px",
@@ -1430,7 +2059,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             }
           >
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "marginLeft": "10px",
@@ -1441,7 +2070,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               <div>
                 <h1
                   aria-level="1"
-                  className="css-reset-4rbku5 css-text-901oao"
+                  className="emotion-14 emotion-9"
                   dir="auto"
                   onClick={[Function]}
                   role="heading"
@@ -1460,7 +2089,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   Test
                 </h1>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "marginTop": "40px",
@@ -1469,7 +2098,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 >
                   <h3
                     aria-level="3"
-                    className="css-reset-4rbku5 css-text-901oao"
+                    className="emotion-14 emotion-9"
                     dir="auto"
                     onClick={[Function]}
                     role="heading"
@@ -1489,7 +2118,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1497,7 +2126,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 onMouseUp={[Function]}
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                  className="emotion-14 emotion-15 emotion-9"
                   dir="auto"
                   href="/assets/marketplace-icons/CeloMarketplaceIcons.zip"
                   onClick={[Function]}
@@ -1555,7 +2184,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -1575,7 +2204,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               Usage & License Note
             </div>
             <div
-              className="css-text-901oao"
+              className="emotion-9"
               dir="auto"
               onClick={[Function]}
               style={
@@ -1594,7 +2223,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             >
               These assets may only be used to represent Celo assets on exchanges. The use of the Celo Exchange Icons requires following the Celo Foundation 
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -1607,7 +2236,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 }
               >
                 <a
-                  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao css-textHasAncestor-16my406"
+                  className="emotion-14 emotion-15 emotion-9 emotion-110"
                   href="/brand-policy"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -1628,7 +2257,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </div>
             <div
-              className="css-view-1dbjc4n"
+              className="emotion-0"
               style={
                 Object {
                   "minHeight": "75vh",
@@ -1636,7 +2265,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               }
             >
               <div
-                className="css-view-1dbjc4n"
+                className="emotion-0"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -1652,10 +2281,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 }
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -1666,13 +2295,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="css-q7lffx"
+                      className="emotion-115"
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -1682,7 +2311,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "display": "block",
@@ -1714,7 +2343,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             >
                               <div
                                 aria-label="Preview of CELO Exchange Icon"
-                                className="css-view-1dbjc4n"
+                                className="emotion-0"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -1733,7 +2362,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 }
                               >
                                 <div
-                                  className="css-view-1dbjc4n"
+                                  className="emotion-0"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -1757,7 +2386,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -1767,7 +2396,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -1786,7 +2415,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             CELO Exchange Icon
                           </div>
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -1804,7 +2433,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -1812,7 +2441,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            className="emotion-14 emotion-15 emotion-9"
                             dir="auto"
                             href="/assets/marketplace-icons/CELO-Full-Color.zip"
                             onClick={[Function]}
@@ -1859,7 +2488,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           >
                             Download
                             <div
-                              className="css-view-1dbjc4n"
+                              className="emotion-0"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -1897,10 +2526,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -1911,13 +2540,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="css-q7lffx"
+                      className="emotion-115"
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -1927,7 +2556,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "display": "block",
@@ -1959,7 +2588,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             >
                               <div
                                 aria-label="Preview of cUSD Exchange Icon"
-                                className="css-view-1dbjc4n"
+                                className="emotion-0"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -1978,7 +2607,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 }
                               >
                                 <div
-                                  className="css-view-1dbjc4n"
+                                  className="emotion-0"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2002,7 +2631,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -2012,7 +2641,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2031,7 +2660,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             cUSD Exchange Icon
                           </div>
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2049,7 +2678,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -2057,7 +2686,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            className="emotion-14 emotion-15 emotion-9"
                             dir="auto"
                             href="/assets/marketplace-icons/icon-cusd-color-v2.zip"
                             onClick={[Function]}
@@ -2104,7 +2733,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           >
                             Download
                             <div
-                              className="css-view-1dbjc4n"
+                              className="emotion-0"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -2142,10 +2771,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -2156,13 +2785,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="css-q7lffx"
+                      className="emotion-115"
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -2172,7 +2801,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "display": "block",
@@ -2204,7 +2833,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             >
                               <div
                                 aria-label="Preview of cEUR Exchange Icon"
-                                className="css-view-1dbjc4n"
+                                className="emotion-0"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -2223,7 +2852,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 }
                               >
                                 <div
-                                  className="css-view-1dbjc4n"
+                                  className="emotion-0"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2247,7 +2876,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -2257,7 +2886,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2276,7 +2905,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             cEUR Exchange Icon
                           </div>
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2294,7 +2923,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -2302,7 +2931,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            className="emotion-14 emotion-15 emotion-9"
                             dir="auto"
                             href="/assets/marketplace-icons/icon-cEUR-color.zip"
                             onClick={[Function]}
@@ -2349,7 +2978,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           >
                             Download
                             <div
-                              className="css-view-1dbjc4n"
+                              className="emotion-0"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -2387,7 +3016,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "display": "block",
@@ -2396,10 +3025,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 />
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -2410,13 +3039,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="css-q7lffx"
+                      className="emotion-115"
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -2426,7 +3055,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "display": "block",
@@ -2458,7 +3087,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             >
                               <div
                                 aria-label="Preview of CELO Exchange Icon"
-                                className="css-view-1dbjc4n"
+                                className="emotion-0"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -2478,7 +3107,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 }
                               >
                                 <div
-                                  className="css-view-1dbjc4n"
+                                  className="emotion-0"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2502,7 +3131,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -2512,7 +3141,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2531,7 +3160,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             CELO Exchange Icon
                           </div>
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2549,7 +3178,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -2557,7 +3186,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            className="emotion-14 emotion-15 emotion-9"
                             dir="auto"
                             href="/assets/marketplace-icons/icon-CELO-monochrome.zip"
                             onClick={[Function]}
@@ -2604,7 +3233,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           >
                             Download
                             <div
-                              className="css-view-1dbjc4n"
+                              className="emotion-0"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -2642,10 +3271,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -2656,13 +3285,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="css-q7lffx"
+                      className="emotion-115"
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -2672,7 +3301,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "display": "block",
@@ -2704,7 +3333,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             >
                               <div
                                 aria-label="Preview of cUSD Exchange Icon"
-                                className="css-view-1dbjc4n"
+                                className="emotion-0"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -2724,7 +3353,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 }
                               >
                                 <div
-                                  className="css-view-1dbjc4n"
+                                  className="emotion-0"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2748,7 +3377,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -2758,7 +3387,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2777,7 +3406,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             cUSD Exchange Icon
                           </div>
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2795,7 +3424,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -2803,7 +3432,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            className="emotion-14 emotion-15 emotion-9"
                             dir="auto"
                             href="/assets/marketplace-icons/icon-cusd-mono-v2.zip"
                             onClick={[Function]}
@@ -2850,7 +3479,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           >
                             Download
                             <div
-                              className="css-view-1dbjc4n"
+                              className="emotion-0"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -2888,10 +3517,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -2902,13 +3531,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="css-q7lffx"
+                      className="emotion-115"
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -2918,7 +3547,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "display": "block",
@@ -2950,7 +3579,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             >
                               <div
                                 aria-label="Preview of cEUR Exchange Icon"
-                                className="css-view-1dbjc4n"
+                                className="emotion-0"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -2970,7 +3599,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 }
                               >
                                 <div
-                                  className="css-view-1dbjc4n"
+                                  className="emotion-0"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2994,7 +3623,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -3004,7 +3633,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -3023,7 +3652,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             cEUR Exchange Icon
                           </div>
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -3041,7 +3670,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -3049,7 +3678,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            className="emotion-14 emotion-15 emotion-9"
                             dir="auto"
                             href="/assets/marketplace-icons/icons-celo-euro-monochrome.zip"
                             onClick={[Function]}
@@ -3096,7 +3725,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           >
                             Download
                             <div
-                              className="css-view-1dbjc4n"
+                              className="emotion-0"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -3134,7 +3763,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   style={
                     Object {
                       "display": "block",
@@ -3143,10 +3772,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 />
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -3157,13 +3786,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="css-q7lffx"
+                      className="emotion-115"
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -3173,7 +3802,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "display": "block",
@@ -3205,7 +3834,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             >
                               <div
                                 aria-label="Preview of CELO Exchange Icon"
-                                className="css-view-1dbjc4n"
+                                className="emotion-0"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -3225,7 +3854,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 }
                               >
                                 <div
-                                  className="css-view-1dbjc4n"
+                                  className="emotion-0"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3249,7 +3878,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -3259,7 +3888,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -3278,7 +3907,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             CELO Exchange Icon
                           </div>
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -3296,7 +3925,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -3304,7 +3933,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            className="emotion-14 emotion-15 emotion-9"
                             dir="auto"
                             href="/assets/marketplace-icons/icon-CELO-reverse-monochrome.zip"
                             onClick={[Function]}
@@ -3351,7 +3980,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           >
                             Download
                             <div
-                              className="css-view-1dbjc4n"
+                              className="emotion-0"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -3389,10 +4018,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -3403,13 +4032,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="css-q7lffx"
+                      className="emotion-115"
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -3419,7 +4048,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "display": "block",
@@ -3451,7 +4080,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             >
                               <div
                                 aria-label="Preview of cUSD Exchange Icon"
-                                className="css-view-1dbjc4n"
+                                className="emotion-0"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -3471,7 +4100,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 }
                               >
                                 <div
-                                  className="css-view-1dbjc4n"
+                                  className="emotion-0"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3495,7 +4124,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -3505,7 +4134,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -3524,7 +4153,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             cUSD Exchange Icon
                           </div>
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -3542,7 +4171,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -3550,7 +4179,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            className="emotion-14 emotion-15 emotion-9"
                             dir="auto"
                             href="/assets/marketplace-icons/icon-cusd-reverse-v2.zip"
                             onClick={[Function]}
@@ -3597,7 +4226,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           >
                             Download
                             <div
-                              className="css-view-1dbjc4n"
+                              className="emotion-0"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -3635,10 +4264,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="emotion-0"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -3649,13 +4278,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="css-q7lffx"
+                      className="emotion-115"
                     >
                       <div
-                        className="css-view-1dbjc4n"
+                        className="emotion-0"
                       >
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -3665,7 +4294,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-view-1dbjc4n"
+                            className="emotion-0"
                             style={
                               Object {
                                 "display": "block",
@@ -3697,7 +4326,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             >
                               <div
                                 aria-label="Preview of cEUR Exchange Icon"
-                                className="css-view-1dbjc4n"
+                                className="emotion-0"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -3717,7 +4346,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                                 }
                               >
                                 <div
-                                  className="css-view-1dbjc4n"
+                                  className="emotion-0"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -3741,7 +4370,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -3751,7 +4380,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           }
                         >
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -3770,7 +4399,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                             cEUR Exchange Icon
                           </div>
                           <div
-                            className="css-text-901oao"
+                            className="emotion-9"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -3788,7 +4417,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           </div>
                         </div>
                         <div
-                          className="css-view-1dbjc4n"
+                          className="emotion-0"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -3796,7 +4425,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                            className="emotion-14 emotion-15 emotion-9"
                             dir="auto"
                             href="/assets/marketplace-icons/icons-celo-euro-reverse.zip"
                             onClick={[Function]}
@@ -3843,7 +4472,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           >
                             Download
                             <div
-                              className="css-view-1dbjc4n"
+                              className="emotion-0"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -3888,7 +4517,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="emotion-0"
     id="experience-footer"
     style={
       Object {
@@ -3899,48 +4528,16 @@ exports[`Experience/ExchangeIcons renders 1`] = `
     }
   >
     <section
-      css={
-        Object {
-          "map": undefined,
-          "name": "pnyh7x",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-260"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "4s0z69",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr 1fr 1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr 1fr 1fr ;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-261"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "yp1uga",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;;grid-column:span 1;@media (min-width: 576px) and (max-width: 992px){grid-column:span 3;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-262"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1geme6m",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:column;;margin-bottom:20px;@media (max-width: 576px){margin-bottom:30px;justify-content:center;align-items:center;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-263"
           >
             <svg
               fill="none"
@@ -3963,51 +4560,19 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             </svg>
           </div>
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "mel2sl",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:column;;padding-bottom:20px;@media (max-width: 576px){justify-content:center;align-items:center;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-264"
           >
             <p
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "t37gzz",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-265"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "t37gzz",
-                  "next": undefined,
-                  "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;margin-bottom:20px;max-width:350px;text-align:left;@media (max-width: 576px){text-align:center;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-265"
             >
               Read more in Celo 
               <a
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "q2y3yl",
-                    "next": undefined,
-                    "styles": "color:inherit;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-267"
                 href="/terms"
               >
                 Terms of Service
@@ -4016,64 +4581,24 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </div>
         </div>
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "1rf1jz1",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;;grid-column:span 2;@media (min-width: 576px) and (max-width: 992px){grid-column:span 3;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-268"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1qrhj6b",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:row;;justify-content:space-around;@media (min-width: 576px) and (max-width: 992px){justify-content:space-between;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-269"
           >
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-270"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-271"
               >
                 Celo
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4086,7 +4611,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/"
                     onClick={[Function]}
@@ -4119,18 +4644,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4143,7 +4660,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/about"
                     onClick={[Function]}
@@ -4176,18 +4693,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4200,7 +4709,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/jobs"
                     onClick={[Function]}
@@ -4233,18 +4742,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4257,7 +4758,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/validators"
                     onClick={[Function]}
@@ -4290,18 +4791,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4314,7 +4807,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/developers"
                     onClick={[Function]}
@@ -4347,18 +4840,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4371,7 +4856,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/alliance"
                     onClick={[Function]}
@@ -4404,18 +4889,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4428,7 +4905,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/community"
                     onClick={[Function]}
@@ -4461,18 +4938,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4485,7 +4954,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/annual-reports/2020"
                     onClick={[Function]}
@@ -4519,42 +4988,18 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-312"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-271"
               >
                 Technology
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4567,7 +5012,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://docs.celo.org/"
                     onClick={[Function]}
@@ -4600,18 +5045,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4624,7 +5061,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/audits"
                     onClick={[Function]}
@@ -4657,18 +5094,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4681,7 +5110,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.celoreserve.org"
                     onClick={[Function]}
@@ -4714,18 +5143,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4738,7 +5159,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/papers"
                     onClick={[Function]}
@@ -4771,18 +5192,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4795,7 +5208,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/public-sector"
                     onClick={[Function]}
@@ -4829,42 +5242,18 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-312"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-271"
               >
                 Resources
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4877,7 +5266,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/brand-policy"
                     onClick={[Function]}
@@ -4910,18 +5299,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4934,7 +5315,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/press"
                     onClick={[Function]}
@@ -4967,18 +5348,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4991,7 +5364,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/community#events"
                     onClick={[Function]}
@@ -5024,18 +5397,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5048,7 +5413,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/events"
                     onClick={[Function]}
@@ -5081,18 +5446,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5105,7 +5462,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/brand"
                     onClick={[Function]}
@@ -5138,18 +5495,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5162,7 +5511,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/merchant"
                     onClick={[Function]}
@@ -5195,18 +5544,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5219,7 +5560,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/grants"
                     onClick={[Function]}
@@ -5252,18 +5593,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5276,7 +5609,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/experience/pilots"
                     onClick={[Function]}
@@ -5309,18 +5642,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5333,7 +5658,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="/community#fund"
                     onClick={[Function]}
@@ -5367,42 +5692,18 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </div>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "n94rvo",
-                  "next": undefined,
-                  "styles": "padding-left:25px;padding-right:25px;@media (max-width: 576px){margin-top:35px;width:50%;padding-left:10px;padding-right:10px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-386"
             >
               <h6
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1qbjl2m",
-                    "next": undefined,
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:Jost, futura-pt, futura, sans-serif;font-size:16px;line-height:18;font-weight:500;text-rendering:geometricPrecision;color:#2E3338;line-height:18px;;margin-bottom:20px;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-271"
               >
                 Social
               </h6>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5415,7 +5716,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://medium.com/celoOrg"
                     onClick={[Function]}
@@ -5444,7 +5745,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -5472,18 +5773,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5496,7 +5789,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://github.com/celo-org/celo-monorepo"
                     onClick={[Function]}
@@ -5525,7 +5818,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -5555,18 +5848,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5579,7 +5864,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://twitter.com/CeloOrg"
                     onClick={[Function]}
@@ -5608,7 +5893,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -5636,18 +5921,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5660,7 +5937,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://forum.celo.org/"
                     onClick={[Function]}
@@ -5689,7 +5966,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -5717,18 +5994,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5741,7 +6010,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://discord.gg/6yWMkgM"
                     onClick={[Function]}
@@ -5770,7 +6039,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -5800,18 +6069,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5824,7 +6085,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                     onClick={[Function]}
@@ -5853,7 +6114,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -5881,18 +6142,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5905,7 +6158,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.instagram.com/celoorg/"
                     onClick={[Function]}
@@ -5934,7 +6187,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -5961,18 +6214,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -5985,7 +6230,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.linkedin.com/company/celoOrg/"
                     onClick={[Function]}
@@ -6014,7 +6259,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -6039,18 +6284,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6063,7 +6300,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.twitch.tv/celoorg"
                     onClick={[Function]}
@@ -6092,7 +6329,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -6117,18 +6354,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6141,7 +6370,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://www.reddit.com/r/celo/"
                     onClick={[Function]}
@@ -6170,7 +6399,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -6195,18 +6424,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1xlzx9v",
-                    "next": undefined,
-                    "styles": "margin-top:8px;margin-bottom:8px;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-272"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="emotion-0"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -6219,7 +6440,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   }
                 >
                   <a
-                    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
+                    className="emotion-14 emotion-15 emotion-9"
                     dir="auto"
                     href="https://t.me/celoplatform"
                     onClick={[Function]}
@@ -6248,7 +6469,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     target="_blank"
                   >
                     <div
-                      className="css-view-1dbjc4n"
+                      className="emotion-0"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -6278,171 +6499,48 @@ exports[`Experience/ExchangeIcons renders 1`] = `
       </div>
     </section>
     <section
-      css={
-        Object {
-          "map": undefined,
-          "name": "pnyh7x",
-          "next": undefined,
-          "styles": "box-sizing:border-box;display:flex;flex-direction:column;;overflow:hidden;align-items:center;align-self:center;width:100%;;",
-          "toString": [Function],
-        }
-      }
+      className="emotion-260"
     >
       <div
-        css={
-          Object {
-            "map": undefined,
-            "name": "1dav2mh",
-            "next": undefined,
-            "styles": "box-sizing:border-box;display:flex;flex-direction:column;;align-self:center;flex-direction:column;padding-left:12px;padding-right:12px;width:100%;max-width:100vw;overflow:hidden;flex-wrap:wrap;column-gap:24px;@media (min-width: 576px) and (max-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;flex-direction:row;padding-right:24px;padding-left:24px;width:100%;max-width:982px;}@media (min-width: 992px){display:grid;grid-auto-rows:auto;align-self:center;width:100%;max-width:1104px;};@media (min-width: 992px){grid-template-columns:1fr ;}@media (min-width: 576px) and (max-width: 992px){grid-template-columns:1fr ;}",
-            "toString": [Function],
-          }
-        }
+        className="emotion-455"
       >
         <div
-          css={
-            Object {
-              "map": undefined,
-              "name": "vzw4bb",
-              "next": undefined,
-              "styles": "box-sizing:border-box;display:flex;flex-direction:column;;flex-direction:row;justify-content:space-between;@media (max-width: 576px){flex-direction:column;justify-content:center;align-items:center;;}",
-              "toString": [Function],
-            }
-          }
+          className="emotion-456"
         >
           <div
-            css={
-              Object {
-                "map": undefined,
-                "name": "1qqd3hf",
-                "next": undefined,
-                "styles": "box-sizing:border-box;display:flex;flex-direction:row;;margin-bottom:20px;overflow:hidden;@media (max-width: 576px){justify-content:center;align-items:center;}",
-                "toString": [Function],
-              }
-            }
+            className="emotion-457"
           >
             <img
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "12enyax",
-                  "next": undefined,
-                  "styles": "width:20px;height:20px;z-index:10;@media (max-width: 576px){margin-bottom:8px;}",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-458"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "j9fttm",
-                  "next": undefined,
-                  "styles": "margin-left:10px;margin-right:10px;z-index:10;@media (max-width: 576px){display:none;};",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-459"
             >
               |
             </span>
             <div
-              css={
-                Object {
-                  "map": undefined,
-                  "name": "1qm52s3",
-                  "next": undefined,
-                  "styles": "box-sizing:border-box;display:flex;flex-direction:column;;position:relative;",
-                  "toString": [Function],
-                }
-              }
+              className="emotion-460"
             >
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1vj6g1i",
-                    "next": Object {
-                      "name": "animation-10pgf30",
-                      "next": undefined,
-                      "styles": "@keyframes animation-10pgf30{
-  from {
-    transform: translateX(-100%)
-  }
-  to {
-    transform: translateX(0%)
-  }
-}",
-                    },
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:column;;background-color:#FFFFFF;position:absolute;height:100%;width:101%;animation-duration:250ms;animation-iteration-count:1;animation-timing-function:linear;animation-fill-mode:both;;animation-delay:3500ms;animation-name:animation-10pgf30;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-461"
               />
               <span
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "1kns1qg",
-                    "next": Object {
-                      "name": "animation-hsntgn",
-                      "next": undefined,
-                      "styles": "@keyframes animation-hsntgn{
-  from {
-    opacity: 0
-  }
-
-  to {
-    opacity: 1
-  }
-}",
-                    },
-                    "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;font-style:italic;;animation-fill-mode:both;animation-iteration-count:1;animation-duration:750ms;animation-name:animation-hsntgn;@media (max-width: 576px){text-align:center;};",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-462"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                css={
-                  Object {
-                    "map": undefined,
-                    "name": "13pj5cp",
-                    "next": Object {
-                      "name": "animation-1w4hjlk",
-                      "next": undefined,
-                      "styles": "@keyframes animation-1w4hjlk{
-  from {
-    transform: translateX(0%)
-  }
-
-  to {
-    transform: translateX(100%)
-  }
-}",
-                    },
-                    "styles": "box-sizing:border-box;display:flex;flex-direction:column;;background-color:#FFFFFF;position:absolute;height:100%;width:101%;animation-duration:250ms;animation-iteration-count:1;animation-timing-function:linear;animation-fill-mode:both;;animation-name:animation-1w4hjlk;;",
-                    "toString": [Function],
-                  }
-                }
+                className="emotion-463"
               />
             </div>
           </div>
           <small
-            css={
-              Object {
-                "map": undefined,
-                "name": "2xk5ul",
-                "next": undefined,
-                "styles": "font-weight:normal;margin:0;margin-block-start:0;margin-block-end:0;;font-family:EB Garamond, eb-garamond, Garamond, serif;font-size:16px;line-height:20;text-rendering:geometricPrecision;color:#2E3338;line-height:20px;;z-index:10;;",
-                "toString": [Function],
-              }
-            }
+            className="emotion-464"
           >
             The Celo Foundation, © Celo 2021
           </small>

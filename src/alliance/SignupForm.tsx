@@ -1,5 +1,4 @@
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
 import { NewMember } from "src/alliance/AllianceMember"
 import { CheckboxWithLabel } from "src/forms/CheckboxWithLabel"
 import { ErrorDisplay } from "src/forms/ErrorDisplay"
@@ -13,6 +12,8 @@ import { NameSpaces, useTranslation } from "src/i18n"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { SIZE } from "src/shared/Button.3"
 import { standardStyles } from "src/styles"
+import { css } from "@emotion/react"
+import { flex, flexRow, WHEN_DESKTOP, WHEN_MOBILE } from "src/estyles"
 
 const BLANK_FORM: NewMember = {
   name: "",
@@ -35,14 +36,14 @@ function validateWith(fields: NewMember) {
 
 export default function SignupForm() {
   const { t } = useTranslation(NameSpaces.alliance)
-  const { isMobile, isDesktop } = useScreenSize()
+  const { isMobile } = useScreenSize()
   return (
     <FormContainer route="/api/alliance" blankForm={BLANK_FORM} validateWith={validateWith}>
       {({ formState, onInput, onCheck, onSubmit }) => (
         <Form>
-          <View style={styles.container}>
-            <View style={isDesktop && standardStyles.row}>
-              <View style={styles.inputContainer}>
+          <div css={rootCss}>
+            <div css={desktopRow}>
+              <div css={inputContainerCss}>
                 <LabeledInput
                   isDarkMode={true}
                   label={t("form.name")}
@@ -51,8 +52,8 @@ export default function SignupForm() {
                   name="name"
                   value={formState.form.name}
                 />
-              </View>
-              <View style={styles.inputContainer}>
+              </div>
+              <div css={inputContainerCss}>
                 <LabeledInput
                   isDarkMode={true}
                   label={t("form.email")}
@@ -61,9 +62,9 @@ export default function SignupForm() {
                   name="email"
                   value={formState.form.email}
                 />
-              </View>
-            </View>
-            <View style={styles.inputContainer}>
+              </div>
+            </div>
+            <div css={inputContainerCss}>
               <LabeledInput
                 isDarkMode={true}
                 label={t("form.contribution")}
@@ -71,60 +72,71 @@ export default function SignupForm() {
                 name="contribution"
                 value={formState.form.contribution}
               />
-            </View>
-            <View style={styles.inputContainer}>
+            </div>
+            <div css={inputContainerCss}>
               <CheckboxWithLabel
                 name={"subscribe"}
                 checked={!!formState.form.subscribe}
                 onPress={onCheck}
                 label={t("form.subscribe")}
               />
-            </View>
-          </View>
-          <View
-            style={[standardStyles.centered, styles.buttonContainer, isMobile && styles.stretch]}
-          >
+            </div>
+          </div>
+          <div css={buttonContainerCss}>
             <SubmitButton
               isLoading={formState.isLoading}
               text={t("form.btn")}
               onDarkBackground={true}
               onPress={onSubmit}
-              style={styles.buttonText}
+              style={buttonText}
               size={isMobile ? SIZE.fullWidth : SIZE.big}
             />
-          </View>
-          <SuccessDisplay
-            style={styles.success}
-            isShowing={formState.isComplete}
-            message={t("common:applicationSubmitted")}
-          />
-          <View style={standardStyles.centered}>
+            <SuccessDisplay
+              css={successCss}
+              isShowing={formState.isComplete}
+              message={t("common:applicationSubmitted")}
+            />
+          </div>
+
+          <div css={standardStyles.centered}>
             <ErrorDisplay isShowing={!!formState.apiError} field={formState.apiError} />
-          </View>
+          </div>
         </Form>
       )}
     </FormContainer>
   )
 }
 
-const styles = StyleSheet.create({
-  inputContainer: {
-    flex: 1,
-    marginHorizontal: 5,
-  },
-  buttonContainer: {
-    paddingVertical: 15,
-    paddingHorizontal: 20,
-  },
-  stretch: {
+const rootCss = css(flex, {
+  margin: 20,
+})
+
+const desktopRow = css(flex, {
+  [WHEN_DESKTOP]: flexRow,
+})
+
+const buttonText = {
+  fontSize: 20,
+}
+
+const inputContainerCss = css(flex, {
+  flex: 1,
+  marginLeft: 5,
+  marginRight: 5,
+})
+
+const buttonContainerCss = css(flex, {
+  alignItems: "center",
+  justifyContent: "center",
+  padding: "15px 20px",
+  [WHEN_MOBILE]: {
     alignItems: "stretch",
   },
-  buttonText: {
-    fontSize: 20,
-  },
-  success: {
-    textAlign: "center",
-    marginTop: 15,
-  },
-  container: { margin: 20 },
+})
+
+const successCss = css({
+  textAlign: "center",
+  marginTop: 15,
+  color: "white",
+  alignSelf: "center",
 })
