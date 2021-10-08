@@ -2,7 +2,7 @@ import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import Ally, { NewMember } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
-import addToCRM from "./addToCRM"
+import addToCRM, { ListID } from "./addToCRM"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
 import { fetchCached, MINUTE } from "./cache"
 
@@ -61,14 +61,14 @@ export function normalize(asset: Fields): Ally {
   }
 }
 
-// creates entry in airtable and (if opted in) in active campaign
+// creates entry in airtable and (if opted in) in Hubspot's Alliance list 
 export async function create(data: NewMember) {
   const actions: Promise<any>[] = [
     getAirtable<WebRequestFields>(WRITE_SHEET).create(convertWebToAirtable(data)),
   ]
 
   if (data.subscribe) {
-    actions.push(addToCRM({ email: data.email, fullName: data.name, interest: "Alliance" }))
+    actions.push(addToCRM({ email: data.email, fullName: data.name}, ListID.Alliance))
   }
 
   return Promise.all(actions)
