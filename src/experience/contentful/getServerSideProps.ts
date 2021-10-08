@@ -77,9 +77,7 @@ const getServerSideProps: GetServerSideProps<
 }
 
 function isBogus(slug: string) {
-  return (
-    slug.length > 255 || slug.indexOf(".") >= 0 || slug.indexOf("%") >= 0 || slug.indexOf("%") >= 0
-  )
+  return slug.length > 255 || slug.indexOf(".") >= 0 || slug.indexOf("%") >= 0
 }
 
 export default getServerSideProps
