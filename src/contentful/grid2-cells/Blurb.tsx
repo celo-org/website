@@ -34,7 +34,6 @@ function embedded(node: Block) {
   if (renderer) {
     return renderer(node.data.target)
   } else {
-    console.info(contentType)
     return null
   }
 }
@@ -73,6 +72,7 @@ export default function Blurb(props: Props) {
       </div>
       {props.link && (
         <Button
+          key={props.link.sys.id}
           style={standardStyles.elementalMarginTop}
           href={props.link.fields.href || props.link.fields.assetLink?.fields?.file?.url}
           text={props.link.fields.words}
