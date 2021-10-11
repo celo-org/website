@@ -1,6 +1,6 @@
 import { GetServerSideProps } from "next"
 import { Props } from "src/experience/contentful/ContentfulKit"
-import { getKit, getPageById, SectionType } from "src/utils/contentful"
+import { getKit, getPageById, getValidKitSlugs, SectionType } from "src/utils/contentful"
 import makeSafeForJson from "src/utils/makeSafeForJson"
 import { NameSpaces } from "src/i18n"
 
@@ -11,10 +11,21 @@ const getServerSideProps: GetServerSideProps<
   try {
     const locale = query.locale || "en-US"
 
-    if (!params?.kit) {
+    if (
+      !params?.kit ||
+      typeof params.kit !== "string" ||
+      isBogus(params.kit) ||
+      (params.kitPage && isBogus(params.kitPage))
+    ) {
       return {
         notFound: true,
       }
+    }
+
+    const possibleKits = await getValidKitSlugs()
+
+    if (!possibleKits[params.kit]) {
+      return { notFound: true }
     }
 
     const kit = await getKit(params.kit, params.kitPage, { locale })
@@ -63,6 +74,12 @@ const getServerSideProps: GetServerSideProps<
       notFound: true,
     }
   }
+}
+
+function isBogus(slug: string) {
+  return (
+    slug.length > 255 || slug.indexOf(".") >= 0 || slug.indexOf("%") >= 0 || slug.indexOf("%") >= 0
+  )
 }
 
 export default getServerSideProps
