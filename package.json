@@ -142,7 +142,7 @@
     "typescript": "^4.4.3"
   },
   "lint-staged": {
-    "**/*.{ts,tsx,json,yaml}": [
+    "**/*.{ts,tsx,json}": [
       "eslint --cache --fix",
       "prettier --write"
     ]
