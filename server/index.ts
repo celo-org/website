@@ -154,8 +154,12 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect("/user-agreement")
   })
 
+  server.get("/celo-rewards-education", (_, res) => {
+    res.redirect("/save-terms-and-conditions")
+  })
+
   server.get("/celo-rewards", (_, res) => {
-    res.redirect("https://docs.celo.org/celo-codebase/protocol/proof-of-stake/epoch-rewards")
+    res.redirect("/save-terms-and-conditions")
   })
 
   server.get("/stake-off", (_, res) => {
