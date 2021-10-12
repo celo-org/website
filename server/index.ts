@@ -155,7 +155,11 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   })
 
   server.get("/celo-rewards-education", (_, res) => {
-    res.redirect("/celo-rewards-terms-and-conditions")
+    res.redirect("/save-terms-and-conditions")
+  })
+
+  server.get("/celo-rewards", (_, res) => {
+    res.redirect("/save-terms-and-conditions")
   })
 
   server.get("/stake-off", (_, res) => {
@@ -252,8 +256,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   server.post("/invite", async (req, res) => {
     await faucetOrInviteController(req, res, RequestType.Invite)
   })
-
-
 
   server.post("/contacts", rateLimit, async (req, res) => {
     try {

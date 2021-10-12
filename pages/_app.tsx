@@ -75,8 +75,7 @@ class MyApp extends App {
       this.props.router.asPath.startsWith("/animation") ||
       this.isBrand() ||
       this.props.router.asPath.startsWith(pagePaths.FLOWERS.link) ||
-      this.props.router.asPath.startsWith(pagePaths.PLUMO.link) ||
-      [pagePaths.CELO_REWARDS.link, pagePaths.CELO_REWARDS_EDUCATION.link].indexOf(this.props.router.pathname) >= 0
+      this.props.router.asPath.startsWith(pagePaths.PLUMO.link)
     )
   }
 
@@ -124,9 +123,7 @@ const footerWrapperCss = css(flex, {
 function FiveHundred() {
   return (
     <div css={fiveHundredWrapCss}>
-      <h1 css={errorTitle}>
-        Something went wrong
-      </h1>
+      <h1 css={errorTitle}>Something went wrong</h1>
       <Button text="Return Home" href="/" kind={BTN.SECONDARY} />
     </div>
   )
