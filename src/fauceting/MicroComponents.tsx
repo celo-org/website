@@ -5,7 +5,8 @@ import { I18nProps } from "src/i18n"
 import Checkmark from "src/icons/Checkmark"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import Spinner from "src/shared/Spinner"
-import { colors, fonts, standardStyles as std, textStyles } from "src/styles"
+import { fonts, standardStyles as std, textStyles } from "src/styles"
+import { colors } from "src/colors"
 interface InfoProps {
   requestState: RequestState
   t: I18nProps["t"]

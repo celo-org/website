@@ -3,7 +3,7 @@ import { flex, garamond, sectionTitle, jost } from "src/estyles"
 import { memo } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
 import RingsGlyph from "src/logos/RingsGlyph"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import useStatsRelay from "./useStatsRelay"
 import CarbonStats from "./CarbonStats"
 

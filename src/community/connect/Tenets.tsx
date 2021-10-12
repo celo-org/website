@@ -8,7 +8,8 @@ import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import Fade from "src/shared/AwesomeFade"
 import { hashNav } from "src/shared/menu-items"
 import ResponsiveImage from "src/shared/ResponsiveImage"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 type Props = I18nProps
 

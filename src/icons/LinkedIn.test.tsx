@@ -1,6 +1,6 @@
 import * as React from "react"
 import renderer from "react-test-renderer"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { TestProvider } from "src/_page-tests/test-utils"
 import LinkedIn from "./LinkedIn"
 

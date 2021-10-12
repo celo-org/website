@@ -4,7 +4,8 @@ import { LayoutChangeEvent, StyleSheet, Text, TouchableOpacity, View } from "rea
 import Hoverable from "src/shared/Hoverable"
 import Responsive from "src/shared/Responsive"
 import Triangle, { Direction } from "src/shared/Triangle"
-import { colors, fonts, textStyles } from "src/styles"
+import { fonts, textStyles } from "src/styles"
+import { colors } from "src/colors"
 export interface ListItem {
   id: string
   selected: boolean
@@ -95,13 +96,13 @@ export default class DropDown extends React.Component<Props, State> {
         <Responsive medium={listStyles}>
           <View style={listStylesMobile} accessibilityRole="listbox">
             <DropDownElement
-                    key={"none"}
-                    id={"none"}
-                    darkMode={this.props.darkMode}
-                    label={name}
-                      selected={nonSelected}
-                    onSelect={this.onSelectAll}
-                  />
+              key={"none"}
+              id={"none"}
+              darkMode={this.props.darkMode}
+              label={name}
+              selected={nonSelected}
+              onSelect={this.onSelectAll}
+            />
             {list
               .sort((a, b) => (a.id > b.id ? 1 : -1))
               .map(({ id, label, selected }) => {

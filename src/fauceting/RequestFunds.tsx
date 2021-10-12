@@ -7,7 +7,8 @@ import { RequestState, requestStatusToState, validateBeneficary } from "src/fauc
 import { postForm } from "src/forms/postForm"
 import { TextInput } from "src/forms/TextInput"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
-import { colors, standardStyles } from "src/styles"
+import { standardStyles } from "src/styles"
+import { colors } from "src/colors"
 import getConfig from "next/config"
 import subscribeRequest from "../../server/FirebaseClient"
 

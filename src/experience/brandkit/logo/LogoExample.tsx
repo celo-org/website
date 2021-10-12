@@ -5,7 +5,8 @@ import { AssetTypes } from "src/experience/brandkit/tracking"
 import { brandStyles, GAP } from "src/experience/common/constants"
 import LogoDarkBg from "src/logos/LogoDarkBg"
 import LogoLightBg from "src/logos/LogoLightBg"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export enum Logos {
   dark,

@@ -1,7 +1,8 @@
 import * as React from "react"
 import { StyleSheet, Text } from "react-native"
 import Hoverable from "src/shared/Hoverable"
-import { colors, fonts, textStyles } from "src/styles"
+import { fonts, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   href?: string

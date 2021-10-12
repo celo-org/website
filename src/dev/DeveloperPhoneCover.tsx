@@ -7,7 +7,8 @@ import { I18nProps, withNamespaces } from "src/i18n"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import Fade from "src/shared/AwesomeFade"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { colors, standardStyles, textStyles } from "src/styles"
+import { standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 const DELAY = 400
 const DELAY_2 = DELAY * 1.3

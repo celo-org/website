@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 import * as React from "react"
 import { flex, WHEN_DESKTOP, WHEN_TABLET } from "src/estyles"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 interface GridProps {
   columns: 1 | 2 | 3 | 4

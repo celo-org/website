@@ -9,7 +9,8 @@ import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import Fade from "src/shared/AwesomeFade"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import { CeloLinks, hashNav } from "src/shared/menu-items"
-import { colors, standardStyles } from "src/styles"
+import { standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface OwnProps {
   loading: boolean

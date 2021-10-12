@@ -6,7 +6,8 @@ import Poem from "src/flower/Poem"
 import { useScreenSize } from "src/layout/ScreenSize"
 import RingsGlyph from "src/logos/RingsGlyph"
 import Fade from "src/shared/Fade"
-import { colors, fonts, textStyles } from "src/styles"
+import { fonts, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   isOpen: boolean

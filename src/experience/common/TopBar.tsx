@@ -9,7 +9,8 @@ import RingsGlyph from "src/logos/RingsGlyph"
 import links from "src/shared/menu-items"
 import MobileMenu from "src/shared/MobileMenu"
 import Navigation, { NavigationTheme } from "src/shared/Navigation"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 import { useRouter } from "next/router"
 interface Props {
   current: string

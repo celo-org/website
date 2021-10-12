@@ -1,5 +1,6 @@
 import { css } from "@emotion/react"
-import { typeFaces, fontInfo, colors } from "./styles"
+import { typeFaces, fontInfo } from "./styles"
+import { colors } from "./colors"
 import { DESKTOP_BREAKPOINT, TABLET_BREAKPOINT } from "src/shared/Styles"
 
 export const flex = css({

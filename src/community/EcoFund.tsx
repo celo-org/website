@@ -17,7 +17,8 @@ import Rings from "src/logos/RingsGlyph"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import menuItems, { hashNav } from "src/shared/menu-items"
 import Navigation, { NavigationTheme } from "src/shared/Navigation"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 import {
   Application,
   ApplicationFields,

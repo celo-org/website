@@ -20,7 +20,8 @@ import RingsGlyph from "src/logos/RingsGlyph"
 import AspectRatio from "src/shared/AspectRatio"
 import Button, { BTN } from "src/shared/Button.3"
 import { hashNav } from "src/shared/menu-items"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export default React.memo(function Logo() {
   const { t } = useTranslation(NameSpaces.brand)

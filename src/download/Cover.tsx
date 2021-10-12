@@ -11,7 +11,8 @@ import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { ScreenSizes, useScreenSize } from "src/layout/ScreenSize"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import { CeloLinks } from "src/shared/menu-items"
-import { colors, standardStyles, textStyles } from "src/styles"
+import { standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export default function DownloadCover() {
   const { isMobile, isTablet, screen } = useScreenSize()

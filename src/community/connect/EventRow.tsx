@@ -7,7 +7,8 @@ import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import OvalCoin from "src/shared/OvalCoin"
 import { parseDate, printDuration } from "src/shared/PlaceDate"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface Section {
   section: string

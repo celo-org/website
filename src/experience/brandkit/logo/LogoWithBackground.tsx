@@ -3,7 +3,8 @@ import { ImageBackground, ImageRequireSource, StyleSheet, View } from "react-nat
 import LogoDarkBg from "src/logos/LogoDarkBg"
 import LogoLightBg from "src/logos/LogoLightBg"
 import AspectRatio from "src/shared/AspectRatio"
-import { colors, standardStyles } from "src/styles"
+import { standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   image?: ImageRequireSource

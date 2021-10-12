@@ -1,20 +1,20 @@
-import * as React from 'react'
-import OpenGraph from 'src/header/OpenGraph'
-import {  useTranslation } from "src/i18n"
-import {css} from "@emotion/react"
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { ContentfulPage, GridRowContentType, SectionType } from 'src/utils/contentful'
-import { flex, flexRow, WHEN_MOBILE, whiteText, fonts } from 'src/estyles'
-import { GridRow } from 'src/layout/Grid2'
-import {renderWhiteParagraph} from 'src/contentful/nodes/paragraph'
+import * as React from "react"
+import OpenGraph from "src/header/OpenGraph"
+import { useTranslation } from "src/i18n"
+import { css } from "@emotion/react"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { ContentfulPage, GridRowContentType, SectionType } from "src/utils/contentful"
+import { flex, flexRow, WHEN_MOBILE, whiteText, fonts } from "src/estyles"
+import { GridRow } from "src/layout/Grid2"
+import { renderWhiteParagraph } from "src/contentful/nodes/paragraph"
 import { cellSwitch } from "src/public-sector/cellSwitch"
-import { colors } from 'src/styles'
-import gradientFeathers from 'src/plumo/color-feathers.svg'
-import Button, {BTN, SIZE} from 'src/shared/Button.3'
-import LogoDarkBg from 'src/logos/LogoDarkBg'
-import Footer from 'src/shared/Footer'
-import Link2 from 'src/shared/Link'
-import Rounds from './Rounds'
+import { colors } from "src/colors"
+import gradientFeathers from "src/plumo/color-feathers.svg"
+import Button, { BTN, SIZE } from "src/shared/Button.3"
+import LogoDarkBg from "src/logos/LogoDarkBg"
+import Footer from "src/shared/Footer"
+import Link2 from "src/shared/Link"
+import Rounds from "./Rounds"
 import Safety from "./Safety"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
@@ -24,7 +24,7 @@ const PLUMO_FORM =
 // const MEDIUM_POST = 'https://medium.com/celoorg/the-plumo-ceremony-ac7649e9c8d8'
 
 export default function PlumoLanding(props: Props) {
-  const { t } = useTranslation('plumo')
+  const { t } = useTranslation("plumo")
 
   return (
     <>
@@ -92,7 +92,7 @@ export default function PlumoLanding(props: Props) {
 const rootCss = css(flex, {
   paddingTop: 50,
   backgroundColor: colors.dark,
-  minHeight: "100vh"
+  minHeight: "100vh",
 })
 
 const coverCss = css({
@@ -103,36 +103,36 @@ const coverCss = css({
   alignItems: "center",
 })
 
-const logoCss = css(flexRow,{
+const logoCss = css(flexRow, {
   columnGap: "8px",
   [WHEN_MOBILE]: {
     flexDirection: "column",
     justifyContent: "center",
     justifyItems: "center",
     alignItems: "center",
-  }
+  },
 })
 
 const titleCss = css(fonts.h1, whiteText)
 
-const navBar = css(flexRow,{
+const navBar = css(flexRow, {
   top: 0,
   left: 0,
   right: 0,
-  position: 'fixed',
-  width: '100%',
+  position: "fixed",
+  width: "100%",
   height: 70,
-  alignItems: 'center',
-  justifyContent: 'space-between',
+  alignItems: "center",
+  justifyContent: "space-between",
   paddingLeft: 24,
   paddingRight: 40,
-  backgroundColor: 'rgba(46, 51, 56, 0.95)',
-  backdropFilter: 'blur(5px)',
+  backgroundColor: "rgba(46, 51, 56, 0.95)",
+  backdropFilter: "blur(5px)",
   zIndex: 100,
   [WHEN_MOBILE]: {
     paddingLeft: 16,
     paddingRight: 16,
-  }
+  },
 })
 
 const innerNav = css({
@@ -142,6 +142,6 @@ const innerNav = css({
   gridTemplateColumns: "repeat(2, max-content)",
   alignItems: "center",
   [WHEN_MOBILE]: {
-    paddingLeft: 12
-  }
+    paddingLeft: 12,
+  },
 })

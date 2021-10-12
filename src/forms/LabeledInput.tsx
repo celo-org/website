@@ -2,7 +2,8 @@ import * as React from "react"
 import { StyleSheet, Text, View } from "react-native"
 import { ErrorDisplay, ErrorKeys, getErrorTransKey } from "src/forms/ErrorDisplay"
 import { TextInput } from "src/forms/TextInput"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 import { css } from "@emotion/react"
 interface LabelProps {
   name: string
