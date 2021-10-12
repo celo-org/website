@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 export const GAP = 10
 

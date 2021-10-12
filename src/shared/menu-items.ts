@@ -1,4 +1,4 @@
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 export interface MenuLink {
   name: string

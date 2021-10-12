@@ -1,6 +1,6 @@
 import * as React from "react"
 import { StyleProp, StyleSheet, TouchableOpacity, View, ViewStyle } from "react-native"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   onPress: () => void

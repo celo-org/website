@@ -1,7 +1,7 @@
 import * as React from "react"
 import { css, keyframes } from "@emotion/react"
 import globe from "src/shared/world-spin.gif"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import {
   WHEN_MOBILE,
   textStyles,
@@ -36,7 +36,7 @@ export default function ChangeStory({ darkMode }: { darkMode: boolean }) {
 
   return (
     <div css={containerCss}>
-      <img src={globe.src} css={globeCss} height={globe.height} width={globe.width}  />
+      <img src={globe.src} css={globeCss} height={globe.height} width={globe.width} />
       <span css={css(separatorCss, darkMode && whiteText)}>|</span>
       <Wipe text={CHANGE_STORY[count]} darkMode={darkMode} />
     </div>

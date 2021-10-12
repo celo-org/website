@@ -8,7 +8,8 @@ import Rise from "src/join/Rise"
 import Fade from "src/shared/AwesomeFade"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import menuItems from "src/shared/menu-items"
-import { colors, standardStyles, textStyles } from "src/styles"
+import { standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 const DESCRIPTION =
   "Join us in building financial system that creates the conditions for prosperity for all. We are growing a team with all kinds of different perspectives, experiences and backgrounds to create products that are used and loved by people all around the world."

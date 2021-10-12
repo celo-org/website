@@ -1,6 +1,7 @@
 import * as React from "react"
 import { StyleSheet, Text, unstable_createElement as createElement, View } from "react-native-web"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 import { Label } from "./FormComponents"
 
 interface CheckboxProps {

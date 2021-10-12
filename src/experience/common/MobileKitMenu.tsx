@@ -3,7 +3,8 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import scrollToHash from "src/experience/common/scrollToHash"
 import Sidebar, { Page } from "src/experience/common/Sidebar"
 import Triangle, { Direction } from "src/shared/Triangle"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 interface Props {
   pages: Page[]
   pathname: string

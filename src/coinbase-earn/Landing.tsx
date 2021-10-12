@@ -16,7 +16,8 @@ import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { useScreenSize } from "src/layout/ScreenSize"
 import AspectRatio from "src/shared/AspectRatio"
 import pagePaths from "src/shared/menu-items"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export default function Landing() {
   const [t] = useTranslation(NameSpaces.cbe)

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import * as React from "react"
 import { css, keyframes } from "@emotion/react"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { EffectiveTypes, getEffectiveConnection } from "src/utils/utils"
 import { flexRow } from "src/estyles"
 
@@ -59,9 +59,7 @@ export default function Progress() {
     const visibility = isPageTurning ? visibleCss : hiddenCss
     return (
       <div css={rootCss} key={route}>
-        <div
-          css={css(barCss, animationSpeed, visibility, hasError ? badStyle : goodStyle)}
-        />
+        <div css={css(barCss, animationSpeed, visibility, hasError ? badStyle : goodStyle)} />
       </div>
     )
   }
@@ -84,7 +82,7 @@ const hiddenCss = css({
 })
 
 const visibleCss = css({
-  top: 0
+  top: 0,
 })
 
 const badStyle = css({
@@ -112,7 +110,7 @@ const barCss = css({
   transitionProperty: "background-color, top",
   animationFillMode: "both",
   animationTimingFunction: "cubic-bezier(0,.58,.51,1.01)",
-  animationName: progressive
+  animationName: progressive,
 })
 
 const durations = {

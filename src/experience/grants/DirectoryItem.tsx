@@ -3,7 +3,8 @@ import * as React from "react"
 import { Image, StyleSheet, Text, View } from "react-native"
 import Octocat from "src/icons/Octocat"
 import Outbound from "src/shared/Outbound"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export interface Props {
   name: string

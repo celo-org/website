@@ -1,15 +1,15 @@
-
-import * as React from 'react'
-import {  useTranslation } from "src/i18n"
-import {css} from "@emotion/react"
-import AttestationsTable, {Row} from './AttestationsTable'
-import DropDownGroup, {DropDownProps} from 'src/shared/DropDownGroup'
-import { GridRow } from 'src/layout/Grid2'
-import {  WHEN_MOBILE, whiteText } from 'src/estyles'
-import { colors, typeFaces } from 'src/styles'
-import { Radio } from 'src/table/table'
+import * as React from "react"
+import { useTranslation } from "src/i18n"
+import { css } from "@emotion/react"
+import AttestationsTable, { Row } from "./AttestationsTable"
+import DropDownGroup, { DropDownProps } from "src/shared/DropDownGroup"
+import { GridRow } from "src/layout/Grid2"
+import { WHEN_MOBILE, whiteText } from "src/estyles"
+import { typeFaces } from "src/styles"
+import { colors } from "src/colors"
+import { Radio } from "src/table/table"
 import useLiveRound from "./useCurrentRound"
-import usePhase from './usePhase'
+import usePhase from "./usePhase"
 import Safety from "./Safety"
 
 function useDropDown(): [number, () => void, (key: number) => void] {
@@ -32,12 +32,11 @@ interface Rounds {
   phase2Available: boolean
 }
 
-
 function useDropDownOptions(
   roundsInPhase: any[],
   phase: number,
   round: number,
-  onSelectRound: (key:  number | string) => void,
+  onSelectRound: (key: number | string) => void,
   onClearRound: () => void
 ) {
   const { t } = useTranslation("plumo")
@@ -65,11 +64,10 @@ function useDropDownOptions(
   return dropDownData
 }
 
-
 function useRound(): Rounds {
   const [round, onClearRound, onSelectRound] = useDropDown()
   const liveRound = useLiveRound()
-  const {isValidating, phases} = usePhase()
+  const { isValidating, phases } = usePhase()
 
   const [phase, setPhase] = React.useState(1)
 
@@ -90,7 +88,6 @@ function useRound(): Rounds {
   React.useEffect(() => {
     onSelectRound(numberOfRoundsInPhase)
   }, [numberOfRoundsInPhase, phase, onSelectRound])
-
 
   const roundIsCurrent = liveRound.round === round
 
@@ -116,12 +113,7 @@ function useRound(): Rounds {
     roundIsCurrent,
   ])
 
-  const dropDownData = useDropDownOptions(phaseRounds,
-    phase,
-    round,
-    onSelectRound,
-    onClearRound
-  )
+  const dropDownData = useDropDownOptions(phaseRounds, phase, round, onSelectRound, onClearRound)
 
   return {
     rows,
@@ -130,37 +122,29 @@ function useRound(): Rounds {
     dropDownData,
     isPhaseLoading: isValidating,
     isActiveRoundLoading: liveRound.loading,
-    phase2Available: !!phases?.phase2
+    phase2Available: !!phases?.phase2,
   }
 }
 
 export default React.memo(function Rounds(): JSX.Element {
   const { t } = useTranslation("plumo")
 
-  const {rows, phase2Available, setPhase, phase, dropDownData,  isActiveRoundLoading} = useRound()
+  const { rows, phase2Available, setPhase, phase, dropDownData, isActiveRoundLoading } = useRound()
 
   return (
     <GridRow columns={1} css={rootCss}>
       <h2 css={titleCss}>{t("ceremonyResults")}</h2>
       <div css={dropdownsCss}>
-        <Phases phase={phase} setPhase={setPhase} phase2Started={phase2Available}/>
+        <Phases phase={phase} setPhase={setPhase} phase2Started={phase2Available} />
         <label css={roundLabelCss}>{t("roundLabel")}</label>
         <div css={roundSelectorCss}>
-        <Safety>
-          <DropDownGroup
-            direction={"horizontal"}
-            data={dropDownData}
-            darkMode={true}
-          />
+          <Safety>
+            <DropDownGroup direction={"horizontal"} data={dropDownData} darkMode={true} />
           </Safety>
         </div>
       </div>
       <Safety>
-      <AttestationsTable
-        rows={rows}
-        showProgress={true}
-        loading={isActiveRoundLoading}
-      />
+        <AttestationsTable rows={rows} showProgress={true} loading={isActiveRoundLoading} />
       </Safety>
     </GridRow>
   )
@@ -168,30 +152,38 @@ export default React.memo(function Rounds(): JSX.Element {
 
 interface PhaseProps {
   phase: number
-  setPhase: (p: number) =>void
+  setPhase: (p: number) => void
   phase2Started: boolean
 }
 
-
-const Phases = React.memo(function Phases({phase, setPhase, phase2Started}: PhaseProps) {
-  const { t } = useTranslation('plumo')
-  return <>
-  <label css={phaseLabelCss}>
-    {t("phaseLabel")}
-  </label>
-  <span css={radioOne}>
-    <Radio selected={phase === 1}
-    labelColor={colors.white}
-    colorWhenSelected={colors.primary}
-    onValueSelected={setPhase} label={t("phase1")} value={1} />
-  </span>
-  <span css={radioTwo}>
-    <Radio selected={phase === 2} labelColor={colors.white}
-    disabled={!phase2Started}
-    colorWhenSelected={colors.primary}  onValueSelected={setPhase}
-    label={t("phase2")} value={2} />
-  </span>
-  </>
+const Phases = React.memo(function Phases({ phase, setPhase, phase2Started }: PhaseProps) {
+  const { t } = useTranslation("plumo")
+  return (
+    <>
+      <label css={phaseLabelCss}>{t("phaseLabel")}</label>
+      <span css={radioOne}>
+        <Radio
+          selected={phase === 1}
+          labelColor={colors.white}
+          colorWhenSelected={colors.primary}
+          onValueSelected={setPhase}
+          label={t("phase1")}
+          value={1}
+        />
+      </span>
+      <span css={radioTwo}>
+        <Radio
+          selected={phase === 2}
+          labelColor={colors.white}
+          disabled={!phase2Started}
+          colorWhenSelected={colors.primary}
+          onValueSelected={setPhase}
+          label={t("phase2")}
+          value={2}
+        />
+      </span>
+    </>
+  )
 })
 
 const rootCss = css({
@@ -203,7 +195,7 @@ const rootCss = css({
 const dropdownsCss = css({
   display: "grid",
   gridTemplateColumns: "max-content",
-  gridTemplateAreas:`
+  gridTemplateAreas: `
     "phase-label phase-label round-label .."
     "phase-selector-1 phase-selector-2 round-selector .."
     `,
@@ -211,19 +203,19 @@ const dropdownsCss = css({
   marginBottom: 24,
   [WHEN_MOBILE]: {
     gridAutoColumns: "max-content",
-    gridTemplateAreas:`
+    gridTemplateAreas: `
     "phase-label phase-label"
     "phase-selector-1 phase-selector-2"
     "round-label round-label"
     "round-selector round-selector"
     `,
-  }
+  },
 })
 
-const labelCss= css(whiteText,{
+const labelCss = css(whiteText, {
   fontFamily: typeFaces.futura,
   fontSize: 16,
-  fontWeight: "bold"
+  fontWeight: "bold",
 })
 
 const radioCss = css({
@@ -231,51 +223,48 @@ const radioCss = css({
   alignItems: "center",
   label: {
     lineHeight: 1,
-    [WHEN_MOBILE] : {
-      fontSize: 18
-    }
+    [WHEN_MOBILE]: {
+      fontSize: 18,
+    },
   },
   "svg + div": {
     paddingLeft: 8,
-    paddingRight: 0
-  }
+    paddingRight: 0,
+  },
 })
 
 const radioOne = css(radioCss, { gridArea: "phase-selector-1" })
 const radioTwo = css(radioCss, { gridArea: "phase-selector-2" })
 
-const phaseLabelCss = css(labelCss, {gridArea: "phase-label"})
+const phaseLabelCss = css(labelCss, { gridArea: "phase-label" })
 
 const roundLabelCss = css(labelCss, {
   gridArea: "round-label",
   marginBottom: 12,
-  [WHEN_MOBILE] : {
+  [WHEN_MOBILE]: {
     marginTop: 12,
     marginBottom: 6,
-
-  }
+  },
 })
 
 const roundSelectorCss = css({
   gridArea: "round-selector",
   "& > div > div": {
-    width: 180
+    width: 180,
   },
-  [WHEN_MOBILE] : {
+  [WHEN_MOBILE]: {
     "& > div > div": {
-      width: "100%"
-    }
-  }
+      width: "100%",
+    },
+  },
 })
 
-const titleCss= css(whiteText, {
+const titleCss = css(whiteText, {
   fontFamily: typeFaces.futura,
   fontWeight: "normal",
   fontSize: 28,
   lineheight: 1.29,
-  [WHEN_MOBILE] : {
-    fontSize: 22
-  }
+  [WHEN_MOBILE]: {
+    fontSize: 22,
+  },
 })
-
-

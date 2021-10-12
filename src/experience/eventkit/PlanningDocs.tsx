@@ -3,7 +3,8 @@ import { Image, StyleSheet, Text, View } from "react-native"
 import { trackDownload, Types } from "src/experience/eventkit/tracking"
 import External from "src/icons/External"
 import AspectRatio from "src/shared/AspectRatio"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 import useSWR from "swr"
 
 interface Doc {

@@ -1,7 +1,7 @@
 import * as React from "react"
 import MessageDisplay from "src/forms/MessageDisplay"
 import { NameSpaces, useTranslation } from "src/i18n"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { css } from "@emotion/react"
 
 export enum ErrorKeys {

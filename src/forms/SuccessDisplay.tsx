@@ -1,7 +1,7 @@
 import * as React from "react"
 import MessageDisplay from "src/forms/MessageDisplay"
 import Checkmark from "src/icons/Checkmark"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { css } from "@emotion/react"
 import { flexRow } from "src/estyles"
 

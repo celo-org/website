@@ -6,7 +6,7 @@ import CoverActions from "src/download/CoverActions"
 import OpenGraph from "src/header/OpenGraph"
 import { CeloLinks } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import openGraph from "src/download/ogimage-wallet.png"
 
 export default class MobileApp extends React.PureComponent {

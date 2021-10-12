@@ -19,7 +19,8 @@ import BeautifulQuote from "src/shared/BeautifulQuote"
 import Button, { BTN } from "src/shared/Button.3"
 import InlineAnchor from "src/shared/InlineAnchor"
 import menuItems from "src/shared/menu-items"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   contributors: Contributor[]

@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native"
-import { colors, typeFaces } from "src/styles"
+import { typeFaces } from "src/styles"
+import { colors } from "src/colors"
 
 export const styles = StyleSheet.create({
   pStatic: {

@@ -1,7 +1,7 @@
 import * as React from "react"
 import { css } from "@emotion/react"
 import { fonts, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_TABLET_AND_UP } from "src/estyles"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { Document } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
@@ -72,6 +72,6 @@ const subheading = css(fonts.body, {
   },
   p: {
     marginTop: 16,
-    marginBottom:0 ,
+    marginBottom: 0,
   },
 })
