@@ -7,7 +7,7 @@ import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import { BTN } from "src/shared/Button.3"
 import { fetchCached, MINUTE } from "src/../server/cache"
 
-function intialize() {
+function initialize() {
   const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
   const isPreview = publicRuntimeConfig.ENV === "development"
   return createClient({
@@ -34,6 +34,7 @@ interface InternalKit {
   pageID: string
   sidebar: SideBarEntry[]
 }
+
 export async function getKit(kitSlug: string, pageSlug: string, { locale }): Promise<InternalKit> {
   return fetchCached(`kit:${kitSlug}:${pageSlug || "home"}`, locale, 3 * MINUTE, () =>
     fetchKit(kitSlug, pageSlug, { locale })
@@ -41,7 +42,7 @@ export async function getKit(kitSlug: string, pageSlug: string, { locale }): Pro
 }
 
 async function fetchKit(kitSlug: string, pageSlug: string, { locale }): Promise<InternalKit> {
-  const kit = await intialize().getEntries<Kit>({
+  const kit = await initialize().getEntries<Kit>({
     content_type: "kit",
     "fields.slug": kitSlug,
     locale,
@@ -75,6 +76,24 @@ async function fetchKit(kitSlug: string, pageSlug: string, { locale }): Promise<
       }
     }),
   }
+}
+
+export async function getValidKitSlugs() {
+  return fetchCached(`valid-kit-slugs`, "root", 6 * MINUTE, fetchValidKitSlugs)
+}
+
+async function fetchValidKitSlugs(): Promise<Record<string, Set<string>>> {
+  const kits = await initialize().getEntries<Kit>({
+    content_type: "kit",
+    locale: "en-US",
+  })
+
+  return kits.items.reduce((sum, item) => {
+    return {
+      ...sum,
+      [item.fields.slug]: new Set(item.fields.pages_.map((page) => page.fields.slug)),
+    }
+  }, {})
 }
 
 export interface SectionType {
@@ -226,7 +245,7 @@ export async function getPageBySlug(slug: string, { locale }, showSysData?: bool
 }
 
 async function fetchPageBySlug(slug: string, { locale }, showSysData?: boolean) {
-  const pages = await intialize().getEntries<ContentfulPage<SectionType | GridRowContentType>>({
+  const pages = await initialize().getEntries<ContentfulPage<SectionType | GridRowContentType>>({
     content_type: "page",
     "fields.slug": slug,
     include: 5,
@@ -240,7 +259,7 @@ export async function getPageById<T>(id: string, { locale }) {
 }
 
 export async function fetchPageById<T>(id: string, { locale }) {
-  const pages = await intialize().getEntries<ContentfulPage<T>>({
+  const pages = await initialize().getEntries<ContentfulPage<T>>({
     content_type: "page",
     "sys.id": id,
     include: 5,

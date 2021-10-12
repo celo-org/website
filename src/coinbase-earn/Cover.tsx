@@ -9,7 +9,7 @@ export default function Cover() {
   return (
     <View style={[styles.root, isMobile && styles.rootMobile]}>
       <Image
-        source={isMobile ? HeroMobile : Hero}
+        source={{ uri: isMobile ? HeroMobile.src : Hero.src }}
         style={isMobile ? styles.imageMobile : styles.image}
       />
     </View>

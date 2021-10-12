@@ -67,21 +67,6 @@ export const pagePaths = {
     menuHidePoint: 420,
     menuHidePointMobile: 320,
   },
-  CELO_REWARDS: {
-    name: "CELO Rewards",
-    link: "/celo-rewards",
-    isDark: false,
-  },
-  CELO_REWARDS_EDUCATION: {
-    name: "CELO Rewards",
-    link: "/celo-rewards-education",
-    isDark: false,
-  },
-  CELO_REWARDS_TERMS: {
-    name: "CELO Rewards",
-    link: "/celo-rewards-terms-and-conditions",
-    isDark: false,
-  },
   COMMUNITY: {
     name: "Community",
     link: "/community",
