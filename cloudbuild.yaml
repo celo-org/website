@@ -4,3 +4,5 @@ steps:
 
   - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
+
+logsBucket: "CLOUD_LOGGING_ONLY"
