@@ -36,7 +36,7 @@
     "@odnh/use-swipe": "^1.0.0",
     "@sentry/browser": "^6.13.2",
     "@sentry/node": "^6.13.2",
-    "airtable": "^0.8.1",
+    "airtable": "^0.11.1",
     "apollo-boost": "^0.4.4",
     "big-integer": "^1.6.48",
     "bignumber.js": "^9.0.1",
