@@ -4464,10 +4464,12 @@ fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-fast-xml-parser@^3.15.1:
-  version "3.15.1"
-  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-3.15.1.tgz#7299ef53b00d5c0f9809599396a26e6d1af20603"
-  integrity sha512-MStlD6aNPZCd9msF5wBh2VJ0jAE2zz85ipk+OIPO+pZi64ckY//oGi5kskcTVRj2bMSmBI5F2SY1IGWHWZzbCA==
+fast-xml-parser@^3.20.0:
+  version "3.20.3"
+  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-3.20.3.tgz#c171425356d4d929efeca4e4f67f24231a31c786"
+  integrity sha512-FfHJ/QCpo4K2gquBX7dIAcmShSBG4dMtYJ3ghSiR4w7YqlUujuamrM57C+mKLNWS3mvZzmm2B2Qx8Q6Gfw+lDQ==
+  dependencies:
+    strnum "^1.0.4"
 
 fastq@^1.6.0:
   version "1.11.0"
@@ -8552,6 +8554,11 @@ striptags@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/striptags/-/striptags-3.1.1.tgz#c8c3e7fdd6fb4bb3a32a3b752e5b5e3e38093ebd"
   integrity sha1-yMPn/db7S7OjKjt1LltePjgJPr0=
+
+strnum@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/strnum/-/strnum-1.0.4.tgz#e97e36a7d6ba9f93d0d6b496b2ed0678d422832b"
+  integrity sha512-lMzNMfDpaQOLt4B2mEbfzYS0+T7dvCXeojnlGf6f1AygvWDMcWyXYaLbyICfjVu29sErR8fnRagQfBW/N/hGgw==
 
 styled-jsx@4.0.1:
   version "4.0.1"
