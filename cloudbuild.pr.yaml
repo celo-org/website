@@ -1,6 +1,6 @@
 steps:
   - name: "gcr.io/cloud-builders/yarn"
-    args: ["install", "--production"]
+    args: ["install"]
 
   - name: "gcr.io/cloud-builders/gcloud"
     entrypoint: "bash"
