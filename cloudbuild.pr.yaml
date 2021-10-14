@@ -12,6 +12,6 @@ steps:
     - 'DEPLOY_ENV=$_DEPLOY_ENV'
 
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy", "stage.yaml"]
+    args: ["app", "deploy", "development.yaml", "--no-promote", "--quiet", "--version", "pr-$BRANCH_NAME"]
 options:
   logging: CLOUD_LOGGING_ONLY
