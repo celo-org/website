@@ -13,6 +13,8 @@ import { fonts, textStyles } from "src/estyles"
 import { getSentry, initSentry } from "src/utils/sentry"
 import { appWithTranslation } from "src/i18n"
 import { flex } from "src/estyles"
+import * as Fathom from "fathom-client"
+
 const SECOND = 1000
 const Progress = dynamic(import("src/shared/Progress"))
 
@@ -40,6 +42,7 @@ class MyApp extends App {
     disagree()
   }
   async componentDidMount() {
+    Fathom.load("GLIHCOLS")
     const analyticsModule = await import("src/analytics/analytics")
     if (window.location.hash) {
       await hashScroller(window.location.hash)
@@ -59,6 +62,7 @@ class MyApp extends App {
     }
 
     this.props.router.events.on("routeChangeComplete", async () => {
+      Fathom.trackPageview()
       await analyticsModule.default.page()
     })
 
