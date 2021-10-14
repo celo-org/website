@@ -9,10 +9,12 @@ steps:
   - name: "gcr.io/cloud-builders/yarn"
     args: ["build"]
     env:
-    - 'DEPLOY_ENV=$_DEPLOY_ENV'
+    - 'DEPLOY_ENV="staging"'
 
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy", "development.yaml", "--no-promote", "--quiet", "--version", "pr-$_PR_NUMBER", "--verbosity", "debug"]
+    args: ["app", "deploy", "stage.yaml", "--no-promote", "--version", "pr-$_PR_NUMBER", "--verbosity", "info"]
+    env:
+    - 'DEPLOY_ENV="staging"'
 
 options:
   logging: CLOUD_LOGGING_ONLY

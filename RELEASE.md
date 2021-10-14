@@ -24,7 +24,7 @@ You may need to log in and be granted additional permissions.
 
 > Deploying will upload files on local machine to gcloud, make sure you are on the intended branch and it is up to date
 
-Now from web package directory deploy to dev.celo.org with: 
+Now from web package directory deploy to dev.celo.org with:
 
 `yarn run deploy:dev`
 
@@ -32,16 +32,16 @@ to deploy to the `dev` environment, with similar commands for `stage` and `prod`
 
 #### dev vs stage
 
-While not enforced, the norms for using the different non-production environments are like so: 
+While not enforced, the norms for using the different non-production environments are like so:
 
-Use Stage for checking a commit works as expected before deploying to production 
+Use Stage for checking a commit works as expected before deploying to production
 
-Use Dev for sending previews to stakeholders while developing new features. 
+Use Dev for sending previews to stakeholders while developing new features.
 
 
 ## Testing
 
-After Release please manually check the website doesnt have have any unexpected weirdness. 
+After Release please manually check the website doesnt have have any unexpected weirdness.
 
 ## Vulnerability Disclosure
 
@@ -53,3 +53,17 @@ After Release please manually check the website doesnt have have any unexpected 
 ## Dependents
 
 n/a
+
+
+
+### Cloud build
+
+#### each PR
+ - Deploys to staging env a version not promoted but accessible at https://pr-{PR_NUMBER}-dot-development-dot-celo-org-website.uc.r.appspot.com
+#### master branch updated
+version name with pr number (branch name too if i can substitue out the "/")
+- Deploy to and promote preview environment
+- deploy to production but dont promot? (wait for manual promotion)
+
+
+#### dev environment remains for manual deployments

@@ -63,7 +63,6 @@ for file_path_map in "${files[@]}"; do
         continue
     fi
   fi
-  gcloud auth list
   # Encrypt or decrypt this file.
   gcloud kms $1 --ciphertext-file=$encrypted_file_path --plaintext-file=$file_path --key=github-mnemonic-key --keyring=celo-keyring --location=global --project $environment
   if [[ $? -eq 1 ]]; then
