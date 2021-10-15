@@ -57,7 +57,7 @@
     "front-matter": "^4.0.1",
     "fuzzy-search": "^3.2.1",
     "glob": "^7.1.6",
-    "graphql": "^15.5.0",
+    "graphql": "^15.6.0",
     "helmet": "^3.23.3",
     "hex-rgba": "^1.0.2",
     "html-to-formatted-text": "^2.7.0",
