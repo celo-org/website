@@ -37,7 +37,7 @@
     "@sentry/browser": "^6.13.2",
     "@sentry/node": "^6.13.2",
     "airtable": "^0.8.1",
-    "apollo-boost": "^0.4.4",
+    "apollo-boost": "^0.4.9",
     "big-integer": "^1.6.48",
     "bignumber.js": "^9.0.1",
     "body-parser": "^1.19.0",
