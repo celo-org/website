@@ -6,19 +6,27 @@ n/a
 
 ## Identifying releases
 
-Identify by commit hash
+Identify by pull request number
 
 ## Build & Promotion process
 
-The website is hosted on [Google App Engine](https://cloud.google.com/appengine/). In order to deploy it, you first need the [gcloud SDK](https://cloud.google.com/sdk/gcloud/).
+The website is hosted on [Google App Engine](https://cloud.google.com/appengine/).
+
+## development
+when in development you can deploy to dev env with
+
+`yarn deploy:dev`
+
+In order to deploy it, you first need the [gcloud SDK](https://cloud.google.com/sdk/gcloud/).
 
 `brew cask install google-cloud-sdk`
+
 
 You may need to log in and be granted additional permissions.
 
 `gcloud auth login`
 
- Make sure your dependencies are up to date. From the root of monorepo, run
+ Make sure your dependencies are up to date. From the root of project, run
 
 `yarn`
 
@@ -28,22 +36,22 @@ Now from web package directory deploy to dev.celo.org with:
 
 `yarn run deploy:dev`
 
-to deploy to the `dev` environment, with similar commands for `stage` and `prod`
+### staging
 
-#### dev vs stage
-
-While not enforced, the norms for using the different non-production environments are like so:
-
-Use Stage for checking a commit works as expected before deploying to production
-
-Use Dev for sending previews to stakeholders while developing new features.
+Pull Requests get deployed automatically via cloud build to pr-{_PULL_REQUEST_NUMBER}-dot-staging-dot-celo-org-website.uc.r.appspot.com/
 
 
-## Testing
+### production and preview
 
-After Release please manually check the website doesnt have have any unexpected weirdness.
+whenever the master branch is updated cloud build will automatically deploy a build to
 
-## Vulnerability Disclosure
+* preview env (this is used to preview content from contentful)
+* production env. however it will NOT promote this version to be live on celo.org
+
+
+## Promotion
+
+Before Promoting a version please manually do a sanity check to ensure website doesn't have have any unexpected weirdness.
 
 
 ## Dependencies
@@ -53,17 +61,3 @@ After Release please manually check the website doesnt have have any unexpected 
 ## Dependents
 
 n/a
-
-
-
-### Cloud build
-
-#### each PR
- - Deploys to staging env a version not promoted but accessible at https://pr-{PR_NUMBER}-dot-development-dot-celo-org-website.uc.r.appspot.com
-#### master branch updated
-version name with pr number (branch name too if i can substitue out the "/")
-- Deploy to and promote preview environment
-- deploy to production but dont promot? (wait for manual promotion)
-
-
-#### dev environment remains for manual deployments

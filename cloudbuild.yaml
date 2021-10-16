@@ -9,11 +9,12 @@ steps:
   - name: "gcr.io/cloud-builders/yarn"
     args: ["build"]
     env:
-    - 'DEPLOY_ENV=$_DEPLOY_ENV'
+      - 'DEPLOY_ENV=$_DEPLOY_ENV'
 
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy", "preview.yaml",  "--quiet", "--version", "pr-$_PR_NUMBER", "--verbosity", "info"]
+    args: ["app", "deploy", "$_YAML_FILE.yaml", $_PROMOTE, "--version", "pr-$_PR_NUMBER", "--verbosity", "info"]
     env:
     - 'DEPLOY_ENV=$_DEPLOY_ENV'
+
 options:
   logging: CLOUD_LOGGING_ONLY
