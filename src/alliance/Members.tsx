@@ -12,7 +12,8 @@ import { useScreenSize } from "src/layout/ScreenSize"
 import { ListItem } from "src/shared/DropDown"
 import DropDownGroup from "src/shared/DropDownGroup"
 import { externalizeURL } from "src/shared/Outbound"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 import { css } from "@emotion/react"
 
 function initialState() {
@@ -176,8 +177,6 @@ const Member = React.memo(function _Member({ logo, name, url }: Ally) {
   )
 })
 
-
-
 interface FallbackProps {
   text: string
   url: string
@@ -248,5 +247,5 @@ const styles = StyleSheet.create({
   },
 })
 const memberTag = css({
-  textDecoration: "none"
+  textDecoration: "none",
 })

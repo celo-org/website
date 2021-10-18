@@ -6,7 +6,8 @@ import { brandStyles } from "src/experience/common/constants"
 import AspectRatio from "src/shared/AspectRatio"
 import Fade from "src/shared/AwesomeFade"
 import Spinner from "src/shared/Spinner"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   name: string

@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StyleSheet, View } from "react-native"
 
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   bars: number

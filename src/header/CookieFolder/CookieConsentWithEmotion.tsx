@@ -1,7 +1,7 @@
 import { css, keyframes } from "@emotion/react"
 import { Trans, NameSpaces } from "src/i18n"
 import { flex, WHEN_MOBILE, jost } from "src/estyles"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import * as React from "react"
 
 interface Props {

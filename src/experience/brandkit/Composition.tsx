@@ -7,7 +7,8 @@ import PageHeadline from "src/experience/common/PageHeadline"
 import { H2, H4 } from "src/fonts/Fonts"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { hashNav } from "src/shared/menu-items"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export default React.memo(function Intro() {
   const { t } = useTranslation(NameSpaces.brand)

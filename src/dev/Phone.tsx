@@ -1,7 +1,8 @@
 import * as React from "react"
 import { StyleSheet, View } from "react-native"
 import OvalCoin from "src/shared/OvalCoin"
-import { colors, standardStyles } from "src/styles"
+import { standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 function Phone() {
   return (

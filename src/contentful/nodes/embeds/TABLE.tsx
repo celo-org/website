@@ -1,7 +1,7 @@
 import { css, CSSObject } from "@emotion/react"
 import * as React from "react"
 import { jost, WHEN_MOBILE } from "src/estyles"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   fields: {

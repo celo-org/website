@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Dimensions, StyleSheet, View } from "react-native"
 import OvalCoin from "src/shared/OvalCoin"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { randomIntegerInRange } from "src/utils/utils"
 
 // colors are duplicated to increase chance they will be picked

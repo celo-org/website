@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StyleSheet } from "react-native"
 import { Path } from "src/shared/svg"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 export default React.memo(function Transceive() {
   const phase1 = VALIDATOR_PATHS.length

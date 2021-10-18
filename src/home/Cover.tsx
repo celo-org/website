@@ -1,6 +1,6 @@
 import { css, keyframes } from "@emotion/react"
 import CoverContent from "src/home/CoverContent"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import celoAsStarsMobileLong from "src/home/celo-sky-mobile.svg"
 import celoAsStarsMobileShort from "src/home/celo-sky-mobile-short.svg"
 import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"

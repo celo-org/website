@@ -2,7 +2,8 @@ import * as React from "react"
 import { StyleSheet, Text, View } from "react-native"
 import DirectoryItem, { Props as DirectoryItemProps } from "src/experience/grants/DirectoryItem"
 import { H4 } from "src/fonts/Fonts"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   name: string

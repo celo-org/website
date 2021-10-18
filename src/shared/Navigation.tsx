@@ -2,7 +2,8 @@ import * as React from "react"
 import { StyleProp, StyleSheet, View, ViewStyle } from "react-native"
 import Button, { BTN } from "src/shared/Button.3"
 import OvalCoin from "src/shared/OvalCoin"
-import { colors, textStyles } from "src/styles"
+import { textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export enum NavigationTheme {
   LIGHT,

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { CeloLinks } from "src/shared/menu-items"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   height?: number

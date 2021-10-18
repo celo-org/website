@@ -19,7 +19,7 @@ import { useScreenSize } from "src/layout/ScreenSize"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { RenderNode } from "@contentful/rich-text-react-renderer"
 import { Asset } from "contentful"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 const OPTIONS = {
   renderNode: {
@@ -46,14 +46,17 @@ export default function Cover(props: CoverContentType) {
       css={props.illoFirst ? imageFirstRootCss : rootCss}
     >
       <div css={contentCss}>
-        {props.title &&(
-        <h1
-          css={css(props.superSize ? titleCss : rH1, centerMobileCss, props.darkMode && whiteText)}
-        >
-          {props.title}
-        </h1>
-        )
-        }
+        {props.title && (
+          <h1
+            css={css(
+              props.superSize ? titleCss : rH1,
+              centerMobileCss,
+              props.darkMode && whiteText
+            )}
+          >
+            {props.title}
+          </h1>
+        )}
         <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
           {documentToReactComponents(props.subTitle, OPTIONS)}
         </span>
@@ -172,13 +175,13 @@ const titleCss = css(fonts.h1, {
 
 const subTextCss = css({
   marginTop: 16,
-  "a":{
+  a: {
     textDecoration: "none",
-    color: colors.white
+    color: colors.white,
   },
-  "h2:nth-of-type(2)":{
-    marginTop: 30
-  }
+  "h2:nth-of-type(2)": {
+    marginTop: 30,
+  },
 })
 
 const centerMobileCss = css({

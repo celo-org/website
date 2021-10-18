@@ -15,7 +15,8 @@ import { I18nProps, withNamespaces } from "src/i18n"
 import menuItems from "src/shared/menu-items"
 import Navigation, { NavigationTheme } from "src/shared/Navigation"
 import Spinner from "src/shared/Spinner"
-import { colors, standardStyles, textStyles } from "src/styles"
+import { standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 import { cleanData } from "src/utils/validators"
 
 const networkMenu = [

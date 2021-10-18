@@ -4,7 +4,8 @@ import { Ul } from "src/fonts/Fonts"
 import { useScreenSize } from "src/layout/ScreenSize"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import OvalCoin from "src/shared/OvalCoin"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface BTNProps {
   title: string
@@ -61,19 +62,20 @@ export default React.memo(function StackSection(props: Props) {
           href={buttonOne.href}
           target={"blank"}
         />
-        {props.buttonMiddle ?
-        <>
+        {props.buttonMiddle ? (
+          <>
+            <View style={isMobile ? styles.separatorHorizontal : styles.separator} />
+            <Button
+              text={buttonMiddle.title}
+              kind={BTN.PRIMARY}
+              size={isDesktop ? SIZE.small : SIZE.normal}
+              href={buttonMiddle.href}
+              target={"blank"}
+              align="flex-start"
+            />
+          </>
+        ) : null}
         <View style={isMobile ? styles.separatorHorizontal : styles.separator} />
-         <Button
-          text={buttonMiddle.title}
-          kind={BTN.PRIMARY}
-          size={isDesktop ? SIZE.small : SIZE.normal}
-          href={buttonMiddle.href}
-          target={"blank"}
-          align="flex-start"
-        />
-        </>: null}
-       <View style={isMobile ? styles.separatorHorizontal : styles.separator} />
         <Button
           text={buttonTwo.title}
           kind={BTN.SECONDARY}

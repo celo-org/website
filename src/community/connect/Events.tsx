@@ -8,7 +8,8 @@ import Fade from "src/shared/AwesomeFade"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import OvalCoin from "src/shared/OvalCoin"
 import Spinner from "src/shared/Spinner"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 import { NoneFound, Radio, SectionHeader } from "src/table/table"
 
 interface OwnProps {
