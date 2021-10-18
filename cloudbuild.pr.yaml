@@ -12,7 +12,7 @@ steps:
     - 'DEPLOY_ENV="staging"'
 
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy", "stage.yaml", "--no-promote", "--version", "pr-$_PR_NUMBER", "--verbosity", "info"]
+    args: ["app", "deploy", "stage.yaml", "--no-promote", "--version", "pr-$_PR_NUMBER"]
     env:
     - 'DEPLOY_ENV="staging"'
 
