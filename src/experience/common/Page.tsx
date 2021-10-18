@@ -12,7 +12,8 @@ import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
 import Footer from "src/shared/Footer"
 import menu from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { colors, standardStyles } from "src/styles"
+import { standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 const FOOTER_ID = "experience-footer"
 const DISTANCE_TO_HIDE_AT = 25

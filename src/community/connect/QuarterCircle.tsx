@@ -4,7 +4,8 @@ import { StyleSheet, ViewStyle } from "react-native"
 import ringPaths from "src/community/connect/QuarterRingOfVectors"
 import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
 import { Path } from "src/shared/svg"
-import { baseCoinStyle, colors } from "src/styles"
+import { baseCoinStyle } from "src/styles"
+import { colors } from "src/colors"
 
 type Props = ScreenProps
 class QuarterCircle extends React.PureComponent<Props> {

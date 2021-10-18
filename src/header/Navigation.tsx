@@ -17,7 +17,7 @@ import menu, { CeloLinks, MAIN_MENU, MenuLink, pagePaths } from "src/shared/menu
 const MobileMenu = dynamic(import("src/shared/MobileMenu"))
 import OvalCoin from "src/shared/OvalCoin"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 const BlueBanner = dynamic(import("src/header/BlueBanner"), { loading: () => null, ssr: false })
 
 const menuItems = MAIN_MENU

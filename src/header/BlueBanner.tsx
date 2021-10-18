@@ -4,7 +4,8 @@ import useSWR from "swr"
 import { StyleSheet, Text, View } from "react-native"
 import Chevron from "src/icons/chevron"
 import { useScreenSize } from "src/layout/ScreenSize"
-import { colors, fonts, textStyles } from "src/styles"
+import { fonts, textStyles } from "src/styles"
+import { colors } from "src/colors"
 interface Props {
   link: string
   children: React.ReactNode
@@ -113,7 +114,8 @@ async function getAnnouncement(onVisibilityChange: (visible: boolean) => void) {
 }
 
 export default function Announcement(props: AnnouncementProps) {
-  const state = useSWR(["/announcement",props.onVisibilityChange], () => getAnnouncement(props.onVisibilityChange),
+  const state = useSWR(["/announcement", props.onVisibilityChange], () =>
+    getAnnouncement(props.onVisibilityChange)
   )
   const { setBannerHeight } = useScreenSize()
 

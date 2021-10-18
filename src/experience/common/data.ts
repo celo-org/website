@@ -1,4 +1,4 @@
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 export const PRIMARY_PALETTE = [
   { name: "Celo Green", hex: colors.primary },

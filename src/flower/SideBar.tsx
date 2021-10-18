@@ -6,7 +6,8 @@ import Chainlink from "src/icons/Chainlink"
 import { TweetLogo } from "src/icons/TwitterLogo"
 import { useScreenSize } from "src/layout/ScreenSize"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
-import { colors, fonts, standardStyles, textStyles, typeFaces } from "src/styles"
+import { fonts, standardStyles, textStyles, typeFaces } from "src/styles"
+import { colors } from "src/colors"
 import LightButton from "./LightButton"
 
 const WIDTH = 340

@@ -1,5 +1,5 @@
 import * as React from "react"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { css } from "@emotion/react"
 
 const VECTORS = [
@@ -21,10 +21,10 @@ export default React.memo<Props>(function LayersIllo({ activeLayer, onSelectLaye
         return (
           <path
             key={vector}
-            aria-selected={activeLayer === index }
+            aria-selected={activeLayer === index}
             d={vector}
             onClick={onPress}
-            css={ activeLayer === "all" || activeLayer === index ? activeStyle : inactiveStyle}
+            css={activeLayer === "all" || activeLayer === index ? activeStyle : inactiveStyle}
             stroke={colors.white}
             fill={"transparent"}
           />
@@ -38,18 +38,16 @@ const clickable = css({
   cursor: "pointer",
 })
 
-const  activeStyle = css(clickable,{
-    opacity: 1,
-    transform: "scale(1)",
-    transitionProperty: "opacity transform",
-    transitionDuration: "1s",
-  })
+const activeStyle = css(clickable, {
+  opacity: 1,
+  transform: "scale(1)",
+  transitionProperty: "opacity transform",
+  transitionDuration: "1s",
+})
 
-const inactiveStyle = css(clickable,{
+const inactiveStyle = css(clickable, {
   transitionProperty: "opacity transform",
   transitionDuration: "1s",
   transform: "scale(0.95) translateX(10)",
   opacity: 0.5,
 })
-
-

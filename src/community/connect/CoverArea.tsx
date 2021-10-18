@@ -9,7 +9,8 @@ import { ScreenSizes, useScreenSize } from "src/layout/ScreenSize"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import { CeloLinks } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { colors, standardStyles, textStyles } from "src/styles"
+import { standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export default React.memo(function CoverArea() {
   const { t } = useTranslation(NameSpaces.community)

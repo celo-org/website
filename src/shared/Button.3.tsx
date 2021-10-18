@@ -3,7 +3,8 @@ import { StyleSheet, Text, TextStyle, View } from "react-native"
 import Chevron from "src/icons/chevron"
 import Hoverable from "src/shared/Hoverable"
 import Link from "src/shared/Link"
-import { colors, fonts, textStyles } from "src/styles"
+import { fonts, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export enum BTN {
   PRIMARY = "PRIMARY",

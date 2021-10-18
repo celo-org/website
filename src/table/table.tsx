@@ -3,7 +3,8 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import RadioIcon from "src/icons/RadioIcon"
 import Fade from "src/shared/AwesomeFade"
 import Button, { BTN } from "src/shared/Button.3"
-import { colors, fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface RadioProps {
   selected: boolean
@@ -32,10 +33,7 @@ export function Radio({
       <View style={styles.radioRow}>
         <RadioIcon selected={selected} colorWhenSelected={colorWhenSelected} />
         <View style={styles.radioSpacer}>{icon || null}</View>
-        <Text
-          style={[fonts.p, labelColor && { color: labelColor }]}
-          accessibilityRole="label"
-        >
+        <Text style={[fonts.p, labelColor && { color: labelColor }]} accessibilityRole="label">
           {label}
         </Text>
       </View>

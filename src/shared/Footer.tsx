@@ -20,7 +20,7 @@ import RingsGlyph from "src/logos/RingsGlyph"
 import ChangeStory from "src/shared/ChangeStory"
 import FooterColumn, { LinkType } from "src/shared/FooterColumn"
 import menu, { CeloLinks, hashNav } from "src/shared/menu-items"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import {
   flex,
   flexRow,

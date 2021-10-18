@@ -1,7 +1,7 @@
 import * as React from "react"
 import Button, { BTN, PrimaryProps as ButtonProps } from "src/shared/Button.3"
 import Spinner from "src/shared/Spinner"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 interface OwnProps {
   isLoading: boolean

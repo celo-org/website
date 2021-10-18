@@ -4,7 +4,7 @@ import { brandStyles } from "src/experience/common/constants"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import Download from "src/icons/Download"
 import Button, { BTN } from "src/shared/Button.3"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 interface Props {
   uri: string
   trackingData: { name: string; type: AssetTypes }

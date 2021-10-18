@@ -2,7 +2,7 @@ import * as React from "react"
 import { StyleSheet, Text, View } from "react-native"
 import { H3 } from "src/fonts/Fonts"
 import { I18nProps, withNamespaces } from "src/i18n"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 interface Props {
   error: any

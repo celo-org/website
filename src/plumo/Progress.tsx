@@ -1,7 +1,7 @@
-import * as React from 'react'
-import {css, keyframes} from "@emotion/react"
-import { colors } from 'src/styles'
-import { WHEN_MOBILE } from 'src/estyles'
+import * as React from "react"
+import { css, keyframes } from "@emotion/react"
+import { colors } from "src/colors"
+import { WHEN_MOBILE } from "src/estyles"
 
 interface Props {
   count: number
@@ -68,7 +68,7 @@ const loadingCss = css({
   animationDirection: "alternate",
   animationFillMode: "both",
   animationDuration: "6.2s",
-  animationName: loadingFrames
+  animationName: loadingFrames,
 })
 
 const progressCSS = css({

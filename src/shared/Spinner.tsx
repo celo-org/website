@@ -5,7 +5,7 @@ const LottieBase = dynamic(import("src/animate/LottieBase"), {
   loading: () => <span>...</span>,
   ssr: false,
 })
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 interface Props {
   color: colors.white | colors.dark | colors.primary
   size: "small" | "medium"

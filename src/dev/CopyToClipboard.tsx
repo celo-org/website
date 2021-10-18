@@ -2,7 +2,7 @@ import * as React from "react"
 import { StyleSheet, Text, View } from "react-native"
 import CopyIcon from "src/icons/CopyIcon"
 import Hoverable from "src/shared/Hoverable"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { copyToClipboad } from "src/utils/utils"
 
 interface Props {

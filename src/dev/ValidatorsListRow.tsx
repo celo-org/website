@@ -7,7 +7,7 @@ import { styles } from "src/dev/ValidatorsListStyles"
 import { I18nProps, withNamespaces } from "src/i18n"
 import Checkmark from "src/icons/Checkmark"
 import Chevron, { Direction } from "src/icons/chevron"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { cutAddress, formatNumber } from "src/utils/utils"
 import { CeloGroup, isPinned, togglePin } from "src/utils/validators"
 
