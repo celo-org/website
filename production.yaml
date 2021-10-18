@@ -3,6 +3,8 @@ env: standard
 service: production
 instance_class: F4
 default_expiration: 30d
+inbound_services:
+  - warmup
 env_variables:
   NODE_ENV: 'production'
   DEPLOY_ENV: 'production'
