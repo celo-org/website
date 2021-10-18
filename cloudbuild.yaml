@@ -1,0 +1,20 @@
+steps:
+  - name: "gcr.io/cloud-builders/yarn"
+    args: ["install"]
+
+  - name: "gcr.io/cloud-builders/gcloud"
+    entrypoint: "bash"
+    args: ["scripts/key_placer.sh", "decrypt"]
+
+  - name: "gcr.io/cloud-builders/yarn"
+    args: ["build"]
+    env:
+      - 'DEPLOY_ENV=$_DEPLOY_ENV'
+
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["app", "deploy", "$_YAML_FILE.yaml", $_PROMOTE, "--version", "pr-$_PR_NUMBER", "--verbosity", "info"]
+    env:
+    - 'DEPLOY_ENV=$_DEPLOY_ENV'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
