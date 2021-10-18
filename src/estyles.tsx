@@ -243,4 +243,8 @@ export const standardStyles = {
   elementalMarginBottom: css({
     marginBottom: margins.small,
   }),
+  image: css({
+    width: "100%",
+    height: "100%",
+  }),
 }

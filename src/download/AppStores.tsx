@@ -1,31 +1,31 @@
 import * as React from "react"
-import { View } from "react-native"
-import { H1 } from "src/fonts/Fonts"
 import { Adventure } from "src/home/Adventure"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { Cell, GridRow, Spans } from "src/layout/Grid2"
 import { CeloLinks } from "src/shared/menu-items"
-import { standardStyles, textStyles } from "src/styles"
+import {
+  fonts,
+  standardStyles,
+  textStyles,
+  WHEN_DESKTOP,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+} from "src/estyles"
 import ValoraLogo from "src/icons/valora-icon.png"
 import Walletlogo from "src/icons/06-Celo-Coins-light.png"
+import Terminallogo from "./terminal-logo.png"
+import { css } from "@emotion/react"
 
 export default withNamespaces(NameSpaces.download)(
   React.memo(function AppStores({ t }: I18nProps) {
     return (
-      <View>
-        <GridRow
-          desktopStyle={standardStyles.sectionMargin}
-          tabletStyle={standardStyles.sectionMarginTablet}
-          mobileStyle={standardStyles.sectionMarginMobile}
-          allStyle={standardStyles.centered}
-        >
-          <Cell span={Spans.half}>
-            <H1 style={[textStyles.center, standardStyles.elementalMargin]} ariaLevel={"2"}>
-              {t("needRealWallet")}
-            </H1>
+      <>
+        <GridRow columns={1} css={mainStyle}>
+          <Cell span={Spans.one} css={standardStyles.centered}>
+            <h2 css={titleCss}>{t("needRealWallet")}</h2>
           </Cell>
         </GridRow>
-        <GridRow allStyle={standardStyles.centered}>
+        <GridRow columns={3} css={standardStyles.centered}>
           <Adventure
             source={ValoraLogo}
             title="Valora"
@@ -38,8 +38,24 @@ export default withNamespaces(NameSpaces.download)(
             text="For web browsers"
             link={{ text: "Go to Celo Web Wallet", href: CeloLinks.celoWebWallet }}
           />
+          <Adventure
+            source={Terminallogo}
+            title="Celo Terminal"
+            text="For mac, windows, and linux"
+            link={{ text: "Get to Celo Terminal", href: CeloLinks.celoWebWallet }}
+          />
         </GridRow>
-      </View>
+      </>
     )
   })
 )
+
+const titleCss = css(fonts.h1, textStyles.center, standardStyles.elementalMargin, {
+  maxWidth: 600,
+})
+
+const mainStyle = css(standardStyles.centered, {
+  [WHEN_MOBILE]: standardStyles.sectionMarginMobile,
+  [WHEN_TABLET]: standardStyles.sectionMarginTablet,
+  [WHEN_DESKTOP]: standardStyles.sectionMargin,
+})

@@ -2,12 +2,21 @@ import * as React from "react"
 import { css } from "@emotion/react"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { GridRow } from "src/layout/Grid2"
+import { Spans as LegacySpan } from "src/layout/GridRow"
 import SideTitledSection from "src/layout/SideTitledSection"
 import Button, { SIZE, BTN } from "src/shared/Button.3"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { standardStyles } from "src/styles"
-import { flex, flexRow, fonts as eFonts, textStyles } from "src/estyles"
+import {
+  flex,
+  flexRow,
+  fonts as eFonts,
+  textStyles,
+  WHEN_DESKTOP,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+} from "src/estyles"
 import { HelpfulLink } from "src/terms/HelpfulLink"
 import { Languages } from "src/utils/languages"
 
@@ -46,27 +55,20 @@ function PressPage(props: I18nProps & Props) {
         description={t("metaDescription")}
       />
       <div css={containerCss}>
-        <GridRow
-          allStyle={standardStyles.centered}
-          desktopStyle={standardStyles.blockMarginBottom}
-          tabletStyle={standardStyles.blockMarginBottomTablet}
-          mobileStyle={standardStyles.blockMarginBottomMobile}
-        >
-          <Cell span={Spans.three4th} style={standardStyles.centered}>
-            <h1 css={titleCss}>{t("title")}</h1>
-            <Button
-              text={t("contact")}
-              kind={BTN.NAKED}
-              size={SIZE.big}
-              href={"mailto:press@celo.org"}
-            />
-          </Cell>
+        <GridRow columns={1} css={gridCss}>
+          <h1 css={titleCss}>{t("title")}</h1>
+          <Button
+            text={t("contact")}
+            kind={BTN.NAKED}
+            size={SIZE.big}
+            href={"mailto:press@celo.org"}
+          />
         </GridRow>
         {Object.keys(formatted).map((date) => {
           return (
             <SideTitledSection
               key={date}
-              span={Spans.three4th}
+              span={LegacySpan.three4th}
               title={new Date(date).toLocaleDateString(props.i18n.language, DATE_FORMAT)}
             >
               {formatted[date].map((item) => (
@@ -85,6 +87,12 @@ function PressPage(props: I18nProps & Props) {
     </>
   )
 }
+
+const gridCss = css(standardStyles.centered, {
+  [WHEN_DESKTOP]: standardStyles.blockMarginBottom,
+  [WHEN_TABLET]: standardStyles.blockMarginBottomTablet,
+  [WHEN_MOBILE]: standardStyles.blockMarginBottomMobile,
+})
 
 const titleCss = css(eFonts.h1, {
   textAlign: "center",
