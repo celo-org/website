@@ -1,5 +1,4 @@
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
 import AppStores from "src/download/AppStores"
 import Cover from "src/download/Cover"
 import CoverActions from "src/download/CoverActions"
