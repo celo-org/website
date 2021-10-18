@@ -53,6 +53,10 @@ whenever the master branch is updated cloud build will automatically deploy a bu
 
 Before Promoting a version please manually do a sanity check to ensure website doesn't have have any unexpected weirdness.
 
+`yarn promote:prod VERSION` eg `yarn promote:prod pr-389`
+
+
+or go to https://console.cloud.google.com/appengine/versions?project=celo-org-website&serviceId=production and migrate traffic to intended version
 
 ## Dependencies
 
