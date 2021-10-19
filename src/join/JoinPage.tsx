@@ -9,6 +9,7 @@ import Fade from "src/shared/AwesomeFade"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import menuItems from "src/shared/menu-items"
 import { colors, standardStyles, textStyles } from "src/styles"
+import {css} from "@emotion/react"
 
 const DESCRIPTION =
   "Join us in building financial system that creates the conditions for prosperity for all. We are growing a team with all kinds of different perspectives, experiences and backgrounds to create products that are used and loved by people all around the world."
@@ -47,9 +48,27 @@ class JoinPage extends React.PureComponent<Props> {
                 <Fade delay={20} distance={"20px"}>
                   <Button
                     kind={BTN.PRIMARY}
-                    text={t("exploreRoles")}
+                    text={t("clabsOpenRoles")}
                     target="_blank"
                     href={"https://clabs.co/careers"}
+                    size={SIZE.big}
+                    align={"center"}
+                  />
+                  <div css={spacer}> </div>
+                  <Button
+                    kind={BTN.PRIMARY}
+                    text={t("valoraOpenRoles")}
+                    target="_blank"
+                    href={"https://valoraapp.com/careers"}
+                    size={SIZE.big}
+                    align={"center"}
+                  />
+                 <div css={spacer}> </div>
+                 <Button
+                    kind={BTN.PRIMARY}
+                    text={t("celoFoundationOpenRoles")}
+                    target="_blank"
+                    href={"https://boards.greenhouse.io/celofoundation"}
                     size={SIZE.big}
                     align={"center"}
                   />
@@ -66,6 +85,10 @@ class JoinPage extends React.PureComponent<Props> {
 
 export default withNamespaces("jobs")(JoinPage)
 
+const spacer = css({
+  width: "100%",
+  height: "1rem"
+})
 const styles = StyleSheet.create({
   container: {
     maxWidth: "100vw",
