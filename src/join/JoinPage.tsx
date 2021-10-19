@@ -54,7 +54,7 @@ class JoinPage extends React.PureComponent<Props> {
                     size={SIZE.big}
                     align={"center"}
                   />
-                  <div css={spacer}> </div>
+                  <span css={spacer} />
                   <Button
                     kind={BTN.PRIMARY}
                     text={t("valoraOpenRoles")}
@@ -63,7 +63,7 @@ class JoinPage extends React.PureComponent<Props> {
                     size={SIZE.big}
                     align={"center"}
                   />
-                 <div css={spacer}> </div>
+                 <span css={spacer} />
                  <Button
                     kind={BTN.PRIMARY}
                     text={t("celoFoundationOpenRoles")}
