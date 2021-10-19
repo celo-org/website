@@ -4,7 +4,8 @@ import { StyleSheet } from "react-native-web"
 import shuffleSeed from "shuffle-seed"
 import VECTORS from "src/community/connect/RingOfCoinVectors"
 import { Path } from "src/shared/svg"
-import { baseCoinStyle, baseCoinStyleLight, colors } from "src/styles"
+import { baseCoinStyle, baseCoinStyleLight } from "src/styles"
+import { colors } from "src/colors"
 import { randomIntegerInRange } from "src/utils/utils"
 
 const COLORS = [colors.greenScreen, colors.blueScreen, colors.redScreen, colors.purpleScreen]

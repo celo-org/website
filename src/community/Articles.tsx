@@ -5,7 +5,8 @@ import { StyleSheet, View } from "react-native"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import Card from "src/shared/Card"
 import Spinner from "src/shared/Spinner"
-import { colors, standardStyles } from "src/styles"
+import { standardStyles } from "src/styles"
+import { colors } from "src/colors"
 
 interface OwnProps {
   loading: boolean

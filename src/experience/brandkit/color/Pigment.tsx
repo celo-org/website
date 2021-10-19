@@ -5,7 +5,8 @@ import { StyleSheet, Text, View, ViewStyle } from "react-native"
 import { brandStyles } from "src/experience/common/constants"
 import CopyIcon from "src/icons/CopyIcon"
 import Hoverable from "src/shared/Hoverable"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 import { yiq } from "yiq"
 
 function hexToHumanRGB(hex: string) {

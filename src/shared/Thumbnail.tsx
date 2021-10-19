@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 import { flexRow, fonts, WHEN_DESKTOP } from "src/estyles"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import Image from "next/image"
 import { useScreenSize } from "src/layout/ScreenSize"
 

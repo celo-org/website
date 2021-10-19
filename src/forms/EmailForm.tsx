@@ -7,7 +7,7 @@ import SuccessDisplay from "src/forms/SuccessDisplay"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { SIZE } from "src/shared/Button.3"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { css } from "@emotion/react"
 import {
   flex,

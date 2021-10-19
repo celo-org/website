@@ -2,7 +2,7 @@ import * as React from "react"
 import { StyleSheet, View } from "react-native"
 import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { SubNavLink } from "./SubNavLink"
 
 export interface Section {

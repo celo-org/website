@@ -14,9 +14,10 @@
     "deploy:routes": "DIR=$(mktemp -d) && cp $DISPATCH $DIR/dispatch.yaml && gcloud app deploy $DIR/dispatch.yaml",
     "deploy:routes:prod": "gcloud config set project celo-org-website; DISPATCH=dispatch.yaml yarn run deploy:routes",
     "deploy:dev": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=development MANIFEST=development.yaml yarn run deploy",
-    "deploy:preview": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=development MANIFEST=preview.yaml yarn run deploy",
-    "deploy:stage": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=staging MANIFEST=stage.yaml yarn run deploy",
     "deploy:prod": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=production MANIFEST=production.yaml yarn run deploy",
+    "promote": "bash scripts/promote.sh",
+    "promote:dev": "yarn promote development",
+    "promote:prod": "yarn promote production",
     "view": "gcloud app browse -s $DEPLOY_ENV",
     "lint": "eslint .",
     "pretty": "prettier --config .prettierrc.json 'src/**/*.{ts,tsx}' 'pages/**/*.tsx' 'server/**/*.ts' --write",
@@ -142,7 +143,7 @@
     "typescript": "^4.4.3"
   },
   "lint-staged": {
-    "**/*.{ts,tsx,json,yaml}": [
+    "**/*.{ts,tsx,json}": [
       "eslint --cache --fix",
       "prettier --write"
     ]

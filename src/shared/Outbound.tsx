@@ -1,6 +1,6 @@
 import * as React from "react"
 import External from "src/icons/External"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 export default function Outbound({ url }: { url: string }) {
   return (

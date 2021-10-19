@@ -1,6 +1,7 @@
 import * as React from "react"
 import { ImageBackground, StyleSheet } from "react-native"
-import { colors,  standardStyles } from "src/styles"
+import { standardStyles } from "src/styles"
+import { colors } from "src/colors"
 import * as eStyles from "src/estyles"
 import { css } from "@emotion/react"
 
@@ -14,23 +15,21 @@ interface Props {
 export default React.memo(function BeautifulQuote(props: Props) {
   return (
     <ImageBackground
-      source={{uri:props.imgSource.src}}
+      source={{ uri: props.imgSource.src }}
       style={[styles.image, standardStyles.centered]}
       resizeMode={"cover"}
     >
-      <blockquote css={css(quoteCss,props.color && { color: props.color })} >
+      <blockquote css={css(quoteCss, props.color && { color: props.color })}>
         “{props.quote}”
       </blockquote>
-      <figcaption css={css(citeCss, props.color && { color: props.color })} >
+      <figcaption css={css(citeCss, props.color && { color: props.color })}>
         {props.citation}
       </figcaption>
     </ImageBackground>
   )
 })
 
-const quoteCss = css(eStyles.fonts.h1,
-  eStyles.textStyles.center,
-  {
+const quoteCss = css(eStyles.fonts.h1, eStyles.textStyles.center, {
   fontSize: 65,
   lineHeight: "72px",
   fontStyle: "italic",
@@ -39,10 +38,10 @@ const quoteCss = css(eStyles.fonts.h1,
     fontSize: 42,
     lineHeight: "50px",
     fontStyle: "italic",
-  }
+  },
 })
 
-const citeCss = css(eStyles.fonts.h1,  eStyles.textStyles.center, {
+const citeCss = css(eStyles.fonts.h1, eStyles.textStyles.center, {
   marginTop: 40,
   fontSize: 36,
   [eStyles.WHEN_MOBILE]: eStyles.fonts.h1Mobile,

@@ -2,7 +2,7 @@ import * as React from "react"
 import { StyleSheet, View } from "react-native"
 import Button, { BTN } from "src/shared/Button.3"
 import OvalCoin from "src/shared/OvalCoin"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { Kind } from "./Sidebar"
 
 interface LinkProps {

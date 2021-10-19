@@ -17,7 +17,8 @@ import { useScreenSize } from "src/layout/ScreenSize"
 import Fade from "src/shared/AwesomeFade"
 import BeautifulQuote from "src/shared/BeautifulQuote"
 import menuItems from "src/shared/menu-items"
-import { colors, standardStyles, textStyles } from "src/styles"
+import { standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 export default function Main() {
   const { t } = useTranslation(NameSpaces.alliance)

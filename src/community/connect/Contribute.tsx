@@ -5,7 +5,8 @@ import { H2 } from "src/fonts/Fonts"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
-import { colors, standardStyles, textStyles } from "src/styles"
+import { standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 
 function Contribute({ t }: I18nProps) {
   return (

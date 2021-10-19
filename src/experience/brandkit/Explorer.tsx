@@ -7,7 +7,8 @@ import { AssetTypes } from "src/experience/brandkit/tracking"
 import { brandStyles } from "src/experience/common/constants"
 import IconShowcase from "src/experience/common/Showcase"
 import { NameSpaces, useTranslation } from "src/i18n"
-import { colors, fonts } from "src/styles"
+import { fonts } from "src/styles"
+import { colors } from "src/colors"
 import { IconData, Props } from "./IconsPage"
 
 export function Explorer({ icons }: Props) {

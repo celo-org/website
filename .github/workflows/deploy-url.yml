@@ -1,0 +1,13 @@
+on: pull_request
+
+jobs:
+  deploy_url:
+    runs-on: ubuntu-latest
+    name: Print the preview url
+
+    steps:
+      - name: Comment PR
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            If all goes well this PR will be deployed and viewable at https://pr-${{github.event.number}}-dot-staging-dot-celo-org-website.uc.r.appspot.com

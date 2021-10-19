@@ -1,7 +1,7 @@
 import * as React from "react"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
-import {css, keyframes} from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
 
 export default React.memo(function PhoneIllo() {
   return (
@@ -46,9 +46,8 @@ const glowStyle = css({
   animationDuration: "5s",
   animationIterationCount: "infinite",
   animationTimingFunction: "ease-in-out",
-  animationName: glowFrames
+  animationName: glowFrames,
 })
-
 
 const VECTORS = [
   "M40.4972 129.199C40.5478 139.423 34.1538 148.185 26.2584 148.778C18.4434 149.371 12.1125 141.696 12.0628 131.657C12.0131 121.618 18.2626 112.84 26.0769 112.096C33.9552 111.318 40.4467 118.992 40.4972 129.199Z",

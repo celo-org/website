@@ -8,7 +8,7 @@ describe("Error", () => {
     const tree = renderer
       .create(
         <TestProvider>
-          <Error statusCode={404} />
+          <Error />
         </TestProvider>
       )
       .toJSON()

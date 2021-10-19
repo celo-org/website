@@ -6,7 +6,7 @@ import { css } from "@emotion/react"
 import { NameSpaces, useTranslation } from "src/i18n"
 import renderNode from "src/contentful/nodes/paragraph"
 import Chevron, { Direction } from "src/icons/chevron"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import * as React from "react"
 import useSwipe from "@odnh/use-swipe"
 import { PlaylistContentType } from "src/utils/contentful"
@@ -78,10 +78,10 @@ const buttonCss = css(fonts.navigation, {
 const headCss = css({
   gridColumn: "span 2",
   paddingBottom: 12,
-  [WHEN_MOBILE]:{
+  [WHEN_MOBILE]: {
     maxWidth: 480,
     width: "calc(100vw - 24px)",
-  }
+  },
 })
 
 const expanderContractorCss = css(flexRow, {

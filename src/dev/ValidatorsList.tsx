@@ -5,7 +5,7 @@ import { styles } from "src/dev/ValidatorsListStyles"
 import { I18nProps, withNamespaces } from "src/i18n"
 import Chevron, { Direction } from "src/icons/chevron"
 import Hoverable from "src/shared/Hoverable"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import { Address, CeloGroup, orderAccessors, sortData } from "src/utils/validators"
 
 interface HeaderCellProps {

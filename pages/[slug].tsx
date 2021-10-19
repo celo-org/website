@@ -10,7 +10,7 @@ export const getServerSideProps: GetServerSideProps = async function getServerSi
   locale,
   params,
 }) {
-  if (isBogus(params?.slug)) {
+  if (typeof params?.slug !== "string" || !VALID_SLUGS.has(params?.slug)) {
     return { notFound: true }
   }
 
@@ -27,22 +27,6 @@ export const getServerSideProps: GetServerSideProps = async function getServerSi
     },
   }
 }
-
-// filter out anything that wouldnt be a valid thing to pass to contentful.
-// strings only, no weird stuff, this isnt php, theres nothing to login to.
-function isBogus(slug: string | string[] | undefined) {
-  if (!slug) {
-    return true
-  } else if (Array.isArray(slug)) {
-    return true
-  } else if (
-    slug.startsWith(".") ||
-    slug.endsWith(".php") ||
-    slug.includes("%") ||
-    slug.includes("login") ||
-    slug.includes("admin")
-  ) {
-    return true
-  }
-  return false
-}
+// only allow these slugs, this is to prevent requests for slugs that should not exist
+// from being routed to contentful, which would bypass any caching and cause our usage to spike
+const VALID_SLUGS = new Set(["dapps", "buy"])

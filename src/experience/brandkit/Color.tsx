@@ -15,7 +15,8 @@ import SectionTitle from "src/experience/common/SectionTitle"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
 import { hashNav } from "src/shared/menu-items"
-import { colors, fonts, standardStyles } from "src/styles"
+import { fonts, standardStyles } from "src/styles"
+import { colors } from "src/colors"
 const { brandColor } = hashNav
 
 export default React.memo(

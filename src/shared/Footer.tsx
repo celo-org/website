@@ -8,7 +8,7 @@ import Instagram from "src/icons/Instagram"
 import MediumLogo from "src/icons/MediumLogo"
 import Octocat from "src/icons/Octocat"
 import LinkedIn from "src/icons/LinkedIn"
-import envelope from "src/icons/Gradient_Envelope.png"
+import envelope from "src/icons/Envelope.svg"
 import Twitch from "src/icons/Twitch"
 import Reddit from "src/icons/Reddit"
 import Telegram from "src/icons/Telegram"
@@ -20,7 +20,7 @@ import RingsGlyph from "src/logos/RingsGlyph"
 import ChangeStory from "src/shared/ChangeStory"
 import FooterColumn, { LinkType } from "src/shared/FooterColumn"
 import menu, { CeloLinks, hashNav } from "src/shared/menu-items"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 import {
   flex,
   flexRow,

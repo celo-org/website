@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 import * as React from "react"
-import { colors } from "src/styles"
+import { colors } from "src/colors"
 
 interface State {
   hasError: boolean
