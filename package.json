@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.4.0",
-    "@emotion/react": "^11.1.5",
+    "@emotion/react": "^11.5.0",
     "@hubspot/api-client": "^5.0.0",
     "@odnh/use-swipe": "^1.0.0",
     "@sentry/browser": "^6.13.2",
@@ -99,7 +99,7 @@
     "@babel/plugin-transform-react-pure-annotations": "^7.12.1",
     "@babel/preset-react": "7.9.4",
     "@celo/typescript": "^0.0.1",
-    "@emotion/jest": "^11.3.0",
+    "@emotion/jest": "^11.5.0",
     "@firebase/app-types": "0.7.0",
     "@sentry/types": "^6.2.5",
     "@testing-library/dom": "^8.6.0",
