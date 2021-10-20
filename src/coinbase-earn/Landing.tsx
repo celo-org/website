@@ -1,57 +1,53 @@
 import * as React from "react"
-import { Image, ImageSourcePropType, StyleSheet, Text, View } from "react-native"
 import Cover from "src/coinbase-earn/Cover"
 import learnLogo from "src/coinbase-earn/Learn_Light.png"
 import lesson1Image from "src/coinbase-earn/lesson1.jpg"
 import lesson2Image from "src/coinbase-earn/lesson2.jpg"
 import lesson3Image from "src/coinbase-earn/lesson3.jpg"
-import { H1, H4 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { Adventure } from "src/home/Adventure"
 import { NameSpaces, useTranslation } from "src/i18n"
 import nonProfitIMG from "src/icons/non-profit-light-bg.png"
 import sendToPhoneImg from "src/icons/sent-to-phone_light-bg.png"
 import valora from "src/icons/valora-icon.png"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { Cell, GridRow, Spans } from "src/layout/Grid2"
 import { useScreenSize } from "src/layout/ScreenSize"
 import AspectRatio from "src/shared/AspectRatio"
 import pagePaths from "src/shared/menu-items"
-import { fonts, standardStyles, textStyles } from "src/styles"
+import {
+  fonts,
+  standardStyles,
+  textStyles,
+  WHEN_DESKTOP,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+  WHEN_TABLET_AND_UP,
+} from "src/estyles"
 import { colors } from "src/colors"
+import { css } from "@emotion/react"
+import Image from "next/image"
+
+const subTitleCss = css(fonts.h4, {
+  [WHEN_TABLET_AND_UP]: css(textStyles.center, standardStyles.elementalMarginBottom),
+})
+
+const mainTitleCss = css(fonts.h1, {
+  [WHEN_MOBILE]: { marginTop: 5 },
+  [WHEN_TABLET_AND_UP]: css(textStyles.center, standardStyles.elementalMarginBottom),
+})
 
 export default function Landing() {
   const [t] = useTranslation(NameSpaces.cbe)
-  const { isMobile, isDesktop } = useScreenSize()
+  const { isMobile } = useScreenSize()
   return (
-    <View style={styles.root}>
+    <div css={rootCss}>
       <OpenGraph title={t("pageTitle")} description={t("description")} path={pagePaths.CBE.link} />
       <Cover />
-      <GridRow
-        desktopStyle={standardStyles.blockMarginTop}
-        tabletStyle={standardStyles.blockMarginTopTablet}
-        mobileStyle={standardStyles.elementalMarginTop}
-        allStyle={standardStyles.centered}
-      >
-        <Cell tabletSpan={Spans.full} span={Spans.full}>
-          <H4 style={!isMobile && [textStyles.center, standardStyles.elementalMarginBottom]}>
-            {t("subTitle")}
-          </H4>
-          <H1
-            style={
-              isMobile
-                ? [fonts.h1, { marginTop: 5 }]
-                : [textStyles.center, standardStyles.elementalMarginBottom]
-            }
-          >
-            {t("mainTitle")}
-          </H1>
-        </Cell>
+      <GridRow columns={1} css={titleAreaCss}>
+        <h4 css={subTitleCss}>{t("subTitle")}</h4>
+        <h1 css={mainTitleCss}>{t("mainTitle")}</h1>
       </GridRow>
-      <GridRow
-        desktopStyle={standardStyles.blockMarginBottom}
-        tabletStyle={standardStyles.blockMarginBottomTablet}
-        mobileStyle={standardStyles.blockMarginBottomMobile}
-      >
+      <GridRow columns={3} css={adventureAreaCss}>
         <Adventure
           source={sendToPhoneImg}
           title={t("adventure1.title")}
@@ -69,16 +65,16 @@ export default function Landing() {
           title={t("adventure3.title")}
           text={t("adventure3.text")}
           link={{ href: "https://valoraapp.com", text: t("adventure3.link") }}
-          imageStyle={isDesktop ? styles.valoraDesktop : styles.valora}
+          imageCss={valoraCss}
         />
       </GridRow>
-      <GridRow allStyle={standardStyles.elementalMarginBottom}>
-        <Cell span={Spans.full} style={!isMobile && standardStyles.centered}>
-          <Image source={learnLogo} style={styles.logo} resizeMode="contain" />
-          <H4>{t("sequenceTitle")}</H4>
+      <GridRow columns={1} css={standardStyles.elementalMarginBottom}>
+        <Cell span={Spans.one} css={!isMobile && standardStyles.centered}>
+          <Image src={learnLogo} css={logoCss} width={239} height={77} />
+          <h4 css={fonts.h4}>{t("sequenceTitle")}</h4>
         </Cell>
       </GridRow>
-      <GridRow>
+      <GridRow columns={3}>
         <ContentPreview
           title={t("lesson1")}
           time={t("minutes", { count: 3 })}
@@ -98,7 +94,7 @@ export default function Landing() {
           src={lesson3Image}
         />
       </GridRow>
-    </View>
+    </div>
   )
 }
 
@@ -106,37 +102,47 @@ interface ContentPreviewProps {
   title: string
   time: string
   href: string
-  src: ImageSourcePropType
+  src: StaticImageData
 }
 
 function ContentPreview({ title, time, href, src }: ContentPreviewProps) {
   return (
-    <Cell span={Spans.third}>
+    <Cell span={Spans.one}>
       <a href={href} target={"_blank"} rel="noreferrer">
-        <AspectRatio ratio={612 / 343} style={styles.preview}>
-          <Image style={standardStyles.image} source={src} />
+        <AspectRatio ratio={612 / 343} style={{ marginBottom: 15 }}>
+          <img css={standardStyles.image} src={src.src} />
         </AspectRatio>
       </a>
-      <Text
-        hrefAttrs={{ target: "blank", rel: "noopenner" }}
-        accessibilityRole="link"
-        href={href}
-        style={fonts.h6}
-      >
+      <a target="_blank" rel="noopenner noreferrer" href={href} css={fonts.h6}>
         {title}
-      </Text>
-      <Text style={[fonts.h6, styles.minutes]}>{time}</Text>
+      </a>
+      <h6 css={minutesCss}>{time}</h6>
     </Cell>
   )
 }
 
-const styles = StyleSheet.create({
-  root: {
-    alignItems: "center",
-  },
-  preview: { marginBottom: 15 },
-  logo: { width: 239, height: 77 },
-  valora: { height: 70, width: 70 },
-  valoraDesktop: { marginTop: 30, height: 70, width: 70 },
-  minutes: { color: colors.grayHeavy, marginTop: 2 },
+const adventureAreaCss = css({
+  [WHEN_DESKTOP]: standardStyles.blockMargin,
+  [WHEN_TABLET]: standardStyles.blockMarginBottomTablet,
+  [WHEN_MOBILE]: standardStyles.blockMarginBottomMobile,
 })
+
+const titleAreaCss = css(standardStyles.centered, {
+  [WHEN_DESKTOP]: standardStyles.blockMarginTop,
+  [WHEN_TABLET]: standardStyles.blockMarginTopTablet,
+  [WHEN_MOBILE]: standardStyles.elementalMarginTop,
+})
+
+const rootCss = css({
+  alignItems: "center",
+})
+
+const logoCss = css({ width: 239, height: 77 })
+
+const valoraCss = css({
+  height: 70,
+  width: 70,
+  [WHEN_DESKTOP]: { marginTop: 30, height: 70, width: 70 },
+})
+
+const minutesCss = css(fonts.h6, { color: colors.grayHeavy, marginTop: 2 })

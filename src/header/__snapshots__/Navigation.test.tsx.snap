@@ -199,6 +199,64 @@ exports[`Navigation renders 1`] = `
   }
 }
 
+.emotion-49 {
+  position: relative;
+  width: 18px;
+  height: 12px;
+  margin: 20px;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 30ms;
+}
+
+.emotion-49:active {
+  opacity: 0.75;
+}
+
+.emotion-50 {
+  transition-property: transform color;
+  transition-duration: 160ms;
+  position: absolute;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 2px;
+  width: 18px;
+  background-color: #2E3338;
+  background-color: #2E3338;
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.emotion-51 {
+  transition-property: transform color;
+  transition-duration: 160ms;
+  position: absolute;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 2px;
+  width: 18px;
+  background-color: #2E3338;
+  background-color: #2E3338;
+}
+
+.emotion-52 {
+  transition-property: transform color;
+  transition-duration: 160ms;
+  position: absolute;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 2px;
+  width: 18px;
+  background-color: #2E3338;
+  background-color: #2E3338;
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
 <div
   className="emotion-0"
 >
@@ -753,91 +811,17 @@ exports[`Navigation renders 1`] = `
     className="emotion-48"
   >
     <div
-      className="emotion-7"
+      className="emotion-49"
       onClick={[Function]}
-      onContextMenu={[Function]}
-      onKeyDown={[Function]}
-      style={
-        Object {
-          "MozTransitionProperty": "opacity",
-          "MozUserSelect": "none",
-          "WebkitTransitionDuration": "0s",
-          "WebkitTransitionProperty": "opacity",
-          "WebkitUserSelect": "none",
-          "cursor": "pointer",
-          "height": "12px",
-          "marginBottom": "20px",
-          "marginLeft": "20px",
-          "marginRight": "20px",
-          "marginTop": "20px",
-          "msTouchAction": "manipulation",
-          "msUserSelect": "none",
-          "touchAction": "manipulation",
-          "transitionDuration": "0s",
-          "transitionProperty": "opacity",
-          "userSelect": "none",
-          "width": "18px",
-        }
-      }
-      tabIndex="0"
     >
       <div
-        className="emotion-7"
-        style={
-          Object {
-            "MozTransitionProperty": "transform color",
-            "WebkitTransform": "translateY(-5px)",
-            "WebkitTransitionDuration": "120ms",
-            "WebkitTransitionProperty": "-webkit-transform color,transform color",
-            "backgroundColor": "rgba(46,51,56,1.00)",
-            "height": "2px",
-            "marginBottom": "2px",
-            "marginTop": "2px",
-            "position": "absolute",
-            "transform": "translateY(-5px)",
-            "transitionDuration": "120ms",
-            "transitionProperty": "-webkit-transform color,transform color",
-            "width": "18px",
-          }
-        }
+        className="emotion-50"
       />
       <div
-        className="emotion-7"
-        style={
-          Object {
-            "MozTransitionProperty": "transform color",
-            "WebkitTransitionDuration": "120ms",
-            "WebkitTransitionProperty": "-webkit-transform color,transform color",
-            "backgroundColor": "rgba(46,51,56,1.00)",
-            "height": "2px",
-            "marginBottom": "2px",
-            "marginTop": "2px",
-            "position": "absolute",
-            "transitionDuration": "120ms",
-            "transitionProperty": "-webkit-transform color,transform color",
-            "width": "18px",
-          }
-        }
+        className="emotion-51"
       />
       <div
-        className="emotion-7"
-        style={
-          Object {
-            "MozTransitionProperty": "transform color",
-            "WebkitTransform": "translateY(5px)",
-            "WebkitTransitionDuration": "120ms",
-            "WebkitTransitionProperty": "-webkit-transform color,transform color",
-            "backgroundColor": "rgba(46,51,56,1.00)",
-            "height": "2px",
-            "marginBottom": "2px",
-            "marginTop": "2px",
-            "position": "absolute",
-            "transform": "translateY(5px)",
-            "transitionDuration": "120ms",
-            "transitionProperty": "-webkit-transform color,transform color",
-            "width": "18px",
-          }
-        }
+        className="emotion-52"
       />
     </div>
   </div>

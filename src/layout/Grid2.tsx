@@ -1,4 +1,4 @@
-import { css } from "@emotion/react"
+import { css, SerializedStyles } from "@emotion/react"
 import * as React from "react"
 import { flex, WHEN_DESKTOP, WHEN_TABLET } from "src/estyles"
 import { colors } from "src/colors"
@@ -7,7 +7,8 @@ interface GridProps {
   columns: 1 | 2 | 3 | 4
   id?: string
   className?: string
-  wrapperCss?: any
+  wrapperCss?: SerializedStyles
+  css?: SerializedStyles
   children: React.ReactNode
   darkMode?: boolean
 }

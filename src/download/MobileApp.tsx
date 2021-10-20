@@ -1,5 +1,4 @@
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
 import AppStores from "src/download/AppStores"
 import Cover from "src/download/Cover"
 import CoverActions from "src/download/CoverActions"
@@ -8,12 +7,13 @@ import { CeloLinks } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { colors } from "src/colors"
 import openGraph from "src/download/ogimage-wallet.png"
-
+import { css } from "@emotion/react"
+import { flex } from "src/estyles"
 export default class MobileApp extends React.PureComponent {
   render() {
     return (
       <>
-        <View style={styles.cover}>
+        <div css={coverCss}>
           <OpenGraph
             title={"Celo Test Wallet"}
             path={CeloLinks.walletApp}
@@ -22,17 +22,15 @@ export default class MobileApp extends React.PureComponent {
           />
           <Cover />
           <CoverActions />
-        </View>
+        </div>
         <AppStores />
       </>
     )
   }
 }
 
-const styles = StyleSheet.create({
-  cover: {
-    marginTop: HEADER_HEIGHT,
-    backgroundColor: colors.dark,
-    zIndex: 10,
-  },
+const coverCss = css(flex, {
+  marginTop: HEADER_HEIGHT,
+  backgroundColor: colors.dark,
+  zIndex: 10,
 })

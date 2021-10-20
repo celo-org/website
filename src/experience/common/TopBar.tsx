@@ -63,7 +63,7 @@ export default function TopBar({ current, kitName }: Props) {
               onPress={toggleKits}
               isOpen={showingKits}
               color={colors.dark}
-              style={styles.hamburger}
+              css={hamburgerCss}
             />
           ) : (
             <View style={styles.kits}>
@@ -102,6 +102,11 @@ const Kits = React.memo(({ current }: { current: string }) => {
   )
 })
 
+const hamburgerCss = css({
+  margin: 0,
+  zIndex: 100,
+})
+
 const styles = StyleSheet.create({
   title: {
     marginLeft: 15,
@@ -120,7 +125,6 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 15,
   },
-  hamburger: { marginVertical: 0, marginHorizontal: 0, zIndex: 100 },
   rowVerticalCenter: {
     alignContent: "center",
     flexDirection: "row",
