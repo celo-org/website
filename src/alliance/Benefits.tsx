@@ -41,7 +41,6 @@ const Offering = React.memo(function _Offering({ icon, text }: OfferingProps) {
     <div css={styles.offeringRoot}>
       <div css={styles.imgContainer}>
         <Image
-          placeholder={"blur"}
           blurDataURL={icon.blurDataURL}
           layout="intrinsic"
           width={48}
