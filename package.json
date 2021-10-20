@@ -59,7 +59,7 @@
     "fuzzy-search": "^3.2.1",
     "glob": "^7.1.6",
     "graphql": "^15.6.1",
-    "helmet": "^3.23.3",
+    "helmet": "^4.6.0",
     "hex-rgba": "^1.0.2",
     "html-to-formatted-text": "^2.7.0",
     "js-cookie": "^3.0.1",
