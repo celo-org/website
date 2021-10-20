@@ -86,7 +86,7 @@ const icons = [
   {
     name: "cBRL Exchange Icon",
     description: "Full Color\n",
-    preview: "/images/marketplace-icons/icon-cBRL-color.svg",
+    preview: "/images/marketplace-icons/icon-cbrl-color.svg",
     uri: "/assets/marketplace-icons/icons-cbrl-color.zip",
   },
   {
