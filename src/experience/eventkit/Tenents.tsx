@@ -33,7 +33,7 @@ function Tenent({ body, title, description, image }: Props & Attributes) {
         <H3 style={standardStyles.elementalMarginBottom}>{title}</H3>
         <Text style={[fonts.p, standardStyles.elementalMarginBottom]}>{description}</Text>
         <AspectRatio ratio={280 / 170} style={styles.illo}>
-          <Image src={image} />
+          <Image src={image} layout={"fill"} />
         </AspectRatio>
       </View>
       <View style={styles.content}>

@@ -1,12 +1,12 @@
+import { css } from "@emotion/react"
 import * as React from "react"
-import { StyleProp, StyleSheet, TouchableOpacity, View, ViewStyle } from "react-native"
 import { colors } from "src/colors"
 
 interface Props {
   onPress: () => void
   isOpen: boolean
   color: colors
-  style?: StyleProp<ViewStyle>
+  className?: string
 }
 
 const DISTANCE = 5
@@ -14,51 +14,52 @@ const DISTANCE = 5
 export default React.memo(function Hamburger(props: Props) {
   const backgroundColor = props.color
   return (
-    <TouchableOpacity onPress={props.onPress} style={[styles.root, props.style]}>
-      <View
-        style={[
-          styles.bar,
-          props.isOpen
-            ? styles.slopeUp
-            : { backgroundColor, transform: [{ translateY: -DISTANCE }] },
+    <div onClick={props.onPress} css={rootCss} className={props.className}>
+      <div
+        css={[
+          barCss,
+          props.isOpen ? slopeUpCss : { backgroundColor, transform: `translateY(${-DISTANCE}px)` },
         ]}
       />
-      <View style={[styles.bar, props.isOpen ? styles.invisible : { backgroundColor }]} />
-      <View
-        style={[
-          styles.bar,
-          props.isOpen
-            ? styles.slopeDown
-            : { backgroundColor, transform: [{ translateY: DISTANCE }] },
+      <div css={[barCss, props.isOpen ? invisibleCss : { backgroundColor }]} />
+      <div
+        css={[
+          barCss,
+          props.isOpen ? slopeDownCss : { backgroundColor, transform: `translateY(${DISTANCE}px)` },
         ]}
       />
-    </TouchableOpacity>
+    </div>
   )
 })
 
-const styles = StyleSheet.create({
-  root: {
-    width: 18,
-    height: 12,
-    marginHorizontal: 20,
-    marginVertical: 20,
+const rootCss = css({
+  position: "relative",
+  width: 18,
+  height: 12,
+  margin: 20,
+  opacity: 1,
+  transitionProperty: "opacity",
+  transitionDuration: "30ms",
+  "&:active": {
+    opacity: 0.75,
   },
-  bar: {
-    transitionProperty: "transform color",
-    transitionDuration: "120ms",
-    position: "absolute",
-    marginVertical: 2,
-    height: 2,
-    width: 18,
-    backgroundColor: colors.dark,
-  },
-  slopeUp: {
-    transform: [{ rotate: "45deg" }],
-  },
-  slopeDown: {
-    transform: [{ rotate: "-45deg" }],
-  },
-  invisible: {
-    opacity: 0,
-  },
+})
+const barCss = css({
+  transitionProperty: "transform color",
+  transitionDuration: "160ms",
+  position: "absolute",
+  marginTop: 2,
+  marginBottom: 2,
+  height: 2,
+  width: 18,
+  backgroundColor: colors.dark,
+})
+const slopeUpCss = css({
+  transform: "rotate(45deg)",
+})
+const slopeDownCss = css({
+  transform: "rotate(-45deg)",
+})
+const invisibleCss = css({
+  opacity: 0,
 })

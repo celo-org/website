@@ -1,13 +1,21 @@
 import * as React from "react"
-import { StyleSheet, Text, View } from "react-native"
-import { H1 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { GridRow } from "src/layout/Grid2"
+import { Spans as LegacySpan } from "src/layout/GridRow"
 import SideTitledSection from "src/layout/SideTitledSection"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { fonts, standardStyles, textStyles } from "src/styles"
+import {
+  flex,
+  fonts,
+  standardStyles,
+  textStyles,
+  WHEN_DESKTOP,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+} from "src/estyles"
 import { HelpfulLink } from "./HelpfulLink"
+import { css } from "@emotion/react"
 
 interface Audit {
   auditor: string
@@ -53,32 +61,25 @@ class Audits extends React.PureComponent<I18nProps> {
           path={NameSpaces.audits}
           description={t("metaDescription")}
         />
-        <View style={styles.container}>
-          <GridRow
-            allStyle={standardStyles.centered}
-            desktopStyle={standardStyles.blockMarginBottom}
-            tabletStyle={standardStyles.blockMarginBottomTablet}
-            mobileStyle={standardStyles.blockMarginBottomMobile}
-          >
-            <Cell span={Spans.three4th} style={standardStyles.centered}>
-              <H1 style={textStyles.center}>{t("title")}</H1>
-            </Cell>
+        <div css={containerCss}>
+          <GridRow columns={1} css={gridCss}>
+            <h1 css={[fonts.h1, textStyles.center]}>{t("title")}</h1>
           </GridRow>
           {Object.keys(AUDITS).map((type) => {
             return (
-              <SideTitledSection key={type} span={Spans.three4th} title={t(type)}>
+              <SideTitledSection key={type} span={LegacySpan.three4th} title={t(type)}>
                 {AUDITS[type].map((audit: Audit) => (
-                  <View style={styles.reference} key={audit.title}>
-                    <Text style={fonts.p}>
-                      {audit.title} by <Text style={textStyles.italic}>{audit.auditor}</Text>
-                    </Text>
+                  <div css={referenceCss} key={audit.title}>
+                    <p css={fonts.body}>
+                      {audit.title} by <em css={textStyles.italic}>{audit.auditor}</em>
+                    </p>
                     {audit.link && <HelpfulLink text={t("download")} href={audit.link} />}
-                  </View>
+                  </div>
                 ))}
               </SideTitledSection>
             )
           })}
-        </View>
+        </div>
       </>
     )
   }
@@ -86,13 +87,18 @@ class Audits extends React.PureComponent<I18nProps> {
 
 export default withNamespaces(NameSpaces.audits)(Audits)
 
-const styles = StyleSheet.create({
-  container: {
-    marginTop: HEADER_HEIGHT,
-    paddingTop: HEADER_HEIGHT,
-    minHeight: 450,
-  },
-  reference: {
-    marginBottom: 20,
-  },
+const gridCss = css(standardStyles.centered, {
+  [WHEN_DESKTOP]: standardStyles.blockMarginBottom,
+  [WHEN_TABLET]: standardStyles.blockMarginBottomTablet,
+  [WHEN_MOBILE]: standardStyles.blockMarginBottomMobile,
+})
+
+const containerCss = css(flex, {
+  marginTop: HEADER_HEIGHT,
+  paddingTop: HEADER_HEIGHT,
+  minHeight: 450,
+})
+
+const referenceCss = css({
+  marginBottom: 20,
 })
