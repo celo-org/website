@@ -58,23 +58,6 @@ Array [
   align-items: center;
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-1 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-right: 24px;
-    padding-left: 24px;
-    width: 100%;
-    max-width: 982px;
-  }
-}
-
 @media (min-width: 992px) {
   .emotion-1 {
     display: grid;
@@ -115,6 +98,29 @@ Array [
 
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-1 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-1 {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
     margin-top: 40px;
     box-sizing: border-box;
     display: -webkit-box;
@@ -124,12 +130,6 @@ Array [
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-1 {
-    margin-top: 30px;
   }
 }
 
@@ -550,23 +550,6 @@ Array [
   column-gap: 24px;
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-1 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-right: 24px;
-    padding-left: 24px;
-    width: 100%;
-    max-width: 982px;
-  }
-}
-
 @media (min-width: 992px) {
   .emotion-1 {
     display: grid;
@@ -600,6 +583,23 @@ Array [
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-1 {
     margin-top: 40px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-1 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
   }
 }
 
@@ -704,6 +704,12 @@ Array [
   color: inherit;
 }
 
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-8 {
+    grid-column: span 3;
+  }
+}
+
 .emotion-8 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -714,12 +720,6 @@ Array [
   -ms-flex-direction: column;
   flex-direction: column;
   grid-column: span 2;
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-8 {
-    grid-column: span 3;
-  }
 }
 
 .emotion-9 {
@@ -2870,23 +2870,6 @@ Array [
   column-gap: 24px;
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-1 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-right: 24px;
-    padding-left: 24px;
-    width: 100%;
-    max-width: 982px;
-  }
-}
-
 @media (min-width: 992px) {
   .emotion-1 {
     display: grid;
@@ -2911,10 +2894,20 @@ Array [
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .emotion-1 {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
   }
 }
 
@@ -2929,6 +2922,13 @@ Array [
   .emotion-1 {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 

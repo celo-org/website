@@ -60,16 +60,6 @@ exports[`HomePage renders 1`] = `
   padding-top: 50px;
 }
 
-@media (max-width: 576px) {
-  .emotion-1 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    min-height: calc(100vh);
-  }
-}
-
 @media (max-height: 568px) {
   .emotion-1 {
     -webkit-box-pack: end;
@@ -102,39 +92,17 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-2 {
-  top: 0;
-  position: absolute;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 50ms;
-  animation-delay: 50ms;
-  -webkit-animation-duration: 6s;
-  animation-duration: 6s;
-  -webkit-animation-name: animation-0;
-  animation-name: animation-0;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  opacity: 0.1;
-  width: 100%;
-  background-color: #2E3338;
-  height: calc(100% - 50px);
-}
-
-@media (max-width: 400px) and (min-height: 790px) {
-  .emotion-2 {
-    background-image: url(/image.png);
-    top: 0;
-    min-height: 100vh;
+@media (max-width: 576px) {
+  .emotion-1 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    min-height: calc(100vh);
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 400px) and (min-height: 790px) {
   .emotion-2 {
     background-image: url(/image.png);
     top: 0;
@@ -160,20 +128,36 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 10;
+.emotion-2 {
+  top: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 50ms;
+  animation-delay: 50ms;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-name: animation-0;
+  animation-name: animation-0;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  opacity: 0.1;
+  width: 100%;
+  background-color: #2E3338;
+  height: calc(100% - 50px);
+}
+
+@media (max-width: 576px) {
+  .emotion-2 {
+    background-image: url(/image.png);
+    top: 0;
+    min-height: 100vh;
+  }
 }
 
 @media (min-width: 992px) {
@@ -197,7 +181,8 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-4 {
+.emotion-3 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -209,11 +194,7 @@ exports[`HomePage renders 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 660px;
-  width: 90vw;
-  margin-bottom: 0;
-  padding: 24px;
-  position: relative;
+  z-index: 10;
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
@@ -234,6 +215,25 @@ exports[`HomePage renders 1`] = `
   .emotion-4 {
     padding-top: 60px;
   }
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 660px;
+  width: 90vw;
+  margin-bottom: 0;
+  padding: 24px;
+  position: relative;
 }
 
 .emotion-5 {
@@ -425,13 +425,13 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .emotion-10 {
     grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 992px) {
   .emotion-10 {
     grid-template-columns: 1fr;
   }
