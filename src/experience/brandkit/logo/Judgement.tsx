@@ -1,8 +1,9 @@
 import * as React from "react"
-import { Image, StyleSheet, View } from "react-native"
 import { GAP } from "src/experience/common/constants"
-import { standardStyles } from "src/styles"
-
+import { standardStyles } from "src/estyles"
+import Check from "src/experience/brandkit/images/Check.png"
+import X from "src/experience/brandkit/images/X.png"
+import { css } from "@emotion/react"
 export enum Value {
   Good,
   Bad,
@@ -15,28 +16,18 @@ interface Props {
 
 export default function Judgement({ is, children }: Props) {
   return (
-    <View style={[styles.box, standardStyles.elementalMarginTop]}>
-      <Image
-        style={styles.image}
-        source={
-          is === Value.Bad
-            ? require("src/experience/brandkit/images/X.png")
-            : require("src/experience/brandkit/images/Check.png")
-        }
-      />
+    <div css={boxCss}>
+      <img css={judgementalCss} width={24} height={24} src={is === Value.Bad ? X.src : Check.src} />
       {children}
-    </View>
+    </div>
   )
 }
 
-const styles = StyleSheet.create({
-  box: {
-    paddingHorizontal: GAP,
-    flex: 1,
-  },
-  image: {
-    height: 24,
-    width: 24,
-    marginVertical: 5,
-  },
+const boxCss = css(standardStyles.elementalMarginTop, {
+  paddingTop: GAP,
+  paddingBottom: GAP,
+  flex: 1,
+})
+const judgementalCss = css({
+  margin: "5px 0px",
 })

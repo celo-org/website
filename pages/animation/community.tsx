@@ -4,7 +4,7 @@ import FullCircle from "src/community/connect/FullCircle"
 import OpenGraph from "src/header/OpenGraph"
 import LogoCombinedColor from "src/logos/LogoDarkBg"
 import { colors } from "src/colors"
-const preview = require("src/community/connect/preview.jpg")
+import preview from "src/community/connect/preview.jpg"
 export default class CommunityDemo extends React.PureComponent {
   render() {
     return (
@@ -13,7 +13,7 @@ export default class CommunityDemo extends React.PureComponent {
           path="/animation/community"
           title={"Celo Community Animation Demo"}
           description={"Rising Coins"}
-          image={preview}
+          image={preview.src}
         />
         <View style={styles.fullScreen}>
           <FullCircle lightBackground={false} />

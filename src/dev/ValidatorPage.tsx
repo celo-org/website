@@ -7,14 +7,14 @@ import FullStack from "src/dev/FullStack"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import menuItems from "src/shared/menu-items"
-const previewImage = require("src/dev/opengraph.jpg")
+import previewImage from "src/dev/opengraph.jpg"
 
 class ValidatorPage extends React.PureComponent<I18nProps> {
   render() {
     return (
       <View style={styles.container}>
         <OpenGraph
-          image={previewImage}
+          image={previewImage.src}
           path={menuItems.BUILD.link}
           title={"Celo Validators"}
           description={"Learn how to run a node on Celo’s peer-to-peer network"}
