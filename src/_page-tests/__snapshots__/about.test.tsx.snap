@@ -2798,6 +2798,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -2812,6 +2813,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -2852,6 +2859,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -2866,6 +2874,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -2906,6 +2920,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -2920,6 +2935,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -2995,6 +3016,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3009,6 +3031,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3049,6 +3077,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3063,6 +3092,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3103,6 +3138,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3117,6 +3153,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3157,6 +3199,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3171,6 +3214,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3211,6 +3260,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3225,6 +3275,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3475,6 +3531,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3489,6 +3546,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3529,6 +3592,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3543,6 +3607,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3583,6 +3653,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3597,6 +3668,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3637,6 +3714,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3651,6 +3729,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3691,6 +3775,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3705,6 +3790,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3745,6 +3836,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3759,6 +3851,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
@@ -3869,6 +3967,7 @@ Change the story.
               style={
                 Object {
                   "backgroundColor": "rgba(0,0,0,0.00)",
+                  "backgroundImage": "url(\\"/image.png\\")",
                   "backgroundPosition": "center",
                   "backgroundRepeat": "no-repeat",
                   "backgroundSize": "contain",
@@ -3883,6 +3982,12 @@ Change the story.
                 }
               }
               suppressHydrationWarning={true}
+            />
+            <img
+              alt=""
+              className="emotion-5"
+              draggable={false}
+              src="/image.png"
             />
           </div>
         </div>
