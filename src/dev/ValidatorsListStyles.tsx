@@ -1,6 +1,24 @@
 import { StyleSheet } from "react-native"
 import { typeFaces } from "src/styles"
 import { colors } from "src/colors"
+import { css } from "@emotion/react"
+import { flex } from "src/estyles"
+
+export const emotionStyles = {
+  tableCell: css(flex, {
+    padding: "12px 10px",
+    fontSize: 16,
+    flexGrow: 0,
+  }),
+  pinContainer: css({
+    alignSelf: "flex-start",
+    paddingTop: 16,
+    cursor: "pointer",
+  }),
+  sizeXXS: css({ minWidth: 30, maxWidth: 30 }),
+}
+
+// styles.tableCell, styles.pinContainer, styles.sizeXXS
 
 export const styles = StyleSheet.create({
   pStatic: {

@@ -105,34 +105,6 @@ export const orderAccessors = {
 }
 
 /**
- * Determines whether a validator is pinned
- * Pinned validators are set to the top of the table, regardless of how the table is sorted
- * @param  {Address}    address The address of a given Validator
- * @return {number}     1 if the address is pinned, 0 if not
- */
-export function isPinned(address: Address) {
-  const list = (localStorage.getItem(localStoragePinnedKey) || "").split(",") || []
-  return +list.includes(address)
-}
-
-/**
- * Toggles the pinned status of a validator
- * Pinned validators are set to the top of the table, regardless of how the table is sorted
- * @param {Address}     address The address of a given Validator
- * @return {boolean}    Whether the given validator is pinned
- */
-export function togglePin(address: Address) {
-  let list = (localStorage.getItem(localStoragePinnedKey) || "").split(",") || []
-  const pinned = list.includes(address)
-  if (!pinned) {
-    list.push(address)
-  } else {
-    list = list.filter((_) => _ !== address)
-  }
-  localStorage.setItem(localStoragePinnedKey, list.join(","))
-}
-
-/**
  * Formats data into usable data for table
  * @param {ValidatorsListData}   data.celoValidatorGroups The validator groups data
  * @param {ValidatorsListData}   data.latestBlock The height of the latest block
@@ -170,7 +142,6 @@ export function cleanData({ celoValidatorGroups, latestBlock }: ValidatorsListDa
           attestation: Math.max(0, totalFulfilled / (totalRequested || -1)) * 100,
           // Randomizes the order of validators on every load
           order: Math.random(),
-          pinned: isPinned(account.address),
           name: account.name,
           address: account.address,
           usd: weiToDecimal(+account.usd),
@@ -239,7 +210,7 @@ export function cleanData({ celoValidatorGroups, latestBlock }: ValidatorsListDa
  * @param {string}        key The key to sort by (e.g. name, votes, lockedCelo, etc)
  * @return {CeloGroup[]}  The group of validators with formatted data
  */
-export function sortData(data: CeloGroup[], asc: boolean, key: string) {
+export function sortData(data: CeloGroup[], asc: boolean, key: string, pins: Set<string>) {
   const accessor = orderAccessors[key]
   const dir = asc ? 1 : -1
 
@@ -253,7 +224,11 @@ export function sortData(data: CeloGroup[], asc: boolean, key: string) {
     return a > b ? 1 : -1
   }
 
+  const pinSort = (address: string) => {
+    return pins.has(address) ? -1 : 1
+  }
+
   return data
     .sort((a, b) => dir * compare(accessor(a), accessor(b)))
-    .sort((a, b) => isPinned(b.address) - isPinned(a.address))
+    .sort((a, b) => pinSort(a.address) - pinSort(b.address))
 }
