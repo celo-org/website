@@ -8,7 +8,8 @@ import Rise from "src/join/Rise"
 import Fade from "src/shared/AwesomeFade"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import menuItems from "src/shared/menu-items"
-import { colors, standardStyles, textStyles } from "src/styles"
+import { standardStyles, textStyles } from "src/styles"
+import { colors } from "src/colors"
 import {css} from "@emotion/react"
 
 const DESCRIPTION =
