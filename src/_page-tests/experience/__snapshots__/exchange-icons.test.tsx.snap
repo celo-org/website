@@ -48,11 +48,48 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   text-decoration: none;
 }
 
-.emotion-115 {
+.emotion-93 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.emotion-94 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.emotion-111 {
+  min-height: 75vh;
+}
+
+.emotion-112 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-114 {
   opacity: 0;
 }
 
-.emotion-260 {
+.emotion-294 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -72,7 +109,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   width: 100%;
 }
 
-.emotion-261 {
+.emotion-295 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -101,7 +138,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-261 {
+  .emotion-295 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -118,7 +155,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-261 {
+  .emotion-295 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -130,36 +167,36 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-261 {
+  .emotion-295 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-261 {
+  .emotion-295 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-261 {
+  .emotion-295 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-261 {
+  .emotion-295 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-261 {
+  .emotion-295 {
     margin-top: 30px;
   }
 }
 
-.emotion-262 {
+.emotion-296 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -172,12 +209,12 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-262 {
+  .emotion-296 {
     grid-column: span 3;
   }
 }
 
-.emotion-263 {
+.emotion-297 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -190,7 +227,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-263 {
+  .emotion-297 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -203,7 +240,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   }
 }
 
-.emotion-264 {
+.emotion-298 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -216,7 +253,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-264 {
+  .emotion-298 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -228,7 +265,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   }
 }
 
-.emotion-265 {
+.emotion-299 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -245,16 +282,16 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-265 {
+  .emotion-299 {
     text-align: center;
   }
 }
 
-.emotion-267 {
+.emotion-301 {
   color: inherit;
 }
 
-.emotion-268 {
+.emotion-302 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -267,12 +304,12 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-268 {
+  .emotion-302 {
     grid-column: span 3;
   }
 }
 
-.emotion-269 {
+.emotion-303 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -288,21 +325,21 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-269 {
+  .emotion-303 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-270 {
+.emotion-304 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-270 {
+  .emotion-304 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -310,7 +347,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   }
 }
 
-.emotion-271 {
+.emotion-305 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -325,18 +362,18 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-272 {
+.emotion-306 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-312 {
+.emotion-346 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-312 {
+  .emotion-346 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -344,14 +381,14 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   }
 }
 
-.emotion-386 {
+.emotion-420 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-386 {
+  .emotion-420 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -359,7 +396,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   }
 }
 
-.emotion-455 {
+.emotion-489 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -388,7 +425,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-455 {
+  .emotion-489 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -405,7 +442,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-455 {
+  .emotion-489 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -417,39 +454,39 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-455 {
+  .emotion-489 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-455 {
+  .emotion-489 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-455 {
+  .emotion-489 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-455 {
+  .emotion-489 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-455 {
+  .emotion-489 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-456 {
+.emotion-490 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -467,7 +504,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-456 {
+  .emotion-490 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -482,7 +519,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   }
 }
 
-.emotion-457 {
+.emotion-491 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -496,7 +533,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-457 {
+  .emotion-491 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -508,31 +545,31 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   }
 }
 
-.emotion-458 {
+.emotion-492 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-458 {
+  .emotion-492 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-459 {
+.emotion-493 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-459 {
+  .emotion-493 {
     display: none;
   }
 }
 
-.emotion-460 {
+.emotion-494 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -544,7 +581,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   position: relative;
 }
 
-.emotion-461 {
+.emotion-495 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -571,7 +608,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-462 {
+.emotion-496 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -594,12 +631,12 @@ exports[`Experience/ExchangeIcons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-462 {
+  .emotion-496 {
     text-align: center;
   }
 }
 
-.emotion-463 {
+.emotion-497 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -624,7 +661,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-464 {
+.emotion-498 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2050,22 +2087,10 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           id="overview"
         >
           <div
-            className="emotion-0"
-            style={
-              Object {
-                "paddingLeft": "10px",
-                "paddingRight": "10px",
-              }
-            }
+            className="emotion-93"
           >
             <div
-              className="emotion-0"
-              style={
-                Object {
-                  "marginLeft": "10px",
-                  "marginRight": "10px",
-                }
-              }
+              className="emotion-94"
             >
               <div>
                 <h1
@@ -2257,32 +2282,12 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-0"
-              style={
-                Object {
-                  "minHeight": "75vh",
-                }
-              }
+              className="emotion-111"
             >
               <div
-                className="emotion-0"
-                style={
-                  Object {
-                    "WebkitBoxDirection": "normal",
-                    "WebkitBoxLines": "multiple",
-                    "WebkitBoxOrient": "horizontal",
-                    "WebkitFlexDirection": "row",
-                    "WebkitFlexWrap": "wrap",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "msFlexDirection": "row",
-                    "msFlexWrap": "wrap",
-                  }
-                }
+                className="emotion-112"
               >
-                <div
-                  className="emotion-0"
-                >
+                <div>
                   <div
                     className="emotion-0"
                     style={
@@ -2295,7 +2300,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="emotion-115"
+                      className="emotion-114"
                     >
                       <div
                         className="emotion-0"
@@ -2525,9 +2530,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     </div>
                   </div>
                 </div>
-                <div
-                  className="emotion-0"
-                >
+                <div>
                   <div
                     className="emotion-0"
                     style={
@@ -2540,506 +2543,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="emotion-115"
-                    >
-                      <div
-                        className="emotion-0"
-                      >
-                        <div
-                          className="emotion-0"
-                          style={
-                            Object {
-                              "marginBottom": "20px",
-                              "marginRight": "40px",
-                              "marginTop": "20px",
-                            }
-                          }
-                        >
-                          <div
-                            className="emotion-0"
-                            style={
-                              Object {
-                                "display": "block",
-                                "overflowX": "hidden",
-                                "overflowY": "hidden",
-                              }
-                            }
-                          >
-                            <div
-                              style={
-                                Object {
-                                  "display": "block",
-                                  "paddingBottom": "100%",
-                                  "width": "100%",
-                                }
-                              }
-                            />
-                            <div
-                              style={
-                                Object {
-                                  "bottom": "0px",
-                                  "height": "100%",
-                                  "left": "0px",
-                                  "position": "absolute",
-                                  "top": "0px",
-                                  "width": "100%",
-                                }
-                              }
-                            >
-                              <div
-                                aria-label="Preview of cUSD Exchange Icon"
-                                className="emotion-0"
-                                style={
-                                  Object {
-                                    "WebkitFlexBasis": "auto",
-                                    "borderBottomLeftRadius": "60px",
-                                    "borderBottomRightRadius": "60px",
-                                    "borderTopLeftRadius": "60px",
-                                    "borderTopRightRadius": "60px",
-                                    "flexBasis": "auto",
-                                    "height": "100%",
-                                    "msFlexPreferredSize": "auto",
-                                    "overflowX": "hidden",
-                                    "overflowY": "hidden",
-                                    "width": "100%",
-                                    "zIndex": 0,
-                                  }
-                                }
-                              >
-                                <div
-                                  className="emotion-0"
-                                  style={
-                                    Object {
-                                      "backgroundColor": "rgba(0,0,0,0.00)",
-                                      "backgroundPosition": "center",
-                                      "backgroundRepeat": "no-repeat",
-                                      "backgroundSize": "contain",
-                                      "bottom": "0px",
-                                      "height": "100%",
-                                      "left": "0px",
-                                      "position": "absolute",
-                                      "right": "0px",
-                                      "top": "0px",
-                                      "width": "100%",
-                                      "zIndex": -1,
-                                    }
-                                  }
-                                  suppressHydrationWarning={true}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="emotion-0"
-                          style={
-                            Object {
-                              "WebkitFlex": 1,
-                              "flex": 1,
-                              "msFlex": "1 1 0%",
-                            }
-                          }
-                        >
-                          <div
-                            className="emotion-9"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "lineHeight": "18px",
-                                "marginBottom": "5px",
-                                "marginTop": "5px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            cUSD Exchange Icon
-                          </div>
-                          <div
-                            className="emotion-9"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                                "fontSize": "16px",
-                                "lineHeight": "20px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            Full Color
-
-                          </div>
-                        </div>
-                        <div
-                          className="emotion-0"
-                          onClick={[Function]}
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseUp={[Function]}
-                        >
-                          <a
-                            className="emotion-14 emotion-15 emotion-9"
-                            dir="auto"
-                            href="/assets/marketplace-icons/icon-cusd-color-v2.zip"
-                            onClick={[Function]}
-                            onMouseEnter={[Function]}
-                            role="link"
-                            style={
-                              Object {
-                                "WebkitAlignItems": "center",
-                                "WebkitBoxAlign": "center",
-                                "WebkitBoxFlex": 0,
-                                "WebkitBoxPack": "start",
-                                "WebkitFlexGrow": 0,
-                                "WebkitJustifyContent": "flex-start",
-                                "alignItems": "center",
-                                "backgroundColor": "rgba(0,0,0,0.00)",
-                                "borderBottomColor": "rgba(0,0,0,0.00)",
-                                "borderLeftColor": "rgba(0,0,0,0.00)",
-                                "borderRightColor": "rgba(0,0,0,0.00)",
-                                "borderTopColor": "rgba(0,0,0,0.00)",
-                                "color": "rgba(53,208,127,1.00)",
-                                "cursor": "pointer",
-                                "display": "inline-flex",
-                                "flexGrow": 0,
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "justifyContent": "flex-start",
-                                "lineHeight": "16px",
-                                "minWidth": "150px",
-                                "msFlexAlign": "center",
-                                "msFlexPack": "start",
-                                "msFlexPositive": 0,
-                                "opacity": 1,
-                                "outlineColor": "transparent",
-                                "paddingBottom": "10px",
-                                "paddingLeft": "0px",
-                                "paddingRight": "20px",
-                                "paddingTop": "10px",
-                                "textAlign": "center",
-                                "textRendering": "geometricPrecision",
-                                "width": "fit-content",
-                              }
-                            }
-                          >
-                            Download
-                            <div
-                              className="emotion-0"
-                              style={
-                                Object {
-                                  "display": "inline-flex",
-                                  "paddingLeft": "8px",
-                                }
-                              }
-                            >
-                              <svg
-                                fill="none"
-                                height={12}
-                                viewBox="0 0 10 13"
-                                width={12}
-                              >
-                                <path
-                                  d="M0 12H10"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                                <path
-                                  d="M5 0V9"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                                <path
-                                  d="M1 5L5 9L9 5"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="emotion-0"
-                >
-                  <div
-                    className="emotion-0"
-                    style={
-                      Object {
-                        "marginLeft": "10px",
-                        "marginRight": "10px",
-                        "marginTop": "20px",
-                        "width": "160px",
-                      }
-                    }
-                  >
-                    <div
-                      className="emotion-115"
-                    >
-                      <div
-                        className="emotion-0"
-                      >
-                        <div
-                          className="emotion-0"
-                          style={
-                            Object {
-                              "marginBottom": "20px",
-                              "marginRight": "40px",
-                              "marginTop": "20px",
-                            }
-                          }
-                        >
-                          <div
-                            className="emotion-0"
-                            style={
-                              Object {
-                                "display": "block",
-                                "overflowX": "hidden",
-                                "overflowY": "hidden",
-                              }
-                            }
-                          >
-                            <div
-                              style={
-                                Object {
-                                  "display": "block",
-                                  "paddingBottom": "100%",
-                                  "width": "100%",
-                                }
-                              }
-                            />
-                            <div
-                              style={
-                                Object {
-                                  "bottom": "0px",
-                                  "height": "100%",
-                                  "left": "0px",
-                                  "position": "absolute",
-                                  "top": "0px",
-                                  "width": "100%",
-                                }
-                              }
-                            >
-                              <div
-                                aria-label="Preview of cEUR Exchange Icon"
-                                className="emotion-0"
-                                style={
-                                  Object {
-                                    "WebkitFlexBasis": "auto",
-                                    "borderBottomLeftRadius": "60px",
-                                    "borderBottomRightRadius": "60px",
-                                    "borderTopLeftRadius": "60px",
-                                    "borderTopRightRadius": "60px",
-                                    "flexBasis": "auto",
-                                    "height": "100%",
-                                    "msFlexPreferredSize": "auto",
-                                    "overflowX": "hidden",
-                                    "overflowY": "hidden",
-                                    "width": "100%",
-                                    "zIndex": 0,
-                                  }
-                                }
-                              >
-                                <div
-                                  className="emotion-0"
-                                  style={
-                                    Object {
-                                      "backgroundColor": "rgba(0,0,0,0.00)",
-                                      "backgroundPosition": "center",
-                                      "backgroundRepeat": "no-repeat",
-                                      "backgroundSize": "contain",
-                                      "bottom": "0px",
-                                      "height": "100%",
-                                      "left": "0px",
-                                      "position": "absolute",
-                                      "right": "0px",
-                                      "top": "0px",
-                                      "width": "100%",
-                                      "zIndex": -1,
-                                    }
-                                  }
-                                  suppressHydrationWarning={true}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="emotion-0"
-                          style={
-                            Object {
-                              "WebkitFlex": 1,
-                              "flex": 1,
-                              "msFlex": "1 1 0%",
-                            }
-                          }
-                        >
-                          <div
-                            className="emotion-9"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "lineHeight": "18px",
-                                "marginBottom": "5px",
-                                "marginTop": "5px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            cEUR Exchange Icon
-                          </div>
-                          <div
-                            className="emotion-9"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                                "fontSize": "16px",
-                                "lineHeight": "20px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            Full Color
-
-                          </div>
-                        </div>
-                        <div
-                          className="emotion-0"
-                          onClick={[Function]}
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseUp={[Function]}
-                        >
-                          <a
-                            className="emotion-14 emotion-15 emotion-9"
-                            dir="auto"
-                            href="/assets/marketplace-icons/icon-cEUR-color.zip"
-                            onClick={[Function]}
-                            onMouseEnter={[Function]}
-                            role="link"
-                            style={
-                              Object {
-                                "WebkitAlignItems": "center",
-                                "WebkitBoxAlign": "center",
-                                "WebkitBoxFlex": 0,
-                                "WebkitBoxPack": "start",
-                                "WebkitFlexGrow": 0,
-                                "WebkitJustifyContent": "flex-start",
-                                "alignItems": "center",
-                                "backgroundColor": "rgba(0,0,0,0.00)",
-                                "borderBottomColor": "rgba(0,0,0,0.00)",
-                                "borderLeftColor": "rgba(0,0,0,0.00)",
-                                "borderRightColor": "rgba(0,0,0,0.00)",
-                                "borderTopColor": "rgba(0,0,0,0.00)",
-                                "color": "rgba(53,208,127,1.00)",
-                                "cursor": "pointer",
-                                "display": "inline-flex",
-                                "flexGrow": 0,
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "justifyContent": "flex-start",
-                                "lineHeight": "16px",
-                                "minWidth": "150px",
-                                "msFlexAlign": "center",
-                                "msFlexPack": "start",
-                                "msFlexPositive": 0,
-                                "opacity": 1,
-                                "outlineColor": "transparent",
-                                "paddingBottom": "10px",
-                                "paddingLeft": "0px",
-                                "paddingRight": "20px",
-                                "paddingTop": "10px",
-                                "textAlign": "center",
-                                "textRendering": "geometricPrecision",
-                                "width": "fit-content",
-                              }
-                            }
-                          >
-                            Download
-                            <div
-                              className="emotion-0"
-                              style={
-                                Object {
-                                  "display": "inline-flex",
-                                  "paddingLeft": "8px",
-                                }
-                              }
-                            >
-                              <svg
-                                fill="none"
-                                height={12}
-                                viewBox="0 0 10 13"
-                                width={12}
-                              >
-                                <path
-                                  d="M0 12H10"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                                <path
-                                  d="M5 0V9"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                                <path
-                                  d="M1 5L5 9L9 5"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="emotion-0"
-                  style={
-                    Object {
-                      "display": "block",
-                      "width": "100%",
-                    }
-                  }
-                />
-                <div
-                  className="emotion-0"
-                >
-                  <div
-                    className="emotion-0"
-                    style={
-                      Object {
-                        "marginLeft": "10px",
-                        "marginRight": "10px",
-                        "marginTop": "20px",
-                        "width": "160px",
-                      }
-                    }
-                  >
-                    <div
-                      className="emotion-115"
+                      className="emotion-114"
                     >
                       <div
                         className="emotion-0"
@@ -3270,9 +2774,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     </div>
                   </div>
                 </div>
-                <div
-                  className="emotion-0"
-                >
+                <div>
                   <div
                     className="emotion-0"
                     style={
@@ -3285,508 +2787,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="emotion-115"
-                    >
-                      <div
-                        className="emotion-0"
-                      >
-                        <div
-                          className="emotion-0"
-                          style={
-                            Object {
-                              "marginBottom": "20px",
-                              "marginRight": "40px",
-                              "marginTop": "20px",
-                            }
-                          }
-                        >
-                          <div
-                            className="emotion-0"
-                            style={
-                              Object {
-                                "display": "block",
-                                "overflowX": "hidden",
-                                "overflowY": "hidden",
-                              }
-                            }
-                          >
-                            <div
-                              style={
-                                Object {
-                                  "display": "block",
-                                  "paddingBottom": "100%",
-                                  "width": "100%",
-                                }
-                              }
-                            />
-                            <div
-                              style={
-                                Object {
-                                  "bottom": "0px",
-                                  "height": "100%",
-                                  "left": "0px",
-                                  "position": "absolute",
-                                  "top": "0px",
-                                  "width": "100%",
-                                }
-                              }
-                            >
-                              <div
-                                aria-label="Preview of cUSD Exchange Icon"
-                                className="emotion-0"
-                                style={
-                                  Object {
-                                    "WebkitFlexBasis": "auto",
-                                    "borderBottomLeftRadius": "60px",
-                                    "borderBottomRightRadius": "60px",
-                                    "borderTopLeftRadius": "60px",
-                                    "borderTopRightRadius": "60px",
-                                    "boxShadow": "inset 0 0 0 1px #D1D5D8",
-                                    "flexBasis": "auto",
-                                    "height": "100%",
-                                    "msFlexPreferredSize": "auto",
-                                    "overflowX": "hidden",
-                                    "overflowY": "hidden",
-                                    "width": "100%",
-                                    "zIndex": 0,
-                                  }
-                                }
-                              >
-                                <div
-                                  className="emotion-0"
-                                  style={
-                                    Object {
-                                      "backgroundColor": "rgba(0,0,0,0.00)",
-                                      "backgroundPosition": "center",
-                                      "backgroundRepeat": "no-repeat",
-                                      "backgroundSize": "contain",
-                                      "bottom": "0px",
-                                      "height": "100%",
-                                      "left": "0px",
-                                      "position": "absolute",
-                                      "right": "0px",
-                                      "top": "0px",
-                                      "width": "100%",
-                                      "zIndex": -1,
-                                    }
-                                  }
-                                  suppressHydrationWarning={true}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="emotion-0"
-                          style={
-                            Object {
-                              "WebkitFlex": 1,
-                              "flex": 1,
-                              "msFlex": "1 1 0%",
-                            }
-                          }
-                        >
-                          <div
-                            className="emotion-9"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "lineHeight": "18px",
-                                "marginBottom": "5px",
-                                "marginTop": "5px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            cUSD Exchange Icon
-                          </div>
-                          <div
-                            className="emotion-9"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                                "fontSize": "16px",
-                                "lineHeight": "20px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            Monochrome
-
-                          </div>
-                        </div>
-                        <div
-                          className="emotion-0"
-                          onClick={[Function]}
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseUp={[Function]}
-                        >
-                          <a
-                            className="emotion-14 emotion-15 emotion-9"
-                            dir="auto"
-                            href="/assets/marketplace-icons/icon-cusd-mono-v2.zip"
-                            onClick={[Function]}
-                            onMouseEnter={[Function]}
-                            role="link"
-                            style={
-                              Object {
-                                "WebkitAlignItems": "center",
-                                "WebkitBoxAlign": "center",
-                                "WebkitBoxFlex": 0,
-                                "WebkitBoxPack": "start",
-                                "WebkitFlexGrow": 0,
-                                "WebkitJustifyContent": "flex-start",
-                                "alignItems": "center",
-                                "backgroundColor": "rgba(0,0,0,0.00)",
-                                "borderBottomColor": "rgba(0,0,0,0.00)",
-                                "borderLeftColor": "rgba(0,0,0,0.00)",
-                                "borderRightColor": "rgba(0,0,0,0.00)",
-                                "borderTopColor": "rgba(0,0,0,0.00)",
-                                "color": "rgba(53,208,127,1.00)",
-                                "cursor": "pointer",
-                                "display": "inline-flex",
-                                "flexGrow": 0,
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "justifyContent": "flex-start",
-                                "lineHeight": "16px",
-                                "minWidth": "150px",
-                                "msFlexAlign": "center",
-                                "msFlexPack": "start",
-                                "msFlexPositive": 0,
-                                "opacity": 1,
-                                "outlineColor": "transparent",
-                                "paddingBottom": "10px",
-                                "paddingLeft": "0px",
-                                "paddingRight": "20px",
-                                "paddingTop": "10px",
-                                "textAlign": "center",
-                                "textRendering": "geometricPrecision",
-                                "width": "fit-content",
-                              }
-                            }
-                          >
-                            Download
-                            <div
-                              className="emotion-0"
-                              style={
-                                Object {
-                                  "display": "inline-flex",
-                                  "paddingLeft": "8px",
-                                }
-                              }
-                            >
-                              <svg
-                                fill="none"
-                                height={12}
-                                viewBox="0 0 10 13"
-                                width={12}
-                              >
-                                <path
-                                  d="M0 12H10"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                                <path
-                                  d="M5 0V9"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                                <path
-                                  d="M1 5L5 9L9 5"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="emotion-0"
-                >
-                  <div
-                    className="emotion-0"
-                    style={
-                      Object {
-                        "marginLeft": "10px",
-                        "marginRight": "10px",
-                        "marginTop": "20px",
-                        "width": "160px",
-                      }
-                    }
-                  >
-                    <div
-                      className="emotion-115"
-                    >
-                      <div
-                        className="emotion-0"
-                      >
-                        <div
-                          className="emotion-0"
-                          style={
-                            Object {
-                              "marginBottom": "20px",
-                              "marginRight": "40px",
-                              "marginTop": "20px",
-                            }
-                          }
-                        >
-                          <div
-                            className="emotion-0"
-                            style={
-                              Object {
-                                "display": "block",
-                                "overflowX": "hidden",
-                                "overflowY": "hidden",
-                              }
-                            }
-                          >
-                            <div
-                              style={
-                                Object {
-                                  "display": "block",
-                                  "paddingBottom": "100%",
-                                  "width": "100%",
-                                }
-                              }
-                            />
-                            <div
-                              style={
-                                Object {
-                                  "bottom": "0px",
-                                  "height": "100%",
-                                  "left": "0px",
-                                  "position": "absolute",
-                                  "top": "0px",
-                                  "width": "100%",
-                                }
-                              }
-                            >
-                              <div
-                                aria-label="Preview of cEUR Exchange Icon"
-                                className="emotion-0"
-                                style={
-                                  Object {
-                                    "WebkitFlexBasis": "auto",
-                                    "borderBottomLeftRadius": "60px",
-                                    "borderBottomRightRadius": "60px",
-                                    "borderTopLeftRadius": "60px",
-                                    "borderTopRightRadius": "60px",
-                                    "boxShadow": "inset 0 0 0 1px #D1D5D8",
-                                    "flexBasis": "auto",
-                                    "height": "100%",
-                                    "msFlexPreferredSize": "auto",
-                                    "overflowX": "hidden",
-                                    "overflowY": "hidden",
-                                    "width": "100%",
-                                    "zIndex": 0,
-                                  }
-                                }
-                              >
-                                <div
-                                  className="emotion-0"
-                                  style={
-                                    Object {
-                                      "backgroundColor": "rgba(0,0,0,0.00)",
-                                      "backgroundPosition": "center",
-                                      "backgroundRepeat": "no-repeat",
-                                      "backgroundSize": "contain",
-                                      "bottom": "0px",
-                                      "height": "100%",
-                                      "left": "0px",
-                                      "position": "absolute",
-                                      "right": "0px",
-                                      "top": "0px",
-                                      "width": "100%",
-                                      "zIndex": -1,
-                                    }
-                                  }
-                                  suppressHydrationWarning={true}
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="emotion-0"
-                          style={
-                            Object {
-                              "WebkitFlex": 1,
-                              "flex": 1,
-                              "msFlex": "1 1 0%",
-                            }
-                          }
-                        >
-                          <div
-                            className="emotion-9"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "lineHeight": "18px",
-                                "marginBottom": "5px",
-                                "marginTop": "5px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            cEUR Exchange Icon
-                          </div>
-                          <div
-                            className="emotion-9"
-                            dir="auto"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "color": "rgba(46,51,56,1.00)",
-                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                                "fontSize": "16px",
-                                "lineHeight": "20px",
-                                "textRendering": "geometricPrecision",
-                              }
-                            }
-                          >
-                            Monochrome
-
-                          </div>
-                        </div>
-                        <div
-                          className="emotion-0"
-                          onClick={[Function]}
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseUp={[Function]}
-                        >
-                          <a
-                            className="emotion-14 emotion-15 emotion-9"
-                            dir="auto"
-                            href="/assets/marketplace-icons/icons-celo-euro-monochrome.zip"
-                            onClick={[Function]}
-                            onMouseEnter={[Function]}
-                            role="link"
-                            style={
-                              Object {
-                                "WebkitAlignItems": "center",
-                                "WebkitBoxAlign": "center",
-                                "WebkitBoxFlex": 0,
-                                "WebkitBoxPack": "start",
-                                "WebkitFlexGrow": 0,
-                                "WebkitJustifyContent": "flex-start",
-                                "alignItems": "center",
-                                "backgroundColor": "rgba(0,0,0,0.00)",
-                                "borderBottomColor": "rgba(0,0,0,0.00)",
-                                "borderLeftColor": "rgba(0,0,0,0.00)",
-                                "borderRightColor": "rgba(0,0,0,0.00)",
-                                "borderTopColor": "rgba(0,0,0,0.00)",
-                                "color": "rgba(53,208,127,1.00)",
-                                "cursor": "pointer",
-                                "display": "inline-flex",
-                                "flexGrow": 0,
-                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                                "fontSize": "16px",
-                                "fontWeight": "500",
-                                "justifyContent": "flex-start",
-                                "lineHeight": "16px",
-                                "minWidth": "150px",
-                                "msFlexAlign": "center",
-                                "msFlexPack": "start",
-                                "msFlexPositive": 0,
-                                "opacity": 1,
-                                "outlineColor": "transparent",
-                                "paddingBottom": "10px",
-                                "paddingLeft": "0px",
-                                "paddingRight": "20px",
-                                "paddingTop": "10px",
-                                "textAlign": "center",
-                                "textRendering": "geometricPrecision",
-                                "width": "fit-content",
-                              }
-                            }
-                          >
-                            Download
-                            <div
-                              className="emotion-0"
-                              style={
-                                Object {
-                                  "display": "inline-flex",
-                                  "paddingLeft": "8px",
-                                }
-                              }
-                            >
-                              <svg
-                                fill="none"
-                                height={12}
-                                viewBox="0 0 10 13"
-                                width={12}
-                              >
-                                <path
-                                  d="M0 12H10"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                                <path
-                                  d="M5 0V9"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                                <path
-                                  d="M1 5L5 9L9 5"
-                                  stroke="#35D07F"
-                                  strokeWidth="1.5"
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="emotion-0"
-                  style={
-                    Object {
-                      "display": "block",
-                      "width": "100%",
-                    }
-                  }
-                />
-                <div
-                  className="emotion-0"
-                >
-                  <div
-                    className="emotion-0"
-                    style={
-                      Object {
-                        "marginLeft": "10px",
-                        "marginRight": "10px",
-                        "marginTop": "20px",
-                        "width": "160px",
-                      }
-                    }
-                  >
-                    <div
-                      className="emotion-115"
+                      className="emotion-114"
                     >
                       <div
                         className="emotion-0"
@@ -4018,8 +3019,14 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="emotion-0"
-                >
+                  style={
+                    Object {
+                      "display": "block",
+                      "width": "100%",
+                    }
+                  }
+                />
+                <div>
                   <div
                     className="emotion-0"
                     style={
@@ -4032,7 +3039,494 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="emotion-115"
+                      className="emotion-114"
+                    >
+                      <div
+                        className="emotion-0"
+                      >
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-0"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cUSD Exchange Icon"
+                                className="emotion-0"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="emotion-0"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                  suppressHydrationWarning={true}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "WebkitFlex": 1,
+                              "flex": 1,
+                              "msFlex": "1 1 0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cUSD Exchange Icon
+                          </div>
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Full Color
+
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="emotion-14 emotion-15 emotion-9"
+                            dir="auto"
+                            href="/assets/marketplace-icons/icon-cusd-color-v2.zip"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="emotion-0"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="emotion-0"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="emotion-114"
+                    >
+                      <div
+                        className="emotion-0"
+                      >
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-0"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cUSD Exchange Icon"
+                                className="emotion-0"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "boxShadow": "inset 0 0 0 1px #D1D5D8",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="emotion-0"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                  suppressHydrationWarning={true}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "WebkitFlex": 1,
+                              "flex": 1,
+                              "msFlex": "1 1 0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cUSD Exchange Icon
+                          </div>
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Monochrome
+
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="emotion-14 emotion-15 emotion-9"
+                            dir="auto"
+                            href="/assets/marketplace-icons/icon-cusd-mono-v2.zip"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="emotion-0"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="emotion-0"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="emotion-114"
                     >
                       <div
                         className="emotion-0"
@@ -4264,8 +3758,14 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   </div>
                 </div>
                 <div
-                  className="emotion-0"
-                >
+                  style={
+                    Object {
+                      "display": "block",
+                      "width": "100%",
+                    }
+                  }
+                />
+                <div>
                   <div
                     className="emotion-0"
                     style={
@@ -4278,7 +3778,494 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     }
                   >
                     <div
-                      className="emotion-115"
+                      className="emotion-114"
+                    >
+                      <div
+                        className="emotion-0"
+                      >
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-0"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cEUR Exchange Icon"
+                                className="emotion-0"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="emotion-0"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                  suppressHydrationWarning={true}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "WebkitFlex": 1,
+                              "flex": 1,
+                              "msFlex": "1 1 0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cEUR Exchange Icon
+                          </div>
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Full Color
+
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="emotion-14 emotion-15 emotion-9"
+                            dir="auto"
+                            href="/assets/marketplace-icons/icon-cEUR-color.zip"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="emotion-0"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="emotion-0"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="emotion-114"
+                    >
+                      <div
+                        className="emotion-0"
+                      >
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-0"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cEUR Exchange Icon"
+                                className="emotion-0"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "boxShadow": "inset 0 0 0 1px #D1D5D8",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="emotion-0"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                  suppressHydrationWarning={true}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "WebkitFlex": 1,
+                              "flex": 1,
+                              "msFlex": "1 1 0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cEUR Exchange Icon
+                          </div>
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Monochrome
+
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="emotion-14 emotion-15 emotion-9"
+                            dir="auto"
+                            href="/assets/marketplace-icons/icons-celo-euro-monochrome.zip"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="emotion-0"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="emotion-0"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="emotion-114"
                     >
                       <div
                         className="emotion-0"
@@ -4509,6 +4496,745 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     </div>
                   </div>
                 </div>
+                <div
+                  style={
+                    Object {
+                      "display": "block",
+                      "width": "100%",
+                    }
+                  }
+                />
+                <div>
+                  <div
+                    className="emotion-0"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="emotion-114"
+                    >
+                      <div
+                        className="emotion-0"
+                      >
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-0"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cBRL Exchange Icon"
+                                className="emotion-0"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="emotion-0"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                  suppressHydrationWarning={true}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "WebkitFlex": 1,
+                              "flex": 1,
+                              "msFlex": "1 1 0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cBRL Exchange Icon
+                          </div>
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Full Color
+
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="emotion-14 emotion-15 emotion-9"
+                            dir="auto"
+                            href="/assets/marketplace-icons/icons-cbrl-color.zip"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="emotion-0"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="emotion-0"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="emotion-114"
+                    >
+                      <div
+                        className="emotion-0"
+                      >
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-0"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cBRL Exchange Icon"
+                                className="emotion-0"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "boxShadow": "inset 0 0 0 1px #D1D5D8",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="emotion-0"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                  suppressHydrationWarning={true}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "WebkitFlex": 1,
+                              "flex": 1,
+                              "msFlex": "1 1 0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cBRL Exchange Icon
+                          </div>
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Monochrome
+
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="emotion-14 emotion-15 emotion-9"
+                            dir="auto"
+                            href="/assets/marketplace-icons/icons-cbrl-mono.zip"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="emotion-0"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="emotion-0"
+                    style={
+                      Object {
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
+                        "marginTop": "20px",
+                        "width": "160px",
+                      }
+                    }
+                  >
+                    <div
+                      className="emotion-114"
+                    >
+                      <div
+                        className="emotion-0"
+                      >
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "marginBottom": "20px",
+                              "marginRight": "40px",
+                              "marginTop": "20px",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-0"
+                            style={
+                              Object {
+                                "display": "block",
+                                "overflowX": "hidden",
+                                "overflowY": "hidden",
+                              }
+                            }
+                          >
+                            <div
+                              style={
+                                Object {
+                                  "display": "block",
+                                  "paddingBottom": "100%",
+                                  "width": "100%",
+                                }
+                              }
+                            />
+                            <div
+                              style={
+                                Object {
+                                  "bottom": "0px",
+                                  "height": "100%",
+                                  "left": "0px",
+                                  "position": "absolute",
+                                  "top": "0px",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <div
+                                aria-label="Preview of cBRL Exchange Icon"
+                                className="emotion-0"
+                                style={
+                                  Object {
+                                    "WebkitFlexBasis": "auto",
+                                    "backgroundColor": "rgba(0,0,0,1.00)",
+                                    "borderBottomLeftRadius": "60px",
+                                    "borderBottomRightRadius": "60px",
+                                    "borderTopLeftRadius": "60px",
+                                    "borderTopRightRadius": "60px",
+                                    "flexBasis": "auto",
+                                    "height": "100%",
+                                    "msFlexPreferredSize": "auto",
+                                    "overflowX": "hidden",
+                                    "overflowY": "hidden",
+                                    "width": "100%",
+                                    "zIndex": 0,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="emotion-0"
+                                  style={
+                                    Object {
+                                      "backgroundColor": "rgba(0,0,0,0.00)",
+                                      "backgroundPosition": "center",
+                                      "backgroundRepeat": "no-repeat",
+                                      "backgroundSize": "contain",
+                                      "bottom": "0px",
+                                      "height": "100%",
+                                      "left": "0px",
+                                      "position": "absolute",
+                                      "right": "0px",
+                                      "top": "0px",
+                                      "width": "100%",
+                                      "zIndex": -1,
+                                    }
+                                  }
+                                  suppressHydrationWarning={true}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          style={
+                            Object {
+                              "WebkitFlex": 1,
+                              "flex": 1,
+                              "msFlex": "1 1 0%",
+                            }
+                          }
+                        >
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "lineHeight": "18px",
+                                "marginBottom": "5px",
+                                "marginTop": "5px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            cBRL Exchange Icon
+                          </div>
+                          <div
+                            className="emotion-9"
+                            dir="auto"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "color": "rgba(46,51,56,1.00)",
+                                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                                "fontSize": "16px",
+                                "lineHeight": "20px",
+                                "textRendering": "geometricPrecision",
+                              }
+                            }
+                          >
+                            Reverse Monochrome
+
+                          </div>
+                        </div>
+                        <div
+                          className="emotion-0"
+                          onClick={[Function]}
+                          onMouseDown={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseUp={[Function]}
+                        >
+                          <a
+                            className="emotion-14 emotion-15 emotion-9"
+                            dir="auto"
+                            href="/assets/marketplace-icons/icons-cbrl-reverse.zip"
+                            onClick={[Function]}
+                            onMouseEnter={[Function]}
+                            role="link"
+                            style={
+                              Object {
+                                "WebkitAlignItems": "center",
+                                "WebkitBoxAlign": "center",
+                                "WebkitBoxFlex": 0,
+                                "WebkitBoxPack": "start",
+                                "WebkitFlexGrow": 0,
+                                "WebkitJustifyContent": "flex-start",
+                                "alignItems": "center",
+                                "backgroundColor": "rgba(0,0,0,0.00)",
+                                "borderBottomColor": "rgba(0,0,0,0.00)",
+                                "borderLeftColor": "rgba(0,0,0,0.00)",
+                                "borderRightColor": "rgba(0,0,0,0.00)",
+                                "borderTopColor": "rgba(0,0,0,0.00)",
+                                "color": "rgba(53,208,127,1.00)",
+                                "cursor": "pointer",
+                                "display": "inline-flex",
+                                "flexGrow": 0,
+                                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                                "fontSize": "16px",
+                                "fontWeight": "500",
+                                "justifyContent": "flex-start",
+                                "lineHeight": "16px",
+                                "minWidth": "150px",
+                                "msFlexAlign": "center",
+                                "msFlexPack": "start",
+                                "msFlexPositive": 0,
+                                "opacity": 1,
+                                "outlineColor": "transparent",
+                                "paddingBottom": "10px",
+                                "paddingLeft": "0px",
+                                "paddingRight": "20px",
+                                "paddingTop": "10px",
+                                "textAlign": "center",
+                                "textRendering": "geometricPrecision",
+                                "width": "fit-content",
+                              }
+                            }
+                          >
+                            Download
+                            <div
+                              className="emotion-0"
+                              style={
+                                Object {
+                                  "display": "inline-flex",
+                                  "paddingLeft": "8px",
+                                }
+                              }
+                            >
+                              <svg
+                                fill="none"
+                                height={12}
+                                viewBox="0 0 10 13"
+                                width={12}
+                              >
+                                <path
+                                  d="M0 12H10"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M5 0V9"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                                <path
+                                  d="M1 5L5 9L9 5"
+                                  stroke="#35D07F"
+                                  strokeWidth="1.5"
+                                />
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -4528,16 +5254,16 @@ exports[`Experience/ExchangeIcons renders 1`] = `
     }
   >
     <section
-      className="emotion-260"
+      className="emotion-294"
     >
       <div
-        className="emotion-261"
+        className="emotion-295"
       >
         <div
-          className="emotion-262"
+          className="emotion-296"
         >
           <div
-            className="emotion-263"
+            className="emotion-297"
           >
             <svg
               fill="none"
@@ -4560,19 +5286,19 @@ exports[`Experience/ExchangeIcons renders 1`] = `
             </svg>
           </div>
           <div
-            className="emotion-264"
+            className="emotion-298"
           >
             <p
-              className="emotion-265"
+              className="emotion-299"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-265"
+              className="emotion-299"
             >
               Read more in Celo 
               <a
-                className="emotion-267"
+                className="emotion-301"
                 href="/terms"
               >
                 Terms of Service
@@ -4581,21 +5307,21 @@ exports[`Experience/ExchangeIcons renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-268"
+          className="emotion-302"
         >
           <div
-            className="emotion-269"
+            className="emotion-303"
           >
             <div
-              className="emotion-270"
+              className="emotion-304"
             >
               <h6
-                className="emotion-271"
+                className="emotion-305"
               >
                 Celo
               </h6>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -4644,7 +5370,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -4693,7 +5419,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -4742,7 +5468,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -4791,7 +5517,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -4840,7 +5566,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -4889,7 +5615,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -4938,7 +5664,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -4988,15 +5714,15 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-312"
+              className="emotion-346"
             >
               <h6
-                className="emotion-271"
+                className="emotion-305"
               >
                 Technology
               </h6>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5045,7 +5771,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5094,7 +5820,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5143,7 +5869,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5192,7 +5918,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5242,15 +5968,15 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-312"
+              className="emotion-346"
             >
               <h6
-                className="emotion-271"
+                className="emotion-305"
               >
                 Resources
               </h6>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5299,7 +6025,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5348,7 +6074,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5397,7 +6123,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5446,7 +6172,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5495,7 +6221,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5544,7 +6270,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5593,7 +6319,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5642,7 +6368,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5692,15 +6418,15 @@ exports[`Experience/ExchangeIcons renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-386"
+              className="emotion-420"
             >
               <h6
-                className="emotion-271"
+                className="emotion-305"
               >
                 Social
               </h6>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5773,7 +6499,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5848,7 +6574,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5921,7 +6647,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -5994,7 +6720,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -6069,7 +6795,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -6142,7 +6868,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -6214,7 +6940,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -6284,7 +7010,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -6354,7 +7080,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -6424,7 +7150,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-306"
               >
                 <div
                   className="emotion-0"
@@ -6499,48 +7225,48 @@ exports[`Experience/ExchangeIcons renders 1`] = `
       </div>
     </section>
     <section
-      className="emotion-260"
+      className="emotion-294"
     >
       <div
-        className="emotion-455"
+        className="emotion-489"
       >
         <div
-          className="emotion-456"
+          className="emotion-490"
         >
           <div
-            className="emotion-457"
+            className="emotion-491"
           >
             <img
-              className="emotion-458"
+              className="emotion-492"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-459"
+              className="emotion-493"
             >
               |
             </span>
             <div
-              className="emotion-460"
+              className="emotion-494"
             >
               <div
-                className="emotion-461"
+                className="emotion-495"
               />
               <span
-                className="emotion-462"
+                className="emotion-496"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-463"
+                className="emotion-497"
               />
             </div>
           </div>
           <small
-            className="emotion-464"
+            className="emotion-498"
           >
             The Celo Foundation, © Celo 2021
           </small>
