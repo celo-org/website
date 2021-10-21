@@ -68,65 +68,6 @@ exports[`Experience/Logo renders 1`] = `
   width: 100%;
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-298 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-right: 24px;
-    padding-left: 24px;
-    width: 100%;
-    max-width: 982px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-298 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    width: 100%;
-    max-width: 1104px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-298 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-298 {
-    margin-top: 60px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-298 {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-298 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-298 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .emotion-298 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -156,8 +97,61 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-299 {
-    grid-column: span 3;
+  .emotion-298 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-298 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-298 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-298 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-298 {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-298 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-298 {
+    margin-top: 30px;
   }
 }
 
@@ -171,6 +165,12 @@ exports[`Experience/Logo renders 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   grid-column: span 1;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-299 {
+    grid-column: span 3;
+  }
 }
 
 .emotion-300 {
@@ -268,14 +268,6 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-306 {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-  }
-}
-
 .emotion-306 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -289,6 +281,14 @@ exports[`Experience/Logo renders 1`] = `
   -ms-flex-pack: space-around;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-306 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
 }
 
 .emotion-307 {
@@ -340,6 +340,12 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
+.emotion-423 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-end: 0;
+}
+
 @media (max-width: 576px) {
   .emotion-423 {
     margin-top: 35px;
@@ -347,12 +353,6 @@ exports[`Experience/Logo renders 1`] = `
     padding-left: 10px;
     padding-right: 10px;
   }
-}
-
-.emotion-423 {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-end: 0;
 }
 
 .emotion-492 {
@@ -412,6 +412,12 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
+@media (min-width: 992px) {
+  .emotion-492 {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-492 {
     grid-template-columns: 1fr;
@@ -436,12 +442,6 @@ exports[`Experience/Logo renders 1`] = `
   .emotion-492 {
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-492 {
-    grid-template-columns: 1fr;
   }
 }
 

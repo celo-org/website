@@ -68,65 +68,6 @@ exports[`Experience/Typography renders 1`] = `
   width: 100%;
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-204 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-right: 24px;
-    padding-left: 24px;
-    width: 100%;
-    max-width: 982px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-204 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    width: 100%;
-    max-width: 1104px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-204 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-204 {
-    margin-top: 60px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-204 {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-204 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-204 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .emotion-204 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -156,8 +97,61 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-205 {
-    grid-column: span 3;
+  .emotion-204 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-204 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-204 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-204 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-204 {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-204 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-204 {
+    margin-top: 30px;
   }
 }
 
@@ -171,6 +165,12 @@ exports[`Experience/Typography renders 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   grid-column: span 1;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-205 {
+    grid-column: span 3;
+  }
 }
 
 .emotion-206 {
@@ -268,14 +268,6 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-212 {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-  }
-}
-
 .emotion-212 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -289,6 +281,14 @@ exports[`Experience/Typography renders 1`] = `
   -ms-flex-pack: space-around;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-212 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
 }
 
 .emotion-213 {
@@ -340,6 +340,12 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
+.emotion-329 {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-end: 0;
+}
+
 @media (max-width: 576px) {
   .emotion-329 {
     margin-top: 35px;
@@ -347,12 +353,6 @@ exports[`Experience/Typography renders 1`] = `
     padding-left: 10px;
     padding-right: 10px;
   }
-}
-
-.emotion-329 {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-end: 0;
 }
 
 .emotion-398 {
@@ -412,6 +412,12 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
+@media (min-width: 992px) {
+  .emotion-398 {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-398 {
     grid-template-columns: 1fr;
@@ -436,12 +442,6 @@ exports[`Experience/Typography renders 1`] = `
   .emotion-398 {
     margin-top: 30px;
     margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-398 {
-    grid-template-columns: 1fr;
   }
 }
 
