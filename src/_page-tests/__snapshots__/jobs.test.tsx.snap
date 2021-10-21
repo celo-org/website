@@ -5,6 +5,11 @@ exports[`JoinJobsPage with jobs renders 1`] = `
   opacity: 0;
 }
 
+.emotion-17 {
+  width: 100%;
+  height: 1rem;
+}
+
 <div
   className="emotion-0"
   style={
@@ -233,7 +238,179 @@ exports[`JoinJobsPage with jobs renders 1`] = `
               }
               target="_blank"
             >
-              Explore Roles
+              cLabs Open Roles
+            </a>
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <span
+            className=" emotion-17"
+            style={Object {}}
+          />
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-0"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "alignItems": "center",
+                "msFlexAlign": "center",
+              }
+            }
+          >
+            <a
+              className="emotion-6 emotion-14 emotion-7"
+              dir="auto"
+              href="https://valoraapp.com/careers"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              rel="noopener"
+              role="link"
+              style={
+                Object {
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(53,208,127,1.00)",
+                  "borderBottomColor": "rgba(53,208,127,1.00)",
+                  "borderBottomLeftRadius": "3px",
+                  "borderBottomRightRadius": "3px",
+                  "borderBottomWidth": "1px",
+                  "borderLeftColor": "rgba(53,208,127,1.00)",
+                  "borderLeftWidth": "1px",
+                  "borderRightColor": "rgba(53,208,127,1.00)",
+                  "borderRightWidth": "1px",
+                  "borderTopColor": "rgba(53,208,127,1.00)",
+                  "borderTopLeftRadius": "3px",
+                  "borderTopRightRadius": "3px",
+                  "borderTopWidth": "1px",
+                  "color": "rgba(255,255,255,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "flexGrow": 0,
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "20px",
+                  "fontWeight": "500",
+                  "justifyContent": "center",
+                  "lineHeight": "16px",
+                  "minWidth": "200px",
+                  "msFlexAlign": "center",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "paddingBottom": "20px",
+                  "paddingLeft": "30px",
+                  "paddingRight": "30px",
+                  "paddingTop": "20px",
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
+                  "width": "fit-content",
+                }
+              }
+              target="_blank"
+            >
+              Valora Open Roles
+            </a>
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <span
+            className=" emotion-17"
+            style={Object {}}
+          />
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-0"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "alignItems": "center",
+                "msFlexAlign": "center",
+              }
+            }
+          >
+            <a
+              className="emotion-6 emotion-14 emotion-7"
+              dir="auto"
+              href="https://boards.greenhouse.io/celofoundation"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              rel="noopener"
+              role="link"
+              style={
+                Object {
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(53,208,127,1.00)",
+                  "borderBottomColor": "rgba(53,208,127,1.00)",
+                  "borderBottomLeftRadius": "3px",
+                  "borderBottomRightRadius": "3px",
+                  "borderBottomWidth": "1px",
+                  "borderLeftColor": "rgba(53,208,127,1.00)",
+                  "borderLeftWidth": "1px",
+                  "borderRightColor": "rgba(53,208,127,1.00)",
+                  "borderRightWidth": "1px",
+                  "borderTopColor": "rgba(53,208,127,1.00)",
+                  "borderTopLeftRadius": "3px",
+                  "borderTopRightRadius": "3px",
+                  "borderTopWidth": "1px",
+                  "color": "rgba(255,255,255,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "flexGrow": 0,
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "20px",
+                  "fontWeight": "500",
+                  "justifyContent": "center",
+                  "lineHeight": "16px",
+                  "minWidth": "200px",
+                  "msFlexAlign": "center",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "paddingBottom": "20px",
+                  "paddingLeft": "30px",
+                  "paddingRight": "30px",
+                  "paddingTop": "20px",
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
+                  "width": "fit-content",
+                }
+              }
+              target="_blank"
+            >
+              Celo Foundation Open Roles
             </a>
           </div>
         </div>
@@ -3892,6 +4069,11 @@ exports[`JoinJobsPage without jobs renders 1`] = `
   opacity: 0;
 }
 
+.emotion-17 {
+  width: 100%;
+  height: 1rem;
+}
+
 <div
   className="emotion-0"
   style={
@@ -4120,7 +4302,179 @@ exports[`JoinJobsPage without jobs renders 1`] = `
               }
               target="_blank"
             >
-              Explore Roles
+              cLabs Open Roles
+            </a>
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <span
+            className=" emotion-17"
+            style={Object {}}
+          />
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-0"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "alignItems": "center",
+                "msFlexAlign": "center",
+              }
+            }
+          >
+            <a
+              className="emotion-6 emotion-14 emotion-7"
+              dir="auto"
+              href="https://valoraapp.com/careers"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              rel="noopener"
+              role="link"
+              style={
+                Object {
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(53,208,127,1.00)",
+                  "borderBottomColor": "rgba(53,208,127,1.00)",
+                  "borderBottomLeftRadius": "3px",
+                  "borderBottomRightRadius": "3px",
+                  "borderBottomWidth": "1px",
+                  "borderLeftColor": "rgba(53,208,127,1.00)",
+                  "borderLeftWidth": "1px",
+                  "borderRightColor": "rgba(53,208,127,1.00)",
+                  "borderRightWidth": "1px",
+                  "borderTopColor": "rgba(53,208,127,1.00)",
+                  "borderTopLeftRadius": "3px",
+                  "borderTopRightRadius": "3px",
+                  "borderTopWidth": "1px",
+                  "color": "rgba(255,255,255,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "flexGrow": 0,
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "20px",
+                  "fontWeight": "500",
+                  "justifyContent": "center",
+                  "lineHeight": "16px",
+                  "minWidth": "200px",
+                  "msFlexAlign": "center",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "paddingBottom": "20px",
+                  "paddingLeft": "30px",
+                  "paddingRight": "30px",
+                  "paddingTop": "20px",
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
+                  "width": "fit-content",
+                }
+              }
+              target="_blank"
+            >
+              Valora Open Roles
+            </a>
+          </div>
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <span
+            className=" emotion-17"
+            style={Object {}}
+          />
+        </div>
+        <div
+          className="emotion-4"
+        >
+          <div
+            className="emotion-0"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            style={
+              Object {
+                "WebkitAlignItems": "center",
+                "WebkitBoxAlign": "center",
+                "alignItems": "center",
+                "msFlexAlign": "center",
+              }
+            }
+          >
+            <a
+              className="emotion-6 emotion-14 emotion-7"
+              dir="auto"
+              href="https://boards.greenhouse.io/celofoundation"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              rel="noopener"
+              role="link"
+              style={
+                Object {
+                  "WebkitAlignItems": "center",
+                  "WebkitBoxAlign": "center",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "alignItems": "center",
+                  "backgroundColor": "rgba(53,208,127,1.00)",
+                  "borderBottomColor": "rgba(53,208,127,1.00)",
+                  "borderBottomLeftRadius": "3px",
+                  "borderBottomRightRadius": "3px",
+                  "borderBottomWidth": "1px",
+                  "borderLeftColor": "rgba(53,208,127,1.00)",
+                  "borderLeftWidth": "1px",
+                  "borderRightColor": "rgba(53,208,127,1.00)",
+                  "borderRightWidth": "1px",
+                  "borderTopColor": "rgba(53,208,127,1.00)",
+                  "borderTopLeftRadius": "3px",
+                  "borderTopRightRadius": "3px",
+                  "borderTopWidth": "1px",
+                  "color": "rgba(255,255,255,1.00)",
+                  "cursor": "pointer",
+                  "display": "inline-flex",
+                  "flexGrow": 0,
+                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontSize": "20px",
+                  "fontWeight": "500",
+                  "justifyContent": "center",
+                  "lineHeight": "16px",
+                  "minWidth": "200px",
+                  "msFlexAlign": "center",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "paddingBottom": "20px",
+                  "paddingLeft": "30px",
+                  "paddingRight": "30px",
+                  "paddingTop": "20px",
+                  "textAlign": "center",
+                  "textRendering": "geometricPrecision",
+                  "width": "fit-content",
+                }
+              }
+              target="_blank"
+            >
+              Celo Foundation Open Roles
             </a>
           </div>
         </div>
