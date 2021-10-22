@@ -6,7 +6,13 @@ import { I18nProps, withNamespaces } from "src/i18n"
 import Chevron, { Direction } from "src/icons/chevron"
 import Hoverable from "src/shared/Hoverable"
 import { colors } from "src/colors"
-import { Address, CeloGroup, orderAccessors, sortData } from "src/utils/validators"
+import {
+  Address,
+  CeloGroup,
+  orderAccessors,
+  sortData,
+  localStoragePinnedKey,
+} from "src/utils/validators"
 
 interface HeaderCellProps {
   style: any[]
@@ -56,7 +62,6 @@ class HeaderCell extends React.PureComponent<HeaderCellProps, { hover: boolean }
 
 export interface ValidatorsListProps {
   data: CeloGroup[]
-  isLoading: boolean
 }
 
 type Props = ValidatorsListProps & I18nProps
@@ -78,15 +83,15 @@ export interface State {
   expanded: Address | undefined
   orderKey: orderByTypes
   orderAsc: boolean
-  sortedData: CeloGroup[]
+  pins: Set<string>
 }
 
 class ValidatorsList extends React.PureComponent<Props, State> {
-  state = {
+  state: State = {
     expanded: undefined,
     orderKey: "order" as orderByTypes,
     orderAsc: true,
-    sortedData: [],
+    pins: new Set(),
   }
   private orderByFn: { [by: string]: any } = {}
 
@@ -96,20 +101,37 @@ class ValidatorsList extends React.PureComponent<Props, State> {
     Object.keys(orderAccessors).forEach(
       (orderType: any) => (this.orderByFn[orderType] = () => this.orderBy(orderType))
     )
-
-    const { data } = this.props
-    const { orderAsc, orderKey } = this.state
-    this.state.sortedData = sortData(data, orderAsc, orderKey)
   }
 
-  setData = () => {
-    const { orderAsc, orderKey } = this.state
-    const sortedData = sortData(this.props.data, orderAsc, orderKey)
-    this.setState({ sortedData })
-    this.forceUpdate()
+  componentDidMount = () => {
+    this.getPinsFromLocaleStorage()
   }
 
-  expand(expanded: Address) {
+  togglePin = (address: string) => {
+    this.setState((state) => {
+      if (state.pins.has(address)) {
+        state.pins.delete(address)
+        const pins = new Set(state.pins)
+        return { ...state, pins }
+      } else {
+        state.pins.add(address)
+        const pins = new Set(state.pins)
+        return { ...state, pins }
+      }
+    }, this.storePins)
+  }
+
+  getPinsFromLocaleStorage = () => {
+    const list = (localStorage.getItem(localStoragePinnedKey) || "").split(",") || []
+    this.setState({ pins: new Set(list) })
+  }
+
+  storePins = () => {
+    const list = Array.from(this.state.pins)
+    localStorage.setItem(localStoragePinnedKey, list.join(","))
+  }
+
+  expand = (expanded: Address) => {
     if (this.state.expanded === expanded) {
       return this.setState({ expanded: undefined })
     }
@@ -119,12 +141,13 @@ class ValidatorsList extends React.PureComponent<Props, State> {
   orderBy = async (key: orderByTypes) => {
     const { orderAsc, orderKey } = this.state
     const asc = key === orderKey && orderAsc ? false : true
-    await this.setState({ orderKey: key, orderAsc: asc, expanded: undefined })
-    this.setData()
+    this.setState({ orderKey: key, orderAsc: asc, expanded: undefined })
   }
 
   render() {
-    const { expanded, orderAsc, orderKey, sortedData: validatorGroups } = this.state
+    const { expanded, orderAsc, orderKey } = this.state
+    const { data } = this.props
+    const validatorGroups = sortData(data, orderAsc, orderKey, this.state.pins)
     return (
       <View style={styles.pStatic}>
         <View style={[styles.table, styles.pStatic]}>
@@ -195,14 +218,14 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               asc={orderAsc}
               tooltip="% of max possible rewards received"
             />
-            {/* <HeaderCell
-              onClick={this.orderByFn.uptime}
+            <HeaderCell
+              orderFn={this.orderByFn.uptime}
               style={[styles.sizeS]}
               name="Uptime"
-              ordered={orderKey === 'uptime'}
+              ordered={orderKey === "uptime"}
               asc={orderAsc}
               tooltip="Validator performance score"
-            /> */}
+            />
             <HeaderCell
               orderFn={this.orderByFn.attestation}
               style={[styles.sizeS]}
@@ -211,14 +234,15 @@ class ValidatorsList extends React.PureComponent<Props, State> {
               asc={orderAsc}
             />
           </View>
-          {validatorGroups.map((group, i) => (
-            <div key={i} onClick={this.expand.bind(this, group.address)}>
-              <ValidatorsListRow
-                group={group}
-                expanded={expanded === group.address}
-                onPinned={this.setData}
-              />
-            </div>
+          {validatorGroups.map((group) => (
+            <ValidatorsListRow
+              group={group}
+              key={group.id}
+              expanded={expanded === group.address}
+              onExpand={this.expand}
+              onPinned={this.togglePin}
+              isPinned={this.state.pins.has(group.address)}
+            />
           ))}
         </View>
       </View>

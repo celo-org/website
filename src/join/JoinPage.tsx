@@ -10,7 +10,7 @@ import Button, { BTN, SIZE } from "src/shared/Button.3"
 import menuItems from "src/shared/menu-items"
 import { standardStyles, textStyles } from "src/styles"
 import { colors } from "src/colors"
-import {css} from "@emotion/react"
+import { css } from "@emotion/react"
 
 const DESCRIPTION =
   "Join us in building financial system that creates the conditions for prosperity for all. We are growing a team with all kinds of different perspectives, experiences and backgrounds to create products that are used and loved by people all around the world."
@@ -64,8 +64,8 @@ class JoinPage extends React.PureComponent<Props> {
                     size={SIZE.big}
                     align={"center"}
                   />
-                 <span css={spacer} />
-                 <Button
+                  <span css={spacer} />
+                  <Button
                     kind={BTN.PRIMARY}
                     text={t("celoFoundationOpenRoles")}
                     target="_blank"
@@ -88,7 +88,7 @@ export default withNamespaces("jobs")(JoinPage)
 
 const spacer = css({
   width: "100%",
-  height: "1rem"
+  height: "1rem",
 })
 const styles = StyleSheet.create({
   container: {
