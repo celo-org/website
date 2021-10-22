@@ -10,6 +10,6 @@ export function HoneyPot() {
 }
 
 const honeyContainer = css({
-  // transform : "scale(0,0)",
-  // position: "fixed"
+  transform: "scale(0,0)",
+  position: "fixed",
 })
