@@ -10,6 +10,7 @@ import { Form } from "src/forms/FormComponents"
 import { LabeledInput } from "src/forms/LabeledInput"
 import SubmitButton from "src/forms/SubmitButton"
 import SuccessDisplay from "src/forms/SuccessDisplay"
+import { HoneyPotInput } from "src/forms/HoneypotInput"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
@@ -148,6 +149,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
                         allErrors={formState.errors}
                       />
                     ))}
+                    <HoneyPotInput />
                     <SubmitButton
                       isLoading={formState.isLoading}
                       text={t("apply")}
@@ -193,6 +195,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
                         allErrors={formState.errors}
                       />
                     ))}
+
                     <SubmitButton
                       isLoading={formState.isLoading}
                       text={t("recommend")}

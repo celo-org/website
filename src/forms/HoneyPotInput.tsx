@@ -5,9 +5,9 @@ export function HoneyPotInput() {
   return (
     <div>
       <LabeledInput
-        name={""}
-        value={""}
-        label={""}
+        name={"pAccount"}
+        value={"pAccount"}
+        label={"pAccount"}
         onInput={() => {
           console.log("hello world")
         }}
