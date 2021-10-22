@@ -6,39 +6,39 @@ interface Backer {
 const people: Backer[] = [
   {
     name: "a16z",
-    photo: require("./a16z_new_logo.svg"),
+    photo: require("./a16z_new_logo.svg").default.src,
   },
   {
     name: "Polychain Capital",
-    photo: require("./polychain.jpg"),
+    photo: require("./polychain.jpg").default.src,
   },
   {
     name: "General Catalyst",
-    photo: require("./general-catalyst.jpg"),
+    photo: require("./general-catalyst.jpg").default.src,
   },
   {
     name: "Reid Hoffman",
   },
   {
     name: "Coinbase",
-    photo: require("./coinbase.jpg"),
+    photo: require("./coinbase.jpg").default.src,
   },
   {
     name: "SV Angel",
-    photo: require("./sv-angel.jpg"),
+    photo: require("./sv-angel.jpg").default.src,
   },
   {
     name: "Social Capital",
-    photo: require("./social-capital.jpg"),
+    photo: require("./social-capital.jpg").default.src,
   },
 
   {
     name: "A.Capital",
-    photo: require("./a-capital.jpg"),
+    photo: require("./a-capital.jpg").default.src,
   },
   {
     name: "Dragonfly Capital Partners",
-    photo: require("./dragonfly-capital-partners.jpg"),
+    photo: require("./dragonfly-capital-partners.jpg").default.src,
   },
   {
     name: "Jack Dorsey",
@@ -60,27 +60,27 @@ const people: Backer[] = [
   },
   {
     name: "Lakestar",
-    photo: require("./lake-star.jpg"),
+    photo: require("./lake-star.jpg").default.src,
   },
   {
     name: "Version One",
-    photo: require("./version-one.jpg"),
+    photo: require("./version-one.jpg").default.src,
   },
   {
     name: "Greenfield",
-    photo: require("./greenfield-one.jpg"),
+    photo: require("./greenfield-one.jpg").default.src,
   },
   {
     name: "9yards Capital",
-    photo: require("./9yardscapital.jpg"),
+    photo: require("./9yardscapital.jpg").default.src,
   },
   {
     name: "Andromeda Group",
-    photo: require("./andromeda.jpg"),
+    photo: require("./andromeda.jpg").default.src,
   },
   {
     name: "Valor",
-    photo: require("./valor.jpg"),
+    photo: require("./valor.jpg").default.src,
   },
   {
     name: "Keisuke Honda",
@@ -90,7 +90,7 @@ const people: Backer[] = [
   },
   {
     name: "Nima Capital",
-    photo: require("./nima.jpg"),
+    photo: require("./nima.jpg").default.src,
   },
   {
     name: "Julia Popowitz",
