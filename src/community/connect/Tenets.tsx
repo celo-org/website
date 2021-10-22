@@ -17,24 +17,24 @@ const TENET_ILLOS = ["design", "innovate", "beauty", "humility"]
 
 const IMAGE_MAP = {
   design: {
-    large: require("src/community/connect/01-Tenets.jpg"),
-    medium: require("src/community/connect/01-Tenets-427.jpg"),
-    small: require("src/community/connect/01-Tenets-460.jpg"),
+    large: require("src/community/connect/01-Tenets.jpg").default.src,
+    medium: require("src/community/connect/01-Tenets-427.jpg").default.src,
+    small: require("src/community/connect/01-Tenets-460.jpg").default.src,
   },
   innovate: {
-    large: require("src/community/connect/02-Tenets.jpg"),
-    medium: require("src/community/connect/02-Tenets-427.jpg"),
-    small: require("src/community/connect/02-Tenets-460.jpg"),
+    large: require("src/community/connect/02-Tenets.jpg").default.src,
+    medium: require("src/community/connect/02-Tenets-427.jpg").default.src,
+    small: require("src/community/connect/02-Tenets-460.jpg").default.src,
   },
   beauty: {
-    large: require("src/community/connect/03-Tenets.jpg"),
-    medium: require("src/community/connect/03-Tenets-427.jpg"),
-    small: require("src/community/connect/03-Tenets-460.jpg"),
+    large: require("src/community/connect/03-Tenets.jpg").default.src,
+    medium: require("src/community/connect/03-Tenets-427.jpg").default.src,
+    small: require("src/community/connect/03-Tenets-460.jpg").default.src,
   },
   humility: {
-    large: require("src/community/connect/04-Tenets.jpg"),
-    medium: require("src/community/connect/04-Tenets-427.jpg"),
-    small: require("src/community/connect/04-Tenets-460.jpg"),
+    large: require("src/community/connect/04-Tenets.jpg").default.src,
+    medium: require("src/community/connect/04-Tenets-427.jpg").default.src,
+    small: require("src/community/connect/04-Tenets-460.jpg").default.src,
   },
 }
 

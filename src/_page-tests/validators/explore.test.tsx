@@ -156,7 +156,7 @@ const data: ValidatorsListData = {
   latestBlock: 10000,
 }
 
-describe.skip("ValidatorsList", () => {
+describe("ValidatorsList", () => {
   beforeEach(() => {
     jest.spyOn(global.Math, "random").mockReturnValue(0.123456789)
   })
@@ -168,7 +168,7 @@ describe.skip("ValidatorsList", () => {
     const tree = renderer
       .create(
         <TestProvider>
-          <ValidatorsList data={cleanData(data)} isLoading={false} />
+          <ValidatorsList data={cleanData(data)} />
         </TestProvider>
       )
       .toJSON()

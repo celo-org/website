@@ -3,13 +3,13 @@ import { Text, View } from "react-native"
 import CopyToClipboard from "src/dev/CopyToClipboard"
 import ProgressCutBar from "src/dev/ProgressCutBar"
 import ValidatorsListBadges from "src/dev/ValidatorsListBadges"
-import { styles } from "src/dev/ValidatorsListStyles"
+import { emotionStyles, styles } from "src/dev/ValidatorsListStyles"
 import { I18nProps, withNamespaces } from "src/i18n"
 import Checkmark from "src/icons/Checkmark"
 import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
 import { cutAddress, formatNumber } from "src/utils/utils"
-import { CeloGroup, isPinned, togglePin } from "src/utils/validators"
+import { CeloGroup } from "src/utils/validators"
 
 const unknownGroupName = "Unnamed Group"
 const unknownValidatorName = "Unnamed Validator"
@@ -17,7 +17,9 @@ const unknownValidatorName = "Unnamed Validator"
 interface Props {
   group: CeloGroup
   expanded: boolean
-  onPinned: () => void
+  onExpand: (address: string) => void
+  onPinned: (address: string) => void
+  isPinned: boolean
 }
 interface State {
   tooltip?: boolean
@@ -28,24 +30,19 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
     tooltip: false,
   }
   tooltipRef = React.createRef<any>()
-  removeDocumentListener: () => void
+  removeDocumentListener = () => document.removeEventListener("click", this.onDocumentClick, false)
 
-  constructor(...args) {
-    super(...(args as [any]))
+  componentDidMount() {
+    document.addEventListener("click", this.onDocumentClick, false)
+  }
 
-    const onDocumentClick = (event) => {
-      if (!this.state.tooltip || !this.tooltipRef.current) {
-        return
-      }
-      if (!this.tooltipRef.current.parentNode.contains(event.target)) {
-        this.setState({ tooltip: false })
-      }
+  onDocumentClick = (event) => {
+    if (!this.state.tooltip || !this.tooltipRef.current) {
+      return
     }
-
-    document.addEventListener("click", onDocumentClick, false)
-
-    this.removeDocumentListener = () =>
-      document.removeEventListener("click", onDocumentClick, false)
+    if (!this.tooltipRef.current.parentNode.contains(event.target)) {
+      this.setState({ tooltip: false })
+    }
   }
 
   componentWillUnmount() {
@@ -57,25 +54,28 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
     this.setState({ tooltip: !this.state.tooltip })
   }
 
-  togglePin(event) {
+  togglePin = (event) => {
     event.stopPropagation()
-    togglePin(this.props.group.address)
-    this.props.onPinned()
-    this.forceUpdate()
+    this.props.onPinned(this.props.group.address)
+  }
+
+  expandContract = () => {
+    this.props.onExpand(this.props.group.address)
   }
 
   render() {
     const { group, expanded } = this.props
     const { tooltip } = this.state
-    const pin = this.togglePin.bind(this)
-    const pinned = isPinned(group.address)
 
     return (
-      <div style={tooltip ? { zIndex: 2 } : {}}>
+      <div style={tooltip ? { zIndex: 2 } : {}} onClick={this.expandContract}>
         <View style={[styles.tableRow, styles.tableRowCont, tooltip ? { zIndex: 3 } : {}]}>
-          <View style={[styles.tableCell, styles.pinContainer, styles.sizeXXS]} onClick={pin}>
-            <View style={[styles.pin, pinned && styles.pinned]} />
-          </View>
+          <div
+            css={[emotionStyles.tableCell, emotionStyles.pinContainer, emotionStyles.sizeXXS]}
+            onClick={this.togglePin}
+          >
+            <View style={[styles.pin, this.props.isPinned && styles.pinned]} />
+          </div>
           <View style={[styles.tableCell, styles.tableCellTitle]}>
             <Text
               style={[
@@ -213,13 +213,13 @@ class ValidatorsListRow extends React.PureComponent<Props & I18nProps, State> {
               />
             </Text>
           </Text>
-          {/* <Text
+          <Text
             style={[styles.defaultText, styles.tableCell, styles.tableCellCenter, styles.sizeS]}
             numberOfLines={1}
             ellipsizeMode="tail"
           >
             {formatNumber(group.uptime, 1)}%
-          </Text> */}
+          </Text>
           <Text
             style={[styles.defaultText, styles.tableCell, styles.tableCellCenter, styles.sizeS]}
             numberOfLines={1}

@@ -40,7 +40,11 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 ;(async () => {
   await app.prepare()
   const server = express()
-  server.use(helmet())
+  server.use(
+    helmet({
+      contentSecurityPolicy: false,
+    })
+  )
   server.use(wwwRedirect)
   server.enable("trust proxy")
   server.use(compression())
