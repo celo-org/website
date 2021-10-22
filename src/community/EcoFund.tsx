@@ -28,6 +28,7 @@ import {
   RecommendationKeys,
   Tables,
 } from "../../fullstack/EcoFundFields"
+import { HoneyPot } from "src/forms/Honeypot"
 
 interface State {
   table: Tables
@@ -148,6 +149,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
                         allErrors={formState.errors}
                       />
                     ))}
+                    <HoneyPot />
                     <SubmitButton
                       isLoading={formState.isLoading}
                       text={t("apply")}
@@ -193,6 +195,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
                         allErrors={formState.errors}
                       />
                     ))}
+                    <HoneyPot />
                     <SubmitButton
                       isLoading={formState.isLoading}
                       text={t("recommend")}
