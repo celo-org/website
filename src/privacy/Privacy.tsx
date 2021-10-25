@@ -1,12 +1,17 @@
 import * as React from "react"
 import { Li, TABLE, TD, TH, TR, Ul } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
-import { Cell, GridRow, Spans as LegacySpans } from "src/layout/GridRow"
-import { Spans } from "src/layout/Grid2"
+import { Cell, GridRow, Spans } from "src/layout/Grid2"
 import SideTitledSection from "src/layout/SideTitledSection"
 import Link from "src/shared/Link"
-import { standardStyles, textStyles } from "src/styles"
-import { fonts } from "src/estyles"
+import {
+  fonts,
+  standardStyles,
+  textStyles,
+  WHEN_DESKTOP,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+} from "src/estyles"
 import { css } from "@emotion/react"
 
 export default class Privacy extends React.Component {
@@ -20,22 +25,17 @@ export default class Privacy extends React.Component {
             "This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service."
           }
         />
-        <GridRow
-          allStyle={standardStyles.centered}
-          desktopStyle={standardStyles.blockMarginBottom}
-          tabletStyle={standardStyles.blockMarginBottomTablet}
-          mobileStyle={standardStyles.blockMarginBottomMobile}
-        >
-          <Cell span={LegacySpans.fourth}>{}</Cell>
-          <Cell span={LegacySpans.three4th}>
+        <GridRow columns={4} css={gridCss}>
+          <Cell span={Spans.one}>{}</Cell>
+          <Cell span={Spans.three}>
             <h1 css={fonts.h1}>Privacy Policy</h1>
           </Cell>
         </GridRow>
-        <GridRow>
-          <Cell span={LegacySpans.fourth}>
+        <GridRow columns={4}>
+          <Cell span={Spans.one}>
             <h6 css={fonts.h6}>Valid as of May 17, 2020</h6>
           </Cell>
-          <Cell span={LegacySpans.three4th}>
+          <Cell span={Spans.three}>
             <P>
               This Privacy Policy and Cookies Statement describes how the Celo Foundation and its
               affiliated companies (referred to in this document as “Celo,” “we,” “us” or “our”)
@@ -328,6 +328,12 @@ function P({ children }: { children: React.ReactNode }) {
 function B({ children }: { children: React.ReactNode }) {
   return <span css={[fonts.body, textStyles.heavy]}>{children}</span>
 }
+
+const gridCss = css(standardStyles.centered, {
+  [WHEN_DESKTOP]: standardStyles.blockMarginBottom,
+  [WHEN_TABLET]: standardStyles.blockMarginBottomTablet,
+  [WHEN_MOBILE]: standardStyles.blockMarginBottomMobile,
+})
 
 const container = css({
   marginTop: 100,
