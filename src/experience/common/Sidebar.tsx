@@ -122,6 +122,7 @@ const styles = StyleSheet.create({
   container: {
     position: "sticky",
     top: HEADER_HEIGHT + 100,
+    height: "fit-content",
   },
 
   section: {

@@ -1,7 +1,7 @@
 import * as React from "react"
 import Page from "src/experience/common/Page"
 import menu, { hashNav } from "src/shared/menu-items"
-
+import ogImage from "src/experience/brandkit/images/ogimage-brandkit.png"
 export const ROOT = menu.BRAND.link
 
 export const LOGO_PATH = `${ROOT}/logo`
@@ -109,7 +109,7 @@ export default function BrandKitPage({ sections, title, path, metaDescription }:
       path={path}
       kitName="BrandKit"
       metaDescription={metaDescription}
-      ogImage={require("src/experience/brandkit/images/ogimage-brandkit.png")}
+      ogImage={ogImage.src}
     />
   )
 }

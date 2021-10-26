@@ -5,6 +5,8 @@ import Sidebar, { Page } from "src/experience/common/Sidebar"
 import Triangle, { Direction } from "src/shared/Triangle"
 import { fonts, standardStyles } from "src/styles"
 import { colors } from "src/colors"
+import { css } from "@emotion/react"
+import { WHEN_MOBILE } from "src/estyles"
 interface Props {
   pages: Page[]
   pathname: string
@@ -42,7 +44,7 @@ export default class MobileMenu extends React.PureComponent<Props, State> {
   render() {
     const { pages, pathname } = this.props
     return (
-      <View style={styles.container}>
+      <div css={containerCss}>
         <TouchableOpacity testID="toggle" onPress={this.toggleMenu}>
           <View style={[standardStyles.row, styles.bar]}>
             <Title pages={pages} pathname={pathname} />
@@ -59,7 +61,7 @@ export default class MobileMenu extends React.PureComponent<Props, State> {
             />
           </View>
         </View>
-      </View>
+      </div>
     )
   }
 }
@@ -75,6 +77,19 @@ function Title({ pages, pathname }: Omit<Props, "routeHash">) {
   return <Text style={fonts.h6}>{pageTitle}</Text>
 }
 
+const containerCss = css({
+  display: "none",
+  width: "100%",
+  [WHEN_MOBILE]: {
+    position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    width: "100%",
+    backgroundColor: colors.white,
+    zIndex: -1,
+  },
+})
+
 const styles = StyleSheet.create({
   sideBar: {
     position: "absolute",
@@ -83,11 +98,6 @@ const styles = StyleSheet.create({
     overflow: "scroll",
     width: "100%",
     padding: 15,
-  },
-  container: {
-    width: "100%",
-    backgroundColor: colors.white,
-    zIndex: -1,
   },
   bar: {
     paddingHorizontal: 20,

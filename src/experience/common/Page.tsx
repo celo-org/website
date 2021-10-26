@@ -1,31 +1,26 @@
 import throttle from "lodash.throttle"
 import { SingletonRouter, withRouter } from "next/router"
 import * as React from "react"
-import { findNodeHandle, ImageRequireSource, StyleSheet, View } from "react-native"
 import MobileKitMenu from "src/experience/common/MobileKitMenu"
 import scrollToHash from "src/experience/common/scrollToHash"
 import Sidebar, { Page as Pages } from "src/experience/common/Sidebar"
-import Topbar from "src/experience/common/TopBar"
+import TopBar from "src/experience/common/TopBar"
 import OpenGraph from "src/header/OpenGraph"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
-import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import { ScreenProps, ScreenSizes } from "src/layout/ScreenSize"
 import Footer from "src/shared/Footer"
 import menu from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { standardStyles } from "src/styles"
 import { colors } from "src/colors"
+import { css } from "@emotion/react"
+import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_TABLET_AND_UP } from "src/estyles"
 
 const FOOTER_ID = "experience-footer"
 const DISTANCE_TO_HIDE_AT = 25
 const THROTTLE_SCROLL_MS = 150
 export const ROOT = menu.BRAND.link
-
 export const LOGO_PATH = `${ROOT}/logo`
-
 export const COLOR_PATH = `${ROOT}/color`
-
 export const TYPE_PATH = `${ROOT}/typography`
-
 export const IMAGERY_PATH = `${ROOT}/key-imagery`
 export const ICONS_PATH = `${ROOT}/icons`
 export const EXCHANGE_ICONS_PATH = `${ROOT}/exchange-icons`
@@ -44,7 +39,7 @@ interface Props {
   path: string
   kitName?: string
   metaDescription: string
-  ogImage: ImageRequireSource | string
+  ogImage: string
 }
 
 interface State {
@@ -64,7 +59,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
 
   observer: IntersectionObserver
 
-  footer = React.createRef<View>()
+  footer = React.createRef<HTMLDivElement>()
 
   scrollHandeler = throttle((event) => {
     const scrollTop = event.target.scrollingElement.scrollTop
@@ -138,9 +133,9 @@ class Page extends React.Component<Props & ScreenProps, State> {
     })
   }
 
-  observeRef = (ref: React.RefObject<View>) => {
+  observeRef = (ref: React.RefObject<HTMLElement>) => {
     // findNodeHandle is typed to return a number but returns an Element
-    const element = findNodeHandle(ref.current) as unknown as Element
+    const element = ref.current
     if (element instanceof Element) {
       this.observer.observe(element)
     }
@@ -171,8 +166,7 @@ class Page extends React.Component<Props & ScreenProps, State> {
   }
 
   render() {
-    const { screen, sections, router, path, metaDescription, title } = this.props
-    const isMobile = screen === ScreenSizes.MOBILE
+    const { sections, router, path, metaDescription, title } = this.props
 
     return (
       <>
@@ -182,93 +176,121 @@ class Page extends React.Component<Props & ScreenProps, State> {
           description={metaDescription}
           image={this.props.ogImage}
         />
-        <View style={styles.conatiner}>
-          <View style={styles.topbar}>
-            <View
-              style={[
-                styles.grayLineOff,
-                (this.state.isLineVisible || isMobile) && styles.grayLine,
-              ]}
-            >
-              <Topbar current={this.props.pages[0].href} kitName={this.props.kitName} />
-            </View>
-            {isMobile && (
-              <MobileKitMenu
+        <div css={containerCss}>
+          <div css={topBarCss}>
+            <div css={[grayLineOffCss, this.state.isLineVisible && grayLineCss]}>
+              <TopBar current={this.props.pages[0].href} kitName={this.props.kitName} />
+            </div>
+            <MobileKitMenu
+              pages={this.props.pages}
+              pathname={router.asPath}
+              routeHash={this.state.routeHash}
+            />
+          </div>
+          <div css={rootCss}>
+            <div css={sidebarCss}>
+              <Sidebar
                 pages={this.props.pages}
-                pathname={router.asPath}
+                currentPathName={router.asPath}
                 routeHash={this.state.routeHash}
+                onChangeRoute={moveToHash}
               />
-            )}
-          </View>
-
-          <GridRow mobileStyle={styles.mobileMain} desktopStyle={standardStyles.sectionMarginTop}>
-            <Cell span={Spans.fourth} style={styles.sidebar}>
-              {!isMobile && (
-                <Sidebar
-                  pages={this.props.pages}
-                  currentPathName={router.asPath}
-                  routeHash={this.state.routeHash}
-                  onChangeRoute={moveToHash}
-                />
-              )}
-            </Cell>
-            <Cell span={Spans.three4th} style={!isMobile && styles.desktopMain}>
-              <View
-                style={[
-                  styles.childrenArea,
-                  screen === ScreenSizes.DESKTOP && styles.childrenAreaDesktop,
-                ]}
-              >
+            </div>
+            <div css={desktopMainCss}>
+              <div css={childrenAreaCss}>
                 {sections.map(({ id, children }) => {
                   return (
-                    <View key={id} nativeID={id}>
+                    <div key={id} id={id} css={flex}>
                       {children}
-                    </View>
+                    </div>
                   )
                 })}
-              </View>
-            </Cell>
-          </GridRow>
-          <View style={styles.footer} nativeID={FOOTER_ID} ref={this.footer}>
+              </div>
+            </div>
+          </div>
+          <div css={footerCss} id={FOOTER_ID} ref={this.footer}>
             <Footer hideForm={true} />
-          </View>
-        </View>
+          </div>
+        </div>
       </>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  conatiner: { isolation: "isolate" },
-  mobileMain: { zIndex: -5, marginTop: 116 },
-  desktopMain: { flex: 1, flexBasis: "calc(75% - 50px)" },
-  sidebar: { minWidth: 190, paddingLeft: 0 },
-  grayLineOff: {
-    transitionProperty: "box-shadow",
-    transitionDuration: "400ms",
-    marginBottom: 1,
-    boxShadow: `0px 0px 0px 0px rgba(0,0,0,0)`,
+const rootCss = css(flex, {
+  alignSelf: "center",
+  flexDirection: "row",
+  position: "relative",
+  marginTop: 116,
+  padding: 20,
+  width: "100%",
+  [WHEN_MOBILE]: {
+    zIndex: -5,
+    flexDirection: "column",
+    maxWidth: "100vw",
   },
-  grayLine: {
-    boxShadow: `0px 1px 1px -1px rgba(0,0,0,0.5)`,
+  [WHEN_TABLET]: {
+    maxWidth: 958,
   },
-  topbar: {
-    zIndex: 10,
-    position: "fixed",
-    width: "100%",
-    backgroundColor: colors.white,
-  },
-  footer: { zIndex: -10, backgroundColor: colors.white, marginTop: 50 },
-  childrenArea: {
-    minHeight: `calc(100vh - ${HEADER_HEIGHT}px)`,
-  },
-  childrenAreaDesktop: {
-    // Design calls for *baseline* of text Title to match that of intro on side nav
-    transform: [{ translateY: -25 }],
+  [WHEN_DESKTOP]: {
+    maxWidth: 1080,
   },
 })
 
-export default withRouter(withScreenSize<Props>(Page))
+const containerCss = css(flex, { isolation: "isolate", position: "relative" })
+
+const desktopMainCss = css(flex, {
+  position: "relative",
+  [WHEN_TABLET_AND_UP]: {
+    flex: 1,
+    flexBasis: "calc(75% - 50px)",
+    marginLeft: 20,
+  },
+})
+
+const sidebarCss = css({
+  display: "flex",
+  position: "sticky",
+  top: 100,
+  alignSelf: "flex-start",
+  minWidth: 190,
+  paddingLeft: 0,
+  height: "fit-content",
+  [WHEN_MOBILE]: {
+    display: "none",
+  },
+})
+
+const grayLineCss = css({
+  boxShadow: `0px 1px 1px -1px rgba(0,0,0,0.5)`,
+})
+const grayLineOffCss = css({
+  transitionProperty: "box-shadow",
+  transitionDuration: "400ms",
+  marginBottom: 1,
+  boxShadow: `0px 0px 0px 0px rgba(0,0,0,0)`,
+  [WHEN_MOBILE]: grayLineCss,
+})
+
+const topBarCss = css({
+  zIndex: 10,
+  position: "fixed",
+  width: "100%",
+  backgroundColor: colors.white,
+})
+const footerCss = css({ zIndex: -10, backgroundColor: colors.white, marginTop: 50 })
+
+const childrenAreaDesktopCss = css({
+  // Design calls for *baseline* of text Title to match that of intro on side nav
+  transform: "translateY(-25)",
+})
+
+const childrenAreaCss = css(flex, {
+  position: "relative",
+  minHeight: `calc(100vh - ${HEADER_HEIGHT}px)`,
+  [WHEN_TABLET_AND_UP]: childrenAreaDesktopCss,
+})
+
+export default withRouter(Page)
 
 function moveToHash() {
   scrollToHash(60)
