@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import { Image, StyleSheet, Text, TouchableOpacity } from "react-native"
 import AudioIcon from "src/about/AudioIcon"
 import Backers from "src/about/Backers"
 import { Contributor } from "src/about/Contributor"
@@ -43,7 +43,7 @@ export class About extends React.Component<Props & I18nProps> {
           title={t("pageTitle")}
           description={t("description")}
         />
-        <View>
+        <div>
           <VideoCover />
           {/* Below Fold */}
           <GridRow
@@ -134,7 +134,7 @@ export class About extends React.Component<Props & I18nProps> {
           <Team contributors={contributors} />
           <Backers />
           <PressMedia />
-        </View>
+        </div>
       </>
     )
   }
