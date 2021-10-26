@@ -1,5 +1,4 @@
 import * as React from "react"
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import Hamburger from "src/header/Hamburger"
 import { css } from "@emotion/react"
 import { useBooleanToggle } from "src/hooks/useBooleanToggle"
@@ -9,7 +8,7 @@ import RingsGlyph from "src/logos/RingsGlyph"
 import links from "src/shared/menu-items"
 import MobileMenu from "src/shared/MobileMenu"
 import Navigation, { NavigationTheme } from "src/shared/Navigation"
-import { fonts, standardStyles } from "src/styles"
+import { flex, flexRow, fonts, standardStyles, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 import { colors } from "src/colors"
 import { useRouter } from "next/router"
 interface Props {
@@ -38,26 +37,17 @@ export default function TopBar({ current, kitName }: Props) {
   }, [router, showingKits, toggleKits])
 
   return (
-    <View style={standardStyles.centered}>
-      <View style={[standardStyles.row, styles.container, isMobile && styles.containerMobile]}>
-        <View style={styles.rowVerticalCenter}>
-          <a href={links.HOME.link}>
-            <TouchableOpacity style={styles.rowVerticalCenter}>
-              {isMobile ? <RingsGlyph height={30} /> : <LogoLightBg height={30} />}
-            </TouchableOpacity>
+    <div css={rootCss}>
+      <div css={containerCss}>
+        <div css={rowVerticalCenterCss}>
+          <a href={links.HOME.link} css={touchableRowCss}>
+            {isMobile ? <RingsGlyph height={30} /> : <LogoLightBg height={30} />}
           </a>
-          <a href={current} css={kitBrand}>
-            <TouchableOpacity style={styles.rowVerticalCenter}>
-              <Text
-                // @ts-ignore -- added initial to the aug but it still isnt liking it
-                style={[fonts.h3, styles.title]}
-              >
-                {kitName}
-              </Text>
-            </TouchableOpacity>
+          <a href={current} css={css(kitBrandCss, touchableRowCss)}>
+            <p css={titleCss}>{kitName}</p>
           </a>
-        </View>
-        <View style={styles.rowVerticalCenter}>
+        </div>
+        <div css={rowVerticalCenterCss}>
           {isMobile ? (
             <Hamburger
               onPress={toggleKits}
@@ -66,18 +56,18 @@ export default function TopBar({ current, kitName }: Props) {
               css={hamburgerCss}
             />
           ) : (
-            <View style={styles.kits}>
+            <div css={kitsCss}>
               <Kits current={current} />
-            </View>
+            </div>
           )}
           {showingKits && (
-            <View style={styles.kitsMobileShown}>
+            <div css={kitsMobileShownCss}>
               <MobileMenu currentPage={current} menu={KITS} />
-            </View>
+            </div>
           )}
-        </View>
-      </View>
-    </View>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -90,7 +80,7 @@ const Kits = React.memo(({ current }: { current: string }) => {
         return (
           <Navigation
             key={kit.link}
-            style={styles.navLink}
+            style={navLinkStyle}
             text={kit.name}
             link={kit.link}
             selected={kit.link === current}
@@ -102,57 +92,69 @@ const Kits = React.memo(({ current }: { current: string }) => {
   )
 })
 
+const rootCss = css(flex, standardStyles.centered)
+
 const hamburgerCss = css({
   margin: 0,
   zIndex: 100,
-})
-
-const styles = StyleSheet.create({
-  title: {
-    marginLeft: 15,
-    lineHeight: "initial", // fixes the vertical alignment
-  },
-  container: {
-    maxWidth: 1600,
-    backgroundColor: colors.white,
-    justifyContent: "space-between",
-    padding: 20,
-    alignItems: "center",
-    width: "100%",
-    flex: 1,
-  },
-  containerMobile: {
-    paddingVertical: 10,
-    paddingHorizontal: 15,
-  },
-  rowVerticalCenter: {
-    alignContent: "center",
-    flexDirection: "row",
-  },
-  kits: {
-    alignItems: "center",
-    flexDirection: "row",
-    marginHorizontal: 30,
-  },
-  kitsMobileShown: {
-    zIndex: 10,
-    position: "fixed",
-    left: 0,
-    right: 0,
-    top: 0,
-    bottom: 0,
-    paddingVertical: 20,
-    borderWifth: 1,
-    width: "100%",
-    backgroundColor: colors.white,
-    justifyContent: "space-around",
-  },
-  navLink: {
-    marginBottom: 0,
-    marginHorizontal: 15,
+  [WHEN_TABLET_AND_UP]: {
+    display: "none",
   },
 })
 
-const kitBrand = css({
+const touchAbleCss = css({
+  opacity: 1,
+  transitionDuration: "250ms",
+  transitionProperty: "opacity",
+  "&:active, &:focus": {
+    opacity: 0.85,
+  },
+})
+
+const titleCss = css(fonts.h3, {
+  marginLeft: 15,
+  lineHeight: "initial", // fixes the vertical alignment
+})
+const containerCss = css(flexRow, {
+  maxWidth: 1600,
+  backgroundColor: colors.white,
+  justifyContent: "space-between",
+  padding: 20,
+  alignItems: "center",
+  width: "100%",
+  flex: 1,
+  [WHEN_MOBILE]: {
+    padding: "10px 15px",
+  },
+})
+
+const rowVerticalCenterCss = css(flexRow, {
+  alignContent: "center",
+})
+
+const touchableRowCss = css(touchAbleCss, rowVerticalCenterCss)
+const kitsCss = css(flexRow, {
+  alignItems: "center",
+  margin: "0px 30px",
+})
+const kitsMobileShownCss = css({
+  zIndex: 10,
+  position: "fixed",
+  left: 0,
+  right: 0,
+  top: 0,
+  bottom: 0,
+  padding: "20px 0px",
+  borderWidth: 1,
+  width: "100%",
+  backgroundColor: colors.white,
+  justifyContent: "space-around",
+})
+const navLinkStyle = {
+  marginBottom: 0,
+  marginHorizontal: 15,
+}
+
+const kitBrandCss = css({
   textDecoration: "none",
 })
