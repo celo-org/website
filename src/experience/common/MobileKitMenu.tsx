@@ -1,12 +1,10 @@
 import * as React from "react"
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import scrollToHash from "src/experience/common/scrollToHash"
 import Sidebar, { Page } from "src/experience/common/Sidebar"
 import Triangle, { Direction } from "src/shared/Triangle"
-import { fonts, standardStyles } from "src/styles"
 import { colors } from "src/colors"
 import { css } from "@emotion/react"
-import { WHEN_MOBILE } from "src/estyles"
+import { WHEN_MOBILE, fonts, flexRow } from "src/estyles"
 interface Props {
   pages: Page[]
   pathname: string
@@ -45,22 +43,20 @@ export default class MobileMenu extends React.PureComponent<Props, State> {
     const { pages, pathname } = this.props
     return (
       <div css={containerCss}>
-        <TouchableOpacity testID="toggle" onPress={this.toggleMenu}>
-          <View style={[standardStyles.row, styles.bar]}>
-            <Title pages={pages} pathname={pathname} />
-            <Triangle direction={this.state.isOpen ? Direction.up : Direction.down} />
-          </View>
-        </TouchableOpacity>
-        <View style={[styles.menu, this.state.isOpen && styles.open]}>
-          <View style={styles.sideBar}>
+        <div css={barCss} onClick={this.toggleMenu} tabIndex={0} data-testid="toggle">
+          <Title pages={pages} pathname={pathname} />
+          <Triangle direction={this.state.isOpen ? Direction.up : Direction.down} />
+        </div>
+        <div css={[menuCss, this.state.isOpen && openCss]}>
+          <div css={sideBarCss}>
             <Sidebar
               pages={pages}
               currentPathName={pathname}
               routeHash={this.props.routeHash}
               onChangeRoute={this.goToSubSection}
             />
-          </View>
-        </View>
+          </div>
+        </div>
       </div>
     )
   }
@@ -74,7 +70,7 @@ function Title({ pages, pathname }: Omit<Props, "routeHash">) {
     return page && page.title
   }, [pathname, pages])
 
-  return <Text style={fonts.h6}>{pageTitle}</Text>
+  return <h6 css={fonts.h6}>{pageTitle}</h6>
 }
 
 const containerCss = css({
@@ -90,31 +86,36 @@ const containerCss = css({
   },
 })
 
-const styles = StyleSheet.create({
-  sideBar: {
-    position: "absolute",
-    backgroundColor: colors.light,
-    height: "100vh",
-    overflow: "scroll",
-    width: "100%",
-    padding: 15,
+const sideBarCss = css({
+  position: "absolute",
+  backgroundColor: colors.light,
+  height: "100vh",
+  overflow: "scroll",
+  width: "100%",
+  padding: 15,
+})
+
+const barCss = css(flexRow, {
+  padding: "15px 20px",
+  justifyContent: "space-between",
+  alignItems: "center",
+  borderBottomColor: colors.gray,
+  borderBottomWidth: 1,
+  touchAction: "manipulation",
+  transitionProperty: "opacity",
+  transitionDuration: "250ms",
+  "&:active, &:focus": {
+    opacity: 0.8,
   },
-  bar: {
-    paddingHorizontal: 20,
-    paddingVertical: 15,
-    justifyContent: "space-between",
-    alignItems: "center",
-    borderBottomColor: colors.gray,
-    borderBottomWidth: 1,
-  },
-  menu: {
-    height: "100%",
-    transform: [{ scaleY: 0 }],
-    transitionDuration: "250ms",
-    transitionProperty: "transform",
-    transformOrigin: "top",
-  },
-  open: {
-    transform: [{ scaleY: 1 }],
-  },
+})
+
+const menuCss = css({
+  height: "100%",
+  transform: "scaleY(0)",
+  transitionDuration: "250ms",
+  transitionProperty: "transform",
+  transformOrigin: "top",
+})
+const openCss = css({
+  transform: "scaleY(1)",
 })

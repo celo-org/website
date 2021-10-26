@@ -277,6 +277,7 @@ const topBarCss = css({
   width: "100%",
   backgroundColor: colors.white,
 })
+
 const footerCss = css({ zIndex: -10, backgroundColor: colors.white, marginTop: 50 })
 
 const childrenAreaDesktopCss = css({
