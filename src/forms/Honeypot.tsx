@@ -7,7 +7,7 @@ export function HoneyPot() {
   return (
     <input
       type="text"
-      name={"account email"}
+      name={"accountEmail"}
       value={value}
       onChange={(e) => {
         setValue(e.target.value)
