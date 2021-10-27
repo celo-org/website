@@ -6,7 +6,7 @@ import scrollToHash from "src/experience/common/scrollToHash"
 import Sidebar, { Page as Pages } from "src/experience/common/Sidebar"
 import TopBar from "src/experience/common/TopBar"
 import OpenGraph from "src/header/OpenGraph"
-import { ScreenProps, ScreenSizes } from "src/layout/ScreenSize"
+import { withScreenSize, ScreenProps, ScreenSizes } from "src/layout/ScreenSize"
 import Footer from "src/shared/Footer"
 import menu from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
@@ -277,7 +277,6 @@ const topBarCss = css({
   width: "100%",
   backgroundColor: colors.white,
 })
-
 const footerCss = css({ zIndex: -10, backgroundColor: colors.white, marginTop: 50 })
 
 const childrenAreaDesktopCss = css({
@@ -291,7 +290,7 @@ const childrenAreaCss = css(flex, {
   [WHEN_TABLET_AND_UP]: childrenAreaDesktopCss,
 })
 
-export default withRouter(Page)
+export default withScreenSize(withRouter(Page))
 
 function moveToHash() {
   scrollToHash(60)
