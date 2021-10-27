@@ -22,6 +22,9 @@ import Button, { BTN } from "src/shared/Button.3"
 import { hashNav } from "src/shared/menu-items"
 import { fonts, standardStyles } from "src/styles"
 import { colors } from "src/colors"
+import clearSpace from "src/experience/brandkit/images/ClearspaceImage.png"
+import lilah from "src/experience/brandkit/images/lilah.jpg"
+import lilahOverlay from "src/experience/brandkit/images/lilahOverlay.jpg"
 
 export default React.memo(function Logo() {
   const { t } = useTranslation(NameSpaces.brand)
@@ -162,7 +165,7 @@ const Clearspace = React.memo(function ClearSpace() {
             <Image
               resizeMethod="resize"
               resizeMode="contain"
-              source={require("src/experience/brandkit/images/ClearspaceImage.png")}
+              source={{ uri: clearSpace.src }}
               style={standardStyles.image}
             />
           </AspectRatio>
@@ -265,15 +268,12 @@ function Backgrounds() {
         first={
           <>
             <Judgement is={Value.Bad}>
-              <LogoWithBackground
-                image={require("src/experience/brandkit/images/lilah.jpg")}
-                type="dark"
-              />
+              <LogoWithBackground image={{ uri: lilah.src }} type="dark" />
             </Judgement>
             <Judgement is={Value.Good}>
               <LogoWithBackground
                 backgroundColor={colors.dark}
-                image={require("src/experience/brandkit/images/lilahOverlay.jpg")}
+                image={{ uri: lilahOverlay.src }}
                 type="white"
               />
             </Judgement>
