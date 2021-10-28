@@ -54,8 +54,9 @@ export default class MyDocument extends Document<Props> {
             type="text/css"
           />
           <link
-            href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,500i,700&display=swap"
             rel="stylesheet"
+            href="/fonts/EBGaramondFont.css"
+            type="text/css"
           />
 
         </Head>
