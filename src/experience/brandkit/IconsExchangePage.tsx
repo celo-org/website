@@ -103,7 +103,7 @@ const icons = [
     uri: "/assets/marketplace-icons/icons-cbrl-reverse.zip",
     variant: "circle-black",
   },
-]
+] as const
 
 const info = frontMatter<Attributes>(data)
 
@@ -160,7 +160,7 @@ function Overview() {
                 <IconShowcase
                   key={i}
                   ratio={1}
-                  variant={(icon.variant || "circle") as any}
+                  variant={icon.variant || "circle"}
                   description={icon.description}
                   name={icon.name}
                   preview={icon.preview}

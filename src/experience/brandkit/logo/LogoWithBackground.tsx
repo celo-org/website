@@ -1,5 +1,5 @@
 import * as React from "react"
-import { ImageBackground, ImageRequireSource, StyleSheet, View } from "react-native"
+import { ImageBackground, StyleSheet, View, ImageURISource } from "react-native"
 import LogoDarkBg from "src/logos/LogoDarkBg"
 import LogoLightBg from "src/logos/LogoLightBg"
 import AspectRatio from "src/shared/AspectRatio"
@@ -7,7 +7,7 @@ import { standardStyles } from "src/styles"
 import { colors } from "src/colors"
 
 interface Props {
-  image?: ImageRequireSource
+  image?: ImageURISource
   backgroundColor?: string
   type: "light" | "dark" | "black" | "white"
   hasBorder?: boolean

@@ -1,8 +1,6 @@
+import { css } from "@emotion/react"
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
-import { brandStyles } from "src/experience/common/constants"
-import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
-import { standardStyles } from "src/styles"
+import { flex, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
 
 interface TripplePairingProps {
   first: React.ReactNode
@@ -10,28 +8,31 @@ interface TripplePairingProps {
   third: React.ReactNode
 }
 
-export default withScreenSize<TripplePairingProps>(function TripplePairing({
-  first,
-  second,
-  third,
-  screen,
-}: TripplePairingProps & ScreenProps) {
+export default function TripplePairing({ first, second, third }: TripplePairingProps) {
   return (
-    <View style={screen === ScreenSizes.DESKTOP ? brandStyles.tiling : {}}>
+    <div css={rootCss}>
       {[first, second, third].map((pair, index) => {
         return (
-          <View
-            style={screen === ScreenSizes.DESKTOP ? styles.desktop : standardStyles.row}
-            key={index}
-          >
+          <div css={pairCss} key={index}>
             {pair}
-          </View>
+          </div>
         )
       })}
-    </View>
+    </div>
   )
+}
+
+const rootCss = css(flex, {
+  gap: 16,
+  [WHEN_TABLET_AND_UP]: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
 })
 
-const styles = StyleSheet.create({
-  desktop: { flex: 1 },
+const pairCss = css(flex, {
+  flex: 1,
+  [WHEN_MOBILE]: {
+    flexDirection: "row",
+  },
 })

@@ -43,16 +43,429 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+}
+
+.emotion-1 {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.emotion-2 {
+  transition-property: box-shadow;
+  transition-duration: 400ms;
+  margin-bottom: 1px;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
+@media (max-width: 576px) {
+  .emotion-2 {
+    box-shadow: 0px 1px 1px -1px rgba(0,0,0,0.5);
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  max-width: 1600px;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 20px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media (max-width: 576px) {
+  .emotion-4 {
+    padding: 10px 15px;
+  }
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.emotion-6 {
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-property: opacity;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.emotion-6:active,
+.emotion-6:focus {
+  opacity: 0.85;
+}
+
 .emotion-7 {
   -webkit-text-decoration: none;
   text-decoration: none;
+  opacity: 1;
+  transition-duration: 250ms;
+  transition-property: opacity;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
-.emotion-114 {
+.emotion-7:active,
+.emotion-7:focus {
+  opacity: 0.85;
+}
+
+.emotion-8 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 24px;
+  line-height: 28;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+  margin-left: 15px;
+  line-height: initial;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px 30px;
+}
+
+.emotion-32 {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .emotion-32 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: -1;
+  }
+}
+
+.emotion-33 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 15px 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DDDDDD;
+  border-bottom-width: 1px;
+  touch-action: manipulation;
+  transition-property: opacity;
+  transition-duration: 250ms;
+}
+
+.emotion-33:active,
+.emotion-33:focus {
+  opacity: 0.8;
+}
+
+.emotion-34 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 18px;
+}
+
+.emotion-35 {
+  height: 100%;
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  transition-duration: 250ms;
+  transition-property: transform;
+  transform-origin: top;
+}
+
+.emotion-36 {
+  position: absolute;
+  background-color: #E5E5E5;
+  height: 100vh;
+  overflow: scroll;
+  width: 100%;
+  padding: 15px;
+}
+
+@media (min-width: 576px) {
+  .emotion-37 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 175px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-37 {
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+.emotion-44 {
+  transform-origin: top;
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  margin-left: 20px;
+  transition-property: transform,;
+  transition-duration: 500ms;
+}
+
+.emotion-92 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  margin-top: 116px;
+  padding: 20px;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .emotion-92 {
+    z-index: -5;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 100vw;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-92 {
+    max-width: 958px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-92 {
+    max-width: 1080px;
+  }
+}
+
+.emotion-93 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  min-width: 190px;
+  padding-left: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 576px) {
+  .emotion-93 {
+    display: none;
+  }
+}
+
+.emotion-149 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .emotion-149 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: calc(75% - 50px);
+    -ms-flex-preferred-size: calc(75% - 50px);
+    flex-basis: calc(75% - 50px);
+    margin-left: 20px;
+  }
+}
+
+.emotion-150 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  min-height: calc(100vh - 75px);
+}
+
+@media (min-width: 576px) {
+  .emotion-150 {
+    -webkit-transform: translateY(-25);
+    -moz-transform: translateY(-25);
+    -ms-transform: translateY(-25);
+    transform: translateY(-25);
+  }
+}
+
+.emotion-151 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-173 {
   opacity: 0;
 }
 
-.emotion-145 {
+.emotion-203 {
+  z-index: -10;
+  background-color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.emotion-204 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -72,7 +485,7 @@ exports[`Experience/Icons renders 1`] = `
   width: 100%;
 }
 
-.emotion-146 {
+.emotion-205 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -101,7 +514,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-146 {
+  .emotion-205 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -118,7 +531,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-146 {
+  .emotion-205 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -130,36 +543,36 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-146 {
+  .emotion-205 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-146 {
+  .emotion-205 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-146 {
+  .emotion-205 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-146 {
+  .emotion-205 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-146 {
+  .emotion-205 {
     margin-top: 30px;
   }
 }
 
-.emotion-147 {
+.emotion-206 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -172,12 +585,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-147 {
+  .emotion-206 {
     grid-column: span 3;
   }
 }
 
-.emotion-148 {
+.emotion-207 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -190,7 +603,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-148 {
+  .emotion-207 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -203,7 +616,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-149 {
+.emotion-208 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -216,7 +629,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-149 {
+  .emotion-208 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -228,7 +641,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-150 {
+.emotion-209 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -245,16 +658,16 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-150 {
+  .emotion-209 {
     text-align: center;
   }
 }
 
-.emotion-152 {
+.emotion-211 {
   color: inherit;
 }
 
-.emotion-153 {
+.emotion-212 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -267,12 +680,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-153 {
+  .emotion-212 {
     grid-column: span 3;
   }
 }
 
-.emotion-154 {
+.emotion-213 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -288,21 +701,21 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-154 {
+  .emotion-213 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-155 {
+.emotion-214 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-155 {
+  .emotion-214 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -310,7 +723,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-156 {
+.emotion-215 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -325,18 +738,18 @@ exports[`Experience/Icons renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-157 {
+.emotion-216 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-197 {
+.emotion-256 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-197 {
+  .emotion-256 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -344,14 +757,14 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-271 {
+.emotion-330 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-271 {
+  .emotion-330 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -359,7 +772,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-340 {
+.emotion-399 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -388,7 +801,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-340 {
+  .emotion-399 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -405,7 +818,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-340 {
+  .emotion-399 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -417,39 +830,39 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-340 {
+  .emotion-399 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-340 {
+  .emotion-399 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-340 {
+  .emotion-399 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-340 {
+  .emotion-399 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-340 {
+  .emotion-399 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-341 {
+.emotion-400 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -467,7 +880,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-341 {
+  .emotion-400 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -482,7 +895,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-342 {
+.emotion-401 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -496,7 +909,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-342 {
+  .emotion-401 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -508,31 +921,31 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-343 {
+.emotion-402 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-343 {
+  .emotion-402 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-344 {
+.emotion-403 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-344 {
+  .emotion-403 {
     display: none;
   }
 }
 
-.emotion-345 {
+.emotion-404 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -544,7 +957,7 @@ exports[`Experience/Icons renders 1`] = `
   position: relative;
 }
 
-.emotion-346 {
+.emotion-405 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -571,7 +984,7 @@ exports[`Experience/Icons renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-347 {
+.emotion-406 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -594,12 +1007,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-347 {
+  .emotion-406 {
     text-align: center;
   }
 }
 
-.emotion-348 {
+.emotion-407 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -624,7 +1037,7 @@ exports[`Experience/Icons renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-349 {
+.emotion-408 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -640,247 +1053,69 @@ exports[`Experience/Icons renders 1`] = `
 
 <div
   className="emotion-0"
-  style={
-    Object {
-      "isolation": "isolate",
-    }
-  }
 >
   <div
-    className="emotion-0"
-    style={
-      Object {
-        "backgroundColor": "rgba(255,255,255,1.00)",
-        "position": "fixed",
-        "width": "100%",
-        "zIndex": 10,
-      }
-    }
+    className="emotion-1"
   >
     <div
-      className="emotion-0"
-      style={
-        Object {
-          "MozTransitionProperty": "box-shadow",
-          "WebkitTransitionDuration": "400ms",
-          "WebkitTransitionProperty": "box-shadow",
-          "boxShadow": "0px 0px 0px 0px rgba(0,0,0,0)",
-          "marginBottom": "1px",
-          "transitionDuration": "400ms",
-          "transitionProperty": "box-shadow",
-        }
-      }
+      className="emotion-2"
     >
       <div
-        className="emotion-0"
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "WebkitBoxPack": "center",
-            "WebkitJustifyContent": "center",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "msFlexAlign": "center",
-            "msFlexPack": "center",
-          }
-        }
+        className="emotion-3"
       >
         <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "horizontal",
-              "WebkitBoxPack": "justify",
-              "WebkitFlex": 1,
-              "WebkitFlexDirection": "row",
-              "WebkitJustifyContent": "space-between",
-              "alignItems": "center",
-              "backgroundColor": "rgba(255,255,255,1.00)",
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "maxWidth": "1600px",
-              "msFlex": "1 1 0%",
-              "msFlexAlign": "center",
-              "msFlexDirection": "row",
-              "msFlexPack": "justify",
-              "paddingBottom": "20px",
-              "paddingLeft": "20px",
-              "paddingRight": "20px",
-              "paddingTop": "20px",
-              "width": "100%",
-            }
-          }
+          className="emotion-4"
         >
           <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitAlignContent": "center",
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxOrient": "horizontal",
-                "WebkitFlexDirection": "row",
-                "alignContent": "center",
-                "flexDirection": "row",
-                "msFlexDirection": "row",
-                "msFlexLinePack": "center",
-              }
-            }
+            className="emotion-5"
           >
             <a
+              className="emotion-6"
               href="/"
             >
-              <div
-                className="emotion-0"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onKeyDown={[Function]}
-                style={
-                  Object {
-                    "MozTransitionProperty": "opacity",
-                    "MozUserSelect": "none",
-                    "WebkitAlignContent": "center",
-                    "WebkitBoxDirection": "normal",
-                    "WebkitBoxOrient": "horizontal",
-                    "WebkitFlexDirection": "row",
-                    "WebkitTransitionDuration": "0s",
-                    "WebkitTransitionProperty": "opacity",
-                    "WebkitUserSelect": "none",
-                    "alignContent": "center",
-                    "cursor": "pointer",
-                    "flexDirection": "row",
-                    "msFlexDirection": "row",
-                    "msFlexLinePack": "center",
-                    "msTouchAction": "manipulation",
-                    "msUserSelect": "none",
-                    "touchAction": "manipulation",
-                    "transitionDuration": "0s",
-                    "transitionProperty": "opacity",
-                    "userSelect": "none",
-                  }
-                }
-                tabIndex="0"
+              <svg
+                fill="none"
+                height={30}
+                viewBox="0 0 85 25"
+                width={102}
               >
-                <svg
-                  fill="none"
-                  height={30}
-                  viewBox="0 0 85 25"
-                  width={102}
-                >
-                  <path
-                    d="M64.2368 22.079L66.5 21.3684V2.63159L64.2368 3.34212V22.079ZM38.1316 10.7105C39.5526 10.7105 40.8684 11.3421 41.7105 12.3947L42.6316 10.2632C41.421 9.10528 39.8158 8.55264 38.1316 8.55264C34.2368 8.55264 31.5526 11.6316 31.5789 15.0263C31.6052 18.7105 34.5 21.7105 38.1316 21.7105C39.9737 21.7105 41.3684 21.1579 42.421 20.3947V17.7895C41.3158 18.8947 39.7105 19.5526 38.3158 19.5526C36.2105 19.5526 33.8421 17.8421 33.8421 15.0263C33.8421 12.4211 35.8947 10.7105 38.1316 10.7105ZM53.1842 8.55264C49.2895 8.55264 47.0263 11.6316 47.0263 15.0263C47.0263 18.7105 49.9473 21.7105 53.5789 21.7105C55.421 21.7105 56.8158 21.1579 57.8684 20.3947V17.7895C56.7631 18.8947 55.1579 19.5526 53.7631 19.5526C51.8947 19.5526 49.8421 18.3947 49.421 15.9474H59.3421V15.079C59.3421 11.4474 56.9473 8.55264 53.1842 8.55264ZM77.6316 8.55264C74 8.55264 71.0526 11.5 71.0526 15.1316C71.0526 18.7632 74 21.7105 77.6316 21.7105C81.2631 21.7105 84.2105 18.7632 84.2105 15.1316C84.2105 11.5 81.2631 8.55264 77.6316 8.55264ZM53.2105 10.7105C54.9737 10.7105 56.8421 11.8158 57 13.9474H49.421C49.5789 11.8158 51.4473 10.7105 53.2105 10.7105ZM77.6316 19.5526C75.1842 19.5526 73.2105 17.579 73.2105 15.1316C73.2105 12.6842 75.1842 10.7105 77.6316 10.7105C80.0789 10.7105 82.0526 12.6842 82.0526 15.1316C82.0526 17.579 80.0789 19.5526 77.6316 19.5526Z"
-                    fill="#2E3338"
-                  />
-                  <path
-                    d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
-                    fill="#35D07F"
-                  />
-                  <path
-                    d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
-                    fill="#FBCC5C"
-                  />
-                  <path
-                    d="M15.4553 19.7315C16.1392 18.903 16.6292 17.932 16.89 16.8899C17.9321 16.6294 18.9029 16.1391 19.7316 15.4554C19.6937 16.6623 19.4339 17.852 18.9647 18.9646C17.8521 19.4338 16.6624 19.6936 15.4553 19.7315ZM8.11026 8.10989C7.06815 8.37042 6.09736 8.86068 5.26868 9.54436C5.30657 8.33752 5.56631 7.14778 6.03552 6.03515C7.14815 5.56594 8.33789 5.30621 9.54473 5.26831C8.86105 6.09699 8.37078 7.06778 8.11026 8.10989Z"
-                    fill="#5EA33B"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M64.2368 22.079L66.5 21.3684V2.63159L64.2368 3.34212V22.079ZM38.1316 10.7105C39.5526 10.7105 40.8684 11.3421 41.7105 12.3947L42.6316 10.2632C41.421 9.10528 39.8158 8.55264 38.1316 8.55264C34.2368 8.55264 31.5526 11.6316 31.5789 15.0263C31.6052 18.7105 34.5 21.7105 38.1316 21.7105C39.9737 21.7105 41.3684 21.1579 42.421 20.3947V17.7895C41.3158 18.8947 39.7105 19.5526 38.3158 19.5526C36.2105 19.5526 33.8421 17.8421 33.8421 15.0263C33.8421 12.4211 35.8947 10.7105 38.1316 10.7105ZM53.1842 8.55264C49.2895 8.55264 47.0263 11.6316 47.0263 15.0263C47.0263 18.7105 49.9473 21.7105 53.5789 21.7105C55.421 21.7105 56.8158 21.1579 57.8684 20.3947V17.7895C56.7631 18.8947 55.1579 19.5526 53.7631 19.5526C51.8947 19.5526 49.8421 18.3947 49.421 15.9474H59.3421V15.079C59.3421 11.4474 56.9473 8.55264 53.1842 8.55264ZM77.6316 8.55264C74 8.55264 71.0526 11.5 71.0526 15.1316C71.0526 18.7632 74 21.7105 77.6316 21.7105C81.2631 21.7105 84.2105 18.7632 84.2105 15.1316C84.2105 11.5 81.2631 8.55264 77.6316 8.55264ZM53.2105 10.7105C54.9737 10.7105 56.8421 11.8158 57 13.9474H49.421C49.5789 11.8158 51.4473 10.7105 53.2105 10.7105ZM77.6316 19.5526C75.1842 19.5526 73.2105 17.579 73.2105 15.1316C73.2105 12.6842 75.1842 10.7105 77.6316 10.7105C80.0789 10.7105 82.0526 12.6842 82.0526 15.1316C82.0526 17.579 80.0789 19.5526 77.6316 19.5526Z"
+                  fill="#2E3338"
+                />
+                <path
+                  d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
+                  fill="#35D07F"
+                />
+                <path
+                  d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
+                  fill="#FBCC5C"
+                />
+                <path
+                  d="M15.4553 19.7315C16.1392 18.903 16.6292 17.932 16.89 16.8899C17.9321 16.6294 18.9029 16.1391 19.7316 15.4554C19.6937 16.6623 19.4339 17.852 18.9647 18.9646C17.8521 19.4338 16.6624 19.6936 15.4553 19.7315ZM8.11026 8.10989C7.06815 8.37042 6.09736 8.86068 5.26868 9.54436C5.30657 8.33752 5.56631 7.14778 6.03552 6.03515C7.14815 5.56594 8.33789 5.30621 9.54473 5.26831C8.86105 6.09699 8.37078 7.06778 8.11026 8.10989Z"
+                  fill="#5EA33B"
+                />
+              </svg>
             </a>
             <a
               className="emotion-7"
               href="/experience/brand"
             >
-              <div
-                className="emotion-0"
-                onClick={[Function]}
-                onContextMenu={[Function]}
-                onKeyDown={[Function]}
-                style={
-                  Object {
-                    "MozTransitionProperty": "opacity",
-                    "MozUserSelect": "none",
-                    "WebkitAlignContent": "center",
-                    "WebkitBoxDirection": "normal",
-                    "WebkitBoxOrient": "horizontal",
-                    "WebkitFlexDirection": "row",
-                    "WebkitTransitionDuration": "0s",
-                    "WebkitTransitionProperty": "opacity",
-                    "WebkitUserSelect": "none",
-                    "alignContent": "center",
-                    "cursor": "pointer",
-                    "flexDirection": "row",
-                    "msFlexDirection": "row",
-                    "msFlexLinePack": "center",
-                    "msTouchAction": "manipulation",
-                    "msUserSelect": "none",
-                    "touchAction": "manipulation",
-                    "transitionDuration": "0s",
-                    "transitionProperty": "opacity",
-                    "userSelect": "none",
-                  }
-                }
-                tabIndex="0"
+              <p
+                className="emotion-8"
               >
-                <div
-                  className="emotion-9"
-                  dir="auto"
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "color": "rgba(46,51,56,1.00)",
-                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                      "fontSize": "24px",
-                      "fontWeight": "400",
-                      "lineHeight": "initial",
-                      "marginLeft": "15px",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
-                >
-                  BrandKit
-                </div>
-              </div>
+                BrandKit
+              </p>
             </a>
           </div>
           <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitAlignContent": "center",
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxOrient": "horizontal",
-                "WebkitFlexDirection": "row",
-                "alignContent": "center",
-                "flexDirection": "row",
-                "msFlexDirection": "row",
-                "msFlexLinePack": "center",
-              }
-            }
+            className="emotion-5"
           >
             <div
-              className="emotion-0"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "WebkitBoxDirection": "normal",
-                  "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexDirection": "row",
-                  "alignItems": "center",
-                  "flexDirection": "row",
-                  "marginLeft": "30px",
-                  "marginRight": "30px",
-                  "msFlexAlign": "center",
-                  "msFlexDirection": "row",
-                }
-              }
+              className="emotion-10"
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -904,7 +1139,7 @@ exports[`Experience/Icons renders 1`] = `
                 }
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -912,7 +1147,7 @@ exports[`Experience/Icons renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/experience/brand"
                     onClick={[Function]}
@@ -956,7 +1191,7 @@ exports[`Experience/Icons renders 1`] = `
                   </a>
                 </div>
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   style={
                     Object {
                       "bottom": "-16px",
@@ -988,7 +1223,7 @@ exports[`Experience/Icons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -1012,7 +1247,7 @@ exports[`Experience/Icons renders 1`] = `
                 }
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -1020,7 +1255,7 @@ exports[`Experience/Icons renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/experience/events"
                     onClick={[Function]}
@@ -1065,7 +1300,7 @@ exports[`Experience/Icons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -1089,7 +1324,7 @@ exports[`Experience/Icons renders 1`] = `
                 }
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -1097,7 +1332,7 @@ exports[`Experience/Icons renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/experience/grants"
                     onClick={[Function]}
@@ -1142,7 +1377,7 @@ exports[`Experience/Icons renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "WebkitAlignItems": "center",
@@ -1166,7 +1401,7 @@ exports[`Experience/Icons renders 1`] = `
                 }
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -1174,7 +1409,7 @@ exports[`Experience/Icons renders 1`] = `
                   onMouseUp={[Function]}
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/experience/merchant"
                     onClick={[Function]}
@@ -1223,61 +1458,713 @@ exports[`Experience/Icons renders 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  <div
-    className="emotion-0"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginTop": "116px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-        "zIndex": -5,
-      }
-    }
-  >
     <div
-      className="emotion-0"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "minWidth": "190px",
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "0px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-32"
     >
       <div
-        className="emotion-0"
-        id="sidebar"
-        style={
-          Object {
-            "position": "sticky",
-            "top": "175px",
-          }
-        }
+        className="emotion-33"
+        data-testid="toggle"
+        onClick={[Function]}
+        tabIndex={0}
+      >
+        <h6
+          className="emotion-34"
+        />
+        <svg
+          fill="none"
+          height="14"
+          transform="rotate(0)"
+          viewBox="0 0 14 8"
+          width="14"
+        >
+          <title>
+            triangle
+          </title>
+          <path
+            clipRule="evenodd"
+            d="M7 8L0 0H14L7 8Z"
+            fill="#2E3338"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        className="emotion-35"
       >
         <div
-          className="emotion-0"
+          className="emotion-36"
+        >
+          <div
+            className="emotion-37"
+            id="sidebar"
+          >
+            <div
+              className="emotion-11"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="emotion-13 emotion-14 emotion-15"
+                dir="auto"
+                href="/experience/brand"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "color": "rgba(46,51,56,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "normal",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "marginBottom": "5px",
+                    "marginLeft": "5px",
+                    "marginRight": "5px",
+                    "marginTop": "5px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "paddingBottom": "5px",
+                    "paddingLeft": "5px",
+                    "paddingRight": "5px",
+                    "paddingTop": "5px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <div
+                  className="emotion-11"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingRight": "8px",
+                    }
+                  }
+                >
+                  <div
+                    className="emotion-11"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "width": "12px",
+                      }
+                    }
+                  />
+                </div>
+                Introduction
+              </a>
+            </div>
+            <div
+              className="emotion-44"
+            />
+            <div
+              className="emotion-11"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="emotion-13 emotion-14 emotion-15"
+                dir="auto"
+                href="/experience/brand/logo"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "color": "rgba(46,51,56,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "normal",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "marginBottom": "5px",
+                    "marginLeft": "5px",
+                    "marginRight": "5px",
+                    "marginTop": "5px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "paddingBottom": "5px",
+                    "paddingLeft": "5px",
+                    "paddingRight": "5px",
+                    "paddingTop": "5px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <div
+                  className="emotion-11"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingRight": "8px",
+                    }
+                  }
+                >
+                  <div
+                    className="emotion-11"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "width": "12px",
+                      }
+                    }
+                  />
+                </div>
+                Logo
+              </a>
+            </div>
+            <div
+              className="emotion-44"
+            />
+            <div
+              className="emotion-11"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="emotion-13 emotion-14 emotion-15"
+                dir="auto"
+                href="/experience/brand/color"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "color": "rgba(46,51,56,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "normal",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "marginBottom": "5px",
+                    "marginLeft": "5px",
+                    "marginRight": "5px",
+                    "marginTop": "5px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "paddingBottom": "5px",
+                    "paddingLeft": "5px",
+                    "paddingRight": "5px",
+                    "paddingTop": "5px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <div
+                  className="emotion-11"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingRight": "8px",
+                    }
+                  }
+                >
+                  <div
+                    className="emotion-11"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "width": "12px",
+                      }
+                    }
+                  />
+                </div>
+                Color
+              </a>
+            </div>
+            <div
+              className="emotion-44"
+            />
+            <div
+              className="emotion-11"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="emotion-13 emotion-14 emotion-15"
+                dir="auto"
+                href="/experience/brand/typography"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "color": "rgba(46,51,56,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "normal",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "marginBottom": "5px",
+                    "marginLeft": "5px",
+                    "marginRight": "5px",
+                    "marginTop": "5px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "paddingBottom": "5px",
+                    "paddingLeft": "5px",
+                    "paddingRight": "5px",
+                    "paddingTop": "5px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <div
+                  className="emotion-11"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingRight": "8px",
+                    }
+                  }
+                >
+                  <div
+                    className="emotion-11"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "width": "12px",
+                      }
+                    }
+                  />
+                </div>
+                Typography
+              </a>
+            </div>
+            <div
+              className="emotion-44"
+            />
+            <div
+              className="emotion-11"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="emotion-13 emotion-14 emotion-15"
+                dir="auto"
+                href="/experience/brand/composition"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "color": "rgba(46,51,56,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "normal",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "marginBottom": "5px",
+                    "marginLeft": "5px",
+                    "marginRight": "5px",
+                    "marginTop": "5px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "paddingBottom": "5px",
+                    "paddingLeft": "5px",
+                    "paddingRight": "5px",
+                    "paddingTop": "5px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <div
+                  className="emotion-11"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingRight": "8px",
+                    }
+                  }
+                >
+                  <div
+                    className="emotion-11"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "width": "12px",
+                      }
+                    }
+                  />
+                </div>
+                Composition
+              </a>
+            </div>
+            <div
+              className="emotion-44"
+            />
+            <div
+              className="emotion-11"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="emotion-13 emotion-14 emotion-15"
+                dir="auto"
+                href="/experience/brand/exchange-icons"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "color": "rgba(46,51,56,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "normal",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "marginBottom": "5px",
+                    "marginLeft": "5px",
+                    "marginRight": "5px",
+                    "marginTop": "5px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "paddingBottom": "5px",
+                    "paddingLeft": "5px",
+                    "paddingRight": "5px",
+                    "paddingTop": "5px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <div
+                  className="emotion-11"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingRight": "8px",
+                    }
+                  }
+                >
+                  <div
+                    className="emotion-11"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "width": "12px",
+                      }
+                    }
+                  />
+                </div>
+                Exchange Icons
+              </a>
+            </div>
+            <div
+              className="emotion-11"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="emotion-13 emotion-14 emotion-15"
+                dir="auto"
+                href="/experience/brand/icons"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "color": "rgba(46,51,56,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "normal",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "marginBottom": "5px",
+                    "marginLeft": "5px",
+                    "marginRight": "5px",
+                    "marginTop": "5px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "paddingBottom": "5px",
+                    "paddingLeft": "5px",
+                    "paddingRight": "5px",
+                    "paddingTop": "5px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <div
+                  className="emotion-11"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingRight": "8px",
+                    }
+                  }
+                >
+                  <div
+                    className="emotion-11"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "width": "12px",
+                      }
+                    }
+                  />
+                </div>
+                Icons
+              </a>
+            </div>
+            <div
+              className="emotion-11"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+            >
+              <a
+                className="emotion-13 emotion-14 emotion-15"
+                dir="auto"
+                href="/experience/brand/key-imagery"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(0,0,0,0.00)",
+                    "borderBottomColor": "rgba(0,0,0,0.00)",
+                    "borderLeftColor": "rgba(0,0,0,0.00)",
+                    "borderRightColor": "rgba(0,0,0,0.00)",
+                    "borderTopColor": "rgba(0,0,0,0.00)",
+                    "color": "rgba(46,51,56,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "normal",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "marginBottom": "5px",
+                    "marginLeft": "5px",
+                    "marginRight": "5px",
+                    "marginTop": "5px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "outlineColor": "transparent",
+                    "paddingBottom": "5px",
+                    "paddingLeft": "5px",
+                    "paddingRight": "5px",
+                    "paddingTop": "5px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                <div
+                  className="emotion-11"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingRight": "8px",
+                    }
+                  }
+                >
+                  <div
+                    className="emotion-11"
+                    style={
+                      Object {
+                        "display": "inline-flex",
+                        "width": "12px",
+                      }
+                    }
+                  />
+                </div>
+                Key Imagery
+              </a>
+            </div>
+            <div
+              className="emotion-44"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="emotion-92"
+  >
+    <div
+      className="emotion-93"
+    >
+      <div
+        className="emotion-37"
+        id="sidebar"
+      >
+        <div
+          className="emotion-11"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1285,7 +2172,7 @@ exports[`Experience/Icons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="emotion-14 emotion-15 emotion-9"
+            className="emotion-13 emotion-14 emotion-15"
             dir="auto"
             href="/experience/brand"
             onClick={[Function]}
@@ -1334,7 +2221,7 @@ exports[`Experience/Icons renders 1`] = `
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1343,7 +2230,7 @@ exports[`Experience/Icons renders 1`] = `
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1356,24 +2243,10 @@ exports[`Experience/Icons renders 1`] = `
           </a>
         </div>
         <div
-          className="emotion-0"
-          style={
-            Object {
-              "MozTransitionProperty": "transform,",
-              "WebkitTransform": "scaleY(0)",
-              "WebkitTransformOrigin": "top",
-              "WebkitTransitionDuration": "500ms",
-              "WebkitTransitionProperty": "-webkit-transform,transform,",
-              "marginLeft": "20px",
-              "transform": "scaleY(0)",
-              "transformOrigin": "top",
-              "transitionDuration": "500ms",
-              "transitionProperty": "-webkit-transform,transform,",
-            }
-          }
+          className="emotion-44"
         />
         <div
-          className="emotion-0"
+          className="emotion-11"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1381,7 +2254,7 @@ exports[`Experience/Icons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="emotion-14 emotion-15 emotion-9"
+            className="emotion-13 emotion-14 emotion-15"
             dir="auto"
             href="/experience/brand/logo"
             onClick={[Function]}
@@ -1430,7 +2303,7 @@ exports[`Experience/Icons renders 1`] = `
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1439,7 +2312,7 @@ exports[`Experience/Icons renders 1`] = `
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1452,24 +2325,10 @@ exports[`Experience/Icons renders 1`] = `
           </a>
         </div>
         <div
-          className="emotion-0"
-          style={
-            Object {
-              "MozTransitionProperty": "transform,",
-              "WebkitTransform": "scaleY(0)",
-              "WebkitTransformOrigin": "top",
-              "WebkitTransitionDuration": "500ms",
-              "WebkitTransitionProperty": "-webkit-transform,transform,",
-              "marginLeft": "20px",
-              "transform": "scaleY(0)",
-              "transformOrigin": "top",
-              "transitionDuration": "500ms",
-              "transitionProperty": "-webkit-transform,transform,",
-            }
-          }
+          className="emotion-44"
         />
         <div
-          className="emotion-0"
+          className="emotion-11"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1477,7 +2336,7 @@ exports[`Experience/Icons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="emotion-14 emotion-15 emotion-9"
+            className="emotion-13 emotion-14 emotion-15"
             dir="auto"
             href="/experience/brand/color"
             onClick={[Function]}
@@ -1526,7 +2385,7 @@ exports[`Experience/Icons renders 1`] = `
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1535,7 +2394,7 @@ exports[`Experience/Icons renders 1`] = `
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1548,24 +2407,10 @@ exports[`Experience/Icons renders 1`] = `
           </a>
         </div>
         <div
-          className="emotion-0"
-          style={
-            Object {
-              "MozTransitionProperty": "transform,",
-              "WebkitTransform": "scaleY(0)",
-              "WebkitTransformOrigin": "top",
-              "WebkitTransitionDuration": "500ms",
-              "WebkitTransitionProperty": "-webkit-transform,transform,",
-              "marginLeft": "20px",
-              "transform": "scaleY(0)",
-              "transformOrigin": "top",
-              "transitionDuration": "500ms",
-              "transitionProperty": "-webkit-transform,transform,",
-            }
-          }
+          className="emotion-44"
         />
         <div
-          className="emotion-0"
+          className="emotion-11"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1573,7 +2418,7 @@ exports[`Experience/Icons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="emotion-14 emotion-15 emotion-9"
+            className="emotion-13 emotion-14 emotion-15"
             dir="auto"
             href="/experience/brand/typography"
             onClick={[Function]}
@@ -1622,7 +2467,7 @@ exports[`Experience/Icons renders 1`] = `
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1631,7 +2476,7 @@ exports[`Experience/Icons renders 1`] = `
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1644,24 +2489,10 @@ exports[`Experience/Icons renders 1`] = `
           </a>
         </div>
         <div
-          className="emotion-0"
-          style={
-            Object {
-              "MozTransitionProperty": "transform,",
-              "WebkitTransform": "scaleY(0)",
-              "WebkitTransformOrigin": "top",
-              "WebkitTransitionDuration": "500ms",
-              "WebkitTransitionProperty": "-webkit-transform,transform,",
-              "marginLeft": "20px",
-              "transform": "scaleY(0)",
-              "transformOrigin": "top",
-              "transitionDuration": "500ms",
-              "transitionProperty": "-webkit-transform,transform,",
-            }
-          }
+          className="emotion-44"
         />
         <div
-          className="emotion-0"
+          className="emotion-11"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1669,7 +2500,7 @@ exports[`Experience/Icons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="emotion-14 emotion-15 emotion-9"
+            className="emotion-13 emotion-14 emotion-15"
             dir="auto"
             href="/experience/brand/composition"
             onClick={[Function]}
@@ -1718,7 +2549,7 @@ exports[`Experience/Icons renders 1`] = `
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1727,7 +2558,7 @@ exports[`Experience/Icons renders 1`] = `
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1740,24 +2571,10 @@ exports[`Experience/Icons renders 1`] = `
           </a>
         </div>
         <div
-          className="emotion-0"
-          style={
-            Object {
-              "MozTransitionProperty": "transform,",
-              "WebkitTransform": "scaleY(0)",
-              "WebkitTransformOrigin": "top",
-              "WebkitTransitionDuration": "500ms",
-              "WebkitTransitionProperty": "-webkit-transform,transform,",
-              "marginLeft": "20px",
-              "transform": "scaleY(0)",
-              "transformOrigin": "top",
-              "transitionDuration": "500ms",
-              "transitionProperty": "-webkit-transform,transform,",
-            }
-          }
+          className="emotion-44"
         />
         <div
-          className="emotion-0"
+          className="emotion-11"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1765,7 +2582,7 @@ exports[`Experience/Icons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="emotion-14 emotion-15 emotion-9"
+            className="emotion-13 emotion-14 emotion-15"
             dir="auto"
             href="/experience/brand/exchange-icons"
             onClick={[Function]}
@@ -1814,7 +2631,7 @@ exports[`Experience/Icons renders 1`] = `
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1823,7 +2640,7 @@ exports[`Experience/Icons renders 1`] = `
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1836,7 +2653,7 @@ exports[`Experience/Icons renders 1`] = `
           </a>
         </div>
         <div
-          className="emotion-0"
+          className="emotion-11"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1844,7 +2661,7 @@ exports[`Experience/Icons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="emotion-14 emotion-15 emotion-9"
+            className="emotion-13 emotion-14 emotion-15"
             dir="auto"
             href="/experience/brand/icons"
             onClick={[Function]}
@@ -1893,7 +2710,7 @@ exports[`Experience/Icons renders 1`] = `
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1902,7 +2719,7 @@ exports[`Experience/Icons renders 1`] = `
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1915,7 +2732,7 @@ exports[`Experience/Icons renders 1`] = `
           </a>
         </div>
         <div
-          className="emotion-0"
+          className="emotion-11"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1923,7 +2740,7 @@ exports[`Experience/Icons renders 1`] = `
           onMouseUp={[Function]}
         >
           <a
-            className="emotion-14 emotion-15 emotion-9"
+            className="emotion-13 emotion-14 emotion-15"
             dir="auto"
             href="/experience/brand/key-imagery"
             onClick={[Function]}
@@ -1972,7 +2789,7 @@ exports[`Experience/Icons renders 1`] = `
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "display": "inline-flex",
@@ -1981,7 +2798,7 @@ exports[`Experience/Icons renders 1`] = `
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "display": "inline-flex",
@@ -1994,63 +2811,22 @@ exports[`Experience/Icons renders 1`] = `
           </a>
         </div>
         <div
-          className="emotion-0"
-          style={
-            Object {
-              "MozTransitionProperty": "transform,",
-              "WebkitTransform": "scaleY(0)",
-              "WebkitTransformOrigin": "top",
-              "WebkitTransitionDuration": "500ms",
-              "WebkitTransitionProperty": "-webkit-transform,transform,",
-              "marginLeft": "20px",
-              "transform": "scaleY(0)",
-              "transformOrigin": "top",
-              "transitionDuration": "500ms",
-              "transitionProperty": "-webkit-transform,transform,",
-            }
-          }
+          className="emotion-44"
         />
       </div>
     </div>
     <div
-      className="emotion-0"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlex": 1,
-          "WebkitFlexBasis": "calc(75% - 50px)",
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flex": 1,
-          "flexBasis": "calc(75% - 50px)",
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlex": "1 1 0%",
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "msFlexPreferredSize": "calc(75% - 50px)",
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-149"
     >
       <div
-        className="emotion-0"
-        style={
-          Object {
-            "minHeight": "calc(100vh - 75px)",
-          }
-        }
+        className="emotion-150"
       >
         <div
-          className="emotion-0"
+          className="emotion-151"
           id="overview"
         >
           <div
-            className="emotion-0"
+            className="emotion-11"
             style={
               Object {
                 "paddingLeft": "10px",
@@ -2059,7 +2835,7 @@ exports[`Experience/Icons renders 1`] = `
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "marginLeft": "10px",
@@ -2069,7 +2845,7 @@ exports[`Experience/Icons renders 1`] = `
             >
               <h1
                 aria-level="1"
-                className="emotion-14 emotion-9"
+                className="emotion-13 emotion-15"
                 dir="auto"
                 onClick={[Function]}
                 role="heading"
@@ -2089,7 +2865,7 @@ exports[`Experience/Icons renders 1`] = `
               </h1>
               <h4
                 aria-level="4"
-                className="emotion-14 emotion-9"
+                className="emotion-13 emotion-15"
                 dir="auto"
                 onClick={[Function]}
                 role="heading"
@@ -2110,7 +2886,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </h4>
             </div>
             <div
-              className="emotion-9"
+              className="emotion-15"
               dir="auto"
               onClick={[Function]}
               style={
@@ -2130,7 +2906,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               Usage & License Note
             </div>
             <div
-              className="emotion-9"
+              className="emotion-15"
               dir="auto"
               onClick={[Function]}
               style={
@@ -2149,7 +2925,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
             >
               You may copy and redistribute icons as long as you are abiding by the 
               <div
-                className="emotion-0"
+                className="emotion-11"
                 onClick={[Function]}
                 onMouseDown={[Function]}
                 onMouseEnter={[Function]}
@@ -2162,7 +2938,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-9 emotion-105"
+                  className="emotion-13 emotion-14 emotion-15 emotion-164"
                   href="/brand-policy"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -2184,7 +2960,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               . You may not remix or transform the icons.
             </div>
             <div
-              className="emotion-0"
+              className="emotion-11"
               style={
                 Object {
                   "minHeight": "100vh",
@@ -2192,7 +2968,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "marginLeft": "10px",
@@ -2202,7 +2978,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 }
               >
                 <div
-                  className="emotion-9"
+                  className="emotion-15"
                   dir="auto"
                   onClick={[Function]}
                   style={
@@ -2225,7 +3001,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   autoCapitalize="sentences"
                   autoComplete="on"
                   autoCorrect="on"
-                  className="emotion-109"
+                  className="emotion-168"
                   dir="auto"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2275,7 +3051,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 />
               </div>
               <div
-                className="emotion-9"
+                className="emotion-15"
                 dir="auto"
                 onClick={[Function]}
                 style={
@@ -2300,7 +3076,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 2 Matching Icons
               </div>
               <div
-                className="emotion-0"
+                className="emotion-11"
                 style={
                   Object {
                     "WebkitBoxDirection": "normal",
@@ -2316,11 +3092,11 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 }
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   data-testid="1"
                 >
                   <div
-                    className="emotion-0"
+                    className="emotion-11"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -2331,13 +3107,13 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     }
                   >
                     <div
-                      className="emotion-114"
+                      className="emotion-173"
                     >
                       <div
-                        className="emotion-0"
+                        className="emotion-11"
                       >
                         <div
-                          className="emotion-0"
+                          className="emotion-11"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -2347,7 +3123,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           }
                         >
                           <div
-                            className="emotion-0"
+                            className="emotion-11"
                             style={
                               Object {
                                 "display": "block",
@@ -2379,7 +3155,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                             >
                               <div
                                 aria-label="Preview of Tree"
-                                className="emotion-0"
+                                className="emotion-11"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -2394,7 +3170,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                                 }
                               >
                                 <div
-                                  className="emotion-0"
+                                  className="emotion-11"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2418,7 +3194,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           </div>
                         </div>
                         <div
-                          className="emotion-0"
+                          className="emotion-11"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -2428,7 +3204,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           }
                         >
                           <div
-                            className="emotion-9"
+                            className="emotion-15"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2447,7 +3223,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                             Tree
                           </div>
                           <div
-                            className="emotion-9"
+                            className="emotion-15"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2464,7 +3240,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           </div>
                         </div>
                         <div
-                          className="emotion-0"
+                          className="emotion-11"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -2472,7 +3248,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="emotion-14 emotion-15 emotion-9"
+                            className="emotion-13 emotion-14 emotion-15"
                             dir="auto"
                             href="/example.com/tree-icon.png"
                             onClick={[Function]}
@@ -2519,7 +3295,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           >
                             Download
                             <div
-                              className="emotion-0"
+                              className="emotion-11"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -2557,11 +3333,11 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   </div>
                 </div>
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   data-testid="2"
                 >
                   <div
-                    className="emotion-0"
+                    className="emotion-11"
                     style={
                       Object {
                         "marginLeft": "10px",
@@ -2572,13 +3348,13 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     }
                   >
                     <div
-                      className="emotion-114"
+                      className="emotion-173"
                     >
                       <div
-                        className="emotion-0"
+                        className="emotion-11"
                       >
                         <div
-                          className="emotion-0"
+                          className="emotion-11"
                           style={
                             Object {
                               "marginBottom": "20px",
@@ -2588,7 +3364,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           }
                         >
                           <div
-                            className="emotion-0"
+                            className="emotion-11"
                             style={
                               Object {
                                 "display": "block",
@@ -2620,7 +3396,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                             >
                               <div
                                 aria-label="Preview of Forest"
-                                className="emotion-0"
+                                className="emotion-11"
                                 style={
                                   Object {
                                     "WebkitFlexBasis": "auto",
@@ -2635,7 +3411,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                                 }
                               >
                                 <div
-                                  className="emotion-0"
+                                  className="emotion-11"
                                   style={
                                     Object {
                                       "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2659,7 +3435,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           </div>
                         </div>
                         <div
-                          className="emotion-0"
+                          className="emotion-11"
                           style={
                             Object {
                               "WebkitFlex": 1,
@@ -2669,7 +3445,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           }
                         >
                           <div
-                            className="emotion-9"
+                            className="emotion-15"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2688,7 +3464,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                             Forest
                           </div>
                           <div
-                            className="emotion-9"
+                            className="emotion-15"
                             dir="auto"
                             onClick={[Function]}
                             style={
@@ -2705,7 +3481,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           </div>
                         </div>
                         <div
-                          className="emotion-0"
+                          className="emotion-11"
                           onClick={[Function]}
                           onMouseDown={[Function]}
                           onMouseEnter={[Function]}
@@ -2713,7 +3489,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           onMouseUp={[Function]}
                         >
                           <a
-                            className="emotion-14 emotion-15 emotion-9"
+                            className="emotion-13 emotion-14 emotion-15"
                             dir="auto"
                             href="/example.com/forest-icon.png"
                             onClick={[Function]}
@@ -2760,7 +3536,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           >
                             Download
                             <div
-                              className="emotion-0"
+                              className="emotion-11"
                               style={
                                 Object {
                                   "display": "inline-flex",
@@ -2805,27 +3581,20 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-203"
     id="experience-footer"
-    style={
-      Object {
-        "backgroundColor": "rgba(255,255,255,1.00)",
-        "marginTop": "50px",
-        "zIndex": -10,
-      }
-    }
   >
     <section
-      className="emotion-145"
+      className="emotion-204"
     >
       <div
-        className="emotion-146"
+        className="emotion-205"
       >
         <div
-          className="emotion-147"
+          className="emotion-206"
         >
           <div
-            className="emotion-148"
+            className="emotion-207"
           >
             <svg
               fill="none"
@@ -2848,19 +3617,19 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
             </svg>
           </div>
           <div
-            className="emotion-149"
+            className="emotion-208"
           >
             <p
-              className="emotion-150"
+              className="emotion-209"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-150"
+              className="emotion-209"
             >
               Read more in Celo 
               <a
-                className="emotion-152"
+                className="emotion-211"
                 href="/terms"
               >
                 Terms of Service
@@ -2869,24 +3638,24 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
           </div>
         </div>
         <div
-          className="emotion-153"
+          className="emotion-212"
         >
           <div
-            className="emotion-154"
+            className="emotion-213"
           >
             <div
-              className="emotion-155"
+              className="emotion-214"
             >
               <h6
-                className="emotion-156"
+                className="emotion-215"
               >
                 Celo
               </h6>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -2899,7 +3668,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/"
                     onClick={[Function]}
@@ -2932,10 +3701,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -2948,7 +3717,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/about"
                     onClick={[Function]}
@@ -2981,10 +3750,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -2997,7 +3766,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/jobs"
                     onClick={[Function]}
@@ -3030,10 +3799,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3046,7 +3815,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/validators"
                     onClick={[Function]}
@@ -3079,10 +3848,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3095,7 +3864,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/developers"
                     onClick={[Function]}
@@ -3128,10 +3897,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3144,7 +3913,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/alliance"
                     onClick={[Function]}
@@ -3177,10 +3946,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3193,7 +3962,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/community"
                     onClick={[Function]}
@@ -3226,10 +3995,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3242,7 +4011,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/annual-reports/2020"
                     onClick={[Function]}
@@ -3276,18 +4045,18 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
             </div>
             <div
-              className="emotion-197"
+              className="emotion-256"
             >
               <h6
-                className="emotion-156"
+                className="emotion-215"
               >
                 Technology
               </h6>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3300,7 +4069,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://docs.celo.org/"
                     onClick={[Function]}
@@ -3333,10 +4102,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3349,7 +4118,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/audits"
                     onClick={[Function]}
@@ -3382,10 +4151,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3398,7 +4167,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://www.celoreserve.org"
                     onClick={[Function]}
@@ -3431,10 +4200,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3447,7 +4216,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/papers"
                     onClick={[Function]}
@@ -3480,10 +4249,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3496,7 +4265,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/public-sector"
                     onClick={[Function]}
@@ -3530,18 +4299,18 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
             </div>
             <div
-              className="emotion-197"
+              className="emotion-256"
             >
               <h6
-                className="emotion-156"
+                className="emotion-215"
               >
                 Resources
               </h6>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3554,7 +4323,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/brand-policy"
                     onClick={[Function]}
@@ -3587,10 +4356,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3603,7 +4372,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/press"
                     onClick={[Function]}
@@ -3636,10 +4405,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3652,7 +4421,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/community#events"
                     onClick={[Function]}
@@ -3685,10 +4454,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3701,7 +4470,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/experience/events"
                     onClick={[Function]}
@@ -3734,10 +4503,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3750,7 +4519,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/experience/brand"
                     onClick={[Function]}
@@ -3783,10 +4552,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3799,7 +4568,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/experience/merchant"
                     onClick={[Function]}
@@ -3832,10 +4601,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3848,7 +4617,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/experience/grants"
                     onClick={[Function]}
@@ -3881,10 +4650,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3897,7 +4666,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/experience/pilots"
                     onClick={[Function]}
@@ -3930,10 +4699,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -3946,7 +4715,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="/community#fund"
                     onClick={[Function]}
@@ -3980,18 +4749,18 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
             </div>
             <div
-              className="emotion-271"
+              className="emotion-330"
             >
               <h6
-                className="emotion-156"
+                className="emotion-215"
               >
                 Social
               </h6>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4004,7 +4773,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://medium.com/celoOrg"
                     onClick={[Function]}
@@ -4033,7 +4802,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4061,10 +4830,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4077,7 +4846,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://github.com/celo-org/celo-monorepo"
                     onClick={[Function]}
@@ -4106,7 +4875,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4136,10 +4905,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4152,7 +4921,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://twitter.com/CeloOrg"
                     onClick={[Function]}
@@ -4181,7 +4950,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4209,10 +4978,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4225,7 +4994,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://forum.celo.org/"
                     onClick={[Function]}
@@ -4254,7 +5023,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4282,10 +5051,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4298,7 +5067,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://discord.gg/6yWMkgM"
                     onClick={[Function]}
@@ -4327,7 +5096,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4357,10 +5126,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4373,7 +5142,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                     onClick={[Function]}
@@ -4402,7 +5171,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4430,10 +5199,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4446,7 +5215,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://www.instagram.com/celoorg/"
                     onClick={[Function]}
@@ -4475,7 +5244,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4502,10 +5271,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4518,7 +5287,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://www.linkedin.com/company/celoOrg/"
                     onClick={[Function]}
@@ -4547,7 +5316,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4572,10 +5341,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4588,7 +5357,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://www.twitch.tv/celoorg"
                     onClick={[Function]}
@@ -4617,7 +5386,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4642,10 +5411,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4658,7 +5427,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://www.reddit.com/r/celo/"
                     onClick={[Function]}
@@ -4687,7 +5456,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4712,10 +5481,10 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-157"
+                className="emotion-216"
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -4728,7 +5497,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   }
                 >
                   <a
-                    className="emotion-14 emotion-15 emotion-9"
+                    className="emotion-13 emotion-14 emotion-15"
                     dir="auto"
                     href="https://t.me/celoplatform"
                     onClick={[Function]}
@@ -4757,7 +5526,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     target="_blank"
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-11"
                       style={
                         Object {
                           "display": "inline-flex",
@@ -4787,48 +5556,48 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
       </div>
     </section>
     <section
-      className="emotion-145"
+      className="emotion-204"
     >
       <div
-        className="emotion-340"
+        className="emotion-399"
       >
         <div
-          className="emotion-341"
+          className="emotion-400"
         >
           <div
-            className="emotion-342"
+            className="emotion-401"
           >
             <img
-              className="emotion-343"
+              className="emotion-402"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-344"
+              className="emotion-403"
             >
               |
             </span>
             <div
-              className="emotion-345"
+              className="emotion-404"
             >
               <div
-                className="emotion-346"
+                className="emotion-405"
               />
               <span
-                className="emotion-347"
+                className="emotion-406"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-348"
+                className="emotion-407"
               />
             </div>
           </div>
           <small
-            className="emotion-349"
+            className="emotion-408"
           >
             The Celo Foundation, © Celo 2021
           </small>
