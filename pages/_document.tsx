@@ -46,8 +46,6 @@ export default class MyDocument extends Document<Props> {
       <Html lang={locale} style={{ height: '100%', width: '100%' }}>
         <Head>
           <link key="favicon" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-          <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin={"true"}/>
-
           <link
             rel="stylesheet"
             href="/fonts/JostFont.css"
