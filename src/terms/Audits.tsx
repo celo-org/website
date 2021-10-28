@@ -1,8 +1,7 @@
 import * as React from "react"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
-import { GridRow } from "src/layout/Grid2"
-import { Spans as LegacySpan } from "src/layout/GridRow"
+import { GridRow, Spans } from "src/layout/Grid2"
 import SideTitledSection from "src/layout/SideTitledSection"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import {
@@ -67,7 +66,7 @@ class Audits extends React.PureComponent<I18nProps> {
           </GridRow>
           {Object.keys(AUDITS).map((type) => {
             return (
-              <SideTitledSection key={type} span={LegacySpan.three4th} title={t(type)}>
+              <SideTitledSection key={type} span={Spans.three} title={t(type)}>
                 {AUDITS[type].map((audit: Audit) => (
                   <div css={referenceCss} key={audit.title}>
                     <p css={fonts.body}>

@@ -28,11 +28,147 @@ exports[`Faucet renders 1`] = `
   margin-bottom: 75px;
 }
 
-.emotion-47 {
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.emotion-48 {
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-3 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-3 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 1;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-4 {
+    grid-column: span 1;
+  }
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 2;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-7 {
+    grid-column: span 2;
+  }
+}
+
+.emotion-8 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+}
+
+.emotion-49 {
+  margin-bottom: 20px;
+}
+
+.emotion-50 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -42,7 +178,7 @@ exports[`Faucet renders 1`] = `
   padding-bottom: 10px;
 }
 
-.emotion-49 {
+.emotion-51 {
   font-weight: bold;
 }
 
@@ -54,203 +190,275 @@ exports[`Faucet renders 1`] = `
   >
     Fund your Testnet Account
   </h1>
-  <div
+  <section
     className="emotion-2"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
   >
     <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="emotion-4 emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        Add Funds
-      </h3>
-    </div>
-    <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-3"
     >
       <div
-        className="emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+        className="emotion-4"
       >
-        Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 5 CELO and 10 of each core stable token (e.g. cUSD, cEUR).
-
-In the Celo Wallet, you can find your address by pressing the menu icon at the top left and scrolling down to bottom. Press the address to copy it to your device’s clipboard.
-      </div>
-      <div
-        className="emotion-2"
-        style={
-          Object {
-            "marginBottom": "20px",
-            "marginTop": "20px",
-          }
-        }
-      >
-        <input
-          autoCapitalize="sentences"
-          autoComplete="on"
-          autoCorrect="on"
-          className="emotion-9"
-          dir="auto"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onSelect={[Function]}
-          placeholder="Testnet Address"
-          readOnly={false}
-          spellCheck={true}
-          style={
-            Object {
-              "WebkitAlignSelf": "center",
-              "alignSelf": "center",
-              "borderBottomColor": "rgba(61,61,61,0.20)",
-              "borderBottomLeftRadius": "3px",
-              "borderBottomRightRadius": "3px",
-              "borderBottomWidth": "1px",
-              "borderLeftColor": "rgba(61,61,61,0.20)",
-              "borderLeftWidth": "1px",
-              "borderRightColor": "rgba(61,61,61,0.20)",
-              "borderRightWidth": "1px",
-              "borderTopColor": "rgba(61,61,61,0.20)",
-              "borderTopLeftRadius": "3px",
-              "borderTopRightRadius": "3px",
-              "borderTopWidth": "1px",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-              "fontSize": "16px",
-              "marginBottom": "5px",
-              "marginLeft": "0px",
-              "marginRight": "0px",
-              "marginTop": "5px",
-              "msFlexItemAlign": "center",
-              "msGridRowAlign": "center",
-              "outlineWidth": "0px",
-              "paddingBottom": "15px",
-              "paddingLeft": "10px",
-              "paddingRight": "10px",
-              "paddingTop": "13px",
-              "width": "100%",
-            }
-          }
-          type="text"
-          value=""
-        />
-        <div
-          className="emotion-5"
+        <h3
+          aria-level="3"
+          className="emotion-5 emotion-6"
           dir="auto"
           onClick={[Function]}
+          role="heading"
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "14px",
+              "fontSize": "24px",
+              "lineHeight": "32px",
               "textRendering": "geometricPrecision",
+              "textTransform": "none",
             }
           }
         >
-          eg. a0000aaa00a0000...a00a0a0000a00a00aa
-        </div>
+          Add Funds
+        </h3>
+      </div>
+      <div
+        className="emotion-7"
+      >
+        <p
+          className="emotion-8"
+        >
+          Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 5 CELO and 10 of each core stable token (e.g. cUSD, cEUR).
+
+In the Celo Wallet, you can find your address by pressing the menu icon at the top left and scrolling down to bottom. Press the address to copy it to your device’s clipboard.
+        </p>
         <div
-          className="emotion-2"
+          className="emotion-9"
           style={
             Object {
-              "height": "80px",
               "marginBottom": "20px",
               "marginTop": "20px",
             }
           }
         >
-          <div />
+          <input
+            autoCapitalize="sentences"
+            autoComplete="on"
+            autoCorrect="on"
+            className="emotion-10"
+            dir="auto"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onSelect={[Function]}
+            placeholder="Testnet Address"
+            readOnly={false}
+            spellCheck={true}
+            style={
+              Object {
+                "WebkitAlignSelf": "center",
+                "alignSelf": "center",
+                "borderBottomColor": "rgba(61,61,61,0.20)",
+                "borderBottomLeftRadius": "3px",
+                "borderBottomRightRadius": "3px",
+                "borderBottomWidth": "1px",
+                "borderLeftColor": "rgba(61,61,61,0.20)",
+                "borderLeftWidth": "1px",
+                "borderRightColor": "rgba(61,61,61,0.20)",
+                "borderRightWidth": "1px",
+                "borderTopColor": "rgba(61,61,61,0.20)",
+                "borderTopLeftRadius": "3px",
+                "borderTopRightRadius": "3px",
+                "borderTopWidth": "1px",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "16px",
+                "marginBottom": "5px",
+                "marginLeft": "0px",
+                "marginRight": "0px",
+                "marginTop": "5px",
+                "msFlexItemAlign": "center",
+                "msGridRowAlign": "center",
+                "outlineWidth": "0px",
+                "paddingBottom": "15px",
+                "paddingLeft": "10px",
+                "paddingRight": "10px",
+                "paddingTop": "13px",
+                "width": "100%",
+              }
+            }
+            type="text"
+            value=""
+          />
+          <div
+            className="emotion-6"
+            dir="auto"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "rgba(46,51,56,1.00)",
+                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontSize": "14px",
+                "textRendering": "geometricPrecision",
+              }
+            }
+          >
+            eg. a0000aaa00a0000...a00a0a0000a00a00aa
+          </div>
+          <div
+            className="emotion-9"
+            style={
+              Object {
+                "height": "80px",
+                "marginBottom": "20px",
+                "marginTop": "20px",
+              }
+            }
+          >
+            <div />
+          </div>
+          <div
+            className="emotion-9"
+            style={
+              Object {
+                "WebkitBoxDirection": "normal",
+                "WebkitBoxOrient": "horizontal",
+                "WebkitFlexDirection": "row",
+                "flexDirection": "row",
+                "msFlexDirection": "row",
+              }
+            }
+          >
+            <div
+              className="emotion-9"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              style={
+                Object {
+                  "WebkitAlignItems": "flex-start",
+                  "WebkitBoxAlign": "start",
+                  "alignItems": "flex-start",
+                  "msFlexAlign": "start",
+                }
+              }
+            >
+              <a
+                className="emotion-5 emotion-16 emotion-6"
+                dir="auto"
+                onClick={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "WebkitBoxFlex": 0,
+                    "WebkitBoxPack": "center",
+                    "WebkitFlexGrow": 0,
+                    "WebkitJustifyContent": "center",
+                    "alignItems": "center",
+                    "backgroundColor": "rgba(69,214,138,0.70)",
+                    "borderBottomColor": "rgba(69,214,138,0.70)",
+                    "borderBottomLeftRadius": "3px",
+                    "borderBottomRightRadius": "3px",
+                    "borderBottomWidth": "1px",
+                    "borderLeftColor": "rgba(69,214,138,0.70)",
+                    "borderLeftWidth": "1px",
+                    "borderRightColor": "rgba(69,214,138,0.70)",
+                    "borderRightWidth": "1px",
+                    "borderTopColor": "rgba(69,214,138,0.70)",
+                    "borderTopLeftRadius": "3px",
+                    "borderTopRightRadius": "3px",
+                    "borderTopWidth": "1px",
+                    "color": "rgba(255,255,255,1.00)",
+                    "cursor": "not-allowed",
+                    "display": "inline-flex",
+                    "flexGrow": 0,
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "justifyContent": "center",
+                    "lineHeight": "16px",
+                    "minWidth": "150px",
+                    "msFlexAlign": "center",
+                    "msFlexPack": "center",
+                    "msFlexPositive": 0,
+                    "opacity": 1,
+                    "paddingBottom": "10px",
+                    "paddingLeft": "20px",
+                    "paddingRight": "20px",
+                    "paddingTop": "10px",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                    "width": "fit-content",
+                  }
+                }
+              >
+                Get Started
+              </a>
+            </div>
+            <div
+              className="emotion-9"
+            >
+              <div
+                className="emotion-9"
+                style={
+                  Object {
+                    "WebkitAlignContent": "center",
+                    "WebkitBoxDirection": "normal",
+                    "WebkitBoxOrient": "horizontal",
+                    "WebkitFlexDirection": "row",
+                    "alignContent": "center",
+                    "flexDirection": "row",
+                    "height": "100%",
+                    "msFlexDirection": "row",
+                    "msFlexLinePack": "center",
+                  }
+                }
+              />
+            </div>
+          </div>
         </div>
-        <div
-          className="emotion-2"
+      </div>
+    </div>
+  </section>
+  <section
+    className="emotion-2"
+  >
+    <div
+      className="emotion-3"
+    >
+      <div
+        className="emotion-4"
+      >
+        <h3
+          aria-level="3"
+          className="emotion-5 emotion-6"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
           style={
             Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "horizontal",
-              "WebkitFlexDirection": "row",
-              "flexDirection": "row",
-              "msFlexDirection": "row",
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
             }
           }
         >
+          Create an Account
+        </h3>
+      </div>
+      <div
+        className="emotion-7"
+      >
+        <p
+          className="emotion-8"
+        >
+          If you have an Android or iOS device, you can set up a funded account on the Alfajores Testnet by requesting a 
           <div
-            className="emotion-2"
+            className="emotion-9"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -258,970 +466,610 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             onMouseUp={[Function]}
             style={
               Object {
-                "WebkitAlignItems": "flex-start",
-                "WebkitBoxAlign": "start",
-                "alignItems": "flex-start",
-                "msFlexAlign": "start",
+                "display": "inline",
               }
             }
           >
             <a
-              className="emotion-4 emotion-15 emotion-5"
+              className="emotion-5 emotion-16 emotion-6"
               dir="auto"
+              href="/developers/wallet"
               onClick={[Function]}
+              onMouseEnter={[Function]}
               role="link"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
+                  "WebkitTextDecorationStyle": "solid",
+                  "cursor": "pointer",
+                  "display": "inline",
+                  "opacity": 1,
+                  "textDecoration": "underline",
+                  "textDecorationStyle": "solid",
+                }
+              }
+            >
+              Celo Wallet invite
+            </a>
+          </div>
+          . You can also 
+          <div
+            className="emotion-9"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            style={
+              Object {
+                "display": "inline",
+              }
+            }
+          >
+            <a
+              className="emotion-5 emotion-16 emotion-6"
+              dir="auto"
+              href="https://docs.celo.org/getting-started/faucet#creating-an-empty-account-with-the-celo-client"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              role="link"
+              style={
+                Object {
+                  "WebkitTextDecorationStyle": "solid",
+                  "cursor": "pointer",
+                  "display": "inline",
+                  "opacity": 1,
+                  "textDecoration": "underline",
+                  "textDecorationStyle": "solid",
+                }
+              }
+            >
+              create an account via the command line
+              .
+            </a>
+          </div>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="emotion-2"
+  >
+    <div
+      className="emotion-3"
+    >
+      <div
+        className="emotion-4"
+      >
+        <h3
+          aria-level="3"
+          className="emotion-5 emotion-6"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          Have an Account?
+        </h3>
+      </div>
+      <div
+        className="emotion-7"
+      >
+        <p
+          className="emotion-8"
+        >
+          You can access an existing account from the Celo Wallet by pressing \`Import It\` on the first screen and entering your seed phrase.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    className="emotion-2"
+  >
+    <div
+      className="emotion-3"
+    >
+      <div
+        className="emotion-4"
+      >
+        <h3
+          aria-level="3"
+          className="emotion-5 emotion-6"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          Hitting Issues?
+        </h3>
+      </div>
+      <div
+        className="emotion-7"
+      >
+        <p
+          className="emotion-8"
+        />
+        <div
+          className="emotion-49"
+        >
+          <div
+            className="emotion-50"
+          >
+            <span
+              className="emotion-51"
+            >
+              Get Help from the Celo Community.
+               
+            </span>
+            Find answers and ask questions in the Forum
+          </div>
+          <div
+            className="emotion-9"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+          >
+            <div
+              className="emotion-9"
+              style={
+                Object {
+                  "WebkitBoxDirection": "normal",
                   "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
                   "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
                   "WebkitFlexGrow": 0,
                   "WebkitJustifyContent": "center",
-                  "alignItems": "center",
-                  "backgroundColor": "rgba(69,214,138,0.70)",
-                  "borderBottomColor": "rgba(69,214,138,0.70)",
-                  "borderBottomLeftRadius": "3px",
-                  "borderBottomRightRadius": "3px",
-                  "borderBottomWidth": "1px",
-                  "borderLeftColor": "rgba(69,214,138,0.70)",
-                  "borderLeftWidth": "1px",
-                  "borderRightColor": "rgba(69,214,138,0.70)",
-                  "borderRightWidth": "1px",
-                  "borderTopColor": "rgba(69,214,138,0.70)",
-                  "borderTopLeftRadius": "3px",
-                  "borderTopRightRadius": "3px",
-                  "borderTopWidth": "1px",
-                  "color": "rgba(255,255,255,1.00)",
-                  "cursor": "not-allowed",
-                  "display": "inline-flex",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
                   "flexGrow": 0,
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
                   "justifyContent": "center",
-                  "lineHeight": "16px",
-                  "minWidth": "150px",
-                  "msFlexAlign": "center",
+                  "msFlexDirection": "row",
                   "msFlexPack": "center",
                   "msFlexPositive": 0,
                   "opacity": 1,
-                  "paddingBottom": "10px",
-                  "paddingLeft": "20px",
-                  "paddingRight": "20px",
-                  "paddingTop": "10px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "outlineColor": "transparent",
                   "width": "fit-content",
                 }
               }
             >
-              Get Started
-            </a>
+              <a
+                className="emotion-5 emotion-16 emotion-6"
+                dir="auto"
+                href="https://forum.celo.org/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Alfajores Testnet Forum
+                <div
+                  className="emotion-9"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
+                >
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className="emotion-2"
+  >
+    <div
+      className="emotion-3"
+    >
+      <div
+        className="emotion-4"
+      >
+        <h3
+          aria-level="3"
+          className="emotion-5 emotion-6"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          What's Next
+        </h3>
+      </div>
+      <div
+        className="emotion-7"
+      >
+        <p
+          className="emotion-8"
+        />
+        <div
+          className="emotion-49"
+        >
+          <div
+            className="emotion-50"
+          >
+            <span
+              className="emotion-51"
+            >
+              Build the Celo Wallet locally.
+               
+            </span>
+            Follow these instructions to build the Wallet from source, pointed at the Alfajores Testnet.
           </div>
           <div
-            className="emotion-2"
+            className="emotion-9"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
             <div
-              className="emotion-2"
+              className="emotion-9"
               style={
                 Object {
-                  "WebkitAlignContent": "center",
                   "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
                   "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
                   "WebkitFlexDirection": "row",
-                  "alignContent": "center",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
                   "flexDirection": "row",
-                  "height": "100%",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
                   "msFlexDirection": "row",
-                  "msFlexLinePack": "center",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-            />
+            >
+              <a
+                className="emotion-5 emotion-16 emotion-6"
+                dir="auto"
+                href="https://docs.celo.org/celo-codebase/wallet/intro"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                Read the Wallet Tutorial
+                <div
+                  className="emotion-9"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
+                >
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="emotion-2"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="emotion-4 emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        Create an Account
-      </h3>
-    </div>
-    <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      >
-        If you have an Android or iOS device, you can set up a funded account on the Alfajores Testnet by requesting a 
         <div
-          className="emotion-2"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          style={
-            Object {
-              "display": "inline",
-            }
-          }
+          className="emotion-49"
         >
-          <a
-            className="emotion-4 emotion-15 emotion-5 emotion-29"
-            href="/developers/wallet"
+          <div
+            className="emotion-50"
+          >
+            <span
+              className="emotion-51"
+            >
+              View account information. 
+               
+            </span>
+            Check your balance and transaction history
+          </div>
+          <div
+            className="emotion-9"
             onClick={[Function]}
+            onMouseDown={[Function]}
             onMouseEnter={[Function]}
-            role="link"
-            style={
-              Object {
-                "WebkitTextDecorationStyle": "solid",
-                "cursor": "pointer",
-                "display": "inline",
-                "opacity": 1,
-                "textDecoration": "underline",
-                "textDecorationStyle": "solid",
-              }
-            }
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            Celo Wallet invite
-          </a>
+            <div
+              className="emotion-9"
+              style={
+                Object {
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
+                }
+              }
+            >
+              <a
+                className="emotion-5 emotion-16 emotion-6"
+                dir="auto"
+                href="http://alfajores-blockscout.celo-testnet.org/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
+                style={
+                  Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
+                    "display": "inline-flex",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
+                  }
+                }
+              >
+                BlockScout
+                <div
+                  className="emotion-9"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
+                >
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        . You can also 
         <div
-          className="emotion-2"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          style={
-            Object {
-              "display": "inline",
-            }
-          }
+          className="emotion-49"
         >
-          <a
-            className="emotion-4 emotion-15 emotion-5 emotion-29"
-            href="https://docs.celo.org/getting-started/faucet#creating-an-empty-account-with-the-celo-client"
+          <div
+            className="emotion-50"
+          >
+            <span
+              className="emotion-51"
+            >
+              Interested in running your own node? 
+               
+            </span>
+            Follow our step-by-step guide.
+          </div>
+          <div
+            className="emotion-9"
             onClick={[Function]}
+            onMouseDown={[Function]}
             onMouseEnter={[Function]}
-            role="link"
-            style={
-              Object {
-                "WebkitTextDecorationStyle": "solid",
-                "cursor": "pointer",
-                "display": "inline",
-                "opacity": 1,
-                "textDecoration": "underline",
-                "textDecorationStyle": "solid",
-              }
-            }
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            create an account via the command line
-            .
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="emotion-2"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="emotion-4 emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        Have an Account?
-      </h3>
-    </div>
-    <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      >
-        You can access an existing account from the Celo Wallet by pressing \`Import It\` on the first screen and entering your seed phrase.
-      </div>
-    </div>
-  </div>
-  <div
-    className="emotion-2"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="emotion-4 emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        Hitting Issues?
-      </h3>
-    </div>
-    <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      />
-      <div
-        className="emotion-47"
-      >
-        <div
-          className="emotion-48"
-        >
-          <span
-            className="emotion-49"
-          >
-            Get Help from the Celo Community.
-             
-          </span>
-          Find answers and ask questions in the Forum
-        </div>
-        <div
-          className="emotion-2"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <div
-            className="emotion-2"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
-          >
-            <a
-              className="emotion-4 emotion-15 emotion-5"
-              dir="auto"
-              href="https://forum.celo.org/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              role="link"
+            <div
+              className="emotion-9"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
             >
-              Alfajores Testnet Forum
-              <div
-                className="emotion-2"
+              <a
+                className="emotion-5 emotion-16 emotion-6"
+                dir="auto"
+                href="https://docs.celo.org/getting-started/running-a-full-node"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Read the Docs
+                <div
+                  className="emotion-9"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    className="emotion-2"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="emotion-4 emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        What's Next
-      </h3>
-    </div>
-    <div
-      className="emotion-2"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <div
-        className="emotion-5"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      />
-      <div
-        className="emotion-47"
-      >
-        <div
-          className="emotion-48"
-        >
-          <span
-            className="emotion-49"
-          >
-            Build the Celo Wallet locally.
-             
-          </span>
-          Follow these instructions to build the Wallet from source, pointed at the Alfajores Testnet.
-        </div>
-        <div
-          className="emotion-2"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <div
-            className="emotion-2"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
-          >
-            <a
-              className="emotion-4 emotion-15 emotion-5"
-              dir="auto"
-              href="https://docs.celo.org/celo-codebase/wallet/intro"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
-              Read the Wallet Tutorial
-              <div
-                className="emotion-2"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
-                  }
-                }
-              >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        className="emotion-47"
-      >
-        <div
-          className="emotion-48"
-        >
-          <span
-            className="emotion-49"
-          >
-            View account information. 
-             
-          </span>
-          Check your balance and transaction history
-        </div>
-        <div
-          className="emotion-2"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <div
-            className="emotion-2"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
-          >
-            <a
-              className="emotion-4 emotion-15 emotion-5"
-              dir="auto"
-              href="http://alfajores-blockscout.celo-testnet.org/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
-              BlockScout
-              <div
-                className="emotion-2"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
-                  }
-                }
-              >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        className="emotion-47"
-      >
-        <div
-          className="emotion-48"
-        >
-          <span
-            className="emotion-49"
-          >
-            Interested in running your own node? 
-             
-          </span>
-          Follow our step-by-step guide.
-        </div>
-        <div
-          className="emotion-2"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
-          <div
-            className="emotion-2"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
-          >
-            <a
-              className="emotion-4 emotion-15 emotion-5"
-              dir="auto"
-              href="https://docs.celo.org/getting-started/running-a-full-node"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
-              Read the Docs
-              <div
-                className="emotion-2"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
-                  }
-                }
-              >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 </div>
 `;

@@ -1,1945 +1,1607 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Papers renders 1`] = `
-<div
-  className="css-view-1dbjc4n"
-  style={
-    Object {
-      "marginTop": "75px",
-      "paddingTop": "75px",
-    }
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 75px;
+  padding-top: 75px;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-2 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
   }
+}
+
+@media (min-width: 992px) {
+  .emotion-2 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-2 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-2 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-2 {
+    margin-bottom: 30px;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-3 {
+    grid-column: span 1;
+  }
+}
+
+.emotion-4 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+  text-align: center;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-6 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-6 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-6 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-6 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 1;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-7 {
+    grid-column: span 1;
+  }
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: span 3;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-10 {
+    grid-column: span 3;
+  }
+}
+
+.emotion-11 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+}
+
+.emotion-12 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #2E3338;
+  line-height: 28px;
+}
+
+.emotion-13 {
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+<div
+  className="emotion-0"
 >
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignItems": "center",
-        "WebkitAlignSelf": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitBoxPack": "center",
-        "WebkitFlexDirection": "column",
-        "WebkitJustifyContent": "center",
-        "alignItems": "center",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "justifyContent": "center",
-        "marginBottom": "30px",
-        "maxWidth": "100vw",
-        "msFlexAlign": "center",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msFlexPack": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  <section
+    className="emotion-1"
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitAlignItems": "center",
-          "WebkitBoxAlign": "center",
-          "WebkitBoxFlex": 0,
-          "WebkitBoxPack": "center",
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "WebkitJustifyContent": "center",
-          "alignItems": "center",
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "justifyContent": "center",
-          "msFlexAlign": "center",
-          "msFlexNegative": 0,
-          "msFlexPack": "center",
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-2"
     >
-      <h1
-        aria-level="1"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "36px",
-            "lineHeight": "40px",
-            "textAlign": "center",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
+      <div
+        className="emotion-3"
       >
-        Celo Whitepapers
-      </h1>
+        <h1
+          className="emotion-4"
+        >
+          Celo Whitepapers
+        </h1>
+      </div>
     </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  </section>
+  <section
+    className="emotion-1"
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        Protocol
-      </h3>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-6"
     >
       <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      />
-      <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+        className="emotion-7"
       >
-        Celo Whitepaper: A Multi-Asset Cryptographic Protocol for Decentralized Social Payments
+        <h3
+          aria-level="3"
+          className="emotion-8 emotion-9"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          Protocol
+        </h3>
       </div>
       <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "msFlexDirection": "row",
-            "msFlexWrap": "wrap",
-          }
-        }
+        className="emotion-10"
       >
+        <p
+          className="emotion-11"
+        />
+        <p
+          className="emotion-12"
+        >
+          Celo Whitepaper: A Multi-Asset Cryptographic Protocol for Decentralized Social Payments
+        </p>
         <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
+          className="emotion-13"
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/whitepaper"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              Read paper
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/whitepaper"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Read paper
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/whitepaper/chinese"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              阅读
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/whitepaper/chinese"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                阅读
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  </section>
+  <section
+    className="emotion-1"
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        
-      </h3>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-6"
     >
       <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      />
-      <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+        className="emotion-7"
       >
-        Plumo: Towards Scalable Interoperable Blockchains Using Ultra Light Validation Systems
+        <h3
+          aria-level="3"
+          className="emotion-8 emotion-9"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          
+        </h3>
       </div>
       <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "msFlexDirection": "row",
-            "msFlexWrap": "wrap",
-          }
-        }
+        className="emotion-10"
       >
+        <p
+          className="emotion-11"
+        />
+        <p
+          className="emotion-12"
+        >
+          Plumo: Towards Scalable Interoperable Blockchains Using Ultra Light Validation Systems
+        </p>
         <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
+          className="emotion-13"
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/plumo"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              Read paper
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/plumo"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Read paper
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  </section>
+  <section
+    className="emotion-1"
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        Economics
-      </h3>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-6"
     >
       <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      />
-      <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+        className="emotion-7"
       >
-        An Analysis of the Stability Characteristics of Celo
+        <h3
+          aria-level="3"
+          className="emotion-8 emotion-9"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          Economics
+        </h3>
       </div>
       <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "msFlexDirection": "row",
-            "msFlexWrap": "wrap",
-          }
-        }
+        className="emotion-10"
       >
+        <p
+          className="emotion-11"
+        />
+        <p
+          className="emotion-12"
+        >
+          An Analysis of the Stability Characteristics of Celo
+        </p>
         <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
+          className="emotion-13"
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/stability"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              Read paper
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/stability"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Read paper
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  </section>
+  <section
+    className="emotion-1"
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        
-      </h3>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-6"
     >
       <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      />
-      <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+        className="emotion-7"
       >
-        Influencing the Velocity of Central Bank Digital Currencies
+        <h3
+          aria-level="3"
+          className="emotion-8 emotion-9"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          
+        </h3>
       </div>
       <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "msFlexDirection": "row",
-            "msFlexWrap": "wrap",
-          }
-        }
+        className="emotion-10"
       >
+        <p
+          className="emotion-11"
+        />
+        <p
+          className="emotion-12"
+        >
+          Influencing the Velocity of Central Bank Digital Currencies
+        </p>
         <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
+          className="emotion-13"
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/cbdc-velocity"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              Read paper
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/cbdc-velocity"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Read paper
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/cbdc-velocity/spanish"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              Lee el informe
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/cbdc-velocity/spanish"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Lee el informe
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  </section>
+  <section
+    className="emotion-1"
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        
-      </h3>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-6"
     >
       <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      />
-      <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+        className="emotion-7"
       >
-        Shaping the Future of Digital Currencies
+        <h3
+          aria-level="3"
+          className="emotion-8 emotion-9"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          
+        </h3>
       </div>
       <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "msFlexDirection": "row",
-            "msFlexWrap": "wrap",
-          }
-        }
+        className="emotion-10"
       >
+        <p
+          className="emotion-11"
+        />
+        <p
+          className="emotion-12"
+        >
+          Shaping the Future of Digital Currencies
+        </p>
         <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
+          className="emotion-13"
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/future-of-digital-currencies"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              Read paper
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/future-of-digital-currencies"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Read paper
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  </section>
+  <section
+    className="emotion-1"
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        Social Impact
-      </h3>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-6"
     >
       <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      />
-      <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+        className="emotion-7"
       >
-        Future-Proof Aid Policy
+        <h3
+          aria-level="3"
+          className="emotion-8 emotion-9"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          Social Impact
+        </h3>
       </div>
       <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "msFlexDirection": "row",
-            "msFlexWrap": "wrap",
-          }
-        }
+        className="emotion-10"
       >
+        <p
+          className="emotion-11"
+        />
+        <p
+          className="emotion-12"
+        >
+          Future-Proof Aid Policy
+        </p>
         <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
+          className="emotion-13"
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/future-proof-aid"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              Read paper
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/future-proof-aid"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Read paper
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-        >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/future-proof-exec"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              Exec Summary
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/future-proof-exec"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Exec Summary
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "20px",
-        "marginTop": "20px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  </section>
+  <section
+    className="emotion-1"
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
-    >
-      <h3
-        aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        role="heading"
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "32px",
-            "textRendering": "geometricPrecision",
-            "textTransform": "none",
-          }
-        }
-      >
-        
-      </h3>
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-6"
     >
       <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
-      />
-      <div
-        className="css-text-901oao"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(46,51,56,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+        className="emotion-7"
       >
-        Delivering Humanitarian COVID Aid using the Celo Platform
+        <h3
+          aria-level="3"
+          className="emotion-8 emotion-9"
+          dir="auto"
+          onClick={[Function]}
+          role="heading"
+          style={
+            Object {
+              "color": "rgba(46,51,56,1.00)",
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "24px",
+              "lineHeight": "32px",
+              "textRendering": "geometricPrecision",
+              "textTransform": "none",
+            }
+          }
+        >
+          
+        </h3>
       </div>
       <div
-        className="css-view-1dbjc4n"
-        style={
-          Object {
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "msFlexDirection": "row",
-            "msFlexWrap": "wrap",
-          }
-        }
+        className="emotion-10"
       >
+        <p
+          className="emotion-11"
+        />
+        <p
+          className="emotion-12"
+        >
+          Delivering Humanitarian COVID Aid using the Celo Platform
+        </p>
         <div
-          className="css-view-1dbjc4n"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
+          className="emotion-13"
         >
           <div
-            className="css-view-1dbjc4n"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+            className="emotion-14"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
           >
-            <a
-              className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao"
-              dir="auto"
-              href="/papers/covid-aid"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              rel="noopener"
-              role="link"
+            <div
+              className="emotion-14"
               style={
                 Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginRight": "30px",
-                  "marginTop": "10px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
+                  "WebkitBoxDirection": "normal",
+                  "WebkitBoxFlex": 0,
+                  "WebkitBoxOrient": "horizontal",
+                  "WebkitBoxPack": "center",
+                  "WebkitFlexDirection": "row",
+                  "WebkitFlexGrow": 0,
+                  "WebkitJustifyContent": "center",
+                  "backgroundColor": "rgba(0,0,0,0.00)",
+                  "borderBottomColor": "rgba(0,0,0,0.00)",
+                  "borderLeftColor": "rgba(0,0,0,0.00)",
+                  "borderRightColor": "rgba(0,0,0,0.00)",
+                  "borderTopColor": "rgba(0,0,0,0.00)",
+                  "flexDirection": "row",
+                  "flexGrow": 0,
+                  "justifyContent": "center",
+                  "msFlexDirection": "row",
+                  "msFlexPack": "center",
+                  "msFlexPositive": 0,
+                  "opacity": 1,
+                  "outlineColor": "transparent",
+                  "width": "fit-content",
                 }
               }
-              target="_blank"
             >
-              Read paper
-              <div
-                className="css-view-1dbjc4n"
+              <a
+                className="emotion-8 emotion-17 emotion-9"
+                dir="auto"
+                href="/papers/covid-aid"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                rel="noopener"
+                role="link"
                 style={
                   Object {
+                    "WebkitAlignItems": "center",
+                    "WebkitBoxAlign": "center",
+                    "alignItems": "center",
+                    "color": "rgba(53,208,127,1.00)",
+                    "cursor": "pointer",
                     "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "lineHeight": "16px",
+                    "marginRight": "30px",
+                    "marginTop": "10px",
+                    "msFlexAlign": "center",
+                    "textAlign": "center",
+                    "textRendering": "geometricPrecision",
                   }
                 }
+                target="_blank"
               >
-                <svg
-                  fill="none"
-                  height="0.75em"
-                  transform="rotate(0)"
-                  viewBox="0 0 8 12"
-                  width="0.75em"
+                Read paper
+                <div
+                  className="emotion-14"
+                  style={
+                    Object {
+                      "display": "inline-flex",
+                      "paddingLeft": "0.4em",
+                      "paddingTop": "0.185em",
+                    }
+                  }
                 >
-                  <path
-                    clipRule="evenodd"
-                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                    opacity={1}
-                  />
-                </svg>
-              </div>
-            </a>
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;
