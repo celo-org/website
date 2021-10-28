@@ -2,8 +2,7 @@ import * as React from "react"
 import { css } from "@emotion/react"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
-import { GridRow } from "src/layout/Grid2"
-import { Spans as LegacySpan } from "src/layout/GridRow"
+import { GridRow, Spans } from "src/layout/Grid2"
 import SideTitledSection from "src/layout/SideTitledSection"
 import Button, { SIZE, BTN } from "src/shared/Button.3"
 import { HEADER_HEIGHT } from "src/shared/Styles"
@@ -68,7 +67,7 @@ function PressPage(props: I18nProps & Props) {
           return (
             <SideTitledSection
               key={date}
-              span={LegacySpan.three4th}
+              span={Spans.three}
               title={new Date(date).toLocaleDateString(props.i18n.language, DATE_FORMAT)}
             >
               {formatted[date].map((item) => (
