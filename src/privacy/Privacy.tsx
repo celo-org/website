@@ -1,11 +1,17 @@
 import * as React from "react"
 import { Li, TABLE, TD, TH, TR, Ul } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { Cell, GridRow, Spans } from "src/layout/Grid2"
 import SideTitledSection from "src/layout/SideTitledSection"
 import Link from "src/shared/Link"
-import { standardStyles, textStyles } from "src/styles"
-import { fonts } from "src/estyles"
+import {
+  fonts,
+  standardStyles,
+  textStyles,
+  WHEN_DESKTOP,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+} from "src/estyles"
 import { css } from "@emotion/react"
 
 export default class Privacy extends React.Component {
@@ -19,22 +25,17 @@ export default class Privacy extends React.Component {
             "This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service."
           }
         />
-        <GridRow
-          allStyle={standardStyles.centered}
-          desktopStyle={standardStyles.blockMarginBottom}
-          tabletStyle={standardStyles.blockMarginBottomTablet}
-          mobileStyle={standardStyles.blockMarginBottomMobile}
-        >
-          <Cell span={Spans.fourth}>{ }</Cell>
-          <Cell span={Spans.three4th}>
+        <GridRow columns={4} css={gridCss}>
+          <Cell span={Spans.one}>{}</Cell>
+          <Cell span={Spans.three}>
             <h1 css={fonts.h1}>Privacy Policy</h1>
           </Cell>
         </GridRow>
-        <GridRow>
-          <Cell span={Spans.fourth}>
+        <GridRow columns={4}>
+          <Cell span={Spans.one}>
             <h6 css={fonts.h6}>Valid as of May 17, 2020</h6>
           </Cell>
-          <Cell span={Spans.three4th}>
+          <Cell span={Spans.three}>
             <P>
               This Privacy Policy and Cookies Statement describes how the Celo Foundation and its
               affiliated companies (referred to in this document as “Celo,” “we,” “us” or “our”)
@@ -56,7 +57,7 @@ export default class Privacy extends React.Component {
             </P>
           </Cell>
         </GridRow>
-        <SideTitledSection span={Spans.three4th} title="Overview">
+        <SideTitledSection span={Spans.three} title="Overview">
           <P>
             Unless we specifically state otherwise, the Celo Foundation is the data processor of the
             Personal Data we process, and is therefore responsible for ensuring that the systems and
@@ -68,7 +69,7 @@ export default class Privacy extends React.Component {
             data protection training, where appropriate.
           </P>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="Collection of Personal Data">
+        <SideTitledSection span={Spans.three} title="Collection of Personal Data">
           <P>
             The Celo Foundation collects information that you provide directly to us when you browse
             our Site, register to receive newsletter requests or other information, provide feedback
@@ -103,7 +104,7 @@ export default class Privacy extends React.Component {
             visits to our Site.
           </P>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="Use of Personal Data">
+        <SideTitledSection span={Spans.three} title="Use of Personal Data">
           <P>We use the Personal Data that we collect:</P>
           <Ul>
             <Li>
@@ -149,7 +150,7 @@ export default class Privacy extends React.Component {
             the features of our website.
           </P>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="Marketing Choices">
+        <SideTitledSection span={Spans.three} title="Marketing Choices">
           <P>
             You have control regarding our use of Personal Data for direct marketing. In certain
             markets, you will need to expressly consent before receiving marketing. In all markets,
@@ -159,7 +160,7 @@ export default class Privacy extends React.Component {
             the unsubscribe link in the relevant communications or contact us as specified below.
           </P>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="How we share your information">
+        <SideTitledSection span={Spans.three} title="How we share your information">
           <Ul>
             <Li>
               With vendors, consultants and other service providers who need access to such
@@ -185,7 +186,7 @@ export default class Privacy extends React.Component {
             </Li>
           </Ul>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="Celo Foundation Sub-Processors">
+        <SideTitledSection span={Spans.three} title="Celo Foundation Sub-Processors">
           <P>We use the following sub-processors to operate our Services:</P>
           <TABLE>
             <TR>
@@ -225,7 +226,7 @@ export default class Privacy extends React.Component {
             </TR>
           </TABLE>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="Legal Bases For Processing (For EEA Users)">
+        <SideTitledSection span={Spans.three} title="Legal Bases For Processing (For EEA Users)">
           <P>
             If you are an individual from the European Economic Area (“EEA”), we collect and process
             your Personal Data only where we have legal basis for doing so under applicable EU laws.
@@ -245,38 +246,35 @@ export default class Privacy extends React.Component {
             address listed in the “Contact Us” section.
           </P>
         </SideTitledSection>
-        <SideTitledSection
-          span={Spans.three4th}
-          title="Transfer of Personal Data To Other Countries"
-        >
+        <SideTitledSection span={Spans.three} title="Transfer of Personal Data To Other Countries">
           <P>
             We may transfer your Personal Data to countries outside the United Kingdom and the
             European Economic Area (“EEA”), including, but not limited to the United States, where
             Celo’s headquarters and some of its IT systems (including email) are located.
           </P>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="How We Protect Your Information">
+        <SideTitledSection span={Spans.three} title="How We Protect Your Information">
           <P>
             Protecting your information is important to us. We maintain administrative, technical
             and physical safeguards designed to protect against accidental, unlawful or unauthorized
             destruction, loss, alteration, access, disclosure or use of Personal Data.
           </P>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="How Long We Retain Your Information">
+        <SideTitledSection span={Spans.three} title="How Long We Retain Your Information">
           <P>
             We strive to only keep your Personal Data only for the period of time needed for
             legitimate business purposes. In certain circumstances, however, legal or regulatory
             obligations may require us to retain records for a longer than we otherwise would.
           </P>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="Children’s Information">
+        <SideTitledSection span={Spans.three} title="Children’s Information">
           <P>
             Our Services are not directed to children under the age of 16. If you learn that a child
             under the age of 16 has provided us with personal information without consent, please
             contact us.
           </P>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="Your Rights">
+        <SideTitledSection span={Spans.three} title="Your Rights">
           <P>
             If you are in the EEA you have have the right, subject to certain exceptions, to request
             a copy of the Personal Data we are processing about you, to require that any incomplete
@@ -298,7 +296,7 @@ export default class Privacy extends React.Component {
             .
           </P>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title="Changes To This Privacy Policy">
+        <SideTitledSection span={Spans.three} title="Changes To This Privacy Policy">
           <P>
             We reserve the right to change and update this Privacy Policy from time to time. If we
             make changes, you will be notified of the change by the date at the top of Privacy
@@ -306,7 +304,7 @@ export default class Privacy extends React.Component {
           </P>
         </SideTitledSection>
         <SideTitledSection
-          span={Spans.three4th}
+          span={Spans.three}
           title="Third-Party Services, Applications, and Websites"
         >
           <P>
@@ -330,6 +328,12 @@ function P({ children }: { children: React.ReactNode }) {
 function B({ children }: { children: React.ReactNode }) {
   return <span css={[fonts.body, textStyles.heavy]}>{children}</span>
 }
+
+const gridCss = css(standardStyles.centered, {
+  [WHEN_DESKTOP]: standardStyles.blockMarginBottom,
+  [WHEN_TABLET]: standardStyles.blockMarginBottomTablet,
+  [WHEN_MOBILE]: standardStyles.blockMarginBottomMobile,
+})
 
 const container = css({
   marginTop: 100,

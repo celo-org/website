@@ -1,15 +1,22 @@
 import * as React from "react"
-import { StyleSheet, Text, View } from "react-native"
-import { H1 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { NameSpaces } from "src/i18n"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { Cell, GridRow, Spans } from "src/layout/Grid2"
 import SideTitledSection from "src/layout/SideTitledSection"
 import { HEADER_HEIGHT } from "src/shared/Styles"
-import { fonts, standardStyles, textStyles } from "src/styles"
 import { HelpfulLink } from "./HelpfulLink"
 import whitePaperImage from "./celo-whitepapers.jpg"
 import { useTranslation } from "src/i18n"
+import { css } from "@emotion/react"
+import {
+  fonts,
+  flex,
+  WHEN_DESKTOP,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+  standardStyles,
+  textStyles,
+} from "src/estyles"
 
 function Papers() {
   const { t } = useTranslation(NameSpaces.papers)
@@ -22,79 +29,76 @@ function Papers() {
         description={t("metaDescription")}
         image={whitePaperImage}
       />
-      <View style={styles.container}>
-        <GridRow
-          allStyle={standardStyles.centered}
-          desktopStyle={standardStyles.blockMarginBottom}
-          tabletStyle={standardStyles.blockMarginBottomTablet}
-          mobileStyle={standardStyles.blockMarginBottomMobile}
-        >
-          <Cell span={Spans.three4th} style={standardStyles.centered}>
-            <H1 style={textStyles.center}>{t("title")}</H1>
+      <div css={containerCss}>
+        <GridRow columns={1} css={gridCss}>
+          <Cell span={Spans.one} css={standardStyles.centered}>
+            <h1 css={css(fonts.h1, textStyles.center)}>{t("title")}</h1>
           </Cell>
         </GridRow>
-        <SideTitledSection span={Spans.three4th} title={t("protocol")}>
-          <Text style={fonts.p}>{t("whitepaperTitle")}</Text>
-          <View style={styles.links}>
+        <SideTitledSection span={Spans.three} title={t("protocol")}>
+          <p css={fonts.body}>{t("whitepaperTitle")}</p>
+          <div css={linksCss}>
             <HelpfulLink text={t("download")} href={"/papers/whitepaper"} />
             <HelpfulLink text={"阅读"} href={"/papers/whitepaper/chinese"} />
-          </View>
+          </div>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title={""}>
-          <Text style={fonts.p}>{t("plumoTitle")}</Text>
-          <View style={styles.links}>
+        <SideTitledSection span={Spans.three} title={""}>
+          <p css={fonts.body}>{t("plumoTitle")}</p>
+          <div css={linksCss}>
             <HelpfulLink text={t("download")} href={"/papers/plumo"} />
-          </View>
+          </div>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title={t("economics")}>
-          <Text style={fonts.p}>{t("stabilityTitle")}</Text>
-          <View style={styles.links}>
+        <SideTitledSection span={Spans.three} title={t("economics")}>
+          <p css={fonts.body}>{t("stabilityTitle")}</p>
+          <div css={linksCss}>
             <HelpfulLink text={t("download")} href={"/papers/stability"} />
-          </View>
+          </div>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title={""}>
-          <Text style={fonts.p}>{t("velocityTitle")}</Text>
-          <View style={styles.links}>
+        <SideTitledSection span={Spans.three} title={""}>
+          <p css={fonts.body}>{t("velocityTitle")}</p>
+          <div css={linksCss}>
             <HelpfulLink text={t("download")} href={"/papers/cbdc-velocity"} />
             <HelpfulLink text={"Lee el informe"} href={"/papers/cbdc-velocity/spanish"} />
-          </View>
+          </div>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title={""}>
-          <Text style={fonts.p}>{t("futureCurrency")}</Text>
-          <View style={styles.links}>
+        <SideTitledSection span={Spans.three} title={""}>
+          <p css={fonts.body}>{t("futureCurrency")}</p>
+          <div css={linksCss}>
             <HelpfulLink text={t("download")} href={"/papers/future-of-digital-currencies"} />
-          </View>
+          </div>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title={t("socialImpact")}>
-          <Text style={fonts.p}>{t("futureProof")}</Text>
-          <View style={styles.links}>
+        <SideTitledSection span={Spans.three} title={t("socialImpact")}>
+          <p css={fonts.body}>{t("futureProof")}</p>
+          <div css={linksCss}>
             <HelpfulLink text={t("download")} href={"/papers/future-proof-aid"} />
             <HelpfulLink text={t("exec")} href={"/papers/future-proof-exec"} />
-          </View>
+          </div>
         </SideTitledSection>
-        <SideTitledSection span={Spans.three4th} title={""}>
-          <Text style={fonts.p}>{t("grameenCovid")}</Text>
-          <View style={styles.links}>
+        <SideTitledSection span={Spans.three} title={""}>
+          <p css={fonts.body}>{t("grameenCovid")}</p>
+          <div css={linksCss}>
             <HelpfulLink text={t("download")} href={"/papers/covid-aid"} />
-          </View>
+          </div>
         </SideTitledSection>
-      </View>
+      </div>
     </>
   )
 }
 
 export default Papers
 
-const styles = StyleSheet.create({
-  container: {
-    marginTop: HEADER_HEIGHT,
-    paddingTop: HEADER_HEIGHT,
-  },
-  links: {
-    flexWrap: "wrap",
-    flexDirection: "row",
-  },
-  link: {
-    marginRight: 30,
-  },
+const containerCss = css(flex, {
+  marginTop: HEADER_HEIGHT,
+  paddingTop: HEADER_HEIGHT,
+})
+
+const gridCss = css(standardStyles.centered, {
+  [WHEN_DESKTOP]: standardStyles.blockMarginBottom,
+  [WHEN_TABLET]: standardStyles.blockMarginBottomTablet,
+  [WHEN_MOBILE]: standardStyles.blockMarginBottomMobile,
+})
+
+const linksCss = css({
+  flexWrap: "wrap",
+  flexDirection: "row",
 })

@@ -1,8 +1,9 @@
+import { css } from "@emotion/react"
 import * as React from "react"
 import { StyleSheet, Text, TextProps, View, ViewProps } from "react-native"
 import Responsive from "src/shared/Responsive"
-import { TextStyles } from "src/shared/Styles"
 import { fonts, standardStyles } from "src/styles"
+import { fonts as eFonts } from "src/estyles"
 interface Props {
   style?: any
   children?: any
@@ -13,24 +14,71 @@ interface Props {
 }
 
 interface TableProps {
-  style?: any
-  children?: any
+  className?: string
+  children?: React.ReactNode
 }
 
-export const TABLE = ({ style, children }: TableProps) => {
-  return <View style={[TextStyles.table, style]}>{children}</View>
+export const TABLE = ({ className, children }: TableProps) => {
+  return (
+    <table className={className} css={TextStyles.table}>
+      {children}
+    </table>
+  )
 }
 
-export const TR = ({ style, children }: TableProps) => {
-  return <View style={[TextStyles.tr, style]}>{children}</View>
+export const TR = ({ className, children }: TableProps) => {
+  return (
+    <tr className={className} css={TextStyles.tr}>
+      {children}
+    </tr>
+  )
 }
 
-export const TH = ({ style, children }: TableProps) => {
-  return <Text style={[fonts.legal, TextStyles.th, style]}>{children}</Text>
+export const TH = ({ className, children }: TableProps) => {
+  return (
+    <th className={className} css={TextStyles.th}>
+      {children}
+    </th>
+  )
 }
 
-export const TD = ({ style, children }: TableProps) => {
-  return <Text style={[fonts.legal, TextStyles.td, style]}>{children}</Text>
+export const TD = ({ className, children }: TableProps) => {
+  return (
+    <td className={className} css={TextStyles.td}>
+      {children}
+    </td>
+  )
+}
+
+const TextStyles = {
+  table: css({
+    marginTop: 4,
+    marginBottom: 4,
+    borderWidth: 2,
+    borderColor: "#eee",
+  }),
+  tr: css({
+    flexDirection: "row",
+    flex: 1,
+    justifyContent: "space-around",
+    flexBasis: "auto",
+    borderBottomWidth: 1,
+    borderBottomColor: "#eee",
+  }),
+  th: css(eFonts.legal, {
+    fontWeight: 600,
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 4,
+    backgroundColor: "#eee",
+  }),
+  td: css(eFonts.legal, {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 10,
+  }),
 }
 
 export const H1 = ({ style, children, tabIndex, accessibilityRole, id, ariaLevel }: Props) => {
