@@ -4174,10 +4174,10 @@ express-enforces-ssl@^1.1.0:
   resolved "https://registry.yarnpkg.com/express-enforces-ssl/-/express-enforces-ssl-1.1.0.tgz#cf29c6a61c5bdd802e2c7ed265a4a98e7487d1ac"
   integrity sha1-zynGphxb3YAuLH7SZaSpjnSH0aw=
 
-express-rate-limit@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/express-rate-limit/-/express-rate-limit-5.1.1.tgz#572e75c47ef890a6c9a3347f27bf3557d571f9ed"
-  integrity sha512-puA1zcCx/quwWUOU6pT6daCt6t7SweD9wKChKhb+KSgFMKRwS81C224hiSAUANw/gnSHiwEhgozM/2ezEBZPeA==
+express-rate-limit@^5.4.1:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/express-rate-limit/-/express-rate-limit-5.5.0.tgz#27dc48b5cc325448df47d02d5f4a2183b723781d"
+  integrity sha512-/1mrKggjXMxd1/ghPub5N3d36u5VlK8KjbQFQLxYub09BWSSgSXMQbXgFiIW0BYxjM49YCj8bkihONZR2U4+mQ==
 
 express@^4.17.1:
   version "4.17.1"
