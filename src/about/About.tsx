@@ -105,7 +105,7 @@ export class About extends React.Component<Props & I18nProps> {
             citation={`– ${t("beautifulLifeSource")}`}
           />
           <BookLayout label={t("SacredEconTitle")} startBlock={true}>
-            <p css={[fonts.body, standardStyles.blockMarginBottomTablet]}>
+            <span css={[fonts.body, standardStyles.blockMarginBottomTablet]}>
               <Trans
                 ns={NameSpaces.about}
                 i18nKey="SacredEconText"
@@ -115,7 +115,7 @@ export class About extends React.Component<Props & I18nProps> {
                   </InlineAnchor>
                 }
               />
-            </p>
+            </span>
             <Button
               kind={BTN.PRIMARY}
               href="http://sacred-economics.com/film/"
@@ -123,9 +123,9 @@ export class About extends React.Component<Props & I18nProps> {
             />
           </BookLayout>
           <BookLayout label={t("theoryOfChangeTitle")} startBlock={true}>
-            <p css={[fonts.body, standardStyles.blockMarginBottomTablet]}>
+            <span css={[fonts.body, standardStyles.blockMarginBottomTablet]}>
               {t("theoryOfChangeText")}
-            </p>
+            </span>
             <Button
               kind={BTN.PRIMARY}
               href="https://medium.com/celoOrg/celos-theory-of-change-b916de44945d"
@@ -158,9 +158,9 @@ const logoArea = css({
 const logoColumn = css({
   gridColumn: "2"
 })
+
 const styles = StyleSheet.create({
   teamImage: { width: "100%", height: 650 },
-  logoArea: { justifyContent: "flex-end" },
   foundation: {
     lineHeight: 42,
   },
