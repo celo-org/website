@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import { Image, StyleSheet, Text, TouchableOpacity } from "react-native"
 import AudioIcon from "src/about/AudioIcon"
 import Backers from "src/about/Backers"
 import { Contributor } from "src/about/Contributor"
@@ -13,15 +13,16 @@ import { H1, H2 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, Trans, withNamespaces } from "src/i18n"
 import BookLayout from "src/layout/BookLayout"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { GridRow } from "src/layout/Grid2"
 import LogoLightBg from "src/logos/LogoLightBg"
 import BeautifulQuote from "src/shared/BeautifulQuote"
 import Button, { BTN } from "src/shared/Button.3"
 import InlineAnchor from "src/shared/InlineAnchor"
 import menuItems from "src/shared/menu-items"
-import { fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/estyles"
 import { colors } from "src/colors"
 import { css } from "@emotion/react"
+import { WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 
 interface Props {
   contributors: Contributor[]
@@ -48,20 +49,19 @@ export class About extends React.Component<Props & I18nProps> {
           <VideoCover />
           {/* Below Fold */}
           <GridRow
-            desktopStyle={[styles.logoArea, standardStyles.sectionMarginTop]}
-            tabletStyle={[styles.logoArea, standardStyles.sectionMarginTopTablet]}
-            mobileStyle={standardStyles.sectionMarginTopMobile}
+           columns={4}
+           css={logoArea}
           >
-            <Cell span={Spans.three4th}>
+            <div css={logoColumn}>
               <LogoLightBg height={47} />
-            </Cell>
+              </div>
           </GridRow>
           <BookLayout label={t("MissionTitle")}>
             <H1>{t("MissionText")}</H1>
           </BookLayout>
           <BookLayout label={<Text style={styles.foundation}>{t("celoFoundation")}</Text>}>
             <H2 style={standardStyles.elementalMarginBottom}>{t("celoFoundationBelieves")}</H2>
-            <Text style={[fonts.p, standardStyles.elementalMargin]}>{t("celoFoundationText")}</Text>
+            <p css={[fonts.body, standardStyles.elementalMargin]}>{t("celoFoundationText")}</p>
           </BookLayout>
           <BookLayout label={t("MeaningTile")} endBlock={true}>
             <H1 ariaLevel="2" style={standardStyles.elementalMarginBottom}>
@@ -71,9 +71,9 @@ export class About extends React.Component<Props & I18nProps> {
                 i18nKey={"MeaningText"}
                 values={{ phonetic: "/ˈtselo/" }}
                 children={[
-                  <Text key={1} style={textStyles.italic}>
+                  <span key={1} css={textStyles.italic}>
                     "/ˈtselo/"
-                  </Text>,
+                  </span>,
                   <TouchableOpacity key={2} onPress={pronunceCelo}>
                     <AudioIcon />
                     <audio id="pronunce">
@@ -84,18 +84,18 @@ export class About extends React.Component<Props & I18nProps> {
                 ]}
               />
             </H1>
-            <Text style={[fonts.p, standardStyles.elementalMargin]}>{t("MeaningCopy")}</Text>
+            <p css={[fonts.body, standardStyles.elementalMargin]}>{t("MeaningCopy")}</p>
           </BookLayout>
           <Image source={{uri: team.src}} style={styles.teamImage} resizeMode={"cover"} />
           <BookLayout label={t("ValuesTitle")}>
-            <Text style={[fonts.p, standardStyles.elementalMarginBottom]}>
+            <span css={[fonts.body, standardStyles.elementalMarginBottom]}>
               <Trans
                 ns={NameSpaces.about}
                 i18nKey={"ValuesCopy"}
                 values={{ celoCLabs: "Celo\u00a0– C\u00a0Labs" }}
                 children={<Strong key="0">M</Strong>}
               />
-            </Text>
+            </span>
           </BookLayout>
           <CeloValues />
           <BeautifulQuote
@@ -105,7 +105,7 @@ export class About extends React.Component<Props & I18nProps> {
             citation={`– ${t("beautifulLifeSource")}`}
           />
           <BookLayout label={t("SacredEconTitle")} startBlock={true}>
-            <Text style={[fonts.p, standardStyles.blockMarginBottomTablet]}>
+            <p css={[fonts.body, standardStyles.blockMarginBottomTablet]}>
               <Trans
                 ns={NameSpaces.about}
                 i18nKey="SacredEconText"
@@ -115,7 +115,7 @@ export class About extends React.Component<Props & I18nProps> {
                   </InlineAnchor>
                 }
               />
-            </Text>
+            </p>
             <Button
               kind={BTN.PRIMARY}
               href="http://sacred-economics.com/film/"
@@ -123,9 +123,9 @@ export class About extends React.Component<Props & I18nProps> {
             />
           </BookLayout>
           <BookLayout label={t("theoryOfChangeTitle")} startBlock={true}>
-            <Text style={[fonts.p, standardStyles.blockMarginBottomTablet]}>
+            <p css={[fonts.body, standardStyles.blockMarginBottomTablet]}>
               {t("theoryOfChangeText")}
-            </Text>
+            </p>
             <Button
               kind={BTN.PRIMARY}
               href="https://medium.com/celoOrg/celos-theory-of-change-b916de44945d"
@@ -142,12 +142,21 @@ export class About extends React.Component<Props & I18nProps> {
 }
 
 function Strong({ children }: { children: React.ReactNode }) {
-  return <Text style={textStyles.heavy}>{children}</Text>
+  return <span css={textStyles.heavy}>{children}</span>
 }
 
 const layout = css({
   display: "flex",
   flexDirection: "column"
+})
+const logoArea = css({
+  justifyContent: "flex-end",
+  [WHEN_MOBILE]: standardStyles.sectionMarginMobile,
+  [WHEN_TABLET]: standardStyles.sectionMarginTablet,
+  [WHEN_DESKTOP]: standardStyles.sectionMarginTop,})
+
+const logoColumn = css({
+  gridColumn: "2"
 })
 const styles = StyleSheet.create({
   teamImage: { width: "100%", height: 650 },
