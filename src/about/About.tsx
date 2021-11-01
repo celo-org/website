@@ -105,7 +105,7 @@ export class About extends React.Component<Props & I18nProps> {
             citation={`– ${t("beautifulLifeSource")}`}
           />
           <BookLayout label={t("SacredEconTitle")} startBlock={true}>
-            <span css={[fonts.body, standardStyles.blockMarginBottomTablet]}>
+            <span css={[fonts.body, link, standardStyles.blockMarginBottomTablet]}>
               <Trans
                 ns={NameSpaces.about}
                 i18nKey="SacredEconText"
@@ -157,6 +157,13 @@ const logoArea = css({
 
 const logoColumn = css({
   gridColumn: "2"
+})
+
+const link = css({
+  a: {
+    fontFamily: "EB Garamond",
+    fontSize: "20px"
+  }
 })
 
 const styles = StyleSheet.create({
