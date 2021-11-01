@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Image, StyleSheet, Text, TouchableOpacity } from "react-native"
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import AudioIcon from "src/about/AudioIcon"
 import Backers from "src/about/Backers"
 import { Contributor } from "src/about/Contributor"
@@ -21,6 +21,7 @@ import InlineAnchor from "src/shared/InlineAnchor"
 import menuItems from "src/shared/menu-items"
 import { fonts, standardStyles, textStyles } from "src/styles"
 import { colors } from "src/colors"
+import { css } from "@emotion/react"
 
 interface Props {
   contributors: Contributor[]
@@ -43,7 +44,7 @@ export class About extends React.Component<Props & I18nProps> {
           title={t("pageTitle")}
           description={t("description")}
         />
-        <div>
+        <div css={layout}>
           <VideoCover />
           {/* Below Fold */}
           <GridRow
@@ -144,6 +145,10 @@ function Strong({ children }: { children: React.ReactNode }) {
   return <Text style={textStyles.heavy}>{children}</Text>
 }
 
+const layout = css({
+  display: "flex",
+  flexDirection: "column"
+})
 const styles = StyleSheet.create({
   teamImage: { width: "100%", height: 650 },
   logoArea: { justifyContent: "flex-end" },
