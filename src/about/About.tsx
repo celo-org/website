@@ -86,7 +86,7 @@ export class About extends React.Component<Props & I18nProps> {
             </H1>
             <Text style={[fonts.p, standardStyles.elementalMargin]}>{t("MeaningCopy")}</Text>
           </BookLayout>
-          <Image source={team} style={styles.teamImage} resizeMode={"cover"} />
+          <Image source={{uri: team.src}} style={styles.teamImage} resizeMode={"cover"} />
           <BookLayout label={t("ValuesTitle")}>
             <Text style={[fonts.p, standardStyles.elementalMarginBottom]}>
               <Trans
