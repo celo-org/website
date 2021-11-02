@@ -1,7 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import byMethod from "server/byMethod"
 
-import { submitForm, Field, Context } from "server/addToCRM"
+import { submitForm } from "server/addToCRM"
+import { Field, Context } from "server/Hubspot"
 import rateLimit from "server/rateLimit"
 
 const HONEY_FIELD = "accountNumber"
