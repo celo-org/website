@@ -62,3 +62,36 @@ export default async function addToCRM(
       : console.error(e)
   }
 }
+
+export interface Context {
+  pageTitle: string
+  pageURL: string
+}
+
+export interface Field {
+  value: string
+  name: string
+}
+
+const PORTAL_ID = 8568019
+
+export async function submitForm(formID: string, fields: Field[], context: Context) {
+  const data = {
+    submittedAt: Date.now(),
+    fields,
+    context,
+  }
+
+  const response = await fetch(
+    `https://api.hsforms.com/submissions/v3/integration/submit/${PORTAL_ID}/${formID}`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  )
+  console.info(response)
+  return response.json()
+}

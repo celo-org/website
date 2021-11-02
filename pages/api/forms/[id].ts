@@ -1,25 +1,22 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import byMethod from "server/byMethod"
 
-interface Context {
-  pageTitle: string
-  pageURL: string
-}
-
-interface Field {
-  value: string
-  name: string
-}
+import { submitForm, Field, Context } from "server/addToCRM"
+import rateLimit from "server/rateLimit"
 
 const HONEY_FIELD = "accountNumber"
 
 async function put(req: NextApiRequest, res: NextApiResponse) {
+  const limit = await rateLimit(req, res)
+  console.info("limit", limit)
+
   const formID = req.query.id as string
   const fields = req.body.fields as Field[]
   const context = req.body.context as Context
 
   if (validate(formID, fields, context)) {
-    submitForm()
+    await submitForm(formID, fields, context)
+    res.json({ ok: true })
   } else {
     res.json({ bad: true })
   }
