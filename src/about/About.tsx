@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Image, StyleSheet, Text, TouchableOpacity } from "react-native"
+import { Image, TouchableOpacity } from "react-native"
 import AudioIcon from "src/about/AudioIcon"
 import Backers from "src/about/Backers"
 import { Contributor } from "src/about/Contributor"
@@ -59,7 +59,7 @@ export class About extends React.Component<Props & I18nProps> {
           <BookLayout label={t("MissionTitle")}>
             <H1>{t("MissionText")}</H1>
           </BookLayout>
-          <BookLayout label={<Text style={styles.foundation}>{t("celoFoundation")}</Text>}>
+          <BookLayout label={<span css={foundation}>{t("celoFoundation")}</span>}>
             <H2 style={standardStyles.elementalMarginBottom}>{t("celoFoundationBelieves")}</H2>
             <p css={[fonts.body, standardStyles.elementalMargin]}>{t("celoFoundationText")}</p>
           </BookLayout>
@@ -86,7 +86,7 @@ export class About extends React.Component<Props & I18nProps> {
             </H1>
             <p css={[fonts.body, standardStyles.elementalMargin]}>{t("MeaningCopy")}</p>
           </BookLayout>
-          <Image source={{uri: team.src}} style={styles.teamImage} resizeMode={"cover"} />
+          <Image source={{uri: team.src}} css={teamImage} resizeMode={"cover"} />
           <BookLayout label={t("ValuesTitle")}>
             <span css={[fonts.body, standardStyles.elementalMarginBottom]}>
               <Trans
@@ -166,11 +166,12 @@ const link = css({
   }
 })
 
-const styles = StyleSheet.create({
-  teamImage: { width: "100%", height: 650 },
-  foundation: {
-    lineHeight: 42,
-  },
+const foundation = css({
+  lineHeight: "42px"
+})
+
+const teamImage = css({
+  width: "100%", height: 650
 })
 
 export default withNamespaces("about")(About)
