@@ -24,6 +24,7 @@ async function put(req: NextApiRequest, res: NextApiResponse) {
 
 function validate(formID: string, fields: Field[], context: Context) {
   // TODO check formID length in hubspot and make this match it
+  // TODO validate checksum
   if (!formID || formID.length > 10) {
     return false
   } else {
