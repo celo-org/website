@@ -7,8 +7,8 @@ import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
 import { hashNav } from "src/shared/menu-items"
 import Responsive from "src/shared/Responsive"
-import { fonts, standardStyles, textStyles } from "src/styles"
-
+import {standardStyles, textStyles } from "src/styles"
+import { fonts } from "src/estyles"
 export class Backers extends React.Component<I18nProps & ScreenProps> {
   render() {
     const { t, screen } = this.props
@@ -16,7 +16,7 @@ export class Backers extends React.Component<I18nProps & ScreenProps> {
     return (
       <>
         <BookLayout startBlock={true} label={t("celoBackers")} nativeID={hashNav.about.backers}>
-          <Text style={fonts.p}>{t("celoBackersText", { count: 80 })}</Text>
+          <p css={fonts.body}>{t("celoBackersText", { count: 80 })}</p>
         </BookLayout>
         <GridRow
           allStyle={standardStyles.blockMarginTopTablet}
@@ -42,7 +42,7 @@ export class Backers extends React.Component<I18nProps & ScreenProps> {
                         style={styles.photo}
                       />
                     ) : (
-                      <Text style={[fonts.h4, styles.name, textStyles.center]}>{backer.name}</Text>
+                      <h4 css={[fonts.h4, styles.name, textStyles.center]}>{backer.name}</h4>
                     )}
                   </View>
                 </Responsive>
