@@ -1,7 +1,6 @@
 import * as React from "react"
-import { FormIDs } from "server/Hubspot"
 import { ErrorKeys } from "src/forms/ErrorDisplay"
-import { putForm } from "src/forms/putForm"
+import { postForm } from "src/forms/postForm"
 interface State {
   isComplete: boolean
   isLoading: boolean
@@ -27,7 +26,7 @@ interface ChildArguments {
 }
 
 interface Props {
-  formID: FormIDs
+  route: string
   blankForm: FormState
   validateWith?: (form: FormState) => string[]
   children: (methods: ChildArguments) => React.ReactNode
@@ -46,7 +45,7 @@ export default class Form extends React.Component<Props, State> {
 
   postForm = async () => {
     this.setState({ isLoading: true })
-    const response = await putForm(this.props.formID, this.formFields())
+    const response = await postForm(this.props.route, this.form())
     const apiError =
       response.status === 429
         ? ErrorKeys.pleaseWait
