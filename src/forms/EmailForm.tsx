@@ -17,6 +17,7 @@ import {
   inputStyle,
   inputDarkStyle,
 } from "src/estyles"
+import { HoneyPot } from "./Honeypot"
 
 const NEWSLETTER_LIST = "1"
 export const DEVELOPER_LIST = "10"
@@ -29,7 +30,7 @@ interface OwnProps {
   isDarkMode?: boolean
 }
 
-const blankForm = { email: "", fullName: "", list: "" }
+const blankForm = { email: "", fullName: "", list: "", accountNumber: "" }
 
 type Props = OwnProps
 
@@ -70,6 +71,9 @@ export default React.memo(function EmailForm({
         const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
           onInput({ name: "email", newValue: event.target.value })
         }
+        const onHoneyBear = (event: React.ChangeEvent<HTMLInputElement>) => {
+          onInput({ name: "accountNumber", newValue: event.target.value })
+        }
 
         return (
           <>
@@ -96,6 +100,7 @@ export default React.memo(function EmailForm({
                   <ErrorDisplay isShowing={hasError} field={errorKey} />
                 </div>
               )}
+              <HoneyPot value={formState.form.accountNumber} onChange={onHoneyBear} />
               <SubmitButton
                 isLoading={formState.isLoading}
                 onPress={onSubmit}

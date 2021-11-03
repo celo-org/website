@@ -149,7 +149,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
                         allErrors={formState.errors}
                       />
                     ))}
-                    <HoneyPot />
+                    <HoneyPot value={formState.form.accountNumber} onChange={onInput} />
                     <SubmitButton
                       isLoading={formState.isLoading}
                       text={t("apply")}
@@ -195,7 +195,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
                         allErrors={formState.errors}
                       />
                     ))}
-                    <HoneyPot />
+                    <HoneyPot value={formState.form.accountNumber} onChange={onInput} />
                     <SubmitButton
                       isLoading={formState.isLoading}
                       text={t("recommend")}
@@ -226,6 +226,7 @@ const blankRecForm: Recommendation = {
   founderEmail: "",
   founderName: "",
   why: "",
+  accountNumber: "",
 }
 
 function invalidRecFields(fields: Record<keyof Recommendation, string>) {
@@ -244,6 +245,7 @@ const blankApplicationForm: Application = {
   founderEmail: "",
   coFounderEmail: "",
   video: "",
+  accountNumber: "",
 }
 
 function invalidApplicationFields(fields: Record<keyof Application, string>) {

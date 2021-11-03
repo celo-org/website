@@ -1,17 +1,18 @@
 import * as React from "react"
-import { useState } from "react"
 import { css } from "@emotion/react"
 
-export function HoneyPot() {
-  const [value, setValue] = useState("")
+interface Props {
+  value: string
+  onChange: (x?: unknown) => void
+}
+
+export function HoneyPot({ value, onChange }: Props) {
   return (
     <input
       type="text"
       name={"accountEmail"}
       value={value}
-      onChange={(e) => {
-        setValue(e.target.value)
-      }}
+      onChange={onChange}
       css={honeyContainer}
     />
   )

@@ -263,7 +263,14 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 
   server.post("/contacts", rateLimit, async (req, res) => {
     try {
-      await addToCRM(req.body, ListID.Newsletter)
+      if (!req.body.accountNumber) {
+        await addToCRM(req.body, ListID.Newsletter)
+      } else {
+        Sentry.captureMessage("Pontential Bot", {
+          extra: req.body,
+          user: (req.header["x-appengine-user-ip"] || req.ip).toString(),
+        })
+      }
       res.status(NO_CONTENT).send("ok")
     } catch (e) {
       respondError(res, e)
