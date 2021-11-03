@@ -1,5 +1,5 @@
 import * as React from "react"
-import { css } from "@emotion/react"
+// import { css } from "@emotion/react"
 
 interface Props {
   value: string
@@ -9,16 +9,16 @@ interface Props {
 export function HoneyPot({ value, onChange }: Props) {
   return (
     <input
-      type="text"
-      name={"accountEmail"}
+      type="email"
+      name={"accountNumber"}
       value={value}
       onChange={onChange}
-      css={honeyContainer}
+      // css={honeyContainer}
     />
   )
 }
 
-const honeyContainer = css({
-  transform: "scale(0,0)",
-  position: "fixed",
-})
+// const honeyContainer = css({
+//   transform: "scale(0,0)",
+//   position: "fixed",
+// })

@@ -7,6 +7,7 @@ export enum ApplicationFields {
   founderEmail = "Founder email filling out application",
   coFounderEmail = "Cofounder emails (if relevant)",
   video = "Optional: URL of a simple 1 minute unlisted YouTube, Vimeo, or Youku video introducing the founder(s)",
+  accountNumber = "",
 }
 
 export interface Application {
@@ -29,6 +30,7 @@ export enum RecommendationFields {
   founderEmail = "One founder’s email",
   founderName = "One founder's name",
   why = "Why do you recommend this applicant?",
+  accountNumber = "",
 }
 
 export interface Recommendation {

@@ -133,23 +133,27 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               >
                 {({ onSubmit, onInput, formState }) => (
                   <Form>
-                    {ApplicationKeys.map((key) => (
-                      <LabeledInput
-                        key={key}
-                        displayErrorAs={
-                          key === "founderEmail" || key === "coFounderEmail"
-                            ? ErrorKeys.email
-                            : undefined
-                        }
-                        label={ApplicationFields[key]}
-                        value={formState.form[key]}
-                        name={key}
-                        multiline={key === "product"}
-                        onInput={onInput}
-                        allErrors={formState.errors}
-                      />
-                    ))}
-                    <HoneyPot value={formState.form.accountNumber} onChange={onInput} />
+                    {ApplicationKeys.map((key) =>
+                      key !== "accountNumber" ? (
+                        <LabeledInput
+                          key={key}
+                          displayErrorAs={
+                            key === "founderEmail" || key === "coFounderEmail"
+                              ? ErrorKeys.email
+                              : undefined
+                          }
+                          label={ApplicationFields[key]}
+                          value={formState.form[key]}
+                          name={key}
+                          multiline={key === "product"}
+                          onInput={onInput}
+                          allErrors={formState.errors}
+                        />
+                      ) : (
+                        <HoneyPot value={formState.form.accountNumber} onChange={onInput} />
+                      )
+                    )}
+
                     <SubmitButton
                       isLoading={formState.isLoading}
                       text={t("apply")}
@@ -183,19 +187,22 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               >
                 {({ onSubmit: onSubmit, onInput, formState }) => (
                   <Form>
-                    {RecommendationKeys.map((key) => (
-                      <LabeledInput
-                        key={key}
-                        displayErrorAs={key === "founderEmail" ? ErrorKeys.email : undefined}
-                        label={RecommendationFields[key]}
-                        value={formState.form[key]}
-                        name={key}
-                        multiline={key === "why"}
-                        onInput={onInput}
-                        allErrors={formState.errors}
-                      />
-                    ))}
-                    <HoneyPot value={formState.form.accountNumber} onChange={onInput} />
+                    {RecommendationKeys.map((key) =>
+                      key !== "accountNumber" ? (
+                        <LabeledInput
+                          key={key}
+                          displayErrorAs={key === "founderEmail" ? ErrorKeys.email : undefined}
+                          label={RecommendationFields[key]}
+                          value={formState.form[key]}
+                          name={key}
+                          multiline={key === "why"}
+                          onInput={onInput}
+                          allErrors={formState.errors}
+                        />
+                      ) : (
+                        <HoneyPot value={formState.form.accountNumber} onChange={onInput} />
+                      )
+                    )}
                     <SubmitButton
                       isLoading={formState.isLoading}
                       text={t("recommend")}
