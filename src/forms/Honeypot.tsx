@@ -9,7 +9,7 @@ interface Props {
 export function HoneyPot({ value, onChange }: Props) {
   return (
     <input
-      type="email"
+      type="text"
       name={"accountNumber"}
       value={value}
       onChange={onChange}
