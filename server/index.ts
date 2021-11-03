@@ -11,10 +11,8 @@ import ecoFundSubmission from "../server/EcoFundApp"
 import Sentry, { initSentryServer } from "../server/sentry"
 import { RequestType } from "../src/fauceting/FaucetInterfaces"
 import addToCRM, { ListID } from "./addToCRM"
-import { create } from "./Alliance"
 import latestAnnouncements from "./Announcement"
 import { faucetOrInviteController } from "./controllers"
-import { submitFellowApp } from "./FellowshipApp"
 import rateLimit from "./rateLimit"
 import respondError from "./respondError"
 
@@ -218,28 +216,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 
   server.use(bodyParser.json())
 
-  server.post("/fellowship", rateLimit, async (req, res) => {
-    const { ideas, email, name, bio, deliverables, resume } = req.body
-
-    try {
-      const fellow = await submitFellowApp({
-        name,
-        email,
-        ideas,
-        bio,
-        deliverables,
-        resume,
-      })
-      res.status(CREATED).json({ id: fellow.id })
-    } catch (e) {
-      Sentry.withScope((scope) => {
-        scope.setTag("Service", "Airtable")
-        Sentry.captureEvent({ message: e.message, extra: e })
-      })
-      respondError(res, e)
-    }
-  })
-
   server.post("/ecosystem/:table", rateLimit, async (req, res) => {
     try {
       await ecoFundSubmission(req.body, req.params.table as Tables)
@@ -278,16 +254,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
       respondError(res, e)
     }
   })
-
-  server.post("/api/alliance", rateLimit, async (req, res) => {
-    try {
-      await create(req.body)
-      res.sendStatus(CREATED)
-    } catch (e) {
-      respondError(res, e)
-    }
-  })
-
   server.use((req, res) => handle(req, res))
 
   await initSentryServer()
