@@ -17,7 +17,7 @@ export default function byMethod({ getHandler, postHandler, putHandler }: Method
       } else if (req.method === "POST" && postHandler) {
         await postHandler(req, res)
       } else if (req.method === "PUT" && putHandler) {
-        await postHandler(req, res)
+        await putHandler(req, res)
       } else {
         res.status(405).json({ error: `${req.method} does not exist here` })
       }

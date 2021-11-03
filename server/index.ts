@@ -9,10 +9,8 @@ import path from "path"
 import { Tables } from "../fullstack/EcoFundFields"
 import ecoFundSubmission from "../server/EcoFundApp"
 import Sentry, { initSentryServer } from "../server/sentry"
-import { RequestType } from "../src/fauceting/FaucetInterfaces"
 import addToCRM, { ListID } from "./addToCRM"
 import latestAnnouncements from "./Announcement"
-import { faucetOrInviteController } from "./controllers"
 import rateLimit from "./rateLimit"
 import respondError from "./respondError"
 
@@ -227,14 +225,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
       })
       respondError(res, e)
     }
-  })
-
-  server.post("/faucet", async (req, res) => {
-    await faucetOrInviteController(req, res, RequestType.Faucet)
-  })
-
-  server.post("/invite", async (req, res) => {
-    await faucetOrInviteController(req, res, RequestType.Invite)
   })
 
   server.post("/contacts", rateLimit, async (req, res) => {
