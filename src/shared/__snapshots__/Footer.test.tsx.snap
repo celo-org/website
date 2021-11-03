@@ -401,6 +401,12 @@ Array [
             type="email"
             value=""
           />
+          <input
+            name="accountNumber"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
           <div
             className="emotion-10"
             onClick={[Function]}
