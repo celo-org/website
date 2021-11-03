@@ -1,21 +1,17 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import byMethod from "server/byMethod"
-
+import hashAnything from "hash-anything"
 import { submitForm } from "server/addToCRM"
 import { Field, Context } from "server/Hubspot"
-import rateLimit from "server/rateLimit"
 
 const HONEY_FIELD = "accountNumber"
 
 async function put(req: NextApiRequest, res: NextApiResponse) {
-  const limit = await rateLimit(req, res)
-  console.info("limit", limit)
-
   const formID = req.query.id as string
   const fields = req.body.fields as Field[]
   const context = req.body.context as Context
-
-  if (validate(formID, fields, context)) {
+  const checksum = req.body.checksum
+  if (validate(formID, fields, checksum)) {
     await submitForm(formID, fields, context)
     res.json({ ok: true })
   } else {
@@ -23,10 +19,12 @@ async function put(req: NextApiRequest, res: NextApiResponse) {
   }
 }
 
-function validate(formID: string, fields: Field[], context: Context) {
+function validate(formID: string, fields: Field[], checksum: string) {
   // TODO check formID length in hubspot and make this match it
   // TODO validate checksum
-  if (!formID || formID.length > 10) {
+  if (!formID || formID.length !== 36) {
+    return false
+  } else if (checksum !== hashAnything.sha1(fields)) {
     return false
   } else {
     return !fields.find((field) => field.name === HONEY_FIELD && field.value.length > 0)

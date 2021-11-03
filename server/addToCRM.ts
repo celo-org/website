@@ -1,6 +1,6 @@
 import * as hubspot from "@hubspot/api-client"
 import getConfig from "next/config"
-import { Field, Context } from "./Hubspot"
+import { Field, Context, PORTAL_ID } from "./Hubspot"
 
 interface CRMInterface {
   email: string
@@ -63,8 +63,6 @@ export default async function addToCRM(
       : console.error(e)
   }
 }
-
-const PORTAL_ID = 8568019
 
 export async function submitForm(formID: string, fields: Field[], context: Context) {
   const data = {
