@@ -28,7 +28,8 @@
     "keys:encrypt": "bash scripts/key_placer.sh encrypt",
     "test": "TZ=UTC jest --coverage --runInBand",
     "spec": "jest",
-    "prepare": "husky install"
+    "prepare": "yarn run snyk-protect && husky install",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.4.0",
@@ -91,7 +92,8 @@
     "shuffle-seed": "^1.1.6",
     "stickyfilljs": "^2.1.0",
     "swr": "^1.0.1",
-    "yiq": "^4.0.0"
+    "yiq": "^4.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.0.0",
@@ -146,5 +148,6 @@
       "eslint --cache --fix",
       "prettier --write"
     ]
-  }
+  },
+  "snyk": true
 }
