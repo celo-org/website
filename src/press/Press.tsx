@@ -65,7 +65,7 @@ const backgroundCss = css(flex, {
     width: "100%",
     backgroundColor: colors.dark,
     background:
-      "linear-gradient(180deg, rgba(46, 51, 56, 0.1) 1%, rgba(46, 51, 56, 0.6) 20%, #2E3338 48.13%)",
+      "linear-gradient(180deg, rgba(46, 51, 56, 0.1) 1%, rgba(46, 51, 56, 0.6) 20%, #111214 48.13%)",
     zIndex: 20,
     opacity: 1,
     paddingTop: 60,

@@ -170,7 +170,7 @@ exports[`UserAgreement renders 1`] = `
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -258,7 +258,7 @@ exports[`UserAgreement renders 1`] = `
   line-height: 18;
   font-weight: 500;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 18px;
 }
 

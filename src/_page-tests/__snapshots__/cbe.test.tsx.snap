@@ -171,7 +171,7 @@ exports[`CBE renders 1`] = `
   font-size: 28px;
   line-height: 36;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 36px;
 }
 
@@ -187,7 +187,7 @@ exports[`CBE renders 1`] = `
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -338,7 +338,7 @@ exports[`CBE renders 1`] = `
   line-height: 28;
   font-weight: 400;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -349,7 +349,7 @@ exports[`CBE renders 1`] = `
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
 }
 
@@ -478,7 +478,7 @@ exports[`CBE renders 1`] = `
   font-size: 28px;
   line-height: 36;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 36px;
 }
 
@@ -584,7 +584,7 @@ exports[`CBE renders 1`] = `
   line-height: 18;
   font-weight: 500;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 18px;
 }
 
@@ -598,7 +598,7 @@ exports[`CBE renders 1`] = `
   line-height: 18;
   font-weight: 500;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 18px;
   color: #ABADAF;
   margin-top: 2px;

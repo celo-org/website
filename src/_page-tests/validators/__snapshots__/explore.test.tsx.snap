@@ -71,7 +71,7 @@ exports[`ValidatorsList renders 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(255,255,255,0.20)",
           "borderTopStyle": "solid",
-          "boxShadow": "960px 0 #2E3338, -960px 0 #2E3338",
+          "boxShadow": "960px 0 #111214, -960px 0 #111214",
           "display": "flex",
           "flexDirection": "row",
           "justifyContent": "space-between",

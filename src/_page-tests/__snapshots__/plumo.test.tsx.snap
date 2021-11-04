@@ -206,7 +206,7 @@ Array [
   -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 50px;
-  background-color: #2E3338;
+  background-color: #111214;
   min-height: 100vh;
 }
 
@@ -345,7 +345,7 @@ Array [
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -594,7 +594,7 @@ Array [
   border: 1px solid #81868B;
   width: 100%;
   color: #FFFFFF;
-  background-color: #2E3338;
+  background-color: #111214;
   border-collapse: collapse;
 }
 
@@ -708,7 +708,7 @@ Array [
   -ms-flex-item-align: center;
   align-self: center;
   width: 100%;
-  background-color: #2E3338;
+  background-color: #111214;
 }
 
 .emotion-37 {
@@ -876,7 +876,7 @@ Array [
   font-size: 16px;
   line-height: 20;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 20px;
   margin-bottom: 20px;
   max-width: 350px;
@@ -966,7 +966,7 @@ Array [
   line-height: 18;
   font-weight: 500;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 18px;
   margin-bottom: 20px;
   color: #FFFFFF;
@@ -1225,7 +1225,7 @@ Array [
   animation-timing-function: linear;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  background-color: #2E3338;
+  background-color: #111214;
   -webkit-animation-delay: 3500ms;
   animation-delay: 3500ms;
   -webkit-animation-name: animation-0;
@@ -1241,7 +1241,7 @@ Array [
   font-size: 16px;
   line-height: 20;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 20px;
   color: #FFFFFF;
   font-style: italic;
@@ -1288,7 +1288,7 @@ Array [
   animation-timing-function: linear;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  background-color: #2E3338;
+  background-color: #111214;
   -webkit-animation-name: animation-2;
   animation-name: animation-2;
 }
@@ -1302,7 +1302,7 @@ Array [
   font-size: 16px;
   line-height: 20;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 20px;
   z-index: 10;
   color: #FFFFFF;
