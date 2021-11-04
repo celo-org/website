@@ -6,7 +6,7 @@ export enum colors {
   placeholderGray = "#D1D5D8",
   placeholderDarkMode = "#838486",
   secondary = "#81868B",
-  dark = "#2E3338",
+  dark = "#111214",
   darkTransparent = "rgba(46, 51, 56, 0.5)",
   gold = "#FBCC5C",
   goldDark = "#D8A11F",
