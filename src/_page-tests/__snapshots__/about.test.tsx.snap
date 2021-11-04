@@ -414,7 +414,7 @@ exports[`About renders 1`] = `
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -453,7 +453,7 @@ exports[`About renders 1`] = `
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "36px",
             "lineHeight": "40px",
@@ -514,7 +514,7 @@ exports[`About renders 1`] = `
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -563,7 +563,7 @@ exports[`About renders 1`] = `
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "28px",
             "lineHeight": "32px",
@@ -581,7 +581,7 @@ exports[`About renders 1`] = `
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -644,7 +644,7 @@ exports[`About renders 1`] = `
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -683,7 +683,7 @@ exports[`About renders 1`] = `
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "36px",
             "lineHeight": "40px",
@@ -779,7 +779,7 @@ means ‘purpose’ in Esperanto.
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -881,7 +881,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -918,7 +918,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -1097,7 +1097,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -1114,7 +1114,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -1665,7 +1665,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -1682,7 +1682,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -1826,7 +1826,7 @@ Change the story.
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -1863,7 +1863,7 @@ Change the story.
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -2022,7 +2022,7 @@ Change the story.
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -2059,7 +2059,7 @@ Change the story.
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -2188,7 +2188,7 @@ Change the story.
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -2225,7 +2225,7 @@ Change the story.
           onClick={[Function]}
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
               "lineHeight": "28px",
@@ -2511,7 +2511,7 @@ Change the story.
                 onClick={[Function]}
                 style={
                   Object {
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "fontWeight": "bold",
@@ -2565,7 +2565,7 @@ Change the story.
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "16px",
                   "lineHeight": "20px",
@@ -2581,7 +2581,7 @@ Change the story.
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "26px",
                   "fontStyle": "italic",
@@ -2647,7 +2647,7 @@ Change the story.
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -2684,7 +2684,7 @@ Change the story.
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -2967,7 +2967,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -3307,7 +3307,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -3342,7 +3342,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -3377,7 +3377,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -3412,7 +3412,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -3447,7 +3447,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -3482,7 +3482,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -3883,7 +3883,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -3918,7 +3918,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -4014,7 +4014,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -4049,7 +4049,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -4084,7 +4084,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -4119,7 +4119,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -4154,7 +4154,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -4189,7 +4189,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -4224,7 +4224,7 @@ Change the story.
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "22px",
                 "lineHeight": "36px",
@@ -4288,7 +4288,7 @@ Change the story.
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -4325,7 +4325,7 @@ Change the story.
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",

@@ -1601,7 +1601,7 @@ Array [
                         "WebkitFlexDirection": "row",
                         "WebkitJustifyContent": "space-between",
                         "alignItems": "center",
-                        "backgroundColor": "rgba(46,51,56,1.00)",
+                        "backgroundColor": "rgba(17,18,20,1.00)",
                         "borderBottomColor": "rgba(237,238,239,1.00)",
                         "borderBottomLeftRadius": "3px",
                         "borderBottomRightRadius": "3px",
@@ -1678,7 +1678,7 @@ Array [
                   style={
                     Object {
                       "WebkitFlex": 1,
-                      "backgroundColor": "rgba(46,51,56,1.00)",
+                      "backgroundColor": "rgba(17,18,20,1.00)",
                       "borderBottomColor": "rgba(237,238,239,1.00)",
                       "borderBottomLeftRadius": "3px",
                       "borderBottomRightRadius": "3px",
@@ -1710,7 +1710,7 @@ Array [
                     role="option"
                     style={
                       Object {
-                        "backgroundColor": "rgba(46,51,56,1.00)",
+                        "backgroundColor": "rgba(17,18,20,1.00)",
                         "color": "rgba(26,183,117,1.00)",
                         "cursor": "pointer",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",

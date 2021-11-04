@@ -1163,7 +1163,7 @@ exports[`Experience/Composition renders 1`] = `
                         "borderLeftColor": "rgba(0,0,0,0.00)",
                         "borderRightColor": "rgba(0,0,0,0.00)",
                         "borderTopColor": "rgba(0,0,0,0.00)",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "flexGrow": 0,
@@ -1523,7 +1523,7 @@ exports[`Experience/Composition renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1605,7 +1605,7 @@ exports[`Experience/Composition renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1687,7 +1687,7 @@ exports[`Experience/Composition renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1769,7 +1769,7 @@ exports[`Experience/Composition renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1851,7 +1851,7 @@ exports[`Experience/Composition renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1933,7 +1933,7 @@ exports[`Experience/Composition renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -2012,7 +2012,7 @@ exports[`Experience/Composition renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -2091,7 +2091,7 @@ exports[`Experience/Composition renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -2188,7 +2188,7 @@ exports[`Experience/Composition renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2270,7 +2270,7 @@ exports[`Experience/Composition renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2352,7 +2352,7 @@ exports[`Experience/Composition renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2434,7 +2434,7 @@ exports[`Experience/Composition renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2516,7 +2516,7 @@ exports[`Experience/Composition renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2598,7 +2598,7 @@ exports[`Experience/Composition renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2677,7 +2677,7 @@ exports[`Experience/Composition renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2756,7 +2756,7 @@ exports[`Experience/Composition renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2839,7 +2839,7 @@ exports[`Experience/Composition renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "36px",
                   "lineHeight": "40px",
@@ -2859,7 +2859,7 @@ exports[`Experience/Composition renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -2886,7 +2886,7 @@ exports[`Experience/Composition renders 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "Jost, futura-pt, futura, sans-serif",
                   "fontSize": "20px",
                   "fontWeight": "500",
@@ -2904,7 +2904,7 @@ exports[`Experience/Composition renders 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
@@ -2965,7 +2965,7 @@ exports[`Experience/Composition renders 1`] = `
                   role="heading"
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "24px",
                       "lineHeight": "32px",
@@ -3019,7 +3019,7 @@ exports[`Experience/Composition renders 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "Jost, futura-pt, futura, sans-serif",
                       "fontSize": "18px",
                       "marginBottom": "5px",
@@ -3036,7 +3036,7 @@ exports[`Experience/Composition renders 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "16px",
                       "lineHeight": "20px",
@@ -3079,7 +3079,7 @@ exports[`Experience/Composition renders 1`] = `
                   role="heading"
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "24px",
                       "lineHeight": "32px",
@@ -3134,7 +3134,7 @@ exports[`Experience/Composition renders 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "Jost, futura-pt, futura, sans-serif",
                       "fontSize": "18px",
                       "marginBottom": "5px",
@@ -3152,7 +3152,7 @@ exports[`Experience/Composition renders 1`] = `
                   onClick={[Function]}
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "16px",
                       "lineHeight": "20px",
@@ -3192,7 +3192,7 @@ exports[`Experience/Composition renders 1`] = `
                   role="heading"
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "24px",
                       "lineHeight": "32px",
@@ -3271,7 +3271,7 @@ exports[`Experience/Composition renders 1`] = `
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "Jost, futura-pt, futura, sans-serif",
                           "fontSize": "18px",
                           "marginBottom": "5px",
@@ -3287,7 +3287,7 @@ exports[`Experience/Composition renders 1`] = `
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                           "fontSize": "16px",
                           "lineHeight": "20px",
@@ -3328,7 +3328,7 @@ exports[`Experience/Composition renders 1`] = `
                   role="heading"
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "24px",
                       "lineHeight": "32px",
@@ -3362,7 +3362,7 @@ exports[`Experience/Composition renders 1`] = `
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "18px",
                         "gridArea": "subtitle",
@@ -3416,7 +3416,7 @@ exports[`Experience/Composition renders 1`] = `
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                         "fontSize": "16px",
                         "gridArea": "text",
@@ -3453,7 +3453,7 @@ exports[`Experience/Composition renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "28px",
                   "lineHeight": "32px",
@@ -3471,7 +3471,7 @@ exports[`Experience/Composition renders 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
@@ -4112,7 +4112,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4161,7 +4161,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4210,7 +4210,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4259,7 +4259,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4308,7 +4308,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4357,7 +4357,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4406,7 +4406,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4455,7 +4455,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4513,7 +4513,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4562,7 +4562,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4611,7 +4611,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4660,7 +4660,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4709,7 +4709,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4767,7 +4767,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4816,7 +4816,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4865,7 +4865,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4914,7 +4914,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4963,7 +4963,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5012,7 +5012,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5061,7 +5061,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5110,7 +5110,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5159,7 +5159,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5217,7 +5217,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5290,7 +5290,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5365,7 +5365,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5438,7 +5438,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5511,7 +5511,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5586,7 +5586,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5659,7 +5659,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5731,7 +5731,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5801,7 +5801,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5871,7 +5871,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5941,7 +5941,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",

@@ -198,7 +198,7 @@ exports[`Community renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "36px",
                 "lineHeight": "40px",
@@ -492,7 +492,7 @@ exports[`Community renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "28px",
                   "lineHeight": "32px",
@@ -513,7 +513,7 @@ exports[`Community renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -587,7 +587,7 @@ exports[`Community renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "Jost, futura-pt, futura, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -609,7 +609,7 @@ exports[`Community renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -716,7 +716,7 @@ exports[`Community renders 1`] = `
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
@@ -788,7 +788,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "Jost, futura-pt, futura, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -810,7 +810,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -917,7 +917,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
@@ -987,7 +987,7 @@ We believe that many of these features have great potential for positive impact,
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "Jost, futura-pt, futura, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -1009,7 +1009,7 @@ We believe that many of these features have great potential for positive impact,
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -1116,7 +1116,7 @@ We believe that many of these features have great potential for positive impact,
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
@@ -1184,7 +1184,7 @@ We believe that many of these features have great potential for positive impact,
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "Jost, futura-pt, futura, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -1206,7 +1206,7 @@ We believe that many of these features have great potential for positive impact,
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -1313,7 +1313,7 @@ We believe that many of these features have great potential for positive impact,
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
@@ -1392,7 +1392,7 @@ We believe that many of these features have great potential for positive impact,
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "28px",
                 "lineHeight": "32px",
@@ -1698,7 +1698,7 @@ We believe that many of these features have great potential for positive impact,
                   "WebkitAlignItems": "center",
                   "WebkitBoxAlign": "center",
                   "alignItems": "center",
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "cursor": "pointer",
                   "display": "inline-flex",
                   "fontFamily": "Jost, futura-pt, futura, sans-serif",
@@ -1773,7 +1773,7 @@ We believe that many of these features have great potential for positive impact,
     className="emotion-0"
     style={
       Object {
-        "backgroundColor": "rgba(46,51,56,1.00)",
+        "backgroundColor": "rgba(17,18,20,1.00)",
         "maxWidth": "100vw",
         "overflowX": "hidden",
         "overflowY": "hidden",
@@ -2028,7 +2028,7 @@ We believe that many of these features have great potential for positive impact,
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "28px",
             "lineHeight": "32px",
@@ -2045,7 +2045,7 @@ We believe that many of these features have great potential for positive impact,
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "fontStyle": "italic",
@@ -2062,7 +2062,7 @@ We believe that many of these features have great potential for positive impact,
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -2109,7 +2109,7 @@ We believe that many of these features have great potential for positive impact,
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "Jost, futura-pt, futura, sans-serif",
                 "fontSize": "16px",
                 "fontWeight": "500",
@@ -2179,7 +2179,7 @@ We believe that many of these features have great potential for positive impact,
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "Jost, futura-pt, futura, sans-serif",
                 "fontSize": "16px",
                 "fontWeight": "500",
@@ -2454,7 +2454,7 @@ We believe that many of these features have great potential for positive impact,
                   "borderLeftColor": "rgba(0,0,0,0.00)",
                   "borderRightColor": "rgba(0,0,0,0.00)",
                   "borderTopColor": "rgba(0,0,0,0.00)",
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "cursor": "pointer",
                   "display": "inline-flex",
                   "flexGrow": 0,
@@ -2661,7 +2661,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -2754,7 +2754,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -2847,7 +2847,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -2941,7 +2941,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -3033,7 +3033,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -3126,7 +3126,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -3219,7 +3219,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -3433,7 +3433,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -3526,7 +3526,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -3619,7 +3619,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -3712,7 +3712,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -3806,7 +3806,7 @@ We believe that many of these features have great potential for positive impact,
                     "borderTopLeftRadius": "3px",
                     "borderTopRightRadius": "3px",
                     "borderTopWidth": "1px",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",

@@ -531,7 +531,7 @@ exports[`Alliance renders 1`] = `
     className="emotion-0"
     style={
       Object {
-        "backgroundColor": "rgba(46,51,56,1.00)",
+        "backgroundColor": "rgba(17,18,20,1.00)",
       }
     }
   >
@@ -2674,7 +2674,7 @@ exports[`Alliance renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "backgroundColor": "rgba(46,51,56,1.00)",
+                  "backgroundColor": "rgba(17,18,20,1.00)",
                   "color": "rgba(255,255,255,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "24px",
@@ -3402,7 +3402,7 @@ exports[`Alliance renders 1`] = `
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -3421,7 +3421,7 @@ exports[`Alliance renders 1`] = `
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "28px",
               "lineHeight": "32px",
@@ -3493,7 +3493,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -3568,7 +3568,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -3826,7 +3826,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -3902,7 +3902,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -4252,7 +4252,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -4327,7 +4327,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -5333,7 +5333,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "28px",
                 "lineHeight": "32px",
@@ -5639,7 +5639,7 @@ exports[`Alliance renders 1`] = `
                   "WebkitAlignItems": "center",
                   "WebkitBoxAlign": "center",
                   "alignItems": "center",
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "cursor": "pointer",
                   "display": "inline-flex",
                   "fontFamily": "Jost, futura-pt, futura, sans-serif",
@@ -5838,7 +5838,7 @@ exports[`Alliance renders 1`] = `
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "28px",
               "lineHeight": "32px",
@@ -5859,7 +5859,7 @@ exports[`Alliance renders 1`] = `
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -5939,7 +5939,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "Jost, futura-pt, futura, sans-serif",
                 "fontSize": "16px",
                 "fontWeight": "500",
@@ -6034,7 +6034,7 @@ exports[`Alliance renders 1`] = `
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                         "fontSize": "20px",
                         "lineHeight": "28px",
@@ -6109,7 +6109,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(251,204,92,0.40)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6140,7 +6140,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6171,7 +6171,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6202,7 +6202,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6233,7 +6233,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6264,7 +6264,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6295,7 +6295,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6326,7 +6326,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6357,7 +6357,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6388,7 +6388,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6419,7 +6419,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6450,7 +6450,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6481,7 +6481,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6512,7 +6512,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6543,7 +6543,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6574,7 +6574,7 @@ exports[`Alliance renders 1`] = `
                   style={
                     Object {
                       "backgroundColor": "rgba(255,255,255,1.00)",
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
@@ -6628,7 +6628,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -6656,7 +6656,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -6701,7 +6701,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -6729,7 +6729,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -6774,7 +6774,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -6802,7 +6802,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -6847,7 +6847,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -6875,7 +6875,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -6920,7 +6920,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -6948,7 +6948,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -6993,7 +6993,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7021,7 +7021,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7066,7 +7066,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7094,7 +7094,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7139,7 +7139,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7167,7 +7167,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7212,7 +7212,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7240,7 +7240,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7285,7 +7285,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7313,7 +7313,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7358,7 +7358,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7386,7 +7386,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7431,7 +7431,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7459,7 +7459,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7504,7 +7504,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7532,7 +7532,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7577,7 +7577,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7605,7 +7605,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7650,7 +7650,7 @@ exports[`Alliance renders 1`] = `
             role="heading"
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
@@ -7678,7 +7678,7 @@ exports[`Alliance renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -7719,7 +7719,7 @@ exports[`Alliance renders 1`] = `
     className="emotion-0"
     style={
       Object {
-        "backgroundColor": "rgba(46,51,56,1.00)",
+        "backgroundColor": "rgba(17,18,20,1.00)",
       }
     }
   >

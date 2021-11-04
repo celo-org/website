@@ -1163,7 +1163,7 @@ exports[`Experience/Typography renders 1`] = `
                         "borderLeftColor": "rgba(0,0,0,0.00)",
                         "borderRightColor": "rgba(0,0,0,0.00)",
                         "borderTopColor": "rgba(0,0,0,0.00)",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "flexGrow": 0,
@@ -1523,7 +1523,7 @@ exports[`Experience/Typography renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1605,7 +1605,7 @@ exports[`Experience/Typography renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1687,7 +1687,7 @@ exports[`Experience/Typography renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1769,7 +1769,7 @@ exports[`Experience/Typography renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1851,7 +1851,7 @@ exports[`Experience/Typography renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -1933,7 +1933,7 @@ exports[`Experience/Typography renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -2012,7 +2012,7 @@ exports[`Experience/Typography renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -2091,7 +2091,7 @@ exports[`Experience/Typography renders 1`] = `
                     "borderLeftColor": "rgba(0,0,0,0.00)",
                     "borderRightColor": "rgba(0,0,0,0.00)",
                     "borderTopColor": "rgba(0,0,0,0.00)",
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
                     "flexGrow": 0,
@@ -2188,7 +2188,7 @@ exports[`Experience/Typography renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2270,7 +2270,7 @@ exports[`Experience/Typography renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2352,7 +2352,7 @@ exports[`Experience/Typography renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2434,7 +2434,7 @@ exports[`Experience/Typography renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2516,7 +2516,7 @@ exports[`Experience/Typography renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2598,7 +2598,7 @@ exports[`Experience/Typography renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2677,7 +2677,7 @@ exports[`Experience/Typography renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2756,7 +2756,7 @@ exports[`Experience/Typography renders 1`] = `
                 "borderLeftColor": "rgba(0,0,0,0.00)",
                 "borderRightColor": "rgba(0,0,0,0.00)",
                 "borderTopColor": "rgba(0,0,0,0.00)",
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "cursor": "pointer",
                 "display": "inline-flex",
                 "flexGrow": 0,
@@ -2842,7 +2842,7 @@ exports[`Experience/Typography renders 1`] = `
                 role="heading"
                 style={
                   Object {
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "36px",
                     "lineHeight": "40px",
@@ -2862,7 +2862,7 @@ exports[`Experience/Typography renders 1`] = `
                 role="heading"
                 style={
                   Object {
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "24px",
                     "lineHeight": "32px",
@@ -2889,7 +2889,7 @@ exports[`Experience/Typography renders 1`] = `
                 onClick={[Function]}
                 style={
                   Object {
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "Jost, futura-pt, futura, sans-serif",
                     "fontSize": "20px",
                     "fontWeight": "500",
@@ -2906,7 +2906,7 @@ exports[`Experience/Typography renders 1`] = `
                 onClick={[Function]}
                 style={
                   Object {
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -2962,7 +2962,7 @@ Refer to the
                 role="heading"
                 style={
                   Object {
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "28px",
                     "lineHeight": "32px",
@@ -2984,7 +2984,7 @@ the Celo brand typeface.
                 onClick={[Function]}
                 style={
                   Object {
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
@@ -3104,7 +3104,7 @@ Use EB Garamond for the majority of titles and paragraphs
                   role="heading"
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "Jost, futura-pt, futura, sans-serif",
                       "fontSize": "24px",
                       "lineHeight": "32px",
@@ -3125,7 +3125,7 @@ Use EB Garamond for the majority of titles and paragraphs
                   onClick={[Function]}
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
@@ -3260,7 +3260,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 role="heading"
                 style={
                   Object {
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                     "fontSize": "28px",
                     "lineHeight": "32px",
@@ -3278,7 +3278,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
               onClick={[Function]}
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
@@ -3364,7 +3364,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                         "fontSize": "48px",
                         "lineHeight": "56px",
@@ -3402,7 +3402,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "16px",
                         "fontWeight": "500",
@@ -3425,7 +3425,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "Jost, futura-pt, futura, sans-serif",
                           "fontSize": "16px",
                           "fontWeight": "500",
@@ -3490,7 +3490,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                         "fontSize": "40px",
                         "lineHeight": "48px",
@@ -3528,7 +3528,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "16px",
                         "fontWeight": "500",
@@ -3551,7 +3551,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "Jost, futura-pt, futura, sans-serif",
                           "fontSize": "16px",
                           "fontWeight": "500",
@@ -3616,7 +3616,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "24px",
                         "fontWeight": "400",
@@ -3655,7 +3655,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "16px",
                         "fontWeight": "500",
@@ -3678,7 +3678,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "Jost, futura-pt, futura, sans-serif",
                           "fontSize": "16px",
                           "fontWeight": "500",
@@ -3743,7 +3743,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                         "fontSize": "28px",
                         "lineHeight": "36px",
@@ -3781,7 +3781,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "16px",
                         "fontWeight": "500",
@@ -3804,7 +3804,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "Jost, futura-pt, futura, sans-serif",
                           "fontSize": "16px",
                           "fontWeight": "500",
@@ -3869,7 +3869,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "20px",
                         "fontWeight": "500",
@@ -3908,7 +3908,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "16px",
                         "fontWeight": "500",
@@ -3931,7 +3931,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "Jost, futura-pt, futura, sans-serif",
                           "fontSize": "16px",
                           "fontWeight": "500",
@@ -3996,7 +3996,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "16px",
                         "fontWeight": "500",
@@ -4035,7 +4035,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "16px",
                         "fontWeight": "500",
@@ -4058,7 +4058,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "Jost, futura-pt, futura, sans-serif",
                           "fontSize": "16px",
                           "fontWeight": "500",
@@ -4123,7 +4123,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                         "fontSize": "20px",
                         "lineHeight": "28px",
@@ -4161,7 +4161,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "16px",
                         "fontWeight": "500",
@@ -4184,7 +4184,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "Jost, futura-pt, futura, sans-serif",
                           "fontSize": "16px",
                           "fontWeight": "500",
@@ -4247,7 +4247,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                         "fontSize": "16px",
                         "lineHeight": "20px",
@@ -4285,7 +4285,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                     onClick={[Function]}
                     style={
                       Object {
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "fontFamily": "Jost, futura-pt, futura, sans-serif",
                         "fontSize": "16px",
                         "fontWeight": "500",
@@ -4308,7 +4308,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                       onClick={[Function]}
                       style={
                         Object {
-                          "color": "rgba(46,51,56,1.00)",
+                          "color": "rgba(17,18,20,1.00)",
                           "fontFamily": "Jost, futura-pt, futura, sans-serif",
                           "fontSize": "16px",
                           "fontWeight": "500",
@@ -4341,7 +4341,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 onClick={[Function]}
                 style={
                   Object {
-                    "color": "rgba(46,51,56,1.00)",
+                    "color": "rgba(17,18,20,1.00)",
                     "fontFamily": "Jost, futura-pt, futura, sans-serif",
                     "fontSize": "20px",
                     "fontWeight": "500",
@@ -4380,7 +4380,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   role="heading"
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "36px",
                       "lineHeight": "40px",
@@ -4400,7 +4400,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   role="heading"
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "28px",
                       "lineHeight": "32px",
@@ -4420,7 +4420,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   role="heading"
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "Jost, futura-pt, futura, sans-serif",
                       "fontSize": "24px",
                       "lineHeight": "32px",
@@ -4440,7 +4440,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   role="heading"
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "24px",
                       "lineHeight": "32px",
@@ -4459,7 +4459,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   onClick={[Function]}
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "Jost, futura-pt, futura, sans-serif",
                       "fontSize": "20px",
                       "fontWeight": "500",
@@ -4477,7 +4477,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   onClick={[Function]}
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
@@ -4494,7 +4494,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   onClick={[Function]}
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "Jost, futura-pt, futura, sans-serif",
                       "fontSize": "16px",
                       "fontWeight": "500",
@@ -4512,7 +4512,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   onClick={[Function]}
                   style={
                     Object {
-                      "color": "rgba(46,51,56,1.00)",
+                      "color": "rgba(17,18,20,1.00)",
                       "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                       "fontSize": "16px",
                       "lineHeight": "20px",
@@ -4630,7 +4630,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4679,7 +4679,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4728,7 +4728,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4777,7 +4777,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4826,7 +4826,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4875,7 +4875,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4924,7 +4924,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -4973,7 +4973,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5031,7 +5031,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5080,7 +5080,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5129,7 +5129,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5178,7 +5178,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5227,7 +5227,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5285,7 +5285,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5334,7 +5334,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5383,7 +5383,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5432,7 +5432,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5481,7 +5481,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5530,7 +5530,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5579,7 +5579,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5628,7 +5628,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5677,7 +5677,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5735,7 +5735,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5808,7 +5808,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5883,7 +5883,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -5956,7 +5956,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -6029,7 +6029,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -6104,7 +6104,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -6177,7 +6177,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -6249,7 +6249,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -6319,7 +6319,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -6389,7 +6389,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
@@ -6459,7 +6459,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                         "WebkitBoxAlign": "center",
                         "WebkitTextDecorationStyle": "solid",
                         "alignItems": "center",
-                        "color": "rgba(46,51,56,1.00)",
+                        "color": "rgba(17,18,20,1.00)",
                         "cursor": "pointer",
                         "display": "inline-flex",
                         "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",

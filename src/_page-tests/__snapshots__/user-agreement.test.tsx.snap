@@ -327,7 +327,7 @@ exports[`UserAgreement renders 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
               "lineHeight": "28px",
@@ -347,7 +347,7 @@ exports[`UserAgreement renders 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
               "lineHeight": "28px",
