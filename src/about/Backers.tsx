@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Image, StyleSheet, Text, View } from "react-native"
+import { Image, StyleSheet, View } from "react-native"
 import backerList from "src/about/backers/backers"
 import { I18nProps, withNamespaces } from "src/i18n"
 import BookLayout from "src/layout/BookLayout"
