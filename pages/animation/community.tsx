@@ -39,4 +39,4 @@ const fullScreen = css({
     paddingHorizontal: "2vw",
     paddingBottom: "0",
   })
-const logo = css({ marginLeft: "5vh", marginRight: "5vh"})
+const logo = css({ marginTop: "5vh", marginBottom: "5vh"})
