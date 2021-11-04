@@ -33,7 +33,6 @@ export class Backers extends React.Component<I18nProps & ScreenProps> {
                       <h4 css={[fonts.h4, name, textStyles.center]}>{backer.name}</h4>
                     )
               ))}
-      
         </GridRow>
       </>
     )
@@ -51,9 +50,11 @@ const backerStyles = css({
     width: "100%"
 })
 
+
 const row = css({
   display: "flex",
-  justifyContent: "flex-end",
+  justifyContent: "center",
+  marginTop: "40px",
   [WHEN_DESKTOP]:
     standardStyles.sectionMarginBottom
   ,
