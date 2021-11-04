@@ -64,7 +64,7 @@ function Papers() {
         <SideTitledSection span={Spans.three} title={""}>
           <p css={fonts.body}>{t("futureCurrency")}</p>
           <div css={linksCss}>
-            <HelpfulLink text={t("download")} href={"/papers/shaping-future-digital-currencies"} />
+            <HelpfulLink text={t("download")} href={"/papers/future-of-digital-currencies"} />
           </div>
         </SideTitledSection>
         <SideTitledSection span={Spans.three} title={t("socialImpact")}>

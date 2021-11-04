@@ -116,7 +116,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   })
 
   server.get("/papers/future-of-digital-currencies", (_, res) => {
-    res.redirect("/papers/shaping-future-of-digital-currencies.pdf")
+    res.redirect("/papers/shaping-future-digital-currencies.pdf")
   })
 
   server.get("/papers/covid-aid", (_, res) => {
