@@ -28,7 +28,7 @@ export class Backers extends React.Component<I18nProps & ScreenProps> {
                         key={backer.name}
                       />
                     ) : (
-                      <h4 css={[fonts.h4, name, textStyles.center]}>{backer.name}</h4>
+                      <h4 css={[fonts.h4, name, textStyles.center]} key={backer.name}>{backer.name}</h4>
                     )
               ))}
         </GridRow>
