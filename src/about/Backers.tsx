@@ -1,6 +1,4 @@
 import * as React from "react"
-import { StyleSheet } from "react-native"
-import Image from "next"
 import backerList from "src/about/backers/backers"
 import { I18nProps, withNamespaces } from "src/i18n"
 import BookLayout from "src/layout/BookLayout"
@@ -71,13 +69,6 @@ const name = css({
     textAlign: "center",
     marginTop: "35px",
     marginBottom: "35px",
-})
-
-
-const styles = StyleSheet.create({
-  photoListDesktop: {
-    justifyContent: "space-between",
-  },
 })
 
 export default withScreenSize(withNamespaces("about")(Backers))
