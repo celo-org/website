@@ -64,23 +64,50 @@ export default async function addToCRM(
   }
 }
 
-export async function submitForm(formID: string, fields: Field[], context: Context) {
-  const data = {
-    submittedAt: Date.now(),
-    fields,
-    context,
-  }
+export async function submitForm(formID: string, fields: Field[], context?: Context) {
+  // const properties = await fetch(`https://api.hubapi.com/properties/v1/contacts/properties?hapikey=${apiKey()}`)
 
+  // console.info("PROPERTIES", await properties.json())
+
+  const form = await fetch(
+    `https://api.hubapi.com/marketing/v3/forms/${formID}/?hapikey=${apiKey()}`,
+    {
+      method: "GET",
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    }
+  )
+
+  console.info(form)
+
+  const formInfo = await form.json()
+  console.info(formInfo)
+  console.info(
+    formInfo.formFieldGroups.map((group) => group.fields.map((field) => JSON.stringify(field)))
+  )
+
+  const data = {
+    fields,
+  }
+  console.info(data, context)
   const response = await fetch(
-    `https://api.hsforms.com/submissions/v3/integration/submit/${PORTAL_ID}/${formID}`,
+    `https://api.hsforms.com/submissions/v3/integration/secure/submit/${PORTAL_ID}/${formID}?hapikey=${apiKey()}`,
     {
       method: "POST",
       headers: {
+        "Access-Control-Allow-Origin": "*",
+        accept: "application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     }
   )
+
   console.info(response)
-  return response.json()
+  const json = await response.json()
+  console.info(json)
+  return json
 }

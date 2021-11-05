@@ -6,15 +6,12 @@ import expressEnforcesSsl from "express-enforces-ssl"
 import helmet from "helmet"
 import next from "next"
 import path from "path"
-import { Tables } from "../fullstack/EcoFundFields"
-import ecoFundSubmission from "../server/EcoFundApp"
-import Sentry, { initSentryServer } from "../server/sentry"
+import { initSentryServer } from "../server/sentry"
 import addToCRM, { ListID } from "./addToCRM"
 import latestAnnouncements from "./Announcement"
 import rateLimit from "./rateLimit"
 import respondError from "./respondError"
 
-const CREATED = 201
 const NO_CONTENT = 204
 const MOVED_PERMANENTLY = 301
 
@@ -213,19 +210,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   })
 
   server.use(bodyParser.json())
-
-  server.post("/ecosystem/:table", rateLimit, async (req, res) => {
-    try {
-      await ecoFundSubmission(req.body, req.params.table as Tables)
-      res.sendStatus(CREATED)
-    } catch (e) {
-      Sentry.withScope((scope) => {
-        scope.setTag("Service", "Airtable")
-        Sentry.captureEvent({ message: e.message, extra: e })
-      })
-      respondError(res, e)
-    }
-  })
 
   server.post("/contacts", rateLimit, async (req, res) => {
     try {
