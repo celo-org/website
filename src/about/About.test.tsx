@@ -1,13 +1,11 @@
 import * as React from "react"
-import {
-  renderIgnoringUnstableFlushDiscreteUpdates,
-  TestProvider,
-} from "src/_page-tests/test-utils"
+import { TestProvider } from "src/_page-tests/test-utils"
 import About from "src/about/About"
+import { render } from "@testing-library/react"
 
 describe("About", () => {
   it("includes element with #contributors id", async () => {
-    renderIgnoringUnstableFlushDiscreteUpdates(
+    render(
       <TestProvider>
         <About contributors={[]} />
       </TestProvider>
@@ -15,7 +13,7 @@ describe("About", () => {
     expect(document.getElementById("contributors")).toBeTruthy()
   })
   it("includes element with #backers id", async () => {
-    renderIgnoringUnstableFlushDiscreteUpdates(
+    render(
       <TestProvider>
         <About contributors={[]} />
       </TestProvider>

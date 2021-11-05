@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import { Image, TouchableOpacity } from "react-native"
 import AudioIcon from "src/about/AudioIcon"
 import Backers from "src/about/Backers"
 import { Contributor } from "src/about/Contributor"
@@ -13,14 +13,16 @@ import { H1, H2 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, Trans, withNamespaces } from "src/i18n"
 import BookLayout from "src/layout/BookLayout"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
+import { GridRow } from "src/layout/Grid2"
 import LogoLightBg from "src/logos/LogoLightBg"
 import BeautifulQuote from "src/shared/BeautifulQuote"
 import Button, { BTN } from "src/shared/Button.3"
 import InlineAnchor from "src/shared/InlineAnchor"
 import menuItems from "src/shared/menu-items"
-import { fonts, standardStyles, textStyles } from "src/styles"
+import { fonts, standardStyles, textStyles } from "src/estyles"
 import { colors } from "src/colors"
+import { css } from "@emotion/react"
+import { WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 
 interface Props {
   contributors: Contributor[]
@@ -43,24 +45,20 @@ export class About extends React.Component<Props & I18nProps> {
           title={t("pageTitle")}
           description={t("description")}
         />
-        <View>
+        <div css={layout}>
           <VideoCover />
           {/* Below Fold */}
-          <GridRow
-            desktopStyle={[styles.logoArea, standardStyles.sectionMarginTop]}
-            tabletStyle={[styles.logoArea, standardStyles.sectionMarginTopTablet]}
-            mobileStyle={standardStyles.sectionMarginTopMobile}
-          >
-            <Cell span={Spans.three4th}>
+          <GridRow columns={4} css={logoArea}>
+            <div css={logoColumn}>
               <LogoLightBg height={47} />
-            </Cell>
+            </div>
           </GridRow>
           <BookLayout label={t("MissionTitle")}>
             <H1>{t("MissionText")}</H1>
           </BookLayout>
-          <BookLayout label={<Text style={styles.foundation}>{t("celoFoundation")}</Text>}>
+          <BookLayout label={<span css={foundation}>{t("celoFoundation")}</span>}>
             <H2 style={standardStyles.elementalMarginBottom}>{t("celoFoundationBelieves")}</H2>
-            <Text style={[fonts.p, standardStyles.elementalMargin]}>{t("celoFoundationText")}</Text>
+            <p css={[fonts.body, standardStyles.elementalMargin]}>{t("celoFoundationText")}</p>
           </BookLayout>
           <BookLayout label={t("MeaningTile")} endBlock={true}>
             <H1 ariaLevel="2" style={standardStyles.elementalMarginBottom}>
@@ -70,9 +68,9 @@ export class About extends React.Component<Props & I18nProps> {
                 i18nKey={"MeaningText"}
                 values={{ phonetic: "/ˈtselo/" }}
                 children={[
-                  <Text key={1} style={textStyles.italic}>
+                  <span key={1} css={textStyles.italic}>
                     "/ˈtselo/"
-                  </Text>,
+                  </span>,
                   <TouchableOpacity key={2} onPress={pronunceCelo}>
                     <AudioIcon />
                     <audio id="pronunce">
@@ -83,18 +81,18 @@ export class About extends React.Component<Props & I18nProps> {
                 ]}
               />
             </H1>
-            <Text style={[fonts.p, standardStyles.elementalMargin]}>{t("MeaningCopy")}</Text>
+            <p css={[fonts.body, standardStyles.elementalMargin]}>{t("MeaningCopy")}</p>
           </BookLayout>
-          <Image source={team} style={styles.teamImage} resizeMode={"cover"} />
+          <Image source={{ uri: team.src }} css={teamImage} resizeMode={"cover"} />
           <BookLayout label={t("ValuesTitle")}>
-            <Text style={[fonts.p, standardStyles.elementalMarginBottom]}>
+            <span css={[fonts.body, standardStyles.elementalMarginBottom]}>
               <Trans
                 ns={NameSpaces.about}
                 i18nKey={"ValuesCopy"}
                 values={{ celoCLabs: "Celo\u00a0– C\u00a0Labs" }}
                 children={<Strong key="0">M</Strong>}
               />
-            </Text>
+            </span>
           </BookLayout>
           <CeloValues />
           <BeautifulQuote
@@ -104,7 +102,7 @@ export class About extends React.Component<Props & I18nProps> {
             citation={`– ${t("beautifulLifeSource")}`}
           />
           <BookLayout label={t("SacredEconTitle")} startBlock={true}>
-            <Text style={[fonts.p, standardStyles.blockMarginBottomTablet]}>
+            <span css={[fonts.body, link, standardStyles.blockMarginBottomTablet]}>
               <Trans
                 ns={NameSpaces.about}
                 i18nKey="SacredEconText"
@@ -114,7 +112,7 @@ export class About extends React.Component<Props & I18nProps> {
                   </InlineAnchor>
                 }
               />
-            </Text>
+            </span>
             <Button
               kind={BTN.PRIMARY}
               href="http://sacred-economics.com/film/"
@@ -122,9 +120,9 @@ export class About extends React.Component<Props & I18nProps> {
             />
           </BookLayout>
           <BookLayout label={t("theoryOfChangeTitle")} startBlock={true}>
-            <Text style={[fonts.p, standardStyles.blockMarginBottomTablet]}>
+            <span css={[fonts.body, standardStyles.blockMarginBottomTablet]}>
               {t("theoryOfChangeText")}
-            </Text>
+            </span>
             <Button
               kind={BTN.PRIMARY}
               href="https://medium.com/celoOrg/celos-theory-of-change-b916de44945d"
@@ -134,22 +132,45 @@ export class About extends React.Component<Props & I18nProps> {
           <Team contributors={contributors} />
           <Backers />
           <PressMedia />
-        </View>
+        </div>
       </>
     )
   }
 }
 
 function Strong({ children }: { children: React.ReactNode }) {
-  return <Text style={textStyles.heavy}>{children}</Text>
+  return <span css={textStyles.heavy}>{children}</span>
 }
 
-const styles = StyleSheet.create({
-  teamImage: { width: "100%", height: 650 },
-  logoArea: { justifyContent: "flex-end" },
-  foundation: {
-    lineHeight: 42,
+const layout = css({
+  display: "flex",
+  flexDirection: "column",
+})
+const logoArea = css({
+  justifyContent: "flex-end",
+  [WHEN_MOBILE]: standardStyles.sectionMarginMobile,
+  [WHEN_TABLET]: standardStyles.sectionMarginTablet,
+  [WHEN_DESKTOP]: standardStyles.sectionMarginTop,
+})
+
+const logoColumn = css({
+  gridColumn: "2",
+})
+
+const link = css({
+  a: {
+    fontFamily: "EB Garamond",
+    fontSize: "20px",
   },
+})
+
+const foundation = css({
+  lineHeight: "42px",
+})
+
+const teamImage = css({
+  width: "100%",
+  height: 650,
 })
 
 export default withNamespaces("about")(About)
