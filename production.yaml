@@ -34,8 +34,8 @@ handlers:
     upload: public/papers/Celo__A_Multi_Asset_Cryptographic_Protocol_for_Decentralized_Social_Payments.pdf
 
   - url: /papers/plumo
-    static_files: public/papers/proposal-plumo_celolightclient.pdf
-    upload: public/papers/proposal-plumo_celolightclient.pdf
+    static_files: public/papers/Plumo_An_Ultralight_Blockchain_Client.pdf
+    upload: public/papers/Plumo_An_Ultralight_Blockchain_Client.pdf
 
   - url: /papers/covid-aid
     static_files: public/papers/humanitarian-COVID-aid-on-celo.pdf
