@@ -129,7 +129,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     )
   })
 
-  server.get("papers/plumo", (_, res) => {
+  server.get("/papers/plumo", (_, res) => {
     res.redirect("https://eprint.iacr.org/2021/1361.pdf")
   })
 
