@@ -29,14 +29,14 @@ export default class CommunityDemo extends React.PureComponent {
 }
 
 const fullScreen = css({
-    width: "100vw",
-    height: "100vh",
-    minWidth: "100%",
-    backgroundColor: colors.dark,
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    paddingTop: "5vh",
-    paddingHorizontal: "2vw",
-    paddingBottom: "0",
-  })
-const logo = css({ marginTop: "5vh", marginBottom: "5vh"})
+  width: "100vw",
+  height: "100vh",
+  minWidth: "100%",
+  backgroundColor: colors.dark,
+  justifyContent: "space-evenly",
+  alignItems: "center",
+  paddingTop: "5vh",
+  paddingHorizontal: "2vw",
+  paddingBottom: "0",
+})
+const logo = css({ marginTop: "5vh", marginBottom: "5vh" })
