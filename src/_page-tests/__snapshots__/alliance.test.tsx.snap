@@ -4792,8 +4792,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -4902,8 +4901,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -5012,8 +5010,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -5122,8 +5119,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -5232,8 +5228,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",

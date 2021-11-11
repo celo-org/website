@@ -38,12 +38,12 @@ interface OfferingProps {
 }
 
 const Offering = React.memo(function _Offering({ icon, text }: OfferingProps) {
-  console.log(icon.src)
   return (
     <div css={styles.offeringRoot}>
       <div css={styles.imgContainer}>
         <Image
           blurDataURL={icon.blurDataURL}
+          unoptimized={true}
           layout="intrinsic"
           width={icon.width}
           height={icon.height}
