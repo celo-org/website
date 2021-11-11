@@ -82,12 +82,6 @@ export default class Form extends React.Component<Props, State> {
     return { ...this.state.form }
   }
 
-  formFields = () => {
-    return Object.keys(this.state.form).map((key) => {
-      return { name: key, value: this.state.form[key] }
-    })
-  }
-
   onInput = ({ name, newValue: value }) => {
     this.clearError(name)
 
