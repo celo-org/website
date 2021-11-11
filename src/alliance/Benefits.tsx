@@ -1,6 +1,10 @@
 import * as React from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
-import { connectedPeople, buildingBlocks, speechBubbles, speaker, human } from "src/icons/index"
+import buildingBlocks from "src/icons/Building_Blocks.svg"
+import connectedPeople from "src/icons/Connected_People.svg"
+import human from "src/icons/Human.svg"
+import speaker from "src/icons/Speaker.svg"
+import speechBubbles from "src/icons/Conversation.svg"
 import { GridRow } from "src/layout/Grid2"
 import {
   flex,

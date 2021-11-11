@@ -4722,37 +4722,24 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-147"
           >
-            <span
+            <div
               style={
                 Object {
-                  "background": "none",
-                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
-                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
-                  "opacity": 1,
                   "overflow": "hidden",
-                  "padding": 0,
                   "position": "relative",
-                  "width": "initial",
                 }
               }
             >
-              <span
+              <div
                 style={
                   Object {
-                    "background": "none",
-                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "height": "initial",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "opacity": 1,
-                    "padding": 0,
-                    "width": "initial",
                   }
                 }
               >
@@ -4762,19 +4749,15 @@ exports[`Alliance renders 1`] = `
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "background": "none",
-                      "border": 0,
+                      "border": "none",
                       "display": "block",
-                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
-                      "opacity": 1,
                       "padding": 0,
-                      "width": "initial",
                     }
                   }
                 />
-              </span>
+              </div>
               <img
                 className="emotion-148"
                 data-nimg="intrinsic"
@@ -4834,7 +4817,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </span>
+            </div>
           </div>
           <p
             className="emotion-150"
@@ -4848,37 +4831,24 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-147"
           >
-            <span
+            <div
               style={
                 Object {
-                  "background": "none",
-                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
-                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
-                  "opacity": 1,
                   "overflow": "hidden",
-                  "padding": 0,
                   "position": "relative",
-                  "width": "initial",
                 }
               }
             >
-              <span
+              <div
                 style={
                   Object {
-                    "background": "none",
-                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "height": "initial",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "opacity": 1,
-                    "padding": 0,
-                    "width": "initial",
                   }
                 }
               >
@@ -4888,19 +4858,15 @@ exports[`Alliance renders 1`] = `
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "background": "none",
-                      "border": 0,
+                      "border": "none",
                       "display": "block",
-                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
-                      "opacity": 1,
                       "padding": 0,
-                      "width": "initial",
                     }
                   }
                 />
-              </span>
+              </div>
               <img
                 className="emotion-148"
                 data-nimg="intrinsic"
@@ -4960,7 +4926,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </span>
+            </div>
           </div>
           <p
             className="emotion-150"
@@ -4974,37 +4940,24 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-147"
           >
-            <span
+            <div
               style={
                 Object {
-                  "background": "none",
-                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
-                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
-                  "opacity": 1,
                   "overflow": "hidden",
-                  "padding": 0,
                   "position": "relative",
-                  "width": "initial",
                 }
               }
             >
-              <span
+              <div
                 style={
                   Object {
-                    "background": "none",
-                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "height": "initial",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "opacity": 1,
-                    "padding": 0,
-                    "width": "initial",
                   }
                 }
               >
@@ -5014,19 +4967,15 @@ exports[`Alliance renders 1`] = `
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "background": "none",
-                      "border": 0,
+                      "border": "none",
                       "display": "block",
-                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
-                      "opacity": 1,
                       "padding": 0,
-                      "width": "initial",
                     }
                   }
                 />
-              </span>
+              </div>
               <img
                 className="emotion-148"
                 data-nimg="intrinsic"
@@ -5086,7 +5035,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </span>
+            </div>
           </div>
           <p
             className="emotion-150"
@@ -5100,37 +5049,24 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-147"
           >
-            <span
+            <div
               style={
                 Object {
-                  "background": "none",
-                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
-                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
-                  "opacity": 1,
                   "overflow": "hidden",
-                  "padding": 0,
                   "position": "relative",
-                  "width": "initial",
                 }
               }
             >
-              <span
+              <div
                 style={
                   Object {
-                    "background": "none",
-                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "height": "initial",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "opacity": 1,
-                    "padding": 0,
-                    "width": "initial",
                   }
                 }
               >
@@ -5140,19 +5076,15 @@ exports[`Alliance renders 1`] = `
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "background": "none",
-                      "border": 0,
+                      "border": "none",
                       "display": "block",
-                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
-                      "opacity": 1,
                       "padding": 0,
-                      "width": "initial",
                     }
                   }
                 />
-              </span>
+              </div>
               <img
                 className="emotion-148"
                 data-nimg="intrinsic"
@@ -5212,7 +5144,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </span>
+            </div>
           </div>
           <p
             className="emotion-150"
@@ -5226,37 +5158,24 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-147"
           >
-            <span
+            <div
               style={
                 Object {
-                  "background": "none",
-                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
-                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
-                  "opacity": 1,
                   "overflow": "hidden",
-                  "padding": 0,
                   "position": "relative",
-                  "width": "initial",
                 }
               }
             >
-              <span
+              <div
                 style={
                   Object {
-                    "background": "none",
-                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
-                    "height": "initial",
-                    "margin": 0,
                     "maxWidth": "100%",
-                    "opacity": 1,
-                    "padding": 0,
-                    "width": "initial",
                   }
                 }
               >
@@ -5266,19 +5185,15 @@ exports[`Alliance renders 1`] = `
                   src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "background": "none",
-                      "border": 0,
+                      "border": "none",
                       "display": "block",
-                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
-                      "opacity": 1,
                       "padding": 0,
-                      "width": "initial",
                     }
                   }
                 />
-              </span>
+              </div>
               <img
                 className="emotion-148"
                 data-nimg="intrinsic"
@@ -5338,7 +5253,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </span>
+            </div>
           </div>
           <p
             className="emotion-150"

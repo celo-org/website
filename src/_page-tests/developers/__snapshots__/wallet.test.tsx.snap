@@ -1553,37 +1553,24 @@ Check out these wallets for everyday use.
         className="emotion-2"
       >
         <div>
-          <span
+          <div
             style={
               Object {
-                "background": "none",
-                "border": 0,
                 "boxSizing": "border-box",
                 "display": "inline-block",
-                "height": "initial",
                 "margin": 0,
                 "maxWidth": "100%",
-                "opacity": 1,
                 "overflow": "hidden",
-                "padding": 0,
                 "position": "relative",
-                "width": "initial",
               }
             }
           >
-            <span
+            <div
               style={
                 Object {
-                  "background": "none",
-                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "block",
-                  "height": "initial",
-                  "margin": 0,
                   "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
                 }
               }
             >
@@ -1593,19 +1580,15 @@ Check out these wallets for everyday use.
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                 style={
                   Object {
-                    "background": "none",
-                    "border": 0,
+                    "border": "none",
                     "display": "block",
-                    "height": "initial",
                     "margin": 0,
                     "maxWidth": "100%",
-                    "opacity": 1,
                     "padding": 0,
-                    "width": "initial",
                   }
                 }
               />
-            </span>
+            </div>
             <img
               className="emotion-3"
               data-nimg="intrinsic"
@@ -1666,7 +1649,7 @@ Check out these wallets for everyday use.
                 }
               />
             </noscript>
-          </span>
+          </div>
           <h3
             className="emotion-5"
           >
@@ -1777,37 +1760,24 @@ Check out these wallets for everyday use.
         className="emotion-2"
       >
         <div>
-          <span
+          <div
             style={
               Object {
-                "background": "none",
-                "border": 0,
                 "boxSizing": "border-box",
                 "display": "inline-block",
-                "height": "initial",
                 "margin": 0,
                 "maxWidth": "100%",
-                "opacity": 1,
                 "overflow": "hidden",
-                "padding": 0,
                 "position": "relative",
-                "width": "initial",
               }
             }
           >
-            <span
+            <div
               style={
                 Object {
-                  "background": "none",
-                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "block",
-                  "height": "initial",
-                  "margin": 0,
                   "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
                 }
               }
             >
@@ -1817,19 +1787,15 @@ Check out these wallets for everyday use.
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                 style={
                   Object {
-                    "background": "none",
-                    "border": 0,
+                    "border": "none",
                     "display": "block",
-                    "height": "initial",
                     "margin": 0,
                     "maxWidth": "100%",
-                    "opacity": 1,
                     "padding": 0,
-                    "width": "initial",
                   }
                 }
               />
-            </span>
+            </div>
             <img
               className="emotion-3"
               data-nimg="intrinsic"
@@ -1890,7 +1856,7 @@ Check out these wallets for everyday use.
                 }
               />
             </noscript>
-          </span>
+          </div>
           <h3
             className="emotion-5"
           >
@@ -2001,37 +1967,24 @@ Check out these wallets for everyday use.
         className="emotion-2"
       >
         <div>
-          <span
+          <div
             style={
               Object {
-                "background": "none",
-                "border": 0,
                 "boxSizing": "border-box",
                 "display": "inline-block",
-                "height": "initial",
                 "margin": 0,
                 "maxWidth": "100%",
-                "opacity": 1,
                 "overflow": "hidden",
-                "padding": 0,
                 "position": "relative",
-                "width": "initial",
               }
             }
           >
-            <span
+            <div
               style={
                 Object {
-                  "background": "none",
-                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "block",
-                  "height": "initial",
-                  "margin": 0,
                   "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
                 }
               }
             >
@@ -2041,19 +1994,15 @@ Check out these wallets for everyday use.
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                 style={
                   Object {
-                    "background": "none",
-                    "border": 0,
+                    "border": "none",
                     "display": "block",
-                    "height": "initial",
                     "margin": 0,
                     "maxWidth": "100%",
-                    "opacity": 1,
                     "padding": 0,
-                    "width": "initial",
                   }
                 }
               />
-            </span>
+            </div>
             <img
               className="emotion-3"
               data-nimg="intrinsic"
@@ -2114,7 +2063,7 @@ Check out these wallets for everyday use.
                 }
               />
             </noscript>
-          </span>
+          </div>
           <h3
             className="emotion-5"
           >
