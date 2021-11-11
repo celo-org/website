@@ -220,6 +220,11 @@ export default class Privacy extends React.Component {
               <TD>United States</TD>
             </TR>
             <TR>
+              <TD>HubSpot, Inc.</TD>
+              <TD>CRM Service</TD>
+              <TD>United States</TD>
+            </TR>
+            <TR>
               <TD>ipstack</TD>
               <TD>IP Address Geolocation</TD>
               <TD>Austria</TD>
