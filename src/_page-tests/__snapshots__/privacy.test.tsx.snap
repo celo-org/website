@@ -1194,6 +1194,25 @@ exports[`Privacy renders 1`] = `
             <td
               className="emotion-106"
             >
+              HubSpot, Inc.
+            </td>
+            <td
+              className="emotion-106"
+            >
+              CRM Service
+            </td>
+            <td
+              className="emotion-106"
+            >
+              United States
+            </td>
+          </tr>
+          <tr
+            className="emotion-101"
+          >
+            <td
+              className="emotion-106"
+            >
               ipstack
             </td>
             <td
