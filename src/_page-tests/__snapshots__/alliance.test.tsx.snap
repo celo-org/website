@@ -4746,7 +4746,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "border": "none",
@@ -4792,8 +4792,8 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
                   style={
                     Object {
                       "border": "none",
@@ -4856,7 +4856,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "border": "none",
@@ -4902,8 +4902,8 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
                   style={
                     Object {
                       "border": "none",
@@ -4966,7 +4966,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "border": "none",
@@ -5012,8 +5012,8 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
                   style={
                     Object {
                       "border": "none",
@@ -5076,7 +5076,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "border": "none",
@@ -5122,8 +5122,8 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
                   style={
                     Object {
                       "border": "none",
@@ -5186,7 +5186,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "border": "none",
@@ -5232,8 +5232,8 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/_next/image?url=%2Fimage.png&w=256&q=75"
+                  srcSet="/_next/image?url=%2Fimage.png&w=128&q=75 1x, /_next/image?url=%2Fimage.png&w=256&q=75 2x"
                   style={
                     Object {
                       "border": "none",
