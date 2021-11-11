@@ -1,6 +1,6 @@
 import * as React from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
-import { connectedPeople, buildingBlocks, speechBubbles, speaker, human } from "src/icons"
+import { connectedPeople, buildingBlocks, speechBubbles, speaker, human } from "src/icons/index"
 import { GridRow } from "src/layout/Grid2"
 import {
   flex,
@@ -14,6 +14,7 @@ import {
 } from "src/estyles"
 import Image from "next/image"
 import { css } from "@emotion/react"
+
 const OFFERINGS = [connectedPeople, buildingBlocks, speechBubbles, speaker, human]
 
 export default React.memo(function Benefits() {
@@ -37,14 +38,15 @@ interface OfferingProps {
 }
 
 const Offering = React.memo(function _Offering({ icon, text }: OfferingProps) {
+  console.log(icon.src)
   return (
     <div css={styles.offeringRoot}>
       <div css={styles.imgContainer}>
         <Image
           blurDataURL={icon.blurDataURL}
           layout="intrinsic"
-          width={48}
-          height={48}
+          width={icon.width}
+          height={icon.height}
           src={icon.src}
           css={styles.offeringImage}
         />
