@@ -1,7 +1,167 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About renders 1`] = `
-.emotion-71 {
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-14 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-14 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-14 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-14 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-14 {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-14 {
+    margin-top: 100px;
+  }
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+@media (min-width: 992px) {
+  .emotion-14 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+.emotion-15 {
+  grid-column: 2;
+}
+
+.emotion-27 {
+  line-height: 42px;
+}
+
+.emotion-31 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.emotion-39 {
+  font-style: italic;
+}
+
+.emotion-50 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.emotion-51 {
+  font-weight: bold;
+}
+
+.emotion-69 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -21,14 +181,14 @@ exports[`About renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-71 {
+  .emotion-69 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-72 {
+.emotion-70 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -46,7 +206,7 @@ exports[`About renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-72 {
+  .emotion-70 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -60,11 +220,190 @@ exports[`About renders 1`] = `
   }
 }
 
+.emotion-76 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.emotion-76 a {
+  font-family: EB Garamond;
+  font-size: 20px;
+}
+
+.emotion-90 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.emotion-125 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+}
+
+.emotion-127 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-127 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-127 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-127 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-127 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-127 {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-127 {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-127 {
+    margin-bottom: 50px;
+  }
+}
+
+.emotion-128 {
+  height: 60px;
+  object-fit: contain;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.emotion-131 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 28px;
+  line-height: 36;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 36px;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.emotion-164 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+}
+
+.emotion-164 a {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+}
+
 <div
   className="emotion-0"
 >
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "height": "100vh",
@@ -73,7 +412,7 @@ exports[`About renders 1`] = `
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "height": "100vh",
@@ -102,7 +441,7 @@ exports[`About renders 1`] = `
         }
       >
         <div
-          className="emotion-0"
+          className="emotion-1"
           style={
             Object {
               "WebkitFlexBasis": "auto",
@@ -117,7 +456,7 @@ exports[`About renders 1`] = `
           }
         >
           <div
-            className="emotion-0"
+            className="emotion-1"
             style={
               Object {
                 "backgroundColor": "rgba(0,0,0,0.00)",
@@ -147,7 +486,7 @@ exports[`About renders 1`] = `
       </video>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitAlignItems": "center",
@@ -191,7 +530,7 @@ exports[`About renders 1`] = `
           
       </style>
       <div
-        className="emotion-0"
+        className="emotion-1"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -242,7 +581,7 @@ exports[`About renders 1`] = `
           Prosperity for All
         </h2>
         <div
-          className="emotion-0"
+          className="emotion-1"
           style={
             Object {
               "WebkitAlignItems": "center",
@@ -301,73 +640,43 @@ exports[`About renders 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="emotion-0"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginTop": "50px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  <section
+    className="emotion-13"
   >
     <div
-      className="emotion-0"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-14"
     >
-      <svg
-        fill="none"
-        height={47}
-        viewBox="0 0 85 25"
-        width={159.79999999999998}
+      <div
+        className="emotion-15"
       >
-        <path
-          d="M64.2368 22.079L66.5 21.3684V2.63159L64.2368 3.34212V22.079ZM38.1316 10.7105C39.5526 10.7105 40.8684 11.3421 41.7105 12.3947L42.6316 10.2632C41.421 9.10528 39.8158 8.55264 38.1316 8.55264C34.2368 8.55264 31.5526 11.6316 31.5789 15.0263C31.6052 18.7105 34.5 21.7105 38.1316 21.7105C39.9737 21.7105 41.3684 21.1579 42.421 20.3947V17.7895C41.3158 18.8947 39.7105 19.5526 38.3158 19.5526C36.2105 19.5526 33.8421 17.8421 33.8421 15.0263C33.8421 12.4211 35.8947 10.7105 38.1316 10.7105ZM53.1842 8.55264C49.2895 8.55264 47.0263 11.6316 47.0263 15.0263C47.0263 18.7105 49.9473 21.7105 53.5789 21.7105C55.421 21.7105 56.8158 21.1579 57.8684 20.3947V17.7895C56.7631 18.8947 55.1579 19.5526 53.7631 19.5526C51.8947 19.5526 49.8421 18.3947 49.421 15.9474H59.3421V15.079C59.3421 11.4474 56.9473 8.55264 53.1842 8.55264ZM77.6316 8.55264C74 8.55264 71.0526 11.5 71.0526 15.1316C71.0526 18.7632 74 21.7105 77.6316 21.7105C81.2631 21.7105 84.2105 18.7632 84.2105 15.1316C84.2105 11.5 81.2631 8.55264 77.6316 8.55264ZM53.2105 10.7105C54.9737 10.7105 56.8421 11.8158 57 13.9474H49.421C49.5789 11.8158 51.4473 10.7105 53.2105 10.7105ZM77.6316 19.5526C75.1842 19.5526 73.2105 17.579 73.2105 15.1316C73.2105 12.6842 75.1842 10.7105 77.6316 10.7105C80.0789 10.7105 82.0526 12.6842 82.0526 15.1316C82.0526 17.579 80.0789 19.5526 77.6316 19.5526Z"
-          fill="#111214"
-        />
-        <path
-          d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
-          fill="#35D07F"
-        />
-        <path
-          d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
-          fill="#FBCC5C"
-        />
-        <path
-          d="M15.4553 19.7315C16.1392 18.903 16.6292 17.932 16.89 16.8899C17.9321 16.6294 18.9029 16.1391 19.7316 15.4554C19.6937 16.6623 19.4339 17.852 18.9647 18.9646C17.8521 19.4338 16.6624 19.6936 15.4553 19.7315ZM8.11026 8.10989C7.06815 8.37042 6.09736 8.86068 5.26868 9.54436C5.30657 8.33752 5.56631 7.14778 6.03552 6.03515C7.14815 5.56594 8.33789 5.30621 9.54473 5.26831C8.86105 6.09699 8.37078 7.06778 8.11026 8.10989Z"
-          fill="#5EA33B"
-        />
-      </svg>
+        <svg
+          fill="none"
+          height={47}
+          viewBox="0 0 85 25"
+          width={159.79999999999998}
+        >
+          <path
+            d="M64.2368 22.079L66.5 21.3684V2.63159L64.2368 3.34212V22.079ZM38.1316 10.7105C39.5526 10.7105 40.8684 11.3421 41.7105 12.3947L42.6316 10.2632C41.421 9.10528 39.8158 8.55264 38.1316 8.55264C34.2368 8.55264 31.5526 11.6316 31.5789 15.0263C31.6052 18.7105 34.5 21.7105 38.1316 21.7105C39.9737 21.7105 41.3684 21.1579 42.421 20.3947V17.7895C41.3158 18.8947 39.7105 19.5526 38.3158 19.5526C36.2105 19.5526 33.8421 17.8421 33.8421 15.0263C33.8421 12.4211 35.8947 10.7105 38.1316 10.7105ZM53.1842 8.55264C49.2895 8.55264 47.0263 11.6316 47.0263 15.0263C47.0263 18.7105 49.9473 21.7105 53.5789 21.7105C55.421 21.7105 56.8158 21.1579 57.8684 20.3947V17.7895C56.7631 18.8947 55.1579 19.5526 53.7631 19.5526C51.8947 19.5526 49.8421 18.3947 49.421 15.9474H59.3421V15.079C59.3421 11.4474 56.9473 8.55264 53.1842 8.55264ZM77.6316 8.55264C74 8.55264 71.0526 11.5 71.0526 15.1316C71.0526 18.7632 74 21.7105 77.6316 21.7105C81.2631 21.7105 84.2105 18.7632 84.2105 15.1316C84.2105 11.5 81.2631 8.55264 77.6316 8.55264ZM53.2105 10.7105C54.9737 10.7105 56.8421 11.8158 57 13.9474H49.421C49.5789 11.8158 51.4473 10.7105 53.2105 10.7105ZM77.6316 19.5526C75.1842 19.5526 73.2105 17.579 73.2105 15.1316C73.2105 12.6842 75.1842 10.7105 77.6316 10.7105C80.0789 10.7105 82.0526 12.6842 82.0526 15.1316C82.0526 17.579 80.0789 19.5526 77.6316 19.5526Z"
+            fill="#111214"
+          />
+          <path
+            d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
+            fill="#35D07F"
+          />
+          <path
+            d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
+            fill="#FBCC5C"
+          />
+          <path
+            d="M15.4553 19.7315C16.1392 18.903 16.6292 17.932 16.89 16.8899C17.9321 16.6294 18.9029 16.1391 19.7316 15.4554C19.6937 16.6623 19.4339 17.852 18.9647 18.9646C17.8521 19.4338 16.6624 19.6936 15.4553 19.7315ZM8.11026 8.10989C7.06815 8.37042 6.09736 8.86068 5.26868 9.54436C5.30657 8.33752 5.56631 7.14778 6.03552 6.03515C7.14815 5.56594 8.33789 5.30621 9.54473 5.26831C8.86105 6.09699 8.37078 7.06778 8.11026 8.10989Z"
+            fill="#5EA33B"
+          />
+        </svg>
+      </div>
     </div>
-  </div>
+  </section>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -388,7 +697,7 @@ exports[`About renders 1`] = `
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -427,7 +736,7 @@ exports[`About renders 1`] = `
       </h3>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -467,7 +776,7 @@ exports[`About renders 1`] = `
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -488,7 +797,7 @@ exports[`About renders 1`] = `
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -524,20 +833,14 @@ exports[`About renders 1`] = `
         }
       >
         <span
-          className="emotion-9 emotion-27"
-          onClick={[Function]}
-          style={
-            Object {
-              "lineHeight": "42px",
-            }
-          }
+          className="emotion-27"
         >
           Celo Foundation
         </span>
       </h3>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -567,7 +870,8 @@ exports[`About renders 1`] = `
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "28px",
             "lineHeight": "32px",
-            "marginBottom": "20px",
+            "name": "uewl2b",
+            "styles": "margin-bottom:20px;",
             "textRendering": "geometricPrecision",
             "textTransform": "none",
           }
@@ -575,28 +879,15 @@ exports[`About renders 1`] = `
       >
         Believes in a future where everyone can prosper
       </h2>
-      <div
-        className="emotion-9"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "marginBottom": "20px",
-            "marginTop": "20px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+      <p
+        className="emotion-31"
       >
         The Celo Foundation is a non-profit organization based in the US that supports the growth and development of the open-source Celo Platform. Guided by the Celo community tenets, the Foundation contributes to education, technical research, environmental health, community engagement, and ecosystem outreach—activities that support and encourage an inclusive financial system that creates the conditions for prosperity for everyone.
-      </div>
+      </p>
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -618,7 +909,7 @@ exports[`About renders 1`] = `
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -657,7 +948,7 @@ exports[`About renders 1`] = `
       </h3>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -687,7 +978,8 @@ exports[`About renders 1`] = `
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "36px",
             "lineHeight": "40px",
-            "marginBottom": "20px",
+            "name": "uewl2b",
+            "styles": "margin-bottom:20px;",
             "textRendering": "geometricPrecision",
             "textTransform": "none",
           }
@@ -695,19 +987,13 @@ exports[`About renders 1`] = `
       >
         Celo, pronounced 
         <span
-          className="emotion-9 emotion-27"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontStyle": "italic",
-            }
-          }
+          className="emotion-39"
         >
           &#x2F;ˈtselo&#x2F;
         </span>
          
         <div
-          className="emotion-0"
+          className="emotion-1"
           onClick={[Function]}
           onContextMenu={[Function]}
           onKeyDown={[Function]}
@@ -773,50 +1059,36 @@ exports[`About renders 1`] = `
         
 means ‘purpose’ in Esperanto.
       </h2>
-      <div
-        className="emotion-9"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "marginBottom": "20px",
-            "marginTop": "20px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+      <p
+        className="emotion-31"
       >
         The spirit of Esperanto and auxiliary languages, is to equip speakers with a means to connect, engage, and build trust with someone who speaks a different native tongue.
 
 In a similar spirit, we are aiming to create a new platform to connect people globally and bring financial stability to those who need it most. We believe blockchain technology is one of the most exciting innovations in recent history and as a team we look to push the boundaries of what is possible with it today.
 
 More importantly, we are driven by purpose – to solve real-world problems such as lack of access to sound currency, or friction for cash-transfer programs aimed to alleviate poverty.
-      </div>
+      </p>
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitFlexBasis": "auto",
         "flexBasis": "auto",
-        "height": "650px",
         "msFlexPreferredSize": "auto",
         "overflowX": "hidden",
         "overflowY": "hidden",
-        "width": "100%",
         "zIndex": 0,
       }
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "backgroundColor": "rgba(0,0,0,0.00)",
+          "backgroundImage": "url(\\"/image.png\\")",
           "backgroundPosition": "center",
           "backgroundRepeat": "no-repeat",
           "backgroundSize": "cover",
@@ -832,9 +1104,15 @@ More importantly, we are driven by purpose – to solve real-world problems such
       }
       suppressHydrationWarning={true}
     />
+    <img
+      alt=""
+      className="emotion-5"
+      draggable={false}
+      src="/image.png"
+    />
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -855,7 +1133,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -894,7 +1172,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       </h3>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -912,51 +1190,27 @@ More importantly, we are driven by purpose – to solve real-world problems such
         }
       }
     >
-      <div
-        className="emotion-9"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "marginBottom": "20px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+      <span
+        className="emotion-50"
       >
         Celo is founded on two core values: 
         <span
-          className="emotion-9 emotion-27"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontWeight": "bold",
-            }
-          }
+          className="emotion-51"
         >
           unique purpose
         </span>
          and 
         <span
-          className="emotion-9 emotion-27"
-          onClick={[Function]}
-          style={
-            Object {
-              "fontWeight": "bold",
-            }
-          }
+          className="emotion-51"
         >
           connectedness
         </span>
         . These, in turn, lead to practices that foster personal growth and community.
-      </div>
+      </span>
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -976,7 +1230,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -995,7 +1249,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       }
     >
       <div
-        className="emotion-0"
+        className="emotion-1"
         style={
           Object {
             "height": "350px",
@@ -1129,7 +1383,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -1150,7 +1404,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1169,7 +1423,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       }
     >
       <div
-        className="emotion-0"
+        className="emotion-1"
         style={
           Object {
             "height": "400px",
@@ -1697,7 +1951,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignItems": "center",
@@ -1718,7 +1972,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitFlexBasis": "auto",
@@ -1737,7 +1991,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       }
     >
       <div
-        className="emotion-0"
+        className="emotion-1"
         style={
           Object {
             "backgroundColor": "rgba(0,0,0,0.00)",
@@ -1765,7 +2019,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
       />
     </div>
     <blockquote
-      className="emotion-71"
+      className="emotion-69"
     >
       “
       How do we change the world?
@@ -1773,13 +2027,13 @@ Change the story.
       ”
     </blockquote>
     <figcaption
-      className="emotion-72"
+      className="emotion-70"
     >
       – Charles Eisenstein
     </figcaption>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -1800,7 +2054,7 @@ Change the story.
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1839,7 +2093,7 @@ Change the story.
       </h3>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -1857,24 +2111,12 @@ Change the story.
         }
       }
     >
-      <div
-        className="emotion-9"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "marginBottom": "40px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+      <span
+        className="emotion-76"
       >
         Celo’s philosophy is grounded in the work of Charles Eisenstein’s 
         <div
-          className="emotion-0"
+          className="emotion-1"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -1887,7 +2129,8 @@ Change the story.
           }
         >
           <a
-            className="emotion-8 emotion-81 emotion-9 emotion-27"
+            className="emotion-8 emotion-79 emotion-9"
+            dir="auto"
             href="http://sacred-economics.com/film/"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -1907,9 +2150,9 @@ Change the story.
           </a>
         </div>
         .
-      </div>
+      </span>
       <div
-        className="emotion-0"
+        className="emotion-1"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -1917,7 +2160,7 @@ Change the story.
         onMouseUp={[Function]}
       >
         <a
-          className="emotion-8 emotion-81 emotion-9"
+          className="emotion-8 emotion-79 emotion-9"
           dir="auto"
           href="http://sacred-economics.com/film/"
           onClick={[Function]}
@@ -1975,7 +2218,7 @@ Change the story.
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -1996,7 +2239,7 @@ Change the story.
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2035,7 +2278,7 @@ Change the story.
       </h3>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2053,25 +2296,13 @@ Change the story.
         }
       }
     >
-      <div
-        className="emotion-9"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "marginBottom": "40px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+      <span
+        className="emotion-90"
       >
         A theory of change is a framework that describes how short-term actions will lead to long-term social impact. Celo’s aim is to create the conditions for prosperity, defined as: people fulfilling basic needs, growing along their own unique paths, and supporting each other. All of Celo’s projects have a specific hypothesis that tie our activities to one or more of these indicators of prosperity.
-      </div>
+      </span>
       <div
-        className="emotion-0"
+        className="emotion-1"
         onClick={[Function]}
         onMouseDown={[Function]}
         onMouseEnter={[Function]}
@@ -2079,7 +2310,7 @@ Change the story.
         onMouseUp={[Function]}
       >
         <a
-          className="emotion-8 emotion-81 emotion-9"
+          className="emotion-8 emotion-79 emotion-9"
           dir="auto"
           href="https://medium.com/celoOrg/celos-theory-of-change-b916de44945d"
           onClick={[Function]}
@@ -2137,11 +2368,11 @@ Change the story.
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     id="contributors"
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -2162,7 +2393,7 @@ Change the story.
       }
     >
       <div
-        className="emotion-0"
+        className="emotion-1"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -2201,7 +2432,7 @@ Change the story.
         </h3>
       </div>
       <div
-        className="emotion-0"
+        className="emotion-1"
         style={
           Object {
             "WebkitBoxFlex": 0,
@@ -2240,7 +2471,7 @@ Change the story.
       </div>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitAlignSelf": "center",
@@ -2260,7 +2491,7 @@ Change the story.
       }
     >
       <div
-        className="emotion-0"
+        className="emotion-1"
         style={
           Object {
             "WebkitAlignItems": "center",
@@ -2287,7 +2518,7 @@ Change the story.
         }
       >
         <div
-          className="emotion-0"
+          className="emotion-1"
           style={
             Object {
               "display": "grid",
@@ -2300,7 +2531,7 @@ Change the story.
           }
         >
           <div
-            className="emotion-0"
+            className="emotion-1"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -2322,7 +2553,7 @@ Change the story.
             }
           >
             <div
-              className="emotion-0"
+              className="emotion-1"
               style={
                 Object {
                   "display": "block",
@@ -2353,7 +2584,7 @@ Change the story.
                 }
               >
                 <div
-                  className="emotion-0"
+                  className="emotion-1"
                   style={
                     Object {
                       "WebkitFilter": "blur(20px)",
@@ -2371,7 +2602,7 @@ Change the story.
                   }
                 >
                   <div
-                    className="emotion-0"
+                    className="emotion-1"
                     style={
                       Object {
                         "WebkitFilter": "blur(20px)",
@@ -2403,7 +2634,7 @@ Change the story.
               </div>
             </div>
             <div
-              className="emotion-0"
+              className="emotion-1"
               style={
                 Object {
                   "WebkitFlexBasis": "0%",
@@ -2416,7 +2647,7 @@ Change the story.
               }
             >
               <div
-                className="emotion-0"
+                className="emotion-1"
                 style={
                   Object {
                     "display": "block",
@@ -2448,7 +2679,7 @@ Change the story.
                 >
                   <div
                     aria-label="Photo of Jon"
-                    className="emotion-0"
+                    className="emotion-1"
                     style={
                       Object {
                         "WebkitFlexBasis": "0px",
@@ -2463,7 +2694,7 @@ Change the story.
                     }
                   >
                     <div
-                      className="emotion-0"
+                      className="emotion-1"
                       style={
                         Object {
                           "backgroundColor": "rgba(0,0,0,0.00)",
@@ -2494,7 +2725,7 @@ Change the story.
               </div>
             </div>
             <div
-              className="emotion-0"
+              className="emotion-1"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -2525,7 +2756,7 @@ Change the story.
                 Jon
               </div>
               <div
-                className="emotion-0"
+                className="emotion-1"
                 style={
                   Object {
                     "WebkitBoxPack": "end",
@@ -2599,7 +2830,7 @@ Change the story.
     </div>
   </div>
   <div
-    className="emotion-0"
+    className="emotion-1"
     id="backers"
     style={
       Object {
@@ -2621,7 +2852,7 @@ Change the story.
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2660,7 +2891,7 @@ Change the story.
       </h3>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -2678,1569 +2909,163 @@ Change the story.
         }
       }
     >
-      <div
-        className="emotion-9"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+      <span
+        className="emotion-125"
       >
         Early CELO holders include prominent venture funds, C-level operators, academics, and experts across a wide range of fields including
-      </div>
+      </span>
     </div>
   </div>
-  <div
-    className="emotion-0"
-    style={
-      Object {
-        "WebkitAlignSelf": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "vertical",
-        "WebkitFlexDirection": "column",
-        "alignSelf": "center",
-        "flexDirection": "column",
-        "marginBottom": "50px",
-        "marginTop": "40px",
-        "maxWidth": "100vw",
-        "msFlexDirection": "column",
-        "msFlexItemAlign": "center",
-        "msGridRowAlign": "center",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "100%",
-      }
-    }
+  <section
+    className="emotion-13"
   >
     <div
-      className="emotion-0"
-      style={
-        Object {
-          "WebkitBoxFlex": 0,
-          "WebkitFlexGrow": 0,
-          "WebkitFlexShrink": 0,
-          "flexGrow": 0,
-          "flexShrink": 0,
-          "msFlexNegative": 0,
-          "msFlexPositive": 0,
-          "paddingBottom": "10px",
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
-          "paddingTop": "10px",
-          "width": "100%",
-        }
-      }
+      className="emotion-127"
     >
-      <div
-        className="emotion-0"
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "WebkitBoxDirection": "normal",
-            "WebkitBoxLines": "multiple",
-            "WebkitBoxOrient": "horizontal",
-            "WebkitBoxPack": "center",
-            "WebkitFlexDirection": "row",
-            "WebkitFlexWrap": "wrap",
-            "WebkitJustifyContent": "center",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "flexWrap": "wrap",
-            "justifyContent": "center",
-            "msFlexAlign": "center",
-            "msFlexDirection": "row",
-            "msFlexPack": "center",
-            "msFlexWrap": "wrap",
-          }
-        }
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <h4
+        className="emotion-131"
       >
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Reid Hoffman
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Jack Dorsey
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Naval Ravikant
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Casey Neistat
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Arianna Simpson
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Tanguy Chau
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Elad Gil
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Keisuke Honda
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Kilowatt Capital
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-0"
-            style={
-              Object {
-                "WebkitFlexBasis": "auto",
-                "flexBasis": "auto",
-                "height": "60px",
-                "msFlexPreferredSize": "auto",
-                "overflowX": "hidden",
-                "overflowY": "hidden",
-                "width": "100%",
-                "zIndex": 0,
-              }
-            }
-          >
-            <div
-              className="emotion-0"
-              style={
-                Object {
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "backgroundImage": "url(\\"/image.png\\")",
-                  "backgroundPosition": "center",
-                  "backgroundRepeat": "no-repeat",
-                  "backgroundSize": "contain",
-                  "bottom": "0px",
-                  "height": "100%",
-                  "left": "0px",
-                  "position": "absolute",
-                  "right": "0px",
-                  "top": "0px",
-                  "width": "100%",
-                  "zIndex": -1,
-                }
-              }
-              suppressHydrationWarning={true}
-            />
-            <img
-              alt=""
-              className="emotion-5"
-              draggable={false}
-              src="/image.png"
-            />
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Julia Popowitz
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Linda Xie
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Vijay Pandurangan
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            R&R Ventures
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Nitesh Banta
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Warren Hogarth
-          </div>
-        </div>
-        <div
-          className="emotion-0"
-          style={
-            Object {
-              "WebkitBoxDirection": "normal",
-              "WebkitBoxOrient": "vertical",
-              "WebkitFlexDirection": "column",
-              "flexDirection": "column",
-              "marginBottom": "25px",
-              "marginLeft": "5px",
-              "marginRight": "5px",
-              "marginTop": "25px",
-              "msFlexDirection": "column",
-              "width": "176px",
-            }
-          }
-        >
-          <div
-            className="emotion-9"
-            dir="auto"
-            onClick={[Function]}
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "22px",
-                "lineHeight": "36px",
-                "textAlign": "center",
-                "textRendering": "geometricPrecision",
-              }
-            }
-          >
-            Curious Endeavors
-          </div>
-        </div>
-      </div>
+        Reid Hoffman
+      </h4>
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <h4
+        className="emotion-131"
+      >
+        Jack Dorsey
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Naval Ravikant
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Casey Neistat
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Arianna Simpson
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Tanguy Chau
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Elad Gil
+      </h4>
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <h4
+        className="emotion-131"
+      >
+        Keisuke Honda
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Kilowatt Capital
+      </h4>
+      <img
+        className="emotion-128"
+        src="/image.png"
+      />
+      <h4
+        className="emotion-131"
+      >
+        Julia Popowitz
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Linda Xie
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Vijay Pandurangan
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        R&R Ventures
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Nitesh Banta
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Warren Hogarth
+      </h4>
+      <h4
+        className="emotion-131"
+      >
+        Curious Endeavors
+      </h4>
     </div>
-  </div>
+  </section>
   <div
-    className="emotion-0"
+    className="emotion-1"
     style={
       Object {
         "WebkitAlignSelf": "center",
@@ -4262,7 +3087,7 @@ Change the story.
     }
   >
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -4301,7 +3126,7 @@ Change the story.
       </h3>
     </div>
     <div
-      className="emotion-0"
+      className="emotion-1"
       style={
         Object {
           "WebkitBoxFlex": 0,
@@ -4319,24 +3144,13 @@ Change the story.
         }
       }
     >
-      <div
-        className="emotion-9"
-        dir="auto"
-        onClick={[Function]}
-        style={
-          Object {
-            "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-            "fontSize": "20px",
-            "lineHeight": "28px",
-            "textRendering": "geometricPrecision",
-          }
-        }
+      <span
+        className="emotion-164"
       >
         For media inquiries, please contact us at
          
         <div
-          className="emotion-0"
+          className="emotion-1"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -4349,7 +3163,8 @@ Change the story.
           }
         >
           <a
-            className="emotion-8 emotion-81 emotion-9 emotion-27"
+            className="emotion-8 emotion-79 emotion-9"
+            dir="auto"
             href="mailto:press@celo.org"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -4369,7 +3184,7 @@ Change the story.
           </a>
         </div>
         .
-      </div>
+      </span>
     </div>
   </div>
 </div>

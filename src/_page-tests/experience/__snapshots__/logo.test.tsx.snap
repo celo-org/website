@@ -63,17 +63,17 @@ exports[`Experience/Logo renders 1`] = `
   background-color: #FFFFFF;
 }
 
+@media (max-width: 576px) {
+  .emotion-2 {
+    box-shadow: 0px 1px 1px -1px rgba(0,0,0,0.5);
+  }
+}
+
 .emotion-2 {
   transition-property: box-shadow;
   transition-duration: 400ms;
   margin-bottom: 1px;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-}
-
-@media (max-width: 576px) {
-  .emotion-2 {
-    box-shadow: 0px 1px 1px -1px rgba(0,0,0,0.5);
-  }
 }
 
 .emotion-3 {
@@ -140,6 +140,11 @@ exports[`Experience/Logo renders 1`] = `
   align-content: center;
 }
 
+.emotion-6:active,
+.emotion-6:focus {
+  opacity: 0.85;
+}
+
 .emotion-6 {
   opacity: 1;
   transition-duration: 250ms;
@@ -155,11 +160,6 @@ exports[`Experience/Logo renders 1`] = `
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-}
-
-.emotion-6:active,
-.emotion-6:focus {
-  opacity: 0.85;
 }
 
 .emotion-7 {
@@ -352,6 +352,18 @@ exports[`Experience/Logo renders 1`] = `
   width: 100%;
 }
 
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-92 {
+    max-width: 958px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-92 {
+    max-width: 1080px;
+  }
+}
+
 @media (max-width: 576px) {
   .emotion-92 {
     z-index: -5;
@@ -362,15 +374,9 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-92 {
-    max-width: 958px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-92 {
-    max-width: 1080px;
+@media (max-width: 576px) {
+  .emotion-93 {
+    display: none;
   }
 }
 
@@ -392,9 +398,15 @@ exports[`Experience/Logo renders 1`] = `
   height: fit-content;
 }
 
-@media (max-width: 576px) {
-  .emotion-93 {
-    display: none;
+@media (min-width: 576px) {
+  .emotion-149 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: calc(75% - 50px);
+    -ms-flex-preferred-size: calc(75% - 50px);
+    flex-basis: calc(75% - 50px);
+    margin-left: 20px;
   }
 }
 
@@ -408,18 +420,6 @@ exports[`Experience/Logo renders 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-}
-
-@media (min-width: 576px) {
-  .emotion-149 {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-flex-basis: calc(75% - 50px);
-    -ms-flex-preferred-size: calc(75% - 50px);
-    flex-basis: calc(75% - 50px);
-    margin-left: 20px;
-  }
 }
 
 .emotion-150 {
@@ -645,6 +645,20 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
+@media (max-width: 576px) {
+  .emotion-353 {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 .emotion-353 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -658,8 +672,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-353 {
-    margin-bottom: 30px;
+  .emotion-354 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -681,19 +694,6 @@ exports[`Experience/Logo renders 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
-}
-
-@media (max-width: 576px) {
-  .emotion-354 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
 }
 
 .emotion-355 {

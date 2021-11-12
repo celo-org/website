@@ -1,95 +1,74 @@
 import * as React from "react"
-import { Image, StyleSheet, Text, View } from "react-native"
 import backerList from "src/about/backers/backers"
 import { I18nProps, withNamespaces } from "src/i18n"
 import BookLayout from "src/layout/BookLayout"
-import { Cell, GridRow, Spans } from "src/layout/GridRow"
-import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
+import { ScreenProps, withScreenSize } from "src/layout/ScreenSize"
 import { hashNav } from "src/shared/menu-items"
-import Responsive from "src/shared/Responsive"
-import { fonts, standardStyles, textStyles } from "src/styles"
-
+import { GridRow } from "src/layout/Grid2"
+import {textStyles } from "src/styles"
+import { fonts, standardStyles,  WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import { css } from "@emotion/react"
 export class Backers extends React.Component<I18nProps & ScreenProps> {
   render() {
-    const { t, screen } = this.props
-
+    const { t } = this.props
     return (
       <>
         <BookLayout startBlock={true} label={t("celoBackers")} nativeID={hashNav.about.backers}>
-          <Text style={fonts.p}>{t("celoBackersText", { count: 80 })}</Text>
+          <span css={fonts.body}>{t("celoBackersText", { count: 80 })}</span>
         </BookLayout>
         <GridRow
-          allStyle={standardStyles.blockMarginTopTablet}
-          desktopStyle={[styles.backerContainer, standardStyles.sectionMarginBottom]}
-          tabletStyle={[styles.backerContainer, standardStyles.sectionMarginBottomTablet]}
-          mobileStyle={standardStyles.sectionMarginBottomMobile}
+        columns={4}
+        css={row}
         >
-          <Cell span={Spans.full} tabletSpan={Spans.full}>
-            <View
-              style={[styles.photoList, screen === ScreenSizes.DESKTOP && styles.photoListDesktop]}
-            >
               {backerList.map((backer) => (
-                <Responsive
-                  key={backer.name}
-                  medium={styles.mediumBacker}
-                  large={styles.largeBacker}
-                >
-                  <View style={styles.backer}>
-                    {backer.photo ? (
-                      <Image
-                        resizeMode={"contain"}
-                        source={{ uri: backer.photo }}
-                        style={styles.photo}
+                    backer.photo ? (
+                      <img
+                        src={backer.photo}
+                        css={backerStyles}
+                        key={backer.name}
                       />
                     ) : (
-                      <Text style={[fonts.h4, styles.name, textStyles.center]}>{backer.name}</Text>
-                    )}
-                  </View>
-                </Responsive>
+                      <h4 css={[fonts.h4, name, textStyles.center]} key={backer.name}>{backer.name}</h4>
+                    )
               ))}
-            </View>
-          </Cell>
         </GridRow>
       </>
     )
   }
 }
 
-const styles = StyleSheet.create({
-  backerContainer: { justifyContent: "flex-end" },
-  photo: {
-    height: 60,
-    width: "100%",
-  },
-  photoList: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  photoListDesktop: {
-    justifyContent: "space-between",
-  },
-  backer: {
+const backerStyles = css({
+    height: "60px",
+    objectFit: "contain",
     flexDirection: "column",
-    width: 176,
-    marginVertical: 25,
-    marginHorizontal: 5,
-  },
-  mediumBacker: {
-    flexDirection: "column",
-    width: 220,
-    margin: 20,
-  },
-  largeBacker: {
-    flexDirection: "column",
-    marginHorizontal: 5,
-    marginVertical: 30,
-    width: 210,
-  },
-  name: {
-    fontSize: 22,
-  },
+    marginTop: "30px",
+    marginBottom: "30px",
+    marginRight: "5px",
+    marginLeft: "5px",
+    width: "100%"
+})
+
+
+const row = css({
+  display: "flex",
+  justifyContent: "center",
+  marginTop: "40px",
+  [WHEN_DESKTOP]:
+    standardStyles.sectionMarginBottom
+  ,
+  [WHEN_TABLET]: 
+    standardStyles.sectionMarginBottomTablet
+  ,
+  [WHEN_MOBILE]: 
+    standardStyles.sectionMarginBottomMobile
+  
+})
+
+const name = css({
+    fontSize: "22px",
+    textAlign: "center",
+    marginTop: "35px",
+    marginBottom: "35px",
 })
 
 export default withScreenSize(withNamespaces("about")(Backers))

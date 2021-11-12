@@ -63,17 +63,17 @@ exports[`Experience/Composition renders 1`] = `
   background-color: #FFFFFF;
 }
 
+@media (max-width: 576px) {
+  .emotion-2 {
+    box-shadow: 0px 1px 1px -1px rgba(0,0,0,0.5);
+  }
+}
+
 .emotion-2 {
   transition-property: box-shadow;
   transition-duration: 400ms;
   margin-bottom: 1px;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
-}
-
-@media (max-width: 576px) {
-  .emotion-2 {
-    box-shadow: 0px 1px 1px -1px rgba(0,0,0,0.5);
-  }
 }
 
 .emotion-3 {
@@ -140,6 +140,11 @@ exports[`Experience/Composition renders 1`] = `
   align-content: center;
 }
 
+.emotion-6:active,
+.emotion-6:focus {
+  opacity: 0.85;
+}
+
 .emotion-6 {
   opacity: 1;
   transition-duration: 250ms;
@@ -155,11 +160,6 @@ exports[`Experience/Composition renders 1`] = `
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-}
-
-.emotion-6:active,
-.emotion-6:focus {
-  opacity: 0.85;
 }
 
 .emotion-7 {
@@ -218,11 +218,6 @@ exports[`Experience/Composition renders 1`] = `
   margin: 0px 30px;
 }
 
-.emotion-32 {
-  display: none;
-  width: 100%;
-}
-
 @media (max-width: 576px) {
   .emotion-32 {
     position: relative;
@@ -237,6 +232,11 @@ exports[`Experience/Composition renders 1`] = `
     background-color: #FFFFFF;
     z-index: -1;
   }
+}
+
+.emotion-32 {
+  display: none;
+  width: 100%;
 }
 
 .emotion-33 {
@@ -352,6 +352,18 @@ exports[`Experience/Composition renders 1`] = `
   width: 100%;
 }
 
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-92 {
+    max-width: 958px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-92 {
+    max-width: 1080px;
+  }
+}
+
 @media (max-width: 576px) {
   .emotion-92 {
     z-index: -5;
@@ -362,15 +374,9 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-92 {
-    max-width: 958px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-92 {
-    max-width: 1080px;
+@media (max-width: 576px) {
+  .emotion-93 {
+    display: none;
   }
 }
 
@@ -390,12 +396,6 @@ exports[`Experience/Composition renders 1`] = `
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-
-@media (max-width: 576px) {
-  .emotion-93 {
-    display: none;
-  }
 }
 
 .emotion-149 {
@@ -586,6 +586,20 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
+@media (max-width: 576px) {
+  .emotion-222 {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
 .emotion-222 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -599,8 +613,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-222 {
-    margin-bottom: 30px;
+  .emotion-223 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -622,19 +635,6 @@ exports[`Experience/Composition renders 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
-}
-
-@media (max-width: 576px) {
-  .emotion-223 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
 }
 
 .emotion-224 {
