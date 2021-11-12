@@ -16,17 +16,19 @@ function getAirtable<T extends FieldSet>(sheet: string) {
 }
 
 export async function create(data) {
-  try {
-    return Promise.all([
-      getAirtable<Fields>("Web").create(convert(data)),
-      addToCRM({ email: data.email, fullName: data.name }, ListID.PublicSector, {
-        name: data.orgName,
-        description: data.reason,
-      }),
-    ])
-  } catch (e) {
-    return Promise.reject(e)
-  }
+  return Promise.all([
+    addToCRM({ email: data.email, fullName: data.name }, ListID.PublicSector, {
+      name: data.orgName,
+      description: data.reason,
+    }),
+    legacy(data),
+  ])
+}
+
+async function legacy(data) {
+  return getAirtable<Fields>("Web")
+    .create(convert(data))
+    .catch((e) => undefined)
 }
 
 function convert(data): Fields {

@@ -42,7 +42,7 @@ export default async function addToCRM(
 
   try {
     const [contactCreated, _] = await Promise.all([
-      createContact(hubSpotClient, contact),
+      createContactOrUpdate(hubSpotClient, contact),
       addContactsToList(list, [contact.email]),
     ])
 
@@ -175,11 +175,19 @@ function contactsToProperties(
   })
 }
 
-function createContact(hubSpotClient: hubspot.Client, contact: CRMInterface) {
+async function createContactOrUpdate(hubSpotClient: hubspot.Client, contact: CRMInterface) {
   const preparedContact = convert(contact)
   const simplePublicObjectInput = { properties: preparedContact as any }
-
-  return hubSpotClient.crm.contacts.basicApi.create(simplePublicObjectInput)
+  try {
+    const result = await hubSpotClient.crm.contacts.basicApi.create(simplePublicObjectInput)
+    return result
+  } catch (e) {
+    const message = e.response.body?.message
+    if (message?.includes("Contact already exists")) {
+      const id = message.split("Existing ID: ")[1] as string
+      return hubSpotClient.crm.contacts.basicApi.update(id, simplePublicObjectInput)
+    } else throw e
+  }
 }
 
 function HubSpotClient() {
@@ -195,7 +203,7 @@ function linkContactToCompany(hubSpotClient: hubspot.Client, { companyId, contac
     companyId,
     "contact",
     contactId,
-    "contact_to_company"
+    "company_to_contact"
   )
 }
 
