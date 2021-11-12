@@ -17,5 +17,5 @@ export default withNamespaces(NameSpaces.about)(function PressAndMedia({ t }: I1
 })
 
 const press = css({
-  a: fonts.body
+  a: fonts.body,
 })

@@ -1,10 +1,7 @@
 import * as React from "react"
-import {
-  TestProvider,
-} from "src/_page-tests/test-utils"
+import { TestProvider } from "src/_page-tests/test-utils"
 import About from "src/about/About"
 import { render } from "@testing-library/react"
-
 
 describe("About", () => {
   it("includes element with #contributors id", async () => {

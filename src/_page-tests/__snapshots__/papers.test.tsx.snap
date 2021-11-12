@@ -599,7 +599,7 @@ exports[`Papers renders 1`] = `
         <p
           className="emotion-12"
         >
-          Plumo: Towards Scalable Interoperable Blockchains Using Ultra Light Validation Systems
+          Plumo: An Ultralight Blockchain Client
         </p>
         <div
           className="emotion-13"

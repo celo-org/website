@@ -23,7 +23,8 @@
     "noEmit": false,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "incremental": true
   },
   "exclude": ["dist"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
