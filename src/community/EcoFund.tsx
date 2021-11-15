@@ -125,7 +125,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
             >
               <FormContainer
                 key={Tables.Applicants}
-                route={`/ecosystem/${Tables.Applicants}`}
+                route={`/api/ecosystem/${Tables.Applicants}`}
                 // @ts-ignore
                 blankForm={blankApplicationForm}
                 validateWith={invalidApplicationFields}
@@ -174,7 +174,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
             >
               <FormContainer
                 key={Tables.Recommendations}
-                route={`/ecosystem/${Tables.Recommendations}`}
+                route={`/api/ecosystem/${Tables.Recommendations}`}
                 // @ts-ignore
                 blankForm={blankRecForm}
                 validateWith={invalidRecFields}

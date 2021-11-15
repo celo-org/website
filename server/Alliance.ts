@@ -61,15 +61,18 @@ export function normalize(asset: Fields): Ally {
   }
 }
 
-// creates entry in airtable and (if opted in) in Hubspot's Alliance list 
+// creates entry in airtable and (if opted in) in Hubspot's Alliance list
 export async function create(data: NewMember) {
   const actions: Promise<any>[] = [
     getAirtable<WebRequestFields>(WRITE_SHEET).create(convertWebToAirtable(data)),
   ]
 
-  if (data.subscribe) {
-    actions.push(addToCRM({ email: data.email, fullName: data.name}, ListID.Alliance))
-  }
+  actions.push(
+    addToCRM(
+      { email: data.email, fullName: data.name, contribution: data.contribution },
+      ListID.Alliance
+    )
+  )
 
   return Promise.all(actions)
 }
