@@ -314,11 +314,11 @@ Array [
   border-color: #35D07F;
 }
 
-.emotion-14 {
+.emotion-13 {
   margin-top: 10px;
 }
 
-.emotion-16 {
+.emotion-15 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -349,7 +349,7 @@ Array [
   align-items: center;
 }
 
-.emotion-17 {
+.emotion-16 {
   margin-left: 10px;
 }
 
@@ -409,10 +409,9 @@ Array [
             onMouseLeave={[Function]}
             onMouseUp={[Function]}
           >
-            <a
-              className="emotion-11 emotion-12 emotion-13"
+            <div
+              className="emotion-11 emotion-12"
               dir="auto"
-              onClick={[Function]}
               role="link"
               style={
                 Object {
@@ -462,13 +461,14 @@ Array [
                   "width": "100%",
                 }
               }
+              tabIndex="0"
             >
               Sign Up
-            </a>
+            </div>
           </div>
         </div>
         <div
-          className="emotion-14"
+          className="emotion-13"
         >
           <div
             aria-hidden={true}
@@ -476,7 +476,7 @@ Array [
             className="emotion-6"
           >
             <p
-              className="emotion-16"
+              className="emotion-15"
             >
               <svg
                 fill="none"
@@ -492,7 +492,7 @@ Array [
                 />
               </svg>
               <span
-                className="emotion-17"
+                className="emotion-16"
               >
                 Submitted
               </span>

@@ -175,7 +175,6 @@ Array [
               aria-level="1"
               className="emotion-5 emotion-6"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -195,7 +194,6 @@ Array [
               aria-level="4"
               className="emotion-5 emotion-6"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -880,7 +878,6 @@ Do not send real funds.
               aria-level="3"
               className="emotion-5 emotion-6"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -900,7 +897,6 @@ Do not send real funds.
             <div
               className="emotion-6"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(221,221,221,1.00)",
@@ -1071,7 +1067,6 @@ Do not send real funds.
               aria-level="3"
               className="emotion-5 emotion-6"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -1091,7 +1086,6 @@ Do not send real funds.
             <div
               className="emotion-6"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(221,221,221,1.00)",
@@ -1171,7 +1165,6 @@ Do not send real funds.
               aria-level="3"
               className="emotion-5 emotion-6"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -1191,7 +1184,6 @@ Do not send real funds.
             <div
               className="emotion-6"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(221,221,221,1.00)",

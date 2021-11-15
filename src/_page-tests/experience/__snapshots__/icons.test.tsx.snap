@@ -2847,7 +2847,6 @@ exports[`Experience/Icons renders 1`] = `
                 aria-level="1"
                 className="emotion-13 emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 role="heading"
                 style={
                   Object {
@@ -2867,7 +2866,6 @@ exports[`Experience/Icons renders 1`] = `
                 aria-level="4"
                 className="emotion-13 emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 role="heading"
                 style={
                   Object {
@@ -2888,7 +2886,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(46,51,56,1.00)",
@@ -2908,7 +2905,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(46,51,56,1.00)",
@@ -2980,7 +2976,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 <div
                   className="emotion-15"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(46,51,56,1.00)",
@@ -3053,7 +3048,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               <div
                 className="emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 style={
                   Object {
                     "MozTransitionProperty": "opacity",
@@ -3206,7 +3200,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           <div
                             className="emotion-15"
                             dir="auto"
-                            onClick={[Function]}
                             style={
                               Object {
                                 "color": "rgba(46,51,56,1.00)",
@@ -3225,7 +3218,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           <div
                             className="emotion-15"
                             dir="auto"
-                            onClick={[Function]}
                             style={
                               Object {
                                 "color": "rgba(46,51,56,1.00)",
@@ -3447,7 +3439,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           <div
                             className="emotion-15"
                             dir="auto"
-                            onClick={[Function]}
                             style={
                               Object {
                                 "color": "rgba(46,51,56,1.00)",
@@ -3466,7 +3457,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           <div
                             className="emotion-15"
                             dir="auto"
-                            onClick={[Function]}
                             style={
                               Object {
                                 "color": "rgba(46,51,56,1.00)",
