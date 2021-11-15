@@ -182,7 +182,7 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
 }
 
 function send(beneficiary: string, kind: RequestType, captchaToken: string, os?: MobileOS) {
-  const route = kind === RequestType.Invite ? "/invite" : "/faucet"
+  const route = kind === RequestType.Invite ? "/api/invite" : "/api/faucet"
   return postForm(route, { captchaToken, beneficiary, mobileOS: os })
 }
 

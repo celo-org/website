@@ -4,10 +4,10 @@ import { inputDarkStyle, labelStyle, errorStyle, WHEN_TABLET_AND_UP, whiteText }
 import { css } from "@emotion/react"
 import Button, { BTN } from "src/shared/Button.3"
 import * as React from "react"
-import { postForm } from "src/forms/postForm"
 import MessageDisplay from "src/forms/eMessageDisplay"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { emailIsValid, urlIsValid } from "src/forms/emailIsValid"
+import { postForm } from "src/forms/postForm"
 
 const CLEAR_TIME = 1000 * 30
 

@@ -1,8 +1,9 @@
 import airtableInit from "./airtable"
 import getConfig from "next/config"
 import { FieldSet, Table } from "airtable"
+import addToCRM, { ListID } from "./addToCRM"
 
-interface Fields extends FieldSet {
+export interface Fields extends FieldSet {
   Name: string
   Email: string
   Reason: string
@@ -15,7 +16,19 @@ function getAirtable<T extends FieldSet>(sheet: string) {
 }
 
 export async function create(data) {
-  return getAirtable<Fields>("Web").create(convert(data))
+  return Promise.all([
+    addToCRM({ email: data.email, fullName: data.name }, ListID.PublicSector, {
+      name: data.orgName,
+      description: data.reason,
+    }),
+    legacy(data),
+  ])
+}
+
+async function legacy(data) {
+  return getAirtable<Fields>("Web")
+    .create(convert(data))
+    .catch(() => undefined)
 }
 
 function convert(data): Fields {

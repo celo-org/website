@@ -1,6 +1,5 @@
 import * as React from "react"
 import { NewMember } from "src/alliance/AllianceMember"
-import { CheckboxWithLabel } from "src/forms/CheckboxWithLabel"
 import { ErrorDisplay } from "src/forms/ErrorDisplay"
 import FormContainer from "src/forms/Form"
 import { emailIsValid, hasField } from "src/forms/emailIsValid"
@@ -39,7 +38,7 @@ export default function SignupForm() {
   const { isMobile } = useScreenSize()
   return (
     <FormContainer route="/api/alliance" blankForm={BLANK_FORM} validateWith={validateWith}>
-      {({ formState, onInput, onCheck, onSubmit }) => (
+      {({ formState, onInput, onSubmit }) => (
         <Form>
           <div css={rootCss}>
             <div css={desktopRow}>
@@ -71,14 +70,6 @@ export default function SignupForm() {
                 onInput={onInput}
                 name="contribution"
                 value={formState.form.contribution}
-              />
-            </div>
-            <div css={inputContainerCss}>
-              <CheckboxWithLabel
-                name={"subscribe"}
-                checked={!!formState.form.subscribe}
-                onPress={onCheck}
-                label={t("form.subscribe")}
               />
             </div>
           </div>
