@@ -563,7 +563,6 @@ exports[`About renders 1`] = `
           aria-level="2"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -619,7 +618,6 @@ exports[`About renders 1`] = `
             aria-level="3"
             className="emotion-8 emotion-9"
             dir="auto"
-            onClick={[Function]}
             role="heading"
             style={
               Object {
@@ -719,7 +717,6 @@ exports[`About renders 1`] = `
         aria-level="3"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -758,7 +755,6 @@ exports[`About renders 1`] = `
         aria-level="1"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -819,7 +815,6 @@ exports[`About renders 1`] = `
         aria-level="3"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -862,7 +857,6 @@ exports[`About renders 1`] = `
         aria-level="2"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -931,7 +925,6 @@ exports[`About renders 1`] = `
         aria-level="3"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -970,7 +963,6 @@ exports[`About renders 1`] = `
         aria-level="2"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -1155,7 +1147,6 @@ More importantly, we are driven by purpose – to solve real-world problems such
         aria-level="3"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -1347,7 +1338,6 @@ More importantly, we are driven by purpose – to solve real-world problems such
         aria-level="4"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -1365,7 +1355,6 @@ More importantly, we are driven by purpose – to solve real-world problems such
       <div
         className="emotion-9"
         dir="auto"
-        onClick={[Function]}
         style={
           Object {
             "color": "rgba(46,51,56,1.00)",
@@ -1915,7 +1904,6 @@ More importantly, we are driven by purpose – to solve real-world problems such
         aria-level="4"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -1933,7 +1921,6 @@ More importantly, we are driven by purpose – to solve real-world problems such
       <div
         className="emotion-9"
         dir="auto"
-        onClick={[Function]}
         style={
           Object {
             "color": "rgba(46,51,56,1.00)",
@@ -2076,7 +2063,6 @@ Change the story.
         aria-level="3"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -2261,7 +2247,6 @@ Change the story.
         aria-level="3"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -2415,7 +2400,6 @@ Change the story.
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -2453,7 +2437,6 @@ Change the story.
         <div
           className="emotion-9"
           dir="auto"
-          onClick={[Function]}
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
@@ -2739,7 +2722,6 @@ Change the story.
               <div
                 className="emotion-9"
                 dir="auto"
-                onClick={[Function]}
                 style={
                   Object {
                     "color": "rgba(46,51,56,1.00)",
@@ -2793,7 +2775,6 @@ Change the story.
             <div
               className="emotion-9"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(46,51,56,1.00)",
@@ -2809,7 +2790,6 @@ Change the story.
             <div
               className="emotion-9"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(46,51,56,1.00)",
@@ -2874,7 +2854,6 @@ Change the story.
         aria-level="3"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -3109,7 +3088,6 @@ Change the story.
         aria-level="3"
         className="emotion-8 emotion-9"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {

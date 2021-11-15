@@ -2834,7 +2834,6 @@ exports[`Experience/Brandkit renders 1`] = `
               aria-level="1"
               className="emotion-13 emotion-15"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -2854,7 +2853,6 @@ exports[`Experience/Brandkit renders 1`] = `
               aria-level="4"
               className="emotion-13 emotion-15"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -2873,7 +2871,6 @@ exports[`Experience/Brandkit renders 1`] = `
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(46,51,56,1.00)",
@@ -2891,7 +2888,6 @@ exports[`Experience/Brandkit renders 1`] = `
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(46,51,56,1.00)",
@@ -2910,7 +2906,6 @@ exports[`Experience/Brandkit renders 1`] = `
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(46,51,56,1.00)",
@@ -2936,7 +2931,6 @@ exports[`Experience/Brandkit renders 1`] = `
               >
                 <li
                   className="emotion-13 emotion-15 emotion-164"
-                  onClick={[Function]}
                   role="listitem"
                   style={
                     Object {
@@ -2955,7 +2949,6 @@ exports[`Experience/Brandkit renders 1`] = `
                 </li>
                 <li
                   className="emotion-13 emotion-15 emotion-164"
-                  onClick={[Function]}
                   role="listitem"
                   style={
                     Object {
@@ -3003,7 +2996,6 @@ exports[`Experience/Brandkit renders 1`] = `
                 aria-level="2"
                 className="emotion-13 emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 role="heading"
                 style={
                   Object {
@@ -3022,7 +3014,6 @@ exports[`Experience/Brandkit renders 1`] = `
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(46,51,56,1.00)",

@@ -411,7 +411,6 @@ exports[`BuildPage renders 1`] = `
           aria-level="2"
           className="emotion-5 emotion-6"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -496,7 +495,6 @@ exports[`BuildPage renders 1`] = `
           aria-level="4"
           className="emotion-5 emotion-6"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -586,7 +584,6 @@ exports[`BuildPage renders 1`] = `
               aria-level="2"
               className="emotion-5 emotion-6"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -605,7 +602,6 @@ exports[`BuildPage renders 1`] = `
               aria-level="3"
               className="emotion-5 emotion-6"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -625,7 +621,6 @@ exports[`BuildPage renders 1`] = `
             <div
               className="emotion-6"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
@@ -726,7 +721,6 @@ exports[`BuildPage renders 1`] = `
             <div
               className="emotion-6"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
@@ -754,7 +748,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -774,7 +767,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -794,7 +786,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -814,7 +805,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -834,7 +824,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1167,7 +1156,6 @@ exports[`BuildPage renders 1`] = `
             <div
               className="emotion-6"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
@@ -1195,7 +1183,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1215,7 +1202,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1235,7 +1221,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1486,7 +1471,6 @@ exports[`BuildPage renders 1`] = `
             <div
               className="emotion-6"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
@@ -1514,7 +1498,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1534,7 +1517,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1554,7 +1536,6 @@ exports[`BuildPage renders 1`] = `
               <li
                 className="emotion-5 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1765,7 +1746,6 @@ exports[`BuildPage renders 1`] = `
             aria-level="4"
             className="emotion-5 emotion-6"
             dir="auto"
-            onClick={[Function]}
             role="heading"
             style={
               Object {
@@ -1784,7 +1764,6 @@ exports[`BuildPage renders 1`] = `
           <div
             className="emotion-6"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -1955,7 +1934,6 @@ exports[`BuildPage renders 1`] = `
               aria-level="2"
               className="emotion-5 emotion-6"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -2090,7 +2068,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(255,255,255,1.00)",
@@ -2109,7 +2086,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(221,221,221,1.00)",
@@ -2217,7 +2193,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(255,255,255,1.00)",
@@ -2236,7 +2211,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(221,221,221,1.00)",
@@ -2344,7 +2318,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(255,255,255,1.00)",
@@ -2363,7 +2336,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(221,221,221,1.00)",
@@ -2471,7 +2443,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(255,255,255,1.00)",
@@ -2490,7 +2461,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(221,221,221,1.00)",
@@ -2598,7 +2568,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(255,255,255,1.00)",
@@ -2617,7 +2586,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(221,221,221,1.00)",
@@ -2725,7 +2693,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(255,255,255,1.00)",
@@ -2744,7 +2711,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(221,221,221,1.00)",
@@ -2852,7 +2818,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(255,255,255,1.00)",
@@ -2871,7 +2836,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(221,221,221,1.00)",
@@ -2979,7 +2943,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(255,255,255,1.00)",
@@ -2998,7 +2961,6 @@ exports[`BuildPage renders 1`] = `
                 <div
                   className="emotion-6"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(221,221,221,1.00)",
@@ -3074,7 +3036,6 @@ exports[`BuildPage renders 1`] = `
           aria-level="3"
           className="emotion-5 emotion-6"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -3094,7 +3055,6 @@ exports[`BuildPage renders 1`] = `
           aria-level="4"
           className="emotion-5 emotion-6"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -3113,7 +3073,6 @@ exports[`BuildPage renders 1`] = `
         <div
           className="emotion-6"
           dir="auto"
-          onClick={[Function]}
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
@@ -3205,7 +3164,6 @@ exports[`BuildPage renders 1`] = `
         <div
           className="emotion-6"
           dir="auto"
-          onClick={[Function]}
           style={
             Object {
               "color": "rgba(46,51,56,1.00)",
@@ -3450,7 +3408,6 @@ exports[`BuildPage renders 1`] = `
           <div
             className="emotion-6"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(46,51,56,1.00)",
@@ -3467,7 +3424,6 @@ exports[`BuildPage renders 1`] = `
           <div
             className="emotion-6"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(46,51,56,1.00)",
@@ -3689,7 +3645,6 @@ exports[`BuildPage renders 1`] = `
           <div
             className="emotion-6"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(46,51,56,1.00)",
@@ -3706,7 +3661,6 @@ exports[`BuildPage renders 1`] = `
           <div
             className="emotion-6"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(46,51,56,1.00)",
@@ -3868,7 +3822,6 @@ exports[`BuildPage renders 1`] = `
         aria-level="3"
         className="emotion-5 emotion-6"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -3886,7 +3839,6 @@ exports[`BuildPage renders 1`] = `
       <div
         className="emotion-6"
         dir="auto"
-        onClick={[Function]}
         style={
           Object {
             "color": "rgba(46,51,56,1.00)",
