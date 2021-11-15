@@ -4621,42 +4621,59 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-142"
           >
-            <div
+            <span
               style={
                 Object {
+                  "background": "none",
+                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
+                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
+                  "opacity": 1,
                   "overflow": "hidden",
+                  "padding": 0,
                   "position": "relative",
+                  "width": "initial",
                 }
               }
             >
-              <div
+              <span
                 style={
                   Object {
+                    "background": "none",
+                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
+                    "margin": 0,
                     "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
                   }
                 }
               >
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "border": "none",
+                      "background": "none",
+                      "border": 0,
                       "display": "block",
+                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
+                      "opacity": 1,
                       "padding": 0,
+                      "width": "initial",
                     }
                   }
                 />
-              </div>
+              </span>
               <img
                 className="emotion-143"
                 data-nimg="intrinsic"
@@ -4691,8 +4708,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -4717,7 +4733,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </div>
+            </span>
           </div>
           <p
             className="emotion-145"
@@ -4731,42 +4747,59 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-142"
           >
-            <div
+            <span
               style={
                 Object {
+                  "background": "none",
+                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
+                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
+                  "opacity": 1,
                   "overflow": "hidden",
+                  "padding": 0,
                   "position": "relative",
+                  "width": "initial",
                 }
               }
             >
-              <div
+              <span
                 style={
                   Object {
+                    "background": "none",
+                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
+                    "margin": 0,
                     "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
                   }
                 }
               >
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "border": "none",
+                      "background": "none",
+                      "border": 0,
                       "display": "block",
+                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
+                      "opacity": 1,
                       "padding": 0,
+                      "width": "initial",
                     }
                   }
                 />
-              </div>
+              </span>
               <img
                 className="emotion-143"
                 data-nimg="intrinsic"
@@ -4801,8 +4834,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -4827,7 +4859,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </div>
+            </span>
           </div>
           <p
             className="emotion-145"
@@ -4841,42 +4873,59 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-142"
           >
-            <div
+            <span
               style={
                 Object {
+                  "background": "none",
+                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
+                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
+                  "opacity": 1,
                   "overflow": "hidden",
+                  "padding": 0,
                   "position": "relative",
+                  "width": "initial",
                 }
               }
             >
-              <div
+              <span
                 style={
                   Object {
+                    "background": "none",
+                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
+                    "margin": 0,
                     "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
                   }
                 }
               >
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "border": "none",
+                      "background": "none",
+                      "border": 0,
                       "display": "block",
+                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
+                      "opacity": 1,
                       "padding": 0,
+                      "width": "initial",
                     }
                   }
                 />
-              </div>
+              </span>
               <img
                 className="emotion-143"
                 data-nimg="intrinsic"
@@ -4911,8 +4960,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -4937,7 +4985,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </div>
+            </span>
           </div>
           <p
             className="emotion-145"
@@ -4951,42 +4999,59 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-142"
           >
-            <div
+            <span
               style={
                 Object {
+                  "background": "none",
+                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
+                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
+                  "opacity": 1,
                   "overflow": "hidden",
+                  "padding": 0,
                   "position": "relative",
+                  "width": "initial",
                 }
               }
             >
-              <div
+              <span
                 style={
                   Object {
+                    "background": "none",
+                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
+                    "margin": 0,
                     "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
                   }
                 }
               >
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "border": "none",
+                      "background": "none",
+                      "border": 0,
                       "display": "block",
+                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
+                      "opacity": 1,
                       "padding": 0,
+                      "width": "initial",
                     }
                   }
                 />
-              </div>
+              </span>
               <img
                 className="emotion-143"
                 data-nimg="intrinsic"
@@ -5021,8 +5086,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -5047,7 +5111,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </div>
+            </span>
           </div>
           <p
             className="emotion-145"
@@ -5061,42 +5125,59 @@ exports[`Alliance renders 1`] = `
           <div
             className="emotion-142"
           >
-            <div
+            <span
               style={
                 Object {
+                  "background": "none",
+                  "border": 0,
                   "boxSizing": "border-box",
                   "display": "inline-block",
+                  "height": "initial",
                   "margin": 0,
                   "maxWidth": "100%",
+                  "opacity": 1,
                   "overflow": "hidden",
+                  "padding": 0,
                   "position": "relative",
+                  "width": "initial",
                 }
               }
             >
-              <div
+              <span
                 style={
                   Object {
+                    "background": "none",
+                    "border": 0,
                     "boxSizing": "border-box",
                     "display": "block",
+                    "height": "initial",
+                    "margin": 0,
                     "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
                   }
                 }
               >
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
-                      "border": "none",
+                      "background": "none",
+                      "border": 0,
                       "display": "block",
+                      "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
+                      "opacity": 1,
                       "padding": 0,
+                      "width": "initial",
                     }
                   }
                 />
-              </div>
+              </span>
               <img
                 className="emotion-143"
                 data-nimg="intrinsic"
@@ -5131,8 +5212,7 @@ exports[`Alliance renders 1`] = `
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -5157,7 +5237,7 @@ exports[`Alliance renders 1`] = `
                   }
                 />
               </noscript>
-            </div>
+            </span>
           </div>
           <p
             className="emotion-145"

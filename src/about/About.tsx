@@ -48,13 +48,10 @@ export class About extends React.Component<Props & I18nProps> {
         <div css={layout}>
           <VideoCover />
           {/* Below Fold */}
-          <GridRow
-           columns={4}
-           css={logoArea}
-          >
+          <GridRow columns={4} css={logoArea}>
             <div css={logoColumn}>
               <LogoLightBg height={47} />
-              </div>
+            </div>
           </GridRow>
           <BookLayout label={t("MissionTitle")}>
             <H1>{t("MissionText")}</H1>
@@ -86,7 +83,7 @@ export class About extends React.Component<Props & I18nProps> {
             </H1>
             <p css={[fonts.body, standardStyles.elementalMargin]}>{t("MeaningCopy")}</p>
           </BookLayout>
-          <Image source={{uri: team.src}} css={teamImage} resizeMode={"cover"} />
+          <Image source={{ uri: team.src }} css={teamImage} resizeMode={"cover"} />
           <BookLayout label={t("ValuesTitle")}>
             <span css={[fonts.body, standardStyles.elementalMarginBottom]}>
               <Trans
@@ -147,31 +144,33 @@ function Strong({ children }: { children: React.ReactNode }) {
 
 const layout = css({
   display: "flex",
-  flexDirection: "column"
+  flexDirection: "column",
 })
 const logoArea = css({
   justifyContent: "flex-end",
   [WHEN_MOBILE]: standardStyles.sectionMarginMobile,
   [WHEN_TABLET]: standardStyles.sectionMarginTablet,
-  [WHEN_DESKTOP]: standardStyles.sectionMarginTop,})
+  [WHEN_DESKTOP]: standardStyles.sectionMarginTop,
+})
 
 const logoColumn = css({
-  gridColumn: "2"
+  gridColumn: "2",
 })
 
 const link = css({
   a: {
     fontFamily: "EB Garamond",
-    fontSize: "20px"
-  }
+    fontSize: "20px",
+  },
 })
 
 const foundation = css({
-  lineHeight: "42px"
+  lineHeight: "42px",
 })
 
 const teamImage = css({
-  width: "100%", height: 650
+  width: "100%",
+  height: 650,
 })
 
 export default withNamespaces("about")(About)
