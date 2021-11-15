@@ -28,7 +28,7 @@ export async function create(data) {
 async function legacy(data) {
   return getAirtable<Fields>("Web")
     .create(convert(data))
-    .catch((e) => undefined)
+    .catch(() => undefined)
 }
 
 function convert(data): Fields {
