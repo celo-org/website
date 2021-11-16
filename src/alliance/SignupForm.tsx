@@ -80,7 +80,7 @@ export default function SignupForm() {
                 isDarkMode={true}
                 label={t("form.mielpoto")}
                 onInput={onInput}
-                name="honeypot"
+                name="mielpoto"
                 value={formState.form.mielpoto}
               />
             </div>
@@ -129,8 +129,8 @@ const inputContainerCss = css(flex, {
 })
 
 const honeypotCss = css(inputContainerCss, {
-  // transform: "scale(0, 0)",
-  // position: "fixed"
+  transform: "scale(0, 0)",
+  position: "fixed",
 })
 
 const buttonContainerCss = css(flex, {
