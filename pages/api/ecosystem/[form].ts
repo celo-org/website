@@ -8,8 +8,13 @@ const CREATED = 201
 
 async function post(req: NextApiRequest, res: NextApiResponse) {
   try {
-    await ecoFundSubmission(req.body, req.query.form as Tables)
-    res.status(CREATED).json({ ok: true })
+    if (!req.body.mielpoto) {
+      await ecoFundSubmission(req.body, req.query.form as Tables)
+      res.status(CREATED).json({ ok: true })
+    } else {
+      console.info("suspected bot", req.body)
+      res.status(CREATED).json({ ok: true })
+    }
   } catch (e) {
     respondError(res, e)
   }
