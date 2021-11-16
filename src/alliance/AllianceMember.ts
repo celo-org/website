@@ -14,5 +14,5 @@ export interface NewMember {
   email: string
   contribution: string
   subscribe: boolean
-  honeypot: string
+  mielpoto: string
 }

@@ -19,7 +19,7 @@ const BLANK_FORM: NewMember = {
   email: "",
   contribution: "",
   subscribe: false,
-  honeypot: "",
+  mielpoto: "",
 }
 
 function validateWith(fields: NewMember) {
@@ -28,7 +28,7 @@ function validateWith(fields: NewMember) {
       return !emailIsValid(fields[key])
     } else if (key === "subscribe" || key === "contribution") {
       return false
-    } else if (key === "honeypot") {
+    } else if (key === "mielpoto") {
       return false
     } else {
       return !hasField(fields[key])
@@ -78,10 +78,10 @@ export default function SignupForm() {
             <div css={honeypotCss}>
               <LabeledInput
                 isDarkMode={true}
-                label={t("form.honeypot")}
+                label={t("form.mielpoto")}
                 onInput={onInput}
                 name="honeypot"
-                value={formState.form.honeypot}
+                value={formState.form.mielpoto}
               />
             </div>
           </div>

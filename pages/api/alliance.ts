@@ -9,7 +9,7 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
       const allies = await getAllies()
       res.json(allies.filter((ally) => ally.records.length > 0))
     } else if (req.method === "POST") {
-      if (!req.body.honeypot) {
+      if (!req.body.mielpoto) {
         await create(req.body)
         res.status(CREATED).json({ ok: true })
       } else {

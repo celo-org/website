@@ -40,6 +40,7 @@ export default function Form(props: FormContentType) {
 
   return (
     <form action={props.route} method="post" css={styles} onSubmit={handleSubmit(onSubmit)}>
+      <input type={"text"} css={inputDarkStyle} {...register("mielpoto")} />
       {props.fields.map((input) => {
         const attributes = register(input.fields.name, {
           required: input.fields.required,
