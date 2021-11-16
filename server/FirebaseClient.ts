@@ -1,5 +1,6 @@
 import firebase from "firebase/compat/app"
 import "firebase/compat/database"
+import { getAnalytics } from "firebase/analytics"
 import getConfig from "next/config"
 import { NETWORK, RequestRecord, RequestStatus } from "../src/fauceting/FaucetInterfaces"
 // Code in this file is sent to the browser.
@@ -9,7 +10,8 @@ async function getFirebase() {
   if (!firebase.apps.length) {
     const { publicRuntimeConfig } = getConfig()
     // These variables are defined in `env-config.js` file in the parent directory.
-    firebase.initializeApp(publicRuntimeConfig.FIREBASE_CONFIG)
+    const app = firebase.initializeApp(publicRuntimeConfig.FIREBASE_CONFIG)
+    getAnalytics(app)
   }
   return firebase
 }
