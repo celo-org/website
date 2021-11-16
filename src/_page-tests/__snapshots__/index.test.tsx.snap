@@ -332,7 +332,7 @@ exports[`HomePage renders 1`] = `
   .emotion-8 {
     width: 100%;
     background-color: #111214;
-    background: linear-gradient(180deg, rgba(46, 51, 56, 0.1) 1%, rgba(46, 51, 56, 0.6) 20%, #111214 48.13%);
+    background: linear-gradient(180deg, rgba(17, 18, 20, 0.1) 1%, rgba(17, 18, 20, 0.6) 20%, #111214 48.13%);
     z-index: 20;
     opacity: 1;
     padding-top: 60px;
