@@ -1,9 +1,13 @@
-import { Request, Response } from "express"
+import { NextApiRequest, NextApiResponse } from "next"
 import { RequestStatus, RequestType } from "../src/fauceting/FaucetInterfaces"
 import captchaVerify from "./captchaVerify"
 import { sendRequest } from "./FirebaseServerSide"
 
-export async function faucetOrInviteController(req: Request, res: Response, type: RequestType) {
+export async function faucetOrInviteController(
+  req: NextApiRequest,
+  res: NextApiResponse,
+  type: RequestType
+) {
   const { captchaToken, beneficiary, mobileOS } = req.body
   const captchaResponse = await captchaVerify(captchaToken)
   if (captchaResponse.success) {

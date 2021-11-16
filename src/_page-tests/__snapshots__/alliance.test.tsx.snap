@@ -97,7 +97,7 @@ exports[`Alliance renders 1`] = `
   font-weight: 500;
 }
 
-.emotion-43 {
+.emotion-38 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -118,7 +118,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-43 {
+  .emotion-38 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -126,7 +126,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-49 {
+.emotion-44 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -163,11 +163,11 @@ exports[`Alliance renders 1`] = `
   align-self: center;
 }
 
-.emotion-50 {
+.emotion-45 {
   margin-left: 10px;
 }
 
-.emotion-51 {
+.emotion-46 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -178,7 +178,7 @@ exports[`Alliance renders 1`] = `
   align-items: center;
 }
 
-.emotion-139 {
+.emotion-134 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -198,14 +198,14 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-139 {
+  .emotion-134 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-140 {
+.emotion-135 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -223,7 +223,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-140 {
+  .emotion-135 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -237,7 +237,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-141 {
+.emotion-136 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -257,7 +257,7 @@ exports[`Alliance renders 1`] = `
   width: 100%;
 }
 
-.emotion-142 {
+.emotion-137 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -286,7 +286,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-142 {
+  .emotion-137 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -303,7 +303,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-142 {
+  .emotion-137 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -315,39 +315,39 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-142 {
+  .emotion-137 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-142 {
+  .emotion-137 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-142 {
+  .emotion-137 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-142 {
+  .emotion-137 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-142 {
+  .emotion-137 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
-.emotion-143 {
+.emotion-138 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -363,12 +363,12 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-143 {
+  .emotion-138 {
     text-align: center;
   }
 }
 
-.emotion-144 {
+.emotion-139 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -383,12 +383,12 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-144 {
+  .emotion-139 {
     text-align: center;
   }
 }
 
-.emotion-145 {
+.emotion-140 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +411,7 @@ exports[`Alliance renders 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-146 {
+.emotion-141 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -430,19 +430,19 @@ exports[`Alliance renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-147 {
+.emotion-142 {
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.emotion-148 {
+.emotion-143 {
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.emotion-150 {
+.emotion-145 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -454,7 +454,7 @@ exports[`Alliance renders 1`] = `
   margin: 30px 50px;
 }
 
-.emotion-199 {
+.emotion-194 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -474,14 +474,14 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-199 {
+  .emotion-194 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-200 {
+.emotion-195 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -499,7 +499,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-200 {
+  .emotion-195 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -513,7 +513,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-214 {
+.emotion-209 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3132,110 +3132,9 @@ exports[`Alliance renders 1`] = `
                   />
                 </div>
               </div>
-              <div
-                className="emotion-19"
-              >
-                <div
-                  className="emotion-0"
-                  style={
-                    Object {
-                      "WebkitBoxDirection": "normal",
-                      "WebkitBoxOrient": "horizontal",
-                      "WebkitFlexDirection": "row",
-                      "flexDirection": "row",
-                      "msFlexDirection": "row",
-                    }
-                  }
-                >
-                  <div
-                    className="emotion-0"
-                    style={
-                      Object {
-                        "borderBottomColor": "rgba(221,221,221,1.00)",
-                        "borderBottomLeftRadius": "3px",
-                        "borderBottomRightRadius": "3px",
-                        "borderBottomWidth": "1px",
-                        "borderLeftColor": "rgba(221,221,221,1.00)",
-                        "borderLeftWidth": "1px",
-                        "borderRightColor": "rgba(221,221,221,1.00)",
-                        "borderRightWidth": "1px",
-                        "borderTopColor": "rgba(221,221,221,1.00)",
-                        "borderTopLeftRadius": "3px",
-                        "borderTopRightRadius": "3px",
-                        "borderTopWidth": "1px",
-                        "paddingLeft": "2px",
-                        "paddingRight": "2px",
-                      }
-                    }
-                  >
-                    <div
-                      className="emotion-7"
-                      dir="auto"
-                      onClick={[Function]}
-                      style={
-                        Object {
-                          "MozTransitionProperty": "opacity",
-                          "WebkitTransform": "translateY(-2px) translateX(1px)",
-                          "WebkitTransitionDuration": "100ms",
-                          "WebkitTransitionProperty": "opacity",
-                          "color": "rgba(221,221,221,1.00)",
-                          "opacity": 0,
-                          "position": "absolute",
-                          "transform": "translateY(-2px) translateX(1px)",
-                          "transitionDuration": "100ms",
-                          "transitionProperty": "opacity",
-                        }
-                      }
-                    >
-                      ✓
-                    </div>
-                    <input
-                      checked={false}
-                      name="subscribe"
-                      onChange={[Function]}
-                      onClick={[Function]}
-                      style={
-                        Object {
-                          "opacity": 0,
-                        }
-                      }
-                      type="checkbox"
-                    />
-                  </div>
-                  <div
-                    className="emotion-7"
-                    dir="auto"
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "color": "rgba(129,134,139,1.00)",
-                        "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                        "fontSize": "16px",
-                        "fontWeight": "500",
-                        "lineHeight": "20px",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
-                  >
-                    <label
-                      htmlFor="subscribe"
-                      name="subscribe"
-                      onClick={[Function]}
-                      style={
-                        Object {
-                          "paddingLeft": "10px",
-                          "paddingRight": "10px",
-                        }
-                      }
-                    >
-                      Join the Celo Newsletter
-                    </label>
-                  </div>
-                </div>
-              </div>
             </div>
             <div
-              className="emotion-43"
+              className="emotion-38"
             >
               <div
                 className="emotion-0"
@@ -3246,7 +3145,7 @@ exports[`Alliance renders 1`] = `
                 onMouseUp={[Function]}
               >
                 <a
-                  className="emotion-6 emotion-46 emotion-7"
+                  className="emotion-6 emotion-41 emotion-7"
                   dir="auto"
                   onClick={[Function]}
                   role="link"
@@ -3305,7 +3204,7 @@ exports[`Alliance renders 1`] = `
                 className="emotion-24"
               >
                 <p
-                  className="emotion-49"
+                  className="emotion-44"
                 >
                   <svg
                     fill="none"
@@ -3321,7 +3220,7 @@ exports[`Alliance renders 1`] = `
                     />
                   </svg>
                   <span
-                    className="emotion-50"
+                    className="emotion-45"
                   >
                     Application Submitted
                   </span>
@@ -3329,7 +3228,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-51"
+              className="emotion-46"
             >
               <div
                 aria-hidden={true}
@@ -3505,7 +3404,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe we have a lot to learn from 
             <span
-              className="emotion-7 emotion-67"
+              className="emotion-7 emotion-62"
               onClick={[Function]}
               style={
                 Object {
@@ -3838,7 +3737,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe in designing 
             <span
-              className="emotion-7 emotion-67"
+              className="emotion-7 emotion-62"
               onClick={[Function]}
               style={
                 Object {
@@ -3949,7 +3848,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <a
-                className="emotion-6 emotion-46 emotion-7"
+                className="emotion-6 emotion-41 emotion-7"
                 dir="auto"
                 href="https://medium.com/celoorg/how-to-design-for-all-stories-from-tanzania-refugees-8b34594d64ae"
                 onClick={[Function]}
@@ -4264,7 +4163,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe systems are complex and require 
             <span
-              className="emotion-7 emotion-67"
+              className="emotion-7 emotion-62"
               onClick={[Function]}
               style={
                 Object {
@@ -4374,7 +4273,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <a
-                className="emotion-6 emotion-46 emotion-7"
+                className="emotion-6 emotion-41 emotion-7"
                 dir="auto"
                 href="https://medium.com/celoorg/a-cryptocurrency-for-every-juan-144144e62d5"
                 onClick={[Function]}
@@ -4683,14 +4582,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      className="emotion-139"
+      className="emotion-134"
     >
       “
       The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications
       ”
     </blockquote>
     <figcaption
-      className="emotion-140"
+      className="emotion-135"
     >
       <span>
         Gigi Gatti, Grameen Foundation
@@ -4698,29 +4597,29 @@ exports[`Alliance renders 1`] = `
     </figcaption>
   </div>
   <section
-    className="emotion-141"
+    className="emotion-136"
   >
     <div
-      className="emotion-142"
+      className="emotion-137"
     >
       <h3
-        className="emotion-143"
+        className="emotion-138"
       >
         Benefits of collaborating on a mission-driven blockchain
       </h3>
       <h2
-        className="emotion-144"
+        className="emotion-139"
       >
         What the Alliance offers
       </h2>
       <div
-        className="emotion-145"
+        className="emotion-140"
       >
         <div
-          className="emotion-146"
+          className="emotion-141"
         >
           <div
-            className="emotion-147"
+            className="emotion-142"
           >
             <span
               style={
@@ -4759,7 +4658,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "background": "none",
@@ -4776,7 +4675,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-148"
+                className="emotion-143"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4805,12 +4704,11 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-148"
+                  className="emotion-143"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -4838,16 +4736,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-150"
+            className="emotion-145"
           >
             Connect with like-minded members
           </p>
         </div>
         <div
-          className="emotion-146"
+          className="emotion-141"
         >
           <div
-            className="emotion-147"
+            className="emotion-142"
           >
             <span
               style={
@@ -4886,7 +4784,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "background": "none",
@@ -4903,7 +4801,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-148"
+                className="emotion-143"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4932,12 +4830,11 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-148"
+                  className="emotion-143"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -4965,16 +4862,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-150"
+            className="emotion-145"
           >
             Build and shape improvements to the Celo platform
           </p>
         </div>
         <div
-          className="emotion-146"
+          className="emotion-141"
         >
           <div
-            className="emotion-147"
+            className="emotion-142"
           >
             <span
               style={
@@ -5013,7 +4910,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "background": "none",
@@ -5030,7 +4927,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-148"
+                className="emotion-143"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5059,12 +4956,11 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-148"
+                  className="emotion-143"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -5092,16 +4988,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-150"
+            className="emotion-145"
           >
             Attend special programs and events
           </p>
         </div>
         <div
-          className="emotion-146"
+          className="emotion-141"
         >
           <div
-            className="emotion-147"
+            className="emotion-142"
           >
             <span
               style={
@@ -5140,7 +5036,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "background": "none",
@@ -5157,7 +5053,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-148"
+                className="emotion-143"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5186,12 +5082,11 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-148"
+                  className="emotion-143"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -5219,16 +5114,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-150"
+            className="emotion-145"
           >
             Access to education and support
           </p>
         </div>
         <div
-          className="emotion-146"
+          className="emotion-141"
         >
           <div
-            className="emotion-147"
+            className="emotion-142"
           >
             <span
               style={
@@ -5267,7 +5162,7 @@ exports[`Alliance renders 1`] = `
                 <img
                   alt=""
                   aria-hidden={true}
-                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                   style={
                     Object {
                       "background": "none",
@@ -5284,7 +5179,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-148"
+                className="emotion-143"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5313,12 +5208,11 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-148"
+                  className="emotion-143"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
-                  src="/_next/image?url=%2Fimage.png&w=96&q=75"
-                  srcSet="/_next/image?url=%2Fimage.png&w=48&q=75 1x, /_next/image?url=%2Fimage.png&w=96&q=75 2x"
+                  src="/image.png"
                   style={
                     Object {
                       "border": "none",
@@ -5346,7 +5240,7 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-150"
+            className="emotion-145"
           >
             Expand your reach to help more communities
           </p>
@@ -5713,7 +5607,7 @@ exports[`Alliance renders 1`] = `
             }
           >
             <a
-              className="emotion-6 emotion-46 emotion-7"
+              className="emotion-6 emotion-41 emotion-7"
               dir="auto"
               href="https://medium.com/celoOrg"
               onClick={[Function]}
@@ -5857,14 +5751,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      className="emotion-199"
+      className="emotion-194"
     >
       “
       Our hope is that this Alliance will start unlocking the potential of internet money
       ”
     </blockquote>
     <figcaption
-      className="emotion-200"
+      className="emotion-195"
     >
       <span>
         Katie Haun, Andreessen Horowitz
@@ -5956,7 +5850,7 @@ exports[`Alliance renders 1`] = `
         >
           Member contributions, 
           <span
-            className="emotion-7 emotion-67"
+            className="emotion-7 emotion-62"
             onClick={[Function]}
             style={
               Object {
@@ -6037,7 +5931,7 @@ exports[`Alliance renders 1`] = `
             Refine By
           </div>
           <div
-            className="emotion-214"
+            className="emotion-209"
           >
             <div
               className="emotion-0"
@@ -8242,110 +8136,9 @@ exports[`Alliance renders 1`] = `
                 />
               </div>
             </div>
-            <div
-              className="emotion-19"
-            >
-              <div
-                className="emotion-0"
-                style={
-                  Object {
-                    "WebkitBoxDirection": "normal",
-                    "WebkitBoxOrient": "horizontal",
-                    "WebkitFlexDirection": "row",
-                    "flexDirection": "row",
-                    "msFlexDirection": "row",
-                  }
-                }
-              >
-                <div
-                  className="emotion-0"
-                  style={
-                    Object {
-                      "borderBottomColor": "rgba(221,221,221,1.00)",
-                      "borderBottomLeftRadius": "3px",
-                      "borderBottomRightRadius": "3px",
-                      "borderBottomWidth": "1px",
-                      "borderLeftColor": "rgba(221,221,221,1.00)",
-                      "borderLeftWidth": "1px",
-                      "borderRightColor": "rgba(221,221,221,1.00)",
-                      "borderRightWidth": "1px",
-                      "borderTopColor": "rgba(221,221,221,1.00)",
-                      "borderTopLeftRadius": "3px",
-                      "borderTopRightRadius": "3px",
-                      "borderTopWidth": "1px",
-                      "paddingLeft": "2px",
-                      "paddingRight": "2px",
-                    }
-                  }
-                >
-                  <div
-                    className="emotion-7"
-                    dir="auto"
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "MozTransitionProperty": "opacity",
-                        "WebkitTransform": "translateY(-2px) translateX(1px)",
-                        "WebkitTransitionDuration": "100ms",
-                        "WebkitTransitionProperty": "opacity",
-                        "color": "rgba(221,221,221,1.00)",
-                        "opacity": 0,
-                        "position": "absolute",
-                        "transform": "translateY(-2px) translateX(1px)",
-                        "transitionDuration": "100ms",
-                        "transitionProperty": "opacity",
-                      }
-                    }
-                  >
-                    ✓
-                  </div>
-                  <input
-                    checked={false}
-                    name="subscribe"
-                    onChange={[Function]}
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "opacity": 0,
-                      }
-                    }
-                    type="checkbox"
-                  />
-                </div>
-                <div
-                  className="emotion-7"
-                  dir="auto"
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "color": "rgba(129,134,139,1.00)",
-                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                      "fontSize": "16px",
-                      "fontWeight": "500",
-                      "lineHeight": "20px",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
-                >
-                  <label
-                    htmlFor="subscribe"
-                    name="subscribe"
-                    onClick={[Function]}
-                    style={
-                      Object {
-                        "paddingLeft": "10px",
-                        "paddingRight": "10px",
-                      }
-                    }
-                  >
-                    Join the Celo Newsletter
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <div
-            className="emotion-43"
+            className="emotion-38"
           >
             <div
               className="emotion-0"
@@ -8356,7 +8149,7 @@ exports[`Alliance renders 1`] = `
               onMouseUp={[Function]}
             >
               <a
-                className="emotion-6 emotion-46 emotion-7"
+                className="emotion-6 emotion-41 emotion-7"
                 dir="auto"
                 onClick={[Function]}
                 role="link"
@@ -8415,7 +8208,7 @@ exports[`Alliance renders 1`] = `
               className="emotion-24"
             >
               <p
-                className="emotion-49"
+                className="emotion-44"
               >
                 <svg
                   fill="none"
@@ -8431,7 +8224,7 @@ exports[`Alliance renders 1`] = `
                   />
                 </svg>
                 <span
-                  className="emotion-50"
+                  className="emotion-45"
                 >
                   Application Submitted
                 </span>
@@ -8439,7 +8232,7 @@ exports[`Alliance renders 1`] = `
             </div>
           </div>
           <div
-            className="emotion-51"
+            className="emotion-46"
           >
             <div
               aria-hidden={true}
