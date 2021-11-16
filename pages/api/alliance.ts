@@ -9,8 +9,13 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
       const allies = await getAllies()
       res.json(allies.filter((ally) => ally.records.length > 0))
     } else if (req.method === "POST") {
-      await create(req.body)
-      res.status(CREATED).json({ ok: true })
+      if (!req.body.honeypot) {
+        await create(req.body)
+        res.status(CREATED).json({ ok: true })
+      } else {
+        console.info("suspected bot", req.body)
+        res.status(CREATED).json({ ok: true })
+      }
     } else {
       res.status(405).json({ error: `${req.method} does not exist here` })
     }

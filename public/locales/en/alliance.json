@@ -10,7 +10,8 @@
     "email": "Email",
     "contribution": "How might you contribute to the Alliance?",
     "subscribe": "Join the Celo Newsletter",
-    "btn": "Apply"
+    "btn": "Apply",
+    "honeypot": "Account"
   },
   "affirmations": {
     "smallTitle": "Take action to solve real-world problems",
