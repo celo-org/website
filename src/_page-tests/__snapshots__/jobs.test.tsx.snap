@@ -109,7 +109,7 @@ exports[`JoinJobsPage with jobs renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "36px",
                   "lineHeight": "40px",
@@ -129,7 +129,7 @@ exports[`JoinJobsPage with jobs renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
@@ -527,7 +527,7 @@ exports[`JoinJobsPage without jobs renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "36px",
                   "lineHeight": "40px",
@@ -547,7 +547,7 @@ exports[`JoinJobsPage without jobs renders 1`] = `
               role="heading"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",

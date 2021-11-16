@@ -161,7 +161,7 @@ exports[`Terms renders 1`] = `
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -281,7 +281,7 @@ exports[`Terms renders 1`] = `
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
 }
 
@@ -297,7 +297,7 @@ exports[`Terms renders 1`] = `
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
   margin-bottom: 20px;
 }
@@ -338,7 +338,7 @@ exports[`Terms renders 1`] = `
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -664,7 +664,7 @@ exports[`Terms renders 1`] = `
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",

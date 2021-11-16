@@ -40,7 +40,7 @@ exports[`Error renders 1`] = `
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -63,7 +63,7 @@ exports[`Error renders 1`] = `
   font-size: 28px;
   line-height: 36;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 36px;
   text-align: center;
   margin-bottom: 40px;
