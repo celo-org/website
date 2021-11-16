@@ -34,6 +34,42 @@ exports[`Papers renders 1`] = `
   width: 100%;
 }
 
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-2 {
     display: grid;
@@ -75,40 +111,10 @@ exports[`Papers renders 1`] = `
   }
 }
 
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 12px;
-  padding-right: 12px;
-  width: 100%;
-  max-width: 100vw;
-  overflow: hidden;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-column-gap: 24px;
-  column-gap: 24px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+@media (min-width: 992px) {
+  .emotion-2 {
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
@@ -120,12 +126,6 @@ exports[`Papers renders 1`] = `
 @media (max-width: 576px) {
   .emotion-2 {
     margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-2 {
-    margin-bottom: 60px;
   }
 }
 
@@ -199,6 +199,23 @@ exports[`Papers renders 1`] = `
   margin-bottom: 20px;
 }
 
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-6 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
+  }
+}
+
 @media (min-width: 992px) {
   .emotion-6 {
     display: grid;
@@ -220,23 +237,6 @@ exports[`Papers renders 1`] = `
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-6 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-6 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-right: 24px;
-    padding-left: 24px;
-    width: 100%;
-    max-width: 982px;
   }
 }
 
@@ -337,7 +337,6 @@ exports[`Papers renders 1`] = `
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -574,7 +573,6 @@ exports[`Papers renders 1`] = `
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -716,7 +714,6 @@ exports[`Papers renders 1`] = `
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -858,7 +855,6 @@ exports[`Papers renders 1`] = `
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -1095,7 +1091,6 @@ exports[`Papers renders 1`] = `
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -1237,7 +1232,6 @@ exports[`Papers renders 1`] = `
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -1474,7 +1468,6 @@ exports[`Papers renders 1`] = `
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {

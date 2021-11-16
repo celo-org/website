@@ -32,16 +32,6 @@ exports[`Navigation renders 1`] = `
   top: 0;
 }
 
-@media (min-width: 992px) {
-  .emotion-1 {
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 30px;
-    padding-left: 30px;
-    position: relative;
-  }
-}
-
 .emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -79,6 +69,16 @@ exports[`Navigation renders 1`] = `
   transition-property: opacity color;
   transition-duration: 200ms;
   opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .emotion-1 {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    position: relative;
+  }
 }
 
 .emotion-2 {
