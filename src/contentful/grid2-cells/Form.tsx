@@ -13,7 +13,6 @@ const CLEAR_TIME = 1000 * 30
 
 export default function Form(props: FormContentType) {
   const { t } = useTranslation(NameSpaces.common)
-
   const { register, handleSubmit, formState, setError, reset, clearErrors } = useForm()
   const onSubmit = async (data) => {
     const submission = await postForm(props.route, data)
@@ -40,7 +39,7 @@ export default function Form(props: FormContentType) {
 
   return (
     <form action={props.route} method="post" css={styles} onSubmit={handleSubmit(onSubmit)}>
-      <input type={"text"} css={inputDarkStyle} {...register("mielpoto")} />
+      <input type={"text"} css={mielpoto} {...register("mielpoto")} />
       {props.fields.map((input) => {
         const attributes = register(input.fields.name, {
           required: input.fields.required,
@@ -143,4 +142,8 @@ const rootStyle = css({
     marginTop: 24,
     columnGap: 24,
   },
+})
+const mielpoto = css({
+  transform: "scale(0, 0)",
+  position: "fixed",
 })
