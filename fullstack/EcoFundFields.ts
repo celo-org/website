@@ -7,7 +7,6 @@ export enum ApplicationFields {
   founderEmail = "Founder email filling out application",
   coFounderEmail = "Cofounder emails (if relevant)",
   video = "Optional: URL of a simple 1 minute unlisted YouTube, Vimeo, or Youku video introducing the founder(s)",
-  mielpoto = "Account",
 }
 
 export interface Application {
@@ -18,7 +17,6 @@ export interface Application {
   founderEmail: string
   coFounderEmail: string | undefined
   video: string | undefined
-  mielpoto: string
 }
 
 export const ApplicationKeys = Object.keys(ApplicationFields)

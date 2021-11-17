@@ -133,6 +133,15 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               >
                 {({ onSubmit, onInput, formState }) => (
                   <Form>
+                    <div css={honeypot}>
+                      <LabeledInput
+                        key={"mielpoto"}
+                        label={"Account"}
+                        value={formState.form["mielpoto"]}
+                        name={"mielpoto"}
+                        onInput={onInput}
+                      />
+                    </div>
                     {ApplicationKeys.map((key) => (
                       <LabeledInput
                         key={key}
@@ -182,6 +191,15 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               >
                 {({ onSubmit: onSubmit, onInput, formState }) => (
                   <Form>
+                    <div css={honeypot}>
+                      <LabeledInput
+                        key={"mielpoto"}
+                        label={"Account"}
+                        value={formState.form["mielpoto"]}
+                        name={"mielpoto"}
+                        onInput={onInput}
+                      />
+                    </div>
                     {RecommendationKeys.map((key) => (
                       <LabeledInput
                         key={key}
@@ -242,7 +260,6 @@ const blankApplicationForm: Application = {
   founderEmail: "",
   coFounderEmail: "",
   video: "",
-  mielpoto: "",
 }
 
 function invalidApplicationFields(fields: Record<keyof Application, string>) {
