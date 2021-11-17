@@ -28,7 +28,7 @@ import {
   RecommendationKeys,
   Tables,
 } from "../../fullstack/EcoFundFields"
-import { css } from "@emotion/react"
+import { honeypotCss } from "src/estyles"
 
 interface State {
   table: Tables
@@ -133,7 +133,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               >
                 {({ onSubmit, onInput, formState }) => (
                   <Form>
-                    <div css={honeypot}>
+                    <div css={honeypotCss}>
                       <LabeledInput
                         key={"mielpoto"}
                         label={"Account"}
@@ -191,7 +191,7 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               >
                 {({ onSubmit: onSubmit, onInput, formState }) => (
                   <Form>
-                    <div css={honeypot}>
+                    <div css={honeypotCss}>
                       <LabeledInput
                         key={"mielpoto"}
                         label={"Account"}
@@ -318,9 +318,4 @@ const styles = StyleSheet.create({
   formContainer: {
     width: "100%",
   },
-})
-
-const honeypot = css({
-  transform: "scale(0, 0)",
-  position: "fixed",
 })

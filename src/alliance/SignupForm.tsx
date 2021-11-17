@@ -12,7 +12,7 @@ import { useScreenSize } from "src/layout/ScreenSize"
 import { SIZE } from "src/shared/Button.3"
 import { standardStyles } from "src/styles"
 import { css } from "@emotion/react"
-import { flex, flexRow, WHEN_DESKTOP, WHEN_MOBILE } from "src/estyles"
+import { flex, flexRow, WHEN_DESKTOP, WHEN_MOBILE, honeypotCss } from "src/estyles"
 
 const BLANK_FORM: NewMember = {
   name: "",
@@ -126,11 +126,6 @@ const inputContainerCss = css(flex, {
   flex: 1,
   marginLeft: 5,
   marginRight: 5,
-})
-
-const honeypotCss = css(inputContainerCss, {
-  transform: "scale(0, 0)",
-  position: "fixed",
 })
 
 const buttonContainerCss = css(flex, {
