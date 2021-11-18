@@ -324,7 +324,6 @@ exports[`UserAgreement renders 1`] = `
         <div
           className="emotion-11"
           dir="auto"
-          onClick={[Function]}
           style={
             Object {
               "color": "rgba(17,18,20,1.00)",
@@ -344,7 +343,6 @@ exports[`UserAgreement renders 1`] = `
         <div
           className="emotion-11"
           dir="auto"
-          onClick={[Function]}
           style={
             Object {
               "color": "rgba(17,18,20,1.00)",

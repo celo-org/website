@@ -352,7 +352,6 @@ exports[`DevelopersPage renders 1`] = `
               aria-level="2"
               className="emotion-20 emotion-21"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -371,7 +370,6 @@ exports[`DevelopersPage renders 1`] = `
               aria-level="3"
               className="emotion-20 emotion-21"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -391,7 +389,6 @@ exports[`DevelopersPage renders 1`] = `
             <div
               className="emotion-21"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
@@ -492,7 +489,6 @@ exports[`DevelopersPage renders 1`] = `
             <div
               className="emotion-21"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
@@ -520,7 +516,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -540,7 +535,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -560,7 +554,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -580,7 +573,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -600,7 +592,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -933,7 +924,6 @@ exports[`DevelopersPage renders 1`] = `
             <div
               className="emotion-21"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
@@ -961,7 +951,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -981,7 +970,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1001,7 +989,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1252,7 +1239,6 @@ exports[`DevelopersPage renders 1`] = `
             <div
               className="emotion-21"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
@@ -1280,7 +1266,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1300,7 +1285,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1320,7 +1304,6 @@ exports[`DevelopersPage renders 1`] = `
               <li
                 className="emotion-20 emotion-21"
                 dir="auto"
-                onClick={[Function]}
                 role="listitem"
                 style={
                   Object {
@@ -1531,7 +1514,6 @@ exports[`DevelopersPage renders 1`] = `
             aria-level="4"
             className="emotion-20 emotion-21"
             dir="auto"
-            onClick={[Function]}
             role="heading"
             style={
               Object {
@@ -1550,7 +1532,6 @@ exports[`DevelopersPage renders 1`] = `
           <div
             className="emotion-21"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",

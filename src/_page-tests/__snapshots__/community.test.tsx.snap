@@ -10,7 +10,7 @@ exports[`Community renders 1`] = `
   opacity: 0;
 }
 
-.emotion-155 {
+.emotion-153 {
   -webkit-transform: scale(0, 0);
   -moz-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
@@ -18,11 +18,11 @@ exports[`Community renders 1`] = `
   position: fixed;
 }
 
-.emotion-156 {
+.emotion-154 {
   margin-bottom: 10px;
 }
 
-.emotion-164 {
+.emotion-162 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -39,7 +39,7 @@ exports[`Community renders 1`] = `
   max-height: 0;
 }
 
-.emotion-165 {
+.emotion-163 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -58,7 +58,7 @@ exports[`Community renders 1`] = `
   font-weight: 500;
 }
 
-.emotion-207 {
+.emotion-204 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -89,7 +89,7 @@ exports[`Community renders 1`] = `
   align-items: center;
 }
 
-.emotion-208 {
+.emotion-205 {
   margin-left: 10px;
 }
 
@@ -202,7 +202,6 @@ exports[`Community renders 1`] = `
             aria-level="1"
             className="emotion-6 emotion-7"
             dir="auto"
-            onClick={[Function]}
             role="heading"
             style={
               Object {
@@ -218,7 +217,6 @@ exports[`Community renders 1`] = `
           >
             <span
               className="emotion-7 emotion-9 r-animationKeyframes-clrlgt"
-              onClick={[Function]}
               style={
                 Object {
                   "WebkitAnimationDelay": "1650ms",
@@ -237,7 +235,6 @@ exports[`Community renders 1`] = `
             </span>
             <span
               className="emotion-7 emotion-9 r-animationKeyframes-clrlgt"
-              onClick={[Function]}
               style={
                 Object {
                   "WebkitAnimationDelay": "3650ms",
@@ -256,7 +253,6 @@ exports[`Community renders 1`] = `
             </span>
             <span
               className="emotion-7 emotion-9 r-animationKeyframes-clrlgt"
-              onClick={[Function]}
               style={
                 Object {
                   "WebkitAnimationDelay": "5250ms",
@@ -275,7 +271,6 @@ exports[`Community renders 1`] = `
             </span>
             <span
               className="emotion-7 emotion-9 r-animationKeyframes-clrlgt"
-              onClick={[Function]}
               style={
                 Object {
                   "WebkitAnimationDelay": "6450ms",
@@ -496,7 +491,6 @@ exports[`Community renders 1`] = `
               aria-level="2"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -517,7 +511,6 @@ exports[`Community renders 1`] = `
               aria-level="4"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -591,7 +584,6 @@ exports[`Community renders 1`] = `
               aria-level="3"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -613,7 +605,6 @@ exports[`Community renders 1`] = `
               aria-level="4"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -721,7 +712,6 @@ exports[`Community renders 1`] = `
             <div
               className="emotion-7"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -792,7 +782,6 @@ Therefore, when we design our tools, we keep in the front of our mind the people
               aria-level="3"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -814,7 +803,6 @@ Therefore, when we design our tools, we keep in the front of our mind the people
               aria-level="4"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -922,7 +910,6 @@ Therefore, when we design our tools, we keep in the front of our mind the people
             <div
               className="emotion-7"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -991,7 +978,6 @@ We believe that many of these features have great potential for positive impact,
               aria-level="3"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -1013,7 +999,6 @@ We believe that many of these features have great potential for positive impact,
               aria-level="4"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -1121,7 +1106,6 @@ We believe that many of these features have great potential for positive impact,
             <div
               className="emotion-7"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -1188,7 +1172,6 @@ We believe that many of these features have great potential for positive impact,
               aria-level="3"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -1210,7 +1193,6 @@ We believe that many of these features have great potential for positive impact,
               aria-level="4"
               className="emotion-6 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -1318,7 +1300,6 @@ We believe that many of these features have great potential for positive impact,
             <div
               className="emotion-7"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -1396,7 +1377,6 @@ We believe that many of these features have great potential for positive impact,
             aria-level="2"
             className="emotion-6 emotion-7"
             dir="auto"
-            onClick={[Function]}
             role="heading"
             style={
               Object {
@@ -1719,6 +1699,7 @@ We believe that many of these features have great potential for positive impact,
                   "textRendering": "geometricPrecision",
                 }
               }
+              target="_blog"
             >
               Read more on our blog
               <div
@@ -1844,7 +1825,6 @@ We believe that many of these features have great potential for positive impact,
             aria-level="2"
             className="emotion-6 emotion-7"
             dir="auto"
-            onClick={[Function]}
             role="heading"
             style={
               Object {
@@ -1920,6 +1900,7 @@ We believe that many of these features have great potential for positive impact,
                     "textRendering": "geometricPrecision",
                   }
                 }
+                target="_cfp"
               >
                 Call for Proposals
                 <div
@@ -2032,7 +2013,6 @@ We believe that many of these features have great potential for positive impact,
         aria-level="2"
         className="emotion-6 emotion-7"
         dir="auto"
-        onClick={[Function]}
         role="heading"
         style={
           Object {
@@ -2050,7 +2030,6 @@ We believe that many of these features have great potential for positive impact,
       <div
         className="emotion-7"
         dir="auto"
-        onClick={[Function]}
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
@@ -2067,7 +2046,6 @@ We believe that many of these features have great potential for positive impact,
       <div
         className="emotion-7"
         dir="auto"
-        onClick={[Function]}
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
@@ -2114,7 +2092,6 @@ We believe that many of these features have great potential for positive impact,
           <div
             className="emotion-7"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
@@ -2184,7 +2161,6 @@ We believe that many of these features have great potential for positive impact,
           <div
             className="emotion-7"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
@@ -2443,10 +2419,9 @@ We believe that many of these features have great potential for positive impact,
             onMouseLeave={[Function]}
             onMouseUp={[Function]}
           >
-            <a
-              className="emotion-6 emotion-19 emotion-7"
+            <div
+              className="emotion-19 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="link"
               style={
                 Object {
@@ -2481,9 +2456,10 @@ We believe that many of these features have great potential for positive impact,
                   "width": "fit-content",
                 }
               }
+              tabIndex="0"
             >
               Apply for Funding
-            </a>
+            </div>
           </div>
           <div
             className="emotion-0"
@@ -2549,10 +2525,9 @@ We believe that many of these features have great potential for positive impact,
             onMouseLeave={[Function]}
             onMouseUp={[Function]}
           >
-            <a
-              className="emotion-6 emotion-19 emotion-7"
+            <div
+              className="emotion-19 emotion-7"
               dir="auto"
-              onClick={[Function]}
               role="link"
               style={
                 Object {
@@ -2587,9 +2562,10 @@ We believe that many of these features have great potential for positive impact,
                   "width": "fit-content",
                 }
               }
+              tabIndex="0"
             >
               Recommend a Project 
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -2611,10 +2587,10 @@ We believe that many of these features have great potential for positive impact,
         >
           <form>
             <div
-              className="emotion-155"
+              className="emotion-153"
             >
               <div
-                className="emotion-156"
+                className="emotion-154"
               >
                 <div
                   className="emotion-0"
@@ -2627,7 +2603,6 @@ We believe that many of these features have great potential for positive impact,
                   <label
                     className="emotion-7"
                     dir="auto"
-                    onClick={[Function]}
                     style={
                       Object {
                         "color": "rgba(129,134,139,1.00)",
@@ -2647,7 +2622,7 @@ We believe that many of these features have great potential for positive impact,
                   autoCapitalize="sentences"
                   autoComplete="on"
                   autoCorrect="on"
-                  className="emotion-159"
+                  className="emotion-157"
                   dir="auto"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2696,7 +2671,7 @@ We believe that many of these features have great potential for positive impact,
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -2709,7 +2684,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -2729,7 +2703,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -2779,17 +2753,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -2802,7 +2776,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -2822,7 +2795,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -2872,17 +2845,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -2895,7 +2868,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -2915,7 +2887,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -2965,17 +2937,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -2988,7 +2960,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -3008,7 +2979,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3058,17 +3029,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -3081,7 +3052,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -3101,7 +3071,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3151,17 +3121,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Please enter a valid email
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -3174,7 +3144,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -3194,7 +3163,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3244,17 +3213,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Please enter a valid email
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -3267,7 +3236,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -3287,7 +3255,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3337,10 +3305,10 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Oops I’m blank!
                 </p>
@@ -3362,10 +3330,9 @@ We believe that many of these features have great potential for positive impact,
                 }
               }
             >
-              <a
-                className="emotion-6 emotion-19 emotion-7"
+              <div
+                className="emotion-19 emotion-7"
                 dir="auto"
-                onClick={[Function]}
                 role="link"
                 style={
                   Object {
@@ -3413,17 +3380,18 @@ We believe that many of these features have great potential for positive impact,
                     "width": "fit-content",
                   }
                 }
+                tabIndex="0"
               >
                 Apply
-              </a>
+              </div>
             </div>
             <div
               aria-hidden={true}
               aria-live="polite"
-              className="emotion-164"
+              className="emotion-162"
             >
               <p
-                className="emotion-207"
+                className="emotion-204"
               >
                 <svg
                   fill="none"
@@ -3439,7 +3407,7 @@ We believe that many of these features have great potential for positive impact,
                   />
                 </svg>
                 <span
-                  className="emotion-208"
+                  className="emotion-205"
                 >
                   Application Submitted
                 </span>
@@ -3448,10 +3416,10 @@ We believe that many of these features have great potential for positive impact,
             <div
               aria-hidden={true}
               aria-live="polite"
-              className="emotion-164"
+              className="emotion-162"
             >
               <p
-                className="emotion-165"
+                className="emotion-163"
               />
             </div>
           </form>
@@ -3468,10 +3436,10 @@ We believe that many of these features have great potential for positive impact,
         >
           <form>
             <div
-              className="emotion-155"
+              className="emotion-153"
             >
               <div
-                className="emotion-156"
+                className="emotion-154"
               >
                 <div
                   className="emotion-0"
@@ -3484,7 +3452,6 @@ We believe that many of these features have great potential for positive impact,
                   <label
                     className="emotion-7"
                     dir="auto"
-                    onClick={[Function]}
                     style={
                       Object {
                         "color": "rgba(129,134,139,1.00)",
@@ -3504,7 +3471,7 @@ We believe that many of these features have great potential for positive impact,
                   autoCapitalize="sentences"
                   autoComplete="on"
                   autoCorrect="on"
-                  className="emotion-159"
+                  className="emotion-157"
                   dir="auto"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -3553,7 +3520,7 @@ We believe that many of these features have great potential for positive impact,
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -3566,7 +3533,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -3586,7 +3552,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3636,17 +3602,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Please enter a valid email
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -3659,7 +3625,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -3679,7 +3644,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3729,17 +3694,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -3752,7 +3717,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -3772,7 +3736,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3822,17 +3786,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Please enter a valid email
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -3845,7 +3809,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -3865,7 +3828,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3915,17 +3878,17 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Oops I’m blank!
                 </p>
               </div>
             </div>
             <div
-              className="emotion-156"
+              className="emotion-154"
             >
               <div
                 className="emotion-0"
@@ -3938,7 +3901,6 @@ We believe that many of these features have great potential for positive impact,
                 <label
                   className="emotion-7"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(129,134,139,1.00)",
@@ -3958,7 +3920,7 @@ We believe that many of these features have great potential for positive impact,
                 autoCapitalize="sentences"
                 autoComplete="on"
                 autoCorrect="on"
-                className="emotion-159"
+                className="emotion-157"
                 dir="auto"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -4008,10 +3970,10 @@ We believe that many of these features have great potential for positive impact,
               <div
                 aria-hidden={true}
                 aria-live="polite"
-                className="emotion-164"
+                className="emotion-162"
               >
                 <p
-                  className="emotion-165"
+                  className="emotion-163"
                 >
                   Oops I’m blank!
                 </p>
@@ -4033,10 +3995,9 @@ We believe that many of these features have great potential for positive impact,
                 }
               }
             >
-              <a
-                className="emotion-6 emotion-19 emotion-7"
+              <div
+                className="emotion-19 emotion-7"
                 dir="auto"
-                onClick={[Function]}
                 role="link"
                 style={
                   Object {
@@ -4084,17 +4045,18 @@ We believe that many of these features have great potential for positive impact,
                     "width": "fit-content",
                   }
                 }
+                tabIndex="0"
               >
                 Recommend
-              </a>
+              </div>
             </div>
             <div
               aria-hidden={true}
               aria-live="polite"
-              className="emotion-164"
+              className="emotion-162"
             >
               <p
-                className="emotion-207"
+                className="emotion-204"
               >
                 <svg
                   fill="none"
@@ -4110,7 +4072,7 @@ We believe that many of these features have great potential for positive impact,
                   />
                 </svg>
                 <span
-                  className="emotion-208"
+                  className="emotion-205"
                 >
                   Recommendation Submitted
                 </span>
@@ -4119,10 +4081,10 @@ We believe that many of these features have great potential for positive impact,
             <div
               aria-hidden={true}
               aria-live="polite"
-              className="emotion-164"
+              className="emotion-162"
             >
               <p
-                className="emotion-165"
+                className="emotion-163"
               />
             </div>
           </form>

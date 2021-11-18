@@ -306,7 +306,6 @@ exports[`Audits renders 1`] = `
           aria-level="3"
           className="emotion-7 emotion-8"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -564,7 +563,6 @@ exports[`Audits renders 1`] = `
           aria-level="3"
           className="emotion-7 emotion-8"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -632,7 +630,6 @@ exports[`Audits renders 1`] = `
           aria-level="3"
           className="emotion-7 emotion-8"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {

@@ -164,11 +164,11 @@ exports[`Faucet renders 1`] = `
   line-height: 28px;
 }
 
-.emotion-49 {
+.emotion-48 {
   margin-bottom: 20px;
 }
 
-.emotion-50 {
+.emotion-49 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -178,7 +178,7 @@ exports[`Faucet renders 1`] = `
   padding-bottom: 10px;
 }
 
-.emotion-51 {
+.emotion-50 {
   font-weight: bold;
 }
 
@@ -203,7 +203,6 @@ exports[`Faucet renders 1`] = `
           aria-level="3"
           className="emotion-5 emotion-6"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -290,7 +289,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           <div
             className="emotion-6"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
@@ -342,10 +340,9 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                 }
               }
             >
-              <a
-                className="emotion-5 emotion-16 emotion-6"
+              <div
+                className="emotion-15 emotion-6"
                 dir="auto"
-                onClick={[Function]}
                 role="link"
                 style={
                   Object {
@@ -392,9 +389,10 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
                     "width": "fit-content",
                   }
                 }
+                tabIndex="0"
               >
                 Get Started
-              </a>
+              </div>
             </div>
             <div
               className="emotion-9"
@@ -434,7 +432,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           aria-level="3"
           className="emotion-5 emotion-6"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -471,7 +468,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             }
           >
             <a
-              className="emotion-5 emotion-16 emotion-6"
+              className="emotion-5 emotion-15 emotion-6"
               dir="auto"
               href="/developers/wallet"
               onClick={[Function]}
@@ -506,7 +503,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             }
           >
             <a
-              className="emotion-5 emotion-16 emotion-6"
+              className="emotion-5 emotion-15 emotion-6"
               dir="auto"
               href="https://docs.celo.org/getting-started/faucet#creating-an-empty-account-with-the-celo-client"
               onClick={[Function]}
@@ -544,7 +541,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           aria-level="3"
           className="emotion-5 emotion-6"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -584,7 +580,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           aria-level="3"
           className="emotion-5 emotion-6"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -607,13 +602,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           className="emotion-8"
         />
         <div
-          className="emotion-49"
+          className="emotion-48"
         >
           <div
-            className="emotion-50"
+            className="emotion-49"
           >
             <span
-              className="emotion-51"
+              className="emotion-50"
             >
               Get Help from the Celo Community.
                
@@ -657,7 +652,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               }
             >
               <a
-                className="emotion-5 emotion-16 emotion-6"
+                className="emotion-5 emotion-15 emotion-6"
                 dir="auto"
                 href="https://forum.celo.org/"
                 onClick={[Function]}
@@ -728,7 +723,6 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           aria-level="3"
           className="emotion-5 emotion-6"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -751,13 +745,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           className="emotion-8"
         />
         <div
-          className="emotion-49"
+          className="emotion-48"
         >
           <div
-            className="emotion-50"
+            className="emotion-49"
           >
             <span
-              className="emotion-51"
+              className="emotion-50"
             >
               Build the Celo Wallet locally.
                
@@ -801,7 +795,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               }
             >
               <a
-                className="emotion-5 emotion-16 emotion-6"
+                className="emotion-5 emotion-15 emotion-6"
                 dir="auto"
                 href="https://docs.celo.org/celo-codebase/wallet/intro"
                 onClick={[Function]}
@@ -857,13 +851,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           </div>
         </div>
         <div
-          className="emotion-49"
+          className="emotion-48"
         >
           <div
-            className="emotion-50"
+            className="emotion-49"
           >
             <span
-              className="emotion-51"
+              className="emotion-50"
             >
               View account information. 
                
@@ -907,7 +901,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               }
             >
               <a
-                className="emotion-5 emotion-16 emotion-6"
+                className="emotion-5 emotion-15 emotion-6"
                 dir="auto"
                 href="http://alfajores-blockscout.celo-testnet.org/"
                 onClick={[Function]}
@@ -963,13 +957,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           </div>
         </div>
         <div
-          className="emotion-49"
+          className="emotion-48"
         >
           <div
-            className="emotion-50"
+            className="emotion-49"
           >
             <span
-              className="emotion-51"
+              className="emotion-50"
             >
               Interested in running your own node? 
                
@@ -1013,7 +1007,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               }
             >
               <a
-                className="emotion-5 emotion-16 emotion-6"
+                className="emotion-5 emotion-15 emotion-6"
                 dir="auto"
                 href="https://docs.celo.org/getting-started/running-a-full-node"
                 onClick={[Function]}

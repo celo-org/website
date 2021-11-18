@@ -2841,7 +2841,6 @@ exports[`Experience/KeyImagery renders 1`] = `
                 aria-level="1"
                 className="emotion-13 emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 role="heading"
                 style={
                   Object {
@@ -2861,7 +2860,6 @@ exports[`Experience/KeyImagery renders 1`] = `
                 aria-level="4"
                 className="emotion-13 emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 role="heading"
                 style={
                   Object {
@@ -2882,7 +2880,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -2902,7 +2899,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -2971,7 +2967,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
               aria-level="2"
               className="emotion-13 emotion-15"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -2992,7 +2987,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -3137,7 +3131,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
                       <div
                         className="emotion-15"
                         dir="auto"
-                        onClick={[Function]}
                         style={
                           Object {
                             "color": "rgba(17,18,20,1.00)",
@@ -3156,7 +3149,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
                       <div
                         className="emotion-15"
                         dir="auto"
-                        onClick={[Function]}
                         style={
                           Object {
                             "color": "rgba(17,18,20,1.00)",
@@ -3281,7 +3273,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
               aria-level="2"
               className="emotion-13 emotion-15"
               dir="auto"
-              onClick={[Function]}
               role="heading"
               style={
                 Object {
@@ -3302,7 +3293,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -3444,7 +3434,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
                       <div
                         className="emotion-15"
                         dir="auto"
-                        onClick={[Function]}
                         style={
                           Object {
                             "color": "rgba(17,18,20,1.00)",
@@ -3463,7 +3452,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
                       <div
                         className="emotion-15"
                         dir="auto"
-                        onClick={[Function]}
                         style={
                           Object {
                             "color": "rgba(17,18,20,1.00)",

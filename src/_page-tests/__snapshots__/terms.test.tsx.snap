@@ -335,7 +335,6 @@ exports[`Terms renders 1`] = `
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {
@@ -662,7 +661,6 @@ exports[`Terms renders 1`] = `
           aria-level="3"
           className="emotion-8 emotion-9"
           dir="auto"
-          onClick={[Function]}
           role="heading"
           style={
             Object {

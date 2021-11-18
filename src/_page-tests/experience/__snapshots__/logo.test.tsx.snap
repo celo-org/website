@@ -2905,7 +2905,6 @@ exports[`Experience/Logo renders 1`] = `
                 aria-level="1"
                 className="emotion-13 emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 role="heading"
                 style={
                   Object {
@@ -2925,7 +2924,6 @@ exports[`Experience/Logo renders 1`] = `
                 aria-level="4"
                 className="emotion-13 emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 role="heading"
                 style={
                   Object {
@@ -3050,7 +3048,6 @@ exports[`Experience/Logo renders 1`] = `
               <div
                 className="emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 style={
                   Object {
                     "color": "rgba(17,18,20,1.00)",
@@ -3069,7 +3066,6 @@ exports[`Experience/Logo renders 1`] = `
               <div
                 className="emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 style={
                   Object {
                     "color": "rgba(17,18,20,1.00)",
@@ -3173,7 +3169,6 @@ Please use the full-color logo whenever possible.
                 <div
                   className="emotion-15"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(17,18,20,1.00)",
@@ -3336,7 +3331,6 @@ Please use the full-color logo whenever possible.
                 <div
                   className="emotion-15"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(17,18,20,1.00)",
@@ -3507,7 +3501,6 @@ Please use the full-color logo whenever possible.
                 <div
                   className="emotion-15"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(17,18,20,1.00)",
@@ -3670,7 +3663,6 @@ Please use the full-color logo whenever possible.
                 <div
                   className="emotion-15"
                   dir="auto"
-                  onClick={[Function]}
                   style={
                     Object {
                       "color": "rgba(17,18,20,1.00)",
@@ -3786,7 +3778,6 @@ Please use the full-color logo whenever possible.
               <div
                 className="emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 style={
                   Object {
                     "color": "rgba(17,18,20,1.00)",
@@ -3805,7 +3796,6 @@ Please use the full-color logo whenever possible.
               <div
                 className="emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 style={
                   Object {
                     "color": "rgba(17,18,20,1.00)",
@@ -4123,7 +4113,6 @@ Please use the full-color logo whenever possible.
                 aria-level="2"
                 className="emotion-13 emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 role="heading"
                 style={
                   Object {
@@ -4143,7 +4132,6 @@ Please use the full-color logo whenever possible.
           <div
             className="emotion-15"
             dir="auto"
-            onClick={[Function]}
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
@@ -4173,7 +4161,6 @@ Please use the full-color logo whenever possible.
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -4288,7 +4275,6 @@ Please use the full-color logo whenever possible.
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -4309,7 +4295,6 @@ Please use the full-color logo whenever possible.
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -4578,7 +4563,6 @@ Please use the full-color logo whenever possible.
                   aria-level="2"
                   className="emotion-13 emotion-15"
                   dir="auto"
-                  onClick={[Function]}
                   role="heading"
                   style={
                     Object {
@@ -4606,7 +4590,6 @@ Please use the full-color logo whenever possible.
               <div
                 className="emotion-15"
                 dir="auto"
-                onClick={[Function]}
                 style={
                   Object {
                     "color": "rgba(17,18,20,1.00)",
@@ -4736,7 +4719,6 @@ Please use the full-color logo whenever possible.
                         <div
                           className="emotion-15"
                           dir="auto"
-                          onClick={[Function]}
                           style={
                             Object {
                               "color": "rgba(17,18,20,1.00)",
@@ -4753,7 +4735,6 @@ Please use the full-color logo whenever possible.
                       <div
                         className="emotion-15"
                         dir="auto"
-                        onClick={[Function]}
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -4780,7 +4761,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -4798,7 +4778,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -4813,7 +4792,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -4828,7 +4806,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -4932,7 +4909,6 @@ Please use the full-color logo whenever possible.
                         <div
                           className="emotion-15"
                           dir="auto"
-                          onClick={[Function]}
                           style={
                             Object {
                               "color": "rgba(17,18,20,1.00)",
@@ -4949,7 +4925,6 @@ Please use the full-color logo whenever possible.
                       <div
                         className="emotion-15"
                         dir="auto"
-                        onClick={[Function]}
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -4976,7 +4951,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -4994,7 +4968,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5009,7 +4982,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5024,7 +4996,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5128,7 +5099,6 @@ Please use the full-color logo whenever possible.
                         <div
                           className="emotion-15"
                           dir="auto"
-                          onClick={[Function]}
                           style={
                             Object {
                               "color": "rgba(17,18,20,1.00)",
@@ -5145,7 +5115,6 @@ Please use the full-color logo whenever possible.
                       <div
                         className="emotion-15"
                         dir="auto"
-                        onClick={[Function]}
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -5172,7 +5141,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5190,7 +5158,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5205,7 +5172,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5220,7 +5186,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5324,7 +5289,6 @@ Please use the full-color logo whenever possible.
                         <div
                           className="emotion-15"
                           dir="auto"
-                          onClick={[Function]}
                           style={
                             Object {
                               "color": "rgba(255,255,255,1.00)",
@@ -5341,7 +5305,6 @@ Please use the full-color logo whenever possible.
                       <div
                         className="emotion-15"
                         dir="auto"
-                        onClick={[Function]}
                         style={
                           Object {
                             "MozTransitionProperty": "opacity, transform",
@@ -5368,7 +5331,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5386,7 +5348,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5401,7 +5362,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5416,7 +5376,6 @@ Please use the full-color logo whenever possible.
                     <div
                       className="emotion-15"
                       dir="auto"
-                      onClick={[Function]}
                       style={
                         Object {
                           "color": "rgba(17,18,20,1.00)",
@@ -5730,7 +5689,6 @@ Please use the full-color logo whenever possible.
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -5751,7 +5709,6 @@ Please use the full-color logo whenever possible.
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
@@ -6325,7 +6282,6 @@ Please use the full-color logo whenever possible.
             <div
               className="emotion-15"
               dir="auto"
-              onClick={[Function]}
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
