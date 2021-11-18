@@ -16,6 +16,7 @@ import {
   fonts,
   inputStyle,
   inputDarkStyle,
+  honeypotCss,
 } from "src/estyles"
 
 const NEWSLETTER_LIST = "1"
@@ -29,7 +30,7 @@ interface OwnProps {
   isDarkMode?: boolean
 }
 
-const blankForm = { email: "", fullName: "", list: "" /* mielpoto: ""*/ }
+const blankForm = { email: "", fullName: "", list: "", mielpoto: "" }
 
 type Props = OwnProps
 
@@ -70,9 +71,9 @@ export default React.memo(function EmailForm({
         const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
           onInput({ name: "email", newValue: event.target.value })
         }
-        // const onHoneyChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        //   onInput({ name: "mielpoto", newValue: event.target.value })
-        // }
+        const onHoneyChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+          onInput({ name: "mielpoto", newValue: event.target.value })
+        }
 
         return (
           <>
@@ -94,13 +95,14 @@ export default React.memo(function EmailForm({
                 value={formState.form.email}
                 required={true}
               />
-              {/* <input
+              <input
                 onChange={onHoneyChange}
                 name="mielpoto"
                 type="text"
                 required={true}
                 value={formState.form.mielpoto}
-              /> */}
+                css={honeypotCss}
+              />
               {isMobile && (
                 <div css={!!formState.errors.length && styles.feedbackMobile}>
                   <ErrorDisplay isShowing={hasError} field={errorKey} />

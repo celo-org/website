@@ -213,8 +213,13 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
 
   server.post("/contacts", rateLimit, async (req, res) => {
     try {
-      await addToCRM(req.body, ListID.Newsletter)
-      res.status(NO_CONTENT).send("ok")
+      if (!req.body.mielpoto) {
+        await addToCRM(req.body, ListID.Newsletter)
+        res.status(NO_CONTENT).send("ok")
+      } else {
+        console.info("possible bot", req.body)
+        res.status(NO_CONTENT).send("ok")
+      }
     } catch (e) {
       respondError(res, e)
     }
