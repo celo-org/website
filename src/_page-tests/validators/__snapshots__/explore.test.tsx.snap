@@ -38,7 +38,7 @@ exports[`ValidatorsList renders 1`] = `
     className="emotion-0"
     style={
       Object {
-        "backgroundColor": "rgba(46,51,56,1.00)",
+        "backgroundColor": "rgba(17,18,20,1.00)",
         "marginBottom": "100px",
         "marginLeft": "auto",
         "marginRight": "auto",
@@ -61,7 +61,7 @@ exports[`ValidatorsList renders 1`] = `
           "WebkitFlexDirection": "row",
           "WebkitJustifyContent": "space-between",
           "alignItems": "stretch",
-          "backgroundColor": "rgba(46,51,56,1.00)",
+          "backgroundColor": "rgba(17,18,20,1.00)",
           "borderBottomColor": "rgba(255,255,255,0.20)",
           "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
@@ -71,7 +71,7 @@ exports[`ValidatorsList renders 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(255,255,255,0.20)",
           "borderTopStyle": "solid",
-          "boxShadow": "960px 0 #2E3338, -960px 0 #2E3338",
+          "boxShadow": "960px 0 #111214, -960px 0 #111214",
           "display": "flex",
           "flexDirection": "row",
           "justifyContent": "space-between",

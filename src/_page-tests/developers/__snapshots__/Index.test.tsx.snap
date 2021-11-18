@@ -201,7 +201,7 @@ exports[`DevelopersPage renders 1`] = `
   line-height: 28;
   font-weight: 400;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
   margin-top: 16px;
   margin-bottom: 12px;
@@ -212,7 +212,7 @@ exports[`DevelopersPage renders 1`] = `
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
 }
 
@@ -286,7 +286,7 @@ exports[`DevelopersPage renders 1`] = `
     className="emotion-15"
     style={
       Object {
-        "backgroundColor": "rgba(46,51,56,1.00)",
+        "backgroundColor": "rgba(17,18,20,1.00)",
       }
     }
   >

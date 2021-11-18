@@ -29,7 +29,7 @@ Array [
   -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 75px;
-  background-color: #2E3338;
+  background-color: #111214;
   z-index: 10;
 }
 
@@ -609,7 +609,7 @@ Do not send real funds.
             }
           >
             <svg
-              fill="#2E3338"
+              fill="#111214"
               height="100%"
               viewBox="0 0 269 666"
               width="100%"
@@ -1359,7 +1359,7 @@ Do not send real funds.
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1528,7 +1528,7 @@ Check out these wallets for everyday use.
   line-height: 28;
   font-weight: 400;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1539,7 +1539,7 @@ Check out these wallets for everyday use.
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
 }
 

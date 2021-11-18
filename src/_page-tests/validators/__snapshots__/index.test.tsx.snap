@@ -22,7 +22,7 @@ exports[`BuildPage renders 1`] = `
     className="emotion-0"
     style={
       Object {
-        "backgroundColor": "rgba(46,51,56,1.00)",
+        "backgroundColor": "rgba(17,18,20,1.00)",
         "marginTop": "75px",
         "maxWidth": "100vw",
         "overflowX": "hidden",
@@ -520,7 +520,7 @@ exports[`BuildPage renders 1`] = `
     className="emotion-0"
     style={
       Object {
-        "backgroundColor": "rgba(46,51,56,1.00)",
+        "backgroundColor": "rgba(17,18,20,1.00)",
       }
     }
   >
@@ -1900,7 +1900,7 @@ exports[`BuildPage renders 1`] = `
     className="emotion-0"
     style={
       Object {
-        "backgroundColor": "rgba(46,51,56,1.00)",
+        "backgroundColor": "rgba(17,18,20,1.00)",
       }
     }
   >
@@ -3078,7 +3078,7 @@ exports[`BuildPage renders 1`] = `
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -3098,7 +3098,7 @@ exports[`BuildPage renders 1`] = `
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -3116,7 +3116,7 @@ exports[`BuildPage renders 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "16px",
               "fontWeight": "500",
@@ -3208,7 +3208,7 @@ exports[`BuildPage renders 1`] = `
           onClick={[Function]}
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
               "lineHeight": "28px",
@@ -3453,7 +3453,7 @@ exports[`BuildPage renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "Jost, futura-pt, futura, sans-serif",
                 "fontSize": "16px",
                 "fontWeight": "500",
@@ -3470,7 +3470,7 @@ exports[`BuildPage renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -3692,7 +3692,7 @@ exports[`BuildPage renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "Jost, futura-pt, futura, sans-serif",
                 "fontSize": "16px",
                 "fontWeight": "500",
@@ -3709,7 +3709,7 @@ exports[`BuildPage renders 1`] = `
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
@@ -3872,7 +3872,7 @@ exports[`BuildPage renders 1`] = `
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -3889,7 +3889,7 @@ exports[`BuildPage renders 1`] = `
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",

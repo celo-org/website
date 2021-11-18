@@ -17,7 +17,7 @@ exports[`Faucet renders 1`] = `
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -160,7 +160,7 @@ exports[`Faucet renders 1`] = `
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
 }
 
@@ -173,7 +173,7 @@ exports[`Faucet renders 1`] = `
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
-  color: #2E3338;
+  color: #111214;
   line-height: 28px;
   padding-bottom: 10px;
 }
@@ -207,7 +207,7 @@ exports[`Faucet renders 1`] = `
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -293,7 +293,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             onClick={[Function]}
             style={
               Object {
-                "color": "rgba(46,51,56,1.00)",
+                "color": "rgba(17,18,20,1.00)",
                 "fontFamily": "Jost, futura-pt, futura, sans-serif",
                 "fontSize": "14px",
                 "textRendering": "geometricPrecision",
@@ -438,7 +438,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -548,7 +548,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -588,7 +588,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
@@ -732,7 +732,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           role="heading"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "Jost, futura-pt, futura, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",

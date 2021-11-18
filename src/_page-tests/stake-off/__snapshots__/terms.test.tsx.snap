@@ -93,7 +93,7 @@ exports[`Terms renders 1`] = `
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "36px",
             "lineHeight": "40px",
@@ -113,7 +113,7 @@ exports[`Terms renders 1`] = `
         role="heading"
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
@@ -172,7 +172,7 @@ exports[`Terms renders 1`] = `
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "Jost, futura-pt, futura, sans-serif",
             "fontSize": "16px",
             "fontWeight": "500",
@@ -209,7 +209,7 @@ exports[`Terms renders 1`] = `
         onClick={[Function]}
         style={
           Object {
-            "color": "rgba(46,51,56,1.00)",
+            "color": "rgba(17,18,20,1.00)",
             "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
             "fontSize": "20px",
             "lineHeight": "28px",
@@ -240,7 +240,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -260,7 +260,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -314,7 +314,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           onClick={[Function]}
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
               "fontWeight": "bold",
@@ -333,7 +333,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -387,7 +387,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -409,7 +409,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -442,7 +442,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -462,7 +462,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -484,7 +484,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -514,7 +514,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -533,7 +533,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -553,7 +553,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -572,7 +572,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -591,7 +591,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -610,7 +610,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -632,7 +632,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -652,7 +652,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -706,7 +706,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -736,7 +736,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -756,7 +756,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -775,7 +775,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -795,7 +795,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -814,7 +814,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -833,7 +833,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -856,7 +856,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -886,7 +886,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -908,7 +908,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -938,7 +938,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -957,7 +957,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -976,7 +976,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -995,7 +995,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1014,7 +1014,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1033,7 +1033,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1052,7 +1052,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1071,7 +1071,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1093,7 +1093,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -1113,7 +1113,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -1143,7 +1143,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1162,7 +1162,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1181,7 +1181,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1203,7 +1203,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -1223,7 +1223,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -1243,7 +1243,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
@@ -1273,7 +1273,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1303,7 +1303,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1333,7 +1333,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
               role="listitem"
               style={
                 Object {
-                  "color": "rgba(46,51,56,1.00)",
+                  "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
@@ -1366,7 +1366,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           role="listitem"
           style={
             Object {
-              "color": "rgba(46,51,56,1.00)",
+              "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
               "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
               "fontSize": "20px",
