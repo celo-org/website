@@ -80,6 +80,9 @@ const containercss = css({
 
 const links = css(flex, {
   paddingTop: 28,
+  a: {
+    lineHeight: "20px"
+  }
 })
 
 const logoCss = css({
