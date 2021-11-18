@@ -56,7 +56,7 @@ export default React.memo(function EmailForm({
   submitText,
   placeholder,
   listID = NEWSLETTER_LIST,
-  route,
+  route = "contacts",
 }: Props) {
   const inputTheme = isDarkMode ? styles.inputDarkMode : styles.inputLightMode
   const { isMobile } = useScreenSize()
