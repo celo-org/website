@@ -98,6 +98,14 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-38 {
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  position: fixed;
+}
+
+.emotion-43 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -118,7 +126,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-38 {
+  .emotion-43 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -126,7 +134,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-43 {
+.emotion-48 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -163,11 +171,11 @@ exports[`Alliance renders 1`] = `
   align-self: center;
 }
 
-.emotion-44 {
+.emotion-49 {
   margin-left: 10px;
 }
 
-.emotion-45 {
+.emotion-50 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -178,7 +186,7 @@ exports[`Alliance renders 1`] = `
   align-items: center;
 }
 
-.emotion-133 {
+.emotion-138 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -198,14 +206,14 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-133 {
+  .emotion-138 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-134 {
+.emotion-139 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -223,7 +231,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-134 {
+  .emotion-139 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -237,7 +245,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-135 {
+.emotion-140 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -257,7 +265,7 @@ exports[`Alliance renders 1`] = `
   width: 100%;
 }
 
-.emotion-136 {
+.emotion-141 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -286,7 +294,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-136 {
+  .emotion-141 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -303,7 +311,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-136 {
+  .emotion-141 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -315,39 +323,39 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-136 {
+  .emotion-141 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-136 {
+  .emotion-141 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-136 {
+  .emotion-141 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-136 {
+  .emotion-141 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-136 {
+  .emotion-141 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
-.emotion-137 {
+.emotion-142 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -363,12 +371,12 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-137 {
+  .emotion-142 {
     text-align: center;
   }
 }
 
-.emotion-138 {
+.emotion-143 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -383,12 +391,12 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-138 {
+  .emotion-143 {
     text-align: center;
   }
 }
 
-.emotion-139 {
+.emotion-144 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +419,7 @@ exports[`Alliance renders 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-140 {
+.emotion-145 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -430,19 +438,19 @@ exports[`Alliance renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-141 {
+.emotion-146 {
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.emotion-142 {
+.emotion-147 {
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.emotion-144 {
+.emotion-149 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -454,7 +462,7 @@ exports[`Alliance renders 1`] = `
   margin: 30px 50px;
 }
 
-.emotion-193 {
+.emotion-198 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -474,14 +482,14 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-193 {
+  .emotion-198 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-194 {
+.emotion-199 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -499,7 +507,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-194 {
+  .emotion-199 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -513,7 +521,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-208 {
+.emotion-213 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3126,9 +3134,94 @@ exports[`Alliance renders 1`] = `
                   />
                 </div>
               </div>
+              <div
+                className="emotion-38"
+              >
+                <div
+                  className="emotion-20"
+                >
+                  <div
+                    className="emotion-0"
+                    style={
+                      Object {
+                        "marginBottom": "5px",
+                      }
+                    }
+                  >
+                    <label
+                      className="emotion-7"
+                      dir="auto"
+                      style={
+                        Object {
+                          "color": "rgba(129,134,139,1.00)",
+                          "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                          "fontSize": "16px",
+                          "fontWeight": "500",
+                          "lineHeight": "20px",
+                          "textRendering": "geometricPrecision",
+                        }
+                      }
+                    >
+                      Account
+                    </label>
+                  </div>
+                  <input
+                    aria-label="Account"
+                    autoCapitalize="sentences"
+                    autoComplete="on"
+                    autoCorrect="on"
+                    className="emotion-23"
+                    dir="auto"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onSelect={[Function]}
+                    readOnly={false}
+                    spellCheck={true}
+                    style={
+                      Object {
+                        "WebkitAlignSelf": "center",
+                        "alignSelf": "center",
+                        "borderBottomColor": "rgba(221,221,221,1.00)",
+                        "borderBottomLeftRadius": "3px",
+                        "borderBottomRightRadius": "3px",
+                        "borderBottomWidth": "1px",
+                        "borderLeftColor": "rgba(221,221,221,1.00)",
+                        "borderLeftWidth": "1px",
+                        "borderRightColor": "rgba(221,221,221,1.00)",
+                        "borderRightWidth": "1px",
+                        "borderTopColor": "rgba(221,221,221,1.00)",
+                        "borderTopLeftRadius": "3px",
+                        "borderTopRightRadius": "3px",
+                        "borderTopWidth": "1px",
+                        "color": "rgba(255,255,255,1.00)",
+                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                        "fontSize": "20px",
+                        "lineHeight": "28px",
+                        "marginBottom": "0px",
+                        "marginLeft": "0px",
+                        "marginRight": "0px",
+                        "marginTop": "0px",
+                        "msFlexItemAlign": "center",
+                        "msGridRowAlign": "center",
+                        "outlineWidth": "0px",
+                        "paddingBottom": "15px",
+                        "paddingLeft": "10px",
+                        "paddingRight": "10px",
+                        "paddingTop": "13px",
+                        "textRendering": "geometricPrecision",
+                        "width": "100%",
+                      }
+                    }
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
             </div>
             <div
-              className="emotion-38"
+              className="emotion-43"
             >
               <div
                 className="emotion-0"
@@ -3139,7 +3232,7 @@ exports[`Alliance renders 1`] = `
                 onMouseUp={[Function]}
               >
                 <div
-                  className="emotion-40 emotion-7"
+                  className="emotion-45 emotion-7"
                   dir="auto"
                   role="link"
                   style={
@@ -3198,7 +3291,7 @@ exports[`Alliance renders 1`] = `
                 className="emotion-24"
               >
                 <p
-                  className="emotion-43"
+                  className="emotion-48"
                 >
                   <svg
                     fill="none"
@@ -3214,7 +3307,7 @@ exports[`Alliance renders 1`] = `
                     />
                   </svg>
                   <span
-                    className="emotion-44"
+                    className="emotion-49"
                   >
                     Application Submitted
                   </span>
@@ -3222,7 +3315,7 @@ exports[`Alliance renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-45"
+              className="emotion-50"
             >
               <div
                 aria-hidden={true}
@@ -3395,7 +3488,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe we have a lot to learn from 
             <span
-              className="emotion-7 emotion-61"
+              className="emotion-7 emotion-66"
               style={
                 Object {
                   "fontStyle": "italic",
@@ -3725,7 +3818,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe in designing 
             <span
-              className="emotion-7 emotion-61"
+              className="emotion-7 emotion-66"
               style={
                 Object {
                   "fontStyle": "italic",
@@ -3834,7 +3927,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <a
-                className="emotion-6 emotion-40 emotion-7"
+                className="emotion-6 emotion-45 emotion-7"
                 dir="auto"
                 href="https://medium.com/celoorg/how-to-design-for-all-stories-from-tanzania-refugees-8b34594d64ae"
                 onClick={[Function]}
@@ -4148,7 +4241,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe systems are complex and require 
             <span
-              className="emotion-7 emotion-61"
+              className="emotion-7 emotion-66"
               style={
                 Object {
                   "fontStyle": "italic",
@@ -4256,7 +4349,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <a
-                className="emotion-6 emotion-40 emotion-7"
+                className="emotion-6 emotion-45 emotion-7"
                 dir="auto"
                 href="https://medium.com/celoorg/a-cryptocurrency-for-every-juan-144144e62d5"
                 onClick={[Function]}
@@ -4565,14 +4658,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      className="emotion-133"
+      className="emotion-138"
     >
       “
       The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications
       ”
     </blockquote>
     <figcaption
-      className="emotion-134"
+      className="emotion-139"
     >
       <span>
         Gigi Gatti, Grameen Foundation
@@ -4580,29 +4673,29 @@ exports[`Alliance renders 1`] = `
     </figcaption>
   </div>
   <section
-    className="emotion-135"
+    className="emotion-140"
   >
     <div
-      className="emotion-136"
+      className="emotion-141"
     >
       <h3
-        className="emotion-137"
+        className="emotion-142"
       >
         Benefits of collaborating on a mission-driven blockchain
       </h3>
       <h2
-        className="emotion-138"
+        className="emotion-143"
       >
         What the Alliance offers
       </h2>
       <div
-        className="emotion-139"
+        className="emotion-144"
       >
         <div
-          className="emotion-140"
+          className="emotion-145"
         >
           <div
-            className="emotion-141"
+            className="emotion-146"
           >
             <span
               style={
@@ -4658,7 +4751,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-142"
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4687,7 +4780,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-142"
+                  className="emotion-147"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -4719,16 +4812,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-144"
+            className="emotion-149"
           >
             Connect with like-minded members
           </p>
         </div>
         <div
-          className="emotion-140"
+          className="emotion-145"
         >
           <div
-            className="emotion-141"
+            className="emotion-146"
           >
             <span
               style={
@@ -4784,7 +4877,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-142"
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4813,7 +4906,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-142"
+                  className="emotion-147"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -4845,16 +4938,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-144"
+            className="emotion-149"
           >
             Build and shape improvements to the Celo platform
           </p>
         </div>
         <div
-          className="emotion-140"
+          className="emotion-145"
         >
           <div
-            className="emotion-141"
+            className="emotion-146"
           >
             <span
               style={
@@ -4910,7 +5003,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-142"
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4939,7 +5032,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-142"
+                  className="emotion-147"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -4971,16 +5064,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-144"
+            className="emotion-149"
           >
             Attend special programs and events
           </p>
         </div>
         <div
-          className="emotion-140"
+          className="emotion-145"
         >
           <div
-            className="emotion-141"
+            className="emotion-146"
           >
             <span
               style={
@@ -5036,7 +5129,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-142"
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5065,7 +5158,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-142"
+                  className="emotion-147"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -5097,16 +5190,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-144"
+            className="emotion-149"
           >
             Access to education and support
           </p>
         </div>
         <div
-          className="emotion-140"
+          className="emotion-145"
         >
           <div
-            className="emotion-141"
+            className="emotion-146"
           >
             <span
               style={
@@ -5162,7 +5255,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-142"
+                className="emotion-147"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5191,7 +5284,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-142"
+                  className="emotion-147"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -5223,7 +5316,7 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-144"
+            className="emotion-149"
           >
             Expand your reach to help more communities
           </p>
@@ -5589,7 +5682,7 @@ exports[`Alliance renders 1`] = `
             }
           >
             <a
-              className="emotion-6 emotion-40 emotion-7"
+              className="emotion-6 emotion-45 emotion-7"
               dir="auto"
               href="https://medium.com/celoOrg"
               onClick={[Function]}
@@ -5734,14 +5827,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      className="emotion-193"
+      className="emotion-198"
     >
       “
       Our hope is that this Alliance will start unlocking the potential of internet money
       ”
     </blockquote>
     <figcaption
-      className="emotion-194"
+      className="emotion-199"
     >
       <span>
         Katie Haun, Andreessen Horowitz
@@ -5831,7 +5924,7 @@ exports[`Alliance renders 1`] = `
         >
           Member contributions, 
           <span
-            className="emotion-7 emotion-61"
+            className="emotion-7 emotion-66"
             style={
               Object {
                 "fontStyle": "italic",
@@ -5910,7 +6003,7 @@ exports[`Alliance renders 1`] = `
             Refine By
           </div>
           <div
-            className="emotion-208"
+            className="emotion-213"
           >
             <div
               className="emotion-0"
@@ -8079,9 +8172,94 @@ exports[`Alliance renders 1`] = `
                 />
               </div>
             </div>
+            <div
+              className="emotion-38"
+            >
+              <div
+                className="emotion-20"
+              >
+                <div
+                  className="emotion-0"
+                  style={
+                    Object {
+                      "marginBottom": "5px",
+                    }
+                  }
+                >
+                  <label
+                    className="emotion-7"
+                    dir="auto"
+                    style={
+                      Object {
+                        "color": "rgba(129,134,139,1.00)",
+                        "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                        "fontSize": "16px",
+                        "fontWeight": "500",
+                        "lineHeight": "20px",
+                        "textRendering": "geometricPrecision",
+                      }
+                    }
+                  >
+                    Account
+                  </label>
+                </div>
+                <input
+                  aria-label="Account"
+                  autoCapitalize="sentences"
+                  autoComplete="on"
+                  autoCorrect="on"
+                  className="emotion-23"
+                  dir="auto"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onSelect={[Function]}
+                  readOnly={false}
+                  spellCheck={true}
+                  style={
+                    Object {
+                      "WebkitAlignSelf": "center",
+                      "alignSelf": "center",
+                      "borderBottomColor": "rgba(221,221,221,1.00)",
+                      "borderBottomLeftRadius": "3px",
+                      "borderBottomRightRadius": "3px",
+                      "borderBottomWidth": "1px",
+                      "borderLeftColor": "rgba(221,221,221,1.00)",
+                      "borderLeftWidth": "1px",
+                      "borderRightColor": "rgba(221,221,221,1.00)",
+                      "borderRightWidth": "1px",
+                      "borderTopColor": "rgba(221,221,221,1.00)",
+                      "borderTopLeftRadius": "3px",
+                      "borderTopRightRadius": "3px",
+                      "borderTopWidth": "1px",
+                      "color": "rgba(255,255,255,1.00)",
+                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontSize": "20px",
+                      "lineHeight": "28px",
+                      "marginBottom": "0px",
+                      "marginLeft": "0px",
+                      "marginRight": "0px",
+                      "marginTop": "0px",
+                      "msFlexItemAlign": "center",
+                      "msGridRowAlign": "center",
+                      "outlineWidth": "0px",
+                      "paddingBottom": "15px",
+                      "paddingLeft": "10px",
+                      "paddingRight": "10px",
+                      "paddingTop": "13px",
+                      "textRendering": "geometricPrecision",
+                      "width": "100%",
+                    }
+                  }
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
           </div>
           <div
-            className="emotion-38"
+            className="emotion-43"
           >
             <div
               className="emotion-0"
@@ -8092,7 +8270,7 @@ exports[`Alliance renders 1`] = `
               onMouseUp={[Function]}
             >
               <div
-                className="emotion-40 emotion-7"
+                className="emotion-45 emotion-7"
                 dir="auto"
                 role="link"
                 style={
@@ -8151,7 +8329,7 @@ exports[`Alliance renders 1`] = `
               className="emotion-24"
             >
               <p
-                className="emotion-43"
+                className="emotion-48"
               >
                 <svg
                   fill="none"
@@ -8167,7 +8345,7 @@ exports[`Alliance renders 1`] = `
                   />
                 </svg>
                 <span
-                  className="emotion-44"
+                  className="emotion-49"
                 >
                   Application Submitted
                 </span>
@@ -8175,7 +8353,7 @@ exports[`Alliance renders 1`] = `
             </div>
           </div>
           <div
-            className="emotion-45"
+            className="emotion-50"
           >
             <div
               aria-hidden={true}

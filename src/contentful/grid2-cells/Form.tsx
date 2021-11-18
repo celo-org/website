@@ -1,6 +1,13 @@
 import { useForm } from "react-hook-form"
 import { FormContentType, InputTypes } from "src/utils/contentful"
-import { inputDarkStyle, labelStyle, errorStyle, WHEN_TABLET_AND_UP, whiteText } from "src/estyles"
+import {
+  inputDarkStyle,
+  labelStyle,
+  errorStyle,
+  WHEN_TABLET_AND_UP,
+  whiteText,
+  honeypotCss,
+} from "src/estyles"
 import { css } from "@emotion/react"
 import Button, { BTN } from "src/shared/Button.3"
 import * as React from "react"
@@ -13,7 +20,6 @@ const CLEAR_TIME = 1000 * 30
 
 export default function Form(props: FormContentType) {
   const { t } = useTranslation(NameSpaces.common)
-
   const { register, handleSubmit, formState, setError, reset, clearErrors } = useForm()
   const onSubmit = async (data) => {
     const submission = await postForm(props.route, data)
@@ -40,6 +46,7 @@ export default function Form(props: FormContentType) {
 
   return (
     <form action={props.route} method="post" css={styles} onSubmit={handleSubmit(onSubmit)}>
+      <input type={"text"} css={honeypotCss} {...register("mielpoto")} />
       {props.fields.map((input) => {
         const attributes = register(input.fields.name, {
           required: input.fields.required,

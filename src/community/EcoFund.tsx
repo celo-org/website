@@ -28,6 +28,7 @@ import {
   RecommendationKeys,
   Tables,
 } from "../../fullstack/EcoFundFields"
+import { honeypotCss } from "src/estyles"
 
 interface State {
   table: Tables
@@ -132,6 +133,15 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               >
                 {({ onSubmit, onInput, formState }) => (
                   <Form>
+                    <div css={honeypotCss}>
+                      <LabeledInput
+                        key={"mielpoto"}
+                        label={"Account"}
+                        value={formState.form["mielpoto"]}
+                        name={"mielpoto"}
+                        onInput={onInput}
+                      />
+                    </div>
                     {ApplicationKeys.map((key) => (
                       <LabeledInput
                         key={key}
@@ -181,6 +191,15 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
               >
                 {({ onSubmit: onSubmit, onInput, formState }) => (
                   <Form>
+                    <div css={honeypotCss}>
+                      <LabeledInput
+                        key={"mielpoto"}
+                        label={"Account"}
+                        value={formState.form["mielpoto"]}
+                        name={"mielpoto"}
+                        onInput={onInput}
+                      />
+                    </div>
                     {RecommendationKeys.map((key) => (
                       <LabeledInput
                         key={key}
@@ -250,6 +269,8 @@ function invalidApplicationFields(fields: Record<keyof Application, string>) {
     } else if (key === "coFounderEmail") {
       return fields.coFounderEmail.length > 0 ? !emailIsValid(fields[key]) : false
     } else if (key === "video") {
+      return false
+    } else if (key === "mielpoto") {
       return false
     } else {
       return !hasField(fields[key])

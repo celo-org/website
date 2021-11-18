@@ -12,13 +12,14 @@ import { useScreenSize } from "src/layout/ScreenSize"
 import { SIZE } from "src/shared/Button.3"
 import { standardStyles } from "src/styles"
 import { css } from "@emotion/react"
-import { flex, flexRow, WHEN_DESKTOP, WHEN_MOBILE } from "src/estyles"
+import { flex, flexRow, WHEN_DESKTOP, WHEN_MOBILE, honeypotCss } from "src/estyles"
 
 const BLANK_FORM: NewMember = {
   name: "",
   email: "",
   contribution: "",
   subscribe: false,
+  mielpoto: "",
 }
 
 function validateWith(fields: NewMember) {
@@ -26,6 +27,8 @@ function validateWith(fields: NewMember) {
     if (key === "email") {
       return !emailIsValid(fields[key])
     } else if (key === "subscribe" || key === "contribution") {
+      return false
+    } else if (key === "mielpoto") {
       return false
     } else {
       return !hasField(fields[key])
@@ -70,6 +73,15 @@ export default function SignupForm() {
                 onInput={onInput}
                 name="contribution"
                 value={formState.form.contribution}
+              />
+            </div>
+            <div css={honeypotCss}>
+              <LabeledInput
+                isDarkMode={true}
+                label={t("form.mielpoto")}
+                onInput={onInput}
+                name="mielpoto"
+                value={formState.form.mielpoto}
               />
             </div>
           </div>

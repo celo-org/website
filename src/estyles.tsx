@@ -248,3 +248,8 @@ export const standardStyles = {
     height: "100%",
   }),
 }
+
+export const honeypotCss = css({
+  transform: "scale(0, 0)",
+  position: "fixed",
+})
