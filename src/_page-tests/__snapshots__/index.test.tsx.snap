@@ -480,6 +480,10 @@ exports[`HomePage renders 1`] = `
   padding-top: 28px;
 }
 
+.emotion-12 a {
+  line-height: 20px;
+}
+
 .emotion-20 {
   box-sizing: border-box;
   display: -webkit-box;
