@@ -7,7 +7,6 @@ import ecoFundSubmission from "src/../server/EcoFundApp"
 const CREATED = 201
 
 async function post(req: NextApiRequest, res: NextApiResponse) {
-  debugger
   try {
     if (!req.body.mielpoto) {
       await ecoFundSubmission(req.body, req.query.form as Tables)
