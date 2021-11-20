@@ -55,7 +55,7 @@
     "firebase": "^9.4.1",
     "front-matter": "^4.0.1",
     "fuzzy-search": "^3.2.1",
-    "graphql": "^15.6.1",
+    "graphql": "^15.7.2",
     "graphql-request": "^3.6.1",
     "helmet": "^4.6.0",
     "hex-rgba": "^1.0.2",
