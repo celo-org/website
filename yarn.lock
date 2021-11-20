@@ -6731,10 +6731,10 @@ nth-check@^1.0.2:
   dependencies:
     boolbase "~1.0.0"
 
-nuka-carousel@^4.5.13:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/nuka-carousel/-/nuka-carousel-4.8.0.tgz#0d012615cbc13e4e02fb90793ca12e392d24354e"
-  integrity sha512-yZ20t2OjV1Rp2bV7IhtDyW55kag1V3yCgwIKFy39z6B1aqpYS1ou75zKP341tIIrluYVO9WGTDtFVr/vq2xQpw==
+nuka-carousel@^4.8.2:
+  version "4.8.3"
+  resolved "https://registry.yarnpkg.com/nuka-carousel/-/nuka-carousel-4.8.3.tgz#98840e7a6eb205ea7733e56c9f429081ee1e2d0d"
+  integrity sha512-wamnVMYu7bbsYc+w3XJ0zaJ6koGKsg98uMTl7mW8lXaSr29bNvMTpouA0iSoFauRbhjKp+75VEdnhTWS2tFEVg==
   dependencies:
     csstype "^2.6.6"
     d3-ease "^1.0.3"
