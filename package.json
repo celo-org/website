@@ -70,7 +70,7 @@
     "next": "^12.0.2",
     "next-i18next": "^8.8.0",
     "next-plugin-transpile-modules": "^2.0.0",
-    "node-cache": "^5.0.2",
+    "node-cache": "^5.1.2",
     "nuka-carousel": "^4.5.13",
     "raw-loader": "^4.0.1",
     "react": "^17.0.2",
