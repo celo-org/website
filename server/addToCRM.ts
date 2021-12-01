@@ -190,7 +190,7 @@ async function createContactOrUpdate(hubSpotClient: hubspot.Client, contact: CRM
   }
 }
 
-function HubSpotClient() {
+export function HubSpotClient() {
   return new hubspot.Client({ apiKey: apiKey() })
 }
 

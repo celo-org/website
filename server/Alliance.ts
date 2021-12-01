@@ -1,3 +1,4 @@
+import * as hubspot from "@hubspot/api-client"
 import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import Ally, { NewMember } from "../src/alliance/AllianceMember"
@@ -32,16 +33,36 @@ export default async function getAllies() {
 }
 
 async function fetchAllies(category: Category) {
-  return getAirtable<Fields>(READ_SHEET)
-    .select({
-      filterByFormula: `AND(${IS_APROVED},SEARCH("${category}", {${CATEGORY_FIELD}}))`,
-      fields: ["Name", "Approved", CATEGORY_FIELD, LOGO_FIELD, URL_FIELD],
-      view: "Alliance Web",
+  const { serverRuntimeConfig } = getConfig()
+
+  const hubspotClient = new hubspot.Client({ apiKey: serverRuntimeConfig.HUBSPOT_API_KEY })
+
+  try {
+    const apiResponse = await hubspotClient.crm.companies.searchApi.doSearch({
+      filterGroups: [{ filters: [{ value: "string", propertyName: "string", operator: null }] }],
+      sorts: ["string"],
+      query: "string",
+      properties: ["string"],
+      limit: 0,
+      after: 0,
     })
-    .all()
-    .then((records) => {
-      return { name: category, records: records.map((r) => normalize(r.fields)) }
-    })
+    console.log(JSON.stringify(apiResponse.body, null, 2))
+  } catch (e) {
+    e.message === "HTTP request failed"
+      ? console.error(JSON.stringify(e.response, null, 2))
+      : console.error(e)
+  }
+
+  // return getAirtable<Fields>(READ_SHEET)
+  //   .select({
+  //     filterByFormula: `AND(${IS_APROVED},SEARCH("${category}", {${CATEGORY_FIELD}}))`,
+  //     fields: ["Name", "Approved", CATEGORY_FIELD, LOGO_FIELD, URL_FIELD],
+  //     view: "Alliance Web",
+  //   })
+  //   .all()
+  //   .then((records) => {
+  //     return { name: category, records: records.map((r) => normalize(r.fields)) }
+  //   })
 }
 
 function getAirtable<T extends FieldSet>(sheet: string) {
