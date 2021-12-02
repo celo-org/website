@@ -5318,7 +5318,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               }
                             >
                               <div
-                                aria-label="Preview of cBRL Exchange Icon"
+                                aria-label="Preview of cREAL Exchange Icon"
                                 className="emotion-11"
                                 style={
                                   Object {
@@ -5387,7 +5387,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               }
                             }
                           >
-                            cBRL Exchange Icon
+                            cREAL Exchange Icon
                           </div>
                           <div
                             className="emotion-15"
@@ -5417,7 +5417,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           <a
                             className="emotion-13 emotion-14 emotion-15"
                             dir="auto"
-                            href="/assets/marketplace-icons/icons-cbrl-color.zip"
+                            href="/assets/marketplace-icons/icons-creal-color.zip"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             role="link"
@@ -5559,7 +5559,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               }
                             >
                               <div
-                                aria-label="Preview of cBRL Exchange Icon"
+                                aria-label="Preview of cREAL Exchange Icon"
                                 className="emotion-11"
                                 style={
                                   Object {
@@ -5629,7 +5629,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               }
                             }
                           >
-                            cBRL Exchange Icon
+                            cREAL Exchange Icon
                           </div>
                           <div
                             className="emotion-15"
@@ -5659,7 +5659,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           <a
                             className="emotion-13 emotion-14 emotion-15"
                             dir="auto"
-                            href="/assets/marketplace-icons/icons-cbrl-mono.zip"
+                            href="/assets/marketplace-icons/icons-creal-mono.zip"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             role="link"
@@ -5801,7 +5801,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               }
                             >
                               <div
-                                aria-label="Preview of cBRL Exchange Icon"
+                                aria-label="Preview of cREAL Exchange Icon"
                                 className="emotion-11"
                                 style={
                                   Object {
@@ -5871,7 +5871,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                               }
                             }
                           >
-                            cBRL Exchange Icon
+                            cREAL Exchange Icon
                           </div>
                           <div
                             className="emotion-15"
@@ -5901,7 +5901,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                           <a
                             className="emotion-13 emotion-14 emotion-15"
                             dir="auto"
-                            href="/assets/marketplace-icons/icons-cbrl-reverse.zip"
+                            href="/assets/marketplace-icons/icons-creal-reverse.zip"
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             role="link"
