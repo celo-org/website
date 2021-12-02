@@ -60,7 +60,8 @@ async function fetchAssets(sheet: AssetSheet) {
   await getAirtable(sheet)
     .select({
       pageSize: 100,
-      filterByFormula: `AND(${IS_APROVED}, ${TERMS_SIGNED})`,
+      filterByFormula:
+        process.env.ENV === "production" ? `AND(${IS_APROVED}, ${TERMS_SIGNED})` : undefined,
       sort: [{ field: "Order", direction: "asc" }],
     })
     .eachPage((records, fetchNextPage) => {
