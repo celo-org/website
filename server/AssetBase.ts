@@ -57,11 +57,15 @@ async function fetchTags(): Promise<Record<string, Tag>> {
 async function fetchAssets(sheet: AssetSheet) {
   const assets = []
 
+  const selector =
+    process.env.ENV === "production"
+      ? { filterByFormula: `AND(${IS_APROVED}, ${TERMS_SIGNED})` }
+      : {}
+
   await getAirtable(sheet)
     .select({
       pageSize: 100,
-      filterByFormula:
-        process.env.ENV === "production" ? `AND(${IS_APROVED}, ${TERMS_SIGNED})` : undefined,
+      ...selector,
       sort: [{ field: "Order", direction: "asc" }],
     })
     .eachPage((records, fetchNextPage) => {
