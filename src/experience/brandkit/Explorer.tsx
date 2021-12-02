@@ -10,6 +10,7 @@ import { NameSpaces, useTranslation } from "src/i18n"
 import { fonts } from "src/styles"
 import { colors } from "src/colors"
 import { IconData, Props } from "./IconsPage"
+import NewShowcase from "src/experience/common/NewShowcase"
 
 export function Explorer({ icons }: Props) {
   const { t } = useTranslation(NameSpaces.brand)
@@ -24,25 +25,38 @@ export function Explorer({ icons }: Props) {
           : t("icons.matching", { count: visibleIcons.size })}
       </Text>
       <View style={brandStyles.tiling}>
-        {icons.map((icon) => (
-          <View
-            key={icon.id}
-            testID={icon.id}
-            style={!visibleIcons.has(icon.id) && styles.offScreen}
-          >
-            <IconShowcase
-              key={icon.name}
-              ratio={1}
-              description={icon.description}
-              name={icon.name}
-              preview={icon.preview}
-              uri={icon.uri}
-              loading={false}
-              assetType={AssetTypes.icon}
-              size={160}
-            />
-          </View>
-        ))}
+        {icons
+          .sort((a, b) => (Number(a.series) > Number(b.series) ? -1 : 1))
+          .map((icon) => (
+            <View
+              key={icon.id}
+              testID={icon.id}
+              style={[!visibleIcons.has(icon.id) && styles.offScreen, styles.container]}
+            >
+              {icon.series == "2" ? (
+                <NewShowcase
+                  key={icon.id}
+                  name={icon.name}
+                  preview={icon.preview}
+                  tags={icon.tags}
+                  uri={icon.uri}
+                  assetType={AssetTypes.icon}
+                />
+              ) : (
+                <IconShowcase
+                  key={icon.id}
+                  ratio={1}
+                  description={icon.description}
+                  name={icon.name}
+                  preview={icon.preview}
+                  uri={icon.uri}
+                  loading={false}
+                  assetType={AssetTypes.icon}
+                  size={160}
+                />
+              )}
+            </View>
+          ))}
       </View>
     </View>
   )
@@ -54,6 +68,9 @@ const styles = StyleSheet.create({
   root: { minHeight: "100vh" },
   offScreen: {
     display: "none",
+  },
+  container: {
+    width: 260,
   },
   matches: {
     color: colors.primaryPress,

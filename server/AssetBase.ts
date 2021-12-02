@@ -17,6 +17,7 @@ interface Fields extends FieldSet {
   Terms: boolean
   Tags?: string[]
   Order: number
+  series: "1" | "2"
 }
 
 export enum AssetSheet {
@@ -32,11 +33,11 @@ export default async function combineTagsWithAssets(sheet: AssetSheet) {
 }
 
 async function getAssets(sheet: AssetSheet) {
-  return fetchCached(`brand-assets-${sheet}`, "en", 3 * MINUTE, () => fetchAssets(sheet))
+  return fetchCached(`brand-assets-${sheet}`, "en", 2 * MINUTE, () => fetchAssets(sheet))
 }
 
 async function getTags() {
-  return fetchCached(`brand-assets-tags`, "en", 3 * MINUTE, fetchTags)
+  return fetchCached(`brand-assets-tags`, "en", 2 * MINUTE, fetchTags)
 }
 
 async function fetchTags(): Promise<Record<string, Tag>> {
@@ -88,6 +89,7 @@ function normalize(asset: Fields, id: string, tags: Record<string, Tag>): AssetP
     uri: getURI(asset),
     tags: (asset.Tags || []).map((tagID) => tags[tagID].Name),
     id,
+    series: asset.series,
   }
 }
 export const _normalize = normalize

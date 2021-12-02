@@ -5,4 +5,5 @@ export default interface AssetProps {
   id: string
   preview: string
   uri: string
+  series?: string
 }
