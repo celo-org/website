@@ -11,7 +11,6 @@ interface Props {
   preview: string
   uri: string
   assetType: AssetTypes
-  variant?: "circle" | "circle-white" | "circle-black"
 }
 
 export default React.memo(function Showcase({ name, tags, preview, uri, assetType }: Props) {
