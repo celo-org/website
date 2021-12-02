@@ -86,20 +86,20 @@ const icons = [
   {
     name: "cREAL Exchange Icon",
     description: "Full Color\n",
-    preview: "/images/marketplace-icons/icon-cbrl-color.svg",
+    preview: "/images/marketplace-icons/icon-creal-color.svg",
     uri: "/assets/marketplace-icons/icons-creal-color.zip",
   },
   {
     name: "cREAL Exchange Icon",
     description: "Monochrome\n",
-    preview: "/images/marketplace-icons/icon-cbrl-mono.svg",
+    preview: "/images/marketplace-icons/icon-creal-mono.svg",
     uri: "/assets/marketplace-icons/icons-creal-mono.zip",
     variant: "circle-white",
   },
   {
     name: "cREAL Exchange Icon",
     description: "Reverse Monochrome\n",
-    preview: "/images/marketplace-icons/icon-cbrl-reverse.svg",
+    preview: "/images/marketplace-icons/icon-creal-reverse.svg",
     uri: "/assets/marketplace-icons/icons-creal-reverse.zip",
     variant: "circle-black",
   },
