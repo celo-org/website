@@ -30,6 +30,7 @@ describe("AssetBase", () => {
         Zip: [{ id: "x", url: "celo.org", filename: "test.zip", size: 200, type: "file" }],
         Terms: true,
         Order: 1,
+        series: "1" as const,
       }
       expect(normalize(icon, "id", tags)).toEqual({
         description: "example of working icon",
@@ -38,6 +39,7 @@ describe("AssetBase", () => {
         preview: "thumb.com",
         tags: ["Regeneration"],
         uri: "celo.org",
+        series: "1",
       })
     })
   })
