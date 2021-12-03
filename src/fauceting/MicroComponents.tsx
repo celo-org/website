@@ -1,12 +1,17 @@
 import * as React from "react"
-import { StyleSheet, Text, View } from "react-native"
+import { StyleSheet } from "react-native"
 import { EXAMPLE_ADDRESS, RequestState } from "src/fauceting/utils"
 import { I18nProps } from "src/i18n"
 import Checkmark from "src/icons/Checkmark"
 import Button, { BTN, SIZE } from "src/shared/Button.3"
 import Spinner from "src/shared/Spinner"
-import { fonts, standardStyles as std, textStyles } from "src/styles"
+import { textStyles } from "src/styles"
 import { colors } from "src/colors"
+import { css } from "@emotion/react"
+import { useTranslation } from "react-i18next"
+import { flexRow } from "src/estyles"
+import { fonts, textStyles as etextStyles } from "src/estyles"
+
 interface InfoProps {
   requestState: RequestState
   t: I18nProps["t"]
@@ -18,13 +23,13 @@ const BAD_STATES = new Set([RequestState.Failed, RequestState.Invalid])
 export function ContextualInfo({ requestState, t, isFaucet }: InfoProps) {
   const contextStyle = [
     fonts.micro,
-    !isFaucet && textStyles.readingOnDark,
-    BAD_STATES.has(requestState) && textStyles.error,
+    !isFaucet && etextStyles.readingOnDark,
+    BAD_STATES.has(requestState) && etextStyles.error,
   ]
 
   const text = isFaucet ? faucetText({ requestState, t }) : inviteText({ requestState, t })
 
-  return <Text style={contextStyle}>{text}</Text>
+  return <span css={contextStyle}>{text}</span>
 }
 
 interface HashProps {
@@ -33,7 +38,6 @@ interface HashProps {
   goldTxHash: string | null
   escrowTxHash: string | null
   done: boolean
-  t: I18nProps["t"]
 }
 
 export function HashingStatus({
@@ -41,13 +45,11 @@ export function HashingStatus({
   dollarTxHash,
   goldTxHash,
   escrowTxHash,
-  t,
   done,
 }: HashProps) {
+  const { t } = useTranslation("faucet")
   return (
-    <View
-      style={isFaucet ? [std.row, styles.statusesContainerTicker] : styles.statusesContainerLog}
-    >
+    <div css={isFaucet ? statusesContainerTickerCss : hashingStatusCss}>
       {[
         goldTxHash && isFaucet && t("cGLDsent"),
         dollarTxHash && t("cUSDsent"),
@@ -55,18 +57,47 @@ export function HashingStatus({
       ]
         .filter((x) => !!x)
         .map((message) => (
-          <View
-            key={message}
-            style={[isFaucet ? styles.ticker : styles.log, std.fadeInitial, done && std.fadeIn]}
-          >
-            <Text style={[fonts.h6, !isFaucet && textStyles.invert]}>
+          <div key={message} css={[isFaucet ? tickerCss : logCss, done && doneCss]}>
+            <h6 css={fonts.h6}>
               <Checkmark size={12} color={colors.primary} /> {message}
-            </Text>
-          </View>
+            </h6>
+          </div>
         ))}
-    </View>
+    </div>
   )
 }
+
+const hashingStatusCss = css({
+  position: "absolute",
+  width: "100%",
+  marginTop: 10,
+})
+
+const statusesContainerTickerCss = css(flexRow, {
+  alignContent: "center",
+  height: "100%",
+})
+
+const tickerCss = css({
+  marginLeft: 20,
+  justifyContent: "center",
+  height: "100%",
+  transitionDuration: "1s",
+  transitionProperty: "opacity",
+  opacity: 0,
+})
+
+const logCss = css({
+  marginLeft: 10,
+  marginTop: 20,
+  transitionDuration: "1s",
+  transitionProperty: "opacity",
+  opacity: 0,
+})
+
+const doneCss = css({
+  opacity: 1,
+})
 
 interface ButtonProps {
   requestState: RequestState
@@ -138,24 +169,6 @@ function inviteText({ requestState, t }: TextFuncArgs) {
 }
 
 const styles = StyleSheet.create({
-  log: {
-    marginLeft: 10,
-    marginTop: 20,
-  },
-  ticker: {
-    marginLeft: 20,
-    justifyContent: "center",
-    height: "100%",
-  },
-  statusesContainerLog: {
-    position: "absolute",
-    width: "100%",
-    marginTop: 10,
-  },
-  statusesContainerTicker: {
-    alignContent: "center",
-    height: "100%",
-  },
   message: {
     lineHeight: 20,
   },

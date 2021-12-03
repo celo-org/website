@@ -1,5 +1,4 @@
 import * as React from "react"
-import { H3 } from "src/fonts/Fonts"
 import { Cell, GridRow, Spans } from "src/layout/Grid2"
 import { fonts, standardStyles } from "src/estyles"
 
@@ -15,7 +14,7 @@ function SideTitledSection({ title, text, children, span, nativeID }: SectionPro
   return (
     <GridRow columns={4} css={standardStyles.elementalMargin} id={nativeID}>
       <Cell span={Spans.one}>
-        <H3>{title}</H3>
+        <h3 css={fonts.h3}>{title}</h3>
       </Cell>
       <Cell span={span || Spans.two}>
         <p css={fonts.body}>{text}</p>

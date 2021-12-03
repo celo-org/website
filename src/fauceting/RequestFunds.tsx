@@ -1,16 +1,16 @@
 import * as React from "react"
 import ReCAPTCHA from "react-google-recaptcha"
-import { StyleSheet, View } from "react-native"
+import { StyleSheet } from "react-native"
 import { MobileOS, RequestRecord, RequestType } from "src/fauceting/FaucetInterfaces"
 import { ButtonWithFeedback, ContextualInfo, HashingStatus } from "src/fauceting/MicroComponents"
 import { RequestState, requestStatusToState, validateBeneficary } from "src/fauceting/utils"
 import { postForm } from "src/forms/postForm"
-import { TextInput } from "src/forms/TextInput"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
-import { standardStyles } from "src/styles"
 import { colors } from "src/colors"
 import getConfig from "next/config"
 import subscribeRequest from "../../server/FirebaseClient"
+import { css } from "@emotion/react"
+import { errorStyle, flexRow, inputStyle } from "src/estyles"
 
 interface State {
   beneficiary: string
@@ -131,16 +131,12 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
     const { requestState, dollarTxHash, goldTxHash, escrowTxHash } = this.state
     const isInvalid = requestState === RequestState.Invalid
     return (
-      <View style={standardStyles.elementalMargin}>
-        <TextInput
+      <div css={rootStyle}>
+        <input
           type={"text"}
-          focusStyle={standardStyles.inputFocused}
           name="beneficiary"
-          style={[standardStyles.input, isInvalid && styles.error]}
+          css={[inputStyle, isInvalid && errorStyle]}
           placeholder={this.props.t("testnetAddress")}
-          // TODO: is it normal that setBeneficiary is using React.SyntheticEvent<HTMLInputElement>
-          // and not NativeSyntheticEvent<TextInputChangeEventData> ?
-          // @ts-ignore
           onChange={this.setAddress}
           value={this.state.beneficiary}
         />
@@ -149,14 +145,14 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
           t={this.props.t}
           isFaucet={this.isFaucet()}
         />
-        <View style={[styles.recaptcha, standardStyles.elementalMargin]}>
+        <div css={recaptchaStyle}>
           <ReCAPTCHA
             sitekey={RECAPTCHA_SITE_KEY}
             onChange={this.onCaptcha}
             ref={this.recaptchaRef}
           />
-        </View>
-        <View style={[this.isFaucet() && standardStyles.row]}>
+        </div>
+        <div css={this.isFaucet() && flexRow}>
           <ButtonWithFeedback
             requestState={requestState}
             isFaucet={this.isFaucet()}
@@ -165,18 +161,17 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
             disabled={this.state.beneficiary.length === 0 || this.inviteAndBlankOS()}
             t={this.props.t}
           />
-          <View>
+          <div css={viewCss}>
             <HashingStatus
               done={requestState === RequestState.Completed}
               isFaucet={this.isFaucet()}
               dollarTxHash={dollarTxHash}
               goldTxHash={goldTxHash}
               escrowTxHash={escrowTxHash}
-              t={this.props.t}
             />
-          </View>
-        </View>
-      </View>
+          </div>
+        </div>
+      </div>
     )
   }
 }
@@ -186,6 +181,22 @@ function send(beneficiary: string, kind: RequestType, captchaToken: string, os?:
   return postForm(route, { captchaToken, beneficiary, mobileOS: os })
 }
 
+const rootStyle = css({
+  display: "flex",
+  flexDirection: "column",
+  margin: "20px 0",
+})
+
+const recaptchaStyle = css({
+  height: 80,
+  margin: "20px 0",
+})
+
+const viewCss = css({
+  display: "flex",
+  flexDirection: "column",
+})
+
 const styles = StyleSheet.create({
   error: {
     borderColor: colors.error,
@@ -193,9 +204,6 @@ const styles = StyleSheet.create({
   },
   radios: {
     marginStart: 20,
-  },
-  recaptcha: {
-    height: 80,
   },
 })
 

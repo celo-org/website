@@ -233,7 +233,21 @@ exports[`Audits renders 1`] = `
   }
 }
 
-.emotion-9 {
+.emotion-7 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 24px;
+  line-height: 28;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+}
+
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -246,12 +260,12 @@ exports[`Audits renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-9 {
+  .emotion-8 {
     grid-column: span 3;
   }
 }
 
-.emotion-10 {
+.emotion-9 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -260,11 +274,11 @@ exports[`Audits renders 1`] = `
   line-height: 28px;
 }
 
-.emotion-11 {
+.emotion-10 {
   margin-bottom: 20px;
 }
 
-.emotion-12 {
+.emotion-11 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -273,7 +287,7 @@ exports[`Audits renders 1`] = `
   line-height: 28px;
 }
 
-.emotion-13 {
+.emotion-12 {
   font-style: italic;
 }
 
@@ -303,46 +317,33 @@ exports[`Audits renders 1`] = `
         className="emotion-6"
       >
         <h3
-          aria-level="3"
-          className="emotion-7 emotion-8"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-7"
         >
           Contracts
         </h3>
       </div>
       <div
-        className="emotion-9"
+        className="emotion-8"
       >
         <p
-          className="emotion-10"
+          className="emotion-9"
         />
         <div
-          className="emotion-11"
+          className="emotion-10"
         >
           <p
-            className="emotion-12"
+            className="emotion-11"
           >
             Smart Contract Audit
              by 
             <em
-              className="emotion-13"
+              className="emotion-12"
             >
               OpenZeppelin
             </em>
           </p>
           <div
-            className="emotion-14"
+            className="emotion-13"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -350,7 +351,7 @@ exports[`Audits renders 1`] = `
             onMouseUp={[Function]}
           >
             <div
-              className="emotion-14"
+              className="emotion-13"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -378,7 +379,7 @@ exports[`Audits renders 1`] = `
               }
             >
               <a
-                className="emotion-7 emotion-17 emotion-8"
+                className="emotion-15 emotion-16 emotion-17"
                 dir="auto"
                 href="https://blog.openzeppelin.com/celo-contracts-audit"
                 onClick={[Function]}
@@ -408,7 +409,7 @@ exports[`Audits renders 1`] = `
               >
                 Read
                 <div
-                  className="emotion-14"
+                  className="emotion-13"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -438,21 +439,21 @@ exports[`Audits renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-11"
+          className="emotion-10"
         >
           <p
-            className="emotion-12"
+            className="emotion-11"
           >
             Formal Verification of Celo Governance Protocols
              by 
             <em
-              className="emotion-13"
+              className="emotion-12"
             >
               Certora
             </em>
           </p>
           <div
-            className="emotion-14"
+            className="emotion-13"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -460,7 +461,7 @@ exports[`Audits renders 1`] = `
             onMouseUp={[Function]}
           >
             <div
-              className="emotion-14"
+              className="emotion-13"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -488,7 +489,7 @@ exports[`Audits renders 1`] = `
               }
             >
               <a
-                className="emotion-7 emotion-17 emotion-8"
+                className="emotion-15 emotion-16 emotion-17"
                 dir="auto"
                 href="https://www.certora.com/pubs/CeloMay2020.pdf"
                 onClick={[Function]}
@@ -518,7 +519,7 @@ exports[`Audits renders 1`] = `
               >
                 Read
                 <div
-                  className="emotion-14"
+                  className="emotion-13"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -560,55 +561,42 @@ exports[`Audits renders 1`] = `
         className="emotion-6"
       >
         <h3
-          aria-level="3"
-          className="emotion-7 emotion-8"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-7"
         >
           Security
         </h3>
       </div>
       <div
-        className="emotion-9"
+        className="emotion-8"
       >
         <p
-          className="emotion-10"
+          className="emotion-9"
         />
         <div
-          className="emotion-11"
+          className="emotion-10"
         >
           <p
-            className="emotion-12"
+            className="emotion-11"
           >
             Crypto Library Audit
              by 
             <em
-              className="emotion-13"
+              className="emotion-12"
             >
               Teserakt
             </em>
           </p>
         </div>
         <div
-          className="emotion-11"
+          className="emotion-10"
         >
           <p
-            className="emotion-12"
+            className="emotion-11"
           >
             Security Audit
              by 
             <em
-              className="emotion-13"
+              className="emotion-12"
             >
               Trailofbits
             </em>
@@ -627,70 +615,57 @@ exports[`Audits renders 1`] = `
         className="emotion-6"
       >
         <h3
-          aria-level="3"
-          className="emotion-7 emotion-8"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-7"
         >
           Economics
         </h3>
       </div>
       <div
-        className="emotion-9"
+        className="emotion-8"
       >
         <p
-          className="emotion-10"
+          className="emotion-9"
         />
         <div
-          className="emotion-11"
+          className="emotion-10"
         >
           <p
-            className="emotion-12"
+            className="emotion-11"
           >
             Stability Protocol Analysis
              by 
             <em
-              className="emotion-13"
+              className="emotion-12"
             >
               Gauntlet
             </em>
           </p>
         </div>
         <div
-          className="emotion-11"
+          className="emotion-10"
         >
           <p
-            className="emotion-12"
+            className="emotion-11"
           >
             Economic Analysis
              by 
             <em
-              className="emotion-13"
+              className="emotion-12"
             >
               Prysm Group
             </em>
           </p>
         </div>
         <div
-          className="emotion-11"
+          className="emotion-10"
         >
           <p
-            className="emotion-12"
+            className="emotion-11"
           >
             Reserve Audit
              by 
             <em
-              className="emotion-13"
+              className="emotion-12"
             >
               NCC
             </em>

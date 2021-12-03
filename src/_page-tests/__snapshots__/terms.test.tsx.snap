@@ -258,7 +258,21 @@ exports[`Terms renders 1`] = `
   }
 }
 
-.emotion-10 {
+.emotion-8 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 24px;
+  line-height: 28;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+}
+
+.emotion-9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -271,12 +285,12 @@ exports[`Terms renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-10 {
+  .emotion-9 {
     grid-column: span 2;
   }
 }
 
-.emotion-11 {
+.emotion-10 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -285,14 +299,14 @@ exports[`Terms renders 1`] = `
   line-height: 28px;
 }
 
-.emotion-12 {
+.emotion-11 {
   height: 120px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
-.emotion-38 {
+.emotion-36 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -332,35 +346,22 @@ exports[`Terms renders 1`] = `
         className="emotion-7"
       >
         <h3
-          aria-level="3"
-          className="emotion-8 emotion-9"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-8"
         >
           Helpful Links
         </h3>
       </div>
       <div
-        className="emotion-10"
+        className="emotion-9"
       >
         <p
-          className="emotion-11"
+          className="emotion-10"
         />
         <div
-          className="emotion-12"
+          className="emotion-11"
         >
           <div
-            className="emotion-13"
+            className="emotion-12"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -368,7 +369,7 @@ exports[`Terms renders 1`] = `
             onMouseUp={[Function]}
           >
             <div
-              className="emotion-13"
+              className="emotion-12"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -396,7 +397,7 @@ exports[`Terms renders 1`] = `
               }
             >
               <a
-                className="emotion-8 emotion-16 emotion-9"
+                className="emotion-14 emotion-15 emotion-16"
                 dir="auto"
                 href="/user-agreement"
                 onClick={[Function]}
@@ -426,7 +427,7 @@ exports[`Terms renders 1`] = `
               >
                 User Agreement
                 <div
-                  className="emotion-13"
+                  className="emotion-12"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -455,7 +456,7 @@ exports[`Terms renders 1`] = `
             </div>
           </div>
           <div
-            className="emotion-13"
+            className="emotion-12"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -463,7 +464,7 @@ exports[`Terms renders 1`] = `
             onMouseUp={[Function]}
           >
             <div
-              className="emotion-13"
+              className="emotion-12"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -491,7 +492,7 @@ exports[`Terms renders 1`] = `
               }
             >
               <a
-                className="emotion-8 emotion-16 emotion-9"
+                className="emotion-14 emotion-15 emotion-16"
                 dir="auto"
                 href="/privacy"
                 onClick={[Function]}
@@ -521,7 +522,7 @@ exports[`Terms renders 1`] = `
               >
                 Privacy Policy
                 <div
-                  className="emotion-13"
+                  className="emotion-12"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -550,7 +551,7 @@ exports[`Terms renders 1`] = `
             </div>
           </div>
           <div
-            className="emotion-13"
+            className="emotion-12"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -558,7 +559,7 @@ exports[`Terms renders 1`] = `
             onMouseUp={[Function]}
           >
             <div
-              className="emotion-13"
+              className="emotion-12"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -586,7 +587,7 @@ exports[`Terms renders 1`] = `
               }
             >
               <a
-                className="emotion-8 emotion-16 emotion-9"
+                className="emotion-14 emotion-15 emotion-16"
                 dir="auto"
                 href="https://docs.celo.org/important-information/mainnet-network-disclaimer"
                 onClick={[Function]}
@@ -616,7 +617,7 @@ exports[`Terms renders 1`] = `
               >
                 Disclaimer
                 <div
-                  className="emotion-13"
+                  className="emotion-12"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -658,37 +659,24 @@ exports[`Terms renders 1`] = `
         className="emotion-7"
       >
         <h3
-          aria-level="3"
-          className="emotion-8 emotion-9"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-8"
         >
           A Note on Privacy
         </h3>
       </div>
       <div
-        className="emotion-10"
+        className="emotion-9"
       >
         <p
-          className="emotion-11"
+          className="emotion-10"
         />
         <p
-          className="emotion-38"
+          className="emotion-36"
         >
           The Celo Network stores phone number hashes to allow for payments to a phone number. By verifying your phone number, you consent to having your hashed phone number stored on the Celo Blockchain.
         </p>
         <div
-          className="emotion-13"
+          className="emotion-12"
           onClick={[Function]}
           onMouseDown={[Function]}
           onMouseEnter={[Function]}
@@ -696,7 +684,7 @@ exports[`Terms renders 1`] = `
           onMouseUp={[Function]}
         >
           <div
-            className="emotion-13"
+            className="emotion-12"
             style={
               Object {
                 "WebkitBoxDirection": "normal",
@@ -724,7 +712,7 @@ exports[`Terms renders 1`] = `
             }
           >
             <a
-              className="emotion-8 emotion-16 emotion-9"
+              className="emotion-14 emotion-15 emotion-16"
               dir="auto"
               href="https://docs.celo.org/celo-codebase/protocol/identity/phone-number-privacy"
               onClick={[Function]}
@@ -754,7 +742,7 @@ exports[`Terms renders 1`] = `
             >
               Privacy Documentation
               <div
-                className="emotion-13"
+                className="emotion-12"
                 style={
                   Object {
                     "display": "inline-flex",
