@@ -63,6 +63,7 @@ export const fonts = {
   navigation: css(fontInfo.navigation as any, {
     lineHeight: `${fontInfo.navigation.lineHeight}px`,
   }),
+  micro: css(fontInfo.micro as any),
 }
 
 export const textStyles = {
@@ -82,6 +83,16 @@ export const textStyles = {
   italic: css({
     fontStyle: "italic",
   }),
+  invert: {
+    color: colors.white,
+  },
+  readingOnDark: {
+    color: colors.gray,
+  },
+  error: {
+    color: colors.error,
+    fontWeight: "500",
+  },
 }
 
 export const WHEN_DESKTOP = `@media (min-width: ${DESKTOP_BREAKPOINT}px)`
