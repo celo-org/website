@@ -1,12 +1,10 @@
 import * as React from "react"
 import ReCAPTCHA from "react-google-recaptcha"
-import { StyleSheet } from "react-native"
 import { MobileOS, RequestRecord, RequestType } from "src/fauceting/FaucetInterfaces"
 import { ButtonWithFeedback, ContextualInfo, HashingStatus } from "src/fauceting/MicroComponents"
 import { RequestState, requestStatusToState, validateBeneficary } from "src/fauceting/utils"
 import { postForm } from "src/forms/postForm"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
-import { colors } from "src/colors"
 import getConfig from "next/config"
 import subscribeRequest from "../../server/FirebaseClient"
 import { css } from "@emotion/react"
@@ -195,16 +193,6 @@ const recaptchaStyle = css({
 const viewCss = css({
   display: "flex",
   flexDirection: "column",
-})
-
-const styles = StyleSheet.create({
-  error: {
-    borderColor: colors.error,
-    borderWidth: 1,
-  },
-  radios: {
-    marginStart: 20,
-  },
 })
 
 export default withNamespaces(NameSpaces.faucet)(RequestFunds)
