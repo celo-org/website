@@ -1,3 +1,5 @@
+import { FieldSet } from "airtable"
+
 // https://airtable.com/apppO5poOzAE5YYJN/api/docs#javascript/authentication
 export enum ApplicationFields {
   org = "Organization Name",
@@ -9,7 +11,7 @@ export enum ApplicationFields {
   video = "Optional: URL of a simple 1 minute unlisted YouTube, Vimeo, or Youku video introducing the founder(s)",
 }
 
-export interface Application {
+export interface Application extends FieldSet {
   org: string
   url: string
   about: string
@@ -30,7 +32,7 @@ export enum RecommendationFields {
   why = "Why do you recommend this applicant?",
 }
 
-export interface Recommendation {
+export interface Recommendation extends FieldSet {
   email: string
   org: string
   founderEmail: string

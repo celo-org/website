@@ -87,7 +87,7 @@ function PressPage(props: I18nProps & Props) {
   )
 }
 
-const gridCss = css(standardStyles.centered, {
+const gridCss = css(standardStyles.centered, flex, {
   [WHEN_DESKTOP]: standardStyles.blockMarginBottom,
   [WHEN_TABLET]: standardStyles.blockMarginBottomTablet,
   [WHEN_MOBILE]: standardStyles.blockMarginBottomMobile,

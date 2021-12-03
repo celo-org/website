@@ -1,19 +1,16 @@
+import { FieldSet } from "airtable"
 import getConfig from "next/config"
 import airtableInit from "../server/airtable"
 import Sentry from "../server/sentry"
 import { fetchCached, MINUTE } from "./cache"
 
-export interface Fields {
+export interface Fields extends FieldSet {
   live?: boolean
   text: string
   link: string
   block?: string[]
 }
 
-interface Record {
-  id: string
-  fields: Fields
-}
 // countryCode is a ISO 3166-1 alpha-2
 export default async function latestAnnouncements(countryCode: string): Promise<Fields[]> {
   try {
@@ -38,14 +35,14 @@ export default async function latestAnnouncements(countryCode: string): Promise<
 }
 
 async function fetchAnouncmentRecords() {
-  const records = (await getAirtable()
+  const records = await getAirtable()
     .select({
       maxRecords: 10,
       filterByFormula: IS_LIVE,
       sort: [{ field: "order", direction: "desc" }],
     })
-    .firstPage()) as Record[]
-  return records.map((record) => record.fields)
+    .firstPage()
+  return records.map((record) => record.fields) as Fields[]
 }
 
 function getAirtable() {
