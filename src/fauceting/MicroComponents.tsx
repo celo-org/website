@@ -48,8 +48,9 @@ export function HashingStatus({
   done,
 }: HashProps) {
   const { t } = useTranslation("faucet")
+
   return (
-    <div css={isFaucet ? statusesContainerTickerCss : hashingStatusCss}>
+    <div id="hash-status" css={isFaucet ? statusesContainerTickerCss : hashingStatusCss}>
       {[
         goldTxHash && isFaucet && t("cGLDsent"),
         dollarTxHash && t("cUSDsent"),
@@ -84,7 +85,7 @@ const tickerCss = css({
   height: "100%",
   transitionDuration: "1s",
   transitionProperty: "opacity",
-  opacity: 0,
+  opacity: 1,
 })
 
 const logCss = css({
@@ -92,7 +93,7 @@ const logCss = css({
   marginTop: 20,
   transitionDuration: "1s",
   transitionProperty: "opacity",
-  opacity: 0,
+  opacity: 1,
 })
 
 const doneCss = css({

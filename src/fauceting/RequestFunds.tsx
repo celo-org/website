@@ -35,8 +35,9 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
 
   recaptchaRef = React.createRef<ReCAPTCHA>()
 
-  setAddress = ({ currentTarget }: React.SyntheticEvent<HTMLInputElement>) => {
-    const { value } = currentTarget
+  setAddress = (event: React.SyntheticEvent<HTMLInputElement>) => {
+    event.preventDefault()
+    const { value } = event.currentTarget
     this.setState({
       beneficiary: value,
       requestState:
