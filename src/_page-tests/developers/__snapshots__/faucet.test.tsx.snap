@@ -423,6 +423,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             >
               <div
                 className="emotion-17"
+                id="hash-status"
               />
             </div>
           </div>
