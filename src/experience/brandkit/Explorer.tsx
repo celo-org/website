@@ -29,7 +29,7 @@ export function Explorer({ icons }: Props) {
           .map((icon) => (
             <div
               key={icon.id}
-              aria-testId={icon.id}
+              data-testid={icon.id}
               css={css(containerStyle, !visibleIcons.has(icon.id) && offScreenStyle)}
             >
               {icon.series == "2" ? (

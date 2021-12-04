@@ -58,7 +58,7 @@ async function fetchAssets(sheet: AssetSheet) {
   const assets = []
 
   const selector =
-    process.env.ENV === "production"
+    process.env.DEPLOY_ENV === "production"
       ? { filterByFormula: `AND(${IS_APROVED}, ${TERMS_SIGNED})` }
       : {}
 
