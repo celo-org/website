@@ -238,7 +238,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
 }) {
   const { t } = useTranslation(NameSpaces.common)
   const foregroundColor = props.isDarkMode ? colors.white : colors.dark
-  const { pathname } = useRouter()
+  const { pathname, asPath } = useRouter()
 
   return (
     <nav
@@ -255,12 +255,12 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
             href={item.link}
             text={t(item.name)}
           />
-          {pathname === item.link && (
+          {pathname === item.link || asPath === item.link && (
             <div css={styles.activeTab}>
               <OvalCoin color={colors.primary} size={10} />
             </div>
           )}
-        </div>
+          </div>
       ))}
       <div css={styles.linkWrapper}>
         <Button

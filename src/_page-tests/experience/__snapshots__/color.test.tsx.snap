@@ -2912,7 +2912,7 @@ exports[`Experience/Color renders 1`] = `
               >
                 Primary brand colors are Celo Green, Celo Gold, Celo Dark, and Celo Light.
 
-Celo Green is used to denote value and action including communication and applications of stable assets like cUSD and cBRL. Celo Gold is used more often when speaking to actions related to CELO like validation, proof of stake, and governance.
+Celo Green is used to denote value and action including communication and applications of stable assets like cUSD and cREAL. Celo Gold is used more often when speaking to actions related to CELO like validation, proof of stake, and governance.
 
 Celo Dark and Celo Light are high contrast complementary colors, interchangeably switching between background and typography. Celo Dark has a tendency to represent technical content while Celo Light represents non-technical topics.
               </div>
