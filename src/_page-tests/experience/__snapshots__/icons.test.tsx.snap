@@ -3092,8 +3092,8 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 className="emotion-170"
               >
                 <div
-                  aria-testId="1"
                   className="emotion-171"
+                  data-testid="1"
                 >
                   <div
                     className="emotion-11"
@@ -3331,8 +3331,8 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   </div>
                 </div>
                 <div
-                  aria-testId="2"
                   className="emotion-171"
+                  data-testid="2"
                 >
                   <div
                     className="emotion-11"

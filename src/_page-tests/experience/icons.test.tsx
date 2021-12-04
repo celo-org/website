@@ -12,6 +12,7 @@ const ICONS: IconData[] = [
     uri: "example.com/tree-icon.png",
     tags: ["plant"],
     id: "1",
+    series: "1",
   },
   {
     name: "Forest",
@@ -20,6 +21,7 @@ const ICONS: IconData[] = [
     uri: "example.com/forest-icon.png",
     tags: ["plant"],
     id: "2",
+    series: "1",
   },
 ]
 

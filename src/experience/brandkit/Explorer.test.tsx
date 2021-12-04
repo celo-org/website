@@ -12,6 +12,7 @@ const ICONS = [
     uri: "star.jpg",
     tags: ["sun", "space"],
     id: "1",
+    series: "1" as const,
   },
   {
     name: "Stellar Nebula",
@@ -20,6 +21,7 @@ const ICONS = [
     uri: "nebular.jpg",
     tags: ["sun", "space"],
     id: "1asd",
+    series: "1" as const,
   },
   {
     name: "Orion",
@@ -28,6 +30,7 @@ const ICONS = [
     uri: "constellations.jpg",
     tags: ["Stellar", "space"],
     id: "100",
+    series: "1" as const,
   },
   {
     name: "Tree",
@@ -36,6 +39,7 @@ const ICONS = [
     uri: "tree.jpg",
     tags: ["forest", "green", "life"],
     id: "2",
+    series: "1" as const,
   },
   {
     name: "human",
@@ -44,6 +48,7 @@ const ICONS = [
     uri: "human.jpg",
     tags: ["person", "life"],
     id: "3",
+    series: "1" as const,
   },
   {
     name: "flower",
@@ -52,6 +57,7 @@ const ICONS = [
     uri: "flower.jpg",
     tags: ["plant", "life"],
     id: "4",
+    series: "1" as const,
   },
 ]
 
