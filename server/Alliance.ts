@@ -37,11 +37,10 @@ async function fetchAllies(category: Category) {
 
   const hubspotClient = new hubspot.Client({ apiKey: serverRuntimeConfig.HUBSPOT_API_KEY })
 
+  // @ts-ignore
   try {
     const apiResponse = await hubspotClient.crm.companies.searchApi.doSearch({
-      filterGroups: [
-        { filters: [{ value: "string", propertyName: "string", operator: "NOT_CONTAINS_TOKEN" }] },
-      ],
+      filterGroups: [{ filters: [{ value: "string", propertyName: "string", operator: "EQ" }] }],
       sorts: ["string"],
       query: "string",
       properties: ["string"],
