@@ -101,7 +101,9 @@ export const _normalize = normalize
 
 function getPreview(asset: Fields) {
   const previewField = asset.Preview || asset[ASSSET_FIELD_LIGHT]
-
+  if (previewField && previewField[0]?.type === "image/svg+xml") {
+    return (previewField && previewField[0]?.url) || ""
+  }
   return (
     (previewField &&
       previewField[0] &&
