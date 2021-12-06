@@ -19,32 +19,25 @@ interface Fields extends FieldSet {
   [LOGO_FIELD]: Attachment[]
 }
 
-const READ_SHEET = "MOU Tracking"
 const WRITE_SHEET = "Web Requests"
 
 export default async function getAllies() {
-  return Promise.all(
-    Object.keys(Category).map((category) => {
-      return fetchCached(`air-${READ_SHEET}-${category}`, "en", 2 * MINUTE, () =>
-        fetchAllies(category as Category)
-      )
-    })
-  )
+  return fetchCached("approved_alliance_member", "en", 2 * MINUTE, () => fetchAllies())
 }
 
-async function fetchAllies(category: Category) {
+async function fetchAllies() {
   const { serverRuntimeConfig } = getConfig()
 
   const hubspotClient = new hubspot.Client({ apiKey: serverRuntimeConfig.HUBSPOT_API_KEY })
 
-  // @ts-ignore
   try {
     const apiResponse = await hubspotClient.crm.companies.searchApi.doSearch({
-      filterGroups: [{ filters: [{ value: "string", propertyName: "string", operator: "EQ" }] }],
-      sorts: ["string"],
-      query: "string",
-      properties: ["string"],
-      limit: 0,
+      // @ts-ignore
+      filterGroups: [
+        { filters: [{ value: "true", propertyName: "approved_alliance_member", operator: "EQ" }] },
+      ],
+      properties: ["categories", "name", "domain"],
+      // limit: 0,
       after: 0,
     })
     console.log(JSON.stringify(apiResponse.body, null, 2))
@@ -53,24 +46,11 @@ async function fetchAllies(category: Category) {
       ? console.error(JSON.stringify(e.response, null, 2))
       : console.error(e)
   }
-
-  // return getAirtable<Fields>(READ_SHEET)
-  //   .select({
-  //     filterByFormula: `AND(${IS_APROVED},SEARCH("${category}", {${CATEGORY_FIELD}}))`,
-  //     fields: ["Name", "Approved", CATEGORY_FIELD, LOGO_FIELD, URL_FIELD],
-  //     view: "Alliance Web",
-  //   })
-  //   .all()
-  //   .then((records) => {
-  //     return { name: category, records: records.map((r) => normalize(r.fields)) }
-  //   })
 }
 
 function getAirtable<T extends FieldSet>(sheet: string) {
   return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ALLIANCE_ID)(sheet) as Table<T>
 }
-
-const IS_APROVED = "Approved=1"
 
 export function normalize(asset: Fields): Ally {
   return {
