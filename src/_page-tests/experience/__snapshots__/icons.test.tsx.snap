@@ -455,6 +455,48 @@ exports[`Experience/Icons renders 1`] = `
   flex-direction: column;
 }
 
+.emotion-165 {
+  min-height: 100vh;
+}
+
+.emotion-169 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 18;
+  font-weight: 500;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #0FB972;
+  opacity: 0;
+  transition-duration: 200ms;
+  transition-property: opacity;
+}
+
+.emotion-170 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-171 {
+  width: 260px;
+}
+
 .emotion-173 {
   opacity: 0;
 }
@@ -2956,12 +2998,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               . You may not remix or transform the icons.
             </div>
             <div
-              className="emotion-11"
-              style={
-                Object {
-                  "minHeight": "100vh",
-                }
-              }
+              className="emotion-165"
             >
               <div
                 className="emotion-11"
@@ -3045,48 +3082,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   value=""
                 />
               </div>
-              <div
-                className="emotion-15"
-                dir="auto"
-                style={
-                  Object {
-                    "MozTransitionProperty": "opacity",
-                    "WebkitTransitionDuration": "200ms",
-                    "WebkitTransitionProperty": "opacity",
-                    "color": "rgba(15,185,114,1.00)",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "18px",
-                    "marginLeft": "10px",
-                    "marginRight": "10px",
-                    "opacity": 0,
-                    "textRendering": "geometricPrecision",
-                    "transitionDuration": "200ms",
-                    "transitionProperty": "opacity",
-                  }
-                }
+              <span
+                aria-hidden={true}
+                className="emotion-169"
               >
                 2 Matching Icons
-              </div>
+              </span>
               <div
-                className="emotion-11"
-                style={
-                  Object {
-                    "WebkitBoxDirection": "normal",
-                    "WebkitBoxLines": "multiple",
-                    "WebkitBoxOrient": "horizontal",
-                    "WebkitFlexDirection": "row",
-                    "WebkitFlexWrap": "wrap",
-                    "flexDirection": "row",
-                    "flexWrap": "wrap",
-                    "msFlexDirection": "row",
-                    "msFlexWrap": "wrap",
-                  }
-                }
+                className="emotion-170"
               >
                 <div
-                  className="emotion-11"
+                  className="emotion-171"
                   data-testid="1"
                 >
                   <div
@@ -3325,7 +3331,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   </div>
                 </div>
                 <div
-                  className="emotion-11"
+                  className="emotion-171"
                   data-testid="2"
                 >
                   <div

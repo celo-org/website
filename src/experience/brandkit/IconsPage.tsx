@@ -34,6 +34,7 @@ export interface IconData {
   uri: string
   tags: string[]
   id: string
+  series: "1" | "2"
 }
 
 interface OverviewProps {

@@ -17,6 +17,7 @@ interface Fields extends FieldSet {
   Terms: boolean
   Tags?: string[]
   Order: number
+  series: "1" | "2"
 }
 
 export enum AssetSheet {
@@ -32,11 +33,11 @@ export default async function combineTagsWithAssets(sheet: AssetSheet) {
 }
 
 async function getAssets(sheet: AssetSheet) {
-  return fetchCached(`brand-assets-${sheet}`, "en", 3 * MINUTE, () => fetchAssets(sheet))
+  return fetchCached(`brand-assets-${sheet}`, "en", 2 * MINUTE, () => fetchAssets(sheet))
 }
 
 async function getTags() {
-  return fetchCached(`brand-assets-tags`, "en", 3 * MINUTE, fetchTags)
+  return fetchCached(`brand-assets-tags`, "en", 2 * MINUTE, fetchTags)
 }
 
 async function fetchTags(): Promise<Record<string, Tag>> {
@@ -56,10 +57,15 @@ async function fetchTags(): Promise<Record<string, Tag>> {
 async function fetchAssets(sheet: AssetSheet) {
   const assets = []
 
+  const selector =
+    process.env.DEPLOY_ENV === "production"
+      ? { filterByFormula: `AND(${IS_APROVED}, ${TERMS_SIGNED})` }
+      : {}
+
   await getAirtable(sheet)
     .select({
       pageSize: 100,
-      filterByFormula: `AND(${IS_APROVED}, ${TERMS_SIGNED})`,
+      ...selector,
       sort: [{ field: "Order", direction: "asc" }],
     })
     .eachPage((records, fetchNextPage) => {
@@ -88,13 +94,16 @@ function normalize(asset: Fields, id: string, tags: Record<string, Tag>): AssetP
     uri: getURI(asset),
     tags: (asset.Tags || []).map((tagID) => tags[tagID].Name),
     id,
+    series: asset.series,
   }
 }
 export const _normalize = normalize
 
 function getPreview(asset: Fields) {
   const previewField = asset.Preview || asset[ASSSET_FIELD_LIGHT]
-
+  if (previewField && previewField[0]?.type === "image/svg+xml") {
+    return (previewField && previewField[0]?.url) || ""
+  }
   return (
     (previewField &&
       previewField[0] &&
