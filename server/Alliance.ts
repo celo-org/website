@@ -1,7 +1,7 @@
 import * as hubspot from "@hubspot/api-client"
 import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
-import Ally, { NewMember } from "../src/alliance/AllianceMember"
+import Ally, { NewMember, AllianceMemberHubspot } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
 import addToCRM, { ListID } from "./addToCRM"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
@@ -19,6 +19,21 @@ interface Fields extends FieldSet {
   [LOGO_FIELD]: Attachment[]
 }
 
+interface HubSpotField {
+  id: string
+  properties: {
+    categories: string
+    createdate: string
+    domain: string
+    hs_lastmodifieddate: string
+    hs_object_id: string
+    name: string
+  }
+  createdAt: string
+  updatedAt: string
+  archived: boolean
+}
+
 const WRITE_SHEET = "Web Requests"
 
 export default async function getAllies() {
@@ -32,12 +47,11 @@ async function fetchAllies() {
 
   try {
     const apiResponse = await hubspotClient.crm.companies.searchApi.doSearch({
-      // @ts-ignore
       filterGroups: [
+        // @ts-ignore
         { filters: [{ value: "true", propertyName: "approved_alliance_member", operator: "EQ" }] },
       ],
       properties: ["categories", "name", "domain"],
-      // limit: 0,
       after: 0,
     })
     console.log(JSON.stringify(apiResponse.body, null, 2))
@@ -59,6 +73,14 @@ export function normalize(asset: Fields): Ally {
       uri: getImageURI(asset["Logo Upload"], ImageSizes.large),
       ...getWidthAndHeight(asset["Logo Upload"]),
     },
+    url: asset[URL_FIELD],
+  }
+}
+
+//this is the normalizeHubspot from Henry
+export function normalizeHubspot(asset: HubSpotField): Ally {
+  return {
+    name: asset.Name,
     url: asset[URL_FIELD],
   }
 }
