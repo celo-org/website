@@ -1,6 +1,6 @@
 import { NextPage } from "next"
 import * as React from "react"
-import { StyleSheet, Text, View } from "react-native"
+import { StyleSheet, View } from "react-native"
 import AssetProps from "src/../fullstack/AssetProps"
 import Page, { IMAGERY_PATH } from "src/experience/brandkit/common/Page"
 import { AssetTypes } from "src/experience/brandkit/tracking"
@@ -12,18 +12,16 @@ import { H2 } from "src/fonts/Fonts"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { ScreenSizes, useScreenSize } from "src/layout/ScreenSize"
 import { hashNav } from "src/shared/menu-items"
-import { fonts, standardStyles } from "src/styles"
+import { standardStyles } from "src/styles"
 
 const { brandImagery } = hashNav
 
 interface Props {
   illos: AssetProps[]
-  graphics: AssetProps[]
 }
 
 const KeyImageryWrapped: NextPage<Props> = React.memo(function KeyImagery({
   illos,
-  graphics,
 }: Props) {
   const { t } = useTranslation(NameSpaces.brand)
 
@@ -95,38 +93,6 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
               uri={illo.uri}
               loading={false}
               size={size}
-            />
-          ))}
-      </View>
-    </View>
-  )
-})
-
-interface GraphicsProps {
-  data: AssetProps[]
-}
-
-const AbstractGraphics = React.memo(function _AbstractGraphics({ data }: GraphicsProps) {
-  const { t } = useTranslation(NameSpaces.brand)
-  return (
-    <View style={standardStyles.sectionMarginTop}>
-      <H2 style={[brandStyles.gap, standardStyles.elementalMarginBottom]}>
-        {t("keyImagery.abstractTitle")}
-      </H2>
-      <Text style={[brandStyles.gap, fonts.p]}>{t("keyImagery.abstractText")}</Text>
-      <View style={brandStyles.tiling}>
-        {data &&
-          data.map((graphic) => (
-            <Showcase
-              key={graphic.id}
-              ratio={344 / 172}
-              assetType={AssetTypes.graphic}
-              description={graphic.description}
-              name={graphic.name}
-              preview={graphic.preview}
-              uri={graphic.uri}
-              loading={false}
-              size={"100%"}
             />
           ))}
       </View>
