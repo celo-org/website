@@ -87,6 +87,11 @@ export const pagePaths = {
     link: "/dapps",
     isDark: true,
   },
+  ENTERPRISE: {
+    name: "Enterprise",
+    link: "/enterprise",
+    isDark: true,
+  },
   FLOWERS: {
     name: "For Value Flowers",
     link: "/flowers",
@@ -182,6 +187,7 @@ export const MAIN_MENU = [
   pagePaths.DEVELOPERS,
   pagePaths.COMMUNITY,
   pagePaths.ECOSYSTEM,
+  pagePaths.ENTERPRISE,
   pagePaths.ALLIANCE_COLLECTIVE,
   pagePaths.PUBLIC_SECTOR,
 ]
