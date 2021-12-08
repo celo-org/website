@@ -69,7 +69,7 @@ exports[`Main MobileMenu renders 1`] = `
   margin-bottom: 25px;
 }
 
-.emotion-37 {
+.emotion-42 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -549,9 +549,73 @@ exports[`Main MobileMenu renders 1`] = `
         </a>
       </div>
     </div>
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-3"
+        onClick={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        style={
+          Object {
+            "WebkitAlignItems": "center",
+            "WebkitBoxAlign": "center",
+            "alignItems": "center",
+            "msFlexAlign": "center",
+          }
+        }
+      >
+        <a
+          className="emotion-4 emotion-5 emotion-6"
+          dir="auto"
+          href="/enterprise"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          role="link"
+          style={
+            Object {
+              "WebkitAlignItems": "center",
+              "WebkitBoxAlign": "center",
+              "WebkitBoxFlex": 0,
+              "WebkitBoxPack": "center",
+              "WebkitFlexGrow": 0,
+              "WebkitJustifyContent": "center",
+              "alignItems": "center",
+              "backgroundColor": "rgba(0,0,0,0.00)",
+              "borderBottomColor": "rgba(0,0,0,0.00)",
+              "borderLeftColor": "rgba(0,0,0,0.00)",
+              "borderRightColor": "rgba(0,0,0,0.00)",
+              "borderTopColor": "rgba(0,0,0,0.00)",
+              "color": "rgba(17,18,20,1.00)",
+              "cursor": "pointer",
+              "display": "inline-flex",
+              "flexGrow": 0,
+              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontSize": "20px",
+              "fontWeight": "500",
+              "justifyContent": "center",
+              "lineHeight": "16px",
+              "msFlexAlign": "center",
+              "msFlexPack": "center",
+              "msFlexPositive": 0,
+              "opacity": 1,
+              "outlineColor": "transparent",
+              "textAlign": "center",
+              "textRendering": "geometricPrecision",
+              "width": "fit-content",
+            }
+          }
+        >
+          Enterprise
+        </a>
+      </div>
+    </div>
   </div>
   <div
-    className="emotion-37"
+    className="emotion-42"
   >
     <svg
       fill="none"
