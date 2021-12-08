@@ -187,9 +187,9 @@ export const MAIN_MENU = [
   pagePaths.DEVELOPERS,
   pagePaths.COMMUNITY,
   pagePaths.ECOSYSTEM,
-  pagePaths.ENTERPRISE,
   pagePaths.ALLIANCE_COLLECTIVE,
   pagePaths.PUBLIC_SECTOR,
+  pagePaths.ENTERPRISE,
 ]
 
 // TODO: Temporary link to the master branch documentation for 'sdkDocs' and 'sdkTutorial'
