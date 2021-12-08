@@ -255,7 +255,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
             href={item.link}
             text={t(item.name)}
           />
-          {pathname === item.link || asPath === item.link && (
+          {(pathname === item.link || asPath === item.link) && (
             <div css={styles.activeTab}>
               <OvalCoin color={colors.primary} size={10} />
             </div>
