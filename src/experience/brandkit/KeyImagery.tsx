@@ -41,7 +41,6 @@ const KeyImageryWrapped: NextPage<Props> = React.memo(function KeyImagery({
           id: brandImagery.illustrations,
           children: <Illustrations data={illos} />,
         },
-        { id: brandImagery.graphics, children: <AbstractGraphics data={graphics} /> },
       ]}
     />
   )
@@ -83,7 +82,6 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
       <H2 style={[brandStyles.gap, standardStyles.elementalMarginBottom]}>
         {t("keyImagery.illoTitle")}
       </H2>
-      <Text style={[brandStyles.gap, fonts.p]}>{t("keyImagery.illoText")}</Text>
       <View style={[brandStyles.tiling, styles.illustrationsArea]}>
         {data &&
           data.map((illo) => (
