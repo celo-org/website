@@ -1,7 +1,7 @@
 import * as hubspot from "@hubspot/api-client"
 import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
-import Ally, { NewMember, AllianceMemberHubspot } from "../src/alliance/AllianceMember"
+import Ally, { NewMember, AllianceMemberHubspot, Grouping } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
 import addToCRM, { ListID } from "./addToCRM"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
@@ -35,11 +35,6 @@ interface HubSpotField {
   archived: boolean
 }
 
-interface Grouping {
-  name: Category
-  records: Ally[]
-}
-
 const WRITE_SHEET = "Web Requests"
 
 export default async function getAllies() {
@@ -62,8 +57,7 @@ async function fetchAllies(): Promise<Grouping[]> {
       after: 0,
     })
     console.log(JSON.stringify(apiResponse.body, null, 2))
-
-    groupBy(apiResponse.body)
+    apiResponse.body.results.map((result) => normalizeHubspot(result))
   } catch (e) {
     e.message === "HTTP request failed"
       ? console.error(JSON.stringify(e.response, null, 2))
