@@ -6,6 +6,7 @@ import { Category } from "../src/alliance/CategoryEnum"
 import addToCRM, { ListID } from "./addToCRM"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
 import { fetchCached, MINUTE } from "./cache"
+import { groupBy } from "./GroupBy"
 
 export const CATEGORY_FIELD = "Web Category*"
 export const LOGO_FIELD = "Logo Upload"
@@ -34,13 +35,19 @@ interface HubSpotField {
   archived: boolean
 }
 
+interface Grouping {
+  name: Category
+  records: Ally[]
+}
+
 const WRITE_SHEET = "Web Requests"
 
 export default async function getAllies() {
   return fetchCached("approved_alliance_member", "en", 2 * MINUTE, () => fetchAllies())
 }
+// get the data, normalize it, group it, format it as an Array of Groupings
 
-async function fetchAllies() {
+async function fetchAllies(): Promise<Grouping[]> {
   const { serverRuntimeConfig } = getConfig()
 
   const hubspotClient = new hubspot.Client({ apiKey: serverRuntimeConfig.HUBSPOT_API_KEY })
@@ -55,6 +62,8 @@ async function fetchAllies() {
       after: 0,
     })
     console.log(JSON.stringify(apiResponse.body, null, 2))
+
+    groupBy(apiResponse.body)
   } catch (e) {
     e.message === "HTTP request failed"
       ? console.error(JSON.stringify(e.response, null, 2))
@@ -80,8 +89,10 @@ export function normalize(asset: Fields): Ally {
 //this is the normalizeHubspot from Henry
 export function normalizeHubspot(asset: HubSpotField): Ally {
   return {
-    name: asset.Name,
-    url: asset[URL_FIELD],
+    name: asset.properties.name,
+    url: asset.properties.domain,
+    logo: { uri: "", width: 0, height: 0 },
+    category: asset.properties.categories,
   }
 }
 
