@@ -1,5 +1,6 @@
 import * as hubspot from "@hubspot/api-client"
 import { Attachment, FieldSet, Table } from "airtable"
+import { zero } from "big-integer"
 import getConfig from "next/config"
 import Ally, { NewMember, AllianceMemberHubspot, Grouping } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
@@ -21,18 +22,21 @@ interface Fields extends FieldSet {
 }
 
 interface HubSpotField {
-  id: string
-  properties: {
-    categories: string
-    createdate: string
-    domain: string
-    hs_lastmodifieddate: string
-    hs_object_id: string
-    name: string
+  [key: string]: {
+    id: string
+    properties: {
+      categories: string
+      createdate: string
+      domain: string
+      hs_lastmodifieddate: string
+      hs_object_id: string
+      name: string
+    }
+    createdAt: string
+    updatedAt: string
+    archived?: boolean
+    archivedAt?: string
   }
-  createdAt: string
-  updatedAt: string
-  archived: boolean
 }
 
 const WRITE_SHEET = "Web Requests"
@@ -83,10 +87,10 @@ export function normalize(asset: Fields): Ally {
 //this is the normalizeHubspot from Henry
 export function normalizeHubspot(asset: HubSpotField): Ally {
   return {
-    name: asset.properties.name,
-    url: asset.properties.domain,
+    name: asset.key.properties.name,
+    url: asset.key.properties.domain,
     logo: { uri: "", width: 0, height: 0 },
-    category: asset.properties.categories,
+    category: asset.key.properties.categories,
   }
 }
 
