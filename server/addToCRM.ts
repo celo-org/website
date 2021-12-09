@@ -14,6 +14,7 @@ export enum ListID {
   FundReferrals = "118",
   FundApplicants = "117",
   PublicSector = "119",
+  Enterprise = "124",
 }
 
 function convert(formContact: CRMInterface): HubSpotContact {
@@ -41,10 +42,9 @@ export default async function addToCRM(
   const hubSpotClient = HubSpotClient()
 
   try {
-    const [contactCreated, _] = await Promise.all([
-      createContactOrUpdate(hubSpotClient, contact),
-      addContactsToList(list, [contact.email]),
-    ])
+    const contactCreated = await createContactOrUpdate(hubSpotClient, contact)
+
+    addContactsToList(list, [contact.email])
 
     if (company) {
       const companyCreated = await createCompany(hubSpotClient, company)
@@ -73,7 +73,6 @@ export async function addManyCRM(
       list,
       contacts.map((contact) => contact.email)
     )
-
     return Promise.all(
       modifiedContacts.map((contact) =>
         linkContactToCompany(hubSpotClient, {
