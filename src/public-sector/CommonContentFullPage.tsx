@@ -107,7 +107,7 @@ export function pageSwitch(
             gridFields.desktopCss && { [WHEN_DESKTOP]: gridFields.desktopCss }
           )}
         >
-          {gridFields.cells.map((cell) =>
+          {gridFields.cells?.map((cell) =>
             cellSwitch(cell, gridFields.darkMode, gridFields.columns)
           )}
         </GridRow>
