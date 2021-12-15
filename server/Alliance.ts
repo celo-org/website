@@ -25,12 +25,6 @@ interface Fields extends FieldSet {
 interface HubSpotField {
   id: string
   properties: {
-    // categories: string
-    // createdate: string
-    // domain: string
-    // hs_lastmodifieddate: string
-    // hs_object_id: string
-    // name: string
     [key: string]: string
   }
 }
@@ -53,9 +47,10 @@ async function fetchAllies(): Promise<Grouping[]> {
         // @ts-ignore
         { filters: [{ value: "true", propertyName: "approved_alliance_member", operator: "EQ" }] },
       ],
-      properties: ["categories", "name", "domain"],
+      properties: ["categories", "name", "domain", "logo"],
       after: 0,
     })
+    console.log(JSON.stringify(apiResponse.body, null, 2))
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
     const groups = groupBy(normalized)
     const companies = Object.entries<AllianceMember[]>(groups).map((group) => {
@@ -89,7 +84,7 @@ export function normalizeHubspot(asset: HubSpotField): Ally {
   return {
     name: asset.properties.name,
     url: asset.properties.domain,
-    logo: { uri: "", width: 0, height: 0 },
+    logo: { uri: asset.properties.logo, width: 0, height: 0 },
     category: asset.properties.categories,
   }
 }
