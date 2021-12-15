@@ -57,7 +57,7 @@ async function fetchAllies(): Promise<Grouping[]> {
     })
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
     const groups = groupBy(normalized)
-    Object.entries(groups).map((group) => {
+    return Object.entries(groups).map((group) => {
       return { name: group[0], records: group[1][0] }
     })
   } catch (e) {
