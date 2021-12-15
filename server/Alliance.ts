@@ -1,6 +1,6 @@
 import * as hubspot from "@hubspot/api-client"
+import { SimplePublicObject } from "@hubspot/api-client/lib/codegen/crm/companies/api"
 import { Attachment, FieldSet, Table } from "airtable"
-import { zero } from "big-integer"
 import getConfig from "next/config"
 import Ally, { NewMember, AllianceMemberHubspot, Grouping } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
@@ -22,20 +22,15 @@ interface Fields extends FieldSet {
 }
 
 interface HubSpotField {
-  [key: string]: {
-    id: string
-    properties: {
-      categories: string
-      createdate: string
-      domain: string
-      hs_lastmodifieddate: string
-      hs_object_id: string
-      name: string
-    }
-    createdAt: string
-    updatedAt: string
-    archived?: boolean
-    archivedAt?: string
+  id: string
+  properties: {
+    // categories: string
+    // createdate: string
+    // domain: string
+    // hs_lastmodifieddate: string
+    // hs_object_id: string
+    // name: string
+    [key: string]: string
   }
 }
 
@@ -60,8 +55,12 @@ async function fetchAllies(): Promise<Grouping[]> {
       properties: ["categories", "name", "domain"],
       after: 0,
     })
-    console.log(JSON.stringify(apiResponse.body, null, 2))
-    apiResponse.body.results.map((result) => normalizeHubspot(result as any))
+    const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
+    const groups = groupBy(normalized)
+    Object.entries(groups).map((group) => {
+      console.log(group[0][0])
+      return { name: group[0] }
+    })
   } catch (e) {
     e.message === "HTTP request failed"
       ? console.error(JSON.stringify(e.response, null, 2))
@@ -87,10 +86,10 @@ export function normalize(asset: Fields): Ally {
 //this is the normalizeHubspot from Henry
 export function normalizeHubspot(asset: HubSpotField): Ally {
   return {
-    name: asset.key.properties.name,
-    url: asset.key.properties.domain,
+    name: asset.properties.name,
+    url: asset.properties.domain,
     logo: { uri: "", width: 0, height: 0 },
-    category: asset.key.properties.categories,
+    category: asset.properties.categories,
   }
 }
 
