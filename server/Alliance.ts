@@ -58,8 +58,7 @@ async function fetchAllies(): Promise<Grouping[]> {
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
     const groups = groupBy(normalized)
     Object.entries(groups).map((group) => {
-      console.log(group[0][0])
-      return { name: group[0] }
+      return { name: group[0], records: group[1][0] }
     })
   } catch (e) {
     e.message === "HTTP request failed"
