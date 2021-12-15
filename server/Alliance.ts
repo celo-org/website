@@ -1,9 +1,8 @@
 import * as hubspot from "@hubspot/api-client"
-import { SimplePublicObject } from "@hubspot/api-client/lib/codegen/crm/companies/api"
 import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import AllianceMember from "../src/alliance/AllianceMember"
-import Ally, { NewMember, AllianceMemberHubspot, Grouping } from "../src/alliance/AllianceMember"
+import Ally, { NewMember, Grouping } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
 import addToCRM, { ListID } from "./addToCRM"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
@@ -84,7 +83,7 @@ export function normalizeHubspot(asset: HubSpotField): Ally {
   return {
     name: asset.properties.name,
     url: asset.properties.domain,
-    logo: { uri: "", width: 0, height: 0 },
+    logo: { uri: asset.properties.logo, width: 0, height: 0 },
     category: asset.properties.categories,
   }
 }
