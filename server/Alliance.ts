@@ -2,6 +2,7 @@ import * as hubspot from "@hubspot/api-client"
 import { SimplePublicObject } from "@hubspot/api-client/lib/codegen/crm/companies/api"
 import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
+import AllianceMember from "../src/alliance/AllianceMember"
 import Ally, { NewMember, AllianceMemberHubspot, Grouping } from "../src/alliance/AllianceMember"
 import { Category } from "../src/alliance/CategoryEnum"
 import addToCRM, { ListID } from "./addToCRM"
@@ -57,9 +58,10 @@ async function fetchAllies(): Promise<Grouping[]> {
     })
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
     const groups = groupBy(normalized)
-    return Object.entries(groups).map((group) => {
-      return { name: group[0], records: group[1][0] }
+    const companies = Object.entries<AllianceMember[]>(groups).map((group) => {
+      return { name: group[0], records: group[1] }
     })
+    return companies
   } catch (e) {
     e.message === "HTTP request failed"
       ? console.error(JSON.stringify(e.response, null, 2))
