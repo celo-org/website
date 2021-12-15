@@ -84,7 +84,7 @@ export function normalizeHubspot(asset: HubSpotField): Ally {
   return {
     name: asset.properties.name,
     url: asset.properties.domain,
-    logo: { uri: asset.properties.logo, width: 0, height: 0 },
+    logo: { uri: "", width: 0, height: 0 },
     category: asset.properties.categories,
   }
 }
