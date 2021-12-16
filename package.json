@@ -52,7 +52,7 @@
     "express-rate-limit": "^5.4.1",
     "fast-xml-parser": "^3.20.3",
     "fecha": "^4.2.0",
-    "firebase": "^9.4.1",
+    "firebase": "^9.5.0",
     "front-matter": "^4.0.1",
     "fuzzy-search": "^3.2.1",
     "graphql": "^16.0.1",
