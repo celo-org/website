@@ -8,6 +8,7 @@ import addToCRM, { ListID } from "./addToCRM"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
 import { fetchCached, MINUTE } from "./cache"
 import { groupBy } from "./GroupBy"
+import probe from "probe-image-size"
 
 export const CATEGORY_FIELD = "Web Category*"
 export const LOGO_FIELD = "Logo Upload"
@@ -49,7 +50,27 @@ async function fetchAllies(): Promise<Grouping[]> {
       properties: ["categories", "name", "domain", "logo"],
       after: 0,
     })
+    // try{
+    //   const probeImage = await Promise.all(apiResponse.body.results.map((image) =>{
+    //     if(image.properties.logo !== null){
+    //       return probe(image.properties.logo)
+    //     }
+    //   }))
+    //   console.log(probeImage, "this is probe image")
+
+    // }catch(e){
+    //   console.log("error this is error", e.statusCode)
+    // }
+    // const probeImage = await Promise.all(apiResponse.body.results.map((image) =>{
+    //   if(image.properties.logo !== null){
+    //     return probe(image.properties.logo)
+    //   }
+    // }))
+    // console.log(probeImage)
+
+    console.log(JSON.stringify(apiResponse.body, null, 2))
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
+    console.log(normalized)
     const groups = groupBy(normalized)
     const companies = Object.entries<AllianceMember[]>(groups).map((group) => {
       return { name: group[0], records: group[1] }
