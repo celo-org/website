@@ -36,7 +36,7 @@
     "@hubspot/api-client": "^5.0.0",
     "@odnh/use-swipe": "^1.0.0",
     "@sentry/browser": "^6.13.2",
-    "@sentry/node": "^6.13.2",
+    "@sentry/node": "^6.15.0",
     "airtable": "^0.11.1",
     "bignumber.js": "^9.0.1",
     "body-parser": "^1.19.0",
