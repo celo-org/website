@@ -655,17 +655,19 @@
   resolved "https://registry.yarnpkg.com/@celo/typescript/-/typescript-0.0.1.tgz#e48a70f4f4af3b13cf492c6ed3e83b1fc225fa87"
   integrity sha512-C6IP2wp8DyZDdGNNEIqTfuVsL25AwxNGg3Sqej0ZJjQD/SrjVMaSjJhiEm3KMQ6H+hqDiVVEfMyD2AYCgwCV3Q==
 
-"@contentful/rich-text-react-renderer@^15.4.0":
-  version "15.4.0"
-  resolved "https://registry.yarnpkg.com/@contentful/rich-text-react-renderer/-/rich-text-react-renderer-15.4.0.tgz#43a5283aa5dcc59e6ba7542d7a668431eb182ce6"
-  integrity sha512-Pn4vrGdhdk76r/dSd+ctWXmAoAC3aIFpIlLA/9zt+crJ+mNKMKCtxONsAFCRuZ47norbUhKzXVaIzbhanATteA==
+"@contentful/rich-text-react-renderer@^15.6.2":
+  version "15.10.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-react-renderer/-/rich-text-react-renderer-15.10.0.tgz#d231d4e75d75be9f038401e84a0f367702f01024"
+  integrity sha512-4zeX1+rQJIB9vxXZCKLB3YKMW3Ff5ABRcS/TBCydELCczOqXWTO8iedRK+Suk7XApu5lJG5eZW7gUU+RqWM0hA==
   dependencies:
-    "@contentful/rich-text-types" "^15.3.6"
+    "@contentful/rich-text-types" "^15.10.0"
 
-"@contentful/rich-text-types@^15.3.6":
-  version "15.3.6"
-  resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-15.3.6.tgz#9caf022074b86df5a4cd1cb5e1cee01dc2b2cdbe"
-  integrity sha512-mMaS5N1FxjGq7k8l/WDqhBrAV+gu4GHvtDnFBoAwkOQ2V5Qh5oHiy39JKCLesmyXvH9tR+2BNpxwEMp3FVWpzw==
+"@contentful/rich-text-types@^15.10.0":
+  version "15.10.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-15.10.0.tgz#093f8389e2fb549b40b57f36c3b85e6809f794ad"
+  integrity sha512-GlwG8hrmX9DxszrErdbVM3PBZVPZ9xCRIXB8PNwtTpA/QprfGNFAtJipIPr6LBHqeslmA2KAFjnQ7J+c3lmlgA==
+  dependencies:
+    ajv "^8.8.2"
 
 "@corex/deepmerge@^2.5.11":
   version "2.5.11"
@@ -2300,6 +2302,16 @@ ajv@^8.0.1:
   version "8.5.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.5.0.tgz#695528274bcb5afc865446aa275484049a18ae4b"
   integrity sha512-Y2l399Tt1AguU3BPRP9Fn4eN+Or+StUGWCUpbnFyXSo8NZ9S4uj+AG2pjs5apK+ZMOwYOz1+a+VKvKH7CudXgQ==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
+    uri-js "^4.2.2"
+
+ajv@^8.8.2:
+  version "8.8.2"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.8.2.tgz#01b4fef2007a28bf75f0b7fc009f62679de4abbb"
+  integrity sha512-x9VuX+R/jcFj1DHo/fCp99esgGDWiHENrKxaCENuCxpoMCmAt/COCGVDwA7kleEpEzJjDnvh3yGoOuLu0Dtllw==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
