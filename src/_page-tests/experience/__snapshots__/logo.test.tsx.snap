@@ -331,7 +331,7 @@ exports[`Experience/Logo renders 1`] = `
   transition-duration: 500ms;
 }
 
-.emotion-92 {
+.emotion-91 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -353,7 +353,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-92 {
+  .emotion-91 {
     z-index: -5;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -363,18 +363,18 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 958px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 1080px;
   }
 }
 
-.emotion-93 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,12 +393,12 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-93 {
+  .emotion-92 {
     display: none;
   }
 }
 
-.emotion-149 {
+.emotion-147 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +411,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-149 {
+  .emotion-147 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -422,7 +422,7 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-150 {
+.emotion-148 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -436,7 +436,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-150 {
+  .emotion-148 {
     -webkit-transform: translateY(-25);
     -moz-transform: translateY(-25);
     -ms-transform: translateY(-25);
@@ -444,7 +444,7 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-151 {
+.emotion-149 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -455,7 +455,7 @@ exports[`Experience/Logo renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-294 {
+.emotion-292 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -468,7 +468,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-294 {
+  .emotion-292 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -479,7 +479,7 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-295 {
+.emotion-293 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -494,14 +494,14 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-295 {
+  .emotion-293 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
-.emotion-319 {
+.emotion-317 {
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -510,17 +510,17 @@ exports[`Experience/Logo renders 1`] = `
   flex: 1;
 }
 
-.emotion-320 {
+.emotion-318 {
   margin: 5px 0px;
 }
 
-.emotion-349 {
+.emotion-347 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-350 {
+.emotion-348 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -540,7 +540,7 @@ exports[`Experience/Logo renders 1`] = `
   width: 100%;
 }
 
-.emotion-351 {
+.emotion-349 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -569,7 +569,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-351 {
+  .emotion-349 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -586,7 +586,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-351 {
+  .emotion-349 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -598,36 +598,36 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-351 {
+  .emotion-349 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-351 {
+  .emotion-349 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-351 {
+  .emotion-349 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-351 {
+  .emotion-349 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-351 {
+  .emotion-349 {
     margin-top: 30px;
   }
 }
 
-.emotion-352 {
+.emotion-350 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -640,12 +640,12 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-352 {
+  .emotion-350 {
     grid-column: span 3;
   }
 }
 
-.emotion-353 {
+.emotion-351 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -658,7 +658,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-353 {
+  .emotion-351 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -671,7 +671,7 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-354 {
+.emotion-352 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -684,7 +684,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-354 {
+  .emotion-352 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -696,7 +696,7 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-355 {
+.emotion-353 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -713,16 +713,16 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-355 {
+  .emotion-353 {
     text-align: center;
   }
 }
 
-.emotion-357 {
+.emotion-355 {
   color: inherit;
 }
 
-.emotion-358 {
+.emotion-356 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -735,12 +735,12 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-358 {
+  .emotion-356 {
     grid-column: span 3;
   }
 }
 
-.emotion-359 {
+.emotion-357 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -756,21 +756,21 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-359 {
+  .emotion-357 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-360 {
+.emotion-358 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-360 {
+  .emotion-358 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -778,7 +778,7 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-361 {
+.emotion-359 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -793,18 +793,18 @@ exports[`Experience/Logo renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-362 {
+.emotion-360 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-402 {
+.emotion-400 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-402 {
+  .emotion-400 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -812,14 +812,14 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-476 {
+.emotion-474 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-476 {
+  .emotion-474 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -827,7 +827,7 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-545 {
+.emotion-543 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -856,7 +856,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-545 {
+  .emotion-543 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -873,7 +873,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-545 {
+  .emotion-543 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -885,39 +885,39 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-545 {
+  .emotion-543 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-545 {
+  .emotion-543 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-545 {
+  .emotion-543 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-545 {
+  .emotion-543 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-545 {
+  .emotion-543 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-546 {
+.emotion-544 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -935,7 +935,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-546 {
+  .emotion-544 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -950,7 +950,7 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-547 {
+.emotion-545 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -964,7 +964,7 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-547 {
+  .emotion-545 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -976,31 +976,31 @@ exports[`Experience/Logo renders 1`] = `
   }
 }
 
-.emotion-548 {
+.emotion-546 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-548 {
+  .emotion-546 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-549 {
+.emotion-547 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-549 {
+  .emotion-547 {
     display: none;
   }
 }
 
-.emotion-550 {
+.emotion-548 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1012,7 +1012,7 @@ exports[`Experience/Logo renders 1`] = `
   position: relative;
 }
 
-.emotion-551 {
+.emotion-549 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1039,7 +1039,7 @@ exports[`Experience/Logo renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-552 {
+.emotion-550 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1062,12 +1062,12 @@ exports[`Experience/Logo renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-552 {
+  .emotion-550 {
     text-align: center;
   }
 }
 
-.emotion-553 {
+.emotion-551 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1092,7 +1092,7 @@ exports[`Experience/Logo renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-554 {
+.emotion-552 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2200,19 +2200,16 @@ exports[`Experience/Logo renders 1`] = `
                 Key Imagery
               </a>
             </div>
-            <div
-              className="emotion-44"
-            />
           </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="emotion-92"
+    className="emotion-91"
   >
     <div
-      className="emotion-93"
+      className="emotion-92"
     >
       <div
         className="emotion-37"
@@ -2865,19 +2862,16 @@ exports[`Experience/Logo renders 1`] = `
             Key Imagery
           </a>
         </div>
-        <div
-          className="emotion-44"
-        />
       </div>
     </div>
     <div
-      className="emotion-149"
+      className="emotion-147"
     >
       <div
-        className="emotion-150"
+        className="emotion-148"
       >
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="overview"
         >
           <div
@@ -4087,7 +4081,7 @@ Please use the full-color logo whenever possible.
           </div>
         </div>
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="space-and-sizing"
         >
           <div
@@ -4534,7 +4528,7 @@ Please use the full-color logo whenever possible.
           </div>
         </div>
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="backgrounds"
         >
           <div
@@ -5724,10 +5718,10 @@ Please use the full-color logo whenever possible.
               When it comes to applying the Celo brand to your own projects, the monochrome Celo logo works well on a variety of backgrounds. Use the dark logo on lighter backgrounds and the inverse logo on darker and more colorful backgrounds.
             </div>
             <div
-              className="emotion-294"
+              className="emotion-292"
             >
               <div
-                className="emotion-295"
+                className="emotion-293"
               >
                 <div
                   className="emotion-11"
@@ -5911,7 +5905,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-295"
+                className="emotion-293"
               >
                 <div
                   className="emotion-11"
@@ -6095,7 +6089,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-295"
+                className="emotion-293"
               >
                 <div
                   className="emotion-11"
@@ -6299,16 +6293,16 @@ Please use the full-color logo whenever possible.
               Do not overlay any of the logos of glyphs on top of images. Do not overlay the two-color logo ontop of unpreferred light colors.
             </div>
             <div
-              className="emotion-294"
+              className="emotion-292"
             >
               <div
-                className="emotion-295"
+                className="emotion-293"
               >
                 <div
-                  className="emotion-319"
+                  className="emotion-317"
                 >
                   <img
-                    className="emotion-320"
+                    className="emotion-318"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6430,10 +6424,10 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="emotion-319"
+                  className="emotion-317"
                 >
                   <img
-                    className="emotion-320"
+                    className="emotion-318"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6556,13 +6550,13 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-295"
+                className="emotion-293"
               >
                 <div
-                  className="emotion-319"
+                  className="emotion-317"
                 >
                   <img
-                    className="emotion-320"
+                    className="emotion-318"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6644,10 +6638,10 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="emotion-319"
+                  className="emotion-317"
                 >
                   <img
-                    className="emotion-320"
+                    className="emotion-318"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6730,13 +6724,13 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-295"
+                className="emotion-293"
               >
                 <div
-                  className="emotion-319"
+                  className="emotion-317"
                 >
                   <img
-                    className="emotion-320"
+                    className="emotion-318"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6818,10 +6812,10 @@ Please use the full-color logo whenever possible.
                   </div>
                 </div>
                 <div
-                  className="emotion-319"
+                  className="emotion-317"
                 >
                   <img
-                    className="emotion-320"
+                    className="emotion-318"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6910,20 +6904,20 @@ Please use the full-color logo whenever possible.
     </div>
   </div>
   <div
-    className="emotion-349"
+    className="emotion-347"
     id="experience-footer"
   >
     <section
-      className="emotion-350"
+      className="emotion-348"
     >
       <div
-        className="emotion-351"
+        className="emotion-349"
       >
         <div
-          className="emotion-352"
+          className="emotion-350"
         >
           <div
-            className="emotion-353"
+            className="emotion-351"
           >
             <svg
               fill="none"
@@ -6946,19 +6940,19 @@ Please use the full-color logo whenever possible.
             </svg>
           </div>
           <div
-            className="emotion-354"
+            className="emotion-352"
           >
             <p
-              className="emotion-355"
+              className="emotion-353"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-355"
+              className="emotion-353"
             >
               Read more in Celo 
               <a
-                className="emotion-357"
+                className="emotion-355"
                 href="/terms"
               >
                 Terms of Service
@@ -6967,21 +6961,21 @@ Please use the full-color logo whenever possible.
           </div>
         </div>
         <div
-          className="emotion-358"
+          className="emotion-356"
         >
           <div
-            className="emotion-359"
+            className="emotion-357"
           >
             <div
-              className="emotion-360"
+              className="emotion-358"
             >
               <h6
-                className="emotion-361"
+                className="emotion-359"
               >
                 Celo
               </h6>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7030,7 +7024,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7079,7 +7073,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7128,7 +7122,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7177,7 +7171,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7226,7 +7220,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7275,7 +7269,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7324,7 +7318,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7374,15 +7368,15 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              className="emotion-402"
+              className="emotion-400"
             >
               <h6
-                className="emotion-361"
+                className="emotion-359"
               >
                 Technology
               </h6>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7431,7 +7425,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7480,7 +7474,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7529,7 +7523,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7578,7 +7572,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7628,15 +7622,15 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              className="emotion-402"
+              className="emotion-400"
             >
               <h6
-                className="emotion-361"
+                className="emotion-359"
               >
                 Resources
               </h6>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7685,7 +7679,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7734,7 +7728,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7783,7 +7777,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7832,7 +7826,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7881,7 +7875,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7930,7 +7924,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -7979,7 +7973,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8028,7 +8022,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8078,15 +8072,15 @@ Please use the full-color logo whenever possible.
               </div>
             </div>
             <div
-              className="emotion-476"
+              className="emotion-474"
             >
               <h6
-                className="emotion-361"
+                className="emotion-359"
               >
                 Social
               </h6>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8159,7 +8153,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8234,7 +8228,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8307,7 +8301,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8380,7 +8374,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8455,7 +8449,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8528,7 +8522,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8600,7 +8594,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8670,7 +8664,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8740,7 +8734,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8810,7 +8804,7 @@ Please use the full-color logo whenever possible.
                 </div>
               </div>
               <div
-                className="emotion-362"
+                className="emotion-360"
               >
                 <div
                   className="emotion-11"
@@ -8885,48 +8879,48 @@ Please use the full-color logo whenever possible.
       </div>
     </section>
     <section
-      className="emotion-350"
+      className="emotion-348"
     >
       <div
-        className="emotion-545"
+        className="emotion-543"
       >
         <div
-          className="emotion-546"
+          className="emotion-544"
         >
           <div
-            className="emotion-547"
+            className="emotion-545"
           >
             <img
-              className="emotion-548"
+              className="emotion-546"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-549"
+              className="emotion-547"
             >
               |
             </span>
             <div
-              className="emotion-550"
+              className="emotion-548"
             >
               <div
-                className="emotion-551"
+                className="emotion-549"
               />
               <span
-                className="emotion-552"
+                className="emotion-550"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-553"
+                className="emotion-551"
               />
             </div>
           </div>
           <small
-            className="emotion-554"
+            className="emotion-552"
           >
             The Celo Foundation, © Celo 2021
           </small>

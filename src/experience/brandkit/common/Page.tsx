@@ -74,12 +74,7 @@ const PAGES = [
   {
     title: "Key Imagery",
     href: IMAGERY_PATH,
-
-    sections: [
-      { title: "Overview", href: `${IMAGERY_PATH}#${hashNav.brandImagery.overview}` },
-      { title: "Illustrations", href: `${IMAGERY_PATH}#${hashNav.brandImagery.illustrations}` },
-      { title: "Abstract Graphics", href: `${IMAGERY_PATH}#${hashNav.brandImagery.graphics}` },
-    ],
+    sections: [],
   },
 ]
 

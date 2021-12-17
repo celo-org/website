@@ -19,7 +19,7 @@ describe("Experience/KeyImagery", () => {
     const tree = renderer
       .create(
         <TestProvider>
-          <KeyImagery graphics={MOCK} illos={MOCK} />
+          <KeyImagery illos={MOCK} />
         </TestProvider>
       )
       .toJSON()

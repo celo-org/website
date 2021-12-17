@@ -331,7 +331,7 @@ exports[`Experience/Typography renders 1`] = `
   transition-duration: 500ms;
 }
 
-.emotion-92 {
+.emotion-91 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -353,7 +353,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-92 {
+  .emotion-91 {
     z-index: -5;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -363,18 +363,18 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 958px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 1080px;
   }
 }
 
-.emotion-93 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,12 +393,12 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-93 {
+  .emotion-92 {
     display: none;
   }
 }
 
-.emotion-149 {
+.emotion-147 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +411,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-149 {
+  .emotion-147 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -422,7 +422,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-150 {
+.emotion-148 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -436,7 +436,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-150 {
+  .emotion-148 {
     -webkit-transform: translateY(-25);
     -moz-transform: translateY(-25);
     -ms-transform: translateY(-25);
@@ -444,7 +444,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-151 {
+.emotion-149 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -455,13 +455,13 @@ exports[`Experience/Typography renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-261 {
+.emotion-259 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-262 {
+.emotion-260 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -481,7 +481,7 @@ exports[`Experience/Typography renders 1`] = `
   width: 100%;
 }
 
-.emotion-263 {
+.emotion-261 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -510,7 +510,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-263 {
+  .emotion-261 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -527,7 +527,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-263 {
+  .emotion-261 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -539,36 +539,36 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-263 {
+  .emotion-261 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-263 {
+  .emotion-261 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-263 {
+  .emotion-261 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-263 {
+  .emotion-261 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-263 {
+  .emotion-261 {
     margin-top: 30px;
   }
 }
 
-.emotion-264 {
+.emotion-262 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -581,12 +581,12 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-264 {
+  .emotion-262 {
     grid-column: span 3;
   }
 }
 
-.emotion-265 {
+.emotion-263 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -599,7 +599,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-265 {
+  .emotion-263 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -612,7 +612,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-266 {
+.emotion-264 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -625,7 +625,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-266 {
+  .emotion-264 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -637,7 +637,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-267 {
+.emotion-265 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -654,16 +654,16 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-267 {
+  .emotion-265 {
     text-align: center;
   }
 }
 
-.emotion-269 {
+.emotion-267 {
   color: inherit;
 }
 
-.emotion-270 {
+.emotion-268 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -676,12 +676,12 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-270 {
+  .emotion-268 {
     grid-column: span 3;
   }
 }
 
-.emotion-271 {
+.emotion-269 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -697,21 +697,21 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-271 {
+  .emotion-269 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-272 {
+.emotion-270 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-272 {
+  .emotion-270 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -719,7 +719,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-273 {
+.emotion-271 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -734,18 +734,18 @@ exports[`Experience/Typography renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-274 {
+.emotion-272 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-314 {
+.emotion-312 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-314 {
+  .emotion-312 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -753,14 +753,14 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-388 {
+.emotion-386 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-388 {
+  .emotion-386 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -768,7 +768,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-457 {
+.emotion-455 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -797,7 +797,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-457 {
+  .emotion-455 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -814,7 +814,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-457 {
+  .emotion-455 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -826,39 +826,39 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-457 {
+  .emotion-455 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-457 {
+  .emotion-455 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-457 {
+  .emotion-455 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-457 {
+  .emotion-455 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-457 {
+  .emotion-455 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-458 {
+.emotion-456 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -876,7 +876,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-458 {
+  .emotion-456 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -891,7 +891,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-459 {
+.emotion-457 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -905,7 +905,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-459 {
+  .emotion-457 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -917,31 +917,31 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-460 {
+.emotion-458 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-460 {
+  .emotion-458 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-461 {
+.emotion-459 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-461 {
+  .emotion-459 {
     display: none;
   }
 }
 
-.emotion-462 {
+.emotion-460 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -953,7 +953,7 @@ exports[`Experience/Typography renders 1`] = `
   position: relative;
 }
 
-.emotion-463 {
+.emotion-461 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -980,7 +980,7 @@ exports[`Experience/Typography renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-464 {
+.emotion-462 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1003,12 +1003,12 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-464 {
+  .emotion-462 {
     text-align: center;
   }
 }
 
-.emotion-465 {
+.emotion-463 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1033,7 +1033,7 @@ exports[`Experience/Typography renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-466 {
+.emotion-464 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2141,19 +2141,16 @@ exports[`Experience/Typography renders 1`] = `
                 Key Imagery
               </a>
             </div>
-            <div
-              className="emotion-44"
-            />
           </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="emotion-92"
+    className="emotion-91"
   >
     <div
-      className="emotion-93"
+      className="emotion-92"
     >
       <div
         className="emotion-37"
@@ -2806,19 +2803,16 @@ exports[`Experience/Typography renders 1`] = `
             Key Imagery
           </a>
         </div>
-        <div
-          className="emotion-44"
-        />
       </div>
     </div>
     <div
-      className="emotion-149"
+      className="emotion-147"
     >
       <div
-        className="emotion-150"
+        className="emotion-148"
       >
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="overview"
         >
           <div
@@ -2929,7 +2923,7 @@ Refer to the
                   }
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15 emotion-165"
+                    className="emotion-13 emotion-14 emotion-15 emotion-163"
                     href="https://medium.com/celoOrg/the-why-of-the-celo-coin-part-1-of-3-5e5701805847"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
@@ -3226,7 +3220,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
           </div>
         </div>
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="type-scale"
         >
           <div
@@ -4487,20 +4481,20 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
     </div>
   </div>
   <div
-    className="emotion-261"
+    className="emotion-259"
     id="experience-footer"
   >
     <section
-      className="emotion-262"
+      className="emotion-260"
     >
       <div
-        className="emotion-263"
+        className="emotion-261"
       >
         <div
-          className="emotion-264"
+          className="emotion-262"
         >
           <div
-            className="emotion-265"
+            className="emotion-263"
           >
             <svg
               fill="none"
@@ -4523,19 +4517,19 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
             </svg>
           </div>
           <div
-            className="emotion-266"
+            className="emotion-264"
           >
             <p
-              className="emotion-267"
+              className="emotion-265"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-267"
+              className="emotion-265"
             >
               Read more in Celo 
               <a
-                className="emotion-269"
+                className="emotion-267"
                 href="/terms"
               >
                 Terms of Service
@@ -4544,21 +4538,21 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
           </div>
         </div>
         <div
-          className="emotion-270"
+          className="emotion-268"
         >
           <div
-            className="emotion-271"
+            className="emotion-269"
           >
             <div
-              className="emotion-272"
+              className="emotion-270"
             >
               <h6
-                className="emotion-273"
+                className="emotion-271"
               >
                 Celo
               </h6>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -4607,7 +4601,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -4656,7 +4650,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -4705,7 +4699,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -4754,7 +4748,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -4803,7 +4797,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -4852,7 +4846,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -4901,7 +4895,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -4951,15 +4945,15 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
               </div>
             </div>
             <div
-              className="emotion-314"
+              className="emotion-312"
             >
               <h6
-                className="emotion-273"
+                className="emotion-271"
               >
                 Technology
               </h6>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5008,7 +5002,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5057,7 +5051,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5106,7 +5100,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5155,7 +5149,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5205,15 +5199,15 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
               </div>
             </div>
             <div
-              className="emotion-314"
+              className="emotion-312"
             >
               <h6
-                className="emotion-273"
+                className="emotion-271"
               >
                 Resources
               </h6>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5262,7 +5256,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5311,7 +5305,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5360,7 +5354,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5409,7 +5403,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5458,7 +5452,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5507,7 +5501,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5556,7 +5550,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5605,7 +5599,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5655,15 +5649,15 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
               </div>
             </div>
             <div
-              className="emotion-388"
+              className="emotion-386"
             >
               <h6
-                className="emotion-273"
+                className="emotion-271"
               >
                 Social
               </h6>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5736,7 +5730,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5811,7 +5805,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5884,7 +5878,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -5957,7 +5951,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -6032,7 +6026,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -6105,7 +6099,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -6177,7 +6171,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -6247,7 +6241,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -6317,7 +6311,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -6387,7 +6381,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-274"
+                className="emotion-272"
               >
                 <div
                   className="emotion-11"
@@ -6462,48 +6456,48 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
       </div>
     </section>
     <section
-      className="emotion-262"
+      className="emotion-260"
     >
       <div
-        className="emotion-457"
+        className="emotion-455"
       >
         <div
-          className="emotion-458"
+          className="emotion-456"
         >
           <div
-            className="emotion-459"
+            className="emotion-457"
           >
             <img
-              className="emotion-460"
+              className="emotion-458"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-461"
+              className="emotion-459"
             >
               |
             </span>
             <div
-              className="emotion-462"
+              className="emotion-460"
             >
               <div
-                className="emotion-463"
+                className="emotion-461"
               />
               <span
-                className="emotion-464"
+                className="emotion-462"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-465"
+                className="emotion-463"
               />
             </div>
           </div>
           <small
-            className="emotion-466"
+            className="emotion-464"
           >
             The Celo Foundation, © Celo 2021
           </small>

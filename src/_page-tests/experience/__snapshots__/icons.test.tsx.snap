@@ -331,7 +331,7 @@ exports[`Experience/Icons renders 1`] = `
   transition-duration: 500ms;
 }
 
-.emotion-92 {
+.emotion-91 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -353,7 +353,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-92 {
+  .emotion-91 {
     z-index: -5;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -363,18 +363,18 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 958px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 1080px;
   }
 }
 
-.emotion-93 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,12 +393,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-93 {
+  .emotion-92 {
     display: none;
   }
 }
 
-.emotion-149 {
+.emotion-147 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +411,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-149 {
+  .emotion-147 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -422,7 +422,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-150 {
+.emotion-148 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -436,7 +436,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-150 {
+  .emotion-148 {
     -webkit-transform: translateY(-25);
     -moz-transform: translateY(-25);
     -ms-transform: translateY(-25);
@@ -444,7 +444,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-151 {
+.emotion-149 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -455,11 +455,11 @@ exports[`Experience/Icons renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-165 {
+.emotion-163 {
   min-height: 100vh;
 }
 
-.emotion-169 {
+.emotion-167 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -479,7 +479,7 @@ exports[`Experience/Icons renders 1`] = `
   transition-property: opacity;
 }
 
-.emotion-170 {
+.emotion-168 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -493,21 +493,21 @@ exports[`Experience/Icons renders 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-171 {
+.emotion-169 {
   width: 260px;
 }
 
-.emotion-173 {
+.emotion-171 {
   opacity: 0;
 }
 
-.emotion-203 {
+.emotion-201 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-204 {
+.emotion-202 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -527,7 +527,7 @@ exports[`Experience/Icons renders 1`] = `
   width: 100%;
 }
 
-.emotion-205 {
+.emotion-203 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -556,7 +556,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-205 {
+  .emotion-203 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -573,7 +573,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-205 {
+  .emotion-203 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -585,36 +585,36 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-205 {
+  .emotion-203 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-205 {
+  .emotion-203 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-205 {
+  .emotion-203 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-205 {
+  .emotion-203 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-205 {
+  .emotion-203 {
     margin-top: 30px;
   }
 }
 
-.emotion-206 {
+.emotion-204 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -627,12 +627,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-206 {
+  .emotion-204 {
     grid-column: span 3;
   }
 }
 
-.emotion-207 {
+.emotion-205 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -645,7 +645,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-207 {
+  .emotion-205 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -658,7 +658,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-208 {
+.emotion-206 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -671,7 +671,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-208 {
+  .emotion-206 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -683,7 +683,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-209 {
+.emotion-207 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -700,16 +700,16 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-209 {
+  .emotion-207 {
     text-align: center;
   }
 }
 
-.emotion-211 {
+.emotion-209 {
   color: inherit;
 }
 
-.emotion-212 {
+.emotion-210 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -722,12 +722,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-212 {
+  .emotion-210 {
     grid-column: span 3;
   }
 }
 
-.emotion-213 {
+.emotion-211 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -743,21 +743,21 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-213 {
+  .emotion-211 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-214 {
+.emotion-212 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-214 {
+  .emotion-212 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -765,7 +765,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-215 {
+.emotion-213 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -780,18 +780,18 @@ exports[`Experience/Icons renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-216 {
+.emotion-214 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-256 {
+.emotion-254 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-256 {
+  .emotion-254 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -799,14 +799,14 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-330 {
+.emotion-328 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-330 {
+  .emotion-328 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -814,7 +814,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-399 {
+.emotion-397 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -843,7 +843,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-399 {
+  .emotion-397 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -860,7 +860,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-399 {
+  .emotion-397 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -872,39 +872,39 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-399 {
+  .emotion-397 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-399 {
+  .emotion-397 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-399 {
+  .emotion-397 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-399 {
+  .emotion-397 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-399 {
+  .emotion-397 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-400 {
+.emotion-398 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -922,7 +922,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-400 {
+  .emotion-398 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -937,7 +937,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-401 {
+.emotion-399 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -951,7 +951,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-401 {
+  .emotion-399 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -963,31 +963,31 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-402 {
+.emotion-400 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-402 {
+  .emotion-400 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-403 {
+.emotion-401 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-403 {
+  .emotion-401 {
     display: none;
   }
 }
 
-.emotion-404 {
+.emotion-402 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -999,7 +999,7 @@ exports[`Experience/Icons renders 1`] = `
   position: relative;
 }
 
-.emotion-405 {
+.emotion-403 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1026,7 +1026,7 @@ exports[`Experience/Icons renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-406 {
+.emotion-404 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1049,12 +1049,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-406 {
+  .emotion-404 {
     text-align: center;
   }
 }
 
-.emotion-407 {
+.emotion-405 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1079,7 +1079,7 @@ exports[`Experience/Icons renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-408 {
+.emotion-406 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2187,19 +2187,16 @@ exports[`Experience/Icons renders 1`] = `
                 Key Imagery
               </a>
             </div>
-            <div
-              className="emotion-44"
-            />
           </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="emotion-92"
+    className="emotion-91"
   >
     <div
-      className="emotion-93"
+      className="emotion-92"
     >
       <div
         className="emotion-37"
@@ -2852,19 +2849,16 @@ exports[`Experience/Icons renders 1`] = `
             Key Imagery
           </a>
         </div>
-        <div
-          className="emotion-44"
-        />
       </div>
     </div>
     <div
-      className="emotion-149"
+      className="emotion-147"
     >
       <div
-        className="emotion-150"
+        className="emotion-148"
       >
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="overview"
         >
           <div
@@ -2976,7 +2970,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 }
               >
                 <a
-                  className="emotion-13 emotion-14 emotion-15 emotion-164"
+                  className="emotion-13 emotion-14 emotion-15 emotion-162"
                   href="/brand-policy"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -2998,7 +2992,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               . You may not remix or transform the icons.
             </div>
             <div
-              className="emotion-165"
+              className="emotion-163"
             >
               <div
                 className="emotion-11"
@@ -3033,7 +3027,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   autoCapitalize="sentences"
                   autoComplete="on"
                   autoCorrect="on"
-                  className="emotion-168"
+                  className="emotion-166"
                   dir="auto"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -3084,15 +3078,15 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
               <span
                 aria-hidden={true}
-                className="emotion-169"
+                className="emotion-167"
               >
                 2 Matching Icons
               </span>
               <div
-                className="emotion-170"
+                className="emotion-168"
               >
                 <div
-                  className="emotion-171"
+                  className="emotion-169"
                   data-testid="1"
                 >
                   <div
@@ -3107,7 +3101,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     }
                   >
                     <div
-                      className="emotion-173"
+                      className="emotion-171"
                     >
                       <div
                         className="emotion-11"
@@ -3331,7 +3325,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   </div>
                 </div>
                 <div
-                  className="emotion-171"
+                  className="emotion-169"
                   data-testid="2"
                 >
                   <div
@@ -3346,7 +3340,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     }
                   >
                     <div
-                      className="emotion-173"
+                      className="emotion-171"
                     >
                       <div
                         className="emotion-11"
@@ -3577,20 +3571,20 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
     </div>
   </div>
   <div
-    className="emotion-203"
+    className="emotion-201"
     id="experience-footer"
   >
     <section
-      className="emotion-204"
+      className="emotion-202"
     >
       <div
-        className="emotion-205"
+        className="emotion-203"
       >
         <div
-          className="emotion-206"
+          className="emotion-204"
         >
           <div
-            className="emotion-207"
+            className="emotion-205"
           >
             <svg
               fill="none"
@@ -3613,19 +3607,19 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
             </svg>
           </div>
           <div
-            className="emotion-208"
+            className="emotion-206"
           >
             <p
-              className="emotion-209"
+              className="emotion-207"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-209"
+              className="emotion-207"
             >
               Read more in Celo 
               <a
-                className="emotion-211"
+                className="emotion-209"
                 href="/terms"
               >
                 Terms of Service
@@ -3634,21 +3628,21 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
           </div>
         </div>
         <div
-          className="emotion-212"
+          className="emotion-210"
         >
           <div
-            className="emotion-213"
+            className="emotion-211"
           >
             <div
-              className="emotion-214"
+              className="emotion-212"
             >
               <h6
-                className="emotion-215"
+                className="emotion-213"
               >
                 Celo
               </h6>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -3697,7 +3691,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -3746,7 +3740,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -3795,7 +3789,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -3844,7 +3838,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -3893,7 +3887,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -3942,7 +3936,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -3991,7 +3985,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4041,15 +4035,15 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
             </div>
             <div
-              className="emotion-256"
+              className="emotion-254"
             >
               <h6
-                className="emotion-215"
+                className="emotion-213"
               >
                 Technology
               </h6>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4098,7 +4092,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4147,7 +4141,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4196,7 +4190,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4245,7 +4239,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4295,15 +4289,15 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
             </div>
             <div
-              className="emotion-256"
+              className="emotion-254"
             >
               <h6
-                className="emotion-215"
+                className="emotion-213"
               >
                 Resources
               </h6>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4352,7 +4346,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4401,7 +4395,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4450,7 +4444,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4499,7 +4493,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4548,7 +4542,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4597,7 +4591,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4646,7 +4640,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4695,7 +4689,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4745,15 +4739,15 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
             </div>
             <div
-              className="emotion-330"
+              className="emotion-328"
             >
               <h6
-                className="emotion-215"
+                className="emotion-213"
               >
                 Social
               </h6>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4826,7 +4820,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4901,7 +4895,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -4974,7 +4968,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -5047,7 +5041,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -5122,7 +5116,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -5195,7 +5189,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -5267,7 +5261,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -5337,7 +5331,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -5407,7 +5401,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -5477,7 +5471,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-216"
+                className="emotion-214"
               >
                 <div
                   className="emotion-11"
@@ -5552,48 +5546,48 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
       </div>
     </section>
     <section
-      className="emotion-204"
+      className="emotion-202"
     >
       <div
-        className="emotion-399"
+        className="emotion-397"
       >
         <div
-          className="emotion-400"
+          className="emotion-398"
         >
           <div
-            className="emotion-401"
+            className="emotion-399"
           >
             <img
-              className="emotion-402"
+              className="emotion-400"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-403"
+              className="emotion-401"
             >
               |
             </span>
             <div
-              className="emotion-404"
+              className="emotion-402"
             >
               <div
-                className="emotion-405"
+                className="emotion-403"
               />
               <span
-                className="emotion-406"
+                className="emotion-404"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-407"
+                className="emotion-405"
               />
             </div>
           </div>
           <small
-            className="emotion-408"
+            className="emotion-406"
           >
             The Celo Foundation, © Celo 2021
           </small>
