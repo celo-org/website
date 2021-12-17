@@ -5,10 +5,8 @@ import makeSafeForJson from "src/utils/makeSafeForJson"
 
 export async function getServerSideProps() {
   const AssetBase = await import("src/../server/AssetBase")
-  const [illos] = await Promise.all([
-    AssetBase.default(AssetBase.AssetSheet.Illustrations),
-  ])
-
+  const illos = await AssetBase.default(AssetBase.AssetSheet.Illustrations)
+  
   return {
     props: makeSafeForJson({
       illos,
