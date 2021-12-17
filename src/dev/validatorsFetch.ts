@@ -66,8 +66,12 @@ const query = gql`
 `
 
 async function validators(network: BlockScout) {
-  const response = await request(network, query)
-  return cleanData(response)
+  try {
+    const response = await request(network, query)
+    return cleanData(response)
+  } catch (e) {
+    // somehow just catching the error seems to fix the page not loading but im not sure why
+  }
 }
 
 export default function cachedValidators(network: BlockScout) {
