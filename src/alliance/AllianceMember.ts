@@ -4,7 +4,6 @@ export default interface AllianceMember {
   url: string
   category?: string
 }
-
 export interface AllianceMemberHubspot {
   name: string
   url: string

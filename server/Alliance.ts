@@ -8,6 +8,7 @@ import addToCRM, { ListID } from "./addToCRM"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
 import { fetchCached, MINUTE } from "./cache"
 import { groupBy } from "./GroupBy"
+import probe from "probe-image-size"
 
 export const CATEGORY_FIELD = "Web Category*"
 export const LOGO_FIELD = "Logo Upload"
@@ -49,28 +50,30 @@ async function fetchAllies(): Promise<Grouping[]> {
       properties: ["categories", "name", "domain", "logo"],
       after: 0,
     })
-    // try{
-    //   const probeImage = await Promise.all(apiResponse.body.results.map((image) =>{
-    //     if(image.properties.logo !== null){
-    //       return probe(image.properties.logo)
-    //     }
-    //   }))
-    //   console.log(probeImage, "this is probe image")
 
-    // }catch(e){
-    //   console.log("error this is error", e.statusCode)
-    // }
-    // const probeImage = await Promise.all(apiResponse.body.results.map((image) =>{
-    //   if(image.properties.logo !== null){
-    //     return probe(image.properties.logo)
-    //   }
-    // }))
-    // console.log(probeImage)
+    const probeImage = await Promise.all(
+      apiResponse.body.results.map((image) => {
+        try {
+          const logo = image.properties.logo
+          if (logo !== null && logo.startsWith("https://")) {
+            console.log(logo, "this is logo inside the conditional")
+            return probe(logo)
+          }
+        } catch (err) {
+          console.error(err)
+        }
+      })
+    )
+    const imgWidth = probeImage[0].width
+    const imgHeight = probeImage[0].height
 
-    console.log(JSON.stringify(apiResponse.body, null, 2))
+    // console.log(JSON.stringify(apiResponse.body, null, 2))
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
     const groups = groupBy(normalized)
+    console.log("this is groups", groups)
     const companies = Object.entries<AllianceMember[]>(groups).map((group) => {
+      group[1][0].logo.width = imgWidth
+      group[1][0].logo.height = imgHeight
       return { name: group[0], records: group[1] }
     })
     return companies
