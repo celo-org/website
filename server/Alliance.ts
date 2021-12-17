@@ -8,7 +8,6 @@ import addToCRM, { ListID } from "./addToCRM"
 import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
 import { fetchCached, MINUTE } from "./cache"
 import { groupBy } from "./GroupBy"
-import probe from "probe-image-size"
 
 export const CATEGORY_FIELD = "Web Category*"
 export const LOGO_FIELD = "Logo Upload"
