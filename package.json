@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.4.0",
-    "@emotion/react": "^11.5.0",
+    "@emotion/react": "^11.6.0",
     "@hubspot/api-client": "^5.0.0",
     "@odnh/use-swipe": "^1.0.0",
     "@sentry/browser": "^6.13.2",
