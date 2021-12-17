@@ -98,15 +98,10 @@ export function normalize(asset: Fields): Ally {
 
 //this is the normalizeHubspot from Henry
 export function normalizeHubspot(asset: HubSpotField): Ally {
-  console.log(asset.properties.logo, "this is logo")
-  let logoImage = asset.properties.logo
-  if (logoImage === null) {
-    logoImage = "https://f.hubspotusercontent10.net/hubfs/8568019/logos/a16z.png"
-  }
   return {
     name: asset.properties.name,
     url: asset.properties.domain,
-    logo: { uri: logoImage, width: 0, height: 0 },
+    logo: { uri: asset.properties.logo, width: 0, height: 0 },
     category: asset.properties.categories,
   }
 }
