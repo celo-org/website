@@ -70,7 +70,6 @@ async function fetchAllies(): Promise<Grouping[]> {
     // console.log(JSON.stringify(apiResponse.body, null, 2))
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
     const groups = groupBy(normalized)
-    console.log("this is groups", groups)
     const companies = Object.entries<AllianceMember[]>(groups).map((group) => {
       group[1][0].logo.width = imgWidth
       group[1][0].logo.height = imgHeight
