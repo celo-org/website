@@ -331,7 +331,7 @@ exports[`Experience/Brandkit renders 1`] = `
   transition-duration: 500ms;
 }
 
-.emotion-92 {
+.emotion-91 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -353,7 +353,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-92 {
+  .emotion-91 {
     z-index: -5;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -363,18 +363,18 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 958px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 1080px;
   }
 }
 
-.emotion-93 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,12 +393,12 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-93 {
+  .emotion-92 {
     display: none;
   }
 }
 
-.emotion-149 {
+.emotion-147 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +411,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-149 {
+  .emotion-147 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -422,7 +422,7 @@ exports[`Experience/Brandkit renders 1`] = `
   }
 }
 
-.emotion-150 {
+.emotion-148 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -436,7 +436,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-150 {
+  .emotion-148 {
     -webkit-transform: translateY(-25);
     -moz-transform: translateY(-25);
     -ms-transform: translateY(-25);
@@ -444,7 +444,7 @@ exports[`Experience/Brandkit renders 1`] = `
   }
 }
 
-.emotion-151 {
+.emotion-149 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -455,13 +455,13 @@ exports[`Experience/Brandkit renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-179 {
+.emotion-177 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-180 {
+.emotion-178 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -481,7 +481,7 @@ exports[`Experience/Brandkit renders 1`] = `
   width: 100%;
 }
 
-.emotion-181 {
+.emotion-179 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -510,7 +510,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-181 {
+  .emotion-179 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -527,7 +527,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-181 {
+  .emotion-179 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -539,36 +539,36 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-181 {
+  .emotion-179 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-181 {
+  .emotion-179 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-181 {
+  .emotion-179 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-181 {
+  .emotion-179 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-181 {
+  .emotion-179 {
     margin-top: 30px;
   }
 }
 
-.emotion-182 {
+.emotion-180 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -581,12 +581,12 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-182 {
+  .emotion-180 {
     grid-column: span 3;
   }
 }
 
-.emotion-183 {
+.emotion-181 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -599,7 +599,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-183 {
+  .emotion-181 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -612,7 +612,7 @@ exports[`Experience/Brandkit renders 1`] = `
   }
 }
 
-.emotion-184 {
+.emotion-182 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -625,7 +625,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-184 {
+  .emotion-182 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -637,7 +637,7 @@ exports[`Experience/Brandkit renders 1`] = `
   }
 }
 
-.emotion-185 {
+.emotion-183 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -654,16 +654,16 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-185 {
+  .emotion-183 {
     text-align: center;
   }
 }
 
-.emotion-187 {
+.emotion-185 {
   color: inherit;
 }
 
-.emotion-188 {
+.emotion-186 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -676,12 +676,12 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-188 {
+  .emotion-186 {
     grid-column: span 3;
   }
 }
 
-.emotion-189 {
+.emotion-187 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -697,21 +697,21 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-189 {
+  .emotion-187 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-190 {
+.emotion-188 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-190 {
+  .emotion-188 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -719,7 +719,7 @@ exports[`Experience/Brandkit renders 1`] = `
   }
 }
 
-.emotion-191 {
+.emotion-189 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -734,18 +734,18 @@ exports[`Experience/Brandkit renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-192 {
+.emotion-190 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-232 {
+.emotion-230 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-232 {
+  .emotion-230 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -753,14 +753,14 @@ exports[`Experience/Brandkit renders 1`] = `
   }
 }
 
-.emotion-306 {
+.emotion-304 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-306 {
+  .emotion-304 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -768,7 +768,7 @@ exports[`Experience/Brandkit renders 1`] = `
   }
 }
 
-.emotion-375 {
+.emotion-373 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -797,7 +797,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-375 {
+  .emotion-373 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -814,7 +814,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-375 {
+  .emotion-373 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -826,39 +826,39 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-375 {
+  .emotion-373 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-375 {
+  .emotion-373 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-375 {
+  .emotion-373 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-375 {
+  .emotion-373 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-375 {
+  .emotion-373 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-376 {
+.emotion-374 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -876,7 +876,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-376 {
+  .emotion-374 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -891,7 +891,7 @@ exports[`Experience/Brandkit renders 1`] = `
   }
 }
 
-.emotion-377 {
+.emotion-375 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -905,7 +905,7 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-377 {
+  .emotion-375 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -917,31 +917,31 @@ exports[`Experience/Brandkit renders 1`] = `
   }
 }
 
-.emotion-378 {
+.emotion-376 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-378 {
+  .emotion-376 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-379 {
+.emotion-377 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-379 {
+  .emotion-377 {
     display: none;
   }
 }
 
-.emotion-380 {
+.emotion-378 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -953,7 +953,7 @@ exports[`Experience/Brandkit renders 1`] = `
   position: relative;
 }
 
-.emotion-381 {
+.emotion-379 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -980,7 +980,7 @@ exports[`Experience/Brandkit renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-382 {
+.emotion-380 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1003,12 +1003,12 @@ exports[`Experience/Brandkit renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-382 {
+  .emotion-380 {
     text-align: center;
   }
 }
 
-.emotion-383 {
+.emotion-381 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1033,7 +1033,7 @@ exports[`Experience/Brandkit renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-384 {
+.emotion-382 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2141,19 +2141,16 @@ exports[`Experience/Brandkit renders 1`] = `
                 Key Imagery
               </a>
             </div>
-            <div
-              className="emotion-44"
-            />
           </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="emotion-92"
+    className="emotion-91"
   >
     <div
-      className="emotion-93"
+      className="emotion-92"
     >
       <div
         className="emotion-37"
@@ -2806,19 +2803,16 @@ exports[`Experience/Brandkit renders 1`] = `
             Key Imagery
           </a>
         </div>
-        <div
-          className="emotion-44"
-        />
       </div>
     </div>
     <div
-      className="emotion-149"
+      className="emotion-147"
     >
       <div
-        className="emotion-150"
+        className="emotion-148"
       >
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="overview"
         >
           <div
@@ -2930,7 +2924,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 }
               >
                 <li
-                  className="emotion-13 emotion-15 emotion-164"
+                  className="emotion-13 emotion-15 emotion-162"
                   role="listitem"
                   style={
                     Object {
@@ -2948,7 +2942,7 @@ exports[`Experience/Brandkit renders 1`] = `
                   Register the trademark, domain, Celo Brand Asset, or derivative
                 </li>
                 <li
-                  className="emotion-13 emotion-15 emotion-164"
+                  className="emotion-13 emotion-15 emotion-162"
                   role="listitem"
                   style={
                     Object {
@@ -2970,7 +2964,7 @@ exports[`Experience/Brandkit renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="brand-voice"
         >
           <div
@@ -3039,7 +3033,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 }
               >
                 <a
-                  className="emotion-13 emotion-14 emotion-15 emotion-164"
+                  className="emotion-13 emotion-14 emotion-15 emotion-162"
                   href="https://docs.google.com/document/d/1Y1mfpBGad_8ZxSuIqwX52MWGEMfoWGt5HXc7sZp9h70/edit?usp=sharing"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -3067,20 +3061,20 @@ exports[`Experience/Brandkit renders 1`] = `
     </div>
   </div>
   <div
-    className="emotion-179"
+    className="emotion-177"
     id="experience-footer"
   >
     <section
-      className="emotion-180"
+      className="emotion-178"
     >
       <div
-        className="emotion-181"
+        className="emotion-179"
       >
         <div
-          className="emotion-182"
+          className="emotion-180"
         >
           <div
-            className="emotion-183"
+            className="emotion-181"
           >
             <svg
               fill="none"
@@ -3103,19 +3097,19 @@ exports[`Experience/Brandkit renders 1`] = `
             </svg>
           </div>
           <div
-            className="emotion-184"
+            className="emotion-182"
           >
             <p
-              className="emotion-185"
+              className="emotion-183"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-185"
+              className="emotion-183"
             >
               Read more in Celo 
               <a
-                className="emotion-187"
+                className="emotion-185"
                 href="/terms"
               >
                 Terms of Service
@@ -3124,21 +3118,21 @@ exports[`Experience/Brandkit renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-188"
+          className="emotion-186"
         >
           <div
-            className="emotion-189"
+            className="emotion-187"
           >
             <div
-              className="emotion-190"
+              className="emotion-188"
             >
               <h6
-                className="emotion-191"
+                className="emotion-189"
               >
                 Celo
               </h6>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3187,7 +3181,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3236,7 +3230,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3285,7 +3279,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3334,7 +3328,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3383,7 +3377,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3432,7 +3426,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3481,7 +3475,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3531,15 +3525,15 @@ exports[`Experience/Brandkit renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-232"
+              className="emotion-230"
             >
               <h6
-                className="emotion-191"
+                className="emotion-189"
               >
                 Technology
               </h6>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3588,7 +3582,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3637,7 +3631,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3686,7 +3680,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3735,7 +3729,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3785,15 +3779,15 @@ exports[`Experience/Brandkit renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-232"
+              className="emotion-230"
             >
               <h6
-                className="emotion-191"
+                className="emotion-189"
               >
                 Resources
               </h6>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3842,7 +3836,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3891,7 +3885,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3940,7 +3934,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -3989,7 +3983,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4038,7 +4032,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4087,7 +4081,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4136,7 +4130,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4185,7 +4179,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4235,15 +4229,15 @@ exports[`Experience/Brandkit renders 1`] = `
               </div>
             </div>
             <div
-              className="emotion-306"
+              className="emotion-304"
             >
               <h6
-                className="emotion-191"
+                className="emotion-189"
               >
                 Social
               </h6>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4316,7 +4310,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4391,7 +4385,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4464,7 +4458,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4537,7 +4531,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4612,7 +4606,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4685,7 +4679,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4757,7 +4751,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4827,7 +4821,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4897,7 +4891,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -4967,7 +4961,7 @@ exports[`Experience/Brandkit renders 1`] = `
                 </div>
               </div>
               <div
-                className="emotion-192"
+                className="emotion-190"
               >
                 <div
                   className="emotion-11"
@@ -5042,48 +5036,48 @@ exports[`Experience/Brandkit renders 1`] = `
       </div>
     </section>
     <section
-      className="emotion-180"
+      className="emotion-178"
     >
       <div
-        className="emotion-375"
+        className="emotion-373"
       >
         <div
-          className="emotion-376"
+          className="emotion-374"
         >
           <div
-            className="emotion-377"
+            className="emotion-375"
           >
             <img
-              className="emotion-378"
+              className="emotion-376"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-379"
+              className="emotion-377"
             >
               |
             </span>
             <div
-              className="emotion-380"
+              className="emotion-378"
             >
               <div
-                className="emotion-381"
+                className="emotion-379"
               />
               <span
-                className="emotion-382"
+                className="emotion-380"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-383"
+                className="emotion-381"
               />
             </div>
           </div>
           <small
-            className="emotion-384"
+            className="emotion-382"
           >
             The Celo Foundation, © Celo 2022
           </small>

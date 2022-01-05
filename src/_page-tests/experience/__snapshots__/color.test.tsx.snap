@@ -331,7 +331,7 @@ exports[`Experience/Color renders 1`] = `
   transition-duration: 500ms;
 }
 
-.emotion-92 {
+.emotion-91 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -353,7 +353,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-92 {
+  .emotion-91 {
     z-index: -5;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -363,18 +363,18 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 958px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 1080px;
   }
 }
 
-.emotion-93 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,12 +393,12 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-93 {
+  .emotion-92 {
     display: none;
   }
 }
 
-.emotion-149 {
+.emotion-147 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +411,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-149 {
+  .emotion-147 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -422,7 +422,7 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-150 {
+.emotion-148 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -436,7 +436,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-150 {
+  .emotion-148 {
     -webkit-transform: translateY(-25);
     -moz-transform: translateY(-25);
     -ms-transform: translateY(-25);
@@ -444,7 +444,7 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-151 {
+.emotion-149 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -455,7 +455,7 @@ exports[`Experience/Color renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-362 {
+.emotion-360 {
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -464,17 +464,17 @@ exports[`Experience/Color renders 1`] = `
   flex: 1;
 }
 
-.emotion-363 {
+.emotion-361 {
   margin: 5px 0px;
 }
 
-.emotion-392 {
+.emotion-390 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-393 {
+.emotion-391 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -494,7 +494,7 @@ exports[`Experience/Color renders 1`] = `
   width: 100%;
 }
 
-.emotion-394 {
+.emotion-392 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -523,7 +523,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-394 {
+  .emotion-392 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -540,7 +540,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-394 {
+  .emotion-392 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -552,36 +552,36 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-394 {
+  .emotion-392 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-394 {
+  .emotion-392 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-394 {
+  .emotion-392 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-394 {
+  .emotion-392 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-394 {
+  .emotion-392 {
     margin-top: 30px;
   }
 }
 
-.emotion-395 {
+.emotion-393 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -594,12 +594,12 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-395 {
+  .emotion-393 {
     grid-column: span 3;
   }
 }
 
-.emotion-396 {
+.emotion-394 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -612,7 +612,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-396 {
+  .emotion-394 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -625,7 +625,7 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-397 {
+.emotion-395 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -638,7 +638,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-397 {
+  .emotion-395 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -650,7 +650,7 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-398 {
+.emotion-396 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -667,16 +667,16 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-398 {
+  .emotion-396 {
     text-align: center;
   }
 }
 
-.emotion-400 {
+.emotion-398 {
   color: inherit;
 }
 
-.emotion-401 {
+.emotion-399 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -689,12 +689,12 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-401 {
+  .emotion-399 {
     grid-column: span 3;
   }
 }
 
-.emotion-402 {
+.emotion-400 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -710,21 +710,21 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-402 {
+  .emotion-400 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-403 {
+.emotion-401 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-403 {
+  .emotion-401 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -732,7 +732,7 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-404 {
+.emotion-402 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -747,18 +747,18 @@ exports[`Experience/Color renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-405 {
+.emotion-403 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-445 {
+.emotion-443 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-445 {
+  .emotion-443 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -766,14 +766,14 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-519 {
+.emotion-517 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-519 {
+  .emotion-517 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -781,7 +781,7 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-588 {
+.emotion-586 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -810,7 +810,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-588 {
+  .emotion-586 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -827,7 +827,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-588 {
+  .emotion-586 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -839,39 +839,39 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-588 {
+  .emotion-586 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-588 {
+  .emotion-586 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-588 {
+  .emotion-586 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-588 {
+  .emotion-586 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-588 {
+  .emotion-586 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-589 {
+.emotion-587 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -889,7 +889,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-589 {
+  .emotion-587 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -904,7 +904,7 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-590 {
+.emotion-588 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -918,7 +918,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-590 {
+  .emotion-588 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -930,31 +930,31 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-591 {
+.emotion-589 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-591 {
+  .emotion-589 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-592 {
+.emotion-590 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-592 {
+  .emotion-590 {
     display: none;
   }
 }
 
-.emotion-593 {
+.emotion-591 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -966,7 +966,7 @@ exports[`Experience/Color renders 1`] = `
   position: relative;
 }
 
-.emotion-594 {
+.emotion-592 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -993,7 +993,7 @@ exports[`Experience/Color renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-595 {
+.emotion-593 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1016,12 +1016,12 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-595 {
+  .emotion-593 {
     text-align: center;
   }
 }
 
-.emotion-596 {
+.emotion-594 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1046,7 +1046,7 @@ exports[`Experience/Color renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-597 {
+.emotion-595 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2154,19 +2154,16 @@ exports[`Experience/Color renders 1`] = `
                 Key Imagery
               </a>
             </div>
-            <div
-              className="emotion-44"
-            />
           </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="emotion-92"
+    className="emotion-91"
   >
     <div
-      className="emotion-93"
+      className="emotion-92"
     >
       <div
         className="emotion-37"
@@ -2819,19 +2816,16 @@ exports[`Experience/Color renders 1`] = `
             Key Imagery
           </a>
         </div>
-        <div
-          className="emotion-44"
-        />
       </div>
     </div>
     <div
-      className="emotion-149"
+      className="emotion-147"
     >
       <div
-        className="emotion-150"
+        className="emotion-148"
       >
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="overview"
         >
           <div
@@ -2912,7 +2906,7 @@ exports[`Experience/Color renders 1`] = `
               >
                 Primary brand colors are Celo Green, Celo Gold, Celo Dark, and Celo Light.
 
-Celo Green is used to denote value and action including communication and applications of stable assets like cUSD and cBRL. Celo Gold is used more often when speaking to actions related to CELO like validation, proof of stake, and governance.
+Celo Green is used to denote value and action including communication and applications of stable assets like cUSD and cREAL. Celo Gold is used more often when speaking to actions related to CELO like validation, proof of stake, and governance.
 
 Celo Dark and Celo Light are high contrast complementary colors, interchangeably switching between background and typography. Celo Dark has a tendency to represent technical content while Celo Light represents non-technical topics.
               </div>
@@ -5355,7 +5349,7 @@ Blue represents help within digital experiences like websites and mobile applica
           </div>
         </div>
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="background-colors"
         >
           <div
@@ -6385,10 +6379,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="emotion-362"
+                  className="emotion-360"
                 >
                   <img
-                    className="emotion-363"
+                    className="emotion-361"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6435,10 +6429,10 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="emotion-362"
+                  className="emotion-360"
                 >
                   <img
-                    className="emotion-363"
+                    className="emotion-361"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6498,10 +6492,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="emotion-362"
+                  className="emotion-360"
                 >
                   <img
-                    className="emotion-363"
+                    className="emotion-361"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6587,10 +6581,10 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="emotion-362"
+                  className="emotion-360"
                 >
                   <img
-                    className="emotion-363"
+                    className="emotion-361"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6689,10 +6683,10 @@ Blue represents help within digital experiences like websites and mobile applica
                 }
               >
                 <div
-                  className="emotion-362"
+                  className="emotion-360"
                 >
                   <img
-                    className="emotion-363"
+                    className="emotion-361"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6739,10 +6733,10 @@ Blue represents help within digital experiences like websites and mobile applica
                   </div>
                 </div>
                 <div
-                  className="emotion-362"
+                  className="emotion-360"
                 >
                   <img
-                    className="emotion-363"
+                    className="emotion-361"
                     height={24}
                     src="/image.png"
                     width={24}
@@ -6796,20 +6790,20 @@ Blue represents help within digital experiences like websites and mobile applica
     </div>
   </div>
   <div
-    className="emotion-392"
+    className="emotion-390"
     id="experience-footer"
   >
     <section
-      className="emotion-393"
+      className="emotion-391"
     >
       <div
-        className="emotion-394"
+        className="emotion-392"
       >
         <div
-          className="emotion-395"
+          className="emotion-393"
         >
           <div
-            className="emotion-396"
+            className="emotion-394"
           >
             <svg
               fill="none"
@@ -6832,19 +6826,19 @@ Blue represents help within digital experiences like websites and mobile applica
             </svg>
           </div>
           <div
-            className="emotion-397"
+            className="emotion-395"
           >
             <p
-              className="emotion-398"
+              className="emotion-396"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-398"
+              className="emotion-396"
             >
               Read more in Celo 
               <a
-                className="emotion-400"
+                className="emotion-398"
                 href="/terms"
               >
                 Terms of Service
@@ -6853,21 +6847,21 @@ Blue represents help within digital experiences like websites and mobile applica
           </div>
         </div>
         <div
-          className="emotion-401"
+          className="emotion-399"
         >
           <div
-            className="emotion-402"
+            className="emotion-400"
           >
             <div
-              className="emotion-403"
+              className="emotion-401"
             >
               <h6
-                className="emotion-404"
+                className="emotion-402"
               >
                 Celo
               </h6>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -6916,7 +6910,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -6965,7 +6959,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7014,7 +7008,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7063,7 +7057,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7112,7 +7106,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7161,7 +7155,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7210,7 +7204,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7260,15 +7254,15 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="emotion-445"
+              className="emotion-443"
             >
               <h6
-                className="emotion-404"
+                className="emotion-402"
               >
                 Technology
               </h6>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7317,7 +7311,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7366,7 +7360,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7415,7 +7409,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7464,7 +7458,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7514,15 +7508,15 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="emotion-445"
+              className="emotion-443"
             >
               <h6
-                className="emotion-404"
+                className="emotion-402"
               >
                 Resources
               </h6>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7571,7 +7565,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7620,7 +7614,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7669,7 +7663,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7718,7 +7712,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7767,7 +7761,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7816,7 +7810,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7865,7 +7859,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7914,7 +7908,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -7964,15 +7958,15 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="emotion-519"
+              className="emotion-517"
             >
               <h6
-                className="emotion-404"
+                className="emotion-402"
               >
                 Social
               </h6>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8045,7 +8039,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8120,7 +8114,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8193,7 +8187,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8266,7 +8260,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8341,7 +8335,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8414,7 +8408,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8486,7 +8480,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8556,7 +8550,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8626,7 +8620,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8696,7 +8690,7 @@ Blue represents help within digital experiences like websites and mobile applica
                 </div>
               </div>
               <div
-                className="emotion-405"
+                className="emotion-403"
               >
                 <div
                   className="emotion-11"
@@ -8771,48 +8765,48 @@ Blue represents help within digital experiences like websites and mobile applica
       </div>
     </section>
     <section
-      className="emotion-393"
+      className="emotion-391"
     >
       <div
-        className="emotion-588"
+        className="emotion-586"
       >
         <div
-          className="emotion-589"
+          className="emotion-587"
         >
           <div
-            className="emotion-590"
+            className="emotion-588"
           >
             <img
-              className="emotion-591"
+              className="emotion-589"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-592"
+              className="emotion-590"
             >
               |
             </span>
             <div
-              className="emotion-593"
+              className="emotion-591"
             >
               <div
-                className="emotion-594"
+                className="emotion-592"
               />
               <span
-                className="emotion-595"
+                className="emotion-593"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-596"
+                className="emotion-594"
               />
             </div>
           </div>
           <small
-            className="emotion-597"
+            className="emotion-595"
           >
             The Celo Foundation, © Celo 2022
           </small>

@@ -331,7 +331,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   transition-duration: 500ms;
 }
 
-.emotion-92 {
+.emotion-91 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -353,7 +353,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-92 {
+  .emotion-91 {
     z-index: -5;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -363,18 +363,18 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 958px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 1080px;
   }
 }
 
-.emotion-93 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,12 +393,12 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-93 {
+  .emotion-92 {
     display: none;
   }
 }
 
-.emotion-149 {
+.emotion-147 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +411,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-149 {
+  .emotion-147 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -422,7 +422,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-150 {
+.emotion-148 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -436,7 +436,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-150 {
+  .emotion-148 {
     -webkit-transform: translateY(-25);
     -moz-transform: translateY(-25);
     -ms-transform: translateY(-25);
@@ -444,7 +444,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-151 {
+.emotion-149 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -455,17 +455,17 @@ exports[`Experience/KeyImagery renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-172 {
+.emotion-169 {
   opacity: 0;
 }
 
-.emotion-207 {
+.emotion-183 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-208 {
+.emotion-184 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -485,7 +485,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   width: 100%;
 }
 
-.emotion-209 {
+.emotion-185 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -514,7 +514,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-209 {
+  .emotion-185 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -531,7 +531,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-209 {
+  .emotion-185 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -543,36 +543,36 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-209 {
+  .emotion-185 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-209 {
+  .emotion-185 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-209 {
+  .emotion-185 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-209 {
+  .emotion-185 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-209 {
+  .emotion-185 {
     margin-top: 30px;
   }
 }
 
-.emotion-210 {
+.emotion-186 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -585,12 +585,12 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-210 {
+  .emotion-186 {
     grid-column: span 3;
   }
 }
 
-.emotion-211 {
+.emotion-187 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -603,7 +603,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-211 {
+  .emotion-187 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -616,7 +616,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-212 {
+.emotion-188 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -629,7 +629,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-212 {
+  .emotion-188 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -641,7 +641,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-213 {
+.emotion-189 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -658,16 +658,16 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-213 {
+  .emotion-189 {
     text-align: center;
   }
 }
 
-.emotion-215 {
+.emotion-191 {
   color: inherit;
 }
 
-.emotion-216 {
+.emotion-192 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -680,12 +680,12 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-216 {
+  .emotion-192 {
     grid-column: span 3;
   }
 }
 
-.emotion-217 {
+.emotion-193 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -701,21 +701,21 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-217 {
+  .emotion-193 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-218 {
+.emotion-194 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-218 {
+  .emotion-194 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -723,7 +723,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-219 {
+.emotion-195 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -738,18 +738,18 @@ exports[`Experience/KeyImagery renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-220 {
+.emotion-196 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-260 {
+.emotion-236 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-260 {
+  .emotion-236 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -757,14 +757,14 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-334 {
+.emotion-310 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-334 {
+  .emotion-310 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -772,7 +772,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-403 {
+.emotion-379 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -801,7 +801,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-403 {
+  .emotion-379 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -818,7 +818,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-403 {
+  .emotion-379 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -830,39 +830,39 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-403 {
+  .emotion-379 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-403 {
+  .emotion-379 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-403 {
+  .emotion-379 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-403 {
+  .emotion-379 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-403 {
+  .emotion-379 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-404 {
+.emotion-380 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -880,7 +880,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-404 {
+  .emotion-380 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -895,7 +895,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-405 {
+.emotion-381 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -909,7 +909,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-405 {
+  .emotion-381 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -921,31 +921,31 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-406 {
+.emotion-382 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-406 {
+  .emotion-382 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-407 {
+.emotion-383 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-407 {
+  .emotion-383 {
     display: none;
   }
 }
 
-.emotion-408 {
+.emotion-384 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -957,7 +957,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   position: relative;
 }
 
-.emotion-409 {
+.emotion-385 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -984,7 +984,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-410 {
+.emotion-386 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1007,12 +1007,12 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-410 {
+  .emotion-386 {
     text-align: center;
   }
 }
 
-.emotion-411 {
+.emotion-387 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1037,7 +1037,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-412 {
+.emotion-388 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2145,19 +2145,16 @@ exports[`Experience/KeyImagery renders 1`] = `
                 Key Imagery
               </a>
             </div>
-            <div
-              className="emotion-44"
-            />
           </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="emotion-92"
+    className="emotion-91"
   >
     <div
-      className="emotion-93"
+      className="emotion-92"
     >
       <div
         className="emotion-37"
@@ -2810,19 +2807,16 @@ exports[`Experience/KeyImagery renders 1`] = `
             Key Imagery
           </a>
         </div>
-        <div
-          className="emotion-44"
-        />
       </div>
     </div>
     <div
-      className="emotion-149"
+      className="emotion-147"
     >
       <div
-        className="emotion-150"
+        className="emotion-148"
       >
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="overview"
         >
           <div
@@ -2928,7 +2922,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 }
               >
                 <a
-                  className="emotion-13 emotion-14 emotion-15 emotion-164"
+                  className="emotion-13 emotion-14 emotion-15 emotion-162"
                   href="/brand-policy"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
@@ -2952,7 +2946,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
           </div>
         </div>
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="illustrations"
         >
           <div
@@ -2985,23 +2979,6 @@ Images have descriptions that act as guidelines for both accessibility and commu
               Illustrations
             </h2>
             <div
-              className="emotion-15"
-              dir="auto"
-              style={
-                Object {
-                  "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "20px",
-                  "lineHeight": "28px",
-                  "marginLeft": "10px",
-                  "marginRight": "10px",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
-              Illustrations show concrete ways that humans interact with an idea. They utilize current mental models to simplify a concept.
-            </div>
-            <div
               className="emotion-11"
               style={
                 Object {
@@ -3032,7 +3009,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 }
               >
                 <div
-                  className="emotion-172"
+                  className="emotion-169"
                 >
                   <div
                     className="emotion-11"
@@ -3257,327 +3234,24 @@ Images have descriptions that act as guidelines for both accessibility and commu
             </div>
           </div>
         </div>
-        <div
-          className="emotion-151"
-          id="abstract-graphics"
-        >
-          <div
-            className="emotion-11"
-            style={
-              Object {
-                "marginTop": "100px",
-              }
-            }
-          >
-            <h2
-              aria-level="2"
-              className="emotion-13 emotion-15"
-              dir="auto"
-              role="heading"
-              style={
-                Object {
-                  "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "28px",
-                  "lineHeight": "32px",
-                  "marginBottom": "20px",
-                  "marginLeft": "10px",
-                  "marginRight": "10px",
-                  "textRendering": "geometricPrecision",
-                  "textTransform": "none",
-                }
-              }
-            >
-              Abstract Graphics
-            </h2>
-            <div
-              className="emotion-15"
-              dir="auto"
-              style={
-                Object {
-                  "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "20px",
-                  "lineHeight": "28px",
-                  "marginLeft": "10px",
-                  "marginRight": "10px",
-                  "textRendering": "geometricPrecision",
-                }
-              }
-            >
-              Abstract Graphics are visual tools that use coins to animate an idea. They can be dynamic or static.
-            </div>
-            <div
-              className="emotion-11"
-              style={
-                Object {
-                  "WebkitBoxDirection": "normal",
-                  "WebkitBoxLines": "multiple",
-                  "WebkitBoxOrient": "horizontal",
-                  "WebkitFlexDirection": "row",
-                  "WebkitFlexWrap": "wrap",
-                  "flexDirection": "row",
-                  "flexWrap": "wrap",
-                  "msFlexDirection": "row",
-                  "msFlexWrap": "wrap",
-                }
-              }
-            >
-              <div
-                className="emotion-11"
-                style={
-                  Object {
-                    "marginLeft": "10px",
-                    "marginRight": "10px",
-                    "marginTop": "20px",
-                    "width": "100%",
-                  }
-                }
-              >
-                <div
-                  className="emotion-172"
-                >
-                  <div
-                    className="emotion-11"
-                  >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "marginBottom": "20px",
-                          "marginRight": "40px",
-                          "marginTop": "20px",
-                        }
-                      }
-                    >
-                      <div
-                        className="emotion-11"
-                        style={
-                          Object {
-                            "display": "block",
-                            "overflowX": "hidden",
-                            "overflowY": "hidden",
-                          }
-                        }
-                      >
-                        <div
-                          style={
-                            Object {
-                              "display": "block",
-                              "paddingBottom": "50%",
-                              "width": "100%",
-                            }
-                          }
-                        />
-                        <div
-                          style={
-                            Object {
-                              "bottom": "0px",
-                              "height": "100%",
-                              "left": "0px",
-                              "position": "absolute",
-                              "top": "0px",
-                              "width": "100%",
-                            }
-                          }
-                        >
-                          <div
-                            aria-label="Preview of Graphic"
-                            className="emotion-11"
-                            style={
-                              Object {
-                                "WebkitFlexBasis": "auto",
-                                "flexBasis": "auto",
-                                "height": "100%",
-                                "msFlexPreferredSize": "auto",
-                                "overflowX": "hidden",
-                                "overflowY": "hidden",
-                                "width": "100%",
-                                "zIndex": 0,
-                              }
-                            }
-                          >
-                            <div
-                              className="emotion-11"
-                              style={
-                                Object {
-                                  "backgroundColor": "rgba(0,0,0,0.00)",
-                                  "backgroundPosition": "center",
-                                  "backgroundRepeat": "no-repeat",
-                                  "backgroundSize": "contain",
-                                  "bottom": "0px",
-                                  "height": "100%",
-                                  "left": "0px",
-                                  "position": "absolute",
-                                  "right": "0px",
-                                  "top": "0px",
-                                  "width": "100%",
-                                  "zIndex": -1,
-                                }
-                              }
-                              suppressHydrationWarning={true}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "WebkitFlex": 1,
-                          "flex": 1,
-                          "msFlex": "1 1 0%",
-                        }
-                      }
-                    >
-                      <div
-                        className="emotion-15"
-                        dir="auto"
-                        style={
-                          Object {
-                            "color": "rgba(17,18,20,1.00)",
-                            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                            "fontSize": "16px",
-                            "fontWeight": "500",
-                            "lineHeight": "18px",
-                            "marginBottom": "5px",
-                            "marginTop": "5px",
-                            "textRendering": "geometricPrecision",
-                          }
-                        }
-                      >
-                        Graphic
-                      </div>
-                      <div
-                        className="emotion-15"
-                        dir="auto"
-                        style={
-                          Object {
-                            "color": "rgba(17,18,20,1.00)",
-                            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                            "fontSize": "16px",
-                            "lineHeight": "20px",
-                            "textRendering": "geometricPrecision",
-                          }
-                        }
-                      >
-                        visual
-                      </div>
-                    </div>
-                    <div
-                      className="emotion-11"
-                      onClick={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      onMouseUp={[Function]}
-                    >
-                      <a
-                        className="emotion-13 emotion-14 emotion-15"
-                        dir="auto"
-                        href="/example.jpg"
-                        onClick={[Function]}
-                        onMouseEnter={[Function]}
-                        role="link"
-                        style={
-                          Object {
-                            "WebkitAlignItems": "center",
-                            "WebkitBoxAlign": "center",
-                            "WebkitBoxFlex": 0,
-                            "WebkitBoxPack": "start",
-                            "WebkitFlexGrow": 0,
-                            "WebkitJustifyContent": "flex-start",
-                            "alignItems": "center",
-                            "backgroundColor": "rgba(0,0,0,0.00)",
-                            "borderBottomColor": "rgba(0,0,0,0.00)",
-                            "borderLeftColor": "rgba(0,0,0,0.00)",
-                            "borderRightColor": "rgba(0,0,0,0.00)",
-                            "borderTopColor": "rgba(0,0,0,0.00)",
-                            "color": "rgba(53,208,127,1.00)",
-                            "cursor": "pointer",
-                            "display": "inline-flex",
-                            "flexGrow": 0,
-                            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                            "fontSize": "16px",
-                            "fontWeight": "500",
-                            "justifyContent": "flex-start",
-                            "lineHeight": "16px",
-                            "minWidth": "150px",
-                            "msFlexAlign": "center",
-                            "msFlexPack": "start",
-                            "msFlexPositive": 0,
-                            "opacity": 1,
-                            "outlineColor": "transparent",
-                            "paddingBottom": "10px",
-                            "paddingLeft": "0px",
-                            "paddingRight": "20px",
-                            "paddingTop": "10px",
-                            "textAlign": "center",
-                            "textRendering": "geometricPrecision",
-                            "width": "fit-content",
-                          }
-                        }
-                      >
-                        Download
-                        <div
-                          className="emotion-11"
-                          style={
-                            Object {
-                              "display": "inline-flex",
-                              "paddingLeft": "8px",
-                            }
-                          }
-                        >
-                          <svg
-                            fill="none"
-                            height={12}
-                            viewBox="0 0 10 13"
-                            width={12}
-                          >
-                            <path
-                              d="M0 12H10"
-                              stroke="#35D07F"
-                              strokeWidth="1.5"
-                            />
-                            <path
-                              d="M5 0V9"
-                              stroke="#35D07F"
-                              strokeWidth="1.5"
-                            />
-                            <path
-                              d="M1 5L5 9L9 5"
-                              stroke="#35D07F"
-                              strokeWidth="1.5"
-                            />
-                          </svg>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <div
-    className="emotion-207"
+    className="emotion-183"
     id="experience-footer"
   >
     <section
-      className="emotion-208"
+      className="emotion-184"
     >
       <div
-        className="emotion-209"
+        className="emotion-185"
       >
         <div
-          className="emotion-210"
+          className="emotion-186"
         >
           <div
-            className="emotion-211"
+            className="emotion-187"
           >
             <svg
               fill="none"
@@ -3600,19 +3274,19 @@ Images have descriptions that act as guidelines for both accessibility and commu
             </svg>
           </div>
           <div
-            className="emotion-212"
+            className="emotion-188"
           >
             <p
-              className="emotion-213"
+              className="emotion-189"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-213"
+              className="emotion-189"
             >
               Read more in Celo 
               <a
-                className="emotion-215"
+                className="emotion-191"
                 href="/terms"
               >
                 Terms of Service
@@ -3621,21 +3295,21 @@ Images have descriptions that act as guidelines for both accessibility and commu
           </div>
         </div>
         <div
-          className="emotion-216"
+          className="emotion-192"
         >
           <div
-            className="emotion-217"
+            className="emotion-193"
           >
             <div
-              className="emotion-218"
+              className="emotion-194"
             >
               <h6
-                className="emotion-219"
+                className="emotion-195"
               >
                 Celo
               </h6>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -3684,7 +3358,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -3733,7 +3407,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -3782,7 +3456,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -3831,7 +3505,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -3880,7 +3554,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -3929,7 +3603,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -3978,7 +3652,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4028,15 +3702,15 @@ Images have descriptions that act as guidelines for both accessibility and commu
               </div>
             </div>
             <div
-              className="emotion-260"
+              className="emotion-236"
             >
               <h6
-                className="emotion-219"
+                className="emotion-195"
               >
                 Technology
               </h6>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4085,7 +3759,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4134,7 +3808,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4183,7 +3857,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4232,7 +3906,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4282,15 +3956,15 @@ Images have descriptions that act as guidelines for both accessibility and commu
               </div>
             </div>
             <div
-              className="emotion-260"
+              className="emotion-236"
             >
               <h6
-                className="emotion-219"
+                className="emotion-195"
               >
                 Resources
               </h6>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4339,7 +4013,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4388,7 +4062,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4437,7 +4111,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4486,7 +4160,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4535,7 +4209,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4584,7 +4258,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4633,7 +4307,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4682,7 +4356,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4732,15 +4406,15 @@ Images have descriptions that act as guidelines for both accessibility and commu
               </div>
             </div>
             <div
-              className="emotion-334"
+              className="emotion-310"
             >
               <h6
-                className="emotion-219"
+                className="emotion-195"
               >
                 Social
               </h6>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4813,7 +4487,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4888,7 +4562,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -4961,7 +4635,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -5034,7 +4708,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -5109,7 +4783,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -5182,7 +4856,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -5254,7 +4928,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -5324,7 +4998,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -5394,7 +5068,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -5464,7 +5138,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-220"
+                className="emotion-196"
               >
                 <div
                   className="emotion-11"
@@ -5539,48 +5213,48 @@ Images have descriptions that act as guidelines for both accessibility and commu
       </div>
     </section>
     <section
-      className="emotion-208"
+      className="emotion-184"
     >
       <div
-        className="emotion-403"
+        className="emotion-379"
       >
         <div
-          className="emotion-404"
+          className="emotion-380"
         >
           <div
-            className="emotion-405"
+            className="emotion-381"
           >
             <img
-              className="emotion-406"
+              className="emotion-382"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-407"
+              className="emotion-383"
             >
               |
             </span>
             <div
-              className="emotion-408"
+              className="emotion-384"
             >
               <div
-                className="emotion-409"
+                className="emotion-385"
               />
               <span
-                className="emotion-410"
+                className="emotion-386"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-411"
+                className="emotion-387"
               />
             </div>
           </div>
           <small
-            className="emotion-412"
+            className="emotion-388"
           >
             The Celo Foundation, © Celo 2022
           </small>
