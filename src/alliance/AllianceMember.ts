@@ -2,7 +2,7 @@ export default interface AllianceMember {
   name: string
   logo: { uri: string; width: number; height: number }
   url: string
-  category?: string
+  categories?: string
 }
 export interface AllianceMemberHubspot {
   name: string

@@ -22,7 +22,7 @@ describe("Alliance", () => {
         normalizeHubspot({
           id: "6856616867",
           properties: {
-            category: "Test",
+            categories: "Test",
             createdate: "2021-08-31T19:02:09.142Z",
             domain: "ponto.org",
             hs_lastmodifieddate: "2021-12-06T04:58:10.649Z",
@@ -31,7 +31,12 @@ describe("Alliance", () => {
             logo: "",
           },
         })
-      ).toEqual({ name: "ponto.org", url: "ponto.org", logo: { width: 0, height: 0, uri: "" } })
+      ).toEqual({
+        name: "ponto.org",
+        url: "ponto.org",
+        categories: "Test",
+        logo: { width: 0, height: 0, uri: "" },
+      })
     })
   })
 })

@@ -104,7 +104,7 @@ export function normalizeHubspot(asset: HubSpotField): Ally {
     name: asset.properties.name,
     url: asset.properties.domain,
     logo: { uri: asset.properties.logo, width: 0, height: 0 },
-    category: asset.properties.categories,
+    categories: asset.properties.categories,
   }
 }
 
