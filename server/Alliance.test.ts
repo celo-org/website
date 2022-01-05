@@ -22,6 +22,7 @@ describe("Alliance", () => {
         normalizeHubspot({
           id: "6856616867",
           properties: {
+            category: "Test",
             createdate: "2021-08-31T19:02:09.142Z",
             domain: "ponto.org",
             hs_lastmodifieddate: "2021-12-06T04:58:10.649Z",
