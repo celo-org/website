@@ -1,7 +1,11 @@
 import * as hubspot from "@hubspot/api-client"
+import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import AllianceMember from "../src/alliance/AllianceMember"
-import Ally, { Grouping } from "../src/alliance/AllianceMember"
+import Ally, { NewMember, Grouping } from "../src/alliance/AllianceMember"
+import { Category } from "../src/alliance/CategoryEnum"
+import addToCRM, { ListID } from "./addToCRM"
+import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
 import { fetchCached, MINUTE } from "./cache"
 import { groupBy } from "./GroupBy"
 import probe from "probe-image-size"
@@ -10,12 +14,22 @@ export const CATEGORY_FIELD = "Web Category*"
 export const LOGO_FIELD = "Logo Upload"
 export const URL_FIELD = "Company URL*"
 
+interface Fields extends FieldSet {
+  Name: string
+  Approved: boolean
+  [URL_FIELD]: string
+  [CATEGORY_FIELD]: Category[]
+  [LOGO_FIELD]: Attachment[]
+}
+
 interface HubSpotField {
   id: string
   properties: {
     [key: string]: string
   }
 }
+
+const WRITE_SHEET = "Web Requests"
 
 export default async function getAllies() {
   return fetchCached("approved_alliance_member", "en", 2 * MINUTE, () => fetchAllies())
@@ -69,11 +83,59 @@ async function fetchAllies(): Promise<Grouping[]> {
   }
 }
 
+function getAirtable<T extends FieldSet>(sheet: string) {
+  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ALLIANCE_ID)(sheet) as Table<T>
+}
+
+export function normalize(asset: Fields): Ally {
+  return {
+    name: asset.Name,
+    logo: {
+      uri: getImageURI(asset["Logo Upload"], ImageSizes.large),
+      ...getWidthAndHeight(asset["Logo Upload"]),
+    },
+    url: asset[URL_FIELD],
+  }
+}
+
+//this is the normalizeHubspot from Henry
 export function normalizeHubspot(asset: HubSpotField): Ally {
   return {
     name: asset.properties.name,
     url: asset.properties.domain,
     logo: { uri: asset.properties.logo, width: 0, height: 0 },
     categories: asset.properties.categories,
+  }
+}
+
+// creates entry in airtable and (if opted in) in Hubspot's Alliance list
+export async function create(data: NewMember) {
+  const actions: Promise<any>[] = [
+    getAirtable<WebRequestFields>(WRITE_SHEET).create(convertWebToAirtable(data)),
+  ]
+
+  actions.push(
+    addToCRM(
+      { email: data.email, fullName: data.name, contribution: data.contribution },
+      ListID.Alliance
+    )
+  )
+
+  return Promise.all(actions)
+}
+
+interface WebRequestFields extends FieldSet {
+  Name: string
+  Email: string
+  Contribution: string
+  Newsletter: boolean
+}
+
+function convertWebToAirtable(input: NewMember): WebRequestFields {
+  return {
+    Name: input.name,
+    Contribution: input.contribution,
+    Newsletter: input.subscribe,
+    Email: input.email,
   }
 }
