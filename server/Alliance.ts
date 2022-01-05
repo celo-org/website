@@ -1,11 +1,10 @@
 import * as hubspot from "@hubspot/api-client"
-import { Attachment, FieldSet, Table } from "airtable"
+import { FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import AllianceMember from "../src/alliance/AllianceMember"
 import Ally, { NewMember, Grouping } from "../src/alliance/AllianceMember"
-import { Category } from "../src/alliance/CategoryEnum"
 import addToCRM, { ListID } from "./addToCRM"
-import airtableInit, { getImageURI, getWidthAndHeight, ImageSizes } from "./airtable"
+import airtableInit from "./airtable"
 import { fetchCached, MINUTE } from "./cache"
 import { groupBy } from "./GroupBy"
 import probe from "probe-image-size"
@@ -13,14 +12,6 @@ import probe from "probe-image-size"
 export const CATEGORY_FIELD = "Web Category*"
 export const LOGO_FIELD = "Logo Upload"
 export const URL_FIELD = "Company URL*"
-
-interface Fields extends FieldSet {
-  Name: string
-  Approved: boolean
-  [URL_FIELD]: string
-  [CATEGORY_FIELD]: Category[]
-  [LOGO_FIELD]: Attachment[]
-}
 
 interface HubSpotField {
   id: string
@@ -67,7 +58,6 @@ async function fetchAllies(): Promise<Grouping[]> {
     const imgWidth = probeImage[0].width
     const imgHeight = probeImage[0].height
 
-    // console.log(JSON.stringify(apiResponse.body, null, 2))
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
     const groups = groupBy(normalized)
     const companies = Object.entries<AllianceMember[]>(groups).map((group) => {
@@ -85,17 +75,6 @@ async function fetchAllies(): Promise<Grouping[]> {
 
 function getAirtable<T extends FieldSet>(sheet: string) {
   return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ALLIANCE_ID)(sheet) as Table<T>
-}
-
-export function normalize(asset: Fields): Ally {
-  return {
-    name: asset.Name,
-    logo: {
-      uri: getImageURI(asset["Logo Upload"], ImageSizes.large),
-      ...getWidthAndHeight(asset["Logo Upload"]),
-    },
-    url: asset[URL_FIELD],
-  }
 }
 
 //this is the normalizeHubspot from Henry
