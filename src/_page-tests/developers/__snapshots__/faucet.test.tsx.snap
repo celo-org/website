@@ -137,7 +137,21 @@ exports[`Faucet renders 1`] = `
   }
 }
 
-.emotion-7 {
+.emotion-5 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 24px;
+  line-height: 28;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+}
+
+.emotion-6 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -150,12 +164,12 @@ exports[`Faucet renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-7 {
+  .emotion-6 {
     grid-column: span 2;
   }
 }
 
-.emotion-8 {
+.emotion-7 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -164,11 +178,106 @@ exports[`Faucet renders 1`] = `
   line-height: 28px;
 }
 
-.emotion-48 {
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.emotion-9 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(61, 61, 61, 0.2);
+  width: 100%;
+  margin: 4px;
+  margin-bottom: 8px;
+  outline-width: 0;
+}
+
+.emotion-9:focus {
+  border-color: #35D07F;
+}
+
+.emotion-10 {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 14px;
+  text-rendering: geometricPrecision;
+  color: #111214;
+}
+
+.emotion-11 {
+  height: 80px;
+  margin: 20px 0;
+}
+
+.emotion-12 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-17 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: 100%;
+}
+
+.emotion-44 {
   margin-bottom: 20px;
 }
 
-.emotion-49 {
+.emotion-45 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -178,7 +287,7 @@ exports[`Faucet renders 1`] = `
   padding-bottom: 10px;
 }
 
-.emotion-50 {
+.emotion-46 {
   font-weight: bold;
 }
 
@@ -200,132 +309,47 @@ exports[`Faucet renders 1`] = `
         className="emotion-4"
       >
         <h3
-          aria-level="3"
-          className="emotion-5 emotion-6"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-5"
         >
           Add Funds
         </h3>
       </div>
       <div
-        className="emotion-7"
+        className="emotion-6"
       >
         <p
-          className="emotion-8"
+          className="emotion-7"
         >
           Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 5 CELO and 10 of each core stable token (e.g. cUSD, cEUR).
 
 In the Celo Wallet, you can find your address by pressing the menu icon at the top left and scrolling down to bottom. Press the address to copy it to your device’s clipboard.
         </p>
         <div
-          className="emotion-9"
-          style={
-            Object {
-              "marginBottom": "20px",
-              "marginTop": "20px",
-            }
-          }
+          className="emotion-8"
         >
           <input
-            autoCapitalize="sentences"
-            autoComplete="on"
-            autoCorrect="on"
-            className="emotion-10"
-            dir="auto"
-            onBlur={[Function]}
+            className="emotion-9"
+            name="beneficiary"
             onChange={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onSelect={[Function]}
             placeholder="Testnet Address"
-            readOnly={false}
-            spellCheck={true}
-            style={
-              Object {
-                "WebkitAlignSelf": "center",
-                "alignSelf": "center",
-                "borderBottomColor": "rgba(61,61,61,0.20)",
-                "borderBottomLeftRadius": "3px",
-                "borderBottomRightRadius": "3px",
-                "borderBottomWidth": "1px",
-                "borderLeftColor": "rgba(61,61,61,0.20)",
-                "borderLeftWidth": "1px",
-                "borderRightColor": "rgba(61,61,61,0.20)",
-                "borderRightWidth": "1px",
-                "borderTopColor": "rgba(61,61,61,0.20)",
-                "borderTopLeftRadius": "3px",
-                "borderTopRightRadius": "3px",
-                "borderTopWidth": "1px",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                "fontSize": "16px",
-                "marginBottom": "5px",
-                "marginLeft": "0px",
-                "marginRight": "0px",
-                "marginTop": "5px",
-                "msFlexItemAlign": "center",
-                "msGridRowAlign": "center",
-                "outlineWidth": "0px",
-                "paddingBottom": "15px",
-                "paddingLeft": "10px",
-                "paddingRight": "10px",
-                "paddingTop": "13px",
-                "width": "100%",
-              }
-            }
             type="text"
             value=""
           />
-          <div
-            className="emotion-6"
-            dir="auto"
-            style={
-              Object {
-                "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                "fontSize": "14px",
-                "textRendering": "geometricPrecision",
-              }
-            }
+          <span
+            className="emotion-10"
           >
             eg. a0000aaa00a0000...a00a0a0000a00a00aa
-          </div>
+          </span>
           <div
-            className="emotion-9"
-            style={
-              Object {
-                "height": "80px",
-                "marginBottom": "20px",
-                "marginTop": "20px",
-              }
-            }
+            className="emotion-11"
           >
             <div />
           </div>
           <div
-            className="emotion-9"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxOrient": "horizontal",
-                "WebkitFlexDirection": "row",
-                "flexDirection": "row",
-                "msFlexDirection": "row",
-              }
-            }
+            className="emotion-12"
           >
             <div
-              className="emotion-9"
+              className="emotion-13"
               onClick={[Function]}
               onMouseDown={[Function]}
               onMouseEnter={[Function]}
@@ -341,7 +365,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               }
             >
               <div
-                className="emotion-15 emotion-6"
+                className="emotion-14 emotion-15"
                 dir="auto"
                 role="link"
                 style={
@@ -395,23 +419,11 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               </div>
             </div>
             <div
-              className="emotion-9"
+              className="emotion-16"
             >
               <div
-                className="emotion-9"
-                style={
-                  Object {
-                    "WebkitAlignContent": "center",
-                    "WebkitBoxDirection": "normal",
-                    "WebkitBoxOrient": "horizontal",
-                    "WebkitFlexDirection": "row",
-                    "alignContent": "center",
-                    "flexDirection": "row",
-                    "height": "100%",
-                    "msFlexDirection": "row",
-                    "msFlexLinePack": "center",
-                  }
-                }
+                className="emotion-17"
+                id="hash-status"
               />
             </div>
           </div>
@@ -429,33 +441,20 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         className="emotion-4"
       >
         <h3
-          aria-level="3"
-          className="emotion-5 emotion-6"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-5"
         >
           Create an Account
         </h3>
       </div>
       <div
-        className="emotion-7"
+        className="emotion-6"
       >
         <p
-          className="emotion-8"
+          className="emotion-7"
         >
           If you have an Android or iOS device, you can set up a funded account on the Alfajores Testnet by requesting a 
           <div
-            className="emotion-9"
+            className="emotion-13"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -468,7 +467,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             }
           >
             <a
-              className="emotion-5 emotion-15 emotion-6"
+              className="emotion-25 emotion-14 emotion-15"
               dir="auto"
               href="/developers/wallet"
               onClick={[Function]}
@@ -490,7 +489,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           </div>
           . You can also 
           <div
-            className="emotion-9"
+            className="emotion-13"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -503,7 +502,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             }
           >
             <a
-              className="emotion-5 emotion-15 emotion-6"
+              className="emotion-25 emotion-14 emotion-15"
               dir="auto"
               href="https://docs.celo.org/getting-started/faucet#creating-an-empty-account-with-the-celo-client"
               onClick={[Function]}
@@ -538,29 +537,16 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         className="emotion-4"
       >
         <h3
-          aria-level="3"
-          className="emotion-5 emotion-6"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-5"
         >
           Have an Account?
         </h3>
       </div>
       <div
-        className="emotion-7"
+        className="emotion-6"
       >
         <p
-          className="emotion-8"
+          className="emotion-7"
         >
           You can access an existing account from the Celo Wallet by pressing \`Import It\` on the first screen and entering your seed phrase.
         </p>
@@ -577,38 +563,25 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         className="emotion-4"
       >
         <h3
-          aria-level="3"
-          className="emotion-5 emotion-6"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-5"
         >
           Hitting Issues?
         </h3>
       </div>
       <div
-        className="emotion-7"
+        className="emotion-6"
       >
         <p
-          className="emotion-8"
+          className="emotion-7"
         />
         <div
-          className="emotion-48"
+          className="emotion-44"
         >
           <div
-            className="emotion-49"
+            className="emotion-45"
           >
             <span
-              className="emotion-50"
+              className="emotion-46"
             >
               Get Help from the Celo Community.
                
@@ -616,7 +589,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             Find answers and ask questions in the Forum
           </div>
           <div
-            className="emotion-9"
+            className="emotion-13"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -624,7 +597,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             onMouseUp={[Function]}
           >
             <div
-              className="emotion-9"
+              className="emotion-13"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -652,7 +625,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               }
             >
               <a
-                className="emotion-5 emotion-15 emotion-6"
+                className="emotion-25 emotion-14 emotion-15"
                 dir="auto"
                 href="https://forum.celo.org/"
                 onClick={[Function]}
@@ -678,7 +651,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               >
                 Alfajores Testnet Forum
                 <div
-                  className="emotion-9"
+                  className="emotion-13"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -720,38 +693,25 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         className="emotion-4"
       >
         <h3
-          aria-level="3"
-          className="emotion-5 emotion-6"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-5"
         >
           What's Next
         </h3>
       </div>
       <div
-        className="emotion-7"
+        className="emotion-6"
       >
         <p
-          className="emotion-8"
+          className="emotion-7"
         />
         <div
-          className="emotion-48"
+          className="emotion-44"
         >
           <div
-            className="emotion-49"
+            className="emotion-45"
           >
             <span
-              className="emotion-50"
+              className="emotion-46"
             >
               Build the Celo Wallet locally.
                
@@ -759,7 +719,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             Follow these instructions to build the Wallet from source, pointed at the Alfajores Testnet.
           </div>
           <div
-            className="emotion-9"
+            className="emotion-13"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -767,7 +727,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             onMouseUp={[Function]}
           >
             <div
-              className="emotion-9"
+              className="emotion-13"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -795,7 +755,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               }
             >
               <a
-                className="emotion-5 emotion-15 emotion-6"
+                className="emotion-25 emotion-14 emotion-15"
                 dir="auto"
                 href="https://docs.celo.org/celo-codebase/wallet/intro"
                 onClick={[Function]}
@@ -821,7 +781,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               >
                 Read the Wallet Tutorial
                 <div
-                  className="emotion-9"
+                  className="emotion-13"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -851,13 +811,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           </div>
         </div>
         <div
-          className="emotion-48"
+          className="emotion-44"
         >
           <div
-            className="emotion-49"
+            className="emotion-45"
           >
             <span
-              className="emotion-50"
+              className="emotion-46"
             >
               View account information. 
                
@@ -865,7 +825,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             Check your balance and transaction history
           </div>
           <div
-            className="emotion-9"
+            className="emotion-13"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -873,7 +833,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             onMouseUp={[Function]}
           >
             <div
-              className="emotion-9"
+              className="emotion-13"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -901,7 +861,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               }
             >
               <a
-                className="emotion-5 emotion-15 emotion-6"
+                className="emotion-25 emotion-14 emotion-15"
                 dir="auto"
                 href="http://alfajores-blockscout.celo-testnet.org/"
                 onClick={[Function]}
@@ -927,7 +887,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               >
                 BlockScout
                 <div
-                  className="emotion-9"
+                  className="emotion-13"
                   style={
                     Object {
                       "display": "inline-flex",
@@ -957,13 +917,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           </div>
         </div>
         <div
-          className="emotion-48"
+          className="emotion-44"
         >
           <div
-            className="emotion-49"
+            className="emotion-45"
           >
             <span
-              className="emotion-50"
+              className="emotion-46"
             >
               Interested in running your own node? 
                
@@ -971,7 +931,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             Follow our step-by-step guide.
           </div>
           <div
-            className="emotion-9"
+            className="emotion-13"
             onClick={[Function]}
             onMouseDown={[Function]}
             onMouseEnter={[Function]}
@@ -979,7 +939,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             onMouseUp={[Function]}
           >
             <div
-              className="emotion-9"
+              className="emotion-13"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -1007,7 +967,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               }
             >
               <a
-                className="emotion-5 emotion-15 emotion-6"
+                className="emotion-25 emotion-14 emotion-15"
                 dir="auto"
                 href="https://docs.celo.org/getting-started/running-a-full-node"
                 onClick={[Function]}
@@ -1033,7 +993,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
               >
                 Read the Docs
                 <div
-                  className="emotion-9"
+                  className="emotion-13"
                   style={
                     Object {
                       "display": "inline-flex",

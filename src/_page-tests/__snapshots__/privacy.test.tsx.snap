@@ -341,7 +341,21 @@ exports[`Privacy renders 1`] = `
   }
 }
 
-.emotion-25 {
+.emotion-22 {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 24px;
+  line-height: 28;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+}
+
+.emotion-24 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -350,7 +364,7 @@ exports[`Privacy renders 1`] = `
   line-height: 28px;
 }
 
-.emotion-52 {
+.emotion-49 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -360,14 +374,14 @@ exports[`Privacy renders 1`] = `
   font-weight: bold;
 }
 
-.emotion-100 {
+.emotion-94 {
   margin-top: 4px;
   margin-bottom: 4px;
   border-width: 2px;
   border-color: #eee;
 }
 
-.emotion-101 {
+.emotion-95 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -385,7 +399,7 @@ exports[`Privacy renders 1`] = `
   border-bottom-color: #eee;
 }
 
-.emotion-102 {
+.emotion-96 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -412,7 +426,7 @@ exports[`Privacy renders 1`] = `
   background-color: #eee;
 }
 
-.emotion-106 {
+.emotion-100 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -551,20 +565,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Overview
         </h3>
@@ -573,7 +574,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -598,20 +599,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Collection of Personal Data
         </h3>
@@ -620,7 +608,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -660,20 +648,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Use of Personal Data
         </h3>
@@ -682,7 +657,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -718,7 +693,7 @@ exports[`Privacy renders 1`] = `
             }
           >
             <span
-              className="emotion-52"
+              className="emotion-49"
             >
               To make our Sites more intuitive and easier to use
             </span>
@@ -743,7 +718,7 @@ exports[`Privacy renders 1`] = `
           >
             To provide 
             <span
-              className="emotion-52"
+              className="emotion-49"
             >
               relevant marketing 
             </span>
@@ -768,7 +743,7 @@ exports[`Privacy renders 1`] = `
           >
             To
             <span
-              className="emotion-52"
+              className="emotion-49"
             >
                
               consider individuals for employment and contractor opportunities and manage on-boarding processes
@@ -819,20 +794,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Marketing Choices
         </h3>
@@ -841,7 +803,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -861,20 +823,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           How we share your information
         </h3>
@@ -883,7 +832,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <ul
           className="emotion-12 emotion-13"
@@ -1024,20 +973,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Celo Foundation Sub-Processors
         </h3>
@@ -1046,7 +982,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -1054,156 +990,156 @@ exports[`Privacy renders 1`] = `
           We use the following sub-processors to operate our Services:
         </p>
         <table
-          className="emotion-100"
+          className="emotion-94"
         >
           <tr
-            className="emotion-101"
+            className="emotion-95"
           >
             <th
-              className="emotion-102"
+              className="emotion-96"
             >
               Third-Party Service or Vendor
             </th>
             <th
-              className="emotion-102"
+              className="emotion-96"
             >
               Type of Service
             </th>
             <th
-              className="emotion-102"
+              className="emotion-96"
             >
               Location
             </th>
           </tr>
           <tr
-            className="emotion-101"
+            className="emotion-95"
           >
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Segment.io Inc.
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Site Visitor Data Platform
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               United States
             </td>
           </tr>
           <tr
-            className="emotion-101"
+            className="emotion-95"
           >
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Google
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Site Visitor Analytics
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               United States
             </td>
           </tr>
           <tr
-            className="emotion-101"
+            className="emotion-95"
           >
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Lever, Inc.
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Applicant Tracking Platform
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               United States
             </td>
           </tr>
           <tr
-            className="emotion-101"
+            className="emotion-95"
           >
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               ActiveCampaign, LLC
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Visitor Tracking and Communication Platform
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               United States
             </td>
           </tr>
           <tr
-            className="emotion-101"
+            className="emotion-95"
           >
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Mixpanel
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Site Visitor Analytics
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               United States
             </td>
           </tr>
           <tr
-            className="emotion-101"
+            className="emotion-95"
           >
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               HubSpot, Inc.
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               CRM Service
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               United States
             </td>
           </tr>
           <tr
-            className="emotion-101"
+            className="emotion-95"
           >
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               ipstack
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               IP Address Geolocation
             </td>
             <td
-              className="emotion-106"
+              className="emotion-100"
             >
               Austria
             </td>
@@ -1222,20 +1158,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Legal Bases For Processing (For EEA Users)
         </h3>
@@ -1244,7 +1167,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -1338,20 +1261,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Transfer of Personal Data To Other Countries
         </h3>
@@ -1360,7 +1270,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -1380,20 +1290,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           How We Protect Your Information
         </h3>
@@ -1402,7 +1299,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -1422,20 +1319,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           How Long We Retain Your Information
         </h3>
@@ -1444,7 +1328,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -1464,20 +1348,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Children’s Information
         </h3>
@@ -1486,7 +1357,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -1506,20 +1377,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Your Rights
         </h3>
@@ -1528,7 +1386,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -1567,20 +1425,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Changes To This Privacy Policy
         </h3>
@@ -1589,7 +1434,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
@@ -1609,20 +1454,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-3"
       >
         <h3
-          aria-level="3"
-          className="emotion-12 emotion-15"
-          dir="auto"
-          role="heading"
-          style={
-            Object {
-              "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "24px",
-              "lineHeight": "32px",
-              "textRendering": "geometricPrecision",
-              "textTransform": "none",
-            }
-          }
+          className="emotion-22"
         >
           Third-Party Services, Applications, and Websites
         </h3>
@@ -1631,7 +1463,7 @@ exports[`Privacy renders 1`] = `
         className="emotion-4"
       >
         <p
-          className="emotion-25"
+          className="emotion-24"
         />
         <p
           className="emotion-11"
