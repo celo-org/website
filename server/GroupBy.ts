@@ -2,7 +2,7 @@ import Ally from "../src/alliance/AllianceMember"
 
 export function groupBy(arr: Ally[]) {
   return arr.reduce((acc, obj) => {
-    const categories = obj.category
+    const categories = obj.categories
     if (categories) {
       categories.split(";").forEach((category) => {
         if (!acc[category]) {
