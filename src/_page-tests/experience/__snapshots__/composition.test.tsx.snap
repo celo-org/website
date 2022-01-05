@@ -331,7 +331,7 @@ exports[`Experience/Composition renders 1`] = `
   transition-duration: 500ms;
 }
 
-.emotion-92 {
+.emotion-91 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -353,7 +353,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-92 {
+  .emotion-91 {
     z-index: -5;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -363,18 +363,18 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 958px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-92 {
+  .emotion-91 {
     max-width: 1080px;
   }
 }
 
-.emotion-93 {
+.emotion-92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,12 +393,12 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-93 {
+  .emotion-92 {
     display: none;
   }
 }
 
-.emotion-149 {
+.emotion-147 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +411,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-149 {
+  .emotion-147 {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -422,7 +422,7 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-150 {
+.emotion-148 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -436,7 +436,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 576px) {
-  .emotion-150 {
+  .emotion-148 {
     -webkit-transform: translateY(-25);
     -moz-transform: translateY(-25);
     -ms-transform: translateY(-25);
@@ -444,7 +444,7 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-151 {
+.emotion-149 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -455,13 +455,13 @@ exports[`Experience/Composition renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-218 {
+.emotion-216 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-219 {
+.emotion-217 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -481,7 +481,7 @@ exports[`Experience/Composition renders 1`] = `
   width: 100%;
 }
 
-.emotion-220 {
+.emotion-218 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -510,7 +510,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-220 {
+  .emotion-218 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -527,7 +527,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-220 {
+  .emotion-218 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -539,36 +539,36 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-220 {
+  .emotion-218 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-220 {
+  .emotion-218 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-220 {
+  .emotion-218 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-220 {
+  .emotion-218 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-220 {
+  .emotion-218 {
     margin-top: 30px;
   }
 }
 
-.emotion-221 {
+.emotion-219 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -581,12 +581,12 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-221 {
+  .emotion-219 {
     grid-column: span 3;
   }
 }
 
-.emotion-222 {
+.emotion-220 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -599,7 +599,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-222 {
+  .emotion-220 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -612,7 +612,7 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-223 {
+.emotion-221 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -625,7 +625,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-223 {
+  .emotion-221 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -637,7 +637,7 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-224 {
+.emotion-222 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -654,16 +654,16 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-224 {
+  .emotion-222 {
     text-align: center;
   }
 }
 
-.emotion-226 {
+.emotion-224 {
   color: inherit;
 }
 
-.emotion-227 {
+.emotion-225 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -676,12 +676,12 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-227 {
+  .emotion-225 {
     grid-column: span 3;
   }
 }
 
-.emotion-228 {
+.emotion-226 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -697,21 +697,21 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-228 {
+  .emotion-226 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-229 {
+.emotion-227 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-229 {
+  .emotion-227 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -719,7 +719,7 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-230 {
+.emotion-228 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -734,18 +734,18 @@ exports[`Experience/Composition renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-231 {
+.emotion-229 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-271 {
+.emotion-269 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-271 {
+  .emotion-269 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -753,14 +753,14 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-345 {
+.emotion-343 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-345 {
+  .emotion-343 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -768,7 +768,7 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-414 {
+.emotion-412 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -797,7 +797,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-414 {
+  .emotion-412 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -814,7 +814,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-414 {
+  .emotion-412 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -826,39 +826,39 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-414 {
+  .emotion-412 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-414 {
+  .emotion-412 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-414 {
+  .emotion-412 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-414 {
+  .emotion-412 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-414 {
+  .emotion-412 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-415 {
+.emotion-413 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -876,7 +876,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-415 {
+  .emotion-413 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -891,7 +891,7 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-416 {
+.emotion-414 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -905,7 +905,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-416 {
+  .emotion-414 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -917,31 +917,31 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-417 {
+.emotion-415 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-417 {
+  .emotion-415 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-418 {
+.emotion-416 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-418 {
+  .emotion-416 {
     display: none;
   }
 }
 
-.emotion-419 {
+.emotion-417 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -953,7 +953,7 @@ exports[`Experience/Composition renders 1`] = `
   position: relative;
 }
 
-.emotion-420 {
+.emotion-418 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -980,7 +980,7 @@ exports[`Experience/Composition renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-421 {
+.emotion-419 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1003,12 +1003,12 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-421 {
+  .emotion-419 {
     text-align: center;
   }
 }
 
-.emotion-422 {
+.emotion-420 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1033,7 +1033,7 @@ exports[`Experience/Composition renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-423 {
+.emotion-421 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2141,19 +2141,16 @@ exports[`Experience/Composition renders 1`] = `
                 Key Imagery
               </a>
             </div>
-            <div
-              className="emotion-44"
-            />
           </div>
         </div>
       </div>
     </div>
   </div>
   <div
-    className="emotion-92"
+    className="emotion-91"
   >
     <div
-      className="emotion-93"
+      className="emotion-92"
     >
       <div
         className="emotion-37"
@@ -2806,19 +2803,16 @@ exports[`Experience/Composition renders 1`] = `
             Key Imagery
           </a>
         </div>
-        <div
-          className="emotion-44"
-        />
       </div>
     </div>
     <div
-      className="emotion-149"
+      className="emotion-147"
     >
       <div
-        className="emotion-150"
+        className="emotion-148"
       >
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="overview"
         >
           <div
@@ -3417,7 +3411,7 @@ exports[`Experience/Composition renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-151"
+          className="emotion-149"
           id="grid"
         >
           <div
@@ -3984,20 +3978,20 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
     </div>
   </div>
   <div
-    className="emotion-218"
+    className="emotion-216"
     id="experience-footer"
   >
     <section
-      className="emotion-219"
+      className="emotion-217"
     >
       <div
-        className="emotion-220"
+        className="emotion-218"
       >
         <div
-          className="emotion-221"
+          className="emotion-219"
         >
           <div
-            className="emotion-222"
+            className="emotion-220"
           >
             <svg
               fill="none"
@@ -4020,19 +4014,19 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
             </svg>
           </div>
           <div
-            className="emotion-223"
+            className="emotion-221"
           >
             <p
-              className="emotion-224"
+              className="emotion-222"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-224"
+              className="emotion-222"
             >
               Read more in Celo 
               <a
-                className="emotion-226"
+                className="emotion-224"
                 href="/terms"
               >
                 Terms of Service
@@ -4041,21 +4035,21 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
           </div>
         </div>
         <div
-          className="emotion-227"
+          className="emotion-225"
         >
           <div
-            className="emotion-228"
+            className="emotion-226"
           >
             <div
-              className="emotion-229"
+              className="emotion-227"
             >
               <h6
-                className="emotion-230"
+                className="emotion-228"
               >
                 Celo
               </h6>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4104,7 +4098,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4153,7 +4147,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4202,7 +4196,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4251,7 +4245,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4300,7 +4294,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4349,7 +4343,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4398,7 +4392,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4448,15 +4442,15 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
               </div>
             </div>
             <div
-              className="emotion-271"
+              className="emotion-269"
             >
               <h6
-                className="emotion-230"
+                className="emotion-228"
               >
                 Technology
               </h6>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4505,7 +4499,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4554,7 +4548,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4603,7 +4597,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4652,7 +4646,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4702,15 +4696,15 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
               </div>
             </div>
             <div
-              className="emotion-271"
+              className="emotion-269"
             >
               <h6
-                className="emotion-230"
+                className="emotion-228"
               >
                 Resources
               </h6>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4759,7 +4753,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4808,7 +4802,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4857,7 +4851,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4906,7 +4900,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -4955,7 +4949,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5004,7 +4998,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5053,7 +5047,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5102,7 +5096,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5152,15 +5146,15 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
               </div>
             </div>
             <div
-              className="emotion-345"
+              className="emotion-343"
             >
               <h6
-                className="emotion-230"
+                className="emotion-228"
               >
                 Social
               </h6>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5233,7 +5227,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5308,7 +5302,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5381,7 +5375,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5454,7 +5448,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5529,7 +5523,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5602,7 +5596,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5674,7 +5668,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5744,7 +5738,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5814,7 +5808,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5884,7 +5878,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 </div>
               </div>
               <div
-                className="emotion-231"
+                className="emotion-229"
               >
                 <div
                   className="emotion-11"
@@ -5959,48 +5953,48 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
       </div>
     </section>
     <section
-      className="emotion-219"
+      className="emotion-217"
     >
       <div
-        className="emotion-414"
+        className="emotion-412"
       >
         <div
-          className="emotion-415"
+          className="emotion-413"
         >
           <div
-            className="emotion-416"
+            className="emotion-414"
           >
             <img
-              className="emotion-417"
+              className="emotion-415"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-418"
+              className="emotion-416"
             >
               |
             </span>
             <div
-              className="emotion-419"
+              className="emotion-417"
             >
               <div
-                className="emotion-420"
+                className="emotion-418"
               />
               <span
-                className="emotion-421"
+                className="emotion-419"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-422"
+                className="emotion-420"
               />
             </div>
           </div>
           <small
-            className="emotion-423"
+            className="emotion-421"
           >
             The Celo Foundation, © Celo 2021
           </small>
