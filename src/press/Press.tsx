@@ -75,12 +75,12 @@ const containercss = css({
   justifyContent: "center",
 })
 
-const links = css(flex, {
-  paddingTop: 28,
-  a: {
-    lineHeight: "20px",
-  },
-})
+// const links = css(flex, {
+//   paddingTop: 28,
+//   a: {
+//     lineHeight: "20px",
+//   },
+// })
 
 const logoCss = css({
   objectFit: "contain",
