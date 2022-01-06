@@ -1,9 +1,6 @@
 import { css } from "@emotion/react"
 import * as React from "react"
 import { flex, WHEN_MOBILE, WHEN_TABLET_AND_UP } from "src/estyles"
-// import { useTranslation } from "src/i18n"
-import Button, { BTN, SIZE } from "src/shared/Button.3"
-// import MENU from "src/shared/menu-items"
 import { colors } from "src/colors"
 import { GridRow } from "src/layout/Grid2"
 import { LogoGallery } from "src/utils/contentful"
@@ -37,7 +34,7 @@ export default function Press(props: LogoGallery) {
             )
           })}
         </div>
-        <div css={links}>
+        {/* <div css={links}>
           <Button
             text={"Sign up: Make Crypto Mobile Hackathon - $2.5M in Prizes & Seed Funding"}
             kind={BTN.NAKED}
@@ -46,7 +43,7 @@ export default function Press(props: LogoGallery) {
             href={"https://mobiledefi.devpost.com/?utm_source=celo&utm_medium=banner"}
             align={"center"}
           />
-        </div>
+        </div> */}
       </GridRow>
     </div>
   )
