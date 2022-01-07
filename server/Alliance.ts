@@ -35,6 +35,7 @@ async function fetchAllies(): Promise<Grouping[]> {
   try {
     const apiResponse = await hubspotClient.crm.companies.searchApi.doSearch({
       filterGroups: [
+        // Type 'string' from the opertator prop is not assignable to type 'OperatorEnum'. So ts-ignore is being used.
         // @ts-ignore
         { filters: [{ value: "true", propertyName: "approved_alliance_member", operator: "EQ" }] },
       ],
@@ -46,8 +47,7 @@ async function fetchAllies(): Promise<Grouping[]> {
       apiResponse.body.results.map((image) => {
         try {
           const logo = image.properties.logo
-          if (logo !== null && logo.startsWith("https://")) {
-            console.log(logo, "this is logo inside the conditional")
+          if (logo !== null && logo.startsWith("https://") && logo !== "" && logo !== undefined) {
             return probe(logo)
           }
         } catch (err) {
@@ -55,15 +55,20 @@ async function fetchAllies(): Promise<Grouping[]> {
         }
       })
     )
-    const imgWidth = probeImage[0].width
-    const imgHeight = probeImage[0].height
 
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
+    normalized.forEach((company, i) => {
+      const imgInfo = probeImage[i]
+      if (imgInfo !== undefined) {
+        company.logo.width = imgInfo.width
+        company.logo.height = imgInfo.height
+      }
+    })
+    console.log(normalized, "this is normalized")
     const groups = groupBy(normalized)
     const companies = Object.entries<AllianceMember[]>(groups).map((group) => {
-      group[1][0].logo.width = imgWidth
-      group[1][0].logo.height = imgHeight
-      return { name: group[0], records: group[1] }
+      const [name, records] = group
+      return { name, records }
     })
     return companies
   } catch (e) {
