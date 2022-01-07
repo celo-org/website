@@ -47,7 +47,7 @@ async function fetchAllies(): Promise<Grouping[]> {
       apiResponse.body.results.map((image) => {
         try {
           const logo = image.properties.logo
-          if (logo !== null && logo.startsWith("https://") && logo !== "" && logo !== undefined) {
+          if (logo !== null && logo.startsWith("https://") && logo !== "") {
             return probe(logo)
           }
         } catch (err) {
@@ -57,15 +57,18 @@ async function fetchAllies(): Promise<Grouping[]> {
     )
 
     const normalized = apiResponse.body.results.map((result) => normalizeHubspot(result))
-    normalized.forEach((company, i) => {
+    const imageHeightAndWidth = normalized.map((company, i) => {
       const imgInfo = probeImage[i]
       if (imgInfo !== undefined) {
-        company.logo.width = imgInfo.width
-        company.logo.height = imgInfo.height
+        return {
+          ...company,
+          logo: { uri: imgInfo.url, width: imgInfo.width, height: imgInfo.height },
+        }
       }
+      return company
     })
-    console.log(normalized, "this is normalized")
-    const groups = groupBy(normalized)
+
+    const groups = groupBy(imageHeightAndWidth)
     const companies = Object.entries<AllianceMember[]>(groups).map((group) => {
       const [name, records] = group
       return { name, records }
