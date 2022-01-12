@@ -7,7 +7,8 @@ import { GridRow } from "src/layout/Grid2"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
 import { GetServerSideProps } from "next"
-
+import { getDomainLocale } from "next/dist/shared/lib/router/router"
+import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 
 interface Props {
   title: string
@@ -36,7 +37,11 @@ export default function SavingsTerms(props: Props) {
 export const getServerSideProps: GetServerSideProps<Props> = async function getServerSideProps({
   locale,
 }) {
-  const page = await getPageBySlug("save-terms-and-conditions", { locale: "en-US" }, false)
+  const page = await getPageBySlug(
+    "save-terms-and-conditions",
+    { locale: i18nLocaleToContentfulLocal(getDomainLocale) },
+    false
+  )
 
   if (!page) {
     return { notFound: true }

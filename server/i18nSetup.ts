@@ -27,3 +27,12 @@ const rtlLocales = [
 const isLocaleRTL = (locale) => rtlLocales.indexOf(locale) >= 0
 
 export { isLocaleRTL }
+
+export function i18nLocaleToContentfulLocale(locale: string) {
+  switch (locale) {
+    case "en":
+      return "en-US"
+    default:
+      return locale
+  }
+}

@@ -3,14 +3,13 @@ import { Props } from "src/experience/contentful/ContentfulKit"
 import { getKit, getPageById, getValidKitSlugs, SectionType } from "src/utils/contentful"
 import makeSafeForJson from "src/utils/makeSafeForJson"
 import { NameSpaces } from "src/i18n"
+import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 
 const getServerSideProps: GetServerSideProps<
   Props | Record<string, any>,
   { kit: string; kitPage: string }
-> = async function getServerSideProp({ params, query, req, resolvedUrl }) {
+> = async function getServerSideProp({ params, req, resolvedUrl, locale }) {
   try {
-    const locale = query.locale || "en-US"
-
     if (
       !params?.kit ||
       typeof params.kit !== "string" ||
@@ -28,7 +27,9 @@ const getServerSideProps: GetServerSideProps<
       return { notFound: true }
     }
 
-    const kit = await getKit(params.kit, params.kitPage, { locale })
+    const kit = await getKit(params.kit, params.kitPage, {
+      locale: i18nLocaleToContentfulLocale(locale),
+    })
 
     if (!kit.pageID) {
       return {
@@ -59,7 +60,7 @@ const getServerSideProps: GetServerSideProps<
     })
     return {
       props: {
-        ...(await serverSideTranslations("en", [NameSpaces.common])),
+        ...(await serverSideTranslations(locale || "en", [NameSpaces.common])),
         ...makeSafeForJson(kit),
         ...makeSafeForJson(page),
         sections: page.sections as SectionType[],
