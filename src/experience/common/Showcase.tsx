@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Image, StyleSheet, Text, View } from "react-native"
+import { StyleSheet, Image, Text, View } from "react-native"
 import DownloadButton from "src/experience/brandkit/DownloadButton"
 import { AssetTypes } from "src/experience/brandkit/tracking"
 import { brandStyles } from "src/experience/common/constants"
@@ -72,7 +72,6 @@ const styles = StyleSheet.create({
   title: { marginVertical: 5 },
   previewContainer: {
     marginVertical: 20,
-    marginRight: 40,
   },
   text: { flex: 1 },
   pullStart: { paddingLeft: 0 },

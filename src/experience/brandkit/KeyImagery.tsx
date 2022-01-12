@@ -60,7 +60,7 @@ function useIlloSize() {
   const { screen } = useScreenSize()
   switch (screen) {
     case ScreenSizes.DESKTOP:
-      return 340
+      return 380
     case ScreenSizes.MOBILE:
       return 345
     case ScreenSizes.TABLET:
@@ -80,12 +80,12 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
       <H2 style={[brandStyles.gap, standardStyles.elementalMarginBottom]}>
         {t("keyImagery.illoTitle")}
       </H2>
-      <View style={[brandStyles.tiling, styles.illustrationsArea]}>
+      <div css={container}> 
         {data &&
           data.map((illo) => (
             <Showcase
               key={illo.id}
-              ratio={1.3}
+              ratio={1}
               assetType={AssetTypes.illustration}
               description={illo.description}
               name={illo.name}
@@ -95,16 +95,14 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
               size={size}
             />
           ))}
-      </View>
+      </div>
     </View>
   )
 })
 
-const styles = StyleSheet.create({
-  fillSpace: {
-    minHeight: "60vh",
-  },
-  illustrationsArea: {
-    justifyContent: "space-between",
-  },
+const container = css({
+  width: "100%",
+  display: "flex",
+  flexDirection: "row",
+  flexWrap: "wrap"
 })

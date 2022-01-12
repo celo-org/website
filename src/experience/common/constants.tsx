@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native"
 import { colors } from "src/colors"
 
-export const GAP = 10
+export const GAP = 0
 
 export const brandStyles = StyleSheet.create({
   gap: {
