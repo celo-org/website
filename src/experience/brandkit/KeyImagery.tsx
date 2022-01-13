@@ -1,18 +1,19 @@
+import { css } from "@emotion/react"
 import { NextPage } from "next"
 import * as React from "react"
-import { StyleSheet, View } from "react-native"
+import { View } from "react-native"
 import AssetProps from "src/../fullstack/AssetProps"
 import Page, { IMAGERY_PATH } from "src/experience/brandkit/common/Page"
-import { AssetTypes } from "src/experience/brandkit/tracking"
 import CCLicense from "src/experience/common/CCLicense"
 import { brandStyles } from "src/experience/common/constants"
 import PageHeadline from "src/experience/common/PageHeadline"
-import Showcase from "src/experience/common/Showcase"
 import { H2 } from "src/fonts/Fonts"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { ScreenSizes, useScreenSize } from "src/layout/ScreenSize"
 import { hashNav } from "src/shared/menu-items"
 import { standardStyles } from "src/styles"
+import ShowcaseKeyImagery from "../common/ShowcaseKeyImagery"
+import { AssetTypes } from "./tracking"
 
 const { brandImagery } = hashNav
 
@@ -83,17 +84,15 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
       <div css={container}> 
         {data &&
           data.map((illo) => (
-            <Showcase
+            <ShowcaseKeyImagery
               key={illo.id}
               ratio={1}
-              assetType={AssetTypes.illustration}
               description={illo.description}
               name={illo.name}
               preview={illo.preview}
               uri={illo.uri}
               loading={false}
-              size={size}
-            />
+              size={size} assetType={AssetTypes.illustration}            />
           ))}
       </div>
     </View>
@@ -103,6 +102,6 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
 const container = css({
   width: "100%",
   display: "flex",
+  flexWrap: "wrap",
   flexDirection: "row",
-  flexWrap: "wrap"
 })
