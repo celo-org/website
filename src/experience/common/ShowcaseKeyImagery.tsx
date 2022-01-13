@@ -44,11 +44,9 @@ export default React.memo(function ShowcaseKeyImagery({
       <Fade duration={FADE_MS}>
         <View>
           <View style={styles.previewContainer}>
-            <AspectRatio ratio={ratio}>
               {loading ? (
                 <Spinner color={colors.primary} size="small" />
               ) : (
-                  <span css={styles.image}>
                 <Image
                  src={uri}
                  unoptimized={true}
@@ -57,9 +55,7 @@ export default React.memo(function ShowcaseKeyImagery({
                  height={400}
                  width={328}
                 />
-                </span>
               )}
-            </AspectRatio>
           </View>
           <View style={styles.text}>
             {name && <Text style={titleStyle}>{name.trimLeft()}</Text>}
@@ -79,10 +75,6 @@ const styles = StyleSheet.create({
   previewContainer: {
     marginVertical: 20,
     marginRight: 20,
-  },
-  image: {
-    border: "none",
-    borderRadius: 8,
   },
   text: { flex: 1 },
   pullStart: { paddingLeft: 0 },
