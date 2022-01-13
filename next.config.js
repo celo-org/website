@@ -5,7 +5,7 @@ module.exports = {
   i18n,
   inlineImageLimit: 1024,
   images: {
-    domains: [],
+    domains: ["dl.airtable.com"],
   },
   experimental: {
     modern: false,
