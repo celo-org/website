@@ -2,6 +2,7 @@ import Page from "src/plumo/Landing"
 import { getPageBySlug } from "src/utils/contentful"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
+import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 
 export default Page
 

@@ -6,6 +6,7 @@ import { Page as SideBarEntry } from "src/experience/common/Sidebar"
 import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import { BTN } from "src/shared/Button.3"
 import { fetchCached, MINUTE } from "src/../server/cache"
+import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 
 function initialize() {
   const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
@@ -45,7 +46,7 @@ async function fetchKit(kitSlug: string, pageSlug: string, { locale }): Promise<
   const kit = await initialize().getEntries<Kit>({
     content_type: "kit",
     "fields.slug": kitSlug,
-    locale,
+    locale: i18nLocaleToContentfulLocale(locale),
   })
 
   const data = kit.items[0].fields
@@ -69,9 +70,9 @@ async function fetchKit(kitSlug: string, pageSlug: string, { locale }): Promise<
     sidebar: data.pages_.map((page) => {
       return {
         title: page.fields.title,
-        href: `/experience/${kitSlug}${
+        href: `${addLocale(locale)}/experience/${kitSlug}${
           page.fields.slug === kitSlug || page.fields.slug === "index" ? "" : "/" + page.fields.slug
-        }${addLocale(locale)}`,
+        }`,
         sections: [],
       }
     }),
@@ -249,7 +250,7 @@ async function fetchPageBySlug(slug: string, { locale }, showSysData?: boolean) 
     content_type: "page",
     "fields.slug": slug,
     include: 5,
-    locale,
+    locale: i18nLocaleToContentfulLocale(locale),
   })
   return processPages<SectionType | GridRowContentType>(pages, showSysData)
 }
@@ -263,7 +264,7 @@ export async function fetchPageById<T>(id: string, { locale }) {
     content_type: "page",
     "sys.id": id,
     include: 5,
-    locale,
+    locale: i18nLocaleToContentfulLocale(locale),
   })
   return processPages<T>(pages)
 }
@@ -282,9 +283,9 @@ function processPages<T>(pages: EntryCollection<ContentfulPage<T>>, showSysData?
 }
 
 export function addLocale(locale) {
-  if (locale === "en-US") {
+  if (locale === "en-US" || locale == "en") {
     return ""
   } else {
-    return `?locale=${locale}`
+    return `/${locale}`
   }
 }

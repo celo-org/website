@@ -7,7 +7,6 @@ import { GridRow } from "src/layout/Grid2"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
 import { GetServerSideProps } from "next"
-import { getDomainLocale } from "next/dist/shared/lib/router/router"
 import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 
 interface Props {
@@ -39,7 +38,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async function getS
 }) {
   const page = await getPageBySlug(
     "save-terms-and-conditions",
-    { locale: i18nLocaleToContentfulLocal(getDomainLocale) },
+    { locale: i18nLocaleToContentfulLocale(locale) },
     false
   )
 
