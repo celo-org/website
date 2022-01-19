@@ -17,7 +17,9 @@ export enum ListID {
 }
 
 function convert(formContact: CRMInterface): HubSpotContact {
-  const [firstName, ...restNames] = formContact.fullName.split(" ")
+  const [firstName, ...restNames] = formContact.fullName
+    ? formContact.fullName.split(" ")
+    : ["", ""]
   const lastName = restNames.join(" ")
   const properties = {
     email: formContact.email,

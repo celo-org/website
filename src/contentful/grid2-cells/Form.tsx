@@ -115,7 +115,10 @@ export default function Form(props: FormContentType & Props) {
           align={props.fields.length == 1 ? "center" : "flex-start"}
           text={formState.isSubmitting ? t("validationErrors.pleaseWait") : props.submitText}
         />
-        <MessageDisplay css={postSubmitCss} isShowing={formState.isSubmitSuccessful}>
+        <MessageDisplay
+          css={css(postSubmitCss, props.darkMode && whiteText)}
+          isShowing={formState.isSubmitSuccessful}
+        >
           {t("shortSuccess")}
         </MessageDisplay>
         <MessageDisplay css={postSubmitErrorCss} isShowing={!!formState.errors.server}>
@@ -137,7 +140,7 @@ function valitators(fieldType: InputTypes) {
   }
 }
 
-const postSubmitCss = css(whiteText, {
+const postSubmitCss = css({
   marginTop: 12,
 })
 

@@ -11,7 +11,7 @@ export default (props) => <CommonPage {...props} css={rootCss} className={"Test"
 export const getServerSideProps: GetServerSideProps = async function getServerSideProps({
   locale,
 }) {
-  const page = await getPageBySlug("CeloConnect2022" as string, { locale: "en-US" }, true)
+  const page = await getPageBySlug("connect2022" as string, { locale: "en-US" }, true)
 
   if (!page) {
     return { notFound: true }
