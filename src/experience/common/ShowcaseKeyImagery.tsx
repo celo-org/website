@@ -10,6 +10,7 @@ import Spinner from "src/shared/Spinner"
 import { fonts, standardStyles } from "src/styles"
 import { colors } from "src/colors"
 import { NoneFound } from "src/table/table"
+import { css } from "@emotion/react"
 
 interface Props {
   name: string
@@ -44,18 +45,19 @@ export default React.memo(function ShowcaseKeyImagery({
       <Fade duration={FADE_MS}>
         <View>
           <View style={styles.previewContainer}>
-              {loading ? (
-                <Spinner color={colors.primary} size="small" />
-              ) : (
-                <Image
-                 src={uri}
-                 unoptimized={true}
-                 alt={description}
-                 objectFit={"cover"}
-                 height={400}
-                 width={328}
-                />
-              )}
+            {loading ? (
+              <Spinner color={colors.primary} size="small" />
+            ) : (
+              <Image
+                src={uri}
+                unoptimized={true}
+                alt={description}
+                objectFit={"cover"}
+                height={400}
+                width={328}
+                css={keyImagery}
+              />
+            )}
           </View>
           <View style={styles.text}>
             {name && <Text style={titleStyle}>{name.trimLeft()}</Text>}
@@ -89,4 +91,8 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     backgroundColor: "#000000",
   },
+})
+
+const keyImagery = css({
+  borderRadius: 8,
 })
