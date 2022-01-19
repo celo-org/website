@@ -22,6 +22,7 @@ interface Props {
   size: number | "100%"
   assetType: AssetTypes
   variant?: "circle" | "circle-white" | "circle-black"
+  series?: string
 }
 
 export default React.memo(function ShowcaseKeyImagery({
@@ -32,6 +33,7 @@ export default React.memo(function ShowcaseKeyImagery({
   uri,
   assetType,
   size,
+  series,
   ratio,
   variant,
 }: Props) {
@@ -49,7 +51,7 @@ export default React.memo(function ShowcaseKeyImagery({
               <Spinner color={colors.primary} size="small" />
             ) : (
               <Image
-                src={uri}
+                src={preview}
                 unoptimized={true}
                 alt={description}
                 objectFit={"cover"}

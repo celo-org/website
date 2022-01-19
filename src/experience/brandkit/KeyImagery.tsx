@@ -21,11 +21,8 @@ interface Props {
   illos: AssetProps[]
 }
 
-const KeyImageryWrapped: NextPage<Props> = React.memo(function KeyImagery({
-  illos,
-}: Props) {
+const KeyImageryWrapped: NextPage<Props> = React.memo(function KeyImagery({ illos }: Props) {
   const { t } = useTranslation(NameSpaces.brand)
-
   return (
     <Page
       title={t("keyImagery.title")}
@@ -81,7 +78,7 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
       <H2 style={[brandStyles.gap, standardStyles.elementalMarginBottom]}>
         {t("keyImagery.illoTitle")}
       </H2>
-      <div css={container}> 
+      <div css={container}>
         {data &&
           data.map((illo) => (
             <ShowcaseKeyImagery
@@ -92,7 +89,10 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
               preview={illo.preview}
               uri={illo.uri}
               loading={false}
-              size={size} assetType={AssetTypes.illustration}            />
+              series={illo.series}
+              size={size}
+              assetType={AssetTypes.illustration}
+            />
           ))}
       </div>
     </View>
@@ -104,4 +104,5 @@ const container = css({
   display: "flex",
   flexWrap: "wrap",
   flexDirection: "row",
+  columnGap: 30,
 })
