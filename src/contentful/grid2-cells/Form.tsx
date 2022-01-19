@@ -137,10 +137,6 @@ function valitators(fieldType: InputTypes) {
   }
 }
 
-const centeredCss = css({
-  alignItems: "center",
-})
-
 const postSubmitCss = css(whiteText, {
   marginTop: 12,
 })
