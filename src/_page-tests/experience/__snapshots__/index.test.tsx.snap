@@ -2819,8 +2819,8 @@ exports[`Experience/Brandkit renders 1`] = `
             className="emotion-11"
             style={
               Object {
-                "marginLeft": "10px",
-                "marginRight": "10px",
+                "marginLeft": "0px",
+                "marginRight": "0px",
               }
             }
           >
@@ -2971,8 +2971,8 @@ exports[`Experience/Brandkit renders 1`] = `
             className="emotion-11"
             style={
               Object {
-                "marginLeft": "10px",
-                "marginRight": "10px",
+                "marginLeft": "0px",
+                "marginRight": "0px",
               }
             }
           >

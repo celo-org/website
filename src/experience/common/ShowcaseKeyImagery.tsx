@@ -4,25 +4,21 @@ import Image from "next/image"
 import DownloadButton from "src/experience/brandkit/DownloadButton"
 import { AssetTypes } from "src/experience/brandkit/tracking"
 import { brandStyles } from "src/experience/common/constants"
-import AspectRatio from "src/shared/AspectRatio"
 import Fade from "src/shared/AwesomeFade"
 import Spinner from "src/shared/Spinner"
 import { fonts, standardStyles } from "src/styles"
 import { colors } from "src/colors"
-import { NoneFound } from "src/table/table"
 import { css } from "@emotion/react"
+import getRightHeightImg from "./getRightSizingImg"
 
 interface Props {
   name: string
   description: string
   preview?: string
   uri: string
-  ratio: number
   loading: boolean
   size: number | "100%"
   assetType: AssetTypes
-  variant?: "circle" | "circle-white" | "circle-black"
-  series?: string
 }
 
 export default React.memo(function ShowcaseKeyImagery({
@@ -33,9 +29,6 @@ export default React.memo(function ShowcaseKeyImagery({
   uri,
   assetType,
   size,
-  series,
-  ratio,
-  variant,
 }: Props) {
   const trackingData = React.useMemo(
     () => ({ name: `${name} ${assetType}`, type: assetType }),
@@ -55,7 +48,7 @@ export default React.memo(function ShowcaseKeyImagery({
                 unoptimized={true}
                 alt={description}
                 objectFit={"cover"}
-                height={400}
+                height={getRightHeightImg(name)}
                 width={328}
                 css={keyImagery}
               />

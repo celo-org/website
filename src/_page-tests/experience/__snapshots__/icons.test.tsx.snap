@@ -2865,8 +2865,8 @@ exports[`Experience/Icons renders 1`] = `
             className="emotion-11"
             style={
               Object {
-                "paddingLeft": "10px",
-                "paddingRight": "10px",
+                "paddingLeft": "0px",
+                "paddingRight": "0px",
               }
             }
           >
@@ -2874,8 +2874,8 @@ exports[`Experience/Icons renders 1`] = `
               className="emotion-11"
               style={
                 Object {
-                  "marginLeft": "10px",
-                  "marginRight": "10px",
+                  "marginLeft": "0px",
+                  "marginRight": "0px",
                 }
               }
             >
@@ -2929,8 +2929,8 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   "fontSize": "20px",
                   "fontWeight": "500",
                   "lineHeight": "24px",
-                  "marginLeft": "10px",
-                  "marginRight": "10px",
+                  "marginLeft": "0px",
+                  "marginRight": "0px",
                   "marginTop": "60px",
                   "textRendering": "geometricPrecision",
                 }
@@ -2948,8 +2948,8 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "marginBottom": "20px",
-                  "marginLeft": "10px",
-                  "marginRight": "10px",
+                  "marginLeft": "0px",
+                  "marginRight": "0px",
                   "marginTop": "20px",
                   "textRendering": "geometricPrecision",
                 }
@@ -2998,8 +2998,8 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 className="emotion-11"
                 style={
                   Object {
-                    "marginLeft": "10px",
-                    "marginRight": "10px",
+                    "marginLeft": "0px",
+                    "marginRight": "0px",
                     "maxWidth": "500px",
                   }
                 }
@@ -3093,8 +3093,8 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "10px",
-                        "marginRight": "10px",
+                        "marginLeft": "0px",
+                        "marginRight": "0px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -3111,7 +3111,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           style={
                             Object {
                               "marginBottom": "20px",
-                              "marginRight": "40px",
                               "marginTop": "20px",
                             }
                           }
@@ -3332,8 +3331,8 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "10px",
-                        "marginRight": "10px",
+                        "marginLeft": "0px",
+                        "marginRight": "0px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -3350,7 +3349,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           style={
                             Object {
                               "marginBottom": "20px",
-                              "marginRight": "40px",
                               "marginTop": "20px",
                             }
                           }
