@@ -19,6 +19,8 @@ interface Props {
   loading: boolean
   size: number | "100%"
   assetType: AssetTypes
+  ratio: number
+  series?: string
 }
 
 export default React.memo(function ShowcaseKeyImagery({
