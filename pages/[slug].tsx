@@ -3,7 +3,7 @@ import { getPageBySlug } from "src/utils/contentful"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
 import { GetServerSideProps } from "next"
-
+import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 export default CommonPage
 
 export const getServerSideProps: GetServerSideProps = async function getServerSideProps({
@@ -14,7 +14,11 @@ export const getServerSideProps: GetServerSideProps = async function getServerSi
     return { notFound: true }
   }
 
-  const page = await getPageBySlug(params.slug as string, { locale: "en-US" }, true)
+  const page = await getPageBySlug(
+    params.slug as string,
+    { locale: i18nLocaleToContentfulLocale(locale) },
+    true
+  )
 
   if (!page) {
     return { notFound: true }
