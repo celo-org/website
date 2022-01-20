@@ -14,10 +14,13 @@ export enum ListID {
   FundReferrals = "118",
   FundApplicants = "117",
   PublicSector = "119",
+  CeloConnect = "142",
 }
 
 function convert(formContact: CRMInterface): HubSpotContact {
-  const [firstName, ...restNames] = formContact.fullName.split(" ")
+  const [firstName, ...restNames] = formContact.fullName
+    ? formContact.fullName.split(" ")
+    : ["", ""]
   const lastName = restNames.join(" ")
   const properties = {
     email: formContact.email,

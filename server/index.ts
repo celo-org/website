@@ -225,6 +225,20 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     }
   })
 
+  server.post("/celo-connect2022", rateLimit, async (req, res) => {
+    try {
+      if (!req.body.mielpoto) {
+        await addToCRM(req.body, ListID.CeloConnect)
+        res.status(NO_CONTENT).send("ok")
+      } else {
+        console.info("possible bot", req.body)
+        res.status(NO_CONTENT).send("ok")
+      }
+    } catch (e) {
+      respondError(res, e)
+    }
+  })
+
   server.get("/announcement", async (req, res) => {
     try {
       const annoucements = await latestAnnouncements(req.header["X-Appengine-Country"])
