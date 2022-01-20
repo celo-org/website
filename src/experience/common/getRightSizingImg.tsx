@@ -3,13 +3,13 @@ export default function getRightHeightImg(name: string) {
     return 198
   } else if (name.startsWith("Embodying")) {
     return 236
-  } else if (name.startsWith("Innovation")) {
+  } else if (name.startsWith("Innovating")) {
     return 288
   } else if (name.startsWith("Design")) {
     return 308
   } else if (name.startsWith("Build")) {
     return 320
-  } else if (name.startsWith("Inclusive") && name.startsWith("Mobile")) {
+  } else if (name.startsWith("Inclusive") || name.startsWith("Mobile Penetration")) {
     return 330
   } else if (name.startsWith("Operating")) {
     return 232

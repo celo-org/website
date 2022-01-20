@@ -84,13 +84,11 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
           data.map((illo) => (
             <ShowcaseKeyImagery
               key={illo.id}
-              ratio={1}
               description={illo.description}
               name={illo.name}
               preview={illo.preview}
               uri={illo.uri}
               loading={false}
-              series={illo.series}
               size={size}
               assetType={AssetTypes.illustration}
             />
