@@ -9,7 +9,6 @@ import Spinner from "src/shared/Spinner"
 import { fonts, standardStyles } from "src/styles"
 import { colors } from "src/colors"
 import { css } from "@emotion/react"
-import getRightHeightImg from "./getRightSizingImg"
 
 interface Props {
   name: string
@@ -19,6 +18,8 @@ interface Props {
   loading: boolean
   size: number | "100%"
   assetType: AssetTypes
+  width: number
+  height: number
 }
 
 export default React.memo(function ShowcaseKeyImagery({
@@ -29,6 +30,8 @@ export default React.memo(function ShowcaseKeyImagery({
   uri,
   assetType,
   size,
+  width,
+  height,
 }: Props) {
   const trackingData = React.useMemo(
     () => ({ name: `${name} ${assetType}`, type: assetType }),
@@ -48,8 +51,8 @@ export default React.memo(function ShowcaseKeyImagery({
                 unoptimized={true}
                 alt={description}
                 objectFit={"cover"}
-                height={getRightHeightImg(name)}
-                width={328}
+                height={height}
+                width={width}
                 css={keyImagery}
               />
             )}

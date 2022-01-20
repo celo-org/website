@@ -14,6 +14,7 @@ import { hashNav } from "src/shared/menu-items"
 import { standardStyles } from "src/styles"
 import ShowcaseKeyImagery from "../common/ShowcaseKeyImagery"
 import { AssetTypes } from "./tracking"
+// import getWidthAndHeight from "server/airtable"
 
 const { brandImagery } = hashNav
 
@@ -71,9 +72,12 @@ interface IlloProps {
 }
 
 const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
+  console.log("this is data", data)
   const size = useIlloSize()
   const { t } = useTranslation(NameSpaces.brand)
-
+  data.map((el) => {
+    console.log("this is el", el)
+  })
   return (
     <View style={standardStyles.blockMarginTopTablet}>
       <H2 style={[brandStyles.gap, standardStyles.elementalMarginBottom]}>
@@ -90,6 +94,8 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
               uri={illo.uri}
               loading={false}
               size={size}
+              width={illo.width}
+              height={illo.height}
               assetType={AssetTypes.illustration}
             />
           ))}
