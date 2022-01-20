@@ -72,7 +72,6 @@ interface IlloProps {
 }
 
 const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
-  console.log("this is data", data)
   const size = useIlloSize()
   const { t } = useTranslation(NameSpaces.brand)
   return (
