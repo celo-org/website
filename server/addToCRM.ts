@@ -18,17 +18,27 @@ export enum ListID {
 }
 
 function convert(formContact: CRMInterface): HubSpotContact {
-  const [firstName, ...restNames] = formContact.fullName
-    ? formContact.fullName.split(" ")
-    : ["", ""]
-  const lastName = restNames.join(" ")
-  const properties = {
-    email: formContact.email,
-    firstname: firstName,
-    lastname: lastName,
-    additional_information_about_your_project___areas_of_interest: formContact.contribution,
+  let names = {}
+  let contribution = {}
+  if (formContact.fullName) {
+    const [firstName, ...restNames] = formContact.fullName
+    const lastName = restNames.join(" ")
+    names = {
+      firstname: firstName,
+      lastname: lastName,
+    }
   }
-  return properties
+
+  if (formContact.contribution) {
+    contribution = {
+      additional_information_about_your_project___areas_of_interest: formContact.contribution,
+    }
+  }
+  return {
+    email: formContact.email,
+    ...names,
+    ...contribution,
+  }
 }
 
 function apiKey() {
