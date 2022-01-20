@@ -11,6 +11,8 @@ const MOCK = [
     preview: "preview.png",
     tags: ["spec", "test"],
     id: "1",
+    width: 1,
+    height: 1,
   },
 ]
 

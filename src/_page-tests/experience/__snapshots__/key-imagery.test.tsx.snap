@@ -2847,8 +2847,8 @@ exports[`Experience/KeyImagery renders 1`] = `
               className="emotion-11"
               style={
                 Object {
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                 }
               }
             >
@@ -2902,8 +2902,8 @@ Images have descriptions that act as guidelines for both accessibility and commu
                   "fontSize": "20px",
                   "fontWeight": "500",
                   "lineHeight": "24px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "marginTop": "60px",
                   "textRendering": "geometricPrecision",
                 }
@@ -2921,8 +2921,8 @@ Images have descriptions that act as guidelines for both accessibility and commu
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "marginBottom": "20px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "marginTop": "20px",
                   "textRendering": "geometricPrecision",
                 }
@@ -2990,8 +2990,8 @@ Images have descriptions that act as guidelines for both accessibility and commu
                   "fontSize": "28px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "textRendering": "geometricPrecision",
                   "textTransform": "none",
                 }
@@ -3006,8 +3006,8 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 className="emotion-11"
                 style={
                   Object {
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "marginTop": "20px",
                   }
                 }
@@ -3065,7 +3065,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           <img
                             alt=""
                             aria-hidden={true}
-                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzI4IiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
                             style={
                               Object {
                                 "background": "none",

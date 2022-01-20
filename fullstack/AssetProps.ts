@@ -6,6 +6,6 @@ export default interface AssetProps {
   preview: string
   uri: string
   series?: string
-  width: number
-  height: number
+  width?: number
+  height?: number
 }
