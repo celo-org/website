@@ -224,6 +224,7 @@ export interface ContentfulPage<T> {
   sections: Entry<T>[]
   openGraph?: Asset
   darkNav: boolean
+  className?: string
 }
 
 export interface GalleryItem {

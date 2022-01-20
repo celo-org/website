@@ -7,6 +7,7 @@ import {
   WHEN_TABLET_AND_UP,
   whiteText,
   honeypotCss,
+  inputStyle,
 } from "src/estyles"
 import { css } from "@emotion/react"
 import Button, { BTN } from "src/shared/Button.3"
@@ -18,7 +19,11 @@ import { postForm } from "src/forms/postForm"
 
 const CLEAR_TIME = 1000 * 30
 
-export default function Form(props: FormContentType) {
+interface Props {
+  darkMode?: boolean
+}
+
+export default function Form(props: FormContentType & Props) {
   const { t } = useTranslation(NameSpaces.common)
   const { register, handleSubmit, formState, setError, reset, clearErrors } = useForm()
   const onSubmit = async (data) => {
@@ -68,7 +73,7 @@ export default function Form(props: FormContentType) {
                 onFocus={onFocus}
                 aria-invalid={ariaInvalid}
                 name={input.fields.name}
-                css={inputDarkStyle}
+                css={props.darkMode ? inputDarkStyle : inputStyle}
                 rows={5}
                 {...attributes}
               />
@@ -76,7 +81,7 @@ export default function Form(props: FormContentType) {
               <input
                 name={input.fields.name}
                 type={input.fields.type}
-                css={inputDarkStyle}
+                css={props.darkMode ? inputDarkStyle : inputStyle}
                 {...attributes}
               />
             )}
@@ -107,9 +112,13 @@ export default function Form(props: FormContentType) {
           kind={BTN.PRIMARY}
           onPress={handleSubmit(onSubmit)}
           accessibilityRole="button"
+          align={props.fields.length == 1 ? "center" : "flex-start"}
           text={formState.isSubmitting ? t("validationErrors.pleaseWait") : props.submitText}
         />
-        <MessageDisplay css={postSubmitCss} isShowing={formState.isSubmitSuccessful}>
+        <MessageDisplay
+          css={css(postSubmitCss, props.darkMode && whiteText)}
+          isShowing={formState.isSubmitSuccessful}
+        >
           {t("shortSuccess")}
         </MessageDisplay>
         <MessageDisplay css={postSubmitErrorCss} isShowing={!!formState.errors.server}>
@@ -131,7 +140,7 @@ function valitators(fieldType: InputTypes) {
   }
 }
 
-const postSubmitCss = css(whiteText, {
+const postSubmitCss = css({
   marginTop: 12,
 })
 
