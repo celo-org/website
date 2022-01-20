@@ -75,9 +75,6 @@ const Illustrations = React.memo(function _Illustrations({ data }: IlloProps) {
   console.log("this is data", data)
   const size = useIlloSize()
   const { t } = useTranslation(NameSpaces.brand)
-  data.map((el) => {
-    console.log("this is el", el)
-  })
   return (
     <View style={standardStyles.blockMarginTopTablet}>
       <H2 style={[brandStyles.gap, standardStyles.elementalMarginBottom]}>

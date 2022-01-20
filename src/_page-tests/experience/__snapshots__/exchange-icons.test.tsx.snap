@@ -464,13 +464,13 @@ exports[`Experience/ExchangeIcons renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .emotion-151 {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .emotion-168 {
@@ -2986,8 +2986,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   "fontSize": "20px",
                   "fontWeight": "500",
                   "lineHeight": "24px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "marginTop": "60px",
                   "textRendering": "geometricPrecision",
                 }
@@ -3005,8 +3005,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "marginBottom": "20px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "marginTop": "20px",
                   "textRendering": "geometricPrecision",
                 }
@@ -3058,8 +3058,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -3298,8 +3298,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -3539,8 +3539,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -3788,8 +3788,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -4028,8 +4028,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -4269,8 +4269,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -4518,8 +4518,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -4758,8 +4758,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -4999,8 +4999,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -5248,8 +5248,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -5488,8 +5488,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }
@@ -5729,8 +5729,8 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                     className="emotion-11"
                     style={
                       Object {
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
+                        "marginLeft": "10px",
+                        "marginRight": "10px",
                         "marginTop": "20px",
                         "width": "160px",
                       }

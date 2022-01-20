@@ -2820,8 +2820,8 @@ exports[`Experience/Composition renders 1`] = `
             style={
               Object {
                 "marginBottom": "60px",
-                "marginLeft": "0px",
-                "marginRight": "0px",
+                "marginLeft": "10px",
+                "marginRight": "10px",
               }
             }
           >
@@ -2867,8 +2867,8 @@ exports[`Experience/Composition renders 1`] = `
             className="emotion-11"
             style={
               Object {
-                "marginLeft": "0px",
-                "marginRight": "0px",
+                "marginLeft": "10px",
+                "marginRight": "10px",
               }
             }
           >
@@ -3418,8 +3418,8 @@ exports[`Experience/Composition renders 1`] = `
             className="emotion-11"
             style={
               Object {
-                "marginLeft": "0px",
-                "marginRight": "0px",
+                "marginLeft": "10px",
+                "marginRight": "10px",
               }
             }
           >

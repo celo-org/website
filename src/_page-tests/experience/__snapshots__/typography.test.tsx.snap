@@ -2823,8 +2823,8 @@ exports[`Experience/Typography renders 1`] = `
               style={
                 Object {
                   "marginBottom": "60px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                 }
               }
             >
@@ -2870,8 +2870,8 @@ exports[`Experience/Typography renders 1`] = `
               className="emotion-11"
               style={
                 Object {
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                 }
               }
             >
@@ -3231,8 +3231,8 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
               style={
                 Object {
                   "marginBottom": "20px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "marginTop": "60px",
                   "paddingBottom": "10px",
                 }
@@ -3266,8 +3266,8 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "textRendering": "geometricPrecision",
                 }
               }
@@ -3289,8 +3289,8 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                   "borderTopWidth": "1px",
                   "flex": 1,
                   "marginBottom": "60px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "marginTop": "20px",
                   "msFlex": "1 1 0%",
                   "paddingBottom": "30px",
@@ -4290,8 +4290,8 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
               className="emotion-11"
               style={
                 Object {
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                 }
               }
             >

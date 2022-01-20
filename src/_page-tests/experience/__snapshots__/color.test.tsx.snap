@@ -457,8 +457,8 @@ exports[`Experience/Color renders 1`] = `
 
 .emotion-360 {
   margin-top: 20px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2836,8 +2836,8 @@ exports[`Experience/Color renders 1`] = `
               style={
                 Object {
                   "marginBottom": "60px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                 }
               }
             >
@@ -2880,8 +2880,8 @@ exports[`Experience/Color renders 1`] = `
                     "fontWeight": "500",
                     "lineHeight": "24px",
                     "marginBottom": "20px",
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "textRendering": "geometricPrecision",
                   }
                 }
@@ -2898,8 +2898,8 @@ exports[`Experience/Color renders 1`] = `
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "marginBottom": "20px",
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "textRendering": "geometricPrecision",
                   }
                 }
@@ -2933,8 +2933,8 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -3123,8 +3123,8 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -3313,8 +3313,8 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -3503,8 +3503,8 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -3715,8 +3715,8 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     "fontWeight": "500",
                     "lineHeight": "24px",
                     "marginBottom": "20px",
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "textRendering": "geometricPrecision",
                   }
                 }
@@ -3733,8 +3733,8 @@ Celo Dark and Celo Light are high contrast complementary colors, interchangeably
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "marginBottom": "20px",
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "textRendering": "geometricPrecision",
                   }
                 }
@@ -3768,8 +3768,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -3958,8 +3958,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -4148,8 +4148,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -4338,8 +4338,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -4542,8 +4542,8 @@ Blue represents help within digital experiences like websites and mobile applica
                     "fontWeight": "500",
                     "lineHeight": "24px",
                     "marginBottom": "20px",
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "textRendering": "geometricPrecision",
                   }
                 }
@@ -4560,8 +4560,8 @@ Blue represents help within digital experiences like websites and mobile applica
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "marginBottom": "20px",
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "textRendering": "geometricPrecision",
                   }
                 }
@@ -4591,8 +4591,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -4781,8 +4781,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -4971,8 +4971,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -5161,8 +5161,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -5360,8 +5360,8 @@ Blue represents help within digital experiences like websites and mobile applica
               style={
                 Object {
                   "marginBottom": "20px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "marginTop": "60px",
                   "paddingBottom": "10px",
                 }
@@ -5404,8 +5404,8 @@ Blue represents help within digital experiences like websites and mobile applica
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "marginBottom": "20px",
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "textRendering": "geometricPrecision",
                   }
                 }
@@ -5435,8 +5435,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -5633,8 +5633,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -5823,8 +5823,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -6013,8 +6013,8 @@ Blue represents help within digital experiences like websites and mobile applica
                       "WebkitFlex": 1,
                       "flex": 1,
                       "marginBottom": "20px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
+                      "marginLeft": "10px",
+                      "marginRight": "10px",
                       "minWidth": "120px",
                       "msFlex": "1 1 0%",
                     }
@@ -6209,8 +6209,8 @@ Blue represents help within digital experiences like websites and mobile applica
                   "fontWeight": "500",
                   "lineHeight": "24px",
                   "marginBottom": "20px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "textRendering": "geometricPrecision",
                 }
               }
@@ -6226,8 +6226,8 @@ Blue represents help within digital experiences like websites and mobile applica
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "textRendering": "geometricPrecision",
                 }
               }
@@ -6269,8 +6269,8 @@ Blue represents help within digital experiences like websites and mobile applica
                     "borderTopWidth": "1px",
                     "flex": 1,
                     "justifyContent": "center",
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "minHeight": "200px",
                     "msFlex": "1 1 0%",
                     "msFlexAlign": "center",
@@ -6311,8 +6311,8 @@ Blue represents help within digital experiences like websites and mobile applica
                     "backgroundColor": "rgba(17,18,20,1.00)",
                     "flex": 1,
                     "justifyContent": "center",
-                    "marginLeft": "0px",
-                    "marginRight": "0px",
+                    "marginLeft": "10px",
+                    "marginRight": "10px",
                     "minHeight": "200px",
                     "msFlex": "1 1 0%",
                     "msFlexAlign": "center",
@@ -6350,8 +6350,8 @@ Blue represents help within digital experiences like websites and mobile applica
                   "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
-                  "marginLeft": "0px",
-                  "marginRight": "0px",
+                  "marginLeft": "10px",
+                  "marginRight": "10px",
                   "textRendering": "geometricPrecision",
                 }
               }
