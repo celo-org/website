@@ -4,14 +4,14 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
 import makeSafeForJson from "src/utils/makeSafeForJson"
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ locale }) {
   const AssetBase = await import("src/../server/AssetBase")
   const icons = await AssetBase.default(AssetBase.AssetSheet.Icons)
 
   return {
     props: makeSafeForJson({
       icons,
-      ...(await serverSideTranslations("en", [NameSpaces.common, NameSpaces.brand])),
+      ...(await serverSideTranslations(locale || "en", [NameSpaces.common, NameSpaces.brand])),
     }),
   }
 }
