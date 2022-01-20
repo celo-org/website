@@ -228,7 +228,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   server.post("/celo-connect2022", rateLimit, async (req, res) => {
     try {
       if (!req.body.mielpoto) {
-        await addToCRM(req.body, ListID.Newsletter)
+        await addToCRM(req.body, ListID.CeloConnect)
         res.status(NO_CONTENT).send("ok")
       } else {
         console.info("possible bot", req.body)
