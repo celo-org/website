@@ -75,7 +75,9 @@ class MyApp extends App {
       this.props.router.asPath.startsWith("/animation") ||
       this.isBrand() ||
       this.props.router.asPath.startsWith(pagePaths.FLOWERS.link) ||
-      this.props.router.asPath.startsWith(pagePaths.PLUMO.link)
+      this.props.router.asPath.startsWith(pagePaths.PLUMO.link) ||
+      this.props.router.asPath == "/CeloConnect2022" ||
+      this.props.router.asPath == "/celo-connect2022"
     )
   }
 

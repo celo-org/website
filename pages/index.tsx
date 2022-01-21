@@ -1,14 +1,16 @@
-import Home, {Props} from "src/home/Home"
+import Home, { Props } from "src/home/Home"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NameSpaces } from "src/i18n"
 import { getPageBySlug, GridRowContentType } from "src/utils/contentful"
 import { Entry } from "contentful"
 import { CoverContentType, LogoGallery } from "src/utils/contentful"
 import { GetServerSideProps } from "next"
+import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 
-
-export const getServerSideProps: GetServerSideProps<Props> = async function getServerSideProps() {
-  const page = await getPageBySlug("home", { locale: "en-US" }, true)
+export const getServerSideProps: GetServerSideProps<Props> = async function getServerSideProps({
+  locale,
+}) {
+  const page = await getPageBySlug("home", { locale: i18nLocaleToContentfulLocale(locale) }, true)
 
   if (!page) {
     return { notFound: true }
@@ -27,7 +29,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async function getS
 
   return {
     props: {
-      ...(await serverSideTranslations("en", [NameSpaces.common, NameSpaces.home])),
+      ...(await serverSideTranslations(locale || "en", [NameSpaces.common, NameSpaces.home])),
       ...page,
       cover: cover?.fields,
       press: press?.fields,
