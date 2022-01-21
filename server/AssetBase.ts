@@ -2,7 +2,7 @@ import { Attachment, FieldSet, Table } from "airtable"
 import getConfig from "next/config"
 import AssetProps from "src/../fullstack/AssetProps"
 import { fetchCached, MINUTE } from "./cache"
-import airtableInit from "./airtable"
+import airtableInit, { getWidthAndHeight } from "./airtable"
 
 const ASSSET_FIELD_LIGHT = "Assets (on light bg)"
 const ASSSET_FIELD_DARK = "Assets (on dark bg)"
@@ -95,6 +95,7 @@ function normalize(asset: Fields, id: string, tags: Record<string, Tag>): AssetP
     tags: (asset.Tags || []).map((tagID) => tags[tagID].Name),
     id,
     series: asset.series,
+    ...getWidthAndHeight(asset.Preview),
   }
 }
 export const _normalize = normalize
