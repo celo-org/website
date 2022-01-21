@@ -81,14 +81,6 @@ const styles = StyleSheet.create({
   "variant-circle": {
     borderRadius: 60,
   },
-  "variant-circle-white": {
-    borderRadius: 60,
-    boxShadow: `inset 0 0 0 1px ${colors.placeholderGray}`,
-  },
-  "variant-circle-black": {
-    borderRadius: 60,
-    backgroundColor: "#000000",
-  },
 })
 
 const keyImagery = css({
