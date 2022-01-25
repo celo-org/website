@@ -12,7 +12,7 @@
     "start": "NODE_ENV=production node dist/server/index.js",
     "deploy": "yarn run kill-dev; yarn keys:decrypt && yarn run clean-next-cache && yarn run build && gcloud app deploy $MANIFEST && yarn run view",
     "deploy:routes": "DIR=$(mktemp -d) && cp $DISPATCH $DIR/dispatch.yaml && gcloud app deploy $DIR/dispatch.yaml",
-    "deploy:routes:prod": "gcloud config set project celo-org-website; DISPATCH=dispatch.yaml yarn run deploy:routes",
+    "deploy:routes:prod": "gcloud config set project celo-testnet-production; DISPATCH=dispatch.yaml yarn run deploy:routes",
     "deploy:dev": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=development MANIFEST=development.yaml yarn run deploy",
     "deploy:prod": "gcloud config set project celo-org-website; NODE_ENV=production DEPLOY_ENV=production MANIFEST=production.yaml yarn run deploy",
     "promote": "bash scripts/promote.sh",
