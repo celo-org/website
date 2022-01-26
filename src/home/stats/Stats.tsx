@@ -2,6 +2,7 @@ import { css, keyframes } from "@emotion/react"
 import { flex, garamond, sectionTitle, jost } from "src/estyles"
 import { memo } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
+import { WHEN_MOBILE } from "src/estyles"
 // import RingsGlyph from "src/logos/RingsGlyph"
 //placed the rings as comments because maybe we may want to keep the celo logo in the stats component
 import { colors } from "src/colors"
@@ -41,7 +42,7 @@ const rootCss = css(flex, {
   height: 116,
   padding: "24px 40px",
   zIndex: 20,
-  ["@media (max-width: 1165px)"]: {
+  [WHEN_MOBILE]: {
     width: 260,
     height: 222,
     padding: "24px 0px",
@@ -61,7 +62,7 @@ const headingCss = css(sectionTitle, {
   letterSpacing: 6,
   marginTop: 4,
   paddingBottom: 10,
-  ["@media (max-width: 1165px)"]: {
+  [WHEN_MOBILE]: {
     fontSize: 10,
     marginBottom: 4,
     width: 174,
@@ -83,7 +84,7 @@ const bodyCss = css(flex, {
   margin: "8px 0px",
   width: 644,
   height: 38,
-  ["@media (max-width: 1165px)"]: {
+  [WHEN_MOBILE]: {
     flexDirection: "column",
     margin: "16px 0px",
     width: 258,
@@ -126,7 +127,7 @@ const spanBodyCss = css(flex, {
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
-  ["@media (max-width: 1165px)"]: {
+  [WHEN_MOBILE]: {
     flexDirection: "column",
     width: 148,
     height: 44,
@@ -140,7 +141,7 @@ const valueCss = css(garamond, {
   lineHeight: 1.2,
   textAlign: "center",
   marginRight: 10,
-  ["@media (max-width: 1165px)"]: {
+  [WHEN_MOBILE]: {
     fontSize: 20,
     marginRight: 0,
   },
@@ -152,7 +153,7 @@ const labelCss = css(jost, {
   lineHeight: "34px",
   textAlign: "center",
   textDecorationLine: "none",
-  ["@media (max-width: 1165px)"]: {
+  [WHEN_MOBILE]: {
     fontSize: 12,
   },
 })
