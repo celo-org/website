@@ -1,155 +1,151 @@
-import { css, keyframes } from "@emotion/react"
-import CoverContent from "src/home/CoverContent"
-import { colors } from "src/colors"
-import celoAsStarsMobileLong from "src/home/celo-sky-mobile.svg"
-import celoAsStarsMobileShort from "src/home/celo-sky-mobile-short.svg"
-import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"
-import celoAsStarsDesktop from "src/home/celo-sky-desktop.svg"
-import * as React from "react"
-import examplePhones from "src/home/example-phones.svg"
-import Stats from "./stats/Stats"
-import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
-import { useScreenSize } from "src/layout/ScreenSize"
-import { NameSpaces, useTranslation } from "src/i18n"
-import Press from "src/press/Press"
+import { css } from "@emotion/react"
+import {
+  flex,
+  flexRow,
+  fonts,
+  WHEN_DESKTOP,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+  WHEN_TABLET_AND_UP,
+  whiteText,
+} from "src/estyles"
 import { Document } from "@contentful/rich-text-types"
-import { LogoGallery } from "src/utils/contentful"
+import { GridRow } from "src/layout/Grid2"
+import { Asset, Entry } from "contentful"
+import { ContentfulButton } from "src/utils/contentful"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-interface Props {
-  title: string
-  subtitle: Document
-  press: LogoGallery
+import Button, { SIZE } from "src/shared/Button.3"
+import { useScreenSize } from "src/layout/ScreenSize"
+import Stats from "./stats/Stats"
+import { colors } from "src/colors"
+
+export interface Props {
+  title?: string
+  subTitle: Document
+  links: Entry<ContentfulButton>[]
+  imageDesktop: Asset
+  imageMobile: Asset
+  darkMode: boolean
+  marquee: string[]
 }
 
 export default function Cover(props: Props) {
-  const { isDesktop, isTablet, bannerHeight } = useScreenSize()
-  const { t } = useTranslation(NameSpaces.home)
-  return (
-    <div
-      css={css(rootCss, {
-        paddingTop: bannerHeight,
-        [WHEN_MOBILE]: {
-          paddingTop: 0,
-        },
-      })}
-    >
-      <div css={css(backgroundArea, { height: `calc(100% - ${bannerHeight}px)` })} />
-      <div css={useableArea}>
-        <CoverContent title={props.title} subtitle={props.subtitle} />
-        {(isDesktop || isTablet) && (
-          <picture>
-            <object
-              title={t("coverPhonesImage")}
-              aria-label={t("coverPhonesImage")}
-              type="image/svg+xml"
-              data={examplePhones.src}
-              width={1016}
-              height={524}
-            />
-          </picture>
-        )}
-      </div>
-      <Press {...props.press} />
+  const { isMobile } = useScreenSize()
 
-      {isDesktop && <Stats />}
-    </div>
+  const backgroundImageCss = css({ backgroundImage: `url(${props.imageDesktop.fields.file.url})` })
+
+  return (
+    <GridRow
+      columns={2}
+      darkMode={props.darkMode}
+      wrapperCss={css(wrapperCss, backgroundImageCss)}
+      css={rootCss}
+    >
+      <div css={contentCss}>
+        {props.title && (
+          <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
+            {props.title} <em>{props.marquee[1]}</em>
+          </h1>
+        )}
+        <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
+          {documentToReactComponents(props.subTitle)}
+        </span>
+
+        <div css={linkAreaCss}>
+          {props.links?.map((link) => (
+            <Button
+              align={"center"}
+              key={link.sys.id}
+              size={isMobile ? SIZE.fullWidth : SIZE.normal}
+              kind={link.fields.kind}
+              text={link.fields.words}
+              href={link.fields.href}
+            />
+          ))}
+        </div>
+      </div>
+      <Stats />
+    </GridRow>
   )
 }
-const backgroundDesktopSize = { width: "100%" }
 
-const rootCss = css(flex, {
-  overflow: "hidden",
-  position: "relative",
-  alignSelf: "center",
-  alignItems: "center",
-  backgroundColor: colors.dark,
-  width: "100%",
-  maxWidth: "100vw",
-  [WHEN_MOBILE]: {
-    justifyContent: "center",
-    minHeight: `calc(100vh)`,
-  },
-  ["@media (max-height: 568px)"]: {
-    justifyContent: "flex-end",
-    paddingBottom: 30,
-  },
-  [WHEN_TABLET]: {
-    paddingTop: 60,
-    width: "100vw",
-    height: "100vh",
-    minHeight: 1068,
-  },
-  [WHEN_DESKTOP]: {
-    paddingTop: 0,
-    paddingBottom: 24,
-  },
+const subTextCss = css({
+  marginTop: 16,
 })
 
-const starKeyFrames = keyframes`
-  from {
-    opacity: 0.1;
-    transform: scale(1.02);
-  }
-
-  25% {
-    opacity: 0.5
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-`
-const backgroundArea = css({
-  top: 0,
-  position: "absolute",
+const wrapperCss = css(flex, {
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-  animationIterationCount: 1,
-  animationFillMode: "both",
-  animationDelay: "50ms",
-  animationDuration: "6s",
-  animationName: starKeyFrames,
-  animationTimingFunction: "ease-in-out",
-  opacity: 0.1,
-  width: "100%",
-  backgroundColor: colors.dark,
-  [WHEN_LONG_PHONE]: {
-    backgroundImage: `url(${celoAsStarsMobileLong.src})`,
-    top: 0,
-    minHeight: "100vh",
-  },
+  boxShadow: `inset 0px -50px 37px -25px ${colors.dark}`,
+  alignItems: "center",
+  justifyContent: "center",
   [WHEN_MOBILE]: {
-    backgroundImage: `url(${celoAsStarsMobileShort.src})`,
-    top: 0,
-    minHeight: "100vh",
+    alignContent: "center",
+    minHeight: "90vh",
   },
   [WHEN_TABLET]: {
-    width: "100vw",
-    minHeight: "100vh",
-    backgroundImage: `url(${celoAsStarsTablet.src})`,
-    backgroundPosition: "bottom",
-    top: 0,
+    minHeight: "60vh",
+    height: "fit-content",
   },
   [WHEN_DESKTOP]: {
-    width: backgroundDesktopSize.width,
-    backgroundImage: `url(${celoAsStarsDesktop.src})`,
+    height: "85vh",
+    minHeight: "fit-content",
+    maxHeight: "80vw",
   },
 })
 
-const useableArea = css(flex, {
-  alignItems: "center",
-  zIndex: 10,
-  [WHEN_DESKTOP]: {
-    width: backgroundDesktopSize.width,
-    zIndex: 20,
-    paddingTop: 48,
+const rootCss = css({
+  gridTemplateAreas: `"content illo"`,
+  overflow: "visible",
+  [WHEN_MOBILE]: {
+    alignContent: "center",
+    flexDirection: "column-reverse",
   },
-  [WHEN_TABLET]: {
-    paddingTop: 72,
+})
+
+const centerMobileCss = css({
+  [WHEN_MOBILE]: {
+    textAlign: "center",
+  },
+})
+
+const subtitleDarkMode = css(whiteText, centerMobileCss, {
+  "h1, h2, h3, h4, p": whiteText,
+})
+
+const contentCss = css(flex, {
+  justifySelf: "center",
+  justifyContent: "center",
+  flex: 1,
+  gridArea: "content",
+  [WHEN_TABLET_AND_UP]: {
+    paddingTop: 56,
+    paddingBottom: 48,
+    minWidth: 320,
   },
   [WHEN_MOBILE]: {
-    paddingTop: 16,
-    paddingBottom: 16,
+    padding: 16,
+    maxWidth: 450,
+    alignSelf: "center",
   },
+})
+
+const linkAreaCss = css(flexRow, {
+  [WHEN_MOBILE]: {
+    flexDirection: "column",
+    "& > div": {
+      marginBottom: 24,
+    },
+  },
+  [WHEN_TABLET_AND_UP]: {
+    "& > div": {
+      marginRight: 24,
+      justifyContent: "center",
+    },
+  },
+})
+
+const rH1 = css(fonts.h1, {
+  [WHEN_MOBILE]: fonts.h1Mobile,
 })

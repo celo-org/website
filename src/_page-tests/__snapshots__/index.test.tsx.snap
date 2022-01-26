@@ -1,28 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomePage renders 1`] = `
-@keyframes animation-0 {
-  from {
-    opacity: 0.1;
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
-  }
-
-  25% {
-    opacity: 0.5;
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -45,118 +23,146 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0px -50px 37px -25px #111214;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #111214;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-image: url(/celo.jpg);
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   width: 100%;
-  max-width: 100vw;
-  padding-top: 50px;
+  background-color: #111214;
 }
 
 @media (max-width: 576px) {
   .emotion-1 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    min-height: calc(100vh);
-  }
-}
-
-@media (max-height: 568px) {
-  .emotion-1 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    padding-bottom: 30px;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    min-height: 90vh;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-1 {
-    padding-top: 60px;
-    width: 100vw;
-    height: 100vh;
-    min-height: 1068px;
+    min-height: 60vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
 @media (min-width: 992px) {
   .emotion-1 {
-    padding-top: 0;
-    padding-bottom: 24px;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-1 {
-    padding-top: 0;
+    height: 85vh;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    max-height: 80vw;
   }
 }
 
 .emotion-2 {
-  top: 0;
-  position: absolute;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 50ms;
-  animation-delay: 50ms;
-  -webkit-animation-duration: 6s;
-  animation-duration: 6s;
-  -webkit-animation-name: animation-0;
-  animation-name: animation-0;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  opacity: 0.1;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
   width: 100%;
-  background-color: #111214;
-  height: calc(100% - 50px);
-}
-
-@media (max-width: 400px) and (min-height: 790px) {
-  .emotion-2 {
-    background-image: url(/image.png);
-    top: 0;
-    min-height: 100vh;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-2 {
-    background-image: url(/image.png);
-    top: 0;
-    min-height: 100vh;
-  }
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  grid-template-areas: "content illo";
+  overflow: visible;
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-2 {
-    width: 100vw;
-    min-height: 100vh;
-    background-image: url(/image.png);
-    -webkit-background-position: bottom;
-    background-position: bottom;
-    top: 0;
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-right: 24px;
+    padding-left: 24px;
+    width: 100%;
+    max-width: 982px;
   }
 }
 
 @media (min-width: 992px) {
   .emotion-2 {
+    display: grid;
+    grid-auto-rows: auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
     width: 100%;
-    background-image: url(/image.png);
+    max-width: 1104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-2 {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
@@ -169,91 +175,36 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 10;
+  justify-self: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  grid-area: content;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .emotion-3 {
-    width: 100%;
-    z-index: 20;
-    padding-top: 48px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-3 {
-    padding-top: 72px;
+    padding-top: 56px;
+    padding-bottom: 48px;
+    min-width: 320px;
   }
 }
 
 @media (max-width: 576px) {
   .emotion-3 {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px;
+    max-width: 450px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
 }
 
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  max-width: 660px;
-  width: 90vw;
-  margin-bottom: 0;
-  padding: 24px;
-  position: relative;
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-4 {
-    max-width: 580px;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-4 {
-    max-width: 310px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-4 {
-    padding-top: 60px;
-  }
-}
-
-.emotion-5 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 33px;
-  z-index: -1;
-  background-color: #111214;
-  -webkit-filter: blur(48px);
-  filter: blur(48px);
-}
-
-@media (min-width: 992px) {
-  .emotion-5 {
-    display: none;
-  }
-}
-
-.emotion-6 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -265,11 +216,10 @@ exports[`HomePage renders 1`] = `
   margin-block-end: 0;
   line-height: 56px;
   color: #FFFFFF;
-  text-align: center;
 }
 
 @media (max-width: 576px) {
-  .emotion-6 {
+  .emotion-4 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -280,164 +230,58 @@ exports[`HomePage renders 1`] = `
     margin-block-start: 0;
     margin-block-end: 0;
     line-height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-4 {
     color: #FFFFFF;
   }
 }
 
-.emotion-7 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
-  font-size: 20px;
-  line-height: 28;
-  text-rendering: geometricPrecision;
-  color: #111214;
-  line-height: 28px;
-  color: #EDEEEF;
-  text-align: center;
-}
-
-@media (min-width: 576px) {
-  .emotion-7 {
-    max-width: 500px;
-  }
-}
-
-.emotion-7 p {
+.emotion-5 {
   margin-top: 16px;
-  margin-bottom: 0;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  color: #FFFFFF;
 }
 
 @media (max-width: 576px) {
-  .emotion-8 {
-    opacity: 0.9;
-    padding-top: 16px;
-    padding-bottom: 40px;
-    background-color: rgba(46, 51, 56, 0.5);
-    z-index: 10;
-    box-shadow: -1px 5px 22px 7px rgba(46, 51, 56, 0.5);
+  .emotion-5 {
+    color: #FFFFFF;
   }
 }
 
-@media (min-width: 576px) {
-  .emotion-8 {
-    width: 100%;
-    background-color: #111214;
-    background: linear-gradient(180deg, rgba(17, 18, 20, 0.1) 1%, rgba(17, 18, 20, 0.6) 20%, #111214 48.13%);
-    z-index: 20;
-    opacity: 1;
-    padding-top: 60px;
-    padding-bottom: 60px;
+@media (max-width: 576px) {
+  .emotion-5 {
+    text-align: center;
   }
 }
 
-.emotion-9 {
+.emotion-5 h1,
+.emotion-5 h2,
+.emotion-5 h3,
+.emotion-5 h4,
+.emotion-5 p {
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-5 h1,
+  .emotion-5 h2,
+  .emotion-5 h3,
+  .emotion-5 h4,
+  .emotion-5 p {
+    color: #FFFFFF;
+  }
+}
+
+.emotion-6 {
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  width: 100%;
-}
-
-.emotion-10 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 12px;
-  padding-right: 12px;
-  width: 100%;
-  max-width: 100vw;
-  overflow: hidden;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-column-gap: 24px;
-  column-gap: 24px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-10 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-right: 24px;
-    padding-left: 24px;
-    width: 100%;
-    max-width: 982px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-10 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    width: 100%;
-    max-width: 1104px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-10 {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-10 {
-    grid-template-columns: 1fr;
-  }
-}
-
-.emotion-11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -445,30 +289,131 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .emotion-6 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .emotion-6>div {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 576px) {
+  .emotion-6>div {
+    margin-right: 24px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 550ms;
+  box-shadow: 0px 2px 54px 0px #1F2327;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  background-color: #23272C;
+  position: absolute;
+  border-radius: 6px;
+  right: 0;
+  top: 210px;
+  padding: 24px;
+  padding-bottom: 30px;
+  z-index: 20;
 }
 
-@media (max-width: 576px) {
-  .emotion-11 {
+@media (max-width: 1165px) {
+  .emotion-7 {
     display: none;
   }
 }
 
-.emotion-13 {
+.emotion-8 {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.emotion-9 {
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-10 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.emotion-11 {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  color: #EDEEEF;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration-line: none;
+}
+
+.emotion-15 {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  color: #EDEEEF;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration-line: none;
+}
+
+.emotion-15:hover {
+  text-decoration-line: underline;
+}
+
+.emotion-16 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-17 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -497,7 +442,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-13 {
+  .emotion-17 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -514,7 +459,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-13 {
+  .emotion-17 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -526,18 +471,18 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-13 {
+  .emotion-17 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-13 {
+  .emotion-17 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.emotion-14 {
+.emotion-18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -556,7 +501,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-14 {
+  .emotion-18 {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -567,7 +512,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-15 {
+.emotion-19 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -581,16 +526,16 @@ exports[`HomePage renders 1`] = `
   flex: 1;
 }
 
-.emotion-15 p:first-of-type {
+.emotion-19 p:first-of-type {
   margin-top: 0;
 }
 
-.emotion-15 p:last-of-type {
+.emotion-19 p:last-of-type {
   margin-bottom: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-15 {
+  .emotion-19 {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -602,11 +547,11 @@ exports[`HomePage renders 1`] = `
     max-width: 288px;
   }
 
-  .emotion-15 li {
+  .emotion-19 li {
     list-style: none;
   }
 
-  .emotion-15 ul {
+  .emotion-19 ul {
     margin-block-start: 0;
     margin-block-end: 0;
     -webkit-margin-start: 0;
@@ -618,7 +563,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-16 {
+.emotion-20 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -634,7 +579,7 @@ exports[`HomePage renders 1`] = `
   margin-bottom: 12px;
 }
 
-.emotion-17 {
+.emotion-21 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -646,101 +591,166 @@ exports[`HomePage renders 1`] = `
 <div
   className="emotion-0"
 >
-  <div
+  <section
     className="emotion-1"
   >
     <div
       className="emotion-2"
-    />
-    <div
-      className="emotion-3"
     >
       <div
-        className="emotion-4"
+        className="emotion-3"
       >
-        <div
-          className="emotion-5"
-        />
         <h1
+          className="emotion-4"
+        >
+          Test
+           
+          <em>
+            Two
+          </em>
+        </h1>
+        <span
+          className="emotion-5"
+        >
+          <p>
+            Built for Us
+          </p>
+        </span>
+        <div
           className="emotion-6"
         />
-        <span
-          className="emotion-7"
-        />
       </div>
-    </div>
-    <div
-      className="emotion-8"
-    >
-      <section
-        className="emotion-9"
+      <figure
+        aria-hidden={true}
+        className="emotion-7"
       >
-        <div
+        <svg
+          fill="none"
+          height={20}
+          viewBox="0 0 25 25"
+          width={20}
+        >
+          <path
+            d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
+            fill="#FFFFFF"
+          />
+          <path
+            d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
+            fill="#FFFFFF"
+          />
+          <path
+            d="M15.4577 19.7369C16.1419 18.9077 16.6324 17.9361 16.8932 16.8932C17.9361 16.6324 18.9077 16.1421 19.7369 15.4579C19.699 16.6658 19.439 17.8563 18.9695 18.9698C17.8561 19.439 16.6656 19.6992 15.4577 19.7369ZM8.10687 8.10687C7.06397 8.36766 6.09239 8.85792 5.26318 9.54213C5.30108 8.33424 5.56108 7.14371 6.03055 6.03029C7.14397 5.56108 8.3345 5.30082 9.54239 5.26318C8.85818 6.09239 8.36766 7.06397 8.10687 8.10687Z"
+            fill="#FFFFFF"
+          />
+        </svg>
+        <figcaption
+          className="emotion-8"
+        >
+          <a
+            className="emotion-9"
+            href="https://explorer.celo.org"
+            rel="noreferrer"
+            target="_blank"
+          >
+            PLATFORM STATS
+          </a>
+        </figcaption>
+        <span
+          aria-labelledby="stat-tx"
+          className="emotion-10"
+        />
+        <span
+          className="emotion-11"
+          id="stat-tx"
+        >
+          Total transactions
+        </span>
+        <span
+          aria-labelledby="stat-time"
           className="emotion-10"
         >
-          <div
-            className="emotion-11"
-          />
-        </div>
-      </section>
+          0s
+        </span>
+        <span
+          className="emotion-11"
+          id="stat-time"
+        >
+          Average block time
+        </span>
+        <span
+          aria-labelledby="carbon"
+          className="emotion-10"
+        >
+          639
+        </span>
+        <a
+          className="emotion-15"
+          href="https://www.wren.co/profile/celo"
+          id="carbon"
+          rel="noopener"
+          target="_blank"
+        >
+          Days carbon negative
+        </a>
+      </figure>
     </div>
-  </div>
+  </section>
   <section
-    className="emotion-9"
+    className="emotion-16"
   >
     <div
-      className="emotion-13"
+      className="emotion-17"
       id="test"
     >
       <div
-        className="emotion-14"
+        className="emotion-18"
       >
         <div
-          className="emotion-15"
+          className="emotion-19"
         >
           <h4
-            className="emotion-16"
+            className="emotion-20"
           >
             Blurb romeo
           </h4>
           <p
-            className="emotion-17"
+            className="emotion-21"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        className="emotion-14"
+        className="emotion-18"
       >
         <div
-          className="emotion-15"
+          className="emotion-19"
         >
           <h4
-            className="emotion-16"
+            className="emotion-20"
           >
             Blurb soma
           </h4>
           <p
-            className="emotion-17"
+            className="emotion-21"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        className="emotion-14"
+        className="emotion-18"
       >
         <div
-          className="emotion-15"
+          className="emotion-19"
         >
           <h4
-            className="emotion-16"
+            className="emotion-20"
           >
             Blurb rico
           </h4>
           <p
-            className="emotion-17"
+            className="emotion-21"
           >
             Hello World
           </p>

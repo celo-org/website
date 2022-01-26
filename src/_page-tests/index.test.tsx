@@ -4,12 +4,12 @@ import * as renderer from "react-test-renderer"
 import { TestProvider } from "src/_page-tests/test-utils"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
-import { Entry } from "contentful"
+import { Asset, Entry } from "contentful"
 import { BLOCKS } from "@contentful/rich-text-types"
 
 function blurbFactory(unique): Entry<BlurbProps> {
   return {
-    metadata: {tags: []},
+    metadata: { tags: [] },
     sys: {
       id: unique,
       type: "",
@@ -46,7 +46,7 @@ const TestData: ContentfulPage<GridRowContentType> = {
   darkNav: false,
   sections: [
     {
-      metadata: {tags: []},
+      metadata: { tags: [] },
       sys: {
         id: "1",
         type: "",
@@ -66,7 +66,36 @@ const TestData: ContentfulPage<GridRowContentType> = {
   ],
 }
 
-
+const asset: Asset = {
+  sys: {
+    type: "image",
+    id: "231",
+    createdAt: "",
+    updatedAt: "",
+    locale: "",
+    contentType: {
+      sys: { id: "1", linkType: "ContentType", type: "Link" },
+    },
+  },
+  fields: {
+    title: "Image",
+    description: "Description",
+    file: {
+      url: "/celo.jpg",
+      details: {
+        size: 100,
+        image: {
+          width: 100,
+          height: 100,
+        },
+      },
+      fileName: "celo.jpg",
+      contentType: "img/jpg",
+    },
+  },
+  metadata: { tags: [] },
+  toPlainObject: () => this,
+}
 
 describe("HomePage", () => {
   it("renders", async () => {
@@ -74,6 +103,25 @@ describe("HomePage", () => {
       .create(
         <TestProvider>
           <HomePage
+            cover={{
+              title: "Test",
+              subTitle: {
+                nodeType: BLOCKS.DOCUMENT,
+                content: [
+                  {
+                    nodeType: BLOCKS.PARAGRAPH,
+                    content: [{ nodeType: "text", value: "Built for Us", marks: [], data: {} }],
+                    data: {},
+                  },
+                ],
+                data: {},
+              },
+              marquee: ["One", "Two"],
+              links: [],
+              darkMode: true,
+              imageDesktop: asset,
+              imageMobile: asset,
+            }}
             darkNav={false}
             title={TestData.title}
             description={TestData.description}
