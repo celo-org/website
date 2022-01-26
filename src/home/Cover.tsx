@@ -51,7 +51,7 @@ export default function Cover(props: Props) {
       </div>
       <Press {...props.press} />
 
-      {isDesktop && <Stats />}
+      <Stats />
     </div>
   )
 }

@@ -30,6 +30,9 @@ export default function Stats() {
 }
 
 const rootCss = css(flex, {
+  opacity: 0,
+  transitionProperty: "opacity",
+  transitionDuration: "550ms",
   alignItems: "center",
   flexDirection: "column",
   backgroundColor: colors.dark,
@@ -39,7 +42,12 @@ const rootCss = css(flex, {
   padding: "24px 40px",
   zIndex: 20,
   ["@media (max-width: 1165px)"]: {
-    display: "none",
+    width: 260,
+    height: 222,
+    padding: "24px 0px",
+    filter: "drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45)",
+    boxShadow: "0px 2px 54px #353D45",
+    borderRadius: 4,
   },
   boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
 })
@@ -53,6 +61,14 @@ const headingCss = css(sectionTitle, {
   letterSpacing: 6,
   marginTop: 4,
   paddingBottom: 10,
+  ["@media (max-width: 1165px)"]: {
+    fontSize: 10,
+    marginBottom: 4,
+    width: 174,
+    height: 12,
+    padding: 0,
+    textAlign: "center",
+  },
 })
 
 const linkCss = css({
@@ -67,6 +83,12 @@ const bodyCss = css(flex, {
   margin: "8px 0px",
   width: 644,
   height: 38,
+  ["@media (max-width: 1165px)"]: {
+    flexDirection: "column",
+    margin: "16px 0px",
+    width: 258,
+    height: 146,
+  },
 })
 
 interface DatumProps {
@@ -104,6 +126,12 @@ const spanBodyCss = css(flex, {
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
+  ["@media (max-width: 1165px)"]: {
+    flexDirection: "column",
+    width: 148,
+    height: 44,
+    marginBottom: 8,
+  },
 })
 
 const valueCss = css(garamond, {
@@ -112,6 +140,10 @@ const valueCss = css(garamond, {
   lineHeight: 1.2,
   textAlign: "center",
   marginRight: 10,
+  ["@media (max-width: 1165px)"]: {
+    fontSize: 20,
+    marginRight: 0,
+  },
 })
 
 const labelCss = css(jost, {
@@ -120,6 +152,9 @@ const labelCss = css(jost, {
   lineHeight: "34px",
   textAlign: "center",
   textDecorationLine: "none",
+  ["@media (max-width: 1165px)"]: {
+    fontSize: 12,
+  },
 })
 
 const hoverLabelCss = css(labelCss, {
