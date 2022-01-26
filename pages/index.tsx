@@ -10,7 +10,7 @@ import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 export const getServerSideProps: GetServerSideProps<Props> = async function getServerSideProps({
   locale,
 }) {
-  const page = await getPageBySlug("home", { locale: i18nLocaleToContentfulLocale(locale) }, true)
+  const page = await getPageBySlug("home2", { locale: i18nLocaleToContentfulLocale(locale) }, true)
 
   if (!page) {
     return { notFound: true }
@@ -18,7 +18,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async function getS
 
   const sections = page.sections as Entry<GridRowContentType | CoverContentType | LogoGallery>[]
   const cover = sections.find(finder("cover")) as Entry<CoverContentType>
-  const press = sections.find(finder("logoGallery")) as Entry<LogoGallery>
   const filtered = sections.filter(
     ({
       sys: {
@@ -32,7 +31,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async function getS
       ...(await serverSideTranslations(locale || "en", [NameSpaces.common, NameSpaces.home])),
       ...page,
       cover: cover?.fields,
-      press: press?.fields,
       sections: filtered,
     },
   }

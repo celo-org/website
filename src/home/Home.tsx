@@ -1,32 +1,38 @@
 import * as React from "react"
 import OpenGraph from "src/header/OpenGraph"
-import Cover from "./Cover"
-import { ContentfulPage, GridRowContentType, LogoGallery } from "src/utils/contentful"
+import Cover, { Props as CoverProps } from "./Cover"
+import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 import { GridRow } from "src/layout/Grid2"
 import { css } from "@emotion/react"
 import { cellSwitch } from "src/public-sector/cellSwitch"
-import { CoverContentType } from "src/utils/contentful"
 import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
 import { WHEN_DESKTOP } from "src/estyles"
 
 interface OwnProps {
-  cover?: CoverContentType
-  press?: LogoGallery
+  cover: CoverProps
 }
 
 export type Props = ContentfulPage<GridRowContentType> & OwnProps
 
-export default function Home(props: Props) {
+export default function Home({ cover, sections, title, description, openGraph }: Props) {
   return (
     <div css={rootCss}>
       <OpenGraph
-        title={props.title}
-        description={props.description}
+        title={title}
+        description={description}
         path={"/"}
-        image={`https:${props.openGraph?.fields?.file?.url}`}
+        image={`https:${openGraph?.fields?.file?.url}`}
       />
-      <Cover title={props.cover?.title} subtitle={props.cover?.subTitle} press={props.press} />
-      {props.sections.map((section) => {
+      <Cover
+        imageDesktop={cover.imageDesktop}
+        imageMobile={cover.imageMobile}
+        title={cover?.title}
+        subTitle={cover.subTitle}
+        links={cover.links}
+        darkMode={true}
+        marquee={cover?.marquee}
+      />
+      {sections.map((section) => {
         if (section.sys.contentType.sys.id === "grid-row") {
           const fields = section.fields as GridRowContentType
           return (
