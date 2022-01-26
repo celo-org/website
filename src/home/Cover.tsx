@@ -135,53 +135,6 @@ const linkAreaCss = css(flexRow, {
   },
 })
 
-const illoCss = css({
-  display: "flex",
-  gridArea: "illo",
-  position: "relative",
-  [WHEN_MOBILE]: {
-    marginTop: 56,
-    width: "100vw",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-})
-
-const illoContain = css(illoCss, {
-  [WHEN_TABLET]: {
-    height: 0,
-    overflow: "hidden",
-  },
-})
-
-const imageCss = css({
-  overflow: "visible",
-  [WHEN_MOBILE]: {
-    overflow: "inherit",
-  },
-})
-
-const imageContain = css({
-  [WHEN_TABLET]: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-  },
-})
-
-const flushBottomCss = css({
-  [WHEN_TABLET_AND_UP]: {
-    bottom: 0,
-    position: "absolute",
-  },
-})
-
-const imageFirstCss = css(imageCss, {
-  right: 0,
-})
-
 const rH1 = css(fonts.h1, {
   [WHEN_MOBILE]: fonts.h1Mobile,
 })
