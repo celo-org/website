@@ -2,7 +2,8 @@ import { css, keyframes } from "@emotion/react"
 import { flex, garamond, sectionTitle, jost } from "src/estyles"
 import { memo } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
-import RingsGlyph from "src/logos/RingsGlyph"
+// import RingsGlyph from "src/logos/RingsGlyph"
+//placed the rings as comments because maybe we may want to keep the celo logo in the stats component
 import { colors } from "src/colors"
 import useStatsRelay from "./useStatsRelay"
 import CarbonStats from "./CarbonStats"
@@ -13,15 +14,17 @@ export default function Stats() {
   const allLoaded = avgBlockTime && totalTx
   return (
     <figure aria-hidden={!allLoaded} css={css(rootCss, allLoaded && appear)}>
-      <RingsGlyph color={colors.white} height={20} />
+      {/* <RingsGlyph color={colors.white} height={20} /> */}
       <figcaption css={headingCss}>
         <a css={linkCss} target="_blank" href={"https://explorer.celo.org"} rel="noreferrer">
           {t("statsHeading")}
         </a>
       </figcaption>
-      <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx" />
-      <Datum value={`${avgBlockTime || 0}s`} title={t("statsAvgTime")} id="stat-time" />
-      <CarbonStats />
+      <div css={bodyCss}>
+        <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx" />
+        <Datum value={`${avgBlockTime || 0}s`} title={t("statsAvgTime")} id="stat-time" />
+        <CarbonStats />
+      </div>
     </figure>
   )
 }
@@ -30,30 +33,39 @@ const rootCss = css(flex, {
   opacity: 0,
   transitionProperty: "opacity",
   transitionDuration: "550ms",
-  boxShadow: "0px 2px 54px 0px #1F2327",
   alignItems: "center",
-  backgroundColor: "#23272C",
-  position: "absolute",
-  borderRadius: 6,
-  right: 0,
-  top: 210,
+  backgroundColor: colors.dark,
+  borderRadius: 16,
+  width: 740,
+  height: 130,
   padding: 24,
-  paddingBottom: 30,
   zIndex: 20,
   ["@media (max-width: 1165px)"]: {
     display: "none",
   },
+  boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
 })
 
 const appear = css({
   opacity: 1,
 })
 
-const headingCss = css(sectionTitle)
+const headingCss = css(sectionTitle, {
+  fontSize: 20,
+  letterSpacing: 6,
+})
 
 const linkCss = css({
   color: colors.white,
   textDecoration: "none",
+})
+
+const bodyCss = css(flex, {
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "start",
+  marginTop: 20,
+  padding: 0,
 })
 
 interface DatumProps {
@@ -66,7 +78,7 @@ interface DatumProps {
 export const Datum = memo<DatumProps>(function _Datum({ value, title, id, link }: DatumProps) {
   const special = isSpecial(value)
   return (
-    <>
+    <div css={spanBodyCss}>
       <span
         key={`${id}-${special}`}
         css={css(valueCss, special && specialCss)}
@@ -83,8 +95,12 @@ export const Datum = memo<DatumProps>(function _Datum({ value, title, id, link }
           {title}
         </span>
       )}
-    </>
+    </div>
   )
+})
+
+const spanBodyCss = css(flex, {
+  flexDirection: "row",
 })
 
 const valueCss = css(garamond, {
@@ -92,13 +108,13 @@ const valueCss = css(garamond, {
   fontSize: 24,
   lineHeight: 1.2,
   textAlign: "center",
-  marginTop: 24,
+  marginRight: 10,
 })
 
 const labelCss = css(jost, {
   color: colors.lightGray,
-  fontSize: 12,
-  lineHeight: "20px",
+  fontSize: 16,
+  lineHeight: "34px",
   textAlign: "center",
   textDecorationLine: "none",
 })
