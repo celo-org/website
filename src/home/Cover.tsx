@@ -18,6 +18,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Button, { SIZE } from "src/shared/Button.3"
 import { useScreenSize } from "src/layout/ScreenSize"
 import Stats from "./stats/Stats"
+import { colors } from "src/colors"
 
 export interface Props {
   title?: string
@@ -32,8 +33,15 @@ export interface Props {
 export default function Cover(props: Props) {
   const { isMobile } = useScreenSize()
 
+  const backgroundImageCss = css({ backgroundImage: `url(${props.imageDesktop.fields.file.url})` })
+
   return (
-    <GridRow columns={2} darkMode={props.darkMode} wrapperCss={wrapperCss} css={rootCss}>
+    <GridRow
+      columns={2}
+      darkMode={props.darkMode}
+      wrapperCss={css(wrapperCss, backgroundImageCss)}
+      css={rootCss}
+    >
       <div css={contentCss}>
         {props.title && (
           <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
@@ -67,18 +75,21 @@ const subTextCss = css({
 })
 
 const wrapperCss = css(flex, {
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  boxShadow: `inset 0px -50px 37px -25px ${colors.dark}`,
   alignItems: "center",
   justifyContent: "center",
   [WHEN_MOBILE]: {
     alignContent: "center",
-    minHeight: "100vh",
+    minHeight: "90vh",
   },
   [WHEN_TABLET]: {
-    minHeight: "100vh",
+    minHeight: "60vh",
     height: "fit-content",
   },
   [WHEN_DESKTOP]: {
-    height: "100vh",
+    height: "85vh",
     minHeight: "fit-content",
     maxHeight: "80vw",
   },
