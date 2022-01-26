@@ -3,10 +3,10 @@ import * as React from "react"
 import FullStack from "src/dev/FullStack"
 import { flex } from "src/estyles"
 import OpenGraph from "src/header/OpenGraph"
-import { Props } from "src/home/Home"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
+import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 
-export default function Developers(props: Props) {
+export default function Developers(props: ContentfulPage<GridRowContentType>) {
   const items = props.sections.map(pageSwitch)
   items.splice(3, 0, <FullStack />)
   return (
@@ -19,10 +19,7 @@ export default function Developers(props: Props) {
       />
       <div css={rootCss}>{props.sections ? items : <></>}</div>
     </>
-
   )
 }
 
 const rootCss = css(flex, {})
-
-

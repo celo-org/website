@@ -10,9 +10,9 @@ import OpenGraph from "src/header/OpenGraph"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { hashNav } from "src/shared/menu-items"
-import { Props } from "src/home/Home"
+import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 
-export function CommunityPage(props: Props) {
+export function CommunityPage(props: ContentfulPage<GridRowContentType>) {
   const { t } = useTranslation(NameSpaces.community)
   return (
     <>
