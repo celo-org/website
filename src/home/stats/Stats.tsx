@@ -30,15 +30,13 @@ export default function Stats() {
 }
 
 const rootCss = css(flex, {
-  opacity: 0,
-  transitionProperty: "opacity",
-  transitionDuration: "550ms",
   alignItems: "center",
+  flexDirection: "column",
   backgroundColor: colors.dark,
   borderRadius: 16,
-  width: 740,
-  height: 130,
-  padding: 24,
+  width: 724,
+  height: 116,
+  padding: "24px 40px",
   zIndex: 20,
   ["@media (max-width: 1165px)"]: {
     display: "none",
@@ -53,6 +51,8 @@ const appear = css({
 const headingCss = css(sectionTitle, {
   fontSize: 20,
   letterSpacing: 6,
+  marginTop: 4,
+  paddingBottom: 10,
 })
 
 const linkCss = css({
@@ -63,9 +63,10 @@ const linkCss = css({
 const bodyCss = css(flex, {
   flexDirection: "row",
   alignItems: "center",
-  justifyContent: "start",
-  marginTop: 20,
-  padding: 0,
+  justifyContent: "space-between",
+  margin: "8px 0px",
+  width: 644,
+  height: 38,
 })
 
 interface DatumProps {
@@ -101,6 +102,8 @@ export const Datum = memo<DatumProps>(function _Datum({ value, title, id, link }
 
 const spanBodyCss = css(flex, {
   flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "center",
 })
 
 const valueCss = css(garamond, {
