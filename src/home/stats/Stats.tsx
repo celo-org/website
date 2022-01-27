@@ -128,10 +128,8 @@ const spanBodyCss = css(flex, {
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
-  [WHEN_DESKTOP]: {},
   [WHEN_MOBILE]: {
     flexDirection: "column",
-    height: 44,
     marginBottom: 8,
   },
 })
