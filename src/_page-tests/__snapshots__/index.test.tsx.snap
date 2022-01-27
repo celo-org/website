@@ -1,28 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomePage renders 1`] = `
-@keyframes animation-0 {
-  from {
-    opacity: 0.1;
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
-  }
-
-  25% {
-    opacity: 0.5;
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -45,322 +23,68 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0px -50px 37px -25px #111214;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #111214;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-image: url(/celo.jpg);
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   width: 100%;
-  max-width: 100vw;
-  padding-top: 50px;
+  background-color: #111214;
 }
 
 @media (max-width: 576px) {
   .emotion-1 {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    min-height: calc(100vh);
-  }
-}
-
-@media (max-height: 568px) {
-  .emotion-1 {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    padding-bottom: 30px;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    min-height: 90vh;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-1 {
-    padding-top: 60px;
-    width: 100vw;
-    height: 100vh;
-    min-height: 1068px;
+    min-height: 60vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 
 @media (min-width: 992px) {
   .emotion-1 {
-    padding-top: 0;
-    padding-bottom: 24px;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-1 {
-    padding-top: 0;
+    height: 85vh;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    max-height: 80vw;
   }
 }
 
 .emotion-2 {
-  top: 0;
-  position: absolute;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 50ms;
-  animation-delay: 50ms;
-  -webkit-animation-duration: 6s;
-  animation-duration: 6s;
-  -webkit-animation-name: animation-0;
-  animation-name: animation-0;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  opacity: 0.1;
-  width: 100%;
-  background-color: #111214;
-  height: calc(100% - 50px);
-}
-
-@media (max-width: 400px) and (min-height: 790px) {
-  .emotion-2 {
-    background-image: url(/image.png);
-    top: 0;
-    min-height: 100vh;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-2 {
-    background-image: url(/image.png);
-    top: 0;
-    min-height: 100vh;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-2 {
-    width: 100vw;
-    min-height: 100vh;
-    background-image: url(/image.png);
-    -webkit-background-position: bottom;
-    background-position: bottom;
-    top: 0;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-2 {
-    width: 100%;
-    background-image: url(/image.png);
-  }
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 10;
-}
-
-@media (min-width: 992px) {
-  .emotion-3 {
-    width: 100%;
-    z-index: 20;
-    padding-top: 48px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-3 {
-    padding-top: 72px;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-3 {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  max-width: 660px;
-  width: 90vw;
-  margin-bottom: 0;
-  padding: 24px;
-  position: relative;
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-4 {
-    max-width: 580px;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-4 {
-    max-width: 310px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-4 {
-    padding-top: 60px;
-  }
-}
-
-.emotion-5 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 33px;
-  z-index: -1;
-  background-color: #111214;
-  -webkit-filter: blur(48px);
-  filter: blur(48px);
-}
-
-@media (min-width: 992px) {
-  .emotion-5 {
-    display: none;
-  }
-}
-
-.emotion-6 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
-  font-size: 48px;
-  line-height: 56;
-  text-rendering: geometricPrecision;
-  color: #111214;
-  font-weight: normal;
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  line-height: 56px;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-@media (max-width: 576px) {
-  .emotion-6 {
-    font-family: EB Garamond,eb-garamond,Garamond,serif;
-    font-size: 36px;
-    line-height: 40;
-    text-rendering: geometricPrecision;
-    color: #111214;
-    font-weight: normal;
-    margin: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    line-height: 40px;
-    color: #FFFFFF;
-  }
-}
-
-.emotion-7 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
-  font-size: 20px;
-  line-height: 28;
-  text-rendering: geometricPrecision;
-  color: #111214;
-  line-height: 28px;
-  color: #EDEEEF;
-  text-align: center;
-}
-
-@media (min-width: 576px) {
-  .emotion-7 {
-    max-width: 500px;
-  }
-}
-
-.emotion-7 p {
-  margin-top: 16px;
-  margin-bottom: 0;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media (max-width: 576px) {
-  .emotion-8 {
-    opacity: 0.9;
-    padding-top: 16px;
-    padding-bottom: 40px;
-    background-color: rgba(46, 51, 56, 0.5);
-    z-index: 10;
-    box-shadow: -1px 5px 22px 7px rgba(46, 51, 56, 0.5);
-  }
-}
-
-@media (min-width: 576px) {
-  .emotion-8 {
-    width: 100%;
-    background-color: #111214;
-    background: linear-gradient(180deg, rgba(17, 18, 20, 0.1) 1%, rgba(17, 18, 20, 0.6) 20%, #111214 48.13%);
-    z-index: 20;
-    opacity: 1;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-.emotion-9 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  width: 100%;
-}
-
-.emotion-10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -386,18 +110,12 @@ exports[`HomePage renders 1`] = `
   flex-wrap: wrap;
   -webkit-column-gap: 24px;
   column-gap: 24px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  grid-template-areas: "content illo";
+  overflow: visible;
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-10 {
+  .emotion-2 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -414,7 +132,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-10 {
+  .emotion-2 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -426,18 +144,144 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-10 {
-    grid-template-columns: 1fr;
+  .emotion-2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-10 {
-    grid-template-columns: 1fr;
+  .emotion-2 {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.emotion-11 {
+@media (max-width: 576px) {
+  .emotion-2 {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-self: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  grid-area: content;
+}
+
+@media (min-width: 576px) {
+  .emotion-3 {
+    padding-top: 56px;
+    padding-bottom: 48px;
+    min-width: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-3 {
+    padding: 16px;
+    max-width: 450px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+}
+
+.emotion-4 {
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 48px;
+  line-height: 56;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-4 {
+    font-family: EB Garamond,eb-garamond,Garamond,serif;
+    font-size: 36px;
+    line-height: 40;
+    text-rendering: geometricPrecision;
+    color: #111214;
+    font-weight: normal;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-4 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-4 {
+    color: #FFFFFF;
+  }
+}
+
+.emotion-5 {
+  margin-top: 16px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-5 {
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-5 {
+    text-align: center;
+  }
+}
+
+.emotion-5 h1,
+.emotion-5 h2,
+.emotion-5 h3,
+.emotion-5 h4,
+.emotion-5 p {
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-5 h1,
+  .emotion-5 h2,
+  .emotion-5 h3,
+  .emotion-5 h4,
+  .emotion-5 p {
+    color: #FFFFFF;
+  }
+}
+
+.emotion-6 {
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -445,30 +289,31 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
 }
 
 @media (max-width: 576px) {
-  .emotion-11 {
-    display: none;
+  .emotion-6 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .emotion-6>div {
+    margin-bottom: 24px;
   }
 }
 
-.emotion-12 {
+@media (min-width: 576px) {
+  .emotion-6>div {
+    margin-right: 24px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+.emotion-7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -497,10 +342,10 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-12 {
+  .emotion-7 {
     width: 260px;
-    height: 222px;
     padding: 24px 0px;
+    padding-bottom: 222px;
     -webkit-filter: drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45);
     filter: drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45);
     box-shadow: 0px 2px 54px #353D45;
@@ -508,7 +353,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-13 {
+.emotion-8 {
   font-family: Jost,futura-pt,futura,sans-serif;
   margin-top: 8px;
   font-weight: 500;
@@ -523,23 +368,22 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-13 {
+  .emotion-8 {
     font-size: 10px;
     margin-bottom: 4px;
-    width: 174px;
     height: 12px;
     padding: 0;
     text-align: center;
   }
 }
 
-.emotion-14 {
+.emotion-9 {
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-15 {
+.emotion-10 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -564,17 +408,16 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-15 {
+  .emotion-10 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 16px 0px;
-    width: 258px;
     height: 146px;
   }
 }
 
-.emotion-16 {
+.emotion-11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -597,17 +440,16 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-16 {
+  .emotion-11 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 148px;
     height: 44px;
     margin-bottom: 8px;
   }
 }
 
-.emotion-17 {
+.emotion-12 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   color: #FFFFFF;
   font-size: 24px;
@@ -617,13 +459,13 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-17 {
+  .emotion-12 {
     font-size: 20px;
     margin-right: 0;
   }
 }
 
-.emotion-18 {
+.emotion-13 {
   font-family: Jost,futura-pt,futura,sans-serif;
   color: #EDEEEF;
   font-size: 16px;
@@ -633,12 +475,12 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-18 {
+  .emotion-13 {
     font-size: 12px;
   }
 }
 
-.emotion-24 {
+.emotion-19 {
   font-family: Jost,futura-pt,futura,sans-serif;
   color: #EDEEEF;
   font-size: 16px;
@@ -648,16 +490,36 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-24 {
+  .emotion-19 {
     font-size: 12px;
   }
 }
 
-.emotion-24:hover {
+.emotion-19:hover {
   text-decoration-line: underline;
 }
 
-.emotion-26 {
+.emotion-20 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.emotion-21 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -686,7 +548,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-26 {
+  .emotion-21 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -703,7 +565,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-26 {
+  .emotion-21 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -715,18 +577,18 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-26 {
+  .emotion-21 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-26 {
+  .emotion-21 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.emotion-27 {
+.emotion-22 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -745,7 +607,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-27 {
+  .emotion-22 {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -756,7 +618,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-28 {
+.emotion-23 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -770,16 +632,16 @@ exports[`HomePage renders 1`] = `
   flex: 1;
 }
 
-.emotion-28 p:first-of-type {
+.emotion-23 p:first-of-type {
   margin-top: 0;
 }
 
-.emotion-28 p:last-of-type {
+.emotion-23 p:last-of-type {
   margin-bottom: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-28 {
+  .emotion-23 {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -791,11 +653,11 @@ exports[`HomePage renders 1`] = `
     max-width: 288px;
   }
 
-  .emotion-28 li {
+  .emotion-23 li {
     list-style: none;
   }
 
-  .emotion-28 ul {
+  .emotion-23 ul {
     margin-block-start: 0;
     margin-block-end: 0;
     -webkit-margin-start: 0;
@@ -807,7 +669,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-29 {
+.emotion-24 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -823,7 +685,7 @@ exports[`HomePage renders 1`] = `
   margin-bottom: 12px;
 }
 
-.emotion-30 {
+.emotion-25 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -835,171 +697,163 @@ exports[`HomePage renders 1`] = `
 <div
   className="emotion-0"
 >
-  <div
+  <section
     className="emotion-1"
   >
     <div
       className="emotion-2"
-    />
-    <div
-      className="emotion-3"
     >
       <div
-        className="emotion-4"
+        className="emotion-3"
       >
-        <div
-          className="emotion-5"
-        />
         <h1
+          className="emotion-4"
+        >
+          Test
+           
+          <em>
+            Two
+          </em>
+        </h1>
+        <span
+          className="emotion-5"
+        >
+          <p>
+            Built for Us
+          </p>
+        </span>
+        <div
           className="emotion-6"
         />
-        <span
-          className="emotion-7"
-        />
       </div>
-    </div>
-    <div
-      className="emotion-8"
-    >
-      <section
-        className="emotion-9"
+      <figure
+        aria-hidden={true}
+        className="emotion-7"
       >
+        <figcaption
+          className="emotion-8"
+        >
+          <a
+            className="emotion-9"
+            href="https://explorer.celo.org"
+            rel="noreferrer"
+            target="_blank"
+          >
+            PLATFORM STATS
+          </a>
+        </figcaption>
         <div
           className="emotion-10"
         >
           <div
             className="emotion-11"
-          />
+          >
+            <span
+              aria-labelledby="stat-tx"
+              className="emotion-12"
+            />
+            <span
+              className="emotion-13"
+              id="stat-tx"
+            >
+              Total transactions
+            </span>
+          </div>
+          <div
+            className="emotion-11"
+          >
+            <span
+              aria-labelledby="stat-time"
+              className="emotion-12"
+            >
+              0s
+            </span>
+            <span
+              className="emotion-13"
+              id="stat-time"
+            >
+              Average block time
+            </span>
+          </div>
+          <div
+            className="emotion-11"
+          >
+            <span
+              aria-labelledby="carbon"
+              className="emotion-12"
+            >
+              640
+            </span>
+            <a
+              className="emotion-19"
+              href="https://www.wren.co/profile/celo"
+              id="carbon"
+              rel="noopener"
+              target="_blank"
+            >
+              Days carbon negative
+            </a>
+          </div>
         </div>
-      </section>
+      </figure>
     </div>
-    <figure
-      aria-hidden={true}
-      className="emotion-12"
-    >
-      <figcaption
-        className="emotion-13"
-      >
-        <a
-          className="emotion-14"
-          href="https://explorer.celo.org"
-          rel="noreferrer"
-          target="_blank"
-        >
-          PLATFORM STATS
-        </a>
-      </figcaption>
-      <div
-        className="emotion-15"
-      >
-        <div
-          className="emotion-16"
-        >
-          <span
-            aria-labelledby="stat-tx"
-            className="emotion-17"
-          />
-          <span
-            className="emotion-18"
-            id="stat-tx"
-          >
-            Total transactions
-          </span>
-        </div>
-        <div
-          className="emotion-16"
-        >
-          <span
-            aria-labelledby="stat-time"
-            className="emotion-17"
-          >
-            0s
-          </span>
-          <span
-            className="emotion-18"
-            id="stat-time"
-          >
-            Average block time
-          </span>
-        </div>
-        <div
-          className="emotion-16"
-        >
-          <span
-            aria-labelledby="carbon"
-            className="emotion-17"
-          >
-            639
-          </span>
-          <a
-            className="emotion-24"
-            href="https://www.wren.co/profile/celo"
-            id="carbon"
-            rel="noopener"
-            target="_blank"
-          >
-            Days carbon negative
-          </a>
-        </div>
-      </div>
-    </figure>
-  </div>
+  </section>
   <section
-    className="emotion-9"
+    className="emotion-20"
   >
     <div
-      className="emotion-26"
+      className="emotion-21"
       id="test"
     >
       <div
-        className="emotion-27"
+        className="emotion-22"
       >
         <div
-          className="emotion-28"
+          className="emotion-23"
         >
           <h4
-            className="emotion-29"
+            className="emotion-24"
           >
             Blurb romeo
           </h4>
           <p
-            className="emotion-30"
+            className="emotion-25"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        className="emotion-27"
+        className="emotion-22"
       >
         <div
-          className="emotion-28"
+          className="emotion-23"
         >
           <h4
-            className="emotion-29"
+            className="emotion-24"
           >
             Blurb soma
           </h4>
           <p
-            className="emotion-30"
+            className="emotion-25"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        className="emotion-27"
+        className="emotion-22"
       >
         <div
-          className="emotion-28"
+          className="emotion-23"
         >
           <h4
-            className="emotion-29"
+            className="emotion-24"
           >
             Blurb rico
           </h4>
           <p
-            className="emotion-30"
+            className="emotion-25"
           >
             Hello World
           </p>
