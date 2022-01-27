@@ -130,7 +130,6 @@ const spanBodyCss = css(flex, {
   justifyContent: "center",
   [WHEN_MOBILE]: {
     flexDirection: "column",
-    marginBottom: 8,
   },
 })
 
