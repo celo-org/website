@@ -31,6 +31,7 @@ export default function Stats() {
 }
 
 const rootCss = css(flex, {
+  position: "relative",
   opacity: 0,
   transitionProperty: "opacity",
   transitionDuration: "550ms",
@@ -38,9 +39,11 @@ const rootCss = css(flex, {
   flexDirection: "column",
   backgroundColor: colors.dark,
   borderRadius: 16,
-  width: 724,
+  maxWidth: 724,
   height: 116,
   padding: "24px 40px",
+  top: 450,
+  right: 210,
   zIndex: 20,
   boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
   [WHEN_MOBILE]: {
@@ -51,6 +54,8 @@ const rootCss = css(flex, {
     filter: "drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45)",
     boxShadow: "0px 2px 54px #353D45",
     borderRadius: 4,
+    top: 0,
+    right: 0,
   },
 })
 
