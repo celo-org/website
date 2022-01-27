@@ -1,5 +1,5 @@
 import { css, keyframes } from "@emotion/react"
-import { flex, garamond, sectionTitle, jost, WHEN_DESKTOP } from "src/estyles"
+import { flex, garamond, sectionTitle, jost } from "src/estyles"
 import { memo } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
