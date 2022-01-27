@@ -31,17 +31,16 @@ export default function Stats() {
 }
 
 const rootCss = css(flex, {
-  position: "relative",
-  top: 200,
   opacity: 0,
   transitionProperty: "opacity",
   transitionDuration: "550ms",
+  position: "relative",
+  top: 200,
   alignItems: "center",
   flexDirection: "column",
   backgroundColor: colors.dark,
   borderRadius: 16,
   maxWidth: 724,
-  height: 116,
   padding: "24px 40px",
   zIndex: 20,
   boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
@@ -50,7 +49,6 @@ const rootCss = css(flex, {
   },
   [WHEN_MOBILE]: {
     maxWidth: 256,
-    height: 222,
     margin: "16px 60px",
     flexBasis: "0%",
     padding: "24px 0px",
