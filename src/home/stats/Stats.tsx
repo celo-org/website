@@ -1,5 +1,5 @@
 import { css, keyframes } from "@emotion/react"
-import { flex, garamond, sectionTitle, jost } from "src/estyles"
+import { flex, garamond, sectionTitle, jost, WHEN_DESKTOP } from "src/estyles"
 import { memo } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
@@ -71,7 +71,6 @@ const headingCss = css(sectionTitle, {
   [WHEN_MOBILE]: {
     fontSize: 10,
     marginBottom: 4,
-    height: 12,
     padding: 0,
     textAlign: "center",
   },
@@ -87,12 +86,10 @@ const bodyCss = css(flex, {
   alignItems: "center",
   justifyContent: "space-between",
   margin: "8px 0px",
-  width: 644,
-  height: 38,
+  maxWidth: 644,
   [WHEN_MOBILE]: {
     flexDirection: "column",
     margin: "16px 0px",
-    height: 146,
   },
 })
 
@@ -131,6 +128,7 @@ const spanBodyCss = css(flex, {
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
+  [WHEN_DESKTOP]: {},
   [WHEN_MOBILE]: {
     flexDirection: "column",
     height: 44,
@@ -155,9 +153,12 @@ const labelCss = css(jost, {
   fontSize: 16,
   lineHeight: "34px",
   textAlign: "center",
+  marginRight: 40,
+  whiteSpace: "nowrap",
   textDecorationLine: "none",
   [WHEN_MOBILE]: {
     fontSize: 12,
+    marginRight: 0,
   },
 })
 
