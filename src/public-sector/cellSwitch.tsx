@@ -12,11 +12,13 @@ import {
   HeadingContentType,
   PictureType,
   IframeContentType,
+  EditorialType,
 } from "src/utils/contentful"
 import Form from "src/contentful/grid2-cells/Form"
 import { Heading } from "src/contentful/grid2-cells/Heading"
 import * as React from "react"
 import Picture from "./Picture"
+import Editorial from "src/contentful/grid2-cells/Editorial"
 
 export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
@@ -30,6 +32,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
           <FreeContent
             key={entry.sys.id}
             colSpan={freeContent.colSpan}
+            rowSpan={freeContent.rowSpan}
             body={freeContent.body}
             darkMode={darkMode}
             cssStyle={freeContent.cssStyle}
@@ -97,6 +100,13 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
       case "iFrameEmbed":
         const iframe = entry.fields as IframeContentType
         return <iframe key={entry.sys.id} src={iframe.url} height={iframe.height} width="100%" />
+
+      case "editorial":
+        const editorial = entry.fields as EditorialType
+        return <Editorial {...editorial} darkMode={darkMode} />
+      default:
+        console.log("no renderer for", entry.sys.contentType.sys.id)
+        return null
     }
   }
   return null
