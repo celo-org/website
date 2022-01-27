@@ -44,10 +44,10 @@ const rootCss = css(flex, {
   zIndex: 20,
   boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
   [WHEN_MOBILE]: {
-    width: 260,
-    // height: 222,
+    maxWidth: 256,
+    margin: "16px 60px",
+    flexBasis: "0%",
     padding: "24px 0px",
-    paddingBottom: 222,
     filter: "drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45)",
     boxShadow: "0px 2px 54px #353D45",
     borderRadius: 4,

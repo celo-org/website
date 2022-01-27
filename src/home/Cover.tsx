@@ -100,7 +100,7 @@ const rootCss = css({
   overflow: "visible",
   [WHEN_MOBILE]: {
     alignContent: "center",
-    flexDirection: "column-reverse",
+    flexDirection: "column",
   },
 })
 
