@@ -42,15 +42,16 @@ const rootCss = css(flex, {
   height: 116,
   padding: "24px 40px",
   zIndex: 20,
+  boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
   [WHEN_MOBILE]: {
     width: 260,
-    height: 222,
+    // height: 222,
     padding: "24px 0px",
+    paddingBottom: 222,
     filter: "drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45)",
     boxShadow: "0px 2px 54px #353D45",
     borderRadius: 4,
   },
-  boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
 })
 
 const appear = css({
@@ -65,7 +66,6 @@ const headingCss = css(sectionTitle, {
   [WHEN_MOBILE]: {
     fontSize: 10,
     marginBottom: 4,
-    width: 174,
     height: 12,
     padding: 0,
     textAlign: "center",
@@ -87,7 +87,6 @@ const bodyCss = css(flex, {
   [WHEN_MOBILE]: {
     flexDirection: "column",
     margin: "16px 0px",
-    width: 258,
     height: 146,
   },
 })
@@ -129,7 +128,6 @@ const spanBodyCss = css(flex, {
   justifyContent: "center",
   [WHEN_MOBILE]: {
     flexDirection: "column",
-    width: 148,
     height: 44,
     marginBottom: 8,
   },
