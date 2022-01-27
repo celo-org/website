@@ -67,7 +67,7 @@ exports[`HomePage renders 1`] = `
 
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-1 {
-    min-height: 60vh;
+    min-height: 80vh;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -160,9 +160,9 @@ exports[`HomePage renders 1`] = `
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
-    -webkit-flex-direction: column-reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -314,6 +314,11 @@ exports[`HomePage renders 1`] = `
 }
 
 .emotion-7 {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.emotion-8 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -325,6 +330,8 @@ exports[`HomePage renders 1`] = `
   opacity: 0;
   transition-property: opacity;
   transition-duration: 550ms;
+  position: relative;
+  top: 200px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -334,26 +341,35 @@ exports[`HomePage renders 1`] = `
   flex-direction: column;
   background-color: #111214;
   border-radius: 16px;
-  width: 724px;
-  height: 116px;
+  max-width: 724px;
   padding: 24px 40px;
   z-index: 20;
   box-shadow: 0px 1px 16px rgba(255, 255, 255, 0.16),0px 0px 24px rgba(78, 236, 255, 0.6);
 }
 
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-8 {
+    top: 170px;
+  }
+}
+
 @media (max-width: 576px) {
-  .emotion-7 {
-    width: 260px;
+  .emotion-8 {
+    max-width: 256px;
+    margin: 16px 60px;
+    -webkit-flex-basis: 0%;
+    -ms-flex-preferred-size: 0%;
+    flex-basis: 0%;
     padding: 24px 0px;
-    padding-bottom: 222px;
     -webkit-filter: drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45);
     filter: drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45);
     box-shadow: 0px 2px 54px #353D45;
     border-radius: 4px;
+    top: 0;
   }
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Jost,futura-pt,futura,sans-serif;
   margin-top: 8px;
   font-weight: 500;
@@ -368,22 +384,21 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-8 {
+  .emotion-9 {
     font-size: 10px;
     margin-bottom: 4px;
-    height: 12px;
     padding: 0;
     text-align: center;
   }
 }
 
-.emotion-9 {
+.emotion-10 {
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -403,21 +418,19 @@ exports[`HomePage renders 1`] = `
   -webkit-justify-content: space-between;
   justify-content: space-between;
   margin: 8px 0px;
-  width: 644px;
-  height: 38px;
+  max-width: 644px;
 }
 
 @media (max-width: 576px) {
-  .emotion-10 {
+  .emotion-11 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 16px 0px;
-    height: 146px;
   }
 }
 
-.emotion-11 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -440,7 +453,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-11 {
+  .emotion-12 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -449,7 +462,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-12 {
+.emotion-13 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   color: #FFFFFF;
   font-size: 24px;
@@ -459,47 +472,53 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-12 {
+  .emotion-13 {
     font-size: 20px;
     margin-right: 0;
   }
 }
 
-.emotion-13 {
+.emotion-14 {
   font-family: Jost,futura-pt,futura,sans-serif;
   color: #EDEEEF;
   font-size: 16px;
   line-height: 34px;
   text-align: center;
+  margin-right: 40px;
+  white-space: nowrap;
   text-decoration-line: none;
 }
 
 @media (max-width: 576px) {
-  .emotion-13 {
+  .emotion-14 {
     font-size: 12px;
+    margin-right: 0;
   }
-}
-
-.emotion-19 {
-  font-family: Jost,futura-pt,futura,sans-serif;
-  color: #EDEEEF;
-  font-size: 16px;
-  line-height: 34px;
-  text-align: center;
-  text-decoration-line: none;
-}
-
-@media (max-width: 576px) {
-  .emotion-19 {
-    font-size: 12px;
-  }
-}
-
-.emotion-19:hover {
-  text-decoration-line: underline;
 }
 
 .emotion-20 {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  color: #EDEEEF;
+  font-size: 16px;
+  line-height: 34px;
+  text-align: center;
+  margin-right: 40px;
+  white-space: nowrap;
+  text-decoration-line: none;
+}
+
+@media (max-width: 576px) {
+  .emotion-20 {
+    font-size: 12px;
+    margin-right: 0;
+  }
+}
+
+.emotion-20:hover {
+  text-decoration-line: underline;
+}
+
+.emotion-21 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -519,7 +538,7 @@ exports[`HomePage renders 1`] = `
   width: 100%;
 }
 
-.emotion-21 {
+.emotion-22 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -548,7 +567,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-21 {
+  .emotion-22 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -565,7 +584,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-21 {
+  .emotion-22 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -577,18 +596,18 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-21 {
+  .emotion-22 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-21 {
+  .emotion-22 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.emotion-22 {
+.emotion-23 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -607,7 +626,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-22 {
+  .emotion-23 {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -618,7 +637,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-23 {
+.emotion-24 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -632,16 +651,16 @@ exports[`HomePage renders 1`] = `
   flex: 1;
 }
 
-.emotion-23 p:first-of-type {
+.emotion-24 p:first-of-type {
   margin-top: 0;
 }
 
-.emotion-23 p:last-of-type {
+.emotion-24 p:last-of-type {
   margin-bottom: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-23 {
+  .emotion-24 {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -653,11 +672,11 @@ exports[`HomePage renders 1`] = `
     max-width: 288px;
   }
 
-  .emotion-23 li {
+  .emotion-24 li {
     list-style: none;
   }
 
-  .emotion-23 ul {
+  .emotion-24 ul {
     margin-block-start: 0;
     margin-block-end: 0;
     -webkit-margin-start: 0;
@@ -669,7 +688,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-24 {
+.emotion-25 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -685,7 +704,7 @@ exports[`HomePage renders 1`] = `
   margin-bottom: 12px;
 }
 
-.emotion-25 {
+.emotion-26 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -726,134 +745,138 @@ exports[`HomePage renders 1`] = `
           className="emotion-6"
         />
       </div>
-      <figure
-        aria-hidden={true}
+      <div
         className="emotion-7"
       >
-        <figcaption
+        <figure
+          aria-hidden={true}
           className="emotion-8"
         >
-          <a
+          <figcaption
             className="emotion-9"
-            href="https://explorer.celo.org"
-            rel="noreferrer"
-            target="_blank"
           >
-            PLATFORM STATS
-          </a>
-        </figcaption>
-        <div
-          className="emotion-10"
-        >
-          <div
-            className="emotion-11"
-          >
-            <span
-              aria-labelledby="stat-tx"
-              className="emotion-12"
-            />
-            <span
-              className="emotion-13"
-              id="stat-tx"
-            >
-              Total transactions
-            </span>
-          </div>
-          <div
-            className="emotion-11"
-          >
-            <span
-              aria-labelledby="stat-time"
-              className="emotion-12"
-            >
-              0s
-            </span>
-            <span
-              className="emotion-13"
-              id="stat-time"
-            >
-              Average block time
-            </span>
-          </div>
-          <div
-            className="emotion-11"
-          >
-            <span
-              aria-labelledby="carbon"
-              className="emotion-12"
-            >
-              640
-            </span>
             <a
-              className="emotion-19"
-              href="https://www.wren.co/profile/celo"
-              id="carbon"
-              rel="noopener"
+              className="emotion-10"
+              href="https://explorer.celo.org"
+              rel="noreferrer"
               target="_blank"
             >
-              Days carbon negative
+              PLATFORM STATS
             </a>
+          </figcaption>
+          <div
+            className="emotion-11"
+          >
+            <div
+              className="emotion-12"
+            >
+              <span
+                aria-labelledby="stat-tx"
+                className="emotion-13"
+              />
+              <span
+                className="emotion-14"
+                id="stat-tx"
+              >
+                Total transactions
+              </span>
+            </div>
+            <div
+              className="emotion-12"
+            >
+              <span
+                aria-labelledby="stat-time"
+                className="emotion-13"
+              >
+                0s
+              </span>
+              <span
+                className="emotion-14"
+                id="stat-time"
+              >
+                Average block time
+              </span>
+            </div>
+            <div
+              className="emotion-12"
+            >
+              <span
+                aria-labelledby="carbon"
+                className="emotion-13"
+              >
+                640
+              </span>
+              <a
+                className="emotion-20"
+                href="https://www.wren.co/profile/celo"
+                id="carbon"
+                rel="noopener"
+                target="_blank"
+              >
+                Days carbon negative
+              </a>
+            </div>
           </div>
-        </div>
-      </figure>
+        </figure>
+      </div>
     </div>
   </section>
   <section
-    className="emotion-20"
+    className="emotion-21"
   >
     <div
-      className="emotion-21"
+      className="emotion-22"
       id="test"
     >
       <div
-        className="emotion-22"
+        className="emotion-23"
       >
         <div
-          className="emotion-23"
+          className="emotion-24"
         >
           <h4
-            className="emotion-24"
+            className="emotion-25"
           >
             Blurb romeo
           </h4>
           <p
-            className="emotion-25"
+            className="emotion-26"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        className="emotion-22"
+        className="emotion-23"
       >
         <div
-          className="emotion-23"
+          className="emotion-24"
         >
           <h4
-            className="emotion-24"
+            className="emotion-25"
           >
             Blurb soma
           </h4>
           <p
-            className="emotion-25"
+            className="emotion-26"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        className="emotion-22"
+        className="emotion-23"
       >
         <div
-          className="emotion-23"
+          className="emotion-24"
         >
           <h4
-            className="emotion-24"
+            className="emotion-25"
           >
             Blurb rico
           </h4>
           <p
-            className="emotion-25"
+            className="emotion-26"
           >
             Hello World
           </p>
