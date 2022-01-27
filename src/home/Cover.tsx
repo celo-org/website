@@ -65,7 +65,9 @@ export default function Cover(props: Props) {
           ))}
         </div>
       </div>
-      <Stats />
+      <div css={statContentCss}>
+        <Stats />
+      </div>
     </GridRow>
   )
 }
@@ -85,7 +87,7 @@ const wrapperCss = css(flex, {
     minHeight: "90vh",
   },
   [WHEN_TABLET]: {
-    minHeight: "60vh",
+    minHeight: "80vh",
     height: "fit-content",
   },
   [WHEN_DESKTOP]: {
@@ -100,7 +102,7 @@ const rootCss = css({
   overflow: "visible",
   [WHEN_MOBILE]: {
     alignContent: "center",
-    flexDirection: "column-reverse",
+    flexDirection: "column",
   },
 })
 
@@ -148,4 +150,9 @@ const linkAreaCss = css(flexRow, {
 
 const rH1 = css(fonts.h1, {
   [WHEN_MOBILE]: fonts.h1Mobile,
+})
+
+const statContentCss = css({
+  gridColumn: "span 2",
+  justifySelf: "center",
 })
