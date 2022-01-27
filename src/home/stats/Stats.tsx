@@ -2,7 +2,7 @@ import { css, keyframes } from "@emotion/react"
 import { flex, garamond, sectionTitle, jost } from "src/estyles"
 import { memo } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
-import { WHEN_MOBILE } from "src/estyles"
+import { WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 // import RingsGlyph from "src/logos/RingsGlyph"
 //placed the rings as comments because maybe we may want to keep the celo logo in the stats component
 import { colors } from "src/colors"
@@ -32,6 +32,7 @@ export default function Stats() {
 
 const rootCss = css(flex, {
   position: "relative",
+  top: 200,
   opacity: 0,
   transitionProperty: "opacity",
   transitionDuration: "550ms",
@@ -42,12 +43,14 @@ const rootCss = css(flex, {
   maxWidth: 724,
   height: 116,
   padding: "24px 40px",
-  top: 450,
-  right: 210,
   zIndex: 20,
   boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
+  [WHEN_TABLET]: {
+    top: 170,
+  },
   [WHEN_MOBILE]: {
     maxWidth: 256,
+    height: 222,
     margin: "16px 60px",
     flexBasis: "0%",
     padding: "24px 0px",
@@ -55,7 +58,6 @@ const rootCss = css(flex, {
     boxShadow: "0px 2px 54px #353D45",
     borderRadius: 4,
     top: 0,
-    right: 0,
   },
 })
 
