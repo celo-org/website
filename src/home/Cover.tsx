@@ -1,4 +1,4 @@
-import { css } from "@emotion/react"
+import { css, keyframes } from "@emotion/react"
 import {
   flex,
   flexRow,
@@ -19,6 +19,8 @@ import Button, { SIZE } from "src/shared/Button.3"
 import { useScreenSize } from "src/layout/ScreenSize"
 import Stats from "./stats/Stats"
 import { colors } from "src/colors"
+import { useState } from "react"
+import useInterval from "src/hooks/useInternval"
 
 export interface Props {
   title?: string
@@ -45,7 +47,7 @@ export default function Cover(props: Props) {
       <div css={contentCss}>
         {props.title && (
           <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
-            {props.title} <em>{props.marquee[1]}</em>
+            {props.title} <Marquee marquee={props.marquee} />
           </h1>
         )}
         <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
@@ -72,9 +74,60 @@ export default function Cover(props: Props) {
   )
 }
 
-const subTextCss = css({
-  marginTop: 16,
+const DURATION = 3000
+
+function Marquee({ marquee }: { marquee: string[] }) {
+  const [index, setIndex] = useState(0)
+  useInterval(() => {
+    setIndex(marquee.length - 1 === index ? 0 : index + 1)
+  }, DURATION)
+  return (
+    <em key={marquee[index]} css={animatedWordsCss}>
+      {marquee[index]}
+    </em>
+  )
+}
+
+const animationKeyframes = keyframes`
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(6px);
+    opacity: 0.10;
+  }
+  15% {
+    filter: blur(0px);
+    opacity: 1;
+    letter-spacing: 0em;
+  }
+  90% {
+    filter: blur(0px);
+    opacity: 1;
+    letter-spacing: 0em;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    filter: blur(6px);
+    opacity: 0.10;
+  }
+`
+
+const animatedWordsCss = css({
+  animation: animationKeyframes,
+  animationTimingFunction: "cubic-bezier(0.250, 0.460, 0.450, 0.940)",
+  animationPlayState: "running",
+  animationIterationCount: "1",
+  animationFillMode: "both",
+  animationDuration: `${DURATION}ms`,
+  paddingLeft: 12,
+  minWidth: 280,
+  display: "inline-block",
+  textAlign: "left",
+  [WHEN_MOBILE]: {
+    minWidth: 180,
+  },
 })
+
+const subTextCss = css({})
 
 const wrapperCss = css(flex, {
   backgroundRepeat: "no-repeat",
@@ -123,7 +176,7 @@ const contentCss = css(flex, {
   gridArea: "content",
   [WHEN_TABLET_AND_UP]: {
     paddingTop: 56,
-    paddingBottom: 48,
+    paddingBottom: 16,
     minWidth: 320,
   },
   [WHEN_MOBILE]: {
@@ -134,6 +187,7 @@ const contentCss = css(flex, {
 })
 
 const linkAreaCss = css(flexRow, {
+  marginTop: 48,
   [WHEN_MOBILE]: {
     flexDirection: "column",
     "& > div": {

@@ -141,6 +141,12 @@ export interface FormContentType {
   route: string
 }
 
+export interface EditorialType {
+  title: Document
+  button: Entry<ContentfulButton>
+  image: Asset
+}
+
 export interface ThumbnailType {
   title: string
   link: string
@@ -149,6 +155,7 @@ export interface ThumbnailType {
 export interface FreeContentType {
   backgroundColor: string
   colSpan?: 1 | 2 | 3 | 4
+  rowSpan?: number
   cssStyle: CSSObject
   listStyleImage?: Asset
   body: Document
@@ -194,6 +201,7 @@ export type CellContentType =
   | PictureType
   | FreeContentType
   | IframeContentType
+  | EditorialType
 
 export interface GridRowContentType {
   id: string

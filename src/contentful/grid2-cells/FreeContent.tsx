@@ -40,13 +40,14 @@ const OPTIONS = {
 const h1ResponsiveCss = css(fonts.h1, { [WHEN_MOBILE]: fonts.h1Mobile })
 interface Props {
   colSpan: number
+  rowSpan?: number
   body: Document
   cssStyle?: CSSObject
   darkMode: boolean
   listStyleImage?: Asset
 }
 
-export function FreeContent({ colSpan, body, cssStyle, darkMode, listStyleImage }: Props) {
+export function FreeContent({ colSpan, rowSpan, body, cssStyle, darkMode, listStyleImage }: Props) {
   const customBullets = listStyleImage
     ? {
         ul: {
@@ -56,7 +57,13 @@ export function FreeContent({ colSpan, body, cssStyle, darkMode, listStyleImage 
     : null
 
   return (
-    <div css={css(rootCss, { gridColumn: `span ${colSpan}` })}>
+    <div
+      css={css(
+        rootCss,
+        { gridColumn: `span ${colSpan}` },
+        rowSpan && { gridRow: `span ${rowSpan}` }
+      )}
+    >
       <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
         {documentToReactComponents(body, OPTIONS)}
       </div>

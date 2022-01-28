@@ -1,6 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomePage renders 1`] = `
+@keyframes animation-0 {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    opacity: 0.10;
+  }
+
+  15% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    letter-spacing: 0em;
+  }
+
+  90% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    letter-spacing: 0em;
+  }
+
+  100% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    opacity: 0.10;
+  }
+}
+
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -189,7 +219,7 @@ exports[`HomePage renders 1`] = `
 @media (min-width: 576px) {
   .emotion-3 {
     padding-top: 56px;
-    padding-bottom: 48px;
+    padding-bottom: 16px;
     min-width: 320px;
   }
 }
@@ -246,41 +276,65 @@ exports[`HomePage renders 1`] = `
 }
 
 .emotion-5 {
-  margin-top: 16px;
-  color: #FFFFFF;
+  -webkit-animation: animation-0;
+  animation: animation-0;
+  -webkit-animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 3000ms;
+  animation-duration: 3000ms;
+  padding-left: 12px;
+  min-width: 280px;
+  display: inline-block;
+  text-align: left;
 }
 
 @media (max-width: 576px) {
   .emotion-5 {
-    color: #FFFFFF;
-  }
-}
-
-@media (max-width: 576px) {
-  .emotion-5 {
-    text-align: center;
-  }
-}
-
-.emotion-5 h1,
-.emotion-5 h2,
-.emotion-5 h3,
-.emotion-5 h4,
-.emotion-5 p {
-  color: #FFFFFF;
-}
-
-@media (max-width: 576px) {
-  .emotion-5 h1,
-  .emotion-5 h2,
-  .emotion-5 h3,
-  .emotion-5 h4,
-  .emotion-5 p {
-    color: #FFFFFF;
+    min-width: 180px;
   }
 }
 
 .emotion-6 {
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-6 {
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-6 {
+    text-align: center;
+  }
+}
+
+.emotion-6 h1,
+.emotion-6 h2,
+.emotion-6 h3,
+.emotion-6 h4,
+.emotion-6 p {
+  color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+  .emotion-6 h1,
+  .emotion-6 h2,
+  .emotion-6 h3,
+  .emotion-6 h4,
+  .emotion-6 p {
+    color: #FFFFFF;
+  }
+}
+
+.emotion-7 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -289,22 +343,23 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-top: 48px;
 }
 
 @media (max-width: 576px) {
-  .emotion-6 {
+  .emotion-7 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .emotion-6>div {
+  .emotion-7>div {
     margin-bottom: 24px;
   }
 }
 
 @media (min-width: 576px) {
-  .emotion-6>div {
+  .emotion-7>div {
     margin-right: 24px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -313,12 +368,12 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-7 {
+.emotion-8 {
   grid-column: span 2;
   justify-self: center;
 }
 
-.emotion-8 {
+.emotion-9 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -348,13 +403,13 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-8 {
+  .emotion-9 {
     top: 170px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-8 {
+  .emotion-9 {
     max-width: 256px;
     margin: 16px 60px;
     -webkit-flex-basis: 0%;
@@ -369,7 +424,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-9 {
+.emotion-10 {
   font-family: Jost,futura-pt,futura,sans-serif;
   margin-top: 8px;
   font-weight: 500;
@@ -384,7 +439,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-9 {
+  .emotion-10 {
     font-size: 10px;
     margin-bottom: 4px;
     padding: 0;
@@ -392,13 +447,13 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-10 {
+.emotion-11 {
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-11 {
+.emotion-12 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -422,7 +477,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-11 {
+  .emotion-12 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -430,7 +485,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-12 {
+.emotion-13 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -453,14 +508,14 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-12 {
+  .emotion-13 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
-.emotion-13 {
+.emotion-14 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   color: #FFFFFF;
   font-size: 24px;
@@ -470,13 +525,13 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-13 {
+  .emotion-14 {
     font-size: 20px;
     margin-right: 0;
   }
 }
 
-.emotion-14 {
+.emotion-15 {
   font-family: Jost,futura-pt,futura,sans-serif;
   color: #EDEEEF;
   font-size: 16px;
@@ -488,35 +543,35 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-14 {
+  .emotion-15 {
     font-size: 12px;
     margin-right: 0;
   }
-}
-
-.emotion-20 {
-  font-family: Jost,futura-pt,futura,sans-serif;
-  color: #EDEEEF;
-  font-size: 16px;
-  line-height: 34px;
-  text-align: center;
-  margin-right: 40px;
-  white-space: nowrap;
-  text-decoration-line: none;
-}
-
-@media (max-width: 576px) {
-  .emotion-20 {
-    font-size: 12px;
-    margin-right: 0;
-  }
-}
-
-.emotion-20:hover {
-  text-decoration-line: underline;
 }
 
 .emotion-21 {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  color: #EDEEEF;
+  font-size: 16px;
+  line-height: 34px;
+  text-align: center;
+  margin-right: 40px;
+  white-space: nowrap;
+  text-decoration-line: none;
+}
+
+@media (max-width: 576px) {
+  .emotion-21 {
+    font-size: 12px;
+    margin-right: 0;
+  }
+}
+
+.emotion-21:hover {
+  text-decoration-line: underline;
+}
+
+.emotion-22 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -536,7 +591,7 @@ exports[`HomePage renders 1`] = `
   width: 100%;
 }
 
-.emotion-22 {
+.emotion-23 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -565,7 +620,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-22 {
+  .emotion-23 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -582,7 +637,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-22 {
+  .emotion-23 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -594,18 +649,18 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-22 {
+  .emotion-23 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-22 {
+  .emotion-23 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.emotion-23 {
+.emotion-24 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -624,7 +679,7 @@ exports[`HomePage renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-23 {
+  .emotion-24 {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -635,7 +690,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-24 {
+.emotion-25 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -649,16 +704,16 @@ exports[`HomePage renders 1`] = `
   flex: 1;
 }
 
-.emotion-24 p:first-of-type {
+.emotion-25 p:first-of-type {
   margin-top: 0;
 }
 
-.emotion-24 p:last-of-type {
+.emotion-25 p:last-of-type {
   margin-bottom: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-24 {
+  .emotion-25 {
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -670,11 +725,11 @@ exports[`HomePage renders 1`] = `
     max-width: 288px;
   }
 
-  .emotion-24 li {
+  .emotion-25 li {
     list-style: none;
   }
 
-  .emotion-24 ul {
+  .emotion-25 ul {
     margin-block-start: 0;
     margin-block-end: 0;
     -webkit-margin-start: 0;
@@ -686,7 +741,7 @@ exports[`HomePage renders 1`] = `
   }
 }
 
-.emotion-25 {
+.emotion-26 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -702,7 +757,7 @@ exports[`HomePage renders 1`] = `
   margin-bottom: 12px;
 }
 
-.emotion-26 {
+.emotion-27 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -728,33 +783,35 @@ exports[`HomePage renders 1`] = `
         >
           Test
            
-          <em>
-            Two
+          <em
+            className="emotion-5"
+          >
+            One
           </em>
         </h1>
         <span
-          className="emotion-5"
+          className="emotion-6"
         >
           <p>
             Built for Us
           </p>
         </span>
         <div
-          className="emotion-6"
+          className="emotion-7"
         />
       </div>
       <div
-        className="emotion-7"
+        className="emotion-8"
       >
         <figure
           aria-hidden={true}
-          className="emotion-8"
+          className="emotion-9"
         >
           <figcaption
-            className="emotion-9"
+            className="emotion-10"
           >
             <a
-              className="emotion-10"
+              className="emotion-11"
               href="https://explorer.celo.org"
               rel="noreferrer"
               target="_blank"
@@ -763,49 +820,49 @@ exports[`HomePage renders 1`] = `
             </a>
           </figcaption>
           <div
-            className="emotion-11"
+            className="emotion-12"
           >
             <div
-              className="emotion-12"
+              className="emotion-13"
             >
               <span
                 aria-labelledby="stat-tx"
-                className="emotion-13"
+                className="emotion-14"
               />
               <span
-                className="emotion-14"
+                className="emotion-15"
                 id="stat-tx"
               >
                 Total transactions
               </span>
             </div>
             <div
-              className="emotion-12"
+              className="emotion-13"
             >
               <span
                 aria-labelledby="stat-time"
-                className="emotion-13"
+                className="emotion-14"
               >
                 0s
               </span>
               <span
-                className="emotion-14"
+                className="emotion-15"
                 id="stat-time"
               >
                 Average block time
               </span>
             </div>
             <div
-              className="emotion-12"
+              className="emotion-13"
             >
               <span
                 aria-labelledby="carbon"
-                className="emotion-13"
+                className="emotion-14"
               >
-                640
+                641
               </span>
               <a
-                className="emotion-20"
+                className="emotion-21"
                 href="https://www.wren.co/profile/celo"
                 id="carbon"
                 rel="noopener"
@@ -820,61 +877,61 @@ exports[`HomePage renders 1`] = `
     </div>
   </section>
   <section
-    className="emotion-21"
+    className="emotion-22"
   >
     <div
-      className="emotion-22"
+      className="emotion-23"
       id="test"
     >
       <div
-        className="emotion-23"
+        className="emotion-24"
       >
         <div
-          className="emotion-24"
+          className="emotion-25"
         >
           <h4
-            className="emotion-25"
+            className="emotion-26"
           >
             Blurb romeo
           </h4>
           <p
-            className="emotion-26"
+            className="emotion-27"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        className="emotion-23"
+        className="emotion-24"
       >
         <div
-          className="emotion-24"
+          className="emotion-25"
         >
           <h4
-            className="emotion-25"
+            className="emotion-26"
           >
             Blurb soma
           </h4>
           <p
-            className="emotion-26"
+            className="emotion-27"
           >
             Hello World
           </p>
         </div>
       </div>
       <div
-        className="emotion-23"
+        className="emotion-24"
       >
         <div
-          className="emotion-24"
+          className="emotion-25"
         >
           <h4
-            className="emotion-25"
+            className="emotion-26"
           >
             Blurb rico
           </h4>
           <p
-            className="emotion-26"
+            className="emotion-27"
           >
             Hello World
           </p>
