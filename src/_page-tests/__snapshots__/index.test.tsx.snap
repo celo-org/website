@@ -53,37 +53,22 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: #111214;
+  position: relative;
   background-repeat: no-repeat;
+  -webkit-background-position: center;
+  background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
-  box-shadow: inset 0px -50px 37px -25px #111214;
+  box-shadow: inset 0px -50px 37px 25px #111214;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   background-image: url(/celo.jpg);
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  width: 100%;
-  background-color: #111214;
 }
 
 @media (max-width: 576px) {
@@ -91,13 +76,13 @@ exports[`HomePage renders 1`] = `
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
-    min-height: 90vh;
+    min-height: 80vh;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
   .emotion-1 {
-    min-height: 80vh;
+    min-height: 85vh;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -106,11 +91,7 @@ exports[`HomePage renders 1`] = `
 
 @media (min-width: 992px) {
   .emotion-1 {
-    height: 85vh;
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-    max-height: 80vw;
+    min-height: 86vh;
   }
 }
 
@@ -123,73 +104,21 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 12px;
-  padding-right: 12px;
+  margin-top: 120px;
   width: 100%;
-  max-width: 100vw;
-  overflow: hidden;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-column-gap: 24px;
-  column-gap: 24px;
-  grid-template-areas: "content illo";
+  height: 100%;
   overflow: visible;
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-2 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-right: 24px;
-    padding-left: 24px;
-    width: 100%;
-    max-width: 982px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-2 {
-    display: grid;
-    grid-auto-rows: auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    width: 100%;
-    max-width: 1104px;
-  }
-}
-
-@media (min-width: 992px) {
-  .emotion-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-2 {
-    grid-template-columns: 1fr 1fr;
-  }
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 @media (max-width: 576px) {
   .emotion-2 {
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -213,14 +142,22 @@ exports[`HomePage renders 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  grid-area: content;
+  width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .emotion-3 {
-    padding-top: 56px;
-    padding-bottom: 16px;
-    min-width: 320px;
+    padding-bottom: 24px;
+    padding-left: 40px;
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-3 {
+    padding-top: 36px;
+    padding-left: 16px;
+    margin-left: 10%;
   }
 }
 
@@ -343,7 +280,7 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 48px;
+  margin-top: 24px;
 }
 
 @media (max-width: 576px) {
@@ -369,8 +306,10 @@ exports[`HomePage renders 1`] = `
 }
 
 .emotion-8 {
-  grid-column: span 2;
   justify-self: center;
+  position: relative;
+  bottom: 12%;
+  padding-bottom: 24px;
 }
 
 .emotion-9 {
@@ -385,8 +324,6 @@ exports[`HomePage renders 1`] = `
   opacity: 0;
   transition-property: opacity;
   transition-duration: 550ms;
-  position: relative;
-  top: 200px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -402,25 +339,22 @@ exports[`HomePage renders 1`] = `
   box-shadow: 0px 1px 16px rgba(255, 255, 255, 0.16),0px 0px 24px rgba(78, 236, 255, 0.6);
 }
 
-@media (min-width: 576px) and (max-width: 992px) {
-  .emotion-9 {
-    top: 170px;
-  }
-}
-
 @media (max-width: 576px) {
   .emotion-9 {
-    max-width: 256px;
-    margin: 16px 60px;
     -webkit-flex-basis: 0%;
     -ms-flex-preferred-size: 0%;
     flex-basis: 0%;
-    padding: 24px 0px;
+    padding: 24px 36px;
     -webkit-filter: drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45);
     filter: drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45);
     box-shadow: 0px 2px 54px #353D45;
     border-radius: 4px;
-    top: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-9 {
+    padding: 24px 32px 16px 32px;
   }
 }
 
@@ -462,9 +396,6 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -473,7 +404,15 @@ exports[`HomePage renders 1`] = `
   -webkit-justify-content: space-between;
   justify-content: space-between;
   margin: 8px 0px;
-  max-width: 644px;
+}
+
+@media (min-width: 576px) {
+  .emotion-12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 38px;
+    column-gap: 38px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -494,40 +433,45 @@ exports[`HomePage renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 992px) {
   .emotion-13 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 
 .emotion-14 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   color: #FFFFFF;
-  font-size: 24px;
   line-height: 1.2;
   text-align: center;
-  margin-right: 10px;
+  margin-right: 0;
+  font-size: 20px;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   .emotion-14 {
-    font-size: 20px;
-    margin-right: 0;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-14 {
+    margin-right: 10px;
   }
 }
 
@@ -537,7 +481,6 @@ exports[`HomePage renders 1`] = `
   font-size: 16px;
   line-height: 34px;
   text-align: center;
-  margin-right: 40px;
   white-space: nowrap;
   text-decoration-line: none;
 }
@@ -545,7 +488,6 @@ exports[`HomePage renders 1`] = `
 @media (max-width: 576px) {
   .emotion-15 {
     font-size: 12px;
-    margin-right: 0;
   }
 }
 
@@ -555,7 +497,6 @@ exports[`HomePage renders 1`] = `
   font-size: 16px;
   line-height: 34px;
   text-align: center;
-  margin-right: 40px;
   white-space: nowrap;
   text-decoration-line: none;
 }
@@ -563,7 +504,6 @@ exports[`HomePage renders 1`] = `
 @media (max-width: 576px) {
   .emotion-21 {
     font-size: 12px;
-    margin-right: 0;
   }
 }
 
@@ -769,7 +709,7 @@ exports[`HomePage renders 1`] = `
 <div
   className="emotion-0"
 >
-  <section
+  <div
     className="emotion-1"
   >
     <div
@@ -800,82 +740,82 @@ exports[`HomePage renders 1`] = `
           className="emotion-7"
         />
       </div>
-      <div
-        className="emotion-8"
+    </div>
+    <div
+      className="emotion-8"
+    >
+      <figure
+        aria-hidden={true}
+        className="emotion-9"
       >
-        <figure
-          aria-hidden={true}
-          className="emotion-9"
+        <figcaption
+          className="emotion-10"
         >
-          <figcaption
-            className="emotion-10"
+          <a
+            className="emotion-11"
+            href="https://explorer.celo.org"
+            rel="noreferrer"
+            target="_blank"
           >
+            PLATFORM STATS
+          </a>
+        </figcaption>
+        <div
+          className="emotion-12"
+        >
+          <div
+            className="emotion-13"
+          >
+            <span
+              aria-labelledby="stat-tx"
+              className="emotion-14"
+            />
+            <span
+              className="emotion-15"
+              id="stat-tx"
+            >
+              Total transactions
+            </span>
+          </div>
+          <div
+            className="emotion-13"
+          >
+            <span
+              aria-labelledby="stat-time"
+              className="emotion-14"
+            >
+              0s
+            </span>
+            <span
+              className="emotion-15"
+              id="stat-time"
+            >
+              Average block time
+            </span>
+          </div>
+          <div
+            className="emotion-13"
+          >
+            <span
+              aria-labelledby="carbon"
+              className="emotion-14"
+            >
+              641
+            </span>
             <a
-              className="emotion-11"
-              href="https://explorer.celo.org"
-              rel="noreferrer"
+              className="emotion-21"
+              href="https://www.wren.co/profile/celo"
+              id="carbon"
+              rel="noopener"
               target="_blank"
             >
-              PLATFORM STATS
+              Days carbon negative
             </a>
-          </figcaption>
-          <div
-            className="emotion-12"
-          >
-            <div
-              className="emotion-13"
-            >
-              <span
-                aria-labelledby="stat-tx"
-                className="emotion-14"
-              />
-              <span
-                className="emotion-15"
-                id="stat-tx"
-              >
-                Total transactions
-              </span>
-            </div>
-            <div
-              className="emotion-13"
-            >
-              <span
-                aria-labelledby="stat-time"
-                className="emotion-14"
-              >
-                0s
-              </span>
-              <span
-                className="emotion-15"
-                id="stat-time"
-              >
-                Average block time
-              </span>
-            </div>
-            <div
-              className="emotion-13"
-            >
-              <span
-                aria-labelledby="carbon"
-                className="emotion-14"
-              >
-                641
-              </span>
-              <a
-                className="emotion-21"
-                href="https://www.wren.co/profile/celo"
-                id="carbon"
-                rel="noopener"
-                target="_blank"
-              >
-                Days carbon negative
-              </a>
-            </div>
           </div>
-        </figure>
-      </div>
+        </div>
+      </figure>
     </div>
-  </section>
+  </div>
   <section
     className="emotion-22"
   >
