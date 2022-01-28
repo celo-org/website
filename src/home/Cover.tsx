@@ -10,13 +10,11 @@ import {
   whiteText,
 } from "src/estyles"
 import { Document } from "@contentful/rich-text-types"
-import { GridRow } from "src/layout/Grid2"
 import { Asset, Entry } from "contentful"
 import { ContentfulButton } from "src/utils/contentful"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Button, { SIZE } from "src/shared/Button.3"
-import { useScreenSize } from "src/layout/ScreenSize"
 import Stats from "./stats/Stats"
 import { colors } from "src/colors"
 import { useState } from "react"
@@ -33,44 +31,39 @@ export interface Props {
 }
 
 export default function Cover(props: Props) {
-  const { isMobile } = useScreenSize()
-
   const backgroundImageCss = css({ backgroundImage: `url(${props.imageDesktop.fields.file.url})` })
 
   return (
-    <GridRow
-      columns={2}
-      darkMode={props.darkMode}
-      wrapperCss={css(wrapperCss, backgroundImageCss)}
-      css={rootCss}
-    >
-      <div css={contentCss}>
-        {props.title && (
-          <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
-            {props.title} <Marquee marquee={props.marquee} />
-          </h1>
-        )}
-        <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
-          {documentToReactComponents(props.subTitle)}
-        </span>
+    <div css={css(wrapperCss, backgroundImageCss)}>
+      <div css={rootCss}>
+        <div css={contentCss}>
+          {props.title && (
+            <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
+              {props.title} <Marquee marquee={props.marquee} />
+            </h1>
+          )}
+          <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
+            {documentToReactComponents(props.subTitle)}
+          </span>
 
-        <div css={linkAreaCss}>
-          {props.links?.map((link) => (
-            <Button
-              align={"center"}
-              key={link.sys.id}
-              size={isMobile ? SIZE.fullWidth : SIZE.normal}
-              kind={link.fields.kind}
-              text={link.fields.words}
-              href={link.fields.href}
-            />
-          ))}
+          <div css={linkAreaCss}>
+            {props.links?.map((link) => (
+              <Button
+                align={"center"}
+                key={link.sys.id}
+                size={SIZE.normal}
+                kind={link.fields.kind}
+                text={link.fields.words}
+                href={link.fields.href}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <div css={statContentCss}>
         <Stats />
       </div>
-    </GridRow>
+    </div>
   )
 }
 
@@ -130,33 +123,44 @@ const animatedWordsCss = css({
 const subTextCss = css({})
 
 const wrapperCss = css(flex, {
+  backgroundColor: colors.dark,
+  position: "relative",
   backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
   backgroundSize: "cover",
-  boxShadow: `inset 0px -50px 37px -25px ${colors.dark}`,
+  boxShadow: `inset 0px -50px 37px 25px ${colors.dark}`,
   alignItems: "center",
-  justifyContent: "center",
+  justifyContent: "space-between",
   [WHEN_MOBILE]: {
     alignContent: "center",
-    minHeight: "90vh",
+    minHeight: "80vh",
   },
   [WHEN_TABLET]: {
-    minHeight: "80vh",
+    minHeight: "85vh",
     height: "fit-content",
   },
   [WHEN_DESKTOP]: {
-    height: "85vh",
-    minHeight: "fit-content",
-    maxHeight: "80vw",
+    minHeight: "86vh",
   },
 })
 
-const rootCss = css({
-  gridTemplateAreas: `"content illo"`,
+const rootCss = css(flex, {
+  marginTop: 120,
+  width: "100%",
+  height: "100%",
   overflow: "visible",
+  alignItems: "center",
+  flex: 1,
   [WHEN_MOBILE]: {
-    alignContent: "center",
     flexDirection: "column",
   },
+})
+
+const statContentCss = css({
+  justifySelf: "center",
+  position: "relative",
+  bottom: "12%",
+  paddingBottom: 24,
 })
 
 const centerMobileCss = css({
@@ -173,11 +177,16 @@ const contentCss = css(flex, {
   justifySelf: "center",
   justifyContent: "center",
   flex: 1,
-  gridArea: "content",
-  [WHEN_TABLET_AND_UP]: {
-    paddingTop: 56,
-    paddingBottom: 16,
-    minWidth: 320,
+  width: "100%",
+  [WHEN_DESKTOP]: {
+    paddingBottom: 24,
+    paddingLeft: 40,
+    marginLeft: "20%",
+  },
+  [WHEN_TABLET]: {
+    paddingTop: 36,
+    paddingLeft: 16,
+    marginLeft: "10%",
   },
   [WHEN_MOBILE]: {
     padding: 16,
@@ -187,7 +196,7 @@ const contentCss = css(flex, {
 })
 
 const linkAreaCss = css(flexRow, {
-  marginTop: 48,
+  marginTop: 24,
   [WHEN_MOBILE]: {
     flexDirection: "column",
     "& > div": {
@@ -204,9 +213,4 @@ const linkAreaCss = css(flexRow, {
 
 const rH1 = css(fonts.h1, {
   [WHEN_MOBILE]: fonts.h1Mobile,
-})
-
-const statContentCss = css({
-  gridColumn: "span 2",
-  justifySelf: "center",
 })

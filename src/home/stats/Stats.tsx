@@ -1,10 +1,9 @@
 import { css, keyframes } from "@emotion/react"
-import { flex, garamond, sectionTitle, jost } from "src/estyles"
+import { flex, garamond, sectionTitle, jost, WHEN_DESKTOP, WHEN_TABLET_AND_UP } from "src/estyles"
 import { memo } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
-// import RingsGlyph from "src/logos/RingsGlyph"
-//placed the rings as comments because maybe we may want to keep the celo logo in the stats component
+
 import { colors } from "src/colors"
 import useStatsRelay from "./useStatsRelay"
 import CarbonStats from "./CarbonStats"
@@ -15,7 +14,6 @@ export default function Stats() {
   const allLoaded = avgBlockTime && totalTx
   return (
     <figure aria-hidden={!allLoaded} css={css(rootCss, allLoaded && appear)}>
-      {/* <RingsGlyph color={colors.white} height={20} /> */}
       <figcaption css={headingCss}>
         <a css={linkCss} target="_blank" href={"https://explorer.celo.org"} rel="noreferrer">
           {t("statsHeading")}
@@ -34,8 +32,6 @@ const rootCss = css(flex, {
   opacity: 0,
   transitionProperty: "opacity",
   transitionDuration: "550ms",
-  position: "relative",
-  top: 200,
   alignItems: "center",
   flexDirection: "column",
   backgroundColor: colors.dark,
@@ -44,18 +40,15 @@ const rootCss = css(flex, {
   padding: "24px 40px",
   zIndex: 20,
   boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
-  [WHEN_TABLET]: {
-    top: 170,
-  },
   [WHEN_MOBILE]: {
-    maxWidth: 256,
-    margin: "16px 60px",
     flexBasis: "0%",
-    padding: "24px 0px",
+    padding: "24px 36px",
     filter: "drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45)",
     boxShadow: "0px 2px 54px #353D45",
     borderRadius: 4,
-    top: 0,
+  },
+  [WHEN_TABLET]: {
+    padding: "24px 32px 16px 32px",
   },
 })
 
@@ -82,11 +75,14 @@ const linkCss = css({
 })
 
 const bodyCss = css(flex, {
-  flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between",
   margin: "8px 0px",
-  maxWidth: 644,
+  [WHEN_TABLET_AND_UP]: {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr",
+    columnGap: 38,
+  },
   [WHEN_MOBILE]: {
     flexDirection: "column",
     margin: "16px 0px",
@@ -125,23 +121,25 @@ export const Datum = memo<DatumProps>(function _Datum({ value, title, id, link }
 })
 
 const spanBodyCss = css(flex, {
-  flexDirection: "row",
   alignItems: "center",
+  flexDirection: "column",
   justifyContent: "center",
-  [WHEN_MOBILE]: {
-    flexDirection: "column",
+  [WHEN_DESKTOP]: {
+    flexDirection: "row",
   },
 })
 
 const valueCss = css(garamond, {
   color: colors.white,
-  fontSize: 24,
   lineHeight: 1.2,
   textAlign: "center",
-  marginRight: 10,
-  [WHEN_MOBILE]: {
-    fontSize: 20,
-    marginRight: 0,
+  marginRight: 0,
+  fontSize: 20,
+  [WHEN_TABLET_AND_UP]: {
+    fontSize: 24,
+  },
+  [WHEN_DESKTOP]: {
+    marginRight: 10,
   },
 })
 
@@ -150,12 +148,10 @@ const labelCss = css(jost, {
   fontSize: 16,
   lineHeight: "34px",
   textAlign: "center",
-  marginRight: 40,
   whiteSpace: "nowrap",
   textDecorationLine: "none",
   [WHEN_MOBILE]: {
     fontSize: 12,
-    marginRight: 0,
   },
 })
 
