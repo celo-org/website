@@ -1,10 +1,11 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { css } from "@emotion/react"
 import { colors } from "src/colors"
-import { garamond, jost, WHEN_MOBILE } from "src/estyles"
+import { garamond, jost, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import Button, { SIZE } from "src/shared/Button.3"
 import { RoledexContentType } from "src/utils/contentful"
 import OvalCoin from "src/shared/OvalCoin"
+import { renderNode } from "src/contentful/nodes/nodes"
 export default function Timeline(props: RoledexContentType) {
   return (
     <div css={rootCss}>
@@ -20,7 +21,7 @@ export default function Timeline(props: RoledexContentType) {
                 {event.fields.title}
               </h5>
               <h6 css={headingCss}>{event.fields.heading}</h6>
-              {documentToReactComponents(event.fields.body)}
+              {documentToReactComponents(event.fields.body, { renderNode })}
             </div>
             {event.fields.buttons.map((button) => (
               <Button
@@ -64,6 +65,9 @@ const rootCss = css({
   marginLeft: 30,
   paddingLeft: 28,
   borderLeft: ` 1px solid ${colors.primary}`,
+  [WHEN_TABLET]: {
+    marginLeft: 6,
+  },
   [WHEN_MOBILE]: {
     marginLeft: 0,
     paddingLeft: 16,
