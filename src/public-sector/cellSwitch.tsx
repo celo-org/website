@@ -19,12 +19,16 @@ import { Heading } from "src/contentful/grid2-cells/Heading"
 import * as React from "react"
 import Picture from "./Picture"
 import Editorial from "src/contentful/grid2-cells/Editorial"
+import Timeline from "src/home/Timeline"
 
 export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
     switch (entry.sys.contentType.sys.id) {
       case "roledex":
         const roledex = entry.fields as RoledexContentType
+        if (roledex.variant === "timeline") {
+          return <Timeline key={entry.sys.id} title={roledex.title} sheets={roledex.sheets} />
+        }
         return <Roledex key={entry.sys.id} title={roledex.title} sheets={roledex.sheets} />
       case "freeContent":
         const freeContent = entry.fields as FreeContentType

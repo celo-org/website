@@ -121,6 +121,7 @@ export interface InfoSheetContentType {
 export interface RoledexContentType {
   title: string
   sheets: Entry<InfoSheetContentType>[]
+  variant?: "timeline"
 }
 
 export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
