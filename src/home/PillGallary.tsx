@@ -2,15 +2,36 @@ import { css, CSSObject } from "@emotion/react"
 import { Entry } from "contentful"
 import { colors } from "src/colors"
 import { Heading } from "src/contentful/grid2-cells/Heading"
-import { flex, flexRow, jost, WHEN_TABLET } from "src/estyles"
+import { flex, flexRow, jost, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
 import { GalleryItem, HeadingContentType } from "src/utils/contentful"
 import BackgroundImage from "src/home/eco-background.svg"
+import BackgroundImageMobile from "src/home/mobile-bubbles.svg"
+import { useScreenSize } from "src/layout/ScreenSize"
 interface Props {
   list: Entry<GalleryItem | HeadingContentType>[]
   cssStyle?: CSSObject
 }
 
 export default function PillGallery(props: Props) {
+  const { isMobile } = useScreenSize()
+
+  if (isMobile) {
+    const heading = props.list.find((item) => item.sys.contentType.sys.id === "heading")
+    const logos = props.list.filter((item) => item.sys.contentType.sys.id === "logoGalleryItem")
+    const halfPoint = logos.length / 2
+    return (
+      <div css={rootCss}>
+        <div css={css(center2Css, { marginBottom: 36 })}>
+          {logos.slice(0, halfPoint).map(renderLogo)}
+        </div>
+        <div css={headingAreaCss}>{renderLogo(heading)}</div>
+        <div css={css(center2Css, { marginBottom: 36 })}>
+          {logos.slice(halfPoint, logos.length - 1).map(renderLogo)}
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div css={rootCss}>
       <div css={css(center2Css, { marginBottom: 36 })}>
@@ -58,6 +79,7 @@ function renderLogo(item) {
 const rootCss = css(flex, {
   backgroundColor: colors.dark,
   backgroundImage: `url(${BackgroundImage.src})`,
+  backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   backgroundSize: "contain",
   paddingTop: 56,
@@ -65,21 +87,32 @@ const rootCss = css(flex, {
   [WHEN_TABLET]: {
     backgroundSize: "cover",
   },
+  [WHEN_MOBILE]: {
+    backgroundImage: `url(${BackgroundImageMobile.src})`,
+  },
 })
 
-const center2Css = css(flexRow, {
+const pillRowCommon = css(flexRow, {
+  alignItems: "center",
+  [WHEN_MOBILE]: {
+    flexWrap: "wrap",
+  },
+})
+
+const headingAreaCss = css({
+  marginBottom: 36,
+})
+
+const center2Css = css(pillRowCommon, {
   justifyContent: "center",
-  alignItems: "center",
 })
 
-const aroundSpace = css(flexRow, {
+const aroundSpace = css(pillRowCommon, {
   justifyContent: "space-around",
-  alignItems: "center",
 })
 
-const evenlySpace = css(flexRow, {
+const evenlySpace = css(pillRowCommon, {
   justifyContent: "space-evenly",
-  alignItems: "center",
 })
 
 function Pill({ logo }: { logo: GalleryItem }) {
@@ -179,7 +212,7 @@ const Hues = [
 
 const pillCss = css(flexRow, {
   margin: 5,
-  padding: "0px 15px",
+  padding: "0px 12px",
   height: 64,
   width: "fit-content",
   backgroundColor: colors.white,
@@ -187,9 +220,21 @@ const pillCss = css(flexRow, {
   alignItems: "center",
   justifyContent: "space-evenly",
   textDecoration: "none",
+  [WHEN_MOBILE]: {
+    height: 56,
+    marginBottom: 12,
+    marginTop: 12,
+  },
   "&:visited": {
     textDecoration: "none",
     color: "inherit",
+  },
+  img: {
+    maxHeight: "100%",
+    objectFit: "contain",
+    [WHEN_MOBILE]: {
+      height: 48,
+    },
   },
 })
 
