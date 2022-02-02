@@ -160,6 +160,7 @@ export interface FreeContentType {
   cssStyle: CSSObject
   listStyleImage?: Asset
   body: Document
+  fade?: boolean
 }
 
 export interface PlaylistContentType {
