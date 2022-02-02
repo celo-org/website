@@ -6,7 +6,7 @@ import { HeadingContentType } from "src/utils/contentful"
 import { flex, fonts, whiteText } from "src/estyles"
 
 interface Props {
-  span: number
+  span?: number
   darkMode: boolean
 }
 
@@ -24,7 +24,7 @@ export function Heading(props: Props & HeadingContentType) {
 
   const imageFile = props.image?.fields?.file
   return (
-    <div css={css(rootCss, props.cssStyle, { gridColumn: `span ${props.span}` })}>
+    <div css={css(rootCss, props.cssStyle, props.span && { gridColumn: `span ${props.span}` })}>
       {imageFile && (
         <img
           src={imageFile.url}

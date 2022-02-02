@@ -18,25 +18,14 @@ export const getServerSideProps: GetServerSideProps<Props> = async function getS
   }
 
   const sections = page.sections as Entry<GridRowContentType | HomeCoverProps | LogoGallery>[]
-  const cover = sections.find(finder("cover")) as Entry<HomeCoverProps>
-  const filtered = sections.filter(
-    ({
-      sys: {
-        contentType: { sys },
-      },
-    }) => sys.id === "grid-row" || sys.id === "horizontal"
-  ) as Entry<GridRowContentType>[]
 
   return {
     props: {
       ...(await serverSideTranslations(locale || "en", [NameSpaces.common, NameSpaces.home])),
       ...page,
-      cover: cover?.fields,
-      sections: filtered,
+      sections,
     },
   }
 }
-
-const finder = (key) => (section) => section.sys.contentType.sys.id === key
 
 export default Home
