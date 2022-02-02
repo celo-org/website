@@ -43,9 +43,9 @@ const rootCss = css(flex, {
   [WHEN_MOBILE]: {
     flexBasis: "0%",
     padding: "24px 36px",
-    filter: "drop-shadow(0px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 54px #353D45)",
-    boxShadow: "0px 2px 54px #353D45",
-    borderRadius: 4,
+    filter: "drop-shadow(1px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 36px #353D45)",
+    boxShadow: "none",
+    borderRadius: 6,
   },
   [WHEN_TABLET]: {
     padding: "24px 32px 16px 32px",

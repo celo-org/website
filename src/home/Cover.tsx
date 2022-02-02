@@ -13,6 +13,7 @@ import { Document } from "@contentful/rich-text-types"
 import { Asset, Entry } from "contentful"
 import { ContentfulButton } from "src/utils/contentful"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import renderers from "src/contentful/nodes/enodes"
 
 import Button, { SIZE } from "src/shared/Button.3"
 import Stats from "./stats/Stats"
@@ -31,7 +32,12 @@ export interface Props {
 }
 
 export default function Cover(props: Props) {
-  const backgroundImageCss = css({ backgroundImage: `url(${props.imageDesktop.fields.file.url})` })
+  const backgroundImageCss = css({
+    backgroundImage: `url(${props.imageDesktop.fields.file.url})`,
+    [WHEN_MOBILE]: {
+      backgroundImage: `url(${props.imageMobile?.fields?.file?.url})`,
+    },
+  })
 
   return (
     <div css={css(wrapperCss, backgroundImageCss)}>
@@ -39,11 +45,12 @@ export default function Cover(props: Props) {
         <div css={contentCss}>
           {props.title && (
             <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
-              {props.title} <Marquee marquee={props.marquee} />
+              {props.title} <br css={mobileOnly} />
+              <Marquee marquee={props.marquee} />
             </h1>
           )}
           <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
-            {documentToReactComponents(props.subTitle)}
+            {documentToReactComponents(props.subTitle, { renderNode: renderers })}
           </span>
 
           <div css={linkAreaCss}>
@@ -66,6 +73,12 @@ export default function Cover(props: Props) {
     </div>
   )
 }
+
+const mobileOnly = css({
+  [WHEN_TABLET_AND_UP]: {
+    display: "none",
+  },
+})
 
 const DURATION = 3000
 
@@ -116,7 +129,7 @@ const animatedWordsCss = css({
   display: "inline-block",
   textAlign: "left",
   [WHEN_MOBILE]: {
-    minWidth: 180,
+    minWidth: 0,
   },
 })
 
@@ -134,6 +147,7 @@ const wrapperCss = css(flex, {
   [WHEN_MOBILE]: {
     alignContent: "center",
     minHeight: "80vh",
+    paddingBottom: 48,
   },
   [WHEN_TABLET]: {
     minHeight: "85vh",
@@ -153,6 +167,7 @@ const rootCss = css(flex, {
   flex: 1,
   [WHEN_MOBILE]: {
     flexDirection: "column",
+    marginTop: 80,
   },
 })
 
@@ -196,14 +211,15 @@ const contentCss = css(flex, {
 })
 
 const linkAreaCss = css(flexRow, {
-  marginTop: 24,
   [WHEN_MOBILE]: {
+    marginTop: 12,
     flexDirection: "column",
     "& > div": {
       marginBottom: 24,
     },
   },
   [WHEN_TABLET_AND_UP]: {
+    marginTop: 24,
     "& > div": {
       marginRight: 24,
       justifyContent: "center",
