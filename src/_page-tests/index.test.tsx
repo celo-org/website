@@ -6,6 +6,7 @@ import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import { Asset, Entry } from "contentful"
 import { BLOCKS } from "@contentful/rich-text-types"
+import { Props as HomeCoverProps } from "src/home/Cover"
 
 function blurbFactory(unique): Entry<BlurbProps> {
   return {
@@ -38,34 +39,6 @@ function blurbFactory(unique): Entry<BlurbProps> {
     update: () => this,
   }
 }
-
-const TestData: ContentfulPage<GridRowContentType> = {
-  title: "Celo Home",
-  description: "A description of Celo",
-  slug: "home",
-  darkNav: false,
-  sections: [
-    {
-      metadata: { tags: [] },
-      sys: {
-        id: "1",
-        type: "",
-        locale: "en",
-        createdAt: "2021-07-01",
-        updatedAt: "2021-07-01",
-        contentType: { sys: { id: "grid-row", type: "Link", linkType: "ContentType" } },
-      },
-      fields: {
-        id: "test",
-        columns: 3,
-        cells: [blurbFactory("romeo"), blurbFactory("soma"), blurbFactory("rico")],
-      },
-      toPlainObject: () => this,
-      update: () => this,
-    },
-  ],
-}
-
 const asset: Asset = {
   sys: {
     type: "image",
@@ -97,31 +70,71 @@ const asset: Asset = {
   toPlainObject: () => this,
 }
 
+const TestData: ContentfulPage<GridRowContentType | HomeCoverProps> = {
+  title: "Celo Home",
+  description: "A description of Celo",
+  slug: "home",
+  darkNav: false,
+  sections: [
+    {
+      toPlainObject: () => this,
+      update: () => this,
+      metadata: { tags: [] },
+      sys: {
+        id: "2",
+        locale: "en",
+        type: "",
+        createdAt: "2021-07-01",
+        updatedAt: "2021-07-01",
+        contentType: { sys: { id: "heading", type: "Link", linkType: "ContentType" } },
+      },
+      fields: {
+        title: "Test",
+        subTitle: {
+          nodeType: BLOCKS.DOCUMENT,
+          content: [
+            {
+              nodeType: BLOCKS.PARAGRAPH,
+              content: [{ nodeType: "text", value: "Built for Us", marks: [], data: {} }],
+              data: {},
+            },
+          ],
+          data: {},
+        },
+        marquee: ["One", "Two"],
+        links: [],
+        darkMode: true,
+        imageDesktop: asset,
+        imageMobile: asset,
+      },
+    },
+    {
+      metadata: { tags: [] },
+      sys: {
+        id: "1",
+        type: "",
+        locale: "en",
+        createdAt: "2021-07-01",
+        updatedAt: "2021-07-01",
+        contentType: { sys: { id: "grid-row", type: "Link", linkType: "ContentType" } },
+      },
+      fields: {
+        id: "test",
+        columns: 3,
+        cells: [blurbFactory("romeo"), blurbFactory("soma"), blurbFactory("rico")],
+      },
+      toPlainObject: () => this,
+      update: () => this,
+    },
+  ],
+}
+
 describe("HomePage", () => {
   it("renders", async () => {
     const tree = renderer
       .create(
         <TestProvider>
           <HomePage
-            cover={{
-              title: "Test",
-              subTitle: {
-                nodeType: BLOCKS.DOCUMENT,
-                content: [
-                  {
-                    nodeType: BLOCKS.PARAGRAPH,
-                    content: [{ nodeType: "text", value: "Built for Us", marks: [], data: {} }],
-                    data: {},
-                  },
-                ],
-                data: {},
-              },
-              marquee: ["One", "Two"],
-              links: [],
-              darkMode: true,
-              imageDesktop: asset,
-              imageMobile: asset,
-            }}
             darkNav={false}
             title={TestData.title}
             description={TestData.description}

@@ -18,7 +18,7 @@ export const pagePaths = {
     translucent: {
       backgroundHover: colors.darkTransparent,
     },
-    menuHidePoint: 24,
+    menuHidePoint: 0,
     menuHidePointMobile: 50,
   },
   ABOUT_US: {

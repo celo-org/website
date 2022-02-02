@@ -1,20 +1,17 @@
 import * as React from "react"
 import OpenGraph from "src/header/OpenGraph"
 import Cover, { Props as CoverProps } from "./Cover"
-import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
+import { ContentfulPage, GridRowContentType, LogoGallery } from "src/utils/contentful"
 import { GridRow } from "src/layout/Grid2"
 import { css } from "@emotion/react"
 import { cellSwitch } from "src/public-sector/cellSwitch"
 import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
 import { WHEN_DESKTOP } from "src/estyles"
+import PillGallery from "./PillGallary"
 
-interface OwnProps {
-  cover: CoverProps
-}
+export type Props = ContentfulPage<GridRowContentType | CoverProps | LogoGallery>
 
-export type Props = ContentfulPage<GridRowContentType> & OwnProps
-
-export default function Home({ cover, sections, title, description, openGraph }: Props) {
+export default function Home({ sections, title, description, openGraph }: Props) {
   return (
     <div css={rootCss}>
       <OpenGraph
@@ -23,17 +20,22 @@ export default function Home({ cover, sections, title, description, openGraph }:
         path={"/"}
         image={`https:${openGraph?.fields?.file?.url}`}
       />
-      <Cover
-        imageDesktop={cover.imageDesktop}
-        imageMobile={cover.imageMobile}
-        title={cover?.title}
-        subTitle={cover.subTitle}
-        links={cover.links}
-        darkMode={true}
-        marquee={cover?.marquee}
-      />
+
       {sections.map((section) => {
-        if (section.sys.contentType.sys.id === "grid-row") {
+        if (section.sys.contentType.sys.id === "cover") {
+          const cover = section.fields as CoverProps
+          return (
+            <Cover
+              imageDesktop={cover.imageDesktop}
+              imageMobile={cover.imageMobile}
+              title={cover?.title}
+              subTitle={cover.subTitle}
+              links={cover.links}
+              darkMode={cover.darkMode}
+              marquee={cover?.marquee}
+            />
+          )
+        } else if (section.sys.contentType.sys.id === "grid-row") {
           const fields = section.fields as GridRowContentType
           return (
             <GridRow
@@ -49,8 +51,11 @@ export default function Home({ cover, sections, title, description, openGraph }:
         } else if (section.sys.contentType.sys.id === "horizontal") {
           const hr = section.fields as HorizontalType
           return <HR key={section.sys.id} darkMode={hr.darkMode} />
+        } else if (section.sys.contentType.sys.id === "logoGallery") {
+          const gallery = section.fields as LogoGallery
+          return <PillGallery list={gallery.list} key={section.sys.id} />
         } else {
-          console.log("no rendered for", section.sys.contentType.sys.id)
+          console.info("no rendered for", section.sys.contentType.sys.id)
         }
       })}
     </div>
