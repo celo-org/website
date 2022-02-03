@@ -78,6 +78,9 @@ function renderLogo(item: Entry<GalleryItem | HeadingContentType>) {
 }
 
 const rootCss = css(flex, {
+  alignContent: "center",
+  alignItems: "center",
+  flex: 1,
   backgroundColor: colors.dark,
   backgroundImage: `url(${BackgroundImage.src})`,
   backgroundRepeat: "no-repeat",
@@ -94,6 +97,8 @@ const rootCss = css(flex, {
 })
 
 const pillRowCommon = css(flexRow, {
+  maxWidth: 1000,
+  width: "100%",
   alignItems: "center",
   [WHEN_MOBILE]: {
     flexWrap: "wrap",
