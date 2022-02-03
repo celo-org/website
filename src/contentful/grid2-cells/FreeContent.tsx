@@ -47,7 +47,14 @@ interface Props {
   darkMode: boolean
   listStyleImage?: Asset
   fadingEffect?: boolean
-  fade?: { delay: string }
+  fade?: SecondProps
+}
+
+interface SecondProps {
+  delay?: string
+  duration?: string
+  direction?: string
+  distance?: string
 }
 
 export function FreeContent({
