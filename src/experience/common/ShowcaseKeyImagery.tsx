@@ -1,27 +1,28 @@
 import * as React from "react"
-import { StyleSheet, Image, Text, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
+import Image from "next/image"
 import DownloadButton from "src/experience/brandkit/DownloadButton"
 import { AssetTypes } from "src/experience/brandkit/tracking"
 import { brandStyles } from "src/experience/common/constants"
-import AspectRatio from "src/shared/AspectRatio"
 import Fade from "src/shared/AwesomeFade"
 import Spinner from "src/shared/Spinner"
 import { fonts, standardStyles } from "src/styles"
 import { colors } from "src/colors"
+import { css } from "@emotion/react"
 
 interface Props {
   name: string
   description: string
   preview?: string
   uri: string
-  ratio: number
   loading: boolean
   size: number | "100%"
   assetType: AssetTypes
-  variant?: "circle" | "circle-white" | "circle-black"
+  width: number
+  height: number
 }
 
-export default React.memo(function Showcase({
+export default React.memo(function ShowcaseKeyImagery({
   name,
   description,
   preview,
@@ -29,8 +30,8 @@ export default React.memo(function Showcase({
   uri,
   assetType,
   size,
-  ratio,
-  variant,
+  width,
+  height,
 }: Props) {
   const trackingData = React.useMemo(
     () => ({ name: `${name} ${assetType}`, type: assetType }),
@@ -42,18 +43,19 @@ export default React.memo(function Showcase({
       <Fade duration={FADE_MS}>
         <View>
           <View style={styles.previewContainer}>
-            <AspectRatio ratio={ratio}>
-              {loading ? (
-                <Spinner color={colors.primary} size="small" />
-              ) : (
-                <Image
-                  resizeMode="contain"
-                  accessibilityLabel={`Preview of ${name}`}
-                  source={{ uri: preview }}
-                  style={[standardStyles.image, styles[`variant-${variant}`]]}
-                />
-              )}
-            </AspectRatio>
+            {loading ? (
+              <Spinner color={colors.primary} size="small" />
+            ) : (
+              <Image
+                src={preview}
+                unoptimized={true}
+                alt={description}
+                objectFit={"cover"}
+                height={height}
+                width={width}
+                css={keyImagery}
+              />
+            )}
           </View>
           <View style={styles.text}>
             {name && <Text style={titleStyle}>{name.trimLeft()}</Text>}
@@ -72,18 +74,15 @@ const styles = StyleSheet.create({
   title: { marginVertical: 5 },
   previewContainer: {
     marginVertical: 20,
+    marginRight: 20,
   },
   text: { flex: 1 },
   pullStart: { paddingLeft: 0 },
   "variant-circle": {
     borderRadius: 60,
   },
-  "variant-circle-white": {
-    borderRadius: 60,
-    boxShadow: `inset 0 0 0 1px ${colors.placeholderGray}`,
-  },
-  "variant-circle-black": {
-    borderRadius: 60,
-    backgroundColor: "#000000",
-  },
+})
+
+const keyImagery = css({
+  borderRadius: 8,
 })

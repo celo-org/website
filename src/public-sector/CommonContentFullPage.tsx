@@ -62,7 +62,9 @@ export default function CommonPage(props: Props) {
         description={props.description}
         path={props.slug}
       />
-      <div css={rootCss}>{props.sections.map(pageSwitch)}</div>
+      <div className={props.className} css={rootCss}>
+        {props.sections.map(pageSwitch)}
+      </div>
     </>
   )
 }

@@ -46,6 +46,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             fields={formFields.fields}
             colSpan={formFields.colSpan}
             submitText={formFields.submitText}
+            darkMode={darkMode}
           />
         )
       case "proposition":

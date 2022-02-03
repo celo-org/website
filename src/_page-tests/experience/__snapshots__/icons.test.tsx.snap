@@ -3111,7 +3111,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           style={
                             Object {
                               "marginBottom": "20px",
-                              "marginRight": "40px",
                               "marginTop": "20px",
                             }
                           }
@@ -3350,7 +3349,6 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           style={
                             Object {
                               "marginBottom": "20px",
-                              "marginRight": "40px",
                               "marginTop": "20px",
                             }
                           }
