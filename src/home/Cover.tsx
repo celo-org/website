@@ -14,7 +14,7 @@ import { Asset, Entry } from "contentful"
 import { ContentfulButton } from "src/utils/contentful"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import renderers from "src/contentful/nodes/enodes"
-
+import { useEffect } from "react"
 import Button, { SIZE } from "src/shared/Button.3"
 import Stats from "./stats/Stats"
 import { colors } from "src/colors"
@@ -44,10 +44,7 @@ export default function Cover(props: Props) {
       <div css={rootCss}>
         <div css={contentCss}>
           {props.title && (
-            <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
-              {props.title} <br css={mobileOnly} />
-              <Marquee marquee={props.marquee} />
-            </h1>
+            <Title title={props.title} marquee={props.marquee} darkMode={props.darkMode} />
           )}
           <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
             {documentToReactComponents(props.subTitle, { renderNode: renderers })}
@@ -81,6 +78,29 @@ const mobileOnly = css({
 })
 
 const DURATION = 3000
+
+function Title(props: Pick<Props, "title" | "darkMode" | "marquee">) {
+  const [showAnimation, setShowAnimation] = useState(false)
+
+  // Wait until after client-side hydration to show to avoid useLayoutIssues with SSR
+  useEffect(() => {
+    setShowAnimation(true)
+  }, [])
+
+  return (
+    <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
+      {props.title} <br css={mobileOnly} />
+      {showAnimation ? (
+        <Marquee marquee={props.marquee} />
+      ) : (
+        <em key={props.marquee[0]} css={animatedWordsCss}>
+          {" "}
+          {props.marquee[0]}
+        </em>
+      )}
+    </h1>
+  )
+}
 
 function Marquee({ marquee }: { marquee: string[] }) {
   const [index, setIndex] = useState(0)

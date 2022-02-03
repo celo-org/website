@@ -33,6 +33,7 @@ export default function Home({ sections, title, description, openGraph }: Props)
               links={cover.links}
               darkMode={cover.darkMode}
               marquee={cover?.marquee}
+              key={section.sys.id}
             />
           )
         } else if (section.sys.contentType.sys.id === "grid-row") {
