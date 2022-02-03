@@ -20,7 +20,6 @@ import * as React from "react"
 import Picture from "./Picture"
 import Editorial from "src/contentful/grid2-cells/Editorial"
 import Timeline from "src/home/Timeline"
-import AwesomeFade from "src/shared/AwesomeFade"
 
 export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
@@ -33,7 +32,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
         return <Roledex key={entry.sys.id} title={roledex.title} sheets={roledex.sheets} />
       case "freeContent":
         const freeContent = entry.fields as FreeContentType
-        return !freeContent.fade ? (
+        return (
           <FreeContent
             key={entry.sys.id}
             colSpan={freeContent.colSpan}
@@ -42,19 +41,9 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             darkMode={darkMode}
             cssStyle={freeContent.cssStyle}
             listStyleImage={freeContent.listStyleImage}
+            fadingEffect={freeContent.fadingEffect}
+            fade={freeContent.fade}
           />
-        ) : (
-          <AwesomeFade reverse={false} delay={1000}>
-            <FreeContent
-              key={entry.sys.id}
-              colSpan={freeContent.colSpan}
-              rowSpan={freeContent.rowSpan}
-              body={freeContent.body}
-              darkMode={darkMode}
-              cssStyle={freeContent.cssStyle}
-              listStyleImage={freeContent.listStyleImage}
-            />
-          </AwesomeFade>
         )
       case "form":
         const formFields = entry.fields as FormContentType
