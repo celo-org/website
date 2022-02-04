@@ -4,7 +4,7 @@ import { Asset, createClient, Entry, EntryCollection } from "contentful"
 import getConfig from "next/config"
 import { Page as SideBarEntry } from "src/experience/common/Sidebar"
 import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
-import { BTN } from "src/shared/Button.3"
+import { BTN, SIZE } from "src/shared/Button.3"
 import { fetchCached, MINUTE } from "src/../server/cache"
 import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 
@@ -107,8 +107,11 @@ export interface ContentfulButton {
   name: string
   href: string
   assetLink?: Asset
+  iconLeft?: Asset
+  size?: SIZE
   words: string
   kind: BTN
+  align?: "center" | "flex-start" | "flex-end"
 }
 
 export interface InfoSheetContentType {

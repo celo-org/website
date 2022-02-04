@@ -13,7 +13,8 @@ import { Document } from "@contentful/rich-text-types"
 import { Asset, Entry } from "contentful"
 import { ContentfulButton } from "src/utils/contentful"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-
+import renderers from "src/contentful/nodes/enodes"
+import { useEffect } from "react"
 import Button, { SIZE } from "src/shared/Button.3"
 import Stats from "./stats/Stats"
 import { colors } from "src/colors"
@@ -31,19 +32,22 @@ export interface Props {
 }
 
 export default function Cover(props: Props) {
-  const backgroundImageCss = css({ backgroundImage: `url(${props.imageDesktop.fields.file.url})` })
+  const backgroundImageCss = css({
+    backgroundImage: `url(${props.imageDesktop.fields.file.url})`,
+    [WHEN_MOBILE]: {
+      backgroundImage: `url(${props.imageMobile?.fields?.file?.url})`,
+    },
+  })
 
   return (
     <div css={css(wrapperCss, backgroundImageCss)}>
       <div css={rootCss}>
         <div css={contentCss}>
           {props.title && (
-            <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
-              {props.title} <Marquee marquee={props.marquee} />
-            </h1>
+            <Title title={props.title} marquee={props.marquee} darkMode={props.darkMode} />
           )}
           <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
-            {documentToReactComponents(props.subTitle)}
+            {documentToReactComponents(props.subTitle, { renderNode: renderers })}
           </span>
 
           <div css={linkAreaCss}>
@@ -67,7 +71,36 @@ export default function Cover(props: Props) {
   )
 }
 
+const mobileOnly = css({
+  [WHEN_TABLET_AND_UP]: {
+    display: "none",
+  },
+})
+
 const DURATION = 3000
+
+function Title(props: Pick<Props, "title" | "darkMode" | "marquee">) {
+  const [showAnimation, setShowAnimation] = useState(false)
+
+  // Wait until after client-side hydration to show to avoid useLayoutIssues with SSR
+  useEffect(() => {
+    setShowAnimation(true)
+  }, [])
+
+  return (
+    <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
+      {props.title} <br css={mobileOnly} />
+      {showAnimation ? (
+        <Marquee marquee={props.marquee} />
+      ) : (
+        <em key={props.marquee[0]} css={animatedWordsCss}>
+          {" "}
+          {props.marquee[0]}
+        </em>
+      )}
+    </h1>
+  )
+}
 
 function Marquee({ marquee }: { marquee: string[] }) {
   const [index, setIndex] = useState(0)
@@ -116,7 +149,7 @@ const animatedWordsCss = css({
   display: "inline-block",
   textAlign: "left",
   [WHEN_MOBILE]: {
-    minWidth: 180,
+    minWidth: 0,
   },
 })
 
@@ -134,6 +167,7 @@ const wrapperCss = css(flex, {
   [WHEN_MOBILE]: {
     alignContent: "center",
     minHeight: "80vh",
+    paddingBottom: 48,
   },
   [WHEN_TABLET]: {
     minHeight: "85vh",
@@ -153,6 +187,7 @@ const rootCss = css(flex, {
   flex: 1,
   [WHEN_MOBILE]: {
     flexDirection: "column",
+    marginTop: 80,
   },
 })
 
@@ -196,14 +231,15 @@ const contentCss = css(flex, {
 })
 
 const linkAreaCss = css(flexRow, {
-  marginTop: 24,
   [WHEN_MOBILE]: {
+    marginTop: 12,
     flexDirection: "column",
     "& > div": {
       marginBottom: 24,
     },
   },
   [WHEN_TABLET_AND_UP]: {
+    marginTop: 24,
     "& > div": {
       marginRight: 24,
       justifyContent: "center",

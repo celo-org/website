@@ -55,12 +55,13 @@ export default function PillGallery(props: Props) {
   )
 }
 
-function renderLogo(item) {
+function renderLogo(item: Entry<GalleryItem | HeadingContentType>) {
   switch (item.sys.contentType.sys.id) {
     case "heading":
       const heading = item.fields as HeadingContentType
       return (
         <Heading
+          key={item.sys.id}
           image={heading.image}
           title={heading.title}
           subTitle={heading.subTitle}
@@ -70,13 +71,16 @@ function renderLogo(item) {
       )
     case "logoGalleryItem":
       const logo = item.fields as GalleryItem
-      return <Pill logo={logo} />
+      return <Pill logo={logo} key={item.sys.id} />
     default:
       return null
   }
 }
 
 const rootCss = css(flex, {
+  alignContent: "center",
+  alignItems: "center",
+  flex: 1,
   backgroundColor: colors.dark,
   backgroundImage: `url(${BackgroundImage.src})`,
   backgroundRepeat: "no-repeat",
@@ -93,6 +97,8 @@ const rootCss = css(flex, {
 })
 
 const pillRowCommon = css(flexRow, {
+  maxWidth: 1000,
+  width: "100%",
   alignItems: "center",
   [WHEN_MOBILE]: {
     flexWrap: "wrap",

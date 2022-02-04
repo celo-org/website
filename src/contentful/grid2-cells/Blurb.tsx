@@ -78,6 +78,11 @@ export default function Blurb(props: Props) {
           text={props.link.fields.words}
           kind={props.link.fields.kind}
           size={SIZE.normal}
+          iconLeft={
+            props.link.fields.iconLeft ? (
+              <img src={props.link.fields.iconLeft.fields.file.url} />
+            ) : null
+          }
           target={
             props.link.fields.assetLink?.fields?.file?.url ||
             (props.link.fields.href?.startsWith("http") && "_blank")
