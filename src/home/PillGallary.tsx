@@ -2,57 +2,83 @@ import { css, CSSObject } from "@emotion/react"
 import { Entry } from "contentful"
 import { colors } from "src/colors"
 import { Heading } from "src/contentful/grid2-cells/Heading"
-import { flex, flexRow, jost, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import {
+  flex,
+  flexRow,
+  jost,
+  WHEN_DESKTOP,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+  WHEN_TABLET_AND_UP,
+} from "src/estyles"
 import { GalleryItem, HeadingContentType } from "src/utils/contentful"
 import BackgroundImage from "src/home/eco-background.svg"
 import BackgroundImageMobile from "src/home/mobile-bubbles.svg"
 import { useScreenSize } from "src/layout/ScreenSize"
+
 interface Props {
   list: Entry<GalleryItem | HeadingContentType>[]
   cssStyle?: CSSObject
+  formation: "TwoFourTwoRepeat" | "ThreeByFour"
 }
 
 export default function PillGallery(props: Props) {
   const { isMobile } = useScreenSize()
 
-  if (isMobile) {
-    const heading = props.list.find((item) => item.sys.contentType.sys.id === "heading")
-    const logos = props.list.filter((item) => item.sys.contentType.sys.id === "logoGalleryItem")
-    const halfPoint = logos.length / 2
+  if (props.formation === "TwoFourTwoRepeat") {
+    if (isMobile) {
+      const heading = props.list.find((item) => item.sys.contentType.sys.id === "heading")
+      const logos = props.list.filter((item) => item.sys.contentType.sys.id === "logoGalleryItem")
+      const halfPoint = logos.length / 2
+      return (
+        <div css={rootCss}>
+          <div css={css(center2Css, { marginBottom: 36 })}>
+            {logos.slice(0, halfPoint).map(renderLogo)}
+          </div>
+          <div css={headingAreaCss}>{renderLogo(heading)}</div>
+          <div css={css(center2Css, { marginBottom: 36 })}>
+            {logos.slice(halfPoint, logos.length - 1).map(renderLogo)}
+          </div>
+        </div>
+      )
+    }
     return (
       <div css={rootCss}>
         <div css={css(center2Css, { marginBottom: 36 })}>
-          {logos.slice(0, halfPoint).map(renderLogo)}
+          {props.list.slice(0, 2).map(renderLogo)}
         </div>
-        <div css={headingAreaCss}>{renderLogo(heading)}</div>
+        <div css={css(aroundSpace, { marginBottom: 18 })}>
+          <div css={center2Css}>{props.list.slice(2, 4).map(renderLogo)}</div>
+          <div css={center2Css}>{props.list.slice(4, 6).map(renderLogo)}</div>
+        </div>
+        <div css={css(evenlySpace, { marginBottom: 24 })}>
+          {props.list.slice(6, 9).map(renderLogo)}
+        </div>
+        <div css={css(evenlySpace, { marginBottom: 24 })}>
+          <div css={center2Css}>{props.list.slice(9, 11).map(renderLogo)}</div>
+          <div css={center2Css}>{props.list.slice(11, 13).map(renderLogo)}</div>
+        </div>
         <div css={css(center2Css, { marginBottom: 36 })}>
-          {logos.slice(halfPoint, logos.length - 1).map(renderLogo)}
+          {props.list.slice(13, 16).map(renderLogo)}
         </div>
       </div>
     )
   }
 
-  return (
-    <div css={rootCss}>
-      <div css={css(center2Css, { marginBottom: 36 })}>
-        {props.list.slice(0, 2).map(renderLogo)}
+  if (props.formation === "ThreeByFour") {
+    return (
+      <div css={trippleRootCss}>
+        <div css={triple}>{props.list.slice(0, 3).map(renderLogo)}</div>
+        <div css={shiftLeft}>{props.list.slice(3, 6).map(renderLogo)}</div>
+        <div css={shiftRight}>{props.list.slice(6, 9).map(renderLogo)}</div>
+        {props.list.length > 9 && (
+          <div css={shiftLeft}>{props.list.slice(9, 12).map(renderLogo)}</div>
+        )}
       </div>
-      <div css={css(aroundSpace, { marginBottom: 18 })}>
-        <div css={center2Css}>{props.list.slice(2, 4).map(renderLogo)}</div>
-        <div css={center2Css}>{props.list.slice(4, 6).map(renderLogo)}</div>
-      </div>
-      <div css={css(evenlySpace, { marginBottom: 24 })}>
-        {props.list.slice(6, 9).map(renderLogo)}
-      </div>
-      <div css={css(evenlySpace, { marginBottom: 24 })}>
-        <div css={center2Css}>{props.list.slice(9, 11).map(renderLogo)}</div>
-        <div css={center2Css}>{props.list.slice(11, 13).map(renderLogo)}</div>
-      </div>
-      <div css={css(center2Css, { marginBottom: 36 })}>
-        {props.list.slice(13, 16).map(renderLogo)}
-      </div>
-    </div>
-  )
+    )
+  }
+
+  return null
 }
 
 function renderLogo(item) {
@@ -113,6 +139,36 @@ const aroundSpace = css(pillRowCommon, {
 
 const evenlySpace = css(pillRowCommon, {
   justifyContent: "space-evenly",
+})
+
+const triple = css(evenlySpace, {
+  width: "100%",
+  [WHEN_TABLET_AND_UP]: {
+    padding: "20px 40px",
+    maxWidth: 820,
+  },
+})
+
+const shiftLeft = css(triple, {
+  [WHEN_DESKTOP]: {
+    transform: "translateX(-10%)",
+  },
+  [WHEN_TABLET]: {
+    transform: "translateX(-5%)",
+  },
+})
+
+const shiftRight = css(triple, {
+  [WHEN_DESKTOP]: {
+    transform: "translateX(10%)",
+  },
+  [WHEN_TABLET]: {
+    transform: "translateX(5%)",
+  },
+})
+
+const trippleRootCss = css(rootCss, {
+  alignContent: "center",
 })
 
 function Pill({ logo }: { logo: GalleryItem }) {
