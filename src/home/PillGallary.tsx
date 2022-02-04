@@ -1,4 +1,4 @@
-import { css, CSSObject } from "@emotion/react"
+import { css, CSSObject, keyframes } from "@emotion/react"
 import { Entry } from "contentful"
 import { colors } from "src/colors"
 import { Heading } from "src/contentful/grid2-cells/Heading"
@@ -228,18 +228,19 @@ function getColor(word: string) {
   }
 }
 
+const X = -16
+const Y = 0
+const BLUR = 16
+
 function shadowCss() {
-  const X = -16
-  const Y = 0
-  const blur = 16
   return css({
-    filter: `drop-shadow(${X}px ${Y}px ${blur}px rgba(26, 232, 255, 0.5))`,
+    filter: `drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.5))`,
     transitionProperty: "filter transform",
     transitionDuration: "0.5s",
     willChange: "transform",
     "&:hover": {
       transform: "translateY(-4px)",
-      filter: `drop-shadow(${X + 2}px ${Y + 6}px ${blur * 1.2}px rgba(26, 232, 255, 0.5))`,
+      filter: `drop-shadow(${X + 2}px ${Y + 6}px ${BLUR * 1.2}px rgba(26, 232, 255, 0.5))`,
     },
   })
 }
@@ -267,7 +268,26 @@ const Hues = [
   Rainbow.violet,
 ]
 
+const focusFrames = keyframes`
+
+  0% {
+    opacity: 0.5;
+    filter: blur(12px) drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.5));
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px) drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.5));
+  }
+`
+
 const pillCss = css(flexRow, {
+  animation: focusFrames,
+  animationDuration: "1.5s",
+  animationPlayState: "running",
+  animationFillMode: "backwards",
+  animationIterationCount: 1,
+  animationDelay: "1s",
   margin: 5,
   padding: "4px 16px",
   minHeight: 64,
