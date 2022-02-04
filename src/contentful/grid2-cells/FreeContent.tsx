@@ -7,6 +7,8 @@ import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
 import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
 import { ROW } from "../nodes/embeds/ROW"
 import { Asset } from "contentful"
+import AwesomeFade from "src/shared/AwesomeFade"
+import { FaddingOptions } from "src/utils/contentful"
 
 const EMBEDDABLE = {
   ...BUTTON,
@@ -45,9 +47,20 @@ interface Props {
   cssStyle?: CSSObject
   darkMode: boolean
   listStyleImage?: Asset
+  fadingEffect?: boolean
+  fade?: FaddingOptions
 }
 
-export function FreeContent({ colSpan, rowSpan, body, cssStyle, darkMode, listStyleImage }: Props) {
+export function FreeContent({
+  colSpan,
+  rowSpan,
+  body,
+  cssStyle,
+  darkMode,
+  listStyleImage,
+  fade,
+  fadingEffect,
+}: Props) {
   const customBullets = listStyleImage
     ? {
         ul: {
@@ -64,9 +77,23 @@ export function FreeContent({ colSpan, rowSpan, body, cssStyle, darkMode, listSt
         rowSpan && { gridRow: `span ${rowSpan}` }
       )}
     >
-      <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
-        {documentToReactComponents(body, OPTIONS)}
-      </div>
+      {!fadingEffect ? (
+        <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
+          {documentToReactComponents(body, OPTIONS)}
+        </div>
+      ) : (
+        <AwesomeFade
+          delay={fade.delay}
+          duration={fade.duration}
+          direction={fade.direction}
+          distance={fade.distance}
+          reverse={false}
+        >
+          <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
+            {documentToReactComponents(body, OPTIONS)}
+          </div>
+        </AwesomeFade>
+      )}
     </div>
   )
 }

@@ -41,6 +41,8 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             darkMode={darkMode}
             cssStyle={freeContent.cssStyle}
             listStyleImage={freeContent.listStyleImage}
+            fadingEffect={freeContent.fadingEffect}
+            fade={freeContent.fade}
           />
         )
       case "form":

@@ -163,6 +163,15 @@ export interface FreeContentType {
   cssStyle: CSSObject
   listStyleImage?: Asset
   body: Document
+  fade?: FaddingOptions
+  fadingEffect?: boolean
+}
+
+export interface FaddingOptions {
+  delay?: number
+  duration?: number
+  direction?: number
+  distance?: number
 }
 
 export interface PlaylistContentType {
