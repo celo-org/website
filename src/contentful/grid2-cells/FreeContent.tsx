@@ -83,10 +83,10 @@ export function FreeContent({
         </div>
       ) : (
         <AwesomeFade
-          delay={Number(fade.delay)}
-          duration={Number(fade.duration)}
-          direction={Number(fade.direction)}
-          distance={Number(fade.distance)}
+          delay={fade.delay}
+          duration={fade.duration}
+          direction={fade.direction}
+          distance={fade.distance}
           reverse={false}
         >
           <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
