@@ -163,11 +163,11 @@ export interface FreeContentType {
   cssStyle: CSSObject
   listStyleImage?: Asset
   body: Document
-  fade?: FaddingEffect
+  fade?: FaddingOptions
   fadingEffect?: boolean
 }
 
-export interface FaddingEffect {
+export interface FaddingOptions {
   delay?: number
   duration?: number
   direction?: number

@@ -8,7 +8,7 @@ import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
 import { ROW } from "../nodes/embeds/ROW"
 import { Asset } from "contentful"
 import AwesomeFade from "src/shared/AwesomeFade"
-import { FaddingEffect } from "src/utils/contentful"
+import { FaddingOptions } from "src/utils/contentful"
 
 const EMBEDDABLE = {
   ...BUTTON,
@@ -48,7 +48,7 @@ interface Props {
   darkMode: boolean
   listStyleImage?: Asset
   fadingEffect?: boolean
-  fade?: FaddingEffect
+  fade?: FaddingOptions
 }
 
 export function FreeContent({
