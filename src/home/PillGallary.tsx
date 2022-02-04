@@ -239,7 +239,7 @@ function shadowCss() {
     transitionDuration: "0.5s",
     willChange: "transform",
     "&:hover": {
-      transform: "translateY(-4px)",
+      transform: "translateY(-2px)",
       filter: `drop-shadow(${X + 2}px ${Y + 6}px ${BLUR * 1.2}px rgba(26, 232, 255, 0.5))`,
     },
   })
