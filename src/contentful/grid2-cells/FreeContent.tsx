@@ -88,6 +88,7 @@ export function FreeContent({
           direction={fade.direction}
           distance={fade.distance}
           reverse={false}
+          triggerOnce={true}
         >
           <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
             {documentToReactComponents(body, OPTIONS)}
