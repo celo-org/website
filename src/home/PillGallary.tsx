@@ -169,6 +169,7 @@ const shiftRight = css(triple, {
 
 const trippleRootCss = css(rootCss, {
   alignContent: "center",
+  alignItems: "center",
 })
 
 function Pill({ logo }: { logo: GalleryItem }) {
@@ -268,16 +269,17 @@ const Hues = [
 
 const pillCss = css(flexRow, {
   margin: 5,
-  padding: "0px 12px",
-  height: 64,
+  padding: "4px 16px",
+  minHeight: 64,
   width: "fit-content",
+  minWidth: 80,
   backgroundColor: colors.white,
   borderRadius: 50,
   alignItems: "center",
   justifyContent: "space-evenly",
   textDecoration: "none",
   [WHEN_MOBILE]: {
-    height: 56,
+    minHeight: 56,
     marginBottom: 12,
     marginTop: 12,
   },
@@ -286,7 +288,7 @@ const pillCss = css(flexRow, {
     color: "inherit",
   },
   img: {
-    maxHeight: "100%",
+    maxHeight: "calc(100% - 4px)",
     objectFit: "contain",
     [WHEN_MOBILE]: {
       height: 48,
