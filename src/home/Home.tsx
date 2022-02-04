@@ -54,7 +54,9 @@ export default function Home({ sections, title, description, openGraph }: Props)
           return <HR key={section.sys.id} darkMode={hr.darkMode} />
         } else if (section.sys.contentType.sys.id === "logoGallery") {
           const gallery = section.fields as LogoGallery
-          return <PillGallery list={gallery.list} key={section.sys.id} />
+          return (
+            <PillGallery formation={gallery.formation} list={gallery.list} key={section.sys.id} />
+          )
         } else {
           console.info("no rendered for", section.sys.contentType.sys.id)
         }

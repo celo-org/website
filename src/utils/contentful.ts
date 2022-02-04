@@ -250,6 +250,7 @@ export interface LogoGallery {
   name: string
   list: Entry<GalleryItem>[]
   cssStyle?: any
+  formation?: "TwoFourTwoRepeat" | "ThreeByFour"
 }
 
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {
