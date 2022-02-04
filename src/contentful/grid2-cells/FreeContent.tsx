@@ -8,6 +8,7 @@ import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
 import { ROW } from "../nodes/embeds/ROW"
 import { Asset } from "contentful"
 import AwesomeFade from "src/shared/AwesomeFade"
+import { FaddingEffect } from "src/utils/contentful"
 
 const EMBEDDABLE = {
   ...BUTTON,
@@ -47,14 +48,7 @@ interface Props {
   darkMode: boolean
   listStyleImage?: Asset
   fadingEffect?: boolean
-  fade?: SecondProps
-}
-
-interface SecondProps {
-  delay?: string
-  duration?: string
-  direction?: string
-  distance?: string
+  fade?: FaddingEffect
 }
 
 export function FreeContent({
@@ -88,7 +82,13 @@ export function FreeContent({
           {documentToReactComponents(body, OPTIONS)}
         </div>
       ) : (
-        <AwesomeFade delay={Number(fade.delay)} reverse={false}>
+        <AwesomeFade
+          delay={Number(fade.delay)}
+          duration={Number(fade.duration)}
+          direction={Number(fade.direction)}
+          distance={Number(fade.distance)}
+          reverse={false}
+        >
           <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
             {documentToReactComponents(body, OPTIONS)}
           </div>

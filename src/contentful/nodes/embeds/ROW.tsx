@@ -2,12 +2,12 @@ import { css, CSSObject } from "@emotion/react"
 import { flexRow, WHEN_MOBILE, jost } from "src/estyles"
 import { Entry } from "contentful"
 import { GalleryItem } from "src/utils/contentful"
-import { Props as ButtonShape } from "src/contentful/nodes/embeds/BUTTON"
+import { ContentfulButton } from "src/utils/contentful"
 import Button from "src/shared/Button.3"
 
 type Item = GalleryItem
 interface Props {
-  items: Entry<Item | ButtonShape>[]
+  items: Entry<Item | ContentfulButton>[]
   cssStyle?: CSSObject
   mobileCss?: CSSObject
 }
@@ -20,7 +20,7 @@ export const ROW = {
       {fields.items.map(({ fields, sys }) => {
         switch (sys.contentType.sys.id) {
           case "button":
-            const button = fields as ButtonShape
+            const button = fields as ContentfulButton
 
             return (
               <Button
@@ -29,6 +29,7 @@ export const ROW = {
                 kind={button.kind}
                 size={button.size}
                 align={button.align}
+                iconLeft={button.iconLeft ? <img src={button.iconLeft.fields.file.url} /> : null}
                 target={
                   button.assetLink?.fields?.file?.url ||
                   (button.href?.startsWith("http") && "_blank")

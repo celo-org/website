@@ -16,3 +16,4 @@ sandbox.tsx
 .env.development
 .env.local
 .env.production
+tsconfig.tsbuildinfo
