@@ -168,10 +168,10 @@ export interface FreeContentType {
 }
 
 export interface FaddingEffect {
-  delay?: string
-  duration?: string
-  direction?: string
-  distance?: string
+  delay?: number
+  duration?: number
+  direction?: number
+  distance?: number
 }
 
 export interface PlaylistContentType {
