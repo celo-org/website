@@ -38,20 +38,20 @@ const rootCss = css(flex, {
   flexDirection: "column",
   backgroundColor: colors.white,
   borderRadius: 128,
-  padding: "24px 40px",
   zIndex: 20,
   marginBottom: 60,
   boxShadow: "0px 0px 24px rgba(255, 255, 255, 0.16), 0px 0px 90px rgba(78, 236, 255, 0.85)",
   [WHEN_MOBILE]: {
     flexBasis: "0%",
-    padding: "24px 36px",
+    padding: "24px 18px 12px 18px",
     filter: "drop-shadow(1px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 36px #353D45)",
     boxShadow: "none",
-    borderRadius: 6,
+    borderRadius: 12,
+    marginBottom: 24,
   },
   [WHEN_TABLET]: {
-    borderRadius: 96,
-    padding: "32px 24px 40px 24px",
+    borderRadius: 72,
+    padding: "32px 20px 40px 20px",
   },
   [WHEN_DESKTOP]: {
     padding: "32px 32px 40px 32px",
@@ -68,7 +68,7 @@ const headingCss = css(sectionTitle, {
   marginTop: 4,
   paddingBottom: 16,
   [WHEN_MOBILE]: {
-    fontSize: 10,
+    fontSize: 16,
     marginBottom: 4,
     padding: 0,
     textAlign: "center",
@@ -83,14 +83,15 @@ const linkCss = css({
 const bodyCss = css(flex, {
   alignItems: "center",
   justifyContent: "space-between",
-  margin: "8px 0px",
+  maxWidth: 640,
+  margin: "8px 40px",
   [WHEN_TABLET_AND_UP]: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    columnGap: 24,
+    columnGap: 16,
   },
-  [WHEN_DESKTOP]: {
-    columnGap: 38,
+  [WHEN_TABLET]: {
+    margin: "8px 16px",
   },
   [WHEN_MOBILE]: {
     flexDirection: "column",
@@ -139,13 +140,9 @@ const valueCss = css(jost, {
   color: colors.dark,
   lineHeight: 1.2,
   textAlign: "center",
-  marginRight: 0,
   fontSize: 20,
   [WHEN_TABLET_AND_UP]: {
     fontSize: 24,
-  },
-  [WHEN_DESKTOP]: {
-    marginRight: 10,
   },
 })
 
@@ -157,7 +154,9 @@ const labelCss = css(jost, {
   whiteSpace: "nowrap",
   textDecorationLine: "none",
   [WHEN_MOBILE]: {
-    marginBottom: 12,
+    marginBottom: 20,
+    fontSize: 14,
+    lineHeight: "18px",
   },
 })
 

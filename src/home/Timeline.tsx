@@ -84,7 +84,7 @@ const eventCSS = css({
 })
 
 const contentsCss = css({
-  marginBottom: 32,
+  marginBottom: 16,
 })
 
 const titleCss = css(jost, {

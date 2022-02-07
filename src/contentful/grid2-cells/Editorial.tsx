@@ -5,14 +5,14 @@ import { flexRow, WHEN_DESKTOP } from "src/estyles"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Button, { SIZE } from "src/shared/Button.3"
 import { standardStyles } from "src/styles"
-
+import renderNode from "../nodes/enodes"
 type Props = EditorialType & { darkMode?: boolean }
 
 export default function Editorial(props: Props) {
   return (
     <article css={rootCss}>
       <div css={css(innerCSS, props.darkMode && darkModeText)}>
-        {documentToReactComponents(props.title)}
+        {documentToReactComponents(props.title, { renderNode })}
         <Button
           style={standardStyles.elementalMarginTop}
           href={props.button.fields.href || props.button.fields.assetLink?.fields?.file?.url}
@@ -31,7 +31,7 @@ export default function Editorial(props: Props) {
 }
 
 const rootCss = css(flexRow, {
-  padding: "16px 8px 16px 24px",
+  padding: "16px 16px 16px 16px",
   borderTop: `1px solid ${colors.gray}`,
   justifyContent: "space-between",
 })

@@ -234,19 +234,19 @@ function getColor(word: string) {
   }
 }
 
-const X = -16
+const X = -8
 const Y = 0
-const BLUR = 16
+const BLUR = 24
 
 function shadowCss() {
   return css({
-    filter: `drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.5))`,
+    filter: `drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.9))`,
     transitionProperty: "filter transform",
-    transitionDuration: "0.5s",
+    transitionDuration: "0.85s",
     willChange: "transform",
     "&:hover": {
       transform: "translateY(-2px)",
-      filter: `drop-shadow(${X + 2}px ${Y + 6}px ${BLUR * 1.2}px rgba(26, 232, 255, 0.5))`,
+      filter: `drop-shadow(${X + 2}px ${Y + 6}px ${BLUR * 1.2}px rgba(26, 232, 255, 0.9))`,
     },
   })
 }
@@ -278,12 +278,12 @@ const focusFrames = keyframes`
 
   0% {
     opacity: 0.5;
-    filter: blur(12px) drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.5));
+    filter: blur(12px) drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.9));
   }
 
   100% {
     opacity: 1;
-    filter: blur(0px) drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.5));
+    filter: blur(0px) drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.9));
   }
 `
 
@@ -294,7 +294,7 @@ const pillCss = css(flexRow, {
   animationFillMode: "backwards",
   animationIterationCount: 1,
   animationDelay: "1s",
-  margin: 5,
+  margin: "8px 12px",
   padding: "4px 16px",
   minHeight: 64,
   width: "fit-content",
@@ -306,8 +306,7 @@ const pillCss = css(flexRow, {
   textDecoration: "none",
   [WHEN_MOBILE]: {
     minHeight: 56,
-    marginBottom: 12,
-    marginTop: 12,
+    margin: "6px 12px",
   },
   "&:visited": {
     textDecoration: "none",
