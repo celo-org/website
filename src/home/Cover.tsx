@@ -25,30 +25,23 @@ export interface Props {
   title?: string
   subTitle: Document
   links: Entry<ContentfulButton>[]
-  imageDesktop: Asset
-  imageMobile: Asset
   darkMode: boolean
   marquee: string[]
 }
 
 export default function Cover(props: Props) {
-  const backgroundImageCss = css({
-    backgroundImage: `url(${props.imageDesktop.fields.file.url})`,
-    [WHEN_MOBILE]: {
-      backgroundImage: `url(${props.imageMobile?.fields?.file?.url})`,
-    },
-  })
-
   return (
-    <div css={css(wrapperCss, backgroundImageCss)}>
+    <div css={wrapperCss}>
       <div css={rootCss}>
         <div css={contentCss}>
           {props.title && (
             <Title title={props.title} marquee={props.marquee} darkMode={props.darkMode} />
           )}
-          <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerMobileCss)}>
-            {documentToReactComponents(props.subTitle, { renderNode: renderers })}
-          </span>
+          {props.subTitle && (
+            <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerText)}>
+              {documentToReactComponents(props.subTitle, { renderNode: renderers })}
+            </span>
+          )}
 
           <div css={linkAreaCss}>
             {props.links?.map((link) => (
@@ -71,32 +64,26 @@ export default function Cover(props: Props) {
   )
 }
 
-const mobileOnly = css({
-  [WHEN_TABLET_AND_UP]: {
-    display: "none",
-  },
-})
-
 const DURATION = 3000
 
 function Title(props: Pick<Props, "title" | "darkMode" | "marquee">) {
   const [showAnimation, setShowAnimation] = useState(false)
-
+  const shouldAnimate = (props.marquee?.length || 0) > 1
   // Wait until after client-side hydration to show to avoid useLayoutIssues with SSR
   useEffect(() => {
-    setShowAnimation(true)
-  }, [])
-
+    setShowAnimation(shouldAnimate)
+  }, [shouldAnimate])
+  const firstWord = props.marquee ? props.marquee[0] : ""
   return (
-    <h1 css={css(rH1, centerMobileCss, props.darkMode && whiteText)}>
-      {props.title} <br css={mobileOnly} />
+    <h1 css={css(rH1, centerText, props.darkMode && whiteText)}>
+      <strong>{props.title}</strong> <br />
       {showAnimation ? (
         <Marquee marquee={props.marquee} />
       ) : (
-        <em key={props.marquee[0]} css={animatedWordsCss}>
+        <span key={firstWord.replace(" ", "-")} css={nonAnimatedWord}>
           {" "}
-          {props.marquee[0]}
-        </em>
+          {firstWord}
+        </span>
       )}
     </h1>
   )
@@ -108,9 +95,9 @@ function Marquee({ marquee }: { marquee: string[] }) {
     setIndex(marquee.length - 1 === index ? 0 : index + 1)
   }, DURATION)
   return (
-    <em key={marquee[index]} css={animatedWordsCss}>
+    <span key={marquee[index]} css={animatedWordsCss}>
       {marquee[index]}
-    </em>
+    </span>
   )
 }
 
@@ -137,20 +124,23 @@ const animationKeyframes = keyframes`
   }
 `
 
-const animatedWordsCss = css({
+const nonAnimatedWord = css({
+  paddingLeft: 12,
+  minWidth: 280,
+  display: "inline-block",
+  textAlign: "center",
+  [WHEN_MOBILE]: {
+    minWidth: 0,
+  },
+})
+
+const animatedWordsCss = css(nonAnimatedWord, {
   animation: animationKeyframes,
   animationTimingFunction: "cubic-bezier(0.250, 0.460, 0.450, 0.940)",
   animationPlayState: "running",
   animationIterationCount: "1",
   animationFillMode: "both",
   animationDuration: `${DURATION}ms`,
-  paddingLeft: 12,
-  minWidth: 280,
-  display: "inline-block",
-  textAlign: "left",
-  [WHEN_MOBILE]: {
-    minWidth: 0,
-  },
 })
 
 const subTextCss = css({})
@@ -166,28 +156,20 @@ const wrapperCss = css(flex, {
   justifyContent: "space-between",
   [WHEN_MOBILE]: {
     alignContent: "center",
-    minHeight: "80vh",
-    paddingBottom: 48,
+    padding: "48px 6px",
   },
-  [WHEN_TABLET]: {
-    minHeight: "85vh",
-    height: "fit-content",
-  },
-  [WHEN_DESKTOP]: {
-    minHeight: "86vh",
-  },
+  padding: "80px 12px",
 })
 
 const rootCss = css(flex, {
-  marginTop: 120,
   width: "100%",
   height: "100%",
   overflow: "visible",
   alignItems: "center",
   flex: 1,
+  marginBottom: 40,
   [WHEN_MOBILE]: {
     flexDirection: "column",
-    marginTop: 80,
   },
 })
 
@@ -198,13 +180,11 @@ const statContentCss = css({
   paddingBottom: 24,
 })
 
-const centerMobileCss = css({
-  [WHEN_MOBILE]: {
-    textAlign: "center",
-  },
+const centerText = css({
+  textAlign: "center",
 })
 
-const subtitleDarkMode = css(whiteText, centerMobileCss, {
+const subtitleDarkMode = css(whiteText, centerText, {
   "h1, h2, h3, h4, p": whiteText,
 })
 
@@ -213,16 +193,7 @@ const contentCss = css(flex, {
   justifyContent: "center",
   flex: 1,
   width: "100%",
-  [WHEN_DESKTOP]: {
-    paddingBottom: 24,
-    paddingLeft: 40,
-    marginLeft: "20%",
-  },
-  [WHEN_TABLET]: {
-    paddingTop: 36,
-    paddingLeft: 16,
-    marginLeft: "10%",
-  },
+  padding: 24,
   [WHEN_MOBILE]: {
     padding: 16,
     maxWidth: 450,
@@ -239,9 +210,10 @@ const linkAreaCss = css(flexRow, {
     },
   },
   [WHEN_TABLET_AND_UP]: {
+    justifyContent: "center",
     marginTop: 24,
     "& > div": {
-      marginRight: 24,
+      marginLeft: 24,
       justifyContent: "center",
     },
   },

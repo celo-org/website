@@ -1,5 +1,5 @@
 import { css, keyframes } from "@emotion/react"
-import { flex, garamond, sectionTitle, jost, WHEN_DESKTOP, WHEN_TABLET_AND_UP } from "src/estyles"
+import { flex, sectionTitle, jost, WHEN_DESKTOP, WHEN_TABLET_AND_UP } from "src/estyles"
 import { memo } from "react"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
@@ -23,6 +23,7 @@ export default function Stats() {
         <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx" />
         <Datum value={`${avgBlockTime || 0}s`} title={t("statsAvgTime")} id="stat-time" />
         <CarbonStats />
+        <Datum value={`$0.001`} title={t("statsAvgFee")} id="avg-fee" />
       </div>
     </figure>
   )
@@ -30,16 +31,17 @@ export default function Stats() {
 
 const rootCss = css(flex, {
   opacity: 0,
+  maxWidth: 812,
   transitionProperty: "opacity",
   transitionDuration: "550ms",
   alignItems: "center",
   flexDirection: "column",
-  backgroundColor: colors.dark,
-  borderRadius: 16,
-  maxWidth: 724,
+  backgroundColor: colors.white,
+  borderRadius: 128,
   padding: "24px 40px",
   zIndex: 20,
-  boxShadow: "0px 1px 16px rgba(255, 255, 255, 0.16), 0px 0px 24px rgba(78, 236, 255, 0.6)",
+  marginBottom: 60,
+  boxShadow: "0px 0px 24px rgba(255, 255, 255, 0.16), 0px 0px 90px rgba(78, 236, 255, 0.85)",
   [WHEN_MOBILE]: {
     flexBasis: "0%",
     padding: "24px 36px",
@@ -48,7 +50,11 @@ const rootCss = css(flex, {
     borderRadius: 6,
   },
   [WHEN_TABLET]: {
-    padding: "24px 32px 16px 32px",
+    borderRadius: 96,
+    padding: "32px 24px 40px 24px",
+  },
+  [WHEN_DESKTOP]: {
+    padding: "32px 32px 40px 32px",
   },
 })
 
@@ -60,7 +66,7 @@ const headingCss = css(sectionTitle, {
   fontSize: 20,
   letterSpacing: 6,
   marginTop: 4,
-  paddingBottom: 10,
+  paddingBottom: 16,
   [WHEN_MOBILE]: {
     fontSize: 10,
     marginBottom: 4,
@@ -70,7 +76,7 @@ const headingCss = css(sectionTitle, {
 })
 
 const linkCss = css({
-  color: colors.white,
+  color: colors.dark,
   textDecoration: "none",
 })
 
@@ -80,7 +86,10 @@ const bodyCss = css(flex, {
   margin: "8px 0px",
   [WHEN_TABLET_AND_UP]: {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr",
+    gridTemplateColumns: "1fr 1fr 1fr 1fr",
+    columnGap: 24,
+  },
+  [WHEN_DESKTOP]: {
     columnGap: 38,
   },
   [WHEN_MOBILE]: {
@@ -102,7 +111,7 @@ export const Datum = memo<DatumProps>(function _Datum({ value, title, id, link }
     <div css={spanBodyCss}>
       <span
         key={`${id}-${special}`}
-        css={css(valueCss, special && specialCss)}
+        css={css(valueCss, special && specialCss, { width: `${(value?.length || 3) * 0.95}rem` })}
         aria-labelledby={id}
       >
         {value}
@@ -124,13 +133,10 @@ const spanBodyCss = css(flex, {
   alignItems: "center",
   flexDirection: "column",
   justifyContent: "center",
-  [WHEN_DESKTOP]: {
-    flexDirection: "row",
-  },
 })
 
-const valueCss = css(garamond, {
-  color: colors.white,
+const valueCss = css(jost, {
+  color: colors.dark,
   lineHeight: 1.2,
   textAlign: "center",
   marginRight: 0,
@@ -144,14 +150,14 @@ const valueCss = css(garamond, {
 })
 
 const labelCss = css(jost, {
-  color: colors.lightGray,
-  fontSize: 16,
-  lineHeight: "34px",
+  color: colors.dark,
+  fontSize: 12,
+  lineHeight: "18px",
   textAlign: "center",
   whiteSpace: "nowrap",
   textDecorationLine: "none",
   [WHEN_MOBILE]: {
-    fontSize: 12,
+    marginBottom: 12,
   },
 })
 
@@ -163,7 +169,7 @@ const hoverLabelCss = css(labelCss, {
 
 const celobration = keyframes`
   from {
-    color: white;
+    color: ${colors.dark};
     transform: scale(1) translateY(0);
   }
 
@@ -177,7 +183,7 @@ const celobration = keyframes`
   }
 
   to {
-    color: white;
+    color: ${colors.dark};
     transform: scale(1) translateY(0);
   }
 
