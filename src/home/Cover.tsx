@@ -1,16 +1,7 @@
 import { css, keyframes } from "@emotion/react"
-import {
-  flex,
-  flexRow,
-  fonts,
-  WHEN_DESKTOP,
-  WHEN_MOBILE,
-  WHEN_TABLET,
-  WHEN_TABLET_AND_UP,
-  whiteText,
-} from "src/estyles"
+import { flex, flexRow, fonts, WHEN_MOBILE, WHEN_TABLET_AND_UP, whiteText } from "src/estyles"
 import { Document } from "@contentful/rich-text-types"
-import { Asset, Entry } from "contentful"
+import { Entry } from "contentful"
 import { ContentfulButton } from "src/utils/contentful"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import renderers from "src/contentful/nodes/enodes"

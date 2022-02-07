@@ -26,13 +26,11 @@ export default function Home({ sections, title, description, openGraph }: Props)
           const cover = section.fields as CoverProps
           return (
             <Cover
-              imageDesktop={cover.imageDesktop}
-              imageMobile={cover.imageMobile}
-              title={cover?.title}
+              title={cover.title}
               subTitle={cover.subTitle}
               links={cover.links}
               darkMode={cover.darkMode}
-              marquee={cover?.marquee}
+              marquee={cover.marquee}
               key={section.sys.id}
             />
           )
