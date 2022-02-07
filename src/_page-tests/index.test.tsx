@@ -4,7 +4,7 @@ import * as renderer from "react-test-renderer"
 import { TestProvider } from "src/_page-tests/test-utils"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
-import { Asset, Entry } from "contentful"
+import { Entry } from "contentful"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { Props as HomeCoverProps } from "src/home/Cover"
 
@@ -39,36 +39,36 @@ function blurbFactory(unique): Entry<BlurbProps> {
     update: () => this,
   }
 }
-const asset: Asset = {
-  sys: {
-    type: "image",
-    id: "231",
-    createdAt: "",
-    updatedAt: "",
-    locale: "",
-    contentType: {
-      sys: { id: "1", linkType: "ContentType", type: "Link" },
-    },
-  },
-  fields: {
-    title: "Image",
-    description: "Description",
-    file: {
-      url: "/celo.jpg",
-      details: {
-        size: 100,
-        image: {
-          width: 100,
-          height: 100,
-        },
-      },
-      fileName: "celo.jpg",
-      contentType: "img/jpg",
-    },
-  },
-  metadata: { tags: [] },
-  toPlainObject: () => this,
-}
+// const asset: Asset = {
+//   sys: {
+//     type: "image",
+//     id: "231",
+//     createdAt: "",
+//     updatedAt: "",
+//     locale: "",
+//     contentType: {
+//       sys: { id: "1", linkType: "ContentType", type: "Link" },
+//     },
+//   },
+//   fields: {
+//     title: "Image",
+//     description: "Description",
+//     file: {
+//       url: "/celo.jpg",
+//       details: {
+//         size: 100,
+//         image: {
+//           width: 100,
+//           height: 100,
+//         },
+//       },
+//       fileName: "celo.jpg",
+//       contentType: "img/jpg",
+//     },
+//   },
+//   metadata: { tags: [] },
+//   toPlainObject: () => this,
+// }
 
 const TestData: ContentfulPage<GridRowContentType | HomeCoverProps> = {
   title: "Celo Home",
@@ -104,8 +104,6 @@ const TestData: ContentfulPage<GridRowContentType | HomeCoverProps> = {
         marquee: ["One", "Two"],
         links: [],
         darkMode: true,
-        imageDesktop: asset,
-        imageMobile: asset,
       },
     },
     {
