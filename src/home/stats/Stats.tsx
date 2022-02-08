@@ -8,20 +8,22 @@ import { colors } from "src/colors"
 import useStatsRelay from "./useStatsRelay"
 import CarbonStats from "./CarbonStats"
 
+const HUNDRED_MILL = 100000000
+
 export default function Stats() {
   const { t } = useTranslation(NameSpaces.home)
   const { avgBlockTime, totalTx } = useStatsRelay()
-  const allLoaded = avgBlockTime && totalTx
+  const totalTxDisplayed = totalTx ? totalTx?.toLocaleString() : `~${HUNDRED_MILL.toLocaleString}`
   return (
-    <figure aria-hidden={!allLoaded} css={css(rootCss, allLoaded && appear)}>
+    <figure css={rootCss}>
       <figcaption css={headingCss}>
         <a css={linkCss} target="_blank" href={"https://explorer.celo.org"} rel="noreferrer">
           {t("statsHeading")}
         </a>
       </figcaption>
       <div css={bodyCss}>
-        <Datum value={totalTx?.toLocaleString()} title={t("statsTransactions")} id="stat-tx" />
-        <Datum value={`${avgBlockTime || 0}s`} title={t("statsAvgTime")} id="stat-time" />
+        <Datum value={totalTxDisplayed} title={t("statsTransactions")} id="stat-tx" />
+        <Datum value={`${avgBlockTime || 5}s`} title={t("statsAvgTime")} id="stat-time" />
         <CarbonStats />
         <Datum value={`$0.001`} title={t("statsAvgFee")} id="avg-fee" />
       </div>
@@ -30,10 +32,7 @@ export default function Stats() {
 }
 
 const rootCss = css(flex, {
-  opacity: 0,
   maxWidth: 812,
-  transitionProperty: "opacity",
-  transitionDuration: "550ms",
   alignItems: "center",
   flexDirection: "column",
   backgroundColor: colors.white,
@@ -56,10 +55,6 @@ const rootCss = css(flex, {
   [WHEN_DESKTOP]: {
     padding: "32px 32px 40px 32px",
   },
-})
-
-const appear = css({
-  opacity: 1,
 })
 
 const headingCss = css(sectionTitle, {
@@ -112,7 +107,7 @@ export const Datum = memo<DatumProps>(function _Datum({ value, title, id, link }
     <div css={spanBodyCss}>
       <span
         key={`${id}-${special}`}
-        css={css(valueCss, special && specialCss, { width: `${(value?.length || 3) * 0.95}rem` })}
+        css={css(valueCss, special && specialCss, { width: `${(value?.length || 3) * 1}rem` })}
         aria-labelledby={id}
       >
         {value}
