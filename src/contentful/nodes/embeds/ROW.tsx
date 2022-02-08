@@ -43,7 +43,11 @@ export const ROW = {
             const imageFields = item?.image?.fields
             const size = imageFields?.file?.details?.image
             console.log(imageFields.file.contentType)
-            const isRetina = imageFields.file.contentType !== "image/svg+xml" && fields.retina && size.height && size.width
+            const isRetina =
+              imageFields.file.contentType !== "image/svg+xml" &&
+              fields.retina &&
+              size.height &&
+              size.width
             const rendered = (
               <div key={entry.sys.id} css={logoContainer}>
                 <img

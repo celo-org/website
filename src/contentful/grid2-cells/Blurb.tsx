@@ -49,8 +49,10 @@ export default function Blurb(props: Props) {
   const size = image?.details?.image
   const imageURL = image?.url
   const retinaMultiple = image.contentType === "image/svg+xml" ? 1 : props.retina || 1
-  const width = props.isNaturalSize && size.width ? size.width / retinaMultiple : props.newIcon ? 48 : 100
-  const height = props.isNaturalSize && size.height ? size.height / retinaMultiple : props.newIcon ? 48 : 100
+  const width =
+    props.isNaturalSize && size.width ? size.width / retinaMultiple : props.newIcon ? 48 : 100
+  const height =
+    props.isNaturalSize && size.height ? size.height / retinaMultiple : props.newIcon ? 48 : 100
 
   return (
     <div css={rootCss}>

@@ -27,7 +27,14 @@ export default function Editorial(props: Props) {
       </div>
       <picture>
         <source srcSet={`${props.image.fields.file.url} 2x`} />
-        <img css={imageCss} loading="lazy" alt={props.image.fields.description} src={props.image.fields.file.url} width={128} height={128} />
+        <img
+          css={imageCss}
+          loading="lazy"
+          alt={props.image.fields.description}
+          src={props.image.fields.file.url}
+          width={128}
+          height={128}
+        />
       </picture>
     </article>
   )
