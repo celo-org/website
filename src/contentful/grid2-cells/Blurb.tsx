@@ -10,7 +10,7 @@ import { Document, BLOCKS, Block } from "@contentful/rich-text-types"
 import renderNode, { renderWhiteParagraph } from "src/contentful/nodes/paragraph"
 import { ROW } from "src/contentful/nodes/embeds/ROW"
 import Image from "next/image"
-import { displayedImageSize, displayRetinaImage } from "../nodes/displayRetinaImage"
+import { displayedImageSize } from "../nodes/displayRetinaImage"
 enum Headings {
   "large" = "large",
   "medium" = "medium",
