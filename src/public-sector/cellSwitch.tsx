@@ -66,6 +66,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             title={blurbProp.title}
             titleType={blurbProp.titleType}
             body={blurbProp.body}
+            retina={blurbProp.retina}
             darkMode={darkMode}
             link={blurbProp.link}
             icon={blurbProp.icon}

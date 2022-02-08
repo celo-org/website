@@ -10,6 +10,7 @@ interface Props {
   items: Entry<Item | ContentfulButton>[]
   cssStyle?: CSSObject
   mobileCss?: CSSObject
+  retina?: 1 | 2
 }
 
 export const ROW = {
@@ -17,10 +18,10 @@ export const ROW = {
     <div
       css={css(rootStyle, fields.cssStyle, fields.mobileCss && { [WHEN_MOBILE]: fields.mobileCss })}
     >
-      {fields.items.map(({ fields, sys }) => {
-        switch (sys.contentType.sys.id) {
+      {fields.items.map((entry) => {
+        switch (entry.sys.contentType.sys.id) {
           case "button":
-            const button = fields as ContentfulButton
+            const button = entry.fields as ContentfulButton
 
             return (
               <Button
@@ -38,15 +39,18 @@ export const ROW = {
             )
 
           case "logoGalleryItem":
-            const item = fields as Item
+            const item = entry.fields as Item
             const imageFields = item?.image?.fields
+            const size = imageFields?.file?.details?.image
+            console.log(imageFields.file.contentType)
+            const isRetina = imageFields.file.contentType !== "image/svg+xml" && fields.retina && size.height && size.width
             const rendered = (
-              <div key={sys.id} css={logoContainer}>
+              <div key={entry.sys.id} css={logoContainer}>
                 <img
                   alt={imageFields?.description}
                   src={imageFields?.file?.url}
-                  width={imageFields?.file?.details?.image?.width}
-                  height={imageFields?.file?.details?.image?.height}
+                  width={isRetina ? size.width / fields.retina : size?.width}
+                  height={isRetina ? size.height / fields.retina : size?.height}
                 />
                 {item.title ? <p css={logoTitle}>{item.title}</p> : null}
               </div>
