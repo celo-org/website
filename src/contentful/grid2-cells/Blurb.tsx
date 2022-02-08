@@ -10,6 +10,7 @@ import { Document, BLOCKS, Block } from "@contentful/rich-text-types"
 import renderNode, { renderWhiteParagraph } from "src/contentful/nodes/paragraph"
 import { ROW } from "src/contentful/nodes/embeds/ROW"
 import Image from "next/image"
+import { displayedImageSize, displayRetinaImage } from "../nodes/displayRetinaImage"
 enum Headings {
   "large" = "large",
   "medium" = "medium",
@@ -46,13 +47,10 @@ const renderWhiteParagraphWithRow = { ...renderWhiteParagraph, ...embeddable }
 const renderParagraphWithRow = { ...renderNode, ...embeddable }
 export default function Blurb(props: Props) {
   const image = props.icon?.fields?.file
-  const size = image?.details?.image
   const imageURL = image?.url
-  const retinaMultiple = image.contentType === "image/svg+xml" ? 1 : props.retina || 1
-  const width =
-    props.isNaturalSize && size.width ? size.width / retinaMultiple : props.newIcon ? 48 : 100
-  const height =
-    props.isNaturalSize && size.height ? size.height / retinaMultiple : props.newIcon ? 48 : 100
+  const displayedSize = displayedImageSize(props.icon, props.retina)
+  const width = props.isNaturalSize ? displayedSize.width : props.newIcon ? 48 : 100
+  const height = props.isNaturalSize ? displayedSize.height : props.newIcon ? 48 : 100
 
   return (
     <div css={rootCss}>

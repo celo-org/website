@@ -4,6 +4,7 @@ import { Entry } from "contentful"
 import { GalleryItem } from "src/utils/contentful"
 import { ContentfulButton } from "src/utils/contentful"
 import Button from "src/shared/Button.3"
+import { displayedImageSize } from "../displayRetinaImage"
 
 type Item = GalleryItem
 interface Props {
@@ -41,20 +42,14 @@ export const ROW = {
           case "logoGalleryItem":
             const item = entry.fields as Item
             const imageFields = item?.image?.fields
-            const size = imageFields?.file?.details?.image
-            console.log(imageFields.file.contentType)
-            const isRetina =
-              imageFields.file.contentType !== "image/svg+xml" &&
-              fields.retina &&
-              size.height &&
-              size.width
+            const size = displayedImageSize(item.image, fields.retina)
             const rendered = (
               <div key={entry.sys.id} css={logoContainer}>
                 <img
                   alt={imageFields?.description}
                   src={imageFields?.file?.url}
-                  width={isRetina ? size.width / fields.retina : size?.width}
-                  height={isRetina ? size.height / fields.retina : size?.height}
+                  width={size.width}
+                  height={size.height}
                 />
                 {item.title ? <p css={logoTitle}>{item.title}</p> : null}
               </div>
