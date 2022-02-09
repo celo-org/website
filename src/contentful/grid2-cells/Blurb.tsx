@@ -84,9 +84,7 @@ export default function Blurb(props: Props) {
           text={props.link.fields.words}
           kind={props.link.fields.kind}
           size={
-            isMobile && props.link.fields.mobileSize
-              ? props.link.fields.mobileSize
-              : props.link.fields.size
+            isMobile && props.link.fields.mobileSize ? props.link.fields.mobileSize : SIZE.normal
           }
           iconLeft={
             props.link.fields.iconLeft ? (

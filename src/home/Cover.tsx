@@ -41,9 +41,7 @@ export default function Cover(props: Props) {
               <Button
                 align={"center"}
                 key={link.sys.id}
-                size={
-                  isMobile && link.fields.mobileSize ? link.fields.mobileSize : link.fields.size
-                }
+                size={isMobile && link.fields.mobileSize ? link.fields.mobileSize : SIZE.normal}
                 kind={link.fields.kind}
                 text={link.fields.words}
                 href={link.fields.href}
