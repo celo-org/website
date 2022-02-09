@@ -166,9 +166,6 @@ const rootCss = css(flex, {
 
 const statContentCss = css({
   justifySelf: "center",
-  position: "relative",
-  bottom: "12%",
-  paddingBottom: 24,
 })
 
 const centerText = css({

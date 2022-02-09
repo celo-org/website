@@ -33,20 +33,20 @@ export default function Stats() {
 
 const rootCss = css(flex, {
   maxWidth: 812,
+  minWidth: 290,
   alignItems: "center",
   flexDirection: "column",
   backgroundColor: colors.white,
   borderRadius: 128,
   zIndex: 20,
-  marginBottom: 60,
+  margin: "16px 12px 16px 12px",
   boxShadow: "0px 0px 24px rgba(255, 255, 255, 0.16), 0px 0px 90px rgba(78, 236, 255, 0.85)",
   [WHEN_MOBILE]: {
-    flexBasis: "0%",
-    padding: "24px 18px 12px 18px",
+    flexBasis: "100%",
+    padding: "52px 24px 8px 24px",
     filter: "drop-shadow(1px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 36px #353D45)",
     boxShadow: "none",
-    borderRadius: 12,
-    marginBottom: 24,
+    borderRadius: 24,
   },
   [WHEN_TABLET]: {
     borderRadius: 72,
@@ -54,6 +54,7 @@ const rootCss = css(flex, {
   },
   [WHEN_DESKTOP]: {
     padding: "32px 32px 40px 32px",
+    marginBottom: 60,
   },
 })
 
