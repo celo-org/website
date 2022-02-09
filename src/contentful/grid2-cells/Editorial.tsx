@@ -4,7 +4,6 @@ import { colors } from "src/colors"
 import { flexRow, WHEN_DESKTOP } from "src/estyles"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Button, { SIZE } from "src/shared/Button.3"
-import { standardStyles } from "src/styles"
 import renderNode from "../nodes/enodes"
 type Props = EditorialType & { darkMode?: boolean }
 
@@ -14,7 +13,6 @@ export default function Editorial(props: Props) {
       <div css={css(innerCSS, props.darkMode && darkModeText)}>
         {documentToReactComponents(props.title, { renderNode })}
         <Button
-          style={standardStyles.elementalMarginTop}
           href={props.button.fields.href || props.button.fields.assetLink?.fields?.file?.url}
           text={props.button.fields.words}
           kind={props.button.fields.kind}
@@ -47,8 +45,11 @@ const rootCss = css(flexRow, {
 })
 
 const innerCSS = css({
-  marginRight: 16,
+  marginRight: 24,
   flex: 1,
+  p: {
+    marginTop: 0,
+  },
 })
 
 const imageCss = css({
