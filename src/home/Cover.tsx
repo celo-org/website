@@ -204,7 +204,7 @@ const linkAreaCss = css(flexRow, {
     justifyContent: "center",
     marginTop: 24,
     "& > div": {
-      marginLeft: 24,
+      margin: "0px 12px",
       justifyContent: "center",
     },
   },

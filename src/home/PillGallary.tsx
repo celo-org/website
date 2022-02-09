@@ -203,7 +203,7 @@ function Pill({ logo }: { logo: GalleryItem }) {
         />
       </picture>
       {logo.title && (
-        <span css={css(labelCss, { backgroundColor: getColor(logo.title) })}>
+        <span css={css(labelCss, getColor(logo.title))}>
           <span css={textCss}>{logo.title}</span>
         </span>
       )}
@@ -211,7 +211,7 @@ function Pill({ logo }: { logo: GalleryItem }) {
   )
 }
 
-function getColor(word: string) {
+function getColor(word: string): { backgroundColor: string; color: string } {
   const cleaned = word?.toLowerCase().replace(" ", "-")
   switch (cleaned) {
     case "defi":
@@ -234,19 +234,25 @@ function getColor(word: string) {
   }
 }
 
-const X = -8
+const X = 0
 const Y = 0
-const BLUR = 24
+const BLUR = 12
+const SHADOW = "rgba(26, 232, 255, 0.85)"
 
 function shadowCss() {
   return css({
-    filter: `drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.9))`,
+    filter: `drop-shadow(${X}px ${Y}px ${BLUR}px ${SHADOW}) drop-shadow(0px 0px ${
+      BLUR / 2
+    }px ${SHADOW})`,
+    boxShadow: `0px 0px 4px 1px rgba(26, 232, 255, 0.6)`,
     transitionProperty: "filter transform",
     transitionDuration: "0.85s",
     willChange: "transform",
     "&:hover": {
       transform: "translateY(-2px)",
-      filter: `drop-shadow(${X + 2}px ${Y + 6}px ${BLUR * 1.2}px rgba(26, 232, 255, 0.9))`,
+      filter: `drop-shadow(${X}px ${Y + 2}px ${BLUR * 0.85}px ${SHADOW}) drop-shadow(0px 2px ${
+        BLUR / 2
+      }px ${SHADOW})`,
     },
   })
 }
@@ -257,13 +263,13 @@ function colorHash(str: string) {
   return Hues[index]
 }
 
-enum Rainbow {
-  red = "rgba(251, 124, 109, 1)",
-  orange = "rgba(255, 183, 101, 1)",
-  yellow = "rgba(251, 204, 92, 1)",
-  green = "rgba(53, 208, 127, 1)",
-  blue = "rgba(115, 221, 255, 1)",
-  violet = "rgba(191, 151, 255, 1)",
+const Rainbow = {
+  red: { backgroundColor: "rgba(251, 124, 109, 1)", color: "#6D0D01" },
+  orange: { backgroundColor: "rgba(255, 183, 101, 1)", color: "#A74600" },
+  yellow: { backgroundColor: "rgba(251, 204, 92, 1)", color: "#856002" },
+  green: { backgroundColor: "rgba(53, 208, 127, 1)", color: "#007035" },
+  blue: { backgroundColor: "rgba(115, 221, 255, 1)", color: "#006384" },
+  violet: { backgroundColor: "rgba(191, 151, 255, 1)", color: "#2C0072" },
 }
 const Hues = [
   Rainbow.red,
@@ -278,12 +284,16 @@ const focusFrames = keyframes`
 
   0% {
     opacity: 0.5;
-    filter: blur(12px) drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.9));
+    filter: blur(12px) drop-shadow(${X}px ${Y}px ${BLUR}px ${SHADOW}) drop-shadow(0px 0px ${
+  BLUR / 2
+}px ${SHADOW});
   }
 
   100% {
     opacity: 1;
-    filter: blur(0px) drop-shadow(${X}px ${Y}px ${BLUR}px rgba(26, 232, 255, 0.9));
+    filter: blur(0px) drop-shadow(${X}px ${Y}px ${BLUR}px ${SHADOW}) drop-shadow(0px 0px ${
+  BLUR / 2
+}px ${SHADOW});
   }
 `
 
@@ -331,5 +341,4 @@ const textCss = css(jost, {
   display: "inline-block",
   fontSize: 12,
   fontWeight: 500,
-  opacity: 0.6,
 })
