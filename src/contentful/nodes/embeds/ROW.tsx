@@ -5,6 +5,7 @@ import { GalleryItem } from "src/utils/contentful"
 import { ContentfulButton } from "src/utils/contentful"
 import Button from "src/shared/Button.3"
 import { displayedImageSize } from "../displayRetinaImage"
+import { useScreenSize } from "src/layout/ScreenSize"
 
 type Item = GalleryItem
 interface Props {
@@ -23,13 +24,13 @@ export const ROW = {
         switch (entry.sys.contentType.sys.id) {
           case "button":
             const button = entry.fields as ContentfulButton
-
+            const { isMobile } = useScreenSize()
             return (
               <Button
                 text={button.words}
                 href={button.href || button.assetLink?.fields?.file?.url}
                 kind={button.kind}
-                size={button.size}
+                size={isMobile && button.mobileSize ? button.mobileSize : button.size}
                 align={button.align}
                 iconLeft={button.iconLeft ? <img src={button.iconLeft.fields.file.url} /> : null}
                 target={
