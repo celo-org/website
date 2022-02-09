@@ -6,6 +6,7 @@ import Image from "next/image"
 import { fonts } from "src/estyles"
 import { isExternalLink } from "src/utils/utils"
 import { displayedImageSize } from "./displayRetinaImage"
+import { css } from "@emotion/react"
 
 const renderNode: RenderNode = {
   [BLOCKS.HEADING_1]: (_, children: string) => {
@@ -27,7 +28,7 @@ const renderNode: RenderNode = {
     return <h6 css={fonts.h6}>{children}</h6>
   },
   [BLOCKS.PARAGRAPH]: (_, children: string) => {
-    return <p css={fonts.body}>{children}</p>
+    return <p css={paragraphCSS}>{children}</p>
   },
   [INLINES.HYPERLINK]: (node, children: string) => {
     const target = isExternalLink(node.data.uri) ? "_blank" : undefined
@@ -43,6 +44,7 @@ const renderNode: RenderNode = {
     const size = displayedImageSize(asset)
     return (
       <div
+        key={asset.sys.id}
         style={{
           width: "100%",
           maxWidth: size.width,
@@ -61,5 +63,10 @@ const renderNode: RenderNode = {
     )
   },
 }
+
+const paragraphCSS = css(fonts.body, {
+  marginBlockStart: "0.5em",
+  marginBlockEnd: "0.65em",
+})
 
 export default renderNode

@@ -5,8 +5,8 @@ export const HOUR = MINUTE * 60
 
 const LIVE_MODE = process.env.ENV === "production"
 
-// when in dev or preview mode only go for 15 seconds
-const STANDARD_TTL = LIVE_MODE ? HOUR * 8 : 15
+// when in dev or preview mode only go for 5 seconds
+const STANDARD_TTL = LIVE_MODE ? HOUR * 8 : 5
 
 const CACHE = new Cache({ stdTTL: STANDARD_TTL, checkperiod: 120 })
 

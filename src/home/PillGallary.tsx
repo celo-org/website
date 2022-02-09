@@ -66,6 +66,13 @@ export default function PillGallery(props: Props) {
   }
 
   if (props.formation === "ThreeByFour") {
+    if (isMobile) {
+      return (
+        <div css={trippleRootCss}>
+          <div css={triple}>{props.list.map(renderLogo)}</div>
+        </div>
+      )
+    }
     return (
       <div css={trippleRootCss}>
         <div css={triple}>{props.list.slice(0, 3).map(renderLogo)}</div>
@@ -186,7 +193,7 @@ function Pill({ logo }: { logo: GalleryItem }) {
   return (
     <a
       title={logo.image.fields.description}
-      css={css(pillCss, shadowCss())}
+      css={pillCss}
       key={logo.image.sys.id}
       href={logo.url}
       target={"_blank"}
@@ -239,20 +246,20 @@ const Y = 0
 const BLUR = 12
 const SHADOW = "rgba(26, 232, 255, 0.85)"
 
-function shadowCss() {
+function shadowCss({ x, y, blur, shadow }) {
   return css({
-    filter: `drop-shadow(${X}px ${Y}px ${BLUR}px ${SHADOW}) drop-shadow(0px 0px ${
-      BLUR / 2
-    }px ${SHADOW})`,
+    filter: `drop-shadow(${x}px ${y}px ${blur}px ${SHADOW}) drop-shadow(0px 0px ${
+      blur / 2
+    }px ${shadow})`,
     boxShadow: `0px 0px 4px 1px rgba(26, 232, 255, 0.6)`,
     transitionProperty: "filter transform",
     transitionDuration: "0.85s",
     willChange: "transform",
     "&:hover": {
       transform: "translateY(-2px)",
-      filter: `drop-shadow(${X}px ${Y + 2}px ${BLUR * 0.85}px ${SHADOW}) drop-shadow(0px 2px ${
-        BLUR / 2
-      }px ${SHADOW})`,
+      filter: `drop-shadow(${x}px ${y + 2}px ${blur * 0.85}px ${shadow}) drop-shadow(0px 2px ${
+        blur / 2
+      }px ${shadow})`,
     },
   })
 }
@@ -297,7 +304,7 @@ const focusFrames = keyframes`
   }
 `
 
-const pillCss = css(flexRow, {
+const pillCss = css(flexRow, shadowCss({ x: X, y: Y, blur: BLUR, shadow: SHADOW }), {
   animation: focusFrames,
   animationDuration: "1.5s",
   animationPlayState: "running",
@@ -315,8 +322,12 @@ const pillCss = css(flexRow, {
   justifyContent: "space-evenly",
   textDecoration: "none",
   [WHEN_MOBILE]: {
+    filter: `drop-shadow(${X}px ${Y}px ${BLUR * 0.67}px ${SHADOW}) drop-shadow(0px 0px ${
+      BLUR * 0.33
+    }px ${SHADOW})`,
+    boxShadow: `0px 0px 2px 1px rgba(26, 232, 255, 0.5)`,
     minHeight: 56,
-    margin: "6px 12px",
+    margin: "12px 8px",
   },
   "&:visited": {
     textDecoration: "none",

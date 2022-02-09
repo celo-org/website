@@ -110,7 +110,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
 
       case "editorial":
         const editorial = entry.fields as EditorialType
-        return <Editorial {...editorial} darkMode={darkMode} />
+        return <Editorial key={entry.sys.id} {...editorial} darkMode={darkMode} />
       default:
         console.log("no renderer for", entry.sys.contentType.sys.id)
         return null
