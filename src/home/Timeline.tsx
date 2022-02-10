@@ -61,7 +61,7 @@ const fog = css({
 
 const rootCss = css({
   position: "relative",
-  marginTop: 24,
+  marginTop: 40,
   marginLeft: 30,
   paddingLeft: 28,
   borderLeft: ` 1px solid ${colors.primary}`,
@@ -69,6 +69,7 @@ const rootCss = css({
     marginLeft: 6,
   },
   [WHEN_MOBILE]: {
+    marginTop: 24,
     marginLeft: 0,
     paddingLeft: 16,
   },

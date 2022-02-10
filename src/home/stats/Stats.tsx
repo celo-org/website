@@ -13,7 +13,7 @@ const HUNDRED_MILL = 100000000
 export default function Stats() {
   const { t } = useTranslation(NameSpaces.home)
   const { avgBlockTime, totalTx } = useStatsRelay()
-  const totalTxDisplayed = totalTx ? totalTx?.toLocaleString() : `~${HUNDRED_MILL.toLocaleString}`
+  const totalTxDisplayed = totalTx ? totalTx.toLocaleString() : `~${HUNDRED_MILL.toLocaleString()}`
   return (
     <figure css={rootCss}>
       <figcaption css={headingCss}>
@@ -43,7 +43,7 @@ const rootCss = css(flex, {
   boxShadow: "0px 0px 24px rgba(255, 255, 255, 0.16), 0px 0px 90px rgba(78, 236, 255, 0.85)",
   [WHEN_MOBILE]: {
     flexBasis: "100%",
-    padding: "52px 24px 8px 24px",
+    padding: "48px 24px 12px 24px",
     filter: "drop-shadow(1px 3px 16px rgba(78, 236, 255, 0.7)) drop-shadow(0px 2px 36px #353D45)",
     boxShadow: "none",
     borderRadius: 24,
