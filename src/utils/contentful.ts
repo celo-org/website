@@ -109,6 +109,7 @@ export interface ContentfulButton {
   assetLink?: Asset
   iconLeft?: Asset
   size?: SIZE
+  mobileSize?: SIZE
   words: string
   kind: BTN
   align?: "center" | "flex-start" | "flex-end"

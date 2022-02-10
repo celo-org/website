@@ -11,6 +11,7 @@ import Stats from "./stats/Stats"
 import { colors } from "src/colors"
 import { useState } from "react"
 import useInterval from "src/hooks/useInternval"
+import { useScreenSize } from "src/layout/ScreenSize"
 
 export interface Props {
   title?: string
@@ -21,6 +22,7 @@ export interface Props {
 }
 
 export default function Cover(props: Props) {
+  const { isMobile } = useScreenSize()
   return (
     <div css={wrapperCss}>
       <div css={rootCss}>
@@ -39,7 +41,7 @@ export default function Cover(props: Props) {
               <Button
                 align={"center"}
                 key={link.sys.id}
-                size={SIZE.normal}
+                size={isMobile && link.fields.mobileSize ? link.fields.mobileSize : SIZE.normal}
                 kind={link.fields.kind}
                 text={link.fields.words}
                 href={link.fields.href}
