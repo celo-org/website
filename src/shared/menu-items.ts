@@ -14,11 +14,8 @@ export const pagePaths = {
   HOME: {
     name: "Home",
     link: "/",
-    isDark: true,
-    translucent: {
-      backgroundHover: colors.darkTransparent,
-    },
-    menuHidePoint: 24,
+    isDark: false,
+    menuHidePoint: 0,
     menuHidePointMobile: 50,
   },
   ABOUT_US: {

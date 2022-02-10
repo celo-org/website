@@ -1,155 +1,214 @@
 import { css, keyframes } from "@emotion/react"
-import CoverContent from "src/home/CoverContent"
-import { colors } from "src/colors"
-import celoAsStarsMobileLong from "src/home/celo-sky-mobile.svg"
-import celoAsStarsMobileShort from "src/home/celo-sky-mobile-short.svg"
-import celoAsStarsTablet from "src/home/celo-sky-tablet.svg"
-import celoAsStarsDesktop from "src/home/celo-sky-desktop.svg"
-import * as React from "react"
-import examplePhones from "src/home/example-phones.svg"
-import Stats from "./stats/Stats"
-import { flex, WHEN_DESKTOP, WHEN_MOBILE, WHEN_TABLET, WHEN_LONG_PHONE } from "src/estyles"
-import { useScreenSize } from "src/layout/ScreenSize"
-import { NameSpaces, useTranslation } from "src/i18n"
-import Press from "src/press/Press"
+import { flex, flexRow, fonts, WHEN_MOBILE, WHEN_TABLET_AND_UP, whiteText } from "src/estyles"
 import { Document } from "@contentful/rich-text-types"
-import { LogoGallery } from "src/utils/contentful"
+import { Entry } from "contentful"
+import { ContentfulButton } from "src/utils/contentful"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import renderers from "src/contentful/nodes/enodes"
+import { useEffect } from "react"
+import Button, { SIZE } from "src/shared/Button.3"
+import Stats from "./stats/Stats"
+import { colors } from "src/colors"
+import { useState } from "react"
+import useInterval from "src/hooks/useInternval"
+import { useScreenSize } from "src/layout/ScreenSize"
 
-interface Props {
-  title: string
-  subtitle: Document
-  press: LogoGallery
+export interface Props {
+  title?: string
+  subTitle: Document
+  links: Entry<ContentfulButton>[]
+  darkMode: boolean
+  marquee: string[]
 }
 
 export default function Cover(props: Props) {
-  const { isDesktop, isTablet, bannerHeight } = useScreenSize()
-  const { t } = useTranslation(NameSpaces.home)
+  const { isMobile } = useScreenSize()
   return (
-    <div
-      css={css(rootCss, {
-        paddingTop: bannerHeight,
-        [WHEN_MOBILE]: {
-          paddingTop: 0,
-        },
-      })}
-    >
-      <div css={css(backgroundArea, { height: `calc(100% - ${bannerHeight}px)` })} />
-      <div css={useableArea}>
-        <CoverContent title={props.title} subtitle={props.subtitle} />
-        {(isDesktop || isTablet) && (
-          <picture>
-            <object
-              title={t("coverPhonesImage")}
-              aria-label={t("coverPhonesImage")}
-              type="image/svg+xml"
-              data={examplePhones.src}
-              width={1016}
-              height={524}
-            />
-          </picture>
-        )}
-      </div>
-      <Press {...props.press} />
+    <div css={wrapperCss}>
+      <div css={rootCss}>
+        <div css={contentCss}>
+          {props.title && (
+            <Title title={props.title} marquee={props.marquee} darkMode={props.darkMode} />
+          )}
+          {props.subTitle && (
+            <span css={css(subTextCss, props.darkMode ? subtitleDarkMode : centerText)}>
+              {documentToReactComponents(props.subTitle, { renderNode: renderers })}
+            </span>
+          )}
 
-      {isDesktop && <Stats />}
+          <div css={linkAreaCss}>
+            {props.links?.map((link) => (
+              <Button
+                align={"center"}
+                key={link.sys.id}
+                size={isMobile && link.fields.mobileSize ? link.fields.mobileSize : SIZE.normal}
+                kind={link.fields.kind}
+                text={link.fields.words}
+                href={link.fields.href}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div css={statContentCss}>
+        <Stats />
+      </div>
     </div>
   )
 }
-const backgroundDesktopSize = { width: "100%" }
 
-const rootCss = css(flex, {
-  overflow: "hidden",
-  position: "relative",
-  alignSelf: "center",
-  alignItems: "center",
-  backgroundColor: colors.dark,
-  width: "100%",
-  maxWidth: "100vw",
-  [WHEN_MOBILE]: {
-    justifyContent: "center",
-    minHeight: `calc(100vh)`,
-  },
-  ["@media (max-height: 568px)"]: {
-    justifyContent: "flex-end",
-    paddingBottom: 30,
-  },
-  [WHEN_TABLET]: {
-    paddingTop: 60,
-    width: "100vw",
-    height: "100vh",
-    minHeight: 1068,
-  },
-  [WHEN_DESKTOP]: {
-    paddingTop: 0,
-    paddingBottom: 24,
-  },
-})
+const DURATION = 3000
 
-const starKeyFrames = keyframes`
-  from {
-    opacity: 0.1;
-    transform: scale(1.02);
+function Title(props: Pick<Props, "title" | "darkMode" | "marquee">) {
+  const [showAnimation, setShowAnimation] = useState(false)
+  const shouldAnimate = (props.marquee?.length || 0) > 1
+  // Wait until after client-side hydration to show to avoid useLayoutIssues with SSR
+  useEffect(() => {
+    setShowAnimation(shouldAnimate)
+  }, [shouldAnimate])
+  const firstWord = props.marquee ? props.marquee[0] : ""
+  return (
+    <h1 css={css(rH1, centerText, props.darkMode && whiteText)}>
+      <strong>{props.title}</strong> <br />
+      {showAnimation ? (
+        <Marquee marquee={props.marquee} />
+      ) : (
+        <span key={firstWord.replace(" ", "-")} css={nonAnimatedWord}>
+          {" "}
+          {firstWord}
+        </span>
+      )}
+    </h1>
+  )
+}
+
+function Marquee({ marquee }: { marquee: string[] }) {
+  const [index, setIndex] = useState(0)
+  useInterval(() => {
+    setIndex(marquee.length - 1 === index ? 0 : index + 1)
+  }, DURATION)
+  return (
+    <span key={marquee[index]} css={animatedWordsCss}>
+      {marquee[index]}
+    </span>
+  )
+}
+
+const animationKeyframes = keyframes`
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(6px);
+    opacity: 0.10;
   }
-
-  25% {
-    opacity: 0.5
-  }
-
-  to {
+  15% {
+    filter: blur(0px);
     opacity: 1;
-    transform: scale(1);
+    letter-spacing: 0em;
+  }
+  90% {
+    filter: blur(0px);
+    opacity: 1;
+    letter-spacing: 0em;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    filter: blur(6px);
+    opacity: 0.10;
   }
 `
-const backgroundArea = css({
-  top: 0,
-  position: "absolute",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  animationIterationCount: 1,
-  animationFillMode: "both",
-  animationDelay: "50ms",
-  animationDuration: "6s",
-  animationName: starKeyFrames,
-  animationTimingFunction: "ease-in-out",
-  opacity: 0.1,
-  width: "100%",
-  backgroundColor: colors.dark,
-  [WHEN_LONG_PHONE]: {
-    backgroundImage: `url(${celoAsStarsMobileLong.src})`,
-    top: 0,
-    minHeight: "100vh",
-  },
+
+const nonAnimatedWord = css({
+  paddingLeft: 12,
+  minWidth: 280,
+  display: "inline-block",
+  textAlign: "center",
   [WHEN_MOBILE]: {
-    backgroundImage: `url(${celoAsStarsMobileShort.src})`,
-    top: 0,
-    minHeight: "100vh",
-  },
-  [WHEN_TABLET]: {
-    width: "100vw",
-    minHeight: "100vh",
-    backgroundImage: `url(${celoAsStarsTablet.src})`,
-    backgroundPosition: "bottom",
-    top: 0,
-  },
-  [WHEN_DESKTOP]: {
-    width: backgroundDesktopSize.width,
-    backgroundImage: `url(${celoAsStarsDesktop.src})`,
+    minWidth: 0,
   },
 })
 
-const useableArea = css(flex, {
+const animatedWordsCss = css(nonAnimatedWord, {
+  animation: animationKeyframes,
+  animationTimingFunction: "cubic-bezier(0.250, 0.460, 0.450, 0.940)",
+  animationPlayState: "running",
+  animationIterationCount: "1",
+  animationFillMode: "both",
+  animationDuration: `${DURATION}ms`,
+})
+
+const subTextCss = css({})
+
+const wrapperCss = css(flex, {
+  backgroundColor: colors.dark,
+  position: "relative",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundSize: "cover",
+  boxShadow: `inset 0px -50px 37px 25px ${colors.dark}`,
   alignItems: "center",
-  zIndex: 10,
-  [WHEN_DESKTOP]: {
-    width: backgroundDesktopSize.width,
-    zIndex: 20,
-    paddingTop: 48,
-  },
-  [WHEN_TABLET]: {
-    paddingTop: 72,
-  },
+  justifyContent: "space-between",
   [WHEN_MOBILE]: {
-    paddingTop: 16,
-    paddingBottom: 16,
+    alignContent: "center",
+    padding: "48px 6px",
   },
+  padding: "80px 12px",
+})
+
+const rootCss = css(flex, {
+  width: "100%",
+  height: "100%",
+  overflow: "visible",
+  alignItems: "center",
+  flex: 1,
+  marginBottom: 40,
+  [WHEN_MOBILE]: {
+    flexDirection: "column",
+  },
+})
+
+const statContentCss = css({
+  justifySelf: "center",
+})
+
+const centerText = css({
+  textAlign: "center",
+})
+
+const subtitleDarkMode = css(whiteText, centerText, {
+  "h1, h2, h3, h4, p": whiteText,
+})
+
+const contentCss = css(flex, {
+  justifySelf: "center",
+  justifyContent: "center",
+  flex: 1,
+  width: "100%",
+  padding: 24,
+  [WHEN_MOBILE]: {
+    padding: 16,
+    maxWidth: 450,
+    alignSelf: "center",
+  },
+})
+
+const linkAreaCss = css(flexRow, {
+  [WHEN_MOBILE]: {
+    marginTop: 12,
+    flexDirection: "column",
+    "& > div": {
+      marginBottom: 24,
+    },
+  },
+  [WHEN_TABLET_AND_UP]: {
+    justifyContent: "center",
+    marginTop: 24,
+    "& > div": {
+      margin: "0px 12px",
+      justifyContent: "center",
+    },
+  },
+})
+
+const rH1 = css(fonts.h1, {
+  [WHEN_MOBILE]: fonts.h1Mobile,
 })

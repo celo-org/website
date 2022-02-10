@@ -12,17 +12,23 @@ import {
   HeadingContentType,
   PictureType,
   IframeContentType,
+  EditorialType,
 } from "src/utils/contentful"
 import Form from "src/contentful/grid2-cells/Form"
 import { Heading } from "src/contentful/grid2-cells/Heading"
 import * as React from "react"
 import Picture from "./Picture"
+import Editorial from "src/contentful/grid2-cells/Editorial"
+import Timeline from "src/home/Timeline"
 
 export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
     switch (entry.sys.contentType.sys.id) {
       case "roledex":
         const roledex = entry.fields as RoledexContentType
+        if (roledex.variant === "timeline") {
+          return <Timeline key={entry.sys.id} title={roledex.title} sheets={roledex.sheets} />
+        }
         return <Roledex key={entry.sys.id} title={roledex.title} sheets={roledex.sheets} />
       case "freeContent":
         const freeContent = entry.fields as FreeContentType
@@ -30,10 +36,13 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
           <FreeContent
             key={entry.sys.id}
             colSpan={freeContent.colSpan}
+            rowSpan={freeContent.rowSpan}
             body={freeContent.body}
             darkMode={darkMode}
             cssStyle={freeContent.cssStyle}
             listStyleImage={freeContent.listStyleImage}
+            fadingEffect={freeContent.fadingEffect}
+            fade={freeContent.fade}
           />
         )
       case "form":
@@ -57,6 +66,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             title={blurbProp.title}
             titleType={blurbProp.titleType}
             body={blurbProp.body}
+            retina={blurbProp.retina}
             darkMode={darkMode}
             link={blurbProp.link}
             icon={blurbProp.icon}
@@ -97,6 +107,13 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
       case "iFrameEmbed":
         const iframe = entry.fields as IframeContentType
         return <iframe key={entry.sys.id} src={iframe.url} height={iframe.height} width="100%" />
+
+      case "editorial":
+        const editorial = entry.fields as EditorialType
+        return <Editorial key={entry.sys.id} {...editorial} darkMode={darkMode} />
+      default:
+        console.log("no renderer for", entry.sys.contentType.sys.id)
+        return null
     }
   }
   return null
