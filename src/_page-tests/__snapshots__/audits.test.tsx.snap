@@ -414,7 +414,7 @@ exports[`Audits renders 1`] = `
                     Object {
                       "display": "inline-flex",
                       "paddingLeft": "0.4em",
-                      "paddingTop": "0.185em",
+                      "paddingTop": "0.15em",
                     }
                   }
                 >
@@ -524,7 +524,7 @@ exports[`Audits renders 1`] = `
                     Object {
                       "display": "inline-flex",
                       "paddingLeft": "0.4em",
-                      "paddingTop": "0.185em",
+                      "paddingTop": "0.15em",
                     }
                   }
                 >

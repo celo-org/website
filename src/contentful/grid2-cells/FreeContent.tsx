@@ -7,6 +7,8 @@ import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
 import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
 import { ROW } from "../nodes/embeds/ROW"
 import { Asset } from "contentful"
+import AwesomeFade from "src/shared/AwesomeFade"
+import { FaddingOptions } from "src/utils/contentful"
 
 const EMBEDDABLE = {
   ...BUTTON,
@@ -40,13 +42,25 @@ const OPTIONS = {
 const h1ResponsiveCss = css(fonts.h1, { [WHEN_MOBILE]: fonts.h1Mobile })
 interface Props {
   colSpan: number
+  rowSpan?: number
   body: Document
   cssStyle?: CSSObject
   darkMode: boolean
   listStyleImage?: Asset
+  fadingEffect?: boolean
+  fade?: FaddingOptions
 }
 
-export function FreeContent({ colSpan, body, cssStyle, darkMode, listStyleImage }: Props) {
+export function FreeContent({
+  colSpan,
+  rowSpan,
+  body,
+  cssStyle,
+  darkMode,
+  listStyleImage,
+  fade,
+  fadingEffect,
+}: Props) {
   const customBullets = listStyleImage
     ? {
         ul: {
@@ -56,10 +70,31 @@ export function FreeContent({ colSpan, body, cssStyle, darkMode, listStyleImage 
     : null
 
   return (
-    <div css={css(rootCss, { gridColumn: `span ${colSpan}` })}>
-      <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
-        {documentToReactComponents(body, OPTIONS)}
-      </div>
+    <div
+      css={css(
+        rootCss,
+        { gridColumn: `span ${colSpan}` },
+        rowSpan && { gridRow: `span ${rowSpan}` }
+      )}
+    >
+      {!fadingEffect ? (
+        <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
+          {documentToReactComponents(body, OPTIONS)}
+        </div>
+      ) : (
+        <AwesomeFade
+          delay={fade.delay}
+          duration={fade.duration}
+          direction={fade.direction}
+          distance={fade.distance}
+          reverse={false}
+          triggerOnce={true}
+        >
+          <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
+            {documentToReactComponents(body, OPTIONS)}
+          </div>
+        </AwesomeFade>
+      )}
     </div>
   )
 }

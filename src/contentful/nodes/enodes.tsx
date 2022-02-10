@@ -5,6 +5,8 @@ import { Asset } from "contentful"
 import Image from "next/image"
 import { fonts } from "src/estyles"
 import { isExternalLink } from "src/utils/utils"
+import { displayedImageSize } from "./displayRetinaImage"
+import { css } from "@emotion/react"
 
 const renderNode: RenderNode = {
   [BLOCKS.HEADING_1]: (_, children: string) => {
@@ -26,34 +28,48 @@ const renderNode: RenderNode = {
     return <h6 css={fonts.h6}>{children}</h6>
   },
   [BLOCKS.PARAGRAPH]: (_, children: string) => {
-    return <p css={fonts.body}>{children}</p>
+    return <p css={paragraphCSS}>{children}</p>
   },
   [INLINES.HYPERLINK]: (node, children: string) => {
     const target = isExternalLink(node.data.uri) ? "_blank" : undefined
-    return <a href={node.data.uri} target={target}>{children}</a>
+    return (
+      <a href={node.data.uri} target={target}>
+        {children}
+      </a>
+    )
   },
   [BLOCKS.EMBEDDED_ASSET]: (node) => {
     const asset = node.data.target as Asset
     const file = asset.fields.file
+    const size = displayedImageSize(asset)
     return (
       <div
+        key={asset.sys.id}
         style={{
           width: "100%",
-          maxWidth: file.details.image?.width,
-          maxHeight: file.details.image?.height,
+          maxWidth: size.width,
+          maxHeight: size.height,
         }}
       >
         <Image
           layout={"responsive"}
           src={`https:${file.url}`}
           alt={asset.fields.description}
-          width={file.details.image?.width}
-          height={file.details.image?.height}
+          width={size.width}
+          height={size.height}
           unoptimized={true}
         />
       </div>
     )
   },
 }
+
+const paragraphCSS = css(fonts.body, {
+  marginBlockStart: "0.5em",
+  marginBlockEnd: "0.65em",
+  "&:empty": {
+    display: "none",
+  },
+})
 
 export default renderNode

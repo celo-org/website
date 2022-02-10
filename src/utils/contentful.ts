@@ -4,7 +4,7 @@ import { Asset, createClient, Entry, EntryCollection } from "contentful"
 import getConfig from "next/config"
 import { Page as SideBarEntry } from "src/experience/common/Sidebar"
 import { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
-import { BTN } from "src/shared/Button.3"
+import { BTN, SIZE } from "src/shared/Button.3"
 import { fetchCached, MINUTE } from "src/../server/cache"
 import { i18nLocaleToContentfulLocale } from "server/i18nSetup"
 
@@ -107,8 +107,12 @@ export interface ContentfulButton {
   name: string
   href: string
   assetLink?: Asset
+  iconLeft?: Asset
+  size?: SIZE
+  mobileSize?: SIZE
   words: string
   kind: BTN
+  align?: "center" | "flex-start" | "flex-end"
 }
 
 export interface InfoSheetContentType {
@@ -121,6 +125,7 @@ export interface InfoSheetContentType {
 export interface RoledexContentType {
   title: string
   sheets: Entry<InfoSheetContentType>[]
+  variant?: "timeline"
 }
 
 export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
@@ -141,6 +146,12 @@ export interface FormContentType {
   route: string
 }
 
+export interface EditorialType {
+  title: Document
+  button: Entry<ContentfulButton>
+  image: Asset
+}
+
 export interface ThumbnailType {
   title: string
   link: string
@@ -149,9 +160,19 @@ export interface ThumbnailType {
 export interface FreeContentType {
   backgroundColor: string
   colSpan?: 1 | 2 | 3 | 4
+  rowSpan?: number
   cssStyle: CSSObject
   listStyleImage?: Asset
   body: Document
+  fade?: FaddingOptions
+  fadingEffect?: boolean
+}
+
+export interface FaddingOptions {
+  delay?: number
+  duration?: number
+  direction?: number
+  distance?: number
 }
 
 export interface PlaylistContentType {
@@ -194,6 +215,7 @@ export type CellContentType =
   | PictureType
   | FreeContentType
   | IframeContentType
+  | EditorialType
 
 export interface GridRowContentType {
   id: string
@@ -238,6 +260,7 @@ export interface LogoGallery {
   name: string
   list: Entry<GalleryItem>[]
   cssStyle?: any
+  formation?: "TwoFourTwoRepeat" | "ThreeByFour"
 }
 
 export async function getPageBySlug(slug: string, { locale }, showSysData?: boolean) {

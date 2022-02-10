@@ -15,6 +15,7 @@ interface Props {
   fraction?: number
   reverse?: boolean
   direction?: Direction
+  triggerOnce?: boolean
 }
 
 export default React.memo(function AwesomeFade({
@@ -25,6 +26,7 @@ export default React.memo(function AwesomeFade({
   direction,
   duration,
   fraction,
+  triggerOnce,
 }: Props) {
   return (
     <Reveal
@@ -32,7 +34,7 @@ export default React.memo(function AwesomeFade({
         () => getKeyFrames(distance, direction, reverse),
         [direction, distance, reverse]
       )}
-      triggerOnce={false}
+      triggerOnce={triggerOnce || false}
       delay={delay}
       duration={duration}
       fraction={fraction}
