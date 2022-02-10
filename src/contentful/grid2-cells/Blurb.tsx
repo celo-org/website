@@ -10,6 +10,9 @@ import { Document, BLOCKS, Block } from "@contentful/rich-text-types"
 import renderNode, { renderWhiteParagraph } from "src/contentful/nodes/paragraph"
 import { ROW } from "src/contentful/nodes/embeds/ROW"
 import Image from "next/image"
+import { displayedImageSize } from "../nodes/displayRetinaImage"
+import { useScreenSize } from "src/layout/ScreenSize"
+
 enum Headings {
   "large" = "large",
   "medium" = "medium",
@@ -25,6 +28,7 @@ export interface Props {
   darkMode?: boolean
   isNaturalSize: boolean
   newIcon: boolean
+  retina?: 1 | 2
 }
 
 function embedded(node: Block) {
@@ -46,8 +50,10 @@ const renderParagraphWithRow = { ...renderNode, ...embeddable }
 export default function Blurb(props: Props) {
   const image = props.icon?.fields?.file
   const imageURL = image?.url
-  const width = props.isNaturalSize ? image?.details?.image?.width : props.newIcon ? 48 : 100
-  const height = props.isNaturalSize ? image?.details?.image?.height : props.newIcon ? 48 : 100
+  const displayedSize = displayedImageSize(props.icon, props.retina)
+  const width = props.isNaturalSize ? displayedSize.width : props.newIcon ? 48 : 100
+  const height = props.isNaturalSize ? displayedSize.height : props.newIcon ? 48 : 100
+  const { isMobile } = useScreenSize()
 
   return (
     <div css={rootCss}>
@@ -77,7 +83,14 @@ export default function Blurb(props: Props) {
           href={props.link.fields.href || props.link.fields.assetLink?.fields?.file?.url}
           text={props.link.fields.words}
           kind={props.link.fields.kind}
-          size={SIZE.normal}
+          size={
+            isMobile && props.link.fields.mobileSize ? props.link.fields.mobileSize : SIZE.normal
+          }
+          iconLeft={
+            props.link.fields.iconLeft ? (
+              <img src={props.link.fields.iconLeft.fields.file.url} />
+            ) : null
+          }
           target={
             props.link.fields.assetLink?.fields?.file?.url ||
             (props.link.fields.href?.startsWith("http") && "_blank")

@@ -2,12 +2,16 @@ import { css } from "@emotion/react"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import React from "react"
 import { cellSwitch } from "./cellSwitch"
+import dynamic from "next/dynamic"
+const OldGallery = dynamic(import("src/contentful/LogoGallary"))
+const PillGallery = dynamic(import("src/home/PillGallary"))
 import { Entry } from "contentful"
 import {
   ContentfulPage,
   GridRowContentType,
   SectionType,
   CoverContentType,
+  LogoGallery,
   FormContentType,
 } from "src/utils/contentful"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE } from "src/estyles"
@@ -73,7 +77,12 @@ const rootCss = css(flex, {})
 
 export function pageSwitch(
   section: Entry<
-    GridRowContentType | SectionType | CoverContentType | FormContentType | HorizontalType
+    | GridRowContentType
+    | SectionType
+    | CoverContentType
+    | FormContentType
+    | HorizontalType
+    | LogoGallery
   >
 ) {
   switch (section.sys.contentType.sys.id) {
@@ -117,6 +126,19 @@ export function pageSwitch(
     case "horizontal":
       const hr = section.fields as HorizontalType
       return <HR key={section.sys.id} darkMode={hr.darkMode} />
+    case "logoGallery":
+      const gallery = section.fields as LogoGallery
+      if (gallery.formation === "ThreeByFour" || gallery.formation === "TwoFourTwoRepeat") {
+        return (
+          <PillGallery
+            cssStyle={gallery.cssStyle}
+            formation={gallery.formation}
+            list={gallery.list}
+            key={section.sys.id}
+          />
+        )
+      }
+      return <OldGallery cssStyle={gallery.cssStyle} list={gallery.list} key={section.sys.id} />
     default:
       const sectionfields = section.fields as SectionType
       return (

@@ -2,14 +2,17 @@ import { css, CSSObject } from "@emotion/react"
 import { flexRow, WHEN_MOBILE, jost } from "src/estyles"
 import { Entry } from "contentful"
 import { GalleryItem } from "src/utils/contentful"
-import { Props as ButtonShape } from "src/contentful/nodes/embeds/BUTTON"
+import { ContentfulButton } from "src/utils/contentful"
 import Button from "src/shared/Button.3"
+import { displayedImageSize } from "../displayRetinaImage"
+import { useScreenSize } from "src/layout/ScreenSize"
 
 type Item = GalleryItem
 interface Props {
-  items: Entry<Item | ButtonShape>[]
+  items: Entry<Item | ContentfulButton>[]
   cssStyle?: CSSObject
   mobileCss?: CSSObject
+  retina?: 1 | 2
 }
 
 export const ROW = {
@@ -17,18 +20,19 @@ export const ROW = {
     <div
       css={css(rootStyle, fields.cssStyle, fields.mobileCss && { [WHEN_MOBILE]: fields.mobileCss })}
     >
-      {fields.items.map(({ fields, sys }) => {
-        switch (sys.contentType.sys.id) {
+      {fields.items.map((entry) => {
+        switch (entry.sys.contentType.sys.id) {
           case "button":
-            const button = fields as ButtonShape
-
+            const button = entry.fields as ContentfulButton
+            const { isMobile } = useScreenSize()
             return (
               <Button
                 text={button.words}
                 href={button.href || button.assetLink?.fields?.file?.url}
                 kind={button.kind}
-                size={button.size}
+                size={isMobile && button.mobileSize ? button.mobileSize : button.size}
                 align={button.align}
+                iconLeft={button.iconLeft ? <img src={button.iconLeft.fields.file.url} /> : null}
                 target={
                   button.assetLink?.fields?.file?.url ||
                   (button.href?.startsWith("http") && "_blank")
@@ -37,15 +41,16 @@ export const ROW = {
             )
 
           case "logoGalleryItem":
-            const item = fields as Item
+            const item = entry.fields as Item
             const imageFields = item?.image?.fields
+            const size = displayedImageSize(item.image, fields.retina)
             const rendered = (
-              <div key={sys.id} css={logoContainer}>
+              <div key={entry.sys.id} css={logoContainer}>
                 <img
                   alt={imageFields?.description}
                   src={imageFields?.file?.url}
-                  width={imageFields?.file?.details?.image?.width}
-                  height={imageFields?.file?.details?.image?.height}
+                  width={size.width}
+                  height={size.height}
                 />
                 {item.title ? <p css={logoTitle}>{item.title}</p> : null}
               </div>

@@ -1732,7 +1732,7 @@ We believe that many of these features have great potential for positive impact,
                   Object {
                     "display": "inline-flex",
                     "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "paddingTop": "0.15em",
                   }
                 }
               >
@@ -1909,7 +1909,7 @@ We believe that many of these features have great potential for positive impact,
                     Object {
                       "display": "inline-flex",
                       "paddingLeft": "0.4em",
-                      "paddingTop": "0.185em",
+                      "paddingTop": "0.15em",
                     }
                   }
                 >
@@ -2323,7 +2323,7 @@ We believe that many of these features have great potential for positive impact,
                 Object {
                   "display": "inline-flex",
                   "paddingLeft": "0.4em",
-                  "paddingTop": "0.185em",
+                  "paddingTop": "0.15em",
                 }
               }
             >

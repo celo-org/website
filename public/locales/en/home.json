@@ -11,6 +11,7 @@
   "statsAddresses": "Total addresses",
   "statsTransactions": "Total transactions",
   "statsAvgTime": "Average block time",
+  "statsAvgFee": "Average gas fee",
   "daysCarbonNegative": "Days carbon negative",
   "whitePaper": "Read Celo White Paper",
   "stabilityPaper": "Read Stability White Paper",

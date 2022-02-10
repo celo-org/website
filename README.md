@@ -22,7 +22,7 @@ This is the Celo Foundation website, which is deployed to https://celo.org/
 
    * From the root of monorepo:
 
-      `yarn run keys:decrypt`  
+      `yarn run keys:decrypt`
 
 3. From the web directory, run `yarn run dev`.  The server will now be accessible at [http://localhost:3000](http://localhost:3000).
 
@@ -33,13 +33,21 @@ The website uses [React.js](https://reactjs.org/), [Next.js](https://nextjs.org/
 ### Notes on Web Package Directory
 
 `/pages` files in here become page routes which reflect the folder structure they are in
-`/pages/api` files in here become api routes see next.js docs for more information 
+`/pages/api` files in here become api routes see next.js docs for more information
 
 `server` files here are strictly for serverside code. (currently only reletive paths are working)
 
-`public` static files can be found here. such as [Celo Whitepapers](https://github.com/celo-org/celo-monorepo/tree/master/packages/web/public/papers) (including stability paper) and i18n locale files. 
+`public` static files can be found here. such as [Celo Whitepapers](https://github.com/celo-org/celo-monorepo/tree/master/packages/web/public/papers) (including stability paper) and i18n locale files.
 
-`src` most files here including, components, tests for components, images. 
+`src` most files here including, components, tests for components, images.
+
+
+### Adding Papers
+
+PDF files of whitepapers and research findings are stored in `/public/papers` adding a file there will make it downloadable. However for the purposes of having nice unchanging URLS and such we also
+
+1. update production.yaml (staging.yaml too is best) with the pretty url and point it to the pdf
+2. add a redirect that does the same thing to the index.js express routes. (this is mostly for when in development mode / a backup)
 
 ## Testing
 
@@ -52,7 +60,7 @@ The website uses [React.js](https://reactjs.org/), [Next.js](https://nextjs.org/
 
 #### Testing Strategy
 
-Each page should have a snapshot test found in `src/_page-tests`. More interactive components should have an additional tests for various states/ interactions. These test files should be coolocated with the file they are testing. 
+Each page should have a snapshot test found in `src/_page-tests`. More interactive components should have an additional tests for various states/ interactions. These test files should be coolocated with the file they are testing.
 
 ## Deployment
 
