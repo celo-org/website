@@ -305,7 +305,7 @@ const nakedStyles = StyleSheet.create({
     justifyContent: "center",
   },
   chevron: {
-    paddingTop: "0.185em",
+    paddingTop: "0.15em",
     paddingLeft: "0.4em",
   },
 })

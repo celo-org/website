@@ -326,7 +326,7 @@ Do not send real funds.
                       Object {
                         "display": "inline-flex",
                         "paddingLeft": "0.4em",
-                        "paddingTop": "0.185em",
+                        "paddingTop": "0.15em",
                       }
                     }
                   >
@@ -445,7 +445,7 @@ Do not send real funds.
                       Object {
                         "display": "inline-flex",
                         "paddingLeft": "0.4em",
-                        "paddingTop": "0.185em",
+                        "paddingTop": "0.15em",
                       }
                     }
                   >
@@ -562,7 +562,7 @@ Do not send real funds.
                       Object {
                         "display": "inline-flex",
                         "paddingLeft": "0.4em",
-                        "paddingTop": "0.185em",
+                        "paddingTop": "0.15em",
                       }
                     }
                   >
@@ -979,7 +979,7 @@ Do not send real funds.
                     Object {
                       "display": "inline-flex",
                       "paddingLeft": "0.4em",
-                      "paddingTop": "0.185em",
+                      "paddingTop": "0.15em",
                     }
                   }
                 >
@@ -1741,7 +1741,7 @@ Check out these wallets for everyday use.
                   Object {
                     "display": "inline-flex",
                     "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "paddingTop": "0.15em",
                   }
                 }
               >
@@ -1965,7 +1965,7 @@ Check out these wallets for everyday use.
                   Object {
                     "display": "inline-flex",
                     "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "paddingTop": "0.15em",
                   }
                 }
               >
@@ -2189,7 +2189,7 @@ Check out these wallets for everyday use.
                   Object {
                     "display": "inline-flex",
                     "paddingLeft": "0.4em",
-                    "paddingTop": "0.185em",
+                    "paddingTop": "0.15em",
                   }
                 }
               >
