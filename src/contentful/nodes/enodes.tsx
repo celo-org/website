@@ -67,6 +67,9 @@ const renderNode: RenderNode = {
 const paragraphCSS = css(fonts.body, {
   marginBlockStart: "0.5em",
   marginBlockEnd: "0.65em",
+  "&:empty": {
+    display: "none",
+  },
 })
 
 export default renderNode

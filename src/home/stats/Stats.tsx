@@ -50,10 +50,10 @@ const rootCss = css(flex, {
   },
   [WHEN_TABLET]: {
     borderRadius: 72,
-    padding: "32px 20px 40px 20px",
+    padding: 32,
   },
   [WHEN_DESKTOP]: {
-    padding: "32px 32px 40px 32px",
+    padding: 32,
     marginBottom: 60,
   },
 })
@@ -62,7 +62,7 @@ const headingCss = css(sectionTitle, {
   fontSize: 20,
   letterSpacing: 6,
   marginTop: 4,
-  paddingBottom: 16,
+  paddingBottom: 24,
   [WHEN_MOBILE]: {
     fontSize: 16,
     marginBottom: 4,
@@ -80,11 +80,11 @@ const bodyCss = css(flex, {
   alignItems: "center",
   justifyContent: "space-between",
   maxWidth: 640,
-  margin: "8px 40px",
   [WHEN_TABLET_AND_UP]: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
     columnGap: 16,
+    margin: "0px 40px",
   },
   [WHEN_TABLET]: {
     margin: "8px 16px",

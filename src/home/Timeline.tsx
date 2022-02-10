@@ -16,7 +16,7 @@ export default function Timeline(props: RoledexContentType) {
               <h5 css={titleCss}>
                 <span css={marker}>
                   {" "}
-                  <OvalCoin size={9} />{" "}
+                  <OvalCoin size={12} />{" "}
                 </span>
                 {event.fields.title}
               </h5>
@@ -42,9 +42,9 @@ export default function Timeline(props: RoledexContentType) {
 
 const marker = css({
   position: "absolute",
-  transform: "translateX(-33px) translateY(-2px)",
+  transform: "translateX(-34px) translateY(-2px)",
   [WHEN_MOBILE]: {
-    transform: "translateX(-21px) translateY(-2px)",
+    transform: "translateX(-22px) translateY(-2px)",
   },
 })
 
@@ -91,7 +91,7 @@ const titleCss = css(jost, {
   fontSize: 18,
   lineHeight: 1.1,
   fontWeight: 600,
-  margin: 0,
+  margin: "0px 0px 6px 0px",
 })
 
 const headingCss = css(garamond, {

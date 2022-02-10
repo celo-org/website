@@ -4,7 +4,7 @@ export function displayedImageSize(
   asset: Asset,
   parentDirective?: 1 | 2
 ): { width: number; height: number } {
-  const size = asset.fields.file.details.image
+  const size = asset.fields?.file?.details?.image
 
   if (displayRetinaImage(asset, parentDirective)) {
     return {
