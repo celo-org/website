@@ -366,6 +366,8 @@ exports[`Papers renders 1`] = `
   color: #35D07F;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 10px;
+  margin-right: 30px;
 }
 
 .emotion-15:hover {

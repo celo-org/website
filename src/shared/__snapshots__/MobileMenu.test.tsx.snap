@@ -117,6 +117,11 @@ exports[`Main MobileMenu renders 1`] = `
   padding: 10px 20px;
   font-weight: 500;
   color: #35D07F;
+  font-size: 20px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .emotion-4:hover {
@@ -164,6 +169,11 @@ exports[`Main MobileMenu renders 1`] = `
   text-decoration: none;
   color: #111214;
   opacity: 1;
+  font-size: 20px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .emotion-7:hover {
