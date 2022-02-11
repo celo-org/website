@@ -3105,7 +3105,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           <img
                             alt=""
                             aria-hidden={true}
-                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                            src="data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 version=%271.1%27 width=%271%27 height=%271%27/%3e"
                             style={
                               Object {
                                 "background": "none",
