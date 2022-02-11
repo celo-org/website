@@ -4,7 +4,7 @@ import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import { GridRow, Spans } from "src/layout/Grid2"
 import SideTitledSection from "src/layout/SideTitledSection"
-import Button, { SIZE, BTN } from "src/shared/Button.3"
+import Button, { SIZE, BTN } from "src/shared/Button.4"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { standardStyles } from "src/styles"
 import {

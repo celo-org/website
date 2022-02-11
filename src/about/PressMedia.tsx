@@ -1,7 +1,7 @@
 import * as React from "react"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import BookLayout from "src/layout/BookLayout"
-import Button, { BTN } from "src/shared/Button.3"
+import Button, { BTN } from "src/shared/Button.4"
 import { fonts } from "src/estyles"
 import { css } from "@emotion/react"
 

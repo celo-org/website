@@ -291,6 +291,69 @@ exports[`Audits renders 1`] = `
   font-style: italic;
 }
 
+.emotion-14 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 1;
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-15 {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #35D07F;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.emotion-15:hover {
+  color: #4CDD91;
+}
+
+.emotion-15:active {
+  color: #0FB972;
+}
+
+.emotion-16 {
+  padding-top: 0.15em;
+  padding-left: 0.4em;
+}
+
 <div
   className="emotion-0"
 >
@@ -344,79 +407,21 @@ exports[`Audits renders 1`] = `
           </p>
           <div
             className="emotion-13"
-            onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
           >
-            <div
-              className="emotion-13"
-              style={
-                Object {
-                  "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
-                  "WebkitBoxOrient": "horizontal",
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitJustifyContent": "center",
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "borderBottomColor": "rgba(0,0,0,0.00)",
-                  "borderLeftColor": "rgba(0,0,0,0.00)",
-                  "borderRightColor": "rgba(0,0,0,0.00)",
-                  "borderTopColor": "rgba(0,0,0,0.00)",
-                  "flexDirection": "row",
-                  "flexGrow": 0,
-                  "justifyContent": "center",
-                  "msFlexDirection": "row",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 0,
-                  "opacity": 1,
-                  "outlineColor": "transparent",
-                  "width": "fit-content",
-                }
-              }
+            <span
+              className="emotion-14"
             >
               <a
-                className="emotion-15 emotion-16 emotion-17"
-                dir="auto"
+                className="emotion-15"
                 href="https://blog.openzeppelin.com/celo-contracts-audit"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 rel="noopener"
-                role="link"
-                style={
-                  Object {
-                    "WebkitAlignItems": "center",
-                    "WebkitBoxAlign": "center",
-                    "alignItems": "center",
-                    "color": "rgba(53,208,127,1.00)",
-                    "cursor": "pointer",
-                    "display": "inline-flex",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "16px",
-                    "marginRight": "30px",
-                    "marginTop": "10px",
-                    "msFlexAlign": "center",
-                    "textAlign": "center",
-                    "textRendering": "geometricPrecision",
-                  }
-                }
                 target="_blank"
               >
                 Read
-                <div
-                  className="emotion-13"
-                  style={
-                    Object {
-                      "display": "inline-flex",
-                      "paddingLeft": "0.4em",
-                      "paddingTop": "0.15em",
-                    }
-                  }
+                <span
+                  className="emotion-16"
                 >
                   <svg
                     fill="none"
@@ -433,9 +438,9 @@ exports[`Audits renders 1`] = `
                       opacity={1}
                     />
                   </svg>
-                </div>
+                </span>
               </a>
-            </div>
+            </span>
           </div>
         </div>
         <div
@@ -454,79 +459,21 @@ exports[`Audits renders 1`] = `
           </p>
           <div
             className="emotion-13"
-            onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
           >
-            <div
-              className="emotion-13"
-              style={
-                Object {
-                  "WebkitBoxDirection": "normal",
-                  "WebkitBoxFlex": 0,
-                  "WebkitBoxOrient": "horizontal",
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexDirection": "row",
-                  "WebkitFlexGrow": 0,
-                  "WebkitJustifyContent": "center",
-                  "backgroundColor": "rgba(0,0,0,0.00)",
-                  "borderBottomColor": "rgba(0,0,0,0.00)",
-                  "borderLeftColor": "rgba(0,0,0,0.00)",
-                  "borderRightColor": "rgba(0,0,0,0.00)",
-                  "borderTopColor": "rgba(0,0,0,0.00)",
-                  "flexDirection": "row",
-                  "flexGrow": 0,
-                  "justifyContent": "center",
-                  "msFlexDirection": "row",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 0,
-                  "opacity": 1,
-                  "outlineColor": "transparent",
-                  "width": "fit-content",
-                }
-              }
+            <span
+              className="emotion-14"
             >
               <a
-                className="emotion-15 emotion-16 emotion-17"
-                dir="auto"
+                className="emotion-15"
                 href="https://www.certora.com/pubs/CeloMay2020.pdf"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
                 rel="noopener"
-                role="link"
-                style={
-                  Object {
-                    "WebkitAlignItems": "center",
-                    "WebkitBoxAlign": "center",
-                    "alignItems": "center",
-                    "color": "rgba(53,208,127,1.00)",
-                    "cursor": "pointer",
-                    "display": "inline-flex",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "16px",
-                    "fontWeight": "500",
-                    "lineHeight": "16px",
-                    "marginRight": "30px",
-                    "marginTop": "10px",
-                    "msFlexAlign": "center",
-                    "textAlign": "center",
-                    "textRendering": "geometricPrecision",
-                  }
-                }
                 target="_blank"
               >
                 Read
-                <div
-                  className="emotion-13"
-                  style={
-                    Object {
-                      "display": "inline-flex",
-                      "paddingLeft": "0.4em",
-                      "paddingTop": "0.15em",
-                    }
-                  }
+                <span
+                  className="emotion-16"
                 >
                   <svg
                     fill="none"
@@ -543,9 +490,9 @@ exports[`Audits renders 1`] = `
                       opacity={1}
                     />
                   </svg>
-                </div>
+                </span>
               </a>
-            </div>
+            </span>
           </div>
         </div>
       </div>

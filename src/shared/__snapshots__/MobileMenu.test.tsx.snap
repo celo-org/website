@@ -69,7 +69,112 @@ exports[`Main MobileMenu renders 1`] = `
   margin-bottom: 25px;
 }
 
-.emotion-37 {
+.emotion-3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 150px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-width: 150px;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: #35D07F;
+}
+
+.emotion-4:hover {
+  color: #4CDD91;
+}
+
+.emotion-4:active {
+  color: #0FB972;
+}
+
+.emotion-7 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #111214;
+  opacity: 1;
+}
+
+.emotion-7:hover {
+  opacity: 0.75;
+}
+
+.emotion-7:active {
+  opacity: 1;
+}
+
+.emotion-23 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -101,65 +206,12 @@ exports[`Main MobileMenu renders 1`] = `
     >
       <div
         className="emotion-3"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "alignItems": "center",
-            "msFlexAlign": "center",
-          }
-        }
       >
         <a
-          className="emotion-4 emotion-5 emotion-6"
-          dir="auto"
+          className="emotion-4"
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(0,0,0,0.00)",
-              "borderBottomColor": "rgba(0,0,0,0.00)",
-              "borderLeftColor": "rgba(0,0,0,0.00)",
-              "borderRightColor": "rgba(0,0,0,0.00)",
-              "borderTopColor": "rgba(0,0,0,0.00)",
-              "color": "rgba(53,208,127,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "20px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "minWidth": "150px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "outlineColor": "transparent",
-              "paddingBottom": "10px",
-              "paddingLeft": "20px",
-              "paddingRight": "20px",
-              "paddingTop": "10px",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           Home
         </a>
@@ -170,60 +222,12 @@ exports[`Main MobileMenu renders 1`] = `
     >
       <div
         className="emotion-3"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "alignItems": "center",
-            "msFlexAlign": "center",
-          }
-        }
       >
         <a
-          className="emotion-4 emotion-5 emotion-6"
-          dir="auto"
+          className="emotion-7"
           href="/about"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(0,0,0,0.00)",
-              "borderBottomColor": "rgba(0,0,0,0.00)",
-              "borderLeftColor": "rgba(0,0,0,0.00)",
-              "borderRightColor": "rgba(0,0,0,0.00)",
-              "borderTopColor": "rgba(0,0,0,0.00)",
-              "color": "rgba(17,18,20,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "20px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "outlineColor": "transparent",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           About
         </a>
@@ -234,60 +238,12 @@ exports[`Main MobileMenu renders 1`] = `
     >
       <div
         className="emotion-3"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "alignItems": "center",
-            "msFlexAlign": "center",
-          }
-        }
       >
         <a
-          className="emotion-4 emotion-5 emotion-6"
-          dir="auto"
+          className="emotion-7"
           href="/developers"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(0,0,0,0.00)",
-              "borderBottomColor": "rgba(0,0,0,0.00)",
-              "borderLeftColor": "rgba(0,0,0,0.00)",
-              "borderRightColor": "rgba(0,0,0,0.00)",
-              "borderTopColor": "rgba(0,0,0,0.00)",
-              "color": "rgba(17,18,20,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "20px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "outlineColor": "transparent",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           Developers
         </a>
@@ -298,60 +254,12 @@ exports[`Main MobileMenu renders 1`] = `
     >
       <div
         className="emotion-3"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "alignItems": "center",
-            "msFlexAlign": "center",
-          }
-        }
       >
         <a
-          className="emotion-4 emotion-5 emotion-6"
-          dir="auto"
+          className="emotion-7"
           href="/community"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(0,0,0,0.00)",
-              "borderBottomColor": "rgba(0,0,0,0.00)",
-              "borderLeftColor": "rgba(0,0,0,0.00)",
-              "borderRightColor": "rgba(0,0,0,0.00)",
-              "borderTopColor": "rgba(0,0,0,0.00)",
-              "color": "rgba(17,18,20,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "20px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "outlineColor": "transparent",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           Community
         </a>
@@ -362,60 +270,12 @@ exports[`Main MobileMenu renders 1`] = `
     >
       <div
         className="emotion-3"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "alignItems": "center",
-            "msFlexAlign": "center",
-          }
-        }
       >
         <a
-          className="emotion-4 emotion-5 emotion-6"
-          dir="auto"
+          className="emotion-7"
           href="/dapps"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(0,0,0,0.00)",
-              "borderBottomColor": "rgba(0,0,0,0.00)",
-              "borderLeftColor": "rgba(0,0,0,0.00)",
-              "borderRightColor": "rgba(0,0,0,0.00)",
-              "borderTopColor": "rgba(0,0,0,0.00)",
-              "color": "rgba(17,18,20,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "20px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "outlineColor": "transparent",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           Ecosystem
         </a>
@@ -426,60 +286,12 @@ exports[`Main MobileMenu renders 1`] = `
     >
       <div
         className="emotion-3"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "alignItems": "center",
-            "msFlexAlign": "center",
-          }
-        }
       >
         <a
-          className="emotion-4 emotion-5 emotion-6"
-          dir="auto"
+          className="emotion-7"
           href="/alliance"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(0,0,0,0.00)",
-              "borderBottomColor": "rgba(0,0,0,0.00)",
-              "borderLeftColor": "rgba(0,0,0,0.00)",
-              "borderRightColor": "rgba(0,0,0,0.00)",
-              "borderTopColor": "rgba(0,0,0,0.00)",
-              "color": "rgba(17,18,20,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "20px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "outlineColor": "transparent",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           Alliance
         </a>
@@ -490,60 +302,12 @@ exports[`Main MobileMenu renders 1`] = `
     >
       <div
         className="emotion-3"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "alignItems": "center",
-            "msFlexAlign": "center",
-          }
-        }
       >
         <a
-          className="emotion-4 emotion-5 emotion-6"
-          dir="auto"
+          className="emotion-7"
           href="/public-sector"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(0,0,0,0.00)",
-              "borderBottomColor": "rgba(0,0,0,0.00)",
-              "borderLeftColor": "rgba(0,0,0,0.00)",
-              "borderRightColor": "rgba(0,0,0,0.00)",
-              "borderTopColor": "rgba(0,0,0,0.00)",
-              "color": "rgba(17,18,20,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "20px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "outlineColor": "transparent",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           Government
         </a>
@@ -551,7 +315,7 @@ exports[`Main MobileMenu renders 1`] = `
     </div>
   </div>
   <div
-    className="emotion-37"
+    className="emotion-23"
   >
     <svg
       fill="none"

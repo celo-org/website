@@ -3,7 +3,7 @@ import { flexRow, WHEN_MOBILE, jost } from "src/estyles"
 import { Entry } from "contentful"
 import { GalleryItem } from "src/utils/contentful"
 import { ContentfulButton } from "src/utils/contentful"
-import Button from "src/shared/Button.3"
+import Button from "src/shared/Button.4"
 import { displayedImageSize } from "../displayRetinaImage"
 import { useScreenSize } from "src/layout/ScreenSize"
 

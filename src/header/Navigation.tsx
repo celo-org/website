@@ -11,7 +11,7 @@ import Octocat from "src/icons/Octocat"
 import { useScreenSize } from "src/layout/ScreenSize"
 import LogoDarkBg from "src/logos/LogoDarkBg"
 import LogoLightBg from "src/logos/LogoLightBg"
-import Button, { BTN } from "src/shared/Button.3"
+import Button, { BTN } from "src/shared/Button.4"
 import Link from "src/shared/Link"
 import menu, { CeloLinks, MAIN_MENU, MenuLink, pagePaths } from "src/shared/menu-items"
 const MobileMenu = dynamic(import("src/shared/MobileMenu"))
@@ -260,7 +260,7 @@ const NavigationLinks = React.memo(function _NavigationLinks(props: {
               <OvalCoin color={colors.primary} size={10} />
             </div>
           )}
-          </div>
+        </div>
       ))}
       <div css={styles.linkWrapper}>
         <Button

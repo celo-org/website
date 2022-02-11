@@ -1,6 +1,6 @@
+import { css } from "@emotion/react"
 import * as React from "react"
-import { StyleSheet } from "react-native"
-import Button, { BTN, SIZE } from "src/shared/Button.3"
+import Button, { BTN, SIZE } from "src/shared/Button.4"
 
 interface Props {
   text: string
@@ -11,7 +11,7 @@ export function HelpfulLink({ text, href }: Props) {
   return (
     <Button
       kind={BTN.NAKED}
-      style={styles.link}
+      cssStyle={linkCSS}
       text={text}
       href={href}
       size={SIZE.normal}
@@ -20,9 +20,7 @@ export function HelpfulLink({ text, href }: Props) {
   )
 }
 
-const styles = StyleSheet.create({
-  link: {
-    marginTop: 10,
-    marginRight: 30,
-  },
+const linkCSS = css({
+  marginTop: 10,
+  marginRight: 30,
 })

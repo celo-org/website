@@ -796,13 +796,53 @@ Array [
   margin-bottom: 8px;
 }
 
-.emotion-52 {
+.emotion-13 {
+  display: inline;
+}
+
+.emotion-14 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+  text-decoration-line: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-14:hover {
+  opacity: 0.75;
+}
+
+.emotion-14:active {
+  opacity: 1;
+}
+
+.emotion-36 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-52 {
+  .emotion-36 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -810,19 +850,23 @@ Array [
   }
 }
 
-.emotion-126 {
+.emotion-82 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-126 {
+  .emotion-82 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+
+.emotion-87 {
+  padding-right: 8px;
 }
 
 <section
@@ -897,44 +941,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Home
@@ -946,44 +959,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/about"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   About
@@ -995,44 +977,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/jobs"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Careers
@@ -1044,44 +995,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/validators"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Validators
@@ -1093,44 +1013,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/developers"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Developers
@@ -1142,44 +1031,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/alliance"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Alliance
@@ -1191,44 +1049,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/community"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Community
@@ -1240,44 +1067,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/annual-reports/2020"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Annual Report
@@ -1286,7 +1082,7 @@ Array [
             </div>
           </div>
           <div
-            className="emotion-52"
+            className="emotion-36"
           >
             <h6
               className="emotion-11"
@@ -1298,44 +1094,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://docs.celo.org/"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Docs
@@ -1347,44 +1112,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/audits"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Security Audits
@@ -1396,44 +1130,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://www.celoreserve.org"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Reserve
@@ -1445,44 +1148,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/papers"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   White Papers
@@ -1494,44 +1166,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/public-sector"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Government
@@ -1540,7 +1181,7 @@ Array [
             </div>
           </div>
           <div
-            className="emotion-52"
+            className="emotion-36"
           >
             <h6
               className="emotion-11"
@@ -1552,44 +1193,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/brand-policy"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Brand Policy
@@ -1601,44 +1211,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/press"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Press
@@ -1650,44 +1229,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/community#events"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Events
@@ -1699,44 +1247,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/experience/events"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   EventKit
@@ -1748,44 +1265,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/experience/brand"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   BrandKit
@@ -1797,44 +1283,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/experience/merchant"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   MerchantKit
@@ -1846,44 +1301,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/experience/grants"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   GrantKit
@@ -1895,44 +1319,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/experience/pilots"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   PilotKit
@@ -1944,44 +1337,13 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="/community#fund"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
                   Ecosystem Fund
@@ -1990,7 +1352,7 @@ Array [
             </div>
           </div>
           <div
-            className="emotion-126"
+            className="emotion-82"
           >
             <h6
               className="emotion-11"
@@ -2002,54 +1364,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://medium.com/celoOrg"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2065,7 +1390,7 @@ Array [
                         fill="#111214"
                       />
                     </svg>
-                  </div>
+                  </span>
                   Blog
                 </a>
               </div>
@@ -2075,54 +1400,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://github.com/celo-org/celo-monorepo"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2140,7 +1428,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </div>
+                  </span>
                   GitHub
                 </a>
               </div>
@@ -2150,54 +1438,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://twitter.com/CeloOrg"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2213,7 +1464,7 @@ Array [
                         fill="#111214"
                       />
                     </svg>
-                  </div>
+                  </span>
                   Twitter
                 </a>
               </div>
@@ -2223,54 +1474,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://forum.celo.org/"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2286,7 +1500,7 @@ Array [
                         fill="#111214"
                       />
                     </svg>
-                  </div>
+                  </span>
                   Forum
                 </a>
               </div>
@@ -2296,54 +1510,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://discord.gg/6yWMkgM"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2361,7 +1538,7 @@ Array [
                         fillRule="evenodd"
                       />
                     </svg>
-                  </div>
+                  </span>
                   Chat
                 </a>
               </div>
@@ -2371,54 +1548,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2434,7 +1574,7 @@ Array [
                         fill="#111214"
                       />
                     </svg>
-                  </div>
+                  </span>
                   YouTube
                 </a>
               </div>
@@ -2444,54 +1584,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://www.instagram.com/celoorg/"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       height={13}
@@ -2506,7 +1609,7 @@ Array [
                         fill="#111214"
                       />
                     </svg>
-                  </div>
+                  </span>
                   Instagram
                 </a>
               </div>
@@ -2516,54 +1619,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://www.linkedin.com/company/celoOrg/"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2576,7 +1642,7 @@ Array [
                         fill="#111214"
                       />
                     </svg>
-                  </div>
+                  </span>
                   LinkedIn
                 </a>
               </div>
@@ -2586,54 +1652,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://www.twitch.tv/celoorg"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2646,7 +1675,7 @@ Array [
                         fill="#111214"
                       />
                     </svg>
-                  </div>
+                  </span>
                   Twitch
                 </a>
               </div>
@@ -2656,54 +1685,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://www.reddit.com/r/celo/"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2716,7 +1708,7 @@ Array [
                         fill="#111214"
                       />
                     </svg>
-                  </div>
+                  </span>
                   Reddit
                 </a>
               </div>
@@ -2726,54 +1718,17 @@ Array [
             >
               <div
                 className="emotion-13"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
               >
                 <a
-                  className="emotion-14 emotion-15 emotion-16"
-                  dir="auto"
+                  className="emotion-14"
                   href="https://t.me/celoplatform"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitTextDecorationStyle": "solid",
-                      "alignItems": "center",
-                      "color": "rgba(17,18,20,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "16px",
-                      "lineHeight": "20px",
-                      "msFlexAlign": "center",
-                      "opacity": 1,
-                      "textDecoration": "none",
-                      "textDecorationStyle": "solid",
-                      "textRendering": "geometricPrecision",
-                    }
-                  }
                   target="_blank"
                 >
-                  <div
-                    className="emotion-13"
-                    style={
-                      Object {
-                        "display": "inline-flex",
-                        "paddingRight": "8px",
-                      }
-                    }
+                  <span
+                    className="emotion-87"
                   >
                     <svg
                       fill="none"
@@ -2786,7 +1741,7 @@ Array [
                         fill="#111214"
                       />
                     </svg>
-                  </div>
+                  </span>
                   Telegram
                 </a>
               </div>

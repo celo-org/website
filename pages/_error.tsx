@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 import * as React from "react"
 import Rise from "src/join/Rise"
-import Button, { BTN, SIZE } from "src/shared/Button.3"
+import Button, { BTN, SIZE } from "src/shared/Button.4"
 import { fonts, standardStyles, textStyles } from "src/estyles"
 import { colors } from "src/colors"
 

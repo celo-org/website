@@ -1,5 +1,5 @@
 import * as React from "react"
-import Button from "src/shared/Button.3"
+import Button from "src/shared/Button.4"
 import { Entry } from "contentful"
 import { ContentfulButton } from "src/utils/contentful"
 import { useScreenSize } from "src/layout/ScreenSize"

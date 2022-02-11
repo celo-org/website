@@ -3,8 +3,8 @@ import { Asset, Entry } from "contentful"
 import * as React from "react"
 import { ContentfulButton } from "src/utils/contentful"
 import { flex, fonts, WHEN_MOBILE, whiteText } from "src/estyles"
-import Button, { SIZE } from "src/shared/Button.3"
-import { standardStyles } from "src/styles"
+import Button, { SIZE } from "src/shared/Button.4"
+import { standardStyles } from "src/estyles"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { Document, BLOCKS, Block } from "@contentful/rich-text-types"
 import renderNode, { renderWhiteParagraph } from "src/contentful/nodes/paragraph"
@@ -79,7 +79,7 @@ export default function Blurb(props: Props) {
       {props.link && (
         <Button
           key={props.link.sys.id}
-          style={standardStyles.elementalMarginTop}
+          cssStyle={standardStyles.elementalMarginTop}
           href={props.link.fields.href || props.link.fields.assetLink?.fields?.file?.url}
           text={props.link.fields.words}
           kind={props.link.fields.kind}

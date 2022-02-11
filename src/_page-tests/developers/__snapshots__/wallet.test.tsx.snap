@@ -1535,6 +1535,70 @@ Check out these wallets for everyday use.
   line-height: 28px;
 }
 
+.emotion-8 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 1;
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-9 {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #35D07F;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.emotion-9:hover {
+  color: #4CDD91;
+}
+
+.emotion-9:active {
+  color: #0FB972;
+}
+
+.emotion-10 {
+  padding-top: 0.15em;
+  padding-left: 0.4em;
+}
+
 <section
     className="emotion-0"
   >
@@ -1672,78 +1736,21 @@ Check out these wallets for everyday use.
         </div>
         <div
           className="emotion-7"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
         >
-          <div
-            className="emotion-7"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+          <span
+            className="emotion-8"
           >
             <a
-              className="emotion-9 emotion-10 emotion-11"
-              dir="auto"
+              className="emotion-9"
               href="https://valoraapp.com"
               onClick={[Function]}
               onMouseEnter={[Function]}
               rel="noopener"
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginTop": "20px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
               target="_blank"
             >
               Get Valora
-              <div
-                className="emotion-7"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.15em",
-                  }
-                }
+              <span
+                className="emotion-10"
               >
                 <svg
                   fill="none"
@@ -1760,9 +1767,9 @@ Check out these wallets for everyday use.
                     opacity={1}
                   />
                 </svg>
-              </div>
+              </span>
             </a>
-          </div>
+          </span>
         </div>
       </div>
       <div
@@ -1896,78 +1903,21 @@ Check out these wallets for everyday use.
         </div>
         <div
           className="emotion-7"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
         >
-          <div
-            className="emotion-7"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+          <span
+            className="emotion-8"
           >
             <a
-              className="emotion-9 emotion-10 emotion-11"
-              dir="auto"
+              className="emotion-9"
               href="https://celowallet.app"
               onClick={[Function]}
               onMouseEnter={[Function]}
               rel="noopener"
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginTop": "20px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
               target="_blank"
             >
               Go to Celo Web Wallet
-              <div
-                className="emotion-7"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.15em",
-                  }
-                }
+              <span
+                className="emotion-10"
               >
                 <svg
                   fill="none"
@@ -1984,9 +1934,9 @@ Check out these wallets for everyday use.
                     opacity={1}
                   />
                 </svg>
-              </div>
+              </span>
             </a>
-          </div>
+          </span>
         </div>
       </div>
       <div
@@ -2120,78 +2070,21 @@ Check out these wallets for everyday use.
         </div>
         <div
           className="emotion-7"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
         >
-          <div
-            className="emotion-7"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+          <span
+            className="emotion-8"
           >
             <a
-              className="emotion-9 emotion-10 emotion-11"
-              dir="auto"
+              className="emotion-9"
               href="https://celowallet.app"
               onClick={[Function]}
               onMouseEnter={[Function]}
               rel="noopener"
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginTop": "20px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
               target="_blank"
             >
               Get to Celo Terminal
-              <div
-                className="emotion-7"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.15em",
-                  }
-                }
+              <span
+                className="emotion-10"
               >
                 <svg
                   fill="none"
@@ -2208,9 +2101,9 @@ Check out these wallets for everyday use.
                     opacity={1}
                   />
                 </svg>
-              </div>
+              </span>
             </a>
-          </div>
+          </span>
         </div>
       </div>
     </div>
