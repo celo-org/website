@@ -39,7 +39,7 @@
     "@sentry/node": "^6.16.1",
     "airtable": "^0.11.1",
     "bignumber.js": "^9.0.1",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.19.1",
     "colortranslator": "^1.9.1",
     "compression": "^1.7.4",
     "connect-slashes": "^1.4.0",
