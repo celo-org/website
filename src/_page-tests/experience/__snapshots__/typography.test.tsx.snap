@@ -455,13 +455,34 @@ exports[`Experience/Typography renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-259 {
+.emotion-159 {
+  display: inline;
+}
+
+.emotion-160 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+}
+
+.emotion-160:hover {
+  opacity: 0.75;
+}
+
+.emotion-160:active {
+  opacity: 1;
+}
+
+.emotion-256 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-260 {
+.emotion-257 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -481,7 +502,7 @@ exports[`Experience/Typography renders 1`] = `
   width: 100%;
 }
 
-.emotion-261 {
+.emotion-258 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -510,7 +531,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-261 {
+  .emotion-258 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -527,7 +548,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-261 {
+  .emotion-258 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -539,36 +560,36 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-261 {
+  .emotion-258 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-261 {
+  .emotion-258 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-261 {
+  .emotion-258 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-261 {
+  .emotion-258 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-261 {
+  .emotion-258 {
     margin-top: 30px;
   }
 }
 
-.emotion-262 {
+.emotion-259 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -581,12 +602,12 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-262 {
+  .emotion-259 {
     grid-column: span 3;
   }
 }
 
-.emotion-263 {
+.emotion-260 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -599,7 +620,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-263 {
+  .emotion-260 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -612,7 +633,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-264 {
+.emotion-261 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -625,7 +646,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-264 {
+  .emotion-261 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -637,7 +658,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-265 {
+.emotion-262 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -654,16 +675,16 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-265 {
+  .emotion-262 {
     text-align: center;
   }
 }
 
-.emotion-267 {
+.emotion-264 {
   color: inherit;
 }
 
-.emotion-268 {
+.emotion-265 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -676,12 +697,12 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-268 {
+  .emotion-265 {
     grid-column: span 3;
   }
 }
 
-.emotion-269 {
+.emotion-266 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -697,21 +718,21 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-269 {
+  .emotion-266 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-270 {
+.emotion-267 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-270 {
+  .emotion-267 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -719,7 +740,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-271 {
+.emotion-268 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -734,18 +755,54 @@ exports[`Experience/Typography renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-272 {
+.emotion-269 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-312 {
+.emotion-271 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+  text-decoration-line: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-271:hover {
+  opacity: 0.75;
+}
+
+.emotion-271:active {
+  opacity: 1;
+}
+
+.emotion-293 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-312 {
+  .emotion-293 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -753,14 +810,14 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-386 {
+.emotion-339 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-386 {
+  .emotion-339 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -768,7 +825,11 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-455 {
+.emotion-344 {
+  padding-right: 8px;
+}
+
+.emotion-386 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -797,7 +858,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-455 {
+  .emotion-386 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -814,7 +875,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-455 {
+  .emotion-386 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -826,39 +887,39 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-455 {
+  .emotion-386 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-455 {
+  .emotion-386 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-455 {
+  .emotion-386 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-455 {
+  .emotion-386 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-455 {
+  .emotion-386 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-456 {
+.emotion-387 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -876,7 +937,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-456 {
+  .emotion-387 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -891,7 +952,7 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-457 {
+.emotion-388 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -905,7 +966,7 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-457 {
+  .emotion-388 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -917,31 +978,31 @@ exports[`Experience/Typography renders 1`] = `
   }
 }
 
-.emotion-458 {
+.emotion-389 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-458 {
+  .emotion-389 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-459 {
+.emotion-390 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-459 {
+  .emotion-390 {
     display: none;
   }
 }
 
-.emotion-460 {
+.emotion-391 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -953,7 +1014,7 @@ exports[`Experience/Typography renders 1`] = `
   position: relative;
 }
 
-.emotion-461 {
+.emotion-392 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -980,7 +1041,7 @@ exports[`Experience/Typography renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-462 {
+.emotion-393 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1003,12 +1064,12 @@ exports[`Experience/Typography renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-462 {
+  .emotion-393 {
     text-align: center;
   }
 }
 
-.emotion-463 {
+.emotion-394 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1033,7 +1094,7 @@ exports[`Experience/Typography renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-464 {
+.emotion-395 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2910,34 +2971,13 @@ exports[`Experience/Typography renders 1`] = `
 
 Refer to the 
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15 emotion-163"
+                    className="emotion-160"
                     href="https://medium.com/celoOrg/the-why-of-the-celo-coin-part-1-of-3-5e5701805847"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitTextDecorationStyle": "solid",
-                        "cursor": "pointer",
-                        "display": "inline",
-                        "opacity": 1,
-                        "textDecoration": "underline",
-                        "textDecorationStyle": "solid",
-                      }
-                    }
                   >
                     philosophy
                   </a>
@@ -4481,20 +4521,20 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
     </div>
   </div>
   <div
-    className="emotion-259"
+    className="emotion-256"
     id="experience-footer"
   >
     <section
-      className="emotion-260"
+      className="emotion-257"
     >
       <div
-        className="emotion-261"
+        className="emotion-258"
       >
         <div
-          className="emotion-262"
+          className="emotion-259"
         >
           <div
-            className="emotion-263"
+            className="emotion-260"
           >
             <svg
               fill="none"
@@ -4517,19 +4557,19 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
             </svg>
           </div>
           <div
-            className="emotion-264"
+            className="emotion-261"
           >
             <p
-              className="emotion-265"
+              className="emotion-262"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-265"
+              className="emotion-262"
             >
               Read more in Celo 
               <a
-                className="emotion-267"
+                className="emotion-264"
                 href="/terms"
               >
                 Terms of Service
@@ -4538,62 +4578,31 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
           </div>
         </div>
         <div
-          className="emotion-268"
+          className="emotion-265"
         >
           <div
-            className="emotion-269"
+            className="emotion-266"
           >
             <div
-              className="emotion-270"
+              className="emotion-267"
             >
               <h6
-                className="emotion-271"
+                className="emotion-268"
               >
                 Celo
               </h6>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Home
@@ -4601,48 +4610,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/about"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     About
@@ -4650,48 +4628,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/jobs"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Careers
@@ -4699,48 +4646,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/validators"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Validators
@@ -4748,48 +4664,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/developers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Developers
@@ -4797,48 +4682,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/alliance"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Alliance
@@ -4846,48 +4700,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/community"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Community
@@ -4895,48 +4718,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/annual-reports/2020"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Annual Report
@@ -4945,56 +4737,25 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
               </div>
             </div>
             <div
-              className="emotion-312"
+              className="emotion-293"
             >
               <h6
-                className="emotion-271"
+                className="emotion-268"
               >
                 Technology
               </h6>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://docs.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Docs
@@ -5002,48 +4763,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/audits"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Security Audits
@@ -5051,48 +4781,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://www.celoreserve.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Reserve
@@ -5100,48 +4799,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/papers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     White Papers
@@ -5149,48 +4817,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/public-sector"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Government
@@ -5199,56 +4836,25 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
               </div>
             </div>
             <div
-              className="emotion-312"
+              className="emotion-293"
             >
               <h6
-                className="emotion-271"
+                className="emotion-268"
               >
                 Resources
               </h6>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/brand-policy"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Brand Policy
@@ -5256,48 +4862,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/press"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Press
@@ -5305,48 +4880,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/community#events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Events
@@ -5354,48 +4898,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/experience/events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     EventKit
@@ -5403,48 +4916,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/experience/brand"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     BrandKit
@@ -5452,48 +4934,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/experience/merchant"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     MerchantKit
@@ -5501,48 +4952,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/experience/grants"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     GrantKit
@@ -5550,48 +4970,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/experience/pilots"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     PilotKit
@@ -5599,48 +4988,17 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="/community#fund"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Ecosystem Fund
@@ -5649,66 +5007,29 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
               </div>
             </div>
             <div
-              className="emotion-386"
+              className="emotion-339"
             >
               <h6
-                className="emotion-271"
+                className="emotion-268"
               >
                 Social
               </h6>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://medium.com/celoOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -5724,64 +5045,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Blog
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://github.com/celo-org/celo-monorepo"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -5799,64 +5083,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     GitHub
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://twitter.com/CeloOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -5872,64 +5119,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitter
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://forum.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -5945,64 +5155,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Forum
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://discord.gg/6yWMkgM"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -6020,64 +5193,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Chat
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -6093,64 +5229,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     YouTube
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://www.instagram.com/celoorg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         height={13}
@@ -6165,64 +5264,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Instagram
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://www.linkedin.com/company/celoOrg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -6235,64 +5297,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     LinkedIn
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://www.twitch.tv/celoorg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -6305,64 +5330,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitch
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://www.reddit.com/r/celo/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -6375,64 +5363,27 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Reddit
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-272"
+                className="emotion-269"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-159"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-271"
                     href="https://t.me/celoplatform"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-344"
                     >
                       <svg
                         fill="none"
@@ -6445,7 +5396,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Telegram
                   </a>
                 </div>
@@ -6456,48 +5407,48 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
       </div>
     </section>
     <section
-      className="emotion-260"
+      className="emotion-257"
     >
       <div
-        className="emotion-455"
+        className="emotion-386"
       >
         <div
-          className="emotion-456"
+          className="emotion-387"
         >
           <div
-            className="emotion-457"
+            className="emotion-388"
           >
             <img
-              className="emotion-458"
+              className="emotion-389"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-459"
+              className="emotion-390"
             >
               |
             </span>
             <div
-              className="emotion-460"
+              className="emotion-391"
             >
               <div
-                className="emotion-461"
+                className="emotion-392"
               />
               <span
-                className="emotion-462"
+                className="emotion-393"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-463"
+                className="emotion-394"
               />
             </div>
           </div>
           <small
-            className="emotion-464"
+            className="emotion-395"
           >
             The Celo Foundation, © Celo 2022
           </small>

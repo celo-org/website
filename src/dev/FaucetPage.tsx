@@ -5,7 +5,7 @@ import { RequestState } from "src/fauceting/utils"
 import OpenGraph from "src/header/OpenGraph"
 import { I18nProps, NameSpaces, Trans, withNamespaces } from "src/i18n"
 import SideTitledSection from "src/layout/SideTitledSection"
-import Button, { BTN, SIZE } from "src/shared/Button.3"
+import Button, { BTN, SIZE } from "src/shared/Button.4"
 import InlineAnchor from "src/shared/InlineAnchor"
 import { CeloLinks } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
@@ -30,7 +30,9 @@ class FaucetPage extends React.Component<I18nProps, State> {
           image={require("src/fauceting/ogimage-faucet.png")}
         />
         <div css={container}>
-          <h1 css={[fonts.h1, textStyles.center, standardStyles.sectionMarginTablet]}>{t("title")}</h1>
+          <h1 css={[fonts.h1, textStyles.center, standardStyles.sectionMarginTablet]}>
+            {t("title")}
+          </h1>
           <SideTitledSection title={t("addFunds")} text={t("addFundsText")}>
             <RequestFunds kind={RequestType.Faucet} />
           </SideTitledSection>
@@ -110,11 +112,11 @@ export default withNamespaces(NameSpaces.faucet)(FaucetPage)
 const container = css({
   marginTop: HEADER_HEIGHT,
   display: "flex",
-  flexDirection: "column"
+  flexDirection: "column",
 })
 
 const styles = {
   content: css({
-    paddingBottom: 10
-  })
+    paddingBottom: 10,
+  }),
 }

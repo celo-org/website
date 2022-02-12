@@ -752,13 +752,53 @@ exports[`Experience/Color renders 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-443 {
+.emotion-404 {
+  display: inline;
+}
+
+.emotion-405 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+  text-decoration-line: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-405:hover {
+  opacity: 0.75;
+}
+
+.emotion-405:active {
+  opacity: 1;
+}
+
+.emotion-427 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-443 {
+  .emotion-427 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -766,14 +806,14 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-517 {
+.emotion-473 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-517 {
+  .emotion-473 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -781,7 +821,11 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-586 {
+.emotion-478 {
+  padding-right: 8px;
+}
+
+.emotion-520 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -810,7 +854,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-586 {
+  .emotion-520 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -827,7 +871,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-586 {
+  .emotion-520 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -839,39 +883,39 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-586 {
+  .emotion-520 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-586 {
+  .emotion-520 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-586 {
+  .emotion-520 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-586 {
+  .emotion-520 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-586 {
+  .emotion-520 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-587 {
+.emotion-521 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -889,7 +933,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-587 {
+  .emotion-521 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -904,7 +948,7 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-588 {
+.emotion-522 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -918,7 +962,7 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-588 {
+  .emotion-522 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -930,31 +974,31 @@ exports[`Experience/Color renders 1`] = `
   }
 }
 
-.emotion-589 {
+.emotion-523 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-589 {
+  .emotion-523 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-590 {
+.emotion-524 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-590 {
+  .emotion-524 {
     display: none;
   }
 }
 
-.emotion-591 {
+.emotion-525 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -966,7 +1010,7 @@ exports[`Experience/Color renders 1`] = `
   position: relative;
 }
 
-.emotion-592 {
+.emotion-526 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -993,7 +1037,7 @@ exports[`Experience/Color renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-593 {
+.emotion-527 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1016,12 +1060,12 @@ exports[`Experience/Color renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-593 {
+  .emotion-527 {
     text-align: center;
   }
 }
 
-.emotion-594 {
+.emotion-528 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1046,7 +1090,7 @@ exports[`Experience/Color renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-595 {
+.emotion-529 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -6864,45 +6908,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Home
@@ -6913,45 +6926,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/about"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     About
@@ -6962,45 +6944,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/jobs"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Careers
@@ -7011,45 +6962,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/validators"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Validators
@@ -7060,45 +6980,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/developers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Developers
@@ -7109,45 +6998,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/alliance"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Alliance
@@ -7158,45 +7016,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/community"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Community
@@ -7207,45 +7034,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/annual-reports/2020"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Annual Report
@@ -7254,7 +7050,7 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="emotion-443"
+              className="emotion-427"
             >
               <h6
                 className="emotion-402"
@@ -7265,45 +7061,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://docs.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Docs
@@ -7314,45 +7079,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/audits"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Security Audits
@@ -7363,45 +7097,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://www.celoreserve.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Reserve
@@ -7412,45 +7115,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/papers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     White Papers
@@ -7461,45 +7133,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/public-sector"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Government
@@ -7508,7 +7149,7 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="emotion-443"
+              className="emotion-427"
             >
               <h6
                 className="emotion-402"
@@ -7519,45 +7160,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/brand-policy"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Brand Policy
@@ -7568,45 +7178,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/press"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Press
@@ -7617,45 +7196,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/community#events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Events
@@ -7666,45 +7214,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/experience/events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     EventKit
@@ -7715,45 +7232,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/experience/brand"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     BrandKit
@@ -7764,45 +7250,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/experience/merchant"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     MerchantKit
@@ -7813,45 +7268,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/experience/grants"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     GrantKit
@@ -7862,45 +7286,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/experience/pilots"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     PilotKit
@@ -7911,45 +7304,14 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="/community#fund"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Ecosystem Fund
@@ -7958,7 +7320,7 @@ Blue represents help within digital experiences like websites and mobile applica
               </div>
             </div>
             <div
-              className="emotion-517"
+              className="emotion-473"
             >
               <h6
                 className="emotion-402"
@@ -7969,55 +7331,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://medium.com/celoOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8033,7 +7358,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Blog
                   </a>
                 </div>
@@ -8042,55 +7367,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://github.com/celo-org/celo-monorepo"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8108,7 +7396,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     GitHub
                   </a>
                 </div>
@@ -8117,55 +7405,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://twitter.com/CeloOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8181,7 +7432,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitter
                   </a>
                 </div>
@@ -8190,55 +7441,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://forum.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8254,7 +7468,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Forum
                   </a>
                 </div>
@@ -8263,55 +7477,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://discord.gg/6yWMkgM"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8329,7 +7506,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Chat
                   </a>
                 </div>
@@ -8338,55 +7515,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8402,7 +7542,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     YouTube
                   </a>
                 </div>
@@ -8411,55 +7551,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://www.instagram.com/celoorg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         height={13}
@@ -8474,7 +7577,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Instagram
                   </a>
                 </div>
@@ -8483,55 +7586,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://www.linkedin.com/company/celoOrg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8544,7 +7610,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     LinkedIn
                   </a>
                 </div>
@@ -8553,55 +7619,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://www.twitch.tv/celoorg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8614,7 +7643,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitch
                   </a>
                 </div>
@@ -8623,55 +7652,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://www.reddit.com/r/celo/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8684,7 +7676,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Reddit
                   </a>
                 </div>
@@ -8693,55 +7685,18 @@ Blue represents help within digital experiences like websites and mobile applica
                 className="emotion-403"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-404"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-405"
                     href="https://t.me/celoplatform"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-478"
                     >
                       <svg
                         fill="none"
@@ -8754,7 +7709,7 @@ Blue represents help within digital experiences like websites and mobile applica
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Telegram
                   </a>
                 </div>
@@ -8768,45 +7723,45 @@ Blue represents help within digital experiences like websites and mobile applica
       className="emotion-391"
     >
       <div
-        className="emotion-586"
+        className="emotion-520"
       >
         <div
-          className="emotion-587"
+          className="emotion-521"
         >
           <div
-            className="emotion-588"
+            className="emotion-522"
           >
             <img
-              className="emotion-589"
+              className="emotion-523"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-590"
+              className="emotion-524"
             >
               |
             </span>
             <div
-              className="emotion-591"
+              className="emotion-525"
             >
               <div
-                className="emotion-592"
+                className="emotion-526"
               />
               <span
-                className="emotion-593"
+                className="emotion-527"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-594"
+                className="emotion-528"
               />
             </div>
           </div>
           <small
-            className="emotion-595"
+            className="emotion-529"
           >
             The Celo Foundation, © Celo 2022
           </small>

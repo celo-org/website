@@ -1,9 +1,7 @@
-import * as React from 'react'
-import { StyleSheet } from "react-native"
-import Button, { BTN } from 'src/shared/Button.3'
-import { fonts as oldFonts, textStyles } from "src/styles"
+import * as React from "react"
+import Button, { BTN } from "src/shared/Button.4"
 import { css } from "@emotion/react"
-import { WHEN_MOBILE, fonts, whiteText } from "src/estyles"
+import { WHEN_MOBILE, fonts, whiteText, textStyles } from "src/estyles"
 
 export interface LinkType {
   name: string
@@ -21,9 +19,7 @@ interface Props {
 export default React.memo(function FooterColumn({ heading, links, className, darkMode }: Props) {
   return (
     <div css={rootStyle} className={className}>
-      <h6 css={css(headingStyle, darkMode && whiteText)}>
-        {heading}
-      </h6>
+      <h6 css={css(headingStyle, darkMode && whiteText)}>{heading}</h6>
       {links.map(({ name, link, icon }) => (
         <div css={linkContainerCss} key={link}>
           <Button
@@ -32,7 +28,7 @@ export default React.memo(function FooterColumn({ heading, links, className, dar
             kind={BTN.INLINE}
             text={name}
             href={link}
-            style={[styles.link, oldFonts.legal, darkMode && textStyles.invert]}
+            cssStyle={css(linkCss, darkMode && textStyles.invert)}
           />
         </div>
       ))}
@@ -60,10 +56,8 @@ const headingStyle = css(fonts.h6, {
   marginBottom: 20,
 })
 
-const styles = StyleSheet.create({
-  link: {
-    textDecorationLine: "none",
-    display: "inline-flex",
-    alignItems: "center",
-  },
+const linkCss = css(fonts.legal, {
+  textDecorationLine: "none",
+  display: "inline-flex",
+  alignItems: "center",
 })

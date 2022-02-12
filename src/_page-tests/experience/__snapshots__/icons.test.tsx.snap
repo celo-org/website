@@ -455,11 +455,32 @@ exports[`Experience/Icons renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-163 {
+.emotion-158 {
+  display: inline;
+}
+
+.emotion-159 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+}
+
+.emotion-159:hover {
+  opacity: 0.75;
+}
+
+.emotion-159:active {
+  opacity: 1;
+}
+
+.emotion-160 {
   min-height: 100vh;
 }
 
-.emotion-167 {
+.emotion-164 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -479,7 +500,7 @@ exports[`Experience/Icons renders 1`] = `
   transition-property: opacity;
 }
 
-.emotion-168 {
+.emotion-165 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -493,21 +514,21 @@ exports[`Experience/Icons renders 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-169 {
+.emotion-166 {
   width: 260px;
 }
 
-.emotion-171 {
+.emotion-168 {
   opacity: 0;
 }
 
-.emotion-201 {
+.emotion-198 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-202 {
+.emotion-199 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -527,7 +548,7 @@ exports[`Experience/Icons renders 1`] = `
   width: 100%;
 }
 
-.emotion-203 {
+.emotion-200 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -556,7 +577,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-203 {
+  .emotion-200 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -573,7 +594,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-203 {
+  .emotion-200 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -585,36 +606,36 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-203 {
+  .emotion-200 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-203 {
+  .emotion-200 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-203 {
+  .emotion-200 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-203 {
+  .emotion-200 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-203 {
+  .emotion-200 {
     margin-top: 30px;
   }
 }
 
-.emotion-204 {
+.emotion-201 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -627,12 +648,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-204 {
+  .emotion-201 {
     grid-column: span 3;
   }
 }
 
-.emotion-205 {
+.emotion-202 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -645,7 +666,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-205 {
+  .emotion-202 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -658,7 +679,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-206 {
+.emotion-203 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -671,7 +692,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-206 {
+  .emotion-203 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -683,7 +704,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-207 {
+.emotion-204 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -700,16 +721,16 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-207 {
+  .emotion-204 {
     text-align: center;
   }
 }
 
-.emotion-209 {
+.emotion-206 {
   color: inherit;
 }
 
-.emotion-210 {
+.emotion-207 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -722,12 +743,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-210 {
+  .emotion-207 {
     grid-column: span 3;
   }
 }
 
-.emotion-211 {
+.emotion-208 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -743,21 +764,21 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-211 {
+  .emotion-208 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-212 {
+.emotion-209 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-212 {
+  .emotion-209 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -765,7 +786,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-213 {
+.emotion-210 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -780,18 +801,54 @@ exports[`Experience/Icons renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-214 {
+.emotion-211 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-254 {
+.emotion-213 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+  text-decoration-line: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-213:hover {
+  opacity: 0.75;
+}
+
+.emotion-213:active {
+  opacity: 1;
+}
+
+.emotion-235 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-254 {
+  .emotion-235 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -799,14 +856,14 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-328 {
+.emotion-281 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-328 {
+  .emotion-281 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -814,7 +871,11 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-397 {
+.emotion-286 {
+  padding-right: 8px;
+}
+
+.emotion-328 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -843,7 +904,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-397 {
+  .emotion-328 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -860,7 +921,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-397 {
+  .emotion-328 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -872,39 +933,39 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-397 {
+  .emotion-328 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-397 {
+  .emotion-328 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-397 {
+  .emotion-328 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-397 {
+  .emotion-328 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-397 {
+  .emotion-328 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-398 {
+.emotion-329 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -922,7 +983,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-398 {
+  .emotion-329 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -937,7 +998,7 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-399 {
+.emotion-330 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -951,7 +1012,7 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-399 {
+  .emotion-330 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -963,31 +1024,31 @@ exports[`Experience/Icons renders 1`] = `
   }
 }
 
-.emotion-400 {
+.emotion-331 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-400 {
+  .emotion-331 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-401 {
+.emotion-332 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-401 {
+  .emotion-332 {
     display: none;
   }
 }
 
-.emotion-402 {
+.emotion-333 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -999,7 +1060,7 @@ exports[`Experience/Icons renders 1`] = `
   position: relative;
 }
 
-.emotion-403 {
+.emotion-334 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1026,7 +1087,7 @@ exports[`Experience/Icons renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-404 {
+.emotion-335 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1049,12 +1110,12 @@ exports[`Experience/Icons renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-404 {
+  .emotion-335 {
     text-align: center;
   }
 }
 
-.emotion-405 {
+.emotion-336 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1079,7 +1140,7 @@ exports[`Experience/Icons renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-406 {
+.emotion-337 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2957,34 +3018,13 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
             >
               You may copy and redistribute icons as long as you are abiding by the 
               <div
-                className="emotion-11"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
+                className="emotion-158"
               >
                 <a
-                  className="emotion-13 emotion-14 emotion-15 emotion-162"
+                  className="emotion-159"
                   href="/brand-policy"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitTextDecorationStyle": "solid",
-                      "cursor": "pointer",
-                      "display": "inline",
-                      "opacity": 1,
-                      "textDecoration": "underline",
-                      "textDecorationStyle": "solid",
-                    }
-                  }
                 >
                   Brand Policy
                 </a>
@@ -2992,7 +3032,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               . You may not remix or transform the icons.
             </div>
             <div
-              className="emotion-163"
+              className="emotion-160"
             >
               <div
                 className="emotion-11"
@@ -3027,7 +3067,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   autoCapitalize="sentences"
                   autoComplete="on"
                   autoCorrect="on"
-                  className="emotion-166"
+                  className="emotion-163"
                   dir="auto"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -3078,15 +3118,15 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
               <span
                 aria-hidden={true}
-                className="emotion-167"
+                className="emotion-164"
               >
                 2 Matching Icons
               </span>
               <div
-                className="emotion-168"
+                className="emotion-165"
               >
                 <div
-                  className="emotion-169"
+                  className="emotion-166"
                   data-testid="1"
                 >
                   <div
@@ -3101,7 +3141,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     }
                   >
                     <div
-                      className="emotion-171"
+                      className="emotion-168"
                     >
                       <div
                         className="emotion-11"
@@ -3324,7 +3364,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                   </div>
                 </div>
                 <div
-                  className="emotion-169"
+                  className="emotion-166"
                   data-testid="2"
                 >
                   <div
@@ -3339,7 +3379,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                     }
                   >
                     <div
-                      className="emotion-171"
+                      className="emotion-168"
                     >
                       <div
                         className="emotion-11"
@@ -3569,20 +3609,20 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
     </div>
   </div>
   <div
-    className="emotion-201"
+    className="emotion-198"
     id="experience-footer"
   >
     <section
-      className="emotion-202"
+      className="emotion-199"
     >
       <div
-        className="emotion-203"
+        className="emotion-200"
       >
         <div
-          className="emotion-204"
+          className="emotion-201"
         >
           <div
-            className="emotion-205"
+            className="emotion-202"
           >
             <svg
               fill="none"
@@ -3605,19 +3645,19 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
             </svg>
           </div>
           <div
-            className="emotion-206"
+            className="emotion-203"
           >
             <p
-              className="emotion-207"
+              className="emotion-204"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-207"
+              className="emotion-204"
             >
               Read more in Celo 
               <a
-                className="emotion-209"
+                className="emotion-206"
                 href="/terms"
               >
                 Terms of Service
@@ -3626,62 +3666,31 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
           </div>
         </div>
         <div
-          className="emotion-210"
+          className="emotion-207"
         >
           <div
-            className="emotion-211"
+            className="emotion-208"
           >
             <div
-              className="emotion-212"
+              className="emotion-209"
             >
               <h6
-                className="emotion-213"
+                className="emotion-210"
               >
                 Celo
               </h6>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Home
@@ -3689,48 +3698,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/about"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     About
@@ -3738,48 +3716,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/jobs"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Careers
@@ -3787,48 +3734,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/validators"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Validators
@@ -3836,48 +3752,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/developers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Developers
@@ -3885,48 +3770,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/alliance"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Alliance
@@ -3934,48 +3788,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/community"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Community
@@ -3983,48 +3806,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/annual-reports/2020"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Annual Report
@@ -4033,56 +3825,25 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
             </div>
             <div
-              className="emotion-254"
+              className="emotion-235"
             >
               <h6
-                className="emotion-213"
+                className="emotion-210"
               >
                 Technology
               </h6>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://docs.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Docs
@@ -4090,48 +3851,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/audits"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Security Audits
@@ -4139,48 +3869,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://www.celoreserve.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Reserve
@@ -4188,48 +3887,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/papers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     White Papers
@@ -4237,48 +3905,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/public-sector"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Government
@@ -4287,56 +3924,25 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
             </div>
             <div
-              className="emotion-254"
+              className="emotion-235"
             >
               <h6
-                className="emotion-213"
+                className="emotion-210"
               >
                 Resources
               </h6>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/brand-policy"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Brand Policy
@@ -4344,48 +3950,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/press"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Press
@@ -4393,48 +3968,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/community#events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Events
@@ -4442,48 +3986,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/experience/events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     EventKit
@@ -4491,48 +4004,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/experience/brand"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     BrandKit
@@ -4540,48 +4022,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/experience/merchant"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     MerchantKit
@@ -4589,48 +4040,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/experience/grants"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     GrantKit
@@ -4638,48 +4058,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/experience/pilots"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     PilotKit
@@ -4687,48 +4076,17 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="/community#fund"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Ecosystem Fund
@@ -4737,66 +4095,29 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
               </div>
             </div>
             <div
-              className="emotion-328"
+              className="emotion-281"
             >
               <h6
-                className="emotion-213"
+                className="emotion-210"
               >
                 Social
               </h6>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://medium.com/celoOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -4812,64 +4133,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Blog
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://github.com/celo-org/celo-monorepo"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -4887,64 +4171,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     GitHub
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://twitter.com/CeloOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -4960,64 +4207,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitter
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://forum.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -5033,64 +4243,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Forum
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://discord.gg/6yWMkgM"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -5108,64 +4281,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Chat
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -5181,64 +4317,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     YouTube
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://www.instagram.com/celoorg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         height={13}
@@ -5253,64 +4352,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Instagram
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://www.linkedin.com/company/celoOrg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -5323,64 +4385,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     LinkedIn
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://www.twitch.tv/celoorg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -5393,64 +4418,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitch
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://www.reddit.com/r/celo/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -5463,64 +4451,27 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Reddit
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-214"
+                className="emotion-211"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-213"
                     href="https://t.me/celoplatform"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-286"
                     >
                       <svg
                         fill="none"
@@ -5533,7 +4484,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Telegram
                   </a>
                 </div>
@@ -5544,48 +4495,48 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
       </div>
     </section>
     <section
-      className="emotion-202"
+      className="emotion-199"
     >
       <div
-        className="emotion-397"
+        className="emotion-328"
       >
         <div
-          className="emotion-398"
+          className="emotion-329"
         >
           <div
-            className="emotion-399"
+            className="emotion-330"
           >
             <img
-              className="emotion-400"
+              className="emotion-331"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-401"
+              className="emotion-332"
             >
               |
             </span>
             <div
-              className="emotion-402"
+              className="emotion-333"
             >
               <div
-                className="emotion-403"
+                className="emotion-334"
               />
               <span
-                className="emotion-404"
+                className="emotion-335"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-405"
+                className="emotion-336"
               />
             </div>
           </div>
           <small
-            className="emotion-406"
+            className="emotion-337"
           >
             The Celo Foundation, © Celo 2022
           </small>

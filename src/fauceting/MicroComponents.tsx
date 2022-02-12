@@ -1,11 +1,9 @@
 import * as React from "react"
-import { StyleSheet } from "react-native"
 import { EXAMPLE_ADDRESS, RequestState } from "src/fauceting/utils"
 import { I18nProps } from "src/i18n"
 import Checkmark from "src/icons/Checkmark"
-import Button, { BTN, SIZE } from "src/shared/Button.3"
+import Button, { BTN, SIZE } from "src/shared/Button.4"
 import Spinner from "src/shared/Spinner"
-import { textStyles } from "src/styles"
 import { colors } from "src/colors"
 import { css } from "@emotion/react"
 import { useTranslation } from "react-i18next"
@@ -133,7 +131,7 @@ export function ButtonWithFeedback({
       onDarkBackground={!isFaucet}
       iconLeft={icon}
       align={"flex-start"}
-      style={!isFaucet && isEnded && [textStyles.invert, styles.message]}
+      cssStyle={!isFaucet && isEnded && messageCss}
       size={isFaucet ? SIZE.normal : SIZE.big}
     />
   )
@@ -169,8 +167,6 @@ function inviteText({ requestState, t }: TextFuncArgs) {
   return RequestState.Failed === requestState ? t("inviteError") : ""
 }
 
-const styles = StyleSheet.create({
-  message: {
-    lineHeight: 20,
-  },
+const messageCss = css(etextStyles.invert, {
+  lineHeight: 20,
 })

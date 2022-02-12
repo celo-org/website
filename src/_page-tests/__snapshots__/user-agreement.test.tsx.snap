@@ -280,6 +280,27 @@ exports[`UserAgreement renders 1`] = `
   }
 }
 
+.emotion-13 {
+  display: inline;
+}
+
+.emotion-14 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+}
+
+.emotion-14:hover {
+  opacity: 0.75;
+}
+
+.emotion-14:active {
+  opacity: 1;
+}
+
 <div
   className="emotion-0"
 >
@@ -366,33 +387,12 @@ exports[`UserAgreement renders 1`] = `
           ”). These Terms apply in full force and effect to your use of this Site and by using this Site, you expressly accept all terms and conditions contained herein in full including the 
           <div
             className="emotion-13"
-            onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            style={
-              Object {
-                "display": "inline",
-              }
-            }
           >
             <a
-              className="emotion-14 emotion-15 emotion-11 emotion-17"
+              className="emotion-14"
               href="https://celo.org/code-of-conduct"
               onClick={[Function]}
               onMouseEnter={[Function]}
-              role="link"
-              style={
-                Object {
-                  "WebkitTextDecorationStyle": "solid",
-                  "cursor": "pointer",
-                  "display": "inline",
-                  "opacity": 1,
-                  "textDecoration": "underline",
-                  "textDecorationStyle": "solid",
-                }
-              }
             >
               <b>
                 Celo Community Code of Conduct

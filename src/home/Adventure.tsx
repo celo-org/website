@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Cell, Spans } from "src/layout/Grid2"
-import Button, { BTN, SIZE } from "src/shared/Button.3"
-import { standardStyles as legacyStandardStytles } from "src/styles"
+import Button, { BTN, SIZE } from "src/shared/Button.4"
 import Image from "next/image"
 import { css, SerializedStyles } from "@emotion/react"
 import { WHEN_MOBILE, fonts, standardStyles } from "src/estyles"
@@ -31,7 +30,7 @@ export function Adventure({ title, text, source, link, imageCss }: Props) {
       </div>
       {link && (
         <Button
-          style={legacyStandardStytles.elementalMarginTop}
+          cssStyle={standardStyles.elementalMarginTop}
           href={link.href}
           text={link.text}
           target="_blank"

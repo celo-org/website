@@ -739,13 +739,53 @@ exports[`Experience/Composition renders 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-269 {
+.emotion-230 {
+  display: inline;
+}
+
+.emotion-231 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+  text-decoration-line: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-231:hover {
+  opacity: 0.75;
+}
+
+.emotion-231:active {
+  opacity: 1;
+}
+
+.emotion-253 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-269 {
+  .emotion-253 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -753,14 +793,14 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-343 {
+.emotion-299 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-343 {
+  .emotion-299 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -768,7 +808,11 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-412 {
+.emotion-304 {
+  padding-right: 8px;
+}
+
+.emotion-346 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -797,7 +841,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-412 {
+  .emotion-346 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -814,7 +858,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-412 {
+  .emotion-346 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -826,39 +870,39 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-412 {
+  .emotion-346 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-412 {
+  .emotion-346 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-412 {
+  .emotion-346 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-412 {
+  .emotion-346 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-412 {
+  .emotion-346 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-413 {
+.emotion-347 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -876,7 +920,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-413 {
+  .emotion-347 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -891,7 +935,7 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-414 {
+.emotion-348 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -905,7 +949,7 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-414 {
+  .emotion-348 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -917,31 +961,31 @@ exports[`Experience/Composition renders 1`] = `
   }
 }
 
-.emotion-415 {
+.emotion-349 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-415 {
+  .emotion-349 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-416 {
+.emotion-350 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-416 {
+  .emotion-350 {
     display: none;
   }
 }
 
-.emotion-417 {
+.emotion-351 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -953,7 +997,7 @@ exports[`Experience/Composition renders 1`] = `
   position: relative;
 }
 
-.emotion-418 {
+.emotion-352 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -980,7 +1024,7 @@ exports[`Experience/Composition renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-419 {
+.emotion-353 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1003,12 +1047,12 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-419 {
+  .emotion-353 {
     text-align: center;
   }
 }
 
-.emotion-420 {
+.emotion-354 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1033,7 +1077,7 @@ exports[`Experience/Composition renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-421 {
+.emotion-355 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -4052,45 +4096,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Home
@@ -4101,45 +4114,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/about"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     About
@@ -4150,45 +4132,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/jobs"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Careers
@@ -4199,45 +4150,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/validators"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Validators
@@ -4248,45 +4168,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/developers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Developers
@@ -4297,45 +4186,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/alliance"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Alliance
@@ -4346,45 +4204,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/community"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Community
@@ -4395,45 +4222,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/annual-reports/2020"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Annual Report
@@ -4442,7 +4238,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
               </div>
             </div>
             <div
-              className="emotion-269"
+              className="emotion-253"
             >
               <h6
                 className="emotion-228"
@@ -4453,45 +4249,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://docs.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Docs
@@ -4502,45 +4267,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/audits"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Security Audits
@@ -4551,45 +4285,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://www.celoreserve.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Reserve
@@ -4600,45 +4303,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/papers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     White Papers
@@ -4649,45 +4321,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/public-sector"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Government
@@ -4696,7 +4337,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
               </div>
             </div>
             <div
-              className="emotion-269"
+              className="emotion-253"
             >
               <h6
                 className="emotion-228"
@@ -4707,45 +4348,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/brand-policy"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Brand Policy
@@ -4756,45 +4366,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/press"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Press
@@ -4805,45 +4384,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/community#events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Events
@@ -4854,45 +4402,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/experience/events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     EventKit
@@ -4903,45 +4420,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/experience/brand"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     BrandKit
@@ -4952,45 +4438,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/experience/merchant"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     MerchantKit
@@ -5001,45 +4456,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/experience/grants"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     GrantKit
@@ -5050,45 +4474,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/experience/pilots"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     PilotKit
@@ -5099,45 +4492,14 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="/community#fund"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Ecosystem Fund
@@ -5146,7 +4508,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
               </div>
             </div>
             <div
-              className="emotion-343"
+              className="emotion-299"
             >
               <h6
                 className="emotion-228"
@@ -5157,55 +4519,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://medium.com/celoOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5221,7 +4546,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Blog
                   </a>
                 </div>
@@ -5230,55 +4555,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://github.com/celo-org/celo-monorepo"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5296,7 +4584,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     GitHub
                   </a>
                 </div>
@@ -5305,55 +4593,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://twitter.com/CeloOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5369,7 +4620,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitter
                   </a>
                 </div>
@@ -5378,55 +4629,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://forum.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5442,7 +4656,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Forum
                   </a>
                 </div>
@@ -5451,55 +4665,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://discord.gg/6yWMkgM"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5517,7 +4694,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Chat
                   </a>
                 </div>
@@ -5526,55 +4703,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5590,7 +4730,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     YouTube
                   </a>
                 </div>
@@ -5599,55 +4739,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://www.instagram.com/celoorg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         height={13}
@@ -5662,7 +4765,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Instagram
                   </a>
                 </div>
@@ -5671,55 +4774,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://www.linkedin.com/company/celoOrg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5732,7 +4798,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     LinkedIn
                   </a>
                 </div>
@@ -5741,55 +4807,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://www.twitch.tv/celoorg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5802,7 +4831,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitch
                   </a>
                 </div>
@@ -5811,55 +4840,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://www.reddit.com/r/celo/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5872,7 +4864,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Reddit
                   </a>
                 </div>
@@ -5881,55 +4873,18 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                 className="emotion-229"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-230"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-231"
                     href="https://t.me/celoplatform"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-304"
                     >
                       <svg
                         fill="none"
@@ -5942,7 +4897,7 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Telegram
                   </a>
                 </div>
@@ -5956,45 +4911,45 @@ Between each section of the grid, there is a gutter that organizes the hierarchy
       className="emotion-217"
     >
       <div
-        className="emotion-412"
+        className="emotion-346"
       >
         <div
-          className="emotion-413"
+          className="emotion-347"
         >
           <div
-            className="emotion-414"
+            className="emotion-348"
           >
             <img
-              className="emotion-415"
+              className="emotion-349"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-416"
+              className="emotion-350"
             >
               |
             </span>
             <div
-              className="emotion-417"
+              className="emotion-351"
             >
               <div
-                className="emotion-418"
+                className="emotion-352"
               />
               <span
-                className="emotion-419"
+                className="emotion-353"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-420"
+                className="emotion-354"
               />
             </div>
           </div>
           <small
-            className="emotion-421"
+            className="emotion-355"
           >
             The Celo Foundation, © Celo 2022
           </small>

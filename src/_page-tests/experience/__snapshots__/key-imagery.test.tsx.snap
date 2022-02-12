@@ -455,7 +455,28 @@ exports[`Experience/KeyImagery renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-167 {
+.emotion-158 {
+  display: inline;
+}
+
+.emotion-159 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+}
+
+.emotion-159:hover {
+  opacity: 0.75;
+}
+
+.emotion-159:active {
+  opacity: 1;
+}
+
+.emotion-164 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -472,21 +493,21 @@ exports[`Experience/KeyImagery renders 1`] = `
   column-gap: 30px;
 }
 
-.emotion-169 {
+.emotion-166 {
   opacity: 0;
 }
 
-.emotion-172 {
+.emotion-169 {
   border-radius: 8px;
 }
 
-.emotion-182 {
+.emotion-179 {
   z-index: -10;
   background-color: #FFFFFF;
   margin-top: 50px;
 }
 
-.emotion-183 {
+.emotion-180 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -506,7 +527,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   width: 100%;
 }
 
-.emotion-184 {
+.emotion-181 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -535,7 +556,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-184 {
+  .emotion-181 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -552,7 +573,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-184 {
+  .emotion-181 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -564,36 +585,36 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-184 {
+  .emotion-181 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-184 {
+  .emotion-181 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-184 {
+  .emotion-181 {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-184 {
+  .emotion-181 {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-184 {
+  .emotion-181 {
     margin-top: 30px;
   }
 }
 
-.emotion-185 {
+.emotion-182 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -606,12 +627,12 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-185 {
+  .emotion-182 {
     grid-column: span 3;
   }
 }
 
-.emotion-186 {
+.emotion-183 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -624,7 +645,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-186 {
+  .emotion-183 {
     margin-bottom: 30px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -637,7 +658,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-187 {
+.emotion-184 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -650,7 +671,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-187 {
+  .emotion-184 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -662,7 +683,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-188 {
+.emotion-185 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -679,16 +700,16 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-188 {
+  .emotion-185 {
     text-align: center;
   }
 }
 
-.emotion-190 {
+.emotion-187 {
   color: inherit;
 }
 
-.emotion-191 {
+.emotion-188 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -701,12 +722,12 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-191 {
+  .emotion-188 {
     grid-column: span 3;
   }
 }
 
-.emotion-192 {
+.emotion-189 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -722,21 +743,21 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-192 {
+  .emotion-189 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 }
 
-.emotion-193 {
+.emotion-190 {
   padding-left: 25px;
   padding-right: 25px;
   padding-start: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-193 {
+  .emotion-190 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -744,7 +765,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-194 {
+.emotion-191 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -759,18 +780,54 @@ exports[`Experience/KeyImagery renders 1`] = `
   margin-bottom: 20px;
 }
 
-.emotion-195 {
+.emotion-192 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.emotion-235 {
+.emotion-194 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+  text-decoration-line: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-194:hover {
+  opacity: 0.75;
+}
+
+.emotion-194:active {
+  opacity: 1;
+}
+
+.emotion-216 {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media (max-width: 576px) {
-  .emotion-235 {
+  .emotion-216 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -778,14 +835,14 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-309 {
+.emotion-262 {
   padding-left: 25px;
   padding-right: 25px;
   padding-end: 0;
 }
 
 @media (max-width: 576px) {
-  .emotion-309 {
+  .emotion-262 {
     margin-top: 35px;
     width: 50%;
     padding-left: 10px;
@@ -793,7 +850,11 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-378 {
+.emotion-267 {
+  padding-right: 8px;
+}
+
+.emotion-309 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -822,7 +883,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-378 {
+  .emotion-309 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -839,7 +900,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-378 {
+  .emotion-309 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -851,39 +912,39 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-378 {
+  .emotion-309 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-378 {
+  .emotion-309 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-378 {
+  .emotion-309 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-378 {
+  .emotion-309 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-378 {
+  .emotion-309 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-.emotion-379 {
+.emotion-310 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -901,7 +962,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-379 {
+  .emotion-310 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -916,7 +977,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-380 {
+.emotion-311 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -930,7 +991,7 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-380 {
+  .emotion-311 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -942,31 +1003,31 @@ exports[`Experience/KeyImagery renders 1`] = `
   }
 }
 
-.emotion-381 {
+.emotion-312 {
   width: 20px;
   height: 20px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-381 {
+  .emotion-312 {
     margin-bottom: 8px;
   }
 }
 
-.emotion-382 {
+.emotion-313 {
   margin-left: 10px;
   margin-right: 10px;
   z-index: 10;
 }
 
 @media (max-width: 576px) {
-  .emotion-382 {
+  .emotion-313 {
     display: none;
   }
 }
 
-.emotion-383 {
+.emotion-314 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -978,7 +1039,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   position: relative;
 }
 
-.emotion-384 {
+.emotion-315 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1005,7 +1066,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   animation-name: animation-0;
 }
 
-.emotion-385 {
+.emotion-316 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -1028,12 +1089,12 @@ exports[`Experience/KeyImagery renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-385 {
+  .emotion-316 {
     text-align: center;
   }
 }
 
-.emotion-386 {
+.emotion-317 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1058,7 +1119,7 @@ exports[`Experience/KeyImagery renders 1`] = `
   animation-name: animation-2;
 }
 
-.emotion-387 {
+.emotion-318 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -2930,34 +2991,13 @@ Images have descriptions that act as guidelines for both accessibility and commu
             >
               You may copy and redistribute illustrations and abstract graphics as long as you are abiding by the 
               <div
-                className="emotion-11"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-                style={
-                  Object {
-                    "display": "inline",
-                  }
-                }
+                className="emotion-158"
               >
                 <a
-                  className="emotion-13 emotion-14 emotion-15 emotion-162"
+                  className="emotion-159"
                   href="/brand-policy"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitTextDecorationStyle": "solid",
-                      "cursor": "pointer",
-                      "display": "inline",
-                      "opacity": 1,
-                      "textDecoration": "underline",
-                      "textDecorationStyle": "solid",
-                    }
-                  }
                 >
                   Brand Policy
                 </a>
@@ -3000,7 +3040,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
               Illustrations
             </h2>
             <div
-              className="emotion-167"
+              className="emotion-164"
             >
               <div
                 className="emotion-11"
@@ -3013,7 +3053,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 }
               >
                 <div
-                  className="emotion-169"
+                  className="emotion-166"
                 >
                   <div
                     className="emotion-11"
@@ -3065,7 +3105,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           <img
                             alt=""
                             aria-hidden={true}
-                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                            src="data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 version=%271.1%27 width=%271%27 height=%271%27/%3e"
                             style={
                               Object {
                                 "background": "none",
@@ -3083,7 +3123,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                         </span>
                         <img
                           alt="visual"
-                          className="emotion-172"
+                          className="emotion-169"
                           data-nimg="intrinsic"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -3113,7 +3153,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                         <noscript>
                           <img
                             alt="visual"
-                            className="emotion-172"
+                            className="emotion-169"
                             data-nimg="intrinsic"
                             decoding="async"
                             loading="lazy"
@@ -3287,20 +3327,20 @@ Images have descriptions that act as guidelines for both accessibility and commu
     </div>
   </div>
   <div
-    className="emotion-182"
+    className="emotion-179"
     id="experience-footer"
   >
     <section
-      className="emotion-183"
+      className="emotion-180"
     >
       <div
-        className="emotion-184"
+        className="emotion-181"
       >
         <div
-          className="emotion-185"
+          className="emotion-182"
         >
           <div
-            className="emotion-186"
+            className="emotion-183"
           >
             <svg
               fill="none"
@@ -3323,19 +3363,19 @@ Images have descriptions that act as guidelines for both accessibility and commu
             </svg>
           </div>
           <div
-            className="emotion-187"
+            className="emotion-184"
           >
             <p
-              className="emotion-188"
+              className="emotion-185"
             >
               Nothing herein constitutes an offer to sell, or the solicitation of an offer to buy, any securities or tokens.
             </p>
             <p
-              className="emotion-188"
+              className="emotion-185"
             >
               Read more in Celo 
               <a
-                className="emotion-190"
+                className="emotion-187"
                 href="/terms"
               >
                 Terms of Service
@@ -3344,62 +3384,31 @@ Images have descriptions that act as guidelines for both accessibility and commu
           </div>
         </div>
         <div
-          className="emotion-191"
+          className="emotion-188"
         >
           <div
-            className="emotion-192"
+            className="emotion-189"
           >
             <div
-              className="emotion-193"
+              className="emotion-190"
             >
               <h6
-                className="emotion-194"
+                className="emotion-191"
               >
                 Celo
               </h6>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Home
@@ -3407,48 +3416,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/about"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     About
@@ -3456,48 +3434,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/jobs"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Careers
@@ -3505,48 +3452,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/validators"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Validators
@@ -3554,48 +3470,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/developers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Developers
@@ -3603,48 +3488,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/alliance"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Alliance
@@ -3652,48 +3506,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/community"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Community
@@ -3701,48 +3524,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/annual-reports/2020"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Annual Report
@@ -3751,56 +3543,25 @@ Images have descriptions that act as guidelines for both accessibility and commu
               </div>
             </div>
             <div
-              className="emotion-235"
+              className="emotion-216"
             >
               <h6
-                className="emotion-194"
+                className="emotion-191"
               >
                 Technology
               </h6>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://docs.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Docs
@@ -3808,48 +3569,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/audits"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Security Audits
@@ -3857,48 +3587,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://www.celoreserve.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Reserve
@@ -3906,48 +3605,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/papers"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     White Papers
@@ -3955,48 +3623,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/public-sector"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Government
@@ -4005,56 +3642,25 @@ Images have descriptions that act as guidelines for both accessibility and commu
               </div>
             </div>
             <div
-              className="emotion-235"
+              className="emotion-216"
             >
               <h6
-                className="emotion-194"
+                className="emotion-191"
               >
                 Resources
               </h6>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/brand-policy"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Brand Policy
@@ -4062,48 +3668,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/press"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Press
@@ -4111,48 +3686,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/community#events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Events
@@ -4160,48 +3704,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/experience/events"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     EventKit
@@ -4209,48 +3722,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/experience/brand"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     BrandKit
@@ -4258,48 +3740,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/experience/merchant"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     MerchantKit
@@ -4307,48 +3758,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/experience/grants"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     GrantKit
@@ -4356,48 +3776,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/experience/pilots"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     PilotKit
@@ -4405,48 +3794,17 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="/community#fund"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
                     Ecosystem Fund
@@ -4455,66 +3813,29 @@ Images have descriptions that act as guidelines for both accessibility and commu
               </div>
             </div>
             <div
-              className="emotion-309"
+              className="emotion-262"
             >
               <h6
-                className="emotion-194"
+                className="emotion-191"
               >
                 Social
               </h6>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://medium.com/celoOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -4530,64 +3851,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Blog
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://github.com/celo-org/celo-monorepo"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -4605,64 +3889,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     GitHub
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://twitter.com/CeloOrg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -4678,64 +3925,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitter
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://forum.celo.org/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -4751,64 +3961,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Forum
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://discord.gg/6yWMkgM"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -4826,64 +3999,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Chat
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://youtube.com/channel/UCCZgos_YAJSXm5QX5D5Wkcw"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -4899,64 +4035,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     YouTube
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://www.instagram.com/celoorg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         height={13}
@@ -4971,64 +4070,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Instagram
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://www.linkedin.com/company/celoOrg/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -5041,64 +4103,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     LinkedIn
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://www.twitch.tv/celoorg"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -5111,64 +4136,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Twitch
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://www.reddit.com/r/celo/"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -5181,64 +4169,27 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Reddit
                   </a>
                 </div>
               </div>
               <div
-                className="emotion-195"
+                className="emotion-192"
               >
                 <div
-                  className="emotion-11"
-                  onClick={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  style={
-                    Object {
-                      "display": "inline",
-                    }
-                  }
+                  className="emotion-158"
                 >
                   <a
-                    className="emotion-13 emotion-14 emotion-15"
-                    dir="auto"
+                    className="emotion-194"
                     href="https://t.me/celoplatform"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
-                    role="link"
-                    style={
-                      Object {
-                        "WebkitAlignItems": "center",
-                        "WebkitBoxAlign": "center",
-                        "WebkitTextDecorationStyle": "solid",
-                        "alignItems": "center",
-                        "color": "rgba(17,18,20,1.00)",
-                        "cursor": "pointer",
-                        "display": "inline-flex",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "16px",
-                        "lineHeight": "20px",
-                        "msFlexAlign": "center",
-                        "opacity": 1,
-                        "textDecoration": "none",
-                        "textDecorationStyle": "solid",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
                     target="_blank"
                   >
-                    <div
-                      className="emotion-11"
-                      style={
-                        Object {
-                          "display": "inline-flex",
-                          "paddingRight": "8px",
-                        }
-                      }
+                    <span
+                      className="emotion-267"
                     >
                       <svg
                         fill="none"
@@ -5251,7 +4202,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                           fill="#111214"
                         />
                       </svg>
-                    </div>
+                    </span>
                     Telegram
                   </a>
                 </div>
@@ -5262,48 +4213,48 @@ Images have descriptions that act as guidelines for both accessibility and commu
       </div>
     </section>
     <section
-      className="emotion-183"
+      className="emotion-180"
     >
       <div
-        className="emotion-378"
+        className="emotion-309"
       >
         <div
-          className="emotion-379"
+          className="emotion-310"
         >
           <div
-            className="emotion-380"
+            className="emotion-311"
           >
             <img
-              className="emotion-381"
+              className="emotion-312"
               height={100}
               src="/image.png"
               width={100}
             />
             <span
-              className="emotion-382"
+              className="emotion-313"
             >
               |
             </span>
             <div
-              className="emotion-383"
+              className="emotion-314"
             >
               <div
-                className="emotion-384"
+                className="emotion-315"
               />
               <span
-                className="emotion-385"
+                className="emotion-316"
               >
                 "
                 Change the Story
                 "
               </span>
               <div
-                className="emotion-386"
+                className="emotion-317"
               />
             </div>
           </div>
           <small
-            className="emotion-387"
+            className="emotion-318"
           >
             The Celo Foundation, © Celo 2022
           </small>

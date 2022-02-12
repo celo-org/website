@@ -235,7 +235,85 @@ exports[`About renders 1`] = `
   font-size: 20px;
 }
 
-.emotion-90 {
+.emotion-77 {
+  display: inline;
+}
+
+.emotion-78 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+}
+
+.emotion-78:hover {
+  opacity: 0.75;
+}
+
+.emotion-78:active {
+  opacity: 1;
+}
+
+.emotion-80 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-width: 150px;
+  padding: 10px 20px;
+  background-color: #35D07F;
+  border-color: #35D07F;
+  border-radius: 3px;
+  border-width: 1px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.emotion-80:hover {
+  background-color: #4CDD91;
+  border-color: #4CDD91;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+.emotion-80:active {
+  background-color: #0FB972;
+  border-color: #0FB972;
+  outline-color: #0FB972;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+.emotion-86 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -245,7 +323,7 @@ exports[`About renders 1`] = `
   margin-bottom: 40px;
 }
 
-.emotion-125 {
+.emotion-119 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -254,7 +332,7 @@ exports[`About renders 1`] = `
   line-height: 28px;
 }
 
-.emotion-127 {
+.emotion-121 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -292,7 +370,7 @@ exports[`About renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-127 {
+  .emotion-121 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -309,7 +387,7 @@ exports[`About renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-127 {
+  .emotion-121 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -321,36 +399,36 @@ exports[`About renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-127 {
+  .emotion-121 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-127 {
+  .emotion-121 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-127 {
+  .emotion-121 {
     margin-bottom: 100px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-127 {
+  .emotion-121 {
     margin-bottom: 75px;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-127 {
+  .emotion-121 {
     margin-bottom: 50px;
   }
 }
 
-.emotion-128 {
+.emotion-122 {
   height: 60px;
   object-fit: contain;
   -webkit-flex-direction: column;
@@ -363,7 +441,7 @@ exports[`About renders 1`] = `
   width: 100%;
 }
 
-.emotion-131 {
+.emotion-125 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -381,7 +459,7 @@ exports[`About renders 1`] = `
   text-align: center;
 }
 
-.emotion-164 {
+.emotion-158 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -390,7 +468,7 @@ exports[`About renders 1`] = `
   line-height: 28px;
 }
 
-.emotion-164 a {
+.emotion-158 a {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -2102,35 +2180,13 @@ Change the story.
       >
         Celo’s philosophy is grounded in the work of Charles Eisenstein’s 
         <div
-          className="emotion-1"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          style={
-            Object {
-              "display": "inline",
-            }
-          }
+          className="emotion-77"
         >
           <a
-            className="emotion-8 emotion-79 emotion-9"
-            dir="auto"
+            className="emotion-78"
             href="http://sacred-economics.com/film/"
             onClick={[Function]}
             onMouseEnter={[Function]}
-            role="link"
-            style={
-              Object {
-                "WebkitTextDecorationStyle": "solid",
-                "cursor": "pointer",
-                "display": "inline",
-                "opacity": 1,
-                "textDecoration": "underline",
-                "textDecorationStyle": "solid",
-              }
-            }
           >
             Sacred Economics
           </a>
@@ -2138,65 +2194,13 @@ Change the story.
         .
       </span>
       <div
-        className="emotion-1"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
+        className="emotion-79"
       >
         <a
-          className="emotion-8 emotion-79 emotion-9"
-          dir="auto"
+          className="emotion-80"
           href="http://sacred-economics.com/film/"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(53,208,127,1.00)",
-              "borderBottomColor": "rgba(53,208,127,1.00)",
-              "borderBottomLeftRadius": "3px",
-              "borderBottomRightRadius": "3px",
-              "borderBottomWidth": "1px",
-              "borderLeftColor": "rgba(53,208,127,1.00)",
-              "borderLeftWidth": "1px",
-              "borderRightColor": "rgba(53,208,127,1.00)",
-              "borderRightWidth": "1px",
-              "borderTopColor": "rgba(53,208,127,1.00)",
-              "borderTopLeftRadius": "3px",
-              "borderTopRightRadius": "3px",
-              "borderTopWidth": "1px",
-              "color": "rgba(255,255,255,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "minWidth": "150px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "paddingBottom": "10px",
-              "paddingLeft": "20px",
-              "paddingRight": "20px",
-              "paddingTop": "10px",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           Learn More
         </a>
@@ -2282,70 +2286,18 @@ Change the story.
       }
     >
       <span
-        className="emotion-90"
+        className="emotion-86"
       >
         A theory of change is a framework that describes how short-term actions will lead to long-term social impact. Celo’s aim is to create the conditions for prosperity, defined as: people fulfilling basic needs, growing along their own unique paths, and supporting each other. All of Celo’s projects have a specific hypothesis that tie our activities to one or more of these indicators of prosperity.
       </span>
       <div
-        className="emotion-1"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
+        className="emotion-79"
       >
         <a
-          className="emotion-8 emotion-79 emotion-9"
-          dir="auto"
+          className="emotion-80"
           href="https://medium.com/celoOrg/celos-theory-of-change-b916de44945d"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(53,208,127,1.00)",
-              "borderBottomColor": "rgba(53,208,127,1.00)",
-              "borderBottomLeftRadius": "3px",
-              "borderBottomRightRadius": "3px",
-              "borderBottomWidth": "1px",
-              "borderLeftColor": "rgba(53,208,127,1.00)",
-              "borderLeftWidth": "1px",
-              "borderRightColor": "rgba(53,208,127,1.00)",
-              "borderRightWidth": "1px",
-              "borderTopColor": "rgba(53,208,127,1.00)",
-              "borderTopLeftRadius": "3px",
-              "borderTopRightRadius": "3px",
-              "borderTopWidth": "1px",
-              "color": "rgba(255,255,255,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "16px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "minWidth": "150px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "paddingBottom": "10px",
-              "paddingLeft": "20px",
-              "paddingRight": "20px",
-              "paddingTop": "10px",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           Learn More
         </a>
@@ -2889,7 +2841,7 @@ Change the story.
       }
     >
       <span
-        className="emotion-125"
+        className="emotion-119"
       >
         Early CELO holders include prominent venture funds, C-level operators, academics, and experts across a wide range of fields including
       </span>
@@ -2899,145 +2851,145 @@ Change the story.
     className="emotion-13"
   >
     <div
-      className="emotion-127"
+      className="emotion-121"
     >
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Reid Hoffman
       </h4>
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Jack Dorsey
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Naval Ravikant
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Casey Neistat
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Arianna Simpson
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Tanguy Chau
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Elad Gil
       </h4>
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Keisuke Honda
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Kilowatt Capital
       </h4>
       <img
-        className="emotion-128"
+        className="emotion-122"
         src="/image.png"
       />
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Julia Popowitz
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Linda Xie
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Vijay Pandurangan
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         R&R Ventures
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Nitesh Banta
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Warren Hogarth
       </h4>
       <h4
-        className="emotion-131"
+        className="emotion-125"
       >
         Curious Endeavors
       </h4>
@@ -3123,40 +3075,18 @@ Change the story.
       }
     >
       <span
-        className="emotion-164"
+        className="emotion-158"
       >
         For media inquiries, please contact us at
          
         <div
-          className="emotion-1"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          style={
-            Object {
-              "display": "inline",
-            }
-          }
+          className="emotion-77"
         >
           <a
-            className="emotion-8 emotion-79 emotion-9"
-            dir="auto"
+            className="emotion-78"
             href="mailto:press@celo.org"
             onClick={[Function]}
             onMouseEnter={[Function]}
-            role="link"
-            style={
-              Object {
-                "WebkitTextDecorationStyle": "solid",
-                "cursor": "pointer",
-                "display": "inline",
-                "opacity": 1,
-                "textDecoration": "underline",
-                "textDecorationStyle": "solid",
-              }
-            }
           >
             press@celo.org
           </a>

@@ -62,6 +62,7 @@ export const fonts = {
   legal: css(headingReset, fontInfo.legal as any, { lineHeight: `${fontInfo.legal.lineHeight}px` }),
   navigation: css(fontInfo.navigation as any, {
     lineHeight: `${fontInfo.navigation.lineHeight}px`,
+    textDecoration: "none",
   }),
   micro: css(fontInfo.micro as any),
 }

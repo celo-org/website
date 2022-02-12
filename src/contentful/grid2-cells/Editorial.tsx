@@ -3,7 +3,7 @@ import { css } from "@emotion/react"
 import { colors } from "src/colors"
 import { flexRow, WHEN_DESKTOP } from "src/estyles"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import Button, { SIZE } from "src/shared/Button.3"
+import Button, { SIZE } from "src/shared/Button.4"
 import renderNode from "../nodes/enodes"
 type Props = EditorialType & { darkMode?: boolean }
 

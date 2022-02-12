@@ -1,7 +1,7 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { css } from "@emotion/react"
 import * as React from "react"
-import Button, { SIZE } from "src/shared/Button.3"
+import Button, { SIZE } from "src/shared/Button.4"
 import { fonts, WHEN_MOBILE } from "src/estyles"
 import { RoledexContentType } from "src/utils/contentful"
 import { SubNavLink } from "src/experience/common/SubNavLink"

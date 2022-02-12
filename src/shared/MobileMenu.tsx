@@ -3,7 +3,7 @@ import * as React from "react"
 import { flex } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import RingsGlyph from "src/logos/RingsGlyph"
-import Button, { BTN } from "src/shared/Button.3"
+import Button, { BTN } from "src/shared/Button.4"
 import { MenuLink } from "src/shared/menu-items"
 interface Props {
   currentPage: string
@@ -27,7 +27,7 @@ export default function MobileMenu({ currentPage, menu }: Props) {
                 kind={btnKind}
                 key={item.name}
                 align={"center"}
-                style={btnStyle}
+                cssStyle={btnStyle}
               />
             </div>
           )
@@ -51,28 +51,28 @@ const styles = {
     paddingRight: 20,
     paddingLeft: 20,
   }),
-  rings: css(flex,{
+  rings: css(flex, {
     paddingTop: 30,
     paddingBottom: 30,
-    justifyContent: 'center',
-    alignItems: "center"
+    justifyContent: "center",
+    alignItems: "center",
   }),
-  menu: css(flex,{
+  menu: css(flex, {
     alignItems: "center",
     paddingLeft: 20,
     paddingRight: 20,
     flexDirection: "column",
     justifyContent: "space-around",
   }),
-  menuItem: css(flex,{
+  menuItem: css(flex, {
     marginLeft: 10,
-    marginRight:10,
+    marginRight: 10,
     marginTop: 25,
     marginBottom: 25,
   }),
 }
 
-const btnStyle = {
+const btnStyle = css({
   fontSize: 20,
   alignItems: "center" as const,
-}
+})

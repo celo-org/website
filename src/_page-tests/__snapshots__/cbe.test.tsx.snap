@@ -353,7 +353,71 @@ exports[`CBE renders 1`] = `
   line-height: 28px;
 }
 
-.emotion-32 {
+.emotion-15 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 1;
+  background-color: transparent;
+  border-color: transparent;
+  outline-color: transparent;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-16 {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #35D07F;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.emotion-16:hover {
+  color: #4CDD91;
+}
+
+.emotion-16:active {
+  color: #0FB972;
+}
+
+.emotion-17 {
+  padding-top: 0.15em;
+  padding-left: 0.4em;
+}
+
+.emotion-28 {
   width: 100px;
   height: 100px;
   height: 70px;
@@ -361,14 +425,14 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-32 {
+  .emotion-28 {
     margin-top: 30px;
     height: 70px;
     width: 70px;
   }
 }
 
-.emotion-43 {
+.emotion-37 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -398,7 +462,7 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-43 {
+  .emotion-37 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -415,7 +479,7 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-43 {
+  .emotion-37 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -427,18 +491,18 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-43 {
+  .emotion-37 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-43 {
+  .emotion-37 {
     grid-template-columns: 1fr;
   }
 }
 
-.emotion-44 {
+.emotion-38 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -459,17 +523,17 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-44 {
+  .emotion-38 {
     grid-column: span 1;
   }
 }
 
-.emotion-45 {
+.emotion-39 {
   width: 239px;
   height: 77px;
 }
 
-.emotion-47 {
+.emotion-41 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -482,7 +546,7 @@ exports[`CBE renders 1`] = `
   line-height: 36px;
 }
 
-.emotion-49 {
+.emotion-43 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -511,7 +575,7 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-49 {
+  .emotion-43 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -528,7 +592,7 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-49 {
+  .emotion-43 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -540,18 +604,18 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-49 {
+  .emotion-43 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-49 {
+  .emotion-43 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.emotion-50 {
+.emotion-44 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -564,17 +628,17 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-50 {
+  .emotion-44 {
     grid-column: span 1;
   }
 }
 
-.emotion-52 {
+.emotion-46 {
   width: 100%;
   height: 100%;
 }
 
-.emotion-53 {
+.emotion-47 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -588,7 +652,7 @@ exports[`CBE renders 1`] = `
   line-height: 18px;
 }
 
-.emotion-54 {
+.emotion-48 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -680,7 +744,7 @@ exports[`CBE renders 1`] = `
               <img
                 alt=""
                 aria-hidden={true}
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                src="data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 version=%271.1%27 width=%27100%27 height=%27100%27/%3e"
                 style={
                   Object {
                     "background": "none",
@@ -770,78 +834,21 @@ exports[`CBE renders 1`] = `
         </div>
         <div
           className="emotion-14"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
         >
-          <div
-            className="emotion-14"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+          <span
+            className="emotion-15"
           >
             <a
-              className="emotion-16 emotion-17 emotion-18"
-              dir="auto"
+              className="emotion-16"
               href="https://valoraapp.co/3j0mTjS"
               onClick={[Function]}
               onMouseEnter={[Function]}
               rel="noopener"
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginTop": "20px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
               target="_blank"
             >
               Sign up
-              <div
-                className="emotion-14"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.15em",
-                  }
-                }
+              <span
+                className="emotion-17"
               >
                 <svg
                   fill="none"
@@ -858,9 +865,9 @@ exports[`CBE renders 1`] = `
                     opacity={1}
                   />
                 </svg>
-              </div>
+              </span>
             </a>
-          </div>
+          </span>
         </div>
       </div>
       <div
@@ -904,7 +911,7 @@ exports[`CBE renders 1`] = `
               <img
                 alt=""
                 aria-hidden={true}
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                src="data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 version=%271.1%27 width=%27100%27 height=%27100%27/%3e"
                 style={
                   Object {
                     "background": "none",
@@ -994,78 +1001,21 @@ exports[`CBE renders 1`] = `
         </div>
         <div
           className="emotion-14"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
         >
-          <div
-            className="emotion-14"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+          <span
+            className="emotion-15"
           >
             <a
-              className="emotion-16 emotion-17 emotion-18"
-              dir="auto"
+              className="emotion-16"
               href="https://valoraapp.co/3l5XLtC"
               onClick={[Function]}
               onMouseEnter={[Function]}
               rel="noopener"
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginTop": "20px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
               target="_blank"
             >
               Connect
-              <div
-                className="emotion-14"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.15em",
-                  }
-                }
+              <span
+                className="emotion-17"
               >
                 <svg
                   fill="none"
@@ -1082,9 +1032,9 @@ exports[`CBE renders 1`] = `
                     opacity={1}
                   />
                 </svg>
-              </div>
+              </span>
             </a>
-          </div>
+          </span>
         </div>
       </div>
       <div
@@ -1128,7 +1078,7 @@ exports[`CBE renders 1`] = `
               <img
                 alt=""
                 aria-hidden={true}
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                src="data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 version=%271.1%27 width=%27100%27 height=%27100%27/%3e"
                 style={
                   Object {
                     "background": "none",
@@ -1145,7 +1095,7 @@ exports[`CBE renders 1`] = `
               />
             </span>
             <img
-              className="emotion-32"
+              className="emotion-28"
               data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -1174,7 +1124,7 @@ exports[`CBE renders 1`] = `
             />
             <noscript>
               <img
-                className="emotion-32"
+                className="emotion-28"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -1218,78 +1168,21 @@ exports[`CBE renders 1`] = `
         </div>
         <div
           className="emotion-14"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
         >
-          <div
-            className="emotion-14"
-            style={
-              Object {
-                "WebkitBoxDirection": "normal",
-                "WebkitBoxFlex": 0,
-                "WebkitBoxOrient": "horizontal",
-                "WebkitBoxPack": "center",
-                "WebkitFlexDirection": "row",
-                "WebkitFlexGrow": 0,
-                "WebkitJustifyContent": "center",
-                "backgroundColor": "rgba(0,0,0,0.00)",
-                "borderBottomColor": "rgba(0,0,0,0.00)",
-                "borderLeftColor": "rgba(0,0,0,0.00)",
-                "borderRightColor": "rgba(0,0,0,0.00)",
-                "borderTopColor": "rgba(0,0,0,0.00)",
-                "flexDirection": "row",
-                "flexGrow": 0,
-                "justifyContent": "center",
-                "msFlexDirection": "row",
-                "msFlexPack": "center",
-                "msFlexPositive": 0,
-                "opacity": 1,
-                "outlineColor": "transparent",
-                "width": "fit-content",
-              }
-            }
+          <span
+            className="emotion-15"
           >
             <a
-              className="emotion-16 emotion-17 emotion-18"
-              dir="auto"
+              className="emotion-16"
               href="https://valoraapp.com"
               onClick={[Function]}
               onMouseEnter={[Function]}
               rel="noopener"
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "alignItems": "center",
-                  "color": "rgba(53,208,127,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "lineHeight": "16px",
-                  "marginTop": "20px",
-                  "msFlexAlign": "center",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                }
-              }
               target="_blank"
             >
               Get Valora
-              <div
-                className="emotion-14"
-                style={
-                  Object {
-                    "display": "inline-flex",
-                    "paddingLeft": "0.4em",
-                    "paddingTop": "0.15em",
-                  }
-                }
+              <span
+                className="emotion-17"
               >
                 <svg
                   fill="none"
@@ -1306,9 +1199,9 @@ exports[`CBE renders 1`] = `
                     opacity={1}
                   />
                 </svg>
-              </div>
+              </span>
             </a>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -1317,10 +1210,10 @@ exports[`CBE renders 1`] = `
     className="emotion-3"
   >
     <div
-      className="emotion-43"
+      className="emotion-37"
     >
       <div
-        className="emotion-44"
+        className="emotion-38"
       >
         <span
           style={
@@ -1359,7 +1252,7 @@ exports[`CBE renders 1`] = `
             <img
               alt=""
               aria-hidden={true}
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjM5IiBoZWlnaHQ9Ijc3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+              src="data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 version=%271.1%27 width=%27239%27 height=%2777%27/%3e"
               style={
                 Object {
                   "background": "none",
@@ -1376,7 +1269,7 @@ exports[`CBE renders 1`] = `
             />
           </span>
           <img
-            className="emotion-45"
+            className="emotion-39"
             data-nimg="intrinsic"
             decoding="async"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -1405,7 +1298,7 @@ exports[`CBE renders 1`] = `
           />
           <noscript>
             <img
-              className="emotion-45"
+              className="emotion-39"
               data-nimg="intrinsic"
               decoding="async"
               loading="lazy"
@@ -1437,7 +1330,7 @@ exports[`CBE renders 1`] = `
           </noscript>
         </span>
         <h4
-          className="emotion-47"
+          className="emotion-41"
         >
           Celo Lessons on Coinbase Earn
         </h4>
@@ -1448,10 +1341,10 @@ exports[`CBE renders 1`] = `
     className="emotion-3"
   >
     <div
-      className="emotion-49"
+      className="emotion-43"
     >
       <div
-        className="emotion-50"
+        className="emotion-44"
       >
         <a
           href="https://coinbase.com/earn/celo/lesson/1"
@@ -1459,7 +1352,7 @@ exports[`CBE renders 1`] = `
           target="_blank"
         >
           <div
-            className="emotion-14"
+            className="emotion-45"
             style={
               Object {
                 "display": "block",
@@ -1491,14 +1384,14 @@ exports[`CBE renders 1`] = `
               }
             >
               <img
-                className="emotion-52"
+                className="emotion-46"
                 src="/image.png"
               />
             </div>
           </div>
         </a>
         <a
-          className="emotion-53"
+          className="emotion-47"
           href="https://coinbase.com/earn/celo/lesson/1"
           rel="noopenner noreferrer"
           target="_blank"
@@ -1506,13 +1399,13 @@ exports[`CBE renders 1`] = `
           Lesson 1: What is the Celo Platform?
         </a>
         <h6
-          className="emotion-54"
+          className="emotion-48"
         >
           3 minutes
         </h6>
       </div>
       <div
-        className="emotion-50"
+        className="emotion-44"
       >
         <a
           href="https://coinbase.com/earn/celo/lesson/2"
@@ -1520,7 +1413,7 @@ exports[`CBE renders 1`] = `
           target="_blank"
         >
           <div
-            className="emotion-14"
+            className="emotion-45"
             style={
               Object {
                 "display": "block",
@@ -1552,14 +1445,14 @@ exports[`CBE renders 1`] = `
               }
             >
               <img
-                className="emotion-52"
+                className="emotion-46"
                 src="/image.png"
               />
             </div>
           </div>
         </a>
         <a
-          className="emotion-53"
+          className="emotion-47"
           href="https://coinbase.com/earn/celo/lesson/2"
           rel="noopenner noreferrer"
           target="_blank"
@@ -1567,13 +1460,13 @@ exports[`CBE renders 1`] = `
           Lesson 2: What is CELO?
         </a>
         <h6
-          className="emotion-54"
+          className="emotion-48"
         >
           2 minutes
         </h6>
       </div>
       <div
-        className="emotion-50"
+        className="emotion-44"
       >
         <a
           href="https://coinbase.com/earn/celo/lesson/3"
@@ -1581,7 +1474,7 @@ exports[`CBE renders 1`] = `
           target="_blank"
         >
           <div
-            className="emotion-14"
+            className="emotion-45"
             style={
               Object {
                 "display": "block",
@@ -1613,14 +1506,14 @@ exports[`CBE renders 1`] = `
               }
             >
               <img
-                className="emotion-52"
+                className="emotion-46"
                 src="/image.png"
               />
             </div>
           </div>
         </a>
         <a
-          className="emotion-53"
+          className="emotion-47"
           href="https://coinbase.com/earn/celo/lesson/3"
           rel="noopenner noreferrer"
           target="_blank"
@@ -1628,7 +1521,7 @@ exports[`CBE renders 1`] = `
           Lesson 3: What can Celo Dollars do?
         </a>
         <h6
-          className="emotion-54"
+          className="emotion-48"
         >
           3 minutes
         </h6>

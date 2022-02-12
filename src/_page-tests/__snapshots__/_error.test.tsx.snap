@@ -69,6 +69,71 @@ exports[`Error renders 1`] = `
   margin-bottom: 40px;
 }
 
+.emotion-4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-width: 200px;
+  padding: 20px 30px;
+  font-size: 20px;
+  background-color: #35D07F;
+  border-color: #35D07F;
+  border-radius: 3px;
+  border-width: 1px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.emotion-5:hover {
+  background-color: #4CDD91;
+  border-color: #4CDD91;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+.emotion-5:active {
+  background-color: #0FB972;
+  border-color: #0FB972;
+  outline-color: #0FB972;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
 <div>
   <div
     className="emotion-0"
@@ -88,72 +153,12 @@ exports[`Error renders 1`] = `
       </p>
       <div
         className="emotion-4"
-        onClick={[Function]}
-        onMouseDown={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        style={
-          Object {
-            "WebkitAlignItems": "center",
-            "WebkitBoxAlign": "center",
-            "alignItems": "center",
-            "msFlexAlign": "center",
-          }
-        }
       >
         <a
-          className="emotion-5 emotion-6 emotion-7"
-          dir="auto"
+          className="emotion-5"
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
-          role="link"
-          style={
-            Object {
-              "WebkitAlignItems": "center",
-              "WebkitBoxAlign": "center",
-              "WebkitBoxFlex": 0,
-              "WebkitBoxPack": "center",
-              "WebkitFlexGrow": 0,
-              "WebkitJustifyContent": "center",
-              "alignItems": "center",
-              "backgroundColor": "rgba(53,208,127,1.00)",
-              "borderBottomColor": "rgba(53,208,127,1.00)",
-              "borderBottomLeftRadius": "3px",
-              "borderBottomRightRadius": "3px",
-              "borderBottomWidth": "1px",
-              "borderLeftColor": "rgba(53,208,127,1.00)",
-              "borderLeftWidth": "1px",
-              "borderRightColor": "rgba(53,208,127,1.00)",
-              "borderRightWidth": "1px",
-              "borderTopColor": "rgba(53,208,127,1.00)",
-              "borderTopLeftRadius": "3px",
-              "borderTopRightRadius": "3px",
-              "borderTopWidth": "1px",
-              "color": "rgba(255,255,255,1.00)",
-              "cursor": "pointer",
-              "display": "inline-flex",
-              "flexGrow": 0,
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
-              "fontSize": "20px",
-              "fontWeight": "500",
-              "justifyContent": "center",
-              "lineHeight": "16px",
-              "minWidth": "200px",
-              "msFlexAlign": "center",
-              "msFlexPack": "center",
-              "msFlexPositive": 0,
-              "opacity": 1,
-              "paddingBottom": "20px",
-              "paddingLeft": "30px",
-              "paddingRight": "30px",
-              "paddingTop": "20px",
-              "textAlign": "center",
-              "textRendering": "geometricPrecision",
-              "width": "fit-content",
-            }
-          }
         >
           Go Home
         </a>

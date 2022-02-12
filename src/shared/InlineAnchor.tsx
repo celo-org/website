@@ -1,16 +1,16 @@
+import { SerializedStyles } from "@emotion/react"
 import * as React from "react"
-import { TextStyle } from "react-native"
-import Button, { BTN } from "src/shared/Button.3"
+import Button, { BTN } from "src/shared/Button.4"
 
 interface Props {
   children: string
   href: string
   target?: string
   onPress?: () => void
-  style?: TextStyle
+  cssStyle?: SerializedStyles
 }
 
-export default function InlineAnchor({ children, href, target, onPress, style }: Props) {
+export default function InlineAnchor({ children, href, target, onPress, cssStyle }: Props) {
   return (
     <Button
       text={children}
@@ -18,7 +18,7 @@ export default function InlineAnchor({ children, href, target, onPress, style }:
       target={target}
       href={href}
       kind={BTN.INLINE}
-      style={style}
+      cssStyle={cssStyle}
     />
   )
 }
