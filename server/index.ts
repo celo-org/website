@@ -152,11 +152,11 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   })
 
   server.get("/celo-rewards-education", (_, res) => {
-    res.redirect("/save-terms-and-conditions")
+    res.redirect("https://valoraapp.com/supercharge-terms-and-conditions")
   })
 
   server.get("/celo-rewards", (_, res) => {
-    res.redirect("/save-terms-and-conditions")
+    res.redirect("https://valoraapp.com/supercharge-terms-and-conditions")
   })
 
   server.get("/save-terms-and-conditions", (_, res) => {
