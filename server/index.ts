@@ -159,6 +159,10 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect("/save-terms-and-conditions")
   })
 
+  server.get("/save-terms-and-conditions", (_, res) => {
+    res.redirect("https://valoraapp.com/supercharge-terms-and-conditions")
+  })
+
   server.get("/stake-off", (_, res) => {
     res.redirect("https://forum.celo.org/t/the-great-celo-stake-off-the-details/136")
   })
