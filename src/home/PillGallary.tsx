@@ -92,7 +92,9 @@ export default function PillGallery(props: Props) {
       const halfPoint = logos.length / 2
       return (
         <div css={rootCss}>
-          <div css={css(center2Css, { marginBottom: 36 })}>{logos.slice(0, 5).map(renderLogo)}</div>
+          <div css={css(center2Css, { marginBottom: 36 })}>
+            {logos.slice(0, halfPoint).map(renderLogo)}
+          </div>
           <div css={headingAreaCss}>{renderLogo(heading)}</div>
           <div css={css(center2Css, { marginBottom: 36 })}>
             {logos.slice(halfPoint, logos.length).map(renderLogo)}
