@@ -89,15 +89,15 @@ export default function PillGallery(props: Props) {
     if (isMobile) {
       const heading = props.list.find((item) => item.sys.contentType.sys.id === "heading")
       const logos = props.list.filter((item) => item.sys.contentType.sys.id === "logoGalleryItem")
+      console.log("this is logos", logos.length)
       const halfPoint = logos.length / 2
+      console.log(halfPoint, "this is the halfPoint")
       return (
         <div css={rootCss}>
-          <div css={css(center2Css, { marginBottom: 36 })}>
-            {logos.slice(0, halfPoint).map(renderLogo)}
-          </div>
+          <div css={css(center2Css, { marginBottom: 36 })}>{logos.slice(0, 5).map(renderLogo)}</div>
           <div css={headingAreaCss}>{renderLogo(heading)}</div>
           <div css={css(center2Css, { marginBottom: 36 })}>
-            {logos.slice(halfPoint, logos.length - 1).map(renderLogo)}
+            {logos.slice(halfPoint, logos.length).map(renderLogo)}
           </div>
         </div>
       )
