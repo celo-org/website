@@ -228,6 +228,7 @@ function getColor(word: string): { backgroundColor: string; color: string } {
       return Rainbow.violet
     case "custody":
     case "infra":
+    case "gaming":
       return Rainbow.red
     case "bridge":
       return Rainbow.orange
