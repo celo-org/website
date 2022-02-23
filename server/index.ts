@@ -171,6 +171,16 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect("https://celoconnect.com/")
   })
 
+  server.get("/papers/africa-pilot-2022-report-1", (_, res) => {
+    res.redirect(
+      "https://www.mercycorps.org/research-resources/potential-cryptocurrency-kenya-youth"
+    )
+  })
+
+  server.get("/papers/africa-pilot-2022-report-2", (_, res) => {
+    res.redirect("PAH_Pilot_Preliminary_Report.docx.pdf")
+  })
+
   // File serving for OpenPGP WKD https://gnupg.org/blog/20161027-hosting-a-web-key-directory.html
   // Content must be served on multiple paths, and cannot use a redirect.
   ;["/.well-known/openpgpkey/hu/:userId", "/.well-known/openpgpkey/:host/hu/:userId"].forEach(
