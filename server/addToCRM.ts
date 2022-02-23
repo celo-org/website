@@ -14,6 +14,7 @@ export enum ListID {
   FundReferrals = "118",
   FundApplicants = "117",
   PublicSector = "119",
+  CeloConnect = "142",
   Enterprise = "124",
 }
 
