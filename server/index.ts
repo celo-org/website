@@ -178,7 +178,7 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   })
 
   server.get("/papers/africa-pilot-2022-report-2", (_, res) => {
-    res.redirect("PAH_Pilot_Preliminary_Report.docx.pdf")
+    res.redirect("PAH_Pilot_Preliminary_Report.pdf")
   })
 
   // File serving for OpenPGP WKD https://gnupg.org/blog/20161027-hosting-a-web-key-directory.html
