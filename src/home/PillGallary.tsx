@@ -84,6 +84,7 @@ export default function PillGallery(props: Props) {
       </div>
     )
   }
+
   if (props.formation === "FourByThreeByFour") {
     if (isMobile) {
       const heading = props.list.find((item) => item.sys.contentType.sys.id === "heading")
