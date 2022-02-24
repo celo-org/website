@@ -108,8 +108,8 @@ export default function PillGallery(props: Props) {
           <div css={center2Css}>{props.list.slice(0, 2).map(renderLogo)}</div>
           <div css={center2Css}>{props.list.slice(2, 4).map(renderLogo)}</div>
         </div>
-        <div css={css(evenlySpace, { marginBottom: 24 })}>
-          {props.list.slice(4, 7).map(renderLogo)}
+        <div css={css(evenlySpace, { marginBottom: 24, paddingLeft: 60, paddingRight: 60 })}>
+          <div css={evenlySpace}>{props.list.slice(4, 7).map(renderLogo)}</div>
         </div>
         <div css={css(aroundSpace, { marginBottom: 24 })}>
           <div css={center2Css}>{props.list.slice(7, 9).map(renderLogo)}</div>
