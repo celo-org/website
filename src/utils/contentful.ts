@@ -128,6 +128,17 @@ export interface RoledexContentType {
   variant?: "timeline"
 }
 
+export interface ToggleBlurbContentType {
+  title: string
+  heading: string
+  body: Document
+  image: Asset
+}
+export interface ToggleBlurbType {
+  title: string
+  cards: Entry<ToggleBlurbContentType>[]
+}
+
 export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
 
 interface FieldContentType {
@@ -216,6 +227,7 @@ export type CellContentType =
   | FreeContentType
   | IframeContentType
   | EditorialType
+  | ToggleBlurbType
 
 export interface GridRowContentType {
   id: string
