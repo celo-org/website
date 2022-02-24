@@ -1,11 +1,14 @@
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { css } from "@emotion/react"
 import { WHEN_MOBILE } from "src/estyles"
 import { ToggleBlurbType, ToggleBlurbContentType } from "src/utils/contentful"
+import { renderNode } from "src/contentful/nodes/nodes"
 
 export default function ToogleBlurb(props: ToggleBlurbType) {
   return (
     <div css={rootCss}>
       {props.cards.map(({ fields, sys }) => {
+        debugger
         ;<ToggleBlurbContent
           key={sys.id}
           title={fields.title}
@@ -23,6 +26,7 @@ export function ToggleBlurbContent(props: ToggleBlurbContentType) {
   return (
     <div>
       <h4>{props.title}</h4>
+      {documentToReactComponents(props.body, { renderNode })}
     </div>
   )
 }
