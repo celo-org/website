@@ -1,7 +1,6 @@
 import * as React from "react"
 import { css } from "@emotion/react"
 import { WHEN_MOBILE, flexRow, fonts } from "src/estyles"
-// import { Entry } from "contentful"
 import { colors } from "src/colors"
 import { ToggleBlurbType, ToggleBlurbContentType } from "src/utils/contentful"
 import { renderNode } from "src/contentful/nodes/nodes"
