@@ -133,6 +133,7 @@ export interface ToggleBlurbContentType {
   heading?: string
   body?: Document
   image?: Asset
+  cssStyle?: CSSObject
 }
 export interface ToggleBlurbType {
   title: string

@@ -65,7 +65,7 @@ export default function PlayList(props: PlaylistContentType) {
   )
 }
 
-const buttonCss = css(fonts.navigation, {
+export const buttonCss = css(fonts.navigation, {
   background: "none",
   border: "none",
   display: "inline-flex",
