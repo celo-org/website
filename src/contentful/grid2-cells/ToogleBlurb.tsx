@@ -18,8 +18,6 @@ export default function ToogleBlurb(props: Props) {
   )
 }
 
-// function renderItem(item: Entry<ToggleBlurbContentType>)
-
 export function ToggleBlurbContent(props: ToggleBlurbContentType) {
   debugger
   const [showMe, setShowMe] = React.useState(false)
