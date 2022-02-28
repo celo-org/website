@@ -82,7 +82,7 @@ const toggleHeader = css(flexRow, {
 })
 const toggleContainerTitle = css({
   [WHEN_MOBILE]: {
-    maxWidth: 197,
+    maxWidth: 200,
     justifyContent: "start",
     alignItems: "center",
   },
@@ -90,8 +90,9 @@ const toggleContainerTitle = css({
 const toggleTitle = css(fonts.h5, {
   [WHEN_MOBILE]: {
     textAlign: "start",
-    paddingRight: 36,
-    maxWidth: 197,
+    width: "100%",
+    paddingLeft: 15,
+    paddingRight: 34,
   },
 })
 const toggleBody = css({
