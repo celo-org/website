@@ -92,11 +92,10 @@ const toggleTitle = css(fonts.h5, {
 })
 const toggleBody = css({
   [WHEN_MOBILE]: {
-    maxWidth: 354,
     textAlign: "center",
     lineHeight: 1,
     fontSize: 20,
-    marginTop: 34,
+    paddingTop: 34,
   },
 })
 const darkModeText = css({ "h1, h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })
