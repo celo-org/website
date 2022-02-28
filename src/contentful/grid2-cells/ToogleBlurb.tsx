@@ -1,7 +1,7 @@
 // import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import * as React from "react"
 import { css } from "@emotion/react"
-// import { WHEN_MOBILE } from "src/estyles"
+import { WHEN_MOBILE } from "src/estyles"
 import { Entry } from "contentful"
 import { ToggleBlurbType, ToggleBlurbContentType } from "src/utils/contentful"
 // import { renderNode } from "src/contentful/nodes/nodes"
@@ -41,4 +41,8 @@ export function ToggleBlurbContent(props: ToggleBlurbContentType) {
 
 const rootCss = css({
   border: "3px solid green",
+  display: "none",
+  [WHEN_MOBILE]: {
+    display: "block",
+  },
 })
