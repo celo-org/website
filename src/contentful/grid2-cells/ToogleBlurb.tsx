@@ -14,7 +14,6 @@ export default function ToogleBlurb(props: Props) {
     <div css={rootCss}>
       <div css={css(props.darkMode && darkModeText)}>
         {props.cards.map(({ fields, sys }) => {
-          console.log(fields.cssStyle, "this is cssStyle")
           return (
             <ToggleBlurbContent
               key={sys.id}
@@ -69,8 +68,10 @@ export function ToggleBlurbContent(props: ToggleBlurbContentType) {
 
 const rootContainer = css({
   borderBottom: `1px solid ${colors.grayHeavy}`,
-  paddingBottom: 50,
-  marginTop: 40,
+  [WHEN_MOBILE]: {
+    paddingBottom: 50,
+    marginTop: 40,
+  },
 })
 
 const toggleHeader = css(flexRow, {
@@ -80,14 +81,18 @@ const toggleHeader = css(flexRow, {
   },
 })
 const toggleContainerTitle = css({
-  maxWidth: 197,
-  justifyContent: "start",
-  alignItems: "center",
+  [WHEN_MOBILE]: {
+    maxWidth: 197,
+    justifyContent: "start",
+    alignItems: "center",
+  },
 })
 const toggleTitle = css(fonts.h5, {
-  textAlign: "start",
-  paddingRight: 36,
-  maxWidth: 197,
+  [WHEN_MOBILE]: {
+    textAlign: "start",
+    paddingRight: 36,
+    maxWidth: 197,
+  },
 })
 const toggleBody = css({
   [WHEN_MOBILE]: {
