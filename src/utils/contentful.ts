@@ -137,6 +137,7 @@ export interface ToggleBlurbContentType {
 export interface ToggleBlurbType {
   title: string
   cards: Entry<ToggleBlurbContentType>[]
+  darkMode: boolean
 }
 
 export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
