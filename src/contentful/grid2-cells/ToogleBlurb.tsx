@@ -49,16 +49,18 @@ export function ToggleBlurbContent(props: ToggleBlurbContentType) {
           alt={props.image?.fields?.description}
           src={props.image?.fields.file.url}
         />
-        <h1 css={toggleTitle}>{props.title}</h1>
+        <div css={toggleContainerTitle}>
+          <h1 css={toggleTitle}>{props.title}</h1>
+        </div>
         <button onClick={toggle} css={buttonCss}>
           <Chevron color={colors.white} direction={expanded ? Direction.up : Direction.down} />
         </button>
       </div>
       <div
         style={{
-          display: expanded ? "block" : "none",
+          display: expanded ? "grid" : "none",
         }}
-        css={toggleBody}
+        css={css(props.cssStyle, toggleBody)}
       >
         {documentToReactComponents(props.body, { renderNode })}
       </div>
@@ -76,12 +78,17 @@ const toggleHeader = css(flexRow, {
   [WHEN_MOBILE]: {
     justifyContent: "space-between",
     alignItems: "center",
-    textAlign: "start",
   },
 })
-const toggleTitle = css(fonts.h5, {
+const toggleContainerTitle = css({
   maxWidth: 197,
+  justifyContent: "start",
+  alignItems: "center",
+})
+const toggleTitle = css(fonts.h5, {
   textAlign: "start",
+  paddingRight: 36,
+  maxWidth: 197,
 })
 const toggleBody = css({
   [WHEN_MOBILE]: {
