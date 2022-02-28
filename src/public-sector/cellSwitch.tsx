@@ -115,7 +115,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
         return <Editorial key={entry.sys.id} {...editorial} darkMode={darkMode} />
       case "toggleBlurb":
         const toggle = entry.fields as ToggleBlurbType
-        return <ToggleBlurb title={toggle.title} cards={toggle.cards} />
+        return <ToggleBlurb key={entry.sys.id} {...toggle} />
       default:
         console.log("no renderer for", entry.sys.contentType.sys.id)
         return null

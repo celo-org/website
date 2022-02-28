@@ -129,10 +129,10 @@ export interface RoledexContentType {
 }
 
 export interface ToggleBlurbContentType {
-  title: string
-  heading: string
-  body: Document
-  image: Asset
+  title?: string
+  heading?: string
+  body?: Document
+  image?: Asset
 }
 export interface ToggleBlurbType {
   title: string
