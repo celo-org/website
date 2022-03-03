@@ -58,7 +58,7 @@ export function ToggleBlurbContent(props: ToggleBlurbContentType) {
         style={{
           display: expanded ? "grid" : "none",
         }}
-        css={css(props.cssStyle, toggleBody)}
+        css={css(toggleBody, props.cssStyle)}
       >
         {documentToReactComponents(props.body, { renderNode })}
       </div>
