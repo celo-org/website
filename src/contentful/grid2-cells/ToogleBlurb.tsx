@@ -56,7 +56,7 @@ export function ToggleBlurbContent(props: ToggleBlurbContentType) {
       </div>
       <div
         style={{
-          display: expanded ? "grid" : "none",
+          display: expanded ? displayToggle.grid : displayToggle.none,
         }}
         css={css(toggleBody, props.cssStyle)}
       >
@@ -95,6 +95,7 @@ const toggleTitle = css(fonts.h5, {
     paddingRight: 34,
   },
 })
+
 const toggleBody = css({
   [WHEN_MOBILE]: {
     textAlign: "center",
@@ -103,4 +104,10 @@ const toggleBody = css({
     paddingTop: 34,
   },
 })
+
+enum displayToggle {
+  grid = "grid",
+  none = "none",
+}
+
 const darkModeText = css({ "h1, h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })
