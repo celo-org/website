@@ -134,6 +134,9 @@ export interface ToggleBlurbContentType {
   body?: Document
   image?: Asset
   cssStyle?: CSSObject
+  toggle?: () => any
+  expanded?: number
+  index: number
 }
 export interface ToggleBlurbType {
   title: string
