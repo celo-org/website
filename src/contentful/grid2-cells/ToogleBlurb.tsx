@@ -8,7 +8,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Chevron, { Direction } from "src/icons/chevron"
 import { buttonCss } from "./Playlist"
 
-type Props = ToggleBlurbType & { index?: number }
+type Props = ToggleBlurbType
 export default function ToogleBlurb(props: Props) {
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
@@ -16,7 +16,6 @@ export default function ToogleBlurb(props: Props) {
     <div css={rootCss}>
       <div css={css(props.darkMode && darkModeText)}>
         {props.cards.map(({ fields, sys }, index) => {
-          debugger
           return (
             <>
               <ToggleBlurbContent
