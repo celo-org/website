@@ -8,20 +8,15 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Chevron, { Direction } from "src/icons/chevron"
 import { buttonCss } from "./Playlist"
 
-type Props = ToggleBlurbType
+type Props = ToggleBlurbType & { index?: number }
 export default function ToogleBlurb(props: Props) {
   const [expandedIndex, setBlurbIndex] = React.useState(null)
-  const toggle = (props) => {
-    if (expandedIndex === props) {
-      setBlurbIndex(null)
-    } else {
-      setBlurbIndex(props)
-    }
-  }
+  const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
   return (
     <div css={rootCss}>
       <div css={css(props.darkMode && darkModeText)}>
         {props.cards.map(({ fields, sys }, index) => {
+          debugger
           return (
             <>
               <ToggleBlurbContent
@@ -41,6 +36,7 @@ export default function ToogleBlurb(props: Props) {
     </div>
   )
 }
+
 const rootCss = css({
   display: "none",
   [WHEN_MOBILE]: {
@@ -49,36 +45,34 @@ const rootCss = css({
   },
 })
 
-export function ToggleBlurbContent({
-  image,
-  title,
-  cssStyle,
-  body,
-  index,
-  toggle,
-  expanded,
-}: ToggleBlurbContentType) {
+type SecondProps = ToggleBlurbContentType & { toggle?: () => any; expanded?: number; index: number }
+
+export function ToggleBlurbContent(props: SecondProps) {
   return (
     <div css={rootContainer}>
       <div css={toggleHeader}>
-        <img loading="lazy" alt={image?.fields?.description} src={image?.fields.file.url} />
+        <img
+          loading="lazy"
+          alt={props.image?.fields?.description}
+          src={props.image?.fields.file.url}
+        />
         <div css={toggleContainerTitle}>
-          <h1 css={toggleTitle}>{title}</h1>
+          <h1 css={toggleTitle}>{props.title}</h1>
         </div>
-        <button onClick={toggle} css={buttonCss}>
+        <button onClick={props.toggle} css={buttonCss}>
           <Chevron
             color={colors.white}
-            direction={expanded === index ? Direction.up : Direction.down}
+            direction={props.expanded === props.index ? Direction.up : Direction.down}
           />
         </button>
       </div>
       <div
         style={{
-          display: expanded === index ? displayToggle.grid : displayToggle.none,
+          display: props.expanded === props.index ? displayToggle.grid : displayToggle.none,
         }}
-        css={css(toggleBody, cssStyle)}
+        css={css(toggleBody, props.cssStyle)}
       >
-        {documentToReactComponents(body, { renderNode })}
+        {documentToReactComponents(props.body, { renderNode })}
       </div>
     </div>
   )
