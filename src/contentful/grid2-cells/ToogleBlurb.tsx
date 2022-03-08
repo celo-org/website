@@ -50,11 +50,6 @@ export function ToggleBlurbContent(props: SecondProps) {
   return (
     <div css={rootContainer}>
       <div css={toggleHeader}>
-        <img
-          loading="lazy"
-          alt={props.image?.fields?.description}
-          src={props.image?.fields.file.url}
-        />
         <div css={toggleContainerTitle}>
           <h1 css={toggleTitle}>{props.title}</h1>
         </div>
@@ -93,12 +88,12 @@ const toggleHeader = css(flexRow, {
 })
 const toggleContainerTitle = css({
   [WHEN_MOBILE]: {
-    maxWidth: 200,
+    maxWidth: 376,
     justifyContent: "start",
     alignItems: "center",
   },
 })
-const toggleTitle = css(fonts.h5, {
+const toggleTitle = css(fonts.h3, {
   [WHEN_MOBILE]: {
     textAlign: "start",
     width: "100%",
@@ -109,10 +104,10 @@ const toggleTitle = css(fonts.h5, {
 
 const toggleBody = css({
   [WHEN_MOBILE]: {
-    textAlign: "center",
+    textAlign: "start",
     lineHeight: 1,
     fontSize: 20,
-    paddingTop: 34,
+    paddingTop: 20,
   },
 })
 
