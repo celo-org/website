@@ -1,12 +1,13 @@
 import * as React from "react"
 import { css } from "@emotion/react"
-import { WHEN_MOBILE, flexRow, fonts } from "src/estyles"
+import { WHEN_MOBILE, WHEN_DESKTOP, flexRow, fonts } from "src/estyles"
 import { colors } from "src/colors"
 import { ToggleBlurbType, ToggleBlurbContentType } from "src/utils/contentful"
 import { renderNode } from "src/contentful/nodes/nodes"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Chevron, { Direction } from "src/icons/chevron"
 import { buttonCss } from "./Playlist"
+import { useScreenSize } from "src/layout/ScreenSize"
 
 type Props = ToggleBlurbType
 export default function ToogleBlurb(props: Props) {
@@ -17,18 +18,16 @@ export default function ToogleBlurb(props: Props) {
       <div css={css(props.darkMode && darkModeText)}>
         {props.cards.map(({ fields, sys }, index) => {
           return (
-            <>
-              <ToggleBlurbContent
-                key={sys.id}
-                title={fields.title}
-                image={fields.image}
-                body={fields.body}
-                cssStyle={fields.cssStyle}
-                toggle={() => toggle(index)}
-                expanded={expandedIndex}
-                index={index}
-              />
-            </>
+            <ToggleBlurbContent
+              key={sys.id}
+              title={fields.title}
+              image={fields.image}
+              body={fields.body}
+              cssStyle={fields.cssStyle}
+              toggle={() => toggle(index)}
+              expanded={expandedIndex}
+              index={index}
+            />
           )
         })}
       </div>
@@ -37,7 +36,10 @@ export default function ToogleBlurb(props: Props) {
 }
 
 const rootCss = css({
-  display: "none",
+  [WHEN_DESKTOP]: {
+    border: "1px solid yellow",
+    display: "grid",
+  },
   [WHEN_MOBILE]: {
     display: "block",
     padding: "16px 16px 16px 16px",
@@ -47,29 +49,37 @@ const rootCss = css({
 type SecondProps = ToggleBlurbContentType & { toggle?: () => any; expanded?: number; index: number }
 
 export function ToggleBlurbContent(props: SecondProps) {
-  return (
-    <div css={rootContainer}>
-      <div css={toggleHeader}>
-        <div css={toggleContainerTitle}>
-          <h1 css={toggleTitle}>{props.title}</h1>
+  const { isMobile, isDesktop } = useScreenSize()
+  if (isMobile) {
+    return (
+      <div css={rootContainer}>
+        <div css={toggleHeader}>
+          <div css={toggleContainerTitle}>
+            <h1 css={toggleTitle}>{props.title}</h1>
+          </div>
+          <button onClick={props.toggle} css={buttonCss}>
+            <Chevron
+              color={colors.white}
+              direction={props.expanded === props.index && isMobile ? Direction.up : Direction.down}
+            />
+          </button>
         </div>
-        <button onClick={props.toggle} css={buttonCss}>
-          <Chevron
-            color={colors.white}
-            direction={props.expanded === props.index ? Direction.up : Direction.down}
-          />
-        </button>
+        <div
+          style={{
+            display:
+              props.expanded === props.index && isMobile ? displayToggle.grid : displayToggle.none,
+          }}
+          css={css(toggleBody, props.cssStyle)}
+        >
+          {documentToReactComponents(props.body, { renderNode })}
+        </div>
       </div>
-      <div
-        style={{
-          display: props.expanded === props.index ? displayToggle.grid : displayToggle.none,
-        }}
-        css={css(toggleBody, props.cssStyle)}
-      >
-        {documentToReactComponents(props.body, { renderNode })}
-      </div>
-    </div>
-  )
+    )
+  }
+  if (isDesktop) {
+    return <div>Hello world</div>
+  }
+  return null
 }
 
 const rootContainer = css({
