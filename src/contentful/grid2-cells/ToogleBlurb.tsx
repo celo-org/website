@@ -15,7 +15,7 @@ export default function ToogleBlurb(props: Props) {
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
   return (
     <div css={rootCss}>
-      <div css={css(props.darkMode && darkModeText)}>
+      <div css={css(props.darkMode && darkModeText, rootDesktopGrid)}>
         {props.cards.map(({ fields, sys }, index) => {
           return (
             <ToggleBlurbContent
@@ -36,13 +36,17 @@ export default function ToogleBlurb(props: Props) {
 }
 
 const rootCss = css({
-  [WHEN_DESKTOP]: {
-    border: "1px solid yellow",
-    display: "grid",
-  },
   [WHEN_MOBILE]: {
     display: "block",
     padding: "16px 16px 16px 16px",
+  },
+})
+const rootDesktopGrid = css({
+  [WHEN_DESKTOP]: {
+    border: "1px solid white",
+    display: "grid",
+    gridTemplateRows: "repeat(3, 1fr)",
+    gridTemplateColumns: "repeat(3, 1fr)",
   },
 })
 
@@ -69,7 +73,7 @@ export function ToggleBlurbContent(props: SecondProps) {
             display:
               props.expanded === props.index && isMobile ? displayToggle.grid : displayToggle.none,
           }}
-          css={css(toggleBody, props.cssStyle)}
+          css={css(toggleBody)}
         >
           {documentToReactComponents(props.body, { renderNode })}
         </div>
@@ -77,7 +81,12 @@ export function ToggleBlurbContent(props: SecondProps) {
     )
   }
   if (isDesktop) {
-    return <div>Hello world</div>
+    return (
+      <div>
+        <div>{props.title}</div>
+        <div>{documentToReactComponents(props.body, { renderNode })}</div>
+      </div>
+    )
   }
   return null
 }
