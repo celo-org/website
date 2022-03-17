@@ -14,16 +14,17 @@ interface Fields extends FieldSet {
   "Celo Assets"?: string[]
 }
 
+async function fetchCico() {
+  // const country = await fetchCached()
+}
+
 // const SHEET = "CICO Database"
 
-// // async function fetchCico() {
+// async function fetchCico() {
 
-// //   }
-
-//   function getAirtable(sheet: string) {
-//     return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_ANNOUNCEMENT_ID)(
-//       sheet
-//     ) as Table<Fields>
 //   }
 
 //   const IS_APROVED = "Approved=1"
+function getAirtable() {
+  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_CICO_DATABASE_ID)("CICO Database")
+}
