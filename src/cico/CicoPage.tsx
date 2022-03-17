@@ -15,8 +15,14 @@ export interface CicoProvider {
   paid: string
 }
 
-function CicoPage(props: I18nProps & CicoProvider) {
-  console.log(props, "this is props")
+interface Props {
+  data: CicoProvider[]
+}
+
+function CicoPage(props: I18nProps & Props) {
+  const { data } = props
+
+  console.log(data, "this is cico")
   return (
     <div>
       <h1></h1>
