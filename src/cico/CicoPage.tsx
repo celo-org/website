@@ -7,7 +7,7 @@ export interface CicoProvider {
   restricted?: string
   population?: string
   country?: string
-  cicoProvider?: string
+  "CICO Provider"?: string
   paymentType?: string[]
   cicoType?: string
   celoAssets?: string[]
@@ -36,12 +36,12 @@ function CicoPage(props: I18nProps & Props) {
       {Object.keys(byCountries).map((title) => {
         return (
           <>
-            <h4>{title}</h4>
+            <h1>{title}</h1>
             {byCountries[title].map((country) => {
               // console.log(country, "this is country")
               return (
                 <>
-                  <Countries country={country.country} />
+                  <Countries restricted={country.restricted} paid={country.paid} />
                 </>
               )
             })}
@@ -52,11 +52,12 @@ function CicoPage(props: I18nProps & Props) {
   )
 }
 
-export function Countries({ country }: CicoProvider) {
-  debugger
+export function Countries({ restricted, paid }: CicoProvider) {
   return (
     <div>
-      <h4>{country}</h4>
+      <p>{restricted}</p>
+      <p>{paid}</p>
+      {/* <p>{cicoProvider}</p> */}
     </div>
   )
 }
