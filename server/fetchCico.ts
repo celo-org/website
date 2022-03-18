@@ -4,7 +4,7 @@ import { fetchCached, MINUTE } from "./cache"
 
 async function fetchCico() {
   const country = await getAirtable()
-    .select({ sort: [{ field: "CICO Provider" }] })
+    .select({ sort: [{ field: "cicoProvider" }] })
     .firstPage()
   return country
 }
