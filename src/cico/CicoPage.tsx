@@ -31,30 +31,32 @@ function CicoPage(props: I18nProps & Props) {
     return countries
   }, {})
 
-  // console.log(byCountries, "this is countries")
+  console.log(byCountries, "this is countries")
   return (
     <div css={containerCss}>
-      {Object.keys(byCountries).map((title) => {
-        return (
-          <>
-            <h1>{title}</h1>
-            <div css={countryContainer}>
-              {byCountries[title].map((country) => {
-                return (
-                  <>
-                    <Countries
-                      restricted={country.restricted}
-                      paid={country.paid}
-                      cicoProvider={country.cicoProvider}
-                      cicoType={country.cicoType}
-                    />
-                  </>
-                )
-              })}
-            </div>
-          </>
-        )
-      })}
+      {Object.keys(byCountries)
+        .sort()
+        .map((title) => {
+          return (
+            <>
+              <h1>{title}</h1>
+              <div css={countryContainer}>
+                {byCountries[title].map((country) => {
+                  return (
+                    <>
+                      <Countries
+                        restricted={country.restricted}
+                        paid={country.paid}
+                        cicoProvider={country.cicoProvider}
+                        cicoType={country.cicoType}
+                      />
+                    </>
+                  )
+                })}
+              </div>
+            </>
+          )
+        })}
     </div>
   )
 }
