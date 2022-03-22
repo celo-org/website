@@ -4,6 +4,7 @@ import { css } from "@emotion/react"
 import { containerCss } from "src/press/PressPage"
 import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
+import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 
 export interface CicoProvider {
   restricted?: string
@@ -12,11 +13,14 @@ export interface CicoProvider {
   cicoProvider?: string
   paymentType?: string[]
   cicoType?: string
-  celoAssets?: string[]
+  celoAssets?: CeloAssets
   securityReview?: string
   legalReview?: string
   usabilityReview?: string
   paid?: string
+}
+interface CeloAssets {
+  assets: string[]
 }
 
 interface Props {
@@ -39,8 +43,13 @@ function CicoPage(props: I18nProps & Props) {
         .map((title) => {
           return (
             <>
-              <h1>{title}</h1>
-              <div css={countryContainer}>
+              <div css={headerContainer}>
+                <h1>{title}</h1>
+                <button css={buttonCss}>
+                  <Chevron color={colors.greenUI} direction={Direction.down} />
+                </button>
+              </div>
+              <div>
                 <table css={countriesTable}>
                   <thead css={countriesHeader}>
                     <tr>
@@ -51,20 +60,28 @@ function CicoPage(props: I18nProps & Props) {
                       <th css={countriesHeader}>Celo Assets</th>
                     </tr>
                   </thead>
-                  {byCountries[title].map((country) => {
-                    console.log(country.celoAssets, "this is how it looks like ")
-                    return (
-                      <>
-                        <Countries
-                          restricted={country.restricted}
-                          paid={country.paid}
-                          cicoProvider={country.cicoProvider}
-                          cicoType={country.cicoType}
-                          celoAssets={country.celoAssets}
-                        />
-                      </>
-                    )
-                  })}
+                  {byCountries[title].map(
+                    (country: {
+                      restricted: string
+                      paid: string
+                      cicoProvider: string
+                      cicoType: string
+                      celoAssets: CeloAssets
+                    }) => {
+                      debugger
+                      return (
+                        <>
+                          <Countries
+                            restricted={country.restricted}
+                            paid={country.paid}
+                            cicoProvider={country.cicoProvider}
+                            cicoType={country.cicoType}
+                            celoAssets={country.celoAssets}
+                          />
+                        </>
+                      )
+                    }
+                  )}
                 </table>
               </div>
             </>
@@ -99,17 +116,11 @@ function ToggleButton() {
   )
 }
 
-const countryContainer = css({
-  border: "1px solid blue",
-  display: "flex",
-  flexDirection: "row",
-})
-
 const countriesTable = css({
   border: "1px solid black",
 })
 const countriesCells = css({
-  padding: 20,
+  padding: 16,
   textAlign: "center",
 })
 const countriesHeader = css(countriesCells, {
@@ -117,6 +128,9 @@ const countriesHeader = css(countriesCells, {
 })
 const countriesBody = css(countriesCells, {
   border: "1px solid black",
+})
+const headerContainer = css({
+  display: "flex",
 })
 
 export default withNamespaces(NameSpaces.common)(CicoPage)
