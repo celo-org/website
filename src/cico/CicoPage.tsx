@@ -95,9 +95,9 @@ export function Countries({ restricted, paid, cicoProvider, cicoType }: CicoProv
 
 function ToggleButton() {
   const [open, setOpen] = React.useState(false)
-  const toggle = () => (open === true ? setOpen(false) : setOpen(true))
+  const toggleSort = () => (open === true ? setOpen(false) : setOpen(true))
   return (
-    <button onClick={toggle}>
+    <button onClick={toggleSort}>
       {" "}
       <Chevron color={colors.dark} direction={open ? Direction.up : Direction.down} />{" "}
     </button>
