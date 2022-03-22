@@ -12,6 +12,7 @@ type Props = ToggleBlurbType
 export default function ToogleBlurb(props: Props) {
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
+  console.log("change")
   return (
     <div css={rootCss}>
       <div css={css(props.darkMode && darkModeText)}>
