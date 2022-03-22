@@ -41,26 +41,18 @@ function CicoPage(props: I18nProps & Props) {
             <>
               <h1>{title}</h1>
               <div css={countryContainer}>
-                <table>
+                <table css={countriesTable}>
                   <thead>
                     <tr>
-                      <th>
-                        CICO Provider <ToggleButton />
-                      </th>
-                      <th>
-                        CICO Type <ToggleButton />
-                      </th>
-                      <th>
-                        Restricted
-                        <ToggleButton />
-                      </th>
-                      <th>
-                        Paid <ToggleButton />
-                      </th>
-                      <th>Celo Assets</th>
+                      <th css={contriesCells}>CICO Provider</th>
+                      <th css={contriesCells}>CICO Type</th>
+                      <th css={contriesCells}>Restricted</th>
+                      <th css={contriesCells}>Paid</th>
+                      <th css={contriesCells}>Celo Assets</th>
                     </tr>
                   </thead>
                   {byCountries[title].map((country) => {
+                    console.log(country.celoAssets, "this is how it looks like ")
                     return (
                       <>
                         <Countries
@@ -86,11 +78,11 @@ export function Countries({ restricted, paid, cicoProvider, cicoType, celoAssets
   return (
     <tbody>
       <tr>
-        <td>{!cicoProvider ? "N/A" : cicoProvider}</td>
-        <td>{!cicoType ? "N/A" : cicoType}</td>
-        <td>{restricted}</td>
-        <td>{paid}</td>
-        <td>{celoAssets}</td>
+        <td css={contriesCells}>{!cicoProvider ? "N/A" : cicoProvider}</td>
+        <td css={contriesCells}>{!cicoType ? "N/A" : cicoType}</td>
+        <td css={contriesCells}>{!restricted ? "N/A" : restricted}</td>
+        <td css={contriesCells}>{!paid ? "N/A" : paid}</td>
+        <td css={contriesCells}>{!celoAssets ? "N/A" : celoAssets}</td>
       </tr>
     </tbody>
   )
@@ -111,6 +103,14 @@ const countryContainer = css({
   border: "1px solid blue",
   display: "flex",
   flexDirection: "row",
+})
+
+const countriesTable = css({
+  border: "1px solid black",
+})
+const contriesCells = css({
+  padding: 20,
+  textAlign: "center",
 })
 
 export default withNamespaces(NameSpaces.common)(CicoPage)
