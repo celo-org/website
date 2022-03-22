@@ -2,7 +2,8 @@ import * as React from "react"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import { css } from "@emotion/react"
 import { containerCss } from "src/press/PressPage"
-import cicoDatabase from "pages/api/cico-database"
+import Chevron, { Direction } from "src/icons/chevron"
+import { colors } from "src/colors"
 
 export interface CicoProvider {
   restricted?: string
@@ -31,7 +32,6 @@ function CicoPage(props: I18nProps & Props) {
     return countries
   }, {})
 
-  console.log(byCountries, "this is countries")
   return (
     <div css={containerCss}>
       {Object.keys(byCountries)
@@ -41,18 +41,37 @@ function CicoPage(props: I18nProps & Props) {
             <>
               <h1>{title}</h1>
               <div css={countryContainer}>
-                {byCountries[title].map((country) => {
-                  return (
-                    <>
-                      <Countries
-                        restricted={country.restricted}
-                        paid={country.paid}
-                        cicoProvider={country.cicoProvider}
-                        cicoType={country.cicoType}
-                      />
-                    </>
-                  )
-                })}
+                <table>
+                  <thead>
+                    <tr>
+                      <th>
+                        Restricted
+                        <ToggleButton />
+                      </th>
+                      <th>
+                        Paid <ToggleButton />
+                      </th>
+                      <th>
+                        CICO Provider <ToggleButton />
+                      </th>
+                      <th>
+                        CICO Type <ToggleButton />
+                      </th>
+                    </tr>
+                  </thead>
+                  {byCountries[title].map((country) => {
+                    return (
+                      <>
+                        <Countries
+                          restricted={country.restricted}
+                          paid={country.paid}
+                          cicoProvider={country.cicoProvider}
+                          cicoType={country.cicoType}
+                        />
+                      </>
+                    )
+                  })}
+                </table>
               </div>
             </>
           )
@@ -63,21 +82,27 @@ function CicoPage(props: I18nProps & Props) {
 
 export function Countries({ restricted, paid, cicoProvider, cicoType }: CicoProvider) {
   return (
-    <div css={dataContainer}>
-      <p>{restricted}</p>
-      <p>{paid}</p>
-      <p>{!cicoProvider ? "null" : cicoProvider}</p>
-      <p>{!cicoType ? "N/A" : cicoType}</p>
-    </div>
+    <tbody>
+      <tr>
+        <td>{restricted}</td>
+        <td>{paid}</td>
+        <td>{!cicoProvider ? "null" : cicoProvider}</td>
+        <td>{!cicoType ? "N/A" : cicoType}</td>
+      </tr>
+    </tbody>
   )
 }
 
-const dataContainer = css({
-  border: "1px solid green",
-  maxWidth: 400,
-  padding: 20,
-  margin: 20,
-})
+function ToggleButton() {
+  const [open, setOpen] = React.useState(false)
+  const toggle = () => (open === true ? setOpen(false) : setOpen(true))
+  return (
+    <button onClick={toggle}>
+      {" "}
+      <Chevron color={colors.dark} direction={open ? Direction.up : Direction.down} />{" "}
+    </button>
+  )
+}
 
 const countryContainer = css({
   border: "1px solid blue",
