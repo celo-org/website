@@ -45,18 +45,19 @@ function CicoPage(props: I18nProps & Props) {
                   <thead>
                     <tr>
                       <th>
+                        CICO Provider <ToggleButton />
+                      </th>
+                      <th>
+                        CICO Type <ToggleButton />
+                      </th>
+                      <th>
                         Restricted
                         <ToggleButton />
                       </th>
                       <th>
                         Paid <ToggleButton />
                       </th>
-                      <th>
-                        CICO Provider <ToggleButton />
-                      </th>
-                      <th>
-                        CICO Type <ToggleButton />
-                      </th>
+                      <th>Celo Assets</th>
                     </tr>
                   </thead>
                   {byCountries[title].map((country) => {
@@ -67,6 +68,7 @@ function CicoPage(props: I18nProps & Props) {
                           paid={country.paid}
                           cicoProvider={country.cicoProvider}
                           cicoType={country.cicoType}
+                          celoAssets={country.celoAssets}
                         />
                       </>
                     )
@@ -80,14 +82,15 @@ function CicoPage(props: I18nProps & Props) {
   )
 }
 
-export function Countries({ restricted, paid, cicoProvider, cicoType }: CicoProvider) {
+export function Countries({ restricted, paid, cicoProvider, cicoType, celoAssets }: CicoProvider) {
   return (
     <tbody>
       <tr>
+        <td>{!cicoProvider ? "N/A" : cicoProvider}</td>
+        <td>{!cicoType ? "N/A" : cicoType}</td>
         <td>{restricted}</td>
         <td>{paid}</td>
-        <td>{!cicoProvider ? "null" : cicoProvider}</td>
-        <td>{!cicoType ? "N/A" : cicoType}</td>
+        <td>{celoAssets}</td>
       </tr>
     </tbody>
   )
