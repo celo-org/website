@@ -42,13 +42,13 @@ function CicoPage(props: I18nProps & Props) {
               <h1>{title}</h1>
               <div css={countryContainer}>
                 <table css={countriesTable}>
-                  <thead>
+                  <thead css={countriesHeader}>
                     <tr>
-                      <th css={contriesCells}>CICO Provider</th>
-                      <th css={contriesCells}>CICO Type</th>
-                      <th css={contriesCells}>Restricted</th>
-                      <th css={contriesCells}>Paid</th>
-                      <th css={contriesCells}>Celo Assets</th>
+                      <th css={countriesHeader}>CICO Provider</th>
+                      <th css={countriesHeader}>CICO Type</th>
+                      <th css={countriesHeader}>Restricted</th>
+                      <th css={countriesHeader}>Paid</th>
+                      <th css={countriesHeader}>Celo Assets</th>
                     </tr>
                   </thead>
                   {byCountries[title].map((country) => {
@@ -78,11 +78,11 @@ export function Countries({ restricted, paid, cicoProvider, cicoType, celoAssets
   return (
     <tbody>
       <tr>
-        <td css={contriesCells}>{!cicoProvider ? "N/A" : cicoProvider}</td>
-        <td css={contriesCells}>{!cicoType ? "N/A" : cicoType}</td>
-        <td css={contriesCells}>{!restricted ? "N/A" : restricted}</td>
-        <td css={contriesCells}>{!paid ? "N/A" : paid}</td>
-        <td css={contriesCells}>{!celoAssets ? "N/A" : celoAssets}</td>
+        <td css={countriesBody}>{!cicoProvider ? "N/A" : cicoProvider}</td>
+        <td css={countriesBody}>{!cicoType ? "N/A" : cicoType}</td>
+        <td css={countriesBody}>{!restricted ? "N/A" : restricted}</td>
+        <td css={countriesBody}>{!paid ? "N/A" : paid}</td>
+        <td css={countriesBody}>{!celoAssets ? "N/A" : celoAssets}</td>
       </tr>
     </tbody>
   )
@@ -108,9 +108,15 @@ const countryContainer = css({
 const countriesTable = css({
   border: "1px solid black",
 })
-const contriesCells = css({
+const countriesCells = css({
   padding: 20,
   textAlign: "center",
+})
+const countriesHeader = css(countriesCells, {
+  border: "2px solid black",
+})
+const countriesBody = css(countriesCells, {
+  border: "1px solid black",
 })
 
 export default withNamespaces(NameSpaces.common)(CicoPage)
