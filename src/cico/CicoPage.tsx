@@ -1,7 +1,6 @@
 import * as React from "react"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import { css } from "@emotion/react"
-import { containerCss } from "src/press/PressPage"
 import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
@@ -43,6 +42,7 @@ function CicoPage(props: I18nProps & Props) {
   }, {})
   return (
     <div css={containerCss}>
+
       <div>
         <input placeholder="search" type="text" onChange={(e) => setSearch(e.target.value)} />
       </div>
@@ -99,6 +99,12 @@ function CicoPage(props: I18nProps & Props) {
         })}
     </div>
   )
+}
+
+const containerCss = {
+  marginTop: 75,
+  paddingTop: 75,
+  minHeight: 450,
 }
 
 export function CicoProvider({
