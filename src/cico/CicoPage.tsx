@@ -4,7 +4,6 @@ import { css } from "@emotion/react"
 import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
-import { IndexedData } from "@hubspot/api-client/lib/codegen/cms/site_search/api"
 
 export interface CicoProvider {
   restricted?: string
@@ -31,6 +30,7 @@ interface Props {
 }
 
 function CicoPage(props: I18nProps & Props) {
+  const [search, setSearch] = React.useState("")
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
   const { data } = props
@@ -42,9 +42,13 @@ function CicoPage(props: I18nProps & Props) {
   }, {})
   return (
     <div css={containerCss}>
-      <div></div>
+
+      <div>
+        <input placeholder="search" type="text" onChange={(e) => setSearch(e.target.value)} />
+      </div>
       {Object.keys(byCountries)
         .sort()
+        .filter((title) => title.toLowerCase().includes(search))
         .map((title, index) => {
           return (
             <>
@@ -105,14 +109,13 @@ const containerCss = {
 
 export function CicoProvider({
   restricted,
-  paid,
   cicoProvider,
   cicoType,
   celoAssets,
-  population,
+  // population,
   paymentType,
 }: CicoProvider) {
-  const newPopulation = !population ? "N/A" : population.toLocaleString("en-US")
+  // const newPopulation = !population ? "N/A" : population.toLocaleString("en-US")
   return (
     <>
       <tbody>
@@ -127,17 +130,6 @@ export function CicoProvider({
     </>
   )
 }
-
-// function ToggleButton() {
-//   const [open, setOpen] = React.useState(false)
-//   const toggleSort = () => (open === true ? setOpen(false) : setOpen(true))
-//   return (
-//     <button onClick={toggleSort}>
-//       {" "}
-//       <Chevron color={colors.dark} direction={open ? Direction.up : Direction.down} />{" "}
-//     </button>
-//   )
-// }
 
 const countriesTable = css({
   border: "1px solid black",
