@@ -42,6 +42,7 @@ function CicoPage(props: I18nProps & Props) {
   }, {})
   return (
     <div css={containerCss}>
+      <div></div>
       <div>
         <input placeholder="search" type="text" onChange={(e) => setSearch(e.target.value)} />
       </div>
@@ -50,7 +51,7 @@ function CicoPage(props: I18nProps & Props) {
         .sort()
         .map((title, index) => {
           return (
-            <>
+            <div key={index}>
               <div css={headerContainer}>
                 <h1>{title}</h1>
                 <button css={buttonCss} onClick={() => toggle(index)}>
@@ -93,7 +94,7 @@ function CicoPage(props: I18nProps & Props) {
                   )}
                 </table>
               </div>
-            </>
+            </div>
           )
         })}
     </div>
@@ -111,10 +112,8 @@ export function CicoProvider({
   cicoProvider,
   cicoType,
   celoAssets,
-  // population,
   paymentType,
 }: CicoProvider) {
-  // const newPopulation = !population ? "N/A" : population.toLocaleString("en-US")
   return (
     <>
       <tbody>
