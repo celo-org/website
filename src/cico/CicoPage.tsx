@@ -42,13 +42,12 @@ function CicoPage(props: I18nProps & Props) {
   }, {})
   return (
     <div css={containerCss}>
-
       <div>
         <input placeholder="search" type="text" onChange={(e) => setSearch(e.target.value)} />
       </div>
       {Object.keys(byCountries)
-        .sort()
         .filter((title) => title.toLowerCase().includes(search))
+        .sort()
         .map((title, index) => {
           return (
             <>
