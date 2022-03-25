@@ -43,15 +43,20 @@ function CicoPage(props: I18nProps & Props) {
   return (
     <div css={containerCss}>
       <div></div>
-      <div>
-        <input placeholder="search" type="text" onChange={(e) => setSearch(e.target.value)} />
+      <div css={searchContainer}>
+        <input
+          css={inputText}
+          placeholder="search"
+          type="text"
+          onChange={(e) => setSearch(e.target.value)}
+        />
       </div>
       {Object.keys(byCountries)
         .filter((title) => title.toLowerCase().includes(search))
         .sort()
         .map((title, index) => {
           return (
-            <div key={index}>
+            <div key={index} css={countryContainer}>
               <div css={headerContainer}>
                 <h1>{title}</h1>
                 <button css={buttonCss} onClick={() => toggle(index)}>
@@ -105,7 +110,23 @@ const containerCss = {
   marginTop: 75,
   paddingTop: 75,
   minHeight: 450,
+  justifyContent: "center",
+  alignItems: "center",
 }
+
+const searchContainer = css({
+  textAlign: "center",
+})
+
+const inputText = css({
+  width: 584,
+  height: 44,
+})
+
+const countryContainer = css({
+  justifyContent: "center",
+  alignContent: "center",
+})
 
 export function CicoProvider({
   restricted,
@@ -144,9 +165,12 @@ const countriesBody = css(countriesCells, {
 })
 const headerContainer = css({
   display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
 })
 const toggleContent = css({
   display: "flex",
+  justifyContent: "center",
 })
 const displayNone = css({
   display: "none",
