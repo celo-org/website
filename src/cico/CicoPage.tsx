@@ -51,57 +51,59 @@ function CicoPage(props: I18nProps & Props) {
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
-      {Object.keys(byCountries)
-        .filter((title) => title.toLowerCase().includes(search))
-        .sort()
-        .map((title, index) => {
-          return (
-            <div key={index} css={countryContainer}>
-              <div css={headerContainer}>
-                <h1>{title}</h1>
-                <button css={buttonCss} onClick={() => toggle(index)}>
-                  <Chevron color={colors.greenUI} direction={Direction.down} />
-                </button>
+      <div css={displayCountry}>
+        {Object.keys(byCountries)
+          .filter((title) => title.toLowerCase().includes(search))
+          .sort()
+          .map((title, index) => {
+            return (
+              <div key={index} css={countryContainer}>
+                <div css={headerContainer}>
+                  <h1>{title}</h1>
+                  <button css={buttonCss} onClick={() => toggle(index)}>
+                    <Chevron color={colors.greenUI} direction={Direction.down} />
+                  </button>
+                </div>
+                <div css={expandedIndex === index ? toggleContent : displayNone}>
+                  <table css={countriesTable}>
+                    <thead css={countriesHeader}>
+                      <tr>
+                        <th css={countriesHeader}>CICO Provider</th>
+                        <th css={countriesHeader}>CICO Type</th>
+                        <th css={countriesHeader}>Celo Assets</th>
+                        <th css={countriesHeader}>Payment Type</th>
+                        <th css={countriesHeader}>Restricted</th>
+                      </tr>
+                    </thead>
+                    {byCountries[title].map(
+                      (country: {
+                        restricted: string
+                        cicoProvider: string
+                        cicoType: string
+                        celoAssets: CeloAssets
+                        population?: number
+                        paymentType?: PaymentType
+                      }) => {
+                        return (
+                          <>
+                            <CicoProvider
+                              restricted={country.restricted}
+                              cicoProvider={country.cicoProvider}
+                              cicoType={country.cicoType}
+                              celoAssets={country.celoAssets}
+                              population={country.population}
+                              paymentType={country.paymentType}
+                            />
+                          </>
+                        )
+                      }
+                    )}
+                  </table>
+                </div>
               </div>
-              <div css={expandedIndex === index ? toggleContent : displayNone}>
-                <table css={countriesTable}>
-                  <thead css={countriesHeader}>
-                    <tr>
-                      <th css={countriesHeader}>CICO Provider</th>
-                      <th css={countriesHeader}>CICO Type</th>
-                      <th css={countriesHeader}>Celo Assets</th>
-                      <th css={countriesHeader}>Payment Type</th>
-                      <th css={countriesHeader}>Restricted</th>
-                    </tr>
-                  </thead>
-                  {byCountries[title].map(
-                    (country: {
-                      restricted: string
-                      cicoProvider: string
-                      cicoType: string
-                      celoAssets: CeloAssets
-                      population?: number
-                      paymentType?: PaymentType
-                    }) => {
-                      return (
-                        <>
-                          <CicoProvider
-                            restricted={country.restricted}
-                            cicoProvider={country.cicoProvider}
-                            cicoType={country.cicoType}
-                            celoAssets={country.celoAssets}
-                            population={country.population}
-                            paymentType={country.paymentType}
-                          />
-                        </>
-                      )
-                    }
-                  )}
-                </table>
-              </div>
-            </div>
-          )
-        })}
+            )
+          })}
+      </div>
     </div>
   )
 }
@@ -113,6 +115,11 @@ const containerCss = {
   justifyContent: "center",
   alignItems: "center",
 }
+
+const displayCountry = css({
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr 1fr",
+})
 
 const searchContainer = css({
   textAlign: "center",
