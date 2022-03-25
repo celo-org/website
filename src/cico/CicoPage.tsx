@@ -4,6 +4,7 @@ import { css } from "@emotion/react"
 import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
+import worldMap from "src/icons/world_map.png"
 
 export interface CicoProvider {
   restricted?: string
@@ -42,7 +43,10 @@ function CicoPage(props: I18nProps & Props) {
   }, {})
   return (
     <div css={containerCss}>
-      <div></div>
+      <div css={imageContainer}>
+        <h1>Celo WW Partners and Ramps</h1>
+        <img src={worldMap.src} width={800} />
+      </div>
       <div css={searchContainer}>
         <input
           css={inputText}
@@ -108,9 +112,17 @@ function CicoPage(props: I18nProps & Props) {
   )
 }
 
+const imageContainer = css({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  paddingBottom: 40,
+})
+
 const containerCss = {
   marginTop: 75,
-  paddingTop: 75,
+  padding: 75,
   minHeight: 450,
   justifyContent: "center",
   alignItems: "center",
@@ -123,6 +135,8 @@ const displayCountry = css({
 
 const searchContainer = css({
   textAlign: "center",
+  paddingTop: 10,
+  paddingBottom: 10,
 })
 
 const inputText = css({
