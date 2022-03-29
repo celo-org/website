@@ -36,7 +36,7 @@ interface Props {
 
 function CicoPage(props: Props & ContentfulPage<GridRowContentType>) {
   const items = props.sections.map(pageSwitch)
-  items.splice(3, 0, <CoutriesReturned data={props.data} />)
+  items.splice(items.length, 0, <CoutriesReturned data={props.data} />)
   return <div css={rootCss}>{props.sections ? items : <></>}</div>
 }
 
