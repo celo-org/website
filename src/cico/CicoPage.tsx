@@ -6,7 +6,8 @@ import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
-import { flex } from "src/estyles"
+import { flex, whiteText, fonts } from "src/estyles"
+import { responsePathAsArray } from "graphql"
 
 export interface CicoProvider {
   restricted?: string
@@ -38,22 +39,8 @@ function CicoPage(props: Props & ContentfulPage<GridRowContentType>) {
   return <div css={rootCss}>{props.sections ? items : <></>}</div>
 }
 
-const rootCss = css(flex, {})
-
-const displayCountry = css({
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr",
-})
-
-const searchContainer = css({
-  textAlign: "center",
-  paddingTop: 10,
-  paddingBottom: 10,
-})
-
-const inputText = css({
-  width: 584,
-  height: 44,
+const rootCss = css(flex, {
+  backgroundColor: colors.dark,
 })
 
 const countryContainer = css({
@@ -77,32 +64,48 @@ function CoutriesReturned(props: Props) {
   return (
     <div css={displayCountry}>
       <div css={searchContainer}>
-        <input
-          css={inputText}
-          placeholder="search"
-          type="text"
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        <input placeholder="search" type="text" onChange={(e) => setSearch(e.target.value)} />
       </div>
-      <div>
-        <h1>{t("celoRamps.countries")}</h1>
+      <div css={countriesContainer}>
+        <div>
+          <h1>{t("celoRamps.countries")}</h1>
+        </div>
+        <div>
+          {showingCountries.map((title, index) => {
+            return (
+              <CountryTable
+                key={title}
+                index={index}
+                title={title}
+                toggle={toggle}
+                expandedIndex={expandedIndex}
+                countryData={data[title]}
+              />
+            )
+          })}
+        </div>
       </div>
-      {showingCountries.map((title, index) => {
-        return (
-          <CountryTable
-            key={title}
-            index={index}
-            title={title}
-            toggle={toggle}
-            expandedIndex={expandedIndex}
-            countryData={data[title]}
-          />
-        )
-      })}
     </div>
   )
 }
 
+const displayCountry = css(whiteText, {
+  display: "grid",
+  gridTemplateColumns: "repeat(4, 1fr)",
+  backgroundColor: colors.dark,
+  "h1, h2, h3, h4, p": whiteText,
+  margin: "0px 100px",
+})
+const countriesContainer = css({
+  // display: "grid",
+  gridColumn: "2 / span 3",
+})
+const searchContainer = css({
+  textAlign: "center",
+  paddingTop: 10,
+  paddingBottom: 10,
+  gridColumn: "1 / span 1",
+})
 interface CountryTableProps {
   index: number
   title: string
