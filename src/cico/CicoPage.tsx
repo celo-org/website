@@ -5,6 +5,10 @@ import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import worldMap from "src/icons/world_map.png"
+import { pageSwitch } from "src/public-sector/CommonContentFullPage"
+import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
+import page from "pages/experience/events/examples"
+import { flex } from "src/estyles"
 
 export interface CicoProvider {
   restricted?: string
@@ -27,107 +31,16 @@ interface PaymentType {
 }
 
 interface Props {
-  data: CicoProvider[]
+  data: Record<string, CicoProvider[]>
 }
 
-function CicoPage(props: Props) {
-  const { t } = useTranslation(NameSpaces.cico)
-  const [search, setSearch] = React.useState("")
-  const [expandedIndex, setBlurbIndex] = React.useState(null)
-  const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
-  const { data } = props
-  const byCountries = data.reduce((countries, provider) => {
-    const country = provider.country
-    if (countries[country] == null) countries[country] = []
-    countries[country].push(provider)
-    return countries
-  }, {})
-  return (
-    <div css={containerCss}>
-      <div css={imageContainer}>
-        <h1>{t("coverTitle")}</h1>
-        <img src={worldMap.src} width={800} />
-      </div>
-      <div css={searchContainer}>
-        <input
-          css={inputText}
-          placeholder="search"
-          type="text"
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </div>
-      <div css={displayCountry}>
-        {Object.keys(byCountries)
-          .filter((title) => title.toLowerCase().includes(search))
-          .sort()
-          .map((title, index) => {
-            return (
-              <div key={index} css={countryContainer}>
-                <div css={headerContainer}>
-                  <h1>{title}</h1>
-                  <button css={buttonCss} onClick={() => toggle(index)}>
-                    <Chevron color={colors.greenUI} direction={Direction.down} />
-                  </button>
-                </div>
-                <div css={expandedIndex === index ? toggleContent : displayNone}>
-                  <table css={countriesTable}>
-                    <thead css={countriesHeader}>
-                      <tr>
-                        <th css={countriesHeader}>CICO Provider</th>
-                        <th css={countriesHeader}>CICO Type</th>
-                        <th css={countriesHeader}>Celo Assets</th>
-                        <th css={countriesHeader}>Payment Type</th>
-                        <th css={countriesHeader}>Restricted</th>
-                      </tr>
-                    </thead>
-                    {byCountries[title].map(
-                      (country: {
-                        restricted: string
-                        cicoProvider: string
-                        cicoType: string
-                        celoAssets: CeloAssets
-                        population?: number
-                        paymentType?: PaymentType
-                      }) => {
-                        return (
-                          <>
-                            <CicoProvider
-                              restricted={country.restricted}
-                              cicoProvider={country.cicoProvider}
-                              cicoType={country.cicoType}
-                              celoAssets={country.celoAssets}
-                              population={country.population}
-                              paymentType={country.paymentType}
-                            />
-                          </>
-                        )
-                      }
-                    )}
-                  </table>
-                </div>
-              </div>
-            )
-          })}
-      </div>
-    </div>
-  )
+function CicoPage(props: Props & ContentfulPage<GridRowContentType>) {
+  const items = props.sections.map(pageSwitch)
+  items.splice(3, 0, <CoutriesReturned data={props.data} />)
+  return <div css={rootCss}>{props.sections ? items : <></>}</div>
 }
 
-const imageContainer = css({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  paddingBottom: 40,
-})
-
-const containerCss = {
-  marginTop: 75,
-  padding: 75,
-  minHeight: 450,
-  justifyContent: "center",
-  alignItems: "center",
-}
+const rootCss = css(flex, {})
 
 const displayCountry = css({
   display: "grid",
@@ -150,7 +63,100 @@ const countryContainer = css({
   alignContent: "center",
 })
 
-export function CicoProvider({
+function CoutriesReturned(props: Props) {
+  const [search, setSearch] = React.useState("")
+  const [expandedIndex, setBlurbIndex] = React.useState(null)
+  const { data } = props
+  const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
+
+  const showingCountries = React.useMemo(() => {
+    return Object.keys(data)
+      .filter((title) => title.toLowerCase().includes(search))
+      .sort()
+  }, [data, search])
+
+  return (
+    <div css={displayCountry}>
+      <div css={searchContainer}>
+        <input
+          css={inputText}
+          placeholder="search"
+          type="text"
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+      {showingCountries.map((title, index) => {
+        return (
+          <CountryTable
+            key={title}
+            index={index}
+            title={title}
+            toggle={toggle}
+            expandedIndex={expandedIndex}
+            countryData={data[title]}
+          />
+        )
+      })}
+    </div>
+  )
+}
+
+interface CountryTableProps {
+  index: number
+  title: string
+  toggle: (num: number) => void
+  expandedIndex: any
+  countryData: CicoProvider[]
+}
+
+function CountryTable({
+  index,
+  title,
+  toggle,
+  countryData,
+  expandedIndex,
+}: CountryTableProps): JSX.Element {
+  return (
+    <div key={index} css={countryContainer}>
+      <div css={headerContainer}>
+        <h1>{title}</h1>
+        <button css={buttonCss} onClick={() => toggle(index)}>
+          <Chevron color={colors.greenUI} direction={Direction.down} />
+        </button>
+      </div>
+      <div css={expandedIndex === index ? toggleContent : displayNone}>
+        <table css={countriesTable}>
+          <thead css={countriesHeader}>
+            <tr>
+              <th css={countriesHeader}>CICO Provider</th>
+              <th css={countriesHeader}>CICO Type</th>
+              <th css={countriesHeader}>Celo Assets</th>
+              <th css={countriesHeader}>Payment Type</th>
+              <th css={countriesHeader}>Restricted</th>
+            </tr>
+          </thead>
+          {countryData.map((country) => {
+            return (
+              <>
+                <CicoProvider
+                  key={country.cicoProvider}
+                  restricted={country.restricted}
+                  cicoProvider={country.cicoProvider}
+                  cicoType={country.cicoType}
+                  celoAssets={country.celoAssets}
+                  population={country.population}
+                  paymentType={country.paymentType}
+                />
+              </>
+            )
+          })}
+        </table>
+      </div>
+    </div>
+  )
+}
+
+const CicoProvider = React.memo(function _CicoProvider({
   restricted,
   cicoProvider,
   cicoType,
@@ -170,7 +176,7 @@ export function CicoProvider({
       </tbody>
     </>
   )
-}
+})
 
 const countriesTable = css({
   border: "1px solid black",

@@ -10,6 +10,7 @@ async function fetchCico() {
       records.forEach((country) => countries.push(country))
       fetchNextPage()
     })
+
   return countries
 }
 
@@ -19,5 +20,7 @@ export default async function getCico() {
 }
 
 function getAirtable() {
-  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_CICO_DATABASE_ID)("CICO Database")
+  return airtableInit(getConfig().serverRuntimeConfig.AIRTABLE_CICO_DATABASE_ID)(
+    "CICO_DB_March2022"
+  )
 }

@@ -63,7 +63,6 @@ function PressPage(props: I18nProps & Props) {
           />
         </GridRow>
         {Object.keys(formatted).map((date) => {
-          console.log(date, "this is date")
           return (
             <SideTitledSection
               key={date}
