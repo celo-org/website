@@ -4,10 +4,8 @@ import { css } from "@emotion/react"
 import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
-import worldMap from "src/icons/world_map.png"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
-import page from "pages/experience/events/examples"
 import { flex } from "src/estyles"
 
 export interface CicoProvider {
@@ -64,6 +62,7 @@ const countryContainer = css({
 })
 
 function CoutriesReturned(props: Props) {
+  const { t } = useTranslation(NameSpaces.cico)
   const [search, setSearch] = React.useState("")
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const { data } = props
@@ -84,6 +83,9 @@ function CoutriesReturned(props: Props) {
           type="text"
           onChange={(e) => setSearch(e.target.value)}
         />
+      </div>
+      <div>
+        <h1>{t("celoRamps.countries")}</h1>
       </div>
       {showingCountries.map((title, index) => {
         return (
