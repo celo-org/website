@@ -5,6 +5,8 @@ import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import worldMap from "src/icons/world_map.png"
+import { GridRow } from "src/layout/Grid2"
+import { standardStyles } from "src/styles"
 
 export interface CicoProvider {
   restricted?: string
