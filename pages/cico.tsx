@@ -9,7 +9,7 @@ export async function getServerSideProps(context) {
   return {
     props: makeSafeForJson({
       data,
-      ...(await serverSideTranslations(context.locale, [NameSpaces.common])),
+      ...(await serverSideTranslations(context.locale, [NameSpaces.cico])),
     }),
   }
 }

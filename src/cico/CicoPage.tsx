@@ -1,12 +1,10 @@
 import * as React from "react"
-import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
+import { NameSpaces, withNamespaces, useTranslation } from "src/i18n"
 import { css } from "@emotion/react"
 import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import worldMap from "src/icons/world_map.png"
-import { GridRow } from "src/layout/Grid2"
-import { standardStyles } from "src/styles"
 
 export interface CicoProvider {
   restricted?: string
@@ -32,7 +30,8 @@ interface Props {
   data: CicoProvider[]
 }
 
-function CicoPage(props: I18nProps & Props) {
+function CicoPage(props: Props) {
+  const { t } = useTranslation(NameSpaces.cico)
   const [search, setSearch] = React.useState("")
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
@@ -46,7 +45,7 @@ function CicoPage(props: I18nProps & Props) {
   return (
     <div css={containerCss}>
       <div css={imageContainer}>
-        <h1>Celo WW Partners and Ramps</h1>
+        <h1>{t("coverTitle")}</h1>
         <img src={worldMap.src} width={800} />
       </div>
       <div css={searchContainer}>
@@ -199,4 +198,4 @@ const displayNone = css({
   display: "none",
 })
 
-export default withNamespaces(NameSpaces.common)(CicoPage)
+export default withNamespaces(NameSpaces.cico)(CicoPage)
