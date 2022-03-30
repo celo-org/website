@@ -145,12 +145,13 @@ function CountryTable({
   }
   return (
     <div key={index} css={countryContainer}>
-      <div css={headerContainer}>
+      <button css={css(buttonCss, headerContainer)} onClick={() => toggle(index)}>
         <h3>{newString}</h3>
-        <div css={buttonCss} onClick={() => toggle(index)}>
-          <Chevron color={colors.white} direction={Direction.down} />
-        </div>
-      </div>
+        <Chevron
+          color={colors.white}
+          direction={expandedIndex === index ? Direction.up : Direction.down}
+        />
+      </button>
       <div css={expandedIndex === index ? toggleContent : displayNone}>
         <table css={countriesTable}>
           <thead>
@@ -184,7 +185,8 @@ const headerContainer = css({
   display: "flex",
   textAlign: "start",
   justifyContent: "space-between",
-  padding: "30px 0px",
+  padding: "30px 10px",
+  width: "100%",
 })
 
 const countryContainer = css(jost, {
@@ -207,6 +209,13 @@ const countriesHeader = css(countriesCells, {
 })
 const countriesHeaderCell = css(countriesCells, whiteText, {
   border: `1px solid ${colors.grayHeavy}`,
+})
+const toggleContent = css({
+  display: "flex",
+  justifyContent: "center",
+})
+const displayNone = css({
+  display: "none",
 })
 
 const CicoProvider = React.memo(function _CicoProvider({
@@ -235,13 +244,6 @@ const CicoProvider = React.memo(function _CicoProvider({
 
 const countriesBody = css(countriesCells, {
   border: `1px solid ${colors.grayHeavy}`,
-})
-const toggleContent = css({
-  display: "flex",
-  justifyContent: "center",
-})
-const displayNone = css({
-  display: "none",
 })
 
 export default withNamespaces(NameSpaces.cico)(CicoPage)
