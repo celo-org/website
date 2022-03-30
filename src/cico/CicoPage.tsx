@@ -118,6 +118,7 @@ const inputCss = css(garamond, {
   },
   marginTop: 80,
   marginLeft: 30,
+  marginRight: 70,
 })
 const tableTitle = css({
   borderBottom: `1px solid ${colors.grayHeavy}`,
@@ -144,10 +145,10 @@ function CountryTable({
   countryData,
   expandedIndex,
 }: CountryTableProps): JSX.Element {
-  const newString = title
-  if (newString.includes(", The")) {
-    debugger
-    newString.split(" , ").reverse().join(" ")
+  let newString = title
+  if (newString.includes(", T")) {
+    const str = newString.split(",")
+    newString = `${str[1]} ${str[0]}`
   }
   return (
     <div key={index} css={countryContainer}>
