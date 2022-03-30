@@ -202,6 +202,7 @@ const countriesTable = css({
 const countriesCells = css({
   padding: 16,
   textAlign: "center",
+  fontSize: 48,
 })
 const countriesHeader = css(countriesCells, {
   border: `1px solid ${colors.grayHeavy}`,
