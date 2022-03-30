@@ -8,22 +8,18 @@ import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 import { flex, whiteText, jost, fonts, garamond } from "src/estyles"
 export interface CicoProvider {
-  restricted?: string
-  population?: number
   country?: string
   cicoProvider?: string
   paymentType?: PaymentType
   cicoType?: string
   celoAssets?: CeloAssets
-  securityReview?: string
-  legalReview?: string
-  usabilityReview?: string
-  paid?: string
 }
 interface CeloAssets {
+  join(arg0: string)
   assets: string[]
 }
 interface PaymentType {
+  join(arg0: string)
   payment: string[]
 }
 
@@ -63,7 +59,7 @@ function CoutriesReturned(props: Props) {
           type="text"
           onChange={(e) => setSearch(e.target.value)}
         />
-        <div css={countriesContainer}>
+        <div>
           <div css={tableTitle}>
             <h2>{t("celoRamps.countries")}</h2>
           </div>
@@ -104,7 +100,6 @@ const sectionContainer = css({
   display: "grid",
   gridTemplateColumns: "30% 70%",
 })
-const countriesContainer = css({})
 const inputCss = css(garamond, {
   border: `1px inset ${colors.placeholderGray}`,
   width: 224,
@@ -166,7 +161,6 @@ function CountryTable({
               <th css={countriesHeaderCell}>CICO Type</th>
               <th css={countriesHeaderCell}>Celo Assets</th>
               <th css={countriesHeaderCell}>Payment Type</th>
-              <th css={countriesHeaderCell}>Restricted</th>
             </tr>
           </thead>
           {countryData.map((country) => {
@@ -174,11 +168,9 @@ function CountryTable({
               <>
                 <CicoProvider
                   key={country.cicoProvider}
-                  restricted={country.restricted}
                   cicoProvider={country.cicoProvider}
                   cicoType={country.cicoType}
                   celoAssets={country.celoAssets}
-                  population={country.population}
                   paymentType={country.paymentType}
                 />
               </>
@@ -197,7 +189,7 @@ const headerContainer = css({
   padding: "30px 0px",
 })
 
-const countryContainer = css({
+const countryContainer = css(jost, {
   justifyContent: "center",
   alignContent: "center",
   borderBottom: `1px solid ${colors.grayHeavy}`,
@@ -220,21 +212,21 @@ const countriesHeaderCell = css(countriesCells, whiteText, {
 })
 
 const CicoProvider = React.memo(function _CicoProvider({
-  restricted,
   cicoProvider,
   cicoType,
   celoAssets,
   paymentType,
 }: CicoProvider) {
+  const assets = celoAssets.join(", ")
+  const payment = paymentType.join(", ")
   return (
     <>
       <tbody>
         <tr>
           <td css={countriesBody}>{!cicoProvider ? "N/A" : cicoProvider}</td>
           <td css={countriesBody}>{!cicoType ? "N/A" : cicoType}</td>
-          <td css={countriesBody}>{!celoAssets ? "N/A" : celoAssets}</td>
-          <td css={countriesBody}>{!paymentType ? "N/A" : paymentType}</td>
-          <td css={countriesBody}>{!restricted ? "N/A" : restricted}</td>
+          <td css={countriesBody}>{!assets ? "N/A" : assets}</td>
+          <td css={countriesBody}>{!payment ? "N/A" : payment}</td>
         </tr>
       </tbody>
     </>
