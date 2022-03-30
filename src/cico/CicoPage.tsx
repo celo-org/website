@@ -7,7 +7,6 @@ import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 import { flex, whiteText, jost, fonts, garamond } from "src/estyles"
-import { format } from "path"
 export interface CicoProvider {
   country?: string
   cicoProvider?: string
@@ -148,9 +147,9 @@ function CountryTable({
     <div key={index} css={countryContainer}>
       <div css={headerContainer}>
         <h3>{newString}</h3>
-        <button css={buttonCss} onClick={() => toggle(index)}>
+        <div css={buttonCss} onClick={() => toggle(index)}>
           <Chevron color={colors.white} direction={Direction.down} />
-        </button>
+        </div>
       </div>
       <div css={expandedIndex === index ? toggleContent : displayNone}>
         <table css={countriesTable}>
@@ -216,7 +215,7 @@ const CicoProvider = React.memo(function _CicoProvider({
   celoAssets,
   paymentType,
 }: CicoProvider) {
-  function format(prop: { [s: string]: unknown } | ArrayLike<unknown> | CeloAssets | PaymentType) {
+  function format(prop: CeloAssets | PaymentType) {
     return Object.values(prop).join(", ")
   }
 
