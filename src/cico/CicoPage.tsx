@@ -7,6 +7,7 @@ import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 import { flex, whiteText, jost, fonts, garamond } from "src/estyles"
+import { format } from "path"
 export interface CicoProvider {
   country?: string
   cicoProvider?: string
@@ -15,11 +16,9 @@ export interface CicoProvider {
   celoAssets?: CeloAssets
 }
 interface CeloAssets {
-  join(arg0: string)
   assets: string[]
 }
 interface PaymentType {
-  join(arg0: string)
   payment: string[]
 }
 
@@ -217,16 +216,18 @@ const CicoProvider = React.memo(function _CicoProvider({
   celoAssets,
   paymentType,
 }: CicoProvider) {
-  const assets = celoAssets.join(", ")
-  const payment = paymentType.join(", ")
+  function format(prop: { [s: string]: unknown } | ArrayLike<unknown> | CeloAssets | PaymentType) {
+    return Object.values(prop).join(", ")
+  }
+
   return (
     <>
       <tbody>
         <tr>
           <td css={countriesBody}>{!cicoProvider ? "N/A" : cicoProvider}</td>
           <td css={countriesBody}>{!cicoType ? "N/A" : cicoType}</td>
-          <td css={countriesBody}>{!assets ? "N/A" : assets}</td>
-          <td css={countriesBody}>{!payment ? "N/A" : payment}</td>
+          <td css={countriesBody}>{!celoAssets ? "N/A" : format(celoAssets)}</td>
+          <td css={countriesBody}>{!paymentType ? "N/A" : format(paymentType)}</td>
         </tr>
       </tbody>
     </>
