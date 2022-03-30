@@ -1,14 +1,6 @@
 {
-  "coverTitle": "Connect the World",
-  "subTitle": "Lorem ipsum dolor sit amet",
-  "titleContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "secondTitle": {
-    "title": "<Title>",
-    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  },
   "celoRamps": {
-    "title": "<Celo Ramps>",
-    "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "countries": "Countries"
-  }
+  },
+  "placeholder": "Search"
 }

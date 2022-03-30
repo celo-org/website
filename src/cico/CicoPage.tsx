@@ -6,9 +6,7 @@ import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
-import { flex, whiteText, fonts } from "src/estyles"
-import { responsePathAsArray } from "graphql"
-
+import { flex, whiteText, jost, fonts, garamond } from "src/estyles"
 export interface CicoProvider {
   restricted?: string
   population?: number
@@ -43,11 +41,6 @@ const rootCss = css(flex, {
   backgroundColor: colors.dark,
 })
 
-const countryContainer = css({
-  justifyContent: "center",
-  alignContent: "center",
-})
-
 function CoutriesReturned(props: Props) {
   const { t } = useTranslation(NameSpaces.cico)
   const [search, setSearch] = React.useState("")
@@ -62,49 +55,79 @@ function CoutriesReturned(props: Props) {
   }, [data, search])
 
   return (
-    <div css={displayCountry}>
-      <div css={searchContainer}>
-        <input placeholder="search" type="text" onChange={(e) => setSearch(e.target.value)} />
-      </div>
-      <div css={countriesContainer}>
-        <div>
-          <h1>{t("celoRamps.countries")}</h1>
+    <section css={displayCountry}>
+      <div css={sectionContainer}>
+        <input
+          css={inputCss}
+          placeholder={t("placeholder")}
+          type="text"
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <div css={countriesContainer}>
+          <div css={tableTitle}>
+            <h2>{t("celoRamps.countries")}</h2>
+          </div>
+          <div css={showingCountriesContainer}>
+            {showingCountries.map((title, index) => {
+              return (
+                <CountryTable
+                  key={title}
+                  index={index}
+                  title={title}
+                  toggle={toggle}
+                  expandedIndex={expandedIndex}
+                  countryData={data[title]}
+                />
+              )
+            })}
+          </div>
         </div>
-        <div>
-          {showingCountries.map((title, index) => {
-            return (
-              <CountryTable
-                key={title}
-                index={index}
-                title={title}
-                toggle={toggle}
-                expandedIndex={expandedIndex}
-                countryData={data[title]}
-              />
-            )
-          })}
-        </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-const displayCountry = css(whiteText, {
-  display: "grid",
-  gridTemplateColumns: "repeat(4, 1fr)",
+const displayCountry = css(fonts, jost, whiteText, flex, {
+  flexDirection: "column",
+  alignItems: "center",
+  alignSelf: "center",
+  width: "100%",
   backgroundColor: colors.dark,
-  "h1, h2, h3, h4, p": whiteText,
+  "h1, h2, h3, h4, h5, p": whiteText,
+})
+const sectionContainer = css({
   margin: "0px 100px",
+  justifyContent: "center",
+  padding: "0px 12px 80px",
+  maxWidth: 1104,
+  width: "100%",
+  display: "grid",
+  gridTemplateColumns: "30% 70%",
 })
-const countriesContainer = css({
-  // display: "grid",
-  gridColumn: "2 / span 3",
+const countriesContainer = css({})
+const inputCss = css(garamond, {
+  border: `1px inset ${colors.placeholderGray}`,
+  width: 224,
+  height: 54,
+  borderRadius: "3px",
+  fontSize: 20,
+  ["::placeholder"]: {
+    color: colors.placeholderDarkMode,
+    fontSize: 20,
+    paddingLeft: 5,
+  },
+  marginTop: 80,
+  marginLeft: 30,
 })
-const searchContainer = css({
-  textAlign: "center",
-  paddingTop: 10,
-  paddingBottom: 10,
-  gridColumn: "1 / span 1",
+const tableTitle = css({
+  borderBottom: `1px solid ${colors.grayHeavy}`,
+  padding: "20px 0px",
+  textAlign: "start",
+})
+
+const showingCountriesContainer = css({
+  maxHeight: `calc(100vh - 50px)`,
+  overflowY: "scroll",
 })
 interface CountryTableProps {
   index: number
@@ -121,23 +144,28 @@ function CountryTable({
   countryData,
   expandedIndex,
 }: CountryTableProps): JSX.Element {
+  const newString = title
+  if (newString.includes(", The")) {
+    debugger
+    newString.split(" , ").reverse().join(" ")
+  }
   return (
     <div key={index} css={countryContainer}>
       <div css={headerContainer}>
-        <h1>{title}</h1>
+        <h3>{newString}</h3>
         <button css={buttonCss} onClick={() => toggle(index)}>
-          <Chevron color={colors.greenUI} direction={Direction.down} />
+          <Chevron color={colors.white} direction={Direction.down} />
         </button>
       </div>
       <div css={expandedIndex === index ? toggleContent : displayNone}>
         <table css={countriesTable}>
-          <thead css={countriesHeader}>
-            <tr>
-              <th css={countriesHeader}>CICO Provider</th>
-              <th css={countriesHeader}>CICO Type</th>
-              <th css={countriesHeader}>Celo Assets</th>
-              <th css={countriesHeader}>Payment Type</th>
-              <th css={countriesHeader}>Restricted</th>
+          <thead>
+            <tr css={countriesHeader}>
+              <th css={countriesHeaderCell}>CICO Provider</th>
+              <th css={countriesHeaderCell}>CICO Type</th>
+              <th css={countriesHeaderCell}>Celo Assets</th>
+              <th css={countriesHeaderCell}>Payment Type</th>
+              <th css={countriesHeaderCell}>Restricted</th>
             </tr>
           </thead>
           {countryData.map((country) => {
@@ -161,6 +189,35 @@ function CountryTable({
   )
 }
 
+const headerContainer = css({
+  display: "flex",
+  textAlign: "start",
+  justifyContent: "space-between",
+  padding: "30px 0px",
+})
+
+const countryContainer = css({
+  justifyContent: "center",
+  alignContent: "center",
+  borderBottom: `1px solid ${colors.grayHeavy}`,
+})
+const countriesTable = css({
+  border: `1px solid ${colors.grayHeavy}`,
+  width: "100%",
+  borderCollapse: "collapse",
+})
+const countriesCells = css({
+  padding: 16,
+  textAlign: "center",
+})
+const countriesHeader = css(countriesCells, {
+  border: `1px solid ${colors.grayHeavy}`,
+  backgroundColor: `rgba(171, 173, 175, 0.3)`,
+})
+const countriesHeaderCell = css(countriesCells, whiteText, {
+  border: `1px solid ${colors.grayHeavy}`,
+})
+
 const CicoProvider = React.memo(function _CicoProvider({
   restricted,
   cicoProvider,
@@ -183,23 +240,8 @@ const CicoProvider = React.memo(function _CicoProvider({
   )
 })
 
-const countriesTable = css({
-  border: "1px solid black",
-})
-const countriesCells = css({
-  padding: 16,
-  textAlign: "center",
-})
-const countriesHeader = css(countriesCells, {
-  border: "2px solid black",
-})
 const countriesBody = css(countriesCells, {
-  border: "1px solid black",
-})
-const headerContainer = css({
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
+  border: `1px solid ${colors.grayHeavy}`,
 })
 const toggleContent = css({
   display: "flex",
