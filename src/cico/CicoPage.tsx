@@ -137,6 +137,7 @@ const tableTitle = css({
   textAlign: "start",
   [WHEN_MOBILE]: {
     padding: "20px 16px",
+    margin: "0px 10px",
   },
 })
 
