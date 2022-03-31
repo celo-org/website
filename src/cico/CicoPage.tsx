@@ -117,6 +117,11 @@ const inputCss = css(garamond, {
     alignItems: "center",
     margin: "0px 0px 30px",
   },
+  [WHEN_TABLET]: {
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "0px 0px 30px",
+  },
   border: `1px inset ${colors.placeholderGray}`,
   width: 224,
   height: 54,
