@@ -103,7 +103,6 @@ const sectionContainer = css({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    padding: "0px 20px",
   },
   [WHEN_TABLET]: {
     display: "flex",
@@ -136,13 +135,16 @@ const tableTitle = css({
   borderBottom: `1px solid ${colors.grayHeavy}`,
   padding: "20px 0px",
   textAlign: "start",
+  [WHEN_MOBILE]: {
+    padding: "20px 16px",
+  },
 })
 
 const showingCountriesContainer = css({
   maxHeight: `calc(100vh - 50px)`,
   overflowY: "scroll",
   [WHEN_MOBILE]: {
-    // maxHeight: `calc(100vh - 150px)`,
+    padding: "0px 20px",
   },
 })
 interface CountryTableProps {
@@ -209,9 +211,6 @@ const headerContainer = css({
   justifyContent: "space-between",
   padding: "30px 10px",
   width: "100%",
-  [WHEN_MOBILE]: {
-    width: "100%",
-  },
 })
 
 const countryContainer = css(jost, {
@@ -223,7 +222,6 @@ const countriesTable = css({
   border: `1px solid ${colors.grayHeavy}`,
   width: "100%",
   borderCollapse: "collapse",
-  [WHEN_MOBILE]: {},
 })
 const countriesCells = css({
   padding: 16,
