@@ -1,14 +1,19 @@
 import { NextApiRequest, NextApiResponse } from "next"
 import byMethod from "../../server/byMethod"
-import fetchCico from "../../server/fetchCico"
+import addToCRM, { ListID } from "../../server/addToCRM"
 
-async function get(_: NextApiRequest, res: NextApiResponse) {
-  try {
-    const data = await fetchCico()
-    res.json(data)
-  } catch {
-    res.status(500).json([])
+async function submit(req: NextApiRequest, res: NextApiResponse) {
+  if (!req.body.mielpoto) {
+    const data = req.body
+    await addToCRM({ email: data.email, fullName: data.name }, ListID.ConnectTheWorld, {
+      name: data.orgName,
+      description: data.reason,
+    })
+    res.json({ ok: true })
+  } else {
+    console.info("suspected bot", req.body)
+    res.json({ ok: true })
   }
 }
 
-export default byMethod({ getHandler: get })
+export default byMethod({ postHandler: submit })

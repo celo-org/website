@@ -17,7 +17,7 @@ export async function getServerSideProps({ locale }) {
     return countries
   }, {})
 
-  const page = await getPageBySlug("cico-database" as string, { locale: "en-US" }, true)
+  const page = await getPageBySlug("connect-the-world" as string, { locale: "en-US" }, true)
 
   if (!page) {
     return { notFound: true }
