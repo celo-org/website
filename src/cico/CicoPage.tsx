@@ -6,7 +6,8 @@ import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
-import { flex, whiteText, jost, fonts, garamond } from "src/estyles"
+import { flex, whiteText, jost, fonts, garamond, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+
 export interface CicoProvider {
   country?: string
   cicoProvider?: string
@@ -97,8 +98,26 @@ const sectionContainer = css({
   width: "100%",
   display: "grid",
   gridTemplateColumns: "30% 70%",
+  [WHEN_MOBILE]: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "0px 20px",
+  },
+  [WHEN_TABLET]: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
 })
 const inputCss = css(garamond, {
+  [WHEN_MOBILE]: {
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "0px 0px 30px",
+  },
   border: `1px inset ${colors.placeholderGray}`,
   width: 224,
   height: 54,
@@ -122,6 +141,9 @@ const tableTitle = css({
 const showingCountriesContainer = css({
   maxHeight: `calc(100vh - 50px)`,
   overflowY: "scroll",
+  [WHEN_MOBILE]: {
+    // maxHeight: `calc(100vh - 150px)`,
+  },
 })
 interface CountryTableProps {
   index: number
@@ -187,6 +209,9 @@ const headerContainer = css({
   justifyContent: "space-between",
   padding: "30px 10px",
   width: "100%",
+  [WHEN_MOBILE]: {
+    width: "100%",
+  },
 })
 
 const countryContainer = css(jost, {
@@ -198,11 +223,11 @@ const countriesTable = css({
   border: `1px solid ${colors.grayHeavy}`,
   width: "100%",
   borderCollapse: "collapse",
+  [WHEN_MOBILE]: {},
 })
 const countriesCells = css({
   padding: 16,
   textAlign: "center",
-  fontSize: 48,
 })
 const countriesHeader = css(countriesCells, {
   border: `1px solid ${colors.grayHeavy}`,
