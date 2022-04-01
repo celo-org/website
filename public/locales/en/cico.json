@@ -1,0 +1,13 @@
+{
+  "celoRamps": {
+    "countries": "Countries & Territories"
+  },
+  "placeholder": "Search",
+  "na": "N/A",
+  "tableHeaderTitle": {
+    "cicoProvider": "CICO Provider",
+    "cicoType": "CICO Type",
+    "celoAssets": "Celo Assets",
+    "paymentType": "Payment Type"
+  }
+}

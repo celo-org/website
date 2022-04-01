@@ -45,7 +45,6 @@ function PressPage(props: I18nProps & Props) {
       )
       .reduce(groupByMonth, {})
   }, [languages, press, i18n.language])
-
   return (
     <>
       <OpenGraph
@@ -115,7 +114,7 @@ const DATE_FORMAT = { year: "numeric" as const, month: "long" as const }
 
 export default withNamespaces(NameSpaces.press)(PressPage)
 
-const containerCss = css(flex, {
+export const containerCss = css(flex, {
   marginTop: HEADER_HEIGHT,
   paddingTop: HEADER_HEIGHT,
   minHeight: 450,
