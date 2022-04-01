@@ -182,6 +182,7 @@ function CountryTable({
   countryData,
   expandedIndex,
 }: CountryTableProps): JSX.Element {
+  const { t } = useTranslation(NameSpaces.cico)
   let newString = title
   if (newString.includes(", T")) {
     const str = newString.split(",")
@@ -200,10 +201,10 @@ function CountryTable({
         <table css={countriesTable}>
           <thead>
             <tr css={countriesHeader}>
-              <th css={countriesHeaderCell}>CICO Provider</th>
-              <th css={countriesHeaderCell}>CICO Type</th>
-              <th css={countriesHeaderCell}>Celo Assets</th>
-              <th css={countriesHeaderCell}>Payment Type</th>
+              <th css={countriesHeaderCell}>{t("tableHeaderTitle.cicoProvider")}</th>
+              <th css={countriesHeaderCell}>{t("tableHeaderTitle.cicoType")}</th>
+              <th css={countriesHeaderCell}>{t("tableHeaderTitle.celoAssets")}</th>
+              <th css={countriesHeaderCell}>{t("tableHeaderTitle.paymentType")}</th>
             </tr>
           </thead>
           {countryData.map((country) => {
