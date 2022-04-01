@@ -55,7 +55,7 @@ function CoutriesReturned(props: Props) {
     setSearch(e.target.value)
   }
 
-  const debouncedChangeHandler = React.useMemo(() => debounce(changeHandler, 300), [changeHandler])
+  const debouncedChangeHandler = React.useMemo(() => debounce(changeHandler, 250), [changeHandler])
 
   React.useEffect(() => {
     return () => {
