@@ -7,6 +7,7 @@ import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
 import { flex, whiteText, jost, fonts, garamond, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import debounce from "lodash.debounce"
 
 export interface CicoProvider {
   country?: string
@@ -49,6 +50,19 @@ function CoutriesReturned(props: Props) {
       .sort()
   }, [data, search])
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const changeHandler = (e: { target: { value: React.SetStateAction<string> } }) => {
+    setSearch(e.target.value)
+  }
+
+  const debouncedChangeHandler = React.useMemo(() => debounce(changeHandler, 300), [changeHandler])
+
+  React.useEffect(() => {
+    return () => {
+      debouncedChangeHandler.cancel()
+    }
+  }, [debouncedChangeHandler])
+
   return (
     <section css={displayCountry}>
       <div css={sectionContainer}>
@@ -56,7 +70,7 @@ function CoutriesReturned(props: Props) {
           css={inputCss}
           placeholder={t("placeholder")}
           type="text"
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={debouncedChangeHandler}
         />
         <div>
           <div css={tableTitle}>
