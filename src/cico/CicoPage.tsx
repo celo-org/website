@@ -50,12 +50,14 @@ function CoutriesReturned(props: Props) {
       .sort()
   }, [data, search])
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const changeHandler = (e: { target: { value: React.SetStateAction<string> } }) => {
-    setSearch(e.target.value)
-  }
-
-  const debouncedChangeHandler = React.useMemo(() => debounce(changeHandler, 250), [changeHandler])
+  const debouncedChangeHandler = React.useMemo(
+    () =>
+      debounce(
+        (e: { target: { value: React.SetStateAction<string> } }) => setSearch(e.target.value),
+        250
+      ),
+    [setSearch]
+  )
 
   React.useEffect(() => {
     return () => {
