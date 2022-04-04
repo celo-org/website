@@ -80,6 +80,12 @@ function Papers() {
             <HelpfulLink text={t("download")} href={"/papers/covid-aid"} />
           </div>
         </SideTitledSection>
+        <SideTitledSection span={Spans.three} title={t("climateImpact")}>
+          <p css={fonts.body}>{t("scalingVoluntary")}</p>
+          <div css={linksCss}>
+            <HelpfulLink text={t("download")} href={"/papers/voluntary-carbon-credits"} />
+          </div>
+        </SideTitledSection>
       </div>
     </>
   )
