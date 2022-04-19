@@ -13,10 +13,50 @@ type Props = ToggleBlurbType
 export default function ToogleBlurb(props: Props) {
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
+  const { isMobile } = useScreenSize()
+  if (isMobile) {
+    return (
+      <div css={rootCss}>
+        <div css={css(props.darkMode && darkModeText)}>
+          {props.cards.map(({ fields, sys }, index) => {
+            return (
+              <ToggleBlurbContent
+                key={sys.id}
+                title={fields.title}
+                image={fields.image}
+                body={fields.body}
+                cssStyle={fields.cssStyle}
+                toggle={() => toggle(index)}
+                expanded={expandedIndex}
+                index={index}
+              />
+            )
+          })}
+        </div>
+      </div>
+    )
+  }
   return (
-    <div css={rootCss}>
-      <div css={css(props.darkMode && darkModeText, rootDesktopGrid)}>
-        {props.cards.map(({ fields, sys }, index) => {
+    <div css={css(props.darkMode && rootDesktopGrid)}>
+      <div>
+        {props.cards.slice(0, 4).map(({ fields, sys }, index) => {
+          return (
+            <ToggleBlurbContent
+              key={sys.id}
+              title={fields.title}
+              image={fields.image}
+              body={fields.body}
+              cssStyle={fields.cssStyle}
+              toggle={() => toggle(index)}
+              expanded={expandedIndex}
+              index={index}
+            />
+          )
+        })}
+      </div>
+      <div>Hello world</div>
+      <div>
+        {props.cards.slice(4, 8).map(({ fields, sys }, index) => {
           return (
             <ToggleBlurbContent
               key={sys.id}
@@ -35,17 +75,19 @@ export default function ToogleBlurb(props: Props) {
   )
 }
 
+const darkModeText = css({ "h1, h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })
+
 const rootCss = css({
   [WHEN_MOBILE]: {
     display: "block",
     padding: "16px 16px 16px 16px",
   },
 })
-const rootDesktopGrid = css({
+
+const rootDesktopGrid = css(darkModeText, {
   [WHEN_DESKTOP]: {
     border: "1px solid white",
     display: "grid",
-    gridTemplateRows: "repeat(3, 1fr)",
     gridTemplateColumns: "repeat(3, 1fr)",
   },
 })
@@ -53,7 +95,7 @@ const rootDesktopGrid = css({
 type SecondProps = ToggleBlurbContentType & { toggle?: () => any; expanded?: number; index: number }
 
 export function ToggleBlurbContent(props: SecondProps) {
-  const { isMobile, isDesktop } = useScreenSize()
+  const { isMobile } = useScreenSize()
   if (isMobile) {
     return (
       <div css={rootContainer}>
@@ -80,20 +122,17 @@ export function ToggleBlurbContent(props: SecondProps) {
       </div>
     )
   }
-  if (isDesktop) {
-    return (
-      <div>
-        <div>{props.title}</div>
-        <div>{documentToReactComponents(props.body, { renderNode })}</div>
-      </div>
-    )
-  }
-  return null
+  return (
+    <div>
+      <div>{props.title}</div>
+      <div>{documentToReactComponents(props.body, { renderNode })}</div>
+    </div>
+  )
 }
 
 const rootContainer = css({
-  borderBottom: `1px solid ${colors.grayHeavy}`,
   [WHEN_MOBILE]: {
+    borderBottom: `1px solid ${colors.grayHeavy}`,
     paddingBottom: 50,
     marginTop: 40,
   },
@@ -134,5 +173,3 @@ enum displayToggle {
   grid = "grid",
   none = "none",
 }
-
-const darkModeText = css({ "h1, h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })
