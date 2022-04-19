@@ -1,6 +1,6 @@
 import * as React from "react"
 import { css } from "@emotion/react"
-import { WHEN_MOBILE, WHEN_DESKTOP, flexRow, fonts } from "src/estyles"
+import { WHEN_MOBILE, WHEN_DESKTOP, WHEN_TABLET, flexRow, fonts } from "src/estyles"
 import { colors } from "src/colors"
 import { ToggleBlurbType, ToggleBlurbContentType } from "src/utils/contentful"
 import { renderNode } from "src/contentful/nodes/nodes"
@@ -13,8 +13,8 @@ type Props = ToggleBlurbType
 export default function ToogleBlurb(props: Props) {
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
-  const { isMobile } = useScreenSize()
-  if (isMobile) {
+  const { isMobile, isTablet } = useScreenSize()
+  if (isMobile || isTablet) {
     return (
       <div css={rootCss}>
         <div css={css(props.darkMode && darkModeText)}>
@@ -78,11 +78,14 @@ const rootCss = css({
     display: "block",
     padding: "16px 16px 16px 16px",
   },
+  [WHEN_TABLET]: {
+    display: "block",
+    padding: "16px 16px 16px 16px",
+  },
 })
 
 const rootDesktopGrid = css(darkModeText, {
   [WHEN_DESKTOP]: {
-    border: "1px solid white",
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
   },
@@ -91,10 +94,10 @@ const rootDesktopGrid = css(darkModeText, {
 type SecondProps = ToggleBlurbContentType & { toggle?: () => any; expanded?: number; index: number }
 
 export function ToggleBlurbContent(props: SecondProps) {
-  const { isMobile } = useScreenSize()
-  if (isMobile) {
+  const { isMobile, isTablet } = useScreenSize()
+  if (isMobile || isTablet) {
     return (
-      <div css={rootContainer}>
+      <div css={rootContainerMobile}>
         <div css={toggleHeader}>
           <div css={toggleContainerTitle}>
             <h1 css={toggleTitle}>{props.title}</h1>
@@ -126,8 +129,13 @@ export function ToggleBlurbContent(props: SecondProps) {
   )
 }
 
-const rootContainer = css({
+const rootContainerMobile = css({
   [WHEN_MOBILE]: {
+    borderBottom: `1px solid ${colors.grayHeavy}`,
+    paddingBottom: 50,
+    marginTop: 40,
+  },
+  [WHEN_TABLET]: {
     borderBottom: `1px solid ${colors.grayHeavy}`,
     paddingBottom: 50,
     marginTop: 40,
@@ -139,9 +147,18 @@ const toggleHeader = css(flexRow, {
     justifyContent: "space-between",
     alignItems: "center",
   },
+  [WHEN_TABLET]: {
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
 })
 const toggleContainerTitle = css({
   [WHEN_MOBILE]: {
+    maxWidth: 376,
+    justifyContent: "start",
+    alignItems: "center",
+  },
+  [WHEN_TABLET]: {
     maxWidth: 376,
     justifyContent: "start",
     alignItems: "center",
@@ -154,10 +171,22 @@ const toggleTitle = css(fonts.h3, {
     paddingLeft: 15,
     paddingRight: 34,
   },
+  [WHEN_TABLET]: {
+    textAlign: "start",
+    width: "100%",
+    paddingLeft: 15,
+    paddingRight: 34,
+  },
 })
 
 const toggleBody = css({
   [WHEN_MOBILE]: {
+    textAlign: "start",
+    lineHeight: 1,
+    fontSize: 20,
+    paddingTop: 20,
+  },
+  [WHEN_TABLET]: {
     textAlign: "start",
     lineHeight: 1,
     fontSize: 20,
