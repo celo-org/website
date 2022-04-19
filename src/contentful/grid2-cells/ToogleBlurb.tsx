@@ -47,8 +47,6 @@ export default function ToogleBlurb(props: Props) {
               image={fields.image}
               body={fields.body}
               cssStyle={fields.cssStyle}
-              toggle={() => toggle(index)}
-              expanded={expandedIndex}
               index={index}
             />
           )
@@ -64,8 +62,6 @@ export default function ToogleBlurb(props: Props) {
               image={fields.image}
               body={fields.body}
               cssStyle={fields.cssStyle}
-              toggle={() => toggle(index)}
-              expanded={expandedIndex}
               index={index}
             />
           )
