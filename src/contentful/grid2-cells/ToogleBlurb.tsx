@@ -123,8 +123,8 @@ export function ToggleBlurbContent(props: SecondProps) {
   }
   return (
     <div>
-      <div>{props.title}</div>
-      <div>{documentToReactComponents(props.body, { renderNode })}</div>
+      <div css={desktopTitleCss}>{props.title}</div>
+      <div css={desktopBodyCss}>{documentToReactComponents(props.body, { renderNode })}</div>
     </div>
   )
 }
@@ -192,6 +192,15 @@ const toggleBody = css({
     fontSize: 20,
     paddingTop: 20,
   },
+})
+
+const desktopTitleCss = css({
+  fontSize: 28,
+  marginBottom: 16,
+})
+
+const desktopBodyCss = css({
+  marginBottom: 56,
 })
 
 enum displayToggle {
