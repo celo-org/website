@@ -14,9 +14,18 @@ export default function ToogleBlurb(props: Props) {
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
   const { isMobile, isTablet } = useScreenSize()
+  const desktopImage = props.imageDesktop?.fields?.file
+  const mobileImage = props.imageMobile?.fields?.file
   if (isMobile || isTablet) {
     return (
       <div css={rootCss}>
+        {mobileImage && (
+          <img
+            src={mobileImage.url}
+            width={mobileImage.details.image.width}
+            height={mobileImage.details.image.height}
+          />
+        )}
         <div css={css(props.darkMode && darkModeText)}>
           {props.cards.map(({ fields, sys }, index) => {
             return (
@@ -52,7 +61,13 @@ export default function ToogleBlurb(props: Props) {
           )
         })}
       </div>
-      <div>Hello world</div>
+      {desktopImage && (
+        <img
+          src={desktopImage.url}
+          width={desktopImage.details.image.width / 2}
+          height={desktopImage.details.image.height / 2}
+        />
+      )}
       <div>
         {props.cards.slice(4, 8).map(({ fields, sys }, index) => {
           return (
@@ -89,6 +104,11 @@ const rootDesktopGrid = css(darkModeText, {
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
   },
+})
+
+const mobileImageCss = css({
+  justifySelf: "center",
+  alignSelf: "center",
 })
 
 type SecondProps = ToggleBlurbContentType & { toggle?: () => any; expanded?: number; index: number }

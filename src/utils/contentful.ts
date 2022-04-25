@@ -138,6 +138,8 @@ export interface ToggleBlurbContentType {
 export interface ToggleBlurbType {
   title: string
   cards: Entry<ToggleBlurbContentType>[]
+  imageDesktop: Asset
+  imageMobile: Asset
   darkMode: boolean
 }
 
