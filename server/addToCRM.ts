@@ -83,6 +83,7 @@ export async function addManyCRM(
     const companyCreated = await createCompany(hubSpotClient, company)
 
     const modifiedContacts = await batchCreateOrUpdate(hubSpotClient, contacts)
+
     await addContactsToList(
       list,
       contacts.map((contact) => contact.email)
