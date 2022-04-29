@@ -14,18 +14,20 @@ export default function ToogleBlurb(props: Props) {
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
   const { isMobile, isTablet } = useScreenSize()
-  const desktopImage = props.imageDesktop?.fields?.file
+  const contentImage = props.imageDesktop?.fields?.file
 
   if (isMobile || isTablet) {
     return (
       <div css={rootCss}>
-        {desktopImage && (
-          <img
-            src={desktopImage.url}
-            width={desktopImage.details.image.width / 2}
-            height={desktopImage.details.image.height / 2}
-            // css={desktopImageCss && css(shadowCss({ x: X, y: Y, blur: BLUR, shadow: SHADOW }))}
-          />
+        {contentImage && (
+          <div css={mobileImageContainer}>
+            <img
+              src={contentImage.url}
+              width={contentImage.details.image.width / 4}
+              height={contentImage.details.image.height / 4}
+              css={css(shadowCss({ x: X, y: Y, blur: BLUR, shadow: SHADOW }))}
+            />
+          </div>
         )}
         <div css={css(props.darkMode && darkModeText)}>
           {props.cards.map(({ fields, sys }, index) => {
@@ -62,13 +64,15 @@ export default function ToogleBlurb(props: Props) {
           )
         })}
       </div>
-      {desktopImage && (
-        <img
-          src={desktopImage.url}
-          width={desktopImage.details.image.width / 2}
-          height={desktopImage.details.image.height / 2}
-          css={desktopImageCss && css(shadowCss({ x: X, y: Y, blur: BLUR, shadow: SHADOW }))}
-        />
+      {contentImage && (
+        <div css={desktopImageContainer}>
+          <img
+            src={contentImage.url}
+            width={contentImage.details.image.width / 2}
+            height={contentImage.details.image.height / 2}
+            css={css(shadowCss({ x: X, y: Y, blur: BLUR, shadow: SHADOW }))}
+          />
+        </div>
       )}
       <div>
         {props.cards.slice(4, 8).map(({ fields, sys }, index) => {
@@ -108,10 +112,18 @@ const rootDesktopGrid = css(darkModeText, {
   },
 })
 
-const desktopImageCss = css({
-  justifySelf: "center",
-  alignSelf: "center",
-  paddingBottom: 170,
+const mobileImageContainer = css({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  paddingLeft: 80,
+  paddingRight: 80,
+})
+const desktopImageContainer = css({
+  display: "flex",
+  justifyContent: "center",
+  alignContent: "center",
+  paddingTop: 20,
 })
 
 const X = 0
@@ -130,13 +142,12 @@ function shadowCss({ x, y, blur, shadow }) {
     width: "fit-content",
     minWidth: 80,
     alignItems: "center",
-    justifyContent: "space-evenly",
+    // justifyContent: "space-evenly",
     [WHEN_MOBILE]: {
-      filter: `drop-shadow(${X}px ${Y}px ${BLUR * 0.67}px ${SHADOW}) drop-shadow(0px 0px ${
+      filter: `drop-shadow(${X}px ${Y}px ${BLUR + 3}px ${SHADOW}) drop-shadow(0px 0px ${
         BLUR * 0.33
       }px ${SHADOW})`,
-      boxShadow: `0px 0px 2px 1px rgba(26, 232, 255, 0.5)`,
-      minHeight: 56,
+      // minHeight: 56,
       margin: "12px 8px",
     },
   })

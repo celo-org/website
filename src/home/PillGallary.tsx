@@ -102,16 +102,18 @@ export default function PillGallery(props: Props) {
     }
     return (
       <div css={rootCss}>
-        <div css={css(aroundSpace, { marginBottom: 24, columnGap: 40 })}>
+        <div css={css(aroundSpace, { columnGap: 40, padding: 40, margin: 10 })}>
           <div css={center2Css}>{props.list.slice(0, 2).map(renderLogo)}</div>
           <div css={center2Css}>{props.list.slice(2, 4).map(renderLogo)}</div>
         </div>
-        <div css={css({ paddingLeft: 60, paddingRight: 60 })}>
+        <div css={css({ marginBottom: 0, paddingLeft: 60, paddingRight: 60, margin: 10 })}>
           <div css={center2Css}>{props.list.slice(4, 8).map(renderLogo)}</div>
         </div>
-        <div css={css(aroundSpace, { columnGap: 40 })}>
+        <div css={css(aroundSpace, { columnGap: 40, padding: 40, margin: 10 })}>
           <div css={center2Css}>{props.list.slice(8, 10).map(renderLogo)}</div>
-          <div css={center2Css}>{props.list.slice(10, 12).map(renderLogo)}</div>
+          <div css={css(center2Css, { justifyContent: "space-evenly" })}>
+            {props.list.slice(10, 12).map(renderLogo)}
+          </div>
         </div>
       </div>
     )
