@@ -87,7 +87,6 @@ export default function PillGallery(props: Props) {
 
   if (props.formation === "FourByThreeByFour") {
     if (isMobile) {
-      const heading = props.list.find((item) => item.sys.contentType.sys.id === "heading")
       const logos = props.list.filter((item) => item.sys.contentType.sys.id === "logoGalleryItem")
       const halfPoint = logos.length / 2
       return (
@@ -95,7 +94,6 @@ export default function PillGallery(props: Props) {
           <div css={css(center2Css, { marginBottom: 36 })}>
             {logos.slice(0, halfPoint).map(renderLogo)}
           </div>
-          <div css={headingAreaCss}>{renderLogo(heading)}</div>
           <div css={css(center2Css, { marginBottom: 36 })}>
             {logos.slice(halfPoint, logos.length).map(renderLogo)}
           </div>
@@ -104,16 +102,16 @@ export default function PillGallery(props: Props) {
     }
     return (
       <div css={rootCss}>
-        <div css={css(aroundSpace, { marginBottom: 18 })}>
+        <div css={css(aroundSpace, { marginBottom: 24, columnGap: 40 })}>
           <div css={center2Css}>{props.list.slice(0, 2).map(renderLogo)}</div>
           <div css={center2Css}>{props.list.slice(2, 4).map(renderLogo)}</div>
         </div>
-        <div css={css(evenlySpace, { marginBottom: 24, paddingLeft: 60, paddingRight: 60 })}>
-          <div css={evenlySpace}>{props.list.slice(4, 7).map(renderLogo)}</div>
+        <div css={css({ paddingLeft: 60, paddingRight: 60 })}>
+          <div css={center2Css}>{props.list.slice(4, 8).map(renderLogo)}</div>
         </div>
-        <div css={css(aroundSpace, { marginBottom: 24 })}>
-          <div css={center2Css}>{props.list.slice(7, 9).map(renderLogo)}</div>
-          <div css={center2Css}>{props.list.slice(9, 11).map(renderLogo)}</div>
+        <div css={css(aroundSpace, { columnGap: 40 })}>
+          <div css={center2Css}>{props.list.slice(8, 10).map(renderLogo)}</div>
+          <div css={center2Css}>{props.list.slice(10, 12).map(renderLogo)}</div>
         </div>
       </div>
     )

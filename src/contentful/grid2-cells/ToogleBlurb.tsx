@@ -15,15 +15,16 @@ export default function ToogleBlurb(props: Props) {
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
   const { isMobile, isTablet } = useScreenSize()
   const desktopImage = props.imageDesktop?.fields?.file
-  const mobileImage = props.imageMobile?.fields?.file
+
   if (isMobile || isTablet) {
     return (
       <div css={rootCss}>
-        {mobileImage && (
+        {desktopImage && (
           <img
-            src={mobileImage.url}
-            width={mobileImage.details.image.width}
-            height={mobileImage.details.image.height}
+            src={desktopImage.url}
+            width={desktopImage.details.image.width / 2}
+            height={desktopImage.details.image.height / 2}
+            // css={desktopImageCss && css(shadowCss({ x: X, y: Y, blur: BLUR, shadow: SHADOW }))}
           />
         )}
         <div css={css(props.darkMode && darkModeText)}>
@@ -66,6 +67,7 @@ export default function ToogleBlurb(props: Props) {
           src={desktopImage.url}
           width={desktopImage.details.image.width / 2}
           height={desktopImage.details.image.height / 2}
+          css={desktopImageCss && css(shadowCss({ x: X, y: Y, blur: BLUR, shadow: SHADOW }))}
         />
       )}
       <div>
@@ -106,10 +108,39 @@ const rootDesktopGrid = css(darkModeText, {
   },
 })
 
-const mobileImageCss = css({
+const desktopImageCss = css({
   justifySelf: "center",
   alignSelf: "center",
+  paddingBottom: 170,
 })
+
+const X = 0
+const Y = 0
+const BLUR = 12
+const SHADOW = "rgba(26, 232, 255, 0.85)"
+
+function shadowCss({ x, y, blur, shadow }) {
+  return css({
+    filter: `drop-shadow(${x}px ${y}px ${blur}px ${SHADOW}) drop-shadow(0px 0px ${
+      blur + 18
+    }px ${shadow})`,
+    margin: "8px 12px",
+    padding: "4px 16px",
+    minHeight: 64,
+    width: "fit-content",
+    minWidth: 80,
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    [WHEN_MOBILE]: {
+      filter: `drop-shadow(${X}px ${Y}px ${BLUR * 0.67}px ${SHADOW}) drop-shadow(0px 0px ${
+        BLUR * 0.33
+      }px ${SHADOW})`,
+      boxShadow: `0px 0px 2px 1px rgba(26, 232, 255, 0.5)`,
+      minHeight: 56,
+      margin: "12px 8px",
+    },
+  })
+}
 
 type SecondProps = ToggleBlurbContentType & { toggle?: () => any; expanded?: number; index: number }
 
