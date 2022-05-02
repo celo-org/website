@@ -97,7 +97,7 @@ const darkModeText = css({ "h1, h2, h3, h4, h5, h6, p, div, ul, span": { color: 
 const rootCss = css({
   [WHEN_MOBILE]: {
     display: "block",
-    padding: "16px 16px 16px 16px",
+    padding: "16px 0px",
   },
   [WHEN_TABLET]: {
     display: "block",
@@ -134,7 +134,7 @@ const SHADOW = "rgba(26, 232, 255, 0.85)"
 function shadowCss({ x, y, blur, shadow }) {
   return css({
     filter: `drop-shadow(${x}px ${y}px ${blur}px ${SHADOW}) drop-shadow(0px 0px ${
-      blur + 18
+      blur + 8
     }px ${shadow})`,
     margin: "8px 12px",
     padding: "4px 16px",
@@ -142,12 +142,10 @@ function shadowCss({ x, y, blur, shadow }) {
     width: "fit-content",
     minWidth: 80,
     alignItems: "center",
-    // justifyContent: "space-evenly",
     [WHEN_MOBILE]: {
       filter: `drop-shadow(${X}px ${Y}px ${BLUR + 3}px ${SHADOW}) drop-shadow(0px 0px ${
         BLUR * 0.33
       }px ${SHADOW})`,
-      // minHeight: 56,
       margin: "12px 8px",
     },
   })
@@ -215,11 +213,6 @@ const toggleHeader = css(flexRow, {
   },
 })
 const toggleContainerTitle = css({
-  [WHEN_MOBILE]: {
-    maxWidth: 376,
-    justifyContent: "start",
-    alignItems: "center",
-  },
   [WHEN_TABLET]: {
     maxWidth: 376,
     justifyContent: "start",
@@ -227,17 +220,9 @@ const toggleContainerTitle = css({
   },
 })
 const toggleTitle = css(fonts.h3, {
-  [WHEN_MOBILE]: {
-    textAlign: "start",
-    width: "100%",
-    paddingLeft: 15,
-    paddingRight: 34,
-  },
   [WHEN_TABLET]: {
     textAlign: "start",
     width: "100%",
-    paddingLeft: 15,
-    paddingRight: 34,
   },
 })
 
