@@ -19,10 +19,17 @@ enum Headings {
   "small" = "small",
   "plain" = "plain",
 }
+
+enum AlignProperty {
+  "center" = "center",
+  "left" = "left",
+  "right" = "right",
+}
 export interface Props {
   icon?: Asset
   title: string
   titleType?: Headings
+  alignProperty?: AlignProperty
   body: Document
   link?: Entry<ContentfulButton>
   darkMode?: boolean
@@ -48,6 +55,7 @@ const renderWhiteParagraphWithRow = { ...renderWhiteParagraph, ...embeddable }
 
 const renderParagraphWithRow = { ...renderNode, ...embeddable }
 export default function Blurb(props: Props) {
+  console.log(props.alignProperty, "this is alignProperty")
   const image = props.icon?.fields?.file
   const imageURL = image?.url
   const displayedSize = displayedImageSize(props.icon, props.retina)
@@ -57,7 +65,7 @@ export default function Blurb(props: Props) {
 
   return (
     <div css={rootCss}>
-      <div css={containerCss}>
+      <div css={containerCss && alignPropStyle(props.alignProperty)}>
         {imageURL && (
           <div css={imageMargin}>
             <Image
@@ -162,5 +170,22 @@ function headingStyle(type: Headings, darkMode: boolean) {
       return css(fonts.body, { fontWeight: "normal" }, headingCss, darkMode && whiteText)
     default:
       return css(fonts.h3, headingCss, darkMode && whiteText)
+  }
+}
+function alignPropStyle(type: AlignProperty) {
+  switch (type) {
+    case "center":
+      return css({
+        justifyContent: "center",
+        alignItems: "center",
+        alignContent: "center",
+        textAlign: "center",
+      })
+    case "left":
+      return css({ alignItems: "start", alignContent: "start", textAlign: "start" })
+    case "right":
+      return css({ alignItems: "end", alignContent: "end", textAlign: "end" })
+    default:
+      return css({ alignItems: "start" })
   }
 }
