@@ -55,7 +55,6 @@ const renderWhiteParagraphWithRow = { ...renderWhiteParagraph, ...embeddable }
 
 const renderParagraphWithRow = { ...renderNode, ...embeddable }
 export default function Blurb(props: Props) {
-  console.log(props.alignProperty, "this is alignProperty")
   const image = props.icon?.fields?.file
   const imageURL = image?.url
   const displayedSize = displayedImageSize(props.icon, props.retina)
