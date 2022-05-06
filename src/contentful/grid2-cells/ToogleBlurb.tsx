@@ -50,7 +50,7 @@ export default function ToogleBlurb(props: Props) {
   }
   return (
     <div css={css(props.darkMode && rootDesktopGrid)}>
-      <div>
+      <div css={toggleContainer}>
         {props.cards.slice(0, 4).map(({ fields, sys }, index) => {
           return (
             <ToggleBlurbContent
@@ -74,7 +74,7 @@ export default function ToogleBlurb(props: Props) {
           />
         </div>
       )}
-      <div>
+      <div css={toggleContainer}>
         {props.cards.slice(4, 8).map(({ fields, sys }, index) => {
           return (
             <ToggleBlurbContent
@@ -124,6 +124,11 @@ const desktopImageContainer = css({
   justifyContent: "center",
   alignContent: "center",
   paddingTop: 20,
+})
+
+const toggleContainer = css({
+  padding: "0px 20px",
+  margin: "0px 10px",
 })
 
 const X = 0
