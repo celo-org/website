@@ -1,7 +1,7 @@
 import { Entry } from "contentful"
 import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
 import Roledex from "src/contentful/grid2-cells/Roledex"
-import ToggleBlurb from "src/contentful/grid2-cells/ToogleBlurb"
+import ToggleBlurb from "src/contentful/grid2-cells/ToggleBlurb"
 import PlayList from "src/contentful/grid2-cells/Playlist"
 import Blurb, { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import {
