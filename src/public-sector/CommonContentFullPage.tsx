@@ -28,6 +28,7 @@ import { ROW } from "src/contentful/nodes/embeds/ROW"
 import { GENERICS } from "src/contentful/nodes/embeds/GENERICS"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
+console.log("this props")
 
 const EMBEDDABLE = {
   ...BUTTON,
