@@ -55,7 +55,10 @@ export default async function addToCRM(
   const hubSpotClient = HubSpotClient()
 
   try {
-    const contactCreated = await createContactOrUpdate(hubSpotClient, contact)
+    const [contactCreated, _] = await Promise.all([
+      createContactOrUpdate(hubSpotClient, contact),
+      addContactsToList(list, [contact.email]),
+    ])
 
     addContactsToList(list, [contact.email])
 
