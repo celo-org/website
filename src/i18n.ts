@@ -31,4 +31,5 @@ export enum NameSpaces {
   press = "press",
   plumo = "plumo",
   terms = "terms",
+  cico = "cico",
 }

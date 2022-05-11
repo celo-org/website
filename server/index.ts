@@ -139,6 +139,12 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     })
   })
 
+  server.get("/papers/voluntary-carbon-credits", (_, res) => {
+    res.redirect(
+      "/papers/Scaling_Voluntary_Carbon_Markets_Through_Open_Blockchain_Platforms_Whitepaper.pdf"
+    )
+  })
+
   server.get("/connect", (_, res) => {
     res.redirect("/community")
   })

@@ -16,6 +16,7 @@ export enum ListID {
   PublicSector = "119",
   CeloConnect = "142",
   Enterprise = "124",
+  ConnectTheWorld = "242",
 }
 
 function convert(formContact: CRMInterface): HubSpotContact {

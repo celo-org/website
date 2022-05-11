@@ -61,6 +61,7 @@
     "hex-rgba": "^1.0.2",
     "html-to-formatted-text": "^2.7.0",
     "js-cookie": "^3.0.1",
+    "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "lottie-web": "^5.8.1",
     "markdown-to-jsx": "^7.1.6",
