@@ -60,8 +60,6 @@ export default async function addToCRM(
       addContactsToList(list, [contact.email]),
     ])
 
-    addContactsToList(list, [contact.email])
-
     if (company) {
       const companyCreated = await createCompany(hubSpotClient, company)
       await linkContactToCompany(hubSpotClient, {
