@@ -15,6 +15,7 @@ export enum ListID {
   FundApplicants = "117",
   PublicSector = "119",
   CeloConnect = "142",
+  Enterprise = "124",
   ConnectTheWorld = "242",
 }
 
@@ -87,7 +88,6 @@ export async function addManyCRM(
       list,
       contacts.map((contact) => contact.email)
     )
-
     return Promise.all(
       modifiedContacts.map((contact) =>
         linkContactToCompany(hubSpotClient, {

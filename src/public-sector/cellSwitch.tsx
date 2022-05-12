@@ -1,6 +1,7 @@
 import { Entry } from "contentful"
 import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
 import Roledex from "src/contentful/grid2-cells/Roledex"
+import ToggleBlurb from "src/contentful/grid2-cells/ToggleBlurb"
 import PlayList from "src/contentful/grid2-cells/Playlist"
 import Blurb, { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import {
@@ -13,6 +14,7 @@ import {
   PictureType,
   IframeContentType,
   EditorialType,
+  ToggleBlurbType,
 } from "src/utils/contentful"
 import Form from "src/contentful/grid2-cells/Form"
 import { Heading } from "src/contentful/grid2-cells/Heading"
@@ -72,6 +74,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             icon={blurbProp.icon}
             isNaturalSize={blurbProp.isNaturalSize}
             newIcon={blurbProp.newIcon}
+            alignProperty={blurbProp.alignProperty}
           />
         )
       case "picture":
@@ -111,6 +114,9 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
       case "editorial":
         const editorial = entry.fields as EditorialType
         return <Editorial key={entry.sys.id} {...editorial} darkMode={darkMode} />
+      case "toggleBlurb":
+        const toggle = entry.fields as ToggleBlurbType
+        return <ToggleBlurb key={entry.sys.id} {...toggle} darkMode={darkMode} />
       default:
         console.log("no renderer for", entry.sys.contentType.sys.id)
         return null

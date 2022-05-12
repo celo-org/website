@@ -128,7 +128,11 @@ export function pageSwitch(
       return <HR key={section.sys.id} darkMode={hr.darkMode} />
     case "logoGallery":
       const gallery = section.fields as LogoGallery
-      if (gallery.formation === "ThreeByFour" || gallery.formation === "TwoFourTwoRepeat") {
+      if (
+        gallery.formation === "ThreeByFour" ||
+        gallery.formation === "TwoFourTwoRepeat" ||
+        gallery.formation === "FourByThreeByFour"
+      ) {
         return (
           <PillGallery
             cssStyle={gallery.cssStyle}
