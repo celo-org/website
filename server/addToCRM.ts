@@ -126,7 +126,10 @@ function CRMError(e) {
   }
 }
 
-async function batchCreateOrUpdate(hubSpotClient: hubspot.Client, contacts: HubSpotContact[]) {
+async function batchCreateOrUpdate(
+  hubSpotClient: hubspot.Client,
+  contacts: HubSpotContact[]
+): Promise<hubspot.contactsModels.SimplePublicObject[]> {
   const BatchReadInputSimplePublicObjectId = {
     properties: ["email"],
     idProperty: "email",
@@ -177,7 +180,7 @@ async function batchCreateOrUpdate(hubSpotClient: hubspot.Client, contacts: HubS
   if (results.length === 2) {
     return [...results[0].body.results, ...results[1].body.results]
   } else {
-    results[0].body.results
+    return results[0].body.results
   }
 }
 
