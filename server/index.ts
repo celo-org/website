@@ -130,8 +130,12 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect("/papers/celo-wp-simplified-chinese.pdf")
   })
 
-  server.get("papers/annual-reports/2020", (_, res) => {
-    res.redirect("papers/celo-foundation-2020-report.pdf")
+  server.get("/papers/annual-reports/2020", (_, res) => {
+    res.redirect("/papers/celo-foundation-2020-report.pdf")
+  })
+
+  server.get("/papers/annual-reports/2021", (_, res) => {
+    res.redirect("/papers/Celo_Foundation_Annual_Report_2021.pdf")
   })
   ;["/brand", "/grants"].forEach((slug) => {
     server.get(slug, (_, res) => {
