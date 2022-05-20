@@ -16,11 +16,6 @@ interface Props {
 }
 
 export default class Chevron extends React.PureComponent<Props> {
-  static defaultProps = {
-    size: 14,
-    direction: Direction.right,
-  }
-
   render() {
     return (
       <g transform={`rotate(${this.props.direction})`}>
