@@ -331,12 +331,12 @@ Do not send real funds.
                     }
                   >
                     <g
-                      transform="rotate(0)"
+                      transform="rotate(undefined)"
                     >
                       <svg
                         fill="none"
                         height="0.75em"
-                        transform="rotate(0)"
+                        transform="rotate(undefined)"
                         viewBox="0 0 8 12"
                         width="0.75em"
                       >
@@ -454,12 +454,12 @@ Do not send real funds.
                     }
                   >
                     <g
-                      transform="rotate(0)"
+                      transform="rotate(undefined)"
                     >
                       <svg
                         fill="none"
                         height="0.75em"
-                        transform="rotate(0)"
+                        transform="rotate(undefined)"
                         viewBox="0 0 8 12"
                         width="0.75em"
                       >
@@ -575,12 +575,12 @@ Do not send real funds.
                     }
                   >
                     <g
-                      transform="rotate(0)"
+                      transform="rotate(undefined)"
                     >
                       <svg
                         fill="none"
                         height="0.75em"
-                        transform="rotate(0)"
+                        transform="rotate(undefined)"
                         viewBox="0 0 8 12"
                         width="0.75em"
                       >
@@ -996,12 +996,12 @@ Do not send real funds.
                   }
                 >
                   <g
-                    transform="rotate(0)"
+                    transform="rotate(undefined)"
                   >
                     <svg
                       fill="none"
                       height="0.75em"
-                      transform="rotate(0)"
+                      transform="rotate(undefined)"
                       viewBox="0 0 8 12"
                       width="0.75em"
                     >
@@ -1769,12 +1769,12 @@ Check out these wallets for everyday use.
                 className="emotion-10"
               >
                 <g
-                  transform="rotate(0)"
+                  transform="rotate(undefined)"
                 >
                   <svg
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    transform="rotate(undefined)"
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -1940,12 +1940,12 @@ Check out these wallets for everyday use.
                 className="emotion-10"
               >
                 <g
-                  transform="rotate(0)"
+                  transform="rotate(undefined)"
                 >
                   <svg
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    transform="rotate(undefined)"
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -2111,12 +2111,12 @@ Check out these wallets for everyday use.
                 className="emotion-10"
               >
                 <g
-                  transform="rotate(0)"
+                  transform="rotate(undefined)"
                 >
                   <svg
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    transform="rotate(undefined)"
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >

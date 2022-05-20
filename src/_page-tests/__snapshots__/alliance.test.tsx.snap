@@ -3964,12 +3964,12 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <g
-                    transform="rotate(0)"
+                    transform="rotate(undefined)"
                   >
                     <svg
                       fill="none"
                       height="0.75em"
-                      transform="rotate(0)"
+                      transform="rotate(undefined)"
                       viewBox="0 0 8 12"
                       width="0.75em"
                     >
@@ -4390,12 +4390,12 @@ exports[`Alliance renders 1`] = `
                   }
                 >
                   <g
-                    transform="rotate(0)"
+                    transform="rotate(undefined)"
                   >
                     <svg
                       fill="none"
                       height="0.75em"
-                      transform="rotate(0)"
+                      transform="rotate(undefined)"
                       viewBox="0 0 8 12"
                       width="0.75em"
                     >
@@ -5752,12 +5752,12 @@ exports[`Alliance renders 1`] = `
                 }
               >
                 <g
-                  transform="rotate(0)"
+                  transform="rotate(undefined)"
                 >
                   <svg
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    transform="rotate(undefined)"
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
