@@ -425,21 +425,25 @@ exports[`Audits renders 1`] = `
                 <span
                   className="emotion-16"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
+                  <g
                     transform="rotate(0)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
                   >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
+                    <svg
+                      fill="none"
+                      height="0.75em"
+                      transform="rotate(0)"
+                      viewBox="0 0 8 12"
+                      width="0.75em"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                        fill="#35D07F"
+                        fillRule="evenodd"
+                        opacity={1}
+                      />
+                    </svg>
+                  </g>
                 </span>
               </a>
             </span>
@@ -477,21 +481,25 @@ exports[`Audits renders 1`] = `
                 <span
                   className="emotion-16"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
+                  <g
                     transform="rotate(0)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
                   >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
+                    <svg
+                      fill="none"
+                      height="0.75em"
+                      transform="rotate(0)"
+                      viewBox="0 0 8 12"
+                      width="0.75em"
+                    >
+                      <path
+                        clipRule="evenodd"
+                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                        fill="#35D07F"
+                        fillRule="evenodd"
+                        opacity={1}
+                      />
+                    </svg>
+                  </g>
                 </span>
               </a>
             </span>
