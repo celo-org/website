@@ -28,7 +28,6 @@ export default class Chevron extends React.PureComponent<Props> {
         viewBox="0 0 8 12"
         fill="none"
         transform={`rotate(${this.props.direction})`}
-        css={`rotate(${this.props.direction})`}
       >
         <path
           opacity={this.props.opacity || 1}
