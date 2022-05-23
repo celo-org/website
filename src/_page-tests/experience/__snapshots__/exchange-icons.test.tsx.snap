@@ -6217,7 +6217,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 >
                   <a
                     className="emotion-362"
-                    href="/annual-reports/2020"
+                    href="/papers/annual-reports/2021"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"

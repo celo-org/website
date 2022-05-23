@@ -3813,7 +3813,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 >
                   <a
                     className="emotion-213"
-                    href="/annual-reports/2020"
+                    href="/papers/annual-reports/2021"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
