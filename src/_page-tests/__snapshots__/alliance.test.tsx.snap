@@ -186,7 +186,7 @@ exports[`Alliance renders 1`] = `
   align-items: center;
 }
 
-.emotion-138 {
+.emotion-140 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -206,14 +206,14 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-138 {
+  .emotion-140 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-139 {
+.emotion-141 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -231,7 +231,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-139 {
+  .emotion-141 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -245,7 +245,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-140 {
+.emotion-142 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -265,7 +265,7 @@ exports[`Alliance renders 1`] = `
   width: 100%;
 }
 
-.emotion-141 {
+.emotion-143 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -294,7 +294,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-141 {
+  .emotion-143 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -311,7 +311,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-141 {
+  .emotion-143 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -323,39 +323,39 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-141 {
+  .emotion-143 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-141 {
+  .emotion-143 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-141 {
+  .emotion-143 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-141 {
+  .emotion-143 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-141 {
+  .emotion-143 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
-.emotion-142 {
+.emotion-144 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -371,12 +371,12 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-142 {
+  .emotion-144 {
     text-align: center;
   }
 }
 
-.emotion-143 {
+.emotion-145 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -391,12 +391,12 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-143 {
+  .emotion-145 {
     text-align: center;
   }
 }
 
-.emotion-144 {
+.emotion-146 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -419,7 +419,7 @@ exports[`Alliance renders 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-145 {
+.emotion-147 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -438,19 +438,19 @@ exports[`Alliance renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-146 {
+.emotion-148 {
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.emotion-147 {
+.emotion-149 {
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.emotion-149 {
+.emotion-151 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -462,7 +462,7 @@ exports[`Alliance renders 1`] = `
   margin: 30px 50px;
 }
 
-.emotion-198 {
+.emotion-201 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -482,14 +482,14 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-198 {
+  .emotion-201 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-199 {
+.emotion-202 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -507,7 +507,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-199 {
+  .emotion-202 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -521,7 +521,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-213 {
+.emotion-216 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3963,25 +3963,22 @@ exports[`Alliance renders 1`] = `
                     }
                   }
                 >
-                  <g
-                    transform="rotate(undefined)"
+                  <svg
+                    className="emotion-98"
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
                   >
-                    <svg
-                      fill="none"
-                      height="0.75em"
-                      transform="rotate(undefined)"
-                      viewBox="0 0 8 12"
-                      width="0.75em"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                        fill="#35D07F"
-                        fillRule="evenodd"
-                        opacity={1}
-                      />
-                    </svg>
-                  </g>
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
                 </div>
               </a>
             </div>
@@ -4389,25 +4386,22 @@ exports[`Alliance renders 1`] = `
                     }
                   }
                 >
-                  <g
-                    transform="rotate(undefined)"
+                  <svg
+                    className="emotion-98"
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
                   >
-                    <svg
-                      fill="none"
-                      height="0.75em"
-                      transform="rotate(undefined)"
-                      viewBox="0 0 8 12"
-                      width="0.75em"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                        fill="#35D07F"
-                        fillRule="evenodd"
-                        opacity={1}
-                      />
-                    </svg>
-                  </g>
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
                 </div>
               </a>
             </div>
@@ -4666,14 +4660,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      className="emotion-138"
+      className="emotion-140"
     >
       “
       The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications
       ”
     </blockquote>
     <figcaption
-      className="emotion-139"
+      className="emotion-141"
     >
       <span>
         Gigi Gatti, Grameen Foundation
@@ -4681,29 +4675,29 @@ exports[`Alliance renders 1`] = `
     </figcaption>
   </div>
   <section
-    className="emotion-140"
+    className="emotion-142"
   >
     <div
-      className="emotion-141"
+      className="emotion-143"
     >
       <h3
-        className="emotion-142"
+        className="emotion-144"
       >
         Benefits of collaborating on a mission-driven blockchain
       </h3>
       <h2
-        className="emotion-143"
+        className="emotion-145"
       >
         What the Alliance offers
       </h2>
       <div
-        className="emotion-144"
+        className="emotion-146"
       >
         <div
-          className="emotion-145"
+          className="emotion-147"
         >
           <div
-            className="emotion-146"
+            className="emotion-148"
           >
             <span
               style={
@@ -4759,7 +4753,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-149"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4788,7 +4782,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-149"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -4820,16 +4814,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-151"
           >
             Connect with like-minded members
           </p>
         </div>
         <div
-          className="emotion-145"
+          className="emotion-147"
         >
           <div
-            className="emotion-146"
+            className="emotion-148"
           >
             <span
               style={
@@ -4885,7 +4879,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-149"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4914,7 +4908,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-149"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -4946,16 +4940,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-151"
           >
             Build and shape improvements to the Celo platform
           </p>
         </div>
         <div
-          className="emotion-145"
+          className="emotion-147"
         >
           <div
-            className="emotion-146"
+            className="emotion-148"
           >
             <span
               style={
@@ -5011,7 +5005,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-149"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5040,7 +5034,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-149"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -5072,16 +5066,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-151"
           >
             Attend special programs and events
           </p>
         </div>
         <div
-          className="emotion-145"
+          className="emotion-147"
         >
           <div
-            className="emotion-146"
+            className="emotion-148"
           >
             <span
               style={
@@ -5137,7 +5131,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-149"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5166,7 +5160,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-149"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -5198,16 +5192,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-151"
           >
             Access to education and support
           </p>
         </div>
         <div
-          className="emotion-145"
+          className="emotion-147"
         >
           <div
-            className="emotion-146"
+            className="emotion-148"
           >
             <span
               style={
@@ -5263,7 +5257,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-149"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5292,7 +5286,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-149"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -5324,7 +5318,7 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-151"
           >
             Expand your reach to help more communities
           </p>
@@ -5751,25 +5745,22 @@ exports[`Alliance renders 1`] = `
                   }
                 }
               >
-                <g
-                  transform="rotate(undefined)"
+                <svg
+                  className="emotion-98"
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(undefined)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#111214"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </g>
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#111214"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
               </div>
             </a>
           </div>
@@ -5839,14 +5830,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      className="emotion-198"
+      className="emotion-201"
     >
       “
       Our hope is that this Alliance will start unlocking the potential of internet money
       ”
     </blockquote>
     <figcaption
-      className="emotion-199"
+      className="emotion-202"
     >
       <span>
         Katie Haun, Andreessen Horowitz
@@ -6015,7 +6006,7 @@ exports[`Alliance renders 1`] = `
             Refine By
           </div>
           <div
-            className="emotion-213"
+            className="emotion-216"
           >
             <div
               className="emotion-0"

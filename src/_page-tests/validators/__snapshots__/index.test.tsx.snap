@@ -3509,25 +3509,22 @@ exports[`BuildPage renders 1`] = `
                     }
                   }
                 >
-                  <g
-                    transform="rotate(undefined)"
+                  <svg
+                    className="emotion-218"
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
                   >
-                    <svg
-                      fill="none"
-                      height="0.75em"
-                      transform="rotate(undefined)"
-                      viewBox="0 0 8 12"
-                      width="0.75em"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                        fill="#35D07F"
-                        fillRule="evenodd"
-                        opacity={1}
-                      />
-                    </svg>
-                  </g>
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
                 </div>
               </a>
             </div>
@@ -3750,25 +3747,22 @@ exports[`BuildPage renders 1`] = `
                     }
                   }
                 >
-                  <g
-                    transform="rotate(undefined)"
+                  <svg
+                    className="emotion-218"
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
                   >
-                    <svg
-                      fill="none"
-                      height="0.75em"
-                      transform="rotate(undefined)"
-                      viewBox="0 0 8 12"
-                      width="0.75em"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                        fill="#35D07F"
-                        fillRule="evenodd"
-                        opacity={1}
-                      />
-                    </svg>
-                  </g>
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
                 </div>
               </a>
             </div>

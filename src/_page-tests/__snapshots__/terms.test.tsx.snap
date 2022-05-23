@@ -371,7 +371,7 @@ exports[`Terms renders 1`] = `
   padding-left: 0.4em;
 }
 
-.emotion-30 {
+.emotion-33 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -443,25 +443,22 @@ exports[`Terms renders 1`] = `
                 <span
                   className="emotion-15"
                 >
-                  <g
-                    transform="rotate(undefined)"
+                  <svg
+                    className="emotion-16"
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
                   >
-                    <svg
-                      fill="none"
-                      height="0.75em"
-                      transform="rotate(undefined)"
-                      viewBox="0 0 8 12"
-                      width="0.75em"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                        fill="#35D07F"
-                        fillRule="evenodd"
-                        opacity={1}
-                      />
-                    </svg>
-                  </g>
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
                 </span>
               </a>
             </span>
@@ -484,25 +481,22 @@ exports[`Terms renders 1`] = `
                 <span
                   className="emotion-15"
                 >
-                  <g
-                    transform="rotate(undefined)"
+                  <svg
+                    className="emotion-16"
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
                   >
-                    <svg
-                      fill="none"
-                      height="0.75em"
-                      transform="rotate(undefined)"
-                      viewBox="0 0 8 12"
-                      width="0.75em"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                        fill="#35D07F"
-                        fillRule="evenodd"
-                        opacity={1}
-                      />
-                    </svg>
-                  </g>
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
                 </span>
               </a>
             </span>
@@ -525,25 +519,22 @@ exports[`Terms renders 1`] = `
                 <span
                   className="emotion-15"
                 >
-                  <g
-                    transform="rotate(undefined)"
+                  <svg
+                    className="emotion-16"
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
                   >
-                    <svg
-                      fill="none"
-                      height="0.75em"
-                      transform="rotate(undefined)"
-                      viewBox="0 0 8 12"
-                      width="0.75em"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                        fill="#35D07F"
-                        fillRule="evenodd"
-                        opacity={1}
-                      />
-                    </svg>
-                  </g>
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
                 </span>
               </a>
             </span>
@@ -574,7 +565,7 @@ exports[`Terms renders 1`] = `
           className="emotion-10"
         />
         <p
-          className="emotion-30"
+          className="emotion-33"
         >
           The Celo Network stores phone number hashes to allow for payments to a phone number. By verifying your phone number, you consent to having your hashed phone number stored on the Celo Blockchain.
         </p>
@@ -596,25 +587,22 @@ exports[`Terms renders 1`] = `
               <span
                 className="emotion-15"
               >
-                <g
-                  transform="rotate(undefined)"
+                <svg
+                  className="emotion-16"
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(undefined)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </g>
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
               </span>
             </a>
           </span>

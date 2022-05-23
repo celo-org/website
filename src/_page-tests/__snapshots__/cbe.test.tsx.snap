@@ -417,7 +417,7 @@ exports[`CBE renders 1`] = `
   padding-left: 0.4em;
 }
 
-.emotion-28 {
+.emotion-30 {
   width: 100px;
   height: 100px;
   height: 70px;
@@ -425,14 +425,14 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-28 {
+  .emotion-30 {
     margin-top: 30px;
     height: 70px;
     width: 70px;
   }
 }
 
-.emotion-37 {
+.emotion-40 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -462,7 +462,7 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-37 {
+  .emotion-40 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -479,7 +479,7 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-37 {
+  .emotion-40 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -491,18 +491,18 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-37 {
+  .emotion-40 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-37 {
+  .emotion-40 {
     grid-template-columns: 1fr;
   }
 }
 
-.emotion-38 {
+.emotion-41 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -523,17 +523,17 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-38 {
+  .emotion-41 {
     grid-column: span 1;
   }
 }
 
-.emotion-39 {
+.emotion-42 {
   width: 239px;
   height: 77px;
 }
 
-.emotion-41 {
+.emotion-44 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -546,7 +546,7 @@ exports[`CBE renders 1`] = `
   line-height: 36px;
 }
 
-.emotion-43 {
+.emotion-46 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -575,7 +575,7 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-43 {
+  .emotion-46 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -592,7 +592,7 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-43 {
+  .emotion-46 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -604,18 +604,18 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-43 {
+  .emotion-46 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-43 {
+  .emotion-46 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.emotion-44 {
+.emotion-47 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -628,17 +628,17 @@ exports[`CBE renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-44 {
+  .emotion-47 {
     grid-column: span 1;
   }
 }
 
-.emotion-46 {
+.emotion-49 {
   width: 100%;
   height: 100%;
 }
 
-.emotion-47 {
+.emotion-50 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -652,7 +652,7 @@ exports[`CBE renders 1`] = `
   line-height: 18px;
 }
 
-.emotion-48 {
+.emotion-51 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -850,25 +850,22 @@ exports[`CBE renders 1`] = `
               <span
                 className="emotion-17"
               >
-                <g
-                  transform="rotate(undefined)"
+                <svg
+                  className="emotion-18"
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(undefined)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </g>
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
               </span>
             </a>
           </span>
@@ -1021,25 +1018,22 @@ exports[`CBE renders 1`] = `
               <span
                 className="emotion-17"
               >
-                <g
-                  transform="rotate(undefined)"
+                <svg
+                  className="emotion-18"
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(undefined)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </g>
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
               </span>
             </a>
           </span>
@@ -1103,7 +1097,7 @@ exports[`CBE renders 1`] = `
               />
             </span>
             <img
-              className="emotion-28"
+              className="emotion-30"
               data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -1132,7 +1126,7 @@ exports[`CBE renders 1`] = `
             />
             <noscript>
               <img
-                className="emotion-28"
+                className="emotion-30"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -1192,25 +1186,22 @@ exports[`CBE renders 1`] = `
               <span
                 className="emotion-17"
               >
-                <g
-                  transform="rotate(undefined)"
+                <svg
+                  className="emotion-18"
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(undefined)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </g>
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
               </span>
             </a>
           </span>
@@ -1222,10 +1213,10 @@ exports[`CBE renders 1`] = `
     className="emotion-3"
   >
     <div
-      className="emotion-37"
+      className="emotion-40"
     >
       <div
-        className="emotion-38"
+        className="emotion-41"
       >
         <span
           style={
@@ -1281,7 +1272,7 @@ exports[`CBE renders 1`] = `
             />
           </span>
           <img
-            className="emotion-39"
+            className="emotion-42"
             data-nimg="intrinsic"
             decoding="async"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -1310,7 +1301,7 @@ exports[`CBE renders 1`] = `
           />
           <noscript>
             <img
-              className="emotion-39"
+              className="emotion-42"
               data-nimg="intrinsic"
               decoding="async"
               loading="lazy"
@@ -1342,7 +1333,7 @@ exports[`CBE renders 1`] = `
           </noscript>
         </span>
         <h4
-          className="emotion-41"
+          className="emotion-44"
         >
           Celo Lessons on Coinbase Earn
         </h4>
@@ -1353,10 +1344,10 @@ exports[`CBE renders 1`] = `
     className="emotion-3"
   >
     <div
-      className="emotion-43"
+      className="emotion-46"
     >
       <div
-        className="emotion-44"
+        className="emotion-47"
       >
         <a
           href="https://coinbase.com/earn/celo/lesson/1"
@@ -1364,7 +1355,7 @@ exports[`CBE renders 1`] = `
           target="_blank"
         >
           <div
-            className="emotion-45"
+            className="emotion-48"
             style={
               Object {
                 "display": "block",
@@ -1396,14 +1387,14 @@ exports[`CBE renders 1`] = `
               }
             >
               <img
-                className="emotion-46"
+                className="emotion-49"
                 src="/image.png"
               />
             </div>
           </div>
         </a>
         <a
-          className="emotion-47"
+          className="emotion-50"
           href="https://coinbase.com/earn/celo/lesson/1"
           rel="noopenner noreferrer"
           target="_blank"
@@ -1411,13 +1402,13 @@ exports[`CBE renders 1`] = `
           Lesson 1: What is the Celo Platform?
         </a>
         <h6
-          className="emotion-48"
+          className="emotion-51"
         >
           3 minutes
         </h6>
       </div>
       <div
-        className="emotion-44"
+        className="emotion-47"
       >
         <a
           href="https://coinbase.com/earn/celo/lesson/2"
@@ -1425,7 +1416,7 @@ exports[`CBE renders 1`] = `
           target="_blank"
         >
           <div
-            className="emotion-45"
+            className="emotion-48"
             style={
               Object {
                 "display": "block",
@@ -1457,14 +1448,14 @@ exports[`CBE renders 1`] = `
               }
             >
               <img
-                className="emotion-46"
+                className="emotion-49"
                 src="/image.png"
               />
             </div>
           </div>
         </a>
         <a
-          className="emotion-47"
+          className="emotion-50"
           href="https://coinbase.com/earn/celo/lesson/2"
           rel="noopenner noreferrer"
           target="_blank"
@@ -1472,13 +1463,13 @@ exports[`CBE renders 1`] = `
           Lesson 2: What is CELO?
         </a>
         <h6
-          className="emotion-48"
+          className="emotion-51"
         >
           2 minutes
         </h6>
       </div>
       <div
-        className="emotion-44"
+        className="emotion-47"
       >
         <a
           href="https://coinbase.com/earn/celo/lesson/3"
@@ -1486,7 +1477,7 @@ exports[`CBE renders 1`] = `
           target="_blank"
         >
           <div
-            className="emotion-45"
+            className="emotion-48"
             style={
               Object {
                 "display": "block",
@@ -1518,14 +1509,14 @@ exports[`CBE renders 1`] = `
               }
             >
               <img
-                className="emotion-46"
+                className="emotion-49"
                 src="/image.png"
               />
             </div>
           </div>
         </a>
         <a
-          className="emotion-47"
+          className="emotion-50"
           href="https://coinbase.com/earn/celo/lesson/3"
           rel="noopenner noreferrer"
           target="_blank"
@@ -1533,7 +1524,7 @@ exports[`CBE renders 1`] = `
           Lesson 3: What can Celo Dollars do?
         </a>
         <h6
-          className="emotion-48"
+          className="emotion-51"
         >
           3 minutes
         </h6>

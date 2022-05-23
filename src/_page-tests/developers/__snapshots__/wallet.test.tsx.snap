@@ -33,7 +33,7 @@ Array [
   z-index: 10;
 }
 
-.emotion-31 {
+.emotion-34 {
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -330,25 +330,22 @@ Do not send real funds.
                       }
                     }
                   >
-                    <g
-                      transform="rotate(undefined)"
+                    <svg
+                      className="emotion-16"
+                      fill="none"
+                      height="0.75em"
+                      transform="rotate(0)"
+                      viewBox="0 0 8 12"
+                      width="0.75em"
                     >
-                      <svg
-                        fill="none"
-                        height="0.75em"
-                        transform="rotate(undefined)"
-                        viewBox="0 0 8 12"
-                        width="0.75em"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                          fill="#35D07F"
-                          fillRule="evenodd"
-                          opacity={1}
-                        />
-                      </svg>
-                    </g>
+                      <path
+                        clipRule="evenodd"
+                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                        fill="#35D07F"
+                        fillRule="evenodd"
+                        opacity={1}
+                      />
+                    </svg>
                   </div>
                 </a>
               </div>
@@ -453,25 +450,22 @@ Do not send real funds.
                       }
                     }
                   >
-                    <g
-                      transform="rotate(undefined)"
+                    <svg
+                      className="emotion-16"
+                      fill="none"
+                      height="0.75em"
+                      transform="rotate(0)"
+                      viewBox="0 0 8 12"
+                      width="0.75em"
                     >
-                      <svg
-                        fill="none"
-                        height="0.75em"
-                        transform="rotate(undefined)"
-                        viewBox="0 0 8 12"
-                        width="0.75em"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                          fill="#35D07F"
-                          fillRule="evenodd"
-                          opacity={1}
-                        />
-                      </svg>
-                    </g>
+                      <path
+                        clipRule="evenodd"
+                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                        fill="#35D07F"
+                        fillRule="evenodd"
+                        opacity={1}
+                      />
+                    </svg>
                   </div>
                 </a>
               </div>
@@ -574,25 +568,22 @@ Do not send real funds.
                       }
                     }
                   >
-                    <g
-                      transform="rotate(undefined)"
+                    <svg
+                      className="emotion-16"
+                      fill="none"
+                      height="0.75em"
+                      transform="rotate(0)"
+                      viewBox="0 0 8 12"
+                      width="0.75em"
                     >
-                      <svg
-                        fill="none"
-                        height="0.75em"
-                        transform="rotate(undefined)"
-                        viewBox="0 0 8 12"
-                        width="0.75em"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                          fill="#35D07F"
-                          fillRule="evenodd"
-                          opacity={1}
-                        />
-                      </svg>
-                    </g>
+                      <path
+                        clipRule="evenodd"
+                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                        fill="#35D07F"
+                        fillRule="evenodd"
+                        opacity={1}
+                      />
+                    </svg>
                   </div>
                 </a>
               </div>
@@ -757,7 +748,7 @@ Do not send real funds.
                 }
               >
                 <path
-                  className="emotion-31"
+                  className="emotion-34"
                   d="M130.57 322.53C130.624 333.352 123.502 341.889 114.731 341.611C106.042 341.332 99.012 332.492 98.9594 321.857C98.9067 311.222 105.85 302.669 114.539 302.761C123.308 302.87 130.517 311.726 130.57 322.53Z"
                   strokeMiterlimit="10"
                 />
@@ -995,25 +986,22 @@ Do not send real funds.
                     }
                   }
                 >
-                  <g
-                    transform="rotate(undefined)"
+                  <svg
+                    className="emotion-16"
+                    fill="none"
+                    height="0.75em"
+                    transform="rotate(0)"
+                    viewBox="0 0 8 12"
+                    width="0.75em"
                   >
-                    <svg
-                      fill="none"
-                      height="0.75em"
-                      transform="rotate(undefined)"
-                      viewBox="0 0 8 12"
-                      width="0.75em"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                        fill="#35D07F"
-                        fillRule="evenodd"
-                        opacity={1}
-                      />
-                    </svg>
-                  </g>
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
                 </div>
               </a>
             </div>
@@ -1768,25 +1756,22 @@ Check out these wallets for everyday use.
               <span
                 className="emotion-10"
               >
-                <g
-                  transform="rotate(undefined)"
+                <svg
+                  className="emotion-11"
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(undefined)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </g>
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
               </span>
             </a>
           </span>
@@ -1939,25 +1924,22 @@ Check out these wallets for everyday use.
               <span
                 className="emotion-10"
               >
-                <g
-                  transform="rotate(undefined)"
+                <svg
+                  className="emotion-11"
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(undefined)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </g>
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
               </span>
             </a>
           </span>
@@ -2110,25 +2092,22 @@ Check out these wallets for everyday use.
               <span
                 className="emotion-10"
               >
-                <g
-                  transform="rotate(undefined)"
+                <svg
+                  className="emotion-11"
+                  fill="none"
+                  height="0.75em"
+                  transform="rotate(0)"
+                  viewBox="0 0 8 12"
+                  width="0.75em"
                 >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    transform="rotate(undefined)"
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </g>
+                  <path
+                    clipRule="evenodd"
+                    d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                    fill="#35D07F"
+                    fillRule="evenodd"
+                    opacity={1}
+                  />
+                </svg>
               </span>
             </a>
           </span>
