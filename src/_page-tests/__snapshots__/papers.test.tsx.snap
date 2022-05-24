@@ -451,10 +451,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -489,10 +492,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -560,10 +566,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -631,10 +640,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -702,10 +714,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -740,10 +755,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -811,10 +829,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -882,10 +903,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -920,10 +944,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -991,10 +1018,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -1062,10 +1092,13 @@ exports[`Papers renders 1`] = `
                   className="emotion-16"
                 >
                   <svg
-                    className="emotion-17"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >

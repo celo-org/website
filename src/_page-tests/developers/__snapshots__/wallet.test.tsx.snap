@@ -33,7 +33,7 @@ Array [
   z-index: 10;
 }
 
-.emotion-34 {
+.emotion-31 {
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
@@ -331,10 +331,13 @@ Do not send real funds.
                     }
                   >
                     <svg
-                      className="emotion-16"
                       fill="none"
                       height="0.75em"
-                      transform="rotate(0)"
+                      style={
+                        Object {
+                          "transform": "rotate(0deg)",
+                        }
+                      }
                       viewBox="0 0 8 12"
                       width="0.75em"
                     >
@@ -451,10 +454,13 @@ Do not send real funds.
                     }
                   >
                     <svg
-                      className="emotion-16"
                       fill="none"
                       height="0.75em"
-                      transform="rotate(0)"
+                      style={
+                        Object {
+                          "transform": "rotate(0deg)",
+                        }
+                      }
                       viewBox="0 0 8 12"
                       width="0.75em"
                     >
@@ -569,10 +575,13 @@ Do not send real funds.
                     }
                   >
                     <svg
-                      className="emotion-16"
                       fill="none"
                       height="0.75em"
-                      transform="rotate(0)"
+                      style={
+                        Object {
+                          "transform": "rotate(0deg)",
+                        }
+                      }
                       viewBox="0 0 8 12"
                       width="0.75em"
                     >
@@ -748,7 +757,7 @@ Do not send real funds.
                 }
               >
                 <path
-                  className="emotion-34"
+                  className="emotion-31"
                   d="M130.57 322.53C130.624 333.352 123.502 341.889 114.731 341.611C106.042 341.332 99.012 332.492 98.9594 321.857C98.9067 311.222 105.85 302.669 114.539 302.761C123.308 302.87 130.517 311.726 130.57 322.53Z"
                   strokeMiterlimit="10"
                 />
@@ -987,10 +996,13 @@ Do not send real funds.
                   }
                 >
                   <svg
-                    className="emotion-16"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -1757,10 +1769,13 @@ Check out these wallets for everyday use.
                 className="emotion-10"
               >
                 <svg
-                  className="emotion-11"
                   fill="none"
                   height="0.75em"
-                  transform="rotate(0)"
+                  style={
+                    Object {
+                      "transform": "rotate(0deg)",
+                    }
+                  }
                   viewBox="0 0 8 12"
                   width="0.75em"
                 >
@@ -1925,10 +1940,13 @@ Check out these wallets for everyday use.
                 className="emotion-10"
               >
                 <svg
-                  className="emotion-11"
                   fill="none"
                   height="0.75em"
-                  transform="rotate(0)"
+                  style={
+                    Object {
+                      "transform": "rotate(0deg)",
+                    }
+                  }
                   viewBox="0 0 8 12"
                   width="0.75em"
                 >
@@ -2093,10 +2111,13 @@ Check out these wallets for everyday use.
                 className="emotion-10"
               >
                 <svg
-                  className="emotion-11"
                   fill="none"
                   height="0.75em"
-                  transform="rotate(0)"
+                  style={
+                    Object {
+                      "transform": "rotate(0deg)",
+                    }
+                  }
                   viewBox="0 0 8 12"
                   width="0.75em"
                 >

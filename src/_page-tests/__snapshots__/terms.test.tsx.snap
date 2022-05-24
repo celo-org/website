@@ -371,7 +371,7 @@ exports[`Terms renders 1`] = `
   padding-left: 0.4em;
 }
 
-.emotion-33 {
+.emotion-30 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -444,10 +444,13 @@ exports[`Terms renders 1`] = `
                   className="emotion-15"
                 >
                   <svg
-                    className="emotion-16"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -482,10 +485,13 @@ exports[`Terms renders 1`] = `
                   className="emotion-15"
                 >
                   <svg
-                    className="emotion-16"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -520,10 +526,13 @@ exports[`Terms renders 1`] = `
                   className="emotion-15"
                 >
                   <svg
-                    className="emotion-16"
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -565,7 +574,7 @@ exports[`Terms renders 1`] = `
           className="emotion-10"
         />
         <p
-          className="emotion-33"
+          className="emotion-30"
         >
           The Celo Network stores phone number hashes to allow for payments to a phone number. By verifying your phone number, you consent to having your hashed phone number stored on the Celo Blockchain.
         </p>
@@ -588,10 +597,13 @@ exports[`Terms renders 1`] = `
                 className="emotion-15"
               >
                 <svg
-                  className="emotion-16"
                   fill="none"
                   height="0.75em"
-                  transform="rotate(0)"
+                  style={
+                    Object {
+                      "transform": "rotate(0deg)",
+                    }
+                  }
                   viewBox="0 0 8 12"
                   width="0.75em"
                 >

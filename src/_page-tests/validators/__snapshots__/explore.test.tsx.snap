@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidatorsList renders 1`] = `
-.emotion-46 {
+.emotion-36 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -186,10 +186,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -263,10 +266,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -340,10 +346,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -417,10 +426,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -494,10 +506,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -571,10 +586,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -648,10 +666,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -725,10 +746,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -802,10 +826,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -879,10 +906,13 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <svg
-            className="emotion-8"
             fill="none"
             height={10}
-            transform="rotate(270)"
+            style={
+              Object {
+                "transform": "rotate(270deg)",
+              }
+            }
             viewBox="0 0 8 12"
             width={10}
           >
@@ -925,7 +955,7 @@ exports[`ValidatorsList renders 1`] = `
         }
       >
         <div
-          className="emotion-46"
+          className="emotion-36"
           onClick={[Function]}
         >
           <div
@@ -1011,10 +1041,13 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <svg
-              className="emotion-50"
               fill="none"
               height={10}
-              transform="rotate(0)"
+              style={
+                Object {
+                  "transform": "rotate(0deg)",
+                }
+              }
               viewBox="0 0 8 12"
               width={10}
             >
@@ -1044,7 +1077,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -1062,7 +1095,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <a
-                className="emotion-54 emotion-55 emotion-4 emotion-53 emotion-58"
+                className="emotion-43 emotion-44 emotion-4 emotion-42 emotion-47"
                 href="https://explorer.celo.org/address/0xbcff1270b8aa83232b6d7113144557dfac93b591/celo"
                 rel="noopenner"
                 role="link"
@@ -1104,7 +1137,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             />
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -1122,7 +1155,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <span
-                className="emotion-4 emotion-53"
+                className="emotion-4 emotion-42"
                 style={
                   Object {
                     "color": "rgba(171,173,175,1.00)",
@@ -1145,7 +1178,7 @@ exports[`ValidatorsList renders 1`] = `
                 }
               >
                 <span
-                  className="emotion-4 emotion-53"
+                  className="emotion-4 emotion-42"
                   style={
                     Object {
                       "color": "rgba(171,173,175,1.00)",
@@ -1174,7 +1207,7 @@ exports[`ValidatorsList renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -1228,7 +1261,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -1243,7 +1276,7 @@ exports[`ValidatorsList renders 1`] = `
             %
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -1252,7 +1285,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "color": "rgba(171,173,175,1.00)",
@@ -1467,7 +1500,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -1497,7 +1530,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -1527,7 +1560,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -1552,7 +1585,7 @@ exports[`ValidatorsList renders 1`] = `
           92,308
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -1578,7 +1611,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -1601,7 +1634,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -1612,7 +1645,7 @@ exports[`ValidatorsList renders 1`] = `
             0.0%
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -1627,7 +1660,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "backgroundColor": "rgba(251,124,109,1.00)",
@@ -1646,7 +1679,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -1672,7 +1705,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -1727,7 +1760,7 @@ exports[`ValidatorsList renders 1`] = `
         }
       >
         <div
-          className="emotion-46"
+          className="emotion-36"
           onClick={[Function]}
         >
           <div
@@ -1813,10 +1846,13 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <svg
-              className="emotion-50"
               fill="none"
               height={10}
-              transform="rotate(0)"
+              style={
+                Object {
+                  "transform": "rotate(0deg)",
+                }
+              }
               viewBox="0 0 8 12"
               width={10}
             >
@@ -1846,7 +1882,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -1864,7 +1900,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <a
-                className="emotion-54 emotion-55 emotion-4 emotion-53 emotion-58"
+                className="emotion-43 emotion-44 emotion-4 emotion-42 emotion-47"
                 href="https://explorer.celo.org/address/0x4f584db9ec38df930185df315d941d42b3186b9f/celo"
                 rel="noopenner"
                 role="link"
@@ -1906,7 +1942,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             />
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -1924,7 +1960,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <span
-                className="emotion-4 emotion-53"
+                className="emotion-4 emotion-42"
                 style={
                   Object {
                     "color": "rgba(171,173,175,1.00)",
@@ -1947,7 +1983,7 @@ exports[`ValidatorsList renders 1`] = `
                 }
               >
                 <span
-                  className="emotion-4 emotion-53"
+                  className="emotion-4 emotion-42"
                   style={
                     Object {
                       "color": "rgba(171,173,175,1.00)",
@@ -1976,7 +2012,7 @@ exports[`ValidatorsList renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -2030,7 +2066,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -2045,7 +2081,7 @@ exports[`ValidatorsList renders 1`] = `
             %
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -2054,7 +2090,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "color": "rgba(171,173,175,1.00)",
@@ -2269,7 +2305,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -2299,7 +2335,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -2329,7 +2365,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -2354,7 +2390,7 @@ exports[`ValidatorsList renders 1`] = `
           10,000
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -2380,7 +2416,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -2403,7 +2439,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -2414,7 +2450,7 @@ exports[`ValidatorsList renders 1`] = `
             0.0%
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -2429,7 +2465,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "backgroundColor": "rgba(251,124,109,1.00)",
@@ -2448,7 +2484,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -2474,7 +2510,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -2529,7 +2565,7 @@ exports[`ValidatorsList renders 1`] = `
         }
       >
         <div
-          className="emotion-46"
+          className="emotion-36"
           onClick={[Function]}
         >
           <div
@@ -2615,10 +2651,13 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <svg
-              className="emotion-50"
               fill="none"
               height={10}
-              transform="rotate(0)"
+              style={
+                Object {
+                  "transform": "rotate(0deg)",
+                }
+              }
               viewBox="0 0 8 12"
               width={10}
             >
@@ -2648,7 +2687,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -2666,7 +2705,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <a
-                className="emotion-54 emotion-55 emotion-4 emotion-53 emotion-58"
+                className="emotion-43 emotion-44 emotion-4 emotion-42 emotion-47"
                 href="https://explorer.celo.org/address/0x57b191f75159f861bae27099391dfae88564b737/celo"
                 rel="noopenner"
                 role="link"
@@ -2708,7 +2747,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             />
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -2726,7 +2765,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <span
-                className="emotion-4 emotion-53"
+                className="emotion-4 emotion-42"
                 style={
                   Object {
                     "color": "rgba(171,173,175,1.00)",
@@ -2749,7 +2788,7 @@ exports[`ValidatorsList renders 1`] = `
                 }
               >
                 <span
-                  className="emotion-4 emotion-53"
+                  className="emotion-4 emotion-42"
                   style={
                     Object {
                       "color": "rgba(171,173,175,1.00)",
@@ -2778,7 +2817,7 @@ exports[`ValidatorsList renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -2832,7 +2871,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -2847,7 +2886,7 @@ exports[`ValidatorsList renders 1`] = `
             %
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -2856,7 +2895,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "color": "rgba(171,173,175,1.00)",
@@ -3071,7 +3110,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3101,7 +3140,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3131,7 +3170,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3156,7 +3195,7 @@ exports[`ValidatorsList renders 1`] = `
           12,038
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3182,7 +3221,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3205,7 +3244,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -3216,7 +3255,7 @@ exports[`ValidatorsList renders 1`] = `
             0.0%
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -3231,7 +3270,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "backgroundColor": "rgba(251,124,109,1.00)",
@@ -3250,7 +3289,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3276,7 +3315,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3331,7 +3370,7 @@ exports[`ValidatorsList renders 1`] = `
         }
       >
         <div
-          className="emotion-46"
+          className="emotion-36"
           onClick={[Function]}
         >
           <div
@@ -3417,10 +3456,13 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <svg
-              className="emotion-50"
               fill="none"
               height={10}
-              transform="rotate(0)"
+              style={
+                Object {
+                  "transform": "rotate(0deg)",
+                }
+              }
               viewBox="0 0 8 12"
               width={10}
             >
@@ -3450,7 +3492,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -3468,7 +3510,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <a
-                className="emotion-54 emotion-55 emotion-4 emotion-53 emotion-58"
+                className="emotion-43 emotion-44 emotion-4 emotion-42 emotion-47"
                 href="https://explorer.celo.org/address/0x7a914a1b9a025eca6a2c06936c94101184741ea2/celo"
                 rel="noopenner"
                 role="link"
@@ -3510,7 +3552,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             />
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -3528,7 +3570,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <span
-                className="emotion-4 emotion-53"
+                className="emotion-4 emotion-42"
                 style={
                   Object {
                     "color": "rgba(171,173,175,1.00)",
@@ -3551,7 +3593,7 @@ exports[`ValidatorsList renders 1`] = `
                 }
               >
                 <span
-                  className="emotion-4 emotion-53"
+                  className="emotion-4 emotion-42"
                   style={
                     Object {
                       "color": "rgba(171,173,175,1.00)",
@@ -3580,7 +3622,7 @@ exports[`ValidatorsList renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3634,7 +3676,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -3649,7 +3691,7 @@ exports[`ValidatorsList renders 1`] = `
             %
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -3658,7 +3700,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "color": "rgba(171,173,175,1.00)",
@@ -3873,7 +3915,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3903,7 +3945,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3933,7 +3975,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3958,7 +4000,7 @@ exports[`ValidatorsList renders 1`] = `
           380,210
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -3984,7 +4026,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4007,7 +4049,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -4018,7 +4060,7 @@ exports[`ValidatorsList renders 1`] = `
             2.2%
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -4033,7 +4075,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "backgroundColor": "rgba(251,124,109,1.00)",
@@ -4052,7 +4094,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4078,7 +4120,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4133,7 +4175,7 @@ exports[`ValidatorsList renders 1`] = `
         }
       >
         <div
-          className="emotion-46"
+          className="emotion-36"
           onClick={[Function]}
         >
           <div
@@ -4219,10 +4261,13 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <svg
-              className="emotion-50"
               fill="none"
               height={10}
-              transform="rotate(0)"
+              style={
+                Object {
+                  "transform": "rotate(0deg)",
+                }
+              }
               viewBox="0 0 8 12"
               width={10}
             >
@@ -4252,7 +4297,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -4270,7 +4315,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <a
-                className="emotion-54 emotion-55 emotion-4 emotion-53 emotion-58"
+                className="emotion-43 emotion-44 emotion-4 emotion-42 emotion-47"
                 href="https://explorer.celo.org/address/0x44e11b8eb591a5b8b0cf4db6b02ad60e6ed89a62/celo"
                 rel="noopenner"
                 role="link"
@@ -4312,7 +4357,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             />
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -4330,7 +4375,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <span
-                className="emotion-4 emotion-53"
+                className="emotion-4 emotion-42"
                 style={
                   Object {
                     "color": "rgba(171,173,175,1.00)",
@@ -4353,7 +4398,7 @@ exports[`ValidatorsList renders 1`] = `
                 }
               >
                 <span
-                  className="emotion-4 emotion-53"
+                  className="emotion-4 emotion-42"
                   style={
                     Object {
                       "color": "rgba(171,173,175,1.00)",
@@ -4382,7 +4427,7 @@ exports[`ValidatorsList renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4436,7 +4481,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -4451,7 +4496,7 @@ exports[`ValidatorsList renders 1`] = `
             %
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -4460,7 +4505,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "color": "rgba(171,173,175,1.00)",
@@ -4675,7 +4720,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4705,7 +4750,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4735,7 +4780,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4760,7 +4805,7 @@ exports[`ValidatorsList renders 1`] = `
           9,988
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4786,7 +4831,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4809,7 +4854,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -4820,7 +4865,7 @@ exports[`ValidatorsList renders 1`] = `
             0.6%
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -4835,7 +4880,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "backgroundColor": "rgba(251,124,109,1.00)",
@@ -4854,7 +4899,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4880,7 +4925,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -4935,7 +4980,7 @@ exports[`ValidatorsList renders 1`] = `
         }
       >
         <div
-          className="emotion-46"
+          className="emotion-36"
           onClick={[Function]}
         >
           <div
@@ -5021,10 +5066,13 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <svg
-              className="emotion-50"
               fill="none"
               height={10}
-              transform="rotate(0)"
+              style={
+                Object {
+                  "transform": "rotate(0deg)",
+                }
+              }
               viewBox="0 0 8 12"
               width={10}
             >
@@ -5054,7 +5102,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitAlignItems": "center",
@@ -5072,7 +5120,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <a
-                className="emotion-54 emotion-55 emotion-4 emotion-53 emotion-58"
+                className="emotion-43 emotion-44 emotion-4 emotion-42 emotion-47"
                 href="https://explorer.celo.org/address/0x439d4647515c2007aa916453e7c1105462e19f50/celo"
                 rel="noopenner"
                 role="link"
@@ -5114,7 +5162,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             />
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "WebkitBoxDirection": "normal",
@@ -5132,7 +5180,7 @@ exports[`ValidatorsList renders 1`] = `
               }
             >
               <span
-                className="emotion-4 emotion-53"
+                className="emotion-4 emotion-42"
                 style={
                   Object {
                     "color": "rgba(171,173,175,1.00)",
@@ -5155,7 +5203,7 @@ exports[`ValidatorsList renders 1`] = `
                 }
               >
                 <span
-                  className="emotion-4 emotion-53"
+                  className="emotion-4 emotion-42"
                   style={
                     Object {
                       "color": "rgba(171,173,175,1.00)",
@@ -5184,7 +5232,7 @@ exports[`ValidatorsList renders 1`] = `
           </div>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -5238,7 +5286,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -5253,7 +5301,7 @@ exports[`ValidatorsList renders 1`] = `
             %
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -5262,7 +5310,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "color": "rgba(171,173,175,1.00)",
@@ -5477,7 +5525,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -5507,7 +5555,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -5537,7 +5585,7 @@ exports[`ValidatorsList renders 1`] = `
           %)
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -5562,7 +5610,7 @@ exports[`ValidatorsList renders 1`] = `
           10,000
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -5588,7 +5636,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -5611,7 +5659,7 @@ exports[`ValidatorsList renders 1`] = `
           }
         >
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -5622,7 +5670,7 @@ exports[`ValidatorsList renders 1`] = `
             0.0%
           </span>
           <span
-            className="emotion-4 emotion-53"
+            className="emotion-4 emotion-42"
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
@@ -5637,7 +5685,7 @@ exports[`ValidatorsList renders 1`] = `
             }
           >
             <span
-              className="emotion-4 emotion-53"
+              className="emotion-4 emotion-42"
               style={
                 Object {
                   "backgroundColor": "rgba(251,124,109,1.00)",
@@ -5656,7 +5704,7 @@ exports[`ValidatorsList renders 1`] = `
           </span>
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
@@ -5682,7 +5730,7 @@ exports[`ValidatorsList renders 1`] = `
           %
         </div>
         <div
-          className="emotion-4 emotion-58"
+          className="emotion-4 emotion-47"
           dir="auto"
           style={
             Object {
