@@ -42,7 +42,7 @@ const MENU = [
   menu.COMMUNITY,
   {
     name: "annualReport",
-    link: "/annual-reports/2020",
+    link: "/papers/annual-reports/2021",
   },
 ]
 const TECH_MENU = [
