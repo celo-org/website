@@ -5,12 +5,14 @@ import { colors } from "src/colors"
 
 interface OwnProps {
   isLoading: boolean
+  isValidated?: boolean
 }
 
 type Props = Pick<ButtonProps, "text" | "onPress" | "size" | "align" | "style" | "onDarkBackground">
 
 export default React.memo(function SubmitButton({
   isLoading,
+  isValidated,
   text,
   onDarkBackground,
   onPress,
@@ -26,7 +28,7 @@ export default React.memo(function SubmitButton({
       kind={BTN.PRIMARY}
       onPress={onPress}
       size={size}
-      disabled={isLoading}
+      disabled={isLoading || isValidated}
       align={align}
       style={style}
     />
