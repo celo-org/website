@@ -7,6 +7,7 @@ interface State {
   form: FormState
   errors: string[]
   apiError?: ErrorKeys
+  //newly added by henrynunez112/captchaOK
   capchaOK?: boolean
 }
 
