@@ -59,7 +59,6 @@ export default React.memo(function EmailForm({
   listID = NEWSLETTER_LIST,
   route = "contacts",
 }: Props) {
-  const [isValidated, setIsValadated] = React.useState(false)
   const inputTheme = isDarkMode ? styles.inputDarkMode : styles.inputLightMode
   const { isMobile } = useScreenSize()
   const { t } = useTranslation(NameSpaces.common)
@@ -75,10 +74,6 @@ export default React.memo(function EmailForm({
         }
         const onHoneyChange = (event: React.ChangeEvent<HTMLInputElement>) => {
           onInput({ name: "mielpoto", newValue: event.target.value })
-        }
-        const onClick = (value: any) => {
-          console.log("Captcha value:", value)
-          setIsValadated(true)
         }
 
         return (
@@ -114,10 +109,9 @@ export default React.memo(function EmailForm({
                   <ErrorDisplay isShowing={hasError} field={errorKey} />
                 </div>
               )}
-              <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={onClick} />
+              <ReCAPTCHA sitekey={"6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"} size="invisible" />
               <SubmitButton
                 isLoading={formState.isLoading}
-                isValidated={!isValidated}
                 onPress={onSubmit}
                 text={submitText}
                 size={SIZE.fullWidth}

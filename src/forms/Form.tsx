@@ -7,6 +7,7 @@ interface State {
   form: FormState
   errors: string[]
   apiError?: ErrorKeys
+  capchaOK?: boolean
 }
 
 type FormField = string
