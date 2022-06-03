@@ -1,14 +1,15 @@
 import * as React from "react"
 import { ErrorKeys } from "src/forms/ErrorDisplay"
 import { postForm } from "src/forms/postForm"
+import ReCAPTCHA from "react-google-recaptcha"
 interface State {
   isComplete: boolean
   isLoading: boolean
   form: FormState
   errors: string[]
   apiError?: ErrorKeys
-  //newly added by henrynunez112/captchaOK
-  capchaOK?: boolean
+  //newly added by henrynunez112/formBots
+  captchaOK?: boolean
 }
 
 type FormField = string
@@ -24,6 +25,9 @@ interface ChildArguments {
   onInput: ({ name, newValue }) => void
   onCheck: (event: { nativeEvent: NativeEvent }) => void
   onSelect: (key: string) => (event) => void
+  onCaptcha: (value: string | null) => void
+  resetCaptcha: (any?: any) => void
+  getCaptchaToken: (any?: any) => void
   formState: State
 }
 
@@ -35,6 +39,7 @@ interface Props {
 }
 
 export default class Form extends React.Component<Props, State> {
+  private recaptchaRef = React.createRef<ReCAPTCHA>()
   constructor(props, context) {
     super(props, context)
     this.state = {
@@ -79,6 +84,17 @@ export default class Form extends React.Component<Props, State> {
       return this.postForm()
     }
   }
+  onCaptcha = (value: string | null) => {
+    this.setState({ captchaOK: !!value })
+  }
+
+  resetCaptcha = () => {
+    this.recaptchaRef.current.reset()
+  }
+
+  getCaptchaToken = () => {
+    return this.recaptchaRef.current.getValue()
+  }
 
   form = () => {
     return { ...this.state.form }
@@ -119,6 +135,9 @@ export default class Form extends React.Component<Props, State> {
       onInput: this.onInput,
       onCheck: this.onCheck,
       onSelect: this.onSelect,
+      onCaptcha: this.onCaptcha,
+      resetCaptcha: this.resetCaptcha,
+      getCaptchaToken: this.getCaptchaToken,
       formState: { ...this.state },
     })
   }

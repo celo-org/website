@@ -13,6 +13,7 @@ import { fonts, textStyles } from "src/estyles"
 import { getSentry, initSentry } from "src/utils/sentry"
 import { appWithTranslation } from "src/i18n"
 import { flex } from "src/estyles"
+
 const SECOND = 1000
 const Progress = dynamic(import("src/shared/Progress"))
 

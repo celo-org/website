@@ -8,7 +8,6 @@ import { NameSpaces, useTranslation } from "src/i18n"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { SIZE } from "src/shared/Button.4"
 import { colors } from "src/colors"
-import ReCAPTCHA from "react-google-recaptcha"
 import { css } from "@emotion/react"
 import {
   flex,
@@ -19,6 +18,7 @@ import {
   inputDarkStyle,
   honeypotCss,
 } from "src/estyles"
+import ReCAPTCHA from "react-google-recaptcha"
 
 const NEWSLETTER_LIST = "1"
 export const DEVELOPER_LIST = "10"
@@ -29,7 +29,10 @@ interface OwnProps {
   route?: string
   listID?: string
   isDarkMode?: boolean
+  captchaOK: boolean
 }
+
+const NEXT_PUBLIC_RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
 
 const blankForm = { email: "", fullName: "", list: "", mielpoto: "" }
 
@@ -62,10 +65,11 @@ export default React.memo(function EmailForm({
   const inputTheme = isDarkMode ? styles.inputDarkMode : styles.inputLightMode
   const { isMobile } = useScreenSize()
   const { t } = useTranslation(NameSpaces.common)
+  const recaptchaRef = React.createRef<ReCAPTCHA>()
 
   return (
     <Form route={route} blankForm={{ ...blankForm, list: listID }} validateWith={validateFields}>
-      {({ formState, onInput, onSubmit }) => {
+      {({ formState, onInput, onSubmit, onCaptcha }) => {
         const borderStyle = emailErrorStyle(formState.errors)
         const hasError = !!formState.apiError || !!formState.errors.length
         const errorKey = formState.apiError || ErrorKeys.email
@@ -109,7 +113,12 @@ export default React.memo(function EmailForm({
                   <ErrorDisplay isShowing={hasError} field={errorKey} />
                 </div>
               )}
-              <ReCAPTCHA sitekey={"6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"} size="invisible" />
+              <ReCAPTCHA
+                sitekey={NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                size={"invisible"}
+                ref={recaptchaRef}
+                onChange={onCaptcha}
+              />
               <SubmitButton
                 isLoading={formState.isLoading}
                 onPress={onSubmit}
