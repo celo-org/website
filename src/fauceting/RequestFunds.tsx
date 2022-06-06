@@ -72,7 +72,6 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
       this.setState({ requestState: RequestState.Invalid })
       return
     }
-
     const res = await this.startRequest()
     const { status, key } = await res.json()
 
@@ -84,6 +83,7 @@ class RequestFunds extends React.PureComponent<Props & I18nProps, State> {
   }
 
   startRequest = () => {
+    debugger
     this.setState({ requestState: RequestState.Working })
     return send(
       this.state.beneficiary,

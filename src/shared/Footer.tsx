@@ -168,7 +168,12 @@ export default function Footer({ hideForm, darkMode }: Props) {
               alt={t("footer.emailIconAlt")}
             />
             <p css={receiveUpdatesCss}>{t("receiveUpdates")}</p>
-            <EmailForm submitText={t("signUp")} route={"/contacts"} isDarkMode={false} />
+            <EmailForm
+              submitText={t("signUp")}
+              route={"/contacts"}
+              isDarkMode={false}
+              captchaOK={false}
+            />
           </div>
         </GridRow>
       )}

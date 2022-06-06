@@ -8,7 +8,6 @@ interface State {
   form: FormState
   errors: string[]
   apiError?: ErrorKeys
-  //newly added by henrynunez112/formBots
   captchaOK?: boolean
 }
 
@@ -68,6 +67,18 @@ export default class Form extends React.Component<Props, State> {
     })
   }
 
+  onCaptcha = (value: string | null) => {
+    this.setState({ captchaOK: !!value })
+  }
+
+  resetCaptcha = () => {
+    this.recaptchaRef.current.reset()
+  }
+
+  getCaptchaToken = () => {
+    return this.recaptchaRef.current.getValue()
+  }
+
   validates = () => {
     if (!this.props.validateWith) {
       return true
@@ -83,17 +94,6 @@ export default class Form extends React.Component<Props, State> {
     if (this.validates()) {
       return this.postForm()
     }
-  }
-  onCaptcha = (value: string | null) => {
-    this.setState({ captchaOK: !!value })
-  }
-
-  resetCaptcha = () => {
-    this.recaptchaRef.current.reset()
-  }
-
-  getCaptchaToken = () => {
-    return this.recaptchaRef.current.getValue()
   }
 
   form = () => {
