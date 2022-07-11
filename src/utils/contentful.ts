@@ -158,6 +158,7 @@ export interface FormContentType {
   layout?: { grid: string[][] }
   submitText: string
   route: string
+  hubspotFormId: string
 }
 
 export interface EditorialType {
