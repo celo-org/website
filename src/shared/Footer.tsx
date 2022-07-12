@@ -1,6 +1,5 @@
 import * as React from "react"
 import { css } from "@emotion/react"
-import EmailForm from "src/forms/EmailForm"
 import { NameSpaces, Trans, useTranslation } from "src/i18n"
 import Discord from "src/icons/Discord"
 import Discourse from "src/icons/Discourse"
@@ -31,6 +30,7 @@ import {
   standardStyles,
   WHEN_DESKTOP,
 } from "src/estyles"
+import HubspotForm from "src/contentful/grid2-cells/HubspotForm"
 
 const MENU = [
   menu.HOME,
@@ -168,7 +168,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
               alt={t("footer.emailIconAlt")}
             />
             <p css={receiveUpdatesCss}>{t("receiveUpdates")}</p>
-            <EmailForm submitText={t("signUp")} route={"/contacts"} isDarkMode={false} />
+            <HubspotForm hubspotFormId="b4dd2ae2-68e9-4662-bfd3-b2860162a5aa" />
           </div>
         </GridRow>
       )}
