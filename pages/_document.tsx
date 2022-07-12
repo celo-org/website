@@ -1,5 +1,4 @@
 import Document, { DocumentContext, Head, Main, Html, NextScript } from "next/document"
-import Script from "next/script"
 import * as React from "react"
 import { AppRegistry, I18nManager } from "react-native-web"
 import { setDimensionsForScreen } from "src/layout/setDimensionsForScreen"
@@ -50,7 +49,6 @@ export default class MyDocument extends Document<Props> {
           <link rel="stylesheet" href="/fonts/JostFont.css" type="text/css" />
           <link rel="stylesheet" href="/fonts/EBGaramondFont.css" type="text/css" />
         </Head>
-
         <body>
           <Main />
           <NextScript />

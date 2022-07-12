@@ -16,7 +16,6 @@ import MessageDisplay from "src/forms/eMessageDisplay"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { emailIsValid, urlIsValid } from "src/forms/emailIsValid"
 import { postForm } from "src/forms/postForm"
-import HubspotForm from "./HubspotForm"
 
 const CLEAR_TIME = 1000 * 30
 
@@ -50,9 +49,6 @@ export default function Form(props: FormContentType & Props) {
     })
   }, [props.colSpan, props.layout?.grid])
 
-  if (props.hubspotFormId) {
-    return <HubspotForm hubspotFormId={props.hubspotFormId} />
-  }
   return (
     <form action={props.route} method="post" css={styles} onSubmit={handleSubmit(onSubmit)}>
       <input type={"text"} css={honeypotCss} {...register("mielpoto")} />
