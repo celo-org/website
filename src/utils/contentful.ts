@@ -162,8 +162,8 @@ export interface FormContentType {
 
 export interface HubFormFieldsType {
   hubspotFormId: string
+  darkMode: boolean
 }
-
 export interface EditorialType {
   title: Document
   button: Entry<ContentfulButton>

@@ -53,7 +53,13 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
         // @ts-ignore we are just checking if its there
         if (!!entry.fields.hubspotFormId) {
           const hubFields = entry.fields as HubFormFieldsType
-          return <HubspotForm key={entry.sys.id} hubspotFormId={hubFields.hubspotFormId} />
+          return (
+            <HubspotForm
+              key={entry.sys.id}
+              hubspotFormId={hubFields.hubspotFormId}
+              darkMode={darkMode}
+            />
+          )
         }
         const formFields = entry.fields as FormContentType
         return (

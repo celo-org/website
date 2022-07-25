@@ -3,13 +3,6 @@ import { Image, ImageStyle, StyleSheet, Text, TextStyle, View } from "react-nati
 import ah from "src/community/ah-logo.png"
 import polychain from "src/community/polychain-logo.png"
 import { H2 } from "src/fonts/Fonts"
-import { ErrorDisplay, ErrorKeys } from "src/forms/ErrorDisplay"
-import FormContainer from "src/forms/Form"
-import { emailIsValid, hasField } from "src/forms/emailIsValid"
-import { Form } from "src/forms/FormComponents"
-import { LabeledInput } from "src/forms/LabeledInput"
-import SubmitButton from "src/forms/SubmitButton"
-import SuccessDisplay from "src/forms/SuccessDisplay"
 import { I18nProps, NameSpaces, withNamespaces } from "src/i18n"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { ScreenProps, ScreenSizes, withScreenSize } from "src/layout/ScreenSize"
@@ -19,16 +12,8 @@ import menuItems, { hashNav } from "src/shared/menu-items"
 import Navigation, { NavigationTheme } from "src/shared/Navigation"
 import { fonts, standardStyles, textStyles } from "src/styles"
 import { colors } from "src/colors"
-import {
-  Application,
-  ApplicationFields,
-  ApplicationKeys,
-  Recommendation,
-  RecommendationFields,
-  RecommendationKeys,
-  Tables,
-} from "../../fullstack/EcoFundFields"
-import { honeypotCss } from "src/estyles"
+import { Tables } from "../../fullstack/EcoFundFields"
+import HubspotForm from "src/contentful/grid2-cells/HubspotForm"
 
 interface State {
   table: Tables
@@ -118,164 +103,20 @@ class EcoFund extends React.PureComponent<I18nProps & ScreenProps, State> {
             />
           </View>
           <View style={standardStyles.elementalMarginTop}>
-            <View
-              style={[
-                styles.formContainer,
-                this.state.table !== Tables.Applicants && styles.hidden,
-              ]}
-            >
-              <FormContainer
-                key={Tables.Applicants}
-                route={`/api/ecosystem/${Tables.Applicants}`}
-                // @ts-ignore
-                blankForm={blankApplicationForm}
-                validateWith={invalidApplicationFields}
-              >
-                {({ onSubmit, onInput, formState }) => (
-                  <Form>
-                    <div css={honeypotCss}>
-                      <LabeledInput
-                        key={"mielpoto"}
-                        label={"Account"}
-                        value={formState.form["mielpoto"]}
-                        name={"mielpoto"}
-                        onInput={onInput}
-                      />
-                    </div>
-                    {ApplicationKeys.map((key) => (
-                      <LabeledInput
-                        key={key}
-                        displayErrorAs={
-                          key === "founderEmail" || key === "coFounderEmail"
-                            ? ErrorKeys.email
-                            : undefined
-                        }
-                        label={ApplicationFields[key]}
-                        value={formState.form[key]}
-                        name={key}
-                        multiline={key === "product"}
-                        onInput={onInput}
-                        allErrors={formState.errors}
-                      />
-                    ))}
-                    <SubmitButton
-                      isLoading={formState.isLoading}
-                      text={t("apply")}
-                      onPress={onSubmit}
-                      size={SIZE.big}
-                      style={standardStyles.elementalMarginBottom}
-                      align={"flex-start"}
-                    />
-                    <SuccessDisplay
-                      isShowing={formState.isComplete}
-                      message={t("common:applicationSubmitted")}
-                    />
-                    <ErrorDisplay isShowing={!!formState.apiError} field={formState.apiError} />
-                  </Form>
-                )}
-              </FormContainer>
-            </View>
-            <View
-              style={[
-                styles.formContainer,
-                this.state.table !== Tables.Recommendations && styles.hidden,
-                styles.shorterForm,
-              ]}
-            >
-              <FormContainer
-                key={Tables.Recommendations}
-                route={`/api/ecosystem/${Tables.Recommendations}`}
-                // @ts-ignore
-                blankForm={blankRecForm}
-                validateWith={invalidRecFields}
-              >
-                {({ onSubmit: onSubmit, onInput, formState }) => (
-                  <Form>
-                    <div css={honeypotCss}>
-                      <LabeledInput
-                        key={"mielpoto"}
-                        label={"Account"}
-                        value={formState.form["mielpoto"]}
-                        name={"mielpoto"}
-                        onInput={onInput}
-                      />
-                    </div>
-                    {RecommendationKeys.map((key) => (
-                      <LabeledInput
-                        key={key}
-                        displayErrorAs={key === "founderEmail" ? ErrorKeys.email : undefined}
-                        label={RecommendationFields[key]}
-                        value={formState.form[key]}
-                        name={key}
-                        multiline={key === "why"}
-                        onInput={onInput}
-                        allErrors={formState.errors}
-                      />
-                    ))}
-                    <SubmitButton
-                      isLoading={formState.isLoading}
-                      text={t("recommend")}
-                      onPress={onSubmit}
-                      style={standardStyles.elementalMarginBottom}
-                      size={SIZE.big}
-                      align={"flex-start"}
-                    />
-                    <SuccessDisplay
-                      isShowing={formState.isComplete}
-                      message={t("recommendationSubmitted")}
-                    />
-                    <ErrorDisplay isShowing={!!formState.apiError} field={formState.apiError} />
-                  </Form>
-                )}
-              </FormContainer>
+            <View style={styles.formContainer}>
+              <HubspotForm
+                hubspotFormId={
+                  this.state.table === Tables.Recommendations
+                    ? "107d2cce-2aba-4bf5-b7f2-001b1ccb3998"
+                    : "63be4de6-9311-444b-b3ab-f1b50b46e10d"
+                }
+              />
             </View>
           </View>
         </Cell>
       </GridRow>
     )
   }
-}
-
-const blankRecForm: Recommendation = {
-  org: "",
-  email: "",
-  founderEmail: "",
-  founderName: "",
-  why: "",
-}
-
-function invalidRecFields(fields: Record<keyof Recommendation, string>) {
-  return Object.keys(fields).filter((key: keyof Recommendation) => {
-    return key === "founderEmail" || key === "email"
-      ? !emailIsValid(fields[key])
-      : !hasField(fields[key])
-  })
-}
-
-const blankApplicationForm: Application = {
-  org: "",
-  url: "",
-  product: "",
-  about: "",
-  founderEmail: "",
-  coFounderEmail: "",
-  video: "",
-}
-
-function invalidApplicationFields(fields: Record<keyof Application, string>) {
-  return Object.keys(fields).filter((key) => {
-    if (key === "founderEmail") {
-      return !emailIsValid(fields[key])
-    } else if (key === "coFounderEmail") {
-      return fields.coFounderEmail.length > 0 ? !emailIsValid(fields[key]) : false
-    } else if (key === "video") {
-      return false
-    } else if (key === "mielpoto") {
-      return false
-    } else {
-      return !hasField(fields[key])
-    }
-  })
 }
 
 export default withScreenSize(withNamespaces(NameSpaces.community)(EcoFund))
