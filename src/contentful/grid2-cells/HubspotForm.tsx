@@ -62,7 +62,7 @@ const style = css({
       backgroundColor: colors.primaryPress,
     },
   }),
-  ul: { "list-style-type": "none" },
+  ul: { listStyleType: "none" },
   ".hs-error-msg": errorStyle,
   ".legal-consent-container": fonts.legal,
   a: { color: colors.greenUI },
