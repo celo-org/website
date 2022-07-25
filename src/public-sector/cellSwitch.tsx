@@ -10,6 +10,7 @@ import {
   RoledexContentType,
   PlaylistContentType,
   FormContentType,
+  HubFormFieldsType,
   HeadingContentType,
   PictureType,
   IframeContentType,
@@ -22,6 +23,7 @@ import * as React from "react"
 import Picture from "./Picture"
 import Editorial from "src/contentful/grid2-cells/Editorial"
 import Timeline from "src/home/Timeline"
+import HubspotForm from "src/contentful/grid2-cells/HubspotForm"
 
 export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
@@ -48,6 +50,11 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
           />
         )
       case "form":
+        // @ts-ignore we are just checking if its there
+        if (!!entry.fields.hubspotFormId) {
+          const hubFields = entry.fields as HubFormFieldsType
+          return <HubspotForm key={entry.sys.id} hubspotFormId={hubFields.hubspotFormId} />
+        }
         const formFields = entry.fields as FormContentType
         return (
           <Form

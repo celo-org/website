@@ -1,10 +1,7 @@
 import Script from "next/script"
+import { HubFormFieldsType } from "src/utils/contentful"
 
-interface Props {
-  hubspotFormId: string
-}
-
-export default function HubspotForm({ hubspotFormId }: Props) {
+export default function HubspotForm({ hubspotFormId }: HubFormFieldsType) {
   const target = `form-${hubspotFormId}`
 
   return (

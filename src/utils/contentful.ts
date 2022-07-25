@@ -160,6 +160,10 @@ export interface FormContentType {
   route: string
 }
 
+export interface HubFormFieldsType {
+  hubspotFormId: string
+}
+
 export interface EditorialType {
   title: Document
   button: Entry<ContentfulButton>
@@ -223,6 +227,7 @@ export interface IframeContentType {
 export type CellContentType =
   | BlurbProps
   | FormContentType
+  | HubFormFieldsType
   | HeadingContentType
   | RoledexContentType
   | PlaylistContentType
