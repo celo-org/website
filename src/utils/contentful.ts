@@ -144,22 +144,6 @@ export interface ToggleBlurbType {
 
 export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
 
-interface FieldContentType {
-  name: string
-  placeholder?: string
-  label?: string
-  required?: boolean
-  type?: InputTypes
-}
-
-export interface FormContentType {
-  fields: Entry<FieldContentType>[]
-  colSpan: number
-  layout?: { grid: string[][] }
-  submitText: string
-  route: string
-}
-
 export interface HubFormFieldsType {
   hubspotFormId: string
   darkMode?: boolean
@@ -226,7 +210,6 @@ export interface IframeContentType {
 
 export type CellContentType =
   | BlurbProps
-  | FormContentType
   | HubFormFieldsType
   | HeadingContentType
   | RoledexContentType

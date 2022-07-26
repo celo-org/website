@@ -9,7 +9,6 @@ import {
   FreeContentType,
   RoledexContentType,
   PlaylistContentType,
-  FormContentType,
   HubFormFieldsType,
   HeadingContentType,
   PictureType,
@@ -17,7 +16,6 @@ import {
   EditorialType,
   ToggleBlurbType,
 } from "src/utils/contentful"
-import Form from "src/contentful/grid2-cells/Form"
 import { Heading } from "src/contentful/grid2-cells/Heading"
 import * as React from "react"
 import Picture from "./Picture"
@@ -61,18 +59,6 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             />
           )
         }
-        const formFields = entry.fields as FormContentType
-        return (
-          <Form
-            key={entry.sys.id}
-            route={formFields.route}
-            layout={formFields.layout}
-            fields={formFields.fields}
-            colSpan={formFields.colSpan}
-            submitText={formFields.submitText}
-            darkMode={darkMode}
-          />
-        )
       case "proposition":
         const blurbProp = entry.fields as BlurbProps
         return (
