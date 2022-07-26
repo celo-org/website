@@ -7,18 +7,17 @@ import { aguaComunidad, allianceOG, fences } from "src/alliance/images"
 import Members from "src/alliance/Members"
 import PinWheel from "src/alliance/PinWheel"
 import WheelWithForm from "src/alliance/RisingPinWheelForm"
-import SignupForm from "src/alliance/SignupForm"
 import ArticleData from "src/community/connect/ArticleData"
 import { H4 } from "src/fonts/Fonts"
 import OpenGraph from "src/header/OpenGraph"
 import { NameSpaces, useTranslation } from "src/i18n"
 import { Cell, GridRow, Spans } from "src/layout/GridRow"
 import { useScreenSize } from "src/layout/ScreenSize"
-import Fade from "src/shared/AwesomeFade"
 import BeautifulQuote from "src/shared/BeautifulQuote"
 import menuItems from "src/shared/menu-items"
 import { standardStyles, textStyles } from "src/styles"
 import { colors } from "src/colors"
+import HubspotForm from "src/contentful/grid2-cells/HubspotForm"
 
 export default function Main() {
   const { t } = useTranslation(NameSpaces.alliance)
@@ -60,10 +59,8 @@ export default function Main() {
           allStyle={standardStyles.centered}
         >
           <Cell span={Spans.half}>
-            <Fade>
-              <CollectiveMission />
-              <SignupForm />
-            </Fade>
+            <CollectiveMission />
+            <HubspotForm hubspotFormId="5fa6fcf5-ad5b-40e0-8b61-76f0c5e6f93b" darkMode={true} />Í{" "}
           </Cell>
         </GridRow>
       </View>

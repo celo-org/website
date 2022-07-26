@@ -12,7 +12,6 @@ import {
   SectionType,
   CoverContentType,
   LogoGallery,
-  FormContentType,
 } from "src/utils/contentful"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE } from "src/estyles"
 import { GridRow } from "src/layout/Grid2"
@@ -76,14 +75,7 @@ export default function CommonPage(props: Props) {
 const rootCss = css(flex, {})
 
 export function pageSwitch(
-  section: Entry<
-    | GridRowContentType
-    | SectionType
-    | CoverContentType
-    | FormContentType
-    | HorizontalType
-    | LogoGallery
-  >
+  section: Entry<GridRowContentType | SectionType | CoverContentType | HorizontalType | LogoGallery>
 ) {
   switch (section.sys.contentType.sys.id) {
     case "cover":

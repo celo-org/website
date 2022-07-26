@@ -113,8 +113,8 @@ export const labelStyle = css(jost, flex, {
   fontWeight: 500,
   fontSize: 16,
   lineHeight: "18px",
-  marginTop: 8,
-  marginBottom: 16,
+  marginTop: 12,
+  marginBottom: 8,
 })
 
 export const inputStyle = css(flex, fonts.body, {

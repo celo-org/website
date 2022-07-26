@@ -182,6 +182,124 @@ Array [
   margin-bottom: 10px;
 }
 
+.emotion-5 input,
+.emotion-5 textarea {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(61, 61, 61, 0.2);
+  width: 100%;
+  margin: 4px;
+  margin-bottom: 8px;
+  outline-width: 0;
+}
+
+.emotion-5 input:focus,
+.emotion-5 textarea:focus {
+  border-color: #35D07F;
+}
+
+.emotion-5 input[type='checkbox'] {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+.emotion-5 label {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #81868B;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-5 input.hs-button {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #35D07F;
+  color: #FFFFFF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+
+.emotion-5 input.hs-button:hover {
+  background-color: #4CDD91;
+}
+
+.emotion-5 input.hs-button:active {
+  background-color: #0FB972;
+}
+
+.emotion-5 ul {
+  list-style-type: none;
+}
+
+.emotion-5 .hs-error-msg {
+  color: #FF7F6D;
+}
+
+.emotion-5 .legal-consent-container {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+}
+
+.emotion-5 a {
+  color: #1AB775;
+}
+
 <section
     className="emotion-0"
   >
@@ -204,6 +322,7 @@ Array [
           Receive the latest updates to your inbox
         </p>
         <span
+          className="emotion-5"
           id="form-b4dd2ae2-68e9-4662-bfd3-b2860162a5aa"
         />
       </div>
