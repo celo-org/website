@@ -34,7 +34,7 @@
     "@contentful/rich-text-react-renderer": "^15.11.1",
     "@emotion/react": "^11.7.1",
     "@hubspot/api-client": "^5.0.0",
-    "@odnh/use-swipe": "^1.0.0",
+    "@odnh/use-swipe": "^1.2.2",
     "@sentry/browser": "^6.16.1",
     "@sentry/node": "^6.16.1",
     "airtable": "^0.11.1",
