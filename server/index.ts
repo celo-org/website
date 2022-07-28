@@ -6,7 +6,6 @@ import expressEnforcesSsl from "express-enforces-ssl"
 import helmet from "helmet"
 import next from "next"
 import path from "path"
-import { initSentryServer } from "../server/sentry"
 import addToCRM, { ListID } from "./addToCRM"
 import latestAnnouncements from "./Announcement"
 import rateLimit from "./rateLimit"
@@ -277,7 +276,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   })
   server.use((req, res) => handle(req, res))
 
-  await initSentryServer()
   await server.listen(port)
 
   // tslint:disable-next-line
