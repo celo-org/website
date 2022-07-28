@@ -4,7 +4,6 @@ import { Dimensions, Image, StyleSheet, Text, TouchableHighlight, View } from "r
 import AspectRatio from "src/shared/AspectRatio"
 import EX from "src/shared/EX"
 import PlayCircle from "src/shared/PlayCircle"
-import { getSentry } from "src/utils/sentry"
 interface ModalInterface {
   isOpen: boolean
   onRequestClose: () => void
@@ -154,15 +153,7 @@ export default class VideoModal extends React.Component<Props, State> {
 }
 
 async function onReady({ target }) {
-  const Sentry = await getSentry()
-  try {
-    Sentry.addBreadcrumb({
-      message: "Playing About Page Video",
-    })
-    target.playVideo()
-  } catch (e) {
-    Sentry.captureException(e)
-  }
+  target.playVideo()
 }
 
 const styles = StyleSheet.create({

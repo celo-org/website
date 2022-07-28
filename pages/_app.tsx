@@ -10,7 +10,6 @@ import Footer from "src/shared/Footer"
 import pagePaths from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { fonts, textStyles } from "src/estyles"
-import { getSentry, initSentry } from "src/utils/sentry"
 import { appWithTranslation } from "src/i18n"
 import { flex } from "src/estyles"
 const SECOND = 1000
@@ -31,7 +30,6 @@ class MyApp extends App {
     this.setState({ showConsent: false })
     const agree = await import("src/analytics/analytics").then((mod) => mod.agree)
     await agree()
-    await initSentry()
   }
 
   onDisagree = async () => {
@@ -54,9 +52,6 @@ class MyApp extends App {
 
     await analyticsModule.initializeAnalytics()
     await analyticsModule.default.page()
-    if (await analyticsModule.canTrack()) {
-      await initSentry()
-    }
 
     this.props.router.events.on("routeChangeComplete", async () => {
       await analyticsModule.default.page()
@@ -83,14 +78,6 @@ class MyApp extends App {
 
   isBrand = () => {
     return this.props.router.asPath.startsWith("/experience")
-  }
-
-  componentDidCatch = async (error: Error, info: React.ErrorInfo) => {
-    const Sentry = await getSentry()
-    Sentry.withScope((scope) => {
-      scope.setExtras(info)
-      Sentry.captureException(error)
-    })
   }
 
   render() {

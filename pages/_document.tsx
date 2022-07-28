@@ -2,7 +2,6 @@ import Document, { DocumentContext, Head, Main, Html, NextScript } from "next/do
 import * as React from "react"
 import { AppRegistry, I18nManager } from "react-native-web"
 import { setDimensionsForScreen } from "src/layout/setDimensionsForScreen"
-import { getSentry } from "src/utils/sentry"
 
 interface NextReq {
   locale: string
@@ -31,11 +30,6 @@ export default class MyDocument extends Document<Props> {
     const { getStyleElement } = AppRegistry.getApplication("Main")
     const page = context.renderPage()
     const styles = [getStyleElement()]
-
-    if (context.err) {
-      const Sentry = await getSentry()
-      Sentry.captureException(context.err)
-    }
 
     return { ...page, locale, styles: React.Children.toArray(styles), pathname: context.pathname }
   }

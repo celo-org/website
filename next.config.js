@@ -54,7 +54,7 @@ module.exports = {
     ]
   },
   // options: {buildId, dev, isServer, defaultLoaders, webpack}   https://nextjs.org/docs#customizing-webpack-config
-  webpack: (config, { isServer }) => {
+  webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
       "react-native$": "react-native-web",
@@ -63,10 +63,6 @@ module.exports = {
       ...config.resolve.fallback,
       http: false, // webpack5 no longer polyfills node packages
       https: false, // network-speed requires this but only on node, in browser it does not so no poly
-    }
-
-    if (!isServer) {
-      config.resolve.alias["@sentry/node"] = "@sentry/browser"
     }
 
     config.module.rules.push({
