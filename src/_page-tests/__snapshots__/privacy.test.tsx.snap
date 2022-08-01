@@ -1055,63 +1055,6 @@ exports[`Privacy renders 1`] = `
             <td
               className="emotion-100"
             >
-              Lever, Inc.
-            </td>
-            <td
-              className="emotion-100"
-            >
-              Applicant Tracking Platform
-            </td>
-            <td
-              className="emotion-100"
-            >
-              United States
-            </td>
-          </tr>
-          <tr
-            className="emotion-95"
-          >
-            <td
-              className="emotion-100"
-            >
-              ActiveCampaign, LLC
-            </td>
-            <td
-              className="emotion-100"
-            >
-              Visitor Tracking and Communication Platform
-            </td>
-            <td
-              className="emotion-100"
-            >
-              United States
-            </td>
-          </tr>
-          <tr
-            className="emotion-95"
-          >
-            <td
-              className="emotion-100"
-            >
-              Mixpanel
-            </td>
-            <td
-              className="emotion-100"
-            >
-              Site Visitor Analytics
-            </td>
-            <td
-              className="emotion-100"
-            >
-              United States
-            </td>
-          </tr>
-          <tr
-            className="emotion-95"
-          >
-            <td
-              className="emotion-100"
-            >
               HubSpot, Inc.
             </td>
             <td
@@ -1123,25 +1066,6 @@ exports[`Privacy renders 1`] = `
               className="emotion-100"
             >
               United States
-            </td>
-          </tr>
-          <tr
-            className="emotion-95"
-          >
-            <td
-              className="emotion-100"
-            >
-              ipstack
-            </td>
-            <td
-              className="emotion-100"
-            >
-              IP Address Geolocation
-            </td>
-            <td
-              className="emotion-100"
-            >
-              Austria
             </td>
           </tr>
         </table>
