@@ -2,7 +2,6 @@ import firebase from "firebase/compat/app"
 import "firebase/compat/auth"
 import "firebase/compat/database"
 import getConfig from "next/config"
-import Sentry from "../server/sentry"
 import {
   Address,
   E164Number,
@@ -27,10 +26,6 @@ async function getFirebase() {
       // Source: https://firebase.google.com/docs/auth
       await firebase.auth().signInWithEmailAndPassword(loginUsername, loginPassword)
     } catch (e) {
-      Sentry.withScope((scope) => {
-        scope.setTag("Service", "Firebase")
-        Sentry.captureException(e)
-      })
       console.error(`Fail to login into Firebase: ${e}`)
       throw e
     }
@@ -62,11 +57,6 @@ export async function sendRequest(
     const ref: firebase.database.Reference = await db.ref(`${NETWORK}/requests`).push(newRequest)
     return ref.key
   } catch (e) {
-    Sentry.withScope((scope) => {
-      scope.setTag("Service", "Firebase")
-      Sentry.captureException(e)
-    })
-
     console.error(`Error while sendRequest: ${e}`)
     throw e
   }

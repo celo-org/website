@@ -1,7 +1,6 @@
 import ArticleProps from "fullstack/ArticleProps"
 import * as React from "react"
 import ArticlesSection from "src/community/connect/ArticlesSection"
-import { getSentry } from "src/utils/sentry"
 
 const BASE_PATH = "/api/blog"
 
@@ -32,8 +31,6 @@ export default class ArticleData extends React.PureComponent<Props, State> {
       this.setState({ articles, loaded: true })
     } catch (e) {
       this.setState({ errored: true })
-      const Sentry = await getSentry()
-      Sentry.captureMessage(`ArticleData / ${e.message}`, "error")
     }
   }
 

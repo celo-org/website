@@ -202,11 +202,11 @@ exports[`Navigation renders 1`] = `
   opacity: 1;
 }
 
-.emotion-27 {
+.emotion-30 {
   padding-left: 8px;
 }
 
-.emotion-28 {
+.emotion-31 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -232,7 +232,7 @@ exports[`Navigation renders 1`] = `
   margin-right: 10px;
 }
 
-.emotion-32 {
+.emotion-35 {
   position: fixed;
   top: 10px;
   right: 5px;
@@ -245,12 +245,12 @@ exports[`Navigation renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-32 {
+  .emotion-35 {
     display: none;
   }
 }
 
-.emotion-33 {
+.emotion-36 {
   position: relative;
   width: 18px;
   height: 12px;
@@ -260,11 +260,11 @@ exports[`Navigation renders 1`] = `
   transition-duration: 30ms;
 }
 
-.emotion-33:active {
+.emotion-36:active {
   opacity: 0.75;
 }
 
-.emotion-34 {
+.emotion-37 {
   transition-property: transform color;
   transition-duration: 160ms;
   position: absolute;
@@ -280,7 +280,7 @@ exports[`Navigation renders 1`] = `
   transform: translateY(-5px);
 }
 
-.emotion-35 {
+.emotion-38 {
   transition-property: transform color;
   transition-duration: 160ms;
   position: absolute;
@@ -292,7 +292,7 @@ exports[`Navigation renders 1`] = `
   background-color: #111214;
 }
 
-.emotion-36 {
+.emotion-39 {
   transition-property: transform color;
   transition-duration: 160ms;
   position: absolute;
@@ -458,6 +458,22 @@ exports[`Navigation renders 1`] = `
         >
           <a
             className="emotion-8"
+            href="/enterprise"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Enterprise
+          </a>
+        </div>
+      </div>
+      <div
+        className="emotion-6"
+      >
+        <div
+          className="emotion-7"
+        >
+          <a
+            className="emotion-8"
             href="https://medium.com/CeloHQ"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -466,7 +482,7 @@ exports[`Navigation renders 1`] = `
           >
             
             <span
-              className="emotion-27"
+              className="emotion-30"
             >
               <svg
                 fill="none"
@@ -487,7 +503,7 @@ exports[`Navigation renders 1`] = `
         </div>
       </div>
       <div
-        className="emotion-28"
+        className="emotion-31"
       >
         <div
           className="emotion-7"
@@ -502,7 +518,7 @@ exports[`Navigation renders 1`] = `
           >
             
             <span
-              className="emotion-27"
+              className="emotion-30"
             >
               <svg
                 fill="none"
@@ -527,20 +543,20 @@ exports[`Navigation renders 1`] = `
     </nav>
   </div>
   <div
-    className="emotion-32"
+    className="emotion-35"
   >
     <div
-      className="emotion-33"
+      className="emotion-36"
       onClick={[Function]}
     >
       <div
-        className="emotion-34"
+        className="emotion-37"
       />
       <div
-        className="emotion-35"
+        className="emotion-38"
       />
       <div
-        className="emotion-36"
+        className="emotion-39"
       />
     </div>
   </div>

@@ -205,29 +205,9 @@ export default class Privacy extends React.Component {
               <TD>United States</TD>
             </TR>
             <TR>
-              <TD>Lever, Inc.</TD>
-              <TD>Applicant Tracking Platform</TD>
-              <TD>United States</TD>
-            </TR>
-            <TR>
-              <TD>ActiveCampaign, LLC</TD>
-              <TD>Visitor Tracking and Communication Platform</TD>
-              <TD>United States</TD>
-            </TR>
-            <TR>
-              <TD>Mixpanel</TD>
-              <TD>Site Visitor Analytics</TD>
-              <TD>United States</TD>
-            </TR>
-            <TR>
               <TD>HubSpot, Inc.</TD>
               <TD>CRM Service</TD>
               <TD>United States</TD>
-            </TR>
-            <TR>
-              <TD>ipstack</TD>
-              <TD>IP Address Geolocation</TD>
-              <TD>Austria</TD>
             </TR>
           </TABLE>
         </SideTitledSection>

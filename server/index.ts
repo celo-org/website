@@ -6,7 +6,6 @@ import expressEnforcesSsl from "express-enforces-ssl"
 import helmet from "helmet"
 import next from "next"
 import path from "path"
-import { initSentryServer } from "../server/sentry"
 import addToCRM, { ListID } from "./addToCRM"
 import latestAnnouncements from "./Announcement"
 import rateLimit from "./rateLimit"
@@ -130,13 +129,23 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
     res.redirect("/papers/celo-wp-simplified-chinese.pdf")
   })
 
-  server.get("papers/annual-reports/2020", (_, res) => {
-    res.redirect("papers/celo-foundation-2020-report.pdf")
+  server.get("/papers/annual-reports/2020", (_, res) => {
+    res.redirect("/papers/celo-foundation-2020-report.pdf")
+  })
+
+  server.get("/papers/annual-reports/2021", (_, res) => {
+    res.redirect("/papers/Celo_Foundation_Annual_Report_2021.pdf")
   })
   ;["/brand", "/grants"].forEach((slug) => {
     server.get(slug, (_, res) => {
       res.redirect(`/experience${slug}`)
     })
+  })
+
+  server.get("/papers/voluntary-carbon-credits", (_, res) => {
+    res.redirect(
+      "/papers/Scaling_Voluntary_Carbon_Markets_Through_Open_Blockchain_Platforms_Whitepaper.pdf"
+    )
   })
 
   server.get("/connect", (_, res) => {
@@ -267,7 +276,6 @@ function wwwRedirect(req: express.Request, res: express.Response, nextAction: ()
   })
   server.use((req, res) => handle(req, res))
 
-  await initSentryServer()
   await server.listen(port)
 
   // tslint:disable-next-line

@@ -1,6 +1,7 @@
 import { Entry } from "contentful"
 import { FreeContent } from "src/contentful/grid2-cells/FreeContent"
 import Roledex from "src/contentful/grid2-cells/Roledex"
+import ToggleBlurb from "src/contentful/grid2-cells/ToggleBlurb"
 import PlayList from "src/contentful/grid2-cells/Playlist"
 import Blurb, { Props as BlurbProps } from "src/contentful/grid2-cells/Blurb"
 import {
@@ -8,18 +9,19 @@ import {
   FreeContentType,
   RoledexContentType,
   PlaylistContentType,
-  FormContentType,
+  HubFormFieldsType,
   HeadingContentType,
   PictureType,
   IframeContentType,
   EditorialType,
+  ToggleBlurbType,
 } from "src/utils/contentful"
-import Form from "src/contentful/grid2-cells/Form"
 import { Heading } from "src/contentful/grid2-cells/Heading"
 import * as React from "react"
 import Picture from "./Picture"
 import Editorial from "src/contentful/grid2-cells/Editorial"
 import Timeline from "src/home/Timeline"
+import HubspotForm from "src/contentful/grid2-cells/HubspotForm"
 
 export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, columns?: number) {
   if (entry) {
@@ -46,18 +48,17 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
           />
         )
       case "form":
-        const formFields = entry.fields as FormContentType
-        return (
-          <Form
-            key={entry.sys.id}
-            route={formFields.route}
-            layout={formFields.layout}
-            fields={formFields.fields}
-            colSpan={formFields.colSpan}
-            submitText={formFields.submitText}
-            darkMode={darkMode}
-          />
-        )
+        // @ts-ignore we are just checking if its there
+        if (!!entry.fields.hubspotFormId) {
+          const hubFields = entry.fields as HubFormFieldsType
+          return (
+            <HubspotForm
+              key={entry.sys.id}
+              hubspotFormId={hubFields.hubspotFormId}
+              darkMode={darkMode}
+            />
+          )
+        }
       case "proposition":
         const blurbProp = entry.fields as BlurbProps
         return (
@@ -72,6 +73,7 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
             icon={blurbProp.icon}
             isNaturalSize={blurbProp.isNaturalSize}
             newIcon={blurbProp.newIcon}
+            alignProperty={blurbProp.alignProperty}
           />
         )
       case "picture":
@@ -111,6 +113,9 @@ export function cellSwitch(entry: Entry<CellContentType>, darkMode: boolean, col
       case "editorial":
         const editorial = entry.fields as EditorialType
         return <Editorial key={entry.sys.id} {...editorial} darkMode={darkMode} />
+      case "toggleBlurb":
+        const toggle = entry.fields as ToggleBlurbType
+        return <ToggleBlurb key={entry.sys.id} {...toggle} darkMode={darkMode} />
       default:
         console.log("no renderer for", entry.sys.contentType.sys.id)
         return null

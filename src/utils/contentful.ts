@@ -128,24 +128,26 @@ export interface RoledexContentType {
   variant?: "timeline"
 }
 
+export interface ToggleBlurbContentType {
+  title?: string
+  heading?: string
+  body?: Document
+  image?: Asset
+  cssStyle?: CSSObject
+}
+export interface ToggleBlurbType {
+  title: string
+  cards: Entry<ToggleBlurbContentType>[]
+  imageDesktop: Asset
+  darkMode: boolean
+}
+
 export type InputTypes = "tel" | "email" | "multiline" | "url" | "text"
 
-interface FieldContentType {
-  name: string
-  placeholder?: string
-  label?: string
-  required?: boolean
-  type?: InputTypes
+export interface HubFormFieldsType {
+  hubspotFormId: string
+  darkMode?: boolean
 }
-
-export interface FormContentType {
-  fields: Entry<FieldContentType>[]
-  colSpan: number
-  layout?: { grid: string[][] }
-  submitText: string
-  route: string
-}
-
 export interface EditorialType {
   title: Document
   button: Entry<ContentfulButton>
@@ -208,7 +210,7 @@ export interface IframeContentType {
 
 export type CellContentType =
   | BlurbProps
-  | FormContentType
+  | HubFormFieldsType
   | HeadingContentType
   | RoledexContentType
   | PlaylistContentType
@@ -216,6 +218,7 @@ export type CellContentType =
   | FreeContentType
   | IframeContentType
   | EditorialType
+  | ToggleBlurbType
 
 export interface GridRowContentType {
   id: string

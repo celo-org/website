@@ -2,7 +2,6 @@ import { parse, validate } from "fast-xml-parser"
 import { Articles } from "fullstack/ArticleProps"
 import htmlToFormattedText from "html-to-formatted-text"
 import { fetchCached, MINUTE } from "../server/cache"
-import Sentry from "../server/sentry"
 import retryAbortableFetch from "../src/utils/retryAbortableFetch"
 interface JSONRSS {
   rss: {
@@ -100,10 +99,6 @@ export async function getFormattedMediumArticles(tagged?: string): Promise<Artic
     )
     return { articles }
   } catch (e) {
-    Sentry.withScope((scope) => {
-      scope.setTag("Service", "Medium")
-      Sentry.captureException(e)
-    })
     return { articles: [] }
   }
 }

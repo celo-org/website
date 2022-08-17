@@ -19,7 +19,7 @@ import { useScreenSize } from "src/layout/ScreenSize"
 interface Props {
   list: Entry<GalleryItem | HeadingContentType>[]
   cssStyle?: CSSObject
-  formation: "TwoFourTwoRepeat" | "ThreeByFour"
+  formation: "TwoFourTwoRepeat" | "ThreeByFour" | "FourByThreeByFour"
 }
 
 export default function PillGallery(props: Props) {
@@ -81,6 +81,38 @@ export default function PillGallery(props: Props) {
         {props.list.length > 9 && (
           <div css={shiftLeft}>{props.list.slice(9, 12).map(renderLogo)}</div>
         )}
+      </div>
+    )
+  }
+
+  if (props.formation === "FourByThreeByFour") {
+    if (isMobile) {
+      const logos = props.list.filter((item) => item.sys.contentType.sys.id === "logoGalleryItem")
+      const halfPoint = logos.length / 2
+      return (
+        <div css={rootCss}>
+          <div css={css(center2Css)}>{logos.slice(0, halfPoint).map(renderLogo)}</div>
+          <div css={css(center2Css, { marginBottom: 36 })}>
+            {logos.slice(halfPoint, logos.length).map(renderLogo)}
+          </div>
+        </div>
+      )
+    }
+    return (
+      <div css={rootCss}>
+        <div css={css(aroundSpace, { columnGap: 40, padding: 40, margin: 10 })}>
+          <div css={center2Css}>{props.list.slice(0, 2).map(renderLogo)}</div>
+          <div css={center2Css}>{props.list.slice(2, 4).map(renderLogo)}</div>
+        </div>
+        <div css={css({ marginBottom: 0, paddingLeft: 60, paddingRight: 60, margin: 10 })}>
+          <div css={center2Css}>{props.list.slice(4, 8).map(renderLogo)}</div>
+        </div>
+        <div css={css(aroundSpace, { columnGap: 40, padding: 40, margin: 10 })}>
+          <div css={center2Css}>{props.list.slice(8, 10).map(renderLogo)}</div>
+          <div css={css(center2Css, { justifyContent: "space-evenly" })}>
+            {props.list.slice(10, 12).map(renderLogo)}
+          </div>
+        </div>
       </div>
     )
   }
@@ -228,6 +260,7 @@ function getColor(word: string): { backgroundColor: string; color: string } {
       return Rainbow.violet
     case "custody":
     case "infra":
+    case "gaming":
       return Rainbow.red
     case "bridge":
       return Rainbow.orange

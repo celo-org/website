@@ -1,7 +1,6 @@
 import { FieldSet } from "airtable"
 import getConfig from "next/config"
 import airtableInit from "../server/airtable"
-import Sentry from "../server/sentry"
 import { fetchCached, MINUTE } from "./cache"
 
 export interface Fields extends FieldSet {
@@ -29,9 +28,7 @@ export default async function latestAnnouncements(countryCode: string): Promise<
       return censor(announcements, countryCode)
     }
     return announcements
-  } catch (err) {
-    Sentry.captureException(err)
-  }
+  } catch (err) {}
 }
 
 async function fetchAnouncmentRecords() {
