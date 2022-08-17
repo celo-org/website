@@ -182,93 +182,8 @@ Array [
   margin-bottom: 10px;
 }
 
-.emotion-5 {
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: flex-start;
-  align-self: flex-start;
-  padding-left: 8px;
-}
-
-.emotion-6 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 5px 0;
-  height: auto;
-  max-height: 80px;
-  transition-property: max-height;
-  transition-duration: 600ms;
-  max-height: 0;
-}
-
-.emotion-7 {
-  font-weight: normal;
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Jost,futura-pt,futura,sans-serif;
-  font-size: 16px;
-  line-height: 18;
-  font-weight: 500;
-  text-rendering: geometricPrecision;
-  color: #111214;
-  line-height: 18px;
-  transition-property: opacity;
-  transition-duration: 700ms;
-  opacity: 0;
-  color: #FF7F6D;
-  font-weight: 500;
-}
-
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 100%;
-}
-
-@media (max-width: 576px) {
-  .emotion-8 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin: 5px 0px;
-    padding-bottom: 15px;
-  }
-}
-
-.emotion-9 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
-  font-size: 20px;
-  line-height: 28;
-  text-rendering: geometricPrecision;
-  color: #111214;
-  line-height: 28px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 13px;
-  padding-bottom: 15px;
-  border-radius: 3px;
-  border-width: 1px;
-  outline-style: none;
-  border-color: #DDDDDD;
-  color: #111214;
+.emotion-5 input,
+.emotion-5 textarea {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -300,65 +215,89 @@ Array [
   outline-width: 0;
 }
 
-@media (min-width: 576px) {
-  .emotion-9 {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right-width: 0;
-    margin-right: 0;
-    margin-bottom: 4px;
-  }
-}
-
-.emotion-9:focus {
+.emotion-5 input:focus,
+.emotion-5 textarea:focus {
   border-color: #35D07F;
 }
 
-.emotion-10 {
-  -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  transform: scale(0, 0);
-  position: fixed;
+.emotion-5 input[type='checkbox'] {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
 }
 
-.emotion-14 {
-  margin-top: 10px;
-}
-
-.emotion-16 {
-  font-weight: normal;
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
+.emotion-5 label {
   font-family: Jost,futura-pt,futura,sans-serif;
-  font-size: 16px;
-  line-height: 18;
-  font-weight: 500;
-  text-rendering: geometricPrecision;
-  color: #111214;
-  line-height: 18px;
-  transition-property: opacity;
-  transition-duration: 700ms;
-  opacity: 0;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #81868B;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 12px;
+  margin-bottom: 8px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  color: #35D07F;
-  font-weight: 500;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
-.emotion-17 {
-  margin-left: 10px;
+.emotion-5 input.hs-button {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #35D07F;
+  color: #FFFFFF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+
+.emotion-5 input.hs-button:hover {
+  background-color: #4CDD91;
+}
+
+.emotion-5 input.hs-button:active {
+  background-color: #0FB972;
+}
+
+.emotion-5 ul {
+  list-style-type: none;
+}
+
+.emotion-5 .hs-error-msg {
+  color: #FF7F6D;
+}
+
+.emotion-5 .legal-consent-container {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+}
+
+.emotion-5 a {
+  color: #1AB775;
 }
 
 <section
@@ -382,139 +321,10 @@ Array [
         >
           Receive the latest updates to your inbox
         </p>
-        <div
+        <span
           className="emotion-5"
-        >
-          <div
-            aria-hidden={true}
-            aria-live="polite"
-            className="emotion-6"
-          >
-            <p
-              className="emotion-7"
-            >
-              Please enter a valid email
-            </p>
-          </div>
-        </div>
-        <div
-          className="emotion-8"
-        >
-          <input
-            className="emotion-9"
-            name="email"
-            onChange={[Function]}
-            placeholder="Email*"
-            required={true}
-            type="email"
-            value=""
-          />
-          <input
-            className="emotion-10"
-            name="mielpoto"
-            onChange={[Function]}
-            required={true}
-            type="text"
-            value=""
-          />
-          <div
-            className="emotion-11"
-            onClick={[Function]}
-            onMouseDown={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-          >
-            <div
-              className="emotion-12 emotion-13"
-              dir="auto"
-              role="link"
-              style={
-                Object {
-                  "WebkitAlignItems": "center",
-                  "WebkitBoxAlign": "center",
-                  "WebkitBoxFlex": 1,
-                  "WebkitBoxPack": "center",
-                  "WebkitFlexGrow": 1,
-                  "WebkitJustifyContent": "center",
-                  "alignItems": "center",
-                  "backgroundColor": "rgba(53,208,127,1.00)",
-                  "borderBottomColor": "rgba(53,208,127,1.00)",
-                  "borderBottomLeftRadius": "0px",
-                  "borderBottomRightRadius": "3px",
-                  "borderBottomWidth": "1px",
-                  "borderLeftColor": "rgba(53,208,127,1.00)",
-                  "borderLeftWidth": "1px",
-                  "borderRightColor": "rgba(53,208,127,1.00)",
-                  "borderRightWidth": "1px",
-                  "borderTopColor": "rgba(53,208,127,1.00)",
-                  "borderTopLeftRadius": "0px",
-                  "borderTopRightRadius": "3px",
-                  "borderTopWidth": "1px",
-                  "color": "rgba(255,255,255,1.00)",
-                  "cursor": "pointer",
-                  "display": "inline-flex",
-                  "flexGrow": 1,
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                  "fontSize": "16px",
-                  "fontWeight": "500",
-                  "justifyContent": "center",
-                  "lineHeight": "16px",
-                  "marginBottom": "5px",
-                  "marginTop": "5px",
-                  "maxHeight": "60px",
-                  "minWidth": "100px",
-                  "msFlexAlign": "center",
-                  "msFlexPack": "center",
-                  "msFlexPositive": 1,
-                  "opacity": 1,
-                  "paddingBottom": "15px",
-                  "paddingLeft": "40px",
-                  "paddingRight": "40px",
-                  "paddingTop": "15px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                  "width": "100%",
-                }
-              }
-              tabIndex="0"
-            >
-              Sign Up
-            </div>
-          </div>
-        </div>
-        <div
-          className="emotion-14"
-        >
-          <div
-            aria-hidden={true}
-            aria-live="polite"
-            className="emotion-6"
-          >
-            <p
-              className="emotion-16"
-            >
-              <svg
-                fill="none"
-                height={16}
-                viewBox="0 0 11 9"
-                width={16}
-              >
-                <path
-                  clipRule="evenodd"
-                  d="M10.7932 1.85263L3.96211 8.64309L0.180176 4.88366L1.85967 3.19411L3.96211 5.28404L9.11373 0.163086L10.7932 1.85263Z"
-                  fill="#35D07F"
-                  fillRule="evenodd"
-                />
-              </svg>
-              <span
-                className="emotion-17"
-              >
-                Submitted
-              </span>
-            </p>
-          </div>
-        </div>
+          id="form-b4dd2ae2-68e9-4662-bfd3-b2860162a5aa"
+        />
       </div>
     </div>
   </section>,
@@ -1070,7 +880,7 @@ Array [
               >
                 <a
                   className="emotion-14"
-                  href="/annual-reports/2020"
+                  href="/papers/annual-reports/2021"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"

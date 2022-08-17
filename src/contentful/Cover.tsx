@@ -214,6 +214,7 @@ const contentCss = css(flex, {
 const linkAreaCss = css(flexRow, {
   [WHEN_MOBILE]: {
     flexDirection: "column",
+    alignItems: "center",
     "& > div": {
       marginBottom: 24,
     },

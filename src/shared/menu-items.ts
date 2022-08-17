@@ -84,6 +84,11 @@ export const pagePaths = {
     link: "/dapps",
     isDark: true,
   },
+  ENTERPRISE: {
+    name: "Enterprise",
+    link: "/enterprise",
+    isDark: true,
+  },
   FLOWERS: {
     name: "For Value Flowers",
     link: "/flowers",
@@ -181,6 +186,7 @@ export const MAIN_MENU = [
   pagePaths.ECOSYSTEM,
   pagePaths.ALLIANCE_COLLECTIVE,
   pagePaths.PUBLIC_SECTOR,
+  pagePaths.ENTERPRISE,
 ]
 
 // TODO: Temporary link to the master branch documentation for 'sdkDocs' and 'sdkTutorial'

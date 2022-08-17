@@ -15,6 +15,8 @@ export enum ListID {
   FundApplicants = "117",
   PublicSector = "119",
   CeloConnect = "142",
+  Enterprise = "124",
+  ConnectTheWorld = "242",
 }
 
 function convert(formContact: CRMInterface): HubSpotContact {
@@ -86,7 +88,6 @@ export async function addManyCRM(
       list,
       contacts.map((contact) => contact.email)
     )
-
     return Promise.all(
       modifiedContacts.map((contact) =>
         linkContactToCompany(hubSpotClient, {
@@ -125,7 +126,10 @@ function CRMError(e) {
   }
 }
 
-async function batchCreateOrUpdate(hubSpotClient: hubspot.Client, contacts: HubSpotContact[]) {
+async function batchCreateOrUpdate(
+  hubSpotClient: hubspot.Client,
+  contacts: HubSpotContact[]
+): Promise<hubspot.contactsModels.SimplePublicObject[]> {
   const BatchReadInputSimplePublicObjectId = {
     properties: ["email"],
     idProperty: "email",
@@ -176,7 +180,7 @@ async function batchCreateOrUpdate(hubSpotClient: hubspot.Client, contacts: HubS
   if (results.length === 2) {
     return [...results[0].body.results, ...results[1].body.results]
   } else {
-    results[0].body.results
+    return results[0].body.results
   }
 }
 

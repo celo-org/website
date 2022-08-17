@@ -20,7 +20,6 @@ export default class Chevron extends React.PureComponent<Props> {
     size: 14,
     direction: Direction.right,
   }
-
   render() {
     return (
       <svg
@@ -28,7 +27,7 @@ export default class Chevron extends React.PureComponent<Props> {
         height={this.props.size}
         viewBox="0 0 8 12"
         fill="none"
-        transform={`rotate(${this.props.direction})`}
+        style={{ transform: `rotate(${this.props.direction}deg)` }}
       >
         <path
           opacity={this.props.opacity || 1}
