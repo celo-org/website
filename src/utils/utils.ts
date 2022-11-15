@@ -127,3 +127,7 @@ export function weiToDecimal(number: number) {
 export function isExternalLink(link: string) {
   return link.startsWith("http")
 }
+
+export function isConnectTheWorldPage(pathname: string) {
+  return pathname === "/connect-the-world"
+}

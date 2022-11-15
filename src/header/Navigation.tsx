@@ -18,6 +18,9 @@ const MobileMenu = dynamic(import("src/shared/MobileMenu"))
 import OvalCoin from "src/shared/OvalCoin"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { colors } from "src/colors"
+import NewLogo from "src/logos/NewLogo"
+import NewMenuIcon from "src/header/NewMenuIcon"
+import { isConnectTheWorldPage as isConnectTheWorldPageFunc } from "../utils/utils"
 const BlueBanner = dynamic(import("src/header/BlueBanner"), { loading: () => null, ssr: false })
 
 const menuItems = MAIN_MENU
@@ -130,6 +133,7 @@ export default function Header(props: Props) {
   const { pathname } = useRouter()
   const attributes = useAttributes()
   const isHomePage = pathname === menu.HOME.link
+  const isConnectTheWorldPage = isConnectTheWorldPageFunc(pathname)
   const [mobileMenuActive, clickHamburger] = useMobileMenu()
 
   const { menuFaded, belowFoldUpScroll } = useScroll()
@@ -144,7 +148,7 @@ export default function Header(props: Props) {
       backgroundColor: translucentAndNotUp
         ? "transparent"
         : isDarkMode
-        ? colors.dark
+        ? "transparent"
         : colors.white,
       [WHEN_DESKTOP]: {
         "&:hover": {
@@ -177,7 +181,9 @@ export default function Header(props: Props) {
         )}
       >
         <HomeLogo menuFaded={menuFaded} isDarkMode={isDarkMode} allWhiteLogo={allWhiteLogo} />
-        <NavigationLinks menuFaded={menuFaded} isDarkMode={isDarkMode} />
+        {!isConnectTheWorldPage && (
+          <NavigationLinks menuFaded={menuFaded} isDarkMode={isDarkMode} />
+        )}
       </div>
 
       {mobileMenuActive && (
@@ -187,14 +193,18 @@ export default function Header(props: Props) {
           </div>
         </div>
       )}
-      <MobileMenuIcon
-        isDarkMode={isDarkMode}
-        willShowHamburger={willShowHamburger}
-        isHomePage={isHomePage}
-        mobileMenuActive={mobileMenuActive}
-        bannerHeight={isBannerShowing ? bannerHeight : 0}
-        clickHamburger={clickHamburger}
-      />
+      {isConnectTheWorldPage ? (
+        <NewMenuIcon onPress={clickHamburger} isOpen={mobileMenuActive} menuFaded={menuFaded} />
+      ) : (
+        <MobileMenuIcon
+          isDarkMode={isDarkMode}
+          willShowHamburger={willShowHamburger}
+          isHomePage={isHomePage}
+          mobileMenuActive={mobileMenuActive}
+          bannerHeight={isBannerShowing ? bannerHeight : 0}
+          clickHamburger={clickHamburger}
+        />
+      )}
     </div>
   )
 }
@@ -208,6 +218,8 @@ const HomeLogo = React.memo(function _HomeLogo({
   isDarkMode: boolean
   allWhiteLogo: boolean
 }) {
+  const { pathname } = useRouter()
+  const useNewLogo = pathname === "/connect-the-world"
   return (
     <Link href={"/"}>
       <div css={styles.logoLeftContainer}>
@@ -219,7 +231,9 @@ const HomeLogo = React.memo(function _HomeLogo({
                 menuFaded ? styles.menuInvisible : styles.menuVisible
               )}
             >
-              {isDarkMode ? (
+              {useNewLogo ? (
+                <NewLogo />
+              ) : isDarkMode ? (
                 <LogoDarkBg height={30} allWhite={allWhiteLogo} />
               ) : (
                 <LogoLightBg height={30} />
