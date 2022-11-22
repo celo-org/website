@@ -133,7 +133,7 @@ export default function Header(props: Props) {
   const { pathname } = useRouter()
   const attributes = useAttributes()
   const isHomePage = pathname === menu.HOME.link
-  const isConnectTheWorldPage = isConnectTheWorldPageFunc(pathname)
+  const isConnectTheWorldPage = isConnectTheWorldPageFunc(useRouter())
   const [mobileMenuActive, clickHamburger] = useMobileMenu()
 
   const { menuFaded, belowFoldUpScroll } = useScroll()

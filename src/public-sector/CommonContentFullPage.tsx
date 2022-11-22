@@ -25,6 +25,7 @@ import Cover from "src/contentful/Cover"
 import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
 import { ROW } from "src/contentful/nodes/embeds/ROW"
 import { GENERICS } from "src/contentful/nodes/embeds/GENERICS"
+import ReskinCover from "../contentful/ReskinCover"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
@@ -75,11 +76,33 @@ export default function CommonPage(props: Props) {
 const rootCss = css(flex, {})
 
 export function pageSwitch(
-  section: Entry<GridRowContentType | SectionType | CoverContentType | HorizontalType | LogoGallery>
+  section: Entry<
+    GridRowContentType | SectionType | CoverContentType | HorizontalType | LogoGallery
+  >,
+  isReskin = false
 ) {
   switch (section.sys.contentType.sys.id) {
     case "cover":
       const coverFields = section.fields as CoverContentType
+      if (isReskin) {
+        return (
+          <ReskinCover
+            resolution={coverFields.resolution}
+            imageFit={coverFields.imageFit}
+            verticalPosition={coverFields.verticalPosition}
+            key={section.sys.id}
+            darkMode={coverFields.darkMode}
+            superSize={coverFields.superSize}
+            illoFirst={coverFields.illoFirst}
+            title={coverFields.title}
+            subTitle={coverFields.subTitle}
+            links={coverFields.links}
+            imageDesktop={coverFields.imageDesktop}
+            imagesDesktop={coverFields.imagesDesktop}
+            imageMobile={coverFields.imageMobile}
+          />
+        )
+      }
       return (
         <Cover
           resolution={coverFields.resolution}

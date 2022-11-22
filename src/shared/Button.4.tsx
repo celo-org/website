@@ -1,9 +1,12 @@
 import * as React from "react"
 import Chevron from "src/icons/chevron"
 import Link from "src/shared/Link"
-import { fonts, textStyles } from "src/estyles"
+import { flex, fonts, textStyles, WHEN_MOBILE } from "src/estyles"
 import { colors } from "src/colors"
 import { css, SerializedStyles } from "@emotion/react"
+import { NextRouter, withRouter } from "next/router"
+import { isConnectTheWorldPage } from "../utils/utils"
+import { useState } from "react"
 
 export enum BTN {
   PRIMARY = "PRIMARY",
@@ -22,7 +25,7 @@ export enum SIZE {
   fullWidth = "fullWidth",
 }
 
-interface AllButtonProps {
+interface AllButtonProps extends WithRouterProps {
   text: string
   href?: string
   target?: string // only relevent if href used
@@ -33,6 +36,10 @@ interface AllButtonProps {
   iconLeft?: React.ReactNode
   align?: "center" | "flex-start" | "flex-end"
   cssStyle?: SerializedStyles
+}
+
+interface WithRouterProps {
+  router: NextRouter
 }
 
 type NakedProps = {
@@ -56,7 +63,7 @@ type NavProps = {
 
 type ButtonsProps = NakedProps | PrimaryProps | InlineProps | NavProps
 
-export default class Button extends React.PureComponent<ButtonsProps> {
+class Button extends React.PureComponent<ButtonsProps> {
   getStatus = () => {
     if (this.props.disabled) {
       return BTNStates.disabled
@@ -94,12 +101,16 @@ export default class Button extends React.PureComponent<ButtonsProps> {
   }
 
   render() {
-    const { text, align, iconRight, iconLeft } = this.props
+    const { text, align, iconRight, iconLeft, router } = this.props
     const ButtonComponent = this.getButtonComponent()
 
     return (
       <div
-        css={css({ alignItems: align }, this.props.kind === BTN.INLINE && inlineStyle.container)}
+        css={css(
+          isConnectTheWorldPage(router) && flex,
+          { alignItems: align },
+          this.props.kind === BTN.INLINE && inlineStyle.container
+        )}
       >
         <ButtonComponent
           status={this.getStatus()}
@@ -179,10 +190,11 @@ interface Props {
   target?: string
   onDarkBackground?: boolean
   accessibilityRole?: "button" | "link" | "option"
+  router?: NextRouter
 }
 
 function ButtonPrimary(props: Props) {
-  const { children, status, size, cssStyle, href, target, onDarkBackground } = props
+  const { children, status, size, cssStyle, href, target, onDarkBackground, router } = props
   return (
     <ButtonOrLink
       onPress={props.onPress}
@@ -195,10 +207,12 @@ function ButtonPrimary(props: Props) {
         baseStyles.verticallyAlign,
         fonts.navigation,
         sizeStyle(size),
-        primaryStyles[status],
+        isConnectTheWorldPage(router) ? reskinPrimaryStyles[status] : primaryStyles[status],
         textStyles.medium,
         status === BTNStates.disabled && onDarkBackground
           ? primaryStyles.darkText
+          : isConnectTheWorldPage(router)
+          ? reskinPrimaryStyles.text
           : primaryStyles.text,
         cssStyle,
         status === BTNStates.disabled && baseStyles.notAllowed,
@@ -265,7 +279,7 @@ function ButtonTertiary(props: Props) {
 }
 
 const nakedColor = {
-  [BTNStates.normal]: colors.primary,
+  [BTNStates.normal]: colors.black,
   [BTNStates.hover]: colors.primaryHover,
   [BTNStates.press]: colors.primaryPress,
   [BTNStates.disabled]: colors.inactive,
@@ -284,9 +298,14 @@ function nakedSize(size: SIZE) {
 }
 
 function ButtonNaked(props: Props) {
-  const { children, status, kind, cssStyle, href, size, target } = props
+  const { children, status, kind, cssStyle, href, size, target, router } = props
   const color = kind === BTN.DARKNAKED ? colors.dark : nakedColor[status]
-  const textStyle = kind === BTN.DARKNAKED ? opacityStyle[status] : commonTextStyles[status]
+  const [chevronColor, setChevronColor] = useState(colors.white)
+  const textStyle = isConnectTheWorldPage(router)
+    ? reskinCommonTextStyles[status]
+    : kind === BTN.DARKNAKED
+    ? opacityStyle[status]
+    : commonTextStyles[status]
   const opacity = kind === BTN.DARKNAKED ? opacityState[status].opacity : 1
   const fontSize = nakedSize(size)
   return (
@@ -308,8 +327,17 @@ function ButtonNaked(props: Props) {
       >
         {children}
 
-        <span css={nakedStyles.chevron}>
-          <Chevron color={color} opacity={opacity} size={"0.75em"} />
+        <span
+          onMouseEnter={() => isConnectTheWorldPage(router) && setChevronColor(colors.black)}
+          onMouseLeave={() => isConnectTheWorldPage(router) && setChevronColor(colors.white)}
+          onMouseDown={() => isConnectTheWorldPage(router) && setChevronColor(colors.white)}
+          css={isConnectTheWorldPage(router) ? reskinNakedStyles.chevron : nakedStyles.chevron}
+        >
+          <Chevron
+            color={isConnectTheWorldPage(router) ? chevronColor : color}
+            opacity={opacity}
+            size={"0.75em"}
+          />
         </span>
       </ButtonOrLink>
     </span>
@@ -325,6 +353,28 @@ const nakedStyles = {
   chevron: css({
     paddingTop: "0.15em",
     paddingLeft: "0.4em",
+  }),
+}
+
+const reskinNakedStyles = {
+  container: css({
+    flexDirection: "row",
+    justifyContent: "center",
+  }),
+  chevron: css({
+    marginLeft: 8,
+    backgroundColor: colors.black,
+    padding: "9.5px 9.5px 9.5px 13.5px",
+    borderRadius: 60,
+    "&:hover": {
+      backgroundColor: colors.primaryYellow,
+    },
+    "&:active": {
+      backgroundColor: colors.black,
+    },
+    [WHEN_MOBILE]: {
+      padding: "6px 6px 6px 8px",
+    },
   }),
 }
 
@@ -411,6 +461,46 @@ function verticalSize(size: SIZE) {
 const borderRadius = 3
 const borderWidth = 1
 
+const reskinPrimaryStyles = {
+  normal: css({
+    backgroundColor: colors.primaryYellow,
+    border: "solid",
+    borderColor: colors.transparentGray,
+    borderRadius: 70,
+    borderWidth,
+    padding: "24px 64px",
+    "&:hover, &:active": {
+      backgroundColor: colors.black,
+      borderColor: colors.transparentGray,
+      borderRadius: 70,
+      borderWidth,
+      color: colors.white,
+    },
+    [WHEN_MOBILE]: {
+      padding: "16px 24px",
+    },
+  }),
+
+  disabled: css({
+    backgroundImage: colors.disabledHatch,
+    border: "solid",
+    borderColor: colors.transparentGray,
+    borderRadius: 70,
+    borderWidth,
+    padding: "24px 64px",
+    [WHEN_MOBILE]: {
+      padding: "16px 24px",
+    },
+  }),
+
+  darkText: css({
+    color: colors.dark,
+  }),
+  text: css({
+    color: colors.black,
+  }),
+}
+
 const primaryStyles = {
   normal: css({
     backgroundColor: colors.primary,
@@ -490,6 +580,17 @@ const commonTextStyles = {
     cursor: "not-allowed",
   }),
 }
+
+const reskinCommonTextStyles = {
+  normal: css({
+    color: colors.black,
+  }),
+  disabled: css({
+    color: colors.inactive,
+    cursor: "not-allowed",
+  }),
+}
+
 const opacityState = {
   normal: {
     opacity: 1,
@@ -550,7 +651,7 @@ const baseStyles = {
     borderColor: "transparent",
     outlineColor: "transparent",
   }),
-  notAllowed: css({ cursor: "not-allowed" }),
+  notAllowed: css({ cursor: "not-allowed", color: colors.disabledTextGray }),
   iconLeft: css({
     paddingRight: 8,
   }),
@@ -577,3 +678,5 @@ const boxedVertical = {
     paddingBottom: VERTICAL_PAD.fullWidth - 1,
   }),
 }
+
+export default withRouter(Button)

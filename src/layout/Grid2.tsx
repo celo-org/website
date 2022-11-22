@@ -2,6 +2,8 @@ import { css, SerializedStyles } from "@emotion/react"
 import * as React from "react"
 import { flex, WHEN_DESKTOP, WHEN_TABLET } from "src/estyles"
 import { colors } from "src/colors"
+import { useRouter } from "next/router"
+import { isConnectTheWorldPage } from "../utils/utils"
 
 interface GridProps {
   columns: 1 | 2 | 3 | 4
@@ -17,12 +19,22 @@ const gap = 24.0
 
 export function GridRow(props: GridProps) {
   const gridTemplateColumns = "1fr ".repeat(props.columns)
-  const mainCss = css(containerCss, {
+  const gapCss = isConnectTheWorldPage(useRouter()) && css({ gap: 100 })
+  const mainCss = css(containerCss, gapCss, {
     [WHEN_DESKTOP]: { gridTemplateColumns },
     [WHEN_TABLET]: { gridTemplateColumns },
   })
   return (
-    <section css={css(props.wrapperCss, props.darkMode ? darkBackground : wrapperStyle)}>
+    <section
+      css={css(
+        props.wrapperCss,
+        !isConnectTheWorldPage(useRouter())
+          ? props.darkMode
+            ? darkBackground
+            : wrapperStyle
+          : tanBackground
+      )}
+    >
       <div id={props.id} css={mainCss} className={props.className}>
         {props.children}
       </div>
@@ -39,6 +51,10 @@ const wrapperStyle = css(flex, {
 
 const darkBackground = css(wrapperStyle, {
   backgroundColor: colors.dark,
+})
+
+const tanBackground = css(wrapperStyle, {
+  backgroundColor: colors.baseTan,
 })
 
 const containerCss = css(flex, {

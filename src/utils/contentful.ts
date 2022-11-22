@@ -17,6 +17,7 @@ function initialize() {
       ? serverRuntimeConfig.CONTENTFUL_PREVIEW_ACCESS_TOKEN
       : serverRuntimeConfig.CONTENTFUL_ACCESS_TOKEN,
     host: isPreview ? "preview.contentful.com" : undefined,
+    environment: isPreview ? "development" : "master",
   })
 }
 
@@ -235,6 +236,7 @@ export interface CoverContentType {
   subTitle: Document
   links?: Entry<ContentfulButton>[]
   imageDesktop: Asset
+  imagesDesktop?: Asset[]
   imageMobile: Asset
   darkMode?: boolean
   illoFirst?: boolean

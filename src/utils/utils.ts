@@ -1,5 +1,6 @@
 import NetworkSpeed from "network-speed"
 import { Clipboard } from "react-native"
+import { NextRouter } from "next/router"
 
 export function randomIntegerInRange(min: number, max: number) {
   return Math.round(Math.random() * (max - min + 1)) + min
@@ -128,6 +129,6 @@ export function isExternalLink(link: string) {
   return link.startsWith("http")
 }
 
-export function isConnectTheWorldPage(pathname: string) {
-  return pathname === "/connect-the-world"
+export function isConnectTheWorldPage(router: NextRouter) {
+  return router.pathname === "/connect-the-world"
 }
