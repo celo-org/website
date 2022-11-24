@@ -299,13 +299,11 @@ function nakedSize(size: SIZE) {
 
 function ButtonNaked(props: Props) {
   const { children, status, kind, cssStyle, href, size, target, router } = props
-  const color = kind === BTN.DARKNAKED ? colors.dark : nakedColor[status]
-  const [chevronColor, setChevronColor] = useState(colors.white)
-  const textStyle = isConnectTheWorldPage(router)
-    ? reskinCommonTextStyles[status]
-    : kind === BTN.DARKNAKED
-    ? opacityStyle[status]
-    : commonTextStyles[status]
+  const color = kind === BTN.DARKNAKED ? colors.white : nakedColor[status]
+  const [chevronColor, setChevronColor] = useState(
+    kind === BTN.DARKNAKED ? colors.black : colors.white
+  )
+  const textStyle = kind === BTN.DARKNAKED ? nakedDarkStyle[status] : commonTextStyles[status]
   const opacity = kind === BTN.DARKNAKED ? opacityState[status].opacity : 1
   const fontSize = nakedSize(size)
   return (
@@ -329,15 +327,17 @@ function ButtonNaked(props: Props) {
 
         <span
           onMouseEnter={() => isConnectTheWorldPage(router) && setChevronColor(colors.black)}
-          onMouseLeave={() => isConnectTheWorldPage(router) && setChevronColor(colors.white)}
-          onMouseDown={() => isConnectTheWorldPage(router) && setChevronColor(colors.white)}
-          css={isConnectTheWorldPage(router) ? reskinNakedStyles.chevron : nakedStyles.chevron}
+          onMouseLeave={() =>
+            isConnectTheWorldPage(router) &&
+            setChevronColor(kind === BTN.DARKNAKED ? colors.black : colors.white)
+          }
+          onMouseDown={() =>
+            isConnectTheWorldPage(router) &&
+            setChevronColor(kind === BTN.DARKNAKED ? colors.black : colors.white)
+          }
+          css={kind === BTN.DARKNAKED ? darkNakedStyles.chevron : nakedStyles.chevron}
         >
-          <Chevron
-            color={isConnectTheWorldPage(router) ? chevronColor : color}
-            opacity={opacity}
-            size={"0.75em"}
-          />
+          <Chevron color={chevronColor} opacity={opacity} size={"0.75em"} />
         </span>
       </ButtonOrLink>
     </span>
@@ -346,17 +346,6 @@ function ButtonNaked(props: Props) {
 ButtonNaked.displayName = "ButtonNaked"
 
 const nakedStyles = {
-  container: css({
-    flexDirection: "row",
-    justifyContent: "center",
-  }),
-  chevron: css({
-    paddingTop: "0.15em",
-    paddingLeft: "0.4em",
-  }),
-}
-
-const reskinNakedStyles = {
   container: css({
     flexDirection: "row",
     justifyContent: "center",
@@ -371,6 +360,25 @@ const reskinNakedStyles = {
     },
     "&:active": {
       backgroundColor: colors.black,
+    },
+    [WHEN_MOBILE]: {
+      padding: "6px 6px 6px 8px",
+    },
+  }),
+}
+
+const darkNakedStyles = {
+  container: css({
+    flexDirection: "row",
+    justifyContent: "center",
+  }),
+  chevron: css({
+    marginLeft: 8,
+    backgroundColor: colors.white,
+    padding: "9.5px 9.5px 9.5px 13.5px",
+    borderRadius: 60,
+    "&:active": {
+      backgroundColor: colors.primaryYellow,
     },
     [WHEN_MOBILE]: {
       padding: "6px 6px 6px 8px",
@@ -567,22 +575,6 @@ const secondaryStyles = {
 
 const commonTextStyles = {
   normal: css({
-    color: colors.primary,
-    "&:hover": css({
-      color: colors.primaryHover,
-    }),
-    "&:active": css({
-      color: colors.primaryPress,
-    }),
-  }),
-  disabled: css({
-    color: colors.inactive,
-    cursor: "not-allowed",
-  }),
-}
-
-const reskinCommonTextStyles = {
-  normal: css({
     color: colors.black,
   }),
   disabled: css({
@@ -607,6 +599,16 @@ const opacityState = {
   },
 }
 const opacityStyle = opacityState
+
+const nakedDarkStyle = {
+  normal: css({
+    color: colors.white,
+  }),
+  disabled: css({
+    color: colors.inactive,
+    cursor: "not-allowed",
+  }),
+}
 
 enum VERTICAL_PAD {
   big = 20,

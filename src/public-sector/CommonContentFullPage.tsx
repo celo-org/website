@@ -26,6 +26,7 @@ import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
 import { ROW } from "src/contentful/nodes/embeds/ROW"
 import { GENERICS } from "src/contentful/nodes/embeds/GENERICS"
 import ReskinCover from "../contentful/ReskinCover"
+import { FiatConnect } from "../reskin/FiatConnect"
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
@@ -121,6 +122,9 @@ export function pageSwitch(
       )
     case "grid-row":
       const gridFields = section.fields as GridRowContentType
+      if (gridFields.id === "fiat-connect") {
+        return <FiatConnect gridFields={gridFields} />
+      }
       return (
         <GridRow
           key={section.sys.id}

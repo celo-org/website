@@ -51,4 +51,6 @@ export enum colors {
   transparentGray = "rgba(0, 0, 0, 0.2)",
   disabledTextGray = "#9B9B9B",
   disabledHatch = `repeating-linear-gradient(-45deg, transparent, transparent 3px, rgba(0, 0, 0, 0.2) 3px, rgba(0, 0, 0, 0.2) 5px)`,
+
+  fig = "#1E002B",
 }

@@ -9,6 +9,7 @@ import { ROW } from "../nodes/embeds/ROW"
 import { Asset } from "contentful"
 import AwesomeFade from "src/shared/AwesomeFade"
 import { FaddingOptions } from "src/utils/contentful"
+import { colors } from "src/colors"
 
 const EMBEDDABLE = {
   ...BUTTON,
@@ -34,12 +35,19 @@ const OPTIONS = {
     [BLOCKS.HEADING_1]: (_, children: string) => {
       return <h2 css={h1ResponsiveCss}>{children}</h2>
     },
+    [BLOCKS.HEADING_4]: (_, children: string) => {
+      return <h4 css={h4Css}>{children}</h4>
+    },
     [BLOCKS.EMBEDDED_ENTRY]: embedded,
     [INLINES.EMBEDDED_ENTRY]: embedded,
   },
 }
 
-const h1ResponsiveCss = css(fonts.h1, { [WHEN_MOBILE]: fonts.h1Mobile })
+const h1ResponsiveCss = css(fonts.h1, {
+  color: colors.white,
+  [WHEN_MOBILE]: css(fonts.h1Mobile, { color: colors.white }),
+})
+const h4Css = css(fonts.h4, { color: "rgba(255, 255, 255, 0.6)" })
 interface Props {
   colSpan: number
   rowSpan?: number
@@ -78,7 +86,7 @@ export function FreeContent({
       )}
     >
       {!fadingEffect ? (
-        <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
+        <div css={css(flex, cssStyle, customBullets)}>
           {documentToReactComponents(body, OPTIONS)}
         </div>
       ) : (
@@ -90,7 +98,7 @@ export function FreeContent({
           reverse={false}
           triggerOnce={true}
         >
-          <div css={css(flex, darkMode && darkModeText, cssStyle, customBullets)}>
+          <div css={css(flex, cssStyle, customBullets)}>
             {documentToReactComponents(body, OPTIONS)}
           </div>
         </AwesomeFade>
