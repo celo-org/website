@@ -19,8 +19,7 @@ const gap = 24.0
 
 export function GridRow(props: GridProps) {
   const gridTemplateColumns = "1fr ".repeat(props.columns)
-  const gapCss = isConnectTheWorldPage(useRouter()) && css({ gap: 100 })
-  const mainCss = css(containerCss, gapCss, {
+  const mainCss = css(containerCss, {
     [WHEN_DESKTOP]: { gridTemplateColumns },
     [WHEN_TABLET]: { gridTemplateColumns },
   })

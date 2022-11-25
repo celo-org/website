@@ -119,20 +119,16 @@ export const labelStyle = css(jost, flex, {
 
 export const inputStyle = css(flex, fonts.body, {
   alignSelf: "center",
-  paddingLeft: 12,
-  paddingRight: 12,
-  paddingTop: 12,
-  paddingBottom: 16,
-  borderRadius: 3,
+  padding: 24,
+  borderRadius: 70,
   borderWidth: 1,
   borderStyle: "solid",
-  borderColor: "rgba(61, 61, 61, 0.2)",
   width: "100%",
   margin: 4,
-  marginBottom: 8,
   outlineWidth: 0,
+  backgroundColor: "transparent",
   "&:focus": {
-    borderColor: colors.primary,
+    borderColor: colors.black,
   },
 })
 

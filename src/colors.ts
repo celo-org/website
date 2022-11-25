@@ -55,4 +55,6 @@ export enum colors {
   fig = "#1E002B",
   sand = "#E7E3D4",
   outlineGray = "#CCCCCC",
+  errorInput = "#E70532",
+  darkTan = "#E6E3D5",
 }
