@@ -11,37 +11,10 @@ import { TweetLogo } from "../icons/TwitterLogo"
 import Octocat from "../icons/Octocat"
 import { PIXEL_SIZE, SquarePixel } from "./SquarePixel"
 import Button, { BTN } from "../shared/Button.4"
+import SocialLinks from "./components/SocialLinks"
 
 interface Props {
   gridFields: GridRowContentType
-}
-
-const ICON_SIZE = 40
-
-function socials() {
-  const iconColor = colors.black
-  return [
-    {
-      name: "Chat",
-      link: CeloLinks.discord,
-      icon: <Discord size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Blog",
-      link: CeloLinks.mediumPublication,
-      icon: <MediumLogo height={ICON_SIZE} color={iconColor} wrapWithLink={false} />,
-    },
-    {
-      name: "Twitter",
-      link: CeloLinks.twitter,
-      icon: <TweetLogo height={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "GitHub",
-      link: CeloLinks.gitHub,
-      icon: <Octocat size={ICON_SIZE} color={iconColor} />,
-    },
-  ]
 }
 
 export function FinalCTA(props: Props) {
@@ -55,18 +28,7 @@ export function FinalCTA(props: Props) {
             cellSwitch(cell, gridFields.darkMode, gridFields.columns)
           )}
         </div>
-        <div css={socialsCss}>
-          {socials().map((social) => (
-            <div key={social.name} css={socialIconCss}>
-              <Button
-                target="_blank"
-                kind={BTN.INLINE}
-                text={social.icon as unknown as string}
-                href={social.link}
-              />
-            </div>
-          ))}
-        </div>
+        <SocialLinks iconCss={css({ padding: 33 })} />
         <SquarePixel options={{ top: 0, right: 0 }} backgroundColor={{ mobile: colors.sand }} />
         <SquarePixel
           options={{ top: 0, right: PIXEL_SIZE * 2 }}
@@ -96,6 +58,7 @@ const wrapperCss = css(flex, {
   h2: {
     color: colors.black,
   },
+  paddingBottom: 168,
 })
 
 const contentCss = css(flex, {
@@ -105,21 +68,5 @@ const contentCss = css(flex, {
   [WHEN_MOBILE]: {
     alignItems: "flex-start",
     paddingBottom: 24,
-  },
-})
-
-const socialsCss = css(flex, {
-  flexDirection: "row",
-  paddingBottom: 158,
-  "& > div:nth-child(-n+3)": {
-    borderRight: "none",
-  },
-})
-
-const socialIconCss = css({
-  padding: 33,
-  border: `1px solid ${colors.outlineGray}`,
-  [WHEN_MOBILE]: {
-    padding: 16,
   },
 })

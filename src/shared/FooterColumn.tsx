@@ -1,7 +1,8 @@
 import * as React from "react"
 import Button, { BTN } from "src/shared/Button.4"
-import { css } from "@emotion/react"
+import { css, SerializedStyles } from "@emotion/react"
 import { WHEN_MOBILE, fonts, whiteText, textStyles } from "src/estyles"
+import { colors } from "../colors"
 
 export interface LinkType {
   name: string
@@ -14,24 +15,33 @@ interface Props {
   links: LinkType[]
   className?: string
   darkMode?: boolean
+  linksCss?: SerializedStyles
 }
 
-export default React.memo(function FooterColumn({ heading, links, className, darkMode }: Props) {
+export default React.memo(function FooterColumn({
+  heading,
+  links,
+  className,
+  darkMode,
+  linksCss,
+}: Props) {
   return (
     <div css={rootStyle} className={className}>
       <h6 css={css(headingStyle, darkMode && whiteText)}>{heading}</h6>
-      {links.map(({ name, link, icon }) => (
-        <div css={linkContainerCss} key={link}>
-          <Button
-            target="_blank"
-            iconLeft={icon}
-            kind={BTN.INLINE}
-            text={name}
-            href={link}
-            cssStyle={css(linkCss, darkMode && textStyles.invert)}
-          />
-        </div>
-      ))}
+      <div css={linksCss}>
+        {links.map(({ name, link, icon }) => (
+          <div css={linkContainerCss} key={link}>
+            <Button
+              target="_blank"
+              iconLeft={icon}
+              kind={BTN.INLINE}
+              text={name}
+              href={link}
+              cssStyle={css(linkCss, darkMode && textStyles.invert)}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   )
 })
@@ -57,6 +67,9 @@ const headingStyle = css(fonts.h6, {
 })
 
 const linkCss = css(fonts.legal, {
+  border: `1px solid ${colors.transparentGray}`,
+  padding: "10.5px 16px",
+  borderRadius: 70,
   textDecorationLine: "none",
   display: "inline-flex",
   alignItems: "center",

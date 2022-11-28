@@ -68,16 +68,3 @@ const fiatLogoCss = css(flex, {
     marginBottom: 118.5,
   },
 })
-
-const backgroundPixel = (options, backgroundColor = colors.baseTan) => {
-  return css({
-    [WHEN_MOBILE]: {
-      width: 86,
-      height: 86,
-      backgroundColor,
-      border: `1px solid ${backgroundColor}`,
-      position: "absolute",
-      ...options,
-    },
-  })
-}

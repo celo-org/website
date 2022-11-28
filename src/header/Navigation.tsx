@@ -158,7 +158,7 @@ export default function Header(props: Props) {
     })
   }, [attributes.translucent, belowFoldUpScroll, isDarkMode])
 
-  const allWhiteLogo = pathname === menu.ABOUT_US.link && !belowFoldUpScroll
+  const allWhiteLogo = pathname === menu.FOUNDERS.link && !belowFoldUpScroll
 
   return (
     <div
@@ -232,7 +232,7 @@ const HomeLogo = React.memo(function _HomeLogo({
               )}
             >
               {useNewLogo ? (
-                <NewLogo />
+                <NewLogo width={113} height={26} />
               ) : isDarkMode ? (
                 <LogoDarkBg height={30} allWhite={allWhiteLogo} />
               ) : (

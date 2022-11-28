@@ -1,4 +1,4 @@
-import { css, SerializedStyles } from "@emotion/react"
+import { css, CSSObject, SerializedStyles } from "@emotion/react"
 import * as React from "react"
 import { flex, WHEN_DESKTOP, WHEN_TABLET } from "src/estyles"
 import { colors } from "src/colors"
@@ -25,16 +25,7 @@ export function GridRow(props: GridProps) {
     [WHEN_TABLET]: { gridTemplateColumns },
   })
   return (
-    <section
-      css={css(
-        props.wrapperCss,
-        !isConnectTheWorldPage(useRouter())
-          ? props.darkMode
-            ? darkBackground
-            : wrapperStyle
-          : tanBackground
-      )}
-    >
+    <section css={css(props.darkMode ? darkBackground : tanBackground, props.wrapperCss)}>
       <div id={props.id} css={mainCss} className={props.className}>
         {props.children}
       </div>
@@ -98,17 +89,18 @@ interface CellProps {
   span: Spans
   tabletSpan?: Spans
   className?: string
+  cssStyles?: SerializedStyles
 }
 
 // optionally place cells inside a grid. Mostly here for backwardish compatibility or when you want to span x columns of a grid in desktop and y columns in tablet
-export function Cell({ span, children, className, tabletSpan }: CellProps) {
+export function Cell({ span, children, className, tabletSpan, cssStyles }: CellProps) {
   const spanCss = css(cellStyle, {
     gridColumn: `span ${span}`,
     [WHEN_TABLET]: { gridColumn: `span ${tabletSpan ? tabletSpan : span}` },
   })
 
   return (
-    <div css={spanCss} className={className}>
+    <div css={css(spanCss, cssStyles)} className={className}>
       {children}
     </div>
   )

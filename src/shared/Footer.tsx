@@ -29,42 +29,35 @@ import {
   whiteText,
   standardStyles,
   WHEN_DESKTOP,
+  textStyles,
+  WHEN_TABLET_AND_UP,
 } from "src/estyles"
 import HubspotForm from "src/contentful/grid2-cells/HubspotForm"
+import NewLogo from "../logos/NewLogo"
+import SocialLinks from "../reskin/components/SocialLinks"
+import Button, { BTN } from "./Button.4"
+import { PIXEL_SIZE, SquarePixel } from "../reskin/SquarePixel"
 
-const MENU = [
-  menu.HOME,
-  menu.ABOUT_US,
-  menu.JOBS,
-  menu.BUILD,
-  menu.DEVELOPERS,
-  menu.ALLIANCE_COLLECTIVE,
-  menu.COMMUNITY,
-  {
-    name: "annualReport",
-    link: "/papers/annual-reports/2021",
-  },
-]
+const MENU = [menu.DEVELOPERS, menu.FOUNDERS, menu.COMMUNITY, menu.BUILD]
 const TECH_MENU = [
   { name: "Docs", link: CeloLinks.docs },
   { name: "Security Audits", link: CeloLinks.audits },
   { name: "Reserve", link: CeloLinks.reserve },
-  menu.PAPERS,
   menu.PUBLIC_SECTOR,
 ]
 const eventsLink = `${menu.COMMUNITY.link}#${hashNav.connect.events}`
 const ecoFundLink = `${menu.COMMUNITY.link}#${hashNav.connect.fund}`
-const RESOURCE_MENU = [
-  menu.BRAND_POLICY,
+const COMPANY_MENU = [
+  menu.VISION,
+  { name: "Ecosystem", link: "#" },
+  menu.JOBS,
   menu.PRESS,
+  menu.PAPERS,
   { name: "Events", link: eventsLink },
-  menu.EVENTS_KIT,
-  menu.BRAND,
-  menu.MERCHANTS,
-  menu.GRANT_KIT,
-  menu.PILOT_KIT,
-  { name: "Ecosystem Fund", link: ecoFundLink },
 ]
+const KITS_MENU = [menu.BRAND, menu.PILOT_KIT, menu.GRANT_KIT]
+
+const FOOTER_OTHER_LINKS = [menu.PRIVACY, menu.TERMS]
 
 const ICON_SIZE = 13
 function socialMenu(darkMode: boolean) {
@@ -149,52 +142,34 @@ export default function Footer({ hideForm, darkMode }: Props) {
   )
   return (
     <>
-      {!hideForm && (
-        <GridRow
-          columns={1}
-          darkMode={darkMode}
-          css={css(standardStyles.centered, {
-            [WHEN_DESKTOP]: css(standardStyles.blockMarginTop, flex),
-            [WHEN_TABLET]: css(standardStyles.blockMarginTopTablet, flex),
-            [WHEN_MOBILE]: standardStyles.blockMarginTopMobile,
-          })}
-        >
-          <div css={formStyle}>
-            <img
-              src={envelope.src}
-              css={emailLogoCss}
-              width={50}
-              height={60}
-              alt={t("footer.emailIconAlt")}
-            />
-            <p css={receiveUpdatesCss}>{t("receiveUpdates")}</p>
-            <HubspotForm hubspotFormId="b4dd2ae2-68e9-4662-bfd3-b2860162a5aa" />
-          </div>
-        </GridRow>
-      )}
       <GridRow
         columns={3}
         darkMode={darkMode}
+        wrapperCss={wrapperCss}
         css={css({
+          gap: 0,
           [WHEN_DESKTOP]: css(standardStyles.blockMarginTop),
           [WHEN_TABLET]: css(standardStyles.blockMarginTopTablet),
           [WHEN_MOBILE]: standardStyles.blockMarginTopMobile,
         })}
       >
-        <Cell span={Spans.one} tabletSpan={Spans.three}>
-          <div css={ringsCSS}>
-            <RingsGlyph darkMode={darkMode} />
+        <Cell span={Spans.one} cssStyles={css({ gridRowStart: 1 })}>
+          <div css={footerLogoCss}>
+            <NewLogo width={282} height={64} />
           </div>
-          <Details darkMode={darkMode} />
         </Cell>
-        <Cell span={Spans.two} tabletSpan={Spans.three}>
+        <Cell span={Spans.one} tabletSpan={Spans.one} cssStyles={css({ gridRowStart: 2 })}>
+          <Details darkMode={darkMode} />
+          <HubspotForm hubspotFormId="b4dd2ae2-68e9-4662-bfd3-b2860162a5aa" />
+        </Cell>
+        <Cell span={Spans.two} tabletSpan={Spans.three} cssStyles={footerLinksResponsiveCss}>
           {isMobile ? (
             <MobileLinks footerMenu={footerMenu} darkMode={darkMode} />
           ) : (
             <div css={linksAreaCss}>
               <FooterColumn
                 css={linkColumnStartCss}
-                heading={"Celo"}
+                heading={"Celo for"}
                 links={footerMenu}
                 darkMode={darkMode}
               />
@@ -204,15 +179,15 @@ export default function Footer({ hideForm, darkMode }: Props) {
                 darkMode={darkMode}
               />
               <FooterColumn
-                heading={t("footer.resources")}
-                links={RESOURCE_MENU}
+                heading={t("footer.company")}
+                links={COMPANY_MENU}
                 darkMode={darkMode}
               />
               <FooterColumn
                 darkMode={darkMode}
                 css={linkColumnEndCss}
-                heading={t("footer.social")}
-                links={socialMenu(darkMode)}
+                heading={t("footer.kits")}
+                links={KITS_MENU}
               />
             </div>
           )}
@@ -221,6 +196,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
       <GridRow
         columns={1}
         darkMode={darkMode}
+        wrapperCss={css({ backgroundColor: colors.primaryYellow })}
         css={css({
           [WHEN_DESKTOP]: css(standardStyles.blockMargin),
           [WHEN_TABLET]: css(standardStyles.blockMarginTablet),
@@ -228,12 +204,24 @@ export default function Footer({ hideForm, darkMode }: Props) {
         })}
       >
         <div css={toesCss}>
-          <ChangeStory darkMode={darkMode} />
+          <SocialLinks containerCss={socialContainerCss} iconCss={socialIconCss} />
           <small css={css(copyrightStyle, darkMode && whiteText)}>
             {t("footer.copyright", { year })}
           </small>
+          <div css={footerOtherLinksCss}>
+            {FOOTER_OTHER_LINKS.map((item) => (
+              <div key={item.link} css={footerOtherLinkContainerCss}>
+                <Button target="_blank" kind={BTN.INLINE} text={item.name} href={item.link} />
+              </div>
+            ))}
+          </div>
         </div>
       </GridRow>
+      <SquarePixel options={{ top: 0, left: 0 }} backgroundColor={{ desktop: colors.white }} />
+      <SquarePixel
+        options={{ top: 0, left: PIXEL_SIZE * 2 }}
+        backgroundColor={{ desktop: colors.white }}
+      />
     </>
   )
 }
@@ -247,26 +235,32 @@ function MobileLinks({ footerMenu, darkMode }: MobileLinkProps) {
   const { t } = useTranslation(NameSpaces.common)
 
   return (
-    <>
-      <div css={flexRow}>
-        <FooterColumn darkMode={darkMode} heading={"Celo"} links={footerMenu} />
-        <FooterColumn
-          darkMode={darkMode}
-          heading={t("footer.social")}
-          links={socialMenu(darkMode)}
-          css={endMobileColumnCss}
-        />
-      </div>
-      <div css={flexRow}>
-        <FooterColumn darkMode={darkMode} heading={t("footer.resources")} links={RESOURCE_MENU} />
-        <FooterColumn
-          darkMode={darkMode}
-          heading={t("footer.technology")}
-          links={TECH_MENU}
-          css={endMobileColumnCss}
-        />
-      </div>
-    </>
+    <div css={mobileLinkCss}>
+      <FooterColumn
+        darkMode={darkMode}
+        heading={"Celo for"}
+        links={footerMenu}
+        linksCss={css(flexRow, { flexWrap: "wrap" })}
+      />
+      <FooterColumn
+        darkMode={darkMode}
+        heading={t("footer.company")}
+        links={COMPANY_MENU}
+        linksCss={css(flexRow, { flexWrap: "wrap" })}
+      />
+      <FooterColumn
+        darkMode={darkMode}
+        heading={t("footer.technology")}
+        links={TECH_MENU}
+        linksCss={css(flexRow, { flexWrap: "wrap" })}
+      />
+      <FooterColumn
+        darkMode={darkMode}
+        heading={t("footer.kits")}
+        links={KITS_MENU}
+        linksCss={css(flexRow, { flexWrap: "wrap" })}
+      />
+    </div>
   )
 }
 
@@ -279,23 +273,22 @@ const Details = React.memo(function _Details({ darkMode }: DetailProps) {
   const fontStyling = css(fonts.legal, detailsTextCss, darkMode && whiteText)
   return (
     <div css={detailsCss}>
-      <p css={fontStyling}>{t("disclaimer")}</p>
-      <p css={fontStyling}>
-        <Trans ns={NameSpaces.common} i18nKey={"footerReadMoreTerms"}>
-          <a css={hrefCss} href={menu.TERMS.link}>
-            Terms of Service
-          </a>
-        </Trans>
-      </p>
+      <p css={fontStyling}>{t("footerEmailText")}</p>
     </div>
   )
 })
 
 const detailsCss = css(flex, {
-  paddingBottom: 20,
   [WHEN_MOBILE]: {
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
+  },
+})
+
+const wrapperCss = css({
+  backgroundColor: colors.primaryYellow,
+  [WHEN_MOBILE]: {
+    padding: 33,
   },
 })
 
@@ -313,18 +306,18 @@ const detailsTextCss = css({
   marginBottom: 20,
   maxWidth: 350,
   textAlign: "left",
-  [WHEN_MOBILE]: {
-    textAlign: "center",
-  },
 })
 
 const toesCss = css(flex, {
   flexDirection: "row",
   justifyContent: "space-between",
+  alignItems: "center",
+  borderBottom: `1px solid ${colors.transparentGray}`,
   [WHEN_MOBILE]: css({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    borderBottom: "none",
   }),
 })
 
@@ -350,6 +343,9 @@ const endMobileColumnCss = css({
 
 const copyrightStyle = css(fonts.legal, {
   zIndex: 10, // ensure copyright is above the sliding div from ChangeStory animation
+  [WHEN_MOBILE]: {
+    marginBottom: 17,
+  },
 })
 
 const ringsCSS = css(flex, {
@@ -366,9 +362,56 @@ const emailLogoCss = css({
   margin: 10,
 })
 
+const footerLinksResponsiveCss = css({
+  gridRowStart: 2,
+  [WHEN_TABLET]: {
+    gridRowStart: 3,
+  },
+})
+
 const linksAreaCss = css(flexRow, {
   justifyContent: "space-around",
   [WHEN_TABLET]: {
     justifyContent: "space-between",
+  },
+})
+
+const footerLogoCss = css(flex, {
+  marginTop: 80,
+  marginBottom: 48,
+})
+
+const socialContainerCss = css({
+  [WHEN_MOBILE]: {
+    marginBottom: 40,
+  },
+})
+
+const socialIconCss = css({
+  padding: 16,
+  [WHEN_TABLET_AND_UP]: {
+    borderBottom: "none",
+  },
+})
+
+const footerOtherLinksCss = css(flex, {
+  flexDirection: "row",
+})
+
+const footerOtherLinkContainerCss = css(fonts.legal, {
+  "&:first-child": {
+    marginRight: 20,
+  },
+  a: {
+    textDecorationLine: "none",
+  },
+})
+
+const mobileLinkCss = css(flex, {
+  [WHEN_DESKTOP]: {
+    flexDirection: "row",
+  },
+  [WHEN_MOBILE]: {
+    marginBottom: 90,
   },
 })

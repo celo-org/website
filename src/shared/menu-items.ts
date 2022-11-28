@@ -18,9 +18,9 @@ export const pagePaths = {
     menuHidePoint: 0,
     menuHidePointMobile: 50,
   },
-  ABOUT_US: {
-    name: "About",
-    link: "/about",
+  FOUNDERS: {
+    name: "Founders",
+    link: "/alliance",
     isDark: false,
     translucent: {
       backgroundHover: colors.darkTransparent,
@@ -109,7 +109,7 @@ export const pagePaths = {
     isDark: false,
   },
   JOBS: {
-    name: "Join",
+    name: "Careers",
     link: "/jobs",
     isDark: false,
   },
@@ -153,7 +153,7 @@ export const pagePaths = {
     isDark: false,
   },
   TERMS: {
-    name: "Terms",
+    name: "Terms of Use",
     link: "/terms",
     isDark: false,
   },
@@ -172,6 +172,11 @@ export const pagePaths = {
     link: "/validators/explore/baklavastaging",
     isDark: true,
   },
+  VISION: {
+    name: "Vision",
+    link: "/about",
+    isDark: false,
+  },
   WALLET: {
     name: "Test Wallet",
     link: "/developers/wallet",
@@ -180,7 +185,7 @@ export const pagePaths = {
 }
 
 export const MAIN_MENU = [
-  pagePaths.ABOUT_US,
+  pagePaths.FOUNDERS,
   pagePaths.DEVELOPERS,
   pagePaths.COMMUNITY,
   pagePaths.ECOSYSTEM,
