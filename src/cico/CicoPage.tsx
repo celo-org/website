@@ -6,8 +6,21 @@ import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
 import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
-import { flex, whiteText, jost, fonts, garamond, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import {
+  flex,
+  whiteText,
+  jost,
+  fonts,
+  garamond,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+  flexRow,
+} from "src/estyles"
 import debounce from "lodash.debounce"
+import { Entry } from "contentful"
+import TextInput from "../reskin/components/TextInput"
+import Button, { BTN, SIZE } from "../shared/Button.4"
+import { useState } from "react"
 
 export interface CicoProvider {
   country?: string
@@ -24,12 +37,21 @@ interface PaymentType {
 }
 
 interface Props {
+  content: Entry<GridRowContentType>
   data: Record<string, CicoProvider[]>
 }
 
 function CicoPage(props: Props & ContentfulPage<GridRowContentType>) {
-  const items = props.sections.map((section) => pageSwitch(section, true))
-  items.splice(items.length - 3, 0, <CoutriesReturned data={props.data} />)
+  const sections = props.sections.filter((section) => section.fields?.id !== "celo-ramps")
+  const items = sections.map((section) => pageSwitch(section, true))
+  const onOffRampsSection = props.sections.find((section) => {
+    return section?.fields?.id === "celo-ramps"
+  })
+  items.splice(
+    items.length - 3,
+    0,
+    <CoutriesReturned content={onOffRampsSection} data={props.data} />
+  )
   return <div css={rootCss}>{props.sections ? items : <></>}</div>
 }
 
@@ -41,14 +63,28 @@ function CoutriesReturned(props: Props) {
   const { t } = useTranslation(NameSpaces.cico)
   const [search, setSearch] = React.useState("")
   const [expandedIndex, setBlurbIndex] = React.useState(null)
-  const { data } = props
+  const { data, content } = props
+  const title = content.fields.cells[0].fields.title
+  const subTitle = content.fields.cells[0].fields?.subTitle.content[0].content[0].value
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
+  const numberOfCountriesPerPage = 12
+  const maxPage = Object.keys(data).length / numberOfCountriesPerPage
+  const [currentPage, setCurrentPage] = useState(1)
 
   const showingCountries = React.useMemo(() => {
     return Object.keys(data)
       .filter((title) => title.toLowerCase().includes(search.toLowerCase()))
       .sort()
-  }, [data, search])
+      .slice(0, numberOfCountriesPerPage * currentPage)
+  }, [currentPage, data, numberOfCountriesPerPage, search])
+
+  const loadMoreCountries = () => {
+    if (currentPage + 1 < maxPage) {
+      setCurrentPage(currentPage + 1)
+    } else {
+      setCurrentPage(maxPage)
+    }
+  }
 
   const debouncedChangeHandler = React.useMemo(
     () =>
@@ -62,22 +98,23 @@ function CoutriesReturned(props: Props) {
   React.useEffect(() => {
     return () => {
       debouncedChangeHandler.cancel()
+      setCurrentPage(1)
     }
   }, [debouncedChangeHandler])
 
   return (
     <section css={displayCountry}>
+      <h2 css={titleCss}>{title}</h2>
       <div css={sectionContainer}>
-        <input
-          css={inputCss}
-          placeholder={t("placeholder")}
-          type="text"
-          onChange={debouncedChangeHandler}
-        />
+        <div css={inputContainer}>
+          <p css={subTitleCss}>{subTitle}</p>
+          <TextInput
+            chevronColor={colors.dark}
+            placeholder={t("placeholder")}
+            onChange={debouncedChangeHandler}
+          />
+        </div>
         <div>
-          <div css={tableTitle}>
-            <h2>{t("celoRamps.countries")}</h2>
-          </div>
           <div css={showingCountriesContainer}>
             {showingCountries.map((title, index) => {
               return (
@@ -92,19 +129,31 @@ function CoutriesReturned(props: Props) {
               )
             })}
           </div>
+          {currentPage !== maxPage && (
+            <div css={loadMoreCss}>
+              <Button
+                align={"center"}
+                size={SIZE.normal}
+                kind={BTN.PRIMARY}
+                text="Load More"
+                onPress={loadMoreCountries}
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>
   )
 }
 
-const displayCountry = css(fonts, jost, whiteText, flex, {
+const displayCountry = css(jost, whiteText, flex, {
+  paddingTop: 320,
   flexDirection: "column",
   alignItems: "center",
   alignSelf: "center",
   width: "100%",
-  backgroundColor: colors.dark,
-  "h1, h2, h3, h4, h5, p": whiteText,
+  backgroundColor: colors.baseTan,
+  "h1, h2, h3, h4, h5, p": colors.dark,
 })
 const sectionContainer = css({
   margin: "0px 100px",
@@ -114,6 +163,7 @@ const sectionContainer = css({
   width: "100%",
   display: "grid",
   gridTemplateColumns: "30% 70%",
+  gap: 16,
   [WHEN_MOBILE]: {
     display: "flex",
     flexDirection: "column",
@@ -127,35 +177,47 @@ const sectionContainer = css({
     alignItems: "center",
   },
 })
-const inputCss = css(garamond, {
+const titleCss = css(fonts.h1, {
+  fontSize: 72,
+  marginBottom: 108,
   [WHEN_MOBILE]: {
-    justifyContent: "center",
-    alignItems: "center",
-    margin: "0px 0px 30px",
+    fontSize: 36,
+    marginBottom: 24,
   },
-  [WHEN_TABLET]: {
-    justifyContent: "center",
-    alignItems: "center",
-    margin: "0px 0px 30px",
-  },
-  border: `1px inset ${colors.placeholderGray}`,
-  width: 224,
-  height: 54,
-  borderRadius: "3px",
+})
+
+const subTitleCss = css(fonts.h4, {
   fontSize: 20,
-  ["::placeholder"]: {
-    color: colors.placeholderDarkMode,
-    fontSize: 20,
-    paddingLeft: 5,
+  [WHEN_TABLET]: {
+    padding: "0 32px",
   },
+  [WHEN_MOBILE]: {
+    padding: "0 32px",
+  },
+})
+
+const inputContainer = css(flex, {
+  [WHEN_TABLET]: {
+    alignItems: "center",
+    padding: "0 32px",
+  },
+  [WHEN_MOBILE]: {
+    alignItems: "center",
+    padding: "0 32px",
+  },
+})
+
+const loadMoreCss = css({
   marginTop: 80,
-  marginLeft: 30,
-  marginRight: 70,
+  "& > div": {
+    alignItems: "flex-start",
+  },
 })
 const tableTitle = css({
   borderBottom: `1px solid ${colors.grayHeavy}`,
   padding: "20px 0px",
   textAlign: "start",
+  h2: fonts.h2,
   [WHEN_MOBILE]: {
     padding: "20px 16px",
     margin: "0px 10px",
@@ -169,6 +231,7 @@ const showingCountriesContainer = css({
     padding: "0px 20px",
   },
 })
+
 interface CountryTableProps {
   index: number
   title: string
@@ -193,9 +256,9 @@ function CountryTable({
   return (
     <div key={index} css={countryContainer}>
       <button css={css(buttonCss, headerContainer)} onClick={() => toggle(index)}>
-        <h3>{newString}</h3>
+        <h3 css={css(fonts.h2, countryCss)}>{newString}</h3>
         <Chevron
-          color={colors.white}
+          color={colors.black}
           direction={expandedIndex === index ? Direction.up : Direction.down}
         />
       </button>
@@ -232,14 +295,20 @@ const headerContainer = css({
   display: "flex",
   textAlign: "start",
   justifyContent: "space-between",
-  padding: "30px 10px",
+  padding: "60px 10px",
   width: "100%",
 })
 
 const countryContainer = css(jost, {
   justifyContent: "center",
   alignContent: "center",
-  borderBottom: `1px solid ${colors.grayHeavy}`,
+  borderBottom: `1px solid ${colors.transparentGray}`,
+  opacity: 0.5,
+  "&:hover": {
+    background:
+      "radial-gradient(57.57% 111.11% at 50% 155.56%, #E6E3D5 0%, rgba(230, 227, 213, 0) 100%)",
+    opacity: 1,
+  },
 })
 const countriesTable = css({
   border: `1px solid ${colors.grayHeavy}`,
@@ -251,11 +320,17 @@ const countriesCells = css({
   textAlign: "center",
 })
 const countriesHeader = css(countriesCells, {
-  border: `1px solid ${colors.grayHeavy}`,
-  backgroundColor: `rgba(171, 173, 175, 0.3)`,
+  border: `1px solid ${colors.dark}`,
 })
 const countriesHeaderCell = css(countriesCells, whiteText, {
-  border: `1px solid ${colors.grayHeavy}`,
+  border: `1px solid ${colors.dark}`,
+  color: colors.dark,
+  [WHEN_MOBILE]: {
+    color: colors.dark,
+  },
+})
+const countryCss = css({
+  fontSize: 26,
 })
 const toggleContent = css({
   display: "flex",
@@ -290,7 +365,8 @@ const CicoProvider = React.memo(function _CicoProvider({
 })
 
 const countriesBody = css(countriesCells, {
-  border: `1px solid ${colors.grayHeavy}`,
+  border: `1px solid ${colors.dark}`,
+  color: colors.black,
 })
 
 export default withNamespaces(NameSpaces.cico)(CicoPage)
