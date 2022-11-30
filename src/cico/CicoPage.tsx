@@ -15,6 +15,7 @@ import {
   WHEN_MOBILE,
   WHEN_TABLET,
   flexRow,
+  WHEN_DESKTOP,
 } from "src/estyles"
 import debounce from "lodash.debounce"
 import { Entry } from "contentful"
@@ -154,6 +155,9 @@ const displayCountry = css(jost, whiteText, flex, {
   width: "100%",
   backgroundColor: colors.baseTan,
   "h1, h2, h3, h4, h5, p": colors.dark,
+  [WHEN_MOBILE]: {
+    paddingTop: 80,
+  },
 })
 const sectionContainer = css({
   margin: "0px 100px",

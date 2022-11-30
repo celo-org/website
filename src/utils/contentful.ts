@@ -258,6 +258,7 @@ export interface ContentfulPage<T> {
 export interface GalleryItem {
   url: string
   image: Asset
+  imageSide?: Asset
   title?: string
 }
 

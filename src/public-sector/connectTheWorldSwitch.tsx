@@ -3,6 +3,7 @@ import { FiatConnect } from "../reskin/FiatConnect"
 import React from "react"
 import { FinalCTA } from "../reskin/FinalCTA"
 import ConnectContact from "../reskin/ConnectContact"
+import LogoGrid from "../reskin/LogoGrid"
 
 export function connectTheWorldSwitch(gridFields: GridRowContentType) {
   switch (gridFields.id) {
@@ -14,6 +15,9 @@ export function connectTheWorldSwitch(gridFields: GridRowContentType) {
     }
     case "connect-contact": {
       return <ConnectContact gridFields={gridFields} />
+    }
+    case "app-section": {
+      return <LogoGrid gridFields={gridFields} />
     }
   }
 }

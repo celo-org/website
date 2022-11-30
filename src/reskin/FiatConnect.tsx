@@ -13,7 +13,6 @@ interface Props {
 
 export function FiatConnect(props: Props) {
   const { gridFields } = props
-  console.log(gridFields)
   return (
     <section css={mainCss}>
       <div css={wrapperCss}>
