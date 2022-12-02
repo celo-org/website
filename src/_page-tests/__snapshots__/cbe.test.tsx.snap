@@ -65,6 +65,7 @@ exports[`CBE renders 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   width: 100%;
+  background-color: #FBF6F1;
 }
 
 .emotion-4 {
@@ -163,11 +164,11 @@ exports[`CBE renders 1`] = `
 }
 
 .emotion-5 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 28px;
   line-height: 36;
   text-rendering: geometricPrecision;
@@ -183,12 +184,12 @@ exports[`CBE renders 1`] = `
 }
 
 .emotion-6 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: GT-Alpina,serif;
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
   color: #111214;
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -329,14 +330,13 @@ exports[`CBE renders 1`] = `
 }
 
 .emotion-12 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: Jost,futura-pt,futura,sans-serif;
+  font-family: GT-Alpina,serif;
   font-size: 24px;
   line-height: 28;
-  font-weight: 400;
   text-rendering: geometricPrecision;
   color: #111214;
   line-height: 28px;
@@ -345,7 +345,7 @@ exports[`CBE renders 1`] = `
 }
 
 .emotion-13 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -398,23 +398,31 @@ exports[`CBE renders 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #35D07F;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
   margin-top: 20px;
 }
 
-.emotion-16:hover {
-  color: #4CDD91;
-}
-
-.emotion-16:active {
-  color: #0FB972;
-}
-
 .emotion-17 {
-  padding-top: 0.15em;
-  padding-left: 0.4em;
+  margin-left: 8px;
+  background-color: #000;
+  padding: 9.5px 9.5px 9.5px 13.5px;
+  border-radius: 60px;
+}
+
+.emotion-17:hover {
+  background-color: #FCFF52;
+}
+
+.emotion-17:active {
+  background-color: #000;
+}
+
+@media (max-width: 576px) {
+  .emotion-17 {
+    padding: 6px 6px 6px 8px;
+  }
 }
 
 .emotion-28 {
@@ -534,11 +542,11 @@ exports[`CBE renders 1`] = `
 }
 
 .emotion-41 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 28px;
   line-height: 36;
   text-rendering: geometricPrecision;
@@ -639,11 +647,11 @@ exports[`CBE renders 1`] = `
 }
 
 .emotion-47 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: Jost,futura-pt,futura,sans-serif;
+  font-family: GT-Alpina,serif;
   font-size: 16px;
   line-height: 18;
   font-weight: 500;
@@ -653,11 +661,11 @@ exports[`CBE renders 1`] = `
 }
 
 .emotion-48 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: Jost,futura-pt,futura,sans-serif;
+  font-family: GT-Alpina,serif;
   font-size: 16px;
   line-height: 18;
   font-weight: 500;
@@ -849,6 +857,9 @@ exports[`CBE renders 1`] = `
               Sign up
               <span
                 className="emotion-17"
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
               >
                 <svg
                   fill="none"
@@ -864,7 +875,7 @@ exports[`CBE renders 1`] = `
                   <path
                     clipRule="evenodd"
                     d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
+                    fill="#FFFFFF"
                     fillRule="evenodd"
                     opacity={1}
                   />
@@ -1020,6 +1031,9 @@ exports[`CBE renders 1`] = `
               Connect
               <span
                 className="emotion-17"
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
               >
                 <svg
                   fill="none"
@@ -1035,7 +1049,7 @@ exports[`CBE renders 1`] = `
                   <path
                     clipRule="evenodd"
                     d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
+                    fill="#FFFFFF"
                     fillRule="evenodd"
                     opacity={1}
                   />
@@ -1191,6 +1205,9 @@ exports[`CBE renders 1`] = `
               Get Valora
               <span
                 className="emotion-17"
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
               >
                 <svg
                   fill="none"
@@ -1206,7 +1223,7 @@ exports[`CBE renders 1`] = `
                   <path
                     clipRule="evenodd"
                     d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
+                    fill="#FFFFFF"
                     fillRule="evenodd"
                     opacity={1}
                   />

@@ -13,10 +13,10 @@ exports[`Main MobileMenu renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -24,7 +24,6 @@ exports[`Main MobileMenu renders 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 20px;
   padding-left: 20px;
@@ -39,12 +38,14 @@ exports[`Main MobileMenu renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  position: absolute;
+  left: 0;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  z-index: 888;
+  padding-right: 100px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -52,6 +53,19 @@ exports[`Main MobileMenu renders 1`] = `
   -ms-flex-pack: space-around;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+  opacity: 0;
+  padding-top: 140px;
+  padding-left: 200px;
+  max-width: 100%;
+  width: NaNpx;
+  -webkit-transition: all 400ms ease-in-out 0ms;
+  transition: all 400ms ease-in-out 0ms;
+}
+
+@media (max-width: 576px) {
+  .emotion-1 {
+    padding-right: 50px;
+  }
 }
 
 .emotion-2 {
@@ -63,10 +77,24 @@ exports[`Main MobileMenu renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 24px 0;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.emotion-2:hover>div:last-child {
+  opacity: 1;
+  margin-right: 0;
 }
 
 .emotion-3 {
@@ -116,23 +144,25 @@ exports[`Main MobileMenu renders 1`] = `
   min-width: 150px;
   padding: 10px 20px;
   font-weight: 500;
-  color: #35D07F;
-  font-size: 20px;
+  color: #000;
+  font-size: 32px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.emotion-4:hover {
-  color: #4CDD91;
+.emotion-5 {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 17.5px 21px;
+  border-radius: 70px;
+  opacity: 0;
+  margin-right: 50px;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
-.emotion-4:active {
-  color: #0FB972;
-}
-
-.emotion-7 {
+.emotion-8 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -169,22 +199,69 @@ exports[`Main MobileMenu renders 1`] = `
   text-decoration: none;
   color: #111214;
   opacity: 1;
-  font-size: 20px;
+  font-size: 32px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.emotion-7:hover {
+.emotion-8:hover {
   opacity: 0.75;
 }
 
-.emotion-7:active {
+.emotion-8:active {
   opacity: 1;
 }
 
-.emotion-26 {
+.emotion-22 {
+  padding-top: 44px;
+}
+
+.emotion-23 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.emotion-24 {
+  font-weight: 200;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: GT-Alpina,serif;
+  font-size: 24px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  margin-left: 24px;
+}
+
+.emotion-25 {
+  width: 100%;
+  display: inline-block;
+}
+
+.emotion-25 img {
+  display: none;
+}
+
+.emotion-25 .grecaptcha-badge {
+  display: none;
+}
+
+.emotion-25 #email-b4dd2ae2-68e9-4662-bfd3-b2860162a5aa {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -193,16 +270,712 @@ exports[`Main MobileMenu renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  font-family: Inter,sans-serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 24px;
+  border-radius: 70px;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  margin: 4px;
+  outline-width: 0;
+  background-color: transparent;
+}
+
+.emotion-25 #email-b4dd2ae2-68e9-4662-bfd3-b2860162a5aa:focus {
+  border-color: #000;
+}
+
+.emotion-25 #hsForm_b4dd2ae2-68e9-4662-bfd3-b2860162a5aa input[type=submit] {
+  display: none;
+}
+
+.emotion-25 .celo-hbspt {
+  width: 100%;
+}
+
+.emotion-25 .celo-hbspt * {
+  box-sizing: border-box;
+}
+
+.emotion-25 .celo-hbspt fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-25 .celo-hbspt fieldset {
+    margin-right: 0!important;
+    width: 100%!important;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-25 .celo-hbspt fieldset {
+    float: none;
+    width: 100%;
+  }
+}
+
+.emotion-25 .celo-hbspt fieldset.form-columns-2 .hs-form-field {
+  width: 50%;
+  float: left;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-25 .celo-hbspt fieldset.form-columns-2 .hs-form-field {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-25 .celo-hbspt fieldset.form-columns-2 .hs-form-field {
+    float: none;
+    width: 100%;
+  }
+}
+
+.emotion-25 .celo-hbspt .field {
+  margin-bottom: 32px;
+}
+
+.emotion-25 .celo-hbspt .input {
+  margin-right: 26px;
+}
+
+.emotion-25 .celo-hbspt .hs-input {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: Inter,sans-serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 24px;
+  border-radius: 70px;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  margin: 4px;
+  outline-width: 0;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.emotion-25 .celo-hbspt .hs-input:focus {
+  border-color: #000;
+}
+
+.emotion-25 .hs-custom-style fieldset textarea {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: Inter,sans-serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 24px;
+  border-radius: 70px;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  margin: 4px;
+  outline-width: 0;
+  background-color: transparent;
+}
+
+.emotion-25 .hs-custom-style fieldset textarea:focus {
+  border-color: #000;
+}
+
+.emotion-25 .celo-hbspt .contact-error {
+  border-color: #E70532;
+}
+
+.emotion-25 .celo-hbspt .hs-error-msg {
+  color: #E70532;
+}
+
+.emotion-25 input[type='checkbox'] {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+.emotion-25 input.hs-button {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FCFF52;
+  color: #000;
+  padding: 24px 64px;
+  border-radius: 70px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #CCCCCC;
+  margin-top: 32px;
+}
+
+.emotion-25 input.hs-button:hover {
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+.emotion-25 input.hs-button:active {
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+.emotion-25 ul {
+  list-style-type: none;
+}
+
+.emotion-25 .hs-error-msg {
+  color: #FF7F6D;
+}
+
+.emotion-25 .legal-consent-container {
+  font-weight: 200;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+}
+
+.emotion-25 a {
+  color: #1AB775;
+}
+
+.emotion-26 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 0;
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transition: width 400ms ease-out,-webkit-transform 400ms ease-in;
+  transition: width 400ms ease-out,transform 400ms ease-in;
+  transition-delay: 0ms;
+}
+
+@media (max-width: 576px) {
+  .emotion-26 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-26 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 0;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transition: width 400ms ease-out,-webkit-transform 400ms ease-in;
+    transition: width 400ms ease-out,transform 400ms ease-in;
+    transition-delay: 0ms;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-26 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-27 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 260px;
+}
+
+@media (max-width: 576px) {
+  .emotion-27 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-27 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 260px;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-27 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-28 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 520px;
+}
+
+@media (max-width: 576px) {
+  .emotion-28 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-28 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 520px;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-28 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-29 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 780px;
+}
+
+@media (max-width: 576px) {
+  .emotion-29 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-29 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 780px;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-29 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-30 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-30 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-30 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 0;
+    right: 0;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-30 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-31 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 260px;
+  right: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-31 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-31 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 260px;
+    right: 0;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-31 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-32 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 520px;
+  right: 0;
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transition: width 400ms ease-out,-webkit-transform 400ms ease-in;
+  transition: width 400ms ease-out,transform 400ms ease-in;
+  transition-delay: 0ms;
+}
+
+@media (max-width: 576px) {
+  .emotion-32 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-32 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 520px;
+    right: 0;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transition: width 400ms ease-out,-webkit-transform 400ms ease-in;
+    transition: width 400ms ease-out,transform 400ms ease-in;
+    transition-delay: 0ms;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-32 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-33 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 780px;
+  right: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-33 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-33 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 780px;
+    right: 0;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-33 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-34 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 1040px;
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transition: width 400ms ease-out,-webkit-transform 400ms ease-in;
+  transition: width 400ms ease-out,transform 400ms ease-in;
+  transition-delay: 0ms;
+}
+
+@media (max-width: 576px) {
+  .emotion-34 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-34 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 1040px;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transition: width 400ms ease-out,-webkit-transform 400ms ease-in;
+    transition: width 400ms ease-out,transform 400ms ease-in;
+    transition-delay: 0ms;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-34 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-35 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 1040px;
+  right: 0;
+}
+
+@media (max-width: 576px) {
+  .emotion-35 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-35 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 1040px;
+    right: 0;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-35 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-36 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 520px;
+  left: NaNpx;
+}
+
+@media (max-width: 576px) {
+  .emotion-36 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-36 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 520px;
+    left: NaNpx;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-36 {
+      background-color: #FCFF52;
+    }
+  }
+}
+
+.emotion-37 {
+  width: 0;
+  height: 260px;
+  background-color: #FCFF52;
+  border: none;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 400ms;
+  top: 780px;
+  left: NaNpx;
+}
+
+@media (max-width: 576px) {
+  .emotion-37 {
+    background-color: #FCFF52;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-37 {
+    width: 0;
+    height: 260px;
+    background-color: #FCFF52;
+    border: none;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 400ms;
+    top: 780px;
+    left: NaNpx;
+  }
+
+  @media (max-width: 576px) {
+    .emotion-37 {
+      background-color: #FCFF52;
+    }
+  }
 }
 
 <div
@@ -226,21 +999,28 @@ exports[`Main MobileMenu renders 1`] = `
           Home
         </a>
       </div>
-    </div>
-    <div
-      className="emotion-2"
-    >
       <div
-        className="emotion-3"
+        className="emotion-5"
       >
-        <a
-          className="emotion-7"
-          href="/about"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
+        <svg
+          fill="none"
+          height="0.75em"
+          style={
+            Object {
+              "transform": "rotate(0deg)",
+            }
+          }
+          viewBox="0 0 8 12"
+          width="0.75em"
         >
-          About
-        </a>
+          <path
+            clipRule="evenodd"
+            d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+            fill="#000"
+            fillRule="evenodd"
+            opacity={1}
+          />
+        </svg>
       </div>
     </div>
     <div
@@ -250,7 +1030,7 @@ exports[`Main MobileMenu renders 1`] = `
         className="emotion-3"
       >
         <a
-          className="emotion-7"
+          className="emotion-8"
           href="/developers"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -258,6 +1038,29 @@ exports[`Main MobileMenu renders 1`] = `
           Developers
         </a>
       </div>
+      <div
+        className="emotion-5"
+      >
+        <svg
+          fill="none"
+          height="0.75em"
+          style={
+            Object {
+              "transform": "rotate(0deg)",
+            }
+          }
+          viewBox="0 0 8 12"
+          width="0.75em"
+        >
+          <path
+            clipRule="evenodd"
+            d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+            fill="#000"
+            fillRule="evenodd"
+            opacity={1}
+          />
+        </svg>
+      </div>
     </div>
     <div
       className="emotion-2"
@@ -266,7 +1069,46 @@ exports[`Main MobileMenu renders 1`] = `
         className="emotion-3"
       >
         <a
-          className="emotion-7"
+          className="emotion-8"
+          href="/alliance"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Founders
+        </a>
+      </div>
+      <div
+        className="emotion-5"
+      >
+        <svg
+          fill="none"
+          height="0.75em"
+          style={
+            Object {
+              "transform": "rotate(0deg)",
+            }
+          }
+          viewBox="0 0 8 12"
+          width="0.75em"
+        >
+          <path
+            clipRule="evenodd"
+            d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+            fill="#000"
+            fillRule="evenodd"
+            opacity={1}
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-3"
+      >
+        <a
+          className="emotion-8"
           href="/community"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -274,6 +1116,29 @@ exports[`Main MobileMenu renders 1`] = `
           Community
         </a>
       </div>
+      <div
+        className="emotion-5"
+      >
+        <svg
+          fill="none"
+          height="0.75em"
+          style={
+            Object {
+              "transform": "rotate(0deg)",
+            }
+          }
+          viewBox="0 0 8 12"
+          width="0.75em"
+        >
+          <path
+            clipRule="evenodd"
+            d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+            fill="#000"
+            fillRule="evenodd"
+            opacity={1}
+          />
+        </svg>
+      </div>
     </div>
     <div
       className="emotion-2"
@@ -282,7 +1147,7 @@ exports[`Main MobileMenu renders 1`] = `
         className="emotion-3"
       >
         <a
-          className="emotion-7"
+          className="emotion-8"
           href="/dapps"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -290,78 +1155,95 @@ exports[`Main MobileMenu renders 1`] = `
           Ecosystem
         </a>
       </div>
-    </div>
-    <div
-      className="emotion-2"
-    >
       <div
-        className="emotion-3"
+        className="emotion-5"
       >
-        <a
-          className="emotion-7"
-          href="/alliance"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
+        <svg
+          fill="none"
+          height="0.75em"
+          style={
+            Object {
+              "transform": "rotate(0deg)",
+            }
+          }
+          viewBox="0 0 8 12"
+          width="0.75em"
         >
-          Alliance
-        </a>
+          <path
+            clipRule="evenodd"
+            d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+            fill="#000"
+            fillRule="evenodd"
+            opacity={1}
+          />
+        </svg>
       </div>
     </div>
     <div
-      className="emotion-2"
+      className="emotion-22"
     >
       <div
-        className="emotion-3"
+        className="emotion-23"
       >
-        <a
-          className="emotion-7"
-          href="/public-sector"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
+        <svg
+          fill="none"
+          height="28"
+          viewBox="0 0 28 28"
+          width="28"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          Government
-        </a>
-      </div>
-    </div>
-    <div
-      className="emotion-2"
-    >
-      <div
-        className="emotion-3"
-      >
-        <a
-          className="emotion-7"
-          href="/enterprise"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
+          <path
+            d="M1 0V16.6909H27M27 16.6909L16.6981 6.38182M27 16.6909L16.6981 27"
+            stroke="black"
+          />
+        </svg>
+        <p
+          className="emotion-24"
         >
-          Enterprise
-        </a>
+          World-changing ideas in your inbox
+        </p>
       </div>
+      <span
+        className="emotion-25"
+        id="form-b4dd2ae2-68e9-4662-bfd3-b2860162a5aa"
+      />
     </div>
   </div>
   <div
     className="emotion-26"
-  >
-    <svg
-      fill="none"
-      height={30}
-      viewBox="0 0 25 25"
-      width={30}
-    >
-      <path
-        d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
-        fill="#FBCC5C"
-      />
-      <path
-        d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
-        fill="#35D07F"
-      />
-      <path
-        d="M15.4577 19.7369C16.1419 18.9077 16.6324 17.9361 16.8932 16.8932C17.9361 16.6324 18.9077 16.1421 19.7369 15.4579C19.699 16.6658 19.439 17.8563 18.9695 18.9698C17.8561 19.439 16.6656 19.6992 15.4577 19.7369ZM8.10687 8.10687C7.06397 8.36766 6.09239 8.85792 5.26318 9.54213C5.30108 8.33424 5.56108 7.14371 6.03055 6.03029C7.14397 5.56108 8.3345 5.30082 9.54239 5.26318C8.85818 6.09239 8.36766 7.06397 8.10687 8.10687Z"
-        fill="#5EA33B"
-      />
-    </svg>
-  </div>
+  />
+  <div
+    className="emotion-27"
+  />
+  <div
+    className="emotion-28"
+  />
+  <div
+    className="emotion-29"
+  />
+  <div
+    className="emotion-30"
+  />
+  <div
+    className="emotion-31"
+  />
+  <div
+    className="emotion-32"
+  />
+  <div
+    className="emotion-33"
+  />
+  <div
+    className="emotion-34"
+  />
+  <div
+    className="emotion-35"
+  />
+  <div
+    className="emotion-36"
+  />
+  <div
+    className="emotion-37"
+  />
 </div>
 `;

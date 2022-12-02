@@ -29,6 +29,7 @@ exports[`About renders 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   width: 100%;
+  background-color: #FBF6F1;
 }
 
 .emotion-14 {
@@ -133,7 +134,7 @@ exports[`About renders 1`] = `
 }
 
 .emotion-31 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -148,7 +149,7 @@ exports[`About renders 1`] = `
 }
 
 .emotion-50 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -162,12 +163,12 @@ exports[`About renders 1`] = `
 }
 
 .emotion-69 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: GT-Alpina,serif;
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
   color: #111214;
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -189,12 +190,12 @@ exports[`About renders 1`] = `
 }
 
 .emotion-70 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: GT-Alpina,serif;
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
   color: #111214;
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -207,12 +208,12 @@ exports[`About renders 1`] = `
 
 @media (max-width: 576px) {
   .emotion-70 {
-    font-family: EB Garamond,eb-garamond,Garamond,serif;
+    font-family: GT-Alpina,serif;
     font-size: 36px;
     line-height: 40;
     text-rendering: geometricPrecision;
     color: #111214;
-    font-weight: normal;
+    font-weight: 200;
     margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -221,7 +222,7 @@ exports[`About renders 1`] = `
 }
 
 .emotion-76 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -314,7 +315,7 @@ exports[`About renders 1`] = `
 }
 
 .emotion-86 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -324,7 +325,7 @@ exports[`About renders 1`] = `
 }
 
 .emotion-119 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -442,11 +443,11 @@ exports[`About renders 1`] = `
 }
 
 .emotion-125 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 28px;
   line-height: 36;
   text-rendering: geometricPrecision;
@@ -460,7 +461,7 @@ exports[`About renders 1`] = `
 }
 
 .emotion-158 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -469,7 +470,7 @@ exports[`About renders 1`] = `
 }
 
 .emotion-158 a {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -645,7 +646,7 @@ exports[`About renders 1`] = `
           style={
             Object {
               "color": "rgba(255,255,255,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "GT-Alpina, serif",
               "fontSize": "64px",
               "lineHeight": "72px",
               "marginBottom": "20px",
@@ -700,7 +701,7 @@ exports[`About renders 1`] = `
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
-                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "marginLeft": "10px",
@@ -799,7 +800,7 @@ exports[`About renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -837,7 +838,7 @@ exports[`About renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "36px",
             "lineHeight": "40px",
             "textRendering": "geometricPrecision",
@@ -897,7 +898,7 @@ exports[`About renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -939,7 +940,7 @@ exports[`About renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "28px",
             "lineHeight": "32px",
             "name": "uewl2b",
@@ -1007,7 +1008,7 @@ exports[`About renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -1045,7 +1046,7 @@ exports[`About renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "36px",
             "lineHeight": "40px",
             "name": "uewl2b",
@@ -1229,7 +1230,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -1420,7 +1421,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "Inter, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -1436,7 +1437,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "Inter, sans-serif",
             "fontSize": "20px",
             "lineHeight": "28px",
             "marginBottom": "20px",
@@ -1986,7 +1987,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "Inter, sans-serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -2002,7 +2003,7 @@ More importantly, we are driven by purpose – to solve real-world problems such
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "Inter, sans-serif",
             "fontSize": "20px",
             "lineHeight": "28px",
             "marginBottom": "20px",
@@ -2145,7 +2146,7 @@ Change the story.
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -2255,7 +2256,7 @@ Change the story.
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -2356,7 +2357,7 @@ Change the story.
           style={
             Object {
               "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontFamily": "GT-Alpina, serif",
               "fontSize": "24px",
               "lineHeight": "32px",
               "textRendering": "geometricPrecision",
@@ -2392,7 +2393,7 @@ Change the story.
           style={
             Object {
               "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "marginBottom": "50px",
@@ -2677,7 +2678,7 @@ Change the story.
                 style={
                   Object {
                     "color": "rgba(17,18,20,1.00)",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "fontWeight": "bold",
                     "lineHeight": "28px",
@@ -2745,7 +2746,7 @@ Change the story.
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "26px",
                   "fontStyle": "italic",
                   "lineHeight": "28px",
@@ -2810,7 +2811,7 @@ Change the story.
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -3044,7 +3045,7 @@ Change the story.
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
