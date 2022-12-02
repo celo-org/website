@@ -5,6 +5,8 @@ import { WHEN_MOBILE } from "src/estyles"
 
 interface Props {
   options: CSSObject
+  width?: number
+  height?: number
   backgroundColor?: backgroundColor
   mobileOnly?: boolean
 }
@@ -16,7 +18,12 @@ type backgroundColor = {
 export const PIXEL_SIZE = 86
 
 export function SquarePixel(props: Props) {
-  const squarePixelCss = backgroundPixelCSS(props.options, props.backgroundColor)
+  const squarePixelCss = backgroundPixelCSS(
+    props.options,
+    props.backgroundColor,
+    props.width,
+    props.height
+  )
   return (
     <div css={css(!props.mobileOnly && squarePixelCss, { [WHEN_MOBILE]: squarePixelCss })}></div>
   )
@@ -24,17 +31,21 @@ export function SquarePixel(props: Props) {
 
 const backgroundPixelCSS = (
   options,
-  backgroundColor: backgroundColor = { desktop: colors.baseTan }
+  backgroundColor: backgroundColor = { desktop: colors.baseTan },
+  width?,
+  height?
 ) => {
   return css({
-    width: PIXEL_SIZE,
-    height: PIXEL_SIZE,
+    width: width >= 0 ? width : PIXEL_SIZE,
+    height: height >= 0 ? height : PIXEL_SIZE,
     backgroundColor: backgroundColor.desktop ? backgroundColor.desktop : colors.baseTan,
-    border: `1px solid ${backgroundColor.desktop ? backgroundColor.desktop : colors.baseTan}`,
+    border: "none",
     position: "absolute",
-    ...options,
+    transitionProperty: "all",
+    transitionDuration: "400ms",
     [WHEN_MOBILE]: {
       backgroundColor: backgroundColor?.mobile ? backgroundColor.mobile : backgroundColor.desktop,
     },
+    ...options,
   })
 }

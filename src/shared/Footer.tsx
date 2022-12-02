@@ -31,6 +31,8 @@ import {
   WHEN_DESKTOP,
   textStyles,
   WHEN_TABLET_AND_UP,
+  gtAlpina,
+  inter,
 } from "src/estyles"
 import HubspotForm from "src/contentful/grid2-cells/HubspotForm"
 import NewLogo from "../logos/NewLogo"
@@ -211,7 +213,13 @@ export default function Footer({ hideForm, darkMode }: Props) {
           <div css={footerOtherLinksCss}>
             {FOOTER_OTHER_LINKS.map((item) => (
               <div key={item.link} css={footerOtherLinkContainerCss}>
-                <Button target="_blank" kind={BTN.INLINE} text={item.name} href={item.link} />
+                <Button
+                  target="_blank"
+                  kind={BTN.INLINE}
+                  text={item.name}
+                  href={item.link}
+                  cssStyle={css(inter)}
+                />
               </div>
             ))}
           </div>
@@ -302,7 +310,7 @@ const receiveUpdatesCss = css(fonts.body, {
   marginBottom: 10,
 })
 
-const detailsTextCss = css({
+const detailsTextCss = css(inter, {
   marginBottom: 20,
   maxWidth: 350,
   textAlign: "left",
@@ -341,7 +349,7 @@ const endMobileColumnCss = css({
   marginLeft: 20,
 })
 
-const copyrightStyle = css(fonts.legal, {
+const copyrightStyle = css(fonts.legal, inter, {
   zIndex: 10, // ensure copyright is above the sliding div from ChangeStory animation
   [WHEN_MOBILE]: {
     marginBottom: 17,

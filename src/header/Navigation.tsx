@@ -14,17 +14,18 @@ import LogoLightBg from "src/logos/LogoLightBg"
 import Button, { BTN } from "src/shared/Button.4"
 import Link from "src/shared/Link"
 import menu, { CeloLinks, MAIN_MENU, MenuLink, pagePaths } from "src/shared/menu-items"
-const MobileMenu = dynamic(import("src/shared/MobileMenu"))
 import OvalCoin from "src/shared/OvalCoin"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { colors } from "src/colors"
 import NewLogo from "src/logos/NewLogo"
 import NewMenuIcon from "src/header/NewMenuIcon"
 import { isConnectTheWorldPage as isConnectTheWorldPageFunc } from "../utils/utils"
+
+const MobileMenu = dynamic(import("src/shared/MobileMenu"))
 const BlueBanner = dynamic(import("src/header/BlueBanner"), { loading: () => null, ssr: false })
 
 const menuItems = MAIN_MENU
-const mobileMenu = [menu.HOME, ...MAIN_MENU]
+const mobileMenu = [menu.VISION, ...MAIN_MENU]
 
 const PATH_TO_ATTRIBUTES: Record<string, MenuLink> = Object.keys(pagePaths).reduce((last, key) => {
   last[pagePaths[key].link] = pagePaths[key]
@@ -161,51 +162,43 @@ export default function Header(props: Props) {
   const allWhiteLogo = pathname === menu.FOUNDERS.link && !belowFoldUpScroll
 
   return (
-    <div
-      css={css(
-        styles.container,
-        { top: isHomePage && isBannerShowing ? bannerHeight : 0 },
-        menuFaded && { height: 0 },
-        mobileMenuActive && styles.mobileMenuActive
-      )}
-    >
-      {isHomePage && <BlueBanner onVisibilityChange={setBannerVisible} />}
+    <>
+      <div
+        css={css(styles.menuActive, {
+          zIndex: mobileMenuActive ? 31 : -99,
+          transition: `z-index 400ms ${!mobileMenuActive ? "step-end" : "step-start"}`,
+        })}
+      >
+        <div css={styles.mobileOpenContainer}>
+          <MobileMenu currentPage={pathname} menu={mobileMenu} isOpen={mobileMenuActive} />
+        </div>
+      </div>
 
       <div
         css={css(
-          styles.menuContainer,
-          styles.background,
-          backgroundColor,
-          styles.fadeTransition,
-          menuFaded ? styles.menuInvisible : styles.menuVisible
+          styles.container,
+          { top: isHomePage && isBannerShowing ? bannerHeight : 0 },
+          menuFaded && { height: 0 },
+          mobileMenuActive && styles.mobileMenuActive
         )}
       >
-        <HomeLogo menuFaded={menuFaded} isDarkMode={isDarkMode} allWhiteLogo={allWhiteLogo} />
-        {!isConnectTheWorldPage && (
-          <NavigationLinks menuFaded={menuFaded} isDarkMode={isDarkMode} />
-        )}
-      </div>
+        {isHomePage && <BlueBanner onVisibilityChange={setBannerVisible} />}
 
-      {mobileMenuActive && (
-        <div css={styles.menuActive}>
-          <div css={styles.mobileOpenContainer}>
-            <MobileMenu currentPage={pathname} menu={mobileMenu} />
-          </div>
+        <div
+          css={css(
+            styles.menuContainer,
+            styles.background,
+            backgroundColor,
+            styles.fadeTransition,
+            menuFaded ? styles.menuInvisible : styles.menuVisible
+          )}
+        >
+          <HomeLogo menuFaded={menuFaded} isDarkMode={isDarkMode} allWhiteLogo={allWhiteLogo} />
         </div>
-      )}
-      {isConnectTheWorldPage ? (
+
         <NewMenuIcon onPress={clickHamburger} isOpen={mobileMenuActive} menuFaded={menuFaded} />
-      ) : (
-        <MobileMenuIcon
-          isDarkMode={isDarkMode}
-          willShowHamburger={willShowHamburger}
-          isHomePage={isHomePage}
-          mobileMenuActive={mobileMenuActive}
-          bannerHeight={isBannerShowing ? bannerHeight : 0}
-          clickHamburger={clickHamburger}
-        />
-      )}
-    </div>
+      </div>
+    </>
   )
 }
 
@@ -360,7 +353,6 @@ const styles = {
     height: HEADER_HEIGHT,
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 30,
     maxWidth: "100vw",
     transitionProperty: "top",
     transitionDuration: "200ms",
@@ -407,16 +399,15 @@ const styles = {
     paddingLeft: 6,
     paddingTop: 20,
     cursor: "pointer",
+    zIndex: 99,
   }),
   menuActive: flexCss({
-    position: "fixed",
+    position: "absolute",
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
     height: "100vh",
-    backgroundColor: colors.white,
-    overflowY: "scroll",
   }),
   mobileMenuActive: flexCss({
     bottom: 0,

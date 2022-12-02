@@ -61,6 +61,7 @@ const contentCss = css(flex, {
   textAlign: "center",
   [WHEN_MOBILE]: {
     alignItems: "flex-start",
+    padding: "140px 55px",
     paddingBottom: 24,
   },
 })

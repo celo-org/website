@@ -185,13 +185,10 @@ export const pagePaths = {
 }
 
 export const MAIN_MENU = [
-  pagePaths.FOUNDERS,
   pagePaths.DEVELOPERS,
+  pagePaths.FOUNDERS,
   pagePaths.COMMUNITY,
   pagePaths.ECOSYSTEM,
-  pagePaths.ALLIANCE_COLLECTIVE,
-  pagePaths.PUBLIC_SECTOR,
-  pagePaths.ENTERPRISE,
 ]
 
 // TODO: Temporary link to the master branch documentation for 'sdkDocs' and 'sdkTutorial'

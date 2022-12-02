@@ -2,6 +2,7 @@ import { css } from "@emotion/react"
 import { typeFaces, fontInfo } from "./styles"
 import { colors } from "./colors"
 import { DESKTOP_BREAKPOINT, TABLET_BREAKPOINT } from "src/shared/Styles"
+import { type } from "os"
 
 export const flex = css({
   boxSizing: "border-box",
@@ -30,6 +31,14 @@ export const garamond = css({
   fontFamily: typeFaces.garamond,
 })
 
+export const inter = css({
+  fontFamily: typeFaces.inter,
+})
+
+export const gtAlpina = css({
+  fontFamily: typeFaces.gtAlpina,
+})
+
 export const sectionTitle = css(jost, {
   marginTop: 8,
   fontWeight: 500,
@@ -42,7 +51,7 @@ export const sectionTitle = css(jost, {
 const body = css(fontInfo.p as any, { lineHeight: `${fontInfo.p.lineHeight}px` })
 
 const headingReset = css({
-  fontWeight: "normal",
+  fontWeight: "200",
   margin: 0,
   marginBlockStart: 0,
   marginBlockEnd: 0,

@@ -69,6 +69,7 @@ const styleDark = css({
 })
 
 const style = css({
+  width: "100%",
   display: "inline-block",
   img: {
     display: "none",
@@ -119,7 +120,7 @@ const style = css({
     marginRight: 26,
   },
   ".celo-hbspt .hs-input": css(inputStyle, {
-    maxWidth: "100%",
+    // maxWidth: "100%",
     borderColor: "rgba(0, 0, 0, 0.2)",
   }),
   ".hs-custom-style fieldset textarea": inputStyle,

@@ -157,8 +157,11 @@ const titleCss = css(fonts.h1, {
     lineHeight: "68px",
   },
   [WHEN_TABLET_AND_UP]: {
-    marginTop: "252px",
-    marginLeft: "224px",
+    marginTop: "100px",
+    marginLeft: "175px",
+  },
+  [WHEN_TABLET]: {
+    marginLeft: "0px",
   },
   [WHEN_MOBILE]: {
     textAlign: "center",
@@ -200,6 +203,9 @@ const contentCss = css(flex, {
   gridArea: "content",
   [WHEN_TABLET_AND_UP]: {
     minWidth: 320,
+  },
+  [WHEN_TABLET]: {
+    marginRight: 50,
   },
   [WHEN_MOBILE]: {
     padding: 16,
@@ -265,4 +271,7 @@ const coverImage2 = css({
   },
 })
 
-const newNakedButtonStyles = css({})
+const newNakedButtonStyles = css({
+  flex: 1,
+  width: 0,
+})

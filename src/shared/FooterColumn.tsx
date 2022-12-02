@@ -1,7 +1,7 @@
 import * as React from "react"
 import Button, { BTN } from "src/shared/Button.4"
 import { css, SerializedStyles } from "@emotion/react"
-import { WHEN_MOBILE, fonts, whiteText, textStyles } from "src/estyles"
+import { WHEN_MOBILE, fonts, whiteText, textStyles, inter } from "src/estyles"
 import { colors } from "../colors"
 
 export interface LinkType {
@@ -62,11 +62,14 @@ const linkContainerCss = css({
   marginBottom: 8,
 })
 
-const headingStyle = css(fonts.h6, {
+const headingStyle = css(inter, {
+  marginTop: 0,
+  fontWeight: 200,
   marginBottom: 20,
 })
 
-const linkCss = css(fonts.legal, {
+const linkCss = css(fonts.legal, inter, {
+  fontWeight: 700,
   border: `1px solid ${colors.transparentGray}`,
   padding: "10.5px 16px",
   borderRadius: 70,

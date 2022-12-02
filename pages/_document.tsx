@@ -42,6 +42,8 @@ export default class MyDocument extends Document<Props> {
           <link key="favicon" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="stylesheet" href="/fonts/JostFont.css" type="text/css" />
           <link rel="stylesheet" href="/fonts/EBGaramondFont.css" type="text/css" />
+          <link rel="stylesheet" href="/fonts/InterFont.css" type="text/css" />
+          <link rel="stylesheet" href="/fonts/GTAlpinaFont.css" type="text/css" />
         </Head>
         <body>
           <Main />

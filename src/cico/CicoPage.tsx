@@ -16,6 +16,7 @@ import {
   WHEN_TABLET,
   flexRow,
   WHEN_DESKTOP,
+  inter,
 } from "src/estyles"
 import debounce from "lodash.debounce"
 import { Entry } from "contentful"
@@ -160,9 +161,8 @@ const displayCountry = css(jost, whiteText, flex, {
   },
 })
 const sectionContainer = css({
-  margin: "0px 100px",
   justifyContent: "center",
-  padding: "0px 12px 80px",
+  paddingBottom: 80,
   maxWidth: 1104,
   width: "100%",
   display: "grid",
@@ -333,7 +333,7 @@ const countriesHeaderCell = css(countriesCells, whiteText, {
     color: colors.dark,
   },
 })
-const countryCss = css({
+const countryCss = css(inter, {
   fontSize: 26,
 })
 const toggleContent = css({
