@@ -179,7 +179,7 @@ Array [
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "36px",
                   "lineHeight": "40px",
                   "marginTop": "20px",
@@ -198,7 +198,7 @@ Array [
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "textRendering": "geometricPrecision",
@@ -894,7 +894,7 @@ Do not send real funds.
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -912,7 +912,7 @@ Do not send real funds.
               style={
                 Object {
                   "color": "rgba(221,221,221,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "marginBottom": "20px",
@@ -1087,7 +1087,7 @@ Do not send real funds.
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -1105,7 +1105,7 @@ Do not send real funds.
               style={
                 Object {
                   "color": "rgba(221,221,221,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "marginBottom": "20px",
@@ -1185,7 +1185,7 @@ Do not send real funds.
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -1203,7 +1203,7 @@ Do not send real funds.
               style={
                 Object {
                   "color": "rgba(221,221,221,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "marginBottom": "20px",
@@ -1236,6 +1236,7 @@ Do not send real funds.
   -ms-flex-item-align: center;
   align-self: center;
   width: 100%;
+  background-color: #FBF6F1;
 }
 
 .emotion-1 {
@@ -1363,12 +1364,12 @@ Do not send real funds.
 }
 
 .emotion-3 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: GT-Alpina,serif;
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
   color: #111214;
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -1415,6 +1416,7 @@ Check out these wallets for everyday use.
   -ms-flex-item-align: center;
   align-self: center;
   width: 100%;
+  background-color: #FBF6F1;
 }
 
 .emotion-1 {
@@ -1527,14 +1529,13 @@ Check out these wallets for everyday use.
 }
 
 .emotion-5 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: Jost,futura-pt,futura,sans-serif;
+  font-family: GT-Alpina,serif;
   font-size: 24px;
   line-height: 28;
-  font-weight: 400;
   text-rendering: geometricPrecision;
   color: #111214;
   line-height: 28px;
@@ -1543,7 +1544,7 @@ Check out these wallets for everyday use.
 }
 
 .emotion-6 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -1596,23 +1597,31 @@ Check out these wallets for everyday use.
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #35D07F;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
   margin-top: 20px;
 }
 
-.emotion-9:hover {
-  color: #4CDD91;
-}
-
-.emotion-9:active {
-  color: #0FB972;
-}
-
 .emotion-10 {
-  padding-top: 0.15em;
-  padding-left: 0.4em;
+  margin-left: 8px;
+  background-color: #000;
+  padding: 9.5px 9.5px 9.5px 13.5px;
+  border-radius: 60px;
+}
+
+.emotion-10:hover {
+  background-color: #FCFF52;
+}
+
+.emotion-10:active {
+  background-color: #000;
+}
+
+@media (max-width: 576px) {
+  .emotion-10 {
+    padding: 6px 6px 6px 8px;
+  }
 }
 
 <section
@@ -1767,6 +1776,9 @@ Check out these wallets for everyday use.
               Get Valora
               <span
                 className="emotion-10"
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
               >
                 <svg
                   fill="none"
@@ -1782,7 +1794,7 @@ Check out these wallets for everyday use.
                   <path
                     clipRule="evenodd"
                     d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
+                    fill="#FFFFFF"
                     fillRule="evenodd"
                     opacity={1}
                   />
@@ -1938,6 +1950,9 @@ Check out these wallets for everyday use.
               Go to Celo Web Wallet
               <span
                 className="emotion-10"
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
               >
                 <svg
                   fill="none"
@@ -1953,7 +1968,7 @@ Check out these wallets for everyday use.
                   <path
                     clipRule="evenodd"
                     d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
+                    fill="#FFFFFF"
                     fillRule="evenodd"
                     opacity={1}
                   />
@@ -2109,6 +2124,9 @@ Check out these wallets for everyday use.
               Get to Celo Terminal
               <span
                 className="emotion-10"
+                onMouseDown={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
               >
                 <svg
                   fill="none"
@@ -2124,7 +2142,7 @@ Check out these wallets for everyday use.
                   <path
                     clipRule="evenodd"
                     d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                    fill="#35D07F"
+                    fill="#FFFFFF"
                     fillRule="evenodd"
                     opacity={1}
                   />

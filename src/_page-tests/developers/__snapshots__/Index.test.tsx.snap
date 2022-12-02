@@ -30,6 +30,7 @@ exports[`DevelopersPage renders 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   width: 100%;
+  background-color: #FBF6F1;
 }
 
 .emotion-2 {
@@ -148,14 +149,13 @@ exports[`DevelopersPage renders 1`] = `
 }
 
 .emotion-5 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: Jost,futura-pt,futura,sans-serif;
+  font-family: GT-Alpina,serif;
   font-size: 24px;
   line-height: 28;
-  font-weight: 400;
   text-rendering: geometricPrecision;
   color: #111214;
   line-height: 28px;
@@ -164,7 +164,7 @@ exports[`DevelopersPage renders 1`] = `
 }
 
 .emotion-6 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -312,7 +312,7 @@ exports[`DevelopersPage renders 1`] = `
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "28px",
                   "lineHeight": "32px",
                   "textRendering": "geometricPrecision",
@@ -330,7 +330,7 @@ exports[`DevelopersPage renders 1`] = `
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -348,7 +348,7 @@ exports[`DevelopersPage renders 1`] = `
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "marginBottom": "20px",
@@ -431,7 +431,7 @@ exports[`DevelopersPage renders 1`] = `
                 Object {
                   "color": "rgba(255,255,255,1.00)",
                   "cursor": "pointer",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "16px",
                   "fontWeight": "500",
                   "lineHeight": "18px",
@@ -448,7 +448,7 @@ exports[`DevelopersPage renders 1`] = `
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "textRendering": "geometricPrecision",
@@ -477,7 +477,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -496,7 +496,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -515,7 +515,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -534,7 +534,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -553,7 +553,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -866,7 +866,7 @@ exports[`DevelopersPage renders 1`] = `
                 Object {
                   "color": "rgba(255,255,255,1.00)",
                   "cursor": "pointer",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "16px",
                   "fontWeight": "500",
                   "lineHeight": "18px",
@@ -883,7 +883,7 @@ exports[`DevelopersPage renders 1`] = `
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "textRendering": "geometricPrecision",
@@ -912,7 +912,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -931,7 +931,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -950,7 +950,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -1181,7 +1181,7 @@ exports[`DevelopersPage renders 1`] = `
                 Object {
                   "color": "rgba(255,255,255,1.00)",
                   "cursor": "pointer",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "16px",
                   "fontWeight": "500",
                   "lineHeight": "18px",
@@ -1198,7 +1198,7 @@ exports[`DevelopersPage renders 1`] = `
               style={
                 Object {
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "textRendering": "geometricPrecision",
@@ -1227,7 +1227,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -1246,7 +1246,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -1265,7 +1265,7 @@ exports[`DevelopersPage renders 1`] = `
                   Object {
                     "color": "rgba(255,255,255,1.00)",
                     "display": "list-item",
-                    "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "20px",
                     "lineHeight": "28px",
                     "listStyle": "inherit",
@@ -1474,7 +1474,7 @@ exports[`DevelopersPage renders 1`] = `
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textAlign": "center",

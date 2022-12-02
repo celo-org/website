@@ -93,7 +93,7 @@ exports[`Terms renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "36px",
             "lineHeight": "40px",
             "textAlign": "center",
@@ -112,7 +112,7 @@ exports[`Terms renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "24px",
             "lineHeight": "32px",
             "textAlign": "center",
@@ -170,7 +170,7 @@ exports[`Terms renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "Jost, futura-pt, futura, sans-serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "16px",
             "fontWeight": "500",
             "lineHeight": "18px",
@@ -206,7 +206,7 @@ exports[`Terms renders 1`] = `
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "Inter, sans-serif",
             "fontSize": "20px",
             "lineHeight": "28px",
             "textRendering": "geometricPrecision",
@@ -237,7 +237,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -256,7 +256,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -308,7 +308,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
           style={
             Object {
               "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "fontWeight": "bold",
               "lineHeight": "28px",
@@ -327,7 +327,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -380,7 +380,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -401,7 +401,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -433,7 +433,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -452,7 +452,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -473,7 +473,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -502,7 +502,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -520,7 +520,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -539,7 +539,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -557,7 +557,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -575,7 +575,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -593,7 +593,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -614,7 +614,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -633,7 +633,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -686,7 +686,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -715,7 +715,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -734,7 +734,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -752,7 +752,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -771,7 +771,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -789,7 +789,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -807,7 +807,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -829,7 +829,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -858,7 +858,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -879,7 +879,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -908,7 +908,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -926,7 +926,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -944,7 +944,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -962,7 +962,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -980,7 +980,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -998,7 +998,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -1016,7 +1016,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -1034,7 +1034,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -1055,7 +1055,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -1074,7 +1074,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -1103,7 +1103,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -1121,7 +1121,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -1139,7 +1139,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -1160,7 +1160,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -1179,7 +1179,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -1198,7 +1198,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
@@ -1227,7 +1227,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -1255,7 +1255,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -1283,7 +1283,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
                 Object {
                   "color": "rgba(17,18,20,1.00)",
                   "display": "list-item",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "listStyle": "lower-alpha",
@@ -1314,7 +1314,7 @@ YOUR PARTICIPATION IN TGCSO IS ENTIRELY VOLUNTARY, BUT IF YOU ARE PARTICIPATING 
             Object {
               "color": "rgba(17,18,20,1.00)",
               "display": "list-item",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "20px",
               "lineHeight": "28px",
               "listStyle": "decimal",
