@@ -3876,7 +3876,7 @@ Celo icons have descriptions that act as guidelines. While some descriptions are
                 >
                   <a
                     className="emotion-213"
-                    href="https://www.celoreserve.org"
+                    href="https://reserve.mento.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
