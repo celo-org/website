@@ -3594,7 +3594,7 @@ Images have descriptions that act as guidelines for both accessibility and commu
                 >
                   <a
                     className="emotion-194"
-                    href="https://www.celoreserve.org"
+                    href="https://reserve.mento.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"

@@ -943,7 +943,7 @@ Array [
               >
                 <a
                   className="emotion-14"
-                  href="https://www.celoreserve.org"
+                  href="https://reserve.mento.org"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   rel="noopener"

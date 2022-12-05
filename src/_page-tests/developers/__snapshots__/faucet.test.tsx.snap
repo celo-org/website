@@ -324,31 +324,10 @@ exports[`Faucet renders 1`] = `
 }
 
 .emotion-23 {
-  display: inline;
-}
-
-.emotion-24 {
-  color: inherit;
-  cursor: pointer;
-  text-decoration-style: solid;
-  text-decoration-line: underline;
-  display: inline;
-  opacity: 1;
-}
-
-.emotion-24:hover {
-  opacity: 0.75;
-}
-
-.emotion-24:active {
-  opacity: 1;
-}
-
-.emotion-39 {
   margin-bottom: 20px;
 }
 
-.emotion-40 {
+.emotion-24 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -358,11 +337,11 @@ exports[`Faucet renders 1`] = `
   padding-bottom: 10px;
 }
 
-.emotion-41 {
+.emotion-25 {
   font-weight: bold;
 }
 
-.emotion-43 {
+.emotion-27 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -387,7 +366,7 @@ exports[`Faucet renders 1`] = `
   justify-content: center;
 }
 
-.emotion-44 {
+.emotion-28 {
   font-family: Jost,futura-pt,futura,sans-serif;
   font-size: 16px;
   line-height: 16;
@@ -412,17 +391,38 @@ exports[`Faucet renders 1`] = `
   font-weight: 500;
 }
 
-.emotion-44:hover {
+.emotion-28:hover {
   color: #4CDD91;
 }
 
-.emotion-44:active {
+.emotion-28:active {
   color: #0FB972;
 }
 
-.emotion-45 {
+.emotion-29 {
   padding-top: 0.15em;
   padding-left: 0.4em;
+}
+
+.emotion-36 {
+  display: inline;
+}
+
+.emotion-37 {
+  color: inherit;
+  cursor: pointer;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  display: inline;
+  opacity: 1;
+}
+
+.emotion-37:hover {
+  opacity: 0.75;
+}
+
+.emotion-37:active {
+  opacity: 1;
 }
 
 <div
@@ -518,7 +518,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         <h3
           className="emotion-5"
         >
-          Create an Account
+          Request More Tokens
         </h3>
       </div>
       <div
@@ -526,35 +526,61 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
       >
         <p
           className="emotion-7"
+        />
+        <div
+          className="emotion-23"
         >
-          If you have an Android or iOS device, you can set up a funded account on the Alfajores Testnet by requesting a 
           <div
-            className="emotion-23"
+            className="emotion-24"
           >
-            <a
-              className="emotion-24"
-              href="/developers/wallet"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
+            <span
+              className="emotion-25"
             >
-              Celo Wallet invite
-            </a>
+              Special Requests for Funds.
+               
+            </span>
+            If you have a specific need for more alfajores testnet tokens, you may request a larger amount by filling out the form with why. Spamming the form will result in complete denial.
           </div>
-          . You can also 
           <div
-            className="emotion-23"
+            className="emotion-26"
           >
-            <a
-              className="emotion-24"
-              href="https://docs.celo.org/getting-started/faucet#creating-an-empty-account-with-the-celo-client"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
+            <span
+              className="emotion-27"
             >
-              create an account via the command line
-              .
-            </a>
+              <a
+                className="emotion-28"
+                href="https://docs.google.com/forms/d/1n6m-nMjjDn2RpBDadMMqYpf5DzDTOeRk1dhDJrLFdO4/viewform"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+              >
+                Request Testnet Tokens
+                <span
+                  className="emotion-29"
+                >
+                  <svg
+                    fill="none"
+                    height="0.75em"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
+                    viewBox="0 0 8 12"
+                    width="0.75em"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
+                      fill="#35D07F"
+                      fillRule="evenodd"
+                      opacity={1}
+                    />
+                  </svg>
+                </span>
+              </a>
+            </span>
           </div>
-        </p>
+        </div>
       </div>
     </div>
   </section>
@@ -570,7 +596,7 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         <h3
           className="emotion-5"
         >
-          Have an Account?
+          Create an Account
         </h3>
       </div>
       <div
@@ -579,7 +605,20 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
         <p
           className="emotion-7"
         >
-          You can access an existing account from the Celo Wallet by pressing \`Import It\` on the first screen and entering your seed phrase.
+          You can use wallets like Metamask for you account. You can also 
+          <div
+            className="emotion-36"
+          >
+            <a
+              className="emotion-37"
+              href="https://docs.celo.org/cli/account#celocli-accountnew"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              create an account via the celo command line
+              CLI
+            </a>
+          </div>
         </p>
       </div>
     </div>
@@ -606,13 +645,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           className="emotion-7"
         />
         <div
-          className="emotion-39"
+          className="emotion-23"
         >
           <div
-            className="emotion-40"
+            className="emotion-24"
           >
             <span
-              className="emotion-41"
+              className="emotion-25"
             >
               Get Help from the Celo Community.
                
@@ -620,20 +659,20 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             Find answers and ask questions in the Forum
           </div>
           <div
-            className="emotion-42"
+            className="emotion-26"
           >
             <span
-              className="emotion-43"
+              className="emotion-27"
             >
               <a
-                className="emotion-44"
+                className="emotion-28"
                 href="https://forum.celo.org/"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
                 Alfajores Testnet Forum
                 <span
-                  className="emotion-45"
+                  className="emotion-29"
                 >
                   <svg
                     fill="none"
@@ -684,67 +723,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           className="emotion-7"
         />
         <div
-          className="emotion-39"
+          className="emotion-23"
         >
           <div
-            className="emotion-40"
+            className="emotion-24"
           >
             <span
-              className="emotion-41"
-            >
-              Build the Celo Wallet locally.
-               
-            </span>
-            Follow these instructions to build the Wallet from source, pointed at the Alfajores Testnet.
-          </div>
-          <div
-            className="emotion-42"
-          >
-            <span
-              className="emotion-43"
-            >
-              <a
-                className="emotion-44"
-                href="https://docs.celo.org/celo-codebase/wallet/intro"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-              >
-                Read the Wallet Tutorial
-                <span
-                  className="emotion-45"
-                >
-                  <svg
-                    fill="none"
-                    height="0.75em"
-                    style={
-                      Object {
-                        "transform": "rotate(0deg)",
-                      }
-                    }
-                    viewBox="0 0 8 12"
-                    width="0.75em"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M1.19997 0L1.13249e-05 1.19996L4.80011 6.00006L0 10.8002L1.19996 12.0001L7.19977 6.00032L7.19953 6.00007L7.19979 5.99981L1.19997 0Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                      opacity={1}
-                    />
-                  </svg>
-                </span>
-              </a>
-            </span>
-          </div>
-        </div>
-        <div
-          className="emotion-39"
-        >
-          <div
-            className="emotion-40"
-          >
-            <span
-              className="emotion-41"
+              className="emotion-25"
             >
               View account information. 
                
@@ -752,20 +737,20 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             Check your balance and transaction history
           </div>
           <div
-            className="emotion-42"
+            className="emotion-26"
           >
             <span
-              className="emotion-43"
+              className="emotion-27"
             >
               <a
-                className="emotion-44"
+                className="emotion-28"
                 href="http://alfajores-blockscout.celo-testnet.org/"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
                 BlockScout
                 <span
-                  className="emotion-45"
+                  className="emotion-29"
                 >
                   <svg
                     fill="none"
@@ -792,13 +777,13 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
           </div>
         </div>
         <div
-          className="emotion-39"
+          className="emotion-23"
         >
           <div
-            className="emotion-40"
+            className="emotion-24"
           >
             <span
-              className="emotion-41"
+              className="emotion-25"
             >
               Interested in running your own node? 
                
@@ -806,20 +791,20 @@ In the Celo Wallet, you can find your address by pressing the menu icon at the t
             Follow our step-by-step guide.
           </div>
           <div
-            className="emotion-42"
+            className="emotion-26"
           >
             <span
-              className="emotion-43"
+              className="emotion-27"
             >
               <a
-                className="emotion-44"
+                className="emotion-28"
                 href="https://docs.celo.org/getting-started/running-a-full-node"
                 onClick={[Function]}
                 onMouseEnter={[Function]}
               >
                 Read the Docs
                 <span
-                  className="emotion-45"
+                  className="emotion-29"
                 >
                   <svg
                     fill="none"

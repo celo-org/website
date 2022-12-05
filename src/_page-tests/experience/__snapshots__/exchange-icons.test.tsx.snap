@@ -6280,7 +6280,7 @@ exports[`Experience/ExchangeIcons renders 1`] = `
                 >
                   <a
                     className="emotion-362"
-                    href="https://www.celoreserve.org"
+                    href="https://reserve.mento.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
