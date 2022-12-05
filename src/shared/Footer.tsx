@@ -1,22 +1,8 @@
 import * as React from "react"
 import { css } from "@emotion/react"
-import { NameSpaces, Trans, useTranslation } from "src/i18n"
-import Discord from "src/icons/Discord"
-import Discourse from "src/icons/Discourse"
-import Instagram from "src/icons/Instagram"
-import MediumLogo from "src/icons/MediumLogo"
-import Octocat from "src/icons/Octocat"
-import LinkedIn from "src/icons/LinkedIn"
-import envelope from "src/icons/Envelope.svg"
-import Twitch from "src/icons/Twitch"
-import Reddit from "src/icons/Reddit"
-import Telegram from "src/icons/Telegram"
-import { TweetLogo } from "src/icons/TwitterLogo"
-import YouTube from "src/icons/YouTube"
+import { NameSpaces, useTranslation } from "src/i18n"
 import { GridRow, Cell, Spans } from "src/layout/Grid2"
 import { useScreenSize } from "src/layout/ScreenSize"
-import RingsGlyph from "src/logos/RingsGlyph"
-import ChangeStory from "src/shared/ChangeStory"
 import FooterColumn, { LinkType } from "src/shared/FooterColumn"
 import menu, { CeloLinks, hashNav } from "src/shared/menu-items"
 import { colors } from "src/colors"
@@ -29,111 +15,41 @@ import {
   whiteText,
   standardStyles,
   WHEN_DESKTOP,
+  WHEN_TABLET_AND_UP,
+  inter,
 } from "src/estyles"
 import HubspotForm from "src/contentful/grid2-cells/HubspotForm"
+import NewLogo from "../logos/NewLogo"
+import SocialLinks from "../reskin/components/SocialLinks"
+import Button, { BTN } from "./Button.4"
+import { PIXEL_SIZE, SquarePixel } from "../reskin/SquarePixel"
 
-const MENU = [
-  menu.HOME,
-  menu.ABOUT_US,
-  menu.JOBS,
-  menu.BUILD,
-  menu.DEVELOPERS,
-  menu.ALLIANCE_COLLECTIVE,
-  menu.COMMUNITY,
-  {
-    name: "annualReport",
-    link: "/papers/annual-reports/2021",
-  },
-]
+const MENU = [menu.DEVELOPERS, menu.FOUNDERS, menu.COMMUNITY, menu.BUILD]
 const TECH_MENU = [
   { name: "Docs", link: CeloLinks.docs },
   { name: "Security Audits", link: CeloLinks.audits },
   { name: "Reserve", link: CeloLinks.reserve },
-  menu.PAPERS,
   menu.PUBLIC_SECTOR,
 ]
 const eventsLink = `${menu.COMMUNITY.link}#${hashNav.connect.events}`
-const ecoFundLink = `${menu.COMMUNITY.link}#${hashNav.connect.fund}`
-const RESOURCE_MENU = [
-  menu.BRAND_POLICY,
+const COMPANY_MENU = [
+  menu.VISION,
+  { name: "Ecosystem", link: "#" },
+  menu.JOBS,
   menu.PRESS,
+  menu.PAPERS,
   { name: "Events", link: eventsLink },
-  menu.EVENTS_KIT,
-  menu.BRAND,
-  menu.MERCHANTS,
-  menu.GRANT_KIT,
-  menu.PILOT_KIT,
-  { name: "Ecosystem Fund", link: ecoFundLink },
 ]
+const KITS_MENU = [menu.BRAND, menu.PILOT_KIT, menu.GRANT_KIT]
 
-const ICON_SIZE = 13
-function socialMenu(darkMode: boolean) {
-  const iconColor = darkMode ? colors.white : colors.dark
-  return [
-    {
-      name: "Blog",
-      link: CeloLinks.mediumPublication,
-      icon: <MediumLogo height={ICON_SIZE} color={iconColor} wrapWithLink={false} />,
-    },
-    {
-      name: "GitHub",
-      link: CeloLinks.gitHub,
-      icon: <Octocat size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Twitter",
-      link: CeloLinks.twitter,
-      icon: <TweetLogo height={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Forum",
-      link: CeloLinks.discourse,
-      icon: <Discourse size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Chat",
-      link: CeloLinks.discord,
-      icon: <Discord size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "YouTube",
-      link: CeloLinks.youtube,
-      icon: <YouTube size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Instagram",
-      link: CeloLinks.instagram,
-      icon: <Instagram size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "LinkedIn",
-      link: CeloLinks.linkedIn,
-      icon: <LinkedIn size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Twitch",
-      link: CeloLinks.twitch,
-      icon: <Twitch size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Reddit",
-      link: CeloLinks.reddit,
-      icon: <Reddit size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Telegram",
-      link: CeloLinks.telegram,
-      icon: <Telegram size={ICON_SIZE} color={iconColor} />,
-    },
-  ]
-}
+const FOOTER_OTHER_LINKS = [menu.PRIVACY, menu.TERMS]
 
 interface Props {
   hideForm?: boolean
   darkMode?: boolean
 }
 
-export default function Footer({ hideForm, darkMode }: Props) {
+export default function Footer({ darkMode }: Props) {
   const { t } = useTranslation(NameSpaces.common)
   const { isMobile } = useScreenSize()
   const year = new Date().getFullYear()
@@ -149,52 +65,34 @@ export default function Footer({ hideForm, darkMode }: Props) {
   )
   return (
     <>
-      {!hideForm && (
-        <GridRow
-          columns={1}
-          darkMode={darkMode}
-          css={css(standardStyles.centered, {
-            [WHEN_DESKTOP]: css(standardStyles.blockMarginTop, flex),
-            [WHEN_TABLET]: css(standardStyles.blockMarginTopTablet, flex),
-            [WHEN_MOBILE]: standardStyles.blockMarginTopMobile,
-          })}
-        >
-          <div css={formStyle}>
-            <img
-              src={envelope.src}
-              css={emailLogoCss}
-              width={50}
-              height={60}
-              alt={t("footer.emailIconAlt")}
-            />
-            <p css={receiveUpdatesCss}>{t("receiveUpdates")}</p>
-            <HubspotForm hubspotFormId="b4dd2ae2-68e9-4662-bfd3-b2860162a5aa" />
-          </div>
-        </GridRow>
-      )}
       <GridRow
         columns={3}
         darkMode={darkMode}
+        wrapperCss={wrapperCss}
         css={css({
+          gap: 0,
           [WHEN_DESKTOP]: css(standardStyles.blockMarginTop),
           [WHEN_TABLET]: css(standardStyles.blockMarginTopTablet),
           [WHEN_MOBILE]: standardStyles.blockMarginTopMobile,
         })}
       >
-        <Cell span={Spans.one} tabletSpan={Spans.three}>
-          <div css={ringsCSS}>
-            <RingsGlyph darkMode={darkMode} />
+        <Cell span={Spans.one} cssStyles={css({ gridRowStart: 1 })}>
+          <div css={footerLogoCss}>
+            <NewLogo width={282} height={64} />
           </div>
-          <Details darkMode={darkMode} />
         </Cell>
-        <Cell span={Spans.two} tabletSpan={Spans.three}>
+        <Cell span={Spans.one} tabletSpan={Spans.one} cssStyles={css({ gridRowStart: 2 })}>
+          <Details darkMode={darkMode} />
+          <HubspotForm hubspotFormId="b4dd2ae2-68e9-4662-bfd3-b2860162a5aa" />
+        </Cell>
+        <Cell span={Spans.two} tabletSpan={Spans.three} cssStyles={footerLinksResponsiveCss}>
           {isMobile ? (
             <MobileLinks footerMenu={footerMenu} darkMode={darkMode} />
           ) : (
             <div css={linksAreaCss}>
               <FooterColumn
                 css={linkColumnStartCss}
-                heading={"Celo"}
+                heading={"Celo for"}
                 links={footerMenu}
                 darkMode={darkMode}
               />
@@ -204,15 +102,15 @@ export default function Footer({ hideForm, darkMode }: Props) {
                 darkMode={darkMode}
               />
               <FooterColumn
-                heading={t("footer.resources")}
-                links={RESOURCE_MENU}
+                heading={t("footer.company")}
+                links={COMPANY_MENU}
                 darkMode={darkMode}
               />
               <FooterColumn
                 darkMode={darkMode}
                 css={linkColumnEndCss}
-                heading={t("footer.social")}
-                links={socialMenu(darkMode)}
+                heading={t("footer.kits")}
+                links={KITS_MENU}
               />
             </div>
           )}
@@ -221,6 +119,7 @@ export default function Footer({ hideForm, darkMode }: Props) {
       <GridRow
         columns={1}
         darkMode={darkMode}
+        wrapperCss={css({ backgroundColor: colors.primaryYellow })}
         css={css({
           [WHEN_DESKTOP]: css(standardStyles.blockMargin),
           [WHEN_TABLET]: css(standardStyles.blockMarginTablet),
@@ -228,12 +127,30 @@ export default function Footer({ hideForm, darkMode }: Props) {
         })}
       >
         <div css={toesCss}>
-          <ChangeStory darkMode={darkMode} />
+          <SocialLinks containerCss={socialContainerCss} iconCss={socialIconCss} />
           <small css={css(copyrightStyle, darkMode && whiteText)}>
             {t("footer.copyright", { year })}
           </small>
+          <div css={footerOtherLinksCss}>
+            {FOOTER_OTHER_LINKS.map((item) => (
+              <div key={item.link} css={footerOtherLinkContainerCss}>
+                <Button
+                  target="_blank"
+                  kind={BTN.INLINE}
+                  text={item.name}
+                  href={item.link}
+                  cssStyle={css(inter)}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </GridRow>
+      <SquarePixel options={{ top: 0, left: 0 }} backgroundColor={{ desktop: colors.white }} />
+      <SquarePixel
+        options={{ top: 0, left: PIXEL_SIZE * 2 }}
+        backgroundColor={{ desktop: colors.white }}
+      />
     </>
   )
 }
@@ -247,26 +164,32 @@ function MobileLinks({ footerMenu, darkMode }: MobileLinkProps) {
   const { t } = useTranslation(NameSpaces.common)
 
   return (
-    <>
-      <div css={flexRow}>
-        <FooterColumn darkMode={darkMode} heading={"Celo"} links={footerMenu} />
-        <FooterColumn
-          darkMode={darkMode}
-          heading={t("footer.social")}
-          links={socialMenu(darkMode)}
-          css={endMobileColumnCss}
-        />
-      </div>
-      <div css={flexRow}>
-        <FooterColumn darkMode={darkMode} heading={t("footer.resources")} links={RESOURCE_MENU} />
-        <FooterColumn
-          darkMode={darkMode}
-          heading={t("footer.technology")}
-          links={TECH_MENU}
-          css={endMobileColumnCss}
-        />
-      </div>
-    </>
+    <div css={mobileLinkCss}>
+      <FooterColumn
+        darkMode={darkMode}
+        heading={"Celo for"}
+        links={footerMenu}
+        linksCss={css(flexRow, { flexWrap: "wrap" })}
+      />
+      <FooterColumn
+        darkMode={darkMode}
+        heading={t("footer.company")}
+        links={COMPANY_MENU}
+        linksCss={css(flexRow, { flexWrap: "wrap" })}
+      />
+      <FooterColumn
+        darkMode={darkMode}
+        heading={t("footer.technology")}
+        links={TECH_MENU}
+        linksCss={css(flexRow, { flexWrap: "wrap" })}
+      />
+      <FooterColumn
+        darkMode={darkMode}
+        heading={t("footer.kits")}
+        links={KITS_MENU}
+        linksCss={css(flexRow, { flexWrap: "wrap" })}
+      />
+    </div>
   )
 }
 
@@ -279,61 +202,42 @@ const Details = React.memo(function _Details({ darkMode }: DetailProps) {
   const fontStyling = css(fonts.legal, detailsTextCss, darkMode && whiteText)
   return (
     <div css={detailsCss}>
-      <p css={fontStyling}>{t("disclaimer")}</p>
-      <p css={fontStyling}>
-        <Trans ns={NameSpaces.common} i18nKey={"footerReadMoreTerms"}>
-          <a css={hrefCss} href={menu.TERMS.link}>
-            Terms of Service
-          </a>
-        </Trans>
-      </p>
+      <p css={fontStyling}>{t("footerEmailText")}</p>
     </div>
   )
 })
 
 const detailsCss = css(flex, {
-  paddingBottom: 20,
   [WHEN_MOBILE]: {
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
   },
 })
 
-const hrefCss = css({
-  color: "inherit",
+const wrapperCss = css({
+  backgroundColor: colors.primaryYellow,
+  [WHEN_MOBILE]: {
+    padding: 33,
+  },
 })
 
-const receiveUpdatesCss = css(fonts.body, {
-  textAlign: "center",
-  marginTop: 20,
-  marginBottom: 10,
-})
-
-const detailsTextCss = css({
+const detailsTextCss = css(inter, {
   marginBottom: 20,
   maxWidth: 350,
   textAlign: "left",
-  [WHEN_MOBILE]: {
-    textAlign: "center",
-  },
 })
 
 const toesCss = css(flex, {
   flexDirection: "row",
   justifyContent: "space-between",
+  alignItems: "center",
+  borderBottom: `1px solid ${colors.transparentGray}`,
   [WHEN_MOBILE]: css({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    borderBottom: "none",
   }),
-})
-
-const formStyle = css(flex, standardStyles.centered, {
-  maxWidth: 550,
-  [WHEN_DESKTOP]: {
-    width: "50%",
-  },
-  [WHEN_TABLET]: { width: "66.66%" },
 })
 
 const linkColumnStartCss = css({
@@ -344,31 +248,63 @@ const linkColumnEndCss = css({
   paddingEnd: 0,
 })
 
-const endMobileColumnCss = css({
-  marginLeft: 20,
-})
-
-const copyrightStyle = css(fonts.legal, {
+const copyrightStyle = css(fonts.legal, inter, {
   zIndex: 10, // ensure copyright is above the sliding div from ChangeStory animation
-})
-
-const ringsCSS = css(flex, {
-  marginBottom: 20,
   [WHEN_MOBILE]: {
-    marginBottom: 30,
-    justifyContent: "center",
-    alignItems: "center",
+    marginBottom: 17,
   },
 })
 
-const emailLogoCss = css({
-  objectFit: "contain",
-  margin: 10,
+const footerLinksResponsiveCss = css({
+  gridRowStart: 2,
+  [WHEN_TABLET]: {
+    gridRowStart: 3,
+  },
 })
 
 const linksAreaCss = css(flexRow, {
   justifyContent: "space-around",
   [WHEN_TABLET]: {
     justifyContent: "space-between",
+  },
+})
+
+const footerLogoCss = css(flex, {
+  marginTop: 80,
+  marginBottom: 48,
+})
+
+const socialContainerCss = css({
+  [WHEN_MOBILE]: {
+    marginBottom: 40,
+  },
+})
+
+const socialIconCss = css({
+  padding: 16,
+  [WHEN_TABLET_AND_UP]: {
+    borderBottom: "none",
+  },
+})
+
+const footerOtherLinksCss = css(flex, {
+  flexDirection: "row",
+})
+
+const footerOtherLinkContainerCss = css(fonts.legal, {
+  "&:first-child": {
+    marginRight: 20,
+  },
+  a: {
+    textDecorationLine: "none",
+  },
+})
+
+const mobileLinkCss = css(flex, {
+  [WHEN_DESKTOP]: {
+    flexDirection: "row",
+  },
+  [WHEN_MOBILE]: {
+    marginBottom: 90,
   },
 })

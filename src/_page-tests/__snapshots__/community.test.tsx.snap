@@ -10,8 +10,20 @@ exports[`Community renders 1`] = `
   opacity: 0;
 }
 
-.emotion-153 input,
-.emotion-153 textarea {
+.emotion-153 {
+  width: 100%;
+  display: inline-block;
+}
+
+.emotion-153 img {
+  display: none;
+}
+
+.emotion-153 .grecaptcha-badge {
+  display: none;
+}
+
+.emotion-153 #email-b4dd2ae2-68e9-4662-bfd3-b2860162a5aa {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -20,7 +32,7 @@ exports[`Community renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -29,33 +41,81 @@ exports[`Community renders 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 12px;
-  padding-bottom: 16px;
-  border-radius: 3px;
+  padding: 24px;
+  border-radius: 70px;
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(61, 61, 61, 0.2);
   width: 100%;
   margin: 4px;
-  margin-bottom: 8px;
   outline-width: 0;
+  background-color: transparent;
 }
 
-.emotion-153 input:focus,
-.emotion-153 textarea:focus {
-  border-color: #35D07F;
+.emotion-153 #email-b4dd2ae2-68e9-4662-bfd3-b2860162a5aa:focus {
+  border-color: #000;
 }
 
-.emotion-153 input[type='checkbox'] {
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
+.emotion-153 #hsForm_b4dd2ae2-68e9-4662-bfd3-b2860162a5aa input[type=submit] {
+  display: none;
 }
 
-.emotion-153 label {
-  font-family: Jost,futura-pt,futura,sans-serif;
+.emotion-153 .celo-hbspt {
+  width: 100%;
+}
+
+.emotion-153 .celo-hbspt * {
+  box-sizing: border-box;
+}
+
+.emotion-153 .celo-hbspt fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-153 .celo-hbspt fieldset {
+    margin-right: 0!important;
+    width: 100%!important;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-153 .celo-hbspt fieldset {
+    float: none;
+    width: 100%;
+  }
+}
+
+.emotion-153 .celo-hbspt fieldset.form-columns-2 .hs-form-field {
+  width: 50%;
+  float: left;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-153 .celo-hbspt fieldset.form-columns-2 .hs-form-field {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-153 .celo-hbspt fieldset.form-columns-2 .hs-form-field {
+    float: none;
+    width: 100%;
+  }
+}
+
+.emotion-153 .celo-hbspt .field {
+  margin-bottom: 32px;
+}
+
+.emotion-153 .celo-hbspt .input {
+  margin-right: 26px;
+}
+
+.emotion-153 .celo-hbspt .hs-input {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -64,15 +124,74 @@ exports[`Community renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: #81868B;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  margin-top: 12px;
-  margin-bottom: 8px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  font-family: Inter,sans-serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 24px;
+  border-radius: 70px;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  margin: 4px;
+  outline-width: 0;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.emotion-153 .celo-hbspt .hs-input:focus {
+  border-color: #000;
+}
+
+.emotion-153 .hs-custom-style fieldset textarea {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: Inter,sans-serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 24px;
+  border-radius: 70px;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  margin: 4px;
+  outline-width: 0;
+  background-color: transparent;
+}
+
+.emotion-153 .hs-custom-style fieldset textarea:focus {
+  border-color: #000;
+}
+
+.emotion-153 .celo-hbspt .contact-error {
+  border-color: #E70532;
+}
+
+.emotion-153 .celo-hbspt .hs-error-msg {
+  color: #E70532;
+}
+
+.emotion-153 input[type='checkbox'] {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
 }
 
 .emotion-153 input.hs-button {
@@ -87,20 +206,25 @@ exports[`Community renders 1`] = `
   line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #35D07F;
-  color: #FFFFFF;
+  background-color: #FCFF52;
+  color: #000;
+  padding: 24px 64px;
+  border-radius: 70px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border: none;
+  border: 1px solid #CCCCCC;
+  margin-top: 32px;
 }
 
 .emotion-153 input.hs-button:hover {
-  background-color: #4CDD91;
+  background-color: #000;
+  color: #FFFFFF;
 }
 
 .emotion-153 input.hs-button:active {
-  background-color: #0FB972;
+  background-color: #000;
+  color: #FFFFFF;
 }
 
 .emotion-153 ul {
@@ -112,7 +236,7 @@ exports[`Community renders 1`] = `
 }
 
 .emotion-153 .legal-consent-container {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -241,7 +365,7 @@ exports[`Community renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "36px",
                 "lineHeight": "40px",
                 "textAlign": "center",
@@ -530,7 +654,7 @@ exports[`Community renders 1`] = `
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "28px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -550,7 +674,7 @@ exports[`Community renders 1`] = `
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "textAlign": "center",
@@ -623,7 +747,7 @@ exports[`Community renders 1`] = `
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -644,7 +768,7 @@ exports[`Community renders 1`] = `
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -750,7 +874,7 @@ exports[`Community renders 1`] = `
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "textRendering": "geometricPrecision",
@@ -821,7 +945,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -842,7 +966,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -948,7 +1072,7 @@ Therefore, when we design our tools, we keep in the front of our mind the people
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "textRendering": "geometricPrecision",
@@ -1017,7 +1141,7 @@ We believe that many of these features have great potential for positive impact,
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -1038,7 +1162,7 @@ We believe that many of these features have great potential for positive impact,
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -1144,7 +1268,7 @@ We believe that many of these features have great potential for positive impact,
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "textRendering": "geometricPrecision",
@@ -1211,7 +1335,7 @@ We believe that many of these features have great potential for positive impact,
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "GT-Alpina, serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -1232,7 +1356,7 @@ We believe that many of these features have great potential for positive impact,
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "marginBottom": "20px",
@@ -1338,7 +1462,7 @@ We believe that many of these features have great potential for positive impact,
               style={
                 Object {
                   "color": "rgba(17,18,20,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "20px",
                   "lineHeight": "28px",
                   "textRendering": "geometricPrecision",
@@ -1416,7 +1540,7 @@ We believe that many of these features have great potential for positive impact,
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "28px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -1868,7 +1992,7 @@ We believe that many of these features have great potential for positive impact,
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "28px",
                 "lineHeight": "32px",
                 "marginBottom": "20px",
@@ -2060,7 +2184,7 @@ We believe that many of these features have great potential for positive impact,
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "GT-Alpina, serif",
             "fontSize": "28px",
             "lineHeight": "32px",
             "textRendering": "geometricPrecision",
@@ -2076,7 +2200,7 @@ We believe that many of these features have great potential for positive impact,
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "Inter, sans-serif",
             "fontSize": "20px",
             "fontStyle": "italic",
             "lineHeight": "28px",
@@ -2092,7 +2216,7 @@ We believe that many of these features have great potential for positive impact,
         style={
           Object {
             "color": "rgba(17,18,20,1.00)",
-            "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+            "fontFamily": "Inter, sans-serif",
             "fontSize": "20px",
             "lineHeight": "28px",
             "marginBottom": "20px",
@@ -2138,7 +2262,7 @@ We believe that many of these features have great potential for positive impact,
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "16px",
                 "fontWeight": "500",
                 "lineHeight": "18px",
@@ -2207,7 +2331,7 @@ We believe that many of these features have great potential for positive impact,
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "16px",
                 "fontWeight": "500",
                 "lineHeight": "18px",

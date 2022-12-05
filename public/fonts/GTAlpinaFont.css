@@ -1,0 +1,83 @@
+/* GT ALPINA * */
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Thin.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Thin-Italic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Light.woff") format("woff");
+    font-weight: 250;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Light-Italic.woff") format("woff");
+    font-weight: 250;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Regular-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Medium-Italic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GT-Alpina";
+    src: url("/fonts/GT-Alpina-Standard-Bold-Italic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+

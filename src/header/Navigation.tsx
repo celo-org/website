@@ -4,24 +4,20 @@ import dynamic from "next/dynamic"
 import { useRouter } from "next/router"
 import * as React from "react"
 import { WHEN_DESKTOP } from "src/estyles"
-import Hamburger from "src/header/Hamburger"
-import { NameSpaces, useTranslation } from "src/i18n"
-import MediumLogo from "src/icons/MediumLogo"
-import Octocat from "src/icons/Octocat"
 import { useScreenSize } from "src/layout/ScreenSize"
 import LogoDarkBg from "src/logos/LogoDarkBg"
 import LogoLightBg from "src/logos/LogoLightBg"
-import Button, { BTN } from "src/shared/Button.4"
 import Link from "src/shared/Link"
-import menu, { CeloLinks, MAIN_MENU, MenuLink, pagePaths } from "src/shared/menu-items"
-const MobileMenu = dynamic(import("src/shared/MobileMenu"))
-import OvalCoin from "src/shared/OvalCoin"
+import menu, { MAIN_MENU, MenuLink, pagePaths } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { colors } from "src/colors"
+import NewLogo from "src/logos/NewLogo"
+import NewMenuIcon from "src/header/NewMenuIcon"
+
+const MobileMenu = dynamic(import("src/shared/MobileMenu"))
 const BlueBanner = dynamic(import("src/header/BlueBanner"), { loading: () => null, ssr: false })
 
-const menuItems = MAIN_MENU
-const mobileMenu = [menu.HOME, ...MAIN_MENU]
+const mobileMenu = [menu.VISION, ...MAIN_MENU]
 
 const PATH_TO_ATTRIBUTES: Record<string, MenuLink> = Object.keys(pagePaths).reduce((last, key) => {
   last[pagePaths[key].link] = pagePaths[key]
@@ -133,7 +129,6 @@ export default function Header(props: Props) {
   const [mobileMenuActive, clickHamburger] = useMobileMenu()
 
   const { menuFaded, belowFoldUpScroll } = useScroll()
-  const willShowHamburger = !menuFaded || mobileMenuActive
 
   const isDarkMode =
     attributes.isDark || props.darkMode || (attributes.translucent && !belowFoldUpScroll)
@@ -144,7 +139,7 @@ export default function Header(props: Props) {
       backgroundColor: translucentAndNotUp
         ? "transparent"
         : isDarkMode
-        ? colors.dark
+        ? "transparent"
         : colors.white,
       [WHEN_DESKTOP]: {
         "&:hover": {
@@ -154,48 +149,46 @@ export default function Header(props: Props) {
     })
   }, [attributes.translucent, belowFoldUpScroll, isDarkMode])
 
-  const allWhiteLogo = pathname === menu.ABOUT_US.link && !belowFoldUpScroll
+  const allWhiteLogo = pathname === menu.FOUNDERS.link && !belowFoldUpScroll
 
   return (
-    <div
-      css={css(
-        styles.container,
-        { top: isHomePage && isBannerShowing ? bannerHeight : 0 },
-        menuFaded && { height: 0 },
-        mobileMenuActive && styles.mobileMenuActive
-      )}
-    >
-      {isHomePage && <BlueBanner onVisibilityChange={setBannerVisible} />}
+    <>
+      <div
+        css={css(styles.menuActive, {
+          zIndex: mobileMenuActive ? 31 : -99,
+          transition: `z-index 400ms ${!mobileMenuActive ? "step-end" : "step-start"}`,
+        })}
+      >
+        <div css={styles.mobileOpenContainer}>
+          <MobileMenu currentPage={pathname} menu={mobileMenu} isOpen={mobileMenuActive} />
+        </div>
+      </div>
 
       <div
         css={css(
-          styles.menuContainer,
-          styles.background,
-          backgroundColor,
-          styles.fadeTransition,
-          menuFaded ? styles.menuInvisible : styles.menuVisible
+          styles.container,
+          { top: isHomePage && isBannerShowing ? bannerHeight : 0 },
+          menuFaded && { height: 0 },
+          mobileMenuActive && styles.mobileMenuActive
         )}
       >
-        <HomeLogo menuFaded={menuFaded} isDarkMode={isDarkMode} allWhiteLogo={allWhiteLogo} />
-        <NavigationLinks menuFaded={menuFaded} isDarkMode={isDarkMode} />
-      </div>
+        {isHomePage && <BlueBanner onVisibilityChange={setBannerVisible} />}
 
-      {mobileMenuActive && (
-        <div css={styles.menuActive}>
-          <div css={styles.mobileOpenContainer}>
-            <MobileMenu currentPage={pathname} menu={mobileMenu} />
-          </div>
+        <div
+          css={css(
+            styles.menuContainer,
+            styles.background,
+            backgroundColor,
+            styles.fadeTransition,
+            menuFaded ? styles.menuInvisible : styles.menuVisible
+          )}
+        >
+          <HomeLogo menuFaded={menuFaded} isDarkMode={isDarkMode} allWhiteLogo={allWhiteLogo} />
         </div>
-      )}
-      <MobileMenuIcon
-        isDarkMode={isDarkMode}
-        willShowHamburger={willShowHamburger}
-        isHomePage={isHomePage}
-        mobileMenuActive={mobileMenuActive}
-        bannerHeight={isBannerShowing ? bannerHeight : 0}
-        clickHamburger={clickHamburger}
-      />
-    </div>
+
+        <NewMenuIcon onPress={clickHamburger} isOpen={mobileMenuActive} menuFaded={menuFaded} />
+      </div>
+    </>
   )
 }
 
@@ -208,6 +201,8 @@ const HomeLogo = React.memo(function _HomeLogo({
   isDarkMode: boolean
   allWhiteLogo: boolean
 }) {
+  const { pathname } = useRouter()
+  const useNewLogo = pathname === "/connect-the-world"
   return (
     <Link href={"/"}>
       <div css={styles.logoLeftContainer}>
@@ -219,7 +214,9 @@ const HomeLogo = React.memo(function _HomeLogo({
                 menuFaded ? styles.menuInvisible : styles.menuVisible
               )}
             >
-              {isDarkMode ? (
+              {useNewLogo ? (
+                <NewLogo width={113} height={26} />
+              ) : isDarkMode ? (
                 <LogoDarkBg height={30} allWhite={allWhiteLogo} />
               ) : (
                 <LogoLightBg height={30} />
@@ -231,89 +228,6 @@ const HomeLogo = React.memo(function _HomeLogo({
     </Link>
   )
 })
-
-const NavigationLinks = React.memo(function _NavigationLinks(props: {
-  menuFaded: boolean
-  isDarkMode: boolean
-}) {
-  const { t } = useTranslation(NameSpaces.common)
-  const foregroundColor = props.isDarkMode ? colors.white : colors.dark
-  const { pathname, asPath } = useRouter()
-
-  return (
-    <nav
-      css={[
-        styles.links,
-        styles.fadeTransition,
-        props.menuFaded ? styles.menuInvisible : styles.menuVisible,
-      ]}
-    >
-      {menuItems.map((item) => (
-        <div key={item.link} css={styles.linkWrapper}>
-          <Button
-            kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
-            href={item.link}
-            text={t(item.name)}
-          />
-          {(pathname === item.link || asPath === item.link) && (
-            <div css={styles.activeTab}>
-              <OvalCoin color={colors.primary} size={10} />
-            </div>
-          )}
-        </div>
-      ))}
-      <div css={styles.linkWrapper}>
-        <Button
-          kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
-          href={"https://medium.com/CeloHQ"}
-          text={""}
-          target={"_blank"}
-          iconRight={<MediumLogo height={20} color={foregroundColor} wrapWithLink={false} />}
-        />
-      </div>
-      <div css={[styles.linkWrapper, styles.lastLink]}>
-        <Button
-          kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
-          href={CeloLinks.gitHub}
-          text={""}
-          target={"_blank"}
-          iconRight={<Octocat size={22} color={props.isDarkMode ? colors.white : colors.dark} />}
-        />
-      </div>
-    </nav>
-  )
-})
-
-function MobileMenuIcon(props: {
-  isDarkMode: boolean
-  willShowHamburger: boolean
-  isHomePage: boolean
-  mobileMenuActive: boolean
-  bannerHeight: number
-  clickHamburger: () => void
-}) {
-  const foregroundColor = props.isDarkMode ? colors.white : colors.dark
-
-  const containerStyle = css(
-    styles.hamburger,
-    styles.fadeTransition,
-    props.willShowHamburger && styles.hamburgerShowing,
-    props.isHomePage &&
-      !props.mobileMenuActive && {
-        transform: `translateY(${props.bannerHeight}px)`,
-      }
-  )
-
-  return (
-    <div css={containerStyle}>
-      <Hamburger
-        isOpen={props.mobileMenuActive}
-        onPress={props.clickHamburger}
-        color={foregroundColor}
-      />
-    </div>
-  )
-}
 
 function flexCss(cssStyle: CSSObject) {
   return css(
@@ -346,7 +260,6 @@ const styles = {
     height: HEADER_HEIGHT,
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 30,
     maxWidth: "100vw",
     transitionProperty: "top",
     transitionDuration: "200ms",
@@ -393,16 +306,15 @@ const styles = {
     paddingLeft: 6,
     paddingTop: 20,
     cursor: "pointer",
+    zIndex: 99,
   }),
   menuActive: flexCss({
-    position: "fixed",
+    position: "absolute",
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
     height: "100vh",
-    backgroundColor: colors.white,
-    overflowY: "scroll",
   }),
   mobileMenuActive: flexCss({
     bottom: 0,

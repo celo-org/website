@@ -1,7 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation renders 1`] = `
-.emotion-0 {
+Array [
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -99;
+  -webkit-transition: z-index 400ms step-end;
+  transition: z-index 400ms step-end;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+<div
+    className="emotion-0"
+  >
+    <div
+      className="emotion-1"
+    />
+  </div>,
+  .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,7 +64,6 @@ exports[`Navigation renders 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  z-index: 30;
   max-width: 100vw;
   transition-property: top;
   transition-duration: 200ms;
@@ -99,6 +137,7 @@ exports[`Navigation renders 1`] = `
   padding-left: 6px;
   padding-top: 20px;
   cursor: pointer;
+  z-index: 99;
 }
 
 .emotion-4 {
@@ -108,457 +147,153 @@ exports[`Navigation renders 1`] = `
 }
 
 .emotion-5 {
-  display: none;
-  transition-property: opacity color;
-  transition-duration: 200ms;
-  opacity: 1;
-}
-
-@media (min-width: 992px) {
-  .emotion-5 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: bold;
+  gap: 18px;
+  font-family: Jost,futura-pt,futura,sans-serif;
+  cursor: pointer;
+  margin-top: 1em;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  right: 30px;
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
+  position: absolute;
+  top: -9px;
+  right: 40px;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+
+.emotion-7 {
+  position: absolute;
+  top: -9px;
+  right: 40px;
+  transition-property: all;
+  transition-duration: 200ms;
+  opacity: 0;
+  top: 0;
 }
 
 .emotion-8 {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-flex: 0;
-  -webkit-flex-grow: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  opacity: 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: transparent;
-  border-color: transparent;
-  outline-color: transparent;
-  font-family: Jost,futura-pt,futura,sans-serif;
-  font-size: 16px;
-  line-height: 16;
-  text-align: center;
-  text-rendering: geometricPrecision;
-  color: #111214;
-  cursor: pointer;
-  font-weight: 500;
-  line-height: 16px;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #111214;
-  opacity: 1;
-}
-
-.emotion-8:hover {
-  opacity: 0.75;
-}
-
-.emotion-8:active {
-  opacity: 1;
-}
-
-.emotion-30 {
-  padding-left: 8px;
-}
-
-.emotion-31 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 10px;
-}
-
-.emotion-35 {
-  position: fixed;
-  top: 10px;
-  right: 5px;
-  opacity: 0;
-  display: none;
-  transition-property: opacity color;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition-property: all;
   transition-duration: 200ms;
-  opacity: 1;
-  display: block;
 }
 
-@media (min-width: 992px) {
-  .emotion-35 {
-    display: none;
-  }
-}
-
-.emotion-36 {
-  position: relative;
-  width: 18px;
-  height: 12px;
-  margin: 20px;
-  opacity: 1;
-  transition-property: opacity;
-  transition-duration: 30ms;
-}
-
-.emotion-36:active {
-  opacity: 0.75;
-}
-
-.emotion-37 {
-  transition-property: transform color;
-  transition-duration: 160ms;
+.emotion-9 {
   position: absolute;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  height: 2px;
-  width: 18px;
-  background-color: #111214;
-  background-color: #111214;
-  -webkit-transform: translateY(-5px);
-  -moz-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-
-.emotion-38 {
-  transition-property: transform color;
-  transition-duration: 160ms;
-  position: absolute;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  height: 2px;
-  width: 18px;
-  background-color: #111214;
-  background-color: #111214;
-}
-
-.emotion-39 {
-  transition-property: transform color;
-  transition-duration: 160ms;
-  position: absolute;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  height: 2px;
-  width: 18px;
-  background-color: #111214;
-  background-color: #111214;
-  -webkit-transform: translateY(5px);
-  -moz-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
+  top: 0;
+  right: 0;
+  transition-property: all;
+  transition-duration: 200ms;
+  -webkit-transform: rotateZ(90deg);
+  -moz-transform: rotateZ(90deg);
+  -ms-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+  opacity: 0;
 }
 
 <div
-  className="emotion-0"
->
-  <div
-    className="emotion-1"
+    className="emotion-0"
   >
     <div
-      className="emotion-2"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
+      className="emotion-1"
     >
       <div
-        className="emotion-3"
+        className="emotion-2"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
       >
         <div
-          className="emotion-4"
+          className="emotion-3"
         >
-          <svg
-            fill="none"
-            height={30}
-            viewBox="0 0 85 25"
-            width={102}
+          <div
+            className="emotion-4"
           >
-            <path
-              d="M64.2368 22.079L66.5 21.3684V2.63159L64.2368 3.34212V22.079ZM38.1316 10.7105C39.5526 10.7105 40.8684 11.3421 41.7105 12.3947L42.6316 10.2632C41.421 9.10528 39.8158 8.55264 38.1316 8.55264C34.2368 8.55264 31.5526 11.6316 31.5789 15.0263C31.6052 18.7105 34.5 21.7105 38.1316 21.7105C39.9737 21.7105 41.3684 21.1579 42.421 20.3947V17.7895C41.3158 18.8947 39.7105 19.5526 38.3158 19.5526C36.2105 19.5526 33.8421 17.8421 33.8421 15.0263C33.8421 12.4211 35.8947 10.7105 38.1316 10.7105ZM53.1842 8.55264C49.2895 8.55264 47.0263 11.6316 47.0263 15.0263C47.0263 18.7105 49.9473 21.7105 53.5789 21.7105C55.421 21.7105 56.8158 21.1579 57.8684 20.3947V17.7895C56.7631 18.8947 55.1579 19.5526 53.7631 19.5526C51.8947 19.5526 49.8421 18.3947 49.421 15.9474H59.3421V15.079C59.3421 11.4474 56.9473 8.55264 53.1842 8.55264ZM77.6316 8.55264C74 8.55264 71.0526 11.5 71.0526 15.1316C71.0526 18.7632 74 21.7105 77.6316 21.7105C81.2631 21.7105 84.2105 18.7632 84.2105 15.1316C84.2105 11.5 81.2631 8.55264 77.6316 8.55264ZM53.2105 10.7105C54.9737 10.7105 56.8421 11.8158 57 13.9474H49.421C49.5789 11.8158 51.4473 10.7105 53.2105 10.7105ZM77.6316 19.5526C75.1842 19.5526 73.2105 17.579 73.2105 15.1316C73.2105 12.6842 75.1842 10.7105 77.6316 10.7105C80.0789 10.7105 82.0526 12.6842 82.0526 15.1316C82.0526 17.579 80.0789 19.5526 77.6316 19.5526Z"
-              fill="#111214"
-            />
-            <path
-              d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
-              fill="#35D07F"
-            />
-            <path
-              d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
-              fill="#FBCC5C"
-            />
-            <path
-              d="M15.4553 19.7315C16.1392 18.903 16.6292 17.932 16.89 16.8899C17.9321 16.6294 18.9029 16.1391 19.7316 15.4554C19.6937 16.6623 19.4339 17.852 18.9647 18.9646C17.8521 19.4338 16.6624 19.6936 15.4553 19.7315ZM8.11026 8.10989C7.06815 8.37042 6.09736 8.86068 5.26868 9.54436C5.30657 8.33752 5.56631 7.14778 6.03552 6.03515C7.14815 5.56594 8.33789 5.30621 9.54473 5.26831C8.86105 6.09699 8.37078 7.06778 8.11026 8.10989Z"
-              fill="#5EA33B"
-            />
-          </svg>
+            <svg
+              fill="none"
+              height={30}
+              viewBox="0 0 85 25"
+              width={102}
+            >
+              <path
+                d="M64.2368 22.079L66.5 21.3684V2.63159L64.2368 3.34212V22.079ZM38.1316 10.7105C39.5526 10.7105 40.8684 11.3421 41.7105 12.3947L42.6316 10.2632C41.421 9.10528 39.8158 8.55264 38.1316 8.55264C34.2368 8.55264 31.5526 11.6316 31.5789 15.0263C31.6052 18.7105 34.5 21.7105 38.1316 21.7105C39.9737 21.7105 41.3684 21.1579 42.421 20.3947V17.7895C41.3158 18.8947 39.7105 19.5526 38.3158 19.5526C36.2105 19.5526 33.8421 17.8421 33.8421 15.0263C33.8421 12.4211 35.8947 10.7105 38.1316 10.7105ZM53.1842 8.55264C49.2895 8.55264 47.0263 11.6316 47.0263 15.0263C47.0263 18.7105 49.9473 21.7105 53.5789 21.7105C55.421 21.7105 56.8158 21.1579 57.8684 20.3947V17.7895C56.7631 18.8947 55.1579 19.5526 53.7631 19.5526C51.8947 19.5526 49.8421 18.3947 49.421 15.9474H59.3421V15.079C59.3421 11.4474 56.9473 8.55264 53.1842 8.55264ZM77.6316 8.55264C74 8.55264 71.0526 11.5 71.0526 15.1316C71.0526 18.7632 74 21.7105 77.6316 21.7105C81.2631 21.7105 84.2105 18.7632 84.2105 15.1316C84.2105 11.5 81.2631 8.55264 77.6316 8.55264ZM53.2105 10.7105C54.9737 10.7105 56.8421 11.8158 57 13.9474H49.421C49.5789 11.8158 51.4473 10.7105 53.2105 10.7105ZM77.6316 19.5526C75.1842 19.5526 73.2105 17.579 73.2105 15.1316C73.2105 12.6842 75.1842 10.7105 77.6316 10.7105C80.0789 10.7105 82.0526 12.6842 82.0526 15.1316C82.0526 17.579 80.0789 19.5526 77.6316 19.5526Z"
+                fill="#111214"
+              />
+              <path
+                d="M15.1316 17.1053C19.1284 17.1053 22.3684 13.8653 22.3684 9.86842C22.3684 5.87158 19.1284 2.63158 15.1316 2.63158C11.1348 2.63158 7.89476 5.87158 7.89476 9.86842C7.89476 13.8653 11.1348 17.1053 15.1316 17.1053ZM15.1316 19.7368C9.6816 19.7368 5.26318 15.3184 5.26318 9.86842C5.26318 4.41842 9.6816 0 15.1316 0C20.5816 0 25 4.41842 25 9.86842C25 15.3184 20.5816 19.7368 15.1316 19.7368Z"
+                fill="#35D07F"
+              />
+              <path
+                d="M9.86842 22.3684C13.8653 22.3684 17.1053 19.1284 17.1053 15.1316C17.1053 11.1348 13.8653 7.89476 9.86842 7.89476C5.87158 7.89476 2.63158 11.1348 2.63158 15.1316C2.63158 19.1284 5.87158 22.3684 9.86842 22.3684ZM9.86842 25C4.41842 25 0 20.5816 0 15.1316C0 9.6816 4.41842 5.26318 9.86842 5.26318C15.3184 5.26318 19.7368 9.6816 19.7368 15.1316C19.7368 20.5816 15.3184 25 9.86842 25Z"
+                fill="#FBCC5C"
+              />
+              <path
+                d="M15.4553 19.7315C16.1392 18.903 16.6292 17.932 16.89 16.8899C17.9321 16.6294 18.9029 16.1391 19.7316 15.4554C19.6937 16.6623 19.4339 17.852 18.9647 18.9646C17.8521 19.4338 16.6624 19.6936 15.4553 19.7315ZM8.11026 8.10989C7.06815 8.37042 6.09736 8.86068 5.26868 9.54436C5.30657 8.33752 5.56631 7.14778 6.03552 6.03515C7.14815 5.56594 8.33789 5.30621 9.54473 5.26831C8.86105 6.09699 8.37078 7.06778 8.11026 8.10989Z"
+                fill="#5EA33B"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-    <nav
+    <div
       className="emotion-5"
-    >
-      <div
-        className="emotion-6"
-      >
-        <div
-          className="emotion-7"
-        >
-          <a
-            className="emotion-8"
-            href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            About
-          </a>
-        </div>
-      </div>
-      <div
-        className="emotion-6"
-      >
-        <div
-          className="emotion-7"
-        >
-          <a
-            className="emotion-8"
-            href="/developers"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Developers
-          </a>
-        </div>
-      </div>
-      <div
-        className="emotion-6"
-      >
-        <div
-          className="emotion-7"
-        >
-          <a
-            className="emotion-8"
-            href="/community"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Community
-          </a>
-        </div>
-      </div>
-      <div
-        className="emotion-6"
-      >
-        <div
-          className="emotion-7"
-        >
-          <a
-            className="emotion-8"
-            href="/dapps"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Ecosystem
-          </a>
-        </div>
-      </div>
-      <div
-        className="emotion-6"
-      >
-        <div
-          className="emotion-7"
-        >
-          <a
-            className="emotion-8"
-            href="/alliance"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Alliance
-          </a>
-        </div>
-      </div>
-      <div
-        className="emotion-6"
-      >
-        <div
-          className="emotion-7"
-        >
-          <a
-            className="emotion-8"
-            href="/public-sector"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Government
-          </a>
-        </div>
-      </div>
-      <div
-        className="emotion-6"
-      >
-        <div
-          className="emotion-7"
-        >
-          <a
-            className="emotion-8"
-            href="/enterprise"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Enterprise
-          </a>
-        </div>
-      </div>
-      <div
-        className="emotion-6"
-      >
-        <div
-          className="emotion-7"
-        >
-          <a
-            className="emotion-8"
-            href="https://medium.com/CeloHQ"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            rel="noopener"
-            target="_blank"
-          >
-            
-            <span
-              className="emotion-30"
-            >
-              <svg
-                fill="none"
-                height={20}
-                viewBox="0 0 24 24"
-                width={20}
-              >
-                <title>
-                  Medium
-                </title>
-                <path
-                  d="M0 0V24H24V0H0ZM19.9385 5.68615L18.6511 6.92062C18.5403 7.00554 18.4849 7.14462 18.5083 7.28246V16.3495C18.4849 16.4874 18.5403 16.6265 18.6511 16.7114L19.9089 17.9446V18.2154H13.5852V17.9446L14.8874 16.6806C15.0154 16.5526 15.0154 16.5157 15.0154 16.32V8.99077L11.3957 18.1858H10.9058L6.69046 8.99077V15.1532C6.656 15.4117 6.74215 15.6726 6.92431 15.8609L8.61785 17.9151V18.1858H3.81538V17.9151L5.50892 15.8609C5.68985 15.6726 5.77108 15.4105 5.72677 15.1532V8.02708C5.74769 7.82892 5.67138 7.63323 5.52369 7.50031L4.01846 5.68615V5.41538H8.69292L12.3065 13.3391L15.4818 5.41538H19.9385V5.68615Z"
-                  fill="#111214"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        className="emotion-31"
-      >
-        <div
-          className="emotion-7"
-        >
-          <a
-            className="emotion-8"
-            href="https://github.com/celo-org/celo-monorepo"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            rel="noopener"
-            target="_blank"
-          >
-            
-            <span
-              className="emotion-30"
-            >
-              <svg
-                fill="none"
-                height={22}
-                viewBox="0 0 25 24"
-                width={22}
-              >
-                <title>
-                  Github
-                </title>
-                <path
-                  clipRule="evenodd"
-                  d="M12.3019 0C5.50526 0 0 5.50526 0 12.3019C0 17.7392 3.52669 22.3458 8.4127 23.977C9.0244 24.0902 9.25095 23.7126 9.25095 23.3804C9.25095 23.0858 9.2434 22.3156 9.23585 21.2885C5.81488 22.0286 5.08991 19.6422 5.08991 19.6422C4.53108 18.2225 3.72304 17.8373 3.72304 17.8373C2.60537 17.0746 3.80611 17.0897 3.80611 17.0897C5.03705 17.1803 5.69405 18.3584 5.69405 18.3584C6.78906 20.2388 8.57129 19.6951 9.27361 19.3779C9.38688 18.585 9.70406 18.0412 10.0514 17.7316C7.32524 17.4295 4.45556 16.3723 4.45556 11.66C4.45556 10.3158 4.93132 9.22074 5.72426 8.35984C5.59588 8.04266 5.17298 6.79662 5.83754 5.10501C5.83754 5.10501 6.87213 4.77274 9.22074 6.36616C10.2025 6.0943 11.2522 5.95837 12.3019 5.95082C13.344 5.95837 14.4013 6.0943 15.383 6.36616C17.7316 4.77274 18.7662 5.10501 18.7662 5.10501C19.4383 6.79662 19.0154 8.05021 18.887 8.35984C19.6724 9.22074 20.1482 10.3158 20.1482 11.66C20.1482 16.3874 17.271 17.422 14.5297 17.7316C14.9677 18.1092 15.3679 18.8644 15.3679 20.0123C15.3679 21.6586 15.3528 22.9801 15.3528 23.3879C15.3528 23.7202 15.5718 24.0978 16.1986 23.977C21.0846 22.3458 24.6038 17.7392 24.6038 12.3094C24.6038 5.50526 19.0985 0 12.3019 0Z"
-                  fill="#111214"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </span>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div
-    className="emotion-35"
-  >
-    <div
-      className="emotion-36"
       onClick={[Function]}
     >
-      <div
-        className="emotion-37"
-      />
-      <div
-        className="emotion-38"
-      />
-      <div
-        className="emotion-39"
-      />
+      <p
+        className="emotion-6"
+      >
+        Menu
+      </p>
+      <p
+        className="emotion-7"
+      >
+        Close
+      </p>
+      <svg
+        className="emotion-8"
+        fill="none"
+        height={32}
+        viewBox="0 0 32 32"
+        width={32}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clipRule="evenodd"
+          d="M2 2H11.3333V11.3333H2V2ZM30.0005 2H20.6672V11.3333H30.0005V2ZM30.0005 20.6667H20.6672V30H30.0005V20.6667ZM11.3333 20.6666H2V29.9999H11.3333V20.6666Z"
+          fill="black"
+          fillRule="evenodd"
+        />
+      </svg>
+      <svg
+        className="emotion-9"
+        fill="none"
+        height="32"
+        viewBox="0 0 33 32"
+        width="33"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clipRule="evenodd"
+          d="M2.436 30v-9.333h9.333V30H2.436zm0-18.667V2h9.333v9h9v9.333h-9.333v-9h-9zm18.666 0V2h9.334v9.333h-9.334zm0 9.334V30h9.333v-9.333h-9.333z"
+          fill="#000"
+          fillRule="evenodd"
+        />
+      </svg>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;

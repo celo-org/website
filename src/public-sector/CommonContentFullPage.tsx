@@ -3,15 +3,13 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import React from "react"
 import { cellSwitch } from "./cellSwitch"
 import dynamic from "next/dynamic"
-const OldGallery = dynamic(import("src/contentful/LogoGallary"))
-const PillGallery = dynamic(import("src/home/PillGallary"))
 import { Entry } from "contentful"
 import {
   ContentfulPage,
-  GridRowContentType,
-  SectionType,
   CoverContentType,
+  GridRowContentType,
   LogoGallery,
+  SectionType,
 } from "src/utils/contentful"
 import { flex, WHEN_DESKTOP, WHEN_MOBILE } from "src/estyles"
 import { GridRow } from "src/layout/Grid2"
@@ -20,11 +18,15 @@ import { renderNode } from "src/contentful/nodes/nodes"
 import { BUTTON } from "src/contentful/nodes/embeds/BUTTON"
 import { GALLARY } from "src/contentful/nodes/embeds/GALLARY"
 import { TABLE } from "src/contentful/nodes/embeds/TABLE"
-import { BLOCKS, INLINES, Block } from "@contentful/rich-text-types"
-import Cover from "src/contentful/Cover"
+import { Block, BLOCKS, INLINES } from "@contentful/rich-text-types"
 import HR, { Props as HorizontalType } from "src/contentful/HorizontalRule"
 import { ROW } from "src/contentful/nodes/embeds/ROW"
 import { GENERICS } from "src/contentful/nodes/embeds/GENERICS"
+import ReskinCover from "../contentful/ReskinCover"
+import { connectTheWorldSwitch } from "./connectTheWorldSwitch"
+
+const OldGallery = dynamic(import("src/contentful/LogoGallary"))
+const PillGallery = dynamic(import("src/home/PillGallary"))
 
 type Props = ContentfulPage<GridRowContentType | SectionType>
 
@@ -81,7 +83,7 @@ export function pageSwitch(
     case "cover":
       const coverFields = section.fields as CoverContentType
       return (
-        <Cover
+        <ReskinCover
           resolution={coverFields.resolution}
           imageFit={coverFields.imageFit}
           verticalPosition={coverFields.verticalPosition}
@@ -93,11 +95,17 @@ export function pageSwitch(
           subTitle={coverFields.subTitle}
           links={coverFields.links}
           imageDesktop={coverFields.imageDesktop}
+          imagesDesktop={coverFields.imagesDesktop}
           imageMobile={coverFields.imageMobile}
         />
       )
     case "grid-row":
       const gridFields = section.fields as GridRowContentType
+      const component = connectTheWorldSwitch(gridFields)
+
+      if (component) {
+        return component
+      }
       return (
         <GridRow
           key={section.sys.id}
