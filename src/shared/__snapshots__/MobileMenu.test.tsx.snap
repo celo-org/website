@@ -98,6 +98,14 @@ exports[`Main MobileMenu renders 1`] = `
 }
 
 .emotion-3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -145,6 +153,8 @@ exports[`Main MobileMenu renders 1`] = `
   padding: 10px 20px;
   font-weight: 500;
   color: #000;
+  font-family: GT-Alpina,serif;
+  font-weight: 200;
   font-size: 32px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -199,6 +209,8 @@ exports[`Main MobileMenu renders 1`] = `
   text-decoration: none;
   color: #111214;
   opacity: 1;
+  font-family: GT-Alpina,serif;
+  font-weight: 200;
   font-size: 32px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -245,6 +257,7 @@ exports[`Main MobileMenu renders 1`] = `
   text-rendering: geometricPrecision;
   color: #111214;
   line-height: 28px;
+  font-family: Inter,sans-serif;
   margin-left: 24px;
 }
 

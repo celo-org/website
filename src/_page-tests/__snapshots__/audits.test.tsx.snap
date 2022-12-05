@@ -291,6 +291,17 @@ exports[`Audits renders 1`] = `
   font-style: italic;
 }
 
+.emotion-13 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .emotion-14 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
