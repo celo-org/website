@@ -36,21 +36,19 @@ class FaucetPage extends React.Component<I18nProps, State> {
           <SideTitledSection title={t("addFunds")} text={t("addFundsText")}>
             <RequestFunds kind={RequestType.Faucet} />
           </SideTitledSection>
+          <SideTitledSection title={t("requestLargeFaucetTitle")}>
+            <ContentWithCTA
+              emphasis={t("requestLargeFaucetSpecial")}
+              text={t("requestLargeFaucet")}
+              btnText={t("requestLargeFaucetLink")}
+              href={CeloLinks.faucetGrande}
+            />
+          </SideTitledSection>
           <SideTitledSection
             title={t("getTestnetAddress")}
             text={
               <Trans ns={NameSpaces.faucet} i18nKey={"getTestnetText"}>
-                <InlineAnchor href={CeloLinks.walletApp}>INVITE</InlineAnchor>{" "}
                 <InlineAnchor href={CeloLinks.tutorial}>CLI</InlineAnchor>
-              </Trans>
-            }
-          />
-          <SideTitledSection
-            title={t("haveAnAccount")}
-            text={
-              <Trans ns={NameSpaces.faucet} i18nKey={"haveAccountText"}>
-                You can access an existing account from the Celo Wallet by pressing `Import It` on
-                the first screen and entering your seed phrase.
               </Trans>
             }
           />
@@ -63,12 +61,6 @@ class FaucetPage extends React.Component<I18nProps, State> {
             />
           </SideTitledSection>
           <SideTitledSection title={t("whatsNext")}>
-            <ContentWithCTA
-              emphasis={t("buildLocally")}
-              text={t("buildLocallyText")}
-              btnText={t("buildLocallyLink")}
-              href={CeloLinks.buildWalletDocs}
-            />
             <ContentWithCTA
               emphasis={t("viewAccountInfo")}
               text={t("checkYourBalance")}
