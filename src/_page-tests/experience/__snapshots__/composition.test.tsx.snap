@@ -944,6 +944,14 @@ exports[`Experience/Composition renders 1`] = `
 }
 
 .emotion-231 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: inline;
 }
 

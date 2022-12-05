@@ -1552,6 +1552,17 @@ Check out these wallets for everyday use.
   line-height: 28px;
 }
 
+.emotion-7 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .emotion-8 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
