@@ -64,7 +64,6 @@ export function FreeContent({
   rowSpan,
   body,
   cssStyle,
-  darkMode,
   listStyleImage,
   fade,
   fadingEffect,
@@ -117,5 +116,3 @@ const rootCss = css(flex, {
   },
   ul: { paddingInlineStart: 16 },
 })
-
-const darkModeText = css({ "h1, h2, h3, h4, h5, h6, p, div, ul, span": { color: "white" } })

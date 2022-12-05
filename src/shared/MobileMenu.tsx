@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 import * as React from "react"
-import { flex, flexRow, fonts, WHEN_MOBILE } from "src/estyles"
+import { flex, flexRow, fonts, gtAlpina, inter, WHEN_MOBILE } from "src/estyles"
 import { NameSpaces, useTranslation } from "src/i18n"
 import Button, { BTN } from "src/shared/Button.4"
 import { MenuLink } from "src/shared/menu-items"
@@ -15,7 +15,7 @@ import { DESKTOP_BREAKPOINT, TABLET_BREAKPOINT } from "./Styles"
 interface Props {
   currentPage: string
   menu: MenuLink[]
-  isOpen: boolean
+  isOpen?: boolean
 }
 
 export default function MobileMenu({ currentPage, menu, isOpen }: Props) {
@@ -264,7 +264,8 @@ const styles = {
   }),
 }
 
-const btnStyle = css({
+const btnStyle = css(gtAlpina, {
+  fontWeight: 200,
   fontSize: 32,
   alignItems: "center" as const,
 })
@@ -287,6 +288,6 @@ const emailCtaDetails = css(flexRow, {
   marginBottom: 22,
 })
 
-const emailCtaText = css(fonts.h3, {
+const emailCtaText = css(fonts.h3, inter, {
   marginLeft: 24,
 })

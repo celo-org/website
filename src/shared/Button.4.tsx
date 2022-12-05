@@ -4,8 +4,7 @@ import Link from "src/shared/Link"
 import { flex, fonts, textStyles, WHEN_MOBILE } from "src/estyles"
 import { colors } from "src/colors"
 import { css, SerializedStyles } from "@emotion/react"
-import { NextRouter, withRouter } from "next/router"
-import { isConnectTheWorldPage } from "../utils/utils"
+import { NextRouter } from "next/router"
 import { useState } from "react"
 
 export enum BTN {
@@ -25,7 +24,7 @@ export enum SIZE {
   fullWidth = "fullWidth",
 }
 
-interface AllButtonProps extends WithRouterProps {
+interface AllButtonProps {
   text: string
   href?: string
   target?: string // only relevent if href used
@@ -36,10 +35,6 @@ interface AllButtonProps extends WithRouterProps {
   iconLeft?: React.ReactNode
   align?: "center" | "flex-start" | "flex-end"
   cssStyle?: SerializedStyles
-}
-
-interface WithRouterProps {
-  router: NextRouter
 }
 
 type NakedProps = {
@@ -101,13 +96,13 @@ class Button extends React.PureComponent<ButtonsProps> {
   }
 
   render() {
-    const { text, align, iconRight, iconLeft, router } = this.props
+    const { text, align, iconRight, iconLeft } = this.props
     const ButtonComponent = this.getButtonComponent()
 
     return (
       <div
         css={css(
-          isConnectTheWorldPage(router) && flex,
+          flex,
           { alignItems: align },
           this.props.kind === BTN.INLINE && inlineStyle.container
         )}
@@ -194,7 +189,7 @@ interface Props {
 }
 
 function ButtonPrimary(props: Props) {
-  const { children, status, size, cssStyle, href, target, onDarkBackground, router } = props
+  const { children, status, size, cssStyle, href, target, onDarkBackground } = props
   return (
     <ButtonOrLink
       onPress={props.onPress}
@@ -207,12 +202,10 @@ function ButtonPrimary(props: Props) {
         baseStyles.verticallyAlign,
         fonts.navigation,
         sizeStyle(size),
-        isConnectTheWorldPage(router) ? reskinPrimaryStyles[status] : primaryStyles[status],
+        primaryStyles[status],
         textStyles.medium,
         status === BTNStates.disabled && onDarkBackground
           ? primaryStyles.darkText
-          : isConnectTheWorldPage(router)
-          ? reskinPrimaryStyles.text
           : primaryStyles.text,
         cssStyle,
         status === BTNStates.disabled && baseStyles.notAllowed,
@@ -278,13 +271,6 @@ function ButtonTertiary(props: Props) {
   )
 }
 
-const nakedColor = {
-  [BTNStates.normal]: colors.black,
-  [BTNStates.hover]: colors.primaryHover,
-  [BTNStates.press]: colors.primaryPress,
-  [BTNStates.disabled]: colors.inactive,
-}
-
 function nakedSize(size: SIZE) {
   switch (size) {
     case SIZE.big:
@@ -298,8 +284,7 @@ function nakedSize(size: SIZE) {
 }
 
 function ButtonNaked(props: Props) {
-  const { children, status, kind, cssStyle, href, size, target, router } = props
-  const color = kind === BTN.DARKNAKED ? colors.white : nakedColor[status]
+  const { children, status, kind, cssStyle, href, size, target } = props
   const [chevronColor, setChevronColor] = useState(
     kind === BTN.DARKNAKED ? colors.black : colors.white
   )
@@ -326,15 +311,9 @@ function ButtonNaked(props: Props) {
         {children}
 
         <span
-          onMouseEnter={() => isConnectTheWorldPage(router) && setChevronColor(colors.black)}
-          onMouseLeave={() =>
-            isConnectTheWorldPage(router) &&
-            setChevronColor(kind === BTN.DARKNAKED ? colors.black : colors.white)
-          }
-          onMouseDown={() =>
-            isConnectTheWorldPage(router) &&
-            setChevronColor(kind === BTN.DARKNAKED ? colors.black : colors.white)
-          }
+          onMouseEnter={() => setChevronColor(colors.black)}
+          onMouseLeave={() => setChevronColor(kind === BTN.DARKNAKED ? colors.black : colors.white)}
+          onMouseDown={() => setChevronColor(kind === BTN.DARKNAKED ? colors.black : colors.white)}
           css={kind === BTN.DARKNAKED ? darkNakedStyles.chevron : nakedStyles.chevron}
         >
           <Chevron color={chevronColor} opacity={opacity} size={"0.75em"} />
@@ -469,7 +448,7 @@ function verticalSize(size: SIZE) {
 const borderRadius = 3
 const borderWidth = 1
 
-const reskinPrimaryStyles = {
+const primaryStyles = {
   normal: css({
     backgroundColor: colors.primaryYellow,
     border: "solid",
@@ -506,41 +485,6 @@ const reskinPrimaryStyles = {
   }),
   text: css({
     color: colors.black,
-  }),
-}
-
-const primaryStyles = {
-  normal: css({
-    backgroundColor: colors.primary,
-    borderColor: colors.primary,
-    borderRadius,
-    borderWidth,
-    "&:hover": {
-      backgroundColor: colors.primaryHover,
-      borderColor: colors.primaryHover,
-      borderRadius,
-      borderWidth,
-    },
-    "&:active": css({
-      backgroundColor: colors.primaryPress,
-      borderColor: colors.primaryPress,
-      outlineColor: colors.primaryPress,
-      borderRadius,
-      borderWidth,
-    }),
-  }),
-
-  disabled: css({
-    backgroundColor: colors.inactive,
-    borderColor: colors.inactive,
-    borderRadius,
-    borderWidth,
-  }),
-  darkText: css({
-    color: colors.dark,
-  }),
-  text: css({
-    color: colors.white,
   }),
 }
 
@@ -681,4 +625,4 @@ const boxedVertical = {
   }),
 }
 
-export default withRouter(Button)
+export default Button

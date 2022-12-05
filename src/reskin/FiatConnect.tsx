@@ -32,9 +32,9 @@ export function FiatConnect(props: Props) {
 }
 
 const mainCss = css(flex, {
+  backgroundColor: colors.baseTan,
   position: "relative",
   flexDirection: "row",
-  backgroundColor: colors.fig,
   justifyContent: "center",
   [WHEN_MOBILE]: {
     flexDirection: "column",
@@ -42,6 +42,7 @@ const mainCss = css(flex, {
 })
 
 const wrapperCss = css(flex, {
+  backgroundColor: colors.fig,
   flexDirection: "row",
   alignItems: "center",
   [WHEN_MOBILE]: {

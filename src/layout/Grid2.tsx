@@ -1,9 +1,7 @@
-import { css, CSSObject, SerializedStyles } from "@emotion/react"
+import { css, SerializedStyles } from "@emotion/react"
 import * as React from "react"
 import { flex, WHEN_DESKTOP, WHEN_TABLET } from "src/estyles"
 import { colors } from "src/colors"
-import { useRouter } from "next/router"
-import { isConnectTheWorldPage } from "../utils/utils"
 
 interface GridProps {
   columns: 1 | 2 | 3 | 4

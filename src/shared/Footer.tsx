@@ -1,22 +1,8 @@
 import * as React from "react"
 import { css } from "@emotion/react"
-import { NameSpaces, Trans, useTranslation } from "src/i18n"
-import Discord from "src/icons/Discord"
-import Discourse from "src/icons/Discourse"
-import Instagram from "src/icons/Instagram"
-import MediumLogo from "src/icons/MediumLogo"
-import Octocat from "src/icons/Octocat"
-import LinkedIn from "src/icons/LinkedIn"
-import envelope from "src/icons/Envelope.svg"
-import Twitch from "src/icons/Twitch"
-import Reddit from "src/icons/Reddit"
-import Telegram from "src/icons/Telegram"
-import { TweetLogo } from "src/icons/TwitterLogo"
-import YouTube from "src/icons/YouTube"
+import { NameSpaces, useTranslation } from "src/i18n"
 import { GridRow, Cell, Spans } from "src/layout/Grid2"
 import { useScreenSize } from "src/layout/ScreenSize"
-import RingsGlyph from "src/logos/RingsGlyph"
-import ChangeStory from "src/shared/ChangeStory"
 import FooterColumn, { LinkType } from "src/shared/FooterColumn"
 import menu, { CeloLinks, hashNav } from "src/shared/menu-items"
 import { colors } from "src/colors"
@@ -29,9 +15,7 @@ import {
   whiteText,
   standardStyles,
   WHEN_DESKTOP,
-  textStyles,
   WHEN_TABLET_AND_UP,
-  gtAlpina,
   inter,
 } from "src/estyles"
 import HubspotForm from "src/contentful/grid2-cells/HubspotForm"
@@ -48,7 +32,6 @@ const TECH_MENU = [
   menu.PUBLIC_SECTOR,
 ]
 const eventsLink = `${menu.COMMUNITY.link}#${hashNav.connect.events}`
-const ecoFundLink = `${menu.COMMUNITY.link}#${hashNav.connect.fund}`
 const COMPANY_MENU = [
   menu.VISION,
   { name: "Ecosystem", link: "#" },
@@ -61,74 +44,12 @@ const KITS_MENU = [menu.BRAND, menu.PILOT_KIT, menu.GRANT_KIT]
 
 const FOOTER_OTHER_LINKS = [menu.PRIVACY, menu.TERMS]
 
-const ICON_SIZE = 13
-function socialMenu(darkMode: boolean) {
-  const iconColor = darkMode ? colors.white : colors.dark
-  return [
-    {
-      name: "Blog",
-      link: CeloLinks.mediumPublication,
-      icon: <MediumLogo height={ICON_SIZE} color={iconColor} wrapWithLink={false} />,
-    },
-    {
-      name: "GitHub",
-      link: CeloLinks.gitHub,
-      icon: <Octocat size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Twitter",
-      link: CeloLinks.twitter,
-      icon: <TweetLogo height={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Forum",
-      link: CeloLinks.discourse,
-      icon: <Discourse size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Chat",
-      link: CeloLinks.discord,
-      icon: <Discord size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "YouTube",
-      link: CeloLinks.youtube,
-      icon: <YouTube size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Instagram",
-      link: CeloLinks.instagram,
-      icon: <Instagram size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "LinkedIn",
-      link: CeloLinks.linkedIn,
-      icon: <LinkedIn size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Twitch",
-      link: CeloLinks.twitch,
-      icon: <Twitch size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Reddit",
-      link: CeloLinks.reddit,
-      icon: <Reddit size={ICON_SIZE} color={iconColor} />,
-    },
-    {
-      name: "Telegram",
-      link: CeloLinks.telegram,
-      icon: <Telegram size={ICON_SIZE} color={iconColor} />,
-    },
-  ]
-}
-
 interface Props {
   hideForm?: boolean
   darkMode?: boolean
 }
 
-export default function Footer({ hideForm, darkMode }: Props) {
+export default function Footer({ darkMode }: Props) {
   const { t } = useTranslation(NameSpaces.common)
   const { isMobile } = useScreenSize()
   const year = new Date().getFullYear()
@@ -300,16 +221,6 @@ const wrapperCss = css({
   },
 })
 
-const hrefCss = css({
-  color: "inherit",
-})
-
-const receiveUpdatesCss = css(fonts.body, {
-  textAlign: "center",
-  marginTop: 20,
-  marginBottom: 10,
-})
-
 const detailsTextCss = css(inter, {
   marginBottom: 20,
   maxWidth: 350,
@@ -329,14 +240,6 @@ const toesCss = css(flex, {
   }),
 })
 
-const formStyle = css(flex, standardStyles.centered, {
-  maxWidth: 550,
-  [WHEN_DESKTOP]: {
-    width: "50%",
-  },
-  [WHEN_TABLET]: { width: "66.66%" },
-})
-
 const linkColumnStartCss = css({
   paddingStart: 0,
 })
@@ -345,29 +248,11 @@ const linkColumnEndCss = css({
   paddingEnd: 0,
 })
 
-const endMobileColumnCss = css({
-  marginLeft: 20,
-})
-
 const copyrightStyle = css(fonts.legal, inter, {
   zIndex: 10, // ensure copyright is above the sliding div from ChangeStory animation
   [WHEN_MOBILE]: {
     marginBottom: 17,
   },
-})
-
-const ringsCSS = css(flex, {
-  marginBottom: 20,
-  [WHEN_MOBILE]: {
-    marginBottom: 30,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-})
-
-const emailLogoCss = css({
-  objectFit: "contain",
-  margin: 10,
 })
 
 const footerLinksResponsiveCss = css({

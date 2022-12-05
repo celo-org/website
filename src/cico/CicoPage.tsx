@@ -5,19 +5,8 @@ import Chevron, { Direction } from "src/icons/chevron"
 import { colors } from "src/colors"
 import { buttonCss } from "src/contentful/grid2-cells/Playlist"
 import { pageSwitch } from "src/public-sector/CommonContentFullPage"
-import { ContentfulPage, GridRowContentType } from "src/utils/contentful"
-import {
-  flex,
-  whiteText,
-  jost,
-  fonts,
-  garamond,
-  WHEN_MOBILE,
-  WHEN_TABLET,
-  flexRow,
-  WHEN_DESKTOP,
-  inter,
-} from "src/estyles"
+import { ContentfulPage, GridRowContentType, HeadingContentType } from "src/utils/contentful"
+import { flex, whiteText, jost, fonts, WHEN_MOBILE, WHEN_TABLET, inter } from "src/estyles"
 import debounce from "lodash.debounce"
 import { Entry } from "contentful"
 import TextInput from "../reskin/components/TextInput"
@@ -45,7 +34,7 @@ interface Props {
 
 function CicoPage(props: Props & ContentfulPage<GridRowContentType>) {
   const sections = props.sections.filter((section) => section.fields?.id !== "celo-ramps")
-  const items = sections.map((section) => pageSwitch(section, true))
+  const items = sections.map((section) => pageSwitch(section))
   const onOffRampsSection = props.sections.find((section) => {
     return section?.fields?.id === "celo-ramps"
   })
@@ -66,8 +55,10 @@ function CoutriesReturned(props: Props) {
   const [search, setSearch] = React.useState("")
   const [expandedIndex, setBlurbIndex] = React.useState(null)
   const { data, content } = props
-  const title = content.fields.cells[0].fields.title
-  const subTitle = content.fields.cells[0].fields?.subTitle.content[0].content[0].value
+  const heading = content.fields.cells[0] as Entry<HeadingContentType>
+  const title = heading.fields.title
+  // @ts-ignore
+  const subTitle = heading.fields?.subTitle.content[0].content[0].value
   const toggle = (num: number) => (expandedIndex === num ? setBlurbIndex(null) : setBlurbIndex(num))
   const numberOfCountriesPerPage = 12
   const maxPage = Object.keys(data).length / numberOfCountriesPerPage
@@ -215,16 +206,6 @@ const loadMoreCss = css({
   marginTop: 80,
   "& > div": {
     alignItems: "flex-start",
-  },
-})
-const tableTitle = css({
-  borderBottom: `1px solid ${colors.grayHeavy}`,
-  padding: "20px 0px",
-  textAlign: "start",
-  h2: fonts.h2,
-  [WHEN_MOBILE]: {
-    padding: "20px 16px",
-    margin: "0px 10px",
   },
 })
 

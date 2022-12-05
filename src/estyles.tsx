@@ -2,7 +2,6 @@ import { css } from "@emotion/react"
 import { typeFaces, fontInfo } from "./styles"
 import { colors } from "./colors"
 import { DESKTOP_BREAKPOINT, TABLET_BREAKPOINT } from "src/shared/Styles"
-import { type } from "os"
 
 export const flex = css({
   boxSizing: "border-box",
@@ -50,6 +49,7 @@ export const sectionTitle = css(jost, {
 
 const body = css(fontInfo.p as any, { lineHeight: `${fontInfo.p.lineHeight}px` })
 
+// @ts-ignore
 const headingReset = css({
   fontWeight: "200",
   margin: 0,

@@ -4,27 +4,19 @@ import dynamic from "next/dynamic"
 import { useRouter } from "next/router"
 import * as React from "react"
 import { WHEN_DESKTOP } from "src/estyles"
-import Hamburger from "src/header/Hamburger"
-import { NameSpaces, useTranslation } from "src/i18n"
-import MediumLogo from "src/icons/MediumLogo"
-import Octocat from "src/icons/Octocat"
 import { useScreenSize } from "src/layout/ScreenSize"
 import LogoDarkBg from "src/logos/LogoDarkBg"
 import LogoLightBg from "src/logos/LogoLightBg"
-import Button, { BTN } from "src/shared/Button.4"
 import Link from "src/shared/Link"
-import menu, { CeloLinks, MAIN_MENU, MenuLink, pagePaths } from "src/shared/menu-items"
-import OvalCoin from "src/shared/OvalCoin"
+import menu, { MAIN_MENU, MenuLink, pagePaths } from "src/shared/menu-items"
 import { HEADER_HEIGHT } from "src/shared/Styles"
 import { colors } from "src/colors"
 import NewLogo from "src/logos/NewLogo"
 import NewMenuIcon from "src/header/NewMenuIcon"
-import { isConnectTheWorldPage as isConnectTheWorldPageFunc } from "../utils/utils"
 
 const MobileMenu = dynamic(import("src/shared/MobileMenu"))
 const BlueBanner = dynamic(import("src/header/BlueBanner"), { loading: () => null, ssr: false })
 
-const menuItems = MAIN_MENU
 const mobileMenu = [menu.VISION, ...MAIN_MENU]
 
 const PATH_TO_ATTRIBUTES: Record<string, MenuLink> = Object.keys(pagePaths).reduce((last, key) => {
@@ -134,11 +126,9 @@ export default function Header(props: Props) {
   const { pathname } = useRouter()
   const attributes = useAttributes()
   const isHomePage = pathname === menu.HOME.link
-  const isConnectTheWorldPage = isConnectTheWorldPageFunc(useRouter())
   const [mobileMenuActive, clickHamburger] = useMobileMenu()
 
   const { menuFaded, belowFoldUpScroll } = useScroll()
-  const willShowHamburger = !menuFaded || mobileMenuActive
 
   const isDarkMode =
     attributes.isDark || props.darkMode || (attributes.translucent && !belowFoldUpScroll)
@@ -238,89 +228,6 @@ const HomeLogo = React.memo(function _HomeLogo({
     </Link>
   )
 })
-
-const NavigationLinks = React.memo(function _NavigationLinks(props: {
-  menuFaded: boolean
-  isDarkMode: boolean
-}) {
-  const { t } = useTranslation(NameSpaces.common)
-  const foregroundColor = props.isDarkMode ? colors.white : colors.dark
-  const { pathname, asPath } = useRouter()
-
-  return (
-    <nav
-      css={[
-        styles.links,
-        styles.fadeTransition,
-        props.menuFaded ? styles.menuInvisible : styles.menuVisible,
-      ]}
-    >
-      {menuItems.map((item) => (
-        <div key={item.link} css={styles.linkWrapper}>
-          <Button
-            kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
-            href={item.link}
-            text={t(item.name)}
-          />
-          {(pathname === item.link || asPath === item.link) && (
-            <div css={styles.activeTab}>
-              <OvalCoin color={colors.primary} size={10} />
-            </div>
-          )}
-        </div>
-      ))}
-      <div css={styles.linkWrapper}>
-        <Button
-          kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
-          href={"https://medium.com/CeloHQ"}
-          text={""}
-          target={"_blank"}
-          iconRight={<MediumLogo height={20} color={foregroundColor} wrapWithLink={false} />}
-        />
-      </div>
-      <div css={[styles.linkWrapper, styles.lastLink]}>
-        <Button
-          kind={props.isDarkMode ? BTN.DARKNAV : BTN.NAV}
-          href={CeloLinks.gitHub}
-          text={""}
-          target={"_blank"}
-          iconRight={<Octocat size={22} color={props.isDarkMode ? colors.white : colors.dark} />}
-        />
-      </div>
-    </nav>
-  )
-})
-
-function MobileMenuIcon(props: {
-  isDarkMode: boolean
-  willShowHamburger: boolean
-  isHomePage: boolean
-  mobileMenuActive: boolean
-  bannerHeight: number
-  clickHamburger: () => void
-}) {
-  const foregroundColor = props.isDarkMode ? colors.white : colors.dark
-
-  const containerStyle = css(
-    styles.hamburger,
-    styles.fadeTransition,
-    props.willShowHamburger && styles.hamburgerShowing,
-    props.isHomePage &&
-      !props.mobileMenuActive && {
-        transform: `translateY(${props.bannerHeight}px)`,
-      }
-  )
-
-  return (
-    <div css={containerStyle}>
-      <Hamburger
-        isOpen={props.mobileMenuActive}
-        onPress={props.clickHamburger}
-        color={foregroundColor}
-      />
-    </div>
-  )
-}
 
 function flexCss(cssStyle: CSSObject) {
   return css(

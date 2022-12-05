@@ -7,11 +7,11 @@ import Button from "src/shared/Button.4"
 import { displayedImageSize } from "../displayRetinaImage"
 import { useScreenSize } from "src/layout/ScreenSize"
 import { colors } from "../../../colors"
-import { useState } from "react"
 import AnimatedCubes from "../../../reskin/AnimatedCubes"
 
 type Item = GalleryItem
 interface Props {
+  name: string
   items: Entry<Item | ContentfulButton>[]
   cssStyle?: CSSObject
   mobileCss?: CSSObject
@@ -20,7 +20,6 @@ interface Props {
 
 export const ROW = {
   row: ({ fields }: Entry<Props>) => {
-    const itemsCount = fields.items.length
     if (fields.name === "cico apps") {
       return <AnimatedCubes fields={fields} />
     }
@@ -32,7 +31,7 @@ export const ROW = {
           fields.mobileCss && { [WHEN_MOBILE]: fields.mobileCss }
         )}
       >
-        {fields.items.map((entry, index) => {
+        {fields.items.map((entry) => {
           switch (entry.sys.contentType.sys.id) {
             case "button":
               const button = entry.fields as ContentfulButton
@@ -56,10 +55,8 @@ export const ROW = {
               const item = entry.fields as Item
               const imageFields = item?.image?.fields
               const size = displayedImageSize(item.image, fields.retina)
-              const [rotationAngle, setRotationAngle] = useState("0deg")
-              // setTimeout(() => {
-              //   setRotationAngle(rotationAngle === '0deg' ? '-90deg' : '0deg')
-              // }, 3000)
+              const rotationAngle = "0deg"
+
               const rendered = (
                 <div key={entry.sys.id} css={logoContainer}>
                   <div css={css(box, { transform: `rotateY(${rotationAngle})` })}>
