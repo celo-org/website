@@ -6,7 +6,7 @@
   "addFundsText": "Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 1 CELO and 1 of each core stable token (e.g. cUSD, cEUR, cREAL).\n\nIn the Celo Wallet, you can find your address by pressing the menu icon at the top left and scrolling down to bottom. Press the address to copy it to your device’s clipboard.",
   "getDollars": "Add Funds",
   "whatsNext": "What's Next",
-  "getTestnetText": "You can use wallets like Metamask for you account. You can also <0>create an account via the celo command line<0>.",
+  "getTestnetText": "You can use wallets like Metamask for your account. You can also <0>create an account via the celo command line<0>.",
   "getTestnetAddress": "Create an Account",
   "buildLocally": "Build the Celo Wallet locally.",
   "buildLocallyText": "Follow these instructions to build the Wallet from source, pointed at the Alfajores Testnet.",
