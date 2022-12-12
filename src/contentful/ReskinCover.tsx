@@ -70,7 +70,7 @@ export default function ReskinCover(props: CoverContentType) {
           {documentToReactComponents(props.subTitle, OPTIONS)}
         </span>
         <div css={linkAreaCss}>
-          {links.map((link, index) => (
+          {links.map((link) => (
             <Button
               align={"center"}
               key={link.sys.id}
@@ -78,7 +78,7 @@ export default function ReskinCover(props: CoverContentType) {
               kind={link.fields.kind}
               text={link.fields.words}
               href={link.fields.href}
-              cssStyle={index === 1 && css(newNakedButtonStyles)}
+              cssStyle={css({ flex: 1 })}
             />
           ))}
         </div>
@@ -125,7 +125,6 @@ const wrapperCss = css(flex, {
   justifyContent: "center",
   [WHEN_MOBILE]: {
     alignContent: "center",
-    minHeight: "100vh",
   },
   [WHEN_TABLET]: {
     minHeight: 900,
@@ -164,12 +163,12 @@ const titleCss = css(fonts.h1, {
     marginLeft: "0px",
   },
   [WHEN_MOBILE]: {
-    textAlign: "center",
+    textAlign: "left",
     fontSize: 46,
     lineHeight: "38px",
     marginTop: 109,
     marginBottom: 20,
-    paddingLeft: 32,
+    paddingLeft: 12,
     maxWidth: 100,
   },
 })
@@ -215,6 +214,7 @@ const contentCss = css(flex, {
 })
 
 const linkAreaCss = css(flexRow, {
+  marginTop: 40,
   zIndex: 1,
   [WHEN_MOBILE]: {
     flexDirection: "column",
@@ -269,9 +269,4 @@ const coverImage2 = css({
   [WHEN_MOBILE]: {
     display: "none",
   },
-})
-
-const newNakedButtonStyles = css({
-  flex: 1,
-  width: 0,
 })

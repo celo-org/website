@@ -257,6 +257,7 @@ const styles = {
     alignItems: "center",
     justifyContent: "space-between",
     borderBottom: `1px solid ${colors.transparentGray}`,
+    overflow: "hidden",
     "&:hover > div:last-child": {
       opacity: 1,
       marginRight: 0,

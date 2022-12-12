@@ -1,11 +1,13 @@
 import * as React from "react"
 import Chevron from "src/icons/chevron"
 import Link from "src/shared/Link"
-import { flex, fonts, textStyles, WHEN_MOBILE } from "src/estyles"
+import { flex, fonts, inter, textStyles, WHEN_MOBILE } from "src/estyles"
 import { colors } from "src/colors"
 import { css, SerializedStyles } from "@emotion/react"
 import { NextRouter } from "next/router"
 import { useState } from "react"
+import useWindowDimension from "../hooks/useWindowDimension"
+import { TABLET_BREAKPOINT } from "./Styles"
 
 export enum BTN {
   PRIMARY = "PRIMARY",
@@ -103,6 +105,7 @@ class Button extends React.PureComponent<ButtonsProps> {
       <div
         css={css(
           flex,
+          inter,
           { alignItems: align },
           this.props.kind === BTN.INLINE && inlineStyle.container
         )}
@@ -288,6 +291,7 @@ function ButtonNaked(props: Props) {
   const [chevronColor, setChevronColor] = useState(
     kind === BTN.DARKNAKED ? colors.black : colors.white
   )
+  const { width } = useWindowDimension()
   const textStyle = kind === BTN.DARKNAKED ? nakedDarkStyle[status] : commonTextStyles[status]
   const opacity = kind === BTN.DARKNAKED ? opacityState[status].opacity : 1
   const fontSize = nakedSize(size)
@@ -316,7 +320,11 @@ function ButtonNaked(props: Props) {
           onMouseDown={() => setChevronColor(kind === BTN.DARKNAKED ? colors.black : colors.white)}
           css={kind === BTN.DARKNAKED ? darkNakedStyles.chevron : nakedStyles.chevron}
         >
-          <Chevron color={chevronColor} opacity={opacity} size={"0.75em"} />
+          <Chevron
+            color={chevronColor}
+            opacity={opacity}
+            size={width <= TABLET_BREAKPOINT ? "0.5em" : "0.75em"}
+          />
         </span>
       </ButtonOrLink>
     </span>
@@ -341,7 +349,7 @@ const nakedStyles = {
       backgroundColor: colors.black,
     },
     [WHEN_MOBILE]: {
-      padding: "6px 6px 6px 8px",
+      padding: "11px 15px",
     },
   }),
 }
@@ -360,7 +368,7 @@ const darkNakedStyles = {
       backgroundColor: colors.primaryYellow,
     },
     [WHEN_MOBILE]: {
-      padding: "6px 6px 6px 8px",
+      padding: "11px 15px",
     },
   }),
 }

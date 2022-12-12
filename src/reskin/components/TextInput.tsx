@@ -3,7 +3,8 @@ import { colors } from "../../colors"
 import * as React from "react"
 import { useRef } from "react"
 import { css, SerializedStyles } from "@emotion/react"
-import { flexRow, garamond, WHEN_MOBILE, WHEN_TABLET } from "../../estyles"
+import { flexRow, inter, WHEN_MOBILE, WHEN_TABLET } from "../../estyles"
+import { typeFaces } from "../../styles"
 
 interface Props {
   customCss?: SerializedStyles
@@ -51,7 +52,7 @@ const inputContainer = css(flexRow, {
   },
 })
 
-const inputCss = css(garamond, {
+const inputCss = css(inter, {
   [WHEN_MOBILE]: {
     justifyContent: "center",
     alignItems: "center",
@@ -63,11 +64,12 @@ const inputCss = css(garamond, {
   border: "none",
   // border: `1px inset ${colors.transparentGray}`,
   height: 54,
-  fontSize: 20,
+  fontSize: 14,
   backgroundColor: "transparent",
   ["::placeholder"]: {
     color: colors.placeholderDarkMode,
     fontSize: 14,
+    fontFamily: typeFaces.inter,
   },
   "&:active, &:focus": {
     border: "none",

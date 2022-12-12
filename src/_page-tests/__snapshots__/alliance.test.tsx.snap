@@ -1,8 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alliance renders 1`] = `
-.emotion-15 input,
-.emotion-15 textarea {
+.emotion-15 {
+  width: 100%;
+  display: inline-block;
+}
+
+.emotion-15 img {
+  display: none;
+}
+
+.emotion-15 .grecaptcha-badge {
+  display: none;
+}
+
+.emotion-15 #email-b4dd2ae2-68e9-4662-bfd3-b2860162a5aa {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11,7 +23,7 @@ exports[`Alliance renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -20,33 +32,81 @@ exports[`Alliance renders 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 12px;
-  padding-bottom: 16px;
-  border-radius: 3px;
+  padding: 24px;
+  border-radius: 70px;
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(61, 61, 61, 0.2);
   width: 100%;
   margin: 4px;
-  margin-bottom: 8px;
   outline-width: 0;
+  background-color: transparent;
 }
 
-.emotion-15 input:focus,
-.emotion-15 textarea:focus {
-  border-color: #35D07F;
+.emotion-15 #email-b4dd2ae2-68e9-4662-bfd3-b2860162a5aa:focus {
+  border-color: #000;
 }
 
-.emotion-15 input[type='checkbox'] {
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
+.emotion-15 #hsForm_b4dd2ae2-68e9-4662-bfd3-b2860162a5aa input[type=submit] {
+  display: none;
 }
 
-.emotion-15 label {
-  font-family: Jost,futura-pt,futura,sans-serif;
+.emotion-15 .celo-hbspt {
+  width: 100%;
+}
+
+.emotion-15 .celo-hbspt * {
+  box-sizing: border-box;
+}
+
+.emotion-15 .celo-hbspt fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-15 .celo-hbspt fieldset {
+    margin-right: 0!important;
+    width: 100%!important;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-15 .celo-hbspt fieldset {
+    float: none;
+    width: 100%;
+  }
+}
+
+.emotion-15 .celo-hbspt fieldset.form-columns-2 .hs-form-field {
+  width: 50%;
+  float: left;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .emotion-15 .celo-hbspt fieldset.form-columns-2 .hs-form-field {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .emotion-15 .celo-hbspt fieldset.form-columns-2 .hs-form-field {
+    float: none;
+    width: 100%;
+  }
+}
+
+.emotion-15 .celo-hbspt .field {
+  margin-bottom: 32px;
+}
+
+.emotion-15 .celo-hbspt .input {
+  margin-right: 26px;
+}
+
+.emotion-15 .celo-hbspt .hs-input {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -55,43 +115,83 @@ exports[`Alliance renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: #81868B;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  margin-top: 12px;
-  margin-bottom: 8px;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  font-family: Inter,sans-serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 24px;
+  border-radius: 70px;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  margin: 4px;
+  outline-width: 0;
+  background-color: transparent;
+  font-family: Inter,sans-serif;
+  font-size: 14px;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.emotion-15 .celo-hbspt .hs-input:focus {
+  border-color: #000;
+}
+
+.emotion-15 .hs-custom-style fieldset textarea {
+  line-height: 14px!important;
+  height: 62px;
+  overflow-y: hidden;
+}
+
+.emotion-15 .celo-hbspt .contact-error {
+  border-color: #E70532;
+}
+
+.emotion-15 .celo-hbspt .hs-error-msg {
+  color: #E70532;
+}
+
+.emotion-15 input[type='checkbox'] {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
 }
 
 .emotion-15 input.hs-button {
-  font-family: Jost,futura-pt,futura,sans-serif;
+  font-family: Inter,sans-serif;
   font-size: 16px;
   line-height: 16;
   text-align: center;
   text-rendering: geometricPrecision;
   color: #111214;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 16px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #35D07F;
-  color: #FFFFFF;
+  background-color: #FCFF52;
+  color: #000;
+  padding: 24px 64px;
+  border-radius: 70px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border: none;
+  border: 1px solid #CCCCCC;
+  margin-top: 32px;
 }
 
 .emotion-15 input.hs-button:hover {
-  background-color: #4CDD91;
+  background-color: #000;
+  color: #FFFFFF;
 }
 
 .emotion-15 input.hs-button:active {
-  background-color: #0FB972;
+  background-color: #000;
+  color: #FFFFFF;
 }
 
 .emotion-15 ul {
@@ -103,7 +203,7 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-15 .legal-consent-container {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -129,7 +229,7 @@ exports[`Alliance renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -138,18 +238,14 @@ exports[`Alliance renders 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 12px;
-  padding-bottom: 16px;
-  border-radius: 3px;
+  padding: 24px;
+  border-radius: 70px;
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(61, 61, 61, 0.2);
   width: 100%;
   margin: 4px;
-  margin-bottom: 8px;
   outline-width: 0;
+  background-color: transparent;
   background-color: #111214;
   border-color: #81868B;
   color: #FFFFFF;
@@ -157,7 +253,7 @@ exports[`Alliance renders 1`] = `
 
 .emotion-15 input:focus,
 .emotion-15 textarea:focus {
-  border-color: #35D07F;
+  border-color: #000;
 }
 
 .emotion-15 input:focus,
@@ -170,12 +266,12 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-101 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: GT-Alpina,serif;
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
   color: #111214;
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -197,12 +293,12 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-102 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: GT-Alpina,serif;
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
   color: #111214;
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -215,12 +311,12 @@ exports[`Alliance renders 1`] = `
 
 @media (max-width: 576px) {
   .emotion-102 {
-    font-family: EB Garamond,eb-garamond,Garamond,serif;
+    font-family: GT-Alpina,serif;
     font-size: 36px;
     line-height: 40;
     text-rendering: geometricPrecision;
     color: #111214;
-    font-weight: normal;
+    font-weight: 200;
     margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -246,6 +342,7 @@ exports[`Alliance renders 1`] = `
   -ms-flex-item-align: center;
   align-self: center;
   width: 100%;
+  background-color: #FBF6F1;
 }
 
 .emotion-104 {
@@ -339,14 +436,13 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-105 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: Jost,futura-pt,futura,sans-serif;
+  font-family: GT-Alpina,serif;
   font-size: 24px;
   line-height: 28;
-  font-weight: 400;
   text-rendering: geometricPrecision;
   color: #111214;
   line-height: 28px;
@@ -360,11 +456,11 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-106 {
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: GT-Alpina,serif;
   font-size: 40px;
   line-height: 48;
   text-rendering: geometricPrecision;
@@ -434,7 +530,7 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-112 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: Inter,sans-serif;
   font-size: 20px;
   line-height: 28;
   text-rendering: geometricPrecision;
@@ -450,12 +546,12 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-161 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: GT-Alpina,serif;
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
   color: #111214;
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -477,12 +573,12 @@ exports[`Alliance renders 1`] = `
 }
 
 .emotion-162 {
-  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-family: GT-Alpina,serif;
   font-size: 48px;
   line-height: 56;
   text-rendering: geometricPrecision;
   color: #111214;
-  font-weight: normal;
+  font-weight: 200;
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -495,12 +591,12 @@ exports[`Alliance renders 1`] = `
 
 @media (max-width: 576px) {
   .emotion-162 {
-    font-family: EB Garamond,eb-garamond,Garamond,serif;
+    font-family: GT-Alpina,serif;
     font-size: 36px;
     line-height: 40;
     text-rendering: geometricPrecision;
     color: #111214;
-    font-weight: normal;
+    font-weight: 200;
     margin: 0;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -2670,7 +2766,7 @@ exports[`Alliance renders 1`] = `
                 Object {
                   "backgroundColor": "rgba(17,18,20,1.00)",
                   "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "24px",
                   "lineHeight": "32px",
                   "mixBlendMode": "darken",
@@ -2796,7 +2892,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "36px",
                 "lineHeight": "40px",
                 "marginBottom": "20px",
@@ -2817,7 +2913,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textAlign": "center",
@@ -2894,7 +2990,7 @@ exports[`Alliance renders 1`] = `
           style={
             Object {
               "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "Jost, futura-pt, futura, sans-serif",
+              "fontFamily": "GT-Alpina, serif",
               "fontSize": "24px",
               "lineHeight": "32px",
               "textRendering": "geometricPrecision",
@@ -2912,7 +3008,7 @@ exports[`Alliance renders 1`] = `
           style={
             Object {
               "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "GT-Alpina, serif",
               "fontSize": "28px",
               "lineHeight": "32px",
               "marginBottom": "10px",
@@ -2983,7 +3079,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "marginBottom": "20px",
@@ -3056,7 +3152,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -3313,7 +3409,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "marginBottom": "20px",
@@ -3387,7 +3483,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -3447,7 +3543,7 @@ exports[`Alliance renders 1`] = `
                     "color": "rgba(53,208,127,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "16px",
                     "fontWeight": "500",
                     "lineHeight": "16px",
@@ -3740,7 +3836,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "marginBottom": "20px",
@@ -3813,7 +3909,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -3873,7 +3969,7 @@ exports[`Alliance renders 1`] = `
                     "color": "rgba(53,208,127,1.00)",
                     "cursor": "pointer",
                     "display": "inline-flex",
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                    "fontFamily": "Inter, sans-serif",
                     "fontSize": "16px",
                     "fontWeight": "500",
                     "lineHeight": "16px",
@@ -4902,7 +4998,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "28px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -5210,7 +5306,7 @@ exports[`Alliance renders 1`] = `
                   "color": "rgba(17,18,20,1.00)",
                   "cursor": "pointer",
                   "display": "inline-flex",
-                  "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                  "fontFamily": "Inter, sans-serif",
                   "fontSize": "16px",
                   "fontWeight": "500",
                   "lineHeight": "16px",
@@ -5411,7 +5507,7 @@ exports[`Alliance renders 1`] = `
           style={
             Object {
               "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "GT-Alpina, serif",
               "fontSize": "28px",
               "lineHeight": "32px",
               "marginBottom": "5px",
@@ -5431,7 +5527,7 @@ exports[`Alliance renders 1`] = `
           style={
             Object {
               "color": "rgba(17,18,20,1.00)",
-              "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+              "fontFamily": "Inter, sans-serif",
               "fontSize": "24px",
               "lineHeight": "32px",
               "marginBottom": "30px",
@@ -5509,7 +5605,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "Jost, futura-pt, futura, sans-serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "16px",
                 "fontWeight": "500",
                 "lineHeight": "18px",
@@ -5603,7 +5699,7 @@ exports[`Alliance renders 1`] = `
                     style={
                       Object {
                         "color": "rgba(17,18,20,1.00)",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                        "fontFamily": "Inter, sans-serif",
                         "fontSize": "20px",
                         "lineHeight": "28px",
                         "overflowX": "hidden",
@@ -5679,7 +5775,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(251,204,92,0.40)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5710,7 +5806,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5741,7 +5837,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5772,7 +5868,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5803,7 +5899,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5834,7 +5930,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5865,7 +5961,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5896,7 +5992,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5927,7 +6023,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5958,7 +6054,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -5989,7 +6085,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -6020,7 +6116,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -6051,7 +6147,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -6082,7 +6178,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -6113,7 +6209,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -6144,7 +6240,7 @@ exports[`Alliance renders 1`] = `
                       "backgroundColor": "rgba(255,255,255,1.00)",
                       "color": "rgba(17,18,20,1.00)",
                       "cursor": "pointer",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                      "fontFamily": "Inter, sans-serif",
                       "fontSize": "20px",
                       "lineHeight": "28px",
                       "overflowX": "hidden",
@@ -6196,7 +6292,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6223,7 +6319,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6267,7 +6363,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6294,7 +6390,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6338,7 +6434,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6365,7 +6461,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6409,7 +6505,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6436,7 +6532,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6480,7 +6576,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6507,7 +6603,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6551,7 +6647,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6578,7 +6674,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6622,7 +6718,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6649,7 +6745,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6693,7 +6789,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6720,7 +6816,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6764,7 +6860,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6791,7 +6887,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6835,7 +6931,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6862,7 +6958,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6906,7 +7002,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -6933,7 +7029,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -6977,7 +7073,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -7004,7 +7100,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -7048,7 +7144,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -7075,7 +7171,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -7119,7 +7215,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -7146,7 +7242,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -7190,7 +7286,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textRendering": "geometricPrecision",
@@ -7217,7 +7313,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(17,18,20,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "20px",
                 "lineHeight": "28px",
                 "textRendering": "geometricPrecision",
@@ -7372,7 +7468,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "GT-Alpina, serif",
                 "fontSize": "36px",
                 "lineHeight": "40px",
                 "marginBottom": "20px",
@@ -7393,7 +7489,7 @@ exports[`Alliance renders 1`] = `
             style={
               Object {
                 "color": "rgba(255,255,255,1.00)",
-                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontFamily": "Inter, sans-serif",
                 "fontSize": "24px",
                 "lineHeight": "32px",
                 "textAlign": "center",

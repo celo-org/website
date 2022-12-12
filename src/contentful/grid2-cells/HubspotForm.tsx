@@ -2,7 +2,14 @@ import { css } from "@emotion/react"
 import Script from "next/script"
 import { useLayoutEffect, useState } from "react"
 import { colors } from "src/colors"
-import { inputStyle, errorStyle, inputDarkStyle, WHEN_MOBILE, WHEN_TABLET } from "src/estyles"
+import {
+  inputStyle,
+  errorStyle,
+  inputDarkStyle,
+  WHEN_MOBILE,
+  WHEN_TABLET,
+  inter,
+} from "src/estyles"
 import { fonts } from "src/estyles"
 import { HubFormFieldsType } from "src/utils/contentful"
 
@@ -119,11 +126,15 @@ const style = css({
   ".celo-hbspt .input": {
     marginRight: 26,
   },
-  ".celo-hbspt .hs-input": css(inputStyle, {
-    // maxWidth: "100%",
+  ".celo-hbspt .hs-input": css(inputStyle, inter, {
+    fontSize: 14,
     borderColor: "rgba(0, 0, 0, 0.2)",
   }),
-  ".hs-custom-style fieldset textarea": inputStyle,
+  ".hs-custom-style fieldset textarea": css({
+    lineHeight: "14px !important",
+    height: 62,
+    overflowY: "hidden",
+  }),
   ".celo-hbspt .contact-error": css({
     borderColor: colors.errorInput,
   }),
