@@ -85,7 +85,7 @@ export const textStyles = {
   }),
   lean: css({ fontWeight: 300 }),
   medium: css({
-    fontWeight: 500,
+    fontWeight: 700,
   }),
   heavy: css({
     fontWeight: "bold",

@@ -73,7 +73,7 @@ export default function Footer({ darkMode }: Props) {
           gap: 0,
           [WHEN_DESKTOP]: css(standardStyles.blockMarginTop),
           [WHEN_TABLET]: css(standardStyles.blockMarginTopTablet),
-          [WHEN_MOBILE]: standardStyles.blockMarginTopMobile,
+          [WHEN_MOBILE]: css(standardStyles.blockMarginTopMobile),
         })}
       >
         <Cell span={Spans.one} cssStyles={css({ gridRowStart: 1 })}>
@@ -123,7 +123,7 @@ export default function Footer({ darkMode }: Props) {
         css={css({
           [WHEN_DESKTOP]: css(standardStyles.blockMargin),
           [WHEN_TABLET]: css(standardStyles.blockMarginTablet),
-          [WHEN_MOBILE]: standardStyles.blockMarginMobile,
+          [WHEN_MOBILE]: css(standardStyles.blockMarginMobile),
         })}
       >
         <div css={toesCss}>
@@ -169,19 +169,19 @@ function MobileLinks({ footerMenu, darkMode }: MobileLinkProps) {
         darkMode={darkMode}
         heading={"Celo for"}
         links={footerMenu}
-        linksCss={css(flexRow, { flexWrap: "wrap" })}
+        linksCss={css(flexRow, { flexWrap: "wrap", flex: 1 })}
       />
       <FooterColumn
         darkMode={darkMode}
         heading={t("footer.company")}
         links={COMPANY_MENU}
-        linksCss={css(flexRow, { flexWrap: "wrap" })}
+        linksCss={css(flexRow, { flexWrap: "wrap", flex: 1 })}
       />
       <FooterColumn
         darkMode={darkMode}
         heading={t("footer.technology")}
         links={TECH_MENU}
-        linksCss={css(flexRow, { flexWrap: "wrap" })}
+        linksCss={css(flexRow, { flexWrap: "wrap", flex: 1 })}
       />
       <FooterColumn
         darkMode={darkMode}
@@ -218,6 +218,7 @@ const wrapperCss = css({
   backgroundColor: colors.primaryYellow,
   [WHEN_MOBILE]: {
     padding: 33,
+    paddingBottom: 60,
   },
 })
 
@@ -303,8 +304,5 @@ const footerOtherLinkContainerCss = css(fonts.legal, {
 const mobileLinkCss = css(flex, {
   [WHEN_DESKTOP]: {
     flexDirection: "row",
-  },
-  [WHEN_MOBILE]: {
-    marginBottom: 90,
   },
 })

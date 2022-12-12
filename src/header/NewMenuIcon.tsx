@@ -1,5 +1,6 @@
 import { css, CSSObject } from "@emotion/react"
 import * as React from "react"
+import { inter } from "../estyles"
 
 interface Props {
   onPress: () => void
@@ -76,10 +77,12 @@ const hideMenuIconCss = css({
   opacity: 0,
 })
 
-const menuText = css({
+const menuText = css(inter, {
+  fontWeight: 700,
   position: "absolute",
   top: -9,
   right: 40,
+  marginRight: 13,
   transitionProperty: "all",
   transitionDuration: "200ms",
 })

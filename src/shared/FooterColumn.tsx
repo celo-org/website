@@ -47,11 +47,9 @@ export default React.memo(function FooterColumn({
 })
 
 const rootStyle = css({
-  paddingLeft: 25,
   paddingRight: 25,
   [WHEN_MOBILE]: {
     marginTop: 35,
-    width: "50%",
     paddingLeft: 10,
     paddingRight: 10,
   },
@@ -60,6 +58,9 @@ const rootStyle = css({
 const linkContainerCss = css({
   marginTop: 8,
   marginBottom: 8,
+  [WHEN_MOBILE]: {
+    marginRight: 8,
+  },
 })
 
 const headingStyle = css(inter, {

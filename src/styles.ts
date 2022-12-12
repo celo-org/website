@@ -77,13 +77,13 @@ export const fontInfo: Record<string, TextStyle> = {
     ...fontDefaults,
   },
   navigation: {
-    fontFamily: typeFaces.futura,
+    fontFamily: typeFaces.inter,
     fontSize: 16,
     lineHeight: 16,
     textAlign: "center",
     ...fontDefaults,
     cursor: "pointer",
-    fontWeight: "500",
+    fontWeight: "700",
   },
   p: {
     fontFamily: typeFaces.inter,

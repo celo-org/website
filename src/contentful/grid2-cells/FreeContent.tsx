@@ -47,7 +47,7 @@ const h1ResponsiveCss = css(fonts.h1, {
   color: colors.white,
   [WHEN_MOBILE]: css(fonts.h1Mobile, { color: colors.white }),
 })
-const h4Css = css(fonts.h4, { color: "rgba(255, 255, 255, 0.6)" })
+const h4Css = css(fonts.h4, { color: "rgba(255, 255, 255, 0.6)", fontSize: 20, marginBottom: 40 })
 interface Props {
   colSpan: number
   rowSpan?: number
