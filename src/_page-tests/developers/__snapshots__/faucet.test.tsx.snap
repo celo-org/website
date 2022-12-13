@@ -454,9 +454,7 @@ exports[`Faucet renders 1`] = `
         <p
           className="emotion-7"
         >
-          Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 1 CELO and 1 of each core stable token (e.g. cUSD, cEUR, cREAL).
-
-In the Celo Wallet, you can find your address by pressing the menu icon at the top left and scrolling down to bottom. Press the address to copy it to your device’s clipboard.
+          Enter the address of your Alfajores Testnet account to receive additional funds. Each request adds 5 CELO and 5 of each core stable token (e.g. cUSD, cEUR, cREAL).
         </p>
         <div
           className="emotion-8"
