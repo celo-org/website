@@ -1,9 +1,13 @@
 import * as React from "react"
 import Chevron from "src/icons/chevron"
 import Link from "src/shared/Link"
-import { fonts, textStyles } from "src/estyles"
+import { flex, fonts, inter, textStyles, WHEN_MOBILE } from "src/estyles"
 import { colors } from "src/colors"
 import { css, SerializedStyles } from "@emotion/react"
+import { NextRouter } from "next/router"
+import { useState } from "react"
+import useWindowDimension from "../hooks/useWindowDimension"
+import { TABLET_BREAKPOINT } from "./Styles"
 
 export enum BTN {
   PRIMARY = "PRIMARY",
@@ -56,7 +60,7 @@ type NavProps = {
 
 type ButtonsProps = NakedProps | PrimaryProps | InlineProps | NavProps
 
-export default class Button extends React.PureComponent<ButtonsProps> {
+class Button extends React.PureComponent<ButtonsProps> {
   getStatus = () => {
     if (this.props.disabled) {
       return BTNStates.disabled
@@ -99,7 +103,12 @@ export default class Button extends React.PureComponent<ButtonsProps> {
 
     return (
       <div
-        css={css({ alignItems: align }, this.props.kind === BTN.INLINE && inlineStyle.container)}
+        css={css(
+          flex,
+          inter,
+          { alignItems: align },
+          this.props.kind === BTN.INLINE && inlineStyle.container
+        )}
       >
         <ButtonComponent
           status={this.getStatus()}
@@ -179,6 +188,7 @@ interface Props {
   target?: string
   onDarkBackground?: boolean
   accessibilityRole?: "button" | "link" | "option"
+  router?: NextRouter
 }
 
 function ButtonPrimary(props: Props) {
@@ -264,13 +274,6 @@ function ButtonTertiary(props: Props) {
   )
 }
 
-const nakedColor = {
-  [BTNStates.normal]: colors.primary,
-  [BTNStates.hover]: colors.primaryHover,
-  [BTNStates.press]: colors.primaryPress,
-  [BTNStates.disabled]: colors.inactive,
-}
-
 function nakedSize(size: SIZE) {
   switch (size) {
     case SIZE.big:
@@ -285,8 +288,11 @@ function nakedSize(size: SIZE) {
 
 function ButtonNaked(props: Props) {
   const { children, status, kind, cssStyle, href, size, target } = props
-  const color = kind === BTN.DARKNAKED ? colors.dark : nakedColor[status]
-  const textStyle = kind === BTN.DARKNAKED ? opacityStyle[status] : commonTextStyles[status]
+  const [chevronColor, setChevronColor] = useState(
+    kind === BTN.DARKNAKED ? colors.black : colors.white
+  )
+  const { width } = useWindowDimension()
+  const textStyle = kind === BTN.DARKNAKED ? nakedDarkStyle[status] : commonTextStyles[status]
   const opacity = kind === BTN.DARKNAKED ? opacityState[status].opacity : 1
   const fontSize = nakedSize(size)
   return (
@@ -308,8 +314,17 @@ function ButtonNaked(props: Props) {
       >
         {children}
 
-        <span css={nakedStyles.chevron}>
-          <Chevron color={color} opacity={opacity} size={"0.75em"} />
+        <span
+          onMouseEnter={() => setChevronColor(colors.black)}
+          onMouseLeave={() => setChevronColor(kind === BTN.DARKNAKED ? colors.black : colors.white)}
+          onMouseDown={() => setChevronColor(kind === BTN.DARKNAKED ? colors.black : colors.white)}
+          css={kind === BTN.DARKNAKED ? darkNakedStyles.chevron : nakedStyles.chevron}
+        >
+          <Chevron
+            color={chevronColor}
+            opacity={opacity}
+            size={width <= TABLET_BREAKPOINT ? "0.5em" : "0.75em"}
+          />
         </span>
       </ButtonOrLink>
     </span>
@@ -323,8 +338,38 @@ const nakedStyles = {
     justifyContent: "center",
   }),
   chevron: css({
-    paddingTop: "0.15em",
-    paddingLeft: "0.4em",
+    marginLeft: 8,
+    backgroundColor: colors.black,
+    padding: "9.5px 9.5px 9.5px 13.5px",
+    borderRadius: 60,
+    "&:hover": {
+      backgroundColor: colors.primaryYellow,
+    },
+    "&:active": {
+      backgroundColor: colors.black,
+    },
+    [WHEN_MOBILE]: {
+      padding: "11px 15px",
+    },
+  }),
+}
+
+const darkNakedStyles = {
+  container: css({
+    flexDirection: "row",
+    justifyContent: "center",
+  }),
+  chevron: css({
+    marginLeft: 8,
+    backgroundColor: colors.white,
+    padding: "9.5px 9.5px 9.5px 13.5px",
+    borderRadius: 60,
+    "&:active": {
+      backgroundColor: colors.primaryYellow,
+    },
+    [WHEN_MOBILE]: {
+      padding: "11px 15px",
+    },
   }),
 }
 
@@ -413,36 +458,41 @@ const borderWidth = 1
 
 const primaryStyles = {
   normal: css({
-    backgroundColor: colors.primary,
-    borderColor: colors.primary,
-    borderRadius,
+    backgroundColor: colors.primaryYellow,
+    border: "solid",
+    borderColor: colors.transparentGray,
+    borderRadius: 70,
     borderWidth,
-    "&:hover": {
-      backgroundColor: colors.primaryHover,
-      borderColor: colors.primaryHover,
-      borderRadius,
+    padding: "24px 64px",
+    "&:hover, &:active": {
+      backgroundColor: colors.black,
+      borderColor: colors.transparentGray,
+      borderRadius: 70,
       borderWidth,
+      color: colors.white,
     },
-    "&:active": css({
-      backgroundColor: colors.primaryPress,
-      borderColor: colors.primaryPress,
-      outlineColor: colors.primaryPress,
-      borderRadius,
-      borderWidth,
-    }),
+    [WHEN_MOBILE]: {
+      padding: "16px 24px",
+    },
   }),
 
   disabled: css({
-    backgroundColor: colors.inactive,
-    borderColor: colors.inactive,
-    borderRadius,
+    backgroundImage: colors.disabledHatch,
+    border: "solid",
+    borderColor: colors.transparentGray,
+    borderRadius: 70,
     borderWidth,
+    padding: "24px 64px",
+    [WHEN_MOBILE]: {
+      padding: "16px 24px",
+    },
   }),
+
   darkText: css({
     color: colors.dark,
   }),
   text: css({
-    color: colors.white,
+    color: colors.black,
   }),
 }
 
@@ -477,19 +527,14 @@ const secondaryStyles = {
 
 const commonTextStyles = {
   normal: css({
-    color: colors.primary,
-    "&:hover": css({
-      color: colors.primaryHover,
-    }),
-    "&:active": css({
-      color: colors.primaryPress,
-    }),
+    color: colors.black,
   }),
   disabled: css({
     color: colors.inactive,
     cursor: "not-allowed",
   }),
 }
+
 const opacityState = {
   normal: {
     opacity: 1,
@@ -506,6 +551,16 @@ const opacityState = {
   },
 }
 const opacityStyle = opacityState
+
+const nakedDarkStyle = {
+  normal: css({
+    color: colors.white,
+  }),
+  disabled: css({
+    color: colors.inactive,
+    cursor: "not-allowed",
+  }),
+}
 
 enum VERTICAL_PAD {
   big = 20,
@@ -550,7 +605,7 @@ const baseStyles = {
     borderColor: "transparent",
     outlineColor: "transparent",
   }),
-  notAllowed: css({ cursor: "not-allowed" }),
+  notAllowed: css({ cursor: "not-allowed", color: colors.disabledTextGray }),
   iconLeft: css({
     paddingRight: 8,
   }),
@@ -577,3 +632,5 @@ const boxedVertical = {
     paddingBottom: VERTICAL_PAD.fullWidth - 1,
   }),
 }
+
+export default Button

@@ -4,6 +4,8 @@ import { colors } from "./colors"
 export enum typeFaces {
   futura = "Jost, futura-pt, futura, sans-serif",
   garamond = "EB Garamond, eb-garamond, Garamond, serif",
+  inter = "Inter, sans-serif",
+  gtAlpina = "GT-Alpina, serif",
 }
 
 const fontDefaults = {
@@ -13,79 +15,78 @@ const fontDefaults = {
 
 export const fontInfo: Record<string, TextStyle> = {
   h1: {
-    fontFamily: typeFaces.garamond,
+    fontFamily: typeFaces.gtAlpina,
     fontSize: 48,
     lineHeight: 56,
     ...fontDefaults,
   },
   h1Mobile: {
-    fontFamily: typeFaces.garamond,
+    fontFamily: typeFaces.gtAlpina,
     fontSize: 36,
     lineHeight: 40,
     ...fontDefaults,
   },
   h2: {
-    fontFamily: typeFaces.garamond,
+    fontFamily: typeFaces.gtAlpina,
     fontSize: 40,
     lineHeight: 48,
     ...fontDefaults,
   },
   h2Mobile: {
-    fontFamily: typeFaces.garamond,
+    fontFamily: typeFaces.gtAlpina,
     fontSize: 28,
     lineHeight: 32,
     ...fontDefaults,
   },
   h3: {
-    fontFamily: typeFaces.futura,
+    fontFamily: typeFaces.gtAlpina,
     fontSize: 24,
     lineHeight: 28,
-    fontWeight: "400",
     ...fontDefaults,
   },
   h3Mobile: {
-    fontFamily: typeFaces.futura,
+    fontFamily: typeFaces.gtAlpina,
     fontSize: 24,
     lineHeight: 32,
     ...fontDefaults,
   },
   h4: {
-    fontFamily: typeFaces.garamond,
+    fontFamily: typeFaces.inter,
     fontSize: 28,
     lineHeight: 36,
     ...fontDefaults,
   },
   h4Mobile: {
-    fontFamily: typeFaces.garamond,
+    fontFamily: typeFaces.inter,
     fontSize: 24,
     lineHeight: 32,
     ...fontDefaults,
   },
   h5: {
-    fontFamily: typeFaces.futura,
+    fontFamily: typeFaces.gtAlpina,
     fontSize: 20,
     lineHeight: 24,
     fontWeight: "500",
     ...fontDefaults,
   },
   h6: {
-    fontFamily: typeFaces.futura,
+    fontFamily: typeFaces.gtAlpina,
     fontSize: 16,
     lineHeight: 18,
     fontWeight: "500",
     ...fontDefaults,
   },
   navigation: {
-    fontFamily: typeFaces.futura,
+    fontFamily: typeFaces.inter,
     fontSize: 16,
     lineHeight: 16,
     textAlign: "center",
     ...fontDefaults,
     cursor: "pointer",
-    fontWeight: "500",
+    fontWeight: "700",
   },
   p: {
-    fontFamily: typeFaces.garamond,
+    fontFamily: typeFaces.inter,
     fontSize: 20,
     lineHeight: 28,
     ...fontDefaults,

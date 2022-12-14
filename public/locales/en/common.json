@@ -21,12 +21,15 @@
   "footerReadMoreTerms": "Read more in Celo <0>Terms of Service</0>",
   "footer": {
     "emailIconAlt": "Envelop with Green Coin Sliding in",
-    "technology": "Technology",
+    "technology": "Tech",
     "resources": "Resources",
+    "company": "Company",
+    "kits": "Kits",
     "social": "Social",
-    "copyright": "The Celo Foundation, © Celo {{year}}",
+    "copyright": "© {{year}} Celo Inc.",
     "Home": "Home",
     "About": "About",
+    "Founders": "Founders",
     "Join": "Careers",
     "Validators": "Validators",
     "Developers": "Developers",
@@ -78,5 +81,6 @@
   "shortSuccess": "Submitted",
   "applicationSubmitted": "Application Submitted",
   "showAll": "Show All",
-  "collapse": "Collapse"
+  "collapse": "Collapse",
+  "footerEmailText": "World-changing ideas in your inbox"
 }

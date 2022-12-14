@@ -41,7 +41,7 @@ export class About extends React.Component<Props & I18nProps> {
     return (
       <>
         <OpenGraph
-          path={menuItems.ABOUT_US.link}
+          path={menuItems.FOUNDERS.link}
           title={t("pageTitle")}
           description={t("description")}
         />
