@@ -45,7 +45,7 @@
     "core-js": "^3.20.0",
     "debounce": "^1.2.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-enforces-ssl": "^1.1.0",
     "express-rate-limit": "^5.4.1",
     "fast-xml-parser": "^3.20.3",
