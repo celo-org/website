@@ -48,7 +48,7 @@
     "express": "^4.17.1",
     "express-enforces-ssl": "^1.1.0",
     "express-rate-limit": "^5.4.1",
-    "fast-xml-parser": "^3.20.3",
+    "fast-xml-parser": "^4.2.4",
     "fecha": "^4.2.0",
     "firebase": "^9.6.5",
     "front-matter": "^4.0.1",
