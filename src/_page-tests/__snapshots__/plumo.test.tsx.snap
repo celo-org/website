@@ -2018,7 +2018,7 @@ Array [
                 >
                   <a
                     className="emotion-50"
-                    href="/annual-reports/2020"
+                    href="/papers/annual-reports/2021"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
@@ -2081,7 +2081,7 @@ Array [
                 >
                   <a
                     className="emotion-50"
-                    href="https://www.celoreserve.org"
+                    href="https://reserve.mento.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
@@ -2743,7 +2743,7 @@ Array [
           <small
             className="emotion-174"
           >
-            The Celo Foundation, © Celo 2022
+            The Celo Foundation, © Celo 2023
           </small>
         </div>
       </div>

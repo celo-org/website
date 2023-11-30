@@ -1,11 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alliance renders 1`] = `
-.emotion-10 {
-  opacity: 0;
-}
-
-.emotion-17 {
+.emotion-15 input,
+.emotion-15 textarea {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,179 +11,165 @@ exports[`Alliance renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 20px;
-}
-
-.emotion-18 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media (min-width: 992px) {
-  .emotion-18 {
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-.emotion-19 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.emotion-20 {
-  margin-bottom: 10px;
-}
-
-.emotion-24 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 5px 0;
-  height: auto;
-  max-height: 80px;
-  transition-property: max-height;
-  transition-duration: 600ms;
-  max-height: 0;
-}
-
-.emotion-25 {
-  font-weight: normal;
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Jost,futura-pt,futura,sans-serif;
-  font-size: 16px;
-  line-height: 18;
-  font-weight: 500;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
   text-rendering: geometricPrecision;
   color: #111214;
-  line-height: 18px;
-  transition-property: opacity;
-  transition-duration: 700ms;
-  opacity: 0;
-  color: #FF7F6D;
-  font-weight: 500;
-}
-
-.emotion-38 {
-  -webkit-transform: scale(0, 0);
-  -moz-transform: scale(0, 0);
-  -ms-transform: scale(0, 0);
-  transform: scale(0, 0);
-  position: fixed;
-}
-
-.emotion-43 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  padding: 15px 20px;
-}
-
-@media (max-width: 576px) {
-  .emotion-43 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
-.emotion-48 {
-  font-weight: normal;
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: Jost,futura-pt,futura,sans-serif;
-  font-size: 16px;
-  line-height: 18;
-  font-weight: 500;
-  text-rendering: geometricPrecision;
-  color: #111214;
-  line-height: 18px;
-  transition-property: opacity;
-  transition-duration: 700ms;
-  opacity: 0;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  color: #35D07F;
-  font-weight: 500;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 15px;
-  color: white;
+  line-height: 28px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(61, 61, 61, 0.2);
+  width: 100%;
+  margin: 4px;
+  margin-bottom: 8px;
+  outline-width: 0;
 }
 
-.emotion-49 {
-  margin-left: 10px;
+.emotion-15 input:focus,
+.emotion-15 textarea:focus {
+  border-color: #35D07F;
 }
 
-.emotion-50 {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.emotion-15 input[type='checkbox'] {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
 }
 
-.emotion-138 {
+.emotion-15 label {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #81868B;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-15 input.hs-button {
+  font-family: Jost,futura-pt,futura,sans-serif;
+  font-size: 16px;
+  line-height: 16;
+  text-align: center;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #35D07F;
+  color: #FFFFFF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+
+.emotion-15 input.hs-button:hover {
+  background-color: #4CDD91;
+}
+
+.emotion-15 input.hs-button:active {
+  background-color: #0FB972;
+}
+
+.emotion-15 ul {
+  list-style-type: none;
+}
+
+.emotion-15 .hs-error-msg {
+  color: #FF7F6D;
+}
+
+.emotion-15 .legal-consent-container {
+  font-weight: normal;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 16px;
+  line-height: 20;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 20px;
+}
+
+.emotion-15 a {
+  color: #1AB775;
+}
+
+.emotion-15 input,
+.emotion-15 textarea {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: EB Garamond,eb-garamond,Garamond,serif;
+  font-size: 20px;
+  line-height: 28;
+  text-rendering: geometricPrecision;
+  color: #111214;
+  line-height: 28px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(61, 61, 61, 0.2);
+  width: 100%;
+  margin: 4px;
+  margin-bottom: 8px;
+  outline-width: 0;
+  background-color: #111214;
+  border-color: #81868B;
+  color: #FFFFFF;
+}
+
+.emotion-15 input:focus,
+.emotion-15 textarea:focus {
+  border-color: #35D07F;
+}
+
+.emotion-15 input:focus,
+.emotion-15 textarea:focus {
+  border-color: #FFFFFF;
+}
+
+.emotion-15 .legal-consent-container {
+  color: #838486;
+}
+
+.emotion-101 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -206,14 +189,14 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-138 {
+  .emotion-101 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-139 {
+.emotion-102 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -231,7 +214,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-139 {
+  .emotion-102 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -245,7 +228,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-140 {
+.emotion-103 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -265,7 +248,7 @@ exports[`Alliance renders 1`] = `
   width: 100%;
 }
 
-.emotion-141 {
+.emotion-104 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -294,7 +277,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-141 {
+  .emotion-104 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -311,7 +294,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-141 {
+  .emotion-104 {
     display: grid;
     grid-auto-rows: auto;
     -webkit-align-self: center;
@@ -323,39 +306,39 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (min-width: 992px) {
-  .emotion-141 {
+  .emotion-104 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-141 {
+  .emotion-104 {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 576px) {
-  .emotion-141 {
+  .emotion-104 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .emotion-141 {
+  .emotion-104 {
     margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 992px) {
-  .emotion-141 {
+  .emotion-104 {
     margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 
-.emotion-142 {
+.emotion-105 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -371,12 +354,12 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-142 {
+  .emotion-105 {
     text-align: center;
   }
 }
 
-.emotion-143 {
+.emotion-106 {
   font-weight: normal;
   margin: 0;
   margin-block-start: 0;
@@ -391,12 +374,12 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-143 {
+  .emotion-106 {
     text-align: center;
   }
 }
 
-.emotion-144 {
+.emotion-107 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -419,7 +402,7 @@ exports[`Alliance renders 1`] = `
   flex-wrap: wrap;
 }
 
-.emotion-145 {
+.emotion-108 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -438,19 +421,19 @@ exports[`Alliance renders 1`] = `
   flex-direction: column;
 }
 
-.emotion-146 {
+.emotion-109 {
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.emotion-147 {
+.emotion-110 {
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
-.emotion-149 {
+.emotion-112 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 20px;
   line-height: 28;
@@ -462,7 +445,11 @@ exports[`Alliance renders 1`] = `
   margin: 30px 50px;
 }
 
-.emotion-198 {
+.emotion-136 {
+  opacity: 0;
+}
+
+.emotion-161 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -482,14 +469,14 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-198 {
+  .emotion-161 {
     font-size: 42px;
     line-height: 50px;
     font-style: italic;
   }
 }
 
-.emotion-199 {
+.emotion-162 {
   font-family: EB Garamond,eb-garamond,Garamond,serif;
   font-size: 48px;
   line-height: 56;
@@ -507,7 +494,7 @@ exports[`Alliance renders 1`] = `
 }
 
 @media (max-width: 576px) {
-  .emotion-199 {
+  .emotion-162 {
     font-family: EB Garamond,eb-garamond,Garamond,serif;
     font-size: 36px;
     line-height: 40;
@@ -521,7 +508,7 @@ exports[`Alliance renders 1`] = `
   }
 }
 
-.emotion-213 {
+.emotion-176 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2748,587 +2735,106 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="emotion-10"
+          className="emotion-0"
+          style={
+            Object {
+              "WebkitAlignItems": "center",
+              "WebkitBoxAlign": "center",
+              "WebkitBoxPack": "center",
+              "WebkitJustifyContent": "center",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "marginBottom": "30px",
+              "msFlexAlign": "center",
+              "msFlexPack": "center",
+            }
+          }
         >
-          <div
-            className="emotion-0"
+          <svg
+            fill="none"
+            height="48"
+            viewBox="0 0 47 48"
+            width="47"
+          >
+            <path
+              d="M22.374 48C10.0361 48 0 38.0674 0 25.8599C0 20.7045 1.27044 16.6558 4.38286 11.8847C10.2722 3.21558 15.7547 0 24.6291 0C36.9638 0 47 9.93262 47 22.1432C47 26.7514 45.3848 31.0767 41.4244 37.0744C36.8396 44.0159 29.8972 48 22.374 48ZM24.6291 3.07416C16.8636 3.07416 12.2416 5.82247 6.97654 13.5786C4.23065 17.784 3.10621 21.347 3.10621 25.8599C3.10621 36.3735 11.7477 44.9258 22.374 44.9258C31.2112 44.9258 36.4762 38.9527 38.8245 35.3928C42.4246 29.9393 43.8938 26.0997 43.8938 22.1432C43.8938 11.6265 35.2523 3.07416 24.6291 3.07416ZM25.9244 34.446C23.5388 34.446 21.0011 33.7974 18.6403 32.4478C12.6174 29.0047 10.002 22.2815 12.8162 17.4613C15.6304 12.641 22.8182 11.5189 28.8442 14.962C34.8703 18.405 37.4826 25.1282 34.6715 29.9485C32.9568 32.8813 29.627 34.446 25.9244 34.446ZM21.5167 16.0195C18.9199 16.0195 16.6462 17.0432 15.5062 18.9983C13.5493 22.3522 15.6553 27.191 20.1965 29.7856C24.7378 32.3802 30.0246 31.7653 31.9815 28.4114C33.9384 25.0575 31.8324 20.2188 27.2911 17.6242C25.3963 16.5421 23.3742 16.0195 21.5167 16.0195Z"
+              fill="url(#paint0_linear)"
+            />
+            <defs>
+              <linearGradient
+                gradientUnits="userSpaceOnUse"
+                id="paint0_linear"
+                x1="6.28183"
+                x2="43.8449"
+                y1="52.7996"
+                y2="-4.21699"
+              >
+                <stop
+                  offset="0.078125"
+                  stopColor="#FF8577"
+                />
+                <stop
+                  offset="0.359375"
+                  stopColor="#73FFB5"
+                />
+                <stop
+                  offset="0.692708"
+                  stopColor="#A78CE9"
+                />
+                <stop
+                  offset="0.90625"
+                  stopColor="#44CAFF"
+                />
+              </linearGradient>
+            </defs>
+          </svg>
+          <h1
+            aria-level="1"
+            className="emotion-6 emotion-7"
+            dir="auto"
+            role="heading"
             style={
               Object {
-                "WebkitAlignItems": "center",
-                "WebkitBoxAlign": "center",
-                "WebkitBoxPack": "center",
-                "WebkitJustifyContent": "center",
-                "alignItems": "center",
-                "justifyContent": "center",
-                "marginBottom": "30px",
-                "msFlexAlign": "center",
-                "msFlexPack": "center",
+                "color": "rgba(255,255,255,1.00)",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "36px",
+                "lineHeight": "40px",
+                "marginBottom": "20px",
+                "marginTop": "20px",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+                "textTransform": "none",
               }
             }
           >
-            <svg
-              fill="none"
-              height="48"
-              viewBox="0 0 47 48"
-              width="47"
-            >
-              <path
-                d="M22.374 48C10.0361 48 0 38.0674 0 25.8599C0 20.7045 1.27044 16.6558 4.38286 11.8847C10.2722 3.21558 15.7547 0 24.6291 0C36.9638 0 47 9.93262 47 22.1432C47 26.7514 45.3848 31.0767 41.4244 37.0744C36.8396 44.0159 29.8972 48 22.374 48ZM24.6291 3.07416C16.8636 3.07416 12.2416 5.82247 6.97654 13.5786C4.23065 17.784 3.10621 21.347 3.10621 25.8599C3.10621 36.3735 11.7477 44.9258 22.374 44.9258C31.2112 44.9258 36.4762 38.9527 38.8245 35.3928C42.4246 29.9393 43.8938 26.0997 43.8938 22.1432C43.8938 11.6265 35.2523 3.07416 24.6291 3.07416ZM25.9244 34.446C23.5388 34.446 21.0011 33.7974 18.6403 32.4478C12.6174 29.0047 10.002 22.2815 12.8162 17.4613C15.6304 12.641 22.8182 11.5189 28.8442 14.962C34.8703 18.405 37.4826 25.1282 34.6715 29.9485C32.9568 32.8813 29.627 34.446 25.9244 34.446ZM21.5167 16.0195C18.9199 16.0195 16.6462 17.0432 15.5062 18.9983C13.5493 22.3522 15.6553 27.191 20.1965 29.7856C24.7378 32.3802 30.0246 31.7653 31.9815 28.4114C33.9384 25.0575 31.8324 20.2188 27.2911 17.6242C25.3963 16.5421 23.3742 16.0195 21.5167 16.0195Z"
-                fill="url(#paint0_linear)"
-              />
-              <defs>
-                <linearGradient
-                  gradientUnits="userSpaceOnUse"
-                  id="paint0_linear"
-                  x1="6.28183"
-                  x2="43.8449"
-                  y1="52.7996"
-                  y2="-4.21699"
-                >
-                  <stop
-                    offset="0.078125"
-                    stopColor="#FF8577"
-                  />
-                  <stop
-                    offset="0.359375"
-                    stopColor="#73FFB5"
-                  />
-                  <stop
-                    offset="0.692708"
-                    stopColor="#A78CE9"
-                  />
-                  <stop
-                    offset="0.90625"
-                    stopColor="#44CAFF"
-                  />
-                </linearGradient>
-              </defs>
-            </svg>
-            <h1
-              aria-level="1"
-              className="emotion-6 emotion-7"
-              dir="auto"
-              role="heading"
-              style={
-                Object {
-                  "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "36px",
-                  "lineHeight": "40px",
-                  "marginBottom": "20px",
-                  "marginTop": "20px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                  "textTransform": "none",
-                }
+            Alliance for Prosperity
+          </h1>
+          <h4
+            aria-level="4"
+            className="emotion-6 emotion-7"
+            dir="auto"
+            role="heading"
+            style={
+              Object {
+                "color": "rgba(255,255,255,1.00)",
+                "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
+                "fontSize": "24px",
+                "lineHeight": "32px",
+                "textAlign": "center",
+                "textRendering": "geometricPrecision",
+                "textTransform": "none",
               }
-            >
-              Alliance for Prosperity
-            </h1>
-            <h4
-              aria-level="4"
-              className="emotion-6 emotion-7"
-              dir="auto"
-              role="heading"
-              style={
-                Object {
-                  "color": "rgba(255,255,255,1.00)",
-                  "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                  "fontSize": "24px",
-                  "lineHeight": "32px",
-                  "textAlign": "center",
-                  "textRendering": "geometricPrecision",
-                  "textTransform": "none",
-                }
-              }
-            >
-              Create a more prosperous world with mission-aligned organizations
-            </h4>
-          </div>
+            }
+          >
+            Create a more prosperous world with mission-aligned organizations
+          </h4>
         </div>
-        <div
-          className="emotion-10"
-        >
-          <form>
-            <div
-              className="emotion-17"
-            >
-              <div
-                className="emotion-18"
-              >
-                <div
-                  className="emotion-19"
-                >
-                  <div
-                    className="emotion-20"
-                  >
-                    <div
-                      className="emotion-0"
-                      style={
-                        Object {
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      <label
-                        className="emotion-7"
-                        dir="auto"
-                        style={
-                          Object {
-                            "color": "rgba(129,134,139,1.00)",
-                            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                            "fontSize": "16px",
-                            "fontWeight": "500",
-                            "lineHeight": "20px",
-                            "textRendering": "geometricPrecision",
-                          }
-                        }
-                      >
-                        Name
-                      </label>
-                    </div>
-                    <input
-                      aria-label="Name"
-                      autoCapitalize="sentences"
-                      autoComplete="on"
-                      autoCorrect="on"
-                      className="emotion-23"
-                      dir="auto"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onSelect={[Function]}
-                      readOnly={false}
-                      spellCheck={true}
-                      style={
-                        Object {
-                          "WebkitAlignSelf": "center",
-                          "alignSelf": "center",
-                          "borderBottomColor": "rgba(221,221,221,1.00)",
-                          "borderBottomLeftRadius": "3px",
-                          "borderBottomRightRadius": "3px",
-                          "borderBottomWidth": "1px",
-                          "borderLeftColor": "rgba(221,221,221,1.00)",
-                          "borderLeftWidth": "1px",
-                          "borderRightColor": "rgba(221,221,221,1.00)",
-                          "borderRightWidth": "1px",
-                          "borderTopColor": "rgba(221,221,221,1.00)",
-                          "borderTopLeftRadius": "3px",
-                          "borderTopRightRadius": "3px",
-                          "borderTopWidth": "1px",
-                          "color": "rgba(255,255,255,1.00)",
-                          "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                          "fontSize": "20px",
-                          "lineHeight": "28px",
-                          "marginBottom": "0px",
-                          "marginLeft": "0px",
-                          "marginRight": "0px",
-                          "marginTop": "0px",
-                          "msFlexItemAlign": "center",
-                          "msGridRowAlign": "center",
-                          "outlineWidth": "0px",
-                          "paddingBottom": "15px",
-                          "paddingLeft": "10px",
-                          "paddingRight": "10px",
-                          "paddingTop": "13px",
-                          "textRendering": "geometricPrecision",
-                          "width": "100%",
-                        }
-                      }
-                      type="text"
-                      value=""
-                    />
-                    <div
-                      aria-hidden={true}
-                      aria-live="polite"
-                      className="emotion-24"
-                    >
-                      <p
-                        className="emotion-25"
-                      >
-                        Oops I’m blank!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="emotion-19"
-                >
-                  <div
-                    className="emotion-20"
-                  >
-                    <div
-                      className="emotion-0"
-                      style={
-                        Object {
-                          "marginBottom": "5px",
-                        }
-                      }
-                    >
-                      <label
-                        className="emotion-7"
-                        dir="auto"
-                        style={
-                          Object {
-                            "color": "rgba(129,134,139,1.00)",
-                            "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                            "fontSize": "16px",
-                            "fontWeight": "500",
-                            "lineHeight": "20px",
-                            "textRendering": "geometricPrecision",
-                          }
-                        }
-                      >
-                        Email
-                      </label>
-                    </div>
-                    <input
-                      aria-label="Email"
-                      autoCapitalize="sentences"
-                      autoComplete="on"
-                      autoCorrect="on"
-                      className="emotion-23"
-                      dir="auto"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onSelect={[Function]}
-                      readOnly={false}
-                      spellCheck={true}
-                      style={
-                        Object {
-                          "WebkitAlignSelf": "center",
-                          "alignSelf": "center",
-                          "borderBottomColor": "rgba(221,221,221,1.00)",
-                          "borderBottomLeftRadius": "3px",
-                          "borderBottomRightRadius": "3px",
-                          "borderBottomWidth": "1px",
-                          "borderLeftColor": "rgba(221,221,221,1.00)",
-                          "borderLeftWidth": "1px",
-                          "borderRightColor": "rgba(221,221,221,1.00)",
-                          "borderRightWidth": "1px",
-                          "borderTopColor": "rgba(221,221,221,1.00)",
-                          "borderTopLeftRadius": "3px",
-                          "borderTopRightRadius": "3px",
-                          "borderTopWidth": "1px",
-                          "color": "rgba(255,255,255,1.00)",
-                          "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                          "fontSize": "20px",
-                          "lineHeight": "28px",
-                          "marginBottom": "0px",
-                          "marginLeft": "0px",
-                          "marginRight": "0px",
-                          "marginTop": "0px",
-                          "msFlexItemAlign": "center",
-                          "msGridRowAlign": "center",
-                          "outlineWidth": "0px",
-                          "paddingBottom": "15px",
-                          "paddingLeft": "10px",
-                          "paddingRight": "10px",
-                          "paddingTop": "13px",
-                          "textRendering": "geometricPrecision",
-                          "width": "100%",
-                        }
-                      }
-                      type="text"
-                      value=""
-                    />
-                    <div
-                      aria-hidden={true}
-                      aria-live="polite"
-                      className="emotion-24"
-                    >
-                      <p
-                        className="emotion-25"
-                      >
-                        Please enter a valid email
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="emotion-19"
-              >
-                <div
-                  className="emotion-20"
-                >
-                  <div
-                    className="emotion-0"
-                    style={
-                      Object {
-                        "marginBottom": "5px",
-                      }
-                    }
-                  >
-                    <label
-                      className="emotion-7"
-                      dir="auto"
-                      style={
-                        Object {
-                          "color": "rgba(129,134,139,1.00)",
-                          "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                          "fontSize": "16px",
-                          "fontWeight": "500",
-                          "lineHeight": "20px",
-                          "textRendering": "geometricPrecision",
-                        }
-                      }
-                    >
-                      How might you contribute to the Alliance?
-                    </label>
-                  </div>
-                  <input
-                    aria-label="How might you contribute to the Alliance?"
-                    autoCapitalize="sentences"
-                    autoComplete="on"
-                    autoCorrect="on"
-                    className="emotion-23"
-                    dir="auto"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onSelect={[Function]}
-                    readOnly={false}
-                    spellCheck={true}
-                    style={
-                      Object {
-                        "WebkitAlignSelf": "center",
-                        "alignSelf": "center",
-                        "borderBottomColor": "rgba(221,221,221,1.00)",
-                        "borderBottomLeftRadius": "3px",
-                        "borderBottomRightRadius": "3px",
-                        "borderBottomWidth": "1px",
-                        "borderLeftColor": "rgba(221,221,221,1.00)",
-                        "borderLeftWidth": "1px",
-                        "borderRightColor": "rgba(221,221,221,1.00)",
-                        "borderRightWidth": "1px",
-                        "borderTopColor": "rgba(221,221,221,1.00)",
-                        "borderTopLeftRadius": "3px",
-                        "borderTopRightRadius": "3px",
-                        "borderTopWidth": "1px",
-                        "color": "rgba(255,255,255,1.00)",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "20px",
-                        "lineHeight": "28px",
-                        "marginBottom": "0px",
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
-                        "marginTop": "0px",
-                        "msFlexItemAlign": "center",
-                        "msGridRowAlign": "center",
-                        "outlineWidth": "0px",
-                        "paddingBottom": "15px",
-                        "paddingLeft": "10px",
-                        "paddingRight": "10px",
-                        "paddingTop": "13px",
-                        "textRendering": "geometricPrecision",
-                        "width": "100%",
-                      }
-                    }
-                    type="text"
-                    value=""
-                  />
-                </div>
-              </div>
-              <div
-                className="emotion-38"
-              >
-                <div
-                  className="emotion-20"
-                >
-                  <div
-                    className="emotion-0"
-                    style={
-                      Object {
-                        "marginBottom": "5px",
-                      }
-                    }
-                  >
-                    <label
-                      className="emotion-7"
-                      dir="auto"
-                      style={
-                        Object {
-                          "color": "rgba(129,134,139,1.00)",
-                          "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                          "fontSize": "16px",
-                          "fontWeight": "500",
-                          "lineHeight": "20px",
-                          "textRendering": "geometricPrecision",
-                        }
-                      }
-                    >
-                      Account
-                    </label>
-                  </div>
-                  <input
-                    aria-label="Account"
-                    autoCapitalize="sentences"
-                    autoComplete="on"
-                    autoCorrect="on"
-                    className="emotion-23"
-                    dir="auto"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onSelect={[Function]}
-                    readOnly={false}
-                    spellCheck={true}
-                    style={
-                      Object {
-                        "WebkitAlignSelf": "center",
-                        "alignSelf": "center",
-                        "borderBottomColor": "rgba(221,221,221,1.00)",
-                        "borderBottomLeftRadius": "3px",
-                        "borderBottomRightRadius": "3px",
-                        "borderBottomWidth": "1px",
-                        "borderLeftColor": "rgba(221,221,221,1.00)",
-                        "borderLeftWidth": "1px",
-                        "borderRightColor": "rgba(221,221,221,1.00)",
-                        "borderRightWidth": "1px",
-                        "borderTopColor": "rgba(221,221,221,1.00)",
-                        "borderTopLeftRadius": "3px",
-                        "borderTopRightRadius": "3px",
-                        "borderTopWidth": "1px",
-                        "color": "rgba(255,255,255,1.00)",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "20px",
-                        "lineHeight": "28px",
-                        "marginBottom": "0px",
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
-                        "marginTop": "0px",
-                        "msFlexItemAlign": "center",
-                        "msGridRowAlign": "center",
-                        "outlineWidth": "0px",
-                        "paddingBottom": "15px",
-                        "paddingLeft": "10px",
-                        "paddingRight": "10px",
-                        "paddingTop": "13px",
-                        "textRendering": "geometricPrecision",
-                        "width": "100%",
-                      }
-                    }
-                    type="text"
-                    value=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              className="emotion-43"
-            >
-              <div
-                className="emotion-0"
-                onClick={[Function]}
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseUp={[Function]}
-              >
-                <div
-                  className="emotion-45 emotion-7"
-                  dir="auto"
-                  role="link"
-                  style={
-                    Object {
-                      "WebkitAlignItems": "center",
-                      "WebkitBoxAlign": "center",
-                      "WebkitBoxFlex": 0,
-                      "WebkitBoxPack": "center",
-                      "WebkitFlexGrow": 0,
-                      "WebkitJustifyContent": "center",
-                      "alignItems": "center",
-                      "backgroundColor": "rgba(53,208,127,1.00)",
-                      "borderBottomColor": "rgba(53,208,127,1.00)",
-                      "borderBottomLeftRadius": "3px",
-                      "borderBottomRightRadius": "3px",
-                      "borderBottomWidth": "1px",
-                      "borderLeftColor": "rgba(53,208,127,1.00)",
-                      "borderLeftWidth": "1px",
-                      "borderRightColor": "rgba(53,208,127,1.00)",
-                      "borderRightWidth": "1px",
-                      "borderTopColor": "rgba(53,208,127,1.00)",
-                      "borderTopLeftRadius": "3px",
-                      "borderTopRightRadius": "3px",
-                      "borderTopWidth": "1px",
-                      "color": "rgba(255,255,255,1.00)",
-                      "cursor": "pointer",
-                      "display": "inline-flex",
-                      "flexGrow": 0,
-                      "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                      "fontSize": "20px",
-                      "fontWeight": "500",
-                      "justifyContent": "center",
-                      "lineHeight": "16px",
-                      "minWidth": "200px",
-                      "msFlexAlign": "center",
-                      "msFlexPack": "center",
-                      "msFlexPositive": 0,
-                      "opacity": 1,
-                      "paddingBottom": "20px",
-                      "paddingLeft": "30px",
-                      "paddingRight": "30px",
-                      "paddingTop": "20px",
-                      "textAlign": "center",
-                      "textRendering": "geometricPrecision",
-                      "width": "fit-content",
-                    }
-                  }
-                  tabIndex="0"
-                >
-                  Apply
-                </div>
-              </div>
-              <div
-                aria-hidden={true}
-                aria-live="polite"
-                className="emotion-24"
-              >
-                <p
-                  className="emotion-48"
-                >
-                  <svg
-                    fill="none"
-                    height={16}
-                    viewBox="0 0 11 9"
-                    width={16}
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M10.7932 1.85263L3.96211 8.64309L0.180176 4.88366L1.85967 3.19411L3.96211 5.28404L9.11373 0.163086L10.7932 1.85263Z"
-                      fill="#35D07F"
-                      fillRule="evenodd"
-                    />
-                  </svg>
-                  <span
-                    className="emotion-49"
-                  >
-                    Application Submitted
-                  </span>
-                </p>
-              </div>
-            </div>
-            <div
-              className="emotion-50"
-            >
-              <div
-                aria-hidden={true}
-                aria-live="polite"
-                className="emotion-24"
-              >
-                <p
-                  className="emotion-25"
-                />
-              </div>
-            </div>
-          </form>
-        </div>
+        <span
+          className="emotion-15"
+          id="form-5fa6fcf5-ad5b-40e0-8b61-76f0c5e6f93b"
+        />
+        Í
+         
       </div>
     </div>
   </div>
@@ -3488,7 +2994,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe we have a lot to learn from 
             <span
-              className="emotion-7 emotion-66"
+              className="emotion-7 emotion-29"
               style={
                 Object {
                   "fontStyle": "italic",
@@ -3818,7 +3324,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe in designing 
             <span
-              className="emotion-7 emotion-66"
+              className="emotion-7 emotion-29"
               style={
                 Object {
                   "fontStyle": "italic",
@@ -3927,7 +3433,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <a
-                className="emotion-6 emotion-45 emotion-7"
+                className="emotion-6 emotion-58 emotion-7"
                 dir="auto"
                 href="https://medium.com/celoorg/how-to-design-for-all-stories-from-tanzania-refugees-8b34594d64ae"
                 onClick={[Function]}
@@ -3966,7 +3472,11 @@ exports[`Alliance renders 1`] = `
                   <svg
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -4241,7 +3751,7 @@ exports[`Alliance renders 1`] = `
           >
             We believe systems are complex and require 
             <span
-              className="emotion-7 emotion-66"
+              className="emotion-7 emotion-29"
               style={
                 Object {
                   "fontStyle": "italic",
@@ -4349,7 +3859,7 @@ exports[`Alliance renders 1`] = `
               }
             >
               <a
-                className="emotion-6 emotion-45 emotion-7"
+                className="emotion-6 emotion-58 emotion-7"
                 dir="auto"
                 href="https://medium.com/celoorg/a-cryptocurrency-for-every-juan-144144e62d5"
                 onClick={[Function]}
@@ -4388,7 +3898,11 @@ exports[`Alliance renders 1`] = `
                   <svg
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -4658,14 +4172,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      className="emotion-138"
+      className="emotion-101"
     >
       “
       The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications
       ”
     </blockquote>
     <figcaption
-      className="emotion-139"
+      className="emotion-102"
     >
       <span>
         Gigi Gatti, Grameen Foundation
@@ -4673,29 +4187,29 @@ exports[`Alliance renders 1`] = `
     </figcaption>
   </div>
   <section
-    className="emotion-140"
+    className="emotion-103"
   >
     <div
-      className="emotion-141"
+      className="emotion-104"
     >
       <h3
-        className="emotion-142"
+        className="emotion-105"
       >
         Benefits of collaborating on a mission-driven blockchain
       </h3>
       <h2
-        className="emotion-143"
+        className="emotion-106"
       >
         What the Alliance offers
       </h2>
       <div
-        className="emotion-144"
+        className="emotion-107"
       >
         <div
-          className="emotion-145"
+          className="emotion-108"
         >
           <div
-            className="emotion-146"
+            className="emotion-109"
           >
             <span
               style={
@@ -4751,7 +4265,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-110"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4780,7 +4294,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-110"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -4812,16 +4326,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-112"
           >
             Connect with like-minded members
           </p>
         </div>
         <div
-          className="emotion-145"
+          className="emotion-108"
         >
           <div
-            className="emotion-146"
+            className="emotion-109"
           >
             <span
               style={
@@ -4877,7 +4391,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-110"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -4906,7 +4420,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-110"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -4938,16 +4452,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-112"
           >
             Build and shape improvements to the Celo platform
           </p>
         </div>
         <div
-          className="emotion-145"
+          className="emotion-108"
         >
           <div
-            className="emotion-146"
+            className="emotion-109"
           >
             <span
               style={
@@ -5003,7 +4517,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-110"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5032,7 +4546,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-110"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -5064,16 +4578,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-112"
           >
             Attend special programs and events
           </p>
         </div>
         <div
-          className="emotion-145"
+          className="emotion-108"
         >
           <div
-            className="emotion-146"
+            className="emotion-109"
           >
             <span
               style={
@@ -5129,7 +4643,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-110"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5158,7 +4672,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-110"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -5190,16 +4704,16 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-112"
           >
             Access to education and support
           </p>
         </div>
         <div
-          className="emotion-145"
+          className="emotion-108"
         >
           <div
-            className="emotion-146"
+            className="emotion-109"
           >
             <span
               style={
@@ -5255,7 +4769,7 @@ exports[`Alliance renders 1`] = `
                 />
               </span>
               <img
-                className="emotion-147"
+                className="emotion-110"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -5284,7 +4798,7 @@ exports[`Alliance renders 1`] = `
               />
               <noscript>
                 <img
-                  className="emotion-147"
+                  className="emotion-110"
                   data-nimg="intrinsic"
                   decoding="async"
                   loading="lazy"
@@ -5316,7 +4830,7 @@ exports[`Alliance renders 1`] = `
             </span>
           </div>
           <p
-            className="emotion-149"
+            className="emotion-112"
           >
             Expand your reach to help more communities
           </p>
@@ -5378,7 +4892,7 @@ exports[`Alliance renders 1`] = `
         }
       >
         <div
-          className="emotion-10"
+          className="emotion-136"
         >
           <h2
             aria-level="2"
@@ -5682,7 +5196,7 @@ exports[`Alliance renders 1`] = `
             }
           >
             <a
-              className="emotion-6 emotion-45 emotion-7"
+              className="emotion-6 emotion-58 emotion-7"
               dir="auto"
               href="https://medium.com/celoOrg"
               onClick={[Function]}
@@ -5746,7 +5260,11 @@ exports[`Alliance renders 1`] = `
                 <svg
                   fill="none"
                   height="0.75em"
-                  transform="rotate(0)"
+                  style={
+                    Object {
+                      "transform": "rotate(0deg)",
+                    }
+                  }
                   viewBox="0 0 8 12"
                   width="0.75em"
                 >
@@ -5827,14 +5345,14 @@ exports[`Alliance renders 1`] = `
       />
     </div>
     <blockquote
-      className="emotion-198"
+      className="emotion-161"
     >
       “
       Our hope is that this Alliance will start unlocking the potential of internet money
       ”
     </blockquote>
     <figcaption
-      className="emotion-199"
+      className="emotion-162"
     >
       <span>
         Katie Haun, Andreessen Horowitz
@@ -5924,7 +5442,7 @@ exports[`Alliance renders 1`] = `
         >
           Member contributions, 
           <span
-            className="emotion-7 emotion-66"
+            className="emotion-7 emotion-29"
             style={
               Object {
                 "fontStyle": "italic",
@@ -6003,7 +5521,7 @@ exports[`Alliance renders 1`] = `
             Refine By
           </div>
           <div
-            className="emotion-213"
+            className="emotion-176"
           >
             <div
               className="emotion-0"
@@ -7887,485 +7405,10 @@ exports[`Alliance renders 1`] = `
             Create a more prosperous world with mission-aligned organizations
           </h4>
         </div>
-        <form>
-          <div
-            className="emotion-17"
-          >
-            <div
-              className="emotion-18"
-            >
-              <div
-                className="emotion-19"
-              >
-                <div
-                  className="emotion-20"
-                >
-                  <div
-                    className="emotion-0"
-                    style={
-                      Object {
-                        "marginBottom": "5px",
-                      }
-                    }
-                  >
-                    <label
-                      className="emotion-7"
-                      dir="auto"
-                      style={
-                        Object {
-                          "color": "rgba(129,134,139,1.00)",
-                          "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                          "fontSize": "16px",
-                          "fontWeight": "500",
-                          "lineHeight": "20px",
-                          "textRendering": "geometricPrecision",
-                        }
-                      }
-                    >
-                      Name
-                    </label>
-                  </div>
-                  <input
-                    aria-label="Name"
-                    autoCapitalize="sentences"
-                    autoComplete="on"
-                    autoCorrect="on"
-                    className="emotion-23"
-                    dir="auto"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onSelect={[Function]}
-                    readOnly={false}
-                    spellCheck={true}
-                    style={
-                      Object {
-                        "WebkitAlignSelf": "center",
-                        "alignSelf": "center",
-                        "borderBottomColor": "rgba(221,221,221,1.00)",
-                        "borderBottomLeftRadius": "3px",
-                        "borderBottomRightRadius": "3px",
-                        "borderBottomWidth": "1px",
-                        "borderLeftColor": "rgba(221,221,221,1.00)",
-                        "borderLeftWidth": "1px",
-                        "borderRightColor": "rgba(221,221,221,1.00)",
-                        "borderRightWidth": "1px",
-                        "borderTopColor": "rgba(221,221,221,1.00)",
-                        "borderTopLeftRadius": "3px",
-                        "borderTopRightRadius": "3px",
-                        "borderTopWidth": "1px",
-                        "color": "rgba(255,255,255,1.00)",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "20px",
-                        "lineHeight": "28px",
-                        "marginBottom": "0px",
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
-                        "marginTop": "0px",
-                        "msFlexItemAlign": "center",
-                        "msGridRowAlign": "center",
-                        "outlineWidth": "0px",
-                        "paddingBottom": "15px",
-                        "paddingLeft": "10px",
-                        "paddingRight": "10px",
-                        "paddingTop": "13px",
-                        "textRendering": "geometricPrecision",
-                        "width": "100%",
-                      }
-                    }
-                    type="text"
-                    value=""
-                  />
-                  <div
-                    aria-hidden={true}
-                    aria-live="polite"
-                    className="emotion-24"
-                  >
-                    <p
-                      className="emotion-25"
-                    >
-                      Oops I’m blank!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="emotion-19"
-              >
-                <div
-                  className="emotion-20"
-                >
-                  <div
-                    className="emotion-0"
-                    style={
-                      Object {
-                        "marginBottom": "5px",
-                      }
-                    }
-                  >
-                    <label
-                      className="emotion-7"
-                      dir="auto"
-                      style={
-                        Object {
-                          "color": "rgba(129,134,139,1.00)",
-                          "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                          "fontSize": "16px",
-                          "fontWeight": "500",
-                          "lineHeight": "20px",
-                          "textRendering": "geometricPrecision",
-                        }
-                      }
-                    >
-                      Email
-                    </label>
-                  </div>
-                  <input
-                    aria-label="Email"
-                    autoCapitalize="sentences"
-                    autoComplete="on"
-                    autoCorrect="on"
-                    className="emotion-23"
-                    dir="auto"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                    onSelect={[Function]}
-                    readOnly={false}
-                    spellCheck={true}
-                    style={
-                      Object {
-                        "WebkitAlignSelf": "center",
-                        "alignSelf": "center",
-                        "borderBottomColor": "rgba(221,221,221,1.00)",
-                        "borderBottomLeftRadius": "3px",
-                        "borderBottomRightRadius": "3px",
-                        "borderBottomWidth": "1px",
-                        "borderLeftColor": "rgba(221,221,221,1.00)",
-                        "borderLeftWidth": "1px",
-                        "borderRightColor": "rgba(221,221,221,1.00)",
-                        "borderRightWidth": "1px",
-                        "borderTopColor": "rgba(221,221,221,1.00)",
-                        "borderTopLeftRadius": "3px",
-                        "borderTopRightRadius": "3px",
-                        "borderTopWidth": "1px",
-                        "color": "rgba(255,255,255,1.00)",
-                        "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                        "fontSize": "20px",
-                        "lineHeight": "28px",
-                        "marginBottom": "0px",
-                        "marginLeft": "0px",
-                        "marginRight": "0px",
-                        "marginTop": "0px",
-                        "msFlexItemAlign": "center",
-                        "msGridRowAlign": "center",
-                        "outlineWidth": "0px",
-                        "paddingBottom": "15px",
-                        "paddingLeft": "10px",
-                        "paddingRight": "10px",
-                        "paddingTop": "13px",
-                        "textRendering": "geometricPrecision",
-                        "width": "100%",
-                      }
-                    }
-                    type="text"
-                    value=""
-                  />
-                  <div
-                    aria-hidden={true}
-                    aria-live="polite"
-                    className="emotion-24"
-                  >
-                    <p
-                      className="emotion-25"
-                    >
-                      Please enter a valid email
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="emotion-19"
-            >
-              <div
-                className="emotion-20"
-              >
-                <div
-                  className="emotion-0"
-                  style={
-                    Object {
-                      "marginBottom": "5px",
-                    }
-                  }
-                >
-                  <label
-                    className="emotion-7"
-                    dir="auto"
-                    style={
-                      Object {
-                        "color": "rgba(129,134,139,1.00)",
-                        "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                        "fontSize": "16px",
-                        "fontWeight": "500",
-                        "lineHeight": "20px",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
-                  >
-                    How might you contribute to the Alliance?
-                  </label>
-                </div>
-                <input
-                  aria-label="How might you contribute to the Alliance?"
-                  autoCapitalize="sentences"
-                  autoComplete="on"
-                  autoCorrect="on"
-                  className="emotion-23"
-                  dir="auto"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onSelect={[Function]}
-                  readOnly={false}
-                  spellCheck={true}
-                  style={
-                    Object {
-                      "WebkitAlignSelf": "center",
-                      "alignSelf": "center",
-                      "borderBottomColor": "rgba(221,221,221,1.00)",
-                      "borderBottomLeftRadius": "3px",
-                      "borderBottomRightRadius": "3px",
-                      "borderBottomWidth": "1px",
-                      "borderLeftColor": "rgba(221,221,221,1.00)",
-                      "borderLeftWidth": "1px",
-                      "borderRightColor": "rgba(221,221,221,1.00)",
-                      "borderRightWidth": "1px",
-                      "borderTopColor": "rgba(221,221,221,1.00)",
-                      "borderTopLeftRadius": "3px",
-                      "borderTopRightRadius": "3px",
-                      "borderTopWidth": "1px",
-                      "color": "rgba(255,255,255,1.00)",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "20px",
-                      "lineHeight": "28px",
-                      "marginBottom": "0px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
-                      "marginTop": "0px",
-                      "msFlexItemAlign": "center",
-                      "msGridRowAlign": "center",
-                      "outlineWidth": "0px",
-                      "paddingBottom": "15px",
-                      "paddingLeft": "10px",
-                      "paddingRight": "10px",
-                      "paddingTop": "13px",
-                      "textRendering": "geometricPrecision",
-                      "width": "100%",
-                    }
-                  }
-                  type="text"
-                  value=""
-                />
-              </div>
-            </div>
-            <div
-              className="emotion-38"
-            >
-              <div
-                className="emotion-20"
-              >
-                <div
-                  className="emotion-0"
-                  style={
-                    Object {
-                      "marginBottom": "5px",
-                    }
-                  }
-                >
-                  <label
-                    className="emotion-7"
-                    dir="auto"
-                    style={
-                      Object {
-                        "color": "rgba(129,134,139,1.00)",
-                        "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                        "fontSize": "16px",
-                        "fontWeight": "500",
-                        "lineHeight": "20px",
-                        "textRendering": "geometricPrecision",
-                      }
-                    }
-                  >
-                    Account
-                  </label>
-                </div>
-                <input
-                  aria-label="Account"
-                  autoCapitalize="sentences"
-                  autoComplete="on"
-                  autoCorrect="on"
-                  className="emotion-23"
-                  dir="auto"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onSelect={[Function]}
-                  readOnly={false}
-                  spellCheck={true}
-                  style={
-                    Object {
-                      "WebkitAlignSelf": "center",
-                      "alignSelf": "center",
-                      "borderBottomColor": "rgba(221,221,221,1.00)",
-                      "borderBottomLeftRadius": "3px",
-                      "borderBottomRightRadius": "3px",
-                      "borderBottomWidth": "1px",
-                      "borderLeftColor": "rgba(221,221,221,1.00)",
-                      "borderLeftWidth": "1px",
-                      "borderRightColor": "rgba(221,221,221,1.00)",
-                      "borderRightWidth": "1px",
-                      "borderTopColor": "rgba(221,221,221,1.00)",
-                      "borderTopLeftRadius": "3px",
-                      "borderTopRightRadius": "3px",
-                      "borderTopWidth": "1px",
-                      "color": "rgba(255,255,255,1.00)",
-                      "fontFamily": "EB Garamond, eb-garamond, Garamond, serif",
-                      "fontSize": "20px",
-                      "lineHeight": "28px",
-                      "marginBottom": "0px",
-                      "marginLeft": "0px",
-                      "marginRight": "0px",
-                      "marginTop": "0px",
-                      "msFlexItemAlign": "center",
-                      "msGridRowAlign": "center",
-                      "outlineWidth": "0px",
-                      "paddingBottom": "15px",
-                      "paddingLeft": "10px",
-                      "paddingRight": "10px",
-                      "paddingTop": "13px",
-                      "textRendering": "geometricPrecision",
-                      "width": "100%",
-                    }
-                  }
-                  type="text"
-                  value=""
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            className="emotion-43"
-          >
-            <div
-              className="emotion-0"
-              onClick={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-            >
-              <div
-                className="emotion-45 emotion-7"
-                dir="auto"
-                role="link"
-                style={
-                  Object {
-                    "WebkitAlignItems": "center",
-                    "WebkitBoxAlign": "center",
-                    "WebkitBoxFlex": 0,
-                    "WebkitBoxPack": "center",
-                    "WebkitFlexGrow": 0,
-                    "WebkitJustifyContent": "center",
-                    "alignItems": "center",
-                    "backgroundColor": "rgba(53,208,127,1.00)",
-                    "borderBottomColor": "rgba(53,208,127,1.00)",
-                    "borderBottomLeftRadius": "3px",
-                    "borderBottomRightRadius": "3px",
-                    "borderBottomWidth": "1px",
-                    "borderLeftColor": "rgba(53,208,127,1.00)",
-                    "borderLeftWidth": "1px",
-                    "borderRightColor": "rgba(53,208,127,1.00)",
-                    "borderRightWidth": "1px",
-                    "borderTopColor": "rgba(53,208,127,1.00)",
-                    "borderTopLeftRadius": "3px",
-                    "borderTopRightRadius": "3px",
-                    "borderTopWidth": "1px",
-                    "color": "rgba(255,255,255,1.00)",
-                    "cursor": "pointer",
-                    "display": "inline-flex",
-                    "flexGrow": 0,
-                    "fontFamily": "Jost, futura-pt, futura, sans-serif",
-                    "fontSize": "20px",
-                    "fontWeight": "500",
-                    "justifyContent": "center",
-                    "lineHeight": "16px",
-                    "minWidth": "200px",
-                    "msFlexAlign": "center",
-                    "msFlexPack": "center",
-                    "msFlexPositive": 0,
-                    "opacity": 1,
-                    "paddingBottom": "20px",
-                    "paddingLeft": "30px",
-                    "paddingRight": "30px",
-                    "paddingTop": "20px",
-                    "textAlign": "center",
-                    "textRendering": "geometricPrecision",
-                    "width": "fit-content",
-                  }
-                }
-                tabIndex="0"
-              >
-                Apply
-              </div>
-            </div>
-            <div
-              aria-hidden={true}
-              aria-live="polite"
-              className="emotion-24"
-            >
-              <p
-                className="emotion-48"
-              >
-                <svg
-                  fill="none"
-                  height={16}
-                  viewBox="0 0 11 9"
-                  width={16}
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M10.7932 1.85263L3.96211 8.64309L0.180176 4.88366L1.85967 3.19411L3.96211 5.28404L9.11373 0.163086L10.7932 1.85263Z"
-                    fill="#35D07F"
-                    fillRule="evenodd"
-                  />
-                </svg>
-                <span
-                  className="emotion-49"
-                >
-                  Application Submitted
-                </span>
-              </p>
-            </div>
-          </div>
-          <div
-            className="emotion-50"
-          >
-            <div
-              aria-hidden={true}
-              aria-live="polite"
-              className="emotion-24"
-            >
-              <p
-                className="emotion-25"
-              />
-            </div>
-          </div>
-        </form>
+        <span
+          className="emotion-15"
+          id="form-5fa6fcf5-ad5b-40e0-8b61-76f0c5e6f93b"
+        />
       </div>
     </div>
     <div

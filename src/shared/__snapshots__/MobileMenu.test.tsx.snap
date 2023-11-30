@@ -184,7 +184,7 @@ exports[`Main MobileMenu renders 1`] = `
   opacity: 1;
 }
 
-.emotion-23 {
+.emotion-26 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -323,9 +323,25 @@ exports[`Main MobileMenu renders 1`] = `
         </a>
       </div>
     </div>
+    <div
+      className="emotion-2"
+    >
+      <div
+        className="emotion-3"
+      >
+        <a
+          className="emotion-7"
+          href="/enterprise"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Enterprise
+        </a>
+      </div>
+    </div>
   </div>
   <div
-    className="emotion-23"
+    className="emotion-26"
   >
     <svg
       fill="none"

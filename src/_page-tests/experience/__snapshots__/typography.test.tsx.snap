@@ -4725,7 +4725,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 >
                   <a
                     className="emotion-271"
-                    href="/annual-reports/2020"
+                    href="/papers/annual-reports/2021"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
@@ -4788,7 +4788,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
                 >
                   <a
                     className="emotion-271"
-                    href="https://www.celoreserve.org"
+                    href="https://reserve.mento.org"
                     onClick={[Function]}
                     onMouseEnter={[Function]}
                     rel="noopener"
@@ -5450,7 +5450,7 @@ Use Jost* for call to actions, diagrams, instructions, and infographics.
           <small
             className="emotion-395"
           >
-            The Celo Foundation, © Celo 2022
+            The Celo Foundation, © Celo 2023
           </small>
         </div>
       </div>

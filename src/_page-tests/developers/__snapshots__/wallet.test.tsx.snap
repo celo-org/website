@@ -333,7 +333,11 @@ Do not send real funds.
                     <svg
                       fill="none"
                       height="0.75em"
-                      transform="rotate(0)"
+                      style={
+                        Object {
+                          "transform": "rotate(0deg)",
+                        }
+                      }
                       viewBox="0 0 8 12"
                       width="0.75em"
                     >
@@ -452,7 +456,11 @@ Do not send real funds.
                     <svg
                       fill="none"
                       height="0.75em"
-                      transform="rotate(0)"
+                      style={
+                        Object {
+                          "transform": "rotate(0deg)",
+                        }
+                      }
                       viewBox="0 0 8 12"
                       width="0.75em"
                     >
@@ -569,7 +577,11 @@ Do not send real funds.
                     <svg
                       fill="none"
                       height="0.75em"
-                      transform="rotate(0)"
+                      style={
+                        Object {
+                          "transform": "rotate(0deg)",
+                        }
+                      }
                       viewBox="0 0 8 12"
                       width="0.75em"
                     >
@@ -986,7 +998,11 @@ Do not send real funds.
                   <svg
                     fill="none"
                     height="0.75em"
-                    transform="rotate(0)"
+                    style={
+                      Object {
+                        "transform": "rotate(0deg)",
+                      }
+                    }
                     viewBox="0 0 8 12"
                     width="0.75em"
                   >
@@ -1755,7 +1771,11 @@ Check out these wallets for everyday use.
                 <svg
                   fill="none"
                   height="0.75em"
-                  transform="rotate(0)"
+                  style={
+                    Object {
+                      "transform": "rotate(0deg)",
+                    }
+                  }
                   viewBox="0 0 8 12"
                   width="0.75em"
                 >
@@ -1922,7 +1942,11 @@ Check out these wallets for everyday use.
                 <svg
                   fill="none"
                   height="0.75em"
-                  transform="rotate(0)"
+                  style={
+                    Object {
+                      "transform": "rotate(0deg)",
+                    }
+                  }
                   viewBox="0 0 8 12"
                   width="0.75em"
                 >
@@ -2089,7 +2113,11 @@ Check out these wallets for everyday use.
                 <svg
                   fill="none"
                   height="0.75em"
-                  transform="rotate(0)"
+                  style={
+                    Object {
+                      "transform": "rotate(0deg)",
+                    }
+                  }
                   viewBox="0 0 8 12"
                   width="0.75em"
                 >

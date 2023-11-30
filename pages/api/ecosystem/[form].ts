@@ -16,6 +16,7 @@ async function post(req: NextApiRequest, res: NextApiResponse) {
       res.status(CREATED).json({ ok: true })
     }
   } catch (e) {
+    console.error(e)
     respondError(res, e)
   }
 }
